@@ -4,8 +4,16 @@ Code 	-> pasta com todo o código desenvolvido
 Files 	-> alguns ficheiros uteis para o trabalho
 UML	-> Pasta com toda a documentação UML necessária
 
-Link do repositório: http://code.google.com/p/el-projeto-integrado/ 	
+Link do repositório com todo o projeto:
+	https://github.com/MiguelCosta/Engenharia-de-Linguagens---Projeto-Integrado
 
-Membros do Trabalho:
+Link do repositório UML (Visual Paradigm): 
+	http://code.google.com/p/el-projeto-integrado/
+	svn checkout https://el-projeto-integrado.googlecode.com/svn/trunk/ el-projeto-integrado 	
+
+Pasta do Google Docs com documentação:
+	http://goo.gl/ku6G3
+
+Membros do Projeto:
 Miguel Costa	miguelpintodacosta@gmail.com
 Bruno Azevedo   azevedo.252@gmail.com
