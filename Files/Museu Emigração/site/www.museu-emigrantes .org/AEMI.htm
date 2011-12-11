@@ -1,0 +1,297 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="pt">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+
+<title>museu da emigragco e das comunidades</title>
+<style>
+<!--
+ table.MsoNormalTable
+	{mso-style-parent:"";
+	font-size:10.0pt;
+	font-family:"Times New Roman"}
+-->
+</style>
+
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAA_nmdSJNDS5tOHR6kbROk6hQ1WrGTCyHaQpkgxORWID2K7qk9wRTnep3BLNrKhsPAWm8oCRHlEfljBg" type="text/javascript"></script>
+	<script src="http://www.acme.com/javascript/Clusterer2.jsm" type="text/javascript"></script>
+    	<script type="text/javascript">
+    //<![CDATA[
+
+    function load() {
+      if (GBrowserIsCompatible()) {
+        var map = new GMap2(document.getElementById("map"));
+        map.addControl(new GLargeMapControl());
+	map.addControl(new GMapTypeControl());
+        map.setCenter(new GLatLng(30,-8), 2);
+        //map.setCenter(new GLatLng(41.449546,-8.173485), 2, G_HYBRID_MAP);
+	var clusterer = new Clusterer(map);
+	map.enableScrollWheelZoom();
+        
+        // Create our "tiny" marker icon
+        var icon = new GIcon();
+        icon.image = "imagens/mm_20_blue.png";
+        icon.shadow = "imagens/mm_20_shadow.png";
+        icon.iconSize = new GSize(12, 20);
+        icon.shadowSize = new GSize(22, 20);
+        icon.iconAnchor = new GPoint(6, 20);
+        icon.infoWindowAnchor = new GPoint(5, 1);
+
+         // Create our red "tiny" marker icon
+        var red_icon = new GIcon();
+        red_icon.image = "imagens/mm_20_red.png";
+        red_icon.shadow = "imagens/mm_20_shadow.png";
+        red_icon.iconSize = new GSize(12, 20);
+        red_icon.shadowSize = new GSize(22, 20);
+        red_icon.iconAnchor = new GPoint(6, 20);
+        red_icon.infoWindowAnchor = new GPoint(5, 1);
+       
+     	//museus
+	  
+     	nm1 = "Basque Clubs and Communities"	
+        m1 = nm1 + "<br /><a href='http://www.lehendakaritza.ejgv.euskadi.net/r48-11192/en/'><img border='0' src='imagens/AEMI/basque.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(42.923246,-2.671051),red_icon, m1),nm1);
+	
+	
+   	nm2 = "A.M.M.E."	
+        m2 = nm2 + "<br /><div style='font-size: 8px;'>L'Association pour la Maison de la Mimoire de l'Emigration<br /> des Pyrenees et du sud-ouest de la France</div><br /><a href='http://monsite.wanadoo.fr/ammemoigres/'><img border='0' src='imagens/AEMI/amme.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(43.302695,-0.366025),red_icon, m2),nm2);
+ 
+	
+   	nm3 = "Citi nationale de l'histoire<br />de l'immigration"	
+        m3 = nm3 + "<br /><a href='http://www.histoire-immigration.fr/'><img border='0' src='imagens/AEMI/nhi.png'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(48.837831,2.416992),red_icon, m3),nm3);
+ 
+	
+   	nm4 = "Giniriques"	
+        m4 = nm4 + "<br /><div style='font-size: 8px;'>Organisme de recherche et de criation culturelle,<br />spicialisi dans l'histoire et la mimoire de l'immigration</div><br /><a href='http://www.generiques.org/'><img border='0' src='imagens/AEMI/generiques.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(48.851698,2.383089),red_icon, m4),nm4);
+ 
+   	nm5 = "CDMH"	
+        m5 = nm5 + "<br /><div style='font-size: 8px;'>Le Centre de Documentation sur les Migrations Humaines</div><br /><a href='http://www.cdmh.lu/'><img border='0' src='imagens/AEMI/cdmh.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(49.478163,6.078358),red_icon, m5),nm5);
+ 
+	nm6 = "Deutsches Auswandererhaus"
+        m6 = nm6 + "<br /><div style='font-size: 8px;'>German Emigration Center</div><br /><a href='http://www.dah-bremerhaven.de/'><img border='0' src='imagens/AEMI/dab.png'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(53.563152,8.593712),red_icon, m6),nm6);
+ 	
+	nm7 = "Der Freundeskreis"
+        m7 = nm7 + "<br /><div style='font-size: 8px;'>Friends of the German Emigration Museum</div><br /><a href='http://www.foerderv-dt-auswandermus.de/'><img border='0' src='imagens/AEMI/LOGOkl.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(53.567739,8.611565),red_icon, m7),nm7);
+ 
+   	nm8 = "BallinStadt"	
+        m8 = nm8 + "<br /><a href='http://www.ballinstadt.de/'><img border='0' src='imagens/AEMI/ballin.png'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(53.530921,10.011635),red_icon, m8),nm8);
+ 
+	
+   	nm9 = "Research and Travel"	
+        m9 = nm9 + "<br /><a href='http://www.routes.de/'><img border='0' src='imagens/AEMI/RT.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(53.165582,8.199663),red_icon, m9),nm9);
+ 
+	
+   	nm10 = "Research Center German Emigrants in the USA"	
+        m10 = nm10 + "<br /><a href='http://www.uni-oldenburg.de/nausa/'><img border='0' src='imagens/AEMI/Dab2e.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(53.162623,8.194771),red_icon, m10),nm10);
+ 
+	
+   	nm11 = "Nordfriisk Instituut"	
+        m11 = nm11 + "<br /><a href='http://www.nordfriiskinstituut.de/'><img border='0' src='imagens/AEMI/institut.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(54.625115,8.964586),red_icon, m11),nm11);
+  
+	
+   	nm12 = "The Danish Emigration Archives"	
+        m12 = nm12 + "<br /><a href='http://www.emiarch.dk/'><img border='0' src='imagens/AEMI/dea.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(57.04764,9.921985),red_icon, m12),nm12);
+ 
+	
+   	nm13 = "Triantafillia Kourtoumi"	
+        m13 = nm13 + "<br /><a href='mailto:frini95@yahoo.gr'><img border='0' src='imagens/AEMI/logoemi.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(40.647825,22.985458),red_icon, m13),nm13);
+ 
+	
+   	nm14 = "CEMRI"	
+        m14 = nm14 + "<br /><div style='font-size: 8px;'>Centro de Estudos das Migragues e das Relagues Interculturais</div><a href='http://www.univ-ab.pt/investigacao/cemri/'><img border='0' src='imagens/AEMI/cemri.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(38.720123,-9.151397),red_icon, m14),nm14);
+ 
+	
+   	nm15 = "Museu da Emigragcco e das Comunidades"	
+        m15 = nm15 + "<br /><a href='http://www.museu-emigrantes.org'><img border='0'width='150px' src='imagens/entrada-nova.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(41.4507,-8.172776699066162),red_icon, m15),nm15);
+ 
+	
+   	nm16 = "C.I.S.M.U."	
+        m16 = nm16 + "<br /><div style='font-size: 8px;'>Centro Italiano di Studi sulle Migrazioni Umane</div><br /><a href='http://www.ethnicrelationsngo.org/'><img border='0' src='imagens/AEMI/ethnicr.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(40.700935,14.623811),red_icon, m16),nm16);
+ 
+	
+   	nm17 = "CISEI"	
+        m17 = nm17 + "<br /><div style='font-size: 8px;'>Centro Internazionale Studi Emigrazione Italiana</div><br /><a href='http://www.ciseionline.it'><img border='0' src='imagens/AEMI/cisei.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(44.430838,8.932056),red_icon, m17),nm17);
+ 
+	
+   	nm18 = "Museo dell Emigrante<br />Centro Studi sull Emigrazione"	
+        m18 = nm18 + "<br /><a href='http://www.museoemigrante.sm'><img border='0' src='imagens/AEMI/RSM.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(43.936905,12.445493),red_icon, m18),nm18);
+ 
+	
+   	nm19 = "Slovene Ethnographic Museum"	
+        m19 = nm19 + "<br /><a href='http://www.etno-muzej.si/'><img border='0' src='imagens/AEMI/sem.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(46.06751410107052,14.55139160),red_icon, m19),nm19);
+	
+	
+   	nm20 = "Institute for Slovene Emigration Studies"	
+        m20 = nm20 + "<br /><a href='ttp://www.zrc-sazu.si/ises/'><img border='0' src='imagens/AEMI/zrc_mali.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(46.040829158935196,14.478607177734375),red_icon, m20),nm20);
+ 							
+   	nm21 = "IMIN"	
+        m21 = nm21 + "<br /><div style='font-size: 8px;'>Institute for Migration and Ethnic Studies</div><br /><a href='http://www.imin.hr'><img border='0' src='imagens/AEMI/imin.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(45.801191,15.979614),red_icon, m21),nm21);
+ 
+	
+   	nm22 = "Croatian Heritage Foundation"	
+        m22 = nm22 + "<br /><a href='http://www.matis.hr/eng/'><img border='0' src='imagens/AEMI/matis.png'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(45.712308,16.066968),red_icon, m22),nm22);
+ 
+	
+   	nm23 = "Republic Rozmberk Society"	
+        m23 = nm23 + "<br /><a href='http://www.rozmberk.org/?act=20'><img border='0' src='imagens/AEMI/rozmberk.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(48.931339,14.743556),red_icon, m23),nm23);
+ 
+
+   	nm24 = "Merseyside Maritime Museum"	
+        m24 = nm24 + "<br /><a href='http://www.liverpoolmuseums.org.uk/maritime/archive/'><img border='0' src='imagens/AEMI/mmm.png'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(53.428151,-2.98914),red_icon, m24),nm24);
+ 
+
+   	nm25 = "Siirtolaisuusinstituutti"	
+        m25 = nm25 + "<br /><div style='font-size: 8px;'>Institute of Migration, Finland</div><br /><a href='http://www.migrationinstitute.fi/index_e.php'><img border='0' src='imagens/AEMI/migrationinstitute.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(60.440666,22.242637),red_icon, m25),nm25);
+ 
+
+	nm26 = "CMS"	
+        m26 = nm26 + "<br /><div style='font-size: 8px;'>Centre for Migration Studies at The Ulster-American Folk Park</div><br /><a href='http://www.qub.ac.uk/cms'><img border='0' src='imagens/AEMI/cms.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(54.606395,-7.302279),red_icon, m26),nm26);
+ 
+
+   	nm27 = "Utvandring og norsk-amerikansk"	
+        m27 = nm27 + "<br /><div style='font-size: 8px;'>Norwegian-American Collection, National Library of Norway, Oslo division</div><br /><a href='http://www.nb.no/fag/temaer/utvandring_og_norsk_amerikansk_historie'><img border='0' src='imagens/AEMI/naa.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(59.90955592449003,10.741281509399414),red_icon, m27),nm27);
+ 	
+	
+   	nm28 = "Norsk Utvandrermuseum"	
+        m28 = nm28 + "<br /><div style='font-size: 8px;'>The Norwegian Emigrant Museum</div><a href='http://www.museumsnett.no/emigrantmuseum/'><img border='0' src='imagens/AEMI/norsk.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(60.74731825809628,11.138548851013184),red_icon, m28),nm28);
+ 
+
+   	nm29 = "Fylkesarkivet i Sogn og Fjordane"	
+        m29 = nm29 + "<br /><a href='http://fylkesarkiv.no/'><img border='0' src='imagens/AEMI/fylkesarkiv.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(61.179336100033055,6.8547821044921875),red_icon, m29),nm29);
+
+	
+   	nm30 = "Det norske utvandrersenteret"	
+	m30 = nm30 + "<br /><div style='font-size: 8px;'>The Norwegian Emigration Center</div><br /><a href='http://www.emigrationcenter.com/'><img border='0' src='imagens/AEMI/utva.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(58.972202619142955,5.72688102722168),red_icon, m30),nm30);
+ 
+
+   	nm31 = "Instytut Amerykanistyki i Studiow Polonijnych"	
+        m31 = nm31 + "<br /><div style='font-size: 8px;'>Institute of American Studies and Polish Diaspora<br />Jagiellonian University</div><br /><a href='http://www.iaisp.uj.edu.pl/iaisp.jpg'><img border='0' src='imagens/AEMI/'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(50.06114751949724,19.938104152679443),red_icon, m31),nm31);
+ 
+
+   	nm32 = "National Museums of Scotland"	
+        m32 = nm32 + "<br /><a href='http://www.nms.ac.uk'><img border='0' src='imagens/AEMI/nms.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(55.947097,-3.189157),red_icon, m32),nm32);
+ 
+
+   	nm33 = "Scots Abroad"	
+        m33 = nm33 + "<br /><div style='font-size: 8px;'>National Library of Scotland</div><br /><a href='http://www.nls.uk/catalogues/online/scotsabroad/index.html'><img border='0' src='imagens/AEMI/nls.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(55.949032,-3.1917),red_icon, m33),nm33);
+ 
+
+   	nm34 = "Svenska Emigrantinstitutet"	
+        m34 = nm34 + "<br /><div style='font-size: 8px;'>The Swedish Emigrant Institute</div><br /><a href='http://www.swemi.se'><img border='0' src='imagens/AEMI/utvandrarnashus.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(56.87656,14.809785),red_icon, m34),nm34);
+ 
+
+   	nm35 = "Immigrant-Institutet"	
+        m35 = nm35 + "<br /><div style='font-size: 8px;'>The Swedish Emigrant Institute</div><br /><a href='http://www.immi.se/'><img border='0' src='imagens/AEMI/immi.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(57.711392,12.94841),red_icon, m35),nm35);
+ 
+
+   	nm36 = "Emigrantregistret"	
+        m36 = nm36 + "<br /><div style='font-size: 8px;'>The Kinship Center</div><br /><a href='http://www.emigrantregistret.s.se'><img border='0' src='imagens/AEMI/emigrantregistret.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(59.414343,13.502197),red_icon, m36),nm36);
+ 
+
+   	nm37 = "Elands Emigrantinstitut"	
+        m37 = nm37 + "<br /><div style='font-size: 8px;'>The Eland Islands Emigrant Institute</div><br /><a href='http://www.eminst.net'><img border='0' src='imagens/AEMI/eminst.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(60.09774,19.934435),red_icon, m37),nm37);
+ 
+
+   	nm38 = "The Icelandic Emigration Center"	
+        m38 = nm38 + "<br /><a href='http://www.hofsos.is/'><img border='0' src='imagens/AEMI/hofsos.png'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(66.018018,-19.445801),red_icon, m38),nm38);
+ 
+
+	nm38 = "Memorial do Imigrante"	
+        m38 = nm38 + "<br /><a href='http://www.memorialdoimigrante.sp.gov.br'><img border='0' src='imagens/AEMI/memorial.gif'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(-23.545734,-46.608725),red_icon, m38),nm38);
+ 
+
+   	nm39 = "Pier 21 Immigration Museum"	
+        m39 = nm39 + "<br /><a href='http://www.pier21.ca'><img border='0' src='imagens/AEMI/pier21.png'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(44.638307,-63.565693),red_icon, m39),nm39);
+ 
+	
+   	nm40 = "Ellis Island Immigration Museum"	
+        m40 = nm40 + "<br /><a href='http://www.nps.gov/stli'><img border='0' src='imagens/AEMI/eiem.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(40.692483,-74.045277),red_icon, m40),nm40);
+ 
+
+   	nm41 = "Lower East Side Tenement Museum"	
+        m41 = nm41 + "<br /><a href='http://www.tenement.org/'><img border='0' src='imagens/AEMI/tenement.jpg'></a>"
+        clusterer.AddMarker(createMarker(new GLatLng(40.718802,-73.990045),red_icon, m41),nm41);
+ 
+      }
+    }
+    
+    // Creates a marker at the given point with the given number label
+    function createMarker(point, icon, info) {
+        var marker = new GMarker(point,icon);
+        GEvent.addListener(marker, "click", function() {
+            marker.openInfoWindowHtml(info);
+        });
+    return marker;
+    }
+    
+    function createTabbedMarker(point, icon, info) {
+        var marker = new GMarker(point,icon);
+        GEvent.addListener(marker, "click", function() {
+            marker.openInfoWindowTabsHtml(info);
+        });
+    return marker;
+    }
+
+
+    //]]>
+    </script>
+
+</head>
+
+<body bgcolor="#040444" topmargin="0" leftmargin="0" link="#FFCC00" vlink="#FFCC00" onload="load()" onunload="GUnload()">
+
+<p style='margin-bottom:0; margin-top:0' align="center">
+	<a href="index.htm">
+	<img border="0" src="imagens/entradap.gif" width="58" height="47"></a></p>
+        
+<div align="center">
+  <center>
+<div id="map" style="width: 750px; height: 400px"></div>
+  </center>
+</div>
+        
+</body>
+
+</html>
