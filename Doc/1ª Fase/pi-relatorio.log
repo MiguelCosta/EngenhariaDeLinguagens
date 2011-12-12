@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  9 DEC 2011 12:57
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  12 DEC 2011 00:23
 entering extended mode
  %&-line parsing enabled.
 **pi-relatorio.tex
@@ -403,25 +403,25 @@ File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 123.
-
-<./imagens/OAIS.png, id=130, 549.05125pt x 287.0725pt>
+ [4]
+<./imagens/OAIS.png, id=141, 549.05125pt x 287.0725pt>
 File: ./imagens/OAIS.png Graphic file (type png)
 
-<use ./imagens/OAIS.png> [4] [5 <./imagens/OAIS.png (PNG copy)>]
-LaTeX Font Info:    Try loading font information for T1+aess on input line 201.
+<use ./imagens/OAIS.png> [5 <./imagens/OAIS.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for T1+aess on input line 209.
 
 
 (/usr/share/texmf-texlive/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 ) [6] (./pi-relatorio.aux) ) 
 Here is how much of TeX's memory you used:
- 6121 strings out of 495014
- 87241 string characters out of 1180707
+ 6127 strings out of 495014
+ 87335 string characters out of 1180707
  168760 words of memory out of 3000000
  9121 multiletter control sequences out of 15000+50000
  40821 words of font info for 81 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 38i,8n,39p,591b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,8n,39p,591b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.4} has been r
 eferenced but does not exist, replaced by a fixed one
 
@@ -433,6 +433,24 @@ pdfTeX warning (dest): name{Hfootnote.2} has been referenced but does not exist
 
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.2.3} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.2.2} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.2.1} has been referenced but does n
+ot exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.4.1} has been referenced but does not ex
+ist, replaced by a fixed one
 
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share
 /texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texl
@@ -446,9 +464,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8
 .pfb>
-Output written on pi-relatorio.pdf (7 pages, 310856 bytes).
+Output written on pi-relatorio.pdf (7 pages, 311966 bytes).
 PDF statistics:
- 201 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
+ 208 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
  150 words of extra memory for PDF output out of 10000 (max. 10000000)
 
