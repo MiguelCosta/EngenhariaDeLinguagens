@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<works>
+    <work>
+        <descriptiveMetadata>
+            <objectWorkTypeWrap>
+                <objectWorkType>gravura</objectWorkType>
+            </objectWorkTypeWrap>
+            <titleWrap>
+                <titleSet>
+                    <title>gravura</title>
+                </titleSet>
+            </titleWrap>
+            <displayCreator>Gomes Ferreira</displayCreator>
+            <indexingCreatorWrap>
+                <indexingCreatorSet>
+                    <nameCreatorSet>
+                        <nameCreator>Gomes Ferreira</nameCreator>
+                    </nameCreatorSet>
+                    <roleCreator/>
+                </indexingCreatorSet>
+            </indexingCreatorWrap>
+            <displayMeasurements>7,5 x 6,4 cm</displayMeasurements>
+            <indexingMeasurementsWrap>
+                <indexingMeasurementsSet>
+                    <measurementsSet value="7.5" unit="cm" type="largura"/>
+                    <measurementsSet value="6.4" unit="cm" type="altura"/>
+                </indexingMeasurementsSet>
+            </indexingMeasurementsWrap>
+            <displayMaterialsTech/>
+            <displayStateEditionWrap>
+                <displayState/>
+                <displayEdition/>
+                <sourceStateEdition/>
+            </displayStateEditionWrap>
+            <displayCreationDate>09-02-1928</displayCreationDate>
+            <indexingDatesWrap>
+                <indexingDatesSet>
+                    <earliestDate>1928</earliestDate>
+                    <latestDate>1928</latestDate>
+                </indexingDatesSet>
+            </indexingDatesWrap>
+            <locationWrap>
+                <locationSet>
+                    <locationName/>
+                    <workID/>
+                </locationSet>
+            </locationWrap>
+            <descriptiveNoteWrap>
+                <descriptiveNoteSet>
+                    <descriptiveNote>Humor ilustrado</descriptiveNote>
+                </descriptiveNoteSet>
+            </descriptiveNoteWrap>
+            <provenanceWrap>
+                <provenanceSet>
+                    <provenanceDescription>"O Desforço"</provenanceDescription>
+                    <provenanceTranferModeSet>
+                        <transferMode/>
+                    </provenanceTranferModeSet>
+                    <provenanceCost/>
+                    <provenanceLegalStatus/>
+                    <provenanceOwnerSet>
+                        <provenanceOwner/>
+                        <provenanceOwnerRole/>
+                    </provenanceOwnerSet>
+                    <provenanceOwnershipPlace/>
+                    <displayProvenanceOwnershipDate/>
+                    <indexingProvenanceOwnershipDatesWrap>
+                        <indexingProvenanceOwnershipDatesSet>
+                            <earliestDate/>
+                            <latestDate/>
+                        </indexingProvenanceOwnershipDatesSet>
+                    </indexingProvenanceOwnershipDatesWrap>
+                </provenanceSet>
+            </provenanceWrap>
+        </descriptiveMetadata>
+        <administrativeMetadata>
+            <recordWrap>
+                <recordID>GI0033</recordID>
+            </recordWrap>
+        </administrativeMetadata>
+    </work>
+</works>
