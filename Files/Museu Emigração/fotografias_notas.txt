@@ -1,0 +1,15 @@
+
+Campos que vão ter as fotografias:
+
+Elemento 1 Object/Work TypeWrapper
+
+Elemento 1.1 Object/Work Type:  
+	O valor pertence a um volcanulário controlado e é recomendado que seja a AAT
+	No nosso contexto deve ficar algo como:
+
+<cdwalite:objectWorkTypeWrap>
+	<cdwalite:objectWorkType termsource="AAT">
+		Fotografia
+	</cdwalite:objectWorkType>
+</cdwalite:objectWorkTypeWrap>
+
