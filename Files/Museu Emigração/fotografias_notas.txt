@@ -1,15 +1,207 @@
 
-Campos que vão ter as fotografias:
+*** Campos que vão ter as fotografias: ***
 
-Elemento 1 Object/Work TypeWrapper
+	* Elemento 1 Object/Work TypeWrapper
 
-Elemento 1.1 Object/Work Type:  
-	O valor pertence a um volcanulário controlado e é recomendado que seja a AAT
-	No nosso contexto deve ficar algo como:
+		Elemento 1.1 Object/Work Type: obrigatório  
+			O valor pertence a um volcabulário controlado e é recomendado que seja a AAT
+			No nosso contexto deve ficar algo como:
 
-<cdwalite:objectWorkTypeWrap>
-	<cdwalite:objectWorkType termsource="AAT">
-		Fotografia
-	</cdwalite:objectWorkType>
-</cdwalite:objectWorkTypeWrap>
+			<cdwalite:objectWorkTypeWrap>
+				<cdwalite:objectWorkType termsource="AAT">
+					Fotografia
+				</cdwalite:objectWorkType>
+			</cdwalite:objectWorkTypeWrap>
 
+	* Elemento 2 Title Wrapper
+		2.1 Title Set
+			2.1.1 Title - obrigatório
+				Titles, identifying phrases, or names given to a work of art,
+				architecture, or material culture. For complex works, series, or collections, the
+				title may refer to a discrete unit within the larger entity (a print from a series,
+				a photograph in a collection, a panel from a fresco cycle, a building within a
+				temple complex) or it may identify only the larger entity (series, collection,
+				cycle) itself.
+			
+			No nosso caso deviamos ter algo como:
+			<cdwalite:titleWrap>
+				<cdwalite:titleSet>
+					<cdwalite:title>
+						Fotografia de Fafe 
+					</cdwalite:title> 
+				</cdwalite:titleSet>
+			<cdwalite:titleWrap>
+
+			No entanto, o titulo que as fotografias tem neste momento é por exemplo: 1111/4
+			funciona como se fosse o ID da fotografia...
+			É uma dúvida para tirar com a senhora
+			
+	* Elemento 3 Display Creator
+		É obrigatório e correspode ao campo "Autor/Produção" do ficheiro do word,
+		por isso vamo ter algo como:
+		<cdwalite:displayCreator>
+			Gérald Bloncourt
+		</cdwalite:displayCreator>
+		
+	* Elemento 4 Indexin Creator Wrapper
+		Aqui é os campos de indexação, é obrigatório mas não sei até que ponto vamos ter informação
+		para preenche-los, contêm toda a informação do criador da peça, o ideal é termos algo como:
+		<cdwalite:indexingCreatorWrap>
+			<cdwalite:indexingCreatorSet>
+				<cdwalite:nameCreatorSet> 
+					<cdwalite:nameCreator type="personalName" termsource="ULAN"> 
+						Erhart, Michel 
+					</cdwalite:nameCreator>
+				</cdwalite:nameCreatorSet>
+				<cdwalite:nationalityCreator>
+					German 
+				</cdwalite:nationalityCreator>
+				<cdwalite:vitalDatesCreator birthdate="1435" deathdate="1525"> 
+					ca. 1440-after 1522
+				</cdwalite:vitalDatesCreator>
+				<cdwalite:roleCreator>
+					sculptor
+				</cdwalite:roleCreator>
+			</cdwalite:indexingCreatorSet>
+		</cdwalite:indexingCreatorWrap>
+		
+		Nas fotografias, é quase sempre o Gérald Bloncourt, por isso, nestes
+		dois links (http://en.wikipedia.org/wiki/Gerald_Bloncourt e http://www.bloncourt.net/)
+		devemos conseguir preencher todos os detalhes sobre ele.
+		
+	* Elemento 5 Display Measurements
+		Apesar de não ser obrigatório temos esta informação, logo vamos ter algo como:
+		<cdwalite:displayMeasurements>
+			42 x 59,5 cm
+		</cdwalite:displayMeasurements>
+		
+	* Elemento 6 Indexing Measurements Wrapper
+		Indexa os valores do campo anterior (5), não deve ser complicado preencher isto
+		com o mais basico como:
+		<cdwalite:indexingMeasurementsWrap>
+			<cdwalite:indexingMeasurementsSet>
+				<cdwalite:measurementsSet value="42" unit="cm" type="height">
+				</cdwalite:measurementsSet> 
+				<cdwalite:measurementsSet value="59.5" unit="cm" type="width"> 
+				</cdwalite:measurementsSet>
+			</cdwalite:indexingMeasurementsSet>
+		</cdwalite:indexingMeasurementsWrap>
+		
+	* Elemento 7 Display Materials/Techniques
+		Aqui penso que é no caso da fotografias: "Fografia P/B", apensar de este estar
+		no word no campo chamado Objecto/Documento
+		Por isso fica:
+		<cdwalite:displayMaterialsTech>
+			Fotografia P/B
+		</cdwalite:displayMaterialsTech>
+		
+		 ou apenas
+		 
+		 <cdwalite:displayMaterialsTech>
+			Preto e Branco
+		</cdwalite:displayMaterialsTech>
+		
+		
+	* Elemento 8 Indexing Materials/Technique Wrapper
+		Fica:
+		<cdwalite:indexingMaterialsTechWrap>
+			<cdwalite:indexingMaterialsTechSet>
+				<cdwalite:termMaterialsTech>preto</cdwalite:termMaterialsTech>
+				<cdwalite:termMaterialsTech>branco</cdwalite:termMaterialsTech>
+			</cdwalite:indexingMaterialsTechSet>
+		</cdwalite:indexingMaterialsTechWrap>
+		
+		ou apenas
+		
+		<cdwalite:indexingMaterialsTechWrap>
+			<cdwalite:indexingMaterialsTechSet>
+				<cdwalite:termMaterialsTech>preto e branco</cdwalite:termMaterialsTech>
+			</cdwalite:indexingMaterialsTechSet>
+		</cdwalite:indexingMaterialsTechWrap>
+		
+	* Elemento 9 Display State/Edition Wrapper
+		Não temos informação para este campo
+	
+	* Elemento 10 Style Wrapper
+		As fotografias são todas do mesmo estilo e época (1960/1970)
+		Agora não sei é o valor que vamos ter, mas como exemplo temos:
+		<cdwalite:styleWrap>
+			<cdwalite:style>
+				Renaissance
+			</cdwalite:style>
+		</cdwalite:styleWrap>
+		
+	* Elemento 11 Element: Culture Wrapper
+		Não é obrigatório, no entanto podemos adicionar e fica:
+		<cdwalite:cultureWrap>
+			<cdwalite:culture>
+				Francesa
+			</cdwalite:culture>
+		</cdwalite:cultureWrap>
+
+
+	* Elemento 12 Display Creation Date
+		É obrigatório, agora não sei se corresponde à datação ou à data que aparece na legenda...
+		Data da Legenda!
+		Fica:
+		<cdwalite:displayCreationDate>
+			1966
+		</cdwalite:displayCreationDate>
+	
+	* Elemento 13 Indexing Dates Wrapper
+		<cdwalite:indexingDatesWrap>
+			<cdwalite:indexingDateSet>
+				<cdwalite:dateQualifier>
+					Impressa
+				</cdwalite:dateQualifier>
+				<cdwalite:earliestDate>
+					2009</cdwalite:earliestDate>
+				</cdwalite:indexingDatesSet>
+			<cdwalite:indexingDatesSet>
+			cdwalite:indexingDateSet>
+				<cdwalite:dateQualifier>
+					Tirada
+				</cdwalite:dateQualifier>
+				<cdwalite:earliestDate>
+					1966
+				</cdwalite:earliestDate>
+				</cdwalite:indexingDatesSet>
+			<cdwalite:indexingDatesSet>
+		</cdwalite:indexingDatesWrap>
+
+	* Elemento 14 Location/Repository Wrapper
+		É obrigatório e deve ficar:
+		<cdwalite:locationWrap>
+			<cdwalite:locationSet>
+				<cdwalite:locationName type="currentRepository">
+					Museu da Emigração
+				</cdwalite:locationName>
+			</cdwalite:locationSet>
+		</cdwalite:locationWrap>
+	
+	* Elemento 16 Classification Wrapper
+		É opcional mas pode ficar:
+		<cdwalite:classificationWrap>
+			<cdwalite:classification>
+				Fotografia
+			</cdwalite:classification>
+		</cdwalite:classificationWrap>
+
+
+	* Elemento 18 Inscriptions Wrapper
+		<cdwalite:inscriptionsWrap>
+			<cdwalite:inscriptions>
+				Emigrante português lendo um jornal do seu país num estaleiro de obras nos subúrbios de Paris, 1967. 
+			</cdwalite:inscriptions>
+		</cdwalite:inscriptionsWrap>
+
+	
+
+
+
+
+	
+
+
+		
+		
