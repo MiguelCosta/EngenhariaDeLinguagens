@@ -67,7 +67,6 @@ sub wordToXML {
 }
 
 wordToXML();
-#readTxt();
 
 __END__
 

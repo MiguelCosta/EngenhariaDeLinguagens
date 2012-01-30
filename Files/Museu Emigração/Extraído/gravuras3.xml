@@ -10,7 +10,6 @@
             <titleWrap>
                 <titleSet>
                     <title>gravura</title>
-                    <sourceTitle></sourceTitle>
                 </titleSet>
             </titleWrap>
             <displayCreator>Gomes Ferreira</displayCreator>
@@ -18,87 +17,37 @@
                 <indexingCreatorSet>
                     <nameCreatorSet>
                         <nameCreator>Gomes Ferreira</nameCreator>
-                        <sourceNameCreator></sourceNameCreator>
                     </nameCreatorSet>
-                    <nationalityCreator></nationalityCreator>
-                    <vitalDatesCreator></vitalDatesCreator>
-                    <genderCreator></genderCreator>
-                    <roleCreator></roleCreator>
-                    <attributionQualifierCreator></attributionQualifierCreator>
-                    <extentCreator></extentCreator>
+                    <roleCreator/>
                 </indexingCreatorSet>
             </indexingCreatorWrap>
             <displayMeasurements>7,5 x 6,4 cm</displayMeasurements>
             <indexingMeasurementsWrap>
                 <indexingMeasurementsSet>
-                    <measurementsSet xmlns:ns3="http://www.getty.edu/CDWA/CDWALite" ns3:value="7.5" ns3:unit="cm" ns3:type="largura"/>
-                    <measurementsSet xmlns:ns3="http://www.getty.edu/CDWA/CDWALite" ns3:value="6.4" ns3:unit="cm" ns3:type="altura"/>
-                    <extentMeasurements></extentMeasurements>
-                    <qualifierMeasurements></qualifierMeasurements>
-                    <formatMeasurements></formatMeasurements>
-                    <shapeMeasurements></shapeMeasurements>
-                    <scaleMeasurements></scaleMeasurements>
+                    <measurementsSet xmlns:ns3="http://www.getty.edu/CDWA/CDWALite" ns3:value="7.5"
+                        ns3:unit="cm" ns3:type="largura"/>
+                    <measurementsSet xmlns:ns3="http://www.getty.edu/CDWA/CDWALite" ns3:value="6.4"
+                        ns3:unit="cm" ns3:type="altura"/>
                 </indexingMeasurementsSet>
             </indexingMeasurementsWrap>
-            <displayMaterialsTech></displayMaterialsTech>
-            <indexingMaterialsTechWrap>
-                <indexingMaterialsTechSet>
-                    <termMaterialsTech></termMaterialsTech>
-                    <extentMaterialsTech></extentMaterialsTech>
-                    <sourceMaterialsTech></sourceMaterialsTech>
-                </indexingMaterialsTechSet>
-            </indexingMaterialsTechWrap>
-            <displayStateEditionWrap>
-                <displayState></displayState>
-                <displayEdition></displayEdition>
-                <sourceStateEdition></sourceStateEdition>
-            </displayStateEditionWrap>
-            <styleWrap>
-                <style></style>
-            </styleWrap>
-            <cultureWrap>
-                <culture></culture>
-            </cultureWrap>
+            <displayMaterialsTech/>
             <displayCreationDate>09-02-1928</displayCreationDate>
             <indexingDatesWrap>
                 <indexingDatesSet>
-                    <dateQualifier></dateQualifier>
                     <earliestDate>1928</earliestDate>
                     <latestDate>1928</latestDate>
                 </indexingDatesSet>
             </indexingDatesWrap>
             <locationWrap>
                 <locationSet>
-                    <locationName></locationName>
-                    <workID></workID>
+                    <locationName/>
                 </locationSet>
             </locationWrap>
-            <indexingSubjectWrap>
-                <indexingSubjectSet>
-                    <extentSubject></extentSubject>
-                    <subjectTerm></subjectTerm>
-                </indexingSubjectSet>
-            </indexingSubjectWrap>
-            <classWrap>
-                <classification></classification>
-            </classWrap>
             <descriptiveNoteWrap>
                 <descriptiveNoteSet>
                     <descriptiveNote>Humor ilustrado</descriptiveNote>
-                    <sourceDescriptiveNote></sourceDescriptiveNote>
                 </descriptiveNoteSet>
             </descriptiveNoteWrap>
-            <inscriptionsWrap>
-                <inscriptions></inscriptions>
-            </inscriptionsWrap>
-            <relatedWorksWrap>
-                <relatedWorkSet>
-                    <linkRelatedWork></linkRelatedWork>
-                    <relatedWorkRelType></relatedWorkRelType>
-                    <labelRelatedWork></labelRelatedWork>
-                    <locRelatedWork></locRelatedWork>
-                </relatedWorkSet>
-            </relatedWorksWrap>
             <provenanceWrap>
                 <provenanceSet>
                     <provenanceDescription>"O Desforço"</provenanceDescription>
@@ -106,38 +55,10 @@
             </provenanceWrap>
         </descriptiveMetadata>
         <administrativeMetadata>
-            <rightsWork></rightsWork>
             <recordWrap>
                 <recordID>GI0033</recordID>
-                <recordType></recordType>
-                <recordSource></recordSource>
-                <recordInfoWrap>
-                    <recordInfoID></recordInfoID>
-                    <recordInfoLink></recordInfoLink>
-                    <recordRelID></recordRelID>
-                    <recordMetadataLoc></recordMetadataLoc>
-                    <recordMetadataDate></recordMetadataDate>
-                </recordInfoWrap>
+                <recordType/>
             </recordWrap>
-            <resourceWrap>
-                <resourceSet>
-                    <linkResource></linkResource>
-                    <resourceID></resourceID>
-                    <resourceRelType></resourceRelType>
-                    <resourceType></resourceType>
-                    <rightsResource></rightsResource>
-                    <resourceViewDescription></resourceViewDescription>
-                    <resourceViewType></resourceViewType>
-                    <resourceViewSubjectTerm></resourceViewSubjectTerm>
-                    <resourceViewDate></resourceViewDate>
-                    <resourceSource></resourceSource>
-                    <linkRelatedResource>
-                        <relatedResourceRelType></relatedResourceRelType>
-                        <labelRelatedResource></labelRelatedResource>
-                    </linkRelatedResource>
-                    <resourceMetadataLoc></resourceMetadataLoc>
-                </resourceSet>
-            </resourceWrap>
         </administrativeMetadata>
     </cdwalite>
 </cdwaliteWrap>
