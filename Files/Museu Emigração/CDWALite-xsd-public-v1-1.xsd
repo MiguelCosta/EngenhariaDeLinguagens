@@ -58,6 +58,7 @@
                                 <xsd:element ref="cdwalite:descriptiveNoteWrap" minOccurs="0"/>
                                 <xsd:element ref="cdwalite:inscriptionsWrap" minOccurs="0"/>
                                 <xsd:element ref="cdwalite:relatedWorksWrap" minOccurs="0"/>
+                                <xsd:element ref="cdwalite:provenanceWrap" minOccurs="0"/>
                         </xsd:sequence>
                 </xsd:complexType>
         </xsd:element>
@@ -950,6 +951,121 @@
                 <xsd:complexType>
                         <xsd:sequence>
                                 <xsd:element ref="cdwalite:relatedWorkSet" minOccurs="0"
+                                        maxOccurs="unbounded"/>
+                        </xsd:sequence>
+                </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="provenanceOwner">
+                <xsd:annotation>
+                        <xsd:documentation></xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                        <xsd:simpleContent>
+                                <xsd:extension base="xsd:string">
+                                        <xsd:attribute ref="cdwalite:termsource"/>
+                                        <xsd:attribute ref="cdwalite:termsourceID"/>
+                                </xsd:extension>
+                        </xsd:simpleContent>
+                </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="provenanceOwnerRole">
+                <xsd:annotation>
+                        <xsd:documentation></xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                        <xsd:simpleContent>
+                                <xsd:extension base="xsd:string">
+                                        <xsd:attribute ref="cdwalite:termsource"/>
+                                        <xsd:attribute ref="cdwalite:termsourceID"/>
+                                </xsd:extension>
+                        </xsd:simpleContent>
+                </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="indexingProvenanceOwnershipDatesSet">
+                <xsd:annotation>
+                        <xsd:documentation></xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                        <xsd:sequence>
+                                <xsd:element ref="cdwalite:earliestDate"/>
+                                <xsd:element ref="cdwalite:latestDate"/>
+                        </xsd:sequence>
+                </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="provenanceDisplayOwnershipDate" type="xsd:string">
+                <xsd:annotation>
+                        <xsd:documentation></xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="provenanceOwnershipPlace">
+                <xsd:annotation>
+                        <xsd:documentation></xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                        <xsd:simpleContent>
+                                <xsd:extension base="xsd:string">
+                                        <xsd:attribute ref="cdwalite:termsource"/>
+                                        <xsd:attribute ref="cdwalite:termsourceID"/>
+                                </xsd:extension>
+                        </xsd:simpleContent>
+                </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="provenanceOwnerSet">
+                <xsd:annotation>
+                        <xsd:documentation/>
+                </xsd:annotation>
+                <xsd:complexType>
+                        <xsd:sequence>
+                                <xsd:element ref="cdwalite:provenanceOwner" minOccurs="0"/>
+                                <xsd:element ref="cdwalite:provenanceOwnerRole" minOccurs="0"/>
+                        </xsd:sequence>
+                </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="provenanceLegalStatus" type="xsd:string">
+                <xsd:annotation>
+                        <xsd:documentation></xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="provenanceCost" type="xsd:string">
+                <xsd:annotation>
+                        <xsd:documentation></xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="provenanceTransferMode" type="xsd:string">
+                <xsd:annotation>
+                        <xsd:documentation></xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="provenanceDescription" type="xsd:string">
+                <xsd:annotation>
+                        <xsd:documentation></xsd:documentation>
+                </xsd:annotation>
+        </xsd:element>
+        <xsd:element name="provenanceSet">
+                <xsd:annotation>
+                        <xsd:documentation/>
+                </xsd:annotation>
+                <xsd:complexType>
+                        <xsd:sequence>
+                                <xsd:element ref="cdwalite:provenanceDescription" minOccurs="0"/>
+                                <xsd:element ref="cdwalite:provenanceTransferMode" minOccurs="0" maxOccurs="unbounded"/>
+                                <xsd:element ref="cdwalite:provenanceCost" minOccurs="0"/>
+                                <xsd:element ref="cdwalite:provenanceLegalStatus" minOccurs="0"/>
+                                <xsd:element ref="cdwalite:provenanceOwnerSet" minOccurs="0"/>
+                                <xsd:element ref="cdwalite:provenanceOwnershipPlace" minOccurs="0"/>
+                                <xsd:element ref="cdwalite:provenanceDisplayOwnershipDate" minOccurs="0"/>
+                                <xsd:element ref="cdwalite:indexingProvenanceOwnershipDatesSet" minOccurs="0"/>
+                        </xsd:sequence>
+                </xsd:complexType>
+        </xsd:element>
+        <xsd:element name="provenanceWrap">
+                <xsd:annotation>
+                        <xsd:documentation>A wrapper for Related Works
+                                information.</xsd:documentation>
+                </xsd:annotation>
+                <xsd:complexType>
+                        <xsd:sequence>
+                                <xsd:element ref="cdwalite:provenanceSet" minOccurs="0"
                                         maxOccurs="unbounded"/>
                         </xsd:sequence>
                 </xsd:complexType>
