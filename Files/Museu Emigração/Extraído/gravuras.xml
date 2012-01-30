@@ -4890,8 +4890,8 @@
     </gravura>
     <gravura>
         <denominacao_titulo>Zincogravura</denominacao_titulo>
-        <autor_producao/>
-        <datacao>Manuel Cirrne</datacao>
+        <autor_producao>Manuel Cirrne</autor_producao>
+        <datacao/>
         <dimensoes>9,1 x 6,3 cm</dimensoes>
         <n_inventario>GI0474</n_inventario>
         <descricao>Palacete João Alves de Freitas</descricao>
@@ -6599,7 +6599,7 @@
         <dimensoes>8,1x 11,7 cm</dimensoes>
         <n_inventario>GI0640</n_inventario>
         <descricao>Zé Povinho; "O Desforço"</descricao>
-        <impressa>"Almanaque Ilustrado" 1919:2; 28/ 03/1946</impressa>
+        <impressa>"Almanaque Ilustrado" 1919:2; 28/03/1946</impressa>
         <proveniencia_incorporacao>"O Desforço"</proveniencia_incorporacao>
     </gravura>
     <gravura>
