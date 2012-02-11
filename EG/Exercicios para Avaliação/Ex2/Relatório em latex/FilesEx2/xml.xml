@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+   <attributeGrammar name="sum_list">
+      <symbols>
+         <terminals>
+            <terminal id="lbrace">[</terminal>
+            <terminal id="rbrace">]</terminal>
+            <terminal id="comma">,</terminal>
+            <terminal id="int">[0-9]</terminal>
+            <terminal id="char">[a-zA-Z]</terminal>
+            <terminal id="ignore">[\0x09\0x0A\0x0D\ ]+</terminal>
+         </terminals>
+         <nonterminals>
+            <nonterminal id="Lista" />
+            <nonterminal id="Elementos" />
+            <nonterminal id="Elemento" />
+         </nonterminals>
+         <start nt="Lista" />
+      </symbols>
+      <attributesDecl>
+         <declaration>
+            <attribute id="Lista.result" type="java.util.ArrayList" class="SyntAttribute" />
+         </declaration>
+         <declaration>
+            <attribute id="Elementos.out_back" type="int" class="SyntAttribute" />
+            <attribute id="Elementos.out_seq_char" type="int" class="SyntAttribute" />
+            <attribute id="Elementos.out_sum" type="int" class="SyntAttribute" />
+            <attribute id="Elementos.out_result" type="java.util.ArrayList" class="SyntAttribute" />
+            <attribute id="Elementos.in_seq_char" type="int" class="InhAttribute" />
+            <attribute id="Elementos.in_result" type="java.util.ArrayList" class="InhAttribute" />
+            <attribute id="Elementos.in_sum" type="int" class="InhAttribute" />
+            <attribute id="Elementos.in_back" type="int" class="InhAttribute" />
+         </declaration>
+         <declaration>
+            <attribute id="Elemento.out_back" type="int" class="SyntAttribute" />
+            <attribute id="Elemento.out_seq_char" type="int" class="SyntAttribute" />
+            <attribute id="Elemento.out_result" type="java.util.ArrayList" class="SyntAttribute" />
+            <attribute id="Elemento.out_sum" type="int" class="SyntAttribute" />
+            <attribute id="Elemento.in_seq_char" type="int" class="InhAttribute" />
+            <attribute id="Elemento.in_back" type="int" class="InhAttribute" />
+            <attribute id="Elemento.in_result" type="java.util.ArrayList" class="InhAttribute" />
+            <attribute id="Elemento.in_sum" type="int" class="InhAttribute" />
+         </declaration>
+         <declaration>
+            <attribute id="int.value" type="int" class="IntrinsicValueAttribute" />
+         </declaration>
+         <declaration>
+            <attribute id="char.char" type="char" class="IntrinsicValueAttribute" />
+         </declaration>
+      </attributesDecl>
+      <semanticProds>
+         <semanticProd name="Lista-Elementos">
+            <lhs nt="Lista" />
+            <rhs>
+               <element symbol="lbrace" />
+               <element symbol="Elementos" />
+               <element symbol="rbrace" />
+            </rhs>
+            <computations>
+               <computation name="result">
+                  <assignedAttribute att="Lista.result" position="0" />
+                  <operation returnType="java.util.ArrayList">
+                     <argument att="Elementos.out_result" position="2" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="init">
+                  <assignedAttribute att="Elementos.in_sum" position="2" />
+                  <operation returnType="int">
+                     
+                     <modus> 0 </modus>
+                  </operation>
+               </computation>
+               <computation name="init">
+                  <assignedAttribute att="Elementos.in_result" position="2" />
+                  <operation returnType="java.util.ArrayList">
+                     
+                     <modus> new ArrayList<Integer>() </modus>
+                  </operation>
+               </computation>
+               <computation name="init">
+                  <assignedAttribute att="Elementos.in_back" position="2" />
+                  <operation returnType="int">
+                     
+                     <modus> -1 </modus>
+                  </operation>
+               </computation>
+               <computation name="init">
+                  <assignedAttribute att="Elementos.in_seq_char" position="2" />
+                  <operation returnType="int">
+                     
+                     <modus> 0 </modus>
+                  </operation>
+               </computation>
+            </computations>
+         </semanticProd>
+         <semanticProd name="Elementos-Elemento">
+            <lhs nt="Elementos" />
+            <rhs>
+               <element symbol="Elemento" />
+            </rhs>
+            <computations>
+               <computation name="in_out">
+                  <assignedAttribute att="Elemento.in_seq_char" position="1" />
+                  <operation returnType="int">
+                     <argument att="Elementos.in_seq_char" position="0" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_out">
+                  <assignedAttribute att="Elemento.in_sum" position="1" />
+                  <operation returnType="int">
+                     <argument att="Elementos.in_sum" position="0" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_out">
+                  <assignedAttribute att="Elemento.in_back" position="1" />
+                  <operation returnType="int">
+                     <argument att="Elementos.in_back" position="0" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_out">
+                  <assignedAttribute att="Elemento.in_result" position="1" />
+                  <operation returnType="java.util.ArrayList">
+                     <argument att="Elementos.in_result" position="0" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_out">
+                  <assignedAttribute att="Elementos.out_result" position="0" />
+                  <operation returnType="java.util.ArrayList">
+                     <argument att="Elemento.out_result" position="1" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_out">
+                  <assignedAttribute att="Elementos.out_sum" position="0" />
+                  <operation returnType="int">
+                     <argument att="Elemento.out_sum" position="1" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_out">
+                  <assignedAttribute att="Elementos.out_seq_char" position="0" />
+                  <operation returnType="int">
+                     <argument att="Elemento.out_seq_char" position="1" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_out">
+                  <assignedAttribute att="Elementos.out_back" position="0" />
+                  <operation returnType="int">
+                     <argument att="Elemento.out_back" position="1" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+            </computations>
+         </semanticProd>
+         <semanticProd name="Elementos-Elementos-Elemento">
+            <lhs nt="Elementos" />
+            <rhs>
+               <element symbol="Elementos" />
+               <element symbol="comma" />
+               <element symbol="Elemento" />
+            </rhs>
+            <computations>
+               <computation name="in_Elementos">
+                  <assignedAttribute att="Elementos.in_sum" position="1" />
+                  <operation returnType="int">
+                     <argument att="Elementos.in_sum" position="0" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_Elementos">
+                  <assignedAttribute att="Elementos.in_seq_char" position="1" />
+                  <operation returnType="int">
+                     <argument att="Elementos.in_seq_char" position="0" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_Elementos">
+                  <assignedAttribute att="Elementos.in_back" position="1" />
+                  <operation returnType="int">
+                     <argument att="Elementos.in_back" position="0" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_Elementos">
+                  <assignedAttribute att="Elementos.in_result" position="1" />
+                  <operation returnType="java.util.ArrayList">
+                     <argument att="Elementos.in_result" position="0" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_Elemento">
+                  <assignedAttribute att="Elemento.in_back" position="3" />
+                  <operation returnType="int">
+                     <argument att="Elementos.out_back" position="1" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_Elemento">
+                  <assignedAttribute att="Elemento.in_result" position="3" />
+                  <operation returnType="java.util.ArrayList">
+                     <argument att="Elementos.out_result" position="1" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_Elemento">
+                  <assignedAttribute att="Elemento.in_seq_char" position="3" />
+                  <operation returnType="int">
+                     <argument att="Elementos.out_seq_char" position="1" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="in_Elemento">
+                  <assignedAttribute att="Elemento.in_sum" position="3" />
+                  <operation returnType="int">
+                     <argument att="Elementos.out_sum" position="1" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="out_Elementos">
+                  <assignedAttribute att="Elementos.out_seq_char" position="0" />
+                  <operation returnType="int">
+                     <argument att="Elemento.out_seq_char" position="3" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="out_Elementos">
+                  <assignedAttribute att="Elementos.out_sum" position="0" />
+                  <operation returnType="int">
+                     <argument att="Elemento.out_sum" position="3" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="out_Elementos">
+                  <assignedAttribute att="Elementos.out_back" position="0" />
+                  <operation returnType="int">
+                     <argument att="Elemento.out_back" position="3" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="out_Elementos">
+                  <assignedAttribute att="Elementos.out_result" position="0" />
+                  <operation returnType="java.util.ArrayList">
+                     <argument att="Elemento.out_result" position="3" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+            </computations>
+         </semanticProd>
+         <semanticProd name="Elemento-int">
+            <lhs nt="Elemento" />
+            <rhs>
+               <element symbol="int" />
+            </rhs>
+            <computations>
+               <computation name="result">
+                  <assignedAttribute att="Elemento.out_result" position="0" />
+                  <operation returnType="java.util.ArrayList">
+                     <argument att="Elemento.in_result" position="0" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+               <computation name="sum">
+                  <assignedAttribute att="Elemento.out_sum" position="0" />
+                  <operation returnType="int">
+                     <argument att="Elemento.in_sum" position="0" />
+                     <argument att="Elemento.in_seq_char" position="0" />
+                     <argument att="int.value" position="1" />
+                     <modus> if($2>=3) return $1+$3; else return $1; </modus>
+                  </operation>
+               </computation>
+               <computation name="back">
+                  <assignedAttribute att="Elemento.out_back" position="0" />
+                  <operation returnType="int">
+                     
+                     <modus> 0 </modus>
+                  </operation>
+               </computation>
+               <computation name="seq_char">
+                  <assignedAttribute att="Elemento.out_seq_char" position="0" />
+                  <operation returnType="int">
+                     <argument att="Elemento.in_seq_char" position="0" />
+                     <modus> $1 </modus>
+                  </operation>
+               </computation>
+            </computations>
+         </semanticProd>
+         <semanticProd name="Elemento-str">
+            <lhs nt="Elemento" />
+            <rhs>
+               <element symbol="char" />
+            </rhs>
+            <computations>
+               <computation name="result">
+                  <assignedAttribute att="Elemento.out_result" position="0" />
+                  <operation returnType="java.util.ArrayList">
+                     <argument att="Elemento.in_result" position="0" />
+                     <argument att="Elemento.in_sum" position="0" />
+                     <argument att="Elemento.in_back" position="0" />
+                     <modus> if($3==0 && $2 > 0) return $1.add($2); else return $2; </modus>
+                  </operation>
+               </computation>
+               <computation name="sum">
+                  <assignedAttribute att="Elemento.out_sum" position="0" />
+                  <operation returnType="int">
+                     
+                     <modus> 0 </modus>
+                  </operation>
+               </computation>
+               <computation name="back">
+                  <assignedAttribute att="Elemento.out_back" position="0" />
+                  <operation returnType="int">
+                     
+                     <modus> 1 </modus>
+                  </operation>
+               </computation>
+               <computation name="seq_char">
+                  <assignedAttribute att="Elemento.out_seq_char" position="0" />
+                  <operation returnType="int">
+                     <argument att="Elemento.in_seq_char" position="0" />
+                     <argument att="Elemento.in_back" position="0" />
+                     <modus> if($2==1) return $1+1; else return 1; </modus>
+                  </operation>
+               </computation>
+            </computations>
+         </semanticProd>
+      </semanticProds>
+      <importations>
+         
+      </importations>
+      <functions>
+         
+      </functions>
+   </attributeGrammar>
+
+

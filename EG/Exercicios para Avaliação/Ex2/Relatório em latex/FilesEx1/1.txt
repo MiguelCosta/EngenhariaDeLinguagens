@@ -1,0 +1,56 @@
+P0: Lista -> '[' Elementos ']'
+Lista.result = Elementos.result
+Elementos.in_result = new ArrayList<Integer>();
+Elementos.in_sum = 0
+Elementos.in_sum_flag = 0
+
+P1: Elementos -> Elemento
+	Elemento.in_result = Elementos.in_result
+	Elemento.in_sum = Elementos.in_sum
+	Elemento.in_sum_flag = Elementos.in_sum_flag
+	Elementos.out_result = Elemento.out_result
+	Elementos.out_sum = Elemento.out_sum
+	Elementos.out_sum_flag = Elemento.out_sum_flag
+
+P2: Elementos0 -> Elemento ',' Elementos1
+	Elementos0.out_sum = Elementos1.out_sum
+	Elementos0.out_sum_flag = Elementos1.out_sum_flag
+	Elementos0.out_result = Elementos1.out_result
+	Elemento.in_sum = Elementos0.in_sum
+	Elemento.in_sum_flag = Elementos0.in_sum_flag
+	Elemento.in_result = Elementos0.in_result
+	Elementos1.in_sum = Elemento.out_sum
+	Elementos1.in_sum_flag = Elemento.out_sum_flag
+	Elementos1.in_result = Elemento.out_result	
+
+P3: Elemento -> int
+	Elemento.out_result = Elemento.in_result
+	Elemento.out_sum = function refresh_sum
+	Elemento.out_sum_flag = Elemento.in_sum_flag
+
+	$1 = Elemento.in_sum, $2 = Elemento.in_sum_flag, $3 = str.value
+	int refresh_sum($1,$2,$3){
+		if($2==1) return $1+$3; else return $1; 
+	}
+
+P4: Elemento -> str
+	Elemento.out_result = function refresh_result
+	Elemento.out_sum = function refresh_sum
+	Elemento.out_sum_flag = function refresh_sum_flag
+
+	$1 = Elemento.in_result, $2 = Elemento.in_sum, 
+	$3 = Elemento.in_sum_flag, $4 = str.value
+	ArrayList<Integer> refresh_result($1, $2, $3, $4){
+		if($4.equals("soma") && $3 == 1 && $2 > 0) 
+		return $1.add($2); else return $2;
+	}
+
+	$1 = Elemento.in_sum, $2 = str.value
+	int refresh_sum($1,$2){
+		if($2.equals("soma")) return 0; else return $1; 
+	}
+
+	$1 = Elemento.in_sum_flag, $2 = str.value
+	int refresh_sum_flag($1, $2){
+		if($2.equals("soma")) return 1; else return $1;
+	}

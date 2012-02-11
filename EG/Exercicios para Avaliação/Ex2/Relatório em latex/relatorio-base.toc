@@ -1,0 +1,45 @@
+\select@language {portuguese}
+\contentsline {section}{\numberline {1}Ambiente de Trabalho}{3}
+\contentsline {section}{\numberline {2}Ex1 - Descri\c c\~ao do problema}{3}
+\contentsline {section}{\numberline {3}Ex1 - Resolu\c c\~ao no papel}{3}
+\contentsline {subsection}{\numberline {3.1}Gram\'atica Independente do Contexto}{3}
+\contentsline {subsection}{\numberline {3.2}Gram\'atica de Atributos}{3}
+\contentsline {subsubsection}{\numberline {3.2.1}Atributos (A)}{4}
+\contentsline {subsubsection}{\numberline {3.2.2}Regra de C\'alculo (RC), Condi\c c\~ao Contextual (CC) e Regra de Tradu\c c\~ao (RT)}{4}
+\contentsline {section}{\numberline {4}Ex1 - Resolu\c c\~ao no VisualLisa}{5}
+\contentsline {subsection}{\numberline {4.1}Produ\c c\~oes}{5}
+\contentsline {subsubsection}{\numberline {4.1.1}Lista -> Elementos}{6}
+\contentsline {subsubsection}{\numberline {4.1.2}Elementos -> Elemento}{7}
+\contentsline {subsubsection}{\numberline {4.1.3}Elementos -> Elemento ',' Elementos}{8}
+\contentsline {subsubsection}{\numberline {4.1.4}Elemento -> int}{9}
+\contentsline {subsubsection}{\numberline {4.1.5}Elemento -> str}{9}
+\contentsline {subsection}{\numberline {4.2}Regras}{10}
+\contentsline {subsubsection}{\numberline {4.2.1}Lista -> Elementos}{10}
+\contentsline {subsubsection}{\numberline {4.2.2}Elementos -> Elemento}{11}
+\contentsline {subsubsection}{\numberline {4.2.3}Elementos -> Elemento ',' Elementos}{12}
+\contentsline {subsubsection}{\numberline {4.2.4}Elemento -> int}{14}
+\contentsline {subsubsection}{\numberline {4.2.5}Elemento -> str}{17}
+\contentsline {section}{\numberline {5}Ex2 - Descri\c c\~ao do Problema}{21}
+\contentsline {section}{\numberline {6}Ex2 - Resolu\c c\~ao no papel}{21}
+\contentsline {subsection}{\numberline {6.1}Gram\'atica Independente do Contexto}{21}
+\contentsline {subsection}{\numberline {6.2}Gram\'atica de Atributos}{21}
+\contentsline {subsubsection}{\numberline {6.2.1}Atributos (A)}{22}
+\contentsline {subsubsection}{\numberline {6.2.2}Regra de C\'alculo (RC), Condi\c c\~ao Contextual (CC) e Regra de Tradu\c c\~ao (RT)}{22}
+\contentsline {section}{\numberline {7}Ex2 - Resolu\c c\~ao no VisualLisa}{23}
+\contentsline {subsection}{\numberline {7.1}Produ\c c\~oes}{24}
+\contentsline {subsubsection}{\numberline {7.1.1}Lista -> Elementos}{24}
+\contentsline {subsubsection}{\numberline {7.1.2}Elementos -> Elemento}{25}
+\contentsline {subsubsection}{\numberline {7.1.3}Elementos -> Elementos ',' Elemento}{25}
+\contentsline {subsubsection}{\numberline {7.1.4}Elemento -> int}{26}
+\contentsline {subsubsection}{\numberline {7.1.5}Elemento -> char}{26}
+\contentsline {subsection}{\numberline {7.2}Regras}{26}
+\contentsline {subsubsection}{\numberline {7.2.1}Lista -> Elementos}{26}
+\contentsline {subsubsection}{\numberline {7.2.2}Elementos -> Elemento}{27}
+\contentsline {subsubsection}{\numberline {7.2.3}Elementos -> Elemento ',' Elementos}{28}
+\contentsline {subsubsection}{\numberline {7.2.4}Elemento -> int}{30}
+\contentsline {subsubsection}{\numberline {7.2.5}Elemento -> str}{32}
+\contentsline {section}{\numberline {8}Ex2 - Resultado Gerado pelo VisualLisa}{35}
+\contentsline {subsection}{\numberline {8.1}BNF Grammer}{35}
+\contentsline {subsection}{\numberline {8.2}Linguagem LISA}{35}
+\contentsline {subsection}{\numberline {8.3}XML}{37}
+\contentsline {section}{\numberline {9}Conclus\~oes}{44}

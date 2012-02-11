@@ -1,0 +1,419 @@
+\documentclass[a4paper]{article}
+\usepackage[portuguese]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyvrb}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{float}
+
+%\usepackage{aeguill}  % usefull for pdflatex
+\usepackage[compat2,a4paper,twosideshift=0mm,left=20mm,right=20mm,bottom=20mm,top=15mm]{geometry}
+
+\parindent=2em
+
+
+\title{Engenhraria Gramatical\\ Exercício para Avaliaçãoo n.º 1  }
+\author{Bruno Azevedo \and Miguel Costa a54746}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Este documento apresenta a resoluçãoo do Exercício Prático n.� 1 do m�dulo de Engenharia de Linguagens.
+O exerc�cio est� relacionado com Gram�tica Independente de Contexto e Gram�tica de Atributos para resolver um problema
+de c�lculo de elementos mistos (palavras e n�meros).
+\end{abstract}
+
+\newpage
+
+\parskip=0mm
+\tableofcontents
+\parskip=2mm
+
+\newpage
+
+\section{Ambiente de Trabalho}
+Tal como seria de esperar, um exerc�cio deste tipo � resolvido
+inicialmente em papel, para ser mais f�cil estruturar o problema e
+fazer uma boa abordagem � resolu��o que se ir� fazer.
+Depois de analisado e tomado notas no papel, passamos o exerc�cio
+para a ferramenta VisualLisa. Atrav�s desta ferramenta � poss�vel
+ter uma vis�o de como as s�mbolos de toda a linguagem est�o relacionados
+e como ``falam'' entre si.
+
+\section{Descri��o informal do problema}
+Era pretendido que se usasse o processador da Lista de Elementos Mistos (palavras e inteiros), 
+que foi desenvolvido nas aulas, e alterar a sua Gram�tica de Atributos (GA) de modo a calcular o 
+somat�rio de cada sequ�ncia se inteiros que surjam a seguir � palavra ''soma``.
+
+Exemplo:
+\begin{verbatim}
+        A frase ''[a,1,2,b,soma,3,a,4,soma,b,2,7]``
+        D� como resultado: [7,9]  
+\end{verbatim}
+
+
+\section{Resolu��o no papel}
+\subsection{Gram�tica Independente do Contexto}
+Observando o problema formul�mos a seguinte Gram�tica Independente do Contexto (GIC):
+\begin{verbatim}
+GIC = (T, N, S, P)
+S�mbolos terminais (T):         {str, int, '[' , ']', ','}
+S�mbolos n�o terminais (N):     {Lista, Elementos, Elemento}
+S�mbolo Inicial (S):            Lista
+Produ��es (P):
+                                P0: Lista       -> '[' Elementos ']'
+                                P1: Elementos   -> Elemento 
+                                P2:             | Elemento ',' Elementos
+                                P3: Elemento    -> int
+                                P4:             | str
+
+                                str = [a-zA-Z]+
+                                int = [0-9]+
+\end{verbatim}
+
+\subsection{Gram�tica de Atributos}
+ Depois de definida e analisada a GIC, definimos a Gram�tica de Atributos como:
+\verb|GA = (GIC, A, RC, CC, RT)|    
+
+Para resolver este problema, usamos 3 vari�veis:
+\begin{itemize}
+\item \verb|sum|
+\item \verb|sum_flag|
+\item \verb|result|
+\end{itemize}
+
+A vari�vel \verb|sum_flag| � inicializada a 0 e quando for encontrada a palavra ``soma'' 
+fica 1 e coloca a vari�vel \verb|sum| a 0, a partir deste momento quando encontrar um elemento inteiro 
+vai adiciona-lo a \verb|sum|.
+Result � um array que vai conter o resultado, ele � alterado quando se encontrada a palavra ``soma'' 
+e a vari�vel \verb|sum| � maior que 0, vai ficar: \verb|result = result.add(sum)|.
+
+Os s�mbolos n�o terminais podem ter atributos sintetizados e herdados, por isso, a forma que encontramos 
+para resolver o problema de saber quando adicionar ao array \verb|result| o sum foi dizer que os s�mbolos n�o terminais tem:
+\begin{itemize}
+ \item Atributos sintetizados
+ \subitem \verb|out_sum|
+ \subitem \verb|out_sum_flag|
+ \subitem \verb|out_result|
+ \item Atributos herdados
+ \subitem \verb|in_sum|
+ \subitem \verb|in_sum_flag|
+ \subitem \verb|in_result|
+\end{itemize}
+
+O que � pretendido com esta solu��o, � que o s�mbolo n�o terminal receba a informa��o do estado 
+atual (atributos in) e depois devolva a informa��o atualizada  (atributos out).
+
+\subsubsection{Atributos (A)}
+\begin{verbatim}
+Lista           result : ArrayList<Integer>
+
+Elementos       in_result : ArrayList<Integer>
+                out_result : ArrayList<Integer>
+                in_sum : int
+                out_sum : int
+                in_sum_flag : int
+                out_sum_flag :int
+
+Elemento        in_result : ArrayList<Integer>
+                out_result : ArrayList<Integer>
+                in_sum : int
+                out_sum : int
+                in_sum_flag : int
+                out_sum_flag :int
+\end{verbatim}
+
+\subsubsection{Regra de C�lculo (RC), Condi��o Contextual (CC) e Regra de Tradu��o (RT)}
+
+\VerbatimInput{1.txt}
+
+
+\section{Resolu��o no VisualLisa}
+Este problema foi tamb�m resolvido visualmente com a ajuda da ferramenta VisualLisa.
+Esta se��o mostra como ficou resolvido visualmente o exerc�cio.
+
+\subsection{Produ��es}
+As \verb|Produ��es (P)|:
+\begin{verbatim}
+                P0: Lista       -> '[' Elementos ']'
+                P1: Elementos   -> Elemento 
+                P2:             | Elemento ',' Elementos
+                P3: Elemento    -> int
+                P4:             | str
+\end{verbatim}
+
+da gram�tica independente de contexto que j� est� definida, 
+quando representada visualmente em VisualLisa fica como a Figura 1.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.7]{./imag1.png}
+ % imag1.png: 438x220 pixel, 72dpi, 15.45x7.76 cm, bb=0 0 438 220
+ \caption{Produ��es}
+\end{figure}
+
+\subsubsection{Lista -> Elementos}
+A produ��o Lista -> Elementos visualmente fica como mostra a Figura 2, 
+em que tamb�m j� aparecem os atributos de cada s�mbolo.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag2.png}
+ % imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+ \caption{Produ��o P0}
+\end{figure}
+
+
+\subsubsection{Elementos -> Elemento}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag3.png}
+ % imag3.png: 734x531 pixel, 72dpi, 25.89x18.73 cm, bb=0 0 734 531
+ \caption{Produ��o P1}
+\end{figure}
+
+
+\subsubsection{Elementos -> Elemento ',' Elementos}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.45]{./imag4.png}
+ \caption{Produ��o P2}
+\end{figure}
+
+
+\subsubsection{Elemento -> int}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag5.png}
+ \caption{Produ��o P3}
+\end{figure}
+
+\subsubsection{Elemento -> str}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag6.png}
+ \caption{Produ��o P4}
+\end{figure}
+
+
+\subsection{Regras}
+\subsubsection{Lista -> Elementos}
+\textbf{result}\\
+Esta � a regra que devolve o resultado da frase que for dada para calcular e 
+� calculada por: \\
+\verb|Lista.result = Elementos.result|
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag7.png}
+ \caption{Regra para Lista.result}
+\end{figure}
+
+\textbf{init}\\
+O que � feito nesta regra � inicializar as vari�veis \verb|in_sum| e \verb|in_sum_flag| a zero.
+\begin{verbatim}
+        Elementos.in_sum = 0
+        Elementos.in_sum_flag = 0 
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag8.png}
+ \caption{Regra para inicializar vari�veis}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.8]{./imag9.png}
+ \caption{Fun��o init}
+\end{figure}
+
+
+\subsubsection{Elementos -> Elemento}
+\textbf{in out}\\
+Aqui est�o as regras:
+\begin{verbatim}
+        Elemento.in_result = Elementos.in_result
+        Elemento.in_sum = Elementos.in_sum
+        Elemento.in_sum_flag = Elementos.in_sum_flag
+        Elementos.out_result = Elemento.out_result
+        Elementos.out_sum = Elemento.out_sum
+        Elementos.out_sum_flag = Elemento.out_sum_flag
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag10.png}
+ \caption{Regras in out}
+\end{figure}
+
+
+\subsubsection{Elementos -> Elemento ',' Elementos}
+\textbf{in}\\
+Regras:
+\begin{verbatim}
+        Elemento.in_sum = Elementos0.in_sum
+        Elemento.in_sum_flag = Elementos0.in_sum_flag
+        Elemento.in_result = Elementos0.in_result
+        Elementos1.in_sum = Elemento.out_sum
+        Elementos1.in_sum_flag = Elemento.out_sum_flag
+        Elementos1.in_result = Elemento.out_result
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.45]{./imag11.png}
+ \caption{Regras in}
+\end{figure}
+
+\textbf{out}\\
+\begin{verbatim}
+        Elementos0.out_sum = Elementos1.out_sum
+        Elementos0.out_sum_flag = Elementos1.out_sum_flag
+        Elementos0.out_result = Elementos1.out_result
+\end{verbatim}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.45]{./imag12.png}
+ \caption{Regras out}
+\end{figure}
+
+
+\subsubsection{Elemento -> int}
+\textbf{sum}\\
+\begin{verbatim}
+Elemento.out_sum = function refresh_sum 
+\end{verbatim}
+Em que a fun��o � definida por:
+\begin{verbatim}
+        $1 = Elemento.in_sum, $2 = Elemento.in_sum_flag, $3 = str.value
+        int refresh_sum($1,$2,$3){
+                if($2==1) return $1+$3; else return $1; 
+        }
+\end{verbatim}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag13.png}
+ \caption{Regras sum}
+\end{figure}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.8]{./imag14.png}
+ \caption{Fun��o refresh sum}
+\end{figure}
+
+
+\textbf{sum flag}\\
+\begin{verbatim}
+Elemento.out_sum_flag = Elemento.in_sum_flag
+\end{verbatim}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag15.png}
+ \caption{Regra sum flag}
+\end{figure}
+
+
+\textbf{result}\\
+\begin{verbatim}
+Elemento.out_result = Elemento.in_result
+\end{verbatim}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag16.png}
+ \caption{Regra result}
+\end{figure}
+
+
+
+\subsubsection{Elemento -> str}
+\textbf{sum flag}\\
+
+\begin{verbatim}
+Elemento.out_sum_flag = function refresh_sum_flag
+\end{verbatim}
+Em que a fun��o � definida por:
+\begin{verbatim}
+        $1 = Elemento.in_sum_flag, $2 = str.value
+        int refresh_sum_flag($1, $2){
+                if($2.equals("soma")) return 1; else return $1;
+        }
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag17.png}
+ \caption{Regra sum flag}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.8]{./imag18.png}
+ \caption{Fun��o refresh sum flag}
+\end{figure}
+
+\textbf{sum}\\
+\begin{verbatim}
+Elemento.out_sum = function refresh_sum
+\end{verbatim}
+Em que a fun��o � definida por:
+\begin{verbatim}
+        $1 = Elemento.in_sum, $2 = str.value
+        int refresh_sum($1,$2){
+                if($2.equals("soma")) return 0; else return $1; 
+        }
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag19.png}
+ \caption{Regra sum}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag20.png}
+ \caption{Fun��o refresh sum}
+\end{figure}
+
+
+
+\textbf{result}\\
+\begin{verbatim}
+Elemento.out_result = function refresh_result
+\end{verbatim}
+Em que a fun��o � definida por:
+\begin{verbatim}
+        $1 = Elemento.in_result, $2 = Elemento.in_sum, 
+        $3 = Elemento.in_sum_flag, $4 = str.value
+        ArrayList<Integer> refresh_result($1, $2, $3, $4){
+                if($4.equals("soma") && $3 == 1 && $2 > 0) 
+                return $1.add($2); else return $2;
+        }
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag21.png}
+ \caption{Regra result}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./imag22.png}
+ \caption{Fun��o refresh result}
+\end{figure}
+
+
+\section{Conclus�es}
+A resolu��o deste exerc�cio permitiu perceber melhor a forma como as linguagens 
+de estrutura para a resolu��o de determinados problemas. Depois de definida a GIC e 
+criando a GA, conseguimos realizar os c�lculos que eram pretendidos para a soma.
+Serviu de consolida��o da mat�ria dada at� agora no m�dulo de Engenharia de Linguagens,
+tendo em conta que conseguimos resolver o exerc�cio com sucesso.
+
+
+\end{document}

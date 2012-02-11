@@ -1,0 +1,62 @@
+P0: Lista -> ‘[‘ Elementos ‘]’
+	Lista.result = Elementos.result
+	Elementos.in_result = new ArrayList<Integer>();
+	Elementos.in_sum = 0
+	Elementos.in_back = -1
+	Elementos.in_seq_char = 0;
+
+P1: Elementos -> Elemento
+	Elemento.in_result = Elementos.in_result
+	Elemento.in_sum = Elementos.in_sum
+	Elemento.in_back = Elementos.in_back
+	Elemento.in_seq_char = Elementos.in_seq_char
+	Elementos.out_result = Elemento.out_result
+	Elementos.out_sum = Elemento.out_sum
+	Elementos.out_back = Elemento.out_back
+	Elementos.out_seq_char = Elemento.out_seq_char
+
+P2: Elementos0 -> Elementos1 ‘,’ Elemento
+	Elementos0.out_sum = Elemento.out_sum
+	Elementos0.out_back = Elemento.out_back
+	Elementos0.out_result = Elemento.out_result
+	Elementos0.out_seq_char = Elemento.out_seq_char
+	Elemento.in_sum = Elementos1.out_sum
+	Elemento.in_back = Elementos1.out_back
+	Elemento.in_result = Elementos1.out_result
+	Elemento.in_seq_char = Elementos1.out_seq_char
+	Elementos1.in_sum = Elementos0.in_sum
+	Elementos1.in_back = Elementos0.in_back
+	Elementos1.in_result = Elementos0.in_result	
+	Elementos1.in_seq_char = Elementos0.in_seq_char
+
+P3: Elemento -> int
+	Elemento.out_result = Elemento.in_result
+	Elemento.out_sum = function refresh_sum
+	Elemento.out_back = 0
+	Elemento.out_seq_char = Elemento.in_seq_char
+
+	$1 = Elemento.in_sum, 
+	$2 = Elemento.in_seq_char 
+	$3 = int.value
+	int refresh_sum($1,$2,$3){
+		if($2>=3) return $1+$3; else return $1; 
+	}
+
+P4: Elemento -> str
+	Elemento.out_result = function refresh_result
+	Elemento.out_sum = 0
+	Elemento.out_back = 1
+	Elemento.out_seq_char = function refresh_seq_char
+
+	$1 = Elemento.in_result, 
+	$2 = Elemento.in_sum, 
+	$3 = Elemento.in_back,
+	ArrayList<Integer> refresh_result($1, $2, $3){
+		if($3==0 && $2 > 0) return $1.add($2); else return $2;
+	}
+
+	$1 = Elemento.in_seq_char
+	$2 = Elemento.in_back
+	int refresh_seq_char($1,$2){
+		if($2==1) return $1+1; else return 1;
+	}

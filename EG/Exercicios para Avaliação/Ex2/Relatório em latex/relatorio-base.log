@@ -1,0 +1,488 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  8 DEC 2011 17:20
+entering extended mode
+ %&-line parsing enabled.
+**relatorio-base.tex
+(./relatorio-base.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, french, basque, portuguese, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+Package babel Info: Making " an active character on input line 145.
+))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz) (/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\FV@CodeLineNo=\count88
+\FV@InFile=\read1
+\FV@TabBox=\box26
+\c@FancyVerbLine=\count89
+\FV@StepNumber=\count90
+\FV@OutFile=\write3
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count92
+\float@exts=\toks17
+\float@box=\box27
+\@float@everytoks=\toks18
+\@floatcapt=\box28
+)
+(/usr/share/texmf-texlive/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip43
+\@affilsep=\skip44
+\c@Maxaffil=\count93
+\c@authors=\count94
+\c@affil=\count95
+)
+(/usr/share/texmf-texlive/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2007/08/12 v2.8 Sectioning titles
+\ttl@box=\box29
+\beforetitleunit=\skip45
+\aftertitleunit=\skip46
+\ttl@plus=\dimen106
+\ttl@minus=\dimen107
+\ttl@toksa=\toks19
+\titlewidth=\dimen108
+\titlewidthlast=\dimen109
+\titlewidthfirst=\dimen110
+)
+(/usr/share/texmf-texlive/tex/latex/aeguill/aeguill.sty
+Package: aeguill 2003/08/02 1.02 AE fonts with french guillemets (D. Roegel)
+
+(/usr/share/texmf-texlive/tex/latex/ae/ae.sty
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
+
+(/usr/share/texmf-texlive/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+))))
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count96
+\Gm@cntv=\count97
+\c@Gm@tempcnt=\count98
+\Gm@bindingoffset=\dimen111
+\Gm@wd@mp=\dimen112
+\Gm@odd@mp=\dimen113
+\Gm@even@mp=\dimen114
+\Gm@dimlist=\toks20
+
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (0.8\paperwidth ) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (0.9\paperheight ) is ignored.
+
+) (./relatorio-base.aux)
+\openout1 = `relatorio-base.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count99
+\scratchdimen=\dimen115
+\scratchbox=\box30
+\nofMPsegments=\count100
+\nofMParguments=\count101
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count102
+\MPscratchDim=\dimen116
+\MPnumerator=\count103
+\everyMPtoPDFconversion=\toks22
+)
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: true
+asymmetric: --
+h-parts: 56.9055pt, 483.69687pt, 56.9055pt
+v-parts: 42.67912pt, 745.46222pt, 56.9055pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: true
+includefoot: true
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  483.69687pt
+\textheight 678.46222pt
+\oddsidemargin  -15.36449pt
+\evensidemargin -15.36449pt
+\topmargin  -29.59087pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 57.0pt
+\marginparsep   11.0pt
+\columnsep  10.0pt
+\skip\footins  9.0pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+\@twosidetrue \@mparswitchtrue 
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 38.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 38.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 38.
+(/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 41.
+ [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./relatorio-base.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 5.
+)
+\tf@toc=\write4
+\openout4 = `relatorio-base.toc'.
+
+ [2]
+Overfull \hbox (12.82387pt too wide) in paragraph at lines 98--100
+[]\T1/aer/m/n/10 Depois de de-fi-nida e ana-li-sada a GIC, de-fi-ni-mos a Gra-m
+á-tica de Atri-bu-tos como: []\T1/aett/m/n/10 GA = (GIC, A, RC, CC, RT) 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 103.
+
+(/usr/share/texmf/tex/latex/R/tex/latex/omsaer.fd
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 103.
+ [3] [4] [5]
+<./ImagensEx1/imag1.png, id=32, 439.6425pt x 220.825pt>
+File: ./ImagensEx1/imag1.png Graphic file (type png)
+
+<use ./ImagensEx1/imag1.png>
+<./ImagensEx1/imag2.png, id=33, 690.58pt x 478.78876pt>
+File: ./ImagensEx1/imag2.png Graphic file (type png)
+
+<use ./ImagensEx1/imag2.png>
+<./ImagensEx1/imag3.png, id=34, 736.7525pt x 532.99126pt>
+File: ./ImagensEx1/imag3.png Graphic file (type png)
+
+<use ./ImagensEx1/imag3.png> [6 <./ImagensEx1/imag1.png (PNG copy)> <./ImagensE
+x1/imag2.png (PNG copy)>]
+<./ImagensEx1/imag4.png, id=39, 937.5025pt x 645.41125pt>
+File: ./ImagensEx1/imag4.png Graphic file (type png)
+
+<use ./ImagensEx1/imag4.png> [7 <./ImagensEx1/imag3.png (PNG copy)>]
+<./ImagensEx1/imag5.png, id=44, 620.3175pt x 442.65375pt>
+File: ./ImagensEx1/imag5.png Graphic file (type png)
+
+<use ./ImagensEx1/imag5.png> [8 <./ImagensEx1/imag4.png (PNG copy)>]
+<./ImagensEx1/imag6.png, id=48, 699.61375pt x 466.74374pt>
+File: ./ImagensEx1/imag6.png Graphic file (type png)
+
+<use ./ImagensEx1/imag6.png>
+<./ImagensEx1/imag7.png, id=49, 654.445pt x 459.7175pt>
+File: ./ImagensEx1/imag7.png Graphic file (type png)
+
+<use ./ImagensEx1/imag7.png> [9 <./ImagensEx1/imag5.png (PNG copy)> <./ImagensE
+x1/imag6.png (PNG copy)>]
+<./ImagensEx1/imag8.png, id=53, 651.43375pt x 461.725pt>
+File: ./ImagensEx1/imag8.png Graphic file (type png)
+
+<use ./ImagensEx1/imag8.png> [10 <./ImagensEx1/imag7.png (PNG copy)>]
+<./ImagensEx1/imag9.png, id=57, 313.17pt x 243.91125pt>
+File: ./ImagensEx1/imag9.png Graphic file (type png)
+
+<use ./ImagensEx1/imag9.png> [11 <./ImagensEx1/imag8.png (PNG copy)> <./Imagens
+Ex1/imag9.png (PNG copy)>]
+<./ImagensEx1/imag10.png, id=61, 606.265pt x 490.83376pt>
+File: ./ImagensEx1/imag10.png Graphic file (type png)
+
+<use ./ImagensEx1/imag10.png>
+<./ImagensEx1/imag11.png, id=62, 900.36375pt x 622.325pt>
+File: ./ImagensEx1/imag11.png Graphic file (type png)
+
+<use ./ImagensEx1/imag11.png> [12 <./ImagensEx1/imag10.png (PNG copy)>]
+<./ImagensEx1/imag12.png, id=66, 899.36pt x 621.32124pt>
+File: ./ImagensEx1/imag12.png Graphic file (type png)
+
+<use ./ImagensEx1/imag12.png> [13 <./ImagensEx1/imag11.png (PNG copy)>]
+<./ImagensEx1/imag13.png, id=71, 555.07375pt x 484.81125pt>
+File: ./ImagensEx1/imag13.png Graphic file (type png)
+
+<use ./ImagensEx1/imag13.png>
+<./ImagensEx1/imag14.png, id=72, 389.455pt x 301.125pt>
+File: ./ImagensEx1/imag14.png Graphic file (type png)
+
+<use ./ImagensEx1/imag14.png> [14 <./ImagensEx1/imag12.png (PNG copy)>]
+<./ImagensEx1/imag15.png, id=76, 550.055pt x 479.7925pt>
+File: ./ImagensEx1/imag15.png Graphic file (type png)
+
+<use ./ImagensEx1/imag15.png> [15 <./ImagensEx1/imag13.png (PNG copy)> <./Image
+nsEx1/imag14.png (PNG copy)>]
+<./ImagensEx1/imag16.png, id=80, 553.06625pt x 482.80376pt>
+File: ./ImagensEx1/imag16.png Graphic file (type png)
+
+<use ./ImagensEx1/imag16.png> [16 <./ImagensEx1/imag15.png (PNG copy)>]
+<./ImagensEx1/imag17.png, id=84, 597.23125pt x 450.68375pt>
+File: ./ImagensEx1/imag17.png Graphic file (type png)
+
+<use ./ImagensEx1/imag17.png> [17 <./ImagensEx1/imag16.png (PNG copy)>]
+<./ImagensEx1/imag18.png, id=88, 349.305pt x 250.9375pt>
+File: ./ImagensEx1/imag18.png Graphic file (type png)
+
+<use ./ImagensEx1/imag18.png>
+<./ImagensEx1/imag19.png, id=89, 596.2275pt x 449.68pt>
+File: ./ImagensEx1/imag19.png Graphic file (type png)
+
+<use ./ImagensEx1/imag19.png> [18 <./ImagensEx1/imag17.png (PNG copy)> <./Image
+nsEx1/imag18.png (PNG copy)>]
+<./ImagensEx1/imag20.png, id=93, 366.36874pt x 255.95625pt>
+File: ./ImagensEx1/imag20.png Graphic file (type png)
+
+<use ./ImagensEx1/imag20.png>
+<./ImagensEx1/imag21.png, id=94, 591.20876pt x 448.67625pt>
+File: ./ImagensEx1/imag21.png Graphic file (type png)
+
+<use ./ImagensEx1/imag21.png> [19 <./ImagensEx1/imag19.png (PNG copy)> <./Image
+nsEx1/imag20.png (PNG copy)>]
+<./ImagensEx1/imag22.png, id=99, 470.75874pt x 293.095pt>
+File: ./ImagensEx1/imag22.png Graphic file (type png)
+
+<use ./ImagensEx1/imag22.png> [20 <./ImagensEx1/imag21.png (PNG copy)> <./Image
+nsEx1/imag22.png (PNG copy)>]
+Overfull \hbox (12.82387pt too wide) in paragraph at lines 464--466
+[]\T1/aer/m/n/10 Depois de de-fi-nida e ana-li-sada a GIC, de-fi-ni-mos a Gra-m
+á-tica de Atri-bu-tos como: []\T1/aett/m/n/10 GA = (GIC, A, RC, CC, RT) 
+ []
+
+[21] [22] [23] <./ImagensEx2/1.PNG, id=112, 321.45094pt x 155.83218pt>
+File: ./ImagensEx2/1.PNG Graphic file (type png)
+
+<use ./ImagensEx2/1.PNG>
+<./ImagensEx2/2.PNG, id=114, 580.41844pt x 360.59718pt>
+File: ./ImagensEx2/2.PNG Graphic file (type png)
+
+<use ./ImagensEx2/2.PNG>
+<./ImagensEx2/3.PNG, id=115, 526.96875pt x 452.4403pt>
+File: ./ImagensEx2/3.PNG Graphic file (type png)
+
+<use ./ImagensEx2/3.PNG> [24 <./ImagensEx2/1.PNG> <./ImagensEx2/2.PNG>]
+<./ImagensEx2/4.PNG, id=121, 661.72218pt x 493.845pt>
+File: ./ImagensEx2/4.PNG Graphic file (type png)
+ <use ./ImagensEx2/4.PNG>
+<./ImagensEx2/5.PNG, id=122, 476.53032pt x 371.13657pt>
+File: ./ImagensEx2/5.PNG Graphic file (type png)
+
+<use ./ImagensEx2/5.PNG> [25 <./ImagensEx2/3.PNG> <./ImagensEx2/4.PNG>]
+<./ImagensEx2/6.PNG, id=129, 501.37312pt x 364.36125pt>
+File: ./ImagensEx2/6.PNG Graphic file (type png)
+
+<use ./ImagensEx2/6.PNG>
+<./ImagensEx2/7.PNG, id=130, 490.83376pt x 345.54094pt>
+File: ./ImagensEx2/7.PNG Graphic file (type png)
+
+<use ./ImagensEx2/7.PNG> [26 <./ImagensEx2/5.PNG> <./ImagensEx2/6.PNG>]
+<./ImagensEx2/8.PNG, id=136, 514.92375pt x 349.305pt>
+File: ./ImagensEx2/8.PNG Graphic file (type png)
+ <use ./ImagensEx2/8.PNG>
+[27 <./ImagensEx2/7.PNG> <./ImagensEx2/8.PNG>]
+<./ImagensEx2/9.PNG, id=142, 453.19313pt x 432.86719pt>
+File: ./ImagensEx2/9.PNG Graphic file (type png)
+
+<use ./ImagensEx2/9.PNG>
+<./ImagensEx2/10.PNG, id=143, 673.76718pt x 469.755pt>
+File: ./ImagensEx2/10.PNG Graphic file (type png)
+
+<use ./ImagensEx2/10.PNG> [28 <./ImagensEx2/9.PNG>]
+<./ImagensEx2/11.PNG, id=148, 674.52pt x 473.51906pt>
+File: ./ImagensEx2/11.PNG Graphic file (type png)
+
+<use ./ImagensEx2/11.PNG>
+<./ImagensEx2/12.PNG, id=149, 670.75594pt x 469.755pt>
+File: ./ImagensEx2/12.PNG Graphic file (type png)
+
+<use ./ImagensEx2/12.PNG> [29 <./ImagensEx2/10.PNG> <./ImagensEx2/11.PNG>]
+<./ImagensEx2/14.PNG, id=155, 415.5525pt x 362.10281pt>
+File: ./ImagensEx2/14.PNG Graphic file (type png)
+
+<use ./ImagensEx2/14.PNG>
+<./ImagensEx2/15.PNG, id=156, 412.54124pt x 361.35pt>
+File: ./ImagensEx2/15.PNG Graphic file (type png)
+
+<use ./ImagensEx2/15.PNG> [30 <./ImagensEx2/12.PNG> <./ImagensEx2/14.PNG>]
+<./ImagensEx2/16.PNG, id=162, 412.54124pt x 361.35pt>
+File: ./ImagensEx2/16.PNG Graphic file (type png)
+
+<use ./ImagensEx2/16.PNG>
+<./ImagensEx2/17.PNG, id=163, 413.29407pt x 359.84438pt>
+File: ./ImagensEx2/17.PNG Graphic file (type png)
+
+<use ./ImagensEx2/17.PNG> [31 <./ImagensEx2/15.PNG> <./ImagensEx2/16.PNG>]
+<./ImagensEx2/18.PNG, id=170, 442.65375pt x 344.03531pt>
+File: ./ImagensEx2/18.PNG Graphic file (type png)
+
+<use ./ImagensEx2/18.PNG> [32 <./ImagensEx2/17.PNG>]
+<./ImagensEx2/19.PNG, id=175, 441.14813pt x 340.27126pt>
+File: ./ImagensEx2/19.PNG Graphic file (type png)
+
+<use ./ImagensEx2/19.PNG>
+<./ImagensEx2/20.PNG, id=176, 439.6425pt x 341.77687pt>
+File: ./ImagensEx2/20.PNG Graphic file (type png)
+
+<use ./ImagensEx2/20.PNG> [33 <./ImagensEx2/18.PNG> <./ImagensEx2/19.PNG>]
+<./ImagensEx2/21.PNG, id=182, 441.14813pt x 345.54094pt>
+File: ./ImagensEx2/21.PNG Graphic file (type png)
+
+<use ./ImagensEx2/21.PNG> [34 <./ImagensEx2/20.PNG> <./ImagensEx2/21.PNG>]
+[35] [36] [37] [38] [39] [40] [41] [42] [43] [44] (./relatorio-base.aux) ) 
+Here is how much of TeX's memory you used:
+ 3118 strings out of 495014
+ 42389 string characters out of 1180707
+ 100825 words of memory out of 3000000
+ 6175 multiletter control sequences out of 15000+50000
+ 37587 words of font info for 79 fonts, out of 3000000 for 9000
+ 30 hyphenation exceptions out of 8191
+ 35i,7n,39p,258b,291s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texm
+f-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-texlive/f
+onts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/type1/p
+ublic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfo
+nts/cm/cmmib10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr
+10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf
+-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/font
+s/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/publi
+c/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb>
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/
+texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on relatorio-base.pdf (44 pages, 1620013 bytes).
+PDF statistics:
+ 272 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,104 @@
+language sum_list {
+    
+   lexicon{
+      Lbrace    [
+      Rbrace    ]
+      Comma    ,
+      Int    [0-9]
+      Char    [a-zA-Z]
+      ignore    [\0x09\0x0A\0x0D\ ]+
+   }
+    
+   attributes
+      java.util.ArrayList  LISTA.result;
+      int  ELEMENTOS.out_back;
+      int  ELEMENTOS.out_seq_char;
+      int  ELEMENTOS.out_sum;
+      java.util.ArrayList  ELEMENTOS.out_result;
+      int  ELEMENTOS.in_seq_char;
+      java.util.ArrayList  ELEMENTOS.in_result;
+      int  ELEMENTOS.in_sum;
+      int  ELEMENTOS.in_back;
+      int  ELEMENTO.out_back;
+      int  ELEMENTO.out_seq_char;
+      java.util.ArrayList  ELEMENTO.out_result;
+      int  ELEMENTO.out_sum;
+      int  ELEMENTO.in_seq_char;
+      int  ELEMENTO.in_back;
+      java.util.ArrayList  ELEMENTO.in_result;
+      int  ELEMENTO.in_sum;  
+    
+    
+    
+   rule Lista_Elementos {
+      LISTA ::=  #Lbrace ELEMENTOS #Rbrace compute {
+         LISTA.result = ELEMENTOS.out_result;
+         ELEMENTOS.in_sum = 0;
+         ELEMENTOS.in_result = new ArrayList<Integer>();
+         ELEMENTOS.in_back = -1;
+         ELEMENTOS.in_seq_char = 0;  
+      };
+   }
+    
+   rule Elementos_Elemento {
+      ELEMENTOS ::=  ELEMENTO compute {
+         ELEMENTO.in_seq_char = ELEMENTOS.in_seq_char;
+         ELEMENTO.in_sum = ELEMENTOS.in_sum;
+         ELEMENTO.in_back = ELEMENTOS.in_back;
+         ELEMENTO.in_result = ELEMENTOS.in_result;
+         ELEMENTOS.out_result = ELEMENTO.out_result;
+         ELEMENTOS.out_sum = ELEMENTO.out_sum;
+         ELEMENTOS.out_seq_char = ELEMENTO.out_seq_char;
+         ELEMENTOS.out_back = ELEMENTO.out_back;  
+      };
+   }
+    
+   rule Elementos_Elementos_Elemento {
+      ELEMENTOS ::=  ELEMENTOS #Comma ELEMENTO compute {
+         ELEMENTOS[1].in_sum = ELEMENTOS.in_sum;
+         ELEMENTOS[1].in_seq_char = ELEMENTOS.in_seq_char;
+         ELEMENTOS[1].in_back = ELEMENTOS.in_back;
+         ELEMENTOS[1].in_result = ELEMENTOS.in_result;
+         ELEMENTO.in_back = ELEMENTOS[1].out_back;
+         ELEMENTO.in_result = ELEMENTOS[1].out_result;
+         ELEMENTO.in_seq_char = ELEMENTOS[1].out_seq_char;
+         ELEMENTO.in_sum = ELEMENTOS[1].out_sum;
+         ELEMENTOS.out_seq_char = ELEMENTO.out_seq_char;
+         ELEMENTOS.out_sum = ELEMENTO.out_sum;
+         ELEMENTOS.out_back = ELEMENTO.out_back;
+         ELEMENTOS.out_result = ELEMENTO.out_result;  
+      };
+   }
+    
+   rule Elemento_int {
+      ELEMENTO ::=  #Int compute {
+         ELEMENTO.out_result = ELEMENTO.in_result;
+         ELEMENTO.out_sum = if(ELEMENTO.in_seq_char>=3) 
+				return ELEMENTO.in_sum+#Int.value; 
+				else return ELEMENTO.in_sum;
+         ELEMENTO.out_back = 0;
+         ELEMENTO.out_seq_char = ELEMENTO.in_seq_char;  
+      };
+   }
+    
+   rule Elemento_str {
+      ELEMENTO ::=  #Char compute {
+         ELEMENTO.out_result = if(ELEMENTO.in_back==0 && ELEMENTO.in_sum > 0) 
+				return ELEMENTO.in_result.add(ELEMENTO.in_sum); 
+				else return ELEMENTO.in_sum;
+         ELEMENTO.out_sum = 0;
+         ELEMENTO.out_back = 1;
+         ELEMENTO.out_seq_char = if(ELEMENTO.in_back==1) 
+					return ELEMENTO.in_seq_char+1; 
+					else return 1;  
+      };
+   }
+    
+    
+    
+   method user_Definitions {
+      
+   }
+}
+
+

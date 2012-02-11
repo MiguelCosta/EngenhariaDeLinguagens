@@ -1,0 +1,449 @@
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package robot;
+
+import java.util.ArrayList;
+
+/**
+ *
+ * @author miguel
+ */
+public class Robo {
+
+    public enum Estado {
+
+        LIGADO, DESLIGADO
+    }
+
+    public enum Direcao {
+
+        NULA,
+        NORTE,
+        SUL,
+        ESTE,
+        OESTE
+    }
+    private int posx = 0;                       // posicao x inicial por defeito = 0
+    private int posy = 0;                       // posicao y inicial por defeito = 0
+    private Estado estado;                      // estado do robo (ligado ou desligado)
+    private Direcao dir;                        // direcao atual do aspirador
+    private ArrayList<Integer> norte = new ArrayList<Integer>();  // array que armazena os movimentos na direcao norte
+    private ArrayList<Integer> sul = new ArrayList<Integer>();    // array que armazena os movimentos na direcao sul
+    private ArrayList<Integer> este = new ArrayList<Integer>();   // array que armazena os movimentos na direcao este
+    private ArrayList<Integer> oeste = new ArrayList<Integer>();  // array que armazena os movimentos na direcao oeste
+    private int mud_dir = 0;                    // aramazena as mudancas de direcao
+
+    public Robo() {
+        estado = Estado.DESLIGADO;
+        dir = Direcao.NULA;
+    }
+
+    /**
+     * Devolve o estado do Robot, LIGADO ou DESLIGADO
+     * @return 
+     */
+    public Estado getEstado() {
+        return estado;
+    }
+
+    /**
+     * Devolve a direcao atual do robo
+     * @return 
+     */
+    public Direcao getDirecao() {
+        return dir;
+    }
+
+    /**
+     * Posicao x atual do robo
+     * @return 
+     */
+    public int getPosX() {
+        return posx;
+    }
+
+    /**
+     * Posicao y atual do robo
+     * @return 
+     */
+    public int getPosY() {
+        return posy;
+    }
+
+    /**
+     * Devolve um array com todas as deslocacoes para norte
+     * @return 
+     */
+    public ArrayList<Integer> getNorte() {
+        ArrayList<Integer> n = new ArrayList<Integer>();
+        for (Integer i : norte) {
+            n.add(i);
+        }
+        return n;
+    }
+
+    /**
+     * Devolve um array com todas as deslocacoes para sul
+     * @return 
+     */
+    public ArrayList<Integer> getSul() {
+        ArrayList<Integer> r = new ArrayList<Integer>();
+        for (Integer i : sul) {
+            r.add(i);
+        }
+        return r;
+    }
+
+    /**
+     * Devolve um array com todas as deslocacoes para este
+     * @return 
+     */
+    public ArrayList<Integer> getEste() {
+        ArrayList<Integer> r = new ArrayList<Integer>();
+        for (Integer i : este) {
+            r.add(i);
+        }
+        return r;
+    }
+
+    /**
+     * Devolve um array com todas as deslocacoes para oeste
+     * @return 
+     */
+    public ArrayList<Integer> getOeste() {
+        ArrayList<Integer> r = new ArrayList<Integer>();
+        for (Integer i : oeste) {
+            r.add(i);
+        }
+        return r;
+    }
+
+    /**
+     * Altera a posicao X do robo.
+     * Usada quando e preciso definiar a posicao inicial
+     * @param x 
+     */
+    public void setPosX(int x) {
+        posx = x;
+    }
+
+    /**
+     * Altera a posicao Y do robo
+     * Usada quando e preciso definir a posicao inicial
+     * @param y 
+     */
+    public void setPosY(int y) {
+        posy = y;
+    }
+
+    /**
+     * Altera o estado recebendo uma variável do tipo Estado
+     * @param e 
+     */
+    public void setEstado(Estado e) {
+        estado = e;
+    }
+
+    /**
+     * Altera o estado recebendo uma String
+     * @param e 
+     */
+    public void setEstado(String e) {
+
+        if (e.equalsIgnoreCase("LIGADO")) {
+            estado = Estado.LIGADO;
+            return;
+        }
+        if (e.equalsIgnoreCase("DESLIGADO")) {
+            estado = Estado.DESLIGADO;
+            return;
+        }
+    }
+
+    /**
+     * Altera a direcao recebendo uma variável do tipo Direcao
+     * @param d 
+     */
+    public void setDirecao(Direcao d) {
+        dir = d;
+    }
+
+    /**
+     * Altera a direcao recebendo uma String
+     * @param d 
+     */
+    public void setDirecao(String d) {
+        if (d.equalsIgnoreCase("NORTE")) {
+            dir = Direcao.NORTE;
+            return;
+        }
+        if (d.equalsIgnoreCase("SUL")) {
+            dir = Direcao.SUL;
+            return;
+        }
+        if (d.equalsIgnoreCase("ESTE")) {
+            dir = Direcao.ESTE;
+            return;
+        }
+        if (d.equalsIgnoreCase("OESTE")) {
+            dir = Direcao.OESTE;
+            return;
+        }
+    }
+
+    /**
+     * Move o robo uma certa distancia para Norte
+     * @param dist 
+     */
+    public void movNorte(int dist) {
+
+        // se estiver desligado nao faz nada
+        if (estado == Estado.DESLIGADO) {
+            return;
+        }
+
+        // se a distancia for maior que zero faz coisas, se for menos ou igual 
+        // a zero, ignora e apenas muda a direcao para norte
+        if (dist > 0) {
+            // contabiliza ou nao a mudanca de direccao
+            if (dir != Direcao.NORTE && dir != Direcao.NULA) {
+                mud_dir++;
+            }
+            // altera o posicao y
+            posy -= dist;
+            // adiciona a distância ao array de movimentacoes para norte
+            norte.add(dist);
+        }
+        // define a direcao para norte
+        dir = Direcao.NORTE;
+    }
+
+    /**
+     * Move o robo uma certa distancia para Sul
+     * @param dist 
+     */
+    public void movSul(int dist) {
+        // se estiver desligado nao faz nada
+        if (estado == Estado.DESLIGADO) {
+            return;
+        }
+
+        // se a distancia for maior que zero faz coisas, se for menos ou igual 
+        // a zero, ignora e apenas muda a direcao para sul
+        if (dist > 0) {
+            // contabiliza ou nao a mudanca de direccao
+            if (dir != Direcao.SUL && dir != Direcao.NULA) {
+                mud_dir++;
+            }
+            // altera o posicao y
+            posy += dist;
+            // adiciona a distância ao array de movimentacoes para sul
+            sul.add(dist);
+        }
+        // define a direcao para sul
+        dir = Direcao.SUL;
+    }
+
+    /**
+     * Move o robo para este
+     * @param dist 
+     */
+    public void movEste(int dist) {
+        // se estiver desligado nao faz nada
+        if (estado == Estado.DESLIGADO) {
+            return;
+        }
+
+        // se a distancia for maior que zero faz coisas, se for menos ou igual 
+        // a zero, ignora e apenas muda a direcao para este
+        if (dist > 0) {
+            // contabiliza ou nao a mudanca de direccao
+            if (dir != Direcao.ESTE && dir != Direcao.NULA) {
+                mud_dir++;
+            }
+            // altera o posicao x
+            posx += dist;
+            // adiciona a distância ao array de movimentacoes para este
+            este.add(dist);
+        }
+        // define a direcao para sul
+        dir = Direcao.ESTE;
+    }
+
+    /**
+     * Move o robo para Oeste
+     * @param dist 
+     */
+    public void movOeste(int dist) {
+        // se estiver desligado nao faz nada
+        if (estado == Estado.DESLIGADO) {
+            return;
+        }
+
+        // se a distancia for maior que zero faz coisas, se for menos ou igual 
+        // a zero, ignora e apenas muda a direcao para oeste
+        if (dist > 0) {
+            // contabiliza ou nao a mudanca de direccao
+            if (dir != Direcao.OESTE && dir != Direcao.NULA) {
+                mud_dir++;
+            }
+            // altera o posicao x
+            posx -= dist;
+            // adiciona a distância ao array de movimentacoes para este
+            oeste.add(dist);
+        }
+        // define a direcao para sul
+        dir = Direcao.OESTE;
+    }
+
+    /**
+     * Mudancas de direcao
+     * @return 
+     */
+    public int mudancasDirecao() {
+        return mud_dir;
+    }
+
+    /**
+     * Media do valor que e deslocado para norte
+     * @return 
+     */
+    public float mediaDeslocamentoNorte() {
+        return totalNorte() / deslocacoesNorte();
+    }
+
+    /**
+     * Media do valor que e deslocado para sul
+     * @return 
+     */
+    public float mediaDeslocamentoSul() {
+        return totalSul() / deslocacoesSul();
+    }
+
+    /**
+     * Media do valor que e deslocado para este
+     * @return 
+     */
+    public float mediaDeslocamentoEste() {
+        return totalEste() / deslocacoesEste();
+    }
+
+    /**
+     * Media do valor que e deslocado para oeste
+     * @return 
+     */
+    public float mediaDeslocamentoOeste() {
+        return totalOeste() / deslocacoesOeste();
+    }
+
+    /**
+     * Media da distância dos deslocamentos feitos pelo robo
+     * @return 
+     */
+    public float mediaDeslocamento() {
+        float f = 0;
+        int total_valores = totalDistancias();
+        int total_deslocacoes = totalDeslocacoes();
+
+        f = total_valores / total_deslocacoes;
+
+        return f;
+    }
+
+    /**
+     * Distancia total da movimentacao do robo para norte
+     * @return 
+     */
+    public int totalNorte() {
+        int total = 0;
+        for (Integer i : norte) {
+            total += i;
+        }
+        return total;
+    }
+
+    /**
+     * Distancia total da movimentacao do robo para sul
+     * @return 
+     */
+    public int totalSul() {
+        int total = 0;
+        for (Integer i : sul) {
+            total += i;
+        }
+        return total;
+    }
+
+    /**
+     * Distancia total da movimentacao do robo para este
+     * @return 
+     */
+    public int totalEste() {
+        int total = 0;
+        for (Integer i : este) {
+            total += i;
+        }
+        return total;
+    }
+
+    /**
+     * Distancia total da movimentacao do robo para oeste
+     * @return 
+     */
+    public int totalOeste() {
+        int total = 0;
+        for (Integer i : oeste) {
+            total += i;
+        }
+        return total;
+    }
+
+    /**
+     * Distancia total da movimentacao do robo para todas as direcoes
+     */
+    public int totalDistancias() {
+        return totalNorte() + totalSul() + totalEste() + totalOeste();
+    }
+
+    /**
+     * Número de vezes que o robo se deslocou para norte
+     * @return 
+     */
+    public int deslocacoesNorte() {
+        return norte.size();
+    }
+
+    /**
+     * Número de vezes que o robo se deslocou para sul
+     * @return 
+     */
+    public int deslocacoesSul() {
+        return sul.size();
+    }
+
+    /**
+     * Número de vezes que o robo se deslocou para este
+     * @return 
+     */
+    public int deslocacoesEste() {
+        return este.size();
+    }
+
+    /**
+     * Número de vezes que o robo se deslocou para oeste
+     * @return 
+     */
+    public int deslocacoesOeste() {
+        return oeste.size();
+    }
+
+    /**
+     * Número de vezes que o robo se deslocou para todas as direcoes
+     * @return 
+     */
+    public int totalDeslocacoes() {
+        return deslocacoesNorte() + deslocacoesSul() + deslocacoesEste() + deslocacoesOeste();
+    }
+}

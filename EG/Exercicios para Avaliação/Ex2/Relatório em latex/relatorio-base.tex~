@@ -1,0 +1,798 @@
+\documentclass[a4paper]{article}
+\usepackage[portuguese]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyvrb}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[affil-it]{authblk}
+\usepackage{indentfirst}
+
+\usepackage{titlesec}
+
+\usepackage{aeguill}  % usefull for pdflatex
+\usepackage[compat2,a4paper,twosideshift=0mm,left=20mm,right=20mm,bottom=20mm,top=15mm]{geometry}
+
+\parindent=2em
+
+
+
+\title{Exercí­cio para Avaliação n.º 1 e n.º2 }
+\author{Bruno Azevedo%
+  \thanks{Email: \texttt{azevedo.252@gmail.com}}}
+
+\author{Miguel Costa%
+  \thanks{Email: \texttt{miguelpintodacosta@gmail.com}}}
+
+\affil{Módulo Engenharia Gramatical,\\ UCE30 Engenharia de Linguagens,
+\\ Mestrado em Engenharia Informátical,\\Universidade do Minho}
+
+
+\date{\today}
+
+
+\begin{document}
+
+
+\maketitle
+
+\begin{abstract}
+Este documento apresenta as resoluções dos Exercícios Práticos n.º 1 e n.º2 do módulo de Engenharia de Linguagens.
+Os exercícios estão relacionados com Gramática Independente de Contexto e Gramática de Atributos para resolver um problema
+de cálculo de elementos mistos (palavras e números).
+\end{abstract}
+
+
+\newpage
+
+\parskip=0mm
+\tableofcontents
+\parskip=2mm
+
+\newpage
+
+\section{Ambiente de Trabalho}
+Tal como seria de esperar, um exercício deste tipo é resolvido
+inicialmente em papel, para ser mais fácil estruturar o problema e
+fazer uma boa abordagem à resolução que se irá fazer.
+Depois de analisado e tomado notas no papel, passamos o exercício
+para a ferramenta VisualLisa. Através desta ferramenta é possível
+ter uma visão de como as símbolos de toda a linguagem estão relacionados
+e como ``falam'' entre si.
+
+
+
+
+\chapter{Exercício 1}
+
+\section{Ex1 - Descrição do problema}
+Era pretendido que se usasse o processador da Lista de Elementos Mistos (palavras e inteiros), 
+que foi desenvolvido nas aulas, e alterar a sua Gramática de Atributos (GA) de modo a calcular o 
+somatório de cada sequência de inteiros que surjam a seguir à palavra ''soma``.
+
+Exemplo:
+\begin{verbatim}
+        A frase ''[a,1,2,b,soma,3,a,4,soma,b,2,7]``
+        Dá como resultado: [7,9]  
+\end{verbatim}
+
+
+\section{Ex1 - Resolução no papel}
+\subsection{Gramática Independente do Contexto}
+Observando o problema formulámos a seguinte Gramática Independente do Contexto (GIC):
+\begin{verbatim}
+GIC = (T, N, S, P)
+Símbolos terminais (T):         {str, int, '[' , ']', ','}
+Símbolos não terminais (N):     {Lista, Elementos, Elemento}
+Símbolos Inicial (S):           Lista
+Produções (P):
+                                P0: Lista       -> '[' Elementos ']'
+                                P1: Elementos   -> Elemento 
+                                P2:             | Elemento ',' Elementos
+                                P3: Elemento    -> int
+                                P4:             | str
+
+                                str = [a-zA-Z]+
+                                int = [0-9]+
+\end{verbatim}
+
+\subsection{Gramática de Atributos}
+ Depois de definida e analisada a GIC, definimos a Gramática de Atributos como:
+\verb|GA = (GIC, A, RC, CC, RT)|    
+
+Para resolver este problema, usamos 3 variáveis:
+\begin{itemize}
+\item \verb|sum|
+\item \verb|sum_flag|
+\item \verb|result|
+\end{itemize}
+
+A variável \verb|sum_flag| é inicializada a 0 e quando for encontrada a palavra ``soma'' 
+fica 1 e coloca a variável \verb|sum| a 0, a partir deste momento quando encontrar um elemento inteiro 
+vai adiciona-lo a \verb|sum|.
+Result é um array que vai conter o resultado, ele é alterado quando se encontrada a palavra ``soma'' 
+e a variável \verb|sum| é maior que 0, vai ficar: \verb|result = result.add(sum)|.
+Uma nota importante, é que o valor de \verb|sum| só é adicionado se este for maior que 0.
+
+Os símbolos não terminais podem ter atributos sintetizados e herdados, por isso, a forma que encontramos 
+para resolver o problema de saber quando adicionar ao array \verb|result| o \verb|sum|, foi dizer que os símbolos não terminais tem:
+\begin{itemize}
+ \item Atributos sintetizados
+ \subitem \verb|out_sum|
+ \subitem \verb|out_sum_flag|
+ \subitem \verb|out_result|
+ \item Atributos herdados
+ \subitem \verb|in_sum|
+ \subitem \verb|in_sum_flag|
+ \subitem \verb|in_result|
+\end{itemize}
+
+O que é pretendido com esta solução, é que o símbolo não terminal receba a informação do estado 
+atual (atributos in) e depois devolva a informação atualizada  (atributos out).
+
+\subsubsection{Atributos (A)}
+\begin{verbatim}
+Lista           result : ArrayList<Integer>
+
+Elementos       in_result : ArrayList<Integer>
+                out_result : ArrayList<Integer>
+                in_sum : int
+                out_sum : int
+                in_sum_flag : int
+                out_sum_flag :int
+
+Elemento        in_result : ArrayList<Integer>
+                out_result : ArrayList<Integer>
+                in_sum : int
+                out_sum : int
+                in_sum_flag : int
+                out_sum_flag :int
+\end{verbatim}
+
+\subsubsection{Regra de Cálculo (RC), Condição Contextual (CC) e Regra de Tradução (RT)}
+
+\VerbatimInput{FilesEx1/1.txt}
+
+
+\section{Ex1 - Resolução no VisualLisa}
+Este problema foi também resolvido visualmente com a ajuda da ferramenta VisualLisa.
+Esta secção mostra como ficou resolvido visualmente o exercício.
+
+\subsection{Produções}
+As \verb|Produções (P)|:
+\begin{verbatim}
+                P0: Lista       -> '[' Elementos ']'
+                P1: Elementos   -> Elemento 
+                P2:             | Elemento ',' Elementos
+                P3: Elemento    -> int
+                P4:             | str
+\end{verbatim}
+
+da gramática independente de contexto que já está definida, 
+quando representada visualmente em VisualLisa fica como a Figura 1.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.7]{./ImagensEx1/imag1.png}
+ % imag1.png: 438x220 pixel, 72dpi, 15.45x7.76 cm, bb=0 0 438 220
+ \caption{Produções}
+\end{figure}
+
+\subsubsection{Lista -> Elementos}
+A produção Lista -> Elementos visualmente fica como mostra a Figura 2, 
+em que também já aparecem os atributos de cada símbolo.
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag2.png}
+ % imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+ \caption{Produção P0}
+\end{figure}
+
+
+\subsubsection{Elementos -> Elemento}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag3.png}
+ % imag3.png: 734x531 pixel, 72dpi, 25.89x18.73 cm, bb=0 0 734 531
+ \caption{Produção P1}
+\end{figure}
+
+
+\subsubsection{Elementos -> Elemento ',' Elementos}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.45]{./ImagensEx1/imag4.png}
+ \caption{Produção P2}
+\end{figure}
+
+
+\subsubsection{Elemento -> int}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag5.png}
+ \caption{Produção P3}
+\end{figure}
+
+\subsubsection{Elemento -> str}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag6.png}
+ \caption{Produção P4}
+\end{figure}
+
+
+\subsection{Regras}
+\subsubsection{Lista -> Elementos}
+\textbf{result}\\
+Esta é a regra que devolve o resultado da frase que for dada para calcular e 
+é calculada por: \\
+\verb|Lista.result = Elementos.result|
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag7.png}
+ \caption{Regra para Lista.result}
+\end{figure}
+
+\textbf{init}\\
+O que é feito nesta regra é inicializar as variáveis \verb|in_sum| e \verb|in_sum_flag| a zero.
+\begin{verbatim}
+        Elementos.in_sum = 0
+        Elementos.in_sum_flag = 0 
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag8.png}
+ \caption{Regra para inicializar variáveis}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.8]{./ImagensEx1/imag9.png}
+ \caption{Função init}
+\end{figure}
+
+
+\subsubsection{Elementos -> Elemento}
+\textbf{in out}\\
+Aqui estão as regras:
+\begin{verbatim}
+        Elemento.in_result = Elementos.in_result
+        Elemento.in_sum = Elementos.in_sum
+        Elemento.in_sum_flag = Elementos.in_sum_flag
+        Elementos.out_result = Elemento.out_result
+        Elementos.out_sum = Elemento.out_sum
+        Elementos.out_sum_flag = Elemento.out_sum_flag
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag10.png}
+ \caption{Regras in out}
+\end{figure}
+
+
+\subsubsection{Elementos -> Elemento ',' Elementos}
+\textbf{in}\\
+Regras:
+\begin{verbatim}
+        Elemento.in_sum = Elementos0.in_sum
+        Elemento.in_sum_flag = Elementos0.in_sum_flag
+        Elemento.in_result = Elementos0.in_result
+        Elementos1.in_sum = Elemento.out_sum
+        Elementos1.in_sum_flag = Elemento.out_sum_flag
+        Elementos1.in_result = Elemento.out_result
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.45]{./ImagensEx1/imag11.png}
+ \caption{Regras in}
+\end{figure}
+
+\textbf{out}
+\begin{verbatim}
+        Elementos0.out_sum = Elementos1.out_sum
+        Elementos0.out_sum_flag = Elementos1.out_sum_flag
+        Elementos0.out_result = Elementos1.out_result
+\end{verbatim}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.45]{./ImagensEx1/imag12.png}
+ \caption{Regras out}
+\end{figure}
+
+
+\subsubsection{Elemento -> int}
+\textbf{sum}
+\begin{verbatim}
+Elemento.out_sum = function refresh_sum 
+\end{verbatim}
+Em que a função é definida por:
+\begin{verbatim}
+        $1 = Elemento.in_sum, $2 = Elemento.in_sum_flag, $3 = str.value
+        int refresh_sum($1,$2,$3){
+                if($2==1) return $1+$3; else return $1; 
+        }
+\end{verbatim}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag13.png}
+ \caption{Regras sum}
+\end{figure}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.8]{./ImagensEx1/imag14.png}
+ \caption{Função refresh sum}
+\end{figure}
+
+
+\textbf{sum flag}
+\begin{verbatim}
+Elemento.out_sum_flag = Elemento.in_sum_flag
+\end{verbatim}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag15.png}
+ \caption{Regra sum flag}
+\end{figure}
+
+
+\textbf{result}
+\begin{verbatim}
+Elemento.out_result = Elemento.in_result
+\end{verbatim}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag16.png}
+ \caption{Regra result}
+\end{figure}
+
+
+
+\subsubsection{Elemento -> str}
+\textbf{sum flag}
+\begin{verbatim}
+Elemento.out_sum_flag = function refresh_sum_flag
+\end{verbatim}
+Em que a função é definida por:
+\begin{verbatim}
+        $1 = Elemento.in_sum_flag, $2 = str.value
+        int refresh_sum_flag($1, $2){
+                if($2.equals("soma")) return 1; else return $1;
+        }
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag17.png}
+ \caption{Regra sum flag}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.8]{./ImagensEx1/imag18.png}
+ \caption{Função refresh sum flag}
+\end{figure}
+
+\textbf{sum}
+\begin{verbatim}
+Elemento.out_sum = function refresh_sum
+\end{verbatim}
+Em que a função é definida por:
+\begin{verbatim}
+        $1 = Elemento.in_sum, $2 = str.value
+        int refresh_sum($1,$2){
+                if($2.equals("soma")) return 0; else return $1; 
+        }
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag19.png}
+ \caption{Regra sum}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag20.png}
+ \caption{Função refresh sum}
+\end{figure}
+
+
+
+\textbf{result}
+\begin{verbatim}
+Elemento.out_result = function refresh_result
+\end{verbatim}
+Em que a função é definida por:
+\begin{verbatim}
+        $1 = Elemento.in_result, $2 = Elemento.in_sum, 
+        $3 = Elemento.in_sum_flag, $4 = str.value
+        ArrayList<Integer> refresh_result($1, $2, $3, $4){
+                if($4.equals("soma") && $3 == 1 && $2 > 0) 
+                return $1.add($2); else return $2;
+        }
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag21.png}
+ \caption{Regra result}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx1/imag22.png}
+ \caption{Função refresh result}
+\end{figure}
+
+\newpage
+
+\section{Ex2 - Descrição do Problema}
+
+Era pretendido que se usasse o processador da Lista de Elementos Mistos (letras e inteiros), 
+e criar uma Gramática de Atributos (GA) de modo a calcular o somatório de cada sequência de inteiros 
+que surjam a seguir à sequência de 3 ou mais letras.
+
+Exemplo:
+\begin{verbatim}
+        A frase "[a b 1 1 1 1 c d e f 2 2 g h 3 3 3 i j k l m 4 4 4 4]"
+        Dá como resultado: [4,16]  
+\end{verbatim}
+
+
+\section{Ex2 - Resolução no papel}
+\subsection{Gramática Independente do Contexto}
+Observando o problema formulámos a seguinte Gramática Independente do Contexto (GIC):
+\begin{verbatim}
+GIC = (T, N, S, P)
+Símbolos terminais (T):         {char, int, '[' , ']', ','}
+Símbolos não terminais (N):     {Lista, Elementos, Elemento}
+Símbolos Inicial (S):           Lista
+Produções (P):
+                                P0: Lista       -> '[' Elementos ']'
+                                P1: Elementos   -> Elemento 
+                                P2:             | Elementos ',' Elemento
+                                P3: Elemento    -> int
+                                P4:             | char
+
+                                char = [a-zA-Z]
+                                int = [0-9]+
+\end{verbatim}
+
+\subsection{Gramática de Atributos}
+ Depois de definida e analisada a GIC, definimos a Gramática de Atributos como:
+\verb|GA = (GIC, A, RC, CC, RT)|    
+
+Para resolver este problema, usamos 3 variáveis:
+\begin{itemize}
+\item \verb|sum|
+\item \verb|back|
+\item \verb|seq_char|
+\item \verb|result|
+\end{itemize}
+
+A variável \verb|back| é inicializada a -1, é ela que nos diz se o elemento anterior foi uma letra (\verb|back=1|) ou 
+um número(\verb|back=0|). \verb|Seq_char|, responsável por armazenar o número de caracteres que aparecem consecutivamente, 
+se estiver maior ou igual a 3, quando foram encontrados inteiros serão somados à variável sum. 
+Se for encontrado novamente um caracter, se o valor de sum for maior que 0 é adicionado a result e faz 
+``reset`` às outras variáveis.
+
+\verb|Result| é um array que vai conter os resultados das várias ''somas`` que vão surgindo, ele é alterado 
+quando se encontra depois de uma sequencia de 3 ou mais letras vários dígitos, em que
+é adicionado a soma desses dígitos caso esta seja maior que 0, vai ficar então: result = result.add(sum).
+
+Os símbolos não terminais podem ter atributos sintetizados e herdados, por isso, a forma que encontramos 
+para resolver o problema de saber quando adicionar ao array \verb|result| o \verb|sum|, foi dizer que os símbolos não terminais tem:
+\begin{itemize}
+ \item Atributos sintetizados
+ \subitem \verb|out_sum|
+ \subitem \verb|out_back|
+ \subitem \verb|out_seq_char|
+ \subitem \verb|out_result|
+ \item Atributos herdados
+ \subitem \verb|in_sum|
+ \subitem \verb|in_back|
+ \subitem \verb|in_seq_char|
+ \subitem \verb|in_result|
+\end{itemize}
+
+O que é pretendido com esta solução, é que o símbolo não terminal receba a informação do estado 
+atual (atributos in) e depois devolva a informação atualizada (atributos out).
+
+\subsubsection{Atributos (A)}
+\begin{verbatim}
+Lista           result : ArrayList<Integer>
+
+Elementos       in_result : ArrayList<Integer>
+                out_result : ArrayList<Integer>
+                in_sum : int
+                out_sum : int
+                in_back : int
+                out_back :int
+                in_seq_char : int
+                out_seq_char : int
+
+
+Elemento        in_result : ArrayList<Integer>
+                out_result : ArrayList<Integer>
+                in_sum : int
+                out_sum : int
+                in_back : int
+                out_back :int
+                in_seq_char : int
+                out_seq_char : int
+\end{verbatim}
+
+\subsubsection{Regra de Cálculo (RC), Condição Contextual (CC) e Regra de Tradução (RT)}
+
+\VerbatimInput{FilesEx2/2.txt}
+
+\section{Ex2 - Resolução no VisualLisa}
+Este problema foi também resolvido visualmente com a ajuda da ferramenta VisualLisa.
+Esta secção mostra como ficou resolvido visualmente o exercício.
+
+\subsection{Produções}
+As \verb|Produções (P)|:
+\begin{verbatim}
+                P0: Lista       -> '[' Elementos ']'
+                P1: Elementos   -> Elemento 
+                P2:             | Elementos ',' Elemento
+                P3: Elemento    -> int
+                P4:             | char
+\end{verbatim}
+
+da gramática independente de contexto que já está definida, 
+quando representada visualmente em VisualLisa fica:
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.9]{./ImagensEx2/1.PNG}
+ % imag1.png: 438x220 pixel, 72dpi, 15.45x7.76 cm, bb=0 0 438 220
+ \caption{Produções}
+\end{figure}
+
+\subsubsection{Lista -> Elementos}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/2.PNG}
+ % imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+ \caption{Produção P0}
+\end{figure}
+
+
+\subsubsection{Elementos -> Elemento}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/3.PNG}
+ % imag3.png: 734x531 pixel, 72dpi, 25.89x18.73 cm, bb=0 0 734 531
+ \caption{Produção P1}
+\end{figure}
+
+
+\subsubsection{Elementos -> Elementos ',' Elemento}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.45]{./ImagensEx2/4.PNG}
+ \caption{Produção P2}
+\end{figure}
+
+
+\subsubsection{Elemento -> int}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/5.PNG}
+ \caption{Produção P3}
+\end{figure}
+
+\subsubsection{Elemento -> char}
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/6.PNG}
+ \caption{Produção P4}
+\end{figure}
+
+
+\subsection{Regras}
+\subsubsection{Lista -> Elementos}
+\textbf{result}\\
+Esta é a regra que devolve o resultado da frase que for dada para calcular e 
+é calculada por: \\
+\verb|Lista.result = Elementos.out_result|
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/7.PNG}
+ \caption{Regra para Lista.result}
+\end{figure}
+
+O que é feito nesta regra é inicializar as variáveis \verb|in_sum|, \verb|in_back|, \verb|in_result| e \verb|in_seq_char|.
+\begin{verbatim}
+        Elementos.in_result = new ArrayList<Integer>();
+        Elementos.in_sum = 0
+        Elementos.in_back = -1
+        Elementos.in_seq_char = 0;
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/8.PNG}
+ \caption{Regra para inicializar variáveis}
+\end{figure}
+
+\subsubsection{Elementos -> Elemento}
+Aqui estão as regras:
+\begin{verbatim}
+        Elemento.in_result = Elementos.in_result
+        Elemento.in_sum = Elementos.in_sum
+        Elemento.in_back = Elementos.in_back
+        Elemento.in_seq_char = Elementos.in_seq_char
+        Elementos.out_result = Elemento.out_result
+        Elementos.out_sum = Elemento.out_sum
+        Elementos.out_back = Elemento.out_back
+        Elementos.out_seq_char = Elemento.out_seq_char
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/9.PNG}
+ \caption{Regras in out}
+\end{figure}
+
+
+\subsubsection{Elementos -> Elemento ',' Elementos}
+
+Regras:
+\begin{verbatim}
+        Elementos0.out_sum = Elemento.out_sum
+        Elementos0.out_back = Elemento.out_back
+        Elementos0.out_result = Elemento.out_result
+        Elementos0.out_seq_char = Elemento.out_seq_char
+        Elemento.in_sum = Elementos1.out_sum
+        Elemento.in_back = Elementos1.out_back
+        Elemento.in_result = Elementos1.out_result
+        Elemento.in_seq_char = Elementos1.out_seq_char
+        Elementos1.in_sum = Elementos0.in_sum
+        Elementos1.in_back = Elementos0.in_back
+        Elementos1.in_result = Elementos0.in_result	
+        Elementos1.in_seq_char = Elementos0.in_seq_char
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.45]{./ImagensEx2/10.PNG}
+ \caption{Regras in Elementos}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.45]{./ImagensEx2/11.PNG}
+ \caption{Regras in Elemento}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.45]{./ImagensEx2/12.PNG}
+ \caption{Regras out Elementos}
+\end{figure}
+
+
+\subsubsection{Elemento -> int}
+\begin{verbatim}
+        Elemento.out_result = Elemento.in_result
+        Elemento.out_sum = function refresh_sum
+        Elemento.out_back = 0
+        Elemento.out_seq_char = Elemento.in_seq_char
+
+        $1 = Elemento.in_sum, 
+        $2 = Elemento.in_seq_char 
+        $3 = int.value
+        int refresh_sum($1,$2,$3){
+                if($2>=3) return $1+$3; else return $1; 
+        }
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/14.PNG}
+ \caption{Regras result}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/15.PNG}
+ \caption{Regras sum}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/16.PNG}
+ \caption{Regras back}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/17.PNG}
+ \caption{Regras seq char}
+\end{figure}
+
+
+
+\subsubsection{Elemento -> str}
+\begin{verbatim}
+        Elemento.out_result = function refresh_result
+        Elemento.out_sum = 0
+        Elemento.out_back = 1
+        Elemento.out_seq_char = function refresh_seq_char
+
+        $1 = Elemento.in_result, 
+        $2 = Elemento.in_sum, 
+        $3 = Elemento.in_back,
+        ArrayList<Integer> refresh_result($1, $2, $3){
+                if($3==0 && $2 > 0) return $1.add($2); else return $2;
+        }
+
+        $1 = Elemento.in_seq_char
+        $2 = Elemento.in_back
+        int refresh_seq_char($1,$2){
+                if($2==1) return $1+1; else return 1;
+        }
+\end{verbatim}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/18.PNG}
+ \caption{Regra result}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/19.PNG}
+ \caption{Regra sum}
+\end{figure}
+
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/20.PNG}
+ \caption{Regra back}
+\end{figure}
+
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.6]{./ImagensEx2/21.PNG}
+ \caption{Regra seq char}
+\end{figure}
+
+\newpage
+
+\section{Ex2 - Resultado Gerado pelo VisualLisa}
+Nesta secção está o que foi gerado a partir do VisualLisa.
+\subsection{BNF Grammer}
+\VerbatimInput{FilesEx2/BNFGrammer.txt}
+
+\subsection{Linguagem LISA}
+\VerbatimInput{FilesEx2/lisa.txt}
+
+\subsection{XML}
+\VerbatimInput{FilesEx2/xml.xml}
+
+
+\newpage
+
+\section{Conclusões}
+
+A resolução deste exercício permitiu perceber melhor a forma como as linguagens 
+de estrutura para a resolução de determinados problemas. Depois de definida a GIC e 
+criando a GA, conseguimos realizar os cálculos que eram pretendidos para a soma.
+
+Apesar de serem dois exercícios para calcular um resultado de forma diferente,
+deu para perceber que o reaciocínio para resolver é idêntifo com ambos os casos.
+
+Serviu de consolidação da matéria dada até agora no módulo de Engenharia de Linguagens,
+tendo em conta que conseguimos resolver os exercícios com sucesso.
+
+
+\end{document}

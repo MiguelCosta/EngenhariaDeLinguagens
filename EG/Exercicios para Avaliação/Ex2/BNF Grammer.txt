@@ -1,0 +1,7 @@
+Lista ->  lbrace Elementos rbrace
+Elementos ->  Elemento
+Elementos ->  Elementos comma Elemento
+Elemento ->  int
+Elemento ->  char
+
+
