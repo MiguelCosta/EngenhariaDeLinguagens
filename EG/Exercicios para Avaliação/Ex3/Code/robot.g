@@ -1,4 +1,4 @@
-grammar robot;
+PLTNgrammar robot;
 
 options {
      language = Java;
@@ -40,15 +40,16 @@ corpo
 	;
 	
 definicoes
-	: '{' (definicao)+ '}'
+	: '{' dimensao (posicao)? '}'
+	| '{' (posicao)? dimensao '}'
 	;
-	
-definicao
-	: DIM '=' '('	x=INT{terreno.setLarg(Integer.parseInt(x.getText()));} ','
+dimensao
+	:DIM '=' '('	x=INT{terreno.setLarg(Integer.parseInt(x.getText()));} ','
 			y=INT{terreno.setAlt(Integer.parseInt(y.getText()));} 
 		  ')' ';'
-		  
-	| POS '=' '('x=INT { if (terreno.validaPosX(Integer.parseInt(x.getText()))){ robo.setPosX(x.getText()); robo.setPosXini(x.getText());}
+	;
+posicao 
+	:POS '=' '('x=INT { if (terreno.validaPosX(Integer.parseInt(x.getText()))){ robo.setPosX(x.getText()); robo.setPosXini(x.getText());}
 			     else System.out.println("Posição inicial inválida.");
 			   } 
 		  ','

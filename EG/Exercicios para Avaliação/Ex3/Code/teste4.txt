@@ -2,7 +2,7 @@ ASPIRADOR
 {
 DEFINICOES 
 {
-dim = (15 , 15) ; pos = (7 , 7) ;
+pos = (7 , 7) ;
 }
 MOVIMENTOS
 LIGAR;
