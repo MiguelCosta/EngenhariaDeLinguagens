@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  3 FEB 2012 21:15
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  19 FEB 2012 22:29
 entering extended mode
  %&-line parsing enabled.
 **relatorio-base.tex
@@ -217,9 +217,6 @@ LaTeX Warning: Label `DescriptiveLabel' multiply defined.
 
 LaTeX Warning: Label `DescriptiveLabel' multiply defined.
 
-
-LaTeX Warning: Label `DescriptiveLabel' multiply defined.
-
 )
 \openout1 = `relatorio-base.aux'.
 
@@ -308,7 +305,10 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 63.
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./relatorio-base.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./relatorio-base.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+)
 \tf@toc=\write4
 \openout4 = `relatorio-base.toc'.
 
@@ -321,19 +321,26 @@ File: omsaer.fd 1999/12/27
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 94.
  [3] (./gramatica.g [4])
-(./in1.txt) (./in2.txt [5]) [6] [7] (./relatorio-base.aux)
+(./in1.txt) <arv1.jpeg, id=31, 1784.6675pt x 252.945pt>
+File: arv1.jpeg Graphic file (type jpg)
+ <use arv1.jpeg>
+Overfull \hbox (33.84346pt too wide) in paragraph at lines 143--145
+ [][] 
+ []
+
+[5] [6 <./arv1.jpeg>] [7] (./relatorio-base.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5064 strings out of 495014
- 64737 string characters out of 1180707
- 266987 words of memory out of 3000000
- 8140 multiletter control sequences out of 15000+50000
- 39546 words of font info for 81 fonts, out of 3000000 for 9000
+ 5129 strings out of 495014
+ 65497 string characters out of 1180707
+ 293987 words of memory out of 3000000
+ 8201 multiletter control sequences out of 15000+50000
+ 42692 words of font info for 87 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 35i,6n,42p,395b,1684s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,8n,43p,559b,1684s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/
@@ -349,9 +356,9 @@ fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on relatorio-base.pdf (7 pages, 209822 bytes).
+Output written on relatorio-base.pdf (7 pages, 262601 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
+ 95 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

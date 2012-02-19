@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/miguel/Documentos/EL/EG/Robot/robot.g 2012-02-12 18:08:01
+// $ANTLR 3.4 /home/miguel/Documentos/EL/EG/Robot/robot.g 2012-02-19 19:29:14
 
 	import Robot.Robo;
 	import Robot.Terreno;
@@ -51,8 +51,8 @@ public class robotParser extends DebugParser {
 
 
 public static final String[] ruleNames = new String[] {
-    "invalidRule", "dimensao", "movimento", "posicao", "movimentos", "definicoes", 
-    "corpo", "robot"
+    "invalidRule", "robot", "corpo", "dimensao", "definicoes", "movimento", 
+    "movimentos", "posicao"
 };
 
 public static final boolean[] decisionCanBacktrack = new boolean[] {

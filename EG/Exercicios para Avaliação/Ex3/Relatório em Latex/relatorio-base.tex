@@ -130,19 +130,44 @@ Uma linguagem tem de ter simbolos terminais e neste caso nós definimos os símbol
 	\item INT
 \end{itemize}
 
-Definindo formalmente a gramática ficou:
+Definindo formalmente a gramática para representar os eventos possíveis do robo, ficou:
 \lstset{caption={Gramática},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{gramatica.g}
 
 Depois de gerada a gramática, algumas das frases que se podem gerar, são:
 \lstset{caption={Frase gerada 1},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{in1.txt}
-
-\lstset{caption={Frase gerada 2},label=DescriptiveLabel}
-\lstinputlisting[style=gramatica]{in2.txt}
+Para provar que era uma frase válida, fizemos a sua árvore de derivação:
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.29]{arv1.jpeg}
+ % imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+ \caption{Árvore de derivação}
+\end{figure}
 
 
 Analisando a gramática a as frases geradas a partir dela, vericámos que o elemento raiz é \verb|robot| e o parser terá de encontrar no início a palavra \verb|ASPIRADOR| seguido de um \verb|corpo| que se encontra dentro de chavetas.
+
+O corpo está dividio em 2 partes: \verb|definicoes| e \verb|movimentos|. Nas \verb|definicoes| podemos configurar a \verb|dimensao| do terreno e ainda a \verb|posicao| inicial do robo.
+
+Quanto aos \verb|movimentos|, este podem ser de 2 tipos, os que fazem realmente mover o robo (por exemplo \verb|NORTE 2|) e os que ligam (\verb|LIGAR|) ou desligam (\verb|DESLIGAR|) o robo. 
+
+\section{Implementação}
+De forma a estruturar melhor todo o exercício, criámos em classes em java que nos facilitassem o cálculo de todas as estatísticas e todas as restrições que eram necessárias.
+
+\subsection{Classes}
+As classes criadas foram:
+\begin{itemize}
+	\item \verb|Robo|
+	\item \verb|Terreno|
+	\item \verb|Matrix|
+\end{itemize}
+
+A classe \verb|Robo| é a responsável por guardar todos os movimentos e por gerar as estatísticas. \verb|Terreno| é a classe que contêm as dimensões do território em que o Robo se pode deslocar e verifica se este não se quer deslocar para fora dele. Para confirmar se tudo o que era pedido ao Robo se concretizava, criámos um pequeno interface em que é possível ver a deslocação passo a passo do Robo e ainda as estatísticas. Este interface corresponde à classe \verb|Matrix| que recorre ao Java SWING para criar a animação.
+
+Em anexo está o código java de cada classe.
+
+\subsection{Instruções na gramática}
 
 
 
