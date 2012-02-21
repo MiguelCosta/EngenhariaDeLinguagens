@@ -29,10 +29,10 @@ definicoes
 	| '{' (posicao)? dimensao '}'
 	;
 dimensao
-	:DIM '=' '(' x=INT ','	y=INT ')' ';'
+	:DIM '=' '(' INT ',' INT ')' ';'
 	;
 posicao 
-	:POS '=' '(' x=INT ',' y=INT ')' ';'
+	:POS '=' '(' INT ',' INT ')' ';'
 	;
 
 movimentos
