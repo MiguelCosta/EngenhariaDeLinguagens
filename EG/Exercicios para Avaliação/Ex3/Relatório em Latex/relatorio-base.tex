@@ -155,6 +155,15 @@ Quanto aos \verb|movimentos|, este podem ser de 2 tipos, os que fazem realmente 
 \section{Implementação}
 De forma a estruturar melhor todo o exercício, criámos em classes em java que nos facilitassem o cálculo de todas as estatísticas e todas as restrições que eram necessárias.
 
+\subsection{Decisões Tomadas}
+Como seria de esperar, há promenores que tinham de ser decididos para colocar o robo no terreno e para o cálculo das estatísticas, algumas decisões tomadas foram:
+\begin{itemize}
+	\item Caso não esteja definida a posição inicial do Robo no terreno, é assumido que esta é (0,0), que corresponde ao canto superior esquerdo do terreno.
+	\item Inicialmente, o Robo é colocado no terreno sem direção, assim, apenas depois do primeiro movimento, ele tem a direção definida e é possível contar para efeitos estatísticos a mudança de direção.
+	\item Apenas quando o Robo está no modo ligado é que ele se movimenta, caso contrário ignora todas as instruções que receber, excepto que a de \verb|LIGAR|.
+\end{itemize}
+
+
 \subsection{Classes}
 As classes criadas foram:
 \begin{itemize}

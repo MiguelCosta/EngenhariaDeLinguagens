@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  21 FEB 2012 15:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  21 FEB 2012 17:10
 entering extended mode
  %&-line parsing enabled.
 **relatorio-base.tex
@@ -331,7 +331,7 @@ Overfull \hbox (33.84346pt too wide) in paragraph at lines 143--145
  [][] 
  []
 
-[5] (./robot.g [6 <./arv1.jpeg>] [7]) [8] [9] (./relatorio-base.aux)
+[5] [6 <./arv1.jpeg>] (./robot.g [7] [8]) [9] [10] (./relatorio-base.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -339,7 +339,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  5231 strings out of 495014
  66681 string characters out of 1180707
- 370987 words of memory out of 3000000
+ 365987 words of memory out of 3000000
  8300 multiletter control sequences out of 15000+50000
  42692 words of font info for 87 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
@@ -359,9 +359,9 @@ fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
 are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-t
 exlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts
 /type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on relatorio-base.pdf (9 pages, 271323 bytes).
+Output written on relatorio-base.pdf (10 pages, 273072 bytes).
 PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
+ 104 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
