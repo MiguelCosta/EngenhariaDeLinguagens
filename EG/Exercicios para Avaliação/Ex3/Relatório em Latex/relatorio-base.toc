@@ -4,5 +4,5 @@
 \contentsline {section}{\numberline {3}Cria\c c\~ao da linguagem}{3}
 \contentsline {section}{\numberline {4}Implementa\c c\~ao}{6}
 \contentsline {subsection}{\numberline {4.1}Classes}{6}
-\contentsline {subsection}{\numberline {4.2}Instru\c c\~oes na gram\'atica}{6}
-\contentsline {section}{\numberline {5}Conclus\~oes}{7}
+\contentsline {subsection}{\numberline {4.2}Linguagem}{6}
+\contentsline {section}{\numberline {5}Conclus\~oes}{9}
