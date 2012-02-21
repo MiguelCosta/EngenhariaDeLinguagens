@@ -40,15 +40,15 @@
 
 
 
-\title{Exercí­cio para Avaliação n.º 3}
+\title{Exercï¿½ï¿½cio para Avaliaï¿½ï¿½o n.ï¿½ 3}
 \author{Bruno Azevedo%
   \thanks{Email: \texttt{azevedo.252@gmail.com}}}
 
 \author{Miguel Costa%
   \thanks{Email: \texttt{miguelpintodacosta@gmail.com}}}
 
-\affil{Módulo Engenharia Gramatical,\\ UCE30 Engenharia de Linguagens,
-\\ Mestrado em Engenharia Informátical,\\Universidade do Minho}
+\affil{Mï¿½dulo Engenharia Gramatical,\\ UCE30 Engenharia de Linguagens,
+\\ Mestrado em Engenharia Informï¿½tical,\\Universidade do Minho}
 
 
 \date{\today}
@@ -60,8 +60,8 @@
 \maketitle
 
 \begin{abstract}
-Este documento apresenta a resolução do Exercício Prático n.º 3 do módulo de Engenharia de Linguagens.
-O exercício está relacionado com a geração automática de Processadores de Linguagens a partir de Gramáticas. 
+Este documento apresenta a resoluï¿½ï¿½o do Exercï¿½cio Prï¿½tico n.ï¿½ 3 do mï¿½dulo de Engenharia de Linguagens.
+O exercï¿½cio estï¿½ relacionado com a geraï¿½ï¿½o automï¿½tica de Processadores de Linguagens a partir de Gramï¿½ticas. 
 
 Era pretendido criar uma linguagem para fazer movimentar um Robo num Terreno e depois criar um processador para as frases da linguagem com algumas funcionalidades.
 \end{abstract}
@@ -76,32 +76,32 @@ Era pretendido criar uma linguagem para fazer movimentar um Robo num Terreno e d
 \newpage
 
 \section{Ambiente de Trabalho}
-Foi necessário usar um Gerador de Compiladores para gerar o nosso próprio compilador, por isso usamos o AnTLR que é também usado nas aulas. Para facilitar o debug durante a resuloção do problema que era dada, usamos a ferramenta AnTLRWorks, que tem um interface bastante agradável e simpático para problemas desta natureza.
+Foi necessï¿½rio usar um Gerador de Compiladores para gerar o nosso prï¿½prio compilador, por isso usamos o AnTLR que ï¿½ tambï¿½m usado nas aulas. Para facilitar o debug durante a resuloï¿½ï¿½o do problema que era dada, usamos a ferramenta AnTLRWorks, que tem um interface bastante agradï¿½vel e simpï¿½tico para problemas desta natureza.
 
-A linguem de programação adoptada foi o JAVA. De forma tornar a nossa solução mais legível e estruturada, criamos classes com o auxilio  do IDE NetBeans que nos ajuda no desenvolvimento do código JAVA e ainda na criação da sua documentação (javadoc).
+A linguem de programaï¿½ï¿½o adoptada foi o JAVA. De forma tornar a nossa soluï¿½ï¿½o mais legï¿½vel e estruturada, criamos classes com o auxilio  do IDE NetBeans que nos ajuda no desenvolvimento do cï¿½digo JAVA e ainda na criaï¿½ï¿½o da sua documentaï¿½ï¿½o (javadoc).
 
 
-\section{Descrição do problema}
-Imaginemos um robo com a função de aspirar um terreno de forma retangular. Este terreno tem uma área que é conhecida pela robo e que acaba por limitar o raio de ação dele.
+\section{Descriï¿½ï¿½o do problema}
+Imaginemos um robo com a funï¿½ï¿½o de aspirar um terreno de forma retangular. Este terreno tem uma ï¿½rea que ï¿½ conhecida pela robo e que acaba por limitar o raio de aï¿½ï¿½o dele.
 
-O robo pode ter definida uma posição inicial e os seus movimentos podem ser em quatro direções diferentes (norte, sul, este e oeste) com uma peso associado que representa a distância que se vai deslocar (por exemplo \verb|NORTE 4|, desloca-se 4 unidades para norte). Tem ainda a opção de estar ligado ou desligado que define se está ativo ou não para aspirar.
+O robo pode ter definida uma posiï¿½ï¿½o inicial e os seus movimentos podem ser em quatro direï¿½ï¿½es diferentes (norte, sul, este e oeste) com uma peso associado que representa a distï¿½ncia que se vai deslocar (por exemplo \verb|NORTE 4|, desloca-se 4 unidades para norte). Tem ainda a opï¿½ï¿½o de estar ligado ou desligado que define se estï¿½ ativo ou nï¿½o para aspirar.
 
-Com base na descrição do robo, era pedido:
+Com base na descriï¿½ï¿½o do robo, era pedido:
 \begin{enumerate}
-	\item Criar uma linguagem que conseguisse descrever uma rotina possivél para o robo. Esta linguagem deve permitir ainda que tenha no inicio certas definições como a dimensão do terreno e a posição inicial do robo.
-	\item Depois de definida a linguagem tinhamos de criar um processador para as possíveis frases que podiam ser geradas com as funcionalidades de:
+	\item Criar uma linguagem que conseguisse descrever uma rotina possivï¿½l para o robo. Esta linguagem deve permitir ainda que tenha no inicio certas definiï¿½ï¿½es como a dimensï¿½o do terreno e a posiï¿½ï¿½o inicial do robo.
+	\item Depois de definida a linguagem tinhamos de criar um processador para as possï¿½veis frases que podiam ser geradas com as funcionalidades de:
 	\begin{itemize}
-		\item Verificar que o robo não se movimenta para fora da área de limpeza.
-		\item Calcular a distância (em cm) que o robo percorreu durante a sua rotina.
-		\item Determinar quantas mudanças de direção foram feitas pelo robo.
-		\item Determinar a distância média que o robo se desloca por cada movimento.
+		\item Verificar que o robo nï¿½o se movimenta para fora da ï¿½rea de limpeza.
+		\item Calcular a distï¿½ncia (em cm) que o robo percorreu durante a sua rotina.
+		\item Determinar quantas mudanï¿½as de direï¿½ï¿½o foram feitas pelo robo.
+		\item Determinar a distï¿½ncia mï¿½dia que o robo se desloca por cada movimento.
 	\end{itemize}
 \end{enumerate}
 
 
-\section{Criação da linguagem}
-Analisando o que era pretendido para descrever a rotina do robo, tentamos criar uma linguagem com uma sintaxe de fácil leitura e sem ambiguidades. Depois de analisar várias alternativas, definimos a linaguem com a seguinte estrutura:
-\lstset{caption={Estrutura da gramática},label=DescriptiveLabel}
+\section{Criaï¿½ï¿½o da linguagem}
+Analisando o que era pretendido para descrever a rotina do robo, tentamos criar uma linguagem com uma sintaxe de fï¿½cil leitura e sem ambiguidades. Depois de analisar vï¿½rias alternativas, definimos a linaguem com a seguinte estrutura:
+\lstset{caption={Estrutura da gramï¿½tica},label=DescriptiveLabel}
 \begin{lstlisting}[style=gramatica]
     ASPIRADOR
     {
@@ -116,7 +116,7 @@ Analisando o que era pretendido para descrever a rotina do robo, tentamos criar 
     }
 \end{lstlisting}
 
-Uma linguagem tem de ter simbolos terminais e neste caso nós definimos os símbolos:
+Uma linguagem tem de ter simbolos terminais e neste caso nï¿½s definimos os sï¿½mbolos:
 \begin{itemize}
 	\item DIM
 	\item POS
@@ -130,30 +130,30 @@ Uma linguagem tem de ter simbolos terminais e neste caso nós definimos os símbol
 	\item INT
 \end{itemize}
 
-Definindo formalmente a gramática para representar os eventos possíveis do robo, ficou:
-\lstset{caption={Gramática},label=DescriptiveLabel}
+Definindo formalmente a gramï¿½tica para representar os eventos possï¿½veis do robo, ficou:
+\lstset{caption={Gramï¿½tica},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{gramatica.g}
 
-Depois de gerada a gramática, algumas das frases que se podem gerar, são:
+Depois de gerada a gramï¿½tica, algumas das frases que se podem gerar, sï¿½o:
 \lstset{caption={Frase gerada 1},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{in1.txt}
-Para provar que era uma frase válida, fizemos a sua árvore de derivação:
+Para provar que era uma frase vï¿½lida, fizemos a sua ï¿½rvore de derivaï¿½ï¿½o:
 \begin{figure}[H]
  \centering
  \includegraphics[scale=0.29]{arv1.jpeg}
  % imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
- \caption{Árvore de derivação}
+ \caption{ï¿½rvore de derivaï¿½ï¿½o}
 \end{figure}
 
 
-Analisando a gramática a as frases geradas a partir dela, vericámos que o elemento raiz é \verb|robot| e o parser terá de encontrar no início a palavra \verb|ASPIRADOR| seguido de um \verb|corpo| que se encontra dentro de chavetas.
+Analisando a gramï¿½tica a as frases geradas a partir dela, vericï¿½mos que o elemento raiz ï¿½ \verb|robot| e o parser terï¿½ de encontrar no inï¿½cio a palavra \verb|ASPIRADOR| seguido de um \verb|corpo| que se encontra dentro de chavetas.
 
-O corpo está dividio em 2 partes: \verb|definicoes| e \verb|movimentos|. Nas \verb|definicoes| podemos configurar a \verb|dimensao| do terreno e ainda a \verb|posicao| inicial do robo.
+O corpo estï¿½ dividio em 2 partes: \verb|definicoes| e \verb|movimentos|. Nas \verb|definicoes| podemos configurar a \verb|dimensao| do terreno e ainda a \verb|posicao| inicial do robo.
 
 Quanto aos \verb|movimentos|, este podem ser de 2 tipos, os que fazem realmente mover o robo (por exemplo \verb|NORTE 2|) e os que ligam (\verb|LIGAR|) ou desligam (\verb|DESLIGAR|) o robo. 
 
-\section{Implementação}
-De forma a estruturar melhor todo o exercício, criámos em classes em java que nos facilitassem o cálculo de todas as estatísticas e todas as restrições que eram necessárias.
+\section{Implementaï¿½ï¿½o}
+De forma a estruturar melhor todo o exercï¿½cio, criï¿½mos em classes em java que nos facilitassem o cï¿½lculo de todas as estatï¿½sticas e todas as restriï¿½ï¿½es que eram necessï¿½rias.
 
 \subsection{Classes}
 As classes criadas foram:
@@ -163,27 +163,27 @@ As classes criadas foram:
 	\item \verb|Matrix|
 \end{itemize}
 
-A classe \verb|Robo| é a responsável por guardar todos os movimentos e por gerar as estatísticas. \verb|Terreno| é a classe que contêm as dimensões do território em que o Robo se pode deslocar e verifica se este não se quer deslocar para fora dele. Para confirmar se tudo o que era pedido ao Robo se concretizava, criámos um pequeno interface em que é possível ver a deslocação passo a passo do Robo e ainda as estatísticas. Este interface corresponde à classe \verb|Matrix| que recorre ao Java SWING para criar a animação.
+A classe \verb|Robo| ï¿½ a responsï¿½vel por guardar todos os movimentos e por gerar as estatï¿½sticas. \verb|Terreno| ï¿½ a classe que contï¿½m as dimensï¿½es do territï¿½rio em que o Robo se pode deslocar e verifica se este nï¿½o se quer deslocar para fora dele. Para confirmar se tudo o que era pedido ao Robo se concretizava, criï¿½mos um pequeno interface em que ï¿½ possï¿½vel ver a deslocaï¿½ï¿½o passo a passo do Robo e ainda as estatï¿½sticas. Este interface corresponde ï¿½ classe \verb|Matrix| que recorre ao Java SWING para criar a animaï¿½ï¿½o.
 
-Em anexo está o código java de cada classe.
+Em anexo estï¿½ o cï¿½digo java de cada classe.
 
-\subsection{Instruções na gramática}
+\subsection{Instruï¿½ï¿½es na gramï¿½tica}
 
 
 
 \newpage
 
-\section{Conclusões}
+\section{Conclusï¿½es}
 
-A resolução deste exercício permitiu perceber melhor a forma como as linguagens 
-de estrutura para a resolução de determinados problemas. Depois de definida a GIC e 
-criando a GA, conseguimos realizar os cálculos que eram pretendidos para a soma.
+A resoluï¿½ï¿½o deste exercï¿½cio permitiu perceber melhor a forma como as linguagens 
+de estrutura para a resoluï¿½ï¿½o de determinados problemas. Depois de definida a GIC e 
+criando a GA, conseguimos realizar os cï¿½lculos que eram pretendidos para a soma.
 
-Apesar de serem dois exercícios para calcular um resultado de forma diferente,
-deu para perceber que o reaciocínio para resolver é idêntifo com ambos os casos.
+Apesar de serem dois exercï¿½cios para calcular um resultado de forma diferente,
+deu para perceber que o reaciocï¿½nio para resolver ï¿½ idï¿½ntifo com ambos os casos.
 
-Serviu de consolidação da matéria dada até agora no módulo de Engenharia de Linguagens,
-tendo em conta que conseguimos resolver os exercícios com sucesso.
+Serviu de consolidaï¿½ï¿½o da matï¿½ria dada atï¿½ agora no mï¿½dulo de Engenharia de Linguagens,
+tendo em conta que conseguimos resolver os exercï¿½cios com sucesso.
 
 
 \end{document}
