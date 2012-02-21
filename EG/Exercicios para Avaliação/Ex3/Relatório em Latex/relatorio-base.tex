@@ -8,195 +8,186 @@
 \usepackage{float}
 \usepackage[affil-it]{authblk}
 \usepackage{indentfirst}
-
+ 
 \usepackage{titlesec}
-
-\usepackage{aeguill}  % usefull for pdflatex
+ 
+\usepackage{aeguill} % usefull for pdflatex
 \usepackage[compat2,a4paper,twosideshift=0mm,left=20mm,right=20mm,bottom=20mm,top=15mm]{geometry}
-
+ 
 \parindent=2em
-
+ 
 \usepackage{xcolor}
 \usepackage{listings}
-
-
+ 
+ 
 \lstdefinestyle{gramatica}{
-	backgroundcolor=\color{yellow!7},%
-    numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt,% 
-    basicstyle=\small\ttfamily\color{blue},%
-    breaklines=true,%                                      allow line breaks
-    moredelim=[s][\color{green!50!black}\ttfamily]{'}{'},% single quotes in green
-    moredelim=*[s][\color{black}\ttfamily]{options}{\}},%  options in black (until trailing })
-    commentstyle={\color{gray}\itshape},%                  gray italics for comments
-    morecomment=[l]{//},%                                  define // comment
-    emph={%
-        STRING%                                            literal strings listed here
-        },emphstyle={\color{blue}\ttfamily},%              and formatted in blue
-    alsoletter={:,|,;},%
-    morekeywords={:,|,;},%                                 define the special characters
-    keywordstyle={\color{black}},%                         and format them in black
+backgroundcolor=\color{yellow!7},%
+numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt,%
+basicstyle=\small\ttfamily\color{blue},%
+breaklines=true,% allow line breaks
+moredelim=[s][\color{green!50!black}\ttfamily]{'}{'},% single quotes in green
+moredelim=*[s][\color{black}\ttfamily]{options}{\}},% options in black (until trailing })
+commentstyle={\color{gray}\itshape},% gray italics for comments
+morecomment=[l]{//},% define // comment
+emph={%
+STRING% literal strings listed here
+},emphstyle={\color{blue}\ttfamily},% and formatted in blue
+alsoletter={:,|,;},%
+morekeywords={:,|,;},% define the special characters
+keywordstyle={\color{black}},% and format them in black
 }
-
-
-
-
-\title{Exerc��cio para Avalia��o n.� 3}
+ 
+ 
+ 
+ 
+\title{Exercí­cio para Avaliação n.º 3}
 \author{Bruno Azevedo%
-  \thanks{Email: \texttt{azevedo.252@gmail.com}}}
-
+\thanks{Email: \texttt{azevedo.252@gmail.com}}}
+ 
 \author{Miguel Costa%
-  \thanks{Email: \texttt{miguelpintodacosta@gmail.com}}}
-
-\affil{M�dulo Engenharia Gramatical,\\ UCE30 Engenharia de Linguagens,
-\\ Mestrado em Engenharia Inform�tical,\\Universidade do Minho}
-
-
+\thanks{Email: \texttt{miguelpintodacosta@gmail.com}}}
+ 
+\affil{Módulo Engenharia Gramatical,\\ UCE30 Engenharia de Linguagens,
+\\ Mestrado em Engenharia Informatica,\\Universidade do Minho}
+ 
+ 
 \date{\today}
-
-
+ 
+ 
 \begin{document}
-
-
+ 
+ 
 \maketitle
-
+ 
 \begin{abstract}
-Este documento apresenta a resolu��o do Exerc�cio Pr�tico n.� 3 do m�dulo de Engenharia de Linguagens.
-O exerc�cio est� relacionado com a gera��o autom�tica de Processadores de Linguagens a partir de Gram�ticas. 
-
+Este documento apresenta a resolução do Exercício Prático n.º 3 do módulo de Engenharia Gramatical.
+O exercício está relacionado com a geração automática de Processadores de Linguagens a partir de Gramáticas.
+ 
 Era pretendido criar uma linguagem para fazer movimentar um Robo num Terreno e depois criar um processador para as frases da linguagem com algumas funcionalidades.
 \end{abstract}
-
-
+ 
+ 
 \newpage
-
+ 
 \parskip=0mm
 \tableofcontents
 \parskip=2mm
-
+ 
 \newpage
-
+ 
 \section{Ambiente de Trabalho}
-Foi necess�rio usar um Gerador de Compiladores para gerar o nosso pr�prio compilador, por isso usamos o AnTLR que � tamb�m usado nas aulas. Para facilitar o debug durante a resulo��o do problema que era dada, usamos a ferramenta AnTLRWorks, que tem um interface bastante agrad�vel e simp�tico para problemas desta natureza.
-
-A linguem de programa��o adoptada foi o JAVA. De forma tornar a nossa solu��o mais leg�vel e estruturada, criamos classes com o auxilio  do IDE NetBeans que nos ajuda no desenvolvimento do c�digo JAVA e ainda na cria��o da sua documenta��o (javadoc).
-
-
-\section{Descri��o do problema}
-Imaginemos um robo com a fun��o de aspirar um terreno de forma retangular. Este terreno tem uma �rea que � conhecida pela robo e que acaba por limitar o raio de a��o dele.
-
-O robo pode ter definida uma posi��o inicial e os seus movimentos podem ser em quatro dire��es diferentes (norte, sul, este e oeste) com uma peso associado que representa a dist�ncia que se vai deslocar (por exemplo \verb|NORTE 4|, desloca-se 4 unidades para norte). Tem ainda a op��o de estar ligado ou desligado que define se est� ativo ou n�o para aspirar.
-
-Com base na descri��o do robo, era pedido:
+Foi necessário usar um Gerador de Compiladores para gerar o nosso próprio compilador, por isso usámos o AnTLR que é também usado nas aulas. Para facilitar o processo de debugging durante a resolução do problema dado, usámos a ferramenta AnTLRWorks, que tem uma interface bastante agradável e simpática para ajudar a resolver problemas desta natureza.
+ 
+A linguem de programação adoptada foi o JAVA. De forma tornar a nossa solução mais legível e estruturada, criámos classes com o auxílio do IDE NetBeans que nos ajudou no desenvolvimento do código JAVA e ainda na criação da sua documentação (javadoc).
+ 
+ 
+\section{Descrição do problema}
+Imaginemos um robo com a função de aspirar um terreno de forma retangular. Este terreno tem uma área que é conhecida pelo robo e que acaba por limitar o raio de ação dele.
+ 
+O robo pode ter definida uma posição inicial e os seus movimentos podem ser em quatro direções diferentes (norte, sul, este e oeste) com um peso associado que representa a distância que se vai deslocar (por exemplo \verb|NORTE 4|, desloca-se 4 unidades para norte). Tem ainda a opção de estar ligado ou desligado que define se está ativo ou não para aspirar.
+ 
+Com base na descrição do robo, era pedido:
 \begin{enumerate}
-	\item Criar uma linguagem que conseguisse descrever uma rotina possiv�l para o robo. Esta linguagem deve permitir ainda que tenha no inicio certas defini��es como a dimens�o do terreno e a posi��o inicial do robo.
-	\item Depois de definida a linguagem tinhamos de criar um processador para as poss�veis frases que podiam ser geradas com as funcionalidades de:
-	\begin{itemize}
-		\item Verificar que o robo n�o se movimenta para fora da �rea de limpeza.
-		\item Calcular a dist�ncia (em cm) que o robo percorreu durante a sua rotina.
-		\item Determinar quantas mudan�as de dire��o foram feitas pelo robo.
-		\item Determinar a dist�ncia m�dia que o robo se desloca por cada movimento.
-	\end{itemize}
-\end{enumerate}
-
-
-\section{Cria��o da linguagem}
-Analisando o que era pretendido para descrever a rotina do robo, tentamos criar uma linguagem com uma sintaxe de f�cil leitura e sem ambiguidades. Depois de analisar v�rias alternativas, definimos a linaguem com a seguinte estrutura:
-\lstset{caption={Estrutura da gram�tica},label=DescriptiveLabel}
-\begin{lstlisting}[style=gramatica]
-    ASPIRADOR
-    {
-        DEFINICOES
-        {
-            definicao1; definicao2;
-        }
-        MOVIMENTOS
-            instrucao1;
-            instrucao2;
-            ....
-    }
-\end{lstlisting}
-
-Uma linguagem tem de ter simbolos terminais e neste caso n�s definimos os s�mbolos:
+\item Criar uma linguagem que conseguisse descrever uma rotina possível para o robo. Esta linguagem deve permitir ainda que tenha no início certas definições como a dimensão do terreno e a posição inicial do robo.
+\item Depois de definida a linguagem, tínhamos de criar um processador para as possíveis frases que podiam ser geradas com as seguintes funcionalidades:
 \begin{itemize}
-	\item DIM
-	\item POS
-	\item LIGAR
-	\item DESLIGAR
-	\item NORTE
-	\item SUL
-	\item ESTE
-	\item OESTE
-	\item ID
-	\item INT
+\item Verificar que o robo não se movimenta para fora da área de limpeza.
+\item Calcular a distância (em cm) que o robo percorreu durante a sua rotina.
+\item Determinar quantas mudanças de direção foram feitas pelo robo.
+\item Determinar a distância média que o robo se desloca por cada movimento.
 \end{itemize}
-
-Definindo formalmente a gram�tica para representar os eventos poss�veis do robo, ficou:
-\lstset{caption={Gram�tica},label=DescriptiveLabel}
+\end{enumerate}
+ 
+ 
+\section{Criação da linguagem}
+Analisando o que era pretendido para descrever a rotina do robo, tentámos criar uma linguagem com uma sintaxe de fácil leitura e sem ambiguidades. Depois de analisar várias alternativas, definimos a linguagem com a seguinte estrutura:
+\lstset{caption={Estrutura da gramática},label=DescriptiveLabel}
+\begin{lstlisting}[style=gramatica]
+ASPIRADOR
+{
+DEFINICOES
+{
+definicao1; definicao2;
+}
+MOVIMENTOS
+instrucao1;
+instrucao2;
+....
+}
+\end{lstlisting}
+ 
+Uma linguagem tem de ter símbolos terminais e neste caso definimos os símbolos:
+\begin{itemize}
+\item DIM
+\item POS
+\item LIGAR
+\item DESLIGAR
+\item NORTE
+\item SUL
+\item ESTE
+\item OESTE
+\item ID
+\item INT
+\end{itemize}
+ 
+Definindo formalmente a gramática para representar os eventos possíveis do robo, obtemos:
+\lstset{caption={Gramática},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{gramatica.g}
-
-Depois de gerada a gram�tica, algumas das frases que se podem gerar, s�o:
+ 
+Depois de gerada a gramática, uma frase que se pode gerar é:
 \lstset{caption={Frase gerada 1},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{in1.txt}
-Para provar que era uma frase v�lida, fizemos a sua �rvore de deriva��o:
+Para provar que era uma frase válida, fizemos a sua árvore de derivação:
 \begin{figure}[H]
- \centering
- \includegraphics[scale=0.29]{arv1.jpeg}
- % imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
- \caption{�rvore de deriva��o}
+\centering
+\includegraphics[scale=0.29]{arv1.jpeg}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Árvore de derivação}
 \end{figure}
-
-
-Analisando a gram�tica a as frases geradas a partir dela, veric�mos que o elemento raiz � \verb|robot| e o parser ter� de encontrar no in�cio a palavra \verb|ASPIRADOR| seguido de um \verb|corpo| que se encontra dentro de chavetas.
-
-O corpo est� dividio em 2 partes: \verb|definicoes| e \verb|movimentos|. Nas \verb|definicoes| podemos configurar a \verb|dimensao| do terreno e ainda a \verb|posicao| inicial do robo.
-
-Quanto aos \verb|movimentos|, este podem ser de 2 tipos, os que fazem realmente mover o robo (por exemplo \verb|NORTE 2|) e os que ligam (\verb|LIGAR|) ou desligam (\verb|DESLIGAR|) o robo. 
-
-\section{Implementa��o}
-De forma a estruturar melhor todo o exerc�cio, cri�mos em classes em java que nos facilitassem o c�lculo de todas as estat�sticas e todas as restri��es que eram necess�rias.
-
-\subsection{Decis�es Tomadas}
-Como seria de esperar, h� promenores que tinham de ser decididos para colocar o robo no terreno e para o c�lculo das estat�sticas, algumas decis�es tomadas foram:
-\begin{itemize}
-	\item Caso n�o esteja definida a posi��o inicial do Robo no terreno, � assumido que esta � (0,0), que corresponde ao canto superior esquerdo do terreno.
-	\item Inicialmente, o Robo � colocado no terreno sem dire��o, assim, apenas depois do primeiro movimento, ele tem a dire��o definida e � poss�vel contar para efeitos estat�sticos a mudan�a de dire��o.
-	\item Apenas quando o Robo est� no modo ligado � que ele se movimenta, caso contr�rio ignora todas as instru��es que receber, excepto que a de \verb|LIGAR|.
-\end{itemize}
-
-
+ 
+ 
+Analisando a gramática a as frases geradas a partir dela, verificámos que o elemento raiz é \verb|robot| e o parser terá de encontrar, no início, a palavra \verb|ASPIRADOR| seguida de um \verb|corpo| que se encontra dentro de chavetas.
+ 
+O corpo está dividio em 2 partes: \verb|definicoes| e \verb|movimentos|. Nas \verb|definicoes| podemos configurar a \verb|dimensao| do terreno e ainda a \verb|posicao| inicial do robo.
+ 
+Quanto aos \verb|movimentos|, este podem ser de 2 tipos, os que fazem realmente movimentar o robo (por exemplo \verb|NORTE 2|) e os que ligam (\verb|LIGAR|) ou desligam (\verb|DESLIGAR|) o robo.
+ 
+\section{Implementação}
+De forma a estruturar melhor todo o exercício, criámos classes em java que nos facilitassem o cálculo de todas as estatísticas e todas as restrições que eram necessárias.
+ 
 \subsection{Classes}
 As classes criadas foram:
 \begin{itemize}
-	\item \verb|Robo|
-	\item \verb|Terreno|
-	\item \verb|Matrix|
+\item \verb|Robo|
+\item \verb|Terreno|
+\item \verb|Matrix|
 \end{itemize}
-
-A classe \verb|Robo| � a respons�vel por guardar todos os movimentos e por gerar as estat�sticas. \verb|Terreno| � a classe que cont�m as dimens�es do territ�rio em que o Robo se pode deslocar e verifica se este n�o se quer deslocar para fora dele. Para confirmar se tudo o que era pedido ao Robo se concretizava, cri�mos um pequeno interface em que � poss�vel ver a desloca��o passo a passo do Robo e ainda as estat�sticas. Este interface corresponde � classe \verb|Matrix| que recorre ao Java SWING para criar a anima��o.
-
-Em anexo est� o c�digo java de cada classe.
-
+ 
+A classe \verb|Robo| é a responsável por guardar o estado, a posicao atual, a direção atual e todos os movimentos executados pelo robo e por gerar as estatísticas relacionadas com os mesmos. \verb|Terreno| é a classe que contém o valor, em cm, de uma unidade de movimento, as dimensões do terreno onde o robo se vai movimentar e verifica se o robo não se quer deslocar para fora dele. Para confirmar visualmente que tudo o que era pedido ao Robo se concretizava, criámos uma interface onde é possível ver a deslocação, passo a passo, do Robo e ainda as estatísticas geradas. Esta interface corresponde à classe \verb|Matrix| que recorre ao Java SWING para criar a animação.
+ 
+Em anexo está o código java de cada classe.
+ 
 \subsection{Linguagem}
-Depois de criadas as classes em Java, foi necess�rio adaptar a nossa gram�tica de forma a realizar o que era pretendido, adicionamos vari�veis para o \verb|Robo|, o \verb|Terreno| e para o interface (\verb|Matrix|).
-
-Acabou por ficar:
+Depois de criadas as classes em Java, foi necessário adaptar a nossa gramática de forma a realizar o que era pretendido, e instanciámos as três classes \verb|Robo|, \verb|Terreno| e (\verb|Matrix|).
+ 
+Resultando em:
 \lstset{caption={Linaguem Final},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{robot.g}
-
-
+ 
+ 
 \newpage
-
-\section{Conclus�es}
-
-A resolu��o deste exerc�cio permitiu perceber melhor a forma como as linguagens 
-de estrutura para a resolu��o de determinados problemas. Depois de definida a GIC e 
-criando a GA, conseguimos realizar os c�lculos que eram pretendidos para a soma.
-
-Apesar de serem dois exerc�cios para calcular um resultado de forma diferente,
-deu para perceber que o reacioc�nio para resolver � id�ntifo com ambos os casos.
-
-Serviu de consolida��o da mat�ria dada at� agora no m�dulo de Engenharia de Linguagens,
-tendo em conta que conseguimos resolver os exerc�cios com sucesso.
-
-
+ 
+\section{Conclusões}
+ 
+A resolução deste exercício permitiu perceber melhor a forma como as linguagens
+de estrutura para a resolução de determinados problemas. Depois de definida a GIC e
+criando a GA, conseguimos realizar os cálculos que eram pretendidos para a soma.
+ 
+Apesar de serem dois exercícios para calcular um resultado de forma diferente,
+deu para perceber que o reaciocínio para resolver é idêntifo com ambos os casos.
+ 
+Serviu de consolidação da matéria dada até agora no módulo de Engenharia de Linguagens,
+tendo em conta que conseguimos resolver os exercícios com sucesso.
+ 
+ 
 \end{document}
