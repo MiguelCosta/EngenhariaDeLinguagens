@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  21 FEB 2012 15:28
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  21 FEB 2012 17:40
 entering extended mode
  %&-line parsing enabled.
 **relatorio-base.tex
@@ -217,9 +217,6 @@ LaTeX Warning: Label `DescriptiveLabel' multiply defined.
 
 LaTeX Warning: Label `DescriptiveLabel' multiply defined.
 
-
-LaTeX Warning: Label `DescriptiveLabel' multiply defined.
-
 )
 \openout1 = `relatorio-base.aux'.
 
@@ -300,68 +297,774 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 60.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 60.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.60 \maketitle
+               
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\AB@authors ...ilsep ]\protect \Affilfont M\~A{^3}
+                                                  dulo Engenharia Gramatical...
+l.60 \maketitle
+               
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \maketitle
+               
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.60 \maketitle
+               
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.60 \maketitle
+               
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
 LaTeX Font Info:    Try loading font information for T1+aett on input line 60.
 (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <9> on input line 63.
- [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./relatorio-base.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 6.
-)
+! Missing $ inserted.
+<inserted text> 
+                $
+l.63 ...√ß√£o do Exerc√≠cio Pr√°tico n.¬∫ 3 do m√≥
+                                                  dulo de Engenharia Gramati...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\maththreesuperior ->{^3}
+                         
+l.63 ...√ß√£o do Exerc√≠cio Pr√°tico n.¬∫ 3 do m√≥
+                                                  dulo de Engenharia Gramati...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 64.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 64.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 64.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 64.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 64.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 64.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 64.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 64.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 64.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.65 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.65 
+     
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no √ in font cmr9!
+Missing character: There is no √ in font cmr9!
+Missing character: There is no Ω in font cmr9!
+Missing character: There is no √ in font cmr9!
+Missing character: There is no √ in font cmr9!
+Missing character: There is no √ in font cmr9!
+Missing character: There is no Ω in font cmr9!
+Missing character: There is no √ in font cmr9!
+Missing character: There is no Ω in font cmr9!
+
+Overfull \hbox (57.16742pt too wide) in paragraph at lines 63--65
+[]\T1/aer/m/n/9 Este do-cu-mento apre-senta a re-so-lu√ü√øo do Exerc√-cio Pr√Ωt
+ico n.¬$[]$ 3 do m√$[]\OML/cmm/m/it/9 dulodeEngenhariaGramatical:Oexerc\T1/aer/
+m/n/9 -
+ []
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./relatorio-base.toc)
 \tf@toc=\write4
 \openout4 = `relatorio-base.toc'.
 
- [2]
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 94.
 
+[2]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.79 ...or de Compiladores para gerar o nosso pr√≥
+                                                  prio compilador, por isso ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 79.
+! Extra }, or forgotten $.
+\maththreesuperior ->{^3}
+                         
+l.79 ...or de Compiladores para gerar o nosso pr√≥
+                                                  prio compilador, por isso ...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 79.
+
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 79.
 (/usr/share/texmf/tex/latex/R/tex/latex/omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 94.
- [3] (./gramatica.g [4])
-(./in1.txt) <arv1.jpeg, id=31, 1784.6675pt x 252.945pt>
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 79.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 79.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 79.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.80 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no Ω in font cmr10!
+
+Overfull \hbox (1058.58688pt too wide) in paragraph at lines 79--80
+[]\T1/aer/m/n/10 Foi ne-cess√Ωrio usar um Ge-ra-dor de Com-pi-la-do-res para ge
+-rar o nosso pr√$[]\OML/cmm/m/it/10 priocompilador; porissousmosoAnTLRque[]tamb
+[]musadonasaulas:Parafacilitaroprocessodedebuggingdurantearesolu\OMS/cmsy/m/n/1
+0 x\OT1/cmr/m/it/10 $\OML/cmm/m/it/10 odoproblemadado; usmosaferramentaAnTLRWor
+ks; quetemumainterfacebastanteagradvelesimpticaparaajudararesolverproblemasdest
+anatureza:$ 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 ...s que nos ajudou no desenvolvimento do c√≥
+                                                  digo JAVA e ainda na cria√...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\maththreesuperior ->{^3}
+                         
+l.81 ...s que nos ajudou no desenvolvimento do c√≥
+                                                  digo JAVA e ainda na cria√...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 81.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 81.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 81.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 81.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.82 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.87 ...us movimentos podem ser em quatro dire√ß√µ
+                                                  es diferentes (norte, sul,...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 87.
+
+
+LaTeX Warning: Command \textcent invalid in math mode on input line 87.
+
+
+! LaTeX Error: Command \textcent unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 ... um peso associado que representa a dist√¢
+                                                  ncia que se vai deslocar (...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 87.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 87.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 87.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 87.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 87.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.88 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no √ in font cmr10!
+
+Overfull \hbox (536.19365pt too wide) in paragraph at lines 87--88
+[]\T1/aer/m/n/10 O robo pode ter de-fi-nida uma po-si√ü√øo ini-cial e os seus m
+o-vi-men-tos po-dem ser em qua-tro dire√ü√$\OML/cmm/m/it/10 ^^Vesdiferentes\OT1
+/cmr/m/n/10 (\OML/cmm/m/it/10 norte; sul; esteeoeste\OT1/cmr/m/n/10 )\OML/cmm/m
+/it/10 comumpesoassociadoquerepresentaadistnciaquesevaideslocar\OT1/cmr/m/n/10 
+(\OML/cmm/m/it/10 porexemplo[]; desloca \OMS/cmsy/m/n/10 ^^@
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.91 ...nda que tenha no in√≠cio certas defini√ß√µ
+                                                  es como a dimens√£o do ter...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 91.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 91.
+
+
+! LaTeX Error: Command \item invalid in math mode.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \item
+           Depois de definida a linguagem, t√≠nhamos de criar um processador...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \item D
+            epois de definida a linguagem, t√≠nhamos de criar um processador...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \item D
+            epois de definida a linguagem, t√≠nhamos de criar um processador...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 92.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 92.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.93 \begin{itemize}
+                    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.93 \begin{itemize}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing \endgroup inserted.
+<inserted text> 
+                \endgroup 
+l.93 \begin{itemize}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+
+Overfull \hbox (131.69461pt too wide) in paragraph at lines 91--93
+\T1/aer/m/n/10 mi-tir ainda que te-nha no in√-cio cer-tas defini√ü√$\OML/cmm/m/
+it/10 ^^Vescomoadimens\OT1/cmr/m/it/10 $\OML/cmm/m/it/10 odoterrenoeaposi\OMS/c
+msy/m/n/10 x\OT1/cmr/m/it/10 $\OML/cmm/m/it/10 oinicialdorobo:Depoisdedefinidaa
+linguagem; t\T1/aer/m/n/10 -
+ []
+
+
+Overfull \hbox (20.843pt too wide) in paragraph at lines 91--93
+\OML/cmm/m/it/10 nhamosdecriarumprocessadorparaasposs\T1/aer/m/n/10 -\OML/cmm/m
+/it/10 veisfrasesquepodiamsergeradascomasseguintesfuncionalidades \OT1/cmr/m/n/
+10 :
+ []
+
+! Extra }, or forgotten \endgroup.
+\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
+                                                  \fi 
+l.93 \begin{itemize}
+                    
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: Command \textcent unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 \item Calcular a dist√¢
+                            ncia (em cm) que o robo percorreu durante a sua ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \textcent unavailable in encoding T1.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \item Determinar a dist√¢
+                              ncia m√©dia que o robo se desloca por cada mov...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{enumerate} on input line 90 ended by \end{itemize}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 \end{itemize}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: \begin{document} ended by \end{enumerate}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \end{enumerate}
+                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.99 \end{enumerate}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.99 \end{enumerate}
+                    
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.99 \end{enumerate}
+                    
+Things are pretty mixed up, but I think the worst is over.
+
+[3] (./gramatica.g [4]) (./in1.txt)
+<arv1.jpeg, id=40, 1784.6675pt x 252.945pt>
 File: arv1.jpeg Graphic file (type jpg)
  <use arv1.jpeg>
 Overfull \hbox (33.84346pt too wide) in paragraph at lines 143--145
  [][] 
  []
 
-[5] (./robot.g [6 <./arv1.jpeg>] [7]) [8] [9] (./relatorio-base.aux)
 
-LaTeX Warning: There were multiply-defined labels.
+! Package inputenc Error: Keyboard character used is undefined
+(inputenc)                in inputencoding `latin1'.
 
- ) 
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 \caption{√Årvore de deriva√ß√£o}
+                                      
+You need to provide a definition with \DeclareInputText 
+or \DeclareInputMath before using this key.
+
+[5]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.156 ...as as estat√≠sticas e todas as restri√ß√µ
+                                                  es que eram necess√°rias.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 156.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 156.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.157 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no Ω in font cmr10!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.166 ... de uma unidade de movimento, as dimens√µ
+                                                  es do terreno onde o robo ...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 166.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 166.
+
+
+LaTeX Warning: Command \textexclamdown invalid in math mode on input line 166.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 166.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 166.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 166.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 166.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 166.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 166.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 166.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 166.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.167 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no Ω in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+Missing character: There is no √ in font cmr10!
+
+Overfull \hbox (691.11624pt too wide) in paragraph at lines 166--167
+\T1/aer/m/n/10 cont√[]m o va-lor, em cm, de uma uni-dade de mo-vi-mento, as dim
+ens√$\OML/cmm/m/it/10 ^^Vesdoterrenoondeorobosevaimovimentareverificaseorobon\O
+T1/cmr/m/it/10 $\OML/cmm/m/it/10 osequerdeslocarparaforadele:Paraconfirmarvisua
+lmentequetudooqueerapedidoaoRoboseconcretizava; crimosumainterfaceonde[]poss\T1
+/aer/m/n/10 -
+ []
+
+
+Overfull \hbox (214.65976pt too wide) in paragraph at lines 166--167
+\OML/cmm/m/it/10 velveradesloca\OMS/cmsy/m/n/10 x\OT1/cmr/m/it/10 $\OML/cmm/m/i
+t/10 o; passoapasso; doRoboeaindaasestat\T1/aer/m/n/10 -\OML/cmm/m/it/10 sticas
+geradas:Estainterfacecorresponde classe[]querecorreaoJavaSWINGparacriaraanima\O
+MS/cmsy/m/n/10 x\OT1/cmr/m/it/10 $\OML/cmm/m/it/10 o:$ 
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.168 Em anexo est√° o c√≥
+                          digo java de cada classe.
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+\maththreesuperior ->{^3}
+                         
+l.168 Em anexo est√° o c√≥
+                          digo java de cada classe.
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.169 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+(./robot.g [6 (./robot.g
+! Undefined control sequence.
+l.105     :   '//' ~('\n
+                        '|'\r')* '\r'? '\n' {$channel=HIDDEN;}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.105     :   '//' ~('\n'|'\r')* '\r'? '\n
+                                          ' {$channel=HIDDEN;}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.112         | '\n
+                   '
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+)
+Runaway text?
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces \ETC.
+! File ended while scanning text of \write.
+<inserted text> 
+                }
+l.10 	import 
+             Robot.Matrix;
+I suspect you have forgotten a `}', causing me
+to read past where you wanted me to stop.
+I'll try to recover; but if the error is serious,
+you'd better type `E' or `X' now and fix your file.
+
+! I can't find file `{o}'.
+<to be read again> 
+                   \@inpenc@test 
+l.10 	import 
+             Robot.Matrix;
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name
+! Emergency stop.
+<to be read again> 
+                   \@inpenc@test 
+l.10 	import 
+             Robot.Matrix;
+*** (job aborted, file error in nonstop mode)
+
+ 
 Here is how much of TeX's memory you used:
- 5231 strings out of 495014
- 66681 string characters out of 1180707
- 370987 words of memory out of 3000000
- 8300 multiletter control sequences out of 15000+50000
- 42692 words of font info for 87 fonts, out of 3000000 for 9000
+ 5144 strings out of 495014
+ 65705 string characters out of 1180707
+ 287998 words of memory out of 3000000
+ 8218 multiletter control sequences out of 15000+50000
+ 41508 words of font info for 83 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 35i,8n,43p,559b,1684s stack positions out of 5000i,500n,10000p,200000b,50000s
-</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
-re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
-xlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public
-/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb></
-usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/tex
-mf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-texlive/fo
-nts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-texlive/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfont
-s/cm/cmsy6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy8.p
-fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
-are/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texmf-t
-exlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/share/texmf-texlive/fonts
-/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on relatorio-base.pdf (9 pages, 271323 bytes).
-PDF statistics:
- 101 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 35i,9n,43p,729b,1737s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,8 +1,0 @@
-\select@language {portuguese}
-\contentsline {section}{\numberline {1}Ambiente de Trabalho}{3}
-\contentsline {section}{\numberline {2}Descri\c c\~ao do problema}{3}
-\contentsline {section}{\numberline {3}Cria\c c\~ao da linguagem}{3}
-\contentsline {section}{\numberline {4}Implementa\c c\~ao}{6}
-\contentsline {subsection}{\numberline {4.1}Classes}{6}
-\contentsline {subsection}{\numberline {4.2}Linguagem}{6}
-\contentsline {section}{\numberline {5}Conclus\~oes}{9}
