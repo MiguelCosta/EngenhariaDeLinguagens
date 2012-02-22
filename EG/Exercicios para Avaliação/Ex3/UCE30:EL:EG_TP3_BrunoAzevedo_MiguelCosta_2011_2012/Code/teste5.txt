@@ -1,0 +1,21 @@
+ASPIRADOR 
+{
+DEFINICOES 
+{
+pos = (15 , 20) ; dim = (50 , 50) ;
+}
+MOVIMENTOS
+LIGAR;
+NORTE 2 ; 
+ESTE 150 ;   
+ESTE 3 ;
+ESTE 2 ;
+SUL 1 ; 
+OESTE 5 ;
+SUL 5;
+DESLIGAR ;
+SUL 0;
+NORTE 10;  
+LIGAR;
+OESTE 4;
+}

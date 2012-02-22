@@ -97,7 +97,7 @@ Era pretendido criar uma linguagem para fazer movimentar um Robo num Terreno e d
 \section{Ambiente de Trabalho}
 Foi necessário usar um Gerador de Compiladores para gerar o nosso próprio compilador, por isso usámos o AnTLR que é também usado nas aulas. Para facilitar o processo de debugging durante a resolução do problema dado, usámos a ferramenta AnTLRWorks, que tem uma interface bastante agradável e simpática para ajudar a resolver problemas desta natureza.
  
-A linguem de programação adoptada foi o JAVA. De forma a tornar a nossa solução mais legível e estruturada, criámos classes com o auxílio do IDE NetBeans que nos ajudou no desenvolvimento do código JAVA e ainda na criação da sua documentação (javadoc).
+A linguagem de programação adoptada foi o JAVA. De forma a tornar a nossa solução mais legível e estruturada, criámos classes com o auxílio do IDE NetBeans que nos ajudou no desenvolvimento do código JAVA e ainda na criação da sua documentação (javadoc).
  
  
 \section{Descrição do problema}
@@ -192,7 +192,7 @@ As classes criadas foram:
 \item \verb|Matrix|
 \end{itemize}
  
-A classe \verb|Robo| é a responsável por guardar o estado, a posicao atual, a direção atual, todos os movimentos executados pelo robo e por gerar as estatísticas relacionadas com os mesmos. Esta classe contêm 4 \verb|ArrayList<Integer>| para guardar inteiros com o valor que foi deslocado em cada uma das direções possíveis e, ainda, um \verb|TreeMap<Integer,Movimento>| em que a \verb|key| corresponde ao número em que o \verb|Movimento| ocorreu, este \verb|value| é do tipo \verb|Movimento| que contêm apenas 3 variáveis de instância:
+A classe \verb|Robo| é a responsável por guardar o estado, a posicao atual, a direção atual, todos os movimentos executados pelo robo e por gerar as estatísticas relacionadas com os mesmos. Esta classe contém 4 \verb|ArrayList<Integer>| para guardar inteiros com o valor que foi deslocado em cada uma das direções possíveis e, ainda, um \verb|TreeMap<Integer,Movimento>| em que a \verb|key| corresponde ao número em que o \verb|Movimento| ocorreu, este \verb|value| é do tipo \verb|Movimento| que contém apenas 3 variáveis de instância:
 \begin{itemize}
 \item \verb|Integer num| - número em que o movimento ocorreu.
 \item \verb|Direcao direcao| - direção em que o movimento foi feito.
