@@ -50,11 +50,11 @@ dimensao
 	;
 posicao 
 	:POS '=' '('x=INT { if (terreno.validaPosX(Integer.parseInt(x.getText()))){ robo.setPosX(x.getText()); robo.setPosXini(x.getText());} // se a posicao inicial do robo no eixo X for valida (ou seja, esta dentro dos limites do terreno) entao define a posicao inicial e atual do robo nesse eixo
-			     else System.out.println("Posicao inicial invalida.");
+			     else System.out.println("Posição inicial inválida.");
 			   } 
 		  ','
 		     y=INT { if (terreno.validaPosY(Integer.parseInt(y.getText()))) { robo.setPosY(y.getText()); robo.setPosYini(y.getText());} // se a posicao inicial do robo no eixo Y for valida entao define a posicao inicial e atual do robo nesse eixo
-			     else System.out.println("Posicao inicial invalida.");
+			     else System.out.println("Posição inicial inválida.");
 			   } 
 		  ')' ';'
 	;
@@ -67,16 +67,16 @@ movimento
 	: LIGAR ';'		{robo.setEstado("LIGADO");} // define o estado do robo como Ligado
 	| DESLIGAR ';'		{robo.setEstado("DESLIGADO");} // define o estado do robo como Desligado
 	| NORTE INT ';'		{ if (terreno.validaPosY(robo.getPosY() - Integer.parseInt($INT.text))) {robo.movNorte(Integer.parseInt($INT.text));} // se a posicao final for valida, entao movimenta o robo para essa posicao
-				  else {System.out.println("Movimento NORTE "+ $INT.text +" invalido por ultrapassar os limites da area de limpeza!");}
+				  else {System.out.println("Movimento NORTE "+ $INT.text +" inválido por ultrapassar os limites da área de limpeza!");}
 				}
 	| SUL INT ';'		{if (terreno.validaPosY(robo.getPosY() + Integer.parseInt($INT.text))) {robo.movSul(Integer.parseInt($INT.text));} // se a posicao final for valida, entao movimenta o robo para essa posicao
-				 else {System.out.println("Movimento SUL "+ $INT.text +" invalido por ultrapassar os limites da area de limpeza!");}	
+				 else {System.out.println("Movimento SUL "+ $INT.text +" inválido por ultrapassar os limites da área de limpeza!");}	
 				}
 	| ESTE INT ';'		{ if (terreno.validaPosX(robo.getPosX() + Integer.parseInt($INT.text))) {robo.movEste(Integer.parseInt($INT.text));} // se a posicao final for valida, entao movimenta o robo para essa posicao
-				  else {System.out.println("Movimento ESTE "+ $INT.text +" invalido por ultrapassar os limites da area de limpeza!");}
+				  else {System.out.println("Movimento ESTE "+ $INT.text +" inválido por ultrapassar os limites da área de limpeza!");}
 				}
 	| OESTE INT ';'		{ if (terreno.validaPosX(robo.getPosX() - Integer.parseInt($INT.text))) {robo.movOeste(Integer.parseInt($INT.text));} // se a posicao final for valida, entao movimenta o robo para essa posicao
-				  else {System.out.println("Movimento OESTE "+ $INT.text +" invalido por ultrapassar os limites da area de limpeza!");}
+				  else {System.out.println("Movimento OESTE "+ $INT.text +" inválido por ultrapassar os limites da área de limpeza!");}
 				}
 	;
 

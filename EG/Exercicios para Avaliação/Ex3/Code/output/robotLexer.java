@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/miguel/Documentos/EL/EG/Robot/robot.g 2012-02-19 19:29:15
+// $ANTLR 3.4 /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g 2012-02-21 18:05:29
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -44,15 +44,15 @@ public class robotLexer extends Lexer {
     public robotLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "/home/miguel/Documentos/EL/EG/Robot/robot.g"; }
+    public String getGrammarFileName() { return "/media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g"; }
 
     // $ANTLR start "T__16"
     public final void mT__16() throws RecognitionException {
         try {
             int _type = T__16;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:7:7: ( '(' )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:7:9: '('
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:7:7: ( '(' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:7:9: '('
             {
             match('('); 
 
@@ -72,8 +72,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = T__17;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:8:7: ( ')' )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:8:9: ')'
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:8:7: ( ')' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:8:9: ')'
             {
             match(')'); 
 
@@ -93,8 +93,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = T__18;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:9:7: ( ',' )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:9:9: ','
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:9:7: ( ',' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:9:9: ','
             {
             match(','); 
 
@@ -114,8 +114,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = T__19;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:10:7: ( ';' )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:10:9: ';'
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:10:7: ( ';' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:10:9: ';'
             {
             match(';'); 
 
@@ -135,8 +135,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = T__20;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:11:7: ( '=' )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:11:9: '='
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:11:7: ( '=' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:11:9: '='
             {
             match('='); 
 
@@ -156,8 +156,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = T__21;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:12:7: ( 'ASPIRADOR' )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:12:9: 'ASPIRADOR'
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:12:7: ( 'ASPIRADOR' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:12:9: 'ASPIRADOR'
             {
             match("ASPIRADOR"); 
 
@@ -179,8 +179,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = T__22;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:13:7: ( 'DEFINICOES' )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:13:9: 'DEFINICOES'
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:13:7: ( 'DEFINICOES' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:13:9: 'DEFINICOES'
             {
             match("DEFINICOES"); 
 
@@ -202,8 +202,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = T__23;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:14:7: ( 'MOVIMENTOS' )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:14:9: 'MOVIMENTOS'
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:14:7: ( 'MOVIMENTOS' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:14:9: 'MOVIMENTOS'
             {
             match("MOVIMENTOS"); 
 
@@ -225,8 +225,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = T__24;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:15:7: ( '{' )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:15:9: '{'
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:15:7: ( '{' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:15:9: '{'
             {
             match('{'); 
 
@@ -246,8 +246,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = T__25;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:16:7: ( '}' )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:16:9: '}'
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:16:7: ( '}' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:16:9: '}'
             {
             match('}'); 
 
@@ -267,8 +267,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = DIM;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:87:6: ( ( 'd' | 'D' ) ( 'i' | 'I' ) ( 'm' | 'M' ) )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:87:8: ( 'd' | 'D' ) ( 'i' | 'I' ) ( 'm' | 'M' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:86:6: ( ( 'd' | 'D' ) ( 'i' | 'I' ) ( 'm' | 'M' ) )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:86:8: ( 'd' | 'D' ) ( 'i' | 'I' ) ( 'm' | 'M' )
             {
             if ( input.LA(1)=='D'||input.LA(1)=='d' ) {
                 input.consume();
@@ -316,8 +316,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = POS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:88:6: ( ( 'p' | 'P' ) ( 'o' | 'O' ) ( 's' | 'S' ) )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:88:8: ( 'p' | 'P' ) ( 'o' | 'O' ) ( 's' | 'S' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:87:6: ( ( 'p' | 'P' ) ( 'o' | 'O' ) ( 's' | 'S' ) )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:87:8: ( 'p' | 'P' ) ( 'o' | 'O' ) ( 's' | 'S' )
             {
             if ( input.LA(1)=='P'||input.LA(1)=='p' ) {
                 input.consume();
@@ -365,8 +365,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = LIGAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:90:7: ( ( 'l' | 'L' ) ( 'i' | 'I' ) ( 'g' | 'G' ) ( 'a' | 'A' ) ( 'r' | 'R' ) )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:90:9: ( 'l' | 'L' ) ( 'i' | 'I' ) ( 'g' | 'G' ) ( 'a' | 'A' ) ( 'r' | 'R' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:89:7: ( ( 'l' | 'L' ) ( 'i' | 'I' ) ( 'g' | 'G' ) ( 'a' | 'A' ) ( 'r' | 'R' ) )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:89:9: ( 'l' | 'L' ) ( 'i' | 'I' ) ( 'g' | 'G' ) ( 'a' | 'A' ) ( 'r' | 'R' )
             {
             if ( input.LA(1)=='L'||input.LA(1)=='l' ) {
                 input.consume();
@@ -434,8 +434,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = DESLIGAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:91:10: ( ( 'd' | 'D' ) ( 'e' | 'E' ) ( 's' | 'S' ) ( 'l' | 'L' ) ( 'i' | 'I' ) ( 'g' | 'G' ) ( 'a' | 'A' ) ( 'r' | 'R' ) )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:91:12: ( 'd' | 'D' ) ( 'e' | 'E' ) ( 's' | 'S' ) ( 'l' | 'L' ) ( 'i' | 'I' ) ( 'g' | 'G' ) ( 'a' | 'A' ) ( 'r' | 'R' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:90:10: ( ( 'd' | 'D' ) ( 'e' | 'E' ) ( 's' | 'S' ) ( 'l' | 'L' ) ( 'i' | 'I' ) ( 'g' | 'G' ) ( 'a' | 'A' ) ( 'r' | 'R' ) )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:90:12: ( 'd' | 'D' ) ( 'e' | 'E' ) ( 's' | 'S' ) ( 'l' | 'L' ) ( 'i' | 'I' ) ( 'g' | 'G' ) ( 'a' | 'A' ) ( 'r' | 'R' )
             {
             if ( input.LA(1)=='D'||input.LA(1)=='d' ) {
                 input.consume();
@@ -533,8 +533,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = NORTE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:93:8: ( ( 'n' | 'N' ) ( 'o' | 'O' ) ( 'r' | 'R' ) ( 't' | 'T' ) ( 'e' | 'E' ) )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:93:10: ( 'n' | 'N' ) ( 'o' | 'O' ) ( 'r' | 'R' ) ( 't' | 'T' ) ( 'e' | 'E' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:92:8: ( ( 'n' | 'N' ) ( 'o' | 'O' ) ( 'r' | 'R' ) ( 't' | 'T' ) ( 'e' | 'E' ) )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:92:10: ( 'n' | 'N' ) ( 'o' | 'O' ) ( 'r' | 'R' ) ( 't' | 'T' ) ( 'e' | 'E' )
             {
             if ( input.LA(1)=='N'||input.LA(1)=='n' ) {
                 input.consume();
@@ -602,8 +602,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = SUL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:94:6: ( ( 's' | 'S' ) ( 'u' | 'U' ) ( 'l' | 'L' ) )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:94:8: ( 's' | 'S' ) ( 'u' | 'U' ) ( 'l' | 'L' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:93:6: ( ( 's' | 'S' ) ( 'u' | 'U' ) ( 'l' | 'L' ) )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:93:8: ( 's' | 'S' ) ( 'u' | 'U' ) ( 'l' | 'L' )
             {
             if ( input.LA(1)=='S'||input.LA(1)=='s' ) {
                 input.consume();
@@ -651,8 +651,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = ESTE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:95:7: ( ( 'e' | 'E' ) ( 's' | 'S' ) ( 't' | 'T' ) ( 'e' | 'E' ) )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:95:9: ( 'e' | 'E' ) ( 's' | 'S' ) ( 't' | 'T' ) ( 'e' | 'E' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:94:7: ( ( 'e' | 'E' ) ( 's' | 'S' ) ( 't' | 'T' ) ( 'e' | 'E' ) )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:94:9: ( 'e' | 'E' ) ( 's' | 'S' ) ( 't' | 'T' ) ( 'e' | 'E' )
             {
             if ( input.LA(1)=='E'||input.LA(1)=='e' ) {
                 input.consume();
@@ -710,8 +710,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = OESTE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:96:8: ( ( 'o' | 'O' ) ( 'e' | 'E' ) ( 's' | 'S' ) ( 't' | 'T' ) ( 'e' | 'E' ) )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:96:10: ( 'o' | 'O' ) ( 'e' | 'E' ) ( 's' | 'S' ) ( 't' | 'T' ) ( 'e' | 'E' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:95:8: ( ( 'o' | 'O' ) ( 'e' | 'E' ) ( 's' | 'S' ) ( 't' | 'T' ) ( 'e' | 'E' ) )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:95:10: ( 'o' | 'O' ) ( 'e' | 'E' ) ( 's' | 'S' ) ( 't' | 'T' ) ( 'e' | 'E' )
             {
             if ( input.LA(1)=='O'||input.LA(1)=='o' ) {
                 input.consume();
@@ -779,8 +779,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:98:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:98:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:97:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:97:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -792,7 +792,7 @@ public class robotLexer extends Lexer {
             }
 
 
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:98:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:97:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -805,7 +805,7 @@ public class robotLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/miguel/Documentos/EL/EG/Robot/robot.g:
+            	    // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -842,10 +842,10 @@ public class robotLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:101:5: ( ( '0' .. '9' )+ )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:101:7: ( '0' .. '9' )+
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:100:5: ( ( '0' .. '9' )+ )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:100:7: ( '0' .. '9' )+
             {
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:101:7: ( '0' .. '9' )+
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:100:7: ( '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -859,7 +859,7 @@ public class robotLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home/miguel/Documentos/EL/EG/Robot/robot.g:
+            	    // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -900,7 +900,7 @@ public class robotLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:105:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:104:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -930,13 +930,13 @@ public class robotLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // /home/miguel/Documentos/EL/EG/Robot/robot.g:105:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+                    // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:104:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
                     {
                     match("//"); 
 
 
 
-                    // /home/miguel/Documentos/EL/EG/Robot/robot.g:105:14: (~ ( '\\n' | '\\r' ) )*
+                    // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:104:14: (~ ( '\\n' | '\\r' ) )*
                     loop3:
                     do {
                         int alt3=2;
@@ -949,7 +949,7 @@ public class robotLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // /home/miguel/Documentos/EL/EG/Robot/robot.g:
+                    	    // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:
                     	    {
                     	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
                     	        input.consume();
@@ -970,7 +970,7 @@ public class robotLexer extends Lexer {
                     } while (true);
 
 
-                    // /home/miguel/Documentos/EL/EG/Robot/robot.g:105:28: ( '\\r' )?
+                    // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:104:28: ( '\\r' )?
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -979,7 +979,7 @@ public class robotLexer extends Lexer {
                     }
                     switch (alt4) {
                         case 1 :
-                            // /home/miguel/Documentos/EL/EG/Robot/robot.g:105:28: '\\r'
+                            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:104:28: '\\r'
                             {
                             match('\r'); 
 
@@ -996,13 +996,13 @@ public class robotLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/miguel/Documentos/EL/EG/Robot/robot.g:106:9: '/*' ( options {greedy=false; } : . )* '*/'
+                    // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:105:9: '/*' ( options {greedy=false; } : . )* '*/'
                     {
                     match("/*"); 
 
 
 
-                    // /home/miguel/Documentos/EL/EG/Robot/robot.g:106:14: ( options {greedy=false; } : . )*
+                    // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:105:14: ( options {greedy=false; } : . )*
                     loop5:
                     do {
                         int alt5=2;
@@ -1027,7 +1027,7 @@ public class robotLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // /home/miguel/Documentos/EL/EG/Robot/robot.g:106:42: .
+                    	    // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:105:42: .
                     	    {
                     	    matchAny(); 
 
@@ -1064,8 +1064,8 @@ public class robotLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:109:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /home/miguel/Documentos/EL/EG/Robot/robot.g:109:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:108:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:108:9: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -1091,12 +1091,12 @@ public class robotLexer extends Lexer {
     // $ANTLR end "WS"
 
     public void mTokens() throws RecognitionException {
-        // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:8: ( T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | DIM | POS | LIGAR | DESLIGAR | NORTE | SUL | ESTE | OESTE | ID | INT | COMMENT | WS )
+        // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:8: ( T__16 | T__17 | T__18 | T__19 | T__20 | T__21 | T__22 | T__23 | T__24 | T__25 | DIM | POS | LIGAR | DESLIGAR | NORTE | SUL | ESTE | OESTE | ID | INT | COMMENT | WS )
         int alt7=22;
         alt7 = dfa7.predict(input);
         switch (alt7) {
             case 1 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:10: T__16
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:10: T__16
                 {
                 mT__16(); 
 
@@ -1104,7 +1104,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 2 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:16: T__17
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:16: T__17
                 {
                 mT__17(); 
 
@@ -1112,7 +1112,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:22: T__18
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:22: T__18
                 {
                 mT__18(); 
 
@@ -1120,7 +1120,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:28: T__19
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:28: T__19
                 {
                 mT__19(); 
 
@@ -1128,7 +1128,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:34: T__20
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:34: T__20
                 {
                 mT__20(); 
 
@@ -1136,7 +1136,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 6 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:40: T__21
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:40: T__21
                 {
                 mT__21(); 
 
@@ -1144,7 +1144,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 7 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:46: T__22
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:46: T__22
                 {
                 mT__22(); 
 
@@ -1152,7 +1152,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 8 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:52: T__23
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:52: T__23
                 {
                 mT__23(); 
 
@@ -1160,7 +1160,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 9 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:58: T__24
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:58: T__24
                 {
                 mT__24(); 
 
@@ -1168,7 +1168,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 10 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:64: T__25
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:64: T__25
                 {
                 mT__25(); 
 
@@ -1176,7 +1176,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 11 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:70: DIM
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:70: DIM
                 {
                 mDIM(); 
 
@@ -1184,7 +1184,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 12 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:74: POS
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:74: POS
                 {
                 mPOS(); 
 
@@ -1192,7 +1192,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 13 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:78: LIGAR
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:78: LIGAR
                 {
                 mLIGAR(); 
 
@@ -1200,7 +1200,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 14 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:84: DESLIGAR
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:84: DESLIGAR
                 {
                 mDESLIGAR(); 
 
@@ -1208,7 +1208,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 15 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:93: NORTE
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:93: NORTE
                 {
                 mNORTE(); 
 
@@ -1216,7 +1216,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 16 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:99: SUL
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:99: SUL
                 {
                 mSUL(); 
 
@@ -1224,7 +1224,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 17 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:103: ESTE
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:103: ESTE
                 {
                 mESTE(); 
 
@@ -1232,7 +1232,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 18 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:108: OESTE
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:108: OESTE
                 {
                 mOESTE(); 
 
@@ -1240,7 +1240,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 19 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:114: ID
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:114: ID
                 {
                 mID(); 
 
@@ -1248,7 +1248,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 20 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:117: INT
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:117: INT
                 {
                 mINT(); 
 
@@ -1256,7 +1256,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 21 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:121: COMMENT
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:121: COMMENT
                 {
                 mCOMMENT(); 
 
@@ -1264,7 +1264,7 @@ public class robotLexer extends Lexer {
                 }
                 break;
             case 22 :
-                // /home/miguel/Documentos/EL/EG/Robot/robot.g:1:129: WS
+                // /media/windows/Users/Miguel/Documents/Uminho/LEI/Ano 4/Semestre 7/[EL] Engenharia de Linguagens/Engenharia_de_Linguagens/PI/repositório/EG/Exercicios para Avaliação/Ex3/Code/robot.g:1:129: WS
                 {
                 mWS(); 
 

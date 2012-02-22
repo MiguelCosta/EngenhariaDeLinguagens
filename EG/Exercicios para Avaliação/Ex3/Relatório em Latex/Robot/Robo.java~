@@ -1,22 +1,19 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Robot;
 
 import java.util.ArrayList;
 import java.util.TreeMap;
 
 /**
- * Classe Robo que tem todos os métodos para gerir o Robo
+ * Classe Robo que tem todos os metodos para gerir o Robo
  * @version 1.0
  * @author Bruno Azevedo, Miguel Costa
  */
 public class Robo {
 
     /**
-     * Funciona como máquina de estados para o Robo,
-     * ou está ligado ou desligado
+     * Funciona como maquina de estados para o Robo,
+     * ou esta ligado ou desligado
      */
     public enum Estado {
 
@@ -24,9 +21,9 @@ public class Robo {
     }
 
     /**
-     * Indica as possiveis direções que o robo pode ter,
-     * NULA indica que não tem uma direção definida, acontece por exemplo
-     * quando o robo é criado.
+     * Indica as possiveis direcoes que o robo pode ter,
+     * NULA indica que nao tem uma direcao definida, acontece por exemplo
+     * quando o robo e criado.
      */
     public enum Direcao {
 
@@ -36,10 +33,10 @@ public class Robo {
         ESTE,
         OESTE
     }
-    private int posx = 0;                       // Posição x por defeito = 0
-    private int posy = 0;                       // Posição y por defeito = 0
-    private int posx_ini = 0;                   // Posição x inicial por defeito = 0
-    private int posy_ini = 0;                   // Posição y inicial por defeito = 0
+    private int posx = 0;                       // Posicao x por defeito = 0
+    private int posy = 0;                       // Posicao y por defeito = 0
+    private int posx_ini = 0;                   // Posicao x inicial por defeito = 0
+    private int posy_ini = 0;                   // Posicao y inicial por defeito = 0
     private Estado estado;                      // estado do robo (ligado ou desligado)
     private Direcao dir;                        // direcao atual do aspirador
     private ArrayList<Integer> norte = new ArrayList<Integer>();  // array que armazena os movimentos na direcao norte
@@ -70,7 +67,7 @@ public class Robo {
     }
 
     /**
-     * Devolve a direção atual do robo
+     * Devolve a direcao atual do robo
      * @return Devolveo o resultado do tipo Direcao.
      */
     public Direcao getDirecao() {
@@ -78,40 +75,40 @@ public class Robo {
     }
 
     /**
-     * Posição x atual do robo
-     * @return Posição x atual do Robo (inteiro)
+     * Posicao x atual do robo
+     * @return Posicao x atual do Robo (inteiro)
      */
     public int getPosX() {
         return posx;
     }
 
     /**
-     * Posição y atual do robo
-     * @return Posição y atual do Robo (inteiro)
+     * Posicao y atual do robo
+     * @return Posicao y atual do Robo (inteiro)
      */
     public int getPosY() {
         return posy;
     }
 
     /**
-     * Posição x inicial do robo
-     * @return Posição x inicial do Robo (inteiro)
+     * Posicao x inicial do robo
+     * @return Posicao x inicial do Robo (inteiro)
      */
     public int getPosXini() {
         return posx_ini;
     }
 
     /**
-     * Posição y inicial do robo
-     * @return Posição y inicial do Robo (inteiro)
+     * Posicao y inicial do robo
+     * @return Posicao y inicial do Robo (inteiro)
      */
     public int getPosYini() {
         return posy_ini;
     }
 
     /**
-     * Devolve um array com todas as deslocações para norte
-     * @return ArrayList com as distâncias que o robo percorreu para norte
+     * Devolve um array com todas as deslocacoes para norte
+     * @return ArrayList com as distancias que o robo percorreu para norte
      */
     public ArrayList<Integer> getNorte() {
         ArrayList<Integer> n = new ArrayList<Integer>();
@@ -122,8 +119,8 @@ public class Robo {
     }
 
     /**
-     * Devolve um array com todas as deslocações para sul
-     * @return ArrayList com as distâncias que o robo percorreu para sul
+     * Devolve um array com todas as deslocacoes para sul
+     * @return ArrayList com as distancias que o robo percorreu para sul
      */
     public ArrayList<Integer> getSul() {
         ArrayList<Integer> r = new ArrayList<Integer>();
@@ -134,8 +131,8 @@ public class Robo {
     }
 
     /**
-     * Devolve um array com todas as deslocações para este
-     * @return ArrayList com as distâncias que o robo percorreu para este
+     * Devolve um array com todas as deslocacoes para este
+     * @return ArrayList com as distancias que o robo percorreu para este
      */
     public ArrayList<Integer> getEste() {
         ArrayList<Integer> r = new ArrayList<Integer>();
@@ -146,8 +143,8 @@ public class Robo {
     }
 
     /**
-     * Devolve um array com todas as deslocações para oeste
-     * @return ArrayList com as distâncias que o robo percorreu para oeste
+     * Devolve um array com todas as deslocacoes para oeste
+     * @return ArrayList com as distancias que o robo percorreu para oeste
      */
     public ArrayList<Integer> getOeste() {
         ArrayList<Integer> r = new ArrayList<Integer>();
@@ -159,8 +156,8 @@ public class Robo {
 
     /**
      * Devolve os movimentos do robo
-     * @return TreeMap em que a chave é um inteiro que corresponde ao número 
-     * da ordem que o movimento foi feito e o value é do tipo Movimento
+     * @return TreeMap em que a chave e um inteiro que corresponde ao numero 
+     * da ordem que o movimento foi feito e o value e do tipo Movimento
      */
     public TreeMap<Integer, Movimento> getMovimentos() {
         TreeMap<Integer, Movimento> r = new TreeMap<Integer, Movimento>();
@@ -172,81 +169,81 @@ public class Robo {
     }
 
     /**
-     * Dado o número do movimento que queremos, devolve a classe Movimento correspondente
-     * @param num Número do movimento
-     * @return Classe Movimento que corresponde ao número dado como parâmetro
+     * Dado o numero do movimento que queremos, devolve a classe Movimento correspondente
+     * @param num Numero do movimento
+     * @return Classe Movimento que corresponde ao numero dado como parametro
      */
     public Movimento getMovimento(int num) {
         return movs.get(num).clone();
     }
 
     /**
-     * Altera a Posição X do robo.
-     * Usada quando e preciso definiar a Posição inicial e quando a movimentação
-     * @param x Nova posição x em que o robo vai ficar
+     * Altera a Posicao X do robo.
+     * Usada quando e preciso definiar a Posicao inicial e quando a movimentacao
+     * @param x Nova posicao x em que o robo vai ficar
      */
     public void setPosX(int x) {
         posx = x;
     }
 
     /**
-     * Altera a Posição X do robo recebendo uma string que contem o valor inteiro
-     * Usada quando e preciso definiar a Posição inicial e quando a movimentacao
-     * @param x Nova posição x em que o robo vai ficar
+     * Altera a Posicao X do robo recebendo uma string que contem o valor inteiro
+     * Usada quando e preciso definiar a Posicao inicial e quando a movimentacao
+     * @param x Nova posicao x em que o robo vai ficar
      */
     public void setPosX(String x) {
         posx = Integer.parseInt(x);
     }
 
     /**
-     * Altera a Posição Y do robo
-     * Usada quando e preciso definir a Posição inicial e quando há movimentação
-     * @param y Nova posição y em que o robo vai ficar
+     * Altera a Posicao Y do robo
+     * Usada quando e preciso definir a Posicao inicial e quando ha movimentacao
+     * @param y Nova posicao y em que o robo vai ficar
      */
     public void setPosY(int y) {
         posy = y;
     }
 
     /**
-     * Altera a Posição Y do robo recebendo uma string que contem o valor inteiro,
-     * usada quando e preciso definir a Posição inicial e quando há movimentação
-     * @param y Nova posição y em que o robo vai ficar
+     * Altera a Posicao Y do robo recebendo uma string que contem o valor inteiro,
+     * usada quando e preciso definir a Posicao inicial e quando ha movimentacao
+     * @param y Nova posicao y em que o robo vai ficar
      */
     public void setPosY(String y) {
         posy = Integer.parseInt(y);
     }
 
     /**
-     * Altera a Posição X do robo.
-     * Usada quando e preciso definiar a Posição inicial
-     * @param x Nova posição x em que o robo tem inicialmente
+     * Altera a Posicao X do robo.
+     * Usada quando e preciso definiar a Posicao inicial
+     * @param x Nova posicao x em que o robo tem inicialmente
      */
     public void setPosXini(int x) {
         posx_ini = x;
     }
 
     /**
-     * Altera a Posição X do robo recebendo uma string que contem o valor inteiro
-     * Usada quando e preciso definiar a Posição inicial
-     * @param x Nova posição x em que o robo tem inicialmente
+     * Altera a Posicao X do robo recebendo uma string que contem o valor inteiro
+     * Usada quando e preciso definiar a Posicao inicial
+     * @param x Nova posicao x em que o robo tem inicialmente
      */
     public void setPosXini(String x) {
         posx_ini = Integer.parseInt(x);
     }
 
     /**
-     * Altera a Posição Y do robo
-     * Usada quando e preciso definir a Posição inicial
-     * @param y Nova posição y em que o robo tem inicialmente
+     * Altera a Posicao Y do robo
+     * Usada quando e preciso definir a Posicao inicial
+     * @param y Nova posicao y em que o robo tem inicialmente
      */
     public void setPosYini(int y) {
         posy_ini = y;
     }
 
     /**
-     * Altera a Posição Y do robo recebendo uma string que contem o valor inteiro
-     * Usada quando e preciso definir a Posição inicial
-     * @param y Nova posição y em que o robo tem inicialmente
+     * Altera a Posicao Y do robo recebendo uma string que contem o valor inteiro
+     * Usada quando e preciso definir a Posicao inicial
+     * @param y Nova posicao y em que o robo tem inicialmente
      */
     public void setPosYini(String y) {
         posy_ini = Integer.parseInt(y);
@@ -325,7 +322,7 @@ public class Robo {
             if (dir != Direcao.NORTE && dir != Direcao.NULA) {
                 mud_dir++;
             }
-            // altera o Posição y
+            // altera o Posicao y
             posy -= dist;
             // adiciona a distancia ao array de movimentacoes para norte
             norte.add(dist);
@@ -355,7 +352,7 @@ public class Robo {
             if (dir != Direcao.SUL && dir != Direcao.NULA) {
                 mud_dir++;
             }
-            // altera o Posição y
+            // altera o Posicao y
             posy += dist;
             // adiciona a distancia ao array de movimentacoes para sul
             sul.add(dist);
@@ -385,7 +382,7 @@ public class Robo {
             if (dir != Direcao.ESTE && dir != Direcao.NULA) {
                 mud_dir++;
             }
-            // altera o Posição x
+            // altera o Posicao x
             posx += dist;
             // adiciona a distancia ao array de movimentacoes para este
             este.add(dist);
@@ -394,7 +391,7 @@ public class Robo {
             movs.put(totalMovs, m);
             totalMovs++;
         }
-        // define a direcao para este
+        // define a direcao para sul
         dir = Direcao.ESTE;
     }
 
@@ -415,7 +412,7 @@ public class Robo {
             if (dir != Direcao.OESTE && dir != Direcao.NULA) {
                 mud_dir++;
             }
-            // altera o Posição x
+            // altera o Posicao x
             posx -= dist;
             // adiciona a distancia ao array de movimentacoes para este
             oeste.add(dist);
@@ -424,7 +421,7 @@ public class Robo {
             movs.put(totalMovs, m);
             totalMovs++;
         }
-        // define a direcao para oeste
+        // define a direcao para sul
         dir = Direcao.OESTE;
     }
 
@@ -441,10 +438,10 @@ public class Robo {
      * @return 
      */
     public float mediaDeslocamentoNorte() {
-        if (deslocaçõesNorte() == 0) {
+        if (deslocacoesNorte() == 0) {
             return 0;
         }
-        return ((float) totalNorte() / (float) deslocaçõesNorte());
+        return ((float) totalNorte() / (float) deslocacoesNorte());
     }
 
     /**
@@ -452,10 +449,10 @@ public class Robo {
      * @return 
      */
     public float mediaDeslocamentoSul() {
-        if (deslocaçõesSul() == 0) {
+        if (deslocacoesSul() == 0) {
             return 0;
         }
-        return ((float) totalSul() / (float) deslocaçõesSul());
+        return ((float) totalSul() / (float) deslocacoesSul());
     }
 
     /**
@@ -463,10 +460,10 @@ public class Robo {
      * @return 
      */
     public float mediaDeslocamentoEste() {
-        if (deslocaçõesEste() == 0) {
+        if (deslocacoesEste() == 0) {
             return 0;
         }
-        return ((float) totalEste() / (float) deslocaçõesEste());
+        return ((float) totalEste() / (float) deslocacoesEste());
     }
 
     /**
@@ -474,10 +471,10 @@ public class Robo {
      * @return 
      */
     public float mediaDeslocamentoOeste() {
-        if (deslocaçõesOeste() == 0) {
+        if (deslocacoesOeste() == 0) {
             return 0;
         }
-        return (float) (totalOeste() / deslocaçõesOeste());
+        return (float) (totalOeste() / deslocacoesOeste());
     }
 
     /**
@@ -485,10 +482,10 @@ public class Robo {
      * @return 
      */
     public float mediaDeslocamento() {
-        if (totaldeslocações() == 0) {
+        if (totaldeslocacoes() == 0) {
             return 0;
         }
-        return ((float) totalDistancias() / (float) totaldeslocações());
+        return ((float) totalDistancias() / (float) totaldeslocacoes());
     }
 
     /**
@@ -550,7 +547,7 @@ public class Robo {
      * Numero de vezes que o robo se deslocou para norte
      * @return 
      */
-    public int deslocaçõesNorte() {
+    public int deslocacoesNorte() {
         return norte.size();
     }
 
@@ -558,7 +555,7 @@ public class Robo {
      * Numero de vezes que o robo se deslocou para sul
      * @return 
      */
-    public int deslocaçõesSul() {
+    public int deslocacoesSul() {
         return sul.size();
     }
 
@@ -566,7 +563,7 @@ public class Robo {
      * Numero de vezes que o robo se deslocou para este
      * @return 
      */
-    public int deslocaçõesEste() {
+    public int deslocacoesEste() {
         return este.size();
     }
 
@@ -574,7 +571,7 @@ public class Robo {
      * Numero de vezes que o robo se deslocou para oeste
      * @return 
      */
-    public int deslocaçõesOeste() {
+    public int deslocacoesOeste() {
         return oeste.size();
     }
 
@@ -582,12 +579,12 @@ public class Robo {
      * Numero de vezes que o robo se deslocou para todas as direcoes
      * @return 
      */
-    public int totaldeslocações() {
-        return deslocaçõesNorte() + deslocaçõesSul() + deslocaçõesEste() + deslocaçõesOeste();
+    public int totaldeslocacoes() {
+        return deslocacoesNorte() + deslocacoesSul() + deslocacoesEste() + deslocacoesOeste();
     }
 
     /**
-     * método toString, mostra toda a informacao do Robo
+     * metodo toString, mostra toda a informacao do Robo
      * @return 
      */
     @Override
@@ -596,33 +593,33 @@ public class Robo {
     }
 
     /**
-     * Devolve uma String com todas as estatísticas do Robo
+     * Devolve uma String com todas as estatisticas do Robo
      * @return 
      */
     public String toStringEstatisticas() {
         StringBuilder s = new StringBuilder("ESTATISTICAS\n");
         s.append("    Norte:\n");
-        s.append("        Total deslocações: ").append(deslocaçõesNorte()).append("\n");
+        s.append("        Total deslocacoes: ").append(deslocacoesNorte()).append("\n");
         s.append("        Total distancia percorrida: ").append(totalNorte()).append("\n");
         s.append("        Media de distancia percorrida por cada movimentacao: ").append(mediaDeslocamentoNorte()).append("\n");
 
         s.append("    Sul:\n");
-        s.append("        Total deslocações: ").append(deslocaçõesSul()).append("\n");
+        s.append("        Total deslocacoes: ").append(deslocacoesSul()).append("\n");
         s.append("        Total distancia percorrida: ").append(totalSul()).append("\n");
         s.append("        Media de distancia percorrida por cada movimentacao: ").append(mediaDeslocamentoSul()).append("\n");
 
         s.append("    Este:\n");
-        s.append("        Total deslocações: ").append(deslocaçõesEste()).append("\n");
+        s.append("        Total deslocacoes: ").append(deslocacoesEste()).append("\n");
         s.append("        Total distancia percorrida: ").append(totalEste()).append("\n");
         s.append("        Media de distancia percorrida por cada movimentacao: ").append(mediaDeslocamentoEste()).append("\n");
 
         s.append("    Oeste:\n");
-        s.append("        Total deslocações: ").append(deslocaçõesOeste()).append("\n");
+        s.append("        Total deslocacoes: ").append(deslocacoesOeste()).append("\n");
         s.append("        Total distancia percorrida: ").append(totalOeste()).append("\n");
         s.append("        Media de distancia percorrida por cada movimentacao: ").append(mediaDeslocamentoOeste()).append("\n");
 
         s.append("    TOTAL:\n");
-        s.append("        Total deslocações: ").append(totaldeslocações()).append("\n");
+        s.append("        Total deslocacoes: ").append(totaldeslocacoes()).append("\n");
         s.append("        Total distancia percorrida: ").append(totalDistancias()).append("\n");
         s.append("        Media de distancia percorrida por cada movimentacao: ").append(mediaDeslocamento()).append("\n");
         s.append("        Total mudancas direcao: ").append(mudancasDirecao()).append("\n");
