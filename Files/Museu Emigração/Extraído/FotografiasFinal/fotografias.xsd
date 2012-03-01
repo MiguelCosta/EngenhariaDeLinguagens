@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.getty.edu/CDWA/CDWALite" xmlns:cdwalite="http://www.getty.edu/CDWA/CDWALite">
+  <xs:element name="cdwaliteWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="cdwalite:cdwalite"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cdwalite">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:descriptiveMetadata"/>
+        <xs:element ref="cdwalite:administrativeMetadata"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="descriptiveMetadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:objectWorkTypeWrap"/>
+        <xs:element ref="cdwalite:titleWrap"/>
+        <xs:element ref="cdwalite:displayCreator"/>
+        <xs:element ref="cdwalite:indexingCreatorWrap"/>
+        <xs:element ref="cdwalite:displayMeasurements"/>
+        <xs:element ref="cdwalite:indexingMeasurementsWrap"/>
+        <xs:element ref="cdwalite:displayMaterialsTech"/>
+        <xs:element ref="cdwalite:indexingMaterialsTechWrap"/>
+        <xs:element ref="cdwalite:styleWrap"/>
+        <xs:element ref="cdwalite:displayCreationDate"/>
+        <xs:element ref="cdwalite:indexingDatesWrap"/>
+        <xs:element ref="cdwalite:locationWrap"/>
+        <xs:element ref="cdwalite:classificationWrap"/>
+        <xs:element ref="cdwalite:inscriptionsWrap"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="objectWorkTypeWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:objectWorkType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="objectWorkType" type="xs:NCName"/>
+  <xs:element name="titleWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:titleSet"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="titleSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:title"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="title" type="xs:string"/>
+  <xs:element name="displayCreator" type="xs:string"/>
+  <xs:element name="indexingCreatorWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:indexingCreatorSet"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="indexingCreatorSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:nameCreatorSet"/>
+        <xs:element ref="cdwalite:nationalityCreator"/>
+        <xs:element ref="cdwalite:vitalDatesCreator"/>
+        <xs:element ref="cdwalite:genderCreator"/>
+        <xs:element ref="cdwalite:roleCreator"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nameCreatorSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:nameCreator"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nameCreator">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nationalityCreator" type="xs:NCName"/>
+  <xs:element name="vitalDatesCreator">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:NMTOKEN">
+          <xs:attribute name="birthdate" use="required" type="xs:integer"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="genderCreator" type="xs:NCName"/>
+  <xs:element name="roleCreator" type="xs:NCName"/>
+  <xs:element name="displayMeasurements" type="xs:string"/>
+  <xs:element name="indexingMeasurementsWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:indexingMeasurementsSet"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="indexingMeasurementsSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="cdwalite:measurementsSet"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="measurementsSet">
+    <xs:complexType>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+      <xs:attribute name="unit" use="required" type="xs:NCName"/>
+      <xs:attribute name="value" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="displayMaterialsTech" type="xs:string"/>
+  <xs:element name="indexingMaterialsTechWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:indexingMaterialsTechSet"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="indexingMaterialsTechSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:termMaterialsTech"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="termMaterialsTech" type="xs:string"/>
+  <xs:element name="styleWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:style"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="style" type="xs:NCName"/>
+  <xs:element name="displayCreationDate" type="xs:string"/>
+  <xs:element name="indexingDatesWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="cdwalite:indexingDatesSet"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="indexingDatesSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:dateQualifier"/>
+        <xs:element ref="cdwalite:earliestDate"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dateQualifier" type="xs:string"/>
+  <xs:element name="earliestDate" type="xs:string"/>
+  <xs:element name="locationWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="cdwalite:locationSet"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="locationSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:locationName"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="locationName">
+    <xs:complexType mixed="true">
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="classificationWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:classification"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="classification" type="xs:NCName"/>
+  <xs:element name="inscriptionsWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:inscriptions"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="inscriptions" type="xs:string"/>
+  <xs:element name="administrativeMetadata">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:recordWrap"/>
+        <xs:element ref="cdwalite:resourceWrap"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="recordWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:recordID"/>
+        <xs:element ref="cdwalite:recordType"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="recordID" type="xs:NCName"/>
+  <xs:element name="recordType">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="resourceWrap">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:resourceSet"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resourceSet">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="cdwalite:linkResource"/>
+        <xs:element ref="cdwalite:resourceViewDescription"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="linkResource" type="xs:string"/>
+  <xs:element name="resourceViewDescription" type="xs:string"/>
+</xs:schema>

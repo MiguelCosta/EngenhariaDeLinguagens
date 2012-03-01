@@ -1,0 +1,217 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use XML::Simple;
+use Data::Dumper;
+use utf8::all;
+
+my %registo = ();
+
+my $xml = new XML::Simple;
+my $data = $xml->XMLin("fotografias.xml");
+
+print "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
+print "<cdwaliteWrap xmlns=\"http://www.getty.edu/CDWA/CDWALite\"
+    xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\">\n";
+    
+
+my $i = 0;
+while(exists($data->{peca}->[$i])){
+	print "<cdwalite>\n";
+	print "\t<descriptiveMetadata>\n";
+	
+	print "\t\t<objectWorkTypeWrap>\n";
+	print "\t\t\t<objectWorkType>$data->{peca}->[$i]->{classificacao_generica}</objectWorkType>\n";
+	print "\t\t</objectWorkTypeWrap>\n";
+	
+	print "\t\t<titleWrap>\n";
+	print "\t\t\t<titleSet>\n";
+	print "\t\t\t\t<title>$data->{peca}->[$i]->{titulo} - ".findLocal($data->{peca}->[$i]->{legenda}).findDate($data->{peca}->[$i]->{legenda})."</title>\n"; 
+	print "\t\t\t</titleSet>\n";
+	print "\t\t</titleWrap>\n";
+	
+	print "\t\t<displayCreator>$data->{peca}->[$i]->{autor}</displayCreator>\n";
+	
+	print "\t\t<indexingCreatorWrap>\n";
+	print "\t\t\t<indexingCreatorSet>\n";
+	print "\t\t\t\t<nameCreatorSet>\n"; 
+	print "\t\t\t\t\t<nameCreator type=\"personalName\">Gérald Bloncourt</nameCreator>\n"; 
+	print "\t\t\t\t</nameCreatorSet>\n";
+	print "\t\t\t\t<nationalityCreator>Haitian</nationalityCreator>\n";
+	print "\t\t\t\t<vitalDatesCreator birthdate=\"1926\">1926-</vitalDatesCreator>\n";
+	print "\t\t\t\t<genderCreator>masculino</genderCreator>\n";
+	print "\t\t\t\t<roleCreator>Fotógrafo</roleCreator>\n";
+	print "\t\t\t</indexingCreatorSet>\n";
+	print "\t\t</indexingCreatorWrap>\n";
+	
+	print "\t\t<displayMeasurements>$data->{peca}->[$i]->{dimensoes}</displayMeasurements>\n";
+	print "\t\t<indexingMeasurementsWrap>\n";
+	print "\t\t\t<indexingMeasurementsSet>\n";
+	print "\t\t\t\t<measurementsSet value=\"".width($data->{peca}->[$i]->{dimensoes})."\" unit=\"cm\" type=\"width\"/>\n";
+	print "\t\t\t\t<measurementsSet value=\"".height($data->{peca}->[$i]->{dimensoes})."\" unit=\"cm\" type=\"height\"/>\n";
+	print "\t\t\t</indexingMeasurementsSet>\n";
+	print "\t\t</indexingMeasurementsWrap>\n";
+	
+	print "\t\t<displayMaterialsTech>$data->{peca}->[$i]->{objecto}</displayMaterialsTech>\n";
+	
+	print "\t\t<indexingMaterialsTechWrap>\n";
+	print "\t\t\t<indexingMaterialsTechSet>\n";
+	print "\t\t\t\t<termMaterialsTech>preto e branco</termMaterialsTech>\n";
+	print "\t\t\t</indexingMaterialsTechSet>\n";
+	print "\t\t</indexingMaterialsTechWrap>\n";
+	
+	print "\t\t<styleWrap>\n";
+	print "\t\t\t<style>indefinida</style>\n";
+	print "\t\t</styleWrap>\n";
+	
+	print "\t\t<displayCreationDate>".findDate($data->{peca}->[$i]->{legenda})."</displayCreationDate>\n";
+	
+	print "\t\t<indexingDatesWrap>\n";
+	print "\t\t\t<indexingDatesSet>\n";
+	print "\t\t\t\t<dateQualifier>Impressa</dateQualifier>\n";
+	print "\t\t\t\t<earliestDate>".findDate($data->{peca}->[$i]->{datacao})."</earliestDate>\n";
+	print "\t\t\t</indexingDatesSet>\n";
+	print "\t\t\t<indexingDatesSet>\n";
+	print "\t\t\t\t<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>\n";
+	print "\t\t\t\t<earliestDate>".findDate($data->{peca}->[$i]->{incorporacao})."</earliestDate>\n";
+	print "\t\t\t</indexingDatesSet>\n";
+	print "\t\t\t<indexingDatesSet>\n";
+	print "\t\t\t\t<dateQualifier>Tirada</dateQualifier>\n";
+	print "\t\t\t\t<earliestDate>".findDate($data->{peca}->[$i]->{legenda})."</earliestDate>\n";
+	print "\t\t\t</indexingDatesSet>\n";
+	print "\t\t</indexingDatesWrap>\n";
+	
+	print "\t\t<locationWrap>\n";
+	print "\t\t\t<locationSet>\n";
+	print "\t\t\t\t<locationName type=\"creationLocation\">França</locationName>\n";
+	print "\t\t\t</locationSet>\n";
+	print "\t\t\t<locationSet>\n";
+	print "\t\t\t\t<locationName type=\"currentRepository\">Museu da Emigração e das Comunidades</locationName>\n";
+	print "\t\t\t</locationSet>\n";
+	print "\t\t</locationWrap>\n";
+	
+	print "\t\t<classificationWrap>\n";
+	print "\t\t\t<classification>Fotografia</classification>\n";
+	print "\t\t</classificationWrap>\n";
+	
+	print "\t\t<inscriptionsWrap>\n";
+	print "\t\t\t<inscriptions>$data->{peca}->[$i]->{legenda}</inscriptions>\n";
+	print "\t\t</inscriptionsWrap>\n";
+	
+	print "\t</descriptiveMetadata>\n";
+	
+	print "\t<administrativeMetadata>\n";
+    
+    print "\t\t<recordWrap>\n";
+    print "\t\t\t<recordID>$data->{peca}->[$i]->{inventario}</recordID>\n";
+    print "\t\t\t<recordType/>\n";
+    print "\t\t</recordWrap>\n";
+    
+    print "\t\t<resourceWrap>\n";
+    print "\t\t\t<resourceSet>\n";
+    print "\t\t\t\t<linkResource>fotos/$data->{peca}->[$i]->{inventario}.JPG</linkResource>\n";
+    print "\t\t\t\t<resourceViewDescription>$data->{peca}->[$i]->{legenda}</resourceViewDescription>";
+    print "\t\t\t</resourceSet>\n";
+    print "\t\t</resourceWrap>\n";
+    
+    print "\t</administrativeMetadata>\n";
+	
+	print "</cdwalite>\n";
+	$i++;
+}
+
+#print Dumper($data);
+
+
+print "</cdwaliteWrap>\n";
+
+sub width{
+	$_ = shift;
+	
+	if(/\s*([0-9]+([,.][0-9]+)?)\s*([c][m])?\s*[xX]/g){
+		return $1;
+	}
+	return "";
+}
+
+sub height{
+	$_ = shift;
+	
+	if(/\s*[xX]\s*([0-9]+([,.][0-9]+)?)/g){
+		return $1;
+	}
+	return "";
+}
+
+sub findDate{
+	$_ = shift;
+	if(/([0-9]{4})/g){
+		return $1;
+	}
+	return "";
+}
+
+
+sub findLocal{
+	$_= shift;
+	
+	my $pal = qr{\b(\w+)\b};
+	my @t = ();
+	
+	while(/($pal)/g){
+		my $r = processaLocal($1);
+		push(@t,$r);
+		if($r ne ""){ return $r;}
+	}
+}
+
+sub processaLocal{
+	my $ele = shift;
+	my %locais = qw{ Porto 1 Chaves 1 Lisboa 1 Paris 1 Hendaia 1 Champigny 1};
+	if(exists($locais{$ele})){
+		return $ele." ";
+	}
+	else {
+		return "";
+	}
+}
+__END__
+
+=head1 NAME
+	
+	- Passagem de das fotografias do word para xml 
+=head1 SYNOPSIS
+
+para executar:
+	- abre o ficheiro fotografias.xml
+
+	- formatar o resultado
+		> xmllint --format resultado.xml > final.xml 
+
+
+=head1 DESCRIPTION
+ todas as peças tem exactamente os mesmos campos e pela mesma ordem 
+ por isso basta saltar de if em if que não há problema
+ os campos de cada peça são pela seguinte ordem:
+   inventario
+   calssificacao
+   objecto
+   titulo
+   autor
+   suporte
+   tecnica
+   dimensoes
+   legenda
+   datacao
+   lugar_producao
+   historia
+   incorporacao
+
+
+=head1 AUTHOR
+
+	Miguel Costa
+
+=head1 SEE ALSO
+

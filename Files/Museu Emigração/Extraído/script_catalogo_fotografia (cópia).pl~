@@ -1,0 +1,68 @@
+#!/usr/bin/perl
+
+use strict;
+use warnings;
+use XML::Simple;
+use Data::Dumper;
+
+my %registo = ();
+
+$xml = new XML::Simple;
+$data = $xml->XMLin("fotografias.xml");
+
+
+
+
+while(<>){
+
+
+
+}
+
+print "</CATALOGO_FOTOGRAFIA>";
+
+
+__END__
+
+=head1 NAME
+	
+	- Passagem de das fotografias do word para xml 
+=head1 SYNOPSIS
+
+para executar:
+	- passar o word para pdf
+	- passar o pdf para html com:
+		> pdftohtml ficheiro.pdf
+	- passar o html para texto limpo 
+		> lynx -dump ficheiro.html > limpo.txt
+	- executar a script
+		> ./part1.pl limpo.txt > resultado.xml
+	- formatar o resultado
+		> xmllint --format resultado.xml > final.xml 
+
+
+=head1 DESCRIPTION
+ todas as peças tem exactamente os mesmos campos e pela mesma ordem 
+ por isso basta saltar de if em if que não há problema
+ os campos de cada peça são pela seguinte ordem:
+   inventario
+   calssificacao
+   objecto
+   titulo
+   autor
+   suporte
+   tecnica
+   dimensoes
+   legenda
+   datacao
+   lugar_producao
+   historia
+   incorporacao
+
+
+=head1 AUTHOR
+
+	Miguel Costa
+
+=head1 SEE ALSO
+
