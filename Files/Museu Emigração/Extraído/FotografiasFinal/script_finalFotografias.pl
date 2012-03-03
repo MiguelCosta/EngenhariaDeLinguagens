@@ -42,6 +42,7 @@ while(exists($data->{peca}->[$i])){
 	print "\t\t\t\t<vitalDatesCreator birthdate=\"1926\">1926-</vitalDatesCreator>\n";
 	print "\t\t\t\t<genderCreator>masculino</genderCreator>\n";
 	print "\t\t\t\t<roleCreator>Fotógrafo</roleCreator>\n";
+	print "\t\t\t\t<roleCreator>Pintor</roleCreator>\n";
 	print "\t\t\t</indexingCreatorSet>\n";
 	print "\t\t</indexingCreatorWrap>\n";
 	

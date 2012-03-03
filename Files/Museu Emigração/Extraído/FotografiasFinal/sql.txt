@@ -4,8 +4,31 @@
         INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (3, 'series');
         INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (4, 'group');
         INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (5, 'volume');
-        INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (6, 'fonds');-- Tabela Object_Work_Types
-		INSERT INTO Object_Work_Type (id_type, type) VALUES ('1', 'Fotografia');
+        INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (6, 'fonds');
+-- Tabela Object_Work_Types
+		INSERT INTO Object_Work_Type (id_type, type) VALUES ('1', 'Fotografia');-- Tabela IndexingCreators
+		INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES ('1','masculino');
+		INSERT INTO NamesCreators (id_namesCreator, nameCreator, type) VALUES ('1','Gérald Bloncourt','personalName');
+		INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES ('1','1');
+		INSERT INTO NationalitiesCreator (id_nationalitiesCreator, nationalitycreator) VALUES ('1', 'Haitian');
+		INSERT INTO IndexingCreators_NationalitiesCreator (IndexingCreator, NationalityCreator) VALUES ('1','1');
+		INSERT INTO vitalDatesCreator (id_vitalDatesCreator, vitalDatesCreator, birthDate, IndexingCreator) VALUES ('1','1926-','1926','1');
+		INSERT INTO CreatorRoles (id_rolesCreator, roleCreato) VALUES ('1','Fotógrafo');
+		INSERT INTO CreatorRoles (id_rolesCreator, roleCreato) VALUES ('2','Pintor');
+		INSERT INTO IndexingCreators_RolesCreator (IndexingCreator, CreatorRole) VALUES ('1','1');
+		INSERT INTO IndexingCreators_RolesCreator (IndexingCreator, CreatorRole) VALUES ('1','2');
+		
+-- Tabela Measurements
+		INSERT INTO Measurements (id_measurements, value, unit, type) VALUES ('1','42','cm', 'width');
+		INSERT INTO Measurements (id_measurements, value, unit, type) VALUES ('2','59,5','cm', 'height');
+		INSERT INTO Measurements (id_measurements, value, unit, type) VALUES ('3','59,5','cm', 'width');
+		INSERT INTO Measurements (id_measurements, value, unit, type) VALUES ('4','42','cm', 'height');
+		
+-- Tabela TermMaterialsTech
+		INSERT INTO TermMaterialsTech (id_termMaterialsTech,termMaterialsTech) VALUES ('1','preto e branco');
+		
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -17,11 +40,24 @@
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('1','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','1');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('1','3417/22 - Porto 1966', 1)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','1')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','1')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('1','1');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','1');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -33,11 +69,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('2','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','2');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('2','3416/26a - Chaves 1966', 2)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','2')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','2')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('2','2');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','2');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -49,11 +98,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('3','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','3');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('3','3408/12 - Lisboa 1966', 3)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','3')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','3')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('3','3');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','3');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -65,11 +127,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('4','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','4');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('4','3408/34 - Lisboa 1966', 4)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','4')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','4')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('4','4');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','4');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -81,11 +156,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('5','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','5');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('5','3407/15a - Lisboa 1966', 5)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','5')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','5')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('5','5');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','5');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -97,11 +185,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('6','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','6');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('6','3409/23a - Lisboa 1966', 6)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','6')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','6')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('6','6');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','6');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -113,11 +214,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('7','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','7');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('7','3407/7a - Lisboa 1966', 7)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','7')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','7')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('7','7');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','7');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -129,11 +243,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('8','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','8');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('8','3409/30 - Lisboa 1966', 8)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','8')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','8')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('8','8');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','8');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -145,11 +272,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('9','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','9');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('9','3411/10 - Chaves 1966', 9)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','9')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','9')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('9','9');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','9');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -161,11 +301,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('10','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','10');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('10','3414/32a - Lisboa 1966', 10)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','10')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','10')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('10','10');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','10');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -177,11 +330,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('11','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','11');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('11','3414/37a - Chaves 1966', 11)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','11')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','11')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('11','11');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','11');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -193,11 +359,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('12','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','12');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('12','1139/B30 - Hendaia 1965', 12)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','12')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','12')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('12','12');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','12');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -209,11 +388,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('13','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','13');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('13','3415/22a - Chaves 1966', 13)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','13')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','13')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('13','13');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','13');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -225,11 +417,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('14','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','14');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('14','3420/34a - Porto 1966', 14)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','14')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','14')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('14','14');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','14');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -241,11 +446,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('15','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','15');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('15','3407/23a - 1966', 15)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','15')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','15')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('15','15');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','15');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -257,11 +475,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('16','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','16');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('16','3411/16a - Chaves 1966', 16)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','16')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','16')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('16','16');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','16');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -273,11 +504,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('17','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','17');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('17','3407/24a - Lisboa 1966', 17)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','17')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','17')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('17','17');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','17');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -289,11 +533,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('18','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','18');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('18','3407/28a - Lisboa 1966', 18)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','18')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','18')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('18','18');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','18');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -305,11 +562,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('19','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','19');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('19','3417/30 - Porto 1966', 19)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','19')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','19')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('19','19');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','19');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -321,11 +591,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('20','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','20');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('20','3418/16 - Chaves 1966', 20)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','20')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','20')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('20','20');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','20');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -337,11 +620,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('21','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','21');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('21','3408/31 - Lisboa 1966', 21)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','21')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','21')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('21','21');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','21');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -353,11 +649,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('22','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','22');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('22','3412/10a - Chaves 1966', 22)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','22')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','22')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('22','22');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','22');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -369,11 +678,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('23','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','23');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('23','3420/17a - Porto 1966', 23)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','23')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','23')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('23','23');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','23');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -385,11 +707,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('24','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','24');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('24','3420/15 - Porto 1966', 24)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','24')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','24')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('24','24');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','24');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -401,11 +736,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('25','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','25');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('25','3420/6a - Porto ', 25)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','25')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','25')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('25','25');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','25');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -417,11 +765,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('26','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','26');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('26','3419/22 - Porto 1966', 26)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','26')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','26')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('26','26');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','26');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -433,11 +794,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('27','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','27');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('27','3418/31 - Chaves 1966', 27)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','27')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','27')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('27','27');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','27');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -449,11 +823,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('28','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','28');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('28','3412/12a - Chaves 1966', 28)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','28')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','28')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('28','28');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','28');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -465,11 +852,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('29','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','29');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('29','3413/26a - Porto 1966', 29)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','29')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','29')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('29','29');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','29');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -481,11 +881,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('30','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','30');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('30','3418/26 - Chaves 1966', 30)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','30')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','30')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('30','30');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','30');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -497,11 +910,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('31','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','31');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('31','1118/17a - Champigny 1964', 31)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','31')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','31')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('31','31');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','31');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -513,11 +939,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('32','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','32');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('32','1112/24 - Hendaia 1965', 32)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','32')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','32')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('32','32');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','32');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -529,11 +968,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('33','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','33');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('33','1124/13 - Paris 1965', 33)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','33')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','33')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('33','33');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','33');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -545,11 +997,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('34','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','34');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('34','1129/3a - Champigny 1964', 34)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','34')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','34')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('34','34');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','34');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -561,11 +1026,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('35','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','35');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('35','1093/31 - Hendaia 1965', 35)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','35')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','35')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('35','35');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','35');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -577,11 +1055,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('36','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','36');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('36','1100/8 - Hendaia 1965', 36)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','36')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','36')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('36','36');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','36');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -593,11 +1084,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('37','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','37');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('37','1299 - Paris 1956', 37)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','37')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','37')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('37','37');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','37');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -609,11 +1113,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('38','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','38');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('38','1288 - 1966', 38)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','38')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','38')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('38','38');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','38');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -625,11 +1142,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('39','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','39');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('39','1114/18 - 1965', 39)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','39')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','39')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('39','39');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','39');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -641,11 +1171,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('40','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','40');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('40','1089/8 - ', 40)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','40')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','40')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('40','40');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','40');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -657,11 +1200,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('41','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','41');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('41','1110/8 - Paris 1970', 41)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','41')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','41')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('41','41');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','41');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -673,11 +1229,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('42','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','42');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
-				VALUES ('42','1117/7a - 2778', 42)
+				VALUES ('42','1117/7a - 0656', 42)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','42')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','42')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('42','42');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','42');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -689,11 +1258,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('43','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','43');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('43','1115/11 - Paris 1965', 43)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','43')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','43')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('43','43');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','43');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -705,11 +1287,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('44','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','44');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('44','3383/34 - 1974', 44)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','44')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','44')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('44','44');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','44');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -721,11 +1316,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('45','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','45');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('45','3406/22 - Lisboa 1966', 45)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','45')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','45')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('45','45');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','45');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -737,11 +1345,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('46','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','46');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('46','3410/21 - Chaves 1966', 46)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','46')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','46')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('46','46');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','46');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -753,11 +1374,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('47','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','47');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('47','1139/C18 - Hendaia 1965', 47)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','47')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','47')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('47','47');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','47');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -769,11 +1403,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('48','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','48');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('48','1133/31 - 1964', 48)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','48')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','48')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('48','48');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','48');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -785,11 +1432,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('49','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','49');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('49','1133/30 - 1964', 49)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','49')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','49')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('49','49');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','49');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -801,11 +1461,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('50','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','50');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('50','1289 - 1954', 50)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','50')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','50')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('50','50');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','50');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -817,11 +1490,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('51','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','51');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('51','1309/14a - 1957', 51)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','51')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','51')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('51','51');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','51');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -833,11 +1519,24 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('52','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','52');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('52','1308 - Lisboa 1954', 52)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('3','52')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('4','52')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('52','52');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','52');
+	
+
+--NOVA FOTOGRAFIA 
 -- Tabela Object_Work_Records
 
 			INSERT INTO Object_Work_Records
@@ -849,8 +1548,19 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 				'Fotografia P/B',
 				'1');
 	
+-- Tabela Object_Work_Records_IndexingCreators
+			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Recordsid_object_Work_Records, IndexingCreatorsid_indexingCreators) VALUES ('53','1');
 -- Tabela Object_Work_Types_Object_Work_Records
 INSERT INTO Object_Work_Types_Object_Work_Records () VALUES ('1','53');
 -- Tabela Object_Work_Titles
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('53','1088/5 - Lisboa 1965', 53)
+-- Tabela IndexingMeasurements
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','53')
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','53')
+-- Tabela IndexingMaterialsTech
+			INSERT INTO IndexingMaterialsTech (d_indexingMaterialsTech, Object_Work_Record) VALUES ('53','53');
+	
+-- TermMaterialsTech_IndexingMaterialsTech
+			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','53');
+	

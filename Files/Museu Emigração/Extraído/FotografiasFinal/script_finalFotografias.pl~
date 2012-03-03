@@ -184,13 +184,8 @@ __END__
 =head1 SYNOPSIS
 
 para executar:
-	- passar o word para pdf
-	- passar o pdf para html com:
-		> pdftohtml ficheiro.pdf
-	- passar o html para texto limpo 
-		> lynx -dump ficheiro.html > limpo.txt
-	- executar a script
-		> ./part1.pl limpo.txt > resultado.xml
+	- abre o ficheiro fotografias.xml
+
 	- formatar o resultado
 		> xmllint --format resultado.xml > final.xml 
 

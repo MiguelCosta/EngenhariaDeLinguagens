@@ -13,12 +13,25 @@ print "-- Tabela RecordTypes
         INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (3, 'series');
         INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (4, 'group');
         INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (5, 'volume');
-        INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (6, 'fonds');";
+        INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (6, 'fonds');\n";
 
 print "-- Tabela Object_Work_Types
 		INSERT INTO Object_Work_Type (id_type, type) VALUES ('1', 'Fotografia');";
 		
-print "-- Tabela IndexingCreators FALTA ESTA TABELA";
+print "-- Tabela IndexingCreators
+		INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES ('1','masculino');
+		INSERT INTO NamesCreators (id_namesCreator, nameCreator, type) VALUES ('1','Gérald Bloncourt','personalName');
+		INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES ('1','1');
+		INSERT INTO NationalitiesCreator (id_nationalitiesCreator, nationalitycreator) VALUES ('1', 'Haitian');
+		INSERT INTO IndexingCreators_NationalitiesCreator (IndexingCreator, NationalityCreator) VALUES ('1','1');
+		INSERT INTO vitalDatesCreator (id_vitalDatesCreator, vitalDatesCreator, birthDate, IndexingCreator) VALUES ('1','1926-','1926','1');
+		INSERT INTO CreatorRoles (id_rolesCreator, roleCreato) VALUES ('1','Fotógrafo');
+		INSERT INTO CreatorRoles (id_rolesCreator, roleCreato) VALUES ('2','Pintor');
+		INSERT INTO IndexingCreators_RolesCreator (IndexingCreator, CreatorRole) VALUES ('1','1');
+		INSERT INTO IndexingCreators_RolesCreator (IndexingCreator, CreatorRole) VALUES ('1','2');
+		
+		";
+
 
 
 my $xml = new XML::Simple;
@@ -44,7 +57,8 @@ print "\n-- Tabela Object_Work_Records";
 	print "\nINSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 				VALUES ('$i','$data->{cdwalite}->[$i]->{descriptiveMetadata}->{titleWrap}->{titleSet}->{title}', $i)";
 				
-	print "\n-- Tabela Object_Work_Types";
+	print "\n-- Tabela IndexingMeasurements";
+	
 				
 	
 $i++;
