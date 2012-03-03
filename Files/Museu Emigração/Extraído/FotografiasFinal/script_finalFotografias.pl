@@ -148,7 +148,9 @@ sub height{
 sub findDate{
 	$_ = shift;
 	if(/([0-9]{4})/g){
-		return $1;
+		if($1 > 1900 && $1 < 2015){
+			return $1;
+		}
 	}
 	return "";
 }

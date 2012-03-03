@@ -3410,7 +3410,7 @@
 		</objectWorkTypeWrap>
 		<titleWrap>
 			<titleSet>
-				<title>1117/7a - 0656</title>
+				<title>1117/7a - </title>
 			</titleSet>
 		</titleWrap>
 		<displayCreator>Gérald Bloncourt</displayCreator>
@@ -3442,7 +3442,7 @@
 		<styleWrap>
 			<style>indefinida</style>
 		</styleWrap>
-		<displayCreationDate>0656</displayCreationDate>
+		<displayCreationDate></displayCreationDate>
 		<indexingDatesWrap>
 			<indexingDatesSet>
 				<dateQualifier>Impressa</dateQualifier>
@@ -3454,7 +3454,7 @@
 			</indexingDatesSet>
 			<indexingDatesSet>
 				<dateQualifier>Tirada</dateQualifier>
-				<earliestDate>0656</earliestDate>
+				<earliestDate></earliestDate>
 			</indexingDatesSet>
 		</indexingDatesWrap>
 		<locationWrap>
@@ -3469,7 +3469,7 @@
 			<classification>Fotografia</classification>
 		</classificationWrap>
 		<inscriptionsWrap>
-			<inscriptions>HASH(0xf06560)</inscriptions>
+			<inscriptions/>
 		</inscriptionsWrap>
 	</descriptiveMetadata>
 	<administrativeMetadata>
@@ -3480,7 +3480,8 @@
 		<resourceWrap>
 			<resourceSet>
 				<linkResource>fotos/CGB043.JPG</linkResource>
-				<resourceViewDescription>HASH(0xf06560)</resourceViewDescription>			</resourceSet>
+				<resourceViewDescription/>			
+			</resourceSet>
 		</resourceWrap>
 	</administrativeMetadata>
 </cdwalite>
