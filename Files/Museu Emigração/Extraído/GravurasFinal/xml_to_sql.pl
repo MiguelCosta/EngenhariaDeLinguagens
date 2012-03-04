@@ -15,14 +15,14 @@ open (F, ">", "gravuras.sql") or die "impossivel abrir ficheiro";
 my $ix = 0;
 my $i = 0;
 my %criadores = ();
-my $cont_cria = 2;
-my $cont_measures = 1;
+my $cont_criadoresdores = 2;
+my $cont_measures = 5;
 my $cont_dates = 1;
 my $cont_relW = 1;
 
 while(exists($data->{cdwalite}->[$ix])){
 	my $desc = $data->{cdwalite}->[$ix]->{descriptiveMetadata};
-	print F "--NOVA GRAVURA \n-- Tabela Object_Work_Records\n";
+	print F "/*NOVA GRAVURA */\n/* Tabela Object_Work_Records */\n";
 	my $insert = "INSERT INTO Object_Work_Records (id_object_Work_Records, ";
 		if (ref($desc->{displayCreator}) ne "HASH") {$insert .= "displayCreator, "};
 		if ($desc->{displayMeasurements}) {$insert .= "displayMeasurements, "};
@@ -36,51 +36,51 @@ while(exists($data->{cdwalite}->[$ix])){
 		$insert .= "1);\n";
 	
 	print F $insert; 
-	print F "-- Tabela Object_Work_Types_Object_Work_Records";
+	print F "/* Tabela Object_Work_Types_Object_Work_Recordsi */";
 	print F "\nINSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,$i);";
 
-	print F "\n-- Tabela Object_Work_Titles";
+	print F "\n/* Tabela Object_Work_Titles */";
 	print F "\nINSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
-		VALUES ($i,'$desc->{titleWrap}->{titleSet}->{title}', $i)";
+		VALUES ($i,'$desc->{titleWrap}->{titleSet}->{title}', $i);";
 
 	
 	my $criador = $desc->{indexingCreatorWrap}->{indexingCreatorSet}->{nameCreatorSet}->{nameCreator};
 	if (ref($criador) ne "HASH") {
-		print F "\n-- Tabela Object_Work_Records_IndexingCreators\n";
+		print F "\n/* Tabela Object_Work_Records_IndexingCreators */\n";
 		if (!exists($criadores{$criador})) {
-			$criadores{$criador} = $cont_cria;
-			print F "INSERT INTO NamesCreators (id_namesCreator, nameCreator, type) VALUES ($cont_cria,$criador,'personalName');\n";
-			print F	"INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES ($cont_cria,'masculino');\n";
-			print F "INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES ($cont_cria,$cont_cria);\n";
-			$cont_cria++;
+			$criadores{$criador} = $cont_criadores;
+			print F "INSERT INTO NamesCreators (id_namesCreator, nameCreator, type) VALUES ($cont_criadores,$criador,'personalName');\n";
+			print F	"INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES ($cont_criadores,'masculino');\n";
+			print F "INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES ($cont_criadores,$cont_criadores);\n";
+			$cont_criadores++;
 
 		}
-		print F	"INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES ($i,$cont_cria);";
+		print F	"INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES ($i,$cont_criadores);";
 	}
 
 	if ($desc->{displayMeasurements}) {
 		my $t = $desc->{indexingMeasurementsWrap}->{indexingMeasurementsSet}->{measurementsSet};
-		print F "\n-- Tabela IndexingMeasurements\n";
-		print F "INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ($i,$i)\n";
+		print F "\n/* Tabela IndexingMeasurements */\n";
+		print F "INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ($i,$i);\n";
 
 		if (ref($t) eq "ARRAY") {
 			print F "INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES ($cont_measures,$t->[0]->{'ns3:value'},'$t->[0]->{'ns3:unit'}','$t->[0]->{'ns3:type'}', $i)\n";
+			VALUES ($cont_measures,$t->[0]->{'ns3:value'},'$t->[0]->{'ns3:unit'}','$t->[0]->{'ns3:type'}', $i);\n";
 			$cont_measures++;
 			print F "INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES ($cont_measures,$t->[1]->{'ns3:value'},'$t->[1]->{'ns3:unit'}','$t->[1]->{'ns3:type'}', $i)\n";
+			VALUES ($cont_measures,$t->[1]->{'ns3:value'},'$t->[1]->{'ns3:unit'}','$t->[1]->{'ns3:type'}', $i);\n";
 			$cont_measures++;
 		}
 		else {
 			print F "INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES ($cont_measures,$t->{'ns3:value'},'$t->{'ns3:unit'}','$t->{'ns3:type'}', $i)\n";
+			VALUES ($cont_measures,$t->{'ns3:value'},'$t->{'ns3:unit'}','$t->{'ns3:type'}', $i);\n";
 			$cont_measures++;
 		}
 	}
 
 	my $d = $desc->{indexingDatesWrap}->{indexingDatesSet};
 	if (ref($d->{earliestDate}) ne "HASH" || ref($d->{latestDate}) ne "HASH"){
-		print F "\n-- Tabela IndexingDates\n";
+		print F "\n/* Tabela IndexingDates */\n";
 		my $ins = "INSERT INTO IndexingDates (id_indexingDates, ";
 		if (ref($d->{earliestDate}) ne "HASH") {$ins .= "earliestDate, "};
 		if (ref($d->{latestDate}) ne "HASH") {$ins .= "latestDate, "};
@@ -91,19 +91,19 @@ while(exists($data->{cdwalite}->[$ix])){
 		print F $ins;
 	}
 
-	print F "-- Tabela LocationsName\n";
+	print F "/* Tabela LocationsName */\n";
 	print F "INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('$i', '2');\n";
 
 
 	if ($desc->{descriptiveNoteWrap}->{descriptiveNoteSet}->{descriptiveNote}) {
-		print F "-- Tabela DescriptiveNotes\n";
+		print F "/* Tabela DescriptiveNotes */\n";
 		print F "INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('$desc->{descriptiveNoteWrap}->{descriptiveNoteSet}->{descriptiveNote}', $i);\n";
 	}
 
 	if ($desc->{relatedWorksWrap}) {
 		my $r = $desc->{relatedWorksWrap}->{relatedWorkSet};
-		print F "-- Tabela RelatedWorks\n";
+		print F "/* Tabela RelatedWorks */\n";
 
 		if (ref($r) eq "ARRAY") {
 			foreach my $w (@$r) {
@@ -123,7 +123,7 @@ while(exists($data->{cdwalite}->[$ix])){
 
 
 	if ($desc->{provenanceWrap}) {
-		print F "-- Tabela Provenance\n";
+		print F "/* Tabela Provenance */\n";
 		print F "INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('$desc->{provenanceWrap}->{provenanceSet}->{provenanceDescription}', $i);\n";
 
 	}
@@ -132,7 +132,7 @@ while(exists($data->{cdwalite}->[$ix])){
 	my $admin = $data->{cdwalite}->[$ix]->{administrativeMetadata};
 	
 	if ($admin->{recordWrap}) {
-		print F "-- Tabela Provenance\n";
+		print F "/* Tabela Provenancei */\n";
 		print F "INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('$admin->{recordWrap}->{recordID}', $i);\n";
 	}
 
