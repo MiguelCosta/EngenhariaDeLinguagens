@@ -3,8 +3,6 @@
 use strict;
 use warnings;
 use Text::Extract::Word; # Extract text from Word files
-#use Data::Dumper;
-#binmode STDOUT, ":utf8";
 use utf8; #The use utf8 pragma tells the Perl parser to allow UTF-8 in the program text in the current lexical scope (allow UTF-EBCDIC on EBCDIC based platforms).
 use Switch;
 
@@ -51,10 +49,16 @@ sub	 printBody {
 	$body .= "<displayCreator>".$cdwa->{"ap"}."</displayCreator>";
 	$body .= "<indexingCreatorWrap><indexingCreatorSet><nameCreatorSet><nameCreator>".$cdwa->{"ap"}."</nameCreator></nameCreatorSet><roleCreator/></indexingCreatorSet></indexingCreatorWrap>";
 	$body .= "<displayMeasurements>".$cdwa->{"dim"}."</displayMeasurements>" if ($cdwa->{"dim"} ne "");
-	if ($cdwa->{"dim"} =~ /([0-9][.,]?[0-9]*)\s*[xX]\s*([0-9][.,]?[0-9]*)\s*(\w+)/){
+	if ($cdwa->{"dim"} =~ /([0-9]+\s*[.,]?[0-9]*)\s*[xX]\s*([0-9]+[.,]?[0-9]*)\s*(\w+)?/){
 		$body .= "<indexingMeasurementsWrap><indexingMeasurementsSet>";
-		$body .= "<measurementsSet xmlns:ns3=\"http://www.getty.edu/CDWA/CDWALite\" ns3:value=\"".$1."\" ns3:unit=\"".$3."\" ns3:type=\"largura\"/>";
-		$body .= "<measurementsSet xmlns:ns3=\"http://www.getty.edu/CDWA/CDWALite\" ns3:value=\"".$2."\" ns3:unit=\"".$3."\" ns3:type=\"altura\"/>";
+		$body .= "<measurementsSet xmlns:ns3=\"http://www.getty.edu/CDWA/CDWALite\" ns3:value=\"".trim($1)."\" ns3:unit=\"cm\" ns3:type=\"width\"/>";
+		$body .= "<measurementsSet xmlns:ns3=\"http://www.getty.edu/CDWA/CDWALite\" ns3:value=\"".trim($2)."\" ns3:unit=\"cm\" ns3:type=\"height\"/>";
+		$body .= "</indexingMeasurementsSet></indexingMeasurementsWrap>";
+	}
+	#4cm (diamêtro) || 9.7 (diâmetro) || 6 cm (diâmetro)
+	if ($cdwa->{"dim"} =~ /([0-9]+\s*[.,]?[0-9]*)\s*(\w+)?\s*\(di[aâ]metro\)/){
+		$body .= "<indexingMeasurementsWrap><indexingMeasurementsSet>";
+		$body .= "<measurementsSet xmlns:ns3=\"http://www.getty.edu/CDWA/CDWALite\" ns3:value=\"".trim($1)."\" ns3:unit=\"cm\" ns3:type=\"diameter\"/>";
 		$body .= "</indexingMeasurementsSet></indexingMeasurementsWrap>";
 	}
 	$body .= "<displayMaterialsTech/>";
@@ -62,7 +66,7 @@ sub	 printBody {
 	my $ano = "";
 	if ($cdwa->{"dat"} =~ /([0-9]{4})/) {$ano=$1}
 	$body .= "<indexingDatesWrap><indexingDatesSet><earliestDate>$ano</earliestDate><latestDate>$ano</latestDate></indexingDatesSet></indexingDatesWrap>";
-	$body .= "<locationWrap><locationSet><locationName/></locationSet></locationWrap>";
+$body .= "<locationWrap><locationSet><locationName xmlns:ns1=\"http://www.getty.edu/CDWA/CDWALite\" ns1:type=\"currentRepository\">Museu da Emigração e das Comunidades</locationName></locationSet></locationWrap>";
 	$body .= "<descriptiveNoteWrap><descriptiveNoteSet><descriptiveNote>".$cdwa->{"desc"}."</descriptiveNote></descriptiveNoteSet></descriptiveNoteWrap>" if ($cdwa->{"desc"} ne "");
 	if ($cdwa->{"imp"} ne "") {
 		$cdwa->{"imp"} =~ /([^0-9]*)(.*)/; # encontra objecto onde foi publicado e as respectivas datas/nr
@@ -74,7 +78,7 @@ sub	 printBody {
 			$body .= "<labelRelatedWork>$pub</labelRelatedWork></relatedWorkSet>";
 		}
 		foreach (@pub_anos){ # para cada ano que foi impresso
-			$body .= "<relatedWorkSet><relatedWorkRelType>impresso em</relatedWorkRelType>";
+			$body .= "<relatedWorkSet><relatedWorkRelType>published</relatedWorkRelType>";
 			my $ano_edi = trim($_);
 			$body .= "<labelRelatedWork>$pub; publicado $ano_edi</labelRelatedWork></relatedWorkSet>";
 		}
