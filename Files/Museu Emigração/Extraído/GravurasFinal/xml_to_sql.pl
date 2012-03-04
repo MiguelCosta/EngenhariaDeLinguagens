@@ -13,9 +13,9 @@ my $data = $xml->XMLin("gravurasLite.xml");
 open (F, ">", "gravuras.sql") or die "impossivel abrir ficheiro";
 
 my $ix = 0;
-my $i = 0;
+my $i = 1;
 my %criadores = ();
-my $cont_criadoresdores = 2;
+my $cont_criadores = 2;
 my $cont_measures = 5;
 my $cont_dates = 1;
 my $cont_relW = 1;
@@ -36,7 +36,7 @@ while(exists($data->{cdwalite}->[$ix])){
 		$insert .= "1);\n";
 	
 	print F $insert; 
-	print F "/* Tabela Object_Work_Types_Object_Work_Recordsi */";
+	print F "/* Tabela Object_Work_Types_Object_Work_Records */";
 	print F "\nINSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,$i);";
 
 	print F "\n/* Tabela Object_Work_Titles */";
@@ -49,13 +49,13 @@ while(exists($data->{cdwalite}->[$ix])){
 		print F "\n/* Tabela Object_Work_Records_IndexingCreators */\n";
 		if (!exists($criadores{$criador})) {
 			$criadores{$criador} = $cont_criadores;
-			print F "INSERT INTO NamesCreators (id_namesCreator, nameCreator, type) VALUES ($cont_criadores,$criador,'personalName');\n";
+			print F "INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES ($cont_criadores,'$criador','personalName');\n";
 			print F	"INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES ($cont_criadores,'masculino');\n";
 			print F "INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES ($cont_criadores,$cont_criadores);\n";
-			$cont_criadores++;
 
+			$cont_criadores++;
 		}
-		print F	"INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES ($i,$cont_criadores);";
+		print F	"INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES ($i,$criadores{$criador});";
 	}
 
 	if ($desc->{displayMeasurements}) {
@@ -65,15 +65,15 @@ while(exists($data->{cdwalite}->[$ix])){
 
 		if (ref($t) eq "ARRAY") {
 			print F "INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES ($cont_measures,$t->[0]->{'ns3:value'},'$t->[0]->{'ns3:unit'}','$t->[0]->{'ns3:type'}', $i);\n";
+			VALUES ($cont_measures,'$t->[0]->{'ns3:value'}','$t->[0]->{'ns3:unit'}','$t->[0]->{'ns3:type'}', $i);\n";
 			$cont_measures++;
 			print F "INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES ($cont_measures,$t->[1]->{'ns3:value'},'$t->[1]->{'ns3:unit'}','$t->[1]->{'ns3:type'}', $i);\n";
+			VALUES ($cont_measures,'$t->[1]->{'ns3:value'}','$t->[1]->{'ns3:unit'}','$t->[1]->{'ns3:type'}', $i);\n";
 			$cont_measures++;
 		}
 		else {
 			print F "INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES ($cont_measures,$t->{'ns3:value'},'$t->{'ns3:unit'}','$t->{'ns3:type'}', $i);\n";
+			VALUES ($cont_measures,'$t->{'ns3:value'}','$t->{'ns3:unit'}','$t->{'ns3:type'}', $i);\n";
 			$cont_measures++;
 		}
 	}
@@ -89,6 +89,7 @@ while(exists($data->{cdwalite}->[$ix])){
 		if (ref($d->{latestDate}) ne "HASH") {$ins .= scalar($d->{latestDate}-1900).", "};
 		$ins .= "$i);\n";
 		print F $ins;
+		$cont_dates++;
 	}
 
 	print F "/* Tabela LocationsName */\n";
@@ -97,8 +98,11 @@ while(exists($data->{cdwalite}->[$ix])){
 
 	if ($desc->{descriptiveNoteWrap}->{descriptiveNoteSet}->{descriptiveNote}) {
 		print F "/* Tabela DescriptiveNotes */\n";
+		my $ds = $desc->{descriptiveNoteWrap}->{descriptiveNoteSet}->{descriptiveNote};
+		$ds =~ s/\"/\\"/g;
+		$ds =~ s/\'/\\'/g;
 		print F "INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
-			VALUES ('$desc->{descriptiveNoteWrap}->{descriptiveNoteSet}->{descriptiveNote}', $i);\n";
+			VALUES ('$ds', $i);\n";
 	}
 
 	if ($desc->{relatedWorksWrap}) {

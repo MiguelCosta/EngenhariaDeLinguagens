@@ -1,9 +1,8 @@
-drop database museu;
-create database museu;
-use museu;
+create database museu2;
+use museu2;
 
 CREATE TABLE Object_Work_Records (
-  id_object_Work_Records int(11) NOT NULL, 
+  id_object_Work_Records int(11) NOT NULL AUTO_INCREMENT, 
   displayCreator         varchar(511) NOT NULL comment 'Description: The name, brief biographical information, and roles (if necessary) of the named creator or creators in the design and production of the work, presented in a syntax suitable for d splay to the end-user and including any necessary indications of uncertainty, ambiguity, and nuance. If there is no known creator, make a reference to the presumed culture or nationality of  he unknown creator.
 
 Data values: Formulated according to data content rules for creator display in CCO and CDWA; may be concatenated from the Indexing Creator elements, if necessary. The name should be in natural order, if possible, although inverted order is acceptable. Include nationality and life dates. For unknown creators, use one of the conventions illustrated in the following examples: "unknown," "unknown Chinese," "Chinese," or "unknown 15th-century Chinese."', 
@@ -37,25 +36,11 @@ CREATE TABLE Object_Work_Titles (
   lang                  varchar(31), 
   langtermsource        varchar(63), 
   Object_Work_Record    int(11) NOT NULL, 
-  PRIMARY KEY (id_object_Work_Titles)) comment='Description: Titles, identifying phrases, or names given to a work of art,
-architecture, or material culture. For complex works, series, or collections, the
-title may refer to a discrete unit within the larger entity (a print from a series,
-a photograph in a collection, a panel from a fresco cycle, a building within a
-temple complex) or it may identify only the larger entity (series, collection,
-cycle) itself.
-The source for the title, generally a published source.
+  PRIMARY KEY (id_object_Work_Titles)) comment='Description: Titles, identifying phrases, or names given to a work of art, architecture, or material culture. For complex works, series, or collections, the title may refer to a discrete unit within the larger entity (a print from a series, a photograph in a collection, a panel from a fresco cycle, a building within a temple complex) or it may identify only the larger entity (series, collection,
+cycle) itself. The source for the title, generally a published source.
 
-Data values: Formulated according to data content rules for titles in CCO and
-CDWA.
-Recommended values for preference: preferred, alternate
-Recommended values for type: inscribed, former, translated, repository,
-traditional, creator, local, and others as recommended in CCO and CDWA.
-Recommended values for lang: Language formulated according to rules in
-the CCO and CDWA (i.e., ISO 639-2b, RFC 3066 and other encoding schemes
-may be used, or another authoritative source may be used, such as Ethnologue:
-Languages of the World. 14th edition. Barbara F. Grimes, ed. Dallas, Texas: SIL
-International, 2000). If ISO or other codes are used, they must be translated into
-common English for end-users.' ENGINE=InnoDB;
+Data values: Formulated according to data content rules for titles in CCO and CDWA.
+Recommended values for preference: preferred, alternate Recommended values for type: inscribed, former, translated, repository, traditional, creator, local, and others as recommended in CCO and CDWA. Recommended values for lang: Language formulated according to rules in the CCO and CDWA (i.e., ISO 639-2b, RFC 3066 and other encoding schemes may be used, or another authoritative source may be used, such as Ethnologue: Languages of the World. 14th edition. Barbara F. Grimes, ed. Dallas, Texas: SIL International, 2000). If ISO or other codes are used, they must be translated into common English for end-users.' ENGINE=InnoDB;
 CREATE TABLE NamesCreator (
   id_namesCreator int(10) NOT NULL AUTO_INCREMENT, 
   nameCreator     varchar(255) NOT NULL, 
@@ -236,7 +221,7 @@ CREATE TABLE LatestDates (
 
 Data values: Indexing dates should be formulated according to the rules in CCO and CDWA. Format will vary depending upon implementation.' ENGINE=InnoDB;
 CREATE TABLE Locations (
-  id_locations       int(10) NOT NULL, 
+  id_locations       int(10) NOT NULL AUTO_INCREMENT, 
   Object_Work_Record int(11) NOT NULL, 
   LocationName       int(10) NOT NULL, 
   PRIMARY KEY (id_locations)) ENGINE=InnoDB;
@@ -306,7 +291,7 @@ CREATE TABLE Object_Work_Records_Classifications (
   PRIMARY KEY (Object_Work_Record, 
   Classification)) ENGINE=InnoDB;
 CREATE TABLE DescriptiveNotes (
-  id_descriptiveNotes int(10) NOT NULL, 
+  id_descriptiveNotes int(10) NOT NULL AUTO_INCREMENT, 
   descriptiveNote     varchar(511), 
   Object_Work_Record  int(11) NOT NULL, 
   PRIMARY KEY (id_descriptiveNotes)) comment='Description: A relatively brief essay-like text that describes the content and context of the work, including comments and an interpretation that may supplement, qualify, or explain the physical characteristics, subject, circumstances of creation or discovery, or other information about the work.
@@ -331,7 +316,7 @@ CREATE TABLE Inscriptions (
 
 Data values: Formulated according to data content rules for Inscriptions in CCO and CDWA.' ENGINE=InnoDB;
 CREATE TABLE RelatedWorks (
-  id_relatedWorks    int(10) NOT NULL, 
+  id_relatedWorks    int(10) NOT NULL AUTO_INCREMENT, 
   relatedWorkRelType varchar(31) comment 'Description: A term describing the nature of the relationship between the work at hand and the related entity.
 
 Recommended values: part of, larger context for, model of, model for, study of, study for, rendering of, copy of, etc., as discussed in CCO and CDWA (Part 1). The default is related to.
@@ -372,7 +357,7 @@ CREATE TABLE RightsWork (
   Object_Work_Record int(11) NOT NULL, 
   PRIMARY KEY (id_rightsWork)) comment='Description: Information about rights management; may include copyright and other intellectual property statements required for use regarding the work. If the holder of the reproduction rights to the image/resource differs from the rights for the work, use rightsResource described below.' ENGINE=InnoDB;
 CREATE TABLE RecordsID (
-  id_recordsID       int(10) NOT NULL, 
+  id_recordsID       int(10) NOT NULL AUTO_INCREMENT, 
   recordID           varchar(15) NOT NULL, 
   type               varchar(31), 
   Object_Work_Record int(11) NOT NULL, 
@@ -514,7 +499,7 @@ England); probably upper Egypt).
 
 Values: Controlled with the PLACE/LOCATION AUTHORITY, which can be populated with terminology from the TGN, NGA (NIMA) and USGS, Canadiana Authorities, LC Name Authorities and LCSH. ' ENGINE=InnoDB;
 CREATE TABLE Provenance (
-  id_provenance         int(10) NOT NULL, 
+  id_provenance         int(10) NOT NULL AUTO_INCREMENT, 
   provenanceDescription varchar(511) NOT NULL comment 'Definition: The prose description of the provenance or history of the owners or others in possession of a work of art or architecture, or group of works (e.g., before 1835 Sant''Agostino (San Gimignano, Siena province); before 1846 Cardinal Fesch Collection;
 then to Campana Collection; since 1863 Musée du Louvre (Paris, France)).', 
   cost                  float comment 'Definition: The monetary value of a work in a specific currency at the time of transfer of ownership. This can be either a purchase price or an evaluation (e.g., $50,000, around £1500).

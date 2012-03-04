@@ -1,3 +1,5 @@
+use museu2;
+
 /* Tabela RecordTypes */
         INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (1, 'item');
         INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (2, 'collection');
@@ -20,11 +22,6 @@
 		INSERT INTO IndexingCreators_RolesCreator (IndexingCreator, CreatorRole) VALUES ('1','1');
 		INSERT INTO IndexingCreators_RolesCreator (IndexingCreator, CreatorRole) VALUES ('1','2');
 		
-/* Tabela Measurements */
-		INSERT INTO Measurements (id_measurements, value, unit, type) VALUES ('1','42','cm', 'width');
-		INSERT INTO Measurements (id_measurements, value, unit, type) VALUES ('2','59,5','cm', 'height');
-		INSERT INTO Measurements (id_measurements, value, unit, type) VALUES ('3','59,5','cm', 'width');
-		INSERT INTO Measurements (id_measurements, value, unit, type) VALUES ('4','42','cm', 'height');
 		
 /* Tabela TermMaterialsTech */
 		INSERT INTO TermMaterialsTech (id_termMaterialsTech,termMaterialsTech) VALUES ('1','preto e branco');
@@ -269,49 +266,3 @@ INSERT INTO LatestDates (id_latestDate, latestDate) VALUES ('114','2014');
 /* Table Classifications */
 		INSERT INTO Classifications (id_classifications, classification) VALUEs ('1','Fotografia');
 		
-
-/* NOVA FOTOGRAFIA  */
-/* Tabela Object_Work_Records */
-
-			INSERT INTO Object_Work_Records
-				(id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, RecordType)
-				VALUES
-				('1',
-				'Gérald Bloncourt',
-				'42 x 59,5 cm',
-				'Fotografia P/B',
-				'1');
-	
-/* Tabela Object_Work_Records_IndexingCreators */
-			INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES ('1','1');
-/* Tabela Object_Work_Titles */
-INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) VALUES ('1','3417/22 - Porto 1966', 1);
-/* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records (Object_Work_Type, Object_Work_Record) VALUES ('1','1');
-/* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('1','1');
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ('2','1');
-/* Tabela IndexingMaterialsTech */
-			INSERT INTO IndexingMaterialsTech (id_indexingMaterialsTech, Object_Work_Record) VALUES ('1','1');
-	
-/* TermMaterialsTech_IndexingMaterialsTech */
-			INSERT INTO TermMaterialsTech_IndexingMaterialsTech (TermMaterialsTech, IndexingMaterialsTech) VALUES ('1','1');
-	
-/* Tabela Styles_Object_Work_Records */
-			INSERT INTO Styles_Object_Work_Records (Style, Object_Work_Record) VALUES ('1', '1');
-/* Tabela IndexingDates */
-INSERT INTO IndexingDates (id_indexingDates, dateQualifier, earliestDate) VALUES ('1','Impressa','109');
-INSERT INTO IndexingDates (id_indexingDates, dateQualifier, earliestDate) VALUES ('10','Incorporada no Museu da Emigração e das Comunidades','109');
-INSERT INTO IndexingDates (id_indexingDates, dateQualifier, earliestDate) VALUES ('100','Tirada','66');
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('1', '1');
-		   INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('1', '2');
-		
-INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES ('1', '1');
-	
-INSERT INTO Inscriptions (inscriptions,Object_Work_Record) VALUES ('Porto 1966','1');
-		
-INSERT INTO RecordTypes (id_recordTypes, recordType) VALUES ('1','Inventário - CGB002');
-INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('1', 'fotos/CGB002.JPG', 'Path');
-INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('1','Porto 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('1','1','1','1');
-
