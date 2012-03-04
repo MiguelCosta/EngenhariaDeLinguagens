@@ -1,5 +1,4 @@
-create database museu2;
-use museu2;
+use museu;
 
 CREATE TABLE Object_Work_Records (
   id_object_Work_Records int(11) NOT NULL AUTO_INCREMENT, 

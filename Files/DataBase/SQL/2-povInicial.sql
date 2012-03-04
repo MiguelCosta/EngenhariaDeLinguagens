@@ -1,4 +1,4 @@
-use museu2;
+use museu;
 
 /* Tabela RecordTypes */
         INSERT INTO RecordTypes (id_RecordTypes, recordType) VALUES (1, 'item');
