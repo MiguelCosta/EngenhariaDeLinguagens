@@ -1,4 +1,4 @@
-
+use museu2;
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -64,7 +64,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('1', 'fotos/CGB002.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('1','Porto 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('1','1','1','1');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('1','1','1','1');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -76,7 +76,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'2');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -130,7 +130,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('2', 'fotos/CGB003.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('2','Nas montanhas - região de Chaves – as casas de madeira e está frio. Esta mulher decorou as paredes com jornais e organizou as panelas e as tampas com decoração! Os utensílios estão presos, ela não os usa… Para mim, trata-se de um testemunho de resistência, de coragem! Um exemplo magnífico de “cultura”!... 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('2','2','2','2');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('2','2','2','2');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -142,7 +142,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'3');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -196,7 +196,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('3', 'fotos/CGB004.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('3','Lisboa – A pequena vendedora de alface. 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('3','3','3','3');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('3','3','3','3');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -208,7 +208,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'4');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -262,7 +262,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('4', 'fotos/CGB005.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('4','Lisboa – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('4','4','4','4');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('4','4','4','4');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -274,7 +274,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 x 42cm',
 				'Fotografia P/B',
-				'5');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -328,7 +328,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('5', 'fotos/CGB006.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('5','Lisboa – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('5','5','5','5');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('5','5','5','5');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -340,7 +340,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'6');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -394,7 +394,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('6', 'fotos/CGB007.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('6','Lisboa – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('6','6','6','6');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('6','6','6','6');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -406,7 +406,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'7');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -460,7 +460,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('7', 'fotos/CGB008.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('7','Lisboa – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('7','7','7','7');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('7','7','7','7');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -472,7 +472,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'8');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -526,7 +526,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('8', 'fotos/CGB009.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('8','Lisboa – Sobrevive-se como se pode, mesmo a vender brinquedos para fazer bolas de sabão – 1966.','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('8','8','8','8');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('8','8','8','8');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -538,7 +538,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'9');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -592,7 +592,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('9', 'fotos/CGB010.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('9','Nas montanhas de Chaves – A miséria acentua de forma impiedosa o rosto das crianças – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('9','9','9','9');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('9','9','9','9');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -604,7 +604,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'10');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -658,7 +658,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('10', 'fotos/CGB011.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('10','Sim! Esta fotografia foi mesmo tirada em Lisboa!... – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('10','10','10','10');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('10','10','10','10');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -670,7 +670,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 x 42cm',
 				'Fotografia P/B',
-				'11');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -724,7 +724,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('11', 'fotos/CGB012.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('11','Chaves – Um povo digno e bom… – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('11','11','11','11');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('11','11','11','11');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -736,7 +736,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'12');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -790,7 +790,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('12', 'fotos/CGB013.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('12','Vagas de emigrantes portugueses passam pela estação de Hendaia, rumo a Paris. Muitos são aqueles que atravessam a pé os Pirenéus. Qui está uma avó exausta, com a sua filha e a sua neta – 1965','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('12','12','12','12');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('12','12','12','12');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -802,7 +802,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'13');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -856,7 +856,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('13', 'fotos/CGB014.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('13','Nas montanhas junto a Chaves – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('13','13','13','13');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('13','13','13','13');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -868,7 +868,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 x 42cm',
 				'Fotografia P/B',
-				'14');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -922,7 +922,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('14', 'fotos/CGB015.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('14','Porto – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('14','14','14','14');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('14','14','14','14');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -934,7 +934,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'15');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -988,7 +988,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('15', 'fotos/CGB016.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('15','A chegada do padeiro – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('15','15','15','15');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('15','15','15','15');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1000,7 +1000,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 x 42cm',
 				'Fotografia P/B',
-				'16');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1054,7 +1054,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('16', 'fotos/CGB017.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('16','Chaves – Pastor com manto de palha – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('16','16','16','16');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('16','16','16','16');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1066,7 +1066,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'17');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1120,7 +1120,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('17', 'fotos/CGB018.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('17','Lisboa – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('17','17','17','17');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('17','17','17','17');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1132,7 +1132,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 x 42cm',
 				'Fotografia P/B',
-				'18');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1186,7 +1186,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('18', 'fotos/CGB019.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('18','Lisboa – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('18','18','18','18');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('18','18','18','18');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1198,7 +1198,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 x 42cm',
 				'Fotografia P/B',
-				'19');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1252,7 +1252,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('19', 'fotos/CGB020.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('19','Porto… a mão… – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('19','19','19','19');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('19','19','19','19');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1264,7 +1264,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'20');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1318,7 +1318,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('20', 'fotos/CGB021.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('20','Chaves – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('20','20','20','20');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('20','20','20','20');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1330,7 +1330,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'21');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1384,7 +1384,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('21', 'fotos/CGB022.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('21','Lisboa – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('21','21','21','21');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('21','21','21','21');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1396,7 +1396,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'22');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1450,7 +1450,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('22', 'fotos/CGB023.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('22','Chaves – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('22','22','22','22');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('22','22','22','22');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1462,7 +1462,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'23');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1516,7 +1516,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('23', 'fotos/CGB024.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('23','Porto – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('23','23','23','23');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('23','23','23','23');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1528,7 +1528,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'24');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1582,7 +1582,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('24', 'fotos/CGB025.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('24','Porto – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('24','24','24','24');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('24','24','24','24');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1594,7 +1594,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'25');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1647,7 +1647,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('25', 'fotos/CGB026.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('25','Porto – Quando criei esta imagem pensei na canção de Jacquelin François: “Les lavandiéres au Portugal”…','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('25','25','25','25');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('25','25','25','25');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1659,7 +1659,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'26');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1713,7 +1713,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('26', 'fotos/CGB027.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('26','Porto – 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('26','26','26','26');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('26','26','26','26');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1725,7 +1725,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'27');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1779,7 +1779,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('27', 'fotos/CGB028.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('27','Chaves – O “palácio Império”… a pequena princesa… 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('27','27','27','27');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('27','27','27','27');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1791,7 +1791,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'28');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1845,7 +1845,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('28', 'fotos/CGB029.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('28','1966 – Chaves – O pequeno pastor.','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('28','28','28','28');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('28','28','28','28');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1857,7 +1857,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'29');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1911,7 +1911,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('29', 'fotos/CGB030.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('29','Rua do Porto - 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('29','29','29','29');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('29','29','29','29');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1923,7 +1923,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'30');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -1977,7 +1977,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('30', 'fotos/CGB031.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('30','Chaves –1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('30','30','30','30');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('30','30','30','30');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -1989,7 +1989,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'31');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2043,7 +2043,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('31', 'fotos/CGB032.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('31','Bairro de lata em Champigny, caixas de correio - 1964','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('31','31','31','31');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('31','31','31','31');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2055,7 +2055,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'32');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2109,7 +2109,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('32', 'fotos/CGB033.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('32','De passagem por Hendaia –1965','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('32','32','32','32');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('32','32','32','32');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2121,7 +2121,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'33');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2175,7 +2175,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('33', 'fotos/CGB034.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('33','Bairro de lata nos subúrbios de Paris. Regresso das compras no mercado vizinho - 1965','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('33','33','33','33');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('33','33','33','33');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2187,7 +2187,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'34');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2241,7 +2241,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('34', 'fotos/CGB035.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('34','Avó portuguesa no bairro de lata de Champigny - 1964','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('34','34','34','34');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('34','34','34','34');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2253,7 +2253,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'35');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2307,7 +2307,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('35', 'fotos/CGB036.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('35','De passagem por Hendaia, rumo a Paris - 1965','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('35','35','35','35');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('35','35','35','35');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2319,7 +2319,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'36');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2373,7 +2373,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('36', 'fotos/CGB037.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('36','Em Hendaia, um emigrante verifica os seus documentos. Acaba de chegar a França. Março de 1965','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('36','36','36','36');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('36','36','36','36');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2385,7 +2385,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'37');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2439,7 +2439,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('37', 'fotos/CGB038.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('37','Filhas de domésticas a brincar à macaca, Paris. Como todas as crianças do mundo, o sonho de ir mais além!... e esquecer que os pais sofrem para garantir a sobrevivência diária… 1956','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('37','37','37','37');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('37','37','37','37');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2451,7 +2451,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm Uma televisão, sim! Porque os pais não têm dinheiro',
 				'Fotografia P/B',
-				'38');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2505,7 +2505,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('38', 'fotos/CGB039.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('38','para comprar uma verdadeira! - 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('38','38','38','38');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('38','38','38','38');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2517,7 +2517,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm O peso da moeda. Este operário português conta os',
 				'Fotografia P/B',
-				'39');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2571,7 +2571,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('39', 'fotos/CGB040.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('39','tostões. Ainda não se habituou ao franco. Acaba de comprar pão para a merenda, antes de ir trabalhar na fábrica Citroen, perto da Praça Balard - 1965','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('39','39','39','39');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('39','39','39','39');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2583,7 +2583,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42 Bairro de lata nos subúrbios de Paris. E agora, que',
 				'Fotografia P/B',
-				'40');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2636,7 +2636,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('40', 'fotos/CGB041.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('40','futuro?... Chegou há poucos dias. Vai ter de encontrar trabalho…','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('40','40','40','40');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('40','40','40','40');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2648,7 +2648,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'41');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2702,7 +2702,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('41', 'fotos/CGB042.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('41','Estaleiro de obras num subúrbio de Paris - 1970','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('41','41','41','41');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('41','41','41','41');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2714,7 +2714,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm Contratação pela alvorada na Citroen - 1965',
 				'Fotografia P/B',
-				'42');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2763,8 +2763,8 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 			VALUES ('42', 'CGB043', 'Inventário', '42');
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('42', 'fotos/CGB043.JPG', 'Path');
-INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('42','HASH(0x10c0a98)','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('42','42','42','42');
+INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('42','HASH(0x2bd0b60)','Legenda');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('42','42','42','42');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2776,7 +2776,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm Ida para o trabalho de madrugada. Bairro de lata dos',
 				'Fotografia P/B',
-				'43');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2830,7 +2830,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('43', 'fotos/CGB044.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('43','subúrbios de Paris - 1965','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('43','43','43','43');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('43','43','43','43');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2842,7 +2842,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'44');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2896,7 +2896,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('44', 'fotos/CGB045.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('44','“Revolução dos cravos” – 1.º de Maio de 1974','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('44','44','44','44');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('44','44','44','44');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2908,7 +2908,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'45');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -2962,7 +2962,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('45', 'fotos/CGB046.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('45','Guarda na prisão de Aljube, em Lisboa, onde foram encarcerados muitos prisioneiros políticos - 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('45','45','45','45');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('45','45','45','45');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -2974,7 +2974,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'46');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -3028,7 +3028,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('46', 'fotos/CGB047.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('46','Chaves – A miséria devasta tudo: um “velhote” pequeno de alguns meses… - 1966','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('46','46','46','46');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('46','46','46','46');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -3040,7 +3040,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'47');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -3094,7 +3094,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('47', 'fotos/CGB048.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('47','No comboio Hendaia – paris - 1965','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('47','47','47','47');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('47','47','47','47');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -3106,7 +3106,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm A forma possível para transportar os sacos de carvão ao',
 				'Fotografia P/B',
-				'48');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -3160,7 +3160,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('48', 'fotos/CGB049.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('48','longo dos caminhos da neve. É preciso aquecer-se! O Inverno é rígido!... - 1964','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('48','48','48','48');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('48','48','48','48');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -3172,7 +3172,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'49');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -3226,7 +3226,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('49', 'fotos/CGB050.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('49','Ida para o trabalho através de caminhos escorregadios. É o Inverno - 1964','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('49','49','49','49');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('49','49','49','49');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -3238,7 +3238,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'50');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -3292,7 +3292,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('50', 'fotos/CGB051.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('50','Acampamento do “Abbé” Pierre em Noisy-le-Grand. Esta cabecinha?... É de um homem que vive os seus primeiros meses de inocência… Em que se transformaram estes possíveis génios?... Encontrados algures…Perdidos para sempre na lama do destino? - 1954','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('50','50','50','50');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('50','50','50','50');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -3304,7 +3304,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'51');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -3358,7 +3358,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('51', 'fotos/CGB052.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('51','Bairro de lata em Aubervilliers. Pequena madona da miséria… - 1957','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('51','51','51','51');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('51','51','51','51');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -3370,7 +3370,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'59,5 cm x 42',
 				'Fotografia P/B',
-				'52');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -3424,7 +3424,7 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('52', 'fotos/CGB053.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('52','Acampamento do “Abbé” Pierre em Noisy-le-Grand. De bairro de lata em bairro de lata… Lisboa…Paris - 1954','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('52','52','52','52');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('52','52','52','52');
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records
@@ -3436,7 +3436,7 @@ INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Obje
 				'Gérald Bloncourt',
 				'42 x 59,5 cm',
 				'Fotografia P/B',
-				'53');
+				'1');
 	
 
 -- Tabela Object_Work_Records_IndexingCreators
@@ -3490,4 +3490,4 @@ INSERT INTO RecordsID (id_recordsID, recordID, type, Object_Work_Record)
 
 INSERT INTO LinkResources (id_linkResources, linkResource, type) VALUES ('53', 'fotos/CGB054.JPG', 'Path');
 INSERT INTO ResourceViewDescriptions (id_resourceViewDescriptions, resourceViewDescription, type) VALUES ('53','Menina adormecida no comboio Lisboa-Hendaia – Paris, durante a longa viagem de emigração - 1965','Legenda');
-INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescriptioni, Object_Work_Record) VALUES ('53','53','53','53');
+INSERT INTO Resources (id_resources,LinkResource, ResourceViewDescription, Object_Work_Record) VALUES ('53','53','53','53');
