@@ -1,0 +1,40 @@
+2012/03/10 02:12:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "ExhibitionVenueNames".' in /opt/lampp/htdocs/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('ExhibitionVenue...')
+#1 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php?r=ExhibitionVenueNames
+---
+2012/03/10 02:12:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "exhibitionvenuenames".' in /opt/lampp/htdocs/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('exhibitionvenue...')
+#1 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php?r=exhibitionvenuenames
+---
+2012/03/10 02:15:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "IndexingMeasurements".' in /opt/lampp/htdocs/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('IndexingMeasure...')
+#1 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php?r=IndexingMeasurements
+---
+2012/03/10 02:15:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "IndexingMeasurements/admin".' in /opt/lampp/htdocs/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('IndexingMeasure...')
+#1 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php?r=IndexingMeasurements/admin
+---
+2012/03/10 02:15:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "indexingmeasurements".' in /opt/lampp/htdocs/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('indexingmeasure...')
+#1 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php?r=indexingmeasurements
+---
