@@ -69,8 +69,8 @@ class Object_Work_Records extends CActiveRecord
 			'recordType' => array(self::BELONGS_TO, 'RecordTypes', 'RecordType'),
 			'classifications' => array(self::MANY_MANY, 'Classifications', 'Object_Work_Records_Classifications(Object_Work_Record, Classification)'),
 			'indexingCreators' => array(self::MANY_MANY, 'IndexingCreators', 'Object_Work_Records_IndexingCreators(Object_Work_Record, IndexingCreator)'),
-			'object_Work_Titles' => array(self::HAS_MANY, 'ObjectWorkTitles', 'Object_Work_Record'),
-			'object_Work_Types' => array(self::MANY_MANY, 'ObjectWorkTypes', 'Object_Work_Types_Object_Work_Records(Object_Work_Type, Object_Work_Record)'),
+			'object_Work_Titles' => array(self::HAS_MANY, 'Object_Work_Titles', 'Object_Work_Record'),
+			'object_Work_Types' => array(self::MANY_MANY, 'Object_Work_Types', 'Object_Work_Types_Object_Work_Records(Object_Work_Type, Object_Work_Record)'),
 			'provenances' => array(self::HAS_MANY, 'Provenance', 'Object_Work_Record'),
 			'recordInfos' => array(self::HAS_MANY, 'RecordInfo', 'Object_Work_Record'),
 			'recordSources' => array(self::HAS_MANY, 'RecordSources', 'Object_Work_Record'),
@@ -88,11 +88,11 @@ class Object_Work_Records extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_object_Work_Records' => 'Id Object Work Records',
-			'displayCreator' => 'Display Creator',
-			'displayMeasurements' => 'Display Measurements',
-			'displayMaterialsTech' => 'Display Materials Tech',
-			'displayCreationDate' => 'Display Creation Date',
+			'id_object_Work_Records' => 'ID',
+			'displayCreator' => 'Creator',
+			'displayMeasurements' => 'Measurements',
+			'displayMaterialsTech' => 'Materials Tech',
+			'displayCreationDate' => 'Creation Date',
 			'RecordType' => 'Record Type',
 		);
 	}

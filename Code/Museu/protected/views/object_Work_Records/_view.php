@@ -24,5 +24,5 @@
 	<?php echo CHtml::encode($data->RecordType); ?>
 	<br />
 
-
+        
 </div>
