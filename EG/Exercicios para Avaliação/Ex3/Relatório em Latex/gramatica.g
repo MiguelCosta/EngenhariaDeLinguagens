@@ -1,4 +1,4 @@
-PLTNgrammar robot;
+grammar robot;
 
 /*------------------------------------------------------------------
  * PARSER RULES

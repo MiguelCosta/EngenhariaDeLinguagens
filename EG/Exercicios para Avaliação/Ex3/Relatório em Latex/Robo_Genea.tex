@@ -1,0 +1,544 @@
+\documentclass[a4paper]{article}
+\usepackage[portuguese]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyvrb}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[affil-it]{authblk}
+\usepackage{indentfirst}
+
+\usepackage{titlesec}
+
+\usepackage{aeguill}  % usefull for pdflatex
+\usepackage[compat2,a4paper,twosideshift=0mm,left=20mm,right=20mm,bottom=20mm,top=15mm]{geometry}
+
+\parindent=2em
+
+\usepackage{xcolor}
+\usepackage{listings}
+
+
+\lstdefinestyle{gramatica}{
+	backgroundcolor=\color{yellow!7},%
+    numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt,% 
+    basicstyle=\small\ttfamily\color{blue},%
+    breaklines=true,%                                      allow line breaks
+    moredelim=[s][\color{green!50!black}\ttfamily]{'}{'},% single quotes in green
+    moredelim=*[s][\color{black}\ttfamily]{options}{\}},%  options in black (until trailing })
+    commentstyle={\color{gray}\itshape},%                  gray italics for comments
+    morecomment=[l]{//},%                                  define // comment
+    emph={%
+        STRING%                                            literal strings listed here
+        },emphstyle={\color{blue}\ttfamily},%              and formatted in blue
+    alsoletter={:,|,;},%
+    morekeywords={:,|,;},%                                 define the special characters
+    keywordstyle={\color{black}},%                         and format them in black
+}
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+\lstset{language=Java,
+basicstyle=\ttfamily,
+keywordstyle=\color{javapurple}\bfseries,
+stringstyle=\color{javared},
+commentstyle=\color{javadocblue},
+morecomment=[s][\color{javadocblue}]{/**}{*/},
+numbers=left,
+numberstyle=\tiny\color{black},
+stepnumber=1,
+numbersep=10pt,
+tabsize=4,
+showspaces=false,
+showstringspaces=false,
+breaklines=true}
+
+
+
+\title{Exercí­cio para Avaliação n.º 3}
+\author{Bruno Azevedo%
+\thanks{Email: \texttt{azevedo.252@gmail.com}}}
+ 
+\author{Miguel Costa%
+\thanks{Email: \texttt{miguelpintodacosta@gmail.com}}}
+ 
+\affil{Módulo Engenharia Gramatical,\\ UCE30 Engenharia de Linguagens,
+\\ Mestrado em Engenharia Informatica,\\Universidade do Minho}
+ 
+ 
+\date{\today}
+
+
+\begin{document}
+ 
+ 
+\maketitle
+ 
+\begin{abstract}
+Este documento apresenta as resoluções dos Exercícios Práticos n.º 3 e n.º 4 do módulo de Engenharia Gramatical.
+O exercício está relacionado com a geração automática de Processadores de Linguagens a partir de Gramáticas.
+ 
+Para o exercício n.º 3 era pretendido utilizar a gramática \verb|Genea| j´a utilizada nas aulas para calcular algumas estatísticas relacionadas com ela. Para o exercício 4 o objectivo era criar uma linguagem para fazer movimentar um \verb|Robo| num Terreno e depois criar um processador para as frases da linguagem com algumas funcionalidades.
+\end{abstract}
+ 
+ 
+\newpage
+ 
+\parskip=0mm
+\tableofcontents
+\parskip=2mm
+ 
+\newpage
+ 
+\section{Ambiente de Trabalho}
+Foi necessário usar um Gerador de Compiladores para gerar o nosso próprio compilador, por isso usámos o AnTLR que é também usado nas aulas. Para facilitar o processo de debugging durante a resolução do problema dado, usámos a ferramenta AnTLRWorks, que tem uma interface bastante agradável e simpática para ajudar a resolver problemas desta natureza.
+ 
+A linguagem de programação adoptada foi o JAVA. De forma a tornar a nossa solução mais legível e estruturada, criámos classes com o auxílio do IDE NetBeans que nos ajudou no desenvolvimento do código JAVA e ainda na criação da sua documentação (javadoc).
+
+\section{Exercício n.º 3 - Genea} 
+
+\subsection{Descrição do problema}
+O pretendido para este exercício era calcular algumas estatísticas a partir de uma frase válida para a linguagem do \verb|Genea|, os cálculos efectuados foram:
+\begin{itemize}
+	\item Total de Famílias
+	\item Total de Progenitores
+	\item Total de Filhos
+	\item Total de filhos de cada família
+	\item Média de filhos por família
+\end{itemize}
+
+Além das estatísticas é verificado ainda se as datas são válidas, verificámos se:
+\begin{itemize}
+	\item a data de casamento é posterior à data de nascimento do casal;
+	\item a data de morte, nascimento e casamento são datas e não uma string que possa representar outra coisa.
+\end{itemize}
+
+Relembrando uma frase válida para o Genea:
+\begin{verbatim}
+PROGENITORES ( 28-02-1988 ) 
+    PAI Antonio, Costa 09-03-1961 
+    MAE Maria, Costa 21-07-1962 
+    FILHOS 
+        Miguel 28-03-1990, 
+        Pedro 06-04-1992, 
+        Cristina 02-01-1997
+\end{verbatim}
+
+que tem como árvore de derivação:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.29]{arv_genea.jpg}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Árvore de derivação de uma frase da Gramática Genea}
+\end{figure}
+
+
+
+\subsection{Resolução do Problema}
+Para calcular e verificar o que era pretendido, criámos variáveis globais (na secção members). Como variáveis temos então:
+\begin{itemize}
+	\item \verb|int total_progenitores;| // variável que conta o total de progenitores
+	\item \verb|int total_filhos;| // variável que conta o total de filhos.
+	\item \verb|Integer fil_temp;| // variável temporário que contêm o total de filhos de uma família, quando começa uma nova família é coloca novamente a 0.
+	\item \verb|Integer total_familias;| // conta o total de famílias existentes na frase.
+	\item \verb|Integer media_filhos;| // indica o número médio de filhos que as famílias tem.
+	\item \verb|ArrayList<Integer> filhos = new ArrayList<Integer>();| // Array que contêm o número de filhos que cada família tem.
+\end{itemize}
+
+Para o tratamento das datas foi necessário ter as variáveis:
+\begin{itemize}
+	\item \verb|GregorianCalendar dataCasa_tmp;| // variável que tem a data de casamento dos progenitores.
+	\item \verb|GregorianCalendar dataNasc1_tmp;| // data de nascimento de um dos progenitores.
+	\item \verb|GregorianCalendar dataNasc2_tmp;| // data de nascimento de um dos progenitores
+	\item \verb|boolean vez = false;| // para controloar se a data a ser lida é a de casamento ou de nascimento.
+\end{itemize}
+
+
+Para além das variáveis, tivemos ainda de criar algumas funções para verificar as datas:
+
+\lstset{caption={Funções para as datas},label=DescriptiveLabel}
+\begin{lstlisting}
+/**
+* Verifica se uma data é válida.
+*/
+public String verificaData(String data){
+
+		try{
+			String[] valores;
+			String delimiter = "-";
+			valores = data.split(delimiter);
+		
+			Integer a = Integer.parseInt(valores[2]);
+			if(a< 1000 || a > 2100){
+				return "Ano Invalido";
+			}
+		
+			Integer m = Integer.parseInt(valores[1]);
+			if(m < 1 || m > 12){
+				return "Mes Invalido";
+			}
+		
+			Integer d = Integer.parseInt(valores[0]);
+			if(d<1 || d > 31){
+				return "Dia invalido";
+			}
+		} catch(Exception e){
+			System.out.println("Erro ao validar data.");
+		}
+		return "";
+	}
+	
+	/**
+	* Dada uma string extrai o ano
+	*/
+	public Integer getAno(String data){
+		String[] valores;
+		String delimiter = "-";
+		valores = data.split(delimiter);
+		return Integer.parseInt(valores[2]);
+	}
+	
+	/**
+	* Dada uma string extrai o mes
+	*/
+	public Integer getMes(String data){
+		String[] valores;
+		String delimiter = "-";
+		valores = data.split(delimiter);
+		return Integer.parseInt(valores[1]);
+	}
+	
+	/**
+	* Dada uma string extrai o dia
+	*/
+	public Integer getDia(String data){
+		String[] valores;
+		String delimiter = "-";
+		valores = data.split(delimiter);
+		return Integer.parseInt(valores[0]);
+	}	
+\end{lstlisting}
+
+
+Depois de criadas todas as funções e variáveis necessárias tivemos de adicionar nas produções as regras de cálculo.
+
+\begin{itemize}
+	\item \verb|int total_progenitores;|\\
+	Para calcular o total de progenitores tivemos de adicionar na produção:\\
+	\verb|progenitor : nome ',' apelido dataNasc dataMorte? ;| \\
+	a instrução:\\
+	 \verb|total_progenitores++;|
+	 
+	 \item \verb|int total_filhos;|\\
+	 No cálculo do total de filhos, o comportamento é semelhante ao total de progenitores, mas neste caso, adicionámos na secção init da produção:\\
+	 \verb|filho : nome dataNasc dataMorte? ;|\\
+	 a instrução:\\
+	 \verb|total_filhos++;|
+	
+	\item \verb|Integer total_familias;|\\
+	O total de famílias funciona da mesma forma que as anteriores, em que na secção da produção:\\
+	\verb|familia : 'PROGENITORES' '(' dataCasa ')' progenitores 'FILHOS' filhos? ;|\\
+	foi adicionada a instrução:\\
+	\verb|total_familias++;|
+	
+	\item \verb|ArrayList<Integer> filhos = new ArrayList<Integer>();|\\
+	O array que contém os filhos de cada família, utiliza a variável temporária \verb|Integer fil_temp;|, que conta os filhos de uma família e é colocada novamente a 0 quando é encontrada uma nova família, para no final (secção after) da produção \verb|filhos : filho (',' filho)*;| ser adicionado mais um índice ao array com o valor correspondente ao número de filhos da família.
+	
+	\item \verb|Integer media_filhos;|\\
+	A média de filhos é calculada no final de toda a frase ter sido reconhecida, ou seja, na secção after da produção \verb|genea : familia+;|. A instrução usada apenas pega no total de filhos e divide pelo total de famílias que já estão calculados (\verb|media_filhos = total_filhos/total_familias;|).
+	
+\end{itemize}
+
+Relativamente às datas, a verificação é feita na produção de cada uma das datas, por exemplo, na produção \verb|dataCasa : DATA ;| foram adicionadas as instruções:\\
+\verb|String data = verificaData(DATA.text); System.out.println(data);|
+em que a string data guarda algum erro caso não seja válida.
+
+Para verificar se a data de casamento é posterior à data de nascimento dos progenitores, na produção da \verb|familia| são colocadas as instruções para guardar na variável temporária \verb|dataCasa_tmp| a data de casamento do casal:\\
+\verb|String d = dataCasa.text;dataCasa_tmp = new GregorianCalendar(getAno(d), getMes(d), getDia(d));|\\
+As datas de nascimento dos progenitores são criadas da mesma forma que a data do casamento, mas de forma a ir para variáveis diferentes o \verb|PAI| e a \verb|MAE|, é usada a flag \verb|vez|.
+
+Depois de termos as datas todas, no final da produção \verb|familia| é verificado se as datas estão correctas:
+
+\begin{verbatim}
+if(dataNasc1_tmp.after(dataCasa_tmp) || dataNasc2_tmp.after(dataCasa_tmp)){
+    System.out.println("Data de Casamento inválida.");
+}else {
+    System.out.println("Data de casamento válida.");
+}
+\end{verbatim}
+
+
+\subsection{Resultado Final}
+Depois de correr a gramática em que o input é a frase dada como exemplo anterioremente, obtemos como output:
+
+\begin{verbatim}
+Data de casamento válida.
+Total de familias: 1
+Total de progenitores: 2
+Média de filhos por familia: 3
+Filhos da familia 1: 3
+\end{verbatim}
+
+\subsection{Gramática Final}
+
+No final de termos a nossa Gramática defenida e com todas as instruções necessários para atingir os objectivos, ficamos com:
+
+\lstset{caption={Linaguagem Final},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{filesBruno/genea.g}
+
+
+\newpage
+
+\section{Exercício n.º 4 - Robo}
+ 
+\subsection{Descrição do problema}
+Imaginemos um robo com a função de aspirar um terreno de forma retangular. Este terreno tem uma área que é conhecida pelo robo e que acaba por limitar o raio de ação dele.
+ 
+O robo pode ter definida uma posição inicial e os seus movimentos podem ser em quatro direções diferentes (norte, sul, este e oeste) com um peso associado que representa a distância que se vai deslocar (por exemplo \verb|NORTE 4|, desloca-se 4 unidades para norte). Tem ainda a opção de estar ligado ou desligado que define se está ativo ou não para aspirar.
+ 
+Com base na descrição do robo, era pedido:
+\begin{enumerate}
+\item Criar uma linguagem que conseguisse descrever uma rotina possível para o robo. Esta linguagem deve permitir ainda que tenha no início certas definições como a dimensão do terreno e a posição inicial do robo.
+\item Depois de definida a linguagem, tínhamos de criar um processador para as possíveis frases que podiam ser geradas com as seguintes funcionalidades:
+\begin{itemize}
+\item Verificar que o robo não se movimenta para fora da área de limpeza.
+\item Calcular a distância (em cm) que o robo percorreu durante a sua rotina.
+\item Determinar quantas mudanças de direção foram feitas pelo robo.
+\item Determinar a distância média que o robo se desloca por cada movimento.
+\end{itemize}
+\end{enumerate}
+ 
+ 
+\subsection{Criação da linguagem}
+Analisando o que era pretendido para descrever a rotina do robo, tentámos criar uma linguagem com uma sintaxe de fácil leitura e sem ambiguidades. Depois de analisar várias alternativas, definimos a linguagem com a seguinte estrutura:
+\lstset{caption={Estrutura da gramática},label=DescriptiveLabel}
+\begin{lstlisting}[style=gramatica]
+ASPIRADOR
+{
+DEFINICOES
+{
+definicao1; definicao2;
+}
+MOVIMENTOS
+instrucao1;
+instrucao2;
+....
+}
+\end{lstlisting}
+ 
+Uma linguagem tem de ter símbolos terminais e neste caso definimos os símbolos:
+\begin{itemize}
+\item DIM
+\item POS
+\item LIGAR
+\item DESLIGAR
+\item NORTE
+\item SUL
+\item ESTE
+\item OESTE
+\item ID
+\item INT
+\end{itemize}
+ 
+Definindo formalmente a gramática para representar os eventos possíveis do robo, obtemos:
+\lstset{caption={Gramática},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{gramatica.g}
+ 
+Depois de gerada a gramática, uma frase que se pode gerar é:
+\lstset{caption={Frase gerada 1},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in1.txt}
+Para provar que era uma frase válida, fizemos a sua árvore de derivação:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.29]{arv1.jpeg}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Árvore de derivação}
+\end{figure}
+ 
+ 
+Analisando a árvore gerada, verificámos que o elemento raiz é \verb|robot| e o parser terá de encontrar, no início, a palavra \verb|ASPIRADOR| seguida de um \verb|corpo| que se encontra dentro de chavetas.
+ 
+O corpo está dividio em 2 partes: \verb|definicoes| e \verb|movimentos|. Nas \verb|definicoes| podemos configurar a \verb|dimensao| do terreno e ainda a \verb|posicao| inicial do robo.
+ 
+Quanto aos \verb|movimentos|, este podem ser de 2 tipos, os que fazem realmente movimentar o robo (por exemplo \verb|NORTE 2|) e os que ligam (\verb|LIGAR|) ou desligam (\verb|DESLIGAR|) o robo.
+
+\subsection{Implementação}
+De forma a estruturar melhor todo o exercício, criámos classes em java que nos facilitassem o cálculo de todas as estatísticas e todas as restrições que eram necessárias.
+
+\subsection{Decisões Tomadas}
+Como seria de esperar, há pormenores que tinham de ser decididos para colocar o robo no terreno e para o cálculo das estatísticas, algumas decisões tomadas foram:
+\begin{itemize}
+	\item Caso não esteja definida a posição inicial do Robo no terreno, é assumido que esta é (0,0), que corresponde ao canto superior esquerdo do terreno.
+	\item Inicialmente, o Robo é colocado no terreno sem direção, assim, apenas depois do primeiro movimento, ele tem a direção definida e é possível contar para efeitos estatísticos a mudança de direção.
+	\item Apenas quando o Robo está no modo ligado é que ele se movimenta, caso contrário ignora todas as instruções que receber, excepto a de \verb|LIGAR|.
+\end{itemize}
+
+ 
+\subsubsection{Classes}
+As classes criadas foram:
+\begin{itemize}
+\item \verb|Robo|
+\item \verb|Terreno|
+\item \verb|Movimento|
+\item \verb|Matrix|
+\end{itemize}
+ 
+A classe \verb|Robo| é a responsável por guardar o estado, a posicao atual, a direção atual, todos os movimentos executados pelo robo e por gerar as estatísticas relacionadas com os mesmos. Esta classe contém 4 \verb|ArrayList<Integer>| para guardar inteiros com o valor que foi deslocado em cada uma das direções possíveis e, ainda, um \verb|TreeMap<Integer,Movimento>| em que a \verb|key| corresponde ao número em que o \verb|Movimento| ocorreu, este \verb|value| é do tipo \verb|Movimento| que contém apenas 3 variáveis de instância:
+\begin{itemize}
+\item \verb|Integer num| - número em que o movimento ocorreu.
+\item \verb|Direcao direcao| - direção em que o movimento foi feito.
+\item \verb|Integer distancia| - a distancia percorrida nesse movimento.
+\end{itemize}
+
+Este \verb|TreeMap<Integer,Movimento>| é usado apenas para na animação sabermos a ordem em que os movimentos foram feitos e que tipo de deslocação foi feita pelo robo, enquanto que as estatísticas são todas calculadas a partir dos \verb|ArrayList<Integer>| para ser mais eficiente e não termos que estar sempre a percorrer a estrutura em árvore.
+
+
+\verb|Terreno| é a classe que contém o valor, em cm, de uma unidade de movimento, as dimensões do terreno onde o robo se vai movimentar e verifica se o robo não se quer deslocar para fora dele. Para confirmar visualmente que tudo o que era pedido ao Robo se concretizava, criámos uma interface onde é possível ver a deslocação, passo a passo, do Robo e ainda as estatísticas geradas. Esta interface corresponde à classe \verb|Matrix| que recorre ao Java SWING para criar a animação.
+ 
+Em anexo está o código java de cada classe.
+
+\subsection{Gramática Final}
+Depois de criadas as classes em Java, foi necessário adaptar a nossa gramática de forma a realizar o que era pretendido, e instanciámos as três classes \verb|Robo|, \verb|Terreno| e (\verb|Matrix|).
+ 
+Resultando em:
+\lstset{caption={Gramática Final do Robo},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{filesBruno/robot.g}
+
+
+\subsection{Resultado Final}
+Depois de criada a linguagem, se testarmos com o input:
+\begin{verbatim}
+ASPIRADOR 
+{
+    DEFINICOES 
+    {
+    dim = (15 , 15) ; pos = (7 , 7) ;
+    }
+    MOVIMENTOS
+        LIGAR;
+        NORTE 2 ; 
+        ESTE 150 ;   
+        ESTE 3 ;
+        ESTE 2 ;
+        SUL 1 ; 
+        OESTE 5 ;
+        SUL 5;
+        DESLIGAR ;
+        SUL 0;
+        NORTE 10;  
+        LIGAR;
+        OESTE 4;
+}
+\end{verbatim}
+
+vamos obter dois tipos de output, um na consola e outro gráfico.
+
+\textbf{Output em texto:}
+\begin{verbatim}
+Movimento ESTE 150 inválido por ultrapassar os limites da área de limpeza!
+
+Terreno{uni=25, larg=15, alt=15}
+
+Robo{posx=3, posy=11, posx_ini=7, posy_ini=7, 
+     estado=LIGADO, dir=OESTE, 
+     norte=[2], sul=[1, 5], este=[3, 2], oeste=[5, 4], mud_dir=5, 
+movs={0=Movimento{num=0, direcao=NORTE, distancia=2}, 
+     1=Movimento{num=1, direcao=ESTE, distancia=3}, 
+     2=Movimento{num=2, direcao=ESTE, distancia=2}, 
+     3=Movimento{num=3, direcao=SUL, distancia=1}, 
+     4=Movimento{num=4, direcao=OESTE, distancia=5}, 
+     5=Movimento{num=5, direcao=SUL, distancia=5}, 
+     6=Movimento{num=6, direcao=OESTE, distancia=4}}, 
+totalMovs=7}
+
+ESTATISTICAS
+    Norte:
+        Total deslocações: 1
+        Total distancia percorrida: 50
+        Media de distancia percorrida por cada movimentacao: 50.0
+    Sul:
+        Total deslocações: 2
+        Total distancia percorrida: 150
+        Media de distancia percorrida por cada movimentacao: 75.0
+    Este:
+        Total deslocações: 2
+        Total distancia percorrida: 125
+        Media de distancia percorrida por cada movimentacao: 62.5
+    Oeste:
+        Total deslocações: 2
+        Total distancia percorrida: 225
+        Media de distancia percorrida por cada movimentacao: 112.0
+    TOTAL:
+        Total deslocações: 7
+        Total distancia percorrida: 550
+        Media de distancia percorrida por cada movimentacao: 78.57143
+        Total mudancas direcao: 5
+
+\end{verbatim}
+
+Analisando este output, o que é impresso primeiro é o movimento inválido, depois quando o programa chega ao fim faz o toString das classes \verb|Terreno| e \verb|Robo|, seguidas das estatísticas.
+
+\textbf{Interface gráfico:}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{1.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Terreno percorrido pelo Robo}
+\end{figure}
+ 
+ A célula preenchida de cor verde corresponde à posição inicial em que o Robo foi colocado e a célula vermelha à posição final.
+
+Analisando a frase fornecida como input, podemos concluir que as células pintadas corresponde ao trajecto introduzido.
+
+Temos ainda a opção de clicar no botão estatísticas que nos apresenta a seguinte informação:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{2.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Estatísticas do Robo}
+\end{figure}
+
+
+ 
+\newpage
+ 
+\section{Conclusões}
+ 
+A resolução deste exercício permitiu perceber melhor a forma como as linguagens podem ser úteis para gerar um programa, que dependo do input que irá receber, o resultado final seja o esperado sem ter de estar a alterar o código do programa que é automaticamente gerado.
+
+Umas das dificuldades foi perceber como o Antlr fazia o parser das frases de forma a não haver ambiguidade e conseguir na mesma produção termos acesso ao valor de dois símbolos terminais, tal como acontece, por exemplo, quando queremos saber a dimensão do terreno, em que a solução foi inserir labels para o compilador saber qual o valor pertendido.
+
+Serviu de consolidação da matéria dada até agora no módulo de Engenharia de Linguagens,
+tendo em conta que conseguimos resolver os exercícios com sucesso.
+
+\newpage 
+ 
+\section{Anexos}
+\subsection{Classes em Java}
+\subsubsection{Robo.java}
+\lstset{caption={Robo.java},label=DescriptiveLabel}
+\lstinputlisting[language=Java]{Robot/Robo.java}
+\newpage 
+
+\subsubsection{Terreno.java}
+\lstset{caption={Terreno.java},label=DescriptiveLabel}
+\lstinputlisting[language=Java]{Robot/Terreno.java}
+\newpage 
+
+\subsubsection{Movimento.java}
+\lstset{caption={Movimento.java},label=DescriptiveLabel}
+\lstinputlisting[language=Java]{Robot/Movimento.java}
+\newpage 
+
+\subsubsection{Matrix.java}
+\lstset{caption={Matrix.java},label=DescriptiveLabel}
+\lstinputlisting[language=Java]{Robot/Matrix.java}
+\newpage 
+
+
+
+\end{document}
