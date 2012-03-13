@@ -21,7 +21,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('RecordType')); ?>:</b>
-	<?php echo CHtml::encode($data->RecordType); ?>
+	<?php echo CHtml::encode($data->recordType->recordType); ?>
 	<br />
 
         

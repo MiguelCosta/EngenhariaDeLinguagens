@@ -89,11 +89,11 @@ class Object_Work_Records extends CActiveRecord
 	{
 		return array(
 			'id_object_Work_Records' => 'ID',
-			'displayCreator' => 'Creator',
-			'displayMeasurements' => 'Measurements',
-			'displayMaterialsTech' => 'Materials Tech',
-			'displayCreationDate' => 'Creation Date',
-			'RecordType' => 'Record Type',
+			'displayCreator' => 'Criador',
+			'displayMeasurements' => 'Medidas/Dimensões',
+			'displayMaterialsTech' => 'Material/Tecnologia',
+			'displayCreationDate' => 'Data de Criação',
+			'RecordType' => 'Tipo de Registo',
 		);
 	}
 
