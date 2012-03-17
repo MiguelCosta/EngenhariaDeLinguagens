@@ -1,0 +1,218 @@
+\documentclass[a4paper,titlepage]{article}
+\usepackage[portuguese]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyvrb}
+\usepackage{url}				% para url
+\usepackage{graphicx}			% para as imagens
+\usepackage{float}				% para as imagens
+\usepackage[affil-it]{authblk}	% para colocar affil no titulo
+\usepackage{indentfirst}		% para identar o 1º paragrafo
+\usepackage{hyperref}			% para criar links
+\usepackage[bottom]{footmisc}	% para o footnote
+
+\usepackage{titlesec}
+
+\usepackage{aeguill}  % usefull for pdflatex
+\usepackage[compat2,a4paper,twosideshift=0mm,left=20mm,right=20mm,bottom=20mm,top=15mm]{geometry}
+
+\parindent=2em
+
+
+\title{\textbf{Museu Virtual da Emigração e das Comunidades}\\Projecto Integrado de Engenharia de Linguagens \\ Relatório da Fase 1}
+
+\author{Bruno Azevedo}
+\author{Miguel Costa}
+
+\affil{ Mestrado em Engenharia Informática,\\ Departamento de Informática,\\Universidade do Minho}
+
+\date{De: 7 de Novembro de 2011 \\ Até: \today}
+
+\renewcommand\Authands{ and }
+
+\begin{document}
+
+\begin{titlepage}
+	\maketitle
+
+	\begin{abstract}
+	Este documento representa toda a documentação feita para o desenvolvimento do Museu Virtual da Emigração e das Comunidades. Neste momento contêm essencialmente o caso de estudo definido, análise de requisitos, alguma especificação UML e as principais decisões tomadas até ao momento.
+	\end{abstract}
+
+\end{titlepage}
+
+\newpage
+
+\parskip=0mm
+\tableofcontents
+\parskip=2mm
+
+\newpage
+
+\section{Introdução}
+No âmbito da UCE30 Engenharia de Linguagens do Mestrado em Engenharia Informática, é pretendido para o Projeto Integrado que se desenvolva um Museu Virtual (MV).
+
+Este MV terá ainda uma Ontologia\footnote{Ontologia é um termo que foi adoptado pela comunidade de Inteligência Artificial para referir conceitos e termos para descrever alguma área do conhecimento ou construir uma representação desse conhecimento.} associada para a informação que estiver guarda na base de dados esteja relacionada entre si. Através desta Ontologia será possível implementar uma característica importante no projeto, que é gerar automaticamente salas de exposição. Assim, o utilizador poderá fazer uma visita orientada por tema/história.
+
+	Os conhecimentos que foram e serão adquiridos nos vários módulos desta UCE30, quando aplicados neste projeto irão permitir-nos fazer ferramentes mais genérias, eficientes e permitir que este MV possa comunicar com outros já existintes. Isto porque irão ser adoptados modelos internacionais para a recolha e partilha de informação.
+
+
+
+\newpage
+
+\section{Contextualização}
+	Hoje em dia, devido ao grande processamente que os computadores possuem, é possível processar enormes quantidades de informação. O problema talvez seja agora arranjar mecanismos de comunicação entre serviços, isto e, encontrar uma linguagem para partilhar informação que qualquer programa consiga entender sem grande esforço.
+	
+	Devido à dificuldade de transferência de informação, o XML acabou por se tornar uma óptima opção e é considerado o standart para a resolução deste problema, logo, no nosso Museu Virtual (MV), terá de ter mecanismos de recolha de informação de um ficheiro XML de peças para serem expostas e, ainda, exportar essa informação também em XML.
+	
+	Os Museus para exporem as suas peças, tem de definir regras de catalogação para o tipo de peça que é pretendido descrever, devido à necessidade de uniformizar estas regras, foram criadas diversas normas para os mais diversos objectos que podem ser apresentados num museu, por exemplo, desde monumentos até cartas ou roupa. No nosso caso, vamos adoptar essencialmente os modelos internacionais do CDWA\footnote{Categories for the Description of Works of Art (CDWA) - \url{http://www.getty.edu/research/publications/
+electronic_publications/cdwa/introduction.html}} e do CCO\footnote{Cataloging Cultural Objects (CCO) - \url{http://cco.vrafoundation.org/}}. Estes modelos contêm uma grande quantidade de elementos que se podem usar, em que alguns deles são obrigatórios, mas para além destes, de acordo com o que precisamos, dos que não eram obrigatórios, selecionamos aqueles que nos pareceram mais relevantes e uteis para o nosso caso de estudo.
+
+
+\section{Objectivos pretendidos}
+	O objectivo da realização deste projecto é desenvolver um Sistema para Geração Automática de Salas de Exposições em Museus Virtuais com base em Ontologias, ou seja, criação de um WebSite que permita ser gerido como um Museu, seja possível alguns utilizadores colocarem peças para exposição, outros com direitos de administração gerirem as salas e o museu e, como finalidade óbvia, mostrar a qualquer pessoa que entre no WebSite, as peças que estão arquivadas.
+
+Por outras palavras, os objectivos principais são:
+\begin{itemize}
+	\item arquivar o espólio do museu,
+	\item gerar automaticamente os espaços de aprendizagem na forma de salas de exposição do museu,
+	\item guiar as visitas recebendo delas informação.
+\end{itemize}
+
+
+	Quando falamos em "arquivar o espólio", estamos a referir-nos a receber meta-informação sobre cada objecto, classificá-lo tendo em conta a ontologia e armazenar essa meta-informação depois de classificada.
+	
+	O MV vai ter várias salas de exposição, em que cada uma delas transmite o conhecimento que relacionada todos os objectos que pertencem à sala. O tema ou conhecimento que é pretendido ser transmitido, será descrito por uma ontologia. É esta ontologia que define os objectos a serem expostos e as relações entre eles.
+	
+	Dizer "guiar as visitas recebendo delas informação", é a nossa solução basear-se em apresentar o sítio web com base na ontologia da exposição e permitir que o visitante possa fazer comentário e até fornecer conhecimento que pode ser arquivada no MV, quer acrescentando novo objectos ou ligações, quer corrigindo informações incorrectas.
+	
+	O nosso repositório para o MV tem de seguir o modelo de referência Internacional OAIS\footnote{Open Archivel Information System - consiste numa organização de pessoas e sistemas que tem a responsabilidade de preservar a informação e torna-la disponível para uma comunidade designada.} que indica como se deverá estruturar a Figura \ref{fig:esquema_oais}.
+	
+Neste repositório terá de ser possível que haja três grandes processos:
+	\begin{itemize}
+		\item ingestão - processo que permite ingerir conteúdo no sistema.
+		\item administração - gestão de utilizadores, gestão dos arquivos armazenados...
+		\item disseminação - processo que permite ver o conteúdo armazenado. Pode ser através de uma página web ou da criação de um ficheiro xml.
+	\end{itemize}
+
+\subsection{Modelo de referência internacional OAIS}
+	O modelo que se vai usar para a recepção, disponibilizar e gerir a informação é o OAIS e possui a estrutura que é ilustrada na Figura \ref{fig:esquema_oais}.
+	
+\begin{figure}[H]
+ \centering
+ \includegraphics[scale=0.8]{./imagens/OAIS.png}
+ \caption{Modelo de referência internacional OAIS}
+ \label{fig:esquema_oais}
+\end{figure}
+
+A estrutura baseada neste modelo inclui 3 actores distintos:
+\begin{itemize}
+	\item Produtor - corresponde aos utilizadores que irão submeter informação no repositório.
+	\item Administrador - realiza todas as tarefas de manutenção do sistema.
+	\item Consumidor - utilizador que consulta e pesquisa a informação do repositório.
+\end{itemize}
+
+\subsubsection{SIP e o Processo de Ingestão}
+
+Neste processo, o ideal é conseguir enriquecer o repositório através do preenchimento de um formulário e ainda através de um ficheiro XML que respeite o Schema do CDWA-Lite.
+
+Quando se inserir alguma informação no MV, essa informação irá sofrer um processo até ficar completamente armazenado no sistema para se conseguir relacionar com outras obras presentes no museu.
+
+\subsubsection{AIP e armazenamento de projetos}
+Neste repositório, vamos ter uma solução híbrida, com a metainformação guardada na Base de Dados relacional e a outra informação que corresponde a outros ficheiros incluídos no SIP que estejam relacionados com as obras, como imagens, documentos word, etc, guardados num Sistema de Ficheiros.
+
+\subsubsection{DIP e a disseminação/publicação de conteúdos}
+
+Um DIP pode ser disponibilizado de duas formas, ou através de um Website criado para o efeito ou então através de um ficheiro XML.
+
+No Website será possível ver o espólio do museu, ver a sua informação e ainda entrar em salas que serão geradas automaticamente para mostrar obras que tinham algum fio de ligação entre elas.
+
+
+\section{Caso de Estudo}
+
+Depois de um grande impace sobre o Museu que iríamos tratar, optamos por um projeto já com algum desenvolvimento que é o Museu da Emigração e das Comunidades de Fafe.
+
+Dentro deste Museu existe uma grande variedade de peças de arte, em que grande parte estão relacionadas com a emigração de portugueses no início do século XX. Muitas das reliquias pertenceram a "Brasileiros retorna viagem", pessoas que emigraram para o Brasil, enriqueceram e quando voltaram para Portugal queria ser importantes na sua terra, para isso mandavam construir edifícios (escolas, hospitais...) e alguns até tinha o seu próprio jornal/almanaque.
+
+Dos vário material que poderíamos tratar, optámos pelas \textbf{fotografias} e pelas \textbf{zincogravuras}.
+
+As fotografias foram tiradas pelo fotógrafo e pintor Gérald Bloncourt, de nacionalidade Haitiana, que tirou muitas fotografias ao dia a dia dos emigrantes portugueses em França.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagens/CGB052.JPG}
+\caption{Bidonville à Aubervilliers - 1957}
+\end{figure}
+
+Quanto às zincogravuras, elas foram usadas para diversos fins, como cartons em almanaques, capas de jornais, fotografias de famílias e retratos, logótipos...
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagens/004.jpg}
+\caption{RANILON - Correia plana de plástico e couro}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{imagens/0059.jpg}
+\caption{''Director deste Almanaque, esposa e seus 10 filhos'' - O Desforço }
+\end{figure}
+
+
+\section{Levantamento de Requisitos}
+
+Na explicação do que era pretendido fazer, já descrevemos um pouco os requisitos necessários, fazendo uma síntese dos objectivos temos então:
+\begin{enumerate}
+	\item Basear a especificação no estudo e análise das normas internacinais: CCO e CDWA.
+	\item Criar um modelo para uma Base de Dados Relacional que permita guardar a informação proveniente de documentos com os formatos internacionais já mencionados.
+	\item Tendo em conta o caso de estudo, encontrar uma solução para inserir a informação no repositório de forma a que as diferentes obras se possam relacionar entre si.
+\end{enumerate}
+
+
+\subsection{Especificação dos Requisitos}
+
+\subsubsection{Análise das normas internacionais para a catalogação de obras de arte}
+
+\subsubsection{Dados}
+
+\subsubsection{Pedidos}
+
+\subsubsection{Relações}
+
+\section{Concepção/desenho da Resolução}
+\subsection{Análise das normas internacionais para a catalogação de obras de arte}
+\subsection{Estruturas de Dados}
+\subsection{Algoritmos}
+
+\section{Codificação e Testes}
+\subsection{Alternativas, Decisões e Problemas de Implementação}
+\subsection{Testes realizados e Resultados}
+
+Mostram-se a seguir alguns testes feitos (valores introduzidos) e os
+respectivos resultados obtidos:
+
+\begin{Verbatim}
+  Input:
+
+  7
+
+  Output:
+
+  1 1 2 3 5 8 13
+\end{Verbatim}
+
+
+\section{Conclusões}
+Síntese do Documento.\\
+Estado final do projecto. Análise crítica dos resultados.\\
+Sugestões para trabalho futuro.
+
+\appendix
+\section{Código do Programa}
+
+Lista-se a seguir o código \textsf{C} do programa que foi
+desenvolvido.
+
+
+\end{document}
