@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  18 MAR 2012 12:20
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  18 MAR 2012 22:52
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -314,24 +314,24 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 130.
 )
-Package color Info: Redefining color cyan on input line 31.
+Package color Info: Redefining color cyan on input line 32.
  (./pi-rel-fase2.aux)
 \openout1 = `pi-rel-fase2.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 71.
+LaTeX Font Info:    ... okay on input line 71.
 
 (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -346,7 +346,7 @@ LaTeX Font Info:    ... okay on input line 69.
 \MPnumerator=\count119
 \everyMPtoPDFconversion=\toks25
 )
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring OFF on input line 71.
  (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
 Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
 
@@ -355,8 +355,8 @@ Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
 )
 \c@section@level=\count120
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
+LaTeX Info: Redefining \ref on input line 71.
+LaTeX Info: Redefining \pageref on input line 71.
  (./pi-rel-fase2.out) (./pi-rel-fase2.out)
 \@outlinefile=\write4
 \openout4 = `pi-rel-fase2.out'.
@@ -412,7 +412,7 @@ ination with the same identifier (name{page.1}) has been already used, duplicat
 e ignored
 <to be read again> 
                    \relax 
-l.82 \end{abstract}
+l.84 \end{abstract}
                     [1] (./pi-rel-fase2.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 5.
@@ -424,56 +424,50 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
  [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 106.
+(Font)              <8> on input line 113.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 106.
+(Font)              <6> on input line 113.
  [3]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 146.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 152.
 
 
 (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 169.
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 175.
 
 
 (/usr/share/texmf/tex/latex/R/tex/latex/omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 169.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 175.
  [4]
-<./imagens/OAIS.png, id=163, 549.05125pt x 287.0725pt>
+<./imagens/OAIS.png, id=173, 549.05125pt x 287.0725pt>
 File: ./imagens/OAIS.png Graphic file (type png)
 
 <use ./imagens/OAIS.png> [5 <./imagens/OAIS.png (PNG copy)>]
-<imagens/CGB052.JPG, id=168, 823.878pt x 542.5068pt>
+<imagens/CGB052.JPG, id=178, 823.878pt x 542.5068pt>
 File: imagens/CGB052.JPG Graphic file (type jpg)
  <use imagens/CGB052.JPG>
-<imagens/004.jpg, id=169, 269.808pt x 351.9549pt>
+<imagens/004.jpg, id=179, 269.808pt x 351.9549pt>
 File: imagens/004.jpg Graphic file (type jpg)
  <use imagens/004.jpg>
-[6 <./imagens/CGB052.JPG>] <imagens/0059.jpg, id=176, 409.7709pt x 326.6604pt>
+[6 <./imagens/CGB052.JPG>] <imagens/0059.jpg, id=186, 409.7709pt x 326.6604pt>
 File: imagens/0059.jpg Graphic file (type jpg)
 
 <use imagens/0059.jpg> [7 <./imagens/004.jpg> <./imagens/0059.jpg>] [8]
-[9] [10] [11]
-LaTeX Font Info:    Try loading font information for T1+aess on input line 638.
-
- (/usr/share/texmf-texlive/tex/latex/ae/t1aess.fd
-File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
-) [12]
-(./pi-rel-fase2.aux) ) 
+[9] [10] [11] [12] [13] (./pi-rel-fase2.aux) ) 
 Here is how much of TeX's memory you used:
- 7967 strings out of 495014
- 111694 string characters out of 1180707
+ 7978 strings out of 495014
+ 111787 string characters out of 1180707
  214275 words of memory out of 3000000
- 10809 multiletter control sequences out of 15000+50000
- 44153 words of font info for 87 fonts, out of 3000000 for 9000
+ 10803 multiletter control sequences out of 15000+50000
+ 42489 words of font info for 85 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 38i,8n,40p,304b,1855s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.4} has been referen
-ced but does not exist, replaced by a fixed one
+ 38i,8n,40p,304b,1849s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{Hfoot
+note.4} has been referenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 , replaced by a fixed one
@@ -491,14 +485,14 @@ pe1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-texlive/fonts/type1/public/a
 msfonts/cm/cmr17.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
 mr6.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
 /share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texmf-
-texlive/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/share/texmf-texlive/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/pu
-blic/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
-ts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt1
-0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on pi-rel-fase2.pdf (13 pages, 3002461 bytes).
+texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fon
+ts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/pu
+blic/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
+ts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8
+.pfb>
+Output written on pi-rel-fase2.pdf (14 pages, 3008034 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
- 161 named destinations out of 1000 (max. 500000)
- 205 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 183 named destinations out of 1000 (max. 500000)
+ 221 words of extra memory for PDF output out of 10000 (max. 10000000)
 

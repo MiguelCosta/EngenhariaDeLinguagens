@@ -1,5 +1,6 @@
-%%This is a very basic article template.
-%%There is just one section and two subsections.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Projecto Integrado de Engenharia de Linguagens               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[a4paper,titlepage]{article}
 \usepackage[portuguese]{babel}
 \usepackage[latin1]{inputenc}
@@ -45,25 +46,26 @@
   stringstyle=\color{black},
   identifierstyle=\color{darkblue},
   keywordstyle=\color{cyan},
-  morekeywords={xmlns,version,type}% list your attributes here
+  morekeywords={xmlns,version,type,value,unit,birthdate
+  }% list your attributes here
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Meta informação do documento %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\title{\textbf{Museu Virutal da Emigração e das Comunidades} \\ Projecto
-Integrado de Engenharia de Linguagens \\ Relatório da Fase 2}
+\title{\textbf{Museu Virtual da Emigração e das Comunidades} \\ Projecto
+Integrado de Engenharia de Linguagens \\ Relatório Intermédio 2}
 
-\author{Bruno Azevedo}
-\author{Miguel Costa}
+\author{Bruno Azevedo e Miguel Costa}
 
 \affil{ Mestrado em Engenharia Informática,\\ Departamento de
-Informática,\\Universidade do Minho}
+Informática,\\ Universidade do Minho}
 
 \date{De: 7 de Novembro de 2011 \\ Até: \today}
 
-\renewcommand\Authands{ e }
+% \renewcommand\Authands{ e }
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -86,6 +88,10 @@ especificação UML e as principais decisões tomadas até ao momento.
 
 \newpage
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Índice %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \parskip=0mm
 \tableofcontents
 \parskip=2mm
@@ -97,22 +103,22 @@ especificação UML e as principais decisões tomadas até ao momento.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introdução}
 No âmbito da UCE30 Engenharia de Linguagens do Mestrado em Engenharia
-Informática, é pretendido para o Projeto Integrado que se desenvolva um Museu
+Informática, é pretendido para o Projecto Integrado que se desenvolva um Museu
 Virtual (MV).
 
-Este MV terá ainda uma Ontologia\footnote{Ontologia é um termo que foi adoptado
-pela comunidade de Inteligência Artificial para referir conceitos e termos para
+Este MV terá de seguir normas internacionais para catalogação de peças de arte e
+terá uma Ontologia\footnote{Ontologia é um termo que foi adoptado pela
+comunidade de Inteligência Artificial para referir conceitos e termos para
 descrever alguma área do conhecimento ou construir uma representação desse
-conhecimento.} associada para a informação que estiver guarda na base de dados
-esteja relacionada entre si. Através desta Ontologia será possível implementar
-uma característica importante no projeto, que é gerar automaticamente salas de
+conhecimento.} associada. Através desta Ontologia será possível implementar uma
+característica importante no projecto, que é gerar automaticamente salas de
 exposição. Assim, o utilizador poderá fazer uma visita orientada por
 tema/história.
 
 Os conhecimentos que foram e serão adquiridos nos vários módulos desta UCE30,
-quando aplicados neste projeto irão permitir-nos fazer ferramentes mais
-genérias, eficientes e permitir que este MV possa comunicar com outros já
-existintes. Isto porque irão ser adoptados modelos internacionais para a
+quando aplicados neste projecto irão permitir-nos fazer ferramentas mais
+genéricas, eficientes e permitir que este MV possa comunicar com outros já
+existentes. Isto porque irão ser adoptados modelos internacionais para a
 recolha e partilha de informação.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -124,9 +130,9 @@ recolha e partilha de informação.
 %% Contextualização %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Contextualização}
-Hoje em dia, devido ao grande processamente que os computadores possuem, é
+Hoje em dia, devido ao grande processamento que os computadores possuem, é
 possível processar enormes quantidades de informação. O problema talvez seja
-agora arranjar mecanismos de comunicação entre serviços, isto e, encontrar uma
+agora arranjar mecanismos de comunicação entre serviços, isto é, encontrar uma
 linguagem para partilhar informação que qualquer programa consiga entender sem
 grande esforço.
 
@@ -147,8 +153,8 @@ electronic_publications/cdwa/introduction.html}} e do CCO\footnote{Cataloging
 Cultural Objects (CCO) - \url{http://cco.vrafoundation.org/}}. Estes modelos
 contém uma grande quantidade de elementos que se podem usar, em que alguns
 deles são obrigatórios, mas para além destes, de acordo com o que precisamos,
-dos que não eram obrigatórios, selecionámos aqueles que nos pareceram mais
-relevantes e úteis para o nosso caso de estudo.
+seleccionámos aqueles que nos pareceram mais relevantes e úteis para o nosso
+caso de estudo.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -158,11 +164,11 @@ relevantes e úteis para o nosso caso de estudo.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Objectivos pretendidos}
 O objectivo da realização deste projecto é desenvolver um Sistema para Geração
-Automática de Salas de Exposiçõees em Museus Virtuais com base em Ontologias,
-ou seja, criação de um WebSite que permita ser gerido como um Museu, seja
+Automática de Salas de Exposições em Museus Virtuais com base em Ontologias,
+ou seja, criação de um Web Site que permita ser gerido como um Museu, seja
 possível alguns utilizadores colocarem peças para exposição, outros com
 direitos de administração gerirem as salas e o museu e, como finalidade óbvia,
-mostrar a qualquer pessoa que entre no WebSite, as peças que estão arquivadas.
+mostrar a qualquer pessoa que entre no Web Site, as peças que estão arquivadas.
 
 Por outras palavras, os objectivos principais são:
 \begin{itemize}
@@ -173,7 +179,7 @@ Por outras palavras, os objectivos principais são:
 \end{itemize}
 
 
-Quando falamos em "arquivar o espólio", estamos a referir-nos a receber
+Quando falamos em ``arquivar o espólio'', estamos a referir-nos a receber
 meta-informação sobre cada objecto, classificá-lo tendo em conta a ontologia e
 armazenar essa meta-informação depois de classificada.
 
@@ -183,10 +189,10 @@ conhecimento que é pretendido ser transmitido, será descrito por uma ontologia.
 É esta ontologia que define os objectos a serem expostos e as relações entre
 eles.
 
-Dizer "guiar as visitas recebendo delas informação", é a nossa solução
+Dizer ``guiar as visitas recebendo delas informação'', é a nossa solução
 basear-se em apresentar o sítio web com base na ontologia da exposição e
-permitir que o visitante possa fazer comentário e até fornecer conhecimento que
-pode ser arquivada no MV, quer acrescentando novo objectos ou ligações, quer
+permitir que o visitante possa fazer um comentário e até fornecer conhecimento
+que pode ser arquivada no MV, quer acrescentando novo objectos ou ligações, quer
 corrigindo informações incorrectas.
 
 O nosso repositório para o MV tem de seguir o modelo de referência
@@ -201,7 +207,7 @@ Neste repositório terá de ser possível que haja três grandes processos:
   \item administração - gestão de utilizadores, gestão dos arquivos
   armazenados...
   \item disseminação - processo que permite ver o conteúdo armazenado. Pode ser
-  através de uma página web ou da criação de um ficheiro xml.
+  através de uma página web ou da criação de um ficheiro XML.
 \end{itemize}
 
 \subsection{Modelo de referência internacional OAIS}
@@ -215,7 +221,7 @@ O modelo que se vai usar para a recepção, disponibilizar e gerir a informação
 \label{fig:esquema_oais}
 \end{figure}
 
-A estrutura baseada neste modelo inclui 3 actores distintos:
+A estrutura baseada neste modelo inclui três actores distintos:
 \begin{itemize}
   \item Produtor - corresponde aos utilizadores que irão submeter informação no
   repositório.
@@ -234,7 +240,7 @@ Quando se inserir alguma informação no MV, essa informação irá sofrer um
 processo até ficar completamente armazenado no sistema para se conseguir
 relacionar com outras obras presentes no museu.
 
-\subsubsection{AIP e armazenamento de projetos}
+\subsubsection{AIP e armazenamento de projectos}
 Neste repositório, vamos ter uma solução híbrida, com a metainformação guardada
 na Base de Dados relacional e a outra informação que corresponde a outros
 ficheiros incluídos no SIP que estejam relacionados com as obras, como imagens,
@@ -242,10 +248,10 @@ documentos word, etc, guardados num Sistema de Ficheiros.
 
 \subsubsection{DIP e a disseminação/publicação de conteúdos}
 
-Um DIP pode ser disponibilizado de duas formas, ou através de um Website criado
+Um DIP pode ser disponibilizado de duas formas, ou através de um WebSite criado
 para o efeito ou então através de um ficheiro XML.
 
-No Website será possível ver o espólio do museu, ver a sua informação e ainda
+No Web Site será possível ver o espólio do museu, ver a sua informação e ainda
 entrar em salas que serão geradas automaticamente para mostrar obras que tinham
 algum fio de ligação entre elas.
 
@@ -256,18 +262,18 @@ algum fio de ligação entre elas.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Caso de Estudo}
 
-Depois de um grande impace sobre o Museu que iríamos tratar, optamos por um
-projeto já com algum desenvolvimento que é o Museu da Emigração e das
+Depois de um grande impasse sobre o Museu que iríamos tratar, optamos por um
+projecto já com algum desenvolvimento que é o Museu da Emigração e das
 Comunidades de Fafe.
 
 Dentro deste Museu existe uma grande variedade de peças de arte, em que grande
 parte estão relacionadas com a emigração de portugueses no início do século XX.
-Muitas das reliquias pertenceram a "Brasileiros retorna viagem", pessoas que
+Muitas das relíquias pertenceram a "Brasileiros retorna viagem", pessoas que
 emigraram para o Brasil, enriqueceram e quando voltaram para Portugal queria ser
 importantes na sua terra, para isso mandavam construir edifícios (escolas,
 hospitais...) e alguns até tinha o seu próprio jornal/almanaque.
 
-Do vário material que poderéamos tratar, optámos pelas \textbf{fotografias} e
+Do vário material que poderíamos tratar, optámos pelas \textbf{fotografias} e
 pelas \textbf{zincogravuras}.
 
 As fotografias foram tiradas pelo fotógrafo e pintor Gérald Bloncourt, de
@@ -307,7 +313,7 @@ almanaques, capas de jornais, fotografias de famílias e retratos, logótipos...
 Na explicação do que era pretendido fazer, já descrevemos um pouco os requisitos
 necessários, fazendo uma síntese dos objectivos temos então:
 \begin{enumerate}
-  \item Basear a especificação no estudo e análise das normas internacinaios:
+  \item Basear a especificação no estudo e análise das normas internacionais:
   CCO e CDWA.
   \item Criar um modelo para uma Base de Dados Relacional que permita guardar a
   informação proveniente de documentos com os formatos internacionais já
@@ -316,16 +322,15 @@ necessários, fazendo uma síntese dos objectivos temos então:
   informação no repositório de forma a que as diferentes obras se possam
   relacionar entre si.
   \item Construir um Museu Virtual com salas geradas automaticamente para
-  apresentar as relíquias do repositório aos seus visistantes.
+  apresentar as relíquias do repositório aos seus visitantes.
 \end{enumerate}
 
 
 \subsection{Especificação dos Requisitos}
 
-
 \subsubsection{Dados}
 
-Os vários documentos que nós foram fornecidos para analisar, tinham uma
+Os vários documentos que nos foram fornecidos para analisar, tinham uma
 estrutura muito equivalente entre as várias peças, por isso, depois de analisar
 o seu conteúdo tivemos de pensar na forma mais correcta de passar
 essa informação para os modelos internacionais de catalogação.
@@ -366,17 +371,18 @@ Descrição:              Publicidade: RANILON - Correia plana de plástico e couro
 Proveniência/Incorporação: "O Desforço"
 \end{verbatim}
 
-Em termos de metainformação, as fotografias são mais ricas que as zincogravuras.
+A metainformação das fotografias são mais ricas que as zincogravuras, no entanto
+é possível cobrir os campos obrigatórios das normas internacionais.
 
 \subsubsection{Análise das normas internacionais para a catalogação de obras de
 arte}
 
-Analisando os normas necessários e a sua estrutura, defenimos que o modelo a
-seguir iria ser o XML Schema CDWA-Lite. Este schema possui praticamente todos os
+Analisando os normas necessários e a sua estrutura, definimos que o modelo a
+seguir iria ser o XML Schema CDWA-Lite. Este Schema possui praticamente todos os
 campos necessários para as nossas obras, apenas tivemos de acrescentar mais um
 ou outro.
 
-Passomos agora a explicar alguns dos campos que irão fazer parte da descrição de
+Passamos agora a explicar alguns dos campos que irão fazer parte da descrição de
 uma obra no nosso MV.
 Há dois tipos de descrição presente, a \verb|Descriptive Metadata| e a
 \verb|Administrative Metadata|. A primeira é onde colocamos toda a
@@ -396,7 +402,7 @@ e documentos.
 </objectWorkTypeWrap>
 \end{lstlisting}
 
-\item \textit{Title Wrapper} - Aqui podemos colocar os vários titúlos que a obra
+\item \textit{Title Wrapper} - Aqui podemos colocar os vários títulos que a obra
 poderá ter (obrigatório).
 \begin{lstlisting}
 <titleWrap>
@@ -463,8 +469,8 @@ constituição da obra.
 \end{lstlisting}
 
 \item \textit{Style Wrapper} - Termo que identifica o período artístico ou
-histórco. Apesar de não termos esta informação e não ser um campo obrigatório,
-optámos por colocar ``indefenida'' porque no futuro este campo será útil. 
+histórico. Apesar de não termos esta informação e não ser um campo obrigatório,
+optámos por colocar ``indefinida'' porque no futuro este campo será útil. 
 \begin{lstlisting}
 <styleWrap>
     <style>indefinida</style>
@@ -566,13 +572,7 @@ Apesar de nos exemplos colocados em XML ser metainformação de uma fotografia,
 as zincogravuras possuem também uma estrutura praticamente igual a esta. Como é
 óbvio, os campos obrigatórios existem em ambas as descrições. Nos campos
 opcionais, algumas obras podem ter mais informação do que outras e isso faz com
-que haja alguma diferença da informação disponível para cada obra.
-
-
-
-\subsubsection{Pedidos}
-
-\subsubsection{Relações}
+que haja alguma diferença da informação disponível para cada uma.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -581,6 +581,50 @@ que haja alguma diferença da informação disponível para cada obra.
 %% Concepção/desenho do Sistema %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Concepção/desenho do Sistema}
+
+\subsection{Ambiente de Trabalho}
+\subsubsection{Linguagens de Programação e Tecnologias}
+As linguagens que mais vamos usar são o Perl e o PHP. O Perl usamos mais para as
+scripts e transformação dos documentos para outros formatos, enquanto que o PHP
+vai ser mais usado para construir o WebSite que permita gerir todo o Museu.
+
+Tendo em conta os conhecimentos e experiência que tivemos noutros projectos,
+achamos melhor adoptar a utilização de uma Framework que nos facilitasse
+algumas tarefas na criação/gestão do WebSite. Depois de uma grande análise do
+que nos podia ser útil, optámos pela Framework em PHP Yii.
+\begin{quote}
+\em Yii é um framework de alta performance em PHP que utiliza componentes para o
+desenvolvimento de grandes aplicações Web. Permite máxima reutilização de
+códigos na programação Web e pode acelerar significativamente o processo de
+desenvolvimento. O nome Yii (pronunciado i) representa as palavras fácil (easy),
+eficiente (efficient) e extensível (extensible).
+\end{quote}
+
+Como o projecto tem uma grande parte de desenvolvimento Web, para além do HTML,
+vamos ainda usar CSS, JavaScript e outras tecnologias associadas ao Ajax.
+
+Usámos ainda a linguagem de marcação XML e várias tecnologias a ela associadas,
+como: XPath, XML Schema, XML Stylesheet.
+
+\subsubsection{Suporte}
+Linux é o sistema operativo usado para suportar o sistema desenvolvido. Para a
+Base de Dados adoptámos o MySQL que noutros projectos se revelou-se mais do que
+suficiente para o que será exigido.
+
+Instalámos nas nossas máquinas o xampp, ferramenta que incluiu um servidor PHP e
+MySQL para conseguirmos testar o que íamos fazendo.
+
+\subsubsection{Editor de Texto/IDE}
+Para desenvolver um projecto com esta dimensão e com as tecnologias que serão
+usadas, é essencial recorrer a ferramentas que nos facilitassem algumas
+tarefas.
+
+O Vim foi muito usado para a criação de scripts em Perl, enquanto que para a
+escrita da linguagem PHP e HTML vamos usar os IDE NetBeans e Ecplise. Para a
+criação de ficheiros XML, Stylesheets (XSLT) e XML Schema recorremos ao IDE
+Oxygen XML.
+
+
 \subsection{Repositório para os Dados}
 O nosso suporte para a informação será uma Base de Dados Relacional em MySQL, no
 entanto, será ainda possível utilizar como suporte um ficheiro XML, mas este
@@ -589,7 +633,7 @@ com outros museus que também sigam as normas do CDWA-Lite.
 
 O nosso desenho para a base de dados à primeira vista pode ser um pouco
 assustador, no entanto o facto de ter tantas tabelas deve-se à estrutura do
-CDWA-Lite, isto porque o que nós fizemos baseiou-se em mapear o CDWA-Lite para
+CDWA-Lite, isto porque o que nós fizemos baseou-se em mapear o CDWA-Lite para
 uma base de dados relacional na 3ª forma normal. Como muitos dos campos do
 schema são listas, isso resulta em relações de muitos para muitos, logo aumenta
 mais um pouco o número de tabelas existente.
@@ -604,13 +648,13 @@ expandir o museu sem grande dificuldade.
 Aqui iremos explicar as tabelas presentes na base de dados e a informação que
 cada uma irá conter sobre uma obra.
 
-\subsection{População da Base de Dados a partir dos documentos fornecidos}
+\subsection{Povoação da Base de Dados a partir dos documentos fornecidos}
 
-Para inserir a informação que nos foi disponibilizada na Base de Dados, a
-informação dos documentos originais sofreu uma série de transformações até estar
-pronta a inserir no reposiório.
+Para inserir a informação que nos foi disponibilizada na Base de Dados, o
+conteúdo dos documentos fornecidos sofreu uma série de transformações até
+estar pronto a inserir no repositório.
 
-A ideia era criar um mecanismo automatico para transformar todos os registos das
+A ideia era criar um mecanismo automático para transformar todos os registos das
 obras, para isso aplicámos os nossos conhecimentos adquiridos em de SPLN
 (Scripting no Processamento de Linguagem Natural) para criar scripts que
 fizessem o trabalho todo de uma forma eficaz e rápida.
@@ -619,24 +663,67 @@ Apesar de o resultado final ser equivalente nas fotografias e nas zincogravuras,
 o processo de transformação não foi exactamente o mesmo devido à estrutura dos
 documentos disponibilizados.
 
+\subsubsection{Zincogravuras}
+No caso dos registos das zincogravuras, a informação passou por duas fases.
 
-\section{Codificação e Testes}
-\subsection{Alternativas, Decisões e Problemas de Implementação}
-\subsection{Testes realizados e Resultados}
+Inicialmente os documentos estavam no formato do Word (doc), por isso começamos
+por passar essa informação para um ficheiro XML de acordo com o CDWA-Lite. Esta
+primeira transformação foi feita, tal como todas as outras, em Perl e recorremos
+à utilização do módulo \verb|Text::Extract::Word| para extrair o texto do
+documento, depois através de expressões regulares ``apanhamos'' o texto que
+queríamos e associámos às respectivas tags e atributos do Schema do CDWA-Lite.
+Depois de ter a informação num formato XML, foi mais simples de passar os
+registos da zincogravuras para SQL de forma a que se pudessem a inserir na base
+de dados.
+
+\subsubsection{Fotografias}
+Os documentos em Word que tinham os registos das fotografias, até chegar a SQL
+sofreu mais processos de transformação devido à informação no doc estar em
+várias tabelas.\\
+O primeiro passo foi ficar apenas com o texto ``limpo''. Para isso
+guardamos o documento em PDF, em seguida utilizamos o comando em Linux
+\verb|pdftohtml ficheiro.pdf| para passar a informação para HTML e quando estava
+neste formato, apenas executamos o comando \verb|lynx -dump ficheiro.html| para
+ficar com o texto limpo.
+
+Depois de termos os registos em apenas texto, passamos a informação para um
+ficheiro XML com uma estrutura criada por nós:
+\begin{lstlisting}
+<peca>
+    <inventario>CGB001</inventario>
+    <classificacao_generica>Fotografia</classificacao_generica>
+    <objecto>Fotografia P/B</objecto>
+    <titulo>1111/4</titulo>
+    <autor>Gérald Bloncourt</autor>
+    <suporte>Papel</suporte>
+    <tecnica>Fotografia P/B - Impressão digital</tecnica>
+    <dimensoes>42 x 59,5 cm</dimensoes>
+    <legenda>
+        Emigrante português lendo um jornal do seu país num estaleiro de
+        obras nos subúrbios de Paris, 1967.
+    </legenda> 
+    <datacao>Impressão em 2009</datacao> 
+    <lugar_producao>França</lugar_producao>
+    <historia>Sem moldura. Não foi exposto neste Museu.</historia>
+    <incorporacao>Doação do autor ao Museu das Migrações no ano de 2009.</incorporacao>
+</peca>
+\end{lstlisting}
+
+A partir daqui foi mais simples criar outro documento XML de acordo com o Schema
+do CDWA-Lite e deste para SQL até ser inserido na base de dados.
+
+
+\section{Alternativas, Decisões e Problemas de Implementação}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Conclusões %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusões}
-Síntese do Documento.\\
-Estado final do projecto. Análise crítica dos resultados.\\
-Sugestões para trabalho futuro.
+
 
 \appendix
-\section{Código do Programa}
+\section{Scripts em Perl}
 
-Lista-se a seguir o código \textsf{php} do programa que foi
-desenvolvido.
 
 
 \end{document}
