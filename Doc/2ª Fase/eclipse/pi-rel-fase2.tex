@@ -63,7 +63,7 @@ Informática,\\Universidade do Minho}
 
 \date{De: 7 de Novembro de 2011 \\ Até: \today}
 
-\renewcommand\Authands{ and }
+\renewcommand\Authands{ e }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -119,6 +119,10 @@ recolha e partilha de informação.
 
 \newpage
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Contextualização %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Contextualização}
 Hoje em dia, devido ao grande processamente que os computadores possuem, é
 possível processar enormes quantidades de informação. O problema talvez seja
@@ -148,6 +152,10 @@ relevantes e úteis para o nosso caso de estudo.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Objectivos Pretendidos %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Objectivos pretendidos}
 O objectivo da realização deste projecto é desenvolver um Sistema para Geração
 Automática de Salas de Exposiçõees em Museus Virtuais com base em Ontologias,
@@ -243,6 +251,9 @@ algum fio de ligação entre elas.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Caso de Estudo %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Caso de Estudo}
 
 Depois de um grande impace sobre o Museu que iríamos tratar, optamos por um
@@ -287,6 +298,10 @@ almanaques, capas de jornais, fotografias de famílias e retratos, logótipos...
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Requisitos %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Levantamento de Requisitos}
 
 Na explicação do que era pretendido fazer, já descrevemos um pouco os requisitos
@@ -300,10 +315,58 @@ necessários, fazendo uma síntese dos objectivos temos então:
   \item Tendo em conta o caso de estudo, encontrar uma solução para inserir a
   informação no repositório de forma a que as diferentes obras se possam
   relacionar entre si.
+  \item Construir um Museu Virtual com salas geradas automaticamente para
+  apresentar as relíquias do repositório aos seus visistantes.
 \end{enumerate}
 
 
 \subsection{Especificação dos Requisitos}
+
+
+\subsubsection{Dados}
+
+Os vários documentos que nós foram fornecidos para analisar, tinham uma
+estrutura muito equivalente entre as várias peças, por isso, depois de analisar
+o seu conteúdo tivemos de pensar na forma mais correcta de passar
+essa informação para os modelos internacionais de catalogação.
+
+Essa transformação nos documentos foi toda feita através dos nossos
+conhecimentos de scripting (na linguagem Perl).
+
+Exemplo da descrição de uma fotografia dos documentos fornecidos:
+\begin{verbatim}
+Inventário              CGB001
+Classificação Genérica  Fotografia
+Objecto/Documento       Fotografia P/B
+Título / Id. pelo       Autor1111/4
+Autor/Produção          Gérald Bloncourt
+Material/Suporte        Papel 
+Técnica                 Fotografia P/B - Impressão digital
+Dimensões               42 x 59,5 cm
+Legenda                 Emigrante português lendo um jornal do seu país num
+                        estaleiro de obras nos subúrbios de Paris, 1967.
+Datação                 Impressão em 2009
+Lugar de Produção       França
+História do objecto     Sem moldura. Não foi exposto neste Museu.  
+Incorporação            Doação do autor ao Museu das Migrações no ano de 2009.
+\end{verbatim}
+
+Já as zincogravuras, tinham a seguinte estrutura:
+\begin{verbatim}
+Denominação/Título:     Zincogravura 
+Autor/Produção:
+Datação:
+Dimensões:              12,8 x 10 cm
+Nº de Inventário:       GI0004
+Descrição:              Publicidade: RANILON - Correia plana de plástico e couro
+                        Impressa no "Almanaque Ilustrado" 1965:50; 1966:108;
+                        1967:25; 1968:76; 1969:114; 1970:108; 1971:90; 1973:24;
+                        1975:6; 1976:96; 1977:92; 1978:88; 1980:50; 1981:57;
+                        1982:82; 1983:75; 1985:86; 1986:84; 1987:60
+Proveniência/Incorporação: "O Desforço"
+\end{verbatim}
+
+Em termos de metainformação, as fotografias são mais ricas que as zincogravuras.
 
 \subsubsection{Análise das normas internacionais para a catalogação de obras de
 arte}
@@ -489,30 +552,81 @@ digitais, slides, fotografias, vídeos ou áudio.
 <resourceWrap>
     <resourceSet>
         <linkResource>fotos/CGB001.JPG</linkResource>
-        <resourceViewDescription>Emigrante português lendo um jornal do seu país
-    num estaleiro de obras nos subúrbios de Paris, 1967.</resourceViewDescription>
+        <resourceViewDescription>
+            Emigrante português lendo um jornal do seu país
+            num estaleiro de obras nos subúrbios de Paris, 1967.
+        </resourceViewDescription>
     </resourceSet>
 </resourceWrap>
 \end{lstlisting}
 \end{enumerate}
 
 
-\subsubsection{Dados}
+Apesar de nos exemplos colocados em XML ser metainformação de uma fotografia,
+as zincogravuras possuem também uma estrutura praticamente igual a esta. Como é
+óbvio, os campos obrigatórios existem em ambas as descrições. Nos campos
+opcionais, algumas obras podem ter mais informação do que outras e isso faz com
+que haja alguma diferença da informação disponível para cada obra.
+
+
 
 \subsubsection{Pedidos}
 
 \subsubsection{Relações}
 
-\section{Concepção/desenho da Resolução}
-\subsection{Análise das normas internacionais para a catalogação de obras de
-arte}
-\subsection{Estruturas de Dados}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Concepção/desenho do Sistema %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Concepção/desenho do Sistema}
+\subsection{Repositório para os Dados}
+O nosso suporte para a informação será uma Base de Dados Relacional em MySQL, no
+entanto, será ainda possível utilizar como suporte um ficheiro XML, mas este
+será usado, principalmente, para a partilhar da metainformação das obras
+com outros museus que também sigam as normas do CDWA-Lite.
+
+O nosso desenho para a base de dados à primeira vista pode ser um pouco
+assustador, no entanto o facto de ter tantas tabelas deve-se à estrutura do
+CDWA-Lite, isto porque o que nós fizemos baseiou-se em mapear o CDWA-Lite para
+uma base de dados relacional na 3ª forma normal. Como muitos dos campos do
+schema são listas, isso resulta em relações de muitos para muitos, logo aumenta
+mais um pouco o número de tabelas existente.
+
+Apesar de a nossa base de dados cobrir praticamente tudo o que podem estar num
+museu, nós apenas vamos usar as tabelas necessárias para o nosso caso de estudo.
+Fica no entanto a camada de dados pronta, para no futuro poder ser possível
+expandir o museu sem grande dificuldade.
+
+\subsubsection{Descrição da Base de Dados Relacional}
+
+Aqui iremos explicar as tabelas presentes na base de dados e a informação que
+cada uma irá conter sobre uma obra.
+
+\subsection{População da Base de Dados a partir dos documentos fornecidos}
+
+Para inserir a informação que nos foi disponibilizada na Base de Dados, a
+informação dos documentos originais sofreu uma série de transformações até estar
+pronta a inserir no reposiório.
+
+A ideia era criar um mecanismo automatico para transformar todos os registos das
+obras, para isso aplicámos os nossos conhecimentos adquiridos em de SPLN
+(Scripting no Processamento de Linguagem Natural) para criar scripts que
+fizessem o trabalho todo de uma forma eficaz e rápida.
+
+Apesar de o resultado final ser equivalente nas fotografias e nas zincogravuras,
+o processo de transformação não foi exactamente o mesmo devido à estrutura dos
+documentos disponibilizados.
+
 
 \section{Codificação e Testes}
 \subsection{Alternativas, Decisões e Problemas de Implementação}
 \subsection{Testes realizados e Resultados}
 
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Conclusões %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Conclusões}
 Síntese do Documento.\\
 Estado final do projecto. Análise crítica dos resultados.\\

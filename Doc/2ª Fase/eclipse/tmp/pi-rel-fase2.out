@@ -8,13 +8,14 @@
 \BOOKMARK [1][-]{section.4}{Caso de Estudo}{}
 \BOOKMARK [1][-]{section.5}{Levantamento de Requisitos}{}
 \BOOKMARK [2][-]{subsection.5.1}{Especifica\347\343o dos Requisitos}{section.5}
-\BOOKMARK [3][-]{subsubsection.5.1.1}{An\341lise das normas internacionais para a cataloga\347\343o de obras de arte}{subsection.5.1}
-\BOOKMARK [3][-]{subsubsection.5.1.2}{Dados}{subsection.5.1}
+\BOOKMARK [3][-]{subsubsection.5.1.1}{Dados}{subsection.5.1}
+\BOOKMARK [3][-]{subsubsection.5.1.2}{An\341lise das normas internacionais para a cataloga\347\343o de obras de arte}{subsection.5.1}
 \BOOKMARK [3][-]{subsubsection.5.1.3}{Pedidos}{subsection.5.1}
 \BOOKMARK [3][-]{subsubsection.5.1.4}{Rela\347\365es}{subsection.5.1}
-\BOOKMARK [1][-]{section.6}{Concep\347\343o/desenho da Resolu\347\343o}{}
-\BOOKMARK [2][-]{subsection.6.1}{An\341lise das normas internacionais para a cataloga\347\343o de obras de arte}{section.6}
-\BOOKMARK [2][-]{subsection.6.2}{Estruturas de Dados}{section.6}
+\BOOKMARK [1][-]{section.6}{Concep\347\343o/desenho do Sistema}{}
+\BOOKMARK [2][-]{subsection.6.1}{Reposit\363rio para os Dados}{section.6}
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Descri\347\343o da Base de Dados Relacional}{subsection.6.1}
+\BOOKMARK [2][-]{subsection.6.2}{Popula\347\343o da Base de Dados a partir dos documentos fornecidos}{section.6}
 \BOOKMARK [1][-]{section.7}{Codifica\347\343o e Testes}{}
 \BOOKMARK [2][-]{subsection.7.1}{Alternativas, Decis\365es e Problemas de Implementa\347\343o}{section.7}
 \BOOKMARK [2][-]{subsection.7.2}{Testes realizados e Resultados}{section.7}

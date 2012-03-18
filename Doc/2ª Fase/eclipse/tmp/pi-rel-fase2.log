@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  17 MAR 2012 20:14
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  18 MAR 2012 12:20
 entering extended mode
  Source specials enabled.
  %&-line parsing enabled.
@@ -428,50 +428,50 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 106.
  [3]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 142.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 146.
 
 
 (/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 161.
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 169.
 
 
 (/usr/share/texmf/tex/latex/R/tex/latex/omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 161.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 169.
  [4]
-<./imagens/OAIS.png, id=158, 549.05125pt x 287.0725pt>
+<./imagens/OAIS.png, id=163, 549.05125pt x 287.0725pt>
 File: ./imagens/OAIS.png Graphic file (type png)
 
 <use ./imagens/OAIS.png> [5 <./imagens/OAIS.png (PNG copy)>]
-<imagens/CGB052.JPG, id=163, 823.878pt x 542.5068pt>
+<imagens/CGB052.JPG, id=168, 823.878pt x 542.5068pt>
 File: imagens/CGB052.JPG Graphic file (type jpg)
  <use imagens/CGB052.JPG>
-<imagens/004.jpg, id=164, 269.808pt x 351.9549pt>
+<imagens/004.jpg, id=169, 269.808pt x 351.9549pt>
 File: imagens/004.jpg Graphic file (type jpg)
  <use imagens/004.jpg>
-[6 <./imagens/CGB052.JPG>] <imagens/0059.jpg, id=171, 409.7709pt x 326.6604pt>
+[6 <./imagens/CGB052.JPG>] <imagens/0059.jpg, id=176, 409.7709pt x 326.6604pt>
 File: imagens/0059.jpg Graphic file (type jpg)
 
 <use imagens/0059.jpg> [7 <./imagens/004.jpg> <./imagens/0059.jpg>] [8]
-[9]
-LaTeX Font Info:    Try loading font information for T1+aess on input line 524.
+[9] [10] [11]
+LaTeX Font Info:    Try loading font information for T1+aess on input line 638.
 
  (/usr/share/texmf-texlive/tex/latex/ae/t1aess.fd
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
-) [10] [11]
+) [12]
 (./pi-rel-fase2.aux) ) 
 Here is how much of TeX's memory you used:
- 7956 strings out of 495014
- 111548 string characters out of 1180707
- 213275 words of memory out of 3000000
- 10805 multiletter control sequences out of 15000+50000
- 43305 words of font info for 84 fonts, out of 3000000 for 9000
+ 7967 strings out of 495014
+ 111694 string characters out of 1180707
+ 214275 words of memory out of 3000000
+ 10809 multiletter control sequences out of 15000+50000
+ 44153 words of font info for 87 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 38i,8n,40p,304b,1853s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,8n,40p,304b,1855s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.4} has been referen
 ced but does not exist, replaced by a fixed one
 
@@ -496,9 +496,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/pu
 blic/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
 ts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt1
 0.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on pi-rel-fase2.pdf (12 pages, 2994369 bytes).
+Output written on pi-rel-fase2.pdf (13 pages, 3002461 bytes).
 PDF statistics:
- 389 PDF objects out of 1000 (max. 8388607)
- 156 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 403 PDF objects out of 1000 (max. 8388607)
+ 161 named destinations out of 1000 (max. 500000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 
