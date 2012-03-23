@@ -41,6 +41,8 @@ $this->widget('zii.widgets.CDetailView', array(
         'RecordType',
     ),
 ));
+
+CVarDumper::dump($model, 10, true);
 ?>
 
 <br/>
