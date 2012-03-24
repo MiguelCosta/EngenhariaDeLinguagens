@@ -162,7 +162,7 @@ class Object_Work_RecordsController extends Controller
                             // with('object_Work_Titles') adicionado para carregar mais informação de
                             // uma vez da base de dados
 				$this->_model=Object_Work_Records::model()
-                                                ->with('object_Work_Titles','recordType', 'object_Work_Types')
+                                                ->with('object_Work_Titles','recordType', 'object_Work_Types', 'inscriptions')
                                                 ->findbyPk($_GET['id']);
 			if($this->_model===null)
 				throw new CHttpException(404,'The requested page does not exist.');

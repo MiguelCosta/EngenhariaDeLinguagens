@@ -39,15 +39,15 @@ class Object_Work_Titles extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, Object_Work_Record', 'required'),
-			array('Object_Work_Record', 'numerical', 'integerOnly'=>true),
-			array('title', 'length', 'max'=>255),
-			array('pref', 'length', 'max'=>10),
-			array('type, lang', 'length', 'max'=>31),
-			array('langtermsource', 'length', 'max'=>63),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id_object_Work_Titles, title, pref, type, lang, langtermsource, Object_Work_Record', 'safe', 'on'=>'search'),
+				array('title, Object_Work_Record', 'required'),
+				array('Object_Work_Record', 'numerical', 'integerOnly'=>true),
+				array('title', 'length', 'max'=>255),
+				array('pref', 'length', 'max'=>10),
+				array('type, lang', 'length', 'max'=>31),
+				array('langtermsource', 'length', 'max'=>63),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id_object_Work_Titles, title, pref, type, lang, langtermsource, Object_Work_Record', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,8 +59,8 @@ class Object_Work_Titles extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'object_Work_Record' => array(self::BELONGS_TO, 'ObjectWorkRecords', 'Object_Work_Record'),
-			'sourceTitles' => array(self::MANY_MANY, 'SourceTitles', 'SourceTitle_Object_Work_Titles(SourceTitle, Object_Work_Title)'),
+				'object_Work_Record' => array(self::BELONGS_TO, 'ObjectWorkRecords', 'Object_Work_Record'),
+				'sourceTitles' => array(self::MANY_MANY, 'SourceTitles', 'SourceTitle_Object_Work_Titles(SourceTitle, Object_Work_Title)'),
 		);
 	}
 
@@ -70,13 +70,13 @@ class Object_Work_Titles extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_object_Work_Titles' => 'Id Object Work Titles',
-			'title' => 'Title',
-			'pref' => 'Pref',
-			'type' => 'Type',
-			'lang' => 'Lang',
-			'langtermsource' => 'Langtermsource',
-			'Object_Work_Record' => 'Object Work Record',
+				'id_object_Work_Titles' => 'Id Object Work Titles',
+				'title' => 'Title',
+				'pref' => 'Pref',
+				'type' => 'Type',
+				'lang' => 'Lang',
+				'langtermsource' => 'Langtermsource',
+				'Object_Work_Record' => 'Object Work Record',
 		);
 	}
 
@@ -106,7 +106,7 @@ class Object_Work_Titles extends CActiveRecord
 		$criteria->compare('Object_Work_Record',$this->Object_Work_Record);
 
 		return new CActiveDataProvider('Object_Work_Titles', array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
 	}
 }
