@@ -27,6 +27,11 @@ $this->menu = array(
 </h1>
 
 <?php
+/*
+$c = $model->getResources_Text();
+print $c;
+CVarDumper::dump($c, 4, true);
+*/
 
 $this->widget('zii.widgets.CDetailView', array(
 		'data' => $model,
@@ -44,7 +49,7 @@ $this->widget('zii.widgets.CDetailView', array(
 				),
 				array(
 						'name'=>'object_Work_Titles',
-						'type'=>'html',
+						'type'=>'image',
 						'value'=>$model->getObjectWorkTitles_Link(),
 				),
 				array(
@@ -52,8 +57,17 @@ $this->widget('zii.widgets.CDetailView', array(
 						'value'=>$model->getInscriptions_Text(),
 						//'type'=>'html',
 						//'value'=>$model->getInscriptions_Link(),
-				)
-
+				),
+				array(
+						'name'=>'indexingCreators',
+						'type'=>'html',
+						'value'=>$model->getIndexingCreators_Text(),
+				),
+				array(
+						'name'=>'resources',
+						'type'=>'html',
+						'value'=>CHtml::link(CHtml::image($model->getResources_Text(),'texto alternativo',array('width'=>200,'height'=>200)),$model->getResources_Text()),
+						)
 		),
 ));
 

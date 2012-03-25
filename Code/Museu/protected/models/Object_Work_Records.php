@@ -97,6 +97,8 @@ class Object_Work_Records extends CActiveRecord
 				// new lables
 				'object_Work_Titles' => 'Títulos',
 				'inscriptions' => 'Legenda',
+				'indexingCreators'=> 'Criadores',
+				'resources'=>'Recursos',
 		);
 	}
 
@@ -196,9 +198,57 @@ class Object_Work_Records extends CActiveRecord
 		$result = '';
 		foreach($out as $key=>$value)
 			$result .= CHtml::link($value, array('/Inscriptions/'.$key)) . ' ';
-		
+
 		return $result;
 	}
 
+	/**
+	 * Get information about Creators
+	 * @return String Html
+	 */
+	public function getIndexingCreators_Text()
+	{
+		$result = '';
+		$namesCreators = '';
+		$nationalitiesCreators = '';
+		$creatorRoles  = '';
+		$vitalDatesCreators = '';
+		$birthDate = '';
+		$deathDate = '';
+		
+		foreach ($this->indexingCreators as $indexingCreators){
+			$namesCreators = $indexingCreators->getNamesCreators_Text();
+			$vitalDatesCreators .= $indexingCreators->getVitalDatesCreators_vitalDatesCreator_Text();
+			$nationalitiesCreators .= $indexingCreators->getNationalitiesCreators_Text();
+			$creatorRoles .= $indexingCreators->getCreatorRoles_Text();
+			$birthDate .= $indexingCreators->getVitalDatesCreators_birthDate_Text();
+			$deathDate .= $indexingCreators->getVitalDatesCreators_deathDate_Text();
+			
+			$result .= '<b>'.$namesCreators.$vitalDatesCreators.'</b>';
+			if($nationalitiesCreators != ''){
+				$result .= '<br/>'.$nationalitiesCreators;
+			}
+			if($creatorRoles != ''){
+				$result .= '<br/>'.$creatorRoles;
+			}
+			if($birthDate != ''){
+				$result .= '<br/>'.$birthDate;
+			}
+			if($deathDate != ''){
+				$result .= '<br/>'.$deathDate;
+			}
+		}
+		return $result;
+	}
+	
+	
+	public function getResources_Text()
+	{
+		$result = '';
+		foreach ($this->resources as $resources){
+			$result = $resources->getLinkResource();
+		}
+		return $result;
+	}
 
 }

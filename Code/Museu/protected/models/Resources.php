@@ -102,4 +102,17 @@ class Resources extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	/*********************************************************************************/
+	/********************************** My Functions *********************************/
+	/*********************************************************************************/
+	
+	public function getLinkResource()
+	{
+		$result = '';
+		$result = "../../../../Files/Imagens/".$this->linkResource->linkResource;
+		return $result;
+	}
+	
+	
 }
