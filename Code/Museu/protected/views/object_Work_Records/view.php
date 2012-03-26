@@ -27,11 +27,10 @@ $this->menu = array(
 </h1>
 
 <?php
-/*
-$c = $model->getResources_Text();
-print $c;
-CVarDumper::dump($c, 4, true);
-*/
+
+//$c = $model->getObjectWorkTitles_Link();
+//print $c;
+//CVarDumper::dump($model, 5, true);
 
 $this->widget('zii.widgets.CDetailView', array(
 		'data' => $model,
@@ -49,7 +48,7 @@ $this->widget('zii.widgets.CDetailView', array(
 				),
 				array(
 						'name'=>'object_Work_Titles',
-						'type'=>'image',
+						'type'=>'html',
 						'value'=>$model->getObjectWorkTitles_Link(),
 				),
 				array(

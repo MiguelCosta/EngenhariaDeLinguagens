@@ -8648,3 +8648,109 @@ Stack trace:
 REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/%3Ca%20href=%22/EL/Code/Museu/index.php/Object_Work_Titles/2%22%3E3416/26a%20-%20Chaves%201966%3C/a%3E
 HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/2
 ---
+2012/03/26 09:34:02 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] Ligação recusada (trying to connect via tcp://127.0.0.1:3306) (/opt/lampp/htdocs/yii/framework/db/CDbConnection.php:422)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /opt/lampp/htdocs/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive()
+#2 /opt/lampp/htdocs/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /opt/lampp/htdocs/yii/framework/base/CApplication.php(431): CWebApplication->getComponent()
+#4 /opt/lampp/htdocs/yii/framework/db/ar/CActiveRecord.php(615): CWebApplication->getDb()
+#5 /opt/lampp/htdocs/yii/framework/db/ar/CActiveRecord.php(2263): Object_Work_Records->getDbConnection()
+#6 /opt/lampp/htdocs/yii/framework/db/ar/CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php(22): model()
+#8 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(164): model()
+#9 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(58): Object_Work_RecordsController->loadModel()
+#10 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#11 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#12 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): Object_Work_RecordsController->runAction()
+#13 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#15 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): Object_Work_RecordsController->filterAccessControl()
+#16 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#17 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#18 /opt/lampp/htdocs/yii/framework/web/CController.php(266): Object_Work_RecordsController->runActionWithFilters()
+#19 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): Object_Work_RecordsController->run()
+#20 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#21 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/1
+in /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php (22)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php (164)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php (58)
+2012/03/26 09:34:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<a href="".' in /opt/lampp/htdocs/yii/framework/web/CController.php:484
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(271): CController->missingAction('<a href="')
+#1 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('<a href="')
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#3 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/%3Ca%20href=%22/EL/Code/Museu/index.php/Object_Work_Titles/1%22%3E3417/22%20-%20Porto%201966%3C/a%3E
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/1
+---
+2012/03/26 09:38:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<a href="".' in /opt/lampp/htdocs/yii/framework/web/CController.php:484
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(271): CController->missingAction('<a href="')
+#1 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('<a href="')
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#3 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/%3Ca%20href=%22/EL/Code/Museu/index.php/Object_Work_Titles/1%22%3E3417/22%20-%20Porto%201966%3C/a%3E
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/1
+---
+2012/03/26 09:44:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<a href="".' in /opt/lampp/htdocs/yii/framework/web/CController.php:484
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(271): CController->missingAction('<a href="')
+#1 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('<a href="')
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#3 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/%3Ca%20href=%22/EL/Code/Museu/index.php/Object_Work_Titles/1%22%3E3417/22%20-%20Porto%201966%3C/a%3E
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/1
+---
+2012/03/26 09:44:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<a href="".' in /opt/lampp/htdocs/yii/framework/web/CController.php:484
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(271): CController->missingAction('<a href="')
+#1 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('<a href="')
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#3 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/%3Ca%20href=%22/EL/Code/Museu/index.php/Object_Work_Titles/1%22%3E3417/22%20-%20Porto%201966%3C/a%3E
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/1
+---
+2012/03/26 09:44:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<a href="".' in /opt/lampp/htdocs/yii/framework/web/CController.php:484
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(271): CController->missingAction('<a href="')
+#1 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('<a href="')
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#3 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/%3Ca%20href=%22/EL/Code/Museu/index.php/Object_Work_Titles/3%22%3E3408/12%20-%20Lisboa%201966%3C/a%3E
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/3
+---
+2012/03/26 09:45:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<a href="".' in /opt/lampp/htdocs/yii/framework/web/CController.php:484
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(271): CController->missingAction('<a href="')
+#1 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('<a href="')
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#3 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/%3Ca%20href=%22/EL/Code/Museu/index.php/Object_Work_Titles/3%22%3E3408/12%20-%20Lisboa%201966%3C/a%3E
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/3
+---
+2012/03/26 09:45:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "<a href="".' in /opt/lampp/htdocs/yii/framework/web/CController.php:484
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(271): CController->missingAction('<a href="')
+#1 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('<a href="')
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#3 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/%3Ca%20href=%22/EL/Code/Museu/index.php/Object_Work_Titles/3%22%3E3408/12%20-%20Lisboa%201966%3C/a%3E
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/3
+---

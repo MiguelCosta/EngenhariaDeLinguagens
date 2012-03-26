@@ -215,7 +215,7 @@ class Object_Work_Records extends CActiveRecord
 		$vitalDatesCreators = '';
 		$birthDate = '';
 		$deathDate = '';
-		
+
 		foreach ($this->indexingCreators as $indexingCreators){
 			$namesCreators = $indexingCreators->getNamesCreators_Text();
 			$vitalDatesCreators .= $indexingCreators->getVitalDatesCreators_vitalDatesCreator_Text();
@@ -223,7 +223,7 @@ class Object_Work_Records extends CActiveRecord
 			$creatorRoles .= $indexingCreators->getCreatorRoles_Text();
 			$birthDate .= $indexingCreators->getVitalDatesCreators_birthDate_Text();
 			$deathDate .= $indexingCreators->getVitalDatesCreators_deathDate_Text();
-			
+				
 			$result .= '<b>'.$namesCreators.$vitalDatesCreators.'</b>';
 			if($nationalitiesCreators != ''){
 				$result .= '<br/>'.$nationalitiesCreators;
@@ -240,8 +240,8 @@ class Object_Work_Records extends CActiveRecord
 		}
 		return $result;
 	}
-	
-	
+
+
 	public function getResources_Text()
 	{
 		$result = '';
