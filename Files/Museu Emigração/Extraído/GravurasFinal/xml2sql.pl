@@ -13,12 +13,13 @@ my $data = $xml->XMLin("gravurasLite.xml");
 open (F, ">", "gravuras.sql") or die "impossivel abrir ficheiro";
 
 my $ix = 0;
-my $i = 1;
+my $i = 55;
 my %criadores = ();
 my $cont_criadores = 2;
 my $cont_measures = 5;
 my $cont_dates = 1;
 my $cont_relW = 1;
+my $cont_resLink = 55;
 
 while(exists($data->{cdwalite}->[$ix])){
 	my $desc = $data->{cdwalite}->[$ix]->{descriptiveMetadata};
@@ -136,8 +137,14 @@ while(exists($data->{cdwalite}->[$ix])){
 	my $admin = $data->{cdwalite}->[$ix]->{administrativeMetadata};
 	
 	if ($admin->{recordWrap}) {
-		print F "/* Tabela Provenancei */\n";
+		print F "/* Tabela Provenance */\n";
 		print F "INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('$admin->{recordWrap}->{recordID}', $i);\n";
+	}
+
+	if ($admin->{resourceWrap}) {
+		print F "INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('$cont_resLink', '$admin->{resourceWrap}->{resourceSet}->{linkResource}');\n";
+	    print F "INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('$cont_resLink','$cont_resLink','$i');";
+		$cont_resLink++;
 	}
 
 	print F "\n";
