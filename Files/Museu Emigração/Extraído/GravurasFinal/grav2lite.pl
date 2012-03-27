@@ -48,7 +48,10 @@ sub	 printBody {
 	$body .= "<titleWrap><titleSet><title>".$cdwa->{"dt"}."</title></titleSet></titleWrap>";
 	$body .= "<displayCreator>".$cdwa->{"ap"}."</displayCreator>";
 	$body .= "<indexingCreatorWrap><indexingCreatorSet><nameCreatorSet><nameCreator>".$cdwa->{"ap"}."</nameCreator></nameCreatorSet><roleCreator/></indexingCreatorSet></indexingCreatorWrap>";
-	$body .= "<displayMeasurements>".$cdwa->{"dim"}."</displayMeasurements>" if ($cdwa->{"dim"} ne "");
+	if ($cdwa->{"dim"} ne "" and $cdwa->{"dim"} !~ /cm/){
+		$body .= "<displayMeasurements>".$cdwa->{"dim"}." cm</displayMeasurements>" ;
+	}
+	else {$body .= "<displayMeasurements>".$cdwa->{"dim"}."</displayMeasurements>";}
 	if ($cdwa->{"dim"} =~ /([0-9]+\s*[.,]?[0-9]*)\s*[xX]\s*([0-9]+[.,]?[0-9]*)\s*(\w+)?/){
 		$body .= "<indexingMeasurementsWrap><indexingMeasurementsSet>";
 		$body .= "<measurementsSet xmlns:ns3=\"http://www.getty.edu/CDWA/CDWALite\" ns3:value=\"".trim($1)."\" ns3:unit=\"cm\" ns3:type=\"width\"/>";

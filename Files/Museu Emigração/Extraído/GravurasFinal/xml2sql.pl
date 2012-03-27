@@ -10,30 +10,62 @@ use utf8::all;
 my $xml = new XML::Simple;
 my $data = $xml->XMLin("gravurasLite.xml");
 
-open (F, ">", "gravuras.sql") or die "impossivel abrir ficheiro";
+#open (F, ">", "gravuras.sql") or die "impossivel abrir ficheiro";
 
+my $cont_records = 0; # serve apenas para poder separar os registos em diferentes ficheiros sql
 my $ix = 0;
-my $i = 55;
+my $i = 54;
 my %criadores = ();
 my $cont_criadores = 2;
-my $cont_measures = 5;
-my $cont_dates = 1;
+my $cont_measures = 107;
+my $ix_measure = 107;
+my $cont_dates = 157;
 my $cont_relW = 1;
-my $cont_resLink = 55;
+my $cont_resLink = 54;
 
 while(exists($data->{cdwalite}->[$ix])){
+	# Separa os registos em diferentes ficheiros
+	if ($cont_records == 0) {
+		open (F, ">", "4.1-povGravuras.sql") or die "impossivel abrir ficheiro";
+	}
+	if ($cont_records == 150) {
+		close F;
+		open (F, ">", "4.2-povGravuras.sql") or die "impossivel abrir ficheiro";
+	}
+	if ($cont_records == 300) {
+		close F;
+		open (F, ">", "4.3-povGravuras.sql") or die "impossivel abrir ficheiro";
+	}
+	if ($cont_records == 450) {
+		close F;
+		open (F, ">", "4.4-povGravuras.sql") or die "impossivel abrir ficheiro";
+	}
+	if ($cont_records == 600) {
+		close F;
+		open (F, ">", "4.5-povGravuras.sql") or die "impossivel abrir ficheiro";
+	}
+	if ($cont_records == 750) {
+		close F;
+		open (F, ">", "4.6-povGravuras.sql") or die "impossivel abrir ficheiro";
+	}
+
+
 	my $desc = $data->{cdwalite}->[$ix]->{descriptiveMetadata};
 	print F "/*NOVA GRAVURA */\n/* Tabela Object_Work_Records */\n";
-	my $insert = "INSERT INTO Object_Work_Records (id_object_Work_Records, ";
-		if (ref($desc->{displayCreator}) ne "HASH") {$insert .= "displayCreator, "};
-		if ($desc->{displayMeasurements}) {$insert .= "displayMeasurements, "};
-		if (ref($desc->{displayMaterialsTech}) ne "HASH") {$insert .= "displayMaterialsTech, "};
-		if (ref($desc->{displayCreationDate}) ne "HASH") {$insert .= "displayCreationDate, "};
-		$insert .= "RecordType)	VALUES ($i,";
-		if (ref($desc->{displayCreator}) ne "HASH") {$insert .= "'$desc->{displayCreator}', "};
-		if ($desc->{displayMeasurements}) {$insert .= "'$desc->{displayMeasurements}', "};
-		if (ref($desc->{displayMaterialsTech}) ne "HASH") {$insert .= "'$desc->{displayMaterialsTech}', "};
-		if (ref($desc->{displayCreationDate}) ne "HASH") {$insert .= "'$desc->{displayCreationDate}', "};
+	my $insert = "INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES ($i, ";
+	#if (ref($desc->{displayCreator}) ne "HASH") {$insert .= "displayCreator, "};
+	#if ($desc->{displayMeasurements}) {$insert .= "displayMeasurements, "};
+	#if (ref($desc->{displayMaterialsTech}) ne "HASH") {$insert .= "displayMaterialsTech, "};
+	#if (ref($desc->{displayCreationDate}) ne "HASH") {$insert .= "displayCreationDate, "};
+	#$insert .= "RecordType)	VALUES ($i,";
+		if (ref($desc->{displayCreator}) ne "HASH") {$insert .= "'$desc->{displayCreator}', "}
+		else {$insert .= "'<Desconhecido>', "}
+		if (ref($desc->{displayMeasurements}) ne "HASH") {$insert .= "'$desc->{displayMeasurements}', "}
+		else {$insert .= "'<Desconhecido>', "}
+		if (ref($desc->{displayMaterialsTech}) ne "HASH") {$insert .= "'$desc->{displayMaterialsTech}', "}
+		else {$insert .= "'<Desconhecido>', "}
+		if (ref($desc->{displayCreationDate}) ne "HASH") {$insert .= "'$desc->{displayCreationDate}', "}
+		else {$insert .= "'<Desconhecido>', "}
 		$insert .= "1);\n";
 	
 	print F $insert; 
@@ -59,24 +91,26 @@ while(exists($data->{cdwalite}->[$ix])){
 		print F	"INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES ($i,$criadores{$criador});";
 	}
 
-	if ($desc->{displayMeasurements}) {
+	#if ($desc->{displayMeasurements}) {
+	if (ref($desc->{displayMeasurements}) ne "HASH"){
 		my $t = $desc->{indexingMeasurementsWrap}->{indexingMeasurementsSet}->{measurementsSet};
 		print F "\n/* Tabela IndexingMeasurements */\n";
-		print F "INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ($i,$i);\n";
+		print F "INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES ($ix_measure,$i);\n";
 
 		if (ref($t) eq "ARRAY") {
 			print F "INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES ($cont_measures,'$t->[0]->{'ns3:value'}','$t->[0]->{'ns3:unit'}','$t->[0]->{'ns3:type'}', $i);\n";
+			VALUES ($cont_measures,'$t->[0]->{'ns3:value'}','$t->[0]->{'ns3:unit'}','$t->[0]->{'ns3:type'}', $ix_measure);\n";
 			$cont_measures++;
 			print F "INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES ($cont_measures,'$t->[1]->{'ns3:value'}','$t->[1]->{'ns3:unit'}','$t->[1]->{'ns3:type'}', $i);\n";
+			VALUES ($cont_measures,'$t->[1]->{'ns3:value'}','$t->[1]->{'ns3:unit'}','$t->[1]->{'ns3:type'}', $ix_measure);\n";
 			$cont_measures++;
 		}
 		else {
 			print F "INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES ($cont_measures,'$t->{'ns3:value'}','$t->{'ns3:unit'}','$t->{'ns3:type'}', $i);\n";
+			VALUES ($cont_measures,'$t->{'ns3:value'}','$t->{'ns3:unit'}','$t->{'ns3:type'}', $ix_measure);\n";
 			$cont_measures++;
 		}
+		$ix_measure++;
 	}
 
 	my $d = $desc->{indexingDatesWrap}->{indexingDatesSet};
@@ -150,6 +184,7 @@ while(exists($data->{cdwalite}->[$ix])){
 	print F "\n";
 	$i++;
 	$ix++;
+	$cont_records++;
 }
 close F;
 

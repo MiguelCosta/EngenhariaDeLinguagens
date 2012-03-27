@@ -7,11 +7,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,55);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (55,'Zincogravura', 55);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (55,55);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (107,55);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (5,'5,5','cm','width', 55);
+			VALUES (5,'5,5','cm','width', 107);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (6,'8,3','cm','height', 55);
+			VALUES (6,'8,3','cm','height', 107);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('55', '2');
 /* Tabela DescriptiveNotes */
@@ -35,11 +35,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,56);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (56,'Zincogravura', 56);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (56,56);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (108,56);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (7,'5','cm','width', 56);
+			VALUES (7,'5','cm','width', 108);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (8,'7,5','cm','height', 56);
+			VALUES (8,'7,5','cm','height', 108);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('56', '2');
 /* Tabela DescriptiveNotes */
@@ -63,11 +63,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,57);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (57,'Zincogravura', 57);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (57,57);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (109,57);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (9,'5','cm','width', 57);
+			VALUES (9,'5','cm','width', 109);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (10,'14,8','cm','height', 57);
+			VALUES (10,'14,8','cm','height', 109);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('57', '2');
 /* Tabela DescriptiveNotes */
@@ -91,11 +91,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,58);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (58,'Zincogravura', 58);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (58,58);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (110,58);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (11,'12,8','cm','width', 58);
+			VALUES (11,'12,8','cm','width', 110);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (12,'10','cm','height', 58);
+			VALUES (12,'10','cm','height', 110);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('58', '2');
 /* Tabela DescriptiveNotes */
@@ -155,11 +155,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,59);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (59,'Zincogravura', 59);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (59,59);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (111,59);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (13,'7,4','cm','width', 59);
+			VALUES (13,'7,4','cm','width', 111);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (14,'11','cm','height', 59);
+			VALUES (14,'11','cm','height', 111);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('59', '2');
 /* Tabela DescriptiveNotes */
@@ -183,11 +183,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,60);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (60,'Zincogravura', 60);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (60,60);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (112,60);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (15,'7,3','cm','width', 60);
+			VALUES (15,'7,3','cm','width', 112);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (16,'10,6','cm','height', 60);
+			VALUES (16,'10,6','cm','height', 112);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('60', '2');
 /* Tabela DescriptiveNotes */
@@ -217,11 +217,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,61);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (61,'Zincogravura', 61);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (61,61);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (113,61);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (17,'10,7','cm','width', 61);
+			VALUES (17,'10,7','cm','width', 113);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (18,'7,8','cm','height', 61);
+			VALUES (18,'7,8','cm','height', 113);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('61', '2');
 /* Tabela DescriptiveNotes */
@@ -259,11 +259,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,62);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (62,'Zincogravura', 62);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (62,62);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (114,62);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (19,'12,3','cm','width', 62);
+			VALUES (19,'12,3','cm','width', 114);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (20,'8','cm','height', 62);
+			VALUES (20,'8','cm','height', 114);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('62', '2');
 /* Tabela DescriptiveNotes */
@@ -291,11 +291,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,63);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (63,'Zincogravura', 63);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (63,63);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (115,63);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (21,'12,8','cm','width', 63);
+			VALUES (21,'12,8','cm','width', 115);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (22,'8','cm','height', 63);
+			VALUES (22,'8','cm','height', 115);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('63', '2');
 /* Tabela DescriptiveNotes */
@@ -329,11 +329,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,64);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (64,'Zincogravura', 64);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (64,64);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (116,64);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (23,'8,5','cm','width', 64);
+			VALUES (23,'8,5','cm','width', 116);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (24,'11,2','cm','height', 64);
+			VALUES (24,'11,2','cm','height', 116);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('64', '2');
 /* Tabela DescriptiveNotes */
@@ -357,11 +357,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,65);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (65,'Zincogravura', 65);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (65,65);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (117,65);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (25,'13,3','cm','width', 65);
+			VALUES (25,'13,3','cm','width', 117);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (26,'10,5','cm','height', 65);
+			VALUES (26,'10,5','cm','height', 117);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('65', '2');
 /* Tabela DescriptiveNotes */
@@ -385,11 +385,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,66);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (66,'Zincogravura', 66);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (66,66);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (118,66);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (27,'13','cm','width', 66);
+			VALUES (27,'13','cm','width', 118);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (28,'9','cm','height', 66);
+			VALUES (28,'9','cm','height', 118);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('66', '2');
 /* Tabela DescriptiveNotes */
@@ -425,11 +425,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,67);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (67,'Zincogravura', 67);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (67,67);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (119,67);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (29,'13,3','cm','width', 67);
+			VALUES (29,'13,3','cm','width', 119);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (30,'9','cm','height', 67);
+			VALUES (30,'9','cm','height', 119);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('67', '2');
 /* Tabela DescriptiveNotes */
@@ -461,11 +461,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,68);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (68,'Zincogravura', 68);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (68,68);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (120,68);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (31,'9,4','cm','width', 68);
+			VALUES (31,'9,4','cm','width', 120);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (32,'6,4','cm','height', 68);
+			VALUES (32,'6,4','cm','height', 120);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('68', '2');
 /* Tabela DescriptiveNotes */
@@ -489,11 +489,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,69);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (69,'Zincogravura', 69);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (69,69);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (121,69);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (33,'7,5','cm','width', 69);
+			VALUES (33,'7,5','cm','width', 121);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (34,'9,9','cm','height', 69);
+			VALUES (34,'9,9','cm','height', 121);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('69', '2');
 /* Tabela DescriptiveNotes */
@@ -517,11 +517,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,70);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (70,'Zincogravura', 70);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (70,70);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (122,70);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (35,'8','cm','width', 70);
+			VALUES (35,'8','cm','width', 122);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (36,'10','cm','height', 70);
+			VALUES (36,'10','cm','height', 122);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('70', '2');
 /* Tabela DescriptiveNotes */
@@ -545,11 +545,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,71);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (71,'Zincogravura', 71);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (71,71);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (123,71);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (37,'6,5','cm','width', 71);
+			VALUES (37,'6,5','cm','width', 123);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (38,'7,3','cm','height', 71);
+			VALUES (38,'7,3','cm','height', 123);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('71', '2');
 /* Tabela DescriptiveNotes */
@@ -573,11 +573,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,72);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (72,'Zincogravura', 72);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (72,72);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (124,72);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (39,'8,5','cm','width', 72);
+			VALUES (39,'8,5','cm','width', 124);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (40,'5,5','cm','height', 72);
+			VALUES (40,'5,5','cm','height', 124);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('72', '2');
 /* Tabela DescriptiveNotes */
@@ -601,11 +601,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,73);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (73,'Zincogravura', 73);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (73,73);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (125,73);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (41,'5,8','cm','width', 73);
+			VALUES (41,'5,8','cm','width', 125);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (42,'9,2','cm','height', 73);
+			VALUES (42,'9,2','cm','height', 125);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -633,11 +633,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,74);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (74,'Zincogravura', 74);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (74,74);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (126,74);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (43,'6,3','cm','width', 74);
+			VALUES (43,'6,3','cm','width', 126);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (44,'10,3','cm','height', 74);
+			VALUES (44,'10,3','cm','height', 126);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('74', '2');
 /* Tabela DescriptiveNotes */
@@ -687,11 +687,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,76);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (76,'Zincogravura', 76);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (76,76);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (127,76);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (45,'7,2','cm','width', 76);
+			VALUES (45,'7,2','cm','width', 127);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (46,'6,5','cm','height', 76);
+			VALUES (46,'6,5','cm','height', 127);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('76', '2');
 /* Tabela DescriptiveNotes */
@@ -715,11 +715,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,77);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (77,'Zincogravura', 77);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (77,77);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (128,77);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (47,'8,2','cm','width', 77);
+			VALUES (47,'8,2','cm','width', 128);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (48,'5,5','cm','height', 77);
+			VALUES (48,'5,5','cm','height', 128);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('77', '2');
 /* Tabela DescriptiveNotes */
@@ -743,11 +743,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,78);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (78,'Zincogravura', 78);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (78,78);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (129,78);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (49,'8,9','cm','width', 78);
+			VALUES (49,'8,9','cm','width', 129);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (50,'6','cm','height', 78);
+			VALUES (50,'6','cm','height', 129);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('78', '2');
 /* Tabela DescriptiveNotes */
@@ -771,11 +771,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,79);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (79,'Zincogravura', 79);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (79,79);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (130,79);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (51,'8,6','cm','width', 79);
+			VALUES (51,'8,6','cm','width', 130);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (52,'8,5','cm','height', 79);
+			VALUES (52,'8,5','cm','height', 130);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('79', '2');
 /* Tabela DescriptiveNotes */
@@ -803,11 +803,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,80);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (80,'Zincogravura', 80);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (80,80);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (131,80);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (53,'7,3','cm','width', 80);
+			VALUES (53,'7,3','cm','width', 131);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (54,'5','cm','height', 80);
+			VALUES (54,'5','cm','height', 131);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('80', '2');
 /* Tabela DescriptiveNotes */
@@ -831,11 +831,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,81);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (81,'Zincogravura', 81);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (81,81);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (132,81);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (55,'7,3','cm','width', 81);
+			VALUES (55,'7,3','cm','width', 132);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (56,'6,5','cm','height', 81);
+			VALUES (56,'6,5','cm','height', 132);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('81', '2');
 /* Tabela DescriptiveNotes */
@@ -859,11 +859,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,82);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (82,'Zincogravura', 82);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (82,82);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (133,82);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (57,'7,6','cm','width', 82);
+			VALUES (57,'7,6','cm','width', 133);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (58,'5,5','cm','height', 82);
+			VALUES (58,'5,5','cm','height', 133);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('82', '2');
 /* Tabela DescriptiveNotes */
@@ -887,11 +887,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,83);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (83,'Zincogravura', 83);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (83,83);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (134,83);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (59,'7,2','cm','width', 83);
+			VALUES (59,'7,2','cm','width', 134);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (60,'4,6','cm','height', 83);
+			VALUES (60,'4,6','cm','height', 134);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('83', '2');
 /* Tabela DescriptiveNotes */
@@ -929,11 +929,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,84);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (84,'Zincogravura', 84);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (84,84);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (135,84);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (61,'7','cm','width', 84);
+			VALUES (61,'7','cm','width', 135);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (62,'4,9','cm','height', 84);
+			VALUES (62,'4,9','cm','height', 135);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('84', '2');
 /* Tabela DescriptiveNotes */
@@ -957,11 +957,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,85);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (85,'Zincogravura', 85);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (85,85);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (136,85);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (63,'6,8','cm','width', 85);
+			VALUES (63,'6,8','cm','width', 136);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (64,'4,7','cm','height', 85);
+			VALUES (64,'4,7','cm','height', 136);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('85', '2');
 /* Tabela DescriptiveNotes */
@@ -985,11 +985,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,86);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (86,'Zincogravura', 86);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (86,86);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (137,86);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (65,'6,3','cm','width', 86);
+			VALUES (65,'6,3','cm','width', 137);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (66,'4,1','cm','height', 86);
+			VALUES (66,'4,1','cm','height', 137);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('86', '2');
 /* Tabela DescriptiveNotes */
@@ -1018,11 +1018,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (3,'mas
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (3,3);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (87,3);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (87,87);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (138,87);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (67,'7,5','cm','width', 87);
+			VALUES (67,'7,5','cm','width', 138);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (68,'6,4','cm','height', 87);
+			VALUES (68,'6,4','cm','height', 138);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('87', '2');
 /* Tabela DescriptiveNotes */
@@ -1046,11 +1046,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,88);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (88,'Zincogravura', 88);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (88,88);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (139,88);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (69,'6,4','cm','width', 88);
+			VALUES (69,'6,4','cm','width', 139);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (70,'4,5','cm','height', 88);
+			VALUES (70,'4,5','cm','height', 139);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('88', '2');
 /* Tabela DescriptiveNotes */
@@ -1074,11 +1074,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,89);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (89,'Zincogravura', 89);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (89,89);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (140,89);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (71,'7','cm','width', 89);
+			VALUES (71,'7','cm','width', 140);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (72,'4,8','cm','height', 89);
+			VALUES (72,'4,8','cm','height', 140);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('89', '2');
 /* Tabela DescriptiveNotes */
@@ -1116,11 +1116,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,90);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (90,'Zincogravura', 90);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (90,90);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (141,90);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (73,'8','cm','width', 90);
+			VALUES (73,'8','cm','width', 141);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (74,'6','cm','height', 90);
+			VALUES (74,'6','cm','height', 141);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('90', '2');
 /* Tabela DescriptiveNotes */
@@ -1144,11 +1144,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,91);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (91,'Zincogravura', 91);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (91,91);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (142,91);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (75,'9,5','cm','width', 91);
+			VALUES (75,'9,5','cm','width', 142);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (76,'4,8','cm','height', 91);
+			VALUES (76,'4,8','cm','height', 142);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('91', '2');
 /* Tabela DescriptiveNotes */
@@ -1190,11 +1190,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,92);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (92,'Zincogravura', 92);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (92,92);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (143,92);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (77,'5,8','cm','width', 92);
+			VALUES (77,'5,8','cm','width', 143);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (78,'10','cm','height', 92);
+			VALUES (78,'10','cm','height', 143);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('92', '2');
 /* Tabela DescriptiveNotes */
@@ -1222,11 +1222,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,93);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (93,'Zincogravura', 93);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (93,93);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (144,93);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (79,'8,7','cm','width', 93);
+			VALUES (79,'8,7','cm','width', 144);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (80,'5,6','cm','height', 93);
+			VALUES (80,'5,6','cm','height', 144);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('93', '2');
 /* Tabela DescriptiveNotes */
@@ -1250,11 +1250,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,94);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (94,'Zincogravura', 94);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (94,94);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (145,94);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (81,'8','cm','width', 94);
+			VALUES (81,'8','cm','width', 145);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (82,'5,3','cm','height', 94);
+			VALUES (82,'5,3','cm','height', 145);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('94', '2');
 /* Tabela DescriptiveNotes */
@@ -1280,11 +1280,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,95);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (95,'Zincogravura', 95);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (95,95);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (146,95);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (83,'6,9','cm','width', 95);
+			VALUES (83,'6,9','cm','width', 146);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (84,'5,6','cm','height', 95);
+			VALUES (84,'5,6','cm','height', 146);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('95', '2');
 /* Tabela DescriptiveNotes */
@@ -1308,11 +1308,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,96);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (96,'Zincogravura', 96);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (96,96);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (147,96);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (85,'4,5','cm','width', 96);
+			VALUES (85,'4,5','cm','width', 147);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (86,'9.6','cm','height', 96);
+			VALUES (86,'9.6','cm','height', 147);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('96', '2');
 /* Tabela DescriptiveNotes */
@@ -1366,11 +1366,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,97);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (97,'Zincogravura', 97);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (97,97);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (148,97);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (87,'5,5','cm','width', 97);
+			VALUES (87,'5,5','cm','width', 148);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (88,'5,5','cm','height', 97);
+			VALUES (88,'5,5','cm','height', 148);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('97', '2');
 /* Tabela DescriptiveNotes */
@@ -1394,11 +1394,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,98);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (98,'Zincogravura', 98);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (98,98);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (149,98);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (89,'6,9','cm','width', 98);
+			VALUES (89,'6,9','cm','width', 149);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (90,'6,2','cm','height', 98);
+			VALUES (90,'6,2','cm','height', 149);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('98', '2');
 /* Tabela DescriptiveNotes */
@@ -1422,11 +1422,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,99);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (99,'Zincogravura', 99);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (99,99);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (150,99);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (91,'5,1','cm','width', 99);
+			VALUES (91,'5,1','cm','width', 150);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (92,'3,6','cm','height', 99);
+			VALUES (92,'3,6','cm','height', 150);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('99', '2');
 /* Tabela DescriptiveNotes */
@@ -1452,11 +1452,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,100);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (100,'Zincogravura', 100);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (100,100);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (151,100);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (93,'6,6','cm','width', 100);
+			VALUES (93,'6,6','cm','width', 151);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (94,'4,9','cm','height', 100);
+			VALUES (94,'4,9','cm','height', 151);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('100', '2');
 /* Tabela DescriptiveNotes */
@@ -1506,11 +1506,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,101);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (101,'Zincogravura', 101);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (101,101);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (152,101);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (95,'3','cm','width', 101);
+			VALUES (95,'3','cm','width', 152);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (96,'5,1','cm','height', 101);
+			VALUES (96,'5,1','cm','height', 152);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('101', '2');
 /* Tabela DescriptiveNotes */
@@ -1536,11 +1536,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,102);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (102,'Zincogravura', 102);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (102,102);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (153,102);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (97,'6,4','cm','width', 102);
+			VALUES (97,'6,4','cm','width', 153);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (98,'5,9','cm','height', 102);
+			VALUES (98,'5,9','cm','height', 153);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('102', '2');
 /* Tabela DescriptiveNotes */
@@ -1564,11 +1564,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,103);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (103,'Zincogravura', 103);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (103,103);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (154,103);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (99,'5,4','cm','width', 103);
+			VALUES (99,'5,4','cm','width', 154);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (100,'3','cm','height', 103);
+			VALUES (100,'3','cm','height', 154);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('103', '2');
 /* Tabela DescriptiveNotes */
@@ -1592,11 +1592,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,104);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (104,'Zincogravura', 104);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (104,104);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (155,104);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (101,'6','cm','width', 104);
+			VALUES (101,'6','cm','width', 155);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (102,'4,6','cm','height', 104);
+			VALUES (102,'4,6','cm','height', 155);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('104', '2');
 /* Tabela DescriptiveNotes */
@@ -1620,11 +1620,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,105);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (105,'Zincogravura', 105);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (105,105);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (156,105);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (103,'5,5','cm','width', 105);
+			VALUES (103,'5,5','cm','width', 156);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (104,'4,6','cm','height', 105);
+			VALUES (104,'4,6','cm','height', 156);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('105', '2');
 /* Tabela DescriptiveNotes */
@@ -1648,11 +1648,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,106);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (106,'Zincogravura', 106);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (106,106);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (157,106);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (105,'5,4','cm','width', 106);
+			VALUES (105,'5,4','cm','width', 157);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (106,'4,6','cm','height', 106);
+			VALUES (106,'4,6','cm','height', 157);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('106', '2');
 /* Tabela DescriptiveNotes */
@@ -1676,11 +1676,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,107);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (107,'Zincogravura', 107);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (107,107);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (158,107);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (107,'9,7','cm','width', 107);
+			VALUES (107,'9,7','cm','width', 158);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (108,'6,6','cm','height', 107);
+			VALUES (108,'6,6','cm','height', 158);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('107', '2');
 /* Tabela DescriptiveNotes */
@@ -1704,11 +1704,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,108);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (108,'Zincogravura', 108);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (108,108);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (159,108);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (109,'19,4','cm','width', 108);
+			VALUES (109,'19,4','cm','width', 159);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (110,'14,5','cm','height', 108);
+			VALUES (110,'14,5','cm','height', 159);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('108', '2');
 /* Tabela DescriptiveNotes */
@@ -1743,11 +1743,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (4,'mas
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (4,4);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (109,4);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (109,109);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (160,109);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (111,'16,8','cm','width', 109);
+			VALUES (111,'16,8','cm','width', 160);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (112,'8,9','cm','height', 109);
+			VALUES (112,'8,9','cm','height', 160);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -1775,11 +1775,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,110);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (110,'Zincogravura', 110);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (110,110);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (161,110);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (113,'12,7','cm','width', 110);
+			VALUES (113,'12,7','cm','width', 161);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (114,'9','cm','height', 110);
+			VALUES (114,'9','cm','height', 161);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('110', '2');
 /* Tabela DescriptiveNotes */
@@ -1811,11 +1811,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,111);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (111,'Zincogravura', 111);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (111,111);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (162,111);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (115,'11,8','cm','width', 111);
+			VALUES (115,'11,8','cm','width', 162);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (116,'8','cm','height', 111);
+			VALUES (116,'8','cm','height', 162);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('111', '2');
 /* Tabela DescriptiveNotes */
@@ -1851,11 +1851,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,112);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (112,'Zincogravura', 112);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (112,112);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (163,112);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (117,'12,5','cm','width', 112);
+			VALUES (117,'12,5','cm','width', 163);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (118,'7,9','cm','height', 112);
+			VALUES (118,'7,9','cm','height', 163);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('112', '2');
 /* Tabela DescriptiveNotes */
@@ -1879,11 +1879,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,113);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (113,'Zincogravura', 113);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (113,113);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (164,113);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (119,'11,1','cm','width', 113);
+			VALUES (119,'11,1','cm','width', 164);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (120,'14,2','cm','height', 113);
+			VALUES (120,'14,2','cm','height', 164);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('113', '2');
 /* Tabela DescriptiveNotes */
@@ -1909,11 +1909,11 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (114,4);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (114,114);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (165,114);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (121,'73,9','cm','width', 114);
+			VALUES (121,'73,9','cm','width', 165);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (122,'9,1','cm','height', 114);
+			VALUES (122,'9,1','cm','height', 165);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -1943,11 +1943,11 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (115,4);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (115,115);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (166,115);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (123,'14,4','cm','width', 115);
+			VALUES (123,'14,4','cm','width', 166);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (124,'7,3','cm','height', 115);
+			VALUES (124,'7,3','cm','height', 166);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -1975,11 +1975,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,116);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (116,'Zincogravura', 116);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (116,116);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (167,116);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (125,'72,9','cm','width', 116);
+			VALUES (125,'72,9','cm','width', 167);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (126,'8,2','cm','height', 116);
+			VALUES (126,'8,2','cm','height', 167);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('116', '2');
 /* Tabela DescriptiveNotes */
@@ -2019,11 +2019,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,117);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (117,'Zincogravura', 117);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (117,117);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (168,117);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (127,'10,6','cm','width', 117);
+			VALUES (127,'10,6','cm','width', 168);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (128,'9,2','cm','height', 117);
+			VALUES (128,'9,2','cm','height', 168);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('117', '2');
 /* Tabela DescriptiveNotes */
@@ -2047,11 +2047,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,118);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (118,'Zincogravura', 118);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (118,118);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (169,118);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (129,'9,8','cm','width', 118);
+			VALUES (129,'9,8','cm','width', 169);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (130,'7,3','cm','height', 118);
+			VALUES (130,'7,3','cm','height', 169);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('118', '2');
 /* Tabela DescriptiveNotes */
@@ -2077,11 +2077,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,119);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (119,'Zincogravura', 119);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (119,119);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (170,119);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (131,'9,3','cm','width', 119);
+			VALUES (131,'9,3','cm','width', 170);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (132,'6,9','cm','height', 119);
+			VALUES (132,'6,9','cm','height', 170);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('119', '2');
 /* Tabela DescriptiveNotes */
@@ -2105,11 +2105,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,120);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (120,'Photopolimero', 120);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (120,120);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (171,120);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (133,'10,3','cm','width', 120);
+			VALUES (133,'10,3','cm','width', 171);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (134,'7,8','cm','height', 120);
+			VALUES (134,'7,8','cm','height', 171);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('120', '2');
 /* Tabela DescriptiveNotes */
@@ -2143,11 +2143,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,121);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (121,'Zincogravura', 121);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (121,121);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (172,121);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (135,'9,6','cm','width', 121);
+			VALUES (135,'9,6','cm','width', 172);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (136,'5,9','cm','height', 121);
+			VALUES (136,'5,9','cm','height', 172);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('121', '2');
 /* Tabela DescriptiveNotes */
@@ -2173,11 +2173,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,122);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (122,'Zincogravura', 122);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (122,122);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (173,122);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (137,'9,8','cm','width', 122);
+			VALUES (137,'9,8','cm','width', 173);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (138,'7','cm','height', 122);
+			VALUES (138,'7','cm','height', 173);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -2207,11 +2207,11 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (123,4);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (123,123);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (174,123);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (139,'9,1','cm','width', 123);
+			VALUES (139,'9,1','cm','width', 174);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (140,'3,8','cm','height', 123);
+			VALUES (140,'3,8','cm','height', 174);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -2244,11 +2244,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (5,'mas
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (5,5);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (124,5);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (124,124);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (175,124);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (141,'9,4','cm','width', 124);
+			VALUES (141,'9,4','cm','width', 175);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (142,'3,1','cm','height', 124);
+			VALUES (142,'3,1','cm','height', 175);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -2276,11 +2276,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,125);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (125,'Zincogravura', 125);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (125,125);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (176,125);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (143,'5,7','cm','width', 125);
+			VALUES (143,'5,7','cm','width', 176);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (144,'6,5','cm','height', 125);
+			VALUES (144,'6,5','cm','height', 176);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('125', '2');
 /* Tabela DescriptiveNotes */
@@ -2304,11 +2304,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,126);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (126,'Zincogravura', 126);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (126,126);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (177,126);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (145,'7,5','cm','width', 126);
+			VALUES (145,'7,5','cm','width', 177);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (146,'10,3','cm','height', 126);
+			VALUES (146,'10,3','cm','height', 177);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('126', '2');
 /* Tabela DescriptiveNotes */
@@ -2332,11 +2332,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,127);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (127,'Zincogravura', 127);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (127,127);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (178,127);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (147,'10,9','cm','width', 127);
+			VALUES (147,'10,9','cm','width', 178);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (148,'7,1','cm','height', 127);
+			VALUES (148,'7,1','cm','height', 178);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('127', '2');
 /* Tabela DescriptiveNotes */
@@ -2364,11 +2364,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,128);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (128,'Zincogravura', 128);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (128,128);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (179,128);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (149,'9,1','cm','width', 128);
+			VALUES (149,'9,1','cm','width', 179);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (150,'6','cm','height', 128);
+			VALUES (150,'6','cm','height', 179);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('128', '2');
 /* Tabela DescriptiveNotes */
@@ -2392,11 +2392,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,129);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (129,'Zincogravura', 129);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (129,129);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (180,129);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (151,'8,9','cm','width', 129);
+			VALUES (151,'8,9','cm','width', 180);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (152,'5,8','cm','height', 129);
+			VALUES (152,'5,8','cm','height', 180);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('129', '2');
 /* Tabela DescriptiveNotes */
@@ -2420,11 +2420,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,130);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (130,'Zincogravura', 130);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (130,130);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (181,130);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (153,'7,1','cm','width', 130);
+			VALUES (153,'7,1','cm','width', 181);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (154,'9,9','cm','height', 130);
+			VALUES (154,'9,9','cm','height', 181);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -2452,11 +2452,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,131);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (131,'Zincogravura', 131);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (131,131);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (182,131);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (155,'8','cm','width', 131);
+			VALUES (155,'8','cm','width', 182);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (156,'4','cm','height', 131);
+			VALUES (156,'4','cm','height', 182);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('131', '2');
 /* Tabela DescriptiveNotes */
@@ -2480,11 +2480,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,132);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (132,'Zincogravura', 132);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (132,132);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (183,132);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (157,'8,3','cm','width', 132);
+			VALUES (157,'8,3','cm','width', 183);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (158,'10,9','cm','height', 132);
+			VALUES (158,'10,9','cm','height', 183);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('132', '2');
 /* Tabela DescriptiveNotes */
@@ -2508,11 +2508,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,133);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (133,'Zincogravura', 133);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (133,133);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (184,133);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (159,'8,7','cm','width', 133);
+			VALUES (159,'8,7','cm','width', 184);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (160,'5,5','cm','height', 133);
+			VALUES (160,'5,5','cm','height', 184);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('133', '2');
 /* Tabela DescriptiveNotes */
@@ -2536,11 +2536,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,134);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (134,'Zincogravura', 134);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (134,134);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (185,134);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (161,'9,5','cm','width', 134);
+			VALUES (161,'9,5','cm','width', 185);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (162,'7,2','cm','height', 134);
+			VALUES (162,'7,2','cm','height', 185);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('134', '2');
 /* Tabela DescriptiveNotes */
@@ -2564,11 +2564,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,135);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (135,'Zincogravura', 135);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (135,135);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (186,135);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (163,'8,9','cm','width', 135);
+			VALUES (163,'8,9','cm','width', 186);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (164,'5,9','cm','height', 135);
+			VALUES (164,'5,9','cm','height', 186);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('135', '2');
 /* Tabela DescriptiveNotes */
@@ -2592,11 +2592,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,136);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (136,'Zincogravura', 136);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (136,136);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (187,136);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (165,'4','cm','width', 136);
+			VALUES (165,'4','cm','width', 187);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (166,'6,8','cm','height', 136);
+			VALUES (166,'6,8','cm','height', 187);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('136', '2');
 /* Tabela DescriptiveNotes */
@@ -2620,11 +2620,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,137);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (137,'Zincogravura', 137);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (137,137);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (188,137);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (167,'4,6','cm','width', 137);
+			VALUES (167,'4,6','cm','width', 188);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (168,'7,','cm','height', 137);
+			VALUES (168,'7,','cm','height', 188);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('137', '2');
 /* Tabela DescriptiveNotes */
@@ -2648,11 +2648,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,138);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (138,'Zincogravura', 138);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (138,138);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (189,138);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (169,'9,4','cm','width', 138);
+			VALUES (169,'9,4','cm','width', 189);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (170,'5,1','cm','height', 138);
+			VALUES (170,'5,1','cm','height', 189);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -2682,11 +2682,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,139);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (139,'Zincogravura', 139);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (139,139);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (190,139);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (171,'9,6','cm','width', 139);
+			VALUES (171,'9,6','cm','width', 190);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (172,'6,6','cm','height', 139);
+			VALUES (172,'6,6','cm','height', 190);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -2714,11 +2714,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,140);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (140,'Zincogravura', 140);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (140,140);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (191,140);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (173,'8,9','cm','width', 140);
+			VALUES (173,'8,9','cm','width', 191);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (174,'6,5','cm','height', 140);
+			VALUES (174,'6,5','cm','height', 191);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -2746,11 +2746,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,141);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (141,'Zincogravura', 141);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (141,141);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (192,141);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (175,'4,2','cm','width', 141);
+			VALUES (175,'4,2','cm','width', 192);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (176,'3,4','cm','height', 141);
+			VALUES (176,'3,4','cm','height', 192);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('141', '2');
 /* Tabela DescriptiveNotes */
@@ -2774,11 +2774,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,142);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (142,'Zincogravura', 142);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (142,142);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (193,142);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (177,'8,4','cm','width', 142);
+			VALUES (177,'8,4','cm','width', 193);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (178,'5,6','cm','height', 142);
+			VALUES (178,'5,6','cm','height', 193);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('142', '2');
 /* Tabela DescriptiveNotes */
@@ -2802,11 +2802,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,143);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (143,'Zincogravura', 143);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (143,143);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (194,143);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (179,'5,8','cm','width', 143);
+			VALUES (179,'5,8','cm','width', 194);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (180,'3,6','cm','height', 143);
+			VALUES (180,'3,6','cm','height', 194);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('143', '2');
 /* Tabela DescriptiveNotes */
@@ -2832,11 +2832,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,144);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (144,'Zincogravura', 144);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (144,144);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (195,144);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (181,'6,2','cm','width', 144);
+			VALUES (181,'6,2','cm','width', 195);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (182,'5,1','cm','height', 144);
+			VALUES (182,'5,1','cm','height', 195);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('144', '2');
 /* Tabela DescriptiveNotes */
@@ -2860,11 +2860,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,145);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (145,'Zincogravura', 145);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (145,145);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (196,145);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (183,'6','cm','width', 145);
+			VALUES (183,'6','cm','width', 196);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (184,'9,5','cm','height', 145);
+			VALUES (184,'9,5','cm','height', 196);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('145', '2');
 /* Tabela DescriptiveNotes */
@@ -2888,11 +2888,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,146);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (146,'Zincogravura', 146);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (146,146);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (197,146);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (185,'6,1','cm','width', 146);
+			VALUES (185,'6,1','cm','width', 197);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (186,'7','cm','height', 146);
+			VALUES (186,'7','cm','height', 197);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('146', '2');
 /* Tabela DescriptiveNotes */
@@ -2916,11 +2916,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,147);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (147,'Zincogravura', 147);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (147,147);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (198,147);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (187,'5,9','cm','width', 147);
+			VALUES (187,'5,9','cm','width', 198);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (188,'9,3','cm','height', 147);
+			VALUES (188,'9,3','cm','height', 198);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('147', '2');
 /* Tabela DescriptiveNotes */
@@ -2944,11 +2944,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,148);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (148,'Zincogravura', 148);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (148,148);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (199,148);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (189,'5,7','cm','width', 148);
+			VALUES (189,'5,7','cm','width', 199);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (190,'4,8','cm','height', 148);
+			VALUES (190,'4,8','cm','height', 199);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -2976,11 +2976,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,149);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (149,'Zincogravura', 149);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (149,149);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (200,149);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (191,'7,3','cm','width', 149);
+			VALUES (191,'7,3','cm','width', 200);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (192,'5','cm','height', 149);
+			VALUES (192,'5','cm','height', 200);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('149', '2');
 /* Tabela DescriptiveNotes */
@@ -3004,11 +3004,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,150);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (150,'Zincogravura', 150);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (150,150);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (201,150);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (193,'6,9','cm','width', 150);
+			VALUES (193,'6,9','cm','width', 201);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (194,'9,4','cm','height', 150);
+			VALUES (194,'9,4','cm','height', 201);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('150', '2');
 /* Tabela DescriptiveNotes */
@@ -3032,11 +3032,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,151);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (151,'Zincogravura', 151);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (151,151);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (202,151);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (195,'6,2','cm','width', 151);
+			VALUES (195,'6,2','cm','width', 202);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (196,'9,9','cm','height', 151);
+			VALUES (196,'9,9','cm','height', 202);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -3072,11 +3072,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,152);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (152,'Zincogravura', 152);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (152,152);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (203,152);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (197,'4,9','cm','width', 152);
+			VALUES (197,'4,9','cm','width', 203);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (198,'6,9','cm','height', 152);
+			VALUES (198,'6,9','cm','height', 203);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('152', '2');
 /* Tabela DescriptiveNotes */
@@ -3100,11 +3100,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,153);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (153,'Zincogravura', 153);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (153,153);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (204,153);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (199,'6,6','cm','width', 153);
+			VALUES (199,'6,6','cm','width', 204);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (200,'7,6','cm','height', 153);
+			VALUES (200,'7,6','cm','height', 204);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('153', '2');
 /* Tabela DescriptiveNotes */
@@ -3128,11 +3128,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,154);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (154,'Zincogravura', 154);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (154,154);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (205,154);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (201,'6,3','cm','width', 154);
+			VALUES (201,'6,3','cm','width', 205);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (202,'4,5','cm','height', 154);
+			VALUES (202,'4,5','cm','height', 205);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('154', '2');
 /* Tabela DescriptiveNotes */
@@ -3156,11 +3156,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,155);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (155,'Photopolimero', 155);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (155,155);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (206,155);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (203,'6,8','cm','width', 155);
+			VALUES (203,'6,8','cm','width', 206);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (204,'6,4','cm','height', 155);
+			VALUES (204,'6,4','cm','height', 206);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('155', '2');
 /* Tabela DescriptiveNotes */
@@ -3184,11 +3184,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,156);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (156,'Zincogravura', 156);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (156,156);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (207,156);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (205,'6,2','cm','width', 156);
+			VALUES (205,'6,2','cm','width', 207);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (206,'7,7','cm','height', 156);
+			VALUES (206,'7,7','cm','height', 207);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('156', '2');
 /* Tabela DescriptiveNotes */
@@ -3212,11 +3212,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,157);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (157,'Zincogravura', 157);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (157,157);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (208,157);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (207,'5,9','cm','width', 157);
+			VALUES (207,'5,9','cm','width', 208);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (208,'9,6','cm','height', 157);
+			VALUES (208,'9,6','cm','height', 208);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('157', '2');
 /* Tabela DescriptiveNotes */
@@ -3240,11 +3240,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,158);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (158,'Zincogravura', 158);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (158,158);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (209,158);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (209,'6,7','cm','width', 158);
+			VALUES (209,'6,7','cm','width', 209);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (210,'6','cm','height', 158);
+			VALUES (210,'6','cm','height', 209);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('158', '2');
 /* Tabela DescriptiveNotes */
@@ -3268,11 +3268,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,159);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (159,'Zincogravura', 159);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (159,159);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (210,159);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (211,'7,5','cm','width', 159);
+			VALUES (211,'7,5','cm','width', 210);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (212,'7,5','cm','height', 159);
+			VALUES (212,'7,5','cm','height', 210);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('159', '2');
 /* Tabela DescriptiveNotes */
@@ -3296,11 +3296,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,160);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (160,'Zincogravura', 160);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (160,160);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (211,160);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (213,'5,8','cm','width', 160);
+			VALUES (213,'5,8','cm','width', 211);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (214,'10,5','cm','height', 160);
+			VALUES (214,'10,5','cm','height', 211);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('160', '2');
 /* Tabela DescriptiveNotes */
@@ -3324,11 +3324,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,161);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (161,'Zincogravura', 161);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (161,161);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (212,161);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (215,'8,6','cm','width', 161);
+			VALUES (215,'8,6','cm','width', 212);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (216,'5.8','cm','height', 161);
+			VALUES (216,'5.8','cm','height', 212);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -3356,11 +3356,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,162);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (162,'Zincogravura', 162);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (162,162);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (213,162);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (217,'7','cm','width', 162);
+			VALUES (217,'7','cm','width', 213);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (218,'9,9','cm','height', 162);
+			VALUES (218,'9,9','cm','height', 213);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -3388,11 +3388,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,163);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (163,'Zincogravura', 163);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (163,163);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (214,163);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (219,'8','cm','width', 163);
+			VALUES (219,'8','cm','width', 214);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (220,'7,9','cm','height', 163);
+			VALUES (220,'7,9','cm','height', 214);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('163', '2');
 /* Tabela DescriptiveNotes */
@@ -3416,11 +3416,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,164);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (164,'Zincogravura', 164);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (164,164);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (215,164);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (221,'5,5','cm','width', 164);
+			VALUES (221,'5,5','cm','width', 215);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (222,'4','cm','height', 164);
+			VALUES (222,'4','cm','height', 215);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('164', '2');
 /* Tabela DescriptiveNotes */
@@ -3448,11 +3448,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,165);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (165,'Zincogravura', 165);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (165,165);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (216,165);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (223,'4,5','cm','width', 165);
+			VALUES (223,'4,5','cm','width', 216);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (224,'7,3','cm','height', 165);
+			VALUES (224,'7,3','cm','height', 216);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('165', '2');
 /* Tabela DescriptiveNotes */
@@ -3476,11 +3476,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,166);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (166,'Zincogravura', 166);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (166,166);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (217,166);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (225,'6,5','cm','width', 166);
+			VALUES (225,'6,5','cm','width', 217);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (226,'4,7','cm','height', 166);
+			VALUES (226,'4,7','cm','height', 217);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('166', '2');
 /* Tabela DescriptiveNotes */
@@ -3504,11 +3504,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,167);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (167,'Zincogravura', 167);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (167,167);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (218,167);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (227,'6,7','cm','width', 167);
+			VALUES (227,'6,7','cm','width', 218);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (228,'8,5','cm','height', 167);
+			VALUES (228,'8,5','cm','height', 218);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -3536,11 +3536,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,168);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (168,'Zincogravura', 168);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (168,168);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (219,168);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (229,'5,8','cm','width', 168);
+			VALUES (229,'5,8','cm','width', 219);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (230,'8','cm','height', 168);
+			VALUES (230,'8','cm','height', 219);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('168', '2');
 /* Tabela DescriptiveNotes */
@@ -3564,11 +3564,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,169);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (169,'Zincogravura', 169);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (169,169);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (220,169);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (231,'6,7','cm','width', 169);
+			VALUES (231,'6,7','cm','width', 220);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (232,'4,6','cm','height', 169);
+			VALUES (232,'4,6','cm','height', 220);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('169', '2');
 /* Tabela DescriptiveNotes */
@@ -3592,11 +3592,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,170);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (170,'Zincogravura', 170);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (170,170);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (221,170);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (233,'6,1','cm','width', 170);
+			VALUES (233,'6,1','cm','width', 221);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (234,'4,3','cm','height', 170);
+			VALUES (234,'4,3','cm','height', 221);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('170', '2');
 /* Tabela DescriptiveNotes */
@@ -3620,11 +3620,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,171);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (171,'Zincogravura', 171);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (171,171);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (222,171);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (235,'8,7','cm','width', 171);
+			VALUES (235,'8,7','cm','width', 222);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (236,'5,9','cm','height', 171);
+			VALUES (236,'5,9','cm','height', 222);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('171', '2');
 /* Tabela DescriptiveNotes */
@@ -3660,11 +3660,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,172);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (172,'Zincogravura', 172);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (172,172);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (223,172);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (237,'6,5','cm','width', 172);
+			VALUES (237,'6,5','cm','width', 223);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (238,'4,6','cm','height', 172);
+			VALUES (238,'4,6','cm','height', 223);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('172', '2');
 /* Tabela DescriptiveNotes */
@@ -3688,11 +3688,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,173);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (173,'Zincogravura', 173);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (173,173);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (224,173);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (239,'7,1','cm','width', 173);
+			VALUES (239,'7,1','cm','width', 224);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (240,'10','cm','height', 173);
+			VALUES (240,'10','cm','height', 224);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('173', '2');
 /* Tabela DescriptiveNotes */
@@ -3716,11 +3716,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,174);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (174,'Zincogravura', 174);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (174,174);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (225,174);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (241,'6,1','cm','width', 174);
+			VALUES (241,'6,1','cm','width', 225);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (242,'7,9','cm','height', 174);
+			VALUES (242,'7,9','cm','height', 225);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('174', '2');
 /* Tabela DescriptiveNotes */
@@ -3744,11 +3744,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,175);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (175,'Zincogravura', 175);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (175,175);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (226,175);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (243,'9,6','cm','width', 175);
+			VALUES (243,'9,6','cm','width', 226);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (244,'5','cm','height', 175);
+			VALUES (244,'5','cm','height', 226);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('175', '2');
 /* Tabela DescriptiveNotes */
@@ -3772,11 +3772,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,176);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (176,'Gravura em bronze', 176);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (176,176);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (227,176);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (245,'4,2','cm','width', 176);
+			VALUES (245,'4,2','cm','width', 227);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (246,'6,2','cm','height', 176);
+			VALUES (246,'6,2','cm','height', 227);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('176', '2');
 /* Tabela DescriptiveNotes */
@@ -3800,11 +3800,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,177);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (177,'Zincogravura', 177);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (177,177);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (228,177);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (247,'6,9','cm','width', 177);
+			VALUES (247,'6,9','cm','width', 228);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (248,'6,4','cm','height', 177);
+			VALUES (248,'6,4','cm','height', 228);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('177', '2');
 /* Tabela DescriptiveNotes */
@@ -3830,11 +3830,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,178);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (178,'Zincogravura', 178);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (178,178);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (229,178);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (249,'5,6','cm','width', 178);
+			VALUES (249,'5,6','cm','width', 229);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (250,'9','cm','height', 178);
+			VALUES (250,'9','cm','height', 229);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('178', '2');
 /* Tabela DescriptiveNotes */
@@ -3858,11 +3858,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,179);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (179,'Zincogravura', 179);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (179,179);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (230,179);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (251,'7','cm','width', 179);
+			VALUES (251,'7','cm','width', 230);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (252,'5,2','cm','height', 179);
+			VALUES (252,'5,2','cm','height', 230);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('179', '2');
 /* Tabela DescriptiveNotes */
@@ -3890,11 +3890,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,180);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (180,'Zincogravura', 180);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (180,180);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (231,180);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (253,'5,5','cm','width', 180);
+			VALUES (253,'5,5','cm','width', 231);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (254,'5,8','cm','height', 180);
+			VALUES (254,'5,8','cm','height', 231);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('180', '2');
 /* Tabela DescriptiveNotes */
@@ -3918,11 +3918,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,181);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (181,'Zincogravura', 181);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (181,181);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (232,181);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (255,'6,2','cm','width', 181);
+			VALUES (255,'6,2','cm','width', 232);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (256,'8,8','cm','height', 181);
+			VALUES (256,'8,8','cm','height', 232);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('181', '2');
 /* Tabela DescriptiveNotes */
@@ -3946,11 +3946,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,182);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (182,'Zincogravura', 182);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (182,182);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (233,182);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (257,'6','cm','width', 182);
+			VALUES (257,'6','cm','width', 233);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (258,'8,4','cm','height', 182);
+			VALUES (258,'8,4','cm','height', 233);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('182', '2');
 /* Tabela DescriptiveNotes */
@@ -3980,11 +3980,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,183);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (183,'Zincogravura', 183);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (183,183);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (234,183);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (259,'5,3','cm','width', 183);
+			VALUES (259,'5,3','cm','width', 234);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (260,'7,9','cm','height', 183);
+			VALUES (260,'7,9','cm','height', 234);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('183', '2');
 /* Tabela DescriptiveNotes */
@@ -4008,11 +4008,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,184);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (184,'Zincogravura', 184);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (184,184);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (235,184);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (261,'5,2','cm','width', 184);
+			VALUES (261,'5,2','cm','width', 235);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (262,'8','cm','height', 184);
+			VALUES (262,'8','cm','height', 235);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('184', '2');
 /* Tabela DescriptiveNotes */
@@ -4036,11 +4036,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,185);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (185,'Zincogravura', 185);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (185,185);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (236,185);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (263,'7,2','cm','width', 185);
+			VALUES (263,'7,2','cm','width', 236);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (264,'7,3','cm','height', 185);
+			VALUES (264,'7,3','cm','height', 236);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -4068,11 +4068,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,186);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (186,'Zincogravura', 186);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (186,186);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (237,186);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (265,'5,7','cm','width', 186);
+			VALUES (265,'5,7','cm','width', 237);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (266,'5,6','cm','height', 186);
+			VALUES (266,'5,6','cm','height', 237);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('186', '2');
 /* Tabela DescriptiveNotes */
@@ -4096,11 +4096,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,187);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (187,'Zincogravura', 187);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (187,187);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (238,187);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (267,'8,2','cm','width', 187);
+			VALUES (267,'8,2','cm','width', 238);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (268,'6','cm','height', 187);
+			VALUES (268,'6','cm','height', 238);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('187', '2');
 /* Tabela DescriptiveNotes */
@@ -4124,11 +4124,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,188);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (188,'Zincogravura', 188);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (188,188);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (239,188);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (269,'5,3','cm','width', 188);
+			VALUES (269,'5,3','cm','width', 239);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (270,'7','cm','height', 188);
+			VALUES (270,'7','cm','height', 239);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('188', '2');
 /* Tabela DescriptiveNotes */
@@ -4158,11 +4158,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,189);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (189,'Zincogravura', 189);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (189,189);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (240,189);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (271,'6,3','cm','width', 189);
+			VALUES (271,'6,3','cm','width', 240);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (272,'9,9','cm','height', 189);
+			VALUES (272,'9,9','cm','height', 240);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -4192,11 +4192,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,190);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (190,'Zincogravura', 190);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (190,190);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (241,190);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (273,'5,8','cm','width', 190);
+			VALUES (273,'5,8','cm','width', 241);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (274,'5,4','cm','height', 190);
+			VALUES (274,'5,4','cm','height', 241);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('190', '2');
 /* Tabela DescriptiveNotes */
@@ -4220,11 +4220,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,191);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (191,'Zincogravura', 191);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (191,191);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (242,191);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (275,'7,8','cm','width', 191);
+			VALUES (275,'7,8','cm','width', 242);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (276,'5,1','cm','height', 191);
+			VALUES (276,'5,1','cm','height', 242);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('191', '2');
 /* Tabela DescriptiveNotes */
@@ -4255,11 +4255,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (6,'mas
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (6,6);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (192,6);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (192,192);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (243,192);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (277,'10','cm','width', 192);
+			VALUES (277,'10','cm','width', 243);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (278,'11','cm','height', 192);
+			VALUES (278,'11','cm','height', 243);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('192', '2');
 /* Tabela DescriptiveNotes */
@@ -4283,11 +4283,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,193);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (193,'Zincogravura', 193);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (193,193);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (244,193);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (279,'12,8','cm','width', 193);
+			VALUES (279,'12,8','cm','width', 244);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (280,'8','cm','height', 193);
+			VALUES (280,'8','cm','height', 244);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('193', '2');
 /* Tabela DescriptiveNotes */
@@ -4319,11 +4319,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,194);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (194,'Zincogravura', 194);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (194,194);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (245,194);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (281,'5,9','cm','width', 194);
+			VALUES (281,'5,9','cm','width', 245);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (282,'4,1','cm','height', 194);
+			VALUES (282,'4,1','cm','height', 245);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('194', '2');
 /* Tabela DescriptiveNotes */
@@ -4357,11 +4357,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,195);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (195,'Zincogravura', 195);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (195,195);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (246,195);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (283,'5,3','cm','width', 195);
+			VALUES (283,'5,3','cm','width', 246);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (284,'9,1','cm','height', 195);
+			VALUES (284,'9,1','cm','height', 246);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('195', '2');
 /* Tabela DescriptiveNotes */
@@ -4385,11 +4385,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,196);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (196,'Zincogravura', 196);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (196,196);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (247,196);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (285,'6,0','cm','width', 196);
+			VALUES (285,'6,0','cm','width', 247);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (286,'4,5','cm','height', 196);
+			VALUES (286,'4,5','cm','height', 247);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('196', '2');
 /* Tabela DescriptiveNotes */
@@ -4413,11 +4413,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,197);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (197,'Zincogravura', 197);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (197,197);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (248,197);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (287,'5,6','cm','width', 197);
+			VALUES (287,'5,6','cm','width', 248);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (288,'8,6','cm','height', 197);
+			VALUES (288,'8,6','cm','height', 248);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('197', '2');
 /* Tabela DescriptiveNotes */
@@ -4441,11 +4441,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,198);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (198,'Zincogravura', 198);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (198,198);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (249,198);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (289,'8,9','cm','width', 198);
+			VALUES (289,'8,9','cm','width', 249);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (290,'6,4','cm','height', 198);
+			VALUES (290,'6,4','cm','height', 249);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('198', '2');
 /* Tabela DescriptiveNotes */
@@ -4475,11 +4475,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,199);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (199,'Zincogravura', 199);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (199,199);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (250,199);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (291,'6,8','cm','width', 199);
+			VALUES (291,'6,8','cm','width', 250);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (292,'4,8','cm','height', 199);
+			VALUES (292,'4,8','cm','height', 250);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('199', '2');
 /* Tabela DescriptiveNotes */
@@ -4503,11 +4503,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,200);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (200,'Zincogravura', 200);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (200,200);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (251,200);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (293,'5,0','cm','width', 200);
+			VALUES (293,'5,0','cm','width', 251);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (294,'7,5','cm','height', 200);
+			VALUES (294,'7,5','cm','height', 251);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('200', '2');
 /* Tabela DescriptiveNotes */
@@ -4533,11 +4533,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,201);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (201,'Zincogravura', 201);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (201,201);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (252,201);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (295,'6,7','cm','width', 201);
+			VALUES (295,'6,7','cm','width', 252);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (296,'4','cm','height', 201);
+			VALUES (296,'4','cm','height', 252);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('201', '2');
 /* Tabela DescriptiveNotes */
@@ -4561,11 +4561,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,202);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (202,'Zincogravura', 202);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (202,202);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (253,202);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (297,'5,5','cm','width', 202);
+			VALUES (297,'5,5','cm','width', 253);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (298,'9,3','cm','height', 202);
+			VALUES (298,'9,3','cm','height', 253);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('202', '2');
 /* Tabela DescriptiveNotes */
@@ -4594,11 +4594,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (7,'mas
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (7,7);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (203,7);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (203,203);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (254,203);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (299,'5','cm','width', 203);
+			VALUES (299,'5','cm','width', 254);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (300,'8,9','cm','height', 203);
+			VALUES (300,'8,9','cm','height', 254);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('203', '2');
 /* Tabela DescriptiveNotes */
@@ -4622,11 +4622,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,204);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (204,'Zincogravura', 204);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (204,204);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (255,204);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (301,'6','cm','width', 204);
+			VALUES (301,'6','cm','width', 255);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (302,'9,5','cm','height', 204);
+			VALUES (302,'9,5','cm','height', 255);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('204', '2');
 /* Tabela DescriptiveNotes */
@@ -4650,11 +4650,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,205);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (205,'Zincogravura', 205);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (205,205);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (256,205);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (303,'4,9','cm','width', 205);
+			VALUES (303,'4,9','cm','width', 256);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (304,'3','cm','height', 205);
+			VALUES (304,'3','cm','height', 256);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('205', '2');
 /* Tabela DescriptiveNotes */
@@ -4678,11 +4678,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,206);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (206,'Zincogravura', 206);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (206,206);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (257,206);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (305,'7,5','cm','width', 206);
+			VALUES (305,'7,5','cm','width', 257);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (306,'5','cm','height', 206);
+			VALUES (306,'5','cm','height', 257);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('206', '2');
 /* Tabela DescriptiveNotes */
@@ -4716,11 +4716,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,207);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (207,'Zincogravura', 207);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (207,207);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (258,207);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (307,'4,7','cm','width', 207);
+			VALUES (307,'4,7','cm','width', 258);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (308,'3,1','cm','height', 207);
+			VALUES (308,'3,1','cm','height', 258);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('207', '2');
 /* Tabela DescriptiveNotes */
@@ -4744,11 +4744,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,208);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (208,'Zincogravura', 208);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (208,208);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (259,208);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (309,'6,3','cm','width', 208);
+			VALUES (309,'6,3','cm','width', 259);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (310,'5,8','cm','height', 208);
+			VALUES (310,'5,8','cm','height', 259);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('208', '2');
 /* Tabela DescriptiveNotes */
@@ -4772,11 +4772,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,209);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (209,'Zincogravura', 209);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (209,209);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (260,209);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (311,'6','cm','width', 209);
+			VALUES (311,'6','cm','width', 260);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (312,'4','cm','height', 209);
+			VALUES (312,'4','cm','height', 260);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('209', '2');
 /* Tabela DescriptiveNotes */
@@ -4804,11 +4804,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,210);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (210,'Zincogravura', 210);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (210,210);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (261,210);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (313,'6,4','cm','width', 210);
+			VALUES (313,'6,4','cm','width', 261);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (314,'4,2','cm','height', 210);
+			VALUES (314,'4,2','cm','height', 261);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('210', '2');
 /* Tabela DescriptiveNotes */
@@ -4834,11 +4834,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,211);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (211,'Zincogravura', 211);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (211,211);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (262,211);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (315,'8,2','cm','width', 211);
+			VALUES (315,'8,2','cm','width', 262);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (316,'5,3','cm','height', 211);
+			VALUES (316,'5,3','cm','height', 262);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('211', '2');
 /* Tabela DescriptiveNotes */
@@ -4866,11 +4866,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,212);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (212,'Zincogravura', 212);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (212,212);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (263,212);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (317,'8,7','cm','width', 212);
+			VALUES (317,'8,7','cm','width', 263);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (318,'5,5','cm','height', 212);
+			VALUES (318,'5,5','cm','height', 263);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('212', '2');
 /* Tabela DescriptiveNotes */
@@ -4894,11 +4894,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,213);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (213,'Zincogravura', 213);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (213,213);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (264,213);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (319,'5,8','cm','width', 213);
+			VALUES (319,'5,8','cm','width', 264);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (320,'4','cm','height', 213);
+			VALUES (320,'4','cm','height', 264);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('213', '2');
 /* Tabela DescriptiveNotes */
@@ -4924,11 +4924,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,214);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (214,'Zincogravura', 214);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (214,214);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (265,214);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (321,'6,1','cm','width', 214);
+			VALUES (321,'6,1','cm','width', 265);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (322,'4','cm','height', 214);
+			VALUES (322,'4','cm','height', 265);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('214', '2');
 /* Tabela DescriptiveNotes */
@@ -4957,11 +4957,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (8,'mas
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (8,8);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (215,8);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (215,215);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (266,215);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (323,'6,6','cm','width', 215);
+			VALUES (323,'6,6','cm','width', 266);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (324,'9,3','cm','height', 215);
+			VALUES (324,'9,3','cm','height', 266);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -4994,11 +4994,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (9,'mas
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (9,9);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (216,9);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (216,216);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (267,216);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (325,'6,6','cm','width', 216);
+			VALUES (325,'6,6','cm','width', 267);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (326,'4,5','cm','height', 216);
+			VALUES (326,'4,5','cm','height', 267);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('216', '2');
 /* Tabela DescriptiveNotes */
@@ -5034,11 +5034,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,217);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (217,'Zincogravura', 217);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (217,217);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (268,217);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (327,'8,5','cm','width', 217);
+			VALUES (327,'8,5','cm','width', 268);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (328,'5,2','cm','height', 217);
+			VALUES (328,'5,2','cm','height', 268);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('217', '2');
 /* Tabela DescriptiveNotes */
@@ -5062,11 +5062,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,218);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (218,'Zincogravura', 218);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (218,218);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (269,218);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (329,'7','cm','width', 218);
+			VALUES (329,'7','cm','width', 269);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (330,'5','cm','height', 218);
+			VALUES (330,'5','cm','height', 269);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -5094,11 +5094,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,219);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (219,'Zincogravura', 219);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (219,219);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (270,219);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (331,'6,6','cm','width', 219);
+			VALUES (331,'6,6','cm','width', 270);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (332,'5','cm','height', 219);
+			VALUES (332,'5','cm','height', 270);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('219', '2');
 /* Tabela DescriptiveNotes */
@@ -5122,11 +5122,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,220);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (220,'Zincogravura', 220);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (220,220);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (271,220);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (333,'7','cm','width', 220);
+			VALUES (333,'7','cm','width', 271);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (334,'5','cm','height', 220);
+			VALUES (334,'5','cm','height', 271);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('220', '2');
 /* Tabela DescriptiveNotes */
@@ -5152,11 +5152,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,221);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (221,'Zincogravura', 221);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (221,221);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (272,221);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (335,'6,7','cm','width', 221);
+			VALUES (335,'6,7','cm','width', 272);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (336,'4,6','cm','height', 221);
+			VALUES (336,'4,6','cm','height', 272);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('221', '2');
 /* Tabela DescriptiveNotes */
@@ -5180,11 +5180,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,222);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (222,'Zincogravura', 222);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (222,222);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (273,222);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (337,'6,5','cm','width', 222);
+			VALUES (337,'6,5','cm','width', 273);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (338,'4,2','cm','height', 222);
+			VALUES (338,'4,2','cm','height', 273);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('222', '2');
 /* Tabela DescriptiveNotes */
@@ -5210,11 +5210,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,223);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (223,'Photopolímero', 223);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (223,223);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (274,223);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (339,'10,9','cm','width', 223);
+			VALUES (339,'10,9','cm','width', 274);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (340,'6,7','cm','height', 223);
+			VALUES (340,'6,7','cm','height', 274);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('223', '2');
 /* Tabela DescriptiveNotes */
@@ -5238,11 +5238,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,224);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (224,'Photopolímero', 224);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (224,224);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (275,224);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (341,'8,9','cm','width', 224);
+			VALUES (341,'8,9','cm','width', 275);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (342,'6,1','cm','height', 224);
+			VALUES (342,'6,1','cm','height', 275);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('224', '2');
 /* Tabela DescriptiveNotes */
@@ -5272,11 +5272,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,225);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (225,'Zincogravura', 225);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (225,225);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (276,225);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (343,'9','cm','width', 225);
+			VALUES (343,'9','cm','width', 276);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (344,'7','cm','height', 225);
+			VALUES (344,'7','cm','height', 276);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('225', '2');
 /* Tabela DescriptiveNotes */
@@ -5300,11 +5300,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,226);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (226,'Zincogravura', 226);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (226,226);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (277,226);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (345,'7,9','cm','width', 226);
+			VALUES (345,'7,9','cm','width', 277);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (346,'5,2','cm','height', 226);
+			VALUES (346,'5,2','cm','height', 277);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('226', '2');
 /* Tabela DescriptiveNotes */
@@ -5328,11 +5328,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,227);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (227,'Zincogravura', 227);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (227,227);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (278,227);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (347,'6,8','cm','width', 227);
+			VALUES (347,'6,8','cm','width', 278);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (348,'4,6','cm','height', 227);
+			VALUES (348,'4,6','cm','height', 278);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('227', '2');
 /* Tabela DescriptiveNotes */
@@ -5356,11 +5356,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,228);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (228,'Zincogravura', 228);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (228,228);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (279,228);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (349,'8,7','cm','width', 228);
+			VALUES (349,'8,7','cm','width', 279);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (350,'5,8','cm','height', 228);
+			VALUES (350,'5,8','cm','height', 279);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -5388,11 +5388,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,229);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (229,'Zincogravura', 229);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (229,229);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (280,229);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (351,'8,7','cm','width', 229);
+			VALUES (351,'8,7','cm','width', 280);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (352,'5,8','cm','height', 229);
+			VALUES (352,'5,8','cm','height', 280);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -5420,11 +5420,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,230);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (230,'Zincogravura', 230);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (230,230);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (281,230);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (353,'8,9','cm','width', 230);
+			VALUES (353,'8,9','cm','width', 281);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (354,'5,7','cm','height', 230);
+			VALUES (354,'5,7','cm','height', 281);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('230', '2');
 /* Tabela DescriptiveNotes */
@@ -5448,11 +5448,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,231);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (231,'Zincogravura', 231);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (231,231);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (282,231);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (355,'9','cm','width', 231);
+			VALUES (355,'9','cm','width', 282);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (356,'5,8','cm','height', 231);
+			VALUES (356,'5,8','cm','height', 282);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -5480,11 +5480,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,232);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (232,'Zincogravura', 232);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (232,232);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (283,232);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (357,'4,5','cm','width', 232);
+			VALUES (357,'4,5','cm','width', 283);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (358,'7,5','cm','height', 232);
+			VALUES (358,'7,5','cm','height', 283);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('232', '2');
 /* Tabela DescriptiveNotes */
@@ -5508,11 +5508,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,233);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (233,'Zincogravura', 233);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (233,233);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (284,233);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (359,'9,9','cm','width', 233);
+			VALUES (359,'9,9','cm','width', 284);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (360,'15','cm','height', 233);
+			VALUES (360,'15','cm','height', 284);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('233', '2');
 /* Tabela DescriptiveNotes */
@@ -5536,11 +5536,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,234);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (234,'Zincogravura', 234);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (234,234);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (285,234);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (361,'8,9','cm','width', 234);
+			VALUES (361,'8,9','cm','width', 285);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (362,'6,3','cm','height', 234);
+			VALUES (362,'6,3','cm','height', 285);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('234', '2');
 /* Tabela DescriptiveNotes */
@@ -5564,11 +5564,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,235);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (235,'Zincogravura', 235);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (235,235);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (286,235);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (363,'7,2','cm','width', 235);
+			VALUES (363,'7,2','cm','width', 286);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (364,'10,6','cm','height', 235);
+			VALUES (364,'10,6','cm','height', 286);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -5601,11 +5601,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (10,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (10,10);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (236,10);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (236,236);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (287,236);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (365,'5,4','cm','width', 236);
+			VALUES (365,'5,4','cm','width', 287);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (366,'8,2','cm','height', 236);
+			VALUES (366,'8,2','cm','height', 287);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('236', '2');
 /* Tabela DescriptiveNotes */
@@ -5629,11 +5629,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,237);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (237,'Zincogravura', 237);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (237,237);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (288,237);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (367,'3,5','cm','width', 237);
+			VALUES (367,'3,5','cm','width', 288);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (368,'6,8','cm','height', 237);
+			VALUES (368,'6,8','cm','height', 288);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -5661,11 +5661,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,238);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (238,'Zincogravura', 238);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (238,238);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (289,238);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (369,'5,5','cm','width', 238);
+			VALUES (369,'5,5','cm','width', 289);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (370,'8,9','cm','height', 238);
+			VALUES (370,'8,9','cm','height', 289);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -5695,11 +5695,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,239);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (239,'Zincogravura', 239);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (239,239);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (290,239);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (371,'5,5','cm','width', 239);
+			VALUES (371,'5,5','cm','width', 290);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (372,'9','cm','height', 239);
+			VALUES (372,'9','cm','height', 290);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('239', '2');
 /* Tabela DescriptiveNotes */
@@ -5723,11 +5723,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,240);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (240,'Zincogravura', 240);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (240,240);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (291,240);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (373,'7','cm','width', 240);
+			VALUES (373,'7','cm','width', 291);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (374,'9,4','cm','height', 240);
+			VALUES (374,'9,4','cm','height', 291);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -5760,11 +5760,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (11,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (11,11);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (241,11);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (241,241);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (292,241);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (375,'5,5','cm','width', 241);
+			VALUES (375,'5,5','cm','width', 292);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (376,'9,2','cm','height', 241);
+			VALUES (376,'9,2','cm','height', 292);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -5792,11 +5792,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,242);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (242,'Zincogravura', 242);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (242,242);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (293,242);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (377,'5,7','cm','width', 242);
+			VALUES (377,'5,7','cm','width', 293);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (378,'8','cm','height', 242);
+			VALUES (378,'8','cm','height', 293);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('242', '2');
 /* Tabela DescriptiveNotes */
@@ -5820,11 +5820,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,243);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (243,'Zincogravura', 243);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (243,243);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (294,243);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (379,'6,1','cm','width', 243);
+			VALUES (379,'6,1','cm','width', 294);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (380,'8,7','cm','height', 243);
+			VALUES (380,'8,7','cm','height', 294);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -5852,11 +5852,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,244);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (244,'Zincogravura', 244);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (244,244);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (295,244);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (381,'6,7','cm','width', 244);
+			VALUES (381,'6,7','cm','width', 295);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (382,'6','cm','height', 244);
+			VALUES (382,'6','cm','height', 295);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('244', '2');
 /* Tabela DescriptiveNotes */
@@ -5882,11 +5882,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,245);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (245,'Zincogravura', 245);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (245,245);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (296,245);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (383,'6','cm','width', 245);
+			VALUES (383,'6','cm','width', 296);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (384,'4,5','cm','height', 245);
+			VALUES (384,'4,5','cm','height', 296);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('245', '2');
 /* Tabela DescriptiveNotes */
@@ -5910,11 +5910,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,246);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (246,'Zincogravura', 246);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (246,246);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (297,246);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (385,'5,5','cm','width', 246);
+			VALUES (385,'5,5','cm','width', 297);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (386,'7','cm','height', 246);
+			VALUES (386,'7','cm','height', 297);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('246', '2');
 /* Tabela DescriptiveNotes */
@@ -5938,11 +5938,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,247);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (247,'Zincogravura', 247);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (247,247);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (298,247);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (387,'7,3','cm','width', 247);
+			VALUES (387,'7,3','cm','width', 298);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (388,'5,5','cm','height', 247);
+			VALUES (388,'5,5','cm','height', 298);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('247', '2');
 /* Tabela DescriptiveNotes */
@@ -5966,11 +5966,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,248);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (248,'Zincogravura', 248);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (248,248);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (299,248);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (389,'7','cm','width', 248);
+			VALUES (389,'7','cm','width', 299);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (390,'4,7','cm','height', 248);
+			VALUES (390,'4,7','cm','height', 299);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('248', '2');
 /* Tabela DescriptiveNotes */
@@ -5996,11 +5996,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,249);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (249,'Zincogravura', 249);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (249,249);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (300,249);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (391,'6,4','cm','width', 249);
+			VALUES (391,'6,4','cm','width', 300);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (392,'4','cm','height', 249);
+			VALUES (392,'4','cm','height', 300);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('249', '2');
 /* Tabela DescriptiveNotes */
@@ -6024,11 +6024,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,250);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (250,'Zincogravura', 250);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (250,250);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (301,250);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (393,'8','cm','width', 250);
+			VALUES (393,'8','cm','width', 301);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (394,'5','cm','height', 250);
+			VALUES (394,'5','cm','height', 301);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -6056,11 +6056,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,251);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (251,'Zincogravura', 251);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (251,251);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (302,251);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (395,'6,5','cm','width', 251);
+			VALUES (395,'6,5','cm','width', 302);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (396,'4,6','cm','height', 251);
+			VALUES (396,'4,6','cm','height', 302);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('251', '2');
 /* Tabela DescriptiveNotes */
@@ -6084,11 +6084,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,252);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (252,'Zincogravura', 252);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (252,252);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (303,252);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (397,'5','cm','width', 252);
+			VALUES (397,'5','cm','width', 303);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (398,'3,5','cm','height', 252);
+			VALUES (398,'3,5','cm','height', 303);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('252', '2');
 /* Tabela DescriptiveNotes */
@@ -6117,11 +6117,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (12,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (12,12);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (253,12);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (253,253);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (304,253);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (399,'9,4','cm','width', 253);
+			VALUES (399,'9,4','cm','width', 304);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (400,'5,8','cm','height', 253);
+			VALUES (400,'5,8','cm','height', 304);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -6149,11 +6149,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,254);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (254,'Zincogravura', 254);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (254,254);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (305,254);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (401,'6,4','cm','width', 254);
+			VALUES (401,'6,4','cm','width', 305);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (402,'4,5','cm','height', 254);
+			VALUES (402,'4,5','cm','height', 305);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('254', '2');
 /* Tabela DescriptiveNotes */
@@ -6177,11 +6177,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,255);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (255,'Zincogravura', 255);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (255,255);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (306,255);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (403,'5,7','cm','width', 255);
+			VALUES (403,'5,7','cm','width', 306);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (404,'4','cm','height', 255);
+			VALUES (404,'4','cm','height', 306);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('255', '2');
 /* Tabela DescriptiveNotes */
@@ -6205,11 +6205,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,256);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (256,'Zincogravura', 256);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (256,256);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (307,256);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (405,'5,2','cm','width', 256);
+			VALUES (405,'5,2','cm','width', 307);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (406,'9,9','cm','height', 256);
+			VALUES (406,'9,9','cm','height', 307);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('256', '2');
 /* Tabela DescriptiveNotes */
@@ -6233,11 +6233,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,257);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (257,'Zincogravura', 257);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (257,257);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (308,257);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (407,'8,2','cm','width', 257);
+			VALUES (407,'8,2','cm','width', 308);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (408,'5,5','cm','height', 257);
+			VALUES (408,'5,5','cm','height', 308);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('257', '2');
 /* Tabela DescriptiveNotes */
@@ -6261,11 +6261,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,258);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (258,'Zincogravura', 258);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (258,258);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (309,258);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (409,'7,9','cm','width', 258);
+			VALUES (409,'7,9','cm','width', 309);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (410,'5,6','cm','height', 258);
+			VALUES (410,'5,6','cm','height', 309);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('258', '2');
 /* Tabela DescriptiveNotes */
@@ -6289,11 +6289,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,259);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (259,'Zincogravura', 259);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (259,259);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (310,259);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (411,'6,3','cm','width', 259);
+			VALUES (411,'6,3','cm','width', 310);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (412,'4,7','cm','height', 259);
+			VALUES (412,'4,7','cm','height', 310);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('259', '2');
 /* Tabela DescriptiveNotes */
@@ -6317,11 +6317,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,260);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (260,'Zincogravura', 260);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (260,260);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (311,260);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (413,'7,3','cm','width', 260);
+			VALUES (413,'7,3','cm','width', 311);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (414,'4,3','cm','height', 260);
+			VALUES (414,'4,3','cm','height', 311);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('260', '2');
 /* Tabela DescriptiveNotes */
@@ -6345,11 +6345,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,261);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (261,'Zincogravura', 261);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (261,261);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (312,261);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (415,'5,3','cm','width', 261);
+			VALUES (415,'5,3','cm','width', 312);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (416,'9,2','cm','height', 261);
+			VALUES (416,'9,2','cm','height', 312);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('261', '2');
 /* Tabela DescriptiveNotes */
@@ -6373,11 +6373,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,262);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (262,'Zincogravura', 262);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (262,262);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (313,262);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (417,'7,6','cm','width', 262);
+			VALUES (417,'7,6','cm','width', 313);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (418,'5,5','cm','height', 262);
+			VALUES (418,'5,5','cm','height', 313);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('262', '2');
 /* Tabela DescriptiveNotes */
@@ -6401,11 +6401,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,263);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (263,'Zincogravura', 263);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (263,263);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (314,263);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (419,'9','cm','width', 263);
+			VALUES (419,'9','cm','width', 314);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (420,'5,7','cm','height', 263);
+			VALUES (420,'5,7','cm','height', 314);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('263', '2');
 /* Tabela DescriptiveNotes */
@@ -6429,11 +6429,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,264);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (264,'Zincogravura', 264);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (264,264);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (315,264);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (421,'9,2','cm','width', 264);
+			VALUES (421,'9,2','cm','width', 315);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (422,'7,1','cm','height', 264);
+			VALUES (422,'7,1','cm','height', 315);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('264', '2');
 /* Tabela DescriptiveNotes */
@@ -6457,11 +6457,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,265);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (265,'Zincogravura', 265);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (265,265);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (316,265);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (423,'6,2','cm','width', 265);
+			VALUES (423,'6,2','cm','width', 316);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (424,'8,9','cm','height', 265);
+			VALUES (424,'8,9','cm','height', 316);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('265', '2');
 /* Tabela DescriptiveNotes */
@@ -6485,11 +6485,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,266);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (266,'Zincogravura', 266);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (266,266);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (317,266);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (425,'8,4','cm','width', 266);
+			VALUES (425,'8,4','cm','width', 317);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (426,'6','cm','height', 266);
+			VALUES (426,'6','cm','height', 317);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('266', '2');
 /* Tabela DescriptiveNotes */
@@ -6518,11 +6518,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (13,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (13,13);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (267,13);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (267,267);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (318,267);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (427,'10','cm','width', 267);
+			VALUES (427,'10','cm','width', 318);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (428,'9,5','cm','height', 267);
+			VALUES (428,'9,5','cm','height', 318);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('267', '2');
 /* Tabela DescriptiveNotes */
@@ -6546,11 +6546,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,268);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (268,'Xilogravura', 268);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (268,268);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (319,268);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (429,'8,5','cm','width', 268);
+			VALUES (429,'8,5','cm','width', 319);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (430,'5,8','cm','height', 268);
+			VALUES (430,'5,8','cm','height', 319);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('268', '2');
 /* Tabela DescriptiveNotes */
@@ -6574,11 +6574,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,269);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (269,'Xilogravura', 269);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (269,269);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (320,269);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (431,'6,9','cm','width', 269);
+			VALUES (431,'6,9','cm','width', 320);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (432,'5,2','cm','height', 269);
+			VALUES (432,'5,2','cm','height', 320);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('269', '2');
 /* Tabela DescriptiveNotes */
@@ -6602,11 +6602,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,270);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (270,'Xilogravura', 270);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (270,270);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (321,270);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (433,'7,8','cm','width', 270);
+			VALUES (433,'7,8','cm','width', 321);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (434,'4,5','cm','height', 270);
+			VALUES (434,'4,5','cm','height', 321);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('270', '2');
 /* Tabela DescriptiveNotes */
@@ -6635,11 +6635,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (14,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (14,14);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (271,14);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (271,271);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (322,271);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (435,'16','cm','width', 271);
+			VALUES (435,'16','cm','width', 322);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (436,'13,5','cm','height', 271);
+			VALUES (436,'13,5','cm','height', 322);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('271', '2');
 /* Tabela DescriptiveNotes */
@@ -6663,11 +6663,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,272);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (272,'Zincogravura', 272);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (272,272);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (323,272);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (437,'13','cm','width', 272);
+			VALUES (437,'13','cm','width', 323);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (438,'9','cm','height', 272);
+			VALUES (438,'9','cm','height', 323);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('272', '2');
 /* Tabela DescriptiveNotes */
@@ -6693,11 +6693,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,273);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (273,'Zincogravura', 273);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (273,273);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (324,273);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (439,'12','cm','width', 273);
+			VALUES (439,'12','cm','width', 324);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (440,'7,9','cm','height', 273);
+			VALUES (440,'7,9','cm','height', 324);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('273', '2');
 /* Tabela DescriptiveNotes */
@@ -6729,11 +6729,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,274);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (274,'Zincogravura', 274);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (274,274);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (325,274);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (441,'11,7','cm','width', 274);
+			VALUES (441,'11,7','cm','width', 325);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (442,'8','cm','height', 274);
+			VALUES (442,'8','cm','height', 325);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('274', '2');
 /* Tabela DescriptiveNotes */
@@ -6765,11 +6765,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,275);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (275,'Zincogravura', 275);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (275,275);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (326,275);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (443,'13','cm','width', 275);
+			VALUES (443,'13','cm','width', 326);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (444,'9','cm','height', 275);
+			VALUES (444,'9','cm','height', 326);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('275', '2');
 /* Tabela DescriptiveNotes */
@@ -6795,11 +6795,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,276);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (276,'Zincogravura', 276);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (276,276);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (327,276);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (445,'13,1','cm','width', 276);
+			VALUES (445,'13,1','cm','width', 327);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (446,'8,5','cm','height', 276);
+			VALUES (446,'8,5','cm','height', 327);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('276', '2');
 /* Tabela DescriptiveNotes */
@@ -6825,11 +6825,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,277);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (277,'Zincogravura', 277);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (277,277);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (328,277);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (447,'13,2','cm','width', 277);
+			VALUES (447,'13,2','cm','width', 328);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (448,'9,2','cm','height', 277);
+			VALUES (448,'9,2','cm','height', 328);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -6857,11 +6857,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,278);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (278,'Zincogravura', 278);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (278,278);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (329,278);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (449,'10,4','cm','width', 278);
+			VALUES (449,'10,4','cm','width', 329);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (450,'7','cm','height', 278);
+			VALUES (450,'7','cm','height', 329);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('278', '2');
 /* Tabela DescriptiveNotes */
@@ -6885,11 +6885,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,279);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (279,'Zincogravura', 279);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (279,279);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (330,279);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (451,'9,2','cm','width', 279);
+			VALUES (451,'9,2','cm','width', 330);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (452,'6','cm','height', 279);
+			VALUES (452,'6','cm','height', 330);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('279', '2');
 /* Tabela DescriptiveNotes */
@@ -6913,11 +6913,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,280);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (280,'Zincogravura', 280);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (280,280);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (331,280);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (453,'11,56','cm','width', 280);
+			VALUES (453,'11,56','cm','width', 331);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (454,'4,9','cm','height', 280);
+			VALUES (454,'4,9','cm','height', 331);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('280', '2');
 /* Tabela DescriptiveNotes */
@@ -6950,11 +6950,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (15,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (15,15);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (281,15);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (281,281);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (332,281);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (455,'8,4','cm','width', 281);
+			VALUES (455,'8,4','cm','width', 332);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (456,'6,3','cm','height', 281);
+			VALUES (456,'6,3','cm','height', 332);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('281', '2');
 /* Tabela DescriptiveNotes */
@@ -6978,11 +6978,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,282);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (282,'Zincogravura', 282);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (282,282);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (333,282);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (457,'8,6','cm','width', 282);
+			VALUES (457,'8,6','cm','width', 333);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (458,'6','cm','height', 282);
+			VALUES (458,'6','cm','height', 333);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('282', '2');
 /* Tabela DescriptiveNotes */
@@ -7008,11 +7008,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,283);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (283,'Zincogravura', 283);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (283,283);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (334,283);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (459,'7,2','cm','width', 283);
+			VALUES (459,'7,2','cm','width', 334);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (460,'6','cm','height', 283);
+			VALUES (460,'6','cm','height', 334);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('283', '2');
 /* Tabela DescriptiveNotes */
@@ -7038,11 +7038,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,284);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (284,'Zincogravura', 284);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (284,284);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (335,284);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (461,'8,5','cm','width', 284);
+			VALUES (461,'8,5','cm','width', 335);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (462,'5,7','cm','height', 284);
+			VALUES (462,'5,7','cm','height', 335);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('284', '2');
 /* Tabela DescriptiveNotes */
@@ -7066,11 +7066,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,285);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (285,'Zincogravura', 285);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (285,285);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (336,285);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (463,'8,5','cm','width', 285);
+			VALUES (463,'8,5','cm','width', 336);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (464,'5,5','cm','height', 285);
+			VALUES (464,'5,5','cm','height', 336);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -7098,11 +7098,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,286);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (286,'Zincogravura', 286);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (286,286);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (337,286);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (465,'8,5','cm','width', 286);
+			VALUES (465,'8,5','cm','width', 337);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (466,'7,4','cm','height', 286);
+			VALUES (466,'7,4','cm','height', 337);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('286', '2');
 /* Tabela DescriptiveNotes */
@@ -7126,11 +7126,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,287);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (287,'Zincogravura', 287);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (287,287);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (338,287);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (467,'8,8','cm','width', 287);
+			VALUES (467,'8,8','cm','width', 338);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (468,'6,0','cm','height', 287);
+			VALUES (468,'6,0','cm','height', 338);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('287', '2');
 /* Tabela DescriptiveNotes */
@@ -7154,11 +7154,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,288);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (288,'Zincogravura', 288);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (288,288);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (339,288);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (469,'8,3','cm','width', 288);
+			VALUES (469,'8,3','cm','width', 339);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (470,'5,5','cm','height', 288);
+			VALUES (470,'5,5','cm','height', 339);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -7186,11 +7186,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,289);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (289,'Zincogravura', 289);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (289,289);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (340,289);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (471,'7,8','cm','width', 289);
+			VALUES (471,'7,8','cm','width', 340);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (472,'6','cm','height', 289);
+			VALUES (472,'6','cm','height', 340);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('289', '2');
 /* Tabela DescriptiveNotes */
@@ -7216,11 +7216,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,290);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (290,'Zincogravura', 290);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (290,290);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (341,290);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (473,'10,5','cm','width', 290);
+			VALUES (473,'10,5','cm','width', 341);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (474,'6,3','cm','height', 290);
+			VALUES (474,'6,3','cm','height', 341);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('290', '2');
 /* Tabela DescriptiveNotes */
@@ -7252,11 +7252,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,291);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (291,'Zincogravura', 291);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (291,291);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (342,291);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (475,'8,5','cm','width', 291);
+			VALUES (475,'8,5','cm','width', 342);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (476,'5,3','cm','height', 291);
+			VALUES (476,'5,3','cm','height', 342);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -7286,11 +7286,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,292);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (292,'Zincogravura', 292);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (292,292);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (343,292);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (477,'9,2','cm','width', 292);
+			VALUES (477,'9,2','cm','width', 343);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (478,'6,5','cm','height', 292);
+			VALUES (478,'6,5','cm','height', 343);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('292', '2');
 /* Tabela DescriptiveNotes */
@@ -7314,11 +7314,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,293);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (293,'Zincogravura', 293);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (293,293);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (344,293);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (479,'8,4','cm','width', 293);
+			VALUES (479,'8,4','cm','width', 344);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (480,'6','cm','height', 293);
+			VALUES (480,'6','cm','height', 344);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('293', '2');
 /* Tabela DescriptiveNotes */
@@ -7342,11 +7342,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,294);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (294,'Zincogravura', 294);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (294,294);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (345,294);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (481,'8,7','cm','width', 294);
+			VALUES (481,'8,7','cm','width', 345);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (482,'5,7','cm','height', 294);
+			VALUES (482,'5,7','cm','height', 345);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -7374,11 +7374,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,295);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (295,'Zincogravura', 295);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (295,295);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (346,295);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (483,'8,1','cm','width', 295);
+			VALUES (483,'8,1','cm','width', 346);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (484,'5,5','cm','height', 295);
+			VALUES (484,'5,5','cm','height', 346);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -7406,11 +7406,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,296);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (296,'Zincogravura', 296);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (296,296);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (347,296);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (485,'8,7','cm','width', 296);
+			VALUES (485,'8,7','cm','width', 347);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (486,'6','cm','height', 296);
+			VALUES (486,'6','cm','height', 347);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -7438,11 +7438,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,297);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (297,'Zincogravura', 297);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (297,297);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (348,297);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (487,'7','cm','width', 297);
+			VALUES (487,'7','cm','width', 348);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (488,'9,5','cm','height', 297);
+			VALUES (488,'9,5','cm','height', 348);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('297', '2');
 /* Tabela DescriptiveNotes */
@@ -7466,11 +7466,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,298);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (298,'Zincogravura', 298);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (298,298);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (349,298);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (489,'8,7','cm','width', 298);
+			VALUES (489,'8,7','cm','width', 349);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (490,'5,3','cm','height', 298);
+			VALUES (490,'5,3','cm','height', 349);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('298', '2');
 /* Tabela DescriptiveNotes */
@@ -7494,11 +7494,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,299);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (299,'Zincogravura', 299);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (299,299);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (350,299);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (491,'6,4','cm','width', 299);
+			VALUES (491,'6,4','cm','width', 350);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (492,'9,4','cm','height', 299);
+			VALUES (492,'9,4','cm','height', 350);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('299', '2');
 /* Tabela DescriptiveNotes */
@@ -7522,11 +7522,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,300);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (300,'Zincogravura', 300);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (300,300);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (351,300);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (493,'6,4','cm','width', 300);
+			VALUES (493,'6,4','cm','width', 351);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (494,'11,4','cm','height', 300);
+			VALUES (494,'11,4','cm','height', 351);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('300', '2');
 /* Tabela DescriptiveNotes */
@@ -7550,11 +7550,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,301);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (301,'Zincogravura', 301);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (301,301);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (352,301);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (495,'11','cm','width', 301);
+			VALUES (495,'11','cm','width', 352);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (496,'7','cm','height', 301);
+			VALUES (496,'7','cm','height', 352);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('301', '2');
 /* Tabela DescriptiveNotes */
@@ -7578,11 +7578,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,302);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (302,'Zincogravura', 302);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (302,302);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (353,302);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (497,'8,1','cm','width', 302);
+			VALUES (497,'8,1','cm','width', 353);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (498,'5,5','cm','height', 302);
+			VALUES (498,'5,5','cm','height', 353);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -7610,11 +7610,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,303);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (303,'Zincogravura', 303);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (303,303);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (354,303);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (499,'7,9','cm','width', 303);
+			VALUES (499,'7,9','cm','width', 354);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (500,'5,6','cm','height', 303);
+			VALUES (500,'5,6','cm','height', 354);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('303', '2');
 /* Tabela DescriptiveNotes */
@@ -7643,11 +7643,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (16,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (16,16);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (304,16);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (304,304);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (355,304);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (501,'6','cm','width', 304);
+			VALUES (501,'6','cm','width', 355);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (502,'8,9','cm','height', 304);
+			VALUES (502,'8,9','cm','height', 355);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('304', '2');
 /* Tabela DescriptiveNotes */
@@ -7671,11 +7671,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,305);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (305,'Zincogravura', 305);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (305,305);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (356,305);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (503,'5,9','cm','width', 305);
+			VALUES (503,'5,9','cm','width', 356);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (504,'9','cm','height', 305);
+			VALUES (504,'9','cm','height', 356);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('305', '2');
 /* Tabela DescriptiveNotes */
@@ -7699,11 +7699,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,306);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (306,'Zincogravura', 306);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (306,306);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (357,306);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (505,'5,5','cm','width', 306);
+			VALUES (505,'5,5','cm','width', 357);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (506,'9','cm','height', 306);
+			VALUES (506,'9','cm','height', 357);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -7731,11 +7731,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,307);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (307,'Zincogravura', 307);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (307,307);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (358,307);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (507,'6,3','cm','width', 307);
+			VALUES (507,'6,3','cm','width', 358);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (508,'10','cm','height', 307);
+			VALUES (508,'10','cm','height', 358);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('307', '2');
 /* Tabela DescriptiveNotes */
@@ -7763,11 +7763,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,308);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (308,'Zincogravura', 308);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (308,308);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (359,308);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (509,'7','cm','width', 308);
+			VALUES (509,'7','cm','width', 359);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (510,'4,9','cm','height', 308);
+			VALUES (510,'4,9','cm','height', 359);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('308', '2');
 /* Tabela DescriptiveNotes */
@@ -7791,11 +7791,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,309);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (309,'Zincogravura', 309);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (309,309);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (360,309);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (511,'7,5','cm','width', 309);
+			VALUES (511,'7,5','cm','width', 360);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (512,'5,5','cm','height', 309);
+			VALUES (512,'5,5','cm','height', 360);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('309', '2');
 /* Tabela DescriptiveNotes */
@@ -7819,11 +7819,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,310);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (310,'Zincogravura', 310);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (310,310);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (361,310);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (513,'8,9','cm','width', 310);
+			VALUES (513,'8,9','cm','width', 361);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (514,'8,1','cm','height', 310);
+			VALUES (514,'8,1','cm','height', 361);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('310', '2');
 /* Tabela DescriptiveNotes */
@@ -7851,11 +7851,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,311);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (311,'Zincogravura', 311);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (311,311);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (362,311);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (515,'8,5','cm','width', 311);
+			VALUES (515,'8,5','cm','width', 362);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (516,'7','cm','height', 311);
+			VALUES (516,'7','cm','height', 362);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('311', '2');
 /* Tabela DescriptiveNotes */
@@ -7889,11 +7889,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,312);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (312,'Zincogravura', 312);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (312,312);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (363,312);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (517,'8,2','cm','width', 312);
+			VALUES (517,'8,2','cm','width', 363);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (518,'5,4','cm','height', 312);
+			VALUES (518,'5,4','cm','height', 363);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('312', '2');
 /* Tabela DescriptiveNotes */
@@ -7917,11 +7917,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,313);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (313,'Zincogravura', 313);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (313,313);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (364,313);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (519,'5,5','cm','width', 313);
+			VALUES (519,'5,5','cm','width', 364);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (520,'8,8','cm','height', 313);
+			VALUES (520,'8,8','cm','height', 364);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('313', '2');
 /* Tabela DescriptiveNotes */
@@ -7945,11 +7945,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,314);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (314,'Zincogravura', 314);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (314,314);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (365,314);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (521,'7,8','cm','width', 314);
+			VALUES (521,'7,8','cm','width', 365);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (522,'5','cm','height', 314);
+			VALUES (522,'5','cm','height', 365);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('314', '2');
 /* Tabela DescriptiveNotes */
@@ -7973,11 +7973,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,315);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (315,'Zincogravura', 315);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (315,315);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (366,315);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (523,'9,8','cm','width', 315);
+			VALUES (523,'9,8','cm','width', 366);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (524,'6,4','cm','height', 315);
+			VALUES (524,'6,4','cm','height', 366);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('315', '2');
 /* Tabela DescriptiveNotes */
@@ -8003,11 +8003,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,316);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (316,'Zincogravura', 316);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (316,316);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (367,316);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (525,'7,5','cm','width', 316);
+			VALUES (525,'7,5','cm','width', 367);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (526,'5','cm','height', 316);
+			VALUES (526,'5','cm','height', 367);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('316', '2');
 /* Tabela DescriptiveNotes */
@@ -8033,11 +8033,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,317);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (317,'Zincogravura', 317);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (317,317);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (368,317);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (527,'7,5','cm','width', 317);
+			VALUES (527,'7,5','cm','width', 368);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (528,'5,7','cm','height', 317);
+			VALUES (528,'5,7','cm','height', 368);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('317', '2');
 /* Tabela DescriptiveNotes */
@@ -8061,11 +8061,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,318);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (318,'Zincogravura', 318);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (318,318);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (369,318);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (529,'7,9','cm','width', 318);
+			VALUES (529,'7,9','cm','width', 369);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (530,'5,5','cm','height', 318);
+			VALUES (530,'5,5','cm','height', 369);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('318', '2');
 /* Tabela DescriptiveNotes */
@@ -8089,11 +8089,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,319);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (319,'Zincogravura', 319);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (319,319);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (370,319);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (531,'9','cm','width', 319);
+			VALUES (531,'9','cm','width', 370);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (532,'6,5','cm','height', 319);
+			VALUES (532,'6,5','cm','height', 370);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('319', '2');
 /* Tabela DescriptiveNotes */
@@ -8117,11 +8117,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,320);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (320,'Zincogravura', 320);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (320,320);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (371,320);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (533,'10,5','cm','width', 320);
+			VALUES (533,'10,5','cm','width', 371);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (534,'6,5','cm','height', 320);
+			VALUES (534,'6,5','cm','height', 371);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('320', '2');
 /* Tabela DescriptiveNotes */
@@ -8145,11 +8145,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,321);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (321,'Zincogravura', 321);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (321,321);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (372,321);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (535,'6,5','cm','width', 321);
+			VALUES (535,'6,5','cm','width', 372);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (536,'8,5','cm','height', 321);
+			VALUES (536,'8,5','cm','height', 372);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('321', '2');
 /* Tabela DescriptiveNotes */
@@ -8173,11 +8173,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,322);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (322,'Zincogravura', 322);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (322,322);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (373,322);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (537,'9,8','cm','width', 322);
+			VALUES (537,'9,8','cm','width', 373);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (538,'6,5','cm','height', 322);
+			VALUES (538,'6,5','cm','height', 373);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('322', '2');
 /* Tabela DescriptiveNotes */
@@ -8205,11 +8205,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,323);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (323,'Zincogravura', 323);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (323,323);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (374,323);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (539,'10,9','cm','width', 323);
+			VALUES (539,'10,9','cm','width', 374);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (540,'7,2','cm','height', 323);
+			VALUES (540,'7,2','cm','height', 374);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('323', '2');
 /* Tabela DescriptiveNotes */
@@ -8242,11 +8242,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (17,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (17,17);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (324,17);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (324,324);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (375,324);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (541,'9,5','cm','width', 324);
+			VALUES (541,'9,5','cm','width', 375);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (542,'6,9','cm','height', 324);
+			VALUES (542,'6,9','cm','height', 375);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('324', '2');
 /* Tabela DescriptiveNotes */
@@ -8270,11 +8270,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,325);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (325,'Zincogravura', 325);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (325,325);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (376,325);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (543,'9','cm','width', 325);
+			VALUES (543,'9','cm','width', 376);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (544,'6,4','cm','height', 325);
+			VALUES (544,'6,4','cm','height', 376);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('325', '2');
 /* Tabela DescriptiveNotes */
@@ -8311,11 +8311,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (18,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (18,18);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (326,18);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (326,326);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (377,326);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (545,'6','cm','width', 326);
+			VALUES (545,'6','cm','width', 377);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (546,'9,5','cm','height', 326);
+			VALUES (546,'9,5','cm','height', 377);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('326', '2');
 /* Tabela DescriptiveNotes */
@@ -8339,11 +8339,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,327);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (327,'Zincogravura', 327);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (327,327);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (378,327);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (547,'9','cm','width', 327);
+			VALUES (547,'9','cm','width', 378);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (548,'6,5','cm','height', 327);
+			VALUES (548,'6,5','cm','height', 378);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('327', '2');
 /* Tabela DescriptiveNotes */
@@ -8397,11 +8397,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,328);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (328,'Zincogravura', 328);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (328,328);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (379,328);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (549,'10,2','cm','width', 328);
+			VALUES (549,'10,2','cm','width', 379);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (550,'8','cm','height', 328);
+			VALUES (550,'8','cm','height', 379);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('328', '2');
 /* Tabela DescriptiveNotes */
@@ -8425,11 +8425,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,329);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (329,'Zincogravura', 329);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (329,329);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (380,329);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (551,'8,5','cm','width', 329);
+			VALUES (551,'8,5','cm','width', 380);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (552,'5,3','cm','height', 329);
+			VALUES (552,'5,3','cm','height', 380);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('329', '2');
 /* Tabela DescriptiveNotes */
@@ -8453,11 +8453,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,330);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (330,'Photopolímero', 330);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (330,330);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (381,330);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (553,'8','cm','width', 330);
+			VALUES (553,'8','cm','width', 381);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (554,'6','cm','height', 330);
+			VALUES (554,'6','cm','height', 381);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('330', '2');
 /* Tabela DescriptiveNotes */
@@ -8481,11 +8481,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,331);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (331,'Zincogravura', 331);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (331,331);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (382,331);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (555,'7,8','cm','width', 331);
+			VALUES (555,'7,8','cm','width', 382);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (556,'5','cm','height', 331);
+			VALUES (556,'5','cm','height', 382);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('331', '2');
 /* Tabela DescriptiveNotes */
@@ -8509,11 +8509,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,332);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (332,'Zincogravura', 332);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (332,332);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (383,332);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (557,'5,4','cm','width', 332);
+			VALUES (557,'5,4','cm','width', 383);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (558,'8,4','cm','height', 332);
+			VALUES (558,'8,4','cm','height', 383);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('332', '2');
 /* Tabela DescriptiveNotes */
@@ -8539,11 +8539,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,333);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (333,'Zincogravura', 333);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (333,333);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (384,333);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (559,'7,5','cm','width', 333);
+			VALUES (559,'7,5','cm','width', 384);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (560,'5,6','cm','height', 333);
+			VALUES (560,'5,6','cm','height', 384);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('333', '2');
 /* Tabela DescriptiveNotes */
@@ -8571,11 +8571,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,334);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (334,'Zincogravura', 334);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (334,334);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (385,334);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (561,'6,4','cm','width', 334);
+			VALUES (561,'6,4','cm','width', 385);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (562,'4,9','cm','height', 334);
+			VALUES (562,'4,9','cm','height', 385);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('334', '2');
 /* Tabela DescriptiveNotes */
@@ -8599,11 +8599,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,335);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (335,'Zincogravura', 335);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (335,335);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (386,335);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (563,'3,2','cm','width', 335);
+			VALUES (563,'3,2','cm','width', 386);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (564,'2,3','cm','height', 335);
+			VALUES (564,'2,3','cm','height', 386);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('335', '2');
 /* Tabela DescriptiveNotes */
@@ -8627,11 +8627,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,336);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (336,'Zincogravura', 336);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (336,336);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (387,336);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (565,'7,5','cm','width', 336);
+			VALUES (565,'7,5','cm','width', 387);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (566,'5','cm','height', 336);
+			VALUES (566,'5','cm','height', 387);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('336', '2');
 /* Tabela DescriptiveNotes */
@@ -8657,11 +8657,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,337);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (337,'Zincogravura', 337);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (337,337);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (388,337);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (567,'6,9','cm','width', 337);
+			VALUES (567,'6,9','cm','width', 388);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (568,'5,4','cm','height', 337);
+			VALUES (568,'5,4','cm','height', 388);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('337', '2');
 /* Tabela DescriptiveNotes */
@@ -8685,11 +8685,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,338);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (338,'Zincogravura', 338);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (338,338);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (389,338);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (569,'7','cm','width', 338);
+			VALUES (569,'7','cm','width', 389);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (570,'4,2','cm','height', 338);
+			VALUES (570,'4,2','cm','height', 389);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('338', '2');
 /* Tabela DescriptiveNotes */
@@ -8717,11 +8717,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,339);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (339,'Zincogravura', 339);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (339,339);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (390,339);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (571,'6,4','cm','width', 339);
+			VALUES (571,'6,4','cm','width', 390);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (572,'4,6','cm','height', 339);
+			VALUES (572,'4,6','cm','height', 390);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('339', '2');
 /* Tabela DescriptiveNotes */
@@ -8745,11 +8745,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,340);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (340,'Zincogravura', 340);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (340,340);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (391,340);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (573,'4,5','cm','width', 340);
+			VALUES (573,'4,5','cm','width', 391);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (574,'4,5','cm','height', 340);
+			VALUES (574,'4,5','cm','height', 391);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('340', '2');
 /* Tabela DescriptiveNotes */
@@ -8773,11 +8773,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,341);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (341,'Zincogravura', 341);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (341,341);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (392,341);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (575,'6,5','cm','width', 341);
+			VALUES (575,'6,5','cm','width', 392);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (576,'4,6','cm','height', 341);
+			VALUES (576,'4,6','cm','height', 392);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('341', '2');
 /* Tabela DescriptiveNotes */
@@ -8801,11 +8801,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,342);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (342,'Zincogravura', 342);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (342,342);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (393,342);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (577,'3,9','cm','width', 342);
+			VALUES (577,'3,9','cm','width', 393);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (578,'3','cm','height', 342);
+			VALUES (578,'3','cm','height', 393);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('342', '2');
 /* Tabela DescriptiveNotes */
@@ -8829,11 +8829,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,343);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (343,'Zincogravura', 343);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (343,343);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (394,343);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (579,'6,9','cm','width', 343);
+			VALUES (579,'6,9','cm','width', 394);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (580,'5','cm','height', 343);
+			VALUES (580,'5','cm','height', 394);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('343', '2');
 /* Tabela DescriptiveNotes */
@@ -8857,11 +8857,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,344);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (344,'Zincogravura', 344);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (344,344);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (395,344);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (581,'3,5','cm','width', 344);
+			VALUES (581,'3,5','cm','width', 395);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (582,'8','cm','height', 344);
+			VALUES (582,'8','cm','height', 395);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -8894,11 +8894,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (19,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (19,19);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (345,19);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (345,345);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (396,345);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (583,'5,5','cm','width', 345);
+			VALUES (583,'5,5','cm','width', 396);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (584,'9,6','cm','height', 345);
+			VALUES (584,'9,6','cm','height', 396);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -8926,11 +8926,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,346);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (346,'Zincogravura', 346);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (346,346);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (397,346);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (585,'6','cm','width', 346);
+			VALUES (585,'6','cm','width', 397);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (586,'9,2','cm','height', 346);
+			VALUES (586,'9,2','cm','height', 397);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('346', '2');
 /* Tabela DescriptiveNotes */
@@ -8958,11 +8958,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,347);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (347,'Zincogravura', 347);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (347,347);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (398,347);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (587,'6,4','cm','width', 347);
+			VALUES (587,'6,4','cm','width', 398);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (588,'4,1','cm','height', 347);
+			VALUES (588,'4,1','cm','height', 398);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('347', '2');
 /* Tabela DescriptiveNotes */
@@ -9004,11 +9004,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,348);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (348,'Zincogravura', 348);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (348,348);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (399,348);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (589,'5','cm','width', 348);
+			VALUES (589,'5','cm','width', 399);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (590,'3,3','cm','height', 348);
+			VALUES (590,'3,3','cm','height', 399);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('348', '2');
 /* Tabela DescriptiveNotes */
@@ -9032,11 +9032,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,349);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (349,'Zincogravura', 349);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (349,349);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (400,349);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (591,'7','cm','width', 349);
+			VALUES (591,'7','cm','width', 400);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (592,'5,4','cm','height', 349);
+			VALUES (592,'5,4','cm','height', 400);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('349', '2');
 /* Tabela DescriptiveNotes */
@@ -9060,11 +9060,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,350);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (350,'Zincogravura', 350);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (350,350);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (401,350);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (593,'4,5','cm','width', 350);
+			VALUES (593,'4,5','cm','width', 401);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (594,'3,2','cm','height', 350);
+			VALUES (594,'3,2','cm','height', 401);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('350', '2');
 /* Tabela DescriptiveNotes */
@@ -9088,11 +9088,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,351);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (351,'Zincogravura', 351);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (351,351);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (402,351);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (595,'6,4','cm','width', 351);
+			VALUES (595,'6,4','cm','width', 402);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (596,'4,1','cm','height', 351);
+			VALUES (596,'4,1','cm','height', 402);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('351', '2');
 /* Tabela DescriptiveNotes */
@@ -9120,11 +9120,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,352);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (352,'Zincogravura', 352);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (352,352);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (403,352);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (597,'3,8','cm','width', 352);
+			VALUES (597,'3,8','cm','width', 403);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (598,'3','cm','height', 352);
+			VALUES (598,'3','cm','height', 403);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('352', '2');
 /* Tabela DescriptiveNotes */
@@ -9148,11 +9148,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,353);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (353,'Zincogravura', 353);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (353,353);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (404,353);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (599,'7','cm','width', 353);
+			VALUES (599,'7','cm','width', 404);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (600,'7','cm','height', 353);
+			VALUES (600,'7','cm','height', 404);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('353', '2');
 /* Tabela DescriptiveNotes */
@@ -9176,11 +9176,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,354);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (354,'Zincogravura', 354);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (354,354);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (405,354);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (601,'3,9','cm','width', 354);
+			VALUES (601,'3,9','cm','width', 405);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (602,'3','cm','height', 354);
+			VALUES (602,'3','cm','height', 405);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('354', '2');
 /* Tabela DescriptiveNotes */
@@ -9204,11 +9204,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,355);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (355,'Zincogravura', 355);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (355,355);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (406,355);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (603,'8','cm','width', 355);
+			VALUES (603,'8','cm','width', 406);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (604,'5,2','cm','height', 355);
+			VALUES (604,'5,2','cm','height', 406);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('355', '2');
 /* Tabela DescriptiveNotes */
@@ -9232,11 +9232,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,356);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (356,'Zincogravura', 356);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (356,356);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (407,356);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (605,'6,5','cm','width', 356);
+			VALUES (605,'6,5','cm','width', 407);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (606,'5,2','cm','height', 356);
+			VALUES (606,'5,2','cm','height', 407);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('356', '2');
 /* Tabela DescriptiveNotes */
@@ -9262,11 +9262,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,357);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (357,'Zincogravura', 357);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (357,357);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (408,357);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (607,'5,4','cm','width', 357);
+			VALUES (607,'5,4','cm','width', 408);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (608,'8,5','cm','height', 357);
+			VALUES (608,'8,5','cm','height', 408);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -9308,11 +9308,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,358);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (358,'Zincogravura', 358);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (358,358);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (409,358);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (609,'4,5','cm','width', 358);
+			VALUES (609,'4,5','cm','width', 409);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (610,'3,2','cm','height', 358);
+			VALUES (610,'3,2','cm','height', 409);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('358', '2');
 /* Tabela DescriptiveNotes */
@@ -9336,11 +9336,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,359);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (359,'Zincogravura', 359);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (359,359);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (410,359);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (611,'8,5','cm','width', 359);
+			VALUES (611,'8,5','cm','width', 410);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (612,'5,7','cm','height', 359);
+			VALUES (612,'5,7','cm','height', 410);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('359', '2');
 /* Tabela DescriptiveNotes */
@@ -9364,11 +9364,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,360);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (360,'Zincogravura', 360);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (360,360);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (411,360);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (613,'4,6','cm','width', 360);
+			VALUES (613,'4,6','cm','width', 411);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (614,'23,6','cm','height', 360);
+			VALUES (614,'23,6','cm','height', 411);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('360', '2');
 /* Tabela DescriptiveNotes */
@@ -9392,11 +9392,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,361);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (361,'Zincogravura', 361);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (361,361);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (412,361);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (615,'8','cm','width', 361);
+			VALUES (615,'8','cm','width', 412);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (616,'4,7','cm','height', 361);
+			VALUES (616,'4,7','cm','height', 412);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('361', '2');
 /* Tabela DescriptiveNotes */
@@ -9420,11 +9420,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,362);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (362,'Zincogravura', 362);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (362,362);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (413,362);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (617,'5,2','cm','width', 362);
+			VALUES (617,'5,2','cm','width', 413);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (618,'3,2','cm','height', 362);
+			VALUES (618,'3,2','cm','height', 413);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('362', '2');
 /* Tabela DescriptiveNotes */
@@ -9448,11 +9448,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,363);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (363,'Zincogravura', 363);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (363,363);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (414,363);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (619,'5,3','cm','width', 363);
+			VALUES (619,'5,3','cm','width', 414);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (620,'3,9','cm','height', 363);
+			VALUES (620,'3,9','cm','height', 414);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('363', '2');
 /* Tabela DescriptiveNotes */
@@ -9476,11 +9476,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,364);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (364,'Zincogravura', 364);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (364,364);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (415,364);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (621,'9,5','cm','width', 364);
+			VALUES (621,'9,5','cm','width', 415);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (622,'4,5','cm','height', 364);
+			VALUES (622,'4,5','cm','height', 415);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('364', '2');
 /* Tabela DescriptiveNotes */
@@ -9516,11 +9516,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,365);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (365,'Zincogravura', 365);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (365,365);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (416,365);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (623,'5,9','cm','width', 365);
+			VALUES (623,'5,9','cm','width', 416);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (624,'3,9','cm','height', 365);
+			VALUES (624,'3,9','cm','height', 416);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('365', '2');
 /* Tabela DescriptiveNotes */
@@ -9544,11 +9544,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,366);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (366,'Zincogravura', 366);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (366,366);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (417,366);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (625,'6,4','cm','width', 366);
+			VALUES (625,'6,4','cm','width', 417);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (626,'4','cm','height', 366);
+			VALUES (626,'4','cm','height', 417);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('366', '2');
 /* Tabela DescriptiveNotes */
@@ -9572,11 +9572,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,367);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (367,'Zincogravura', 367);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (367,367);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (418,367);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (627,'4,2','cm','width', 367);
+			VALUES (627,'4,2','cm','width', 418);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (628,'3,7','cm','height', 367);
+			VALUES (628,'3,7','cm','height', 418);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('367', '2');
 /* Tabela DescriptiveNotes */
@@ -9600,11 +9600,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,368);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (368,'Zincogravura', 368);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (368,368);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (419,368);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (629,'4,2','cm','width', 368);
+			VALUES (629,'4,2','cm','width', 419);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (630,'4,2','cm','height', 368);
+			VALUES (630,'4,2','cm','height', 419);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('368', '2');
 /* Tabela DescriptiveNotes */
@@ -9628,11 +9628,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,369);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (369,'Zincogravura', 369);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (369,369);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (420,369);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (631,'4,2','cm','width', 369);
+			VALUES (631,'4,2','cm','width', 420);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (632,'3,4','cm','height', 369);
+			VALUES (632,'3,4','cm','height', 420);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('369', '2');
 /* Tabela DescriptiveNotes */
@@ -9656,11 +9656,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,370);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (370,'Zincogravura', 370);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (370,370);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (421,370);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (633,'4,9','cm','width', 370);
+			VALUES (633,'4,9','cm','width', 421);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (634,'3','cm','height', 370);
+			VALUES (634,'3','cm','height', 421);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('370', '2');
 /* Tabela DescriptiveNotes */
@@ -9684,11 +9684,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,371);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (371,'Zincogravura', 371);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (371,371);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (422,371);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (635,'4,2','cm','width', 371);
+			VALUES (635,'4,2','cm','width', 422);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (636,'4,2','cm','height', 371);
+			VALUES (636,'4,2','cm','height', 422);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('371', '2');
 /* Tabela DescriptiveNotes */
@@ -9712,11 +9712,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,372);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (372,'Zincogravura', 372);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (372,372);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (423,372);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (637,'5,6','cm','width', 372);
+			VALUES (637,'5,6','cm','width', 423);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (638,'4,7','cm','height', 372);
+			VALUES (638,'4,7','cm','height', 423);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('372', '2');
 /* Tabela DescriptiveNotes */
@@ -9740,11 +9740,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,373);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (373,'Zincogravura', 373);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (373,373);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (424,373);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (639,'3,3','cm','width', 373);
+			VALUES (639,'3,3','cm','width', 424);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (640,'4,2','cm','height', 373);
+			VALUES (640,'4,2','cm','height', 424);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('373', '2');
 /* Tabela DescriptiveNotes */
@@ -9768,11 +9768,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,374);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (374,'Zincogravura', 374);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (374,374);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (425,374);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (641,'6','cm','width', 374);
+			VALUES (641,'6','cm','width', 425);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (642,'8,4','cm','height', 374);
+			VALUES (642,'8,4','cm','height', 425);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('374', '2');
 /* Tabela DescriptiveNotes */
@@ -9796,11 +9796,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,375);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (375,'Zincogravura', 375);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (375,375);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (426,375);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (643,'3,2','cm','width', 375);
+			VALUES (643,'3,2','cm','width', 426);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (644,'22','cm','height', 375);
+			VALUES (644,'22','cm','height', 426);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('375', '2');
 /* Tabela DescriptiveNotes */
@@ -9824,11 +9824,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,376);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (376,'Zincogravura', 376);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (376,376);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (427,376);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (645,'5,5','cm','width', 376);
+			VALUES (645,'5,5','cm','width', 427);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (646,'3,5','cm','height', 376);
+			VALUES (646,'3,5','cm','height', 427);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('376', '2');
 /* Tabela DescriptiveNotes */
@@ -9852,11 +9852,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,377);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (377,'Zincogravura', 377);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (377,377);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (428,377);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (647,'5,4','cm','width', 377);
+			VALUES (647,'5,4','cm','width', 428);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (648,'5,4','cm','height', 377);
+			VALUES (648,'5,4','cm','height', 428);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('377', '2');
 /* Tabela DescriptiveNotes */
@@ -9880,11 +9880,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,378);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (378,'Zincogravura', 378);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (378,378);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (429,378);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (649,'5,6','cm','width', 378);
+			VALUES (649,'5,6','cm','width', 429);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (650,'4','cm','height', 378);
+			VALUES (650,'4','cm','height', 429);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('378', '2');
 /* Tabela DescriptiveNotes */
@@ -9908,11 +9908,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,379);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (379,'Zincogravura', 379);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (379,379);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (430,379);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (651,'6,2','cm','width', 379);
+			VALUES (651,'6,2','cm','width', 430);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (652,'4,5','cm','height', 379);
+			VALUES (652,'4,5','cm','height', 430);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('379', '2');
 /* Tabela DescriptiveNotes */
@@ -9936,11 +9936,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,380);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (380,'Zincogravura', 380);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (380,380);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (431,380);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (653,'4,9','cm','width', 380);
+			VALUES (653,'4,9','cm','width', 431);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (654,'10','cm','height', 380);
+			VALUES (654,'10','cm','height', 431);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('380', '2');
 /* Tabela DescriptiveNotes */
@@ -9964,11 +9964,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,381);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (381,'Zincogravura', 381);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (381,381);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (432,381);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (655,'4,5','cm','width', 381);
+			VALUES (655,'4,5','cm','width', 432);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (656,'6','cm','height', 381);
+			VALUES (656,'6','cm','height', 432);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('381', '2');
 /* Tabela DescriptiveNotes */
@@ -9992,11 +9992,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,382);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (382,'Zincogravura', 382);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (382,382);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (433,382);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (657,'6,4','cm','width', 382);
+			VALUES (657,'6,4','cm','width', 433);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (658,'4,9','cm','height', 382);
+			VALUES (658,'4,9','cm','height', 433);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('382', '2');
 /* Tabela DescriptiveNotes */
@@ -10020,11 +10020,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,383);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (383,'Zincogravura', 383);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (383,383);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (434,383);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (659,'6','cm','width', 383);
+			VALUES (659,'6','cm','width', 434);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (660,'5,5','cm','height', 383);
+			VALUES (660,'5,5','cm','height', 434);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('383', '2');
 /* Tabela DescriptiveNotes */
@@ -10048,11 +10048,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,384);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (384,'Zincogravura', 384);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (384,384);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (435,384);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (661,'6,5','cm','width', 384);
+			VALUES (661,'6,5','cm','width', 435);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (662,'5,5','cm','height', 384);
+			VALUES (662,'5,5','cm','height', 435);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('384', '2');
 /* Tabela DescriptiveNotes */
@@ -10076,11 +10076,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,385);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (385,'Zincogravura', 385);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (385,385);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (436,385);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (663,'6,5','cm','width', 385);
+			VALUES (663,'6,5','cm','width', 436);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (664,'4,5','cm','height', 385);
+			VALUES (664,'4,5','cm','height', 436);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('385', '2');
 /* Tabela DescriptiveNotes */
@@ -10104,11 +10104,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,386);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (386,'Zincogravura', 386);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (386,386);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (437,386);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (665,'6,5','cm','width', 386);
+			VALUES (665,'6,5','cm','width', 437);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (666,'4,9','cm','height', 386);
+			VALUES (666,'4,9','cm','height', 437);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('386', '2');
 /* Tabela DescriptiveNotes */
@@ -10132,11 +10132,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,387);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (387,'Zincogravura', 387);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (387,387);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (438,387);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (667,'6','cm','width', 387);
+			VALUES (667,'6','cm','width', 438);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (668,'4','cm','height', 387);
+			VALUES (668,'4','cm','height', 438);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('387', '2');
 /* Tabela DescriptiveNotes */
@@ -10160,11 +10160,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,388);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (388,'Zincogravura', 388);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (388,388);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (439,388);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (669,'5','cm','width', 388);
+			VALUES (669,'5','cm','width', 439);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (670,'3,5','cm','height', 388);
+			VALUES (670,'3,5','cm','height', 439);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('388', '2');
 /* Tabela DescriptiveNotes */
@@ -10190,11 +10190,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,389);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (389,'Zincogravura', 389);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (389,389);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (440,389);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (671,'7','cm','width', 389);
+			VALUES (671,'7','cm','width', 440);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (672,'5','cm','height', 389);
+			VALUES (672,'5','cm','height', 440);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('389', '2');
 /* Tabela DescriptiveNotes */
@@ -10218,11 +10218,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,390);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (390,'Zincogravura', 390);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (390,390);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (441,390);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (673,'5,6','cm','width', 390);
+			VALUES (673,'5,6','cm','width', 441);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (674,'4','cm','height', 390);
+			VALUES (674,'4','cm','height', 441);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('390', '2');
 /* Tabela DescriptiveNotes */
@@ -10246,11 +10246,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,391);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (391,'Zincogravura', 391);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (391,391);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (442,391);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (675,'6,1','cm','width', 391);
+			VALUES (675,'6,1','cm','width', 442);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (676,'4','cm','height', 391);
+			VALUES (676,'4','cm','height', 442);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('391', '2');
 /* Tabela DescriptiveNotes */
@@ -10276,11 +10276,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,392);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (392,'Zincogravura', 392);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (392,392);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (443,392);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (677,'5,4','cm','width', 392);
+			VALUES (677,'5,4','cm','width', 443);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (678,'3,9','cm','height', 392);
+			VALUES (678,'3,9','cm','height', 443);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('392', '2');
 /* Tabela DescriptiveNotes */
@@ -10304,11 +10304,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,393);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (393,'Zincogravura', 393);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (393,393);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (444,393);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (679,'6,5','cm','width', 393);
+			VALUES (679,'6,5','cm','width', 444);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (680,'9','cm','height', 393);
+			VALUES (680,'9','cm','height', 444);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -10338,11 +10338,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,394);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (394,'Zincogravura', 394);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (394,394);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (445,394);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (681,'6,5','cm','width', 394);
+			VALUES (681,'6,5','cm','width', 445);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (682,'6,5','cm','height', 394);
+			VALUES (682,'6,5','cm','height', 445);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('394', '2');
 /* Tabela DescriptiveNotes */
@@ -10378,11 +10378,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,395);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (395,'Zincogravura', 395);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (395,395);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (446,395);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (683,'7,8','cm','width', 395);
+			VALUES (683,'7,8','cm','width', 446);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (684,'5','cm','height', 395);
+			VALUES (684,'5','cm','height', 446);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('395', '2');
 /* Tabela DescriptiveNotes */
@@ -10406,11 +10406,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,396);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (396,'Photopolímero', 396);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (396,396);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (447,396);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (685,'6,2','cm','width', 396);
+			VALUES (685,'6,2','cm','width', 447);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (686,'4,4','cm','height', 396);
+			VALUES (686,'4,4','cm','height', 447);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('396', '2');
 /* Tabela DescriptiveNotes */
@@ -10438,11 +10438,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,397);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (397,'Zincogravura', 397);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (397,397);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (448,397);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (687,'7,2','cm','width', 397);
+			VALUES (687,'7,2','cm','width', 448);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (688,'5,4','cm','height', 397);
+			VALUES (688,'5,4','cm','height', 448);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('397', '2');
 /* Tabela DescriptiveNotes */
@@ -10466,11 +10466,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,398);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (398,'Zincogravura', 398);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (398,398);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (449,398);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (689,'5,5','cm','width', 398);
+			VALUES (689,'5,5','cm','width', 449);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (690,'7','cm','height', 398);
+			VALUES (690,'7','cm','height', 449);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('398', '2');
 /* Tabela DescriptiveNotes */
@@ -10494,11 +10494,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,399);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (399,'Zincogravura', 399);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (399,399);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (450,399);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (691,'8,2','cm','width', 399);
+			VALUES (691,'8,2','cm','width', 450);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (692,'5,5','cm','height', 399);
+			VALUES (692,'5,5','cm','height', 450);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('399', '2');
 /* Tabela DescriptiveNotes */
@@ -10522,11 +10522,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,400);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (400,'Zincogravura', 400);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (400,400);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (451,400);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (693,'7,5','cm','width', 400);
+			VALUES (693,'7,5','cm','width', 451);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (694,'4,9','cm','height', 400);
+			VALUES (694,'4,9','cm','height', 451);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -10554,11 +10554,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,401);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (401,'Zincogravura', 401);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (401,401);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (452,401);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (695,'8,3','cm','width', 401);
+			VALUES (695,'8,3','cm','width', 452);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (696,'5,9','cm','height', 401);
+			VALUES (696,'5,9','cm','height', 452);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('401', '2');
 /* Tabela DescriptiveNotes */
@@ -10582,11 +10582,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,402);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (402,'Zincogravura', 402);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (402,402);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (453,402);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (697,'5','cm','width', 402);
+			VALUES (697,'5','cm','width', 453);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (698,'8','cm','height', 402);
+			VALUES (698,'8','cm','height', 453);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -10614,11 +10614,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,403);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (403,'Zincogravura', 403);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (403,403);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (454,403);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (699,'9,9','cm','width', 403);
+			VALUES (699,'9,9','cm','width', 454);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (700,'6,5','cm','height', 403);
+			VALUES (700,'6,5','cm','height', 454);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('403', '2');
 /* Tabela DescriptiveNotes */
@@ -10642,11 +10642,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,404);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (404,'Zincogravura', 404);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (404,404);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (455,404);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (701,'6','cm','width', 404);
+			VALUES (701,'6','cm','width', 455);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (702,'9','cm','height', 404);
+			VALUES (702,'9','cm','height', 455);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('404', '2');
 /* Tabela DescriptiveNotes */
@@ -10670,11 +10670,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,405);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (405,'Zincogravura', 405);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (405,405);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (456,405);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (703,'6,3','cm','width', 405);
+			VALUES (703,'6,3','cm','width', 456);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (704,'9','cm','height', 405);
+			VALUES (704,'9','cm','height', 456);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('405', '2');
 /* Tabela DescriptiveNotes */
@@ -10698,11 +10698,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,406);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (406,'Zincogravura', 406);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (406,406);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (457,406);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (705,'6','cm','width', 406);
+			VALUES (705,'6','cm','width', 457);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (706,'4,5','cm','height', 406);
+			VALUES (706,'4,5','cm','height', 457);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('406', '2');
 /* Tabela DescriptiveNotes */
@@ -10726,11 +10726,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,407);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (407,'Zincogravura', 407);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (407,407);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (458,407);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (707,'7,5','cm','width', 407);
+			VALUES (707,'7,5','cm','width', 458);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (708,'5','cm','height', 407);
+			VALUES (708,'5','cm','height', 458);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('407', '2');
 /* Tabela DescriptiveNotes */
@@ -10758,11 +10758,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,408);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (408,'Zincogravura', 408);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (408,408);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (459,408);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (709,'5','cm','width', 408);
+			VALUES (709,'5','cm','width', 459);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (710,'3','cm','height', 408);
+			VALUES (710,'3','cm','height', 459);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('408', '2');
 /* Tabela DescriptiveNotes */
@@ -10786,11 +10786,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,409);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (409,'Zincogravura', 409);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (409,409);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (460,409);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (711,'8,1','cm','width', 409);
+			VALUES (711,'8,1','cm','width', 460);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (712,'5,2','cm','height', 409);
+			VALUES (712,'5,2','cm','height', 460);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('409', '2');
 /* Tabela DescriptiveNotes */
@@ -10814,11 +10814,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,410);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (410,'Zincogravura', 410);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (410,410);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (461,410);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (713,'5','cm','width', 410);
+			VALUES (713,'5','cm','width', 461);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (714,'9','cm','height', 410);
+			VALUES (714,'9','cm','height', 461);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('410', '2');
 /* Tabela DescriptiveNotes */
@@ -10842,11 +10842,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,411);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (411,'Zincogravura', 411);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (411,411);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (462,411);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (715,'7,8','cm','width', 411);
+			VALUES (715,'7,8','cm','width', 462);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (716,'4','cm','height', 411);
+			VALUES (716,'4','cm','height', 462);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('411', '2');
 /* Tabela DescriptiveNotes */
@@ -10894,11 +10894,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,412);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (412,'Zincogravura', 412);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (412,412);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (463,412);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (717,'6','cm','width', 412);
+			VALUES (717,'6','cm','width', 463);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (718,'9,5','cm','height', 412);
+			VALUES (718,'9,5','cm','height', 463);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('412', '2');
 /* Tabela DescriptiveNotes */
@@ -10922,11 +10922,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,413);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (413,'Zincogravura', 413);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (413,413);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (464,413);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (719,'5,5','cm','width', 413);
+			VALUES (719,'5,5','cm','width', 464);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (720,'8,9','cm','height', 413);
+			VALUES (720,'8,9','cm','height', 464);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('413', '2');
 /* Tabela DescriptiveNotes */
@@ -10958,11 +10958,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,414);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (414,'Zincogravura', 414);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (414,414);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (465,414);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (721,'6,2','cm','width', 414);
+			VALUES (721,'6,2','cm','width', 465);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (722,'10','cm','height', 414);
+			VALUES (722,'10','cm','height', 465);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('414', '2');
 /* Tabela DescriptiveNotes */
@@ -10986,11 +10986,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,415);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (415,'Zincogravura', 415);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (415,415);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (466,415);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (723,'8,5','cm','width', 415);
+			VALUES (723,'8,5','cm','width', 466);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (724,'5,5','cm','height', 415);
+			VALUES (724,'5,5','cm','height', 466);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('415', '2');
 /* Tabela DescriptiveNotes */
@@ -11014,11 +11014,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,416);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (416,'Zincogravura', 416);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (416,416);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (467,416);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (725,'9','cm','width', 416);
+			VALUES (725,'9','cm','width', 467);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (726,'6','cm','height', 416);
+			VALUES (726,'6','cm','height', 467);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('416', '2');
 /* Tabela DescriptiveNotes */
@@ -11042,11 +11042,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,417);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (417,'Zincogravura', 417);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (417,417);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (468,417);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (727,'2,5','cm','width', 417);
+			VALUES (727,'2,5','cm','width', 468);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (728,'2,2','cm','height', 417);
+			VALUES (728,'2,2','cm','height', 468);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('417', '2');
 /* Tabela DescriptiveNotes */
@@ -11072,11 +11072,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,418);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (418,'Zincogravura', 418);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (418,418);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (469,418);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (729,'6','cm','width', 418);
+			VALUES (729,'6','cm','width', 469);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (730,'9','cm','height', 418);
+			VALUES (730,'9','cm','height', 469);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('418', '2');
 /* Tabela DescriptiveNotes */
@@ -11100,11 +11100,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,419);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (419,'Zincogravura', 419);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (419,419);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (470,419);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (731,'5,5','cm','width', 419);
+			VALUES (731,'5,5','cm','width', 470);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (732,'8,9','cm','height', 419);
+			VALUES (732,'8,9','cm','height', 470);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -11132,11 +11132,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,420);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (420,'Zincogravura', 420);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (420,420);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (471,420);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (733,'9,2','cm','width', 420);
+			VALUES (733,'9,2','cm','width', 471);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (734,'7','cm','height', 420);
+			VALUES (734,'7','cm','height', 471);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('420', '2');
 /* Tabela DescriptiveNotes */
@@ -11160,11 +11160,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,421);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (421,'Zincogravura', 421);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (421,421);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (472,421);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (735,'6','cm','width', 421);
+			VALUES (735,'6','cm','width', 472);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (736,'4,8','cm','height', 421);
+			VALUES (736,'4,8','cm','height', 472);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('421', '2');
 /* Tabela DescriptiveNotes */
@@ -11188,11 +11188,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,422);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (422,'Zincogravura', 422);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (422,422);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (473,422);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (737,'5,2','cm','width', 422);
+			VALUES (737,'5,2','cm','width', 473);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (738,'11,1','cm','height', 422);
+			VALUES (738,'11,1','cm','height', 473);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('422', '2');
 /* Tabela DescriptiveNotes */
@@ -11216,11 +11216,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,423);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (423,'Zincogravura', 423);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (423,423);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (474,423);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (739,'6,7','cm','width', 423);
+			VALUES (739,'6,7','cm','width', 474);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (740,'5,3','cm','height', 423);
+			VALUES (740,'5,3','cm','height', 474);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('423', '2');
 /* Tabela DescriptiveNotes */
@@ -11244,11 +11244,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,424);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (424,'Zincogravura', 424);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (424,424);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (475,424);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (741,'5,5','cm','width', 424);
+			VALUES (741,'5,5','cm','width', 475);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (742,'8,5','cm','height', 424);
+			VALUES (742,'8,5','cm','height', 475);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('424', '2');
 /* Tabela DescriptiveNotes */
@@ -11272,11 +11272,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,425);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (425,'Zincogravura', 425);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (425,425);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (476,425);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (743,'4,1','cm','width', 425);
+			VALUES (743,'4,1','cm','width', 476);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (744,'4,5','cm','height', 425);
+			VALUES (744,'4,5','cm','height', 476);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('425', '2');
 /* Tabela DescriptiveNotes */
@@ -11305,11 +11305,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (20,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (20,20);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (426,20);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (426,426);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (477,426);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (745,'8,5','cm','width', 426);
+			VALUES (745,'8,5','cm','width', 477);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (746,'5,5','cm','height', 426);
+			VALUES (746,'5,5','cm','height', 477);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('426', '2');
 /* Tabela DescriptiveNotes */
@@ -11335,11 +11335,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,427);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (427,'Zincogravura', 427);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (427,427);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (478,427);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (747,'5,5','cm','width', 427);
+			VALUES (747,'5,5','cm','width', 478);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (748,'9','cm','height', 427);
+			VALUES (748,'9','cm','height', 478);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('427', '2');
 /* Tabela DescriptiveNotes */
@@ -11363,11 +11363,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,428);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (428,'Zincogravura', 428);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (428,428);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (479,428);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (749,'8,5','cm','width', 428);
+			VALUES (749,'8,5','cm','width', 479);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (750,'13,5','cm','height', 428);
+			VALUES (750,'13,5','cm','height', 479);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -11395,11 +11395,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,429);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (429,'Zincogravura', 429);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (429,429);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (480,429);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (751,'3,5','cm','width', 429);
+			VALUES (751,'3,5','cm','width', 480);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (752,'1,7','cm','height', 429);
+			VALUES (752,'1,7','cm','height', 480);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('429', '2');
 /* Tabela DescriptiveNotes */
@@ -11437,11 +11437,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,430);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (430,'Zincogravura', 430);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (430,430);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (481,430);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (753,'5','cm','width', 430);
+			VALUES (753,'5','cm','width', 481);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (754,'10','cm','height', 430);
+			VALUES (754,'10','cm','height', 481);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('430', '2');
 /* Tabela DescriptiveNotes */
@@ -11465,11 +11465,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,431);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (431,'Zincogravura', 431);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (431,431);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (482,431);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (755,'6,5','cm','width', 431);
+			VALUES (755,'6,5','cm','width', 482);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (756,'4,5','cm','height', 431);
+			VALUES (756,'4,5','cm','height', 482);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('431', '2');
 /* Tabela DescriptiveNotes */
@@ -11493,11 +11493,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,432);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (432,'Zincogravura', 432);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (432,432);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (483,432);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (757,'7,4','cm','width', 432);
+			VALUES (757,'7,4','cm','width', 483);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (758,'5,2','cm','height', 432);
+			VALUES (758,'5,2','cm','height', 483);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('432', '2');
 /* Tabela DescriptiveNotes */
@@ -11531,11 +11531,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,433);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (433,'Zincogravura', 433);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (433,433);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (484,433);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (759,'4,5','cm','width', 433);
+			VALUES (759,'4,5','cm','width', 484);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (760,'9,5','cm','height', 433);
+			VALUES (760,'9,5','cm','height', 484);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('433', '2');
 /* Tabela DescriptiveNotes */
@@ -11583,11 +11583,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,434);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (434,'Zincogravura', 434);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (434,434);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (485,434);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (761,'5,9','cm','width', 434);
+			VALUES (761,'5,9','cm','width', 485);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (762,'7','cm','height', 434);
+			VALUES (762,'7','cm','height', 485);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('434', '2');
 /* Tabela DescriptiveNotes */
@@ -11611,11 +11611,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,435);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (435,'Zincogravura', 435);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (435,435);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (486,435);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (763,'7','cm','width', 435);
+			VALUES (763,'7','cm','width', 486);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (764,'10,3','cm','height', 435);
+			VALUES (764,'10,3','cm','height', 486);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('435', '2');
 /* Tabela DescriptiveNotes */
@@ -11644,11 +11644,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (21,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (21,21);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (436,21);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (436,436);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (487,436);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (765,'7','cm','width', 436);
+			VALUES (765,'7','cm','width', 487);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (766,'4,5','cm','height', 436);
+			VALUES (766,'4,5','cm','height', 487);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('436', '2');
 /* Tabela DescriptiveNotes */
@@ -11672,11 +11672,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,437);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (437,'Zincogravura', 437);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (437,437);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (488,437);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (767,'10','cm','width', 437);
+			VALUES (767,'10','cm','width', 488);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (768,'7,5','cm','height', 437);
+			VALUES (768,'7,5','cm','height', 488);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('437', '2');
 /* Tabela DescriptiveNotes */
@@ -11700,11 +11700,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,438);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (438,'Zincogravura', 438);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (438,438);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (489,438);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (769,'4,5','cm','width', 438);
+			VALUES (769,'4,5','cm','width', 489);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (770,'3,2','cm','height', 438);
+			VALUES (770,'3,2','cm','height', 489);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('438', '2');
 /* Tabela DescriptiveNotes */
@@ -11728,11 +11728,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,439);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (439,'Zincogravura', 439);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (439,439);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (490,439);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (771,'10','cm','width', 439);
+			VALUES (771,'10','cm','width', 490);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (772,'7','cm','height', 439);
+			VALUES (772,'7','cm','height', 490);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('439', '2');
 /* Tabela DescriptiveNotes */
@@ -11760,11 +11760,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,440);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (440,'Zincogravura', 440);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (440,440);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (491,440);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (773,'4,5','cm','width', 440);
+			VALUES (773,'4,5','cm','width', 491);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (774,'3,5','cm','height', 440);
+			VALUES (774,'3,5','cm','height', 491);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('440', '2');
 /* Tabela DescriptiveNotes */
@@ -11788,11 +11788,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,441);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (441,'Zincogravura', 441);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (441,441);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (492,441);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (775,'7,4','cm','width', 441);
+			VALUES (775,'7,4','cm','width', 492);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (776,'11','cm','height', 441);
+			VALUES (776,'11','cm','height', 492);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('441', '2');
 /* Tabela DescriptiveNotes */
@@ -11821,11 +11821,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (22,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (22,22);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (442,22);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (442,442);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (493,442);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (777,'3,5','cm','width', 442);
+			VALUES (777,'3,5','cm','width', 493);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (778,'5,5','cm','height', 442);
+			VALUES (778,'5,5','cm','height', 493);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('442', '2');
 /* Tabela DescriptiveNotes */
@@ -11865,11 +11865,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,443);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (443,'Zincogravura', 443);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (443,443);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (494,443);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (779,'8,8','cm','width', 443);
+			VALUES (779,'8,8','cm','width', 494);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (780,'6','cm','height', 443);
+			VALUES (780,'6','cm','height', 494);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('443', '2');
 /* Tabela DescriptiveNotes */
@@ -11893,11 +11893,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,444);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (444,'Zincogravura', 444);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (444,444);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (495,444);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (781,'6,3','cm','width', 444);
+			VALUES (781,'6,3','cm','width', 495);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (782,'4,8','cm','height', 444);
+			VALUES (782,'4,8','cm','height', 495);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('444', '2');
 /* Tabela DescriptiveNotes */
@@ -11921,11 +11921,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,445);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (445,'Zincogravura', 445);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (445,445);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (496,445);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (783,'4,2','cm','width', 445);
+			VALUES (783,'4,2','cm','width', 496);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (784,'7,5','cm','height', 445);
+			VALUES (784,'7,5','cm','height', 496);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('445', '2');
 /* Tabela DescriptiveNotes */
@@ -11951,11 +11951,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,446);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (446,'Zincogravura', 446);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (446,446);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (497,446);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (785,'7','cm','width', 446);
+			VALUES (785,'7','cm','width', 497);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (786,'10','cm','height', 446);
+			VALUES (786,'10','cm','height', 497);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('446', '2');
 /* Tabela DescriptiveNotes */
@@ -11979,11 +11979,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,447);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (447,'Zincogravura', 447);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (447,447);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (498,447);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (787,'5,7','cm','width', 447);
+			VALUES (787,'5,7','cm','width', 498);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (788,'9','cm','height', 447);
+			VALUES (788,'9','cm','height', 498);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('447', '2');
 /* Tabela DescriptiveNotes */
@@ -12007,11 +12007,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,448);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (448,'Zincogravura', 448);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (448,448);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (499,448);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (789,'4,9','cm','width', 448);
+			VALUES (789,'4,9','cm','width', 499);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (790,'4','cm','height', 448);
+			VALUES (790,'4','cm','height', 499);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('448', '2');
 /* Tabela DescriptiveNotes */
@@ -12035,11 +12035,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,449);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (449,'Zincogravura', 449);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (449,449);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (500,449);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (791,'6','cm','width', 449);
+			VALUES (791,'6','cm','width', 500);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (792,'9','cm','height', 449);
+			VALUES (792,'9','cm','height', 500);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('449', '2');
 /* Tabela DescriptiveNotes */
@@ -12067,11 +12067,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,450);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (450,'Zincogravura', 450);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (450,450);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (501,450);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (793,'7','cm','width', 450);
+			VALUES (793,'7','cm','width', 501);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (794,'9','cm','height', 450);
+			VALUES (794,'9','cm','height', 501);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('450', '2');
 /* Tabela DescriptiveNotes */
@@ -12095,11 +12095,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,451);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (451,'Zincogravura', 451);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (451,451);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (502,451);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (795,'6,4','cm','width', 451);
+			VALUES (795,'6,4','cm','width', 502);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (796,'7','cm','height', 451);
+			VALUES (796,'7','cm','height', 502);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('451', '2');
 /* Tabela DescriptiveNotes */
@@ -12127,11 +12127,11 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (452,22);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (452,452);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (503,452);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (797,'5,5','cm','width', 452);
+			VALUES (797,'5,5','cm','width', 503);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (798,'9,5','cm','height', 452);
+			VALUES (798,'9,5','cm','height', 503);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('452', '2');
 /* Tabela DescriptiveNotes */
@@ -12155,11 +12155,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,453);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (453,'Zincogravura', 453);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (453,453);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (504,453);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (799,'6','cm','width', 453);
+			VALUES (799,'6','cm','width', 504);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (800,'9','cm','height', 453);
+			VALUES (800,'9','cm','height', 504);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -12187,11 +12187,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,454);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (454,'Zincogravura', 454);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (454,454);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (505,454);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (801,'9','cm','width', 454);
+			VALUES (801,'9','cm','width', 505);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (802,'6','cm','height', 454);
+			VALUES (802,'6','cm','height', 505);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('454', '2');
 /* Tabela DescriptiveNotes */
@@ -12215,11 +12215,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,455);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (455,'Zincogravura', 455);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (455,455);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (506,455);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (803,'6,7','cm','width', 455);
+			VALUES (803,'6,7','cm','width', 506);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (804,'4,1','cm','height', 455);
+			VALUES (804,'4,1','cm','height', 506);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('455', '2');
 /* Tabela DescriptiveNotes */
@@ -12243,11 +12243,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,456);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (456,'Zincogravura', 456);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (456,456);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (507,456);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (805,'5,5','cm','width', 456);
+			VALUES (805,'5,5','cm','width', 507);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (806,'8,5','cm','height', 456);
+			VALUES (806,'8,5','cm','height', 507);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('456', '2');
 /* Tabela DescriptiveNotes */
@@ -12271,11 +12271,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,457);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (457,'Zincogravura', 457);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (457,457);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (508,457);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (807,'5,5','cm','width', 457);
+			VALUES (807,'5,5','cm','width', 508);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (808,'8,5','cm','height', 457);
+			VALUES (808,'8,5','cm','height', 508);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('457', '2');
 /* Tabela DescriptiveNotes */
@@ -12311,11 +12311,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,458);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (458,'Zincogravura', 458);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (458,458);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (509,458);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (809,'5,3','cm','width', 458);
+			VALUES (809,'5,3','cm','width', 509);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (810,'7,8','cm','height', 458);
+			VALUES (810,'7,8','cm','height', 509);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('458', '2');
 /* Tabela DescriptiveNotes */
@@ -12339,11 +12339,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,459);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (459,'Zincogravura', 459);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (459,459);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (510,459);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (811,'7','cm','width', 459);
+			VALUES (811,'7','cm','width', 510);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (812,'7','cm','height', 459);
+			VALUES (812,'7','cm','height', 510);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('459', '2');
 /* Tabela DescriptiveNotes */
@@ -12371,11 +12371,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,460);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (460,'Zincogravura', 460);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (460,460);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (511,460);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (813,'7,8','cm','width', 460);
+			VALUES (813,'7,8','cm','width', 511);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (814,'5,7','cm','height', 460);
+			VALUES (814,'5,7','cm','height', 511);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('460', '2');
 /* Tabela DescriptiveNotes */
@@ -12399,11 +12399,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,461);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (461,'Zincogravura', 461);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (461,461);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (512,461);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (815,'3,0','cm','width', 461);
+			VALUES (815,'3,0','cm','width', 512);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (816,'2,5','cm','height', 461);
+			VALUES (816,'2,5','cm','height', 512);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('461', '2');
 /* Tabela DescriptiveNotes */
@@ -12427,11 +12427,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,462);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (462,'Zincogravura', 462);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (462,462);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (513,462);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (817,'12,5','cm','width', 462);
+			VALUES (817,'12,5','cm','width', 513);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (818,'7,5','cm','height', 462);
+			VALUES (818,'7,5','cm','height', 513);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('462', '2');
 /* Tabela DescriptiveNotes */
@@ -12463,11 +12463,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,463);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (463,'Zincogravura', 463);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (463,463);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (514,463);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (819,'10','cm','width', 463);
+			VALUES (819,'10','cm','width', 514);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (820,'6','cm','height', 463);
+			VALUES (820,'6','cm','height', 514);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('463', '2');
 /* Tabela DescriptiveNotes */
@@ -12491,11 +12491,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,464);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (464,'Zincogravura', 464);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (464,464);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (515,464);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (821,'5,5','cm','width', 464);
+			VALUES (821,'5,5','cm','width', 515);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (822,'9,5','cm','height', 464);
+			VALUES (822,'9,5','cm','height', 515);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('464', '2');
 /* Tabela DescriptiveNotes */
@@ -12521,11 +12521,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,465);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (465,'Zincogravura', 465);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (465,465);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (516,465);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (823,'5,2','cm','width', 465);
+			VALUES (823,'5,2','cm','width', 516);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (824,'9','cm','height', 465);
+			VALUES (824,'9','cm','height', 516);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('465', '2');
 /* Tabela DescriptiveNotes */
@@ -12549,11 +12549,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,466);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (466,'Zincogravura', 466);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (466,466);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (517,466);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (825,'8,9','cm','width', 466);
+			VALUES (825,'8,9','cm','width', 517);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (826,'6','cm','height', 466);
+			VALUES (826,'6','cm','height', 517);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('466', '2');
 /* Tabela DescriptiveNotes */
@@ -12577,11 +12577,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,467);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (467,'Zincogravura', 467);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (467,467);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (518,467);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (827,'5,5','cm','width', 467);
+			VALUES (827,'5,5','cm','width', 518);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (828,'8,7','cm','height', 467);
+			VALUES (828,'8,7','cm','height', 518);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('467', '2');
 /* Tabela DescriptiveNotes */
@@ -12605,11 +12605,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,468);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (468,'Zincogravura', 468);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (468,468);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (519,468);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (829,'7,8','cm','width', 468);
+			VALUES (829,'7,8','cm','width', 519);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (830,'5,9','cm','height', 468);
+			VALUES (830,'5,9','cm','height', 519);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('468', '2');
 /* Tabela DescriptiveNotes */
@@ -12633,11 +12633,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,469);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (469,'Zincogravura', 469);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (469,469);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (520,469);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (831,'7,1','cm','width', 469);
+			VALUES (831,'7,1','cm','width', 520);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (832,'6,4','cm','height', 469);
+			VALUES (832,'6,4','cm','height', 520);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('469', '2');
 /* Tabela DescriptiveNotes */
@@ -12661,11 +12661,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,470);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (470,'Zincogravura', 470);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (470,470);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (521,470);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (833,'8,5','cm','width', 470);
+			VALUES (833,'8,5','cm','width', 521);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (834,'6','cm','height', 470);
+			VALUES (834,'6','cm','height', 521);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('470', '2');
 /* Tabela DescriptiveNotes */
@@ -12693,11 +12693,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,471);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (471,'Zincogravura', 471);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (471,471);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (522,471);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (835,'7,5','cm','width', 471);
+			VALUES (835,'7,5','cm','width', 522);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (836,'5,5','cm','height', 471);
+			VALUES (836,'5,5','cm','height', 522);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('471', '2');
 /* Tabela DescriptiveNotes */
@@ -12729,11 +12729,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,472);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (472,'Zincogravura', 472);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (472,472);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (523,472);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (837,'12','cm','width', 472);
+			VALUES (837,'12','cm','width', 523);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (838,'7,8','cm','height', 472);
+			VALUES (838,'7,8','cm','height', 523);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('472', '2');
 /* Tabela DescriptiveNotes */
@@ -12765,11 +12765,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,473);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (473,'Zincogravura', 473);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (473,473);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (524,473);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (839,'13,5','cm','width', 473);
+			VALUES (839,'13,5','cm','width', 524);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (840,'8,3','cm','height', 473);
+			VALUES (840,'8,3','cm','height', 524);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('473', '2');
 /* Tabela DescriptiveNotes */
@@ -12797,11 +12797,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,474);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (474,'Zincogravura', 474);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (474,474);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (525,474);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (841,'10,8','cm','width', 474);
+			VALUES (841,'10,8','cm','width', 525);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (842,'7,3','cm','height', 474);
+			VALUES (842,'7,3','cm','height', 525);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('474', '2');
 /* Tabela DescriptiveNotes */
@@ -12825,11 +12825,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,475);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (475,'Zincogravura', 475);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (475,475);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (526,475);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (843,'8,9','cm','width', 475);
+			VALUES (843,'8,9','cm','width', 526);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (844,'5,9','cm','height', 475);
+			VALUES (844,'5,9','cm','height', 526);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('475', '2');
 /* Tabela DescriptiveNotes */
@@ -12853,11 +12853,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,476);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (476,'Zincogravura', 476);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (476,476);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (527,476);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (845,'6,5','cm','width', 476);
+			VALUES (845,'6,5','cm','width', 527);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (846,'4,5','cm','height', 476);
+			VALUES (846,'4,5','cm','height', 527);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('476', '2');
 /* Tabela DescriptiveNotes */
@@ -12881,11 +12881,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,477);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (477,'Zincogravura', 477);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (477,477);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (528,477);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (847,'9','cm','width', 477);
+			VALUES (847,'9','cm','width', 528);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (848,'5,6','cm','height', 477);
+			VALUES (848,'5,6','cm','height', 528);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('477', '2');
 /* Tabela DescriptiveNotes */
@@ -12913,11 +12913,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,478);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (478,'Zincogravura', 478);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (478,478);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (529,478);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (849,'6,5','cm','width', 478);
+			VALUES (849,'6,5','cm','width', 529);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (850,'5','cm','height', 478);
+			VALUES (850,'5','cm','height', 529);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('478', '2');
 /* Tabela DescriptiveNotes */
@@ -12955,11 +12955,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,479);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (479,'Zincogravura', 479);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (479,479);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (530,479);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (851,'9','cm','width', 479);
+			VALUES (851,'9','cm','width', 530);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (852,'6,5','cm','height', 479);
+			VALUES (852,'6,5','cm','height', 530);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('479', '2');
 /* Tabela DescriptiveNotes */
@@ -12987,11 +12987,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,480);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (480,'Zincogravura', 480);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (480,480);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (531,480);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (853,'5,5','cm','width', 480);
+			VALUES (853,'5,5','cm','width', 531);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (854,'4','cm','height', 480);
+			VALUES (854,'4','cm','height', 531);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('480', '2');
 /* Tabela DescriptiveNotes */
@@ -13015,11 +13015,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,481);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (481,'Zincogravura', 481);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (481,481);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (532,481);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (855,'9','cm','width', 481);
+			VALUES (855,'9','cm','width', 532);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (856,'6,2','cm','height', 481);
+			VALUES (856,'6,2','cm','height', 532);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('481', '2');
 /* Tabela DescriptiveNotes */
@@ -13045,11 +13045,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,482);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (482,'Zincogravura', 482);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (482,482);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (533,482);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (857,'6,2','cm','width', 482);
+			VALUES (857,'6,2','cm','width', 533);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (858,'4','cm','height', 482);
+			VALUES (858,'4','cm','height', 533);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('482', '2');
 /* Tabela DescriptiveNotes */
@@ -13073,11 +13073,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,483);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (483,'Zincogravura', 483);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (483,483);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (534,483);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (859,'9,8','cm','width', 483);
+			VALUES (859,'9,8','cm','width', 534);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (860,'6,7','cm','height', 483);
+			VALUES (860,'6,7','cm','height', 534);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('483', '2');
 /* Tabela DescriptiveNotes */
@@ -13101,11 +13101,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,484);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (484,'Zincogravura', 484);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (484,484);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (535,484);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (861,'6,5','cm','width', 484);
+			VALUES (861,'6,5','cm','width', 535);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (862,'4,7','cm','height', 484);
+			VALUES (862,'4,7','cm','height', 535);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('484', '2');
 /* Tabela DescriptiveNotes */
@@ -13129,11 +13129,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,485);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (485,'Zincogravura', 485);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (485,485);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (536,485);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (863,'10,1','cm','width', 485);
+			VALUES (863,'10,1','cm','width', 536);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (864,'6,6','cm','height', 485);
+			VALUES (864,'6,6','cm','height', 536);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('485', '2');
 /* Tabela DescriptiveNotes */
@@ -13157,11 +13157,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,486);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (486,'Zincogravura', 486);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (486,486);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (537,486);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (865,'6,2','cm','width', 486);
+			VALUES (865,'6,2','cm','width', 537);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (866,'10,1','cm','height', 486);
+			VALUES (866,'10,1','cm','height', 537);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('486', '2');
 /* Tabela DescriptiveNotes */
@@ -13185,11 +13185,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,487);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (487,'Zincogravura', 487);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (487,487);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (538,487);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (867,'8,5','cm','width', 487);
+			VALUES (867,'8,5','cm','width', 538);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (868,'5,2','cm','height', 487);
+			VALUES (868,'5,2','cm','height', 538);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('487', '2');
 /* Tabela DescriptiveNotes */
@@ -13215,11 +13215,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,488);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (488,'Zincogravura', 488);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (488,488);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (539,488);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (869,'5,2','cm','width', 488);
+			VALUES (869,'5,2','cm','width', 539);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (870,'7,8','cm','height', 488);
+			VALUES (870,'7,8','cm','height', 539);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('488', '2');
 /* Tabela DescriptiveNotes */
@@ -13243,11 +13243,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,489);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (489,'Zincogravura', 489);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (489,489);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (540,489);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (871,'7','cm','width', 489);
+			VALUES (871,'7','cm','width', 540);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (872,'4,8','cm','height', 489);
+			VALUES (872,'4,8','cm','height', 540);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('489', '2');
 /* Tabela DescriptiveNotes */
@@ -13271,11 +13271,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,490);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (490,'Zincogravura', 490);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (490,490);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (541,490);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (873,'6','cm','width', 490);
+			VALUES (873,'6','cm','width', 541);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (874,'4','cm','height', 490);
+			VALUES (874,'4','cm','height', 541);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('490', '2');
 /* Tabela DescriptiveNotes */
@@ -13299,11 +13299,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,491);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (491,'Zincogravura', 491);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (491,491);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (542,491);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (875,'7,8','cm','width', 491);
+			VALUES (875,'7,8','cm','width', 542);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (876,'5','cm','height', 491);
+			VALUES (876,'5','cm','height', 542);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('491', '2');
 /* Tabela DescriptiveNotes */
@@ -13329,11 +13329,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,492);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (492,'Zincogravura', 492);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (492,492);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (543,492);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (877,'4,5','cm','width', 492);
+			VALUES (877,'4,5','cm','width', 543);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (878,'6','cm','height', 492);
+			VALUES (878,'6','cm','height', 543);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('492', '2');
 /* Tabela DescriptiveNotes */
@@ -13357,11 +13357,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,493);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (493,'Zincogravura', 493);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (493,493);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (544,493);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (879,'8,7','cm','width', 493);
+			VALUES (879,'8,7','cm','width', 544);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (880,'5,5','cm','height', 493);
+			VALUES (880,'5,5','cm','height', 544);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('493', '2');
 /* Tabela DescriptiveNotes */
@@ -13385,11 +13385,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,494);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (494,'Zincogravura', 494);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (494,494);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (545,494);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (881,'5,5','cm','width', 494);
+			VALUES (881,'5,5','cm','width', 545);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (882,'5,5','cm','height', 494);
+			VALUES (882,'5,5','cm','height', 545);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('494', '2');
 /* Tabela DescriptiveNotes */
@@ -13413,11 +13413,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,495);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (495,'Zincogravura', 495);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (495,495);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (546,495);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (883,'8,5','cm','width', 495);
+			VALUES (883,'8,5','cm','width', 546);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (884,'5,7','cm','height', 495);
+			VALUES (884,'5,7','cm','height', 546);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('495', '2');
 /* Tabela DescriptiveNotes */
@@ -13445,11 +13445,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,496);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (496,'Zincogravura', 496);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (496,496);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (547,496);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (885,'6,5','cm','width', 496);
+			VALUES (885,'6,5','cm','width', 547);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (886,'5,7','cm','height', 496);
+			VALUES (886,'5,7','cm','height', 547);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('496', '2');
 /* Tabela DescriptiveNotes */
@@ -13477,11 +13477,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,497);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (497,'Zincogravura', 497);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (497,497);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (548,497);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (887,'8','cm','width', 497);
+			VALUES (887,'8','cm','width', 548);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (888,'6,5','cm','height', 497);
+			VALUES (888,'6,5','cm','height', 548);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('497', '2');
 /* Tabela DescriptiveNotes */
@@ -13505,11 +13505,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,498);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (498,'Zincogravura', 498);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (498,498);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (549,498);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (889,'4,5','cm','width', 498);
+			VALUES (889,'4,5','cm','width', 549);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (890,'5','cm','height', 498);
+			VALUES (890,'5','cm','height', 549);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('498', '2');
 /* Tabela DescriptiveNotes */
@@ -13533,11 +13533,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,499);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (499,'Zincogravura', 499);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (499,499);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (550,499);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (891,'7,9','cm','width', 499);
+			VALUES (891,'7,9','cm','width', 550);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (892,'5,4','cm','height', 499);
+			VALUES (892,'5,4','cm','height', 550);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('499', '2');
 /* Tabela DescriptiveNotes */
@@ -13561,11 +13561,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,500);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (500,'Zincogravura', 500);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (500,500);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (551,500);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (893,'5','cm','width', 500);
+			VALUES (893,'5','cm','width', 551);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (894,'3,3','cm','height', 500);
+			VALUES (894,'3,3','cm','height', 551);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('500', '2');
 /* Tabela DescriptiveNotes */
@@ -13591,11 +13591,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,501);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (501,'Zincogravura', 501);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (501,501);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (552,501);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (895,'7','cm','width', 501);
+			VALUES (895,'7','cm','width', 552);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (896,'5','cm','height', 501);
+			VALUES (896,'5','cm','height', 552);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('501', '2');
 /* Tabela DescriptiveNotes */
@@ -13619,11 +13619,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,502);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (502,'Zincogravura', 502);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (502,502);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (553,502);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (897,'6,5','cm','width', 502);
+			VALUES (897,'6,5','cm','width', 553);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (898,'4,9','cm','height', 502);
+			VALUES (898,'4,9','cm','height', 553);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('502', '2');
 /* Tabela DescriptiveNotes */
@@ -13647,11 +13647,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,503);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (503,'Zincogravura', 503);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (503,503);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (554,503);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (899,'8,4','cm','width', 503);
+			VALUES (899,'8,4','cm','width', 554);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (900,'6','cm','height', 503);
+			VALUES (900,'6','cm','height', 554);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('503', '2');
 /* Tabela DescriptiveNotes */
@@ -13677,11 +13677,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,504);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (504,'Zincogravura', 504);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (504,504);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (555,504);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (901,'4,5','cm','width', 504);
+			VALUES (901,'4,5','cm','width', 555);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (902,'3,4','cm','height', 504);
+			VALUES (902,'3,4','cm','height', 555);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('504', '2');
 /* Tabela DescriptiveNotes */
@@ -13705,11 +13705,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,505);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (505,'Zincogravura', 505);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (505,505);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (556,505);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (903,'8,4','cm','width', 505);
+			VALUES (903,'8,4','cm','width', 556);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (904,'5,9','cm','height', 505);
+			VALUES (904,'5,9','cm','height', 556);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('505', '2');
 /* Tabela DescriptiveNotes */
@@ -13733,11 +13733,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,506);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (506,'Zincogravura', 506);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (506,506);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (557,506);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (905,'9,2','cm','width', 506);
+			VALUES (905,'9,2','cm','width', 557);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (906,'5,5','cm','height', 506);
+			VALUES (906,'5,5','cm','height', 557);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('506', '2');
 /* Tabela DescriptiveNotes */
@@ -13765,11 +13765,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,507);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (507,'Zincogravura', 507);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (507,507);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (558,507);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (907,'8,9','cm','width', 507);
+			VALUES (907,'8,9','cm','width', 558);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (908,'5,8','cm','height', 507);
+			VALUES (908,'5,8','cm','height', 558);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('507', '2');
 /* Tabela DescriptiveNotes */
@@ -13805,11 +13805,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,508);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (508,'Zincogravura', 508);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (508,508);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (559,508);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (909,'7,2','cm','width', 508);
+			VALUES (909,'7,2','cm','width', 559);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (910,'4,2','cm','height', 508);
+			VALUES (910,'4,2','cm','height', 559);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('508', '2');
 /* Tabela DescriptiveNotes */
@@ -13833,11 +13833,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,509);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (509,'Zincogravura', 509);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (509,509);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (560,509);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (911,'7,2','cm','width', 509);
+			VALUES (911,'7,2','cm','width', 560);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (912,'6,1','cm','height', 509);
+			VALUES (912,'6,1','cm','height', 560);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('509', '2');
 /* Tabela DescriptiveNotes */
@@ -13861,11 +13861,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,510);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (510,'Zincogravura', 510);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (510,510);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (561,510);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (913,'11','cm','width', 510);
+			VALUES (913,'11','cm','width', 561);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (914,'6,2','cm','height', 510);
+			VALUES (914,'6,2','cm','height', 561);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('510', '2');
 /* Tabela DescriptiveNotes */
@@ -13889,11 +13889,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,511);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (511,'Zincogravura', 511);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (511,511);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (562,511);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (915,'6','cm','width', 511);
+			VALUES (915,'6','cm','width', 562);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (916,'9,2','cm','height', 511);
+			VALUES (916,'9,2','cm','height', 562);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('511', '2');
 /* Tabela DescriptiveNotes */
@@ -13917,11 +13917,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,512);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (512,'Zincogravura', 512);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (512,512);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (563,512);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (917,'6,5','cm','width', 512);
+			VALUES (917,'6,5','cm','width', 563);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (918,'4,9','cm','height', 512);
+			VALUES (918,'4,9','cm','height', 563);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('512', '2');
 /* Tabela DescriptiveNotes */
@@ -13945,11 +13945,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,513);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (513,'Zincogravura', 513);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (513,513);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (564,513);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (919,'8,4','cm','width', 513);
+			VALUES (919,'8,4','cm','width', 564);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (920,'6,4','cm','height', 513);
+			VALUES (920,'6,4','cm','height', 564);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('513', '2');
 /* Tabela DescriptiveNotes */
@@ -13973,11 +13973,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,514);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (514,'Zincogravura', 514);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (514,514);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (565,514);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (921,'6,2','cm','width', 514);
+			VALUES (921,'6,2','cm','width', 565);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (922,'4','cm','height', 514);
+			VALUES (922,'4','cm','height', 565);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('514', '2');
 /* Tabela DescriptiveNotes */
@@ -14001,11 +14001,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,515);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (515,'Zincogravura', 515);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (515,515);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (566,515);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (923,'8,7','cm','width', 515);
+			VALUES (923,'8,7','cm','width', 566);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (924,'5,6','cm','height', 515);
+			VALUES (924,'5,6','cm','height', 566);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('515', '2');
 /* Tabela DescriptiveNotes */
@@ -14029,11 +14029,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,516);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (516,'Zincogravura', 516);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (516,516);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (567,516);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (925,'7,2','cm','width', 516);
+			VALUES (925,'7,2','cm','width', 567);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (926,'10,2','cm','height', 516);
+			VALUES (926,'10,2','cm','height', 567);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('516', '2');
 /* Tabela DescriptiveNotes */
@@ -14057,11 +14057,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,517);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (517,'Zincogravura', 517);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (517,517);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (568,517);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (927,'5,1','cm','width', 517);
+			VALUES (927,'5,1','cm','width', 568);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (928,'8','cm','height', 517);
+			VALUES (928,'8','cm','height', 568);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('517', '2');
 /* Tabela DescriptiveNotes */
@@ -14087,11 +14087,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,518);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (518,'Zincogravura', 518);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (518,518);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (569,518);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (929,'9,2','cm','width', 518);
+			VALUES (929,'9,2','cm','width', 569);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (930,'6,6','cm','height', 518);
+			VALUES (930,'6,6','cm','height', 569);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('518', '2');
 /* Tabela DescriptiveNotes */
@@ -14115,11 +14115,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,519);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (519,'Zincogravura', 519);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (519,519);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (570,519);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (931,'5,5','cm','width', 519);
+			VALUES (931,'5,5','cm','width', 570);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (932,'3,3','cm','height', 519);
+			VALUES (932,'3,3','cm','height', 570);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('519', '2');
 /* Tabela DescriptiveNotes */
@@ -14143,11 +14143,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,520);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (520,'Zincogravura', 520);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (520,520);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (571,520);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (933,'6','cm','width', 520);
+			VALUES (933,'6','cm','width', 571);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (934,'9,5','cm','height', 520);
+			VALUES (934,'9,5','cm','height', 571);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('520', '2');
 /* Tabela DescriptiveNotes */
@@ -14171,11 +14171,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,521);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (521,'Zincogravura', 521);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (521,521);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (572,521);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (935,'6,3','cm','width', 521);
+			VALUES (935,'6,3','cm','width', 572);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (936,'4,1','cm','height', 521);
+			VALUES (936,'4,1','cm','height', 572);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('521', '2');
 /* Tabela DescriptiveNotes */
@@ -14199,11 +14199,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,522);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (522,'Zincogravura', 522);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (522,522);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (573,522);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (937,'6,6','cm','width', 522);
+			VALUES (937,'6,6','cm','width', 573);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (938,'10,5','cm','height', 522);
+			VALUES (938,'10,5','cm','height', 573);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('522', '2');
 /* Tabela DescriptiveNotes */
@@ -14227,11 +14227,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,523);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (523,'Zincogravura', 523);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (523,523);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (574,523);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (939,'6,5','cm','width', 523);
+			VALUES (939,'6,5','cm','width', 574);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (940,'4,1','cm','height', 523);
+			VALUES (940,'4,1','cm','height', 574);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('523', '2');
 /* Tabela DescriptiveNotes */
@@ -14257,11 +14257,11 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (524,17);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (524,524);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (575,524);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (941,'6,3','cm','width', 524);
+			VALUES (941,'6,3','cm','width', 575);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (942,'8,8','cm','height', 524);
+			VALUES (942,'8,8','cm','height', 575);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('524', '2');
 /* Tabela DescriptiveNotes */
@@ -14285,11 +14285,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,525);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (525,'Zincogravura', 525);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (525,525);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (576,525);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (943,'5,3','cm','width', 525);
+			VALUES (943,'5,3','cm','width', 576);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (944,'8,7','cm','height', 525);
+			VALUES (944,'8,7','cm','height', 576);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('525', '2');
 /* Tabela DescriptiveNotes */
@@ -14313,11 +14313,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,526);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (526,'Zincogravura', 526);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (526,526);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (577,526);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (945,'8','cm','width', 526);
+			VALUES (945,'8','cm','width', 577);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (946,'6,5','cm','height', 526);
+			VALUES (946,'6,5','cm','height', 577);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('526', '2');
 /* Tabela DescriptiveNotes */
@@ -14341,11 +14341,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,527);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (527,'Zincogravura', 527);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (527,527);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (578,527);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (947,'6,2','cm','width', 527);
+			VALUES (947,'6,2','cm','width', 578);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (948,'4','cm','height', 527);
+			VALUES (948,'4','cm','height', 578);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('527', '2');
 /* Tabela DescriptiveNotes */
@@ -14374,11 +14374,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (23,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (23,23);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (528,23);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (528,528);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (579,528);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (949,'9,1','cm','width', 528);
+			VALUES (949,'9,1','cm','width', 579);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (950,'6,3','cm','height', 528);
+			VALUES (950,'6,3','cm','height', 579);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('528', '2');
 /* Tabela DescriptiveNotes */
@@ -14402,11 +14402,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,529);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (529,'Zincogravura', 529);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (529,529);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (580,529);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (951,'5,7','cm','width', 529);
+			VALUES (951,'5,7','cm','width', 580);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (952,'4,3','cm','height', 529);
+			VALUES (952,'4,3','cm','height', 580);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('529', '2');
 /* Tabela DescriptiveNotes */
@@ -14430,11 +14430,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,530);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (530,'Zincogravura', 530);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (530,530);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (581,530);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (953,'5,3','cm','width', 530);
+			VALUES (953,'5,3','cm','width', 581);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (954,'9','cm','height', 530);
+			VALUES (954,'9','cm','height', 581);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('530', '2');
 /* Tabela DescriptiveNotes */
@@ -14458,11 +14458,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,531);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (531,'Zincogravura', 531);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (531,531);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (582,531);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (955,'4,2','cm','width', 531);
+			VALUES (955,'4,2','cm','width', 582);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (956,'5,8','cm','height', 531);
+			VALUES (956,'5,8','cm','height', 582);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('531', '2');
 /* Tabela DescriptiveNotes */
@@ -14486,11 +14486,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,532);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (532,'Zincogravura', 532);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (532,532);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (583,532);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (957,'5,2','cm','width', 532);
+			VALUES (957,'5,2','cm','width', 583);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (958,'7,6','cm','height', 532);
+			VALUES (958,'7,6','cm','height', 583);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('532', '2');
 /* Tabela DescriptiveNotes */
@@ -14514,11 +14514,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,533);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (533,'Zincogravura', 533);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (533,533);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (584,533);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (959,'7,3','cm','width', 533);
+			VALUES (959,'7,3','cm','width', 584);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (960,'5,5','cm','height', 533);
+			VALUES (960,'5,5','cm','height', 584);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('533', '2');
 /* Tabela DescriptiveNotes */
@@ -14544,11 +14544,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,534);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (534,'Zincogravura', 534);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (534,534);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (585,534);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (961,'6','cm','width', 534);
+			VALUES (961,'6','cm','width', 585);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (962,'9,2','cm','height', 534);
+			VALUES (962,'9,2','cm','height', 585);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('534', '2');
 /* Tabela DescriptiveNotes */
@@ -14574,11 +14574,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,535);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (535,'Zincogravura', 535);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (535,535);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (586,535);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (963,'5,4','cm','width', 535);
+			VALUES (963,'5,4','cm','width', 586);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (964,'3,4','cm','height', 535);
+			VALUES (964,'3,4','cm','height', 586);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('535', '2');
 /* Tabela DescriptiveNotes */
@@ -14602,11 +14602,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,536);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (536,'Zincogravura', 536);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (536,536);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (587,536);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (965,'8,8','cm','width', 536);
+			VALUES (965,'8,8','cm','width', 587);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (966,'5,9','cm','height', 536);
+			VALUES (966,'5,9','cm','height', 587);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('536', '2');
 /* Tabela DescriptiveNotes */
@@ -14630,11 +14630,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,537);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (537,'Zincogravura', 537);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (537,537);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (588,537);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (967,'5,8','cm','width', 537);
+			VALUES (967,'5,8','cm','width', 588);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (968,'3,7','cm','height', 537);
+			VALUES (968,'3,7','cm','height', 588);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('537', '2');
 /* Tabela DescriptiveNotes */
@@ -14658,11 +14658,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,538);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (538,'Zincogravura', 538);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (538,538);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (589,538);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (969,'5,8','cm','width', 538);
+			VALUES (969,'5,8','cm','width', 589);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (970,'7,8','cm','height', 538);
+			VALUES (970,'7,8','cm','height', 589);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('538', '2');
 /* Tabela DescriptiveNotes */
@@ -14686,11 +14686,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,539);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (539,'Zincogravura', 539);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (539,539);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (590,539);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (971,'5,2','cm','width', 539);
+			VALUES (971,'5,2','cm','width', 590);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (972,'7,5','cm','height', 539);
+			VALUES (972,'7,5','cm','height', 590);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('539', '2');
 /* Tabela DescriptiveNotes */
@@ -14714,11 +14714,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,540);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (540,'Zincogravura', 540);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (540,540);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (591,540);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (973,'8,8','cm','width', 540);
+			VALUES (973,'8,8','cm','width', 591);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (974,'5,6','cm','height', 540);
+			VALUES (974,'5,6','cm','height', 591);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('540', '2');
 /* Tabela DescriptiveNotes */
@@ -14742,11 +14742,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,541);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (541,'Zincogravura', 541);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (541,541);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (592,541);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (975,'6','cm','width', 541);
+			VALUES (975,'6','cm','width', 592);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (976,'10','cm','height', 541);
+			VALUES (976,'10','cm','height', 592);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('541', '2');
 /* Tabela DescriptiveNotes */
@@ -14770,11 +14770,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,542);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (542,'Zincogravura', 542);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (542,542);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (593,542);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (977,'6,5','cm','width', 542);
+			VALUES (977,'6,5','cm','width', 593);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (978,'4,5','cm','height', 542);
+			VALUES (978,'4,5','cm','height', 593);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('542', '2');
 /* Tabela DescriptiveNotes */
@@ -14798,11 +14798,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,543);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (543,'Zincogravura', 543);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (543,543);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (594,543);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (979,'5,9','cm','width', 543);
+			VALUES (979,'5,9','cm','width', 594);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (980,'8,6','cm','height', 543);
+			VALUES (980,'8,6','cm','height', 594);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('543', '2');
 /* Tabela DescriptiveNotes */
@@ -14826,11 +14826,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,544);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (544,'Zincogravura', 544);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (544,544);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (595,544);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (981,'6,4','cm','width', 544);
+			VALUES (981,'6,4','cm','width', 595);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (982,'4,6','cm','height', 544);
+			VALUES (982,'4,6','cm','height', 595);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('544', '2');
 /* Tabela DescriptiveNotes */
@@ -14859,11 +14859,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (24,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (24,24);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (545,24);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (545,545);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (596,545);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (983,'6','cm','width', 545);
+			VALUES (983,'6','cm','width', 596);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (984,'9,5','cm','height', 545);
+			VALUES (984,'9,5','cm','height', 596);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -14893,11 +14893,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,546);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (546,'Zincogravura', 546);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (546,546);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (597,546);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (985,'5,5','cm','width', 546);
+			VALUES (985,'5,5','cm','width', 597);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (986,'9,9','cm','height', 546);
+			VALUES (986,'9,9','cm','height', 597);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('546', '2');
 /* Tabela DescriptiveNotes */
@@ -14921,11 +14921,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,547);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (547,'Zincogravura', 547);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (547,547);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (598,547);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (987,'13,2','cm','width', 547);
+			VALUES (987,'13,2','cm','width', 598);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (988,'8,8','cm','height', 547);
+			VALUES (988,'8,8','cm','height', 598);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('547', '2');
 /* Tabela DescriptiveNotes */
@@ -14949,11 +14949,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,548);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (548,'Zincogravura', 548);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (548,548);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (599,548);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (989,'8,8','cm','width', 548);
+			VALUES (989,'8,8','cm','width', 599);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (990,'5,8','cm','height', 548);
+			VALUES (990,'5,8','cm','height', 599);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -14981,11 +14981,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,549);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (549,'Zincogravura', 549);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (549,549);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (600,549);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (991,'4,1','cm','width', 549);
+			VALUES (991,'4,1','cm','width', 600);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (992,'6,7','cm','height', 549);
+			VALUES (992,'6,7','cm','height', 600);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('549', '2');
 /* Tabela DescriptiveNotes */
@@ -15011,11 +15011,11 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (550,24);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (550,550);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (601,550);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (993,'6,2','cm','width', 550);
+			VALUES (993,'6,2','cm','width', 601);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (994,'8,4','cm','height', 550);
+			VALUES (994,'8,4','cm','height', 601);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -15043,11 +15043,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,551);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (551,'Zincogravura', 551);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (551,551);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (602,551);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (995,'5,3','cm','width', 551);
+			VALUES (995,'5,3','cm','width', 602);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (996,'8,7','cm','height', 551);
+			VALUES (996,'8,7','cm','height', 602);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -15075,11 +15075,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,552);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (552,'Zincogravura', 552);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (552,552);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (603,552);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (997,'5,9','cm','width', 552);
+			VALUES (997,'5,9','cm','width', 603);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (998,'9,2','cm','height', 552);
+			VALUES (998,'9,2','cm','height', 603);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -15107,11 +15107,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,553);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (553,'Zincogravura', 553);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (553,553);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (604,553);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (999,'5,3','cm','width', 553);
+			VALUES (999,'5,3','cm','width', 604);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1000,'7','cm','height', 553);
+			VALUES (1000,'7','cm','height', 604);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('553', '2');
 /* Tabela DescriptiveNotes */
@@ -15137,11 +15137,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,554);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (554,'Zincogravura', 554);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (554,554);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (605,554);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1001,'8,8','cm','width', 554);
+			VALUES (1001,'8,8','cm','width', 605);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1002,'6,1','cm','height', 554);
+			VALUES (1002,'6,1','cm','height', 605);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('554', '2');
 /* Tabela DescriptiveNotes */
@@ -15167,11 +15167,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,555);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (555,'Zincogravura', 555);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (555,555);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (606,555);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1003,'4,5','cm','width', 555);
+			VALUES (1003,'4,5','cm','width', 606);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1004,'6,2','cm','height', 555);
+			VALUES (1004,'6,2','cm','height', 606);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('555', '2');
 /* Tabela DescriptiveNotes */
@@ -15201,11 +15201,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,556);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (556,'Zincogravura', 556);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (556,556);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (607,556);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1005,'8,8','cm','width', 556);
+			VALUES (1005,'8,8','cm','width', 607);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1006,'6','cm','height', 556);
+			VALUES (1006,'6','cm','height', 607);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('556', '2');
 /* Tabela DescriptiveNotes */
@@ -15229,11 +15229,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,557);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (557,'Zincogravura', 557);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (557,557);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (608,557);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1007,'5,4','cm','width', 557);
+			VALUES (1007,'5,4','cm','width', 608);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1008,'4','cm','height', 557);
+			VALUES (1008,'4','cm','height', 608);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('557', '2');
 /* Tabela DescriptiveNotes */
@@ -15257,11 +15257,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,558);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (558,'Zincogravura', 558);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (558,558);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (609,558);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1009,'9','cm','width', 558);
+			VALUES (1009,'9','cm','width', 609);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1010,'6,2','cm','height', 558);
+			VALUES (1010,'6,2','cm','height', 609);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('558', '2');
 /* Tabela DescriptiveNotes */
@@ -15285,11 +15285,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,559);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (559,'Zincogravura', 559);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (559,559);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (610,559);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1011,'5,6','cm','width', 559);
+			VALUES (1011,'5,6','cm','width', 610);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1012,'9,7','cm','height', 559);
+			VALUES (1012,'9,7','cm','height', 610);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('559', '2');
 /* Tabela DescriptiveNotes */
@@ -15313,11 +15313,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,560);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (560,'Zincogravura', 560);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (560,560);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (611,560);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1013,'8','cm','width', 560);
+			VALUES (1013,'8','cm','width', 611);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1014,'4,7','cm','height', 560);
+			VALUES (1014,'4,7','cm','height', 611);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('560', '2');
 /* Tabela DescriptiveNotes */
@@ -15341,11 +15341,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,561);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (561,'Zincogravura', 561);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (561,561);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (612,561);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1015,'5,5','cm','width', 561);
+			VALUES (1015,'5,5','cm','width', 612);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1016,'5,4','cm','height', 561);
+			VALUES (1016,'5,4','cm','height', 612);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('561', '2');
 /* Tabela DescriptiveNotes */
@@ -15369,11 +15369,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,562);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (562,'Zincogravura', 562);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (562,562);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (613,562);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1017,'7,8','cm','width', 562);
+			VALUES (1017,'7,8','cm','width', 613);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1018,'5,5','cm','height', 562);
+			VALUES (1018,'5,5','cm','height', 613);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('562', '2');
 /* Tabela DescriptiveNotes */
@@ -15397,11 +15397,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,563);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (563,'Zincogravura', 563);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (563,563);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (614,563);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1019,'5,5','cm','width', 563);
+			VALUES (1019,'5,5','cm','width', 614);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1020,'7','cm','height', 563);
+			VALUES (1020,'7','cm','height', 614);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('563', '2');
 /* Tabela DescriptiveNotes */
@@ -15425,11 +15425,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,564);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (564,'Zincogravura', 564);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (564,564);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (615,564);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1021,'6,1','cm','width', 564);
+			VALUES (1021,'6,1','cm','width', 615);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1022,'9,9','cm','height', 564);
+			VALUES (1022,'9,9','cm','height', 615);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('564', '2');
 /* Tabela DescriptiveNotes */
@@ -15453,11 +15453,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,565);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (565,'Zincogravura', 565);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (565,565);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (616,565);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1023,'4','cm','width', 565);
+			VALUES (1023,'4','cm','width', 616);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1024,'4','cm','height', 565);
+			VALUES (1024,'4','cm','height', 616);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('565', '2');
 /* Tabela DescriptiveNotes */
@@ -15485,11 +15485,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,566);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (566,'Zincogravura', 566);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (566,566);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (617,566);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1025,'7','cm','width', 566);
+			VALUES (1025,'7','cm','width', 617);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1026,'9','cm','height', 566);
+			VALUES (1026,'9','cm','height', 617);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('566', '2');
 /* Tabela DescriptiveNotes */
@@ -15518,11 +15518,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (25,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (25,25);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (567,25);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (567,567);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (618,567);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1027,'5,6','cm','width', 567);
+			VALUES (1027,'5,6','cm','width', 618);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1028,'9','cm','height', 567);
+			VALUES (1028,'9','cm','height', 618);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('567', '2');
 /* Tabela DescriptiveNotes */
@@ -15546,11 +15546,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,568);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (568,'Zincogravura', 568);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (568,568);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (619,568);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1029,'7,3','cm','width', 568);
+			VALUES (1029,'7,3','cm','width', 619);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1030,'9,9','cm','height', 568);
+			VALUES (1030,'9,9','cm','height', 619);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('568', '2');
 /* Tabela DescriptiveNotes */
@@ -15579,11 +15579,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (26,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (26,26);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (569,26);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (569,569);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (620,569);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1031,'5,4','cm','width', 569);
+			VALUES (1031,'5,4','cm','width', 620);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1032,'5,6','cm','height', 569);
+			VALUES (1032,'5,6','cm','height', 620);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('569', '2');
 /* Tabela DescriptiveNotes */
@@ -15607,11 +15607,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,570);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (570,'Zincogravura', 570);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (570,570);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (621,570);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1033,'8,9','cm','width', 570);
+			VALUES (1033,'8,9','cm','width', 621);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1034,'7,5','cm','height', 570);
+			VALUES (1034,'7,5','cm','height', 621);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('570', '2');
 /* Tabela DescriptiveNotes */
@@ -15635,11 +15635,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,571);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (571,'Zincogravura', 571);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (571,571);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (622,571);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1035,'4,8','cm','width', 571);
+			VALUES (1035,'4,8','cm','width', 622);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1036,'7,8','cm','height', 571);
+			VALUES (1036,'7,8','cm','height', 622);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('571', '2');
 /* Tabela DescriptiveNotes */
@@ -15663,11 +15663,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,572);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (572,'Zincogravura', 572);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (572,572);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (623,572);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1037,'9','cm','width', 572);
+			VALUES (1037,'9','cm','width', 623);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1038,'6,1','cm','height', 572);
+			VALUES (1038,'6,1','cm','height', 623);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('572', '2');
 /* Tabela DescriptiveNotes */
@@ -15691,11 +15691,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,573);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (573,'Zincogravura', 573);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (573,573);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (624,573);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1039,'5,1','cm','width', 573);
+			VALUES (1039,'5,1','cm','width', 624);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1040,'8','cm','height', 573);
+			VALUES (1040,'8','cm','height', 624);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('573', '2');
 /* Tabela DescriptiveNotes */
@@ -15721,11 +15721,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,574);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (574,'Zincogravura', 574);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (574,574);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (625,574);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1041,'6','cm','width', 574);
+			VALUES (1041,'6','cm','width', 625);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1042,'8,6','cm','height', 574);
+			VALUES (1042,'8,6','cm','height', 625);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('574', '2');
 /* Tabela DescriptiveNotes */
@@ -15755,11 +15755,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,575);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (575,'Zincogravura', 575);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (575,575);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (626,575);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1043,'6,2','cm','width', 575);
+			VALUES (1043,'6,2','cm','width', 626);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1044,'8,8','cm','height', 575);
+			VALUES (1044,'8,8','cm','height', 626);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('575', '2');
 /* Tabela DescriptiveNotes */
@@ -15783,11 +15783,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,576);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (576,'Zincogravura', 576);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (576,576);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (627,576);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1045,'6','cm','width', 576);
+			VALUES (1045,'6','cm','width', 627);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1046,'9,5','cm','height', 576);
+			VALUES (1046,'9,5','cm','height', 627);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -15815,11 +15815,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,577);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (577,'Zincogravura', 577);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (577,577);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (628,577);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1047,'7,6','cm','width', 577);
+			VALUES (1047,'7,6','cm','width', 628);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1048,'5,5','cm','height', 577);
+			VALUES (1048,'5,5','cm','height', 628);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('577', '2');
 /* Tabela DescriptiveNotes */
@@ -15847,11 +15847,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,578);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (578,'Zincogravura', 578);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (578,578);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (629,578);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1049,'8,3','cm','width', 578);
+			VALUES (1049,'8,3','cm','width', 629);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1050,'11','cm','height', 578);
+			VALUES (1050,'11','cm','height', 629);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -15879,11 +15879,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,579);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (579,'Zincogravura', 579);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (579,579);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (630,579);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1051,'4,5','cm','width', 579);
+			VALUES (1051,'4,5','cm','width', 630);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1052,'6,8','cm','height', 579);
+			VALUES (1052,'6,8','cm','height', 630);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('579', '2');
 /* Tabela DescriptiveNotes */
@@ -15907,11 +15907,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,580);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (580,'Zincogravura', 580);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (580,580);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (631,580);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1053,'9,7','cm','width', 580);
+			VALUES (1053,'9,7','cm','width', 631);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1054,'8,1','cm','height', 580);
+			VALUES (1054,'8,1','cm','height', 631);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('580', '2');
 /* Tabela DescriptiveNotes */
@@ -15935,11 +15935,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,581);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (581,'Zincogravura', 581);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (581,581);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (632,581);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1055,'7,5','cm','width', 581);
+			VALUES (1055,'7,5','cm','width', 632);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1056,'8,2','cm','height', 581);
+			VALUES (1056,'8,2','cm','height', 632);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('581', '2');
 /* Tabela DescriptiveNotes */
@@ -15963,11 +15963,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,582);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (582,'Zincogravura', 582);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (582,582);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (633,582);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1057,'4,8','cm','width', 582);
+			VALUES (1057,'4,8','cm','width', 633);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1058,'7,8','cm','height', 582);
+			VALUES (1058,'7,8','cm','height', 633);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('582', '2');
 /* Tabela DescriptiveNotes */
@@ -15993,11 +15993,11 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (583,10);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (583,583);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (634,583);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1059,'6,1','cm','width', 583);
+			VALUES (1059,'6,1','cm','width', 634);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1060,'10,3','cm','height', 583);
+			VALUES (1060,'10,3','cm','height', 634);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('583', '2');
 /* Tabela DescriptiveNotes */
@@ -16021,11 +16021,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,584);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (584,'Zincogravura', 584);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (584,584);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (635,584);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1061,'6','cm','width', 584);
+			VALUES (1061,'6','cm','width', 635);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1062,'5,3','cm','height', 584);
+			VALUES (1062,'5,3','cm','height', 635);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('584', '2');
 /* Tabela DescriptiveNotes */
@@ -16049,11 +16049,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,585);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (585,'Zincogravura', 585);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (585,585);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (636,585);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1063,'6,3','cm','width', 585);
+			VALUES (1063,'6,3','cm','width', 636);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1064,'10','cm','height', 585);
+			VALUES (1064,'10','cm','height', 636);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -16083,11 +16083,11 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (586,10);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (586,586);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (637,586);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1065,'5,3','cm','width', 586);
+			VALUES (1065,'5,3','cm','width', 637);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1066,'8,6','cm','height', 586);
+			VALUES (1066,'8,6','cm','height', 637);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -16115,11 +16115,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,587);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (587,'Zincogravura', 587);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (587,587);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (638,587);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1067,'7,3','cm','width', 587);
+			VALUES (1067,'7,3','cm','width', 638);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1068,'4,1','cm','height', 587);
+			VALUES (1068,'4,1','cm','height', 638);
 
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
@@ -16147,11 +16147,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,588);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (588,'Zincogravura', 588);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (588,588);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (639,588);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1069,'6,3','cm','width', 588);
+			VALUES (1069,'6,3','cm','width', 639);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1070,'9','cm','height', 588);
+			VALUES (1070,'9','cm','height', 639);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('588', '2');
 /* Tabela DescriptiveNotes */
@@ -16175,11 +16175,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,589);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (589,'Zincogravura', 589);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (589,589);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (640,589);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1071,'5,1','cm','width', 589);
+			VALUES (1071,'5,1','cm','width', 640);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1072,'8,5','cm','height', 589);
+			VALUES (1072,'8,5','cm','height', 640);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('589', '2');
 /* Tabela DescriptiveNotes */
@@ -16203,11 +16203,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,590);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (590,'Zincogravura', 590);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (590,590);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (641,590);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1073,'11','cm','width', 590);
+			VALUES (1073,'11','cm','width', 641);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1074,'9,2','cm','height', 590);
+			VALUES (1074,'9,2','cm','height', 641);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('590', '2');
 /* Tabela DescriptiveNotes */
@@ -16235,11 +16235,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,591);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (591,'Zincogravura', 591);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (591,591);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (642,591);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1075,'3,8','cm','width', 591);
+			VALUES (1075,'3,8','cm','width', 642);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1076,'9,9','cm','height', 591);
+			VALUES (1076,'9,9','cm','height', 642);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('591', '2');
 /* Tabela DescriptiveNotes */
@@ -16287,11 +16287,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,592);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (592,'Zincogravura', 592);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (592,592);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (643,592);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1077,'6,2','cm','width', 592);
+			VALUES (1077,'6,2','cm','width', 643);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1078,'8,5','cm','height', 592);
+			VALUES (1078,'8,5','cm','height', 643);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('592', '2');
 /* Tabela DescriptiveNotes */
@@ -16317,11 +16317,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,593);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (593,'Zincogravura', 593);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (593,593);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (644,593);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1079,'5,2','cm','width', 593);
+			VALUES (1079,'5,2','cm','width', 644);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1080,'8,9','cm','height', 593);
+			VALUES (1080,'8,9','cm','height', 644);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('593', '2');
 /* Tabela DescriptiveNotes */
@@ -16343,13 +16343,13 @@ INSERT INTO Object_Work_Records (id_object_Work_Records, displayMeasurements, Re
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,594);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
-		VALUES (594,'HASH(0x9605408)', 594);
+		VALUES (594,'HASH(0xa6ea5d0)', 594);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (594,594);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (645,594);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1081,'5,3','cm','width', 594);
+			VALUES (1081,'5,3','cm','width', 645);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1082,'6,2','cm','height', 594);
+			VALUES (1082,'6,2','cm','height', 645);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('594', '2');
 /* Tabela RelatedWorks */
@@ -16370,11 +16370,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,595);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (595,'Zincogravura', 595);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (595,595);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (646,595);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1083,'6,9','cm','width', 595);
+			VALUES (1083,'6,9','cm','width', 646);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1084,'5,1','cm','height', 595);
+			VALUES (1084,'5,1','cm','height', 646);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('595', '2');
 /* Tabela RelatedWorks */
@@ -16400,11 +16400,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (27,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (27,27);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (596,27);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (596,596);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (647,596);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1085,'8,5','cm','width', 596);
+			VALUES (1085,'8,5','cm','width', 647);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1086,'6,5','cm','height', 596);
+			VALUES (1086,'6,5','cm','height', 647);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('596', '2');
 /* Tabela DescriptiveNotes */
@@ -16430,11 +16430,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,597);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (597,'Zincogravura (?)', 597);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (597,597);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (648,597);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1087,'5,5','cm','width', 597);
+			VALUES (1087,'5,5','cm','width', 648);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1088,'9','cm','height', 597);
+			VALUES (1088,'9','cm','height', 648);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('597', '2');
 /* Tabela DescriptiveNotes */
@@ -16458,11 +16458,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,598);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (598,'Zincogravura', 598);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (598,598);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (649,598);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1089,'5,2','cm','width', 598);
+			VALUES (1089,'5,2','cm','width', 649);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1090,'8,3','cm','height', 598);
+			VALUES (1090,'8,3','cm','height', 649);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('598', '2');
 /* Tabela DescriptiveNotes */
@@ -16486,11 +16486,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,599);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (599,'Zincogravura', 599);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (599,599);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (650,599);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1091,'6,2','cm','width', 599);
+			VALUES (1091,'6,2','cm','width', 650);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1092,'4','cm','height', 599);
+			VALUES (1092,'4','cm','height', 650);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('599', '2');
 /* Tabela DescriptiveNotes */
@@ -16514,11 +16514,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,600);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (600,'Zincogravura', 600);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (600,600);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (651,600);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1093,'6,5','cm','width', 600);
+			VALUES (1093,'6,5','cm','width', 651);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1094,'9','cm','height', 600);
+			VALUES (1094,'9','cm','height', 651);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('600', '2');
 /* Tabela DescriptiveNotes */
@@ -16544,11 +16544,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,601);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (601,'Zincogravura', 601);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (601,601);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (652,601);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1095,'6,5','cm','width', 601);
+			VALUES (1095,'6,5','cm','width', 652);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1096,'8,5','cm','height', 601);
+			VALUES (1096,'8,5','cm','height', 652);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('601', '2');
 /* Tabela DescriptiveNotes */
@@ -16572,11 +16572,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,602);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (602,'Zincogravura', 602);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (602,602);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (653,602);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1097,'6,2','cm','width', 602);
+			VALUES (1097,'6,2','cm','width', 653);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1098,'9,2','cm','height', 602);
+			VALUES (1098,'9,2','cm','height', 653);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('602', '2');
 /* Tabela DescriptiveNotes */
@@ -16607,11 +16607,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (28,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (28,28);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (603,28);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (603,603);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (654,603);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1099,'6,1','cm','width', 603);
+			VALUES (1099,'6,1','cm','width', 654);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1100,'8,5','cm','height', 603);
+			VALUES (1100,'8,5','cm','height', 654);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('603', '2');
 /* Tabela DescriptiveNotes */
@@ -16637,11 +16637,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,604);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (604,'Zincogravura', 604);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (604,604);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (655,604);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1101,'5,3','cm','width', 604);
+			VALUES (1101,'5,3','cm','width', 655);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1102,'6,1','cm','height', 604);
+			VALUES (1102,'6,1','cm','height', 655);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('604', '2');
 /* Tabela RelatedWorks */
@@ -16662,11 +16662,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,605);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (605,'Zincogravura', 605);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (605,605);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (656,605);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1103,'5,7','cm','width', 605);
+			VALUES (1103,'5,7','cm','width', 656);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1104,'9','cm','height', 605);
+			VALUES (1104,'9','cm','height', 656);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('605', '2');
 /* Tabela DescriptiveNotes */
@@ -16690,11 +16690,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,606);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (606,'Zincogravura', 606);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (606,606);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (657,606);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1105,'6,2','cm','width', 606);
+			VALUES (1105,'6,2','cm','width', 657);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1106,'9,1','cm','height', 606);
+			VALUES (1106,'9,1','cm','height', 657);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('606', '2');
 /* Tabela DescriptiveNotes */
@@ -16718,11 +16718,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,607);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (607,'Zincogravura', 607);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (607,607);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (658,607);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1107,'6','cm','width', 607);
+			VALUES (1107,'6','cm','width', 658);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1108,'9','cm','height', 607);
+			VALUES (1108,'9','cm','height', 658);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('607', '2');
 /* Tabela DescriptiveNotes */
@@ -16757,11 +16757,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (29,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (29,29);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (608,29);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (608,608);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (659,608);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1109,'5,4','cm','width', 608);
+			VALUES (1109,'5,4','cm','width', 659);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1110,'7,5','cm','height', 608);
+			VALUES (1110,'7,5','cm','height', 659);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('608', '2');
 /* Tabela DescriptiveNotes */
@@ -16785,11 +16785,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,609);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (609,'Zincogravura', 609);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (609,609);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (660,609);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1111,'13,2','cm','width', 609);
+			VALUES (1111,'13,2','cm','width', 660);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1112,'8,1','cm','height', 609);
+			VALUES (1112,'8,1','cm','height', 660);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('609', '2');
 /* Tabela RelatedWorks */
@@ -16812,11 +16812,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,610);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (610,'Zincogravura', 610);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (610,610);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (661,610);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1113,'5','cm','width', 610);
+			VALUES (1113,'5','cm','width', 661);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1114,'7,6','cm','height', 610);
+			VALUES (1114,'7,6','cm','height', 661);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('610', '2');
 /* Tabela DescriptiveNotes */
@@ -16842,11 +16842,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,611);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (611,'Zincogravura', 611);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (611,611);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (662,611);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1115,'6,4','cm','width', 611);
+			VALUES (1115,'6,4','cm','width', 662);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1116,'10,5','cm','height', 611);
+			VALUES (1116,'10,5','cm','height', 662);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('611', '2');
 /* Tabela RelatedWorks */
@@ -16875,11 +16875,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,612);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (612,'Zincogravura', 612);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (612,612);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (663,612);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1117,'4,7','cm','width', 612);
+			VALUES (1117,'4,7','cm','width', 663);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1118,'9,5','cm','height', 612);
+			VALUES (1118,'9,5','cm','height', 663);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('612', '2');
 /* Tabela RelatedWorks */
@@ -16914,11 +16914,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,613);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (613,'Zincogravura', 613);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (613,613);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (664,613);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1119,'9,5','cm','width', 613);
+			VALUES (1119,'9,5','cm','width', 664);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1120,'6','cm','height', 613);
+			VALUES (1120,'6','cm','height', 664);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('613', '2');
 /* Tabela DescriptiveNotes */
@@ -16944,11 +16944,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,614);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (614,'Zincogravura', 614);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (614,614);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (665,614);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1121,'10,5','cm','width', 614);
+			VALUES (1121,'10,5','cm','width', 665);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1122,'8,2','cm','height', 614);
+			VALUES (1122,'8,2','cm','height', 665);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('614', '2');
 /* Tabela DescriptiveNotes */
@@ -16976,11 +16976,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,615);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (615,'Zincogravura', 615);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (615,615);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (666,615);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1123,'8,1','cm','width', 615);
+			VALUES (1123,'8,1','cm','width', 666);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1124,'7,1','cm','height', 615);
+			VALUES (1124,'7,1','cm','height', 666);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('615', '2');
 /* Tabela DescriptiveNotes */
@@ -17004,11 +17004,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,616);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (616,'Zincogravura', 616);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (616,616);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (667,616);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1125,'6,3','cm','width', 616);
+			VALUES (1125,'6,3','cm','width', 667);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1126,'9,6','cm','height', 616);
+			VALUES (1126,'9,6','cm','height', 667);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('616', '2');
 /* Tabela DescriptiveNotes */
@@ -17037,11 +17037,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (30,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (30,30);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (617,30);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (617,617);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (668,617);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1127,'5,3','cm','width', 617);
+			VALUES (1127,'5,3','cm','width', 668);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1128,'8,8','cm','height', 617);
+			VALUES (1128,'8,8','cm','height', 668);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('617', '2');
 /* Tabela DescriptiveNotes */
@@ -17065,11 +17065,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,618);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (618,'Zincogravura', 618);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (618,618);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (669,618);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1129,'6,3','cm','width', 618);
+			VALUES (1129,'6,3','cm','width', 669);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1130,'5,2','cm','height', 618);
+			VALUES (1130,'5,2','cm','height', 669);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('618', '2');
 /* Tabela RelatedWorks */
@@ -17090,11 +17090,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,619);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (619,'Zincogravura', 619);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (619,619);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (670,619);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1131,'5,4','cm','width', 619);
+			VALUES (1131,'5,4','cm','width', 670);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1132,'9','cm','height', 619);
+			VALUES (1132,'9','cm','height', 670);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('619', '2');
 /* Tabela DescriptiveNotes */
@@ -17120,11 +17120,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,620);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (620,'Zincogravura', 620);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (620,620);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (671,620);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1133,'9,5','cm','width', 620);
+			VALUES (1133,'9,5','cm','width', 671);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1134,'7,3','cm','height', 620);
+			VALUES (1134,'7,3','cm','height', 671);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('620', '2');
 /* Tabela DescriptiveNotes */
@@ -17152,11 +17152,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,621);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (621,'Zincogravura', 621);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (621,621);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (672,621);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1135,'4,7','cm','width', 621);
+			VALUES (1135,'4,7','cm','width', 672);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1136,'9,5','cm','height', 621);
+			VALUES (1136,'9,5','cm','height', 672);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('621', '2');
 /* Tabela RelatedWorks */
@@ -17187,11 +17187,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,622);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (622,'Zincogravura', 622);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (622,622);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (673,622);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1137,'5,4','cm','width', 622);
+			VALUES (1137,'5,4','cm','width', 673);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1138,'8','cm','height', 622);
+			VALUES (1138,'8','cm','height', 673);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('622', '2');
 /* Tabela DescriptiveNotes */
@@ -17215,11 +17215,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,623);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (623,'Zincogravura', 623);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (623,623);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (674,623);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1139,'6','cm','width', 623);
+			VALUES (1139,'6','cm','width', 674);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1140,'9','cm','height', 623);
+			VALUES (1140,'9','cm','height', 674);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('623', '2');
 /* Tabela DescriptiveNotes */
@@ -17243,11 +17243,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,624);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (624,'Zincogravura', 624);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (624,624);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (675,624);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1141,'10,9','cm','width', 624);
+			VALUES (1141,'10,9','cm','width', 675);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1142,'9,9','cm','height', 624);
+			VALUES (1142,'9,9','cm','height', 675);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('624', '2');
 /* Tabela DescriptiveNotes */
@@ -17319,11 +17319,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,625);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (625,'Zincogravura', 625);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (625,625);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (676,625);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1143,'10,8','cm','width', 625);
+			VALUES (1143,'10,8','cm','width', 676);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1144,'6,9','cm','height', 625);
+			VALUES (1144,'6,9','cm','height', 676);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('625', '2');
 /* Tabela DescriptiveNotes */
@@ -17347,11 +17347,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,626);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (626,'Zincogravura', 626);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (626,626);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (677,626);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1145,'11,8','cm','width', 626);
+			VALUES (1145,'11,8','cm','width', 677);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1146,'7,3','cm','height', 626);
+			VALUES (1146,'7,3','cm','height', 677);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('626', '2');
 /* Tabela DescriptiveNotes */
@@ -17377,11 +17377,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,627);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (627,'Zincogravura', 627);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (627,627);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (678,627);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1147,'6,6','cm','width', 627);
+			VALUES (1147,'6,6','cm','width', 678);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1148,'9,5','cm','height', 627);
+			VALUES (1148,'9,5','cm','height', 678);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('627', '2');
 /* Tabela RelatedWorks */
@@ -17404,11 +17404,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,628);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (628,'Zincogravura', 628);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (628,628);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (679,628);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1149,'8,5','cm','width', 628);
+			VALUES (1149,'8,5','cm','width', 679);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1150,'5,4','cm','height', 628);
+			VALUES (1150,'5,4','cm','height', 679);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('628', '2');
 /* Tabela DescriptiveNotes */
@@ -17432,11 +17432,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,629);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (629,'Zincogravura', 629);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (629,629);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (680,629);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1151,'11','cm','width', 629);
+			VALUES (1151,'11','cm','width', 680);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1152,'7,3','cm','height', 629);
+			VALUES (1152,'7,3','cm','height', 680);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('629', '2');
 /* Tabela DescriptiveNotes */
@@ -17460,11 +17460,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,630);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (630,'Zincogravura', 630);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (630,630);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (681,630);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1153,'8','cm','width', 630);
+			VALUES (1153,'8','cm','width', 681);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1154,'5,5','cm','height', 630);
+			VALUES (1154,'5,5','cm','height', 681);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('630', '2');
 /* Tabela DescriptiveNotes */
@@ -17488,11 +17488,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,631);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (631,'Zincogravura', 631);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (631,631);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (682,631);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1155,'7','cm','width', 631);
+			VALUES (1155,'7','cm','width', 682);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1156,'6,9','cm','height', 631);
+			VALUES (1156,'6,9','cm','height', 682);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('631', '2');
 /* Tabela DescriptiveNotes */
@@ -17516,11 +17516,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,632);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (632,'Zincogravura', 632);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (632,632);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (683,632);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1157,'6','cm','width', 632);
+			VALUES (1157,'6','cm','width', 683);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1158,'9','cm','height', 632);
+			VALUES (1158,'9','cm','height', 683);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('632', '2');
 /* Tabela DescriptiveNotes */
@@ -17546,11 +17546,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,633);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (633,'Zincogravura', 633);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (633,633);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (684,633);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1159,'4,5','cm','width', 633);
+			VALUES (1159,'4,5','cm','width', 684);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1160,'8,2','cm','height', 633);
+			VALUES (1160,'8,2','cm','height', 684);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('633', '2');
 /* Tabela DescriptiveNotes */
@@ -17574,11 +17574,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,634);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (634,'Zincogravura', 634);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (634,634);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (685,634);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1161,'8,9','cm','width', 634);
+			VALUES (1161,'8,9','cm','width', 685);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1162,'6,5','cm','height', 634);
+			VALUES (1162,'6,5','cm','height', 685);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('634', '2');
 /* Tabela DescriptiveNotes */
@@ -17602,11 +17602,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,635);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (635,'Zincogravura', 635);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (635,635);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (686,635);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1163,'12','cm','width', 635);
+			VALUES (1163,'12','cm','width', 686);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1164,'7,5','cm','height', 635);
+			VALUES (1164,'7,5','cm','height', 686);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('635', '2');
 /* Tabela DescriptiveNotes */
@@ -17632,11 +17632,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,636);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (636,'Zincogravura', 636);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (636,636);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (687,636);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1165,'11,7','cm','width', 636);
+			VALUES (1165,'11,7','cm','width', 687);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1166,'7,9','cm','height', 636);
+			VALUES (1166,'7,9','cm','height', 687);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('636', '2');
 /* Tabela DescriptiveNotes */
@@ -17667,11 +17667,11 @@ INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (31,'ma
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (31,31);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (637,31);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (637,637);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (688,637);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1167,'5,2','cm','width', 637);
+			VALUES (1167,'5,2','cm','width', 688);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1168,'8,5','cm','height', 637);
+			VALUES (1168,'8,5','cm','height', 688);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('637', '2');
 /* Tabela DescriptiveNotes */
@@ -17697,11 +17697,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,638);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (638,'Zincogravura', 638);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (638,638);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (689,638);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1169,'8,7','cm','width', 638);
+			VALUES (1169,'8,7','cm','width', 689);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1170,'6,3','cm','height', 638);
+			VALUES (1170,'6,3','cm','height', 689);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('638', '2');
 /* Tabela DescriptiveNotes */
@@ -17725,11 +17725,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,639);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (639,'Zincogravura', 639);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (639,639);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (690,639);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1171,'8,9','cm','width', 639);
+			VALUES (1171,'8,9','cm','width', 690);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1172,'6,1','cm','height', 639);
+			VALUES (1172,'6,1','cm','height', 690);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('639', '2');
 /* Tabela RelatedWorks */
@@ -17752,11 +17752,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,640);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (640,'Zincogravura', 640);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (640,640);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (691,640);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1173,'6,3','cm','width', 640);
+			VALUES (1173,'6,3','cm','width', 691);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1174,'6,7','cm','height', 640);
+			VALUES (1174,'6,7','cm','height', 691);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('640', '2');
 /* Tabela DescriptiveNotes */
@@ -17780,11 +17780,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,641);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (641,'Zincogravura', 641);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (641,641);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (692,641);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1175,'6,9','cm','width', 641);
+			VALUES (1175,'6,9','cm','width', 692);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1176,'9,8','cm','height', 641);
+			VALUES (1176,'9,8','cm','height', 692);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('641', '2');
 /* Tabela DescriptiveNotes */
@@ -17808,11 +17808,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,642);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (642,'Zincogravura', 642);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (642,642);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (693,642);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1177,'9,9','cm','width', 642);
+			VALUES (1177,'9,9','cm','width', 693);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1178,'6,4','cm','height', 642);
+			VALUES (1178,'6,4','cm','height', 693);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('642', '2');
 /* Tabela DescriptiveNotes */
@@ -17836,11 +17836,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,643);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (643,'Zincogravura', 643);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (643,643);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (694,643);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1179,'5,9','cm','width', 643);
+			VALUES (1179,'5,9','cm','width', 694);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1180,'9,4','cm','height', 643);
+			VALUES (1180,'9,4','cm','height', 694);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('643', '2');
 /* Tabela DescriptiveNotes */
@@ -17864,11 +17864,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,644);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (644,'Zincogravura', 644);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (644,644);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (695,644);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1181,'6,1','cm','width', 644);
+			VALUES (1181,'6,1','cm','width', 695);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1182,'10,4','cm','height', 644);
+			VALUES (1182,'10,4','cm','height', 695);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('644', '2');
 /* Tabela DescriptiveNotes */
@@ -17892,11 +17892,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,645);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (645,'Zincogravura', 645);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (645,645);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (696,645);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1183,'6','cm','width', 645);
+			VALUES (1183,'6','cm','width', 696);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1184,'9','cm','height', 645);
+			VALUES (1184,'9','cm','height', 696);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('645', '2');
 /* Tabela DescriptiveNotes */
@@ -17922,11 +17922,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,646);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (646,'Zincogravura', 646);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (646,646);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (697,646);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1185,'4,8','cm','width', 646);
+			VALUES (1185,'4,8','cm','width', 697);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1186,'9,5','cm','height', 646);
+			VALUES (1186,'9,5','cm','height', 697);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('646', '2');
 /* Tabela RelatedWorks */
@@ -17957,11 +17957,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,647);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (647,'Zincogravura', 647);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (647,647);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (698,647);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1187,'7,9','cm','width', 647);
+			VALUES (1187,'7,9','cm','width', 698);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1188,'5,8','cm','height', 647);
+			VALUES (1188,'5,8','cm','height', 698);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('647', '2');
 /* Tabela DescriptiveNotes */
@@ -17987,11 +17987,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,648);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (648,'Zincogravura', 648);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (648,648);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (699,648);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1189,'5,4','cm','width', 648);
+			VALUES (1189,'5,4','cm','width', 699);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1190,'9,1','cm','height', 648);
+			VALUES (1190,'9,1','cm','height', 699);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('648', '2');
 /* Tabela DescriptiveNotes */
@@ -18017,11 +18017,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,649);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (649,'Zincogravura', 649);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (649,649);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (700,649);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1191,'6,1','cm','width', 649);
+			VALUES (1191,'6,1','cm','width', 700);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1192,'9,1','cm','height', 649);
+			VALUES (1192,'9,1','cm','height', 700);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('649', '2');
 /* Tabela DescriptiveNotes */
@@ -18047,11 +18047,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,650);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (650,'Zincogravura', 650);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (650,650);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (701,650);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1193,'5,3','cm','width', 650);
+			VALUES (1193,'5,3','cm','width', 701);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1194,'7,4','cm','height', 650);
+			VALUES (1194,'7,4','cm','height', 701);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('650', '2');
 /* Tabela DescriptiveNotes */
@@ -18075,11 +18075,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,651);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (651,'Zincogravura', 651);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (651,651);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (702,651);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1195,'6,1','cm','width', 651);
+			VALUES (1195,'6,1','cm','width', 702);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1196,'9','cm','height', 651);
+			VALUES (1196,'9','cm','height', 702);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('651', '2');
 /* Tabela DescriptiveNotes */
@@ -18103,11 +18103,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,652);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (652,'Zincogravura', 652);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (652,652);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (703,652);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1197,'4,7','cm','width', 652);
+			VALUES (1197,'4,7','cm','width', 703);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1198,'7,6','cm','height', 652);
+			VALUES (1198,'7,6','cm','height', 703);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('652', '2');
 /* Tabela DescriptiveNotes */
@@ -18133,11 +18133,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,653);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (653,'Zincogravura', 653);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (653,653);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (704,653);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1199,'7,6','cm','width', 653);
+			VALUES (1199,'7,6','cm','width', 704);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1200,'10,3','cm','height', 653);
+			VALUES (1200,'10,3','cm','height', 704);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('653', '2');
 /* Tabela DescriptiveNotes */
@@ -18161,11 +18161,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,654);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (654,'Zincogravura', 654);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (654,654);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (705,654);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1201,'17','cm','width', 654);
+			VALUES (1201,'17','cm','width', 705);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1202,'11,3','cm','height', 654);
+			VALUES (1202,'11,3','cm','height', 705);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('654', '2');
 /* Tabela RelatedWorks */
@@ -18186,11 +18186,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,655);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (655,'Zincogravura', 655);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (655,655);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (706,655);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1203,'6,2','cm','width', 655);
+			VALUES (1203,'6,2','cm','width', 706);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1204,'9,9','cm','height', 655);
+			VALUES (1204,'9,9','cm','height', 706);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('655', '2');
 /* Tabela DescriptiveNotes */
@@ -18214,11 +18214,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,656);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (656,'Zincogravura', 656);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (656,656);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (707,656);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1205,'8,6','cm','width', 656);
+			VALUES (1205,'8,6','cm','width', 707);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1206,'6','cm','height', 656);
+			VALUES (1206,'6','cm','height', 707);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('656', '2');
 /* Tabela DescriptiveNotes */
@@ -18242,11 +18242,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,657);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (657,'Zincogravura', 657);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (657,657);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (708,657);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1207,'8,8','cm','width', 657);
+			VALUES (1207,'8,8','cm','width', 708);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1208,'5,5','cm','height', 657);
+			VALUES (1208,'5,5','cm','height', 708);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('657', '2');
 /* Tabela DescriptiveNotes */
@@ -18272,11 +18272,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,658);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (658,'Zincogravura', 658);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (658,658);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (709,658);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1209,'4,6','cm','width', 658);
+			VALUES (1209,'4,6','cm','width', 709);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1210,'10,1','cm','height', 658);
+			VALUES (1210,'10,1','cm','height', 709);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('658', '2');
 /* Tabela DescriptiveNotes */
@@ -18304,11 +18304,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,659);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (659,'Zincogravura', 659);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (659,659);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (710,659);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1211,'12','cm','width', 659);
+			VALUES (1211,'12','cm','width', 710);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1212,'7,9','cm','height', 659);
+			VALUES (1212,'7,9','cm','height', 710);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('659', '2');
 /* Tabela DescriptiveNotes */
@@ -18332,11 +18332,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,660);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (660,'Zincogravura', 660);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (660,660);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (711,660);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1213,'6','cm','width', 660);
+			VALUES (1213,'6','cm','width', 711);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1214,'6','cm','height', 660);
+			VALUES (1214,'6','cm','height', 711);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('660', '2');
 /* Tabela DescriptiveNotes */
@@ -18362,11 +18362,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,661);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (661,'Zincogravura', 661);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (661,661);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (712,661);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1215,'7,9','cm','width', 661);
+			VALUES (1215,'7,9','cm','width', 712);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1216,'5','cm','height', 661);
+			VALUES (1216,'5','cm','height', 712);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('661', '2');
 /* Tabela DescriptiveNotes */
@@ -18390,11 +18390,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,662);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (662,'Zincogravura', 662);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (662,662);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (713,662);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1217,'7,9','cm','width', 662);
+			VALUES (1217,'7,9','cm','width', 713);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1218,'5,9','cm','height', 662);
+			VALUES (1218,'5,9','cm','height', 713);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('662', '2');
 /* Tabela DescriptiveNotes */
@@ -18418,11 +18418,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,663);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (663,'Zincogravura', 663);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (663,663);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (714,663);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1219,'5,4','cm','width', 663);
+			VALUES (1219,'5,4','cm','width', 714);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1220,'8,7','cm','height', 663);
+			VALUES (1220,'8,7','cm','height', 714);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('663', '2');
 /* Tabela DescriptiveNotes */
@@ -18448,11 +18448,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,664);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (664,'Zincogravura', 664);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (664,664);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (715,664);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1221,'6','cm','width', 664);
+			VALUES (1221,'6','cm','width', 715);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1222,'11','cm','height', 664);
+			VALUES (1222,'11','cm','height', 715);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('664', '2');
 /* Tabela DescriptiveNotes */
@@ -18476,11 +18476,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,665);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (665,'Zincogravura', 665);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (665,665);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (716,665);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1223,'4,7','cm','width', 665);
+			VALUES (1223,'4,7','cm','width', 716);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1224,'9,6','cm','height', 665);
+			VALUES (1224,'9,6','cm','height', 716);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('665', '2');
 /* Tabela DescriptiveNotes */
@@ -18504,11 +18504,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,666);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (666,'Zincogravura', 666);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (666,666);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (717,666);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1225,'8,8','cm','width', 666);
+			VALUES (1225,'8,8','cm','width', 717);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1226,'6,4','cm','height', 666);
+			VALUES (1226,'6,4','cm','height', 717);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('666', '2');
 /* Tabela DescriptiveNotes */
@@ -18532,11 +18532,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,667);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (667,'Zincogravura', 667);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (667,667);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (718,667);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1227,'6,5','cm','width', 667);
+			VALUES (1227,'6,5','cm','width', 718);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1228,'9','cm','height', 667);
+			VALUES (1228,'9','cm','height', 718);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('667', '2');
 /* Tabela DescriptiveNotes */
@@ -18562,11 +18562,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,668);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (668,'Zincogravura', 668);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (668,668);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (719,668);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1229,'12,8','cm','width', 668);
+			VALUES (1229,'12,8','cm','width', 719);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1230,'7,9','cm','height', 668);
+			VALUES (1230,'7,9','cm','height', 719);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('668', '2');
 /* Tabela DescriptiveNotes */
@@ -18590,11 +18590,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,669);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (669,'Zincogravura', 669);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (669,669);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (720,669);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1231,'11,6','cm','width', 669);
+			VALUES (1231,'11,6','cm','width', 720);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1232,'8','cm','height', 669);
+			VALUES (1232,'8','cm','height', 720);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('669', '2');
 /* Tabela DescriptiveNotes */
@@ -18618,11 +18618,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,670);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (670,'Zincogravura', 670);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (670,670);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (721,670);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1233,'11,7','cm','width', 670);
+			VALUES (1233,'11,7','cm','width', 721);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1234,'7,8','cm','height', 670);
+			VALUES (1234,'7,8','cm','height', 721);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('670', '2');
 /* Tabela DescriptiveNotes */
@@ -18646,11 +18646,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,671);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (671,'Zincogravura', 671);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (671,671);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (722,671);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1235,'6,1','cm','width', 671);
+			VALUES (1235,'6,1','cm','width', 722);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1236,'9,1','cm','height', 671);
+			VALUES (1236,'9,1','cm','height', 722);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('671', '2');
 /* Tabela DescriptiveNotes */
@@ -18674,11 +18674,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,672);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (672,'Zincogravura', 672);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (672,672);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (723,672);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1237,'12,7','cm','width', 672);
+			VALUES (1237,'12,7','cm','width', 723);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1238,'9','cm','height', 672);
+			VALUES (1238,'9','cm','height', 723);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('672', '2');
 /* Tabela DescriptiveNotes */
@@ -18704,11 +18704,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,673);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (673,'Zincogravura', 673);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (673,673);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (724,673);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1239,'12,9','cm','width', 673);
+			VALUES (1239,'12,9','cm','width', 724);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1240,'9,4','cm','height', 673);
+			VALUES (1240,'9,4','cm','height', 724);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('673', '2');
 /* Tabela DescriptiveNotes */
@@ -18732,11 +18732,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,674);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (674,'Zincogravura', 674);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (674,674);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (725,674);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1241,'12,7','cm','width', 674);
+			VALUES (1241,'12,7','cm','width', 725);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1242,'9,1','cm','height', 674);
+			VALUES (1242,'9,1','cm','height', 725);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('674', '2');
 /* Tabela DescriptiveNotes */
@@ -18760,11 +18760,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,675);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (675,'Zincogravura', 675);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (675,675);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (726,675);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1243,'8,4','cm','width', 675);
+			VALUES (1243,'8,4','cm','width', 726);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1244,'4,1','cm','height', 675);
+			VALUES (1244,'4,1','cm','height', 726);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('675', '2');
 /* Tabela DescriptiveNotes */
@@ -18790,11 +18790,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,676);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (676,'Zincogravura', 676);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (676,676);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (727,676);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1245,'4,5','cm','width', 676);
+			VALUES (1245,'4,5','cm','width', 727);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1246,'3,7','cm','height', 676);
+			VALUES (1246,'3,7','cm','height', 727);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('676', '2');
 /* Tabela DescriptiveNotes */
@@ -18820,11 +18820,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,677);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (677,'Zincogravura', 677);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (677,677);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (728,677);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1247,'5,9','cm','width', 677);
+			VALUES (1247,'5,9','cm','width', 728);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1248,'6,2','cm','height', 677);
+			VALUES (1248,'6,2','cm','height', 728);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('677', '2');
 /* Tabela DescriptiveNotes */
@@ -18848,11 +18848,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,678);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (678,'Zincogravura', 678);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (678,678);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (729,678);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1249,'6,5','cm','width', 678);
+			VALUES (1249,'6,5','cm','width', 729);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1250,'4,1','cm','height', 678);
+			VALUES (1250,'4,1','cm','height', 729);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('678', '2');
 /* Tabela DescriptiveNotes */
@@ -18876,11 +18876,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,679);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (679,'Zincogravura', 679);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (679,679);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (730,679);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1251,'6,3','cm','width', 679);
+			VALUES (1251,'6,3','cm','width', 730);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1252,'5','cm','height', 679);
+			VALUES (1252,'5','cm','height', 730);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('679', '2');
 /* Tabela RelatedWorks */
@@ -18901,11 +18901,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,680);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (680,'Zincogravura', 680);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (680,680);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (731,680);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1253,'7,6','cm','width', 680);
+			VALUES (1253,'7,6','cm','width', 731);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1254,'11','cm','height', 680);
+			VALUES (1254,'11','cm','height', 731);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('680', '2');
 /* Tabela DescriptiveNotes */
@@ -18929,11 +18929,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,681);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (681,'Zincogravura', 681);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (681,681);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (732,681);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1255,'9','cm','width', 681);
+			VALUES (1255,'9','cm','width', 732);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1256,'8,5','cm','height', 681);
+			VALUES (1256,'8,5','cm','height', 732);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('681', '2');
 /* Tabela DescriptiveNotes */
@@ -18957,11 +18957,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,682);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (682,'Zincogravura', 682);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (682,682);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (733,682);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1257,'6,4','cm','width', 682);
+			VALUES (1257,'6,4','cm','width', 733);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1258,'4,2','cm','height', 682);
+			VALUES (1258,'4,2','cm','height', 733);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('682', '2');
 /* Tabela DescriptiveNotes */
@@ -18987,11 +18987,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,683);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (683,'Zincogravura', 683);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (683,683);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (734,683);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1259,'7','cm','width', 683);
+			VALUES (1259,'7','cm','width', 734);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1260,'9,5','cm','height', 683);
+			VALUES (1260,'9,5','cm','height', 734);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('683', '2');
 /* Tabela DescriptiveNotes */
@@ -19015,11 +19015,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,684);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (684,'Zincogravura', 684);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (684,684);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (735,684);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1261,'9,2','cm','width', 684);
+			VALUES (1261,'9,2','cm','width', 735);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1262,'6,1','cm','height', 684);
+			VALUES (1262,'6,1','cm','height', 735);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('684', '2');
 /* Tabela DescriptiveNotes */
@@ -19043,11 +19043,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,685);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (685,'Zincogravura', 685);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (685,685);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (736,685);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1263,'5,9','cm','width', 685);
+			VALUES (1263,'5,9','cm','width', 736);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1264,'8,9','cm','height', 685);
+			VALUES (1264,'8,9','cm','height', 736);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('685', '2');
 /* Tabela DescriptiveNotes */
@@ -19071,11 +19071,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,686);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (686,'Zincogravura', 686);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (686,686);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (737,686);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1265,'12,8','cm','width', 686);
+			VALUES (1265,'12,8','cm','width', 737);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1266,'8,9','cm','height', 686);
+			VALUES (1266,'8,9','cm','height', 737);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('686', '2');
 /* Tabela DescriptiveNotes */
@@ -19101,11 +19101,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,687);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (687,'Zincogravura', 687);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (687,687);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (738,687);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1267,'7','cm','width', 687);
+			VALUES (1267,'7','cm','width', 738);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1268,'5,9','cm','height', 687);
+			VALUES (1268,'5,9','cm','height', 738);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('687', '2');
 /* Tabela DescriptiveNotes */
@@ -19129,11 +19129,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,688);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (688,'Zincogravura', 688);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (688,688);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (739,688);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1269,'12','cm','width', 688);
+			VALUES (1269,'12','cm','width', 739);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1270,'8','cm','height', 688);
+			VALUES (1270,'8','cm','height', 739);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('688', '2');
 /* Tabela DescriptiveNotes */
@@ -19157,11 +19157,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,689);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (689,'Zincogravura', 689);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (689,689);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (740,689);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1271,'10,7','cm','width', 689);
+			VALUES (1271,'10,7','cm','width', 740);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1272,'9,4','cm','height', 689);
+			VALUES (1272,'9,4','cm','height', 740);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('689', '2');
 /* Tabela DescriptiveNotes */
@@ -19185,11 +19185,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,690);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (690,'Zincogravura', 690);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (690,690);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (741,690);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1273,'12,8','cm','width', 690);
+			VALUES (1273,'12,8','cm','width', 741);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1274,'8,9','cm','height', 690);
+			VALUES (1274,'8,9','cm','height', 741);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('690', '2');
 /* Tabela DescriptiveNotes */
@@ -19215,11 +19215,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,691);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (691,'Zincogravura', 691);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (691,691);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (742,691);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1275,'7,9','cm','width', 691);
+			VALUES (1275,'7,9','cm','width', 742);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1276,'5,8','cm','height', 691);
+			VALUES (1276,'5,8','cm','height', 742);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('691', '2');
 /* Tabela DescriptiveNotes */
@@ -19245,11 +19245,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,692);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (692,'Zincogravura', 692);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (692,692);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (743,692);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1277,'6,2','cm','width', 692);
+			VALUES (1277,'6,2','cm','width', 743);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1278,'9','cm','height', 692);
+			VALUES (1278,'9','cm','height', 743);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('692', '2');
 /* Tabela DescriptiveNotes */
@@ -19275,11 +19275,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,693);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (693,'Zincogravura', 693);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (693,693);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (744,693);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1279,'6,2','cm','width', 693);
+			VALUES (1279,'6,2','cm','width', 744);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1280,'9,1','cm','height', 693);
+			VALUES (1280,'9,1','cm','height', 744);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('693', '2');
 /* Tabela DescriptiveNotes */
@@ -19303,11 +19303,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,694);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (694,'Zincogravura', 694);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (694,694);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (745,694);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1281,'8,1','cm','width', 694);
+			VALUES (1281,'8,1','cm','width', 745);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1282,'11,7','cm','height', 694);
+			VALUES (1282,'11,7','cm','height', 745);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('694', '2');
 /* Tabela DescriptiveNotes */
@@ -19333,11 +19333,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,695);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (695,'Zincogravura', 695);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (695,695);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (746,695);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1283,'6','cm','width', 695);
+			VALUES (1283,'6','cm','width', 746);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1284,'9,1','cm','height', 695);
+			VALUES (1284,'9,1','cm','height', 746);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('695', '2');
 /* Tabela DescriptiveNotes */
@@ -19361,11 +19361,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,696);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (696,'Zincogravura', 696);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (696,696);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (747,696);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1285,'12,8','cm','width', 696);
+			VALUES (1285,'12,8','cm','width', 747);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1286,'7,9','cm','height', 696);
+			VALUES (1286,'7,9','cm','height', 747);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('696', '2');
 /* Tabela DescriptiveNotes */
@@ -19391,11 +19391,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,697);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (697,'Zincogravura', 697);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (697,697);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (748,697);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1287,'9,6','cm','width', 697);
+			VALUES (1287,'9,6','cm','width', 748);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1288,'7,5','cm','height', 697);
+			VALUES (1288,'7,5','cm','height', 748);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('697', '2');
 /* Tabela DescriptiveNotes */
@@ -19427,11 +19427,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,698);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (698,'Zincogravura', 698);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (698,698);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (749,698);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1289,'5,2','cm','width', 698);
+			VALUES (1289,'5,2','cm','width', 749);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1290,'8,5','cm','height', 698);
+			VALUES (1290,'8,5','cm','height', 749);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('698', '2');
 /* Tabela DescriptiveNotes */
@@ -19455,11 +19455,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,699);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (699,'Zincogravura', 699);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (699,699);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (750,699);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1291,'7,2','cm','width', 699);
+			VALUES (1291,'7,2','cm','width', 750);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1292,'11,1','cm','height', 699);
+			VALUES (1292,'11,1','cm','height', 750);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('699', '2');
 /* Tabela DescriptiveNotes */
@@ -19483,11 +19483,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,700);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (700,'Zincogravura', 700);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (700,700);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (751,700);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1293,'3,9','cm','width', 700);
+			VALUES (1293,'3,9','cm','width', 751);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1294,'3','cm','height', 700);
+			VALUES (1294,'3','cm','height', 751);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('700', '2');
 /* Tabela DescriptiveNotes */
@@ -19511,11 +19511,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,701);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (701,'Zincogravura', 701);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (701,701);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (752,701);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1295,'5,3','cm','width', 701);
+			VALUES (1295,'5,3','cm','width', 752);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1296,'5','cm','height', 701);
+			VALUES (1296,'5','cm','height', 752);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('701', '2');
 /* Tabela DescriptiveNotes */
@@ -19539,11 +19539,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,702);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (702,'Zincogravura', 702);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (702,702);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (753,702);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1297,'5,8','cm','width', 702);
+			VALUES (1297,'5,8','cm','width', 753);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1298,'9,1','cm','height', 702);
+			VALUES (1298,'9,1','cm','height', 753);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('702', '2');
 /* Tabela DescriptiveNotes */
@@ -19567,11 +19567,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,703);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (703,'Zincogravura', 703);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (703,703);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (754,703);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1299,'6','cm','width', 703);
+			VALUES (1299,'6','cm','width', 754);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1300,'9,1','cm','height', 703);
+			VALUES (1300,'9,1','cm','height', 754);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('703', '2');
 /* Tabela DescriptiveNotes */
@@ -19595,11 +19595,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,704);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (704,'Zincogravura', 704);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (704,704);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (755,704);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1301,'4','cm','width', 704);
+			VALUES (1301,'4','cm','width', 755);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1302,'7.5','cm','height', 704);
+			VALUES (1302,'7.5','cm','height', 755);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('704', '2');
 /* Tabela DescriptiveNotes */
@@ -19623,11 +19623,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,705);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (705,'Zincogravura', 705);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (705,705);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (756,705);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1303,'5.9','cm','width', 705);
+			VALUES (1303,'5.9','cm','width', 756);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1304,'9','cm','height', 705);
+			VALUES (1304,'9','cm','height', 756);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('705', '2');
 /* Tabela DescriptiveNotes */
@@ -19651,11 +19651,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,706);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (706,'Zincogravura', 706);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (706,706);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (757,706);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1305,'6','cm','width', 706);
+			VALUES (1305,'6','cm','width', 757);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1306,'9,1','cm','height', 706);
+			VALUES (1306,'9,1','cm','height', 757);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('706', '2');
 /* Tabela DescriptiveNotes */
@@ -19679,11 +19679,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,707);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (707,'Zincogravura', 707);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (707,707);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (758,707);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1307,'6','cm','width', 707);
+			VALUES (1307,'6','cm','width', 758);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1308,'10','cm','height', 707);
+			VALUES (1308,'10','cm','height', 758);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('707', '2');
 /* Tabela DescriptiveNotes */
@@ -19707,11 +19707,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,708);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (708,'Zincogravura', 708);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (708,708);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (759,708);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1309,'7.3','cm','width', 708);
+			VALUES (1309,'7.3','cm','width', 759);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1310,'5.5','cm','height', 708);
+			VALUES (1310,'5.5','cm','height', 759);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('708', '2');
 /* Tabela DescriptiveNotes */
@@ -19735,11 +19735,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,709);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (709,'Zincogravura', 709);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (709,709);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (760,709);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1311,'6','cm','width', 709);
+			VALUES (1311,'6','cm','width', 760);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1312,'8.5','cm','height', 709);
+			VALUES (1312,'8.5','cm','height', 760);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('709', '2');
 /* Tabela DescriptiveNotes */
@@ -19763,11 +19763,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,710);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (710,'Zincogravura', 710);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (710,710);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (761,710);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1313,'4.8','cm','width', 710);
+			VALUES (1313,'4.8','cm','width', 761);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1314,'8','cm','height', 710);
+			VALUES (1314,'8','cm','height', 761);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('710', '2');
 /* Tabela DescriptiveNotes */
@@ -19791,11 +19791,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,711);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (711,'Zincogravura', 711);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (711,711);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (762,711);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1315,'5.5','cm','width', 711);
+			VALUES (1315,'5.5','cm','width', 762);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1316,'8.5','cm','height', 711);
+			VALUES (1316,'8.5','cm','height', 762);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('711', '2');
 /* Tabela DescriptiveNotes */
@@ -19819,11 +19819,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,712);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (712,'Zincogravura', 712);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (712,712);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (763,712);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1317,'5.2','cm','width', 712);
+			VALUES (1317,'5.2','cm','width', 763);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1318,'9','cm','height', 712);
+			VALUES (1318,'9','cm','height', 763);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('712', '2');
 /* Tabela DescriptiveNotes */
@@ -19847,11 +19847,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,713);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (713,'Zincogravura', 713);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (713,713);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (764,713);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1319,'7.7','cm','width', 713);
+			VALUES (1319,'7.7','cm','width', 764);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1320,'6','cm','height', 713);
+			VALUES (1320,'6','cm','height', 764);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('713', '2');
 /* Tabela DescriptiveNotes */
@@ -19875,11 +19875,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,714);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (714,'Zincogravura', 714);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (714,714);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (765,714);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1321,'9','cm','width', 714);
+			VALUES (1321,'9','cm','width', 765);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1322,'6','cm','height', 714);
+			VALUES (1322,'6','cm','height', 765);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('714', '2');
 /* Tabela DescriptiveNotes */
@@ -19903,11 +19903,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,715);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (715,'Zincogravura', 715);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (715,715);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (766,715);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1323,'9','cm','width', 715);
+			VALUES (1323,'9','cm','width', 766);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1324,'6.8','cm','height', 715);
+			VALUES (1324,'6.8','cm','height', 766);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('715', '2');
 /* Tabela DescriptiveNotes */
@@ -19931,11 +19931,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,716);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (716,'Zincogravura', 716);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (716,716);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (767,716);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1325,'5.5','cm','width', 716);
+			VALUES (1325,'5.5','cm','width', 767);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1326,'8','cm','height', 716);
+			VALUES (1326,'8','cm','height', 767);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('716', '2');
 /* Tabela DescriptiveNotes */
@@ -19959,11 +19959,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,717);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (717,'Zincogravura', 717);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (717,717);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (768,717);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1327,'6','cm','width', 717);
+			VALUES (1327,'6','cm','width', 768);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1328,'9,5','cm','height', 717);
+			VALUES (1328,'9,5','cm','height', 768);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('717', '2');
 /* Tabela DescriptiveNotes */
@@ -19987,11 +19987,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,718);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (718,'Zincogravura', 718);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (718,718);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (769,718);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1329,'6','cm','width', 718);
+			VALUES (1329,'6','cm','width', 769);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1330,'9.3','cm','height', 718);
+			VALUES (1330,'9.3','cm','height', 769);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('718', '2');
 /* Tabela DescriptiveNotes */
@@ -20015,11 +20015,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,719);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (719,'Zincogravura', 719);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (719,719);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (770,719);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1331,'6.8','cm','width', 719);
+			VALUES (1331,'6.8','cm','width', 770);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1332,'9.5','cm','height', 719);
+			VALUES (1332,'9.5','cm','height', 770);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('719', '2');
 /* Tabela DescriptiveNotes */
@@ -20043,11 +20043,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,720);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (720,'Zincogravura', 720);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (720,720);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (771,720);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1333,'6','cm','width', 720);
+			VALUES (1333,'6','cm','width', 771);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1334,'9,1','cm','height', 720);
+			VALUES (1334,'9,1','cm','height', 771);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('720', '2');
 /* Tabela DescriptiveNotes */
@@ -20071,11 +20071,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,721);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (721,'Zincogravura', 721);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (721,721);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (772,721);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1335,'6.5','cm','width', 721);
+			VALUES (1335,'6.5','cm','width', 772);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1336,'9,1','cm','height', 721);
+			VALUES (1336,'9,1','cm','height', 772);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('721', '2');
 /* Tabela DescriptiveNotes */
@@ -20099,9 +20099,9 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,722);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (722,'Zincogravura', 722);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (722,722);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (773,722);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1337,'4','cm','diameter', 722);
+			VALUES (1337,'4','cm','diameter', 773);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('722', '2');
 /* Tabela DescriptiveNotes */
@@ -20125,11 +20125,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,723);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (723,'Zincogravura', 723);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (723,723);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (774,723);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1338,'6.4','cm','width', 723);
+			VALUES (1338,'6.4','cm','width', 774);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1339,'8.8','cm','height', 723);
+			VALUES (1339,'8.8','cm','height', 774);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('723', '2');
 /* Tabela DescriptiveNotes */
@@ -20153,11 +20153,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,724);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (724,'Zincogravura', 724);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (724,724);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (775,724);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1340,'6','cm','width', 724);
+			VALUES (1340,'6','cm','width', 775);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1341,'8.8','cm','height', 724);
+			VALUES (1341,'8.8','cm','height', 775);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('724', '2');
 /* Tabela DescriptiveNotes */
@@ -20181,11 +20181,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,725);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (725,'Zincogravura', 725);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (725,725);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (776,725);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1342,'5.2','cm','width', 725);
+			VALUES (1342,'5.2','cm','width', 776);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1343,'6.8','cm','height', 725);
+			VALUES (1343,'6.8','cm','height', 776);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('725', '2');
 /* Tabela DescriptiveNotes */
@@ -20209,11 +20209,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,726);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (726,'Zincogravura', 726);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (726,726);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (777,726);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1344,'11.4','cm','width', 726);
+			VALUES (1344,'11.4','cm','width', 777);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1345,'8.2','cm','height', 726);
+			VALUES (1345,'8.2','cm','height', 777);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('726', '2');
 /* Tabela DescriptiveNotes */
@@ -20237,11 +20237,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,727);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (727,'Zincogravura', 727);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (727,727);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (778,727);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1346,'6','cm','width', 727);
+			VALUES (1346,'6','cm','width', 778);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1347,'9,1','cm','height', 727);
+			VALUES (1347,'9,1','cm','height', 778);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('727', '2');
 /* Tabela DescriptiveNotes */
@@ -20265,11 +20265,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,728);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (728,'Zincogravura', 728);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (728,728);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (779,728);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1348,'5.3','cm','width', 728);
+			VALUES (1348,'5.3','cm','width', 779);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1349,'7.8','cm','height', 728);
+			VALUES (1349,'7.8','cm','height', 779);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('728', '2');
 /* Tabela DescriptiveNotes */
@@ -20293,11 +20293,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,729);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (729,'Zincogravura', 729);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (729,729);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (780,729);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1350,'5.5','cm','width', 729);
+			VALUES (1350,'5.5','cm','width', 780);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1351,'4','cm','height', 729);
+			VALUES (1351,'4','cm','height', 780);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('729', '2');
 /* Tabela DescriptiveNotes */
@@ -20321,11 +20321,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,730);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (730,'Zincogravura', 730);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (730,730);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (781,730);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1352,'6.5','cm','width', 730);
+			VALUES (1352,'6.5','cm','width', 781);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1353,'4','cm','height', 730);
+			VALUES (1353,'4','cm','height', 781);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('730', '2');
 /* Tabela DescriptiveNotes */
@@ -20349,11 +20349,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,731);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (731,'Zincogravura', 731);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (731,731);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (782,731);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1354,'5.5','cm','width', 731);
+			VALUES (1354,'5.5','cm','width', 782);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1355,'9,1','cm','height', 731);
+			VALUES (1355,'9,1','cm','height', 782);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('731', '2');
 /* Tabela DescriptiveNotes */
@@ -20377,9 +20377,9 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,732);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (732,'Zincogravura', 732);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (732,732);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (783,732);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1356,'9.7','cm','diameter', 732);
+			VALUES (1356,'9.7','cm','diameter', 783);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('732', '2');
 /* Tabela DescriptiveNotes */
@@ -20403,11 +20403,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,733);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (733,'Zincogravura', 733);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (733,733);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (784,733);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1357,'8.5','cm','width', 733);
+			VALUES (1357,'8.5','cm','width', 784);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1358,'6','cm','height', 733);
+			VALUES (1358,'6','cm','height', 784);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('733', '2');
 /* Tabela DescriptiveNotes */
@@ -20431,11 +20431,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,734);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (734,'Zincogravura', 734);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (734,734);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (785,734);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1359,'5.4','cm','width', 734);
+			VALUES (1359,'5.4','cm','width', 785);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1360,'9','cm','height', 734);
+			VALUES (1360,'9','cm','height', 785);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('734', '2');
 /* Tabela DescriptiveNotes */
@@ -20459,11 +20459,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,735);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (735,'Zincogravura', 735);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (735,735);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (786,735);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1361,'6.5','cm','width', 735);
+			VALUES (1361,'6.5','cm','width', 786);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1362,'5.8','cm','height', 735);
+			VALUES (1362,'5.8','cm','height', 786);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('735', '2');
 /* Tabela DescriptiveNotes */
@@ -20487,11 +20487,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,736);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (736,'Zincogravura', 736);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (736,736);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (787,736);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1363,'8.3','cm','width', 736);
+			VALUES (1363,'8.3','cm','width', 787);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1364,'5.5','cm','height', 736);
+			VALUES (1364,'5.5','cm','height', 787);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('736', '2');
 /* Tabela DescriptiveNotes */
@@ -20515,11 +20515,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,737);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (737,'Zincogravura', 737);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (737,737);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (788,737);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1365,'5.4','cm','width', 737);
+			VALUES (1365,'5.4','cm','width', 788);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1366,'8','cm','height', 737);
+			VALUES (1366,'8','cm','height', 788);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('737', '2');
 /* Tabela DescriptiveNotes */
@@ -20543,11 +20543,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,738);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (738,'Zincogravura', 738);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (738,738);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (789,738);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1367,'5.5','cm','width', 738);
+			VALUES (1367,'5.5','cm','width', 789);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1368,'9,5','cm','height', 738);
+			VALUES (1368,'9,5','cm','height', 789);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('738', '2');
 /* Tabela DescriptiveNotes */
@@ -20571,11 +20571,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,739);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (739,'Zincogravura', 739);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (739,739);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (790,739);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1369,'5','cm','width', 739);
+			VALUES (1369,'5','cm','width', 790);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1370,'7.5','cm','height', 739);
+			VALUES (1370,'7.5','cm','height', 790);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('739', '2');
 /* Tabela DescriptiveNotes */
@@ -20599,11 +20599,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,740);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (740,'Zincogravura', 740);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (740,740);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (791,740);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1371,'6','cm','width', 740);
+			VALUES (1371,'6','cm','width', 791);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1372,'9,1','cm','height', 740);
+			VALUES (1372,'9,1','cm','height', 791);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('740', '2');
 /* Tabela DescriptiveNotes */
@@ -20627,11 +20627,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,741);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (741,'Zincogravura', 741);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (741,741);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (792,741);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1373,'6','cm','width', 741);
+			VALUES (1373,'6','cm','width', 792);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1374,'9,5','cm','height', 741);
+			VALUES (1374,'9,5','cm','height', 792);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('741', '2');
 /* Tabela DescriptiveNotes */
@@ -20655,11 +20655,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,742);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (742,'Zincogravura', 742);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (742,742);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (793,742);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1375,'7','cm','width', 742);
+			VALUES (1375,'7','cm','width', 793);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1376,'5.5','cm','height', 742);
+			VALUES (1376,'5.5','cm','height', 793);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('742', '2');
 /* Tabela DescriptiveNotes */
@@ -20683,11 +20683,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,743);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (743,'Zincogravura', 743);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (743,743);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (794,743);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1377,'7','cm','width', 743);
+			VALUES (1377,'7','cm','width', 794);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1378,'11','cm','height', 743);
+			VALUES (1378,'11','cm','height', 794);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('743', '2');
 /* Tabela DescriptiveNotes */
@@ -20711,11 +20711,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,744);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (744,'Zincogravura', 744);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (744,744);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (795,744);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1379,'6','cm','width', 744);
+			VALUES (1379,'6','cm','width', 795);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1380,'9,1','cm','height', 744);
+			VALUES (1380,'9,1','cm','height', 795);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('744', '2');
 /* Tabela RelatedWorks */
@@ -20736,11 +20736,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,745);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (745,'Zincogravura', 745);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (745,745);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (796,745);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1381,'4.5','cm','width', 745);
+			VALUES (1381,'4.5','cm','width', 796);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1382,'7.5','cm','height', 745);
+			VALUES (1382,'7.5','cm','height', 796);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('745', '2');
 /* Tabela DescriptiveNotes */
@@ -20764,11 +20764,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,746);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (746,'Zincogravura', 746);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (746,746);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (797,746);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1383,'6.5','cm','width', 746);
+			VALUES (1383,'6.5','cm','width', 797);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1384,'9','cm','height', 746);
+			VALUES (1384,'9','cm','height', 797);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('746', '2');
 /* Tabela DescriptiveNotes */
@@ -20792,11 +20792,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,747);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (747,'Zincogravura', 747);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (747,747);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (798,747);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1385,'5','cm','width', 747);
+			VALUES (1385,'5','cm','width', 798);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1386,'8.3','cm','height', 747);
+			VALUES (1386,'8.3','cm','height', 798);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('747', '2');
 /* Tabela DescriptiveNotes */
@@ -20820,11 +20820,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,748);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (748,'Zincogravura', 748);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (748,748);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (799,748);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1387,'5','cm','width', 748);
+			VALUES (1387,'5','cm','width', 799);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1388,'9','cm','height', 748);
+			VALUES (1388,'9','cm','height', 799);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('748', '2');
 /* Tabela DescriptiveNotes */
@@ -20848,11 +20848,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,749);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (749,'Zincogravura', 749);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (749,749);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (800,749);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1389,'5','cm','width', 749);
+			VALUES (1389,'5','cm','width', 800);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1390,'6','cm','height', 749);
+			VALUES (1390,'6','cm','height', 800);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('749', '2');
 /* Tabela DescriptiveNotes */
@@ -20876,11 +20876,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,750);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (750,'Zincogravura', 750);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (750,750);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (801,750);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1391,'5','cm','width', 750);
+			VALUES (1391,'5','cm','width', 801);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1392,'6','cm','height', 750);
+			VALUES (1392,'6','cm','height', 801);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('750', '2');
 /* Tabela DescriptiveNotes */
@@ -20904,11 +20904,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,751);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (751,'Zincogravura', 751);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (751,751);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (802,751);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1393,'5.1','cm','width', 751);
+			VALUES (1393,'5.1','cm','width', 802);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1394,'9.7','cm','height', 751);
+			VALUES (1394,'9.7','cm','height', 802);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('751', '2');
 /* Tabela DescriptiveNotes */
@@ -20932,11 +20932,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,752);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (752,'Zincogravura', 752);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (752,752);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (803,752);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1395,'6.','cm','width', 752);
+			VALUES (1395,'6.','cm','width', 803);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1396,'8.2','cm','height', 752);
+			VALUES (1396,'8.2','cm','height', 803);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('752', '2');
 /* Tabela DescriptiveNotes */
@@ -20960,11 +20960,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,753);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (753,'Zincogravura', 753);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (753,753);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (804,753);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1397,'4.8','cm','width', 753);
+			VALUES (1397,'4.8','cm','width', 804);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1398,'9','cm','height', 753);
+			VALUES (1398,'9','cm','height', 804);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('753', '2');
 /* Tabela DescriptiveNotes */
@@ -20988,11 +20988,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,754);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (754,'Zincogravura', 754);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (754,754);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (805,754);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1399,'3','cm','width', 754);
+			VALUES (1399,'3','cm','width', 805);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1400,'3.5','cm','height', 754);
+			VALUES (1400,'3.5','cm','height', 805);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('754', '2');
 /* Tabela DescriptiveNotes */
@@ -21016,11 +21016,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,755);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (755,'Zincogravura', 755);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (755,755);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (806,755);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1401,'4.9','cm','width', 755);
+			VALUES (1401,'4.9','cm','width', 806);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1402,'9','cm','height', 755);
+			VALUES (1402,'9','cm','height', 806);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('755', '2');
 /* Tabela DescriptiveNotes */
@@ -21044,11 +21044,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,756);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (756,'Zincogravura', 756);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (756,756);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (807,756);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1403,'8.8','cm','width', 756);
+			VALUES (1403,'8.8','cm','width', 807);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1404,'6','cm','height', 756);
+			VALUES (1404,'6','cm','height', 807);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('756', '2');
 /* Tabela DescriptiveNotes */
@@ -21072,11 +21072,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,757);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (757,'Zincogravura', 757);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (757,757);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (808,757);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1405,'6.5','cm','width', 757);
+			VALUES (1405,'6.5','cm','width', 808);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1406,'4.5','cm','height', 757);
+			VALUES (1406,'4.5','cm','height', 808);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('757', '2');
 /* Tabela DescriptiveNotes */
@@ -21100,11 +21100,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,758);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (758,'Zincogravura', 758);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (758,758);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (809,758);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1407,'6','cm','width', 758);
+			VALUES (1407,'6','cm','width', 809);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1408,'4','cm','height', 758);
+			VALUES (1408,'4','cm','height', 809);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('758', '2');
 /* Tabela DescriptiveNotes */
@@ -21128,11 +21128,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,759);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (759,'Zincogravura', 759);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (759,759);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (810,759);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1409,'6','cm','width', 759);
+			VALUES (1409,'6','cm','width', 810);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1410,'6.5','cm','height', 759);
+			VALUES (1410,'6.5','cm','height', 810);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('759', '2');
 /* Tabela DescriptiveNotes */
@@ -21156,11 +21156,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,760);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (760,'Zincogravura', 760);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (760,760);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (811,760);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1411,'5','cm','width', 760);
+			VALUES (1411,'5','cm','width', 811);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1412,'5','cm','height', 760);
+			VALUES (1412,'5','cm','height', 811);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('760', '2');
 /* Tabela DescriptiveNotes */
@@ -21184,11 +21184,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,761);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (761,'Zincogravura', 761);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (761,761);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (812,761);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1413,'9.5','cm','width', 761);
+			VALUES (1413,'9.5','cm','width', 812);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1414,'6.5','cm','height', 761);
+			VALUES (1414,'6.5','cm','height', 812);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('761', '2');
 /* Tabela DescriptiveNotes */
@@ -21212,11 +21212,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,762);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (762,'Zincogravura', 762);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (762,762);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (813,762);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1415,'6,5','cm','width', 762);
+			VALUES (1415,'6,5','cm','width', 813);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1416,'4','cm','height', 762);
+			VALUES (1416,'4','cm','height', 813);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('762', '2');
 /* Tabela DescriptiveNotes */
@@ -21240,9 +21240,9 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,763);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (763,'Zincogravura', 763);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (763,763);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (814,763);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1417,'6','cm','diameter', 763);
+			VALUES (1417,'6','cm','diameter', 814);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('763', '2');
 /* Tabela DescriptiveNotes */
@@ -21266,11 +21266,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,764);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (764,'Zincogravura', 764);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (764,764);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (815,764);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1418,'6,5','cm','width', 764);
+			VALUES (1418,'6,5','cm','width', 815);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1419,'4,5','cm','height', 764);
+			VALUES (1419,'4,5','cm','height', 815);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('764', '2');
 /* Tabela DescriptiveNotes */
@@ -21294,11 +21294,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,765);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (765,'Zincogravura', 765);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (765,765);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (816,765);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1420,'9','cm','width', 765);
+			VALUES (1420,'9','cm','width', 816);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1421,'6.3','cm','height', 765);
+			VALUES (1421,'6.3','cm','height', 816);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('765', '2');
 /* Tabela DescriptiveNotes */
@@ -21322,11 +21322,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,766);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (766,'Zincogravura', 766);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (766,766);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (817,766);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1422,'5.9','cm','width', 766);
+			VALUES (1422,'5.9','cm','width', 817);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1423,'7.4','cm','height', 766);
+			VALUES (1423,'7.4','cm','height', 817);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('766', '2');
 /* Tabela DescriptiveNotes */
@@ -21350,11 +21350,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,767);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (767,'Zincogravura', 767);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (767,767);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (818,767);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1424,'9.9','cm','width', 767);
+			VALUES (1424,'9.9','cm','width', 818);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1425,'5.9','cm','height', 767);
+			VALUES (1425,'5.9','cm','height', 818);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('767', '2');
 /* Tabela DescriptiveNotes */
@@ -21399,11 +21399,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,769);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (769,'Zincogravura', 769);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (769,769);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (819,769);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1426,'5.3','cm','width', 769);
+			VALUES (1426,'5.3','cm','width', 819);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1427,'8.9','cm','height', 769);
+			VALUES (1427,'8.9','cm','height', 819);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('769', '2');
 /* Tabela DescriptiveNotes */
@@ -21427,11 +21427,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,770);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (770,'Zincogravura', 770);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (770,770);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (820,770);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1428,'9.9','cm','width', 770);
+			VALUES (1428,'9.9','cm','width', 820);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1429,'7','cm','height', 770);
+			VALUES (1429,'7','cm','height', 820);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('770', '2');
 /* Tabela DescriptiveNotes */
@@ -21455,11 +21455,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,771);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (771,'Xilogravura', 771);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (771,771);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (821,771);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1430,'8.8','cm','width', 771);
+			VALUES (1430,'8.8','cm','width', 821);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1431,'7,5','cm','height', 771);
+			VALUES (1431,'7,5','cm','height', 821);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('771', '2');
 /* Tabela DescriptiveNotes */
@@ -21483,11 +21483,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,772);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (772,'Zincogravura', 772);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (772,772);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (822,772);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1432,'7.5','cm','width', 772);
+			VALUES (1432,'7.5','cm','width', 822);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1433,'5','cm','height', 772);
+			VALUES (1433,'5','cm','height', 822);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('772', '2');
 /* Tabela DescriptiveNotes */
@@ -21511,11 +21511,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,773);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (773,'Zincogravura', 773);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (773,773);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (823,773);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1434,'7.7','cm','width', 773);
+			VALUES (1434,'7.7','cm','width', 823);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1435,'12.5','cm','height', 773);
+			VALUES (1435,'12.5','cm','height', 823);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('773', '2');
 /* Tabela DescriptiveNotes */
@@ -21539,11 +21539,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,774);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (774,'Zincogravura', 774);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (774,774);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (824,774);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1436,'6.3','cm','width', 774);
+			VALUES (1436,'6.3','cm','width', 824);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1437,'10','cm','height', 774);
+			VALUES (1437,'10','cm','height', 824);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('774', '2');
 /* Tabela DescriptiveNotes */
@@ -21567,11 +21567,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,775);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (775,'Zincogravura', 775);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (775,775);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (825,775);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1438,'5.1','cm','width', 775);
+			VALUES (1438,'5.1','cm','width', 825);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1439,'7','cm','height', 775);
+			VALUES (1439,'7','cm','height', 825);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('775', '2');
 /* Tabela DescriptiveNotes */
@@ -21595,11 +21595,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,776);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (776,'Zincogravura', 776);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (776,776);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (826,776);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1440,'13','cm','width', 776);
+			VALUES (1440,'13','cm','width', 826);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1441,'8','cm','height', 776);
+			VALUES (1441,'8','cm','height', 826);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('776', '2');
 /* Tabela DescriptiveNotes */
@@ -21623,11 +21623,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,777);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (777,'Zincogravura', 777);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (777,777);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (827,777);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1442,'6.5','cm','width', 777);
+			VALUES (1442,'6.5','cm','width', 827);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1443,'9','cm','height', 777);
+			VALUES (1443,'9','cm','height', 827);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('777', '2');
 /* Tabela DescriptiveNotes */
@@ -21651,11 +21651,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,778);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (778,'Zincogravura', 778);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (778,778);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (828,778);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1444,'6','cm','width', 778);
+			VALUES (1444,'6','cm','width', 828);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1445,'9','cm','height', 778);
+			VALUES (1445,'9','cm','height', 828);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('778', '2');
 /* Tabela DescriptiveNotes */
@@ -21679,11 +21679,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,779);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (779,'Zincogravura', 779);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (779,779);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (829,779);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1446,'6','cm','width', 779);
+			VALUES (1446,'6','cm','width', 829);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1447,'9','cm','height', 779);
+			VALUES (1447,'9','cm','height', 829);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('779', '2');
 /* Tabela DescriptiveNotes */
@@ -21707,11 +21707,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,780);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (780,'Zincogravura', 780);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (780,780);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (830,780);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1448,'6','cm','width', 780);
+			VALUES (1448,'6','cm','width', 830);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1449,'8','cm','height', 780);
+			VALUES (1449,'8','cm','height', 830);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('780', '2');
 /* Tabela DescriptiveNotes */
@@ -21735,11 +21735,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,781);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (781,'Zincogravura', 781);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (781,781);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (831,781);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1450,'5.5','cm','width', 781);
+			VALUES (1450,'5.5','cm','width', 831);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1451,'9','cm','height', 781);
+			VALUES (1451,'9','cm','height', 831);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('781', '2');
 /* Tabela DescriptiveNotes */
@@ -21763,11 +21763,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,782);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (782,'Zincogravura', 782);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (782,782);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (832,782);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1452,'7.5','cm','width', 782);
+			VALUES (1452,'7.5','cm','width', 832);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1453,'12','cm','height', 782);
+			VALUES (1453,'12','cm','height', 832);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('782', '2');
 /* Tabela DescriptiveNotes */
@@ -21791,11 +21791,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,783);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (783,'Zincogravura', 783);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (783,783);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (833,783);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1454,'8','cm','width', 783);
+			VALUES (1454,'8','cm','width', 833);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1455,'15','cm','height', 783);
+			VALUES (1455,'15','cm','height', 833);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('783', '2');
 /* Tabela DescriptiveNotes */
@@ -21819,11 +21819,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,784);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (784,'Zincogravura', 784);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (784,784);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (834,784);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1456,'7','cm','width', 784);
+			VALUES (1456,'7','cm','width', 834);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1457,'9.7','cm','height', 784);
+			VALUES (1457,'9.7','cm','height', 834);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('784', '2');
 /* Tabela DescriptiveNotes */
@@ -21847,11 +21847,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,785);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (785,'Zincogravura', 785);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (785,785);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (835,785);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1458,'10','cm','width', 785);
+			VALUES (1458,'10','cm','width', 835);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1459,'7','cm','height', 785);
+			VALUES (1459,'7','cm','height', 835);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('785', '2');
 /* Tabela DescriptiveNotes */
@@ -21875,11 +21875,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,786);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (786,'Zincogravura', 786);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (786,786);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (836,786);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1460,'7.4','cm','width', 786);
+			VALUES (1460,'7.4','cm','width', 836);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1461,'5,4','cm','height', 786);
+			VALUES (1461,'5,4','cm','height', 836);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('786', '2');
 /* Tabela DescriptiveNotes */
@@ -21903,11 +21903,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,787);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (787,'Zincogravura', 787);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (787,787);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (837,787);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1462,'12.5','cm','width', 787);
+			VALUES (1462,'12.5','cm','width', 837);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1463,'8','cm','height', 787);
+			VALUES (1463,'8','cm','height', 837);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('787', '2');
 /* Tabela DescriptiveNotes */
@@ -21931,11 +21931,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,788);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (788,'Zincogravura', 788);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (788,788);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (838,788);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1464,'5.5','cm','width', 788);
+			VALUES (1464,'5.5','cm','width', 838);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1465,'5','cm','height', 788);
+			VALUES (1465,'5','cm','height', 838);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('788', '2');
 /* Tabela DescriptiveNotes */
@@ -21959,11 +21959,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,789);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (789,'Zincogravura', 789);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (789,789);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (839,789);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1466,'6.3','cm','width', 789);
+			VALUES (1466,'6.3','cm','width', 839);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1467,'9','cm','height', 789);
+			VALUES (1467,'9','cm','height', 839);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('789', '2');
 /* Tabela DescriptiveNotes */
@@ -21987,11 +21987,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,790);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (790,'Zincogravura', 790);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (790,790);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (840,790);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1468,'6','cm','width', 790);
+			VALUES (1468,'6','cm','width', 840);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1469,'4,5','cm','height', 790);
+			VALUES (1469,'4,5','cm','height', 840);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('790', '2');
 /* Tabela DescriptiveNotes */
@@ -22015,11 +22015,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,791);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (791,'Zincogravura', 791);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (791,791);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (841,791);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1470,'5','cm','width', 791);
+			VALUES (1470,'5','cm','width', 841);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1471,'10','cm','height', 791);
+			VALUES (1471,'10','cm','height', 841);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('791', '2');
 /* Tabela DescriptiveNotes */
@@ -22064,11 +22064,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,793);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (793,'Zincogravura', 793);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (793,793);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (842,793);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1472,'6.7','cm','width', 793);
+			VALUES (1472,'6.7','cm','width', 842);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1473,'9','cm','height', 793);
+			VALUES (1473,'9','cm','height', 842);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('793', '2');
 /* Tabela DescriptiveNotes */
@@ -22092,11 +22092,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,794);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (794,'Zincogravura', 794);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (794,794);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (843,794);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1474,'7','cm','width', 794);
+			VALUES (1474,'7','cm','width', 843);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1475,'11','cm','height', 794);
+			VALUES (1475,'11','cm','height', 843);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('794', '2');
 /* Tabela DescriptiveNotes */
@@ -22120,11 +22120,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,795);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (795,'Zincogravura', 795);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (795,795);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (844,795);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1476,'6.7','cm','width', 795);
+			VALUES (1476,'6.7','cm','width', 844);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1477,'9.5','cm','height', 795);
+			VALUES (1477,'9.5','cm','height', 844);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('795', '2');
 /* Tabela DescriptiveNotes */
@@ -22148,11 +22148,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,796);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (796,'Zincogravura', 796);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (796,796);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (845,796);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1478,'8','cm','width', 796);
+			VALUES (1478,'8','cm','width', 845);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1479,'6','cm','height', 796);
+			VALUES (1479,'6','cm','height', 845);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('796', '2');
 /* Tabela DescriptiveNotes */
@@ -22176,11 +22176,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,797);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (797,'Zincogravura', 797);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (797,797);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (846,797);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1480,'5.8','cm','width', 797);
+			VALUES (1480,'5.8','cm','width', 846);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1481,'6','cm','height', 797);
+			VALUES (1481,'6','cm','height', 846);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('797', '2');
 /* Tabela DescriptiveNotes */
@@ -22204,11 +22204,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,798);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (798,'Zincogravura', 798);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (798,798);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (847,798);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1482,'6.3','cm','width', 798);
+			VALUES (1482,'6.3','cm','width', 847);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1483,'9','cm','height', 798);
+			VALUES (1483,'9','cm','height', 847);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('798', '2');
 /* Tabela DescriptiveNotes */
@@ -22232,11 +22232,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,799);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (799,'Zincogravura', 799);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (799,799);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (848,799);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1484,'7','cm','width', 799);
+			VALUES (1484,'7','cm','width', 848);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1485,'10','cm','height', 799);
+			VALUES (1485,'10','cm','height', 848);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('799', '2');
 /* Tabela DescriptiveNotes */
@@ -22260,11 +22260,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,800);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (800,'Zincogravura', 800);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (800,800);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (849,800);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1486,'6.4','cm','width', 800);
+			VALUES (1486,'6.4','cm','width', 849);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1487,'8.8','cm','height', 800);
+			VALUES (1487,'8.8','cm','height', 849);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('800', '2');
 /* Tabela DescriptiveNotes */
@@ -22288,11 +22288,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,801);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (801,'Zincogravura', 801);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (801,801);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (850,801);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1488,'7','cm','width', 801);
+			VALUES (1488,'7','cm','width', 850);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1489,'5,5','cm','height', 801);
+			VALUES (1489,'5,5','cm','height', 850);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('801', '2');
 /* Tabela DescriptiveNotes */
@@ -22316,11 +22316,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,802);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (802,'Zincogravura', 802);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (802,802);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (851,802);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1490,'11','cm','width', 802);
+			VALUES (1490,'11','cm','width', 851);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1491,'7','cm','height', 802);
+			VALUES (1491,'7','cm','height', 851);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('802', '2');
 /* Tabela DescriptiveNotes */
@@ -22344,11 +22344,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,803);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (803,'Zincogravura', 803);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (803,803);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (852,803);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1492,'5.1','cm','width', 803);
+			VALUES (1492,'5.1','cm','width', 852);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1493,'9','cm','height', 803);
+			VALUES (1493,'9','cm','height', 852);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('803', '2');
 /* Tabela DescriptiveNotes */
@@ -22372,11 +22372,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,804);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (804,'Zincogravura', 804);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (804,804);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (853,804);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1494,'6.5','cm','width', 804);
+			VALUES (1494,'6.5','cm','width', 853);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1495,'9.5','cm','height', 804);
+			VALUES (1495,'9.5','cm','height', 853);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('804', '2');
 /* Tabela DescriptiveNotes */
@@ -22421,11 +22421,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,806);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (806,'Zincogravura', 806);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (806,806);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (854,806);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1496,'9.5','cm','width', 806);
+			VALUES (1496,'9.5','cm','width', 854);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1497,'6,5','cm','height', 806);
+			VALUES (1497,'6,5','cm','height', 854);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('806', '2');
 /* Tabela DescriptiveNotes */
@@ -22449,11 +22449,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,807);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (807,'Zincogravura', 807);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (807,807);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (855,807);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1498,'6.5','cm','width', 807);
+			VALUES (1498,'6.5','cm','width', 855);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1499,'4,5','cm','height', 807);
+			VALUES (1499,'4,5','cm','height', 855);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('807', '2');
 /* Tabela DescriptiveNotes */
@@ -22477,11 +22477,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,808);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (808,'Zincogravura', 808);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (808,808);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (856,808);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1500,'6','cm','width', 808);
+			VALUES (1500,'6','cm','width', 856);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1501,'10','cm','height', 808);
+			VALUES (1501,'10','cm','height', 856);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('808', '2');
 /* Tabela DescriptiveNotes */
@@ -22505,11 +22505,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,809);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (809,'Zincogravura', 809);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (809,809);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (857,809);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1502,'6','cm','width', 809);
+			VALUES (1502,'6','cm','width', 857);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1503,'6','cm','height', 809);
+			VALUES (1503,'6','cm','height', 857);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('809', '2');
 /* Tabela DescriptiveNotes */
@@ -22533,11 +22533,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,810);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (810,'Zincogravura', 810);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (810,810);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (858,810);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1504,'6','cm','width', 810);
+			VALUES (1504,'6','cm','width', 858);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1505,'9','cm','height', 810);
+			VALUES (1505,'9','cm','height', 858);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('810', '2');
 /* Tabela DescriptiveNotes */
@@ -22582,11 +22582,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,812);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (812,'Zincogravura', 812);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (812,812);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (859,812);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1506,'6','cm','width', 812);
+			VALUES (1506,'6','cm','width', 859);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1507,'9,5','cm','height', 812);
+			VALUES (1507,'9,5','cm','height', 859);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('812', '2');
 /* Tabela DescriptiveNotes */
@@ -22610,11 +22610,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,813);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (813,'Zincogravura', 813);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (813,813);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (860,813);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1508,'7.5','cm','width', 813);
+			VALUES (1508,'7.5','cm','width', 860);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1509,'5','cm','height', 813);
+			VALUES (1509,'5','cm','height', 860);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('813', '2');
 /* Tabela DescriptiveNotes */
@@ -22638,11 +22638,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,814);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (814,'Zincogravura', 814);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (814,814);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (861,814);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1510,'12.5','cm','width', 814);
+			VALUES (1510,'12.5','cm','width', 861);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1511,'8','cm','height', 814);
+			VALUES (1511,'8','cm','height', 861);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('814', '2');
 /* Tabela DescriptiveNotes */
@@ -22666,11 +22666,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,815);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (815,'Zincogravura', 815);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (815,815);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (862,815);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1512,'5.5','cm','width', 815);
+			VALUES (1512,'5.5','cm','width', 862);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1513,'4.5','cm','height', 815);
+			VALUES (1513,'4.5','cm','height', 862);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('815', '2');
 /* Tabela DescriptiveNotes */
@@ -22694,11 +22694,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,816);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (816,'Zincogravura', 816);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (816,816);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (863,816);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1514,'8','cm','width', 816);
+			VALUES (1514,'8','cm','width', 863);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1515,'4,5','cm','height', 816);
+			VALUES (1515,'4,5','cm','height', 863);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('816', '2');
 /* Tabela DescriptiveNotes */
@@ -22722,11 +22722,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,817);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (817,'Zincogravura', 817);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (817,817);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (864,817);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1516,'7','cm','width', 817);
+			VALUES (1516,'7','cm','width', 864);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1517,'11','cm','height', 817);
+			VALUES (1517,'11','cm','height', 864);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('817', '2');
 /* Tabela DescriptiveNotes */
@@ -22750,11 +22750,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,818);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (818,'Zincogravura', 818);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (818,818);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (865,818);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1518,'6','cm','width', 818);
+			VALUES (1518,'6','cm','width', 865);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1519,'4','cm','height', 818);
+			VALUES (1519,'4','cm','height', 865);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('818', '2');
 /* Tabela DescriptiveNotes */
@@ -22778,11 +22778,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,819);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (819,'Zincogravura', 819);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (819,819);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (866,819);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1520,'6','cm','width', 819);
+			VALUES (1520,'6','cm','width', 866);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1521,'8','cm','height', 819);
+			VALUES (1521,'8','cm','height', 866);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('819', '2');
 /* Tabela DescriptiveNotes */
@@ -22806,11 +22806,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,820);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (820,'Zincogravura', 820);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (820,820);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (867,820);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1522,'5.5','cm','width', 820);
+			VALUES (1522,'5.5','cm','width', 867);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1523,'3','cm','height', 820);
+			VALUES (1523,'3','cm','height', 867);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('820', '2');
 /* Tabela DescriptiveNotes */
@@ -22834,11 +22834,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,821);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (821,'Zincogravura', 821);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (821,821);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (868,821);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1524,'4','cm','width', 821);
+			VALUES (1524,'4','cm','width', 868);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1525,'5,5','cm','height', 821);
+			VALUES (1525,'5,5','cm','height', 868);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('821', '2');
 /* Tabela DescriptiveNotes */
@@ -22862,11 +22862,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,822);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (822,'Zincogravura', 822);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (822,822);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (869,822);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1526,'7.5','cm','width', 822);
+			VALUES (1526,'7.5','cm','width', 869);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1527,'5','cm','height', 822);
+			VALUES (1527,'5','cm','height', 869);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('822', '2');
 /* Tabela DescriptiveNotes */
@@ -22890,11 +22890,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,823);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (823,'Zincogravura', 823);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (823,823);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (870,823);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1528,'5','cm','width', 823);
+			VALUES (1528,'5','cm','width', 870);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1529,'5','cm','height', 823);
+			VALUES (1529,'5','cm','height', 870);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('823', '2');
 /* Tabela DescriptiveNotes */
@@ -22939,11 +22939,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,825);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (825,'Zincogravura', 825);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (825,825);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (871,825);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1530,'6.5','cm','width', 825);
+			VALUES (1530,'6.5','cm','width', 871);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1531,'4,5','cm','height', 825);
+			VALUES (1531,'4,5','cm','height', 871);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('825', '2');
 /* Tabela DescriptiveNotes */
@@ -22967,11 +22967,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,826);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (826,'Zincogravura', 826);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (826,826);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (872,826);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1532,'5.5','cm','width', 826);
+			VALUES (1532,'5.5','cm','width', 872);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1533,'9,5','cm','height', 826);
+			VALUES (1533,'9,5','cm','height', 872);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('826', '2');
 /* Tabela DescriptiveNotes */
@@ -22995,11 +22995,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,827);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (827,'Zincogravura', 827);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (827,827);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (873,827);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1534,'4.5','cm','width', 827);
+			VALUES (1534,'4.5','cm','width', 873);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1535,'5','cm','height', 827);
+			VALUES (1535,'5','cm','height', 873);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('827', '2');
 /* Tabela DescriptiveNotes */
@@ -23023,11 +23023,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,828);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (828,'Zincogravura', 828);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (828,828);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (874,828);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1536,'10.5','cm','width', 828);
+			VALUES (1536,'10.5','cm','width', 874);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1537,'7,5','cm','height', 828);
+			VALUES (1537,'7,5','cm','height', 874);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('828', '2');
 /* Tabela DescriptiveNotes */
@@ -23051,11 +23051,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,829);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (829,'Zincogravura', 829);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (829,829);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (875,829);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1538,'6','cm','width', 829);
+			VALUES (1538,'6','cm','width', 875);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1539,'9','cm','height', 829);
+			VALUES (1539,'9','cm','height', 875);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('829', '2');
 /* Tabela DescriptiveNotes */
@@ -23079,11 +23079,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,830);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (830,'Zincogravura', 830);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (830,830);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (876,830);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1540,'7','cm','width', 830);
+			VALUES (1540,'7','cm','width', 876);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1541,'7,5','cm','height', 830);
+			VALUES (1541,'7,5','cm','height', 876);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('830', '2');
 /* Tabela DescriptiveNotes */
@@ -23107,11 +23107,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,831);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (831,'Zincogravura', 831);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (831,831);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (877,831);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1542,'7.5','cm','width', 831);
+			VALUES (1542,'7.5','cm','width', 877);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1543,'95','cm','height', 831);
+			VALUES (1543,'95','cm','height', 877);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('831', '2');
 /* Tabela DescriptiveNotes */
@@ -23135,11 +23135,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,832);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (832,'Zincogravura', 832);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (832,832);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (878,832);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1544,'6.5','cm','width', 832);
+			VALUES (1544,'6.5','cm','width', 878);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1545,'9.5','cm','height', 832);
+			VALUES (1545,'9.5','cm','height', 878);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('832', '2');
 /* Tabela DescriptiveNotes */
@@ -23163,11 +23163,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,833);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (833,'Zincogravura', 833);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (833,833);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (879,833);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1546,'9','cm','width', 833);
+			VALUES (1546,'9','cm','width', 879);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1547,'6','cm','height', 833);
+			VALUES (1547,'6','cm','height', 879);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('833', '2');
 /* Tabela DescriptiveNotes */
@@ -23191,11 +23191,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,834);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (834,'Zincogravura', 834);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (834,834);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (880,834);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1548,'8.5','cm','width', 834);
+			VALUES (1548,'8.5','cm','width', 880);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1549,'6','cm','height', 834);
+			VALUES (1549,'6','cm','height', 880);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('834', '2');
 /* Tabela DescriptiveNotes */
@@ -23219,11 +23219,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,835);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (835,'Zincogravura', 835);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (835,835);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (881,835);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1550,'9.5','cm','width', 835);
+			VALUES (1550,'9.5','cm','width', 881);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1551,'7','cm','height', 835);
+			VALUES (1551,'7','cm','height', 881);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('835', '2');
 /* Tabela DescriptiveNotes */
@@ -23247,11 +23247,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,836);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (836,'Zincogravura', 836);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (836,836);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (882,836);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1552,'6.5','cm','width', 836);
+			VALUES (1552,'6.5','cm','width', 882);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1553,'9,5','cm','height', 836);
+			VALUES (1553,'9,5','cm','height', 882);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('836', '2');
 /* Tabela DescriptiveNotes */
@@ -23275,11 +23275,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,837);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (837,'Zincogravura', 837);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (837,837);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (883,837);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1554,'6.7','cm','width', 837);
+			VALUES (1554,'6.7','cm','width', 883);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1555,'10','cm','height', 837);
+			VALUES (1555,'10','cm','height', 883);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('837', '2');
 /* Tabela DescriptiveNotes */
@@ -23303,11 +23303,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,838);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (838,'Zincogravura', 838);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (838,838);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (884,838);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1556,'7.5','cm','width', 838);
+			VALUES (1556,'7.5','cm','width', 884);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1557,'5','cm','height', 838);
+			VALUES (1557,'5','cm','height', 884);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('838', '2');
 /* Tabela DescriptiveNotes */
@@ -23331,11 +23331,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,839);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (839,'Zincogravura', 839);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (839,839);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (885,839);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1558,'7','cm','width', 839);
+			VALUES (1558,'7','cm','width', 885);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1559,'8','cm','height', 839);
+			VALUES (1559,'8','cm','height', 885);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('839', '2');
 /* Tabela DescriptiveNotes */
@@ -23359,11 +23359,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,840);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (840,'Zincogravura', 840);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (840,840);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (886,840);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1560,'8','cm','width', 840);
+			VALUES (1560,'8','cm','width', 886);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1561,'5.5','cm','height', 840);
+			VALUES (1561,'5.5','cm','height', 886);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('840', '2');
 /* Tabela DescriptiveNotes */
@@ -23387,11 +23387,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,841);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (841,'Zincogravura', 841);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (841,841);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (887,841);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1562,'6.5','cm','width', 841);
+			VALUES (1562,'6.5','cm','width', 887);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1563,'5','cm','height', 841);
+			VALUES (1563,'5','cm','height', 887);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('841', '2');
 /* Tabela DescriptiveNotes */
@@ -23415,11 +23415,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,842);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (842,'Zincogravura', 842);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (842,842);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (888,842);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1564,'5.5','cm','width', 842);
+			VALUES (1564,'5.5','cm','width', 888);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1565,'8','cm','height', 842);
+			VALUES (1565,'8','cm','height', 888);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('842', '2');
 /* Tabela DescriptiveNotes */
@@ -23443,11 +23443,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,843);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (843,'Zincogravura', 843);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (843,843);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (889,843);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1566,'6','cm','width', 843);
+			VALUES (1566,'6','cm','width', 889);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1567,'8','cm','height', 843);
+			VALUES (1567,'8','cm','height', 889);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('843', '2');
 /* Tabela DescriptiveNotes */
@@ -23471,11 +23471,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,844);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (844,'Zincogravura', 844);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (844,844);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (890,844);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1568,'9.6','cm','width', 844);
+			VALUES (1568,'9.6','cm','width', 890);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1569,'6','cm','height', 844);
+			VALUES (1569,'6','cm','height', 890);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('844', '2');
 /* Tabela DescriptiveNotes */
@@ -23499,11 +23499,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,845);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (845,'Zincogravura', 845);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (845,845);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (891,845);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1570,'10','cm','width', 845);
+			VALUES (1570,'10','cm','width', 891);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1571,'6,5','cm','height', 845);
+			VALUES (1571,'6,5','cm','height', 891);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('845', '2');
 /* Tabela DescriptiveNotes */
@@ -23527,11 +23527,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,846);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (846,'Zincogravura', 846);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (846,846);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (892,846);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1572,'8.5','cm','width', 846);
+			VALUES (1572,'8.5','cm','width', 892);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1573,'5','cm','height', 846);
+			VALUES (1573,'5','cm','height', 892);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('846', '2');
 /* Tabela DescriptiveNotes */
@@ -23576,11 +23576,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,848);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (848,'Zincogravura', 848);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (848,848);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (893,848);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1574,'7','cm','width', 848);
+			VALUES (1574,'7','cm','width', 893);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1575,'8','cm','height', 848);
+			VALUES (1575,'8','cm','height', 893);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('848', '2');
 /* Tabela DescriptiveNotes */
@@ -23604,11 +23604,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,849);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (849,'Zincogravura', 849);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (849,849);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (894,849);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1576,'6.5','cm','width', 849);
+			VALUES (1576,'6.5','cm','width', 894);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1577,'9,5','cm','height', 849);
+			VALUES (1577,'9,5','cm','height', 894);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('849', '2');
 /* Tabela DescriptiveNotes */
@@ -23632,11 +23632,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,850);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (850,'Zincogravura', 850);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (850,850);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (895,850);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1578,'6','cm','width', 850);
+			VALUES (1578,'6','cm','width', 895);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1579,'9,5','cm','height', 850);
+			VALUES (1579,'9,5','cm','height', 895);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('850', '2');
 /* Tabela DescriptiveNotes */
@@ -23660,11 +23660,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,851);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (851,'Zincogravura', 851);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (851,851);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (896,851);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1580,'6','cm','width', 851);
+			VALUES (1580,'6','cm','width', 896);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1581,'9','cm','height', 851);
+			VALUES (1581,'9','cm','height', 896);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('851', '2');
 /* Tabela DescriptiveNotes */
@@ -23688,11 +23688,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,852);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (852,'Zincogravura', 852);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (852,852);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (897,852);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1582,'5','cm','width', 852);
+			VALUES (1582,'5','cm','width', 897);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1583,'8.5','cm','height', 852);
+			VALUES (1583,'8.5','cm','height', 897);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('852', '2');
 /* Tabela DescriptiveNotes */
@@ -23716,11 +23716,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,853);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (853,'Zincogravura', 853);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (853,853);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (898,853);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1584,'7','cm','width', 853);
+			VALUES (1584,'7','cm','width', 898);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1585,'5,5','cm','height', 853);
+			VALUES (1585,'5,5','cm','height', 898);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('853', '2');
 /* Tabela DescriptiveNotes */
@@ -23744,11 +23744,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,854);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (854,'Zincogravura', 854);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (854,854);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (899,854);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1586,'5','cm','width', 854);
+			VALUES (1586,'5','cm','width', 899);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1587,'7,5','cm','height', 854);
+			VALUES (1587,'7,5','cm','height', 899);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('854', '2');
 /* Tabela DescriptiveNotes */
@@ -23772,11 +23772,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,855);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (855,'Zincogravura', 855);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (855,855);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (900,855);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1588,'5.5','cm','width', 855);
+			VALUES (1588,'5.5','cm','width', 900);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1589,'9','cm','height', 855);
+			VALUES (1589,'9','cm','height', 900);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('855', '2');
 /* Tabela DescriptiveNotes */
@@ -23800,11 +23800,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,856);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (856,'Zincogravura', 856);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (856,856);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (901,856);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1590,'18','cm','width', 856);
+			VALUES (1590,'18','cm','width', 901);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1591,'12.1','cm','height', 856);
+			VALUES (1591,'12.1','cm','height', 901);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('856', '2');
 /* Tabela RelatedWorks */
@@ -23825,11 +23825,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,857);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (857,'Zincogravura', 857);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (857,857);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (902,857);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1592,'14.5','cm','width', 857);
+			VALUES (1592,'14.5','cm','width', 902);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1593,'12.5','cm','height', 857);
+			VALUES (1593,'12.5','cm','height', 902);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('857', '2');
 /* Tabela DescriptiveNotes */
@@ -23853,11 +23853,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,858);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (858,'Zincogravura', 858);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (858,858);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (903,858);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1594,'5','cm','width', 858);
+			VALUES (1594,'5','cm','width', 903);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1595,'8.5','cm','height', 858);
+			VALUES (1595,'8.5','cm','height', 903);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('858', '2');
 /* Tabela DescriptiveNotes */
@@ -23881,11 +23881,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,859);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (859,'Zincogravura', 859);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (859,859);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (904,859);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1596,'6.5','cm','width', 859);
+			VALUES (1596,'6.5','cm','width', 904);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1597,'6.5','cm','height', 859);
+			VALUES (1597,'6.5','cm','height', 904);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('859', '2');
 /* Tabela DescriptiveNotes */
@@ -23909,11 +23909,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,860);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (860,'Zincogravura', 860);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (860,860);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (905,860);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1598,'5.5','cm','width', 860);
+			VALUES (1598,'5.5','cm','width', 905);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1599,'5.5','cm','height', 860);
+			VALUES (1599,'5.5','cm','height', 905);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('860', '2');
 /* Tabela DescriptiveNotes */
@@ -23937,11 +23937,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,861);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (861,'Zincogravura', 861);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (861,861);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (906,861);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1600,'6','cm','width', 861);
+			VALUES (1600,'6','cm','width', 906);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1601,'5.7','cm','height', 861);
+			VALUES (1601,'5.7','cm','height', 906);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('861', '2');
 /* Tabela DescriptiveNotes */
@@ -23965,11 +23965,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,862);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (862,'Zincogravura', 862);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (862,862);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (907,862);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1602,'6.4','cm','width', 862);
+			VALUES (1602,'6.4','cm','width', 907);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1603,'4.5','cm','height', 862);
+			VALUES (1603,'4.5','cm','height', 907);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('862', '2');
 /* Tabela DescriptiveNotes */
@@ -23993,11 +23993,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,863);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (863,'Zincogravura', 863);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (863,863);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (908,863);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1604,'5.7','cm','width', 863);
+			VALUES (1604,'5.7','cm','width', 908);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1605,'5.5','cm','height', 863);
+			VALUES (1605,'5.5','cm','height', 908);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('863', '2');
 /* Tabela DescriptiveNotes */
@@ -24021,11 +24021,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,864);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (864,'Zincogravura', 864);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (864,864);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (909,864);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1606,'5.3','cm','width', 864);
+			VALUES (1606,'5.3','cm','width', 909);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1607,'5.1','cm','height', 864);
+			VALUES (1607,'5.1','cm','height', 909);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('864', '2');
 /* Tabela DescriptiveNotes */
@@ -24049,11 +24049,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,865);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (865,'Zincogravura', 865);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (865,865);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (910,865);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1608,'9.2','cm','width', 865);
+			VALUES (1608,'9.2','cm','width', 910);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1609,'5.7','cm','height', 865);
+			VALUES (1609,'5.7','cm','height', 910);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('865', '2');
 /* Tabela DescriptiveNotes */
@@ -24077,11 +24077,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,866);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (866,'Zincogravura', 866);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (866,866);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (911,866);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1610,'6.3','cm','width', 866);
+			VALUES (1610,'6.3','cm','width', 911);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1611,'5.1','cm','height', 866);
+			VALUES (1611,'5.1','cm','height', 911);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('866', '2');
 /* Tabela DescriptiveNotes */
@@ -24105,11 +24105,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,867);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (867,'Zincogravura', 867);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (867,867);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (912,867);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1612,'3.5','cm','width', 867);
+			VALUES (1612,'3.5','cm','width', 912);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1613,'3','cm','height', 867);
+			VALUES (1613,'3','cm','height', 912);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('867', '2');
 /* Tabela DescriptiveNotes */
@@ -24133,11 +24133,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,868);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (868,'Zincogravura', 868);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (868,868);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (913,868);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1614,'6.5','cm','width', 868);
+			VALUES (1614,'6.5','cm','width', 913);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1615,'8.8','cm','height', 868);
+			VALUES (1615,'8.8','cm','height', 913);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('868', '2');
 /* Tabela DescriptiveNotes */
@@ -24161,11 +24161,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,869);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (869,'Zincogravura', 869);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (869,869);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (914,869);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1616,'4.8','cm','width', 869);
+			VALUES (1616,'4.8','cm','width', 914);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1617,'4.8','cm','height', 869);
+			VALUES (1617,'4.8','cm','height', 914);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('869', '2');
 /* Tabela DescriptiveNotes */
@@ -24189,11 +24189,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,870);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (870,'Zincogravura', 870);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (870,870);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (915,870);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1618,'6.3','cm','width', 870);
+			VALUES (1618,'6.3','cm','width', 915);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1619,'9','cm','height', 870);
+			VALUES (1619,'9','cm','height', 915);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('870', '2');
 /* Tabela DescriptiveNotes */
@@ -24217,11 +24217,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,871);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (871,'Zincogravura', 871);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (871,871);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (916,871);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1620,'6','cm','width', 871);
+			VALUES (1620,'6','cm','width', 916);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1621,'8.8','cm','height', 871);
+			VALUES (1621,'8.8','cm','height', 916);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('871', '2');
 /* Tabela DescriptiveNotes */
@@ -24245,11 +24245,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,872);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (872,'Zincogravura', 872);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (872,872);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (917,872);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1622,'4.7','cm','width', 872);
+			VALUES (1622,'4.7','cm','width', 917);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1623,'5.2','cm','height', 872);
+			VALUES (1623,'5.2','cm','height', 917);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('872', '2');
 /* Tabela DescriptiveNotes */
@@ -24273,11 +24273,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,873);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (873,'Zincogravura', 873);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (873,873);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (918,873);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1624,'7','cm','width', 873);
+			VALUES (1624,'7','cm','width', 918);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1625,'9.2','cm','height', 873);
+			VALUES (1625,'9.2','cm','height', 918);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('873', '2');
 /* Tabela DescriptiveNotes */
@@ -24301,11 +24301,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,874);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (874,'Zincogravura', 874);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (874,874);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (919,874);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1626,'6.5','cm','width', 874);
+			VALUES (1626,'6.5','cm','width', 919);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1627,'10.5','cm','height', 874);
+			VALUES (1627,'10.5','cm','height', 919);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('874', '2');
 /* Tabela DescriptiveNotes */
@@ -24329,11 +24329,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,875);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (875,'Zincogravura', 875);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (875,875);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (920,875);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1628,'9','cm','width', 875);
+			VALUES (1628,'9','cm','width', 920);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1629,'6.3','cm','height', 875);
+			VALUES (1629,'6.3','cm','height', 920);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('875', '2');
 /* Tabela DescriptiveNotes */
@@ -24357,11 +24357,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,876);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (876,'Zincogravura', 876);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (876,876);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (921,876);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1630,'7.5','cm','width', 876);
+			VALUES (1630,'7.5','cm','width', 921);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1631,'5','cm','height', 876);
+			VALUES (1631,'5','cm','height', 921);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('876', '2');
 /* Tabela DescriptiveNotes */
@@ -24385,11 +24385,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,877);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (877,'Zincogravura', 877);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (877,877);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (922,877);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1632,'5','cm','width', 877);
+			VALUES (1632,'5','cm','width', 922);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1633,'8','cm','height', 877);
+			VALUES (1633,'8','cm','height', 922);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('877', '2');
 /* Tabela DescriptiveNotes */
@@ -24413,11 +24413,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,878);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (878,'Zincogravura', 878);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (878,878);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (923,878);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1634,'6.3','cm','width', 878);
+			VALUES (1634,'6.3','cm','width', 923);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1635,'9.6','cm','height', 878);
+			VALUES (1635,'9.6','cm','height', 923);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('878', '2');
 /* Tabela DescriptiveNotes */
@@ -24441,11 +24441,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,879);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (879,'Zincogravura', 879);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (879,879);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (924,879);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1636,'7.8','cm','width', 879);
+			VALUES (1636,'7.8','cm','width', 924);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1637,'5','cm','height', 879);
+			VALUES (1637,'5','cm','height', 924);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('879', '2');
 /* Tabela DescriptiveNotes */
@@ -24469,11 +24469,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,880);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (880,'Zincogravura', 880);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (880,880);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (925,880);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1638,'7.5','cm','width', 880);
+			VALUES (1638,'7.5','cm','width', 925);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1639,'5','cm','height', 880);
+			VALUES (1639,'5','cm','height', 925);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('880', '2');
 /* Tabela RelatedWorks */
@@ -24494,11 +24494,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,881);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (881,'Zincogravura', 881);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (881,881);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (926,881);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1640,'6','cm','width', 881);
+			VALUES (1640,'6','cm','width', 926);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1641,'9','cm','height', 881);
+			VALUES (1641,'9','cm','height', 926);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('881', '2');
 /* Tabela DescriptiveNotes */
@@ -24522,11 +24522,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,882);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (882,'Zincogravura', 882);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (882,882);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (927,882);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1642,'8.3','cm','width', 882);
+			VALUES (1642,'8.3','cm','width', 927);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1643,'6','cm','height', 882);
+			VALUES (1643,'6','cm','height', 927);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('882', '2');
 /* Tabela DescriptiveNotes */
@@ -24550,11 +24550,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,883);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (883,'Zincogravura', 883);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (883,883);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (928,883);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1644,'9','cm','width', 883);
+			VALUES (1644,'9','cm','width', 928);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1645,'6.5','cm','height', 883);
+			VALUES (1645,'6.5','cm','height', 928);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('883', '2');
 /* Tabela DescriptiveNotes */
@@ -24578,11 +24578,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,884);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (884,'Zincogravura', 884);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (884,884);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (929,884);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1646,'6','cm','width', 884);
+			VALUES (1646,'6','cm','width', 929);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1647,'4.6','cm','height', 884);
+			VALUES (1647,'4.6','cm','height', 929);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('884', '2');
 /* Tabela DescriptiveNotes */
@@ -24606,11 +24606,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,885);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (885,'Zincogravura', 885);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (885,885);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (930,885);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1648,'5.7','cm','width', 885);
+			VALUES (1648,'5.7','cm','width', 930);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1649,'8.9','cm','height', 885);
+			VALUES (1649,'8.9','cm','height', 930);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('885', '2');
 /* Tabela DescriptiveNotes */
@@ -24634,11 +24634,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,886);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (886,'Zincogravura', 886);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (886,886);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (931,886);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1650,'6.5','cm','width', 886);
+			VALUES (1650,'6.5','cm','width', 931);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1651,'9','cm','height', 886);
+			VALUES (1651,'9','cm','height', 931);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('886', '2');
 /* Tabela DescriptiveNotes */
@@ -24662,11 +24662,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,887);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (887,'Zincogravura', 887);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (887,887);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (932,887);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1652,'5.5','cm','width', 887);
+			VALUES (1652,'5.5','cm','width', 932);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1653,'8.5','cm','height', 887);
+			VALUES (1653,'8.5','cm','height', 932);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('887', '2');
 /* Tabela DescriptiveNotes */
@@ -24690,11 +24690,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,888);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (888,'Zincogravura', 888);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (888,888);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (933,888);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1654,'5.4','cm','width', 888);
+			VALUES (1654,'5.4','cm','width', 933);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1655,'8.5','cm','height', 888);
+			VALUES (1655,'8.5','cm','height', 933);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('888', '2');
 /* Tabela DescriptiveNotes */
@@ -24718,11 +24718,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,889);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (889,'Zincogravura', 889);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (889,889);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (934,889);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1656,'5.3','cm','width', 889);
+			VALUES (1656,'5.3','cm','width', 934);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1657,'8.6','cm','height', 889);
+			VALUES (1657,'8.6','cm','height', 934);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('889', '2');
 /* Tabela DescriptiveNotes */
@@ -24746,11 +24746,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,890);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (890,'Zincogravura', 890);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (890,890);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (935,890);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1658,'6.5','cm','width', 890);
+			VALUES (1658,'6.5','cm','width', 935);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1659,'4.6','cm','height', 890);
+			VALUES (1659,'4.6','cm','height', 935);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('890', '2');
 /* Tabela DescriptiveNotes */
@@ -24774,11 +24774,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,891);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (891,'Zincogravura', 891);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (891,891);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (936,891);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1660,'5.5','cm','width', 891);
+			VALUES (1660,'5.5','cm','width', 936);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1661,'8.4','cm','height', 891);
+			VALUES (1661,'8.4','cm','height', 936);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('891', '2');
 /* Tabela DescriptiveNotes */
@@ -24802,11 +24802,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,892);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (892,'Zincogravura', 892);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (892,892);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (937,892);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1662,'9','cm','width', 892);
+			VALUES (1662,'9','cm','width', 937);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1663,'5.8','cm','height', 892);
+			VALUES (1663,'5.8','cm','height', 937);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('892', '2');
 /* Tabela DescriptiveNotes */
@@ -24830,11 +24830,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,893);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (893,'Zincogravura', 893);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (893,893);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (938,893);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1664,'6','cm','width', 893);
+			VALUES (1664,'6','cm','width', 938);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1665,'9.5','cm','height', 893);
+			VALUES (1665,'9.5','cm','height', 938);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('893', '2');
 /* Tabela DescriptiveNotes */
@@ -24858,11 +24858,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,894);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (894,'Zincogravura', 894);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (894,894);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (939,894);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1666,'5.6','cm','width', 894);
+			VALUES (1666,'5.6','cm','width', 939);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1667,'8','cm','height', 894);
+			VALUES (1667,'8','cm','height', 939);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('894', '2');
 /* Tabela DescriptiveNotes */
@@ -24886,11 +24886,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,895);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (895,'Zincogravura', 895);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (895,895);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (940,895);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1668,'5.1','cm','width', 895);
+			VALUES (1668,'5.1','cm','width', 940);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1669,'8.7','cm','height', 895);
+			VALUES (1669,'8.7','cm','height', 940);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('895', '2');
 /* Tabela DescriptiveNotes */
@@ -24914,11 +24914,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,896);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (896,'Zincogravura', 896);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (896,896);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (941,896);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1670,'5.7','cm','width', 896);
+			VALUES (1670,'5.7','cm','width', 941);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1671,'9','cm','height', 896);
+			VALUES (1671,'9','cm','height', 941);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('896', '2');
 /* Tabela DescriptiveNotes */
@@ -24942,11 +24942,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,897);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (897,'Zincogravura', 897);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (897,897);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (942,897);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1672,'5.5','cm','width', 897);
+			VALUES (1672,'5.5','cm','width', 942);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1673,'6.8','cm','height', 897);
+			VALUES (1673,'6.8','cm','height', 942);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('897', '2');
 /* Tabela DescriptiveNotes */
@@ -24970,11 +24970,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,898);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (898,'Zincogravura', 898);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (898,898);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (943,898);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1674,'7.5','cm','width', 898);
+			VALUES (1674,'7.5','cm','width', 943);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1675,'5.1','cm','height', 898);
+			VALUES (1675,'5.1','cm','height', 943);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('898', '2');
 /* Tabela DescriptiveNotes */
@@ -24998,11 +24998,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,899);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (899,'Zincogravura', 899);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (899,899);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (944,899);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1676,'5.3','cm','width', 899);
+			VALUES (1676,'5.3','cm','width', 944);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1677,'8.9','cm','height', 899);
+			VALUES (1677,'8.9','cm','height', 944);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('899', '2');
 /* Tabela RelatedWorks */
@@ -25023,11 +25023,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,900);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (900,'Zincogravura', 900);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (900,900);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (945,900);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1678,'6','cm','width', 900);
+			VALUES (1678,'6','cm','width', 945);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1679,'8.7','cm','height', 900);
+			VALUES (1679,'8.7','cm','height', 945);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('900', '2');
 /* Tabela RelatedWorks */
@@ -25048,11 +25048,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,901);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (901,'Zincogravura', 901);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (901,901);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (946,901);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1680,'6.5','cm','width', 901);
+			VALUES (1680,'6.5','cm','width', 946);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1681,'4.6','cm','height', 901);
+			VALUES (1681,'4.6','cm','height', 946);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('901', '2');
 /* Tabela DescriptiveNotes */
@@ -25076,11 +25076,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,902);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (902,'Zincogravura', 902);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (902,902);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (947,902);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1682,'6','cm','width', 902);
+			VALUES (1682,'6','cm','width', 947);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1683,'8.9','cm','height', 902);
+			VALUES (1683,'8.9','cm','height', 947);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('902', '2');
 /* Tabela DescriptiveNotes */
@@ -25104,11 +25104,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,903);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (903,'Zincogravura', 903);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (903,903);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (948,903);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1684,'7.8','cm','width', 903);
+			VALUES (1684,'7.8','cm','width', 948);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1685,'6.5','cm','height', 903);
+			VALUES (1685,'6.5','cm','height', 948);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('903', '2');
 /* Tabela DescriptiveNotes */
@@ -25132,11 +25132,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,904);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (904,'Zincogravura', 904);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (904,904);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (949,904);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1686,'3.6','cm','width', 904);
+			VALUES (1686,'3.6','cm','width', 949);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1687,'3','cm','height', 904);
+			VALUES (1687,'3','cm','height', 949);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('904', '2');
 /* Tabela DescriptiveNotes */
@@ -25160,11 +25160,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,905);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (905,'Zincogravura', 905);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (905,905);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (950,905);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1688,'6.2','cm','width', 905);
+			VALUES (1688,'6.2','cm','width', 950);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1689,'5.7','cm','height', 905);
+			VALUES (1689,'5.7','cm','height', 950);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('905', '2');
 /* Tabela DescriptiveNotes */
@@ -25188,11 +25188,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,906);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (906,'Zincogravura', 906);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (906,906);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (951,906);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1690,'5','cm','width', 906);
+			VALUES (1690,'5','cm','width', 951);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1691,'5.5','cm','height', 906);
+			VALUES (1691,'5.5','cm','height', 951);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('906', '2');
 /* Tabela DescriptiveNotes */
@@ -25216,11 +25216,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,907);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (907,'Zincogravura', 907);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (907,907);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (952,907);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1692,'7.8','cm','width', 907);
+			VALUES (1692,'7.8','cm','width', 952);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1693,'5.5','cm','height', 907);
+			VALUES (1693,'5.5','cm','height', 952);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('907', '2');
 /* Tabela DescriptiveNotes */
@@ -25244,11 +25244,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,908);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (908,'Zincogravura', 908);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (908,908);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (953,908);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1694,'8.5','cm','width', 908);
+			VALUES (1694,'8.5','cm','width', 953);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1695,'7.4','cm','height', 908);
+			VALUES (1695,'7.4','cm','height', 953);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('908', '2');
 /* Tabela DescriptiveNotes */
@@ -25272,11 +25272,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,909);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (909,'Zincogravura', 909);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (909,909);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (954,909);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1696,'5.4','cm','width', 909);
+			VALUES (1696,'5.4','cm','width', 954);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1697,'8.5','cm','height', 909);
+			VALUES (1697,'8.5','cm','height', 954);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('909', '2');
 /* Tabela DescriptiveNotes */
@@ -25300,11 +25300,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,910);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (910,'Zincogravura', 910);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (910,910);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (955,910);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1698,'7.2','cm','width', 910);
+			VALUES (1698,'7.2','cm','width', 955);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1699,'4.2','cm','height', 910);
+			VALUES (1699,'4.2','cm','height', 955);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('910', '2');
 /* Tabela DescriptiveNotes */
@@ -25328,11 +25328,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,911);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (911,'Zincogravura', 911);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (911,911);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (956,911);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1700,'5.2','cm','width', 911);
+			VALUES (1700,'5.2','cm','width', 956);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1701,'8.5','cm','height', 911);
+			VALUES (1701,'8.5','cm','height', 956);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('911', '2');
 /* Tabela DescriptiveNotes */
@@ -25356,11 +25356,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,912);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (912,'Zincogravura', 912);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (912,912);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (957,912);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1702,'7.5','cm','width', 912);
+			VALUES (1702,'7.5','cm','width', 957);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1703,'9.3','cm','height', 912);
+			VALUES (1703,'9.3','cm','height', 957);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('912', '2');
 /* Tabela DescriptiveNotes */
@@ -25384,11 +25384,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,913);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (913,'Zincogravura', 913);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (913,913);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (958,913);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1704,'8','cm','width', 913);
+			VALUES (1704,'8','cm','width', 958);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1705,'6','cm','height', 913);
+			VALUES (1705,'6','cm','height', 958);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('913', '2');
 /* Tabela DescriptiveNotes */
@@ -25412,11 +25412,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,914);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (914,'Zincogravura', 914);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (914,914);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (959,914);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1706,'5.5','cm','width', 914);
+			VALUES (1706,'5.5','cm','width', 959);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1707,'9.2','cm','height', 914);
+			VALUES (1707,'9.2','cm','height', 959);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('914', '2');
 /* Tabela DescriptiveNotes */
@@ -25440,11 +25440,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,915);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (915,'Zincogravura', 915);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (915,915);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (960,915);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1708,'5.3','cm','width', 915);
+			VALUES (1708,'5.3','cm','width', 960);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1709,'5.3','cm','height', 915);
+			VALUES (1709,'5.3','cm','height', 960);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('915', '2');
 /* Tabela DescriptiveNotes */
@@ -25468,11 +25468,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,916);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (916,'Zincogravura', 916);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (916,916);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (961,916);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1710,'5','cm','width', 916);
+			VALUES (1710,'5','cm','width', 961);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1711,'7.4','cm','height', 916);
+			VALUES (1711,'7.4','cm','height', 961);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('916', '2');
 /* Tabela DescriptiveNotes */
@@ -25517,11 +25517,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,918);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (918,'Zincogravura', 918);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (918,918);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (962,918);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1712,'8','cm','width', 918);
+			VALUES (1712,'8','cm','width', 962);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1713,'10.3','cm','height', 918);
+			VALUES (1713,'10.3','cm','height', 962);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('918', '2');
 /* Tabela DescriptiveNotes */
@@ -25545,11 +25545,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,919);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (919,'Zincogravura', 919);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (919,919);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (963,919);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1714,'5.5','cm','width', 919);
+			VALUES (1714,'5.5','cm','width', 963);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1715,'4','cm','height', 919);
+			VALUES (1715,'4','cm','height', 963);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('919', '2');
 /* Tabela DescriptiveNotes */
@@ -25594,11 +25594,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,921);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (921,'Zincogravura', 921);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (921,921);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (964,921);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1716,'6.5','cm','width', 921);
+			VALUES (1716,'6.5','cm','width', 964);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1717,'5','cm','height', 921);
+			VALUES (1717,'5','cm','height', 964);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('921', '2');
 /* Tabela DescriptiveNotes */
@@ -25643,11 +25643,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,923);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (923,'Zincogravura', 923);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (923,923);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (965,923);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1718,'5.5','cm','width', 923);
+			VALUES (1718,'5.5','cm','width', 965);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1719,'5.5','cm','height', 923);
+			VALUES (1719,'5.5','cm','height', 965);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('923', '2');
 /* Tabela DescriptiveNotes */
@@ -25671,11 +25671,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,924);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (924,'Zincogravura', 924);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (924,924);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (966,924);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1720,'5','cm','width', 924);
+			VALUES (1720,'5','cm','width', 966);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1721,'6.5','cm','height', 924);
+			VALUES (1721,'6.5','cm','height', 966);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('924', '2');
 /* Tabela DescriptiveNotes */
@@ -25699,11 +25699,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,925);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (925,'Zincogravura', 925);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (925,925);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (967,925);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1722,'6.5','cm','width', 925);
+			VALUES (1722,'6.5','cm','width', 967);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1723,'6','cm','height', 925);
+			VALUES (1723,'6','cm','height', 967);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('925', '2');
 /* Tabela DescriptiveNotes */
@@ -25727,11 +25727,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,926);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (926,'Zincogravura', 926);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (926,926);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (968,926);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1724,'5.5','cm','width', 926);
+			VALUES (1724,'5.5','cm','width', 968);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1725,'3.5','cm','height', 926);
+			VALUES (1725,'3.5','cm','height', 968);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('926', '2');
 /* Tabela DescriptiveNotes */
@@ -25755,11 +25755,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,927);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (927,'Zincogravura', 927);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (927,927);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (969,927);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1726,'7','cm','width', 927);
+			VALUES (1726,'7','cm','width', 969);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1727,'6','cm','height', 927);
+			VALUES (1727,'6','cm','height', 969);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('927', '2');
 /* Tabela DescriptiveNotes */
@@ -25783,11 +25783,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,928);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (928,'Zincogravura', 928);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (928,928);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (970,928);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1728,'6','cm','width', 928);
+			VALUES (1728,'6','cm','width', 970);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1729,'6','cm','height', 928);
+			VALUES (1729,'6','cm','height', 970);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('928', '2');
 /* Tabela DescriptiveNotes */
@@ -25811,11 +25811,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,929);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (929,'Zincogravura', 929);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (929,929);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (971,929);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1730,'6','cm','width', 929);
+			VALUES (1730,'6','cm','width', 971);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1731,'8.5','cm','height', 929);
+			VALUES (1731,'8.5','cm','height', 971);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('929', '2');
 /* Tabela DescriptiveNotes */
@@ -25839,11 +25839,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,930);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (930,'Zincogravura', 930);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (930,930);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (972,930);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1732,'5.5','cm','width', 930);
+			VALUES (1732,'5.5','cm','width', 972);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1733,'10','cm','height', 930);
+			VALUES (1733,'10','cm','height', 972);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('930', '2');
 /* Tabela DescriptiveNotes */
@@ -25867,11 +25867,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,931);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (931,'Zincogravura', 931);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (931,931);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (973,931);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1734,'6','cm','width', 931);
+			VALUES (1734,'6','cm','width', 973);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1735,'9','cm','height', 931);
+			VALUES (1735,'9','cm','height', 973);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('931', '2');
 /* Tabela DescriptiveNotes */
@@ -25895,11 +25895,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,932);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (932,'Zincogravura', 932);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (932,932);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (974,932);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1736,'5.5','cm','width', 932);
+			VALUES (1736,'5.5','cm','width', 974);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1737,'8','cm','height', 932);
+			VALUES (1737,'8','cm','height', 974);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('932', '2');
 /* Tabela DescriptiveNotes */
@@ -25923,11 +25923,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,933);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (933,'Zincogravura', 933);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (933,933);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (975,933);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1738,'5.5','cm','width', 933);
+			VALUES (1738,'5.5','cm','width', 975);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1739,'9','cm','height', 933);
+			VALUES (1739,'9','cm','height', 975);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('933', '2');
 /* Tabela DescriptiveNotes */
@@ -25951,11 +25951,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,934);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (934,'Zincogravura', 934);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (934,934);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (976,934);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1740,'6.5','cm','width', 934);
+			VALUES (1740,'6.5','cm','width', 976);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1741,'7','cm','height', 934);
+			VALUES (1741,'7','cm','height', 976);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('934', '2');
 /* Tabela DescriptiveNotes */
@@ -25979,11 +25979,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,935);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (935,'Zincogravura', 935);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (935,935);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (977,935);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1742,'5.5','cm','width', 935);
+			VALUES (1742,'5.5','cm','width', 977);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1743,'9','cm','height', 935);
+			VALUES (1743,'9','cm','height', 977);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('935', '2');
 /* Tabela DescriptiveNotes */
@@ -26007,11 +26007,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,936);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (936,'Zincogravura', 936);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (936,936);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (978,936);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1744,'7','cm','width', 936);
+			VALUES (1744,'7','cm','width', 978);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1745,'12','cm','height', 936);
+			VALUES (1745,'12','cm','height', 978);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('936', '2');
 /* Tabela DescriptiveNotes */
@@ -26035,11 +26035,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,937);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (937,'Zincogravura', 937);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (937,937);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (979,937);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1746,'4.5','cm','width', 937);
+			VALUES (1746,'4.5','cm','width', 979);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1747,'6','cm','height', 937);
+			VALUES (1747,'6','cm','height', 979);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('937', '2');
 /* Tabela RelatedWorks */
@@ -26060,11 +26060,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,938);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (938,'Zincogravura', 938);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (938,938);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (980,938);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1748,'12.5','cm','width', 938);
+			VALUES (1748,'12.5','cm','width', 980);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1749,'5.5','cm','height', 938);
+			VALUES (1749,'5.5','cm','height', 980);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('938', '2');
 /* Tabela DescriptiveNotes */
@@ -26088,11 +26088,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,939);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (939,'Zincogravura', 939);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (939,939);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (981,939);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1750,'5.5','cm','width', 939);
+			VALUES (1750,'5.5','cm','width', 981);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1751,'8','cm','height', 939);
+			VALUES (1751,'8','cm','height', 981);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('939', '2');
 /* Tabela DescriptiveNotes */
@@ -26116,11 +26116,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,940);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (940,'Zincogravura', 940);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (940,940);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (982,940);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1752,'6.5','cm','width', 940);
+			VALUES (1752,'6.5','cm','width', 982);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1753,'10','cm','height', 940);
+			VALUES (1753,'10','cm','height', 982);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('940', '2');
 /* Tabela DescriptiveNotes */
@@ -26144,11 +26144,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,941);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (941,'Zincogravura', 941);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (941,941);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (983,941);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1754,'5','cm','width', 941);
+			VALUES (1754,'5','cm','width', 983);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1755,'7.5','cm','height', 941);
+			VALUES (1755,'7.5','cm','height', 983);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('941', '2');
 /* Tabela DescriptiveNotes */
@@ -26172,11 +26172,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,942);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (942,'Zincogravura', 942);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (942,942);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (984,942);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1756,'5.5','cm','width', 942);
+			VALUES (1756,'5.5','cm','width', 984);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1757,'8','cm','height', 942);
+			VALUES (1757,'8','cm','height', 984);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('942', '2');
 /* Tabela DescriptiveNotes */
@@ -26200,11 +26200,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,943);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (943,'Zincogravura', 943);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (943,943);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (985,943);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1758,'8','cm','width', 943);
+			VALUES (1758,'8','cm','width', 985);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1759,'12.5','cm','height', 943);
+			VALUES (1759,'12.5','cm','height', 985);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('943', '2');
 /* Tabela DescriptiveNotes */
@@ -26228,11 +26228,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,944);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (944,'Zincogravura', 944);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (944,944);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (986,944);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1760,'8','cm','width', 944);
+			VALUES (1760,'8','cm','width', 986);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1761,'12.5','cm','height', 944);
+			VALUES (1761,'12.5','cm','height', 986);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('944', '2');
 /* Tabela DescriptiveNotes */
@@ -26256,11 +26256,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,945);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (945,'Zincogravura', 945);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (945,945);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (987,945);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1762,'12','cm','width', 945);
+			VALUES (1762,'12','cm','width', 987);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1763,'7','cm','height', 945);
+			VALUES (1763,'7','cm','height', 987);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('945', '2');
 /* Tabela DescriptiveNotes */
@@ -26284,11 +26284,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,946);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (946,'Zincogravura', 946);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (946,946);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (988,946);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1764,'16.5','cm','width', 946);
+			VALUES (1764,'16.5','cm','width', 988);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1765,'12','cm','height', 946);
+			VALUES (1765,'12','cm','height', 988);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('946', '2');
 /* Tabela RelatedWorks */
@@ -26309,11 +26309,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,947);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (947,'Zincogravura', 947);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (947,947);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (989,947);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1766,'6','cm','width', 947);
+			VALUES (1766,'6','cm','width', 989);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1767,'8.5','cm','height', 947);
+			VALUES (1767,'8.5','cm','height', 989);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('947', '2');
 /* Tabela DescriptiveNotes */
@@ -26337,11 +26337,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,948);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (948,'Zincogravura', 948);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (948,948);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (990,948);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1768,'5.5','cm','width', 948);
+			VALUES (1768,'5.5','cm','width', 990);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1769,'10','cm','height', 948);
+			VALUES (1769,'10','cm','height', 990);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('948', '2');
 /* Tabela DescriptiveNotes */
@@ -26365,11 +26365,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,949);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (949,'Zincogravura', 949);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (949,949);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (991,949);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1770,'6.5','cm','width', 949);
+			VALUES (1770,'6.5','cm','width', 991);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1771,'9.5','cm','height', 949);
+			VALUES (1771,'9.5','cm','height', 991);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('949', '2');
 /* Tabela DescriptiveNotes */
@@ -26393,11 +26393,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,950);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (950,'Zincogravura', 950);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (950,950);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (992,950);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1772,'9','cm','width', 950);
+			VALUES (1772,'9','cm','width', 992);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1773,'6','cm','height', 950);
+			VALUES (1773,'6','cm','height', 992);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('950', '2');
 /* Tabela DescriptiveNotes */
@@ -26421,11 +26421,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,951);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (951,'Zincogravura', 951);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (951,951);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (993,951);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1774,'6','cm','width', 951);
+			VALUES (1774,'6','cm','width', 993);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1775,'3','cm','height', 951);
+			VALUES (1775,'3','cm','height', 993);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('951', '2');
 /* Tabela DescriptiveNotes */
@@ -26449,11 +26449,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,952);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (952,'Bronze', 952);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (952,952);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (994,952);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1776,'8.5','cm','width', 952);
+			VALUES (1776,'8.5','cm','width', 994);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1777,'9','cm','height', 952);
+			VALUES (1777,'9','cm','height', 994);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('952', '2');
 /* Tabela DescriptiveNotes */
@@ -26477,11 +26477,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,953);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (953,'Zincogravura', 953);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (953,953);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (995,953);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1778,'6','cm','width', 953);
+			VALUES (1778,'6','cm','width', 995);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1779,'9','cm','height', 953);
+			VALUES (1779,'9','cm','height', 995);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('953', '2');
 /* Tabela DescriptiveNotes */
@@ -26505,11 +26505,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,954);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (954,'Zincogravura', 954);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (954,954);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (996,954);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1780,'9','cm','width', 954);
+			VALUES (1780,'9','cm','width', 996);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1781,'6','cm','height', 954);
+			VALUES (1781,'6','cm','height', 996);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('954', '2');
 /* Tabela DescriptiveNotes */
@@ -26533,11 +26533,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,955);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (955,'Zincogravura', 955);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (955,955);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (997,955);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1782,'3.5','cm','width', 955);
+			VALUES (1782,'3.5','cm','width', 997);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1783,'6.5','cm','height', 955);
+			VALUES (1783,'6.5','cm','height', 997);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('955', '2');
 /* Tabela DescriptiveNotes */
@@ -26561,11 +26561,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,956);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (956,'Zincogravura', 956);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (956,956);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (998,956);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1784,'5.5','cm','width', 956);
+			VALUES (1784,'5.5','cm','width', 998);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1785,'9','cm','height', 956);
+			VALUES (1785,'9','cm','height', 998);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('956', '2');
 /* Tabela DescriptiveNotes */
@@ -26589,11 +26589,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,957);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (957,'Zincogravura', 957);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (957,957);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (999,957);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1786,'9','cm','width', 957);
+			VALUES (1786,'9','cm','width', 999);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1787,'6','cm','height', 957);
+			VALUES (1787,'6','cm','height', 999);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('957', '2');
 /* Tabela DescriptiveNotes */
@@ -26619,11 +26619,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,958);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (958,'Zincogravura', 958);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (958,958);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1000,958);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1788,'4','cm','width', 958);
+			VALUES (1788,'4','cm','width', 1000);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1789,'7.5','cm','height', 958);
+			VALUES (1789,'7.5','cm','height', 1000);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('958', '2');
 /* Tabela DescriptiveNotes */
@@ -26647,11 +26647,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,959);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (959,'Zincogravura', 959);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (959,959);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1001,959);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1790,'9','cm','width', 959);
+			VALUES (1790,'9','cm','width', 1001);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1791,'7','cm','height', 959);
+			VALUES (1791,'7','cm','height', 1001);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('959', '2');
 /* Tabela DescriptiveNotes */
@@ -26675,11 +26675,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,960);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (960,'Zincogravura', 960);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (960,960);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1002,960);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1792,'7.5','cm','width', 960);
+			VALUES (1792,'7.5','cm','width', 1002);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1793,'5','cm','height', 960);
+			VALUES (1793,'5','cm','height', 1002);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('960', '2');
 /* Tabela DescriptiveNotes */
@@ -26703,11 +26703,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,961);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (961,'Zincogravura', 961);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (961,961);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1003,961);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1794,'7','cm','width', 961);
+			VALUES (1794,'7','cm','width', 1003);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1795,'5','cm','height', 961);
+			VALUES (1795,'5','cm','height', 1003);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('961', '2');
 /* Tabela DescriptiveNotes */
@@ -26731,11 +26731,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,962);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (962,'Zincogravura', 962);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (962,962);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1004,962);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1796,'5.5','cm','width', 962);
+			VALUES (1796,'5.5','cm','width', 1004);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1797,'2.5','cm','height', 962);
+			VALUES (1797,'2.5','cm','height', 1004);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('962', '2');
 /* Tabela DescriptiveNotes */
@@ -26761,11 +26761,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,963);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (963,'Zincogravura', 963);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (963,963);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1005,963);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1798,'5.5','cm','width', 963);
+			VALUES (1798,'5.5','cm','width', 1005);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1799,'8.5','cm','height', 963);
+			VALUES (1799,'8.5','cm','height', 1005);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('963', '2');
 /* Tabela DescriptiveNotes */
@@ -26789,11 +26789,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,964);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (964,'Zincogravura', 964);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (964,964);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1006,964);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1800,'8.5','cm','width', 964);
+			VALUES (1800,'8.5','cm','width', 1006);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1801,'6.5','cm','height', 964);
+			VALUES (1801,'6.5','cm','height', 1006);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('964', '2');
 /* Tabela DescriptiveNotes */
@@ -26819,11 +26819,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,965);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (965,'Zincogravura', 965);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (965,965);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1007,965);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1802,'5','cm','width', 965);
+			VALUES (1802,'5','cm','width', 1007);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1803,'9.5','cm','height', 965);
+			VALUES (1803,'9.5','cm','height', 1007);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('965', '2');
 /* Tabela DescriptiveNotes */
@@ -26849,11 +26849,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,966);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (966,'Zincogravura', 966);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (966,966);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1008,966);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1804,'6.5','cm','width', 966);
+			VALUES (1804,'6.5','cm','width', 1008);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1805,'9.5','cm','height', 966);
+			VALUES (1805,'9.5','cm','height', 1008);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('966', '2');
 /* Tabela DescriptiveNotes */
@@ -26877,11 +26877,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,967);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (967,'Bronze', 967);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (967,967);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1009,967);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1806,'12.5','cm','width', 967);
+			VALUES (1806,'12.5','cm','width', 1009);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1807,'8','cm','height', 967);
+			VALUES (1807,'8','cm','height', 1009);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('967', '2');
 /* Tabela DescriptiveNotes */
@@ -26905,11 +26905,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,968);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (968,'Zincogravura', 968);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (968,968);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1010,968);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1808,'13','cm','width', 968);
+			VALUES (1808,'13','cm','width', 1010);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1809,'9','cm','height', 968);
+			VALUES (1809,'9','cm','height', 1010);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('968', '2');
 /* Tabela DescriptiveNotes */
@@ -26933,11 +26933,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,969);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (969,'Zincogravura', 969);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (969,969);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1011,969);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1810,'6','cm','width', 969);
+			VALUES (1810,'6','cm','width', 1011);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1811,'6','cm','height', 969);
+			VALUES (1811,'6','cm','height', 1011);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('969', '2');
 /* Tabela DescriptiveNotes */
@@ -26961,11 +26961,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,970);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (970,'Linoleo', 970);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (970,970);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1012,970);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1812,'11.5','cm','width', 970);
+			VALUES (1812,'11.5','cm','width', 1012);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1813,'8','cm','height', 970);
+			VALUES (1813,'8','cm','height', 1012);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('970', '2');
 /* Tabela DescriptiveNotes */
@@ -26989,11 +26989,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,971);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (971,'Zincogravura', 971);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (971,971);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1013,971);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1814,'5.5','cm','width', 971);
+			VALUES (1814,'5.5','cm','width', 1013);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1815,'9','cm','height', 971);
+			VALUES (1815,'9','cm','height', 1013);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('971', '2');
 /* Tabela DescriptiveNotes */
@@ -27017,11 +27017,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,972);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (972,'Zincogravura', 972);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (972,972);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1014,972);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1816,'6','cm','width', 972);
+			VALUES (1816,'6','cm','width', 1014);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1817,'4.5','cm','height', 972);
+			VALUES (1817,'4.5','cm','height', 1014);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('972', '2');
 /* Tabela DescriptiveNotes */
@@ -27045,11 +27045,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,973);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (973,'Zincogravura', 973);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (973,973);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1015,973);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1818,'6','cm','width', 973);
+			VALUES (1818,'6','cm','width', 1015);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1819,'5.5','cm','height', 973);
+			VALUES (1819,'5.5','cm','height', 1015);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('973', '2');
 /* Tabela DescriptiveNotes */
@@ -27073,11 +27073,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,974);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (974,'Zincogravura', 974);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (974,974);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1016,974);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1820,'7.5','cm','width', 974);
+			VALUES (1820,'7.5','cm','width', 1016);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1821,'6','cm','height', 974);
+			VALUES (1821,'6','cm','height', 1016);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('974', '2');
 /* Tabela DescriptiveNotes */
@@ -27101,11 +27101,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,975);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (975,'Zincogravura', 975);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (975,975);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1017,975);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1822,'13','cm','width', 975);
+			VALUES (1822,'13','cm','width', 1017);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1823,'9','cm','height', 975);
+			VALUES (1823,'9','cm','height', 1017);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('975', '2');
 /* Tabela DescriptiveNotes */
@@ -27129,11 +27129,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,976);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (976,'Zincogravura', 976);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (976,976);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1018,976);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1824,'12.5','cm','width', 976);
+			VALUES (1824,'12.5','cm','width', 1018);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1825,'8','cm','height', 976);
+			VALUES (1825,'8','cm','height', 1018);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('976', '2');
 /* Tabela DescriptiveNotes */
@@ -27157,11 +27157,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,977);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (977,'Zincogravura', 977);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (977,977);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1019,977);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1826,'6','cm','width', 977);
+			VALUES (1826,'6','cm','width', 1019);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1827,'6','cm','height', 977);
+			VALUES (1827,'6','cm','height', 1019);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('977', '2');
 /* Tabela DescriptiveNotes */
@@ -27185,11 +27185,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,978);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (978,'Zincogravura', 978);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (978,978);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1020,978);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1828,'10','cm','width', 978);
+			VALUES (1828,'10','cm','width', 1020);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1829,'7.5','cm','height', 978);
+			VALUES (1829,'7.5','cm','height', 1020);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('978', '2');
 /* Tabela DescriptiveNotes */
@@ -27213,11 +27213,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,979);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (979,'Zincogravura', 979);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (979,979);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1021,979);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1830,'6.5','cm','width', 979);
+			VALUES (1830,'6.5','cm','width', 1021);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1831,'2','cm','height', 979);
+			VALUES (1831,'2','cm','height', 1021);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('979', '2');
 /* Tabela DescriptiveNotes */
@@ -27241,11 +27241,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,980);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (980,'Zincogravura', 980);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (980,980);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1022,980);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1832,'6.5','cm','width', 980);
+			VALUES (1832,'6.5','cm','width', 1022);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1833,'5.5','cm','height', 980);
+			VALUES (1833,'5.5','cm','height', 1022);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('980', '2');
 /* Tabela DescriptiveNotes */
@@ -27269,11 +27269,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,981);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (981,'Zincogravura', 981);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (981,981);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1023,981);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1834,'8.5','cm','width', 981);
+			VALUES (1834,'8.5','cm','width', 1023);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1835,'6','cm','height', 981);
+			VALUES (1835,'6','cm','height', 1023);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('981', '2');
 /* Tabela DescriptiveNotes */
@@ -27318,11 +27318,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,983);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (983,'Zincogravura', 983);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (983,983);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1024,983);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1836,'4.5','cm','width', 983);
+			VALUES (1836,'4.5','cm','width', 1024);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1837,'8','cm','height', 983);
+			VALUES (1837,'8','cm','height', 1024);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('983', '2');
 /* Tabela DescriptiveNotes */
@@ -27368,11 +27368,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,984);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (984,'Linógravura', 984);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (984,984);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1025,984);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1838,'6.3','cm','width', 984);
+			VALUES (1838,'6.3','cm','width', 1025);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1839,'8','cm','height', 984);
+			VALUES (1839,'8','cm','height', 1025);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('984', '2');
 /* Tabela DescriptiveNotes */
@@ -27402,11 +27402,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,985);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (985,'Zincogravura', 985);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (985,985);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1026,985);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1840,'7.7','cm','width', 985);
+			VALUES (1840,'7.7','cm','width', 1026);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1841,'12','cm','height', 985);
+			VALUES (1841,'12','cm','height', 1026);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('985', '2');
 /* Tabela DescriptiveNotes */
@@ -27430,11 +27430,11 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,986);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (986,'Zincogravura', 986);
 /* Tabela IndexingMeasurements */
-INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (986,986);
+INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (1027,986);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1842,'14.5','cm','width', 986);
+			VALUES (1842,'14.5','cm','width', 1027);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
-			VALUES (1843,'10.5','cm','height', 986);
+			VALUES (1843,'10.5','cm','height', 1027);
 /* Tabela LocationsName */
 INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('986', '2');
 /* Tabela DescriptiveNotes */
