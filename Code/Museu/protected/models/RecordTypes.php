@@ -60,7 +60,7 @@ class RecordTypes extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_recordTypes' => 'Id Record Types',
+			'id_recordTypes' => 'Id',
 			'recordType' => 'Record Type',
 		);
 	}

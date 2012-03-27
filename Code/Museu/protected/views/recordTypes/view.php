@@ -15,7 +15,12 @@ $this->menu=array(
 
 <h1>View RecordTypes #<?php echo $model->id_recordTypes; ?></h1>
 
-<?php $this->widget('zii.widgets.CDetailView', array(
+
+
+<?php 
+CVarDumper::dump($model, 5, true);
+
+$this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id_recordTypes',

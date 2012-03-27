@@ -242,6 +242,10 @@ class Object_Work_Records extends CActiveRecord
 	}
 
 
+	/**
+	 * Get Resources of this model
+	 * @return Stirng html img
+	 */
 	public function getResources_Text()
 	{
 		$result = '';
