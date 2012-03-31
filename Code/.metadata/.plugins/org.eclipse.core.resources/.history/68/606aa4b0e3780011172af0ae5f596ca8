@@ -1,0 +1,27 @@
+<div class="form">
+
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'object--work--records-form',
+	'enableAjaxValidation'=>false,
+)); ?>
+
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
+ 
+    <?php echo CHtml::errorSummary(array($Object_Work_Records,$Object_Work_Titles)); ?>
+ 
+    <!-- ...input fields for $a, $b... -->
+ 
+    <div class="row">
+        <?php echo $form->labelEx($a,'a_field'); ?>
+        <?php echo $form->textField($a,'a_field'); ?>
+        <?php echo $form->error($a,'a_field'); ?>
+    </div>
+ 
+    <div class="row">
+        <?php echo $form->labelEx($b,'b_field'); ?>
+        <?php echo $form->textField($b,'b_field'); ?>
+        <?php echo $form->error($b,'b_field'); ?>
+    </div>
+ 
+ 
+<?php echo CHtml::endForm(); ?>
