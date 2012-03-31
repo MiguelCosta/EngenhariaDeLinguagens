@@ -8840,3 +8840,210 @@ REQUEST_URI=/EL/Code/Museu/index.php/RecordTypes/1
 in /opt/lampp/htdocs/EL/Code/Museu/protected/views/recordTypes/view.php (21)
 in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/RecordTypesController.php (59)
 in /opt/lampp/htdocs/EL/Code/Museu/index.php (13)
+2012/04/01 01:03:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php:168
+Stack trace:
+#0 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(58): Object_Work_RecordsController->loadModel()
+#1 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/view/view
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/site/index
+---
+2012/04/01 01:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php:168
+Stack trace:
+#0 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(58): Object_Work_RecordsController->loadModel()
+#1 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/view/view
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php
+---
+2012/04/01 01:03:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php:168
+Stack trace:
+#0 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(58): Object_Work_RecordsController->loadModel()
+#1 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/view/
+---
+2012/04/01 01:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php:168
+Stack trace:
+#0 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(58): Object_Work_RecordsController->loadModel()
+#1 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/view/
+---
+2012/04/01 01:03:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php:168
+Stack trace:
+#0 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(58): Object_Work_RecordsController->loadModel()
+#1 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/view/
+---
+2012/04/01 01:03:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php:168
+Stack trace:
+#0 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(58): Object_Work_RecordsController->loadModel()
+#1 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/view/view
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/view/
+---
+2012/04/01 01:04:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php:168
+Stack trace:
+#0 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(58): Object_Work_RecordsController->loadModel()
+#1 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/view/view
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/view/
+---
+2012/04/01 01:04:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php:168
+Stack trace:
+#0 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(58): Object_Work_RecordsController->loadModel()
+#1 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/view/view
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/view/
+---
+2012/04/01 01:04:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php:168
+Stack trace:
+#0 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(58): Object_Work_RecordsController->loadModel()
+#1 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/view/view
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/view/
+---
+2012/04/01 01:04:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php:168
+Stack trace:
+#0 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(58): Object_Work_RecordsController->loadModel()
+#1 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#9 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#11 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#12 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/view/index
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/index
+---
+2012/04/01 01:04:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vindex".' in /opt/lampp/htdocs/yii/framework/web/CController.php:484
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(271): CController->missingAction('vindex')
+#1 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('vindex')
+#2 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#3 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/vindex
+---

@@ -57,11 +57,6 @@ $this->widget('zii.widgets.CDetailView', array(
 						//'type'=>'html',
 						//'value'=>$model->getInscriptions_Link(),
 				),
-				/*array(
-						'name'=>'indexingCreators',
-						'type'=>'html',
-						'value'=>$model->getIndexingCreators_Text(),
-				),*/
 				array(
 						'name'=>'resources',
 						'type'=>'html',

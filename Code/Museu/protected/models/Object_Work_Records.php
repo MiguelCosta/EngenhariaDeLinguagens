@@ -202,45 +202,6 @@ class Object_Work_Records extends CActiveRecord
 		return $result;
 	}
 
-	/**
-	 * Get information about Creators
-	 * @return String Html
-	 */
-	public function getIndexingCreators_Text()
-	{
-		$result = '';
-		$namesCreators = '';
-		$nationalitiesCreators = '';
-		$creatorRoles  = '';
-		$vitalDatesCreators = '';
-		$birthDate = '';
-		$deathDate = '';
-
-		foreach ($this->indexingCreators as $indexingCreators){
-			$namesCreators = $indexingCreators->getNamesCreators_Text();
-			$vitalDatesCreators .= $indexingCreators->getVitalDatesCreators_vitalDatesCreator_Text();
-			$nationalitiesCreators .= $indexingCreators->getNationalitiesCreators_Text();
-			$creatorRoles .= $indexingCreators->getCreatorRoles_Text();
-			$birthDate .= $indexingCreators->getVitalDatesCreators_birthDate_Text();
-			$deathDate .= $indexingCreators->getVitalDatesCreators_deathDate_Text();
-				
-			$result .= '<b>'.$namesCreators.$vitalDatesCreators.'</b>';
-			if($nationalitiesCreators != ''){
-				$result .= '<br/>'.$nationalitiesCreators;
-			}
-			if($creatorRoles != ''){
-				$result .= '<br/>'.$creatorRoles;
-			}
-			if($birthDate != ''){
-				$result .= '<br/>'.$birthDate;
-			}
-			if($deathDate != ''){
-				$result .= '<br/>'.$deathDate;
-			}
-		}
-		return $result;
-	}
-
 
 	/**
 	 * Get Resources of this model
