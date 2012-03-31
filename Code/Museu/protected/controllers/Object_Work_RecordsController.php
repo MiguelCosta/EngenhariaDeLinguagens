@@ -36,7 +36,7 @@ class Object_Work_RecordsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','createAll'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -79,6 +79,39 @@ class Object_Work_RecordsController extends Controller
 
 		$this->render('create',array(
 			'model'=>$model,
+		));
+	}
+	
+	public function actionCreateAll()
+	{
+		$owr=new Object_Work_Records;
+		$owt=new Object_Work_Titles;
+		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles']))
+		{
+			$owr->attributes=$_POST['Object_Work_Records'];
+			$owt->attributes=$_POST['Object_Work_Titles'];
+			$maxRecordNumber = Yii::app()->db->createCommand()->select('max(id_object_Work_Records) as max')->from('Object_Work_Records')->queryScalar();
+			//CVarDumper::dump($maxRecordNumber);
+			$owt->Object_Work_Record = $maxRecordNumber + 1;
+			
+			
+			// validate BOTH $owr and $owt
+			$valid=$owr->validate();
+			$valid=$owt->validate() && $valid;
+	
+			if($valid)
+			{
+				// use false parameter to disable validation
+				$owr->save(false);
+				$owt->save(false);
+				// redirect to another page
+				$this->redirect(array('view','id'=>$owr->id_object_Work_Records));
+			}
+		}
+	
+		$this->render('createAll', array(
+				'Object_Work_Records'=>$owr,
+				'Object_Work_Titles'=>$owt,
 		));
 	}
 
