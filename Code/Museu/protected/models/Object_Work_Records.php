@@ -97,7 +97,6 @@ class Object_Work_Records extends CActiveRecord
 				// new lables
 				'object_Work_Titles' => 'Títulos',
 				'inscriptions' => 'Legenda',
-				'indexingCreators'=> 'Criadores',
 				'resources'=>'Recursos',
 		);
 	}
@@ -127,6 +126,22 @@ class Object_Work_Records extends CActiveRecord
 
 		return new CActiveDataProvider('Object_Work_Records', array(
 				'criteria'=>$criteria,
+				'pagination'=>array(
+						'pageSize'=>Yii::app()->params['pageSize'],
+						'pageVar'=>'page',
+				),
+				'sort'=>array(
+						'defaultOrder'=>'id_object_Work_Records',
+						'sortVar'=>'sort',
+						'attributes'=>array(
+								'id_object_Work_Records',
+								'displayCreator',
+								'displayMeasurements',
+								'displayMaterialsTech',
+								'RecordType',
+								'object_Work_Titles',
+						),
+				),
 		));
 	}
 

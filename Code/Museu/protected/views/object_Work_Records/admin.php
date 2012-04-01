@@ -55,6 +55,7 @@ Yii::app()->clientScript->registerScript('search', "
 				array(
 						'name'=>'RecordType',
 						'value'=>'$data->recordType->recordType',
+						'filter'=>CHtml::listData(RecordTypes::model()->findAll(array('order'=>'recordType')), 'id_recordTypes','recordType'),
 				),
 				array(
 						'class'=>'CButtonColumn',
