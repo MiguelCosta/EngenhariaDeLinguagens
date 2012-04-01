@@ -65,6 +65,23 @@ div.form .row
 	margin: 5px 0;
 }
 
+div.form .group
+{
+	margin: 5px -5px 15px;
+}
+
+div.form .group .title
+{
+	font-weight: bold;
+	font-size: 1.2em;
+	display: block;
+}
+
+div.form .group .row
+{
+	margin: 5px 20px;
+}
+
 div.form .hint
 {
 	margin: 0;

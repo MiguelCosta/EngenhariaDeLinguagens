@@ -71,10 +71,10 @@ class Object_Work_Titles extends CActiveRecord
 	{
 		return array(
 				'id_object_Work_Titles' => 'Id Object Work Titles',
-				'title' => 'Title',
-				'pref' => 'Pref',
-				'type' => 'Type',
-				'lang' => 'Lang',
+				'title' => 'Título',
+				'pref' => 'Preferência',
+				'type' => 'Tipo',
+				'lang' => 'Língua',
 				'langtermsource' => 'Langtermsource',
 				'Object_Work_Record' => 'Object Work Record',
 		);
