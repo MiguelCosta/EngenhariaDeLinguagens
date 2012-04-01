@@ -61,10 +61,29 @@ $this->widget('zii.widgets.CDetailView', array(
 				array(
 						'name'=>'resources',
 						'type'=>'html',
-						'value'=>CHtml::link(CHtml::image($model->getResources_Text(),'texto alternativo',array('width'=>200,'height'=>200)),$model->getResources_Text()),
-						)
+						'value'=>CHtml::link(CHtml::image($model->getResources_Text(),'texto alternativo',array('id'=>'image', 'width'=>200)), $model->getResources_Text()),
+						'htmlOptions'=>array('id'=>'image'),
+				)
 		),
 ));
 
 ?>
 
+<?php 
+$this->widget('zii.widgets.jui.CJuiSlider', array(
+    'value'=>40,
+    'options'=>array(
+        'min'=>1,
+        'max'=>100,
+        'slide'=>'js:
+            function(event,ui){
+                $("#image").width(400*ui.value/100);
+                $("#zoom").text(ui.value+"%");
+            }
+        ',
+    ),
+    'htmlOptions'=>array(
+        'style'=>'width:200px; float:left;'
+    ),
+));
+?>
