@@ -1,12 +1,13 @@
 <?php
 $this->breadcrumbs=array(
-	'Object  Work  Records'=>array('index'),
-	'Create Object',
+		'Peças'=>array('index'),
+		'Criar Ficha Completa',
 );
 
 $this->menu=array(
-	array('label'=>'List Object_Work_Records', 'url'=>array('index')),
-	array('label'=>'Manage Object_Work_Records', 'url'=>array('admin')),
+		array('label'=>'Índice', 'url'=>array('index')),
+		array('label'=>'Criar Ficha Completa', 'url'=>array('createAll')),
+		array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 

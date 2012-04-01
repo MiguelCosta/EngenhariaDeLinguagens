@@ -39,14 +39,19 @@
 					'items'=>array(
 							array('label'=>'Ínicio', 'url'=>array('/site/index')),
 							array('label'=>'|'),
-							array('label'=>'Peças', 'url'=>array('/object_Work_Records/index')),
+							array('label'=>'Peças', 'url'=>array('/object_Work_Records/index'), 'items'=>array(
+									array('label'=>'Índice','url'=>array('/object_Work_Records/index')),
+									array('label'=>'Criar','url'=>array('/object_Work_Records/create')),
+									array('label'=>'Criar Ficha Completa','url'=>array('/object_Work_Records/createAll')),
+									array('label'=>'Administração','url'=>array('/object_Work_Records/admin')),),
+							),
 							array('label'=>'Salas','url'=>array('#')),
 							array('label'=>'|'),
 							array('label'=>'Acerca', 'url'=>array('/site/page', 'view'=>'about')),
 							array('label'=>'Contactos', 'url'=>array('/site/contact')),
 							array('label'=>'|'),
-							array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-							array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+							array('label'=>'Login', 'url'=>array('/site/login'), 'itemOptions'=>array('class'=>'login'),'visible'=>Yii::app()->user->isGuest),
+							array('label'=>'Logout ('.Yii::app()->user->name.')', 'itemOptions'=>array('class'=>'login'), 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 					),
 		)); ?>
 		</div>

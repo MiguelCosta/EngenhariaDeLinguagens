@@ -45,12 +45,14 @@ body
 {
 	padding: 10px 20px;
 	font-size: 200%;
-	text-align: certer;
+	text-align: center;
 }
 
 #mainmenu
 {
 	background:white url(bg.gif) repeat-x left top;
+	
+	height: 30px;
 }
 
 #mainmenu ul
@@ -62,16 +64,19 @@ body
 #mainmenu ul li
 {
 	display: inline;
+	overflow: visible;
+    display: block; 
+    float: left; 
 }
 
 #mainmenu ul li a
 {
 	color:#ffffff;
 	background-color:transparent;
-	font-size:12px;
+	font-size:15px;
 	font-weight:bold;
 	text-decoration:none;
-	padding:5px 8px;
+	padding:5px 8px;	
 }
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
@@ -79,6 +84,52 @@ body
 	color: #6399cd;
 	background-color:#EFF4FA;
 	text-decoration:none;
+}
+
+#mainmenu > ul > li ul { 
+    display: none;
+    position: absolute;
+    background: #FFF; 
+    padding: 0;
+    height: auto;
+}
+
+/* drop down menu */
+#mainmenu > ul > li > ul { 
+    margin-top: 5px;
+}
+
+/* others sub menus */
+#mainmenu > ul > li > ul li ul { 
+    margin-top: -20px; /* align with parent*/
+    left:99%;
+    width: 100%;
+}
+
+#mainmenu ul li:hover > ul { 
+    display: inline-block; 
+}
+
+#mainmenu ul li:hover > ul { 
+    display: block; 
+}
+#mainmenu ul li ul li a{
+    padding: 5px 14px; 
+    background-color: #EFF4FA;
+    color: #6399CD;
+    text-decoration: none;
+    display: block;
+    font-size:11px;
+    border-radius: 15px;
+}
+#mainmenu ul li ul li a:hover { 
+    color: #fff; 
+    background:#0066CC
+}
+
+#mainmenu li.login
+{
+	float: right;	
 }
 
 div.flash-error, div.flash-notice, div.flash-success

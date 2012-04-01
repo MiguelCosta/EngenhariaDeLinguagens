@@ -1,12 +1,13 @@
 <?php
 $this->breadcrumbs=array(
-		'Object  Work  Records'=>array('index'),
-		'Manage',
+		'Peças'=>array('index'),
+		'Administração',
 );
 
 $this->menu=array(
-		array('label'=>'List Object_Work_Records', 'url'=>array('index')),
-		array('label'=>'Create Object_Work_Records', 'url'=>array('create')),
+		array('label'=>'Índice', 'url'=>array('index')),
+		array('label'=>'Criar', 'url'=>array('create')),
+		array('label'=>'Criar Ficha Completa', 'url'=>array('createAll')),
 );
 
 Yii::app()->clientScript->registerScript('search', "

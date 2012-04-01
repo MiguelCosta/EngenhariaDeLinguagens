@@ -5,11 +5,12 @@ $this->breadcrumbs = array(
 );
 
 $this->menu = array(
-		array('label' => 'List Object_Work_Records', 'url' => array('index')),
-		array('label' => 'Create Object_Work_Records', 'url' => array('create')),
-		array('label' => 'Update Object_Work_Records', 'url' => array('update', 'id' => $model->id_object_Work_Records)),
-		array('label' => 'Delete Object_Work_Records', 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id_object_Work_Records), 'confirm' => 'Are you sure you want to delete this item?')),
-		array('label' => 'Manage Object_Work_Records', 'url' => array('admin')),
+		array('label' => 'Índice', 'url' => array('index')),
+		array('label' => 'Criar', 'url' => array('create')),
+		array('label' => 'Criar Ficha Completa', 'url' => array('createAll')),
+		array('label' => 'Actualizar', 'url' => array('update', 'id' => $model->id_object_Work_Records)),
+		array('label' => 'Eliminar', 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id_object_Work_Records), 'confirm' => 'Are you sure you want to delete this item?')),
+		array('label' => 'Administração', 'url' => array('admin')),
 );
 ?>
 
