@@ -61,8 +61,7 @@ $this->widget('zii.widgets.CDetailView', array(
 				array(
 						'name'=>'resources',
 						'type'=>'html',
-						'value'=>CHtml::link(CHtml::image($model->getResources_Text(),'texto alternativo',array('id'=>'image', 'width'=>200)), $model->getResources_Text()),
-						'htmlOptions'=>array('id'=>'image'),
+						'value'=>CHtml::link(CHtml::image($model->getResources_Text(),'texto alternativo',array('class'=>'image', 'width'=>200)), $model->getResources_Text()),
 				)
 		),
 ));
@@ -77,7 +76,7 @@ $this->widget('zii.widgets.jui.CJuiSlider', array(
         'max'=>100,
         'slide'=>'js:
             function(event,ui){
-                $("#image").width(400*ui.value/100);
+                $(".image").width(400*ui.value/100);
                 $("#zoom").text(ui.value+"%");
             }
         ',
