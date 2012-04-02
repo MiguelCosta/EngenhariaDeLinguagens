@@ -64,7 +64,7 @@ class Object_Work_Types extends CActiveRecord
 	{
 		return array(
 			'id_type' => 'Id Type',
-			'type' => 'Type',
+			'type' => 'Tipo de peça',
 			'termsource' => 'Termsource',
 			'termsourceID' => 'Termsource',
 		);
@@ -92,5 +92,13 @@ class Object_Work_Types extends CActiveRecord
 		return new CActiveDataProvider('Object_Work_Types', array(
 			'criteria'=>$criteria,
 		));
+	}
+	
+	/**
+	 * Better support of MANY_TO_MANY relations
+	 */
+	public function behaviors(){
+		return array( 'CAdvancedArBehavior' => array(
+				'class' => 'application.extensions.CAdvancedArBehavior'));
 	}
 }

@@ -19,6 +19,11 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
     <?php echo CHtml::errorSummary(array($Object_Work_Records,$Object_Work_Titles));?>
     
     
+    <div class="row">
+		<?php echo CHtml::label('Tipo da peça', 'mydropdownlist') ?>
+		<?php echo CHtml::dropDownList('mydropdownlist', array(), CHtml::listData(Object_Work_Types::model()->findAll(array('order' => 'type')), 'id_type', 'type')); ?> 
+	</div>
+    
     <!-- Object_Work_Titles -->
  	
     <div class="row">
@@ -35,7 +40,7 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 		<div class="row">
 			<?php echo $form->labelEx($Object_Work_Titles,'pref'); ?>
 			<?php echo $form->dropDownList($Object_Work_Titles,'pref',array('preferred' => 'Preferido', 
-					'alternate' => 'Alternativo'), array('empty' => 'Escolha um, se aplicável...')); ?>
+					'alternate' => 'Alternativo'), array('empty' => 'Escolha a preferência se aplicável...')); ?>
 			<?php echo $form->error($Object_Work_Titles,'pref'); ?>
 		</div>
 	
@@ -44,7 +49,7 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 			<?php echo $form->dropDownList($Object_Work_Titles,'type',array('inscribed' => 'Inscrito', 
 					'former' => 'Antigo', 'translated' => 'Traduzido', 'repository' => 'Repositório', 
 					'traditional' => 'Tradicional', 'creator' => 'Criador', 'local' => 'Local'),
-					array('empty' => 'Escolha um, se aplicável...')); ?>
+					array('empty' => 'Escolha o tipo se aplicável...')); ?>
 			<?php echo $form->error($Object_Work_Titles,'type'); ?>
 		</div>
 	
@@ -52,7 +57,7 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 			<?php echo $form->labelEx($Object_Work_Titles,'lang'); ?>
 			<?php echo $form->dropDownList($Object_Work_Titles,'lang', array('Portuguese' => 'Português', 
 					'English' => 'Inglês', 'French' => 'Francês', 'Spanish' => 'Espanhol'), 
-					array('empty' => 'Escolha um, se aplicável...')); ?>
+					array('empty' => 'Escolha a língua se aplicável...')); ?>
 			<?php echo $form->error($Object_Work_Titles,'lang'); ?>
 		</div>
 	
@@ -83,7 +88,7 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 	
 	<div class="row">
 		<?php echo $form->labelEx($Object_Work_Records,'RecordType'); ?>
-		<?php echo $form->textField($Object_Work_Records,'RecordType'); ?>
+		<?php echo $form->dropDownList($Object_Work_Records,'RecordType', CHtml::listData(RecordTypes::model()->findAll(array('order' => 'recordType')), 'id_recordTypes', 'recordType'), array('empty'=>'Escolha o tipo do registo'));?>
 		<?php echo $form->error($Object_Work_Records,'RecordType'); ?>
 	</div>
 	

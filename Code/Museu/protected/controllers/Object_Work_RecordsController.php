@@ -124,13 +124,16 @@ class Object_Work_RecordsController extends Controller
 // 				'validatedMembers' => $validatedMembers
 // 		));
 
-		$owr=new Object_Work_Records;
-		$owt=new Object_Work_Titles;
+		$owr 	=	new Object_Work_Records;
+		$owt 	=	new Object_Work_Titles;
+		$owtp 	=	new Object_Work_Types;
+		
 		
  		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles']))
  		{
  			$owr->attributes=$_POST['Object_Work_Records'];
- 			$owt->attributes=$_POST['Object_Work_Titles'];
+ 			$owt->attributes=$_POST['Object_Work_Titles']; // TODO 1:N
+ 			$owr->object_Work_Types = array($_POST['mydropdownlist']); // TODO 1:N
  			// vai buscar o ultimo id
  			$maxRecordNumber = Yii::app()->db->createCommand()
  				->select('max(id_object_Work_Records) as max')
@@ -156,6 +159,7 @@ class Object_Work_RecordsController extends Controller
  		$this->render('createAll', array(
  				'Object_Work_Records'=>$owr,
  				'Object_Work_Titles'=>$owt,
+ 				'Object_Work_Types'=>$owtp,
  		));
 	}
 
