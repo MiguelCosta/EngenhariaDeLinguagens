@@ -231,14 +231,14 @@ class Object_Work_Records extends CActiveRecord
 		return $result;
 	}
 	
-<<<<<<< HEAD
 	/**
 	 * Better support of MANY_TO_MANY relations
 	 */
 	public function behaviors(){
 		return array( 'CAdvancedArBehavior' => array(
 				'class' => 'application.extensions.CAdvancedArBehavior'));
-=======
+	}
+
 	public function getResources_One(){
 		$result = '';
 		foreach ($this->resources as $resources){
@@ -255,7 +255,7 @@ class Object_Work_Records extends CActiveRecord
 			return $result;
 		}
 		return $result;
->>>>>>> 22e5ed38b1653715f4a4825dc26597c6279e4d7b
+
 	}
 
 }
