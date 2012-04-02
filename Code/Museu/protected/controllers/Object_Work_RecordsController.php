@@ -84,35 +84,79 @@ class Object_Work_RecordsController extends Controller
 	
 	public function actionCreateAll()
 	{
+// 		Yii::import('ext.multimodelform.MultiModelForm');
+		
+// 		$owr=new Object_Work_Records;
+// 		$owt=new Object_Work_Titles;
+// 		$validatedMembers = array();  //ensure an empty array
+		
+// 		if(isset($_POST['Object_Work_Records']))
+// 		{
+// 			$owr->attributes=$_POST['Object_Work_Records'];
+			
+// 			//validate detail before saving the master
+// 			$detailOK = MultiModelForm::validate($owt,$validatedMembers,$deleteItems);
+			
+// 			if ($detailOK && empty($validatedMembers))
+// 			{
+// 				Yii::app()->user->setFlash('error','No detail submitted');
+// 				$detailOK = false;
+// 			}
+			
+// 			if( $detailOK && $owr->save() )
+// 			{
+// 				// vai buscar o ultimo id
+// 				$maxRecordNumber = Yii::app()->db->createCommand()
+// 					->select('max(id_object_Work_Records) as max')
+// 					->from('Object_Work_Records')
+// 					->queryScalar();
+// 				//the value for the foreign key 'groupid'
+// 				$masterValues = array ('Object_Work_Record'=>$maxRecordNumber + 1);
+				
+// 				if (MultiModelForm::save($owt,$validatedMembers,$deleteMembers,$masterValues))
+// 					$this->redirect(array('view','id'=>$owr->id_object_Work_Records));
+// 			}
+// 		}
+		
+// 		$this->render('createAll', array(
+// 				'Object_Work_Records'=>$owr,
+// 				'Object_Work_Titles'=>$owt,
+// 				'validatedMembers' => $validatedMembers
+// 		));
+
 		$owr=new Object_Work_Records;
 		$owt=new Object_Work_Titles;
-		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles']))
-		{
-			$owr->attributes=$_POST['Object_Work_Records'];
-			$owt->attributes=$_POST['Object_Work_Titles'];
-			$maxRecordNumber = Yii::app()->db->createCommand()->select('max(id_object_Work_Records) as max')->from('Object_Work_Records')->queryScalar();
-			//CVarDumper::dump($maxRecordNumber);
-			$owt->Object_Work_Record = $maxRecordNumber + 1;
+		
+ 		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles']))
+ 		{
+ 			$owr->attributes=$_POST['Object_Work_Records'];
+ 			$owt->attributes=$_POST['Object_Work_Titles'];
+ 			// vai buscar o ultimo id
+ 			$maxRecordNumber = Yii::app()->db->createCommand()
+ 				->select('max(id_object_Work_Records) as max')
+ 				->from('Object_Work_Records')
+ 				->queryScalar();
+ 			$owt->Object_Work_Record = $maxRecordNumber + 1;
+		
 			
-			
-			// validate BOTH $owr and $owt
-			$valid=$owr->validate();
-			$valid=$owt->validate() && $valid;
+ 			// validate BOTH $owr and $owt
+ 			$valid=$owr->validate();
+ 			$valid=$owt->validate() && $valid;
 	
-			if($valid)
-			{
-				// use false parameter to disable validation
-				$owr->save(false);
-				$owt->save(false);
-				// redirect to another page
-				$this->redirect(array('view','id'=>$owr->id_object_Work_Records));
-			}
-		}
+ 			if($valid)
+ 			{
+ 				// use false parameter to disable validation
+ 				$owr->save(false);
+ 				$owt->save(false);
+ 				// redirect to another page
+ 				$this->redirect(array('view','id'=>$owr->id_object_Work_Records));
+ 			}
+ 		}
 	
-		$this->render('createAll', array(
-				'Object_Work_Records'=>$owr,
-				'Object_Work_Titles'=>$owt,
-		));
+ 		$this->render('createAll', array(
+ 				'Object_Work_Records'=>$owr,
+ 				'Object_Work_Titles'=>$owt,
+ 		));
 	}
 
 	/**

@@ -16,50 +16,42 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
  
-    <?php echo CHtml::errorSummary(array($Object_Work_Records,$Object_Work_Titles));?>
+    <?php //echo CHtml::errorSummary(array($Object_Work_Records,$Object_Work_Titles)); 
+		echo $form->errorSummary(array_merge(array($Object_Work_Records),$validatedMembers));?>
     
     
     <!-- Object_Work_Titles -->
  	
-    <div class="row">
-		<?php echo $form->labelEx($Object_Work_Titles,'title'); ?>
-		<?php echo $form->textField($Object_Work_Titles,'title',array('size'=>60,'maxlength'=>255)); ?>
-		<?php echo $form->error($Object_Work_Titles,'title'); ?>
-	</div>
+	<?php
+
+ 
+$memberFormConfig = array(
+      'elements'=>array(
+        'title'=>array(
+            'type'=>'text',
+        	'size'=>60,
+            'maxlength'=>255,
+        ),
+        'lastname'=>array(
+            'type'=>'hidden',
+        	'value'=>1
+        )
+    ));
+ 
+$this->widget('ext.multimodelform.MultiModelForm',array(
+        'id' => 'id_title', //the unique widget id
+        'formConfig' => $memberFormConfig, //the form configuration array
+        'model' => $Object_Work_Titles, //instance of the form model
+        //if submitted not empty from the controller,
+        //the form will be rendered with validation errors
+        'validatedItems' => $validatedMembers,
+ 
+        //array of member instances loaded from db
+        'data' => $Object_Work_Titles->findAll('Object_Work_Record=:Object_Work_Record', array(':Object_Work_Record'=>$Object_Work_Records->id_object_Work_Records)),
+    ));
+?>
 	
-	<div class="group">
-		<div class="title">
-			<?php echo "Título" ?>
-		</div>
-		
-		<div class="row">
-			<?php echo $form->labelEx($Object_Work_Titles,'pref'); ?>
-			<?php echo $form->dropDownList($Object_Work_Titles,'pref',array('preferred' => 'Preferido', 
-					'alternate' => 'Alternativo'), array('empty' => 'Escolha um, se aplicável...')); ?>
-			<?php echo $form->error($Object_Work_Titles,'pref'); ?>
-		</div>
 	
-		<div class="row">
-			<?php echo $form->labelEx($Object_Work_Titles,'type'); ?>
-			<?php echo $form->dropDownList($Object_Work_Titles,'type',array('inscribed' => 'Inscrito', 
-					'former' => 'Antigo', 'translated' => 'Traduzido', 'repository' => 'Repositório', 
-					'traditional' => 'Tradicional', 'creator' => 'Criador', 'local' => 'Local'),
-					array('empty' => 'Escolha um, se aplicável...')); ?>
-			<?php echo $form->error($Object_Work_Titles,'type'); ?>
-		</div>
-	
-		<div class="row">
-			<?php echo $form->labelEx($Object_Work_Titles,'lang'); ?>
-			<?php echo $form->dropDownList($Object_Work_Titles,'lang', array('Portuguese' => 'Português', 
-					'English' => 'Inglês', 'French' => 'Francês', 'Spanish' => 'Espanhol'), 
-					array('empty' => 'Escolha um, se aplicável...')); ?>
-			<?php echo $form->error($Object_Work_Titles,'lang'); ?>
-		</div>
-	
-		<div class="row">
-			<?php echo $form->hiddenField($Object_Work_Titles,'Object_Work_Record',array('value'=>1)); ?>
-		</div>
-	</div>
  
  
 	<!-- Object_Work_Records -->
