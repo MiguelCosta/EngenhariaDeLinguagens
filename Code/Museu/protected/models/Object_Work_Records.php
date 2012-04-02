@@ -230,5 +230,23 @@ class Object_Work_Records extends CActiveRecord
 		}
 		return $result;
 	}
+	
+	public function getResources_One(){
+		$result = '';
+		foreach ($this->resources as $resources){
+			$result = $resources->getLinkResource();
+			return $result;
+		}
+		return $result;
+	}
+	
+	public function getResources_One_path(){
+		$result = '';
+		foreach ($this->resources as $resources){
+			$result = $resources->getLinkResource_path();
+			return $result;
+		}
+		return $result;
+	}
 
 }

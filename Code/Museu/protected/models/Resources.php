@@ -110,7 +110,14 @@ class Resources extends CActiveRecord
 	public function getLinkResource()
 	{
 		$result = '';
-		$result = "../../../../Files/Imagens/".$this->linkResource->linkResource;
+		$result = "/EL/Files/Imagens/".$this->linkResource->linkResource;
+		return $result;
+	}
+	
+	public function getLinkResource_path()
+	{
+		$result = '';
+		$result = $this->linkResource->linkResource;
 		return $result;
 	}
 	
