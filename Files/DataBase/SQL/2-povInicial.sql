@@ -264,5 +264,19 @@ INSERT INTO EarliestDates (id_earliestDate, earliestDate) VALUES ('114','2014');
 INSERT INTO LatestDates (id_latestDate, latestDate) VALUES ('114','2014');
 
 /* Table Classifications */
-		INSERT INTO Classifications (id_classifications, classification) VALUEs ('1','Fotografia');
-		
+INSERT INTO Classifications (id_classifications, classification) VALUEs ('1','Fotografia');
+
+/* Table QualifierMeasurements */
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('approximate');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('sight');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('maximum');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('largest');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('smallest');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('average');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('variable');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('assembled');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('before restoration');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('at corners');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('rounded');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('framed');
+INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('with base');
