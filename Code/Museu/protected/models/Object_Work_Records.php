@@ -91,7 +91,7 @@ class Object_Work_Records extends CActiveRecord
 				'id_object_Work_Records' => 'ID',
 				'displayCreator' => 'Criador',
 				'displayMeasurements' => 'Medidas/Dimensões',
-				'displayMaterialsTech' => 'Material/Tecnologia',
+				'displayMaterialsTech' => 'Materiais/Técnicas',
 				'displayCreationDate' => 'Data de Criação',
 				'RecordType' => 'Tipo de Registo',
 				// new lables

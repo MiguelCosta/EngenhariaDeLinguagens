@@ -125,13 +125,16 @@ class Object_Work_RecordsController extends Controller
 // 		));
 
 		$validMeasureI 	= 	false; // Temporario enquanto nao se tratar os casos 1:N
-		$validMeasureII 	= 	false; // Temporario enquanto nao se tratar os casos 1:N
+		$validMeasureII = 	false; // Temporario enquanto nao se tratar os casos 1:N
+		$validEMaterial	= 	false;
 		$owr 	=	new Object_Work_Records;
 		$owt 	=	new Object_Work_Titles;
 		$owtp 	=	new Object_Work_Types;
 		$im		=	new IndexingMeasurements;
 		$m 		=	new Measurements;
 		$mII 	=	new Measurements;
+		$imt	=	new IndexingMaterialsTech;
+		$emt 	=	new ExtentMaterialsTech;
 		
 		
  		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles'], $_POST['Object_Work_Types']))
@@ -161,7 +164,8 @@ class Object_Work_RecordsController extends Controller
  			
  			
  			// obtem os dados do form relativos as Medidas/Dimensoes
- 			if (isset($_POST['Measurements']) || isset($_POST['MeasurementII'])) {
+ 			//if (isset($_POST['Measurements']) || isset($_POST['MeasurementII'])) {
+ 			if (isset($_POST['Measurements'])) {
  				// chave estrangeira da IndexingMeasurements que referencia Object_Work_Records
  				$im->Object_Work_Record = $maxRecordNumber + 1;
  				
@@ -172,10 +176,10 @@ class Object_Work_RecordsController extends Controller
 	 				->queryScalar();
  				
  				// Temporario: Se o primeiro grupo de dados relativos a Measurements tiver sido preenchido
- 				CVarDumper::dump($_POST['Measurements'],12,true);
- 				if (isset($_POST['Measurements'])) {
+ 				//CVarDumper::dump($_POST['Measurements'],12,true);
+ 				if (isset($_POST['Measurements'][1])) {
  					// obtem os dados do form relativos a Measurements
- 					$m->attributes=$_POST['Measurements']; // TODO 1:N
+ 					$m->attributes=$_POST['Measurements'][1]; // TODO 1:N
  					
  					if ($m->value!=NULL || $m->unit!=NULL || $m->type!=NULL) {
 	 					// chave estrangeira da Measurements que referencia IndexingMeasurements
@@ -187,9 +191,9 @@ class Object_Work_RecordsController extends Controller
  				}
  				
  				// Temporario: Se o segundo grupo de dados relativos a Measurements tiver sido preenchido
- 				if (isset($_POST['MeasurementII'])) {
+ 				if (isset($_POST['MeasurementII'][2])) { // TODO nao funciona isto. tem a ver com tabular input
  					// obtem os dados do form relativos a Measurements
- 					$mII->attributes=$_POST['MeasurementII']; // TODO 1:N
+ 					$mII->attributes=$_POST['MeasurementII'][2]; // TODO 1:N
  					
  					if ($mII->value!=NULL || $mII->unit!=NULL || $mII->type!=NULL) {
 	 					// chave estrangeira da Measurements que referencia IndexingMeasurements
@@ -200,13 +204,43 @@ class Object_Work_RecordsController extends Controller
  					}
  				}
 
- 				// Temporario: Se os dados relativos a QualifierMeasurements tiver sido preenchido
+ 				// Temporario: Se os dados relativos a QualifierMeasurements tiverem sido preenchidos
  				if (isset($_POST['ddlQualifierM']) && $_POST['ddlQualifierM']!='') {
  					// obtem os dados do form relativos ao QualifierMeasurements
  					$im->qualifierMeasurements=array($_POST['ddlQualifierM']); // TODO 1:N
  				}
  			}
 
+ 			
+ 			// obtem os dados do form relativos aos Materiais Se os dados relativos a termMaterialsTech tiverem sido preenchidos
+ 			if (isset($_POST['ddlTermMT']) && $_POST['ddlTermMT']!='') { // TODO 1:N
+ 				// chave estrangeira da IndexingMaterialsTech que referencia Object_Work_Records
+ 				$imt->Object_Work_Record = $maxRecordNumber + 1;
+ 					
+ 				// vai buscar o ultimo id de IndexingMaterialsTech
+ 				$maxIMTNumber = Yii::app()->db->createCommand()
+	 				->select('max(id_indexingMaterialsTech) as max')
+	 				->from('IndexingMaterialsTech')
+	 				->queryScalar();
+ 				
+ 				// obtem os dados do form relativos ao IndexingMaterialsTech
+ 				if (isset($_POST['ddlTypeMT']) && $_POST['ddlTypeMT']!='')
+ 					$imt->type=$_POST['ddlTypeMT'];
+ 				
+ 				// obtem os dados do form relativos ao TermMaterialsTech
+ 				$imt->termMaterialsTeches=array($_POST['ddlTermMT']); 
+ 					
+ 				// obtem os dados do form relativos a ExtentMaterialsTech
+ 				$emt->attributes=$_POST['ExtentMaterialsTech']; 
+ 			
+ 				if ($emt->extentMaterialsTech!=NULL) {
+					// chave estrangeira da ExtentMaterialsTech que referencia IndexingMaterialsTech
+					$emt->IndexingMaterialsTech=$maxIMTNumber + 1;
+		
+					// valida os models antes de guardar
+					$validEMaterial=$emt->validate();
+				}
+ 			}
 			
  			// valida os models antes de guardar
  			$valid=$owr->validate();
@@ -220,6 +254,10 @@ class Object_Work_RecordsController extends Controller
  				if ($validMeasureI || $validMeasureII) {$im->save();}
  				if ($validMeasureI) {$m->save(false);}
  				if ($validMeasureII) {$mII->save(false);}
+ 				if (isset($_POST['ddlTermMT']) && $_POST['ddlTermMT']!='') {
+ 					$imt->save();
+ 					if ($validEMaterial) { $emt->save(false); }
+ 				}
  				// redirect to another page
  				$this->redirect(array('view','id'=>$owr->id_object_Work_Records));
  			}
@@ -231,6 +269,7 @@ class Object_Work_RecordsController extends Controller
  				'Object_Work_Types'=>$owtp,
  				'Measurements'=>$m,
  				'MeasurementsII'=>$mII,
+ 				'ExtentMaterialsTech'=>$emt,
  		));
 	}
 
