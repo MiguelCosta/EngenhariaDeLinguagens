@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Record Types',
+	'Tipos de Registo',
 );
 
 $this->menu=array(
-	array('label'=>'Create RecordTypes', 'url'=>array('create')),
-	array('label'=>'Manage RecordTypes', 'url'=>array('admin')),
+	array('label'=>'Criar', 'url'=>array('create')),
+	array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Record Types</h1>
+<h1>Tipos de Registo</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

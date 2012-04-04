@@ -27,3 +27,21 @@ $this->menu=array(
 		'Object_Work_Record',
 	),
 )); ?>
+
+
+<h2>Peças relacionadas:</h2>
+<?php 
+//$objects = Object_Work_Records::model()->findAllByAttributes(array('RecordType'=>$model->id_recordTypes));
+
+//$objects = Object_Work_Records::model()->with($model->id_object_Work_Titles)->together()->findAll();;
+//CVarDumper::dump($objects, 4, true);
+
+//$dataProvider2 = new CArrayDataProvider($objects, array('keyField'=>'id_object_Work_Titles'));
+//CVarDumper::dump($dataProvider2, 1, true);
+/*
+$this->widget('zii.widgets.CListView', array(
+		'dataProvider'=>$dataProvider2,
+		'itemView'=>'/object_Work_Records/_view',
+));
+*/
+?>
