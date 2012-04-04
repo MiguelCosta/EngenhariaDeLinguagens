@@ -1,12 +1,12 @@
 <?php
 $this->breadcrumbs=array(
-	'Record Types'=>array('index'),
-	'Create',
+	'Tipo de Registo'=>array('index'),
+	'Criar',
 );
 
 $this->menu=array(
-	array('label'=>'List RecordTypes', 'url'=>array('index')),
-	array('label'=>'Manage RecordTypes', 'url'=>array('admin')),
+	array('label'=>'Índice', 'url'=>array('index')),
+	array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
