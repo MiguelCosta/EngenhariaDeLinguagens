@@ -124,14 +124,14 @@ class Object_Work_RecordsController extends Controller
 // 				'validatedMembers' => $validatedMembers
 // 		));
 
-		$validMeasure1 	= 	false; // Temporario enquanto nao se tratar os casos 1:N
-		$validMeasure2 	= 	false; // Temporario enquanto nao se tratar os casos 1:N
+		$validMeasureI 	= 	false; // Temporario enquanto nao se tratar os casos 1:N
+		$validMeasureII 	= 	false; // Temporario enquanto nao se tratar os casos 1:N
 		$owr 	=	new Object_Work_Records;
 		$owt 	=	new Object_Work_Titles;
 		$owtp 	=	new Object_Work_Types;
 		$im		=	new IndexingMeasurements;
 		$m 		=	new Measurements;
-		$m2 	=	new Measurements;
+		$mII 	=	new Measurements;
 		
 		
  		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles'], $_POST['Object_Work_Types']))
@@ -144,8 +144,8 @@ class Object_Work_RecordsController extends Controller
  			
  			// obtem os dados do form relativos ao Object_Work_Records
  			$owr->attributes=$_POST['Object_Work_Records'];
- 			// obtem os dados do form relativos ao Object_Work_Types
  			
+ 			// obtem os dados do form relativos ao Object_Work_Types
  			//$owr->object_Work_Types = array($_POST['ddlWType']); // TODO 1:N
  			$owtp->attributes=$_POST['Object_Work_Types'];
  			$id_type = Yii::app()->db->createCommand()
@@ -161,7 +161,7 @@ class Object_Work_RecordsController extends Controller
  			
  			
  			// obtem os dados do form relativos as Medidas/Dimensoes
- 			if (isset($_POST['Measurements']) || isset($_POST['Measurements2'])) {
+ 			if (isset($_POST['Measurements']) || isset($_POST['MeasurementII'])) {
  				// chave estrangeira da IndexingMeasurements que referencia Object_Work_Records
  				$im->Object_Work_Record = $maxRecordNumber + 1;
  				
@@ -172,27 +172,32 @@ class Object_Work_RecordsController extends Controller
 	 				->queryScalar();
  				
  				// Temporario: Se o primeiro grupo de dados relativos a Measurements tiver sido preenchido
+ 				CVarDumper::dump($_POST['Measurements'],12,true);
  				if (isset($_POST['Measurements'])) {
  					// obtem os dados do form relativos a Measurements
  					$m->attributes=$_POST['Measurements']; // TODO 1:N
-
- 					// chave estrangeira da Measurements que referencia IndexingMeasurements
- 					$m->IndexingMeasurement=$maxIMNumber + 1;
- 						
- 					// valida os models antes de guardar
- 					$validMeasure1=$m->validate();
+ 					
+ 					if ($m->value!=NULL || $m->unit!=NULL || $m->type!=NULL) {
+	 					// chave estrangeira da Measurements que referencia IndexingMeasurements
+	 					$m->IndexingMeasurement=$maxIMNumber + 1;
+	 						
+	 					// valida os models antes de guardar
+	 					$validMeasureI=$m->validate();
+ 					}
  				}
  				
  				// Temporario: Se o segundo grupo de dados relativos a Measurements tiver sido preenchido
- 				if (isset($_POST['Measurements2'])) {
+ 				if (isset($_POST['MeasurementII'])) {
  					// obtem os dados do form relativos a Measurements
- 					$m2->attributes=$_POST['Measurements2']; // TODO 1:N
- 				
- 					// chave estrangeira da Measurements que referencia IndexingMeasurements
- 					$m2->IndexingMeasurement=$maxIMNumber + 1;
- 				
- 					// valida os models antes de guardar
- 					$validMeasure2=$m2->validate();
+ 					$mII->attributes=$_POST['MeasurementII']; // TODO 1:N
+ 					
+ 					if ($mII->value!=NULL || $mII->unit!=NULL || $mII->type!=NULL) {
+	 					// chave estrangeira da Measurements que referencia IndexingMeasurements
+	 					$mII->IndexingMeasurement=$maxIMNumber + 1;
+	 				
+	 					// valida os models antes de guardar
+	 					$validMeasureII=$mII->validate();
+ 					}
  				}
 
  				// Temporario: Se os dados relativos a QualifierMeasurements tiver sido preenchido
@@ -212,9 +217,9 @@ class Object_Work_RecordsController extends Controller
  				// use false parameter to disable validation
  				$owr->save(false);
  				$owt->save(false);
- 				if ($validMeasure1 || $validMeasure2) $im->save();
- 				if ($validMeasure1) $m->save(false);
- 				if ($validMeasure2) $m2->save(false);
+ 				if ($validMeasureI || $validMeasureII) {$im->save();}
+ 				if ($validMeasureI) {$m->save(false);}
+ 				if ($validMeasureII) {$mII->save(false);}
  				// redirect to another page
  				$this->redirect(array('view','id'=>$owr->id_object_Work_Records));
  			}
@@ -225,7 +230,7 @@ class Object_Work_RecordsController extends Controller
  				'Object_Work_Titles'=>$owt,
  				'Object_Work_Types'=>$owtp,
  				'Measurements'=>$m,
- 				'Measurements2'=>$m2,
+ 				'MeasurementsII'=>$mII,
  		));
 	}
 

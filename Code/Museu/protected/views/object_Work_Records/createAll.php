@@ -17,5 +17,5 @@ $this->menu=array(
 												'Object_Work_Titles'=>$Object_Work_Titles,
 												'Object_Work_Types'=>$Object_Work_Types,
 												'Measurements'=>$Measurements, 
-												'Measurements2'=>$Measurements2)); ?>
+												'MeasurementsII'=>$MeasurementsII)); ?>
 

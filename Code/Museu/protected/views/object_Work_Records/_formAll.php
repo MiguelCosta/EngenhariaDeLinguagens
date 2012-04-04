@@ -120,43 +120,45 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 	
 		<div class="row">
 			<?php echo $form->labelEx($Measurements,'unit'); ?>
-			<?php echo $form->dropDownList($Measurements,'unit',array('cm' => 'cm', 
-					'mm' => 'mm', 'm' => 'm', 'g' => 'g', 'kg' => 'kg', 'MB' => 'MB', 'GB' => 'GB'), 
+			<?php echo $form->dropDownList($Measurements,'unit',
+					array('cm' => 'cm', 'mm' => 'mm', 'm' => 'm', 
+							'g' => 'g', 'kg' => 'kg', 'MB' => 'MB', 'GB' => 'GB'), 
 					array('empty' => 'Escolha a unidade se aplicável...')); ?>
 			<?php echo $form->error($Measurements,'unit'); ?>
 		</div>
 	
 		<div class="row">
 			<?php echo $form->labelEx($Measurements,'type'); ?>
-			<?php echo $form->dropDownList($Measurements,'type',array('height' => 'altura', 
-					'width' => 'largura', 'depth' => 'profundidade', 'length' => 'comprimento', 'diameter' => 'diâmetro', 
-					'circumference' => 'circunferencia', 'area' => 'área', 'volume' => 'volume'), 
+			<?php echo $form->dropDownList($Measurements,'type',
+					array('height' => 'altura', 'width' => 'largura', 
+							'depth' => 'profundidade', 'length' => 'comprimento', 'diameter' => 'diâmetro', 
+							'circumference' => 'circunferencia', 'area' => 'área', 'volume' => 'volume'), 
 					array('empty' => 'Escolha o tipo da medida se aplicável...')); ?>
 			<?php echo $form->error($Measurements,'type'); ?>
 		</div>
 		
 		<!-- TEMP: 2º grupo de medidas -->
 		<div class="row">
-			<?php echo $form->labelEx($Measurements2,'value'); ?>
-			<?php echo $form->textField($Measurements2,'value'); ?>
-			<?php echo $form->error($Measurements2,'value'); ?>
+			<?php echo $form->labelEx($MeasurementsII,'value'); ?>
+			<?php echo $form->textField($MeasurementsII,'value'); ?>
+			<?php echo $form->error($MeasurementsII,'value'); ?>
 		</div>
 	
 		<div class="row">
-			<?php echo $form->labelEx($Measurements2,'unit'); ?>
-			<?php echo $form->dropDownList($Measurements2,'unit',array('cm' => 'cm', 
+			<?php echo $form->labelEx($MeasurementsII,'unit'); ?>
+			<?php echo $form->dropDownList($MeasurementsII,'unit',array('cm' => 'cm', 
 					'mm' => 'mm', 'm' => 'm', 'g' => 'g', 'kg' => 'kg', 'MB' => 'MB', 'GB' => 'GB'), 
 					array('empty' => 'Escolha a unidade se aplicável...')); ?>
-			<?php echo $form->error($Measurements2,'unit'); ?>
+			<?php echo $form->error($MeasurementsII,'unit'); ?>
 		</div>
 	
 		<div class="row">
-			<?php echo $form->labelEx($Measurements2,'type'); ?>
-			<?php echo $form->dropDownList($Measurements2,'type',array('height' => 'altura', 
+			<?php echo $form->labelEx($MeasurementsII,'type'); ?>
+			<?php echo $form->dropDownList($MeasurementsII,'type',array('height' => 'altura', 
 					'width' => 'largura', 'depth' => 'profundidade', 'length' => 'comprimento', 'diameter' => 'diâmetro', 
 					'circumference' => 'circunferencia', 'area' => 'área', 'volume' => 'volume'), 
 					array('empty' => 'Escolha o tipo da medida se aplicável...')); ?>
-			<?php echo $form->error($Measurements2,'type'); ?>
+			<?php echo $form->error($MeasurementsII,'type'); ?>
 		</div>
 		
 		<div class="row">
