@@ -67,9 +67,9 @@ class Measurements extends CActiveRecord
 	{
 		return array(
 			'id_measurements' => 'Id Measurements',
-			'value' => 'Value',
-			'unit' => 'Unit',
-			'type' => 'Type',
+			'value' => 'Valor',
+			'unit' => 'Unidade',
+			'type' => 'Tipo',
 			'IndexingMeasurement' => 'Indexing Measurement',
 		);
 	}

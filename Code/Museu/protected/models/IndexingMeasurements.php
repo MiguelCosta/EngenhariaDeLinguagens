@@ -86,4 +86,12 @@ class IndexingMeasurements extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	/**
+	 * Better support of MANY_TO_MANY relations
+	 */
+	public function behaviors(){
+		return array( 'CAdvancedArBehavior' => array(
+				'class' => 'application.extensions.CAdvancedArBehavior'));
+	}
 }
