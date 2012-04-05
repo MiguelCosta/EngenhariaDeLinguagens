@@ -106,4 +106,7 @@ class LocationsName extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
+	
+	
 }

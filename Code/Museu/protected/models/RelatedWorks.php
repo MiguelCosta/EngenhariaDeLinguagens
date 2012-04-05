@@ -35,12 +35,12 @@ class RelatedWorks extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Object_Work_Record', 'required'),
-			array('Object_Work_Record', 'numerical', 'integerOnly'=>true),
-			array('relatedWorkRelType', 'length', 'max'=>31),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id_relatedWorks, relatedWorkRelType, Object_Work_Record', 'safe', 'on'=>'search'),
+				array('Object_Work_Record', 'required'),
+				array('Object_Work_Record', 'numerical', 'integerOnly'=>true),
+				array('relatedWorkRelType', 'length', 'max'=>31),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id_relatedWorks, relatedWorkRelType, Object_Work_Record', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,10 +52,10 @@ class RelatedWorks extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'labelRelatedWorks' => array(self::HAS_MANY, 'LabelRelatedWork', 'RelatedWork'),
-			'linksRelatedWorks' => array(self::HAS_MANY, 'LinksRelatedWork', 'RelatedWork'),
-			'locationsRelatedWorks' => array(self::HAS_MANY, 'LocationsRelatedWork', 'RelatedWork'),
-			'object_Work_Record' => array(self::BELONGS_TO, 'ObjectWorkRecords', 'Object_Work_Record'),
+				'labelRelatedWorks' => array(self::HAS_MANY, 'LabelRelatedWork', 'RelatedWork'),
+				'linksRelatedWorks' => array(self::HAS_MANY, 'LinksRelatedWork', 'RelatedWork'),
+				'locationsRelatedWorks' => array(self::HAS_MANY, 'LocationsRelatedWork', 'RelatedWork'),
+				'object_Work_Record' => array(self::BELONGS_TO, 'ObjectWorkRecords', 'Object_Work_Record'),
 		);
 	}
 
@@ -65,9 +65,9 @@ class RelatedWorks extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_relatedWorks' => 'Id Related Works',
-			'relatedWorkRelType' => 'Related Work Rel Type',
-			'Object_Work_Record' => 'Object Work Record',
+				'id_relatedWorks' => 'Id Related Works',
+				'relatedWorkRelType' => 'Related Work Rel Type',
+				'Object_Work_Record' => 'Object Work Record',
 		);
 	}
 
@@ -89,7 +89,25 @@ class RelatedWorks extends CActiveRecord
 		$criteria->compare('Object_Work_Record',$this->Object_Work_Record);
 
 		return new CActiveDataProvider('RelatedWorks', array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
 	}
+
+	/*********************************************************************************/
+	/********************************** My Functions *********************************/
+	/*********************************************************************************/
+
+	public function getLabelRelatedWorks(){
+		$result = array();
+		foreach ($this->labelRelatedWorks as $labelRelatedWorks){
+			$tmp = array(
+					'id_labelRelatedWork'=>$labelRelatedWorks->id_labelRelatedWork,
+					'labelRelatedWorks'=>$labelRelatedWorks->labelRelatedWork,
+			);
+			array_push($result, $tmp);
+			//CVarDumper::dump($result, 3, true);
+		}
+		return $result;
+	}
+
 }

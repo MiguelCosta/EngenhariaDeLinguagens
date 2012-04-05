@@ -29,9 +29,10 @@ $this->menu = array(
 
 <?php
 
-//$c = $model->getObjectWorkTitles_Link();
+//$c = $model->locations;
+$c = $model->getRelatedWorks_view();
 //print $c;
-//CVarDumper::dump($model, 5, true);
+//CVarDumper::dump($c, 5, false);
 
 $this->widget('zii.widgets.CDetailView', array(
 		'data' => $model,
@@ -59,6 +60,21 @@ $this->widget('zii.widgets.CDetailView', array(
 						//'value'=>$model->getInscriptions_Link(),
 				),
 				array(
+						'name'=>'descriptiveNotes',
+						'type'=>'html',
+						'value'=>$model->getDescriptiveNotes_view(),
+				),
+				array(
+						'name'=>'locations',
+						'type'=>'html',
+						'value'=>$model->getLocations_view(),
+				),
+				array(
+						'name'=>'relatedWorks',
+						'type'=>'html',
+						'value'=>$model->getRelatedWorks_view(),
+				),
+				array(
 						'name'=>'resources',
 						'type'=>'html',
 						'value'=>CHtml::link(CHtml::image($model->getResources_Text(),'texto alternativo',array('class'=>'image', 'width'=>200)), $model->getResources_Text()),
@@ -70,19 +86,19 @@ $this->widget('zii.widgets.CDetailView', array(
 
 <?php 
 $this->widget('zii.widgets.jui.CJuiSlider', array(
-    'value'=>40,
-    'options'=>array(
-        'min'=>1,
-        'max'=>100,
-        'slide'=>'js:
-            function(event,ui){
-                $(".image").width(400*ui.value/100);
-                $("#zoom").text(ui.value+"%");
-            }
-        ',
-    ),
-    'htmlOptions'=>array(
-        'style'=>'width:200px; float:left;'
-    ),
+		'value'=>40,
+		'options'=>array(
+				'min'=>1,
+				'max'=>100,
+				'slide'=>'js:
+				function(event,ui){
+				$(".image").width(400*ui.value/100);
+				$("#zoom").text(ui.value+"%");
+}
+				',
+		),
+		'htmlOptions'=>array(
+				'style'=>'width:200px; float:left;'
+		),
 ));
 ?>

@@ -98,6 +98,9 @@ class Object_Work_Records extends CActiveRecord
 				'object_Work_Titles' => 'Títulos',
 				'inscriptions' => 'Legenda',
 				'resources'=>'Recursos',
+				'locations'=>'Locais',
+				'descriptiveNotes' => 'Descrições',
+				'relatedWorks'=>'relatedWorks',
 		);
 	}
 
@@ -230,7 +233,7 @@ class Object_Work_Records extends CActiveRecord
 		}
 		return $result;
 	}
-	
+
 	/**
 	 * Better support of MANY_TO_MANY relations
 	 */
@@ -247,7 +250,7 @@ class Object_Work_Records extends CActiveRecord
 		}
 		return $result;
 	}
-	
+
 	public function getResources_One_path(){
 		$result = '';
 		foreach ($this->resources as $resources){
@@ -258,4 +261,73 @@ class Object_Work_Records extends CActiveRecord
 
 	}
 
+	public function getLocations(){
+		$result = array();
+		foreach ($this->locations as $locations){
+			$tmp = array(
+					'id_locationsName'=>$locations->getLocationName()->id_locationsName,
+					'type'=> $locations->getLocationName()->type,
+					'locationName'=>$locations->getLocationName()->locationName,
+			);
+			array_push($result,$tmp);
+		}
+		return $result;
+	}
+
+	public function getLocations_view(){
+		$result = '';
+		$arr = $this->getLocations();
+		foreach ($arr as $elem){
+			$result .= '<b>'.$elem['type'].':</b> ';
+			$result .= CHtml::link($elem['locationName'], array('/LocationsName/'.$elem['id_locationsName']));
+		}
+		return $result;
+	}
+
+	public function getDescriptiveNotes(){
+		$result = array();
+		foreach ($this->descriptiveNotes as $descriptiveNotes){
+			$tmp = array(
+					'id_descriptiveNotes'=>$descriptiveNotes->id_descriptiveNotes,
+					'descriptiveNote'=>$descriptiveNotes->descriptiveNote,
+			);
+			array_push($result,$tmp);
+		}
+		return $result;
+	}
+
+	public function getDescriptiveNotes_view(){
+		$result = '';
+		$arr = $this->getDescriptiveNotes();
+		foreach ($arr as $elem){
+			$result .= CHtml::link($elem['descriptiveNote'], array('/DescriptiveNotes/'.$elem['id_descriptiveNotes']));
+		}
+		return $result;
+	}
+	
+	public function getRelatedWorks(){
+		$result = array();
+		foreach ($this->relatedWorks as $relatedWorks){
+			array_push($result, $relatedWorks->getLabelRelatedWorks());
+		}
+		return $result;
+	}
+	
+	public function getRelatedWorks_view(){
+		$result = '';
+		$result_arr = array();
+		$arr = $this->getRelatedWorks();
+		
+		foreach ($arr as $elem){
+			foreach ($elem as $elem_elem){
+				$tmp = CHtml::link($elem_elem['labelRelatedWorks'], array('/LabelRelatedWork/'.$elem_elem['id_labelRelatedWork']));
+				array_push($result_arr, $tmp);
+			}
+		}
+		
+		$result .=  implode("<br/>", $result_arr);
+		return $result;
+	}
+	
+	
 }

@@ -10201,3 +10201,292 @@ Stack trace:
 REQUEST_URI=/EL/Code/Museu/index.php/Object_Work_Titles/1
 HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/index
 ---
+2012/04/05 15:58:31 [error] [php] Trying to get property of non-object (/opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php:32)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CController.php(870): Object_Work_RecordsController->renderFile()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(783): Object_Work_RecordsController->renderPartial()
+#2 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): Object_Work_RecordsController->render()
+#3 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#4 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): Object_Work_RecordsController->runAction()
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#8 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): Object_Work_RecordsController->filterAccessControl()
+#9 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#11 /opt/lampp/htdocs/yii/framework/web/CController.php(266): Object_Work_RecordsController->runActionWithFilters()
+#12 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): Object_Work_RecordsController->run()
+#13 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#14 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/383
+in /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php (32)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php (59)
+in /opt/lampp/htdocs/EL/Code/Museu/index.php (13)
+2012/04/05 16:10:02 [error] [exception.CException] exception 'CException' with message 'Locations and its behaviors do not have a method or closure named "getNameLocation".' in /opt/lampp/htdocs/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('getNameLocation', Array)
+#1 /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php(266): CActiveRecord->__call('getNameLocation', Array)
+#2 /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php(266): Locations->getNameLocation()
+#3 /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php(33): Object_Work_Records->getLocations()
+#4 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(127): require('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#6 /opt/lampp/htdocs/yii/framework/web/CController.php(870): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#8 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): CController->render('view', Array)
+#9 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#10 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#19 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#20 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/383
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/index
+---
+2012/04/05 16:12:31 [error] [exception.CException] exception 'CException' with message 'Locations and its behaviors do not have a method or closure named "getNameLocation".' in /opt/lampp/htdocs/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('getNameLocation', Array)
+#1 /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php(264): CActiveRecord->__call('getNameLocation', Array)
+#2 /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php(264): Locations->getNameLocation()
+#3 /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php(33): Object_Work_Records->getLocations()
+#4 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(127): require('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#6 /opt/lampp/htdocs/yii/framework/web/CController.php(870): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#7 /opt/lampp/htdocs/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#8 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): CController->render('view', Array)
+#9 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#10 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /opt/lampp/htdocs/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#19 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#20 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/383
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/index
+---
+2012/04/05 16:13:16 [error] [php] Undefined variable: locations (/opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php:263)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(96): Object_Work_RecordsController->renderInternal()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(870): Object_Work_RecordsController->renderFile()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(783): Object_Work_RecordsController->renderPartial()
+#3 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): Object_Work_RecordsController->render()
+#4 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): Object_Work_RecordsController->runAction()
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#9 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): Object_Work_RecordsController->filterAccessControl()
+#10 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /opt/lampp/htdocs/yii/framework/web/CController.php(266): Object_Work_RecordsController->runActionWithFilters()
+#13 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): Object_Work_RecordsController->run()
+#14 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/383
+in /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php (263)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php (33)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php (59)
+2012/04/05 16:13:17 [error] [php] Undefined variable: locations (/opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php:263)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(96): Object_Work_RecordsController->renderInternal()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(870): Object_Work_RecordsController->renderFile()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(783): Object_Work_RecordsController->renderPartial()
+#3 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): Object_Work_RecordsController->render()
+#4 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): Object_Work_RecordsController->runAction()
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#9 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): Object_Work_RecordsController->filterAccessControl()
+#10 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /opt/lampp/htdocs/yii/framework/web/CController.php(266): Object_Work_RecordsController->runActionWithFilters()
+#13 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): Object_Work_RecordsController->run()
+#14 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/383
+in /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php (263)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php (33)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php (59)
+2012/04/05 16:25:28 [error] [php] Use of undefined constant id_locationsName - assumed 'id_locationsName' (/opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php:281)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(96): Object_Work_RecordsController->renderInternal()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(870): Object_Work_RecordsController->renderFile()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(783): Object_Work_RecordsController->renderPartial()
+#3 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): Object_Work_RecordsController->render()
+#4 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): Object_Work_RecordsController->runAction()
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#9 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): Object_Work_RecordsController->filterAccessControl()
+#10 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /opt/lampp/htdocs/yii/framework/web/CController.php(266): Object_Work_RecordsController->runActionWithFilters()
+#13 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): Object_Work_RecordsController->run()
+#14 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/383
+in /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php (281)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php (33)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php (59)
+2012/04/05 16:25:31 [error] [php] Use of undefined constant id_locationsName - assumed 'id_locationsName' (/opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php:281)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(96): Object_Work_RecordsController->renderInternal()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(870): Object_Work_RecordsController->renderFile()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(783): Object_Work_RecordsController->renderPartial()
+#3 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): Object_Work_RecordsController->render()
+#4 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): Object_Work_RecordsController->runAction()
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#9 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): Object_Work_RecordsController->filterAccessControl()
+#10 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /opt/lampp/htdocs/yii/framework/web/CController.php(266): Object_Work_RecordsController->runActionWithFilters()
+#13 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): Object_Work_RecordsController->run()
+#14 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/383
+in /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php (281)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php (33)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php (59)
+2012/04/05 17:24:47 [error] [php] Undefined variable: arr_elem (/opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php:321)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(96): Object_Work_RecordsController->renderInternal()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(870): Object_Work_RecordsController->renderFile()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(783): Object_Work_RecordsController->renderPartial()
+#3 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): Object_Work_RecordsController->render()
+#4 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): Object_Work_RecordsController->runAction()
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#9 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): Object_Work_RecordsController->filterAccessControl()
+#10 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /opt/lampp/htdocs/yii/framework/web/CController.php(266): Object_Work_RecordsController->runActionWithFilters()
+#13 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): Object_Work_RecordsController->run()
+#14 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/383
+in /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php (321)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php (33)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php (59)
+2012/04/05 17:24:49 [error] [php] Undefined variable: arr_elem (/opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php:321)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(96): Object_Work_RecordsController->renderInternal()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(870): Object_Work_RecordsController->renderFile()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(783): Object_Work_RecordsController->renderPartial()
+#3 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): Object_Work_RecordsController->render()
+#4 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): Object_Work_RecordsController->runAction()
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#9 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): Object_Work_RecordsController->filterAccessControl()
+#10 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /opt/lampp/htdocs/yii/framework/web/CController.php(266): Object_Work_RecordsController->runActionWithFilters()
+#13 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): Object_Work_RecordsController->run()
+#14 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/383
+in /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php (321)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php (33)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php (59)
+2012/04/05 17:27:27 [error] [php] Undefined index: id_labelRelatedWork (/opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php:322)
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CBaseController.php(96): Object_Work_RecordsController->renderInternal()
+#1 /opt/lampp/htdocs/yii/framework/web/CController.php(870): Object_Work_RecordsController->renderFile()
+#2 /opt/lampp/htdocs/yii/framework/web/CController.php(783): Object_Work_RecordsController->renderPartial()
+#3 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): Object_Work_RecordsController->render()
+#4 /opt/lampp/htdocs/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#5 /opt/lampp/htdocs/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(134): Object_Work_RecordsController->runAction()
+#7 /opt/lampp/htdocs/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#8 /opt/lampp/htdocs/yii/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#9 /opt/lampp/htdocs/yii/framework/web/filters/CInlineFilter.php(59): Object_Work_RecordsController->filterAccessControl()
+#10 /opt/lampp/htdocs/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#11 /opt/lampp/htdocs/yii/framework/web/CController.php(292): CFilterChain->run()
+#12 /opt/lampp/htdocs/yii/framework/web/CController.php(266): Object_Work_RecordsController->runActionWithFilters()
+#13 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(276): Object_Work_RecordsController->run()
+#14 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#15 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/383
+in /opt/lampp/htdocs/EL/Code/Museu/protected/models/Object_Work_Records.php (322)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php (33)
+in /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php (59)
+2012/04/05 17:35:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "LabelRelatedWorks/view".' in /opt/lampp/htdocs/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('LabelRelatedWor...')
+#1 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/LabelRelatedWorks/614
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/383
+---
+2012/04/05 17:35:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "labelRelatedWorks/view".' in /opt/lampp/htdocs/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('labelRelatedWor...')
+#1 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/labelRelatedWorks/614
+---
+2012/04/05 17:35:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "labelRelatedWorks".' in /opt/lampp/htdocs/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('labelRelatedWor...')
+#1 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/labelRelatedWorks/
+---
+2012/04/05 17:36:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "labelRelatedWorks".' in /opt/lampp/htdocs/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('labelRelatedWor...')
+#1 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/labelRelatedWorks/
+---
+2012/04/05 17:36:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "labelRelatedWorks/view".' in /opt/lampp/htdocs/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('labelRelatedWor...')
+#1 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/labelRelatedWorks/614
+---
+2012/04/05 17:36:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "LabelRelatedWorks/view".' in /opt/lampp/htdocs/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('LabelRelatedWor...')
+#1 /opt/lampp/htdocs/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/LabelRelatedWorks/614
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/383
+---
