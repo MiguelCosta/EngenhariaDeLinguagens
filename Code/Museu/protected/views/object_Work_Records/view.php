@@ -19,19 +19,37 @@ $this->menu = array(
 	// Add Titles in Object Work Records
 	// title (i)
 	// example: 3411/10 - Chaves 1966 (9)
-	foreach ($model->object_Work_Titles as $title) {
-		echo $title->title . ' ';
-	}
+	echo $model->getObjectWorkTitles_Text();
 	// ID of Obeject Work Records
 	echo ' (' . $model->id_object_Work_Records . ')';
 	?>
 </h1>
 
+
+<?php 
+$this->widget('zii.widgets.jui.CJuiSlider', array(
+		'value'=>25,
+		'options'=>array(
+				'min'=>1,
+				'max'=>100,
+				'slide'=>'js:
+				function(event,ui){
+				$(".image").width(800*ui.value/100);
+				$("#zoom").text(ui.value+"%");
+}',
+		),
+		'htmlOptions'=>array(
+				'style'=>'width:100%; float:left;'
+		),
+));
+?>
+
 <?php
 
-//$c = $model->getObjectWorkTitles_Link();
+//$c = $model->locations;
+$c = $model->getObjectWorkTitles_Text();
 //print $c;
-//CVarDumper::dump($model, 5, true);
+//CVarDumper::dump($c, 5, true);
 
 $this->widget('zii.widgets.CDetailView', array(
 		'data' => $model,
@@ -54,35 +72,31 @@ $this->widget('zii.widgets.CDetailView', array(
 				),
 				array(
 						'name'=>'inscriptions',
-						'value'=>$model->getInscriptions_Text(),
-						//'type'=>'html',
-						//'value'=>$model->getInscriptions_Link(),
+						//'value'=>$model->getInscriptions_Text(),
+						'type'=>'html',
+						'value'=>$model->getInscriptions_Link(),
+				),
+				array(
+						'name'=>'descriptiveNotes',
+						'type'=>'html',
+						'value'=>$model->getDescriptiveNotes_view(),
+				),
+				array(
+						'name'=>'locations',
+						'type'=>'html',
+						'value'=>$model->getLocations_view(),
+				),
+				array(
+						'name'=>'relatedWorks',
+						'type'=>'html',
+						'value'=>$model->getRelatedWorks_view(),
 				),
 				array(
 						'name'=>'resources',
 						'type'=>'html',
-						'value'=>CHtml::link(CHtml::image($model->getResources_Text(),'texto alternativo',array('class'=>'image', 'width'=>200)), $model->getResources_Text()),
-				)
+						'value'=>$model->getResources_view(),
+				),
 		),
 ));
 
-?>
-
-<?php 
-$this->widget('zii.widgets.jui.CJuiSlider', array(
-    'value'=>40,
-    'options'=>array(
-        'min'=>1,
-        'max'=>100,
-        'slide'=>'js:
-            function(event,ui){
-                $(".image").width(400*ui.value/100);
-                $("#zoom").text(ui.value+"%");
-            }
-        ',
-    ),
-    'htmlOptions'=>array(
-        'style'=>'width:200px; float:left;'
-    ),
-));
 ?>

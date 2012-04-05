@@ -11,7 +11,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'inscriptions'); ?>
-		<?php echo $form->textField($model,'inscriptions',array('size'=>60,'maxlength'=>511)); ?>
+		<?php echo $form->textArea($model,'inscriptions',array('size'=>300,'maxlength'=>511, 'cols'=>80, 'rows'=>6)); ?>
 		<?php echo $form->error($model,'inscriptions'); ?>
 	</div>
 
@@ -22,7 +22,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Criar' : 'Guardar'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>
