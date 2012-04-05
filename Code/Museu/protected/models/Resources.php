@@ -37,12 +37,12 @@ class Resources extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Object_Work_Record', 'required'),
-			array('LinkResource, ResourceViewDescription, Object_Work_Record', 'numerical', 'integerOnly'=>true),
-			array('ResourceID', 'length', 'max'=>15),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id_resources, LinkResource, ResourceID, ResourceViewDescription, Object_Work_Record', 'safe', 'on'=>'search'),
+				array('Object_Work_Record', 'required'),
+				array('LinkResource, ResourceViewDescription, Object_Work_Record', 'numerical', 'integerOnly'=>true),
+				array('ResourceID', 'length', 'max'=>15),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id_resources, LinkResource, ResourceID, ResourceViewDescription, Object_Work_Record', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,12 +54,12 @@ class Resources extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'resourceRelTypes' => array(self::MANY_MANY, 'ResourceRelTypes', 'ResourceRelTypes_Resources(ResourceRelType, Resource)'),
-			'resourceTypes' => array(self::MANY_MANY, 'ResourceTypes', 'ResourceTypes_Resources(ResourceType, Resource)'),
-			'object_Work_Record' => array(self::BELONGS_TO, 'ObjectWorkRecords', 'Object_Work_Record'),
-			'resource' => array(self::BELONGS_TO, 'ResourcesId', 'ResourceID'),
-			'linkResource' => array(self::BELONGS_TO, 'LinkResources', 'LinkResource'),
-			'resourceViewDescription' => array(self::BELONGS_TO, 'ResourceViewDescriptions', 'ResourceViewDescription'),
+				'resourceRelTypes' => array(self::MANY_MANY, 'ResourceRelTypes', 'ResourceRelTypes_Resources(ResourceRelType, Resource)'),
+				'resourceTypes' => array(self::MANY_MANY, 'ResourceTypes', 'ResourceTypes_Resources(ResourceType, Resource)'),
+				'object_Work_Record' => array(self::BELONGS_TO, 'ObjectWorkRecords', 'Object_Work_Record'),
+				'resource' => array(self::BELONGS_TO, 'ResourcesId', 'ResourceID'),
+				'linkResource' => array(self::BELONGS_TO, 'LinkResources', 'LinkResource'),
+				'resourceViewDescription' => array(self::BELONGS_TO, 'ResourceViewDescriptions', 'ResourceViewDescription'),
 		);
 	}
 
@@ -69,11 +69,11 @@ class Resources extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_resources' => 'Id Resources',
-			'LinkResource' => 'Link Resource',
-			'ResourceID' => 'Resource',
-			'ResourceViewDescription' => 'Resource View Description',
-			'Object_Work_Record' => 'Object Work Record',
+				'id_resources' => 'Id Resources',
+				'LinkResource' => 'Link Resource',
+				'ResourceID' => 'Resource',
+				'ResourceViewDescription' => 'Resource View Description',
+				'Object_Work_Record' => 'Object Work Record',
 		);
 	}
 
@@ -99,27 +99,48 @@ class Resources extends CActiveRecord
 		$criteria->compare('Object_Work_Record',$this->Object_Work_Record);
 
 		return new CActiveDataProvider('Resources', array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
 	}
-	
+
 	/*********************************************************************************/
 	/********************************** My Functions *********************************/
 	/*********************************************************************************/
-	
+
 	public function getLinkResource()
 	{
 		$result = '';
 		$result = "/EL/Files/Imagens/".$this->linkResource->linkResource;
 		return $result;
 	}
-	
+
 	public function getLinkResource_path()
 	{
 		$result = '';
 		$result = $this->linkResource->linkResource;
 		return $result;
 	}
-	
-	
+
+	public function getLinkResource_view()
+	{
+		$result = '';
+		$result_arr = array();
+
+		if(isset( $this->resourceViewDescription)){
+			$result_arr = array(
+					'image_path'=>'/EL/Files/Imagens/'.$this->linkResource->linkResource,
+					'resourceViewDescription' => $this->resourceViewDescription->resourceViewDescription,
+					'id_resourceViewDescriptions' => $this->resourceViewDescription->id_resourceViewDescriptions,
+					'type' => $this->resourceViewDescription->type,
+			);
+		}
+		else {
+			$result_arr = array(
+					'image_path'=>'/EL/Files/Imagens/'.$this->linkResource->linkResource,
+			);
+		}
+
+		return $result_arr;
+	}
+
 }
