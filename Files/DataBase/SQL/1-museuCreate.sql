@@ -332,7 +332,7 @@ CREATE TABLE LinksRelatedWork (
 Data values: From data in the generating system (e.g., marc0359).' ENGINE=InnoDB;
 CREATE TABLE LabelRelatedWork (
   id_labelRelatedWork int(10) NOT NULL AUTO_INCREMENT, 
-  labelRelatedWork    varchar(31) NOT NULL, 
+  labelRelatedWork    varchar(251) NOT NULL, 
   RelatedWork         int(10) NOT NULL, 
   PRIMARY KEY (id_labelRelatedWork)) comment='Description: An identification of the related work, group, collection, or series that will be meaningful to end-users, including some or all of the following information, as necessary for clarity and if known: title, creator, object/work type, and creation date. Display it with the Location of Related Work.
 

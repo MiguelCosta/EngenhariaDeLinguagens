@@ -10,7 +10,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Peças</h1>
+<h1>Object Work Records</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 		'dataProvider'=>$dataProvider,

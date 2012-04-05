@@ -5,23 +5,27 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-		array('label'=>'Índice', 'url'=>array('index')),
-		array('label'=>'Criar', 'url'=>array('create')),
-		array('label'=>'Actualizar', 'url'=>array('update', 'id'=>$model->id_recordTypes)),
-		array('label'=>'Eliminar', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_recordTypes),'confirm'=>'Are you sure you want to delete this item?')),
-		array('label'=>'Administração', 'url'=>array('admin')),
+		array('label'=>'List RecordTypes', 'url'=>array('index')),
+		array('label'=>'Create RecordTypes', 'url'=>array('create')),
+		array('label'=>'Update RecordTypes', 'url'=>array('update', 'id'=>$model->id_recordTypes)),
+		array('label'=>'Delete RecordTypes', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_recordTypes),'confirm'=>'Are you sure you want to delete this item?')),
+		array('label'=>'Manage RecordTypes', 'url'=>array('admin')),
 );
 ?>
 
 <h1>
-	Tipo de Registo:
-	<?php echo $model->recordType; ?>
+	View RecordTypes #
+	<?php echo $model->id_recordTypes; ?>
 </h1>
 
 
-<br/>
-<h2>Detalhes:</h2>
+
 <?php 
+
+//$c = $model->object_Work_Records;
+$c = $model->id_recordTypes;
+//CVarDumper::dump($c, 8, true);
+
 $this->widget('zii.widgets.CDetailView', array(
 		'data'=>$model,
 		'attributes'=>array(
@@ -29,17 +33,21 @@ $this->widget('zii.widgets.CDetailView', array(
 				'recordType',
 		),
 ));
+
 ?>
-<br/>
-<br/>
-<h2>Peças relacionadas:</h2>
+
 <?php 
-$objects = Object_Work_Records::model()->findAllByAttributes(array('RecordType'=>$model->id_recordTypes));
+$o = Object_Work_Records::model()->findAllByAttributes(array('RecordType'=>$c));
+//CVarDumper::dump($o, 2, true);
 
-$dataProvider2 = new CArrayDataProvider($objects, array('keyField'=>'id_object_Work_Records'));
+$dataProvider2 = new CArrayDataProvider($o);
 
-$this->widget('zii.widgets.CListView', array(
-		'dataProvider'=>$dataProvider2,
-		'itemView'=>'/object_Work_Records/_view',
-));
+CVarDumper::dump($dataProvider2, 2, true);
+
+/*
+ $this->widget('zii.widgets.CListView', array(
+ 		'dataProvider'=>$dataProvider2,
+ 		'itemView'=>'_view',
+ ));
+*/
 ?>

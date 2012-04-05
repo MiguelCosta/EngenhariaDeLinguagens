@@ -65,6 +65,11 @@ div.form .row
 	margin: 5px 0;
 }
 
+div.form .nrow
+{
+	margin: 5px 0;
+}
+
 div.form .group
 {
 	margin: 5px -5px 15px;

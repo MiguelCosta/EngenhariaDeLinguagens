@@ -67,9 +67,9 @@ class vitalDatesCreator extends CActiveRecord
 	{
 		return array(
 			'id_vitalDatesCreator' => 'Id Vital Dates Creator',
-			'vitalDatesCreator' => 'Vital Dates Creator',
-			'birthDate' => 'Birth Date',
-			'deathDate' => 'Death Date',
+			'vitalDatesCreator' => 'Datas Vitais do criador',
+			'birthDate' => 'Data de Nascimento',
+			'deathDate' => 'Data de Morte',
 			'termSource' => 'Term Source',
 			'IndexingCreator' => 'Indexing Creator',
 		);

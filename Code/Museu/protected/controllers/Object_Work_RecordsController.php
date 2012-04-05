@@ -137,7 +137,7 @@ class Object_Work_RecordsController extends Controller
 		$emt 	=	new ExtentMaterialsTech;
 		
 		
- 		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles'], $_POST['Object_Work_Types']))
+ 		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles'], $_POST['Object_Work_Types']) )
  		{
  			// vai buscar o ultimo id de Object_Work_Records
  			$maxRecordNumber = Yii::app()->db->createCommand()
@@ -149,19 +149,18 @@ class Object_Work_RecordsController extends Controller
  			$owr->attributes=$_POST['Object_Work_Records'];
  			
  			// obtem os dados do form relativos ao Object_Work_Types
- 			//$owr->object_Work_Types = array($_POST['ddlWType']); // TODO 1:N
- 			$owtp->attributes=$_POST['Object_Work_Types'];
+ 			$owtp->attributes=$_POST['Object_Work_Types']; // TODO 1:N e garantir que é preenchido no form
  			$id_type = Yii::app()->db->createCommand()
 	 			->select('id_type')
 	 			->from('Object_Work_Types')
 	 			->where('type=:id', array(':id'=>$owtp->type))
 	 			->queryScalar();
+ 			// cria registo na tabela N:M Object_Work_Types_Object_Work_Records
  			$owr->object_Work_Types = array($id_type);
  			
  			// obtem os dados do form relativos ao Object_Work_Titles
  			$owt->attributes=$_POST['Object_Work_Titles']; // TODO 1:N
  			$owt->Object_Work_Record = $maxRecordNumber + 1;
- 			
  			
  			// obtem os dados do form relativos as Medidas/Dimensoes
  			//if (isset($_POST['Measurements']) || isset($_POST['MeasurementII'])) {
@@ -242,6 +241,8 @@ class Object_Work_RecordsController extends Controller
 				}
  			}
 			
+ 			
+ 			
  			// valida os models antes de guardar
  			$valid=$owr->validate();
  			$valid=$owt->validate() && $valid;
@@ -268,7 +269,7 @@ class Object_Work_RecordsController extends Controller
  				'Object_Work_Titles'=>$owt,
  				'Object_Work_Types'=>$owtp,
  				'Measurements'=>$m,
- 				'MeasurementsII'=>$mII,
+ 				'MeasurementsII'=>$mII, // TODO nao está a funcionar
  				'ExtentMaterialsTech'=>$emt,
  		));
 	}
