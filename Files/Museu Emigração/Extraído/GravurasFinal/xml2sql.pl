@@ -83,7 +83,7 @@ while(exists($data->{cdwalite}->[$ix])){
 		if (!exists($criadores{$criador})) {
 			$criadores{$criador} = $cont_criadores;
 			print F "INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES ($cont_criadores,'$criador','personalName');\n";
-			print F	"INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES ($cont_criadores,'masculino');\n";
+			print F	"INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES ($cont_criadores,'male');\n";
 			print F "INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES ($cont_criadores,$cont_criadores);\n";
 
 			$cont_criadores++;

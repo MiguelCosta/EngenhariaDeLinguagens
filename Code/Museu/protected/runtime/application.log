@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 2012/04/05 20:38:38 [error] [php] Object of class Object_Work_RecordsController could not be converted to string (/opt/lampp/htdocs/yii/framework/vendors/htmlpurifier/HTMLPurifier.standalone.php:6412)
 Stack trace:
 #0 /opt/lampp/htdocs/yii/framework/vendors/htmlpurifier/HTMLPurifier.standalone.php(14720): HTMLPurifier_Lexer_DOMLex->normalize()
@@ -301,3 +302,5 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/EL/Code/Museu/index.php/indexingCreators/createAll
 ---
+=======
+>>>>>>> c03ecedd61bd751826823705d7d29f4d06cba442

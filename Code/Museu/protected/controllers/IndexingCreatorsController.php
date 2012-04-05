@@ -36,7 +36,7 @@ class IndexingCreatorsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','createAll','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -82,6 +82,83 @@ class IndexingCreatorsController extends Controller
 		));
 	}
 
+	/**
+	 * Creates a new Creator.
+	 * If creation is successful, the browser will be redirected to the 'view' page.
+	 */
+	public function actionCreateAll()
+	{
+		$validVDCreator	= 	false;
+		$ic		=	new IndexingCreators;
+		$vdc	= 	new VitalDatesCreator;
+		$cRole	= 	NULL;
+		$nationC= 	NULL;
+	
+
+		if (isset($_POST['ddlNameC']) && $_POST['ddlNameC']!= '') {
+ 			// vai buscar o ultimo id de IndexingCreators
+ 			$maxICNumber = Yii::app()->db->createCommand()
+	 			->select('max(id_indexingCreators) as max')
+	 			->from('IndexingCreators')
+	 			->queryScalar();
+ 				
+ 				
+ 			// obtem os dados do form relativos ao NamesCreator
+ 			$ic->namesCreators = array($_POST['ddlNameC']);
+ 				
+ 			// Se os dados relativos a CreatorRoles tiverem sido preenchidos
+ 			if (isset($_POST['ddlRoleC'])) {
+ 				// obtem o model CreatorRole de acordo com o que foi seleccionado no form
+ 				$cRole=CreatorRoles::model()->find('id_rolesCreator=:id_rolesCreator', array(':id_rolesCreator'=>$_POST['ddlRoleC']));
+ 				// cria registo na tabela N:M IndexingCreators_Object_Work_Records
+ 				$cRole->indexingCreators = array($maxICNumber + 1);
+ 			}
+ 				
+			// Se os dados relativos ao sexo do IndexingCreators tiverem sido preenchidos
+			if (isset($_POST['ddlGenderC']) && $_POST['ddlGenderC']!= '') {
+				// obtem os dados do form relativos ao CreatorRoles
+				$ic->genderCreator = $_POST['ddlGenderC'];
+			}
+ 				
+			// Se os dados relativos a NationalitiesCreator tiverem sido preenchidos
+			if (isset($_POST['ddlNationalityC']) && $_POST['ddlNationalityC']!= '') {
+				// obtem o model NationalitiesCreator de acordo com o que foi seleccionado no form
+				$nationC=NationalitiesCreator::model()->find('id_nationalitiesCreator=:id_nationalitiesCreator', array(':id_nationalitiesCreator'=>$_POST['ddlNationalityC']));
+				// cria registo na tabela N:M IndexingCreators_NationalitiesCreator
+				$nationC->indexingCreators = array($maxICNumber + 1);
+			}
+ 				
+			// Se os dados relativos a NationalitiesCreator tiverem sido preenchidos
+			if (isset($_POST['vitalDatesCreator'])) {
+				// obtem os dados do form relativos ao NationalitiesCreator
+				$vdc->attributes=$_POST['vitalDatesCreator'];
+				if ($vdc->vitalDatesCreator != NULL) { 						
+					// chave estrangeira da VitalDatesCreator que referencia IndexingCreators
+					$vdc->IndexingCreator = $maxICNumber +1;
+					
+					$validVDCreator = $vdc->validate();
+				}
+			}
+		}
+		
+		if (isset($_POST['ddlNameC']) && $_POST['ddlNameC']!= '') {
+			$ic->save();
+			if ($cRole != NULL) {
+				$cRole->save();
+			} // para guardar os registos N:M
+			if ($nationC != NULL) {
+				$nationC->save();
+			}
+			if ($validVDCreator) {
+				$vdc->save(false);
+			}
+			// redirect to another page
+			$this->redirect(array('view','id'=>$ic->id_indexingCreators));
+		}
+		
+		$this->render('createAll',array('model'=>$ic, 'vitalDatesCreator'=>$vdc));
+	}
+	
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.

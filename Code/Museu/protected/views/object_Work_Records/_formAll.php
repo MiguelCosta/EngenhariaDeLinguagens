@@ -19,18 +19,18 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
     <?php echo CHtml::errorSummary(array($Object_Work_Records,$Object_Work_Titles, $Object_Work_Types));?>
     
     
-    <div class="row">
+    <div class="nrow">
     	<?php echo $form->labelEx($Object_Work_Types,'type'); ?>
 		<?php echo $form->dropDownList($Object_Work_Types,'type',
 				CHtml::listData(Object_Work_Types::model()->findAll(array('order' => 'type')), 'type', 'type'),
-				array('empty'=>'Escolha o tipo da peça se aplicável...')); ?>
+				array('empty'=>'Escolha o tipo da peça...')); ?>
 		<!-- Nao esta a funcionar esta validacao --' -->
 		<?php echo $form->error($Object_Work_Types,'type'); ?>
 	</div>
     
     
     <!-- Object_Work_Titles -->
-    <div class="row">
+    <div class="nrow">
 		<?php echo $form->labelEx($Object_Work_Titles,'title'); ?>
 		<?php echo $form->textField($Object_Work_Titles,'title',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($Object_Work_Titles,'title'); ?>
@@ -38,7 +38,7 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 	
 	<div class="group">
 		<div class="title">
-			<?php echo "Título" ?>
+			<?php echo "Detalhes Título" ?>
 		</div>
 		
 		<div class="row">
@@ -71,20 +71,24 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 	</div>
  
  
-	<!-- Object_Work_Records -->
-    <div class="row">
+	<!-- Creators -->
+    <div class="nrow">
 		<?php echo $form->labelEx($Object_Work_Records,'displayCreator'); ?>
 		<?php echo $form->textField($Object_Work_Records,'displayCreator',array('size'=>60,'maxlength'=>511)); ?>
 		<?php echo $form->error($Object_Work_Records,'displayCreator'); ?>
 	</div>
-
-	<div class="row">
+	
+	
+		
+		
+	<!--  -->
+	<div class="nrow">
 		<?php echo $form->labelEx($Object_Work_Records,'displayCreationDate'); ?>
 		<?php echo $form->textField($Object_Work_Records,'displayCreationDate',array('size'=>60,'maxlength'=>511)); ?>
 		<?php echo $form->error($Object_Work_Records,'displayCreationDate'); ?>
 	</div>
 	
-	<div class="row">
+	<div class="nrow">
 		<?php echo $form->labelEx($Object_Work_Records,'RecordType'); ?>
 		<?php echo $form->dropDownList($Object_Work_Records,
 				'RecordType', 
@@ -168,7 +172,7 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 	
 	
 	<!-- Materiais -->
-	<div class="row">
+	<div class="nrow">
 		<?php echo $form->labelEx($Object_Work_Records,'displayMaterialsTech'); ?>
 		<?php echo $form->textField($Object_Work_Records,'displayMaterialsTech',
 				array('size'=>60,'maxlength'=>511)); ?>
@@ -177,7 +181,7 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 	
  	<div class="group"> 
 		<div class="title">
-			<?php echo "Materiais e Técnicas" ?>
+			<?php echo "Detalhes Materiais e Técnicas" ?>
 		</div>
 		
 		<!-- TODO: falta 1:N -->

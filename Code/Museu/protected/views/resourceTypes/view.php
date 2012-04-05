@@ -24,5 +24,3 @@ $this->menu=array(
 		'termsourceID',
 	),
 )); ?>
-
-

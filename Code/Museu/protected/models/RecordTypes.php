@@ -61,7 +61,7 @@ class RecordTypes extends CActiveRecord
 	{
 		return array(
 			'id_recordTypes' => 'Id',
-			'recordType' => 'Tipo de Registo',
+			'recordType' => 'Record Type',
 		);
 	}
 
