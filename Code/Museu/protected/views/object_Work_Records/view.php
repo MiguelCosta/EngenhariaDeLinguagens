@@ -45,6 +45,16 @@ $this->widget('zii.widgets.jui.CJuiSlider', array(
 ?>
 
 <?php
+$this->widget('ext.ETooltip.ETooltip', array("selector"=>"#yw2 img[title]",
+		"tooltip"=>array(
+				"opacity"=>50,
+				"position"=>"top center",
+		),
+));
+?>
+
+
+<?php
 
 //$c = $model->locations;
 $c = $model->getObjectWorkTitles_Text();
@@ -100,3 +110,4 @@ $this->widget('zii.widgets.CDetailView', array(
 ));
 
 ?>
+
