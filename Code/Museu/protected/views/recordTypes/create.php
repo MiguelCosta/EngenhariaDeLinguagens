@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Record Types'=>array('index'),
-	'Create',
+		'Tipos de Registo'=>array('index'),
+		'Criar',
 );
 
 $this->menu=array(
-	array('label'=>'List RecordTypes', 'url'=>array('index')),
-	array('label'=>'Manage RecordTypes', 'url'=>array('admin')),
+		array('label'=>'Índice', 'url'=>array('index')),
+		array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create RecordTypes</h1>
+<h1>Criar Tipo de Registo</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -37,13 +37,13 @@ class NamesCreator extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nameCreator', 'required'),
-			array('nameCreator', 'length', 'max'=>255),
-			array('type', 'length', 'max'=>31),
-			array('termsource, termsourceID', 'length', 'max'=>63),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id_namesCreator, nameCreator, type, termsource, termsourceID', 'safe', 'on'=>'search'),
+				array('nameCreator', 'required'),
+				array('nameCreator', 'length', 'max'=>255),
+				array('type', 'length', 'max'=>31),
+				array('termsource, termsourceID', 'length', 'max'=>63),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id_namesCreator, nameCreator, type, termsource, termsourceID', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,8 +55,8 @@ class NamesCreator extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'indexingCreators' => array(self::MANY_MANY, 'IndexingCreators', 'NamesCreator_IndexingCreators(NameCreator, IndexingCreator)'),
-			'sourceNamesCreators' => array(self::MANY_MANY, 'SourceNamesCreator', 'SourceNamesCreator_NamesCreator(SourceNamesCreator, NamesCreator)'),
+				'indexingCreators' => array(self::MANY_MANY, 'IndexingCreators', 'NamesCreator_IndexingCreators(NameCreator, IndexingCreator)'),
+				'sourceNamesCreators' => array(self::MANY_MANY, 'SourceNamesCreator', 'SourceNamesCreator_NamesCreator(SourceNamesCreator, NamesCreator)'),
 		);
 	}
 
@@ -66,11 +66,11 @@ class NamesCreator extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_namesCreator' => 'Id Names Creator',
-			'nameCreator' => 'Name Creator',
-			'type' => 'Type',
-			'termsource' => 'Termsource',
-			'termsourceID' => 'Termsource',
+				'id_namesCreator' => 'Id Names Creator',
+				'nameCreator' => 'Name Creator',
+				'type' => 'Type',
+				'termsource' => 'Termsource',
+				'termsourceID' => 'Termsource',
 		);
 	}
 
@@ -96,7 +96,12 @@ class NamesCreator extends CActiveRecord
 		$criteria->compare('termsourceID',$this->termsourceID,true);
 
 		return new CActiveDataProvider('NamesCreator', array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
 	}
+
+	/*********************************************************************************/
+	/********************************** My Functions *********************************/
+	/*********************************************************************************/
+	
 }

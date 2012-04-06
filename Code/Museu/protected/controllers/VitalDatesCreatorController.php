@@ -65,14 +65,14 @@ class VitalDatesCreatorController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new vitalDatesCreator;
+		$model=new VitalDatesCreator;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['vitalDatesCreator']))
+		if(isset($_POST['VitalDatesCreator']))
 		{
-			$model->attributes=$_POST['vitalDatesCreator'];
+			$model->attributes=$_POST['VitalDatesCreator'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_vitalDatesCreator));
 		}
@@ -93,9 +93,9 @@ class VitalDatesCreatorController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['vitalDatesCreator']))
+		if(isset($_POST['VitalDatesCreator']))
 		{
-			$model->attributes=$_POST['vitalDatesCreator'];
+			$model->attributes=$_POST['VitalDatesCreator'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_vitalDatesCreator));
 		}
@@ -129,7 +129,7 @@ class VitalDatesCreatorController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('vitalDatesCreator');
+		$dataProvider=new CActiveDataProvider('VitalDatesCreator');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -140,10 +140,10 @@ class VitalDatesCreatorController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new vitalDatesCreator('search');
+		$model=new VitalDatesCreator('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['vitalDatesCreator']))
-			$model->attributes=$_GET['vitalDatesCreator'];
+		if(isset($_GET['VitalDatesCreator']))
+			$model->attributes=$_GET['VitalDatesCreator'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -159,7 +159,7 @@ class VitalDatesCreatorController extends Controller
 		if($this->_model===null)
 		{
 			if(isset($_GET['id']))
-				$this->_model=vitalDatesCreator::model()->findbyPk($_GET['id']);
+				$this->_model=VitalDatesCreator::model()->findbyPk($_GET['id']);
 			if($this->_model===null)
 				throw new CHttpException(404,'The requested page does not exist.');
 		}

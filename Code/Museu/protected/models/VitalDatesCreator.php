@@ -38,13 +38,13 @@ class vitalDatesCreator extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('vitalDatesCreator, IndexingCreator', 'required'),
-			array('IndexingCreator', 'numerical', 'integerOnly'=>true),
-			array('vitalDatesCreator, birthDate, deathDate', 'length', 'max'=>31),
-			array('termSource', 'length', 'max'=>63),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id_vitalDatesCreator, vitalDatesCreator, birthDate, deathDate, termSource, IndexingCreator', 'safe', 'on'=>'search'),
+				array('vitalDatesCreator, IndexingCreator', 'required'),
+				array('IndexingCreator', 'numerical', 'integerOnly'=>true),
+				array('vitalDatesCreator, birthDate, deathDate', 'length', 'max'=>31),
+				array('termSource', 'length', 'max'=>63),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id_vitalDatesCreator, vitalDatesCreator, birthDate, deathDate, termSource, IndexingCreator', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,7 +56,7 @@ class vitalDatesCreator extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'indexingCreator' => array(self::BELONGS_TO, 'IndexingCreators', 'IndexingCreator'),
+				'indexingCreator' => array(self::BELONGS_TO, 'IndexingCreators', 'IndexingCreator'),
 		);
 	}
 
@@ -66,12 +66,12 @@ class vitalDatesCreator extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_vitalDatesCreator' => 'Id Vital Dates Creator',
-			'vitalDatesCreator' => 'Datas Vitais do criador',
-			'birthDate' => 'Data de Nascimento',
-			'deathDate' => 'Data de Morte',
-			'termSource' => 'Term Source',
-			'IndexingCreator' => 'Indexing Creator',
+				'id_vitalDatesCreator' => 'Id Vital Dates Creator',
+				'vitalDatesCreator' => 'Datas Vitais do criador',
+				'birthDate' => 'Data de Nascimento',
+				'deathDate' => 'Data de Morte',
+				'termSource' => 'Term Source',
+				'IndexingCreator' => 'Indexing Creator',
 		);
 	}
 
@@ -99,7 +99,33 @@ class vitalDatesCreator extends CActiveRecord
 		$criteria->compare('IndexingCreator',$this->IndexingCreator);
 
 		return new CActiveDataProvider('vitalDatesCreator', array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
+	}
+
+	/*********************************************************************************/
+	/********************************** My Functions *********************************/
+	/*********************************************************************************/
+
+	public function getVitalDatesCreator(){
+		$result_arr = array(
+				'id_vitalDatesCreator'=>$this->id_vitalDatesCreator,
+				'vitalDatesCreator'=>$this->vitalDatesCreator,
+		);
+
+		$result_arr2 = array();
+		if(isset($this->birthDate)){
+			$tmp = array('birthDate'=>$this->birthDate);
+			$result_arr2 = array_merge((array)$result_arr2, (array)$tmp);
+		}
+
+		if(isset($this->deathDate)){
+			$tmp = array('deathDate'=>$this->deathDate);
+			$result_arr2 = array_merge((array)$result_arr2, (array)$tmp);
+		}
+
+		array_push($result_arr, $result_arr2);
+		return $result_arr;
+
 	}
 }
