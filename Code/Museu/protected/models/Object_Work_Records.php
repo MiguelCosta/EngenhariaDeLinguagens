@@ -275,7 +275,7 @@ class Object_Work_Records extends CActiveRecord
 			$r = 'resourceViewDescription';
 			isset($tmp_arr[$r]) ? $img_desc = $tmp_arr[$r] : $img_desc = ""; 
 
-			$img = CHtml::image($img_path, $img_desc, array('class'=>'image', 'width'=>200));
+			$img = CHtml::image($img_path, $img_desc, array('class'=>'image', 'width'=>200, 'title'=>$img_desc));
 			$tmp = CHtml::link($img, $img_path);
 			array_push($result_arr,$tmp);
 		}
