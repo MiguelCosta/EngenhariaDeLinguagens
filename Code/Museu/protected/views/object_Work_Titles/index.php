@@ -1,17 +1,17 @@
 <?php
 $this->breadcrumbs=array(
-	'Object  Work  Titles',
+		'Títulos',
 );
 
 $this->menu=array(
-	array('label'=>'Create Object_Work_Titles', 'url'=>array('create')),
-	array('label'=>'Manage Object_Work_Titles', 'url'=>array('admin')),
+		array('label'=>'Criar', 'url'=>array('create')),
+		array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Object  Work  Titles</h1>
+<h1>Títulos</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
-	'dataProvider'=>$dataProvider,
-	'itemView'=>'_view',
+		'dataProvider'=>$dataProvider,
+		'itemView'=>'_view',
 )); ?>

@@ -1,15 +1,16 @@
 <?php
 $this->breadcrumbs=array(
-	'Indexing Creators'=>array('index'),
-	'Create',
+		'Indexing Creators'=>array('index'),
+		'Criar',
 );
 
 $this->menu=array(
-	array('label'=>'List IndexingCreators', 'url'=>array('index')),
-	array('label'=>'Manage IndexingCreators', 'url'=>array('admin')),
+		array('label'=>'Índice', 'url'=>array('index')),
+		array('label'=>'Criar Ficha Completa', 'url'=>array('createAll')),
+		array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create IndexingCreators</h1>
+<h1>Criar IndexingCreators</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

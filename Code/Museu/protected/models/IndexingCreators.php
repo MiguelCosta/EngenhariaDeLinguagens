@@ -52,7 +52,7 @@ class IndexingCreators extends CActiveRecord
 				'nationalitiesCreators' => array(self::MANY_MANY, 'NationalitiesCreator', 'IndexingCreators_NationalitiesCreator(IndexingCreator, NationalityCreator)'),
 				'creatorRoles' => array(self::MANY_MANY, 'CreatorRoles', 'IndexingCreators_RolesCreator(IndexingCreator, CreatorRole)'),
 				'namesCreators' => array(self::MANY_MANY, 'NamesCreator', 'NamesCreator_IndexingCreators(NameCreator, IndexingCreator)'),
-				'object_Work_Records' => array(self::MANY_MANY, 'ObjectWorkRecords', 'Object_Work_Records_IndexingCreators(Object_Work_Record, IndexingCreator)'),
+				'object_Work_Records' => array(self::MANY_MANY, 'Object_Work_Records', 'Object_Work_Records_IndexingCreators(Object_Work_Record, IndexingCreator)'),
 				'vitalDatesCreators' => array(self::HAS_MANY, 'VitalDatesCreator', 'IndexingCreator'),
 		);
 	}
@@ -63,8 +63,12 @@ class IndexingCreators extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-				'id_indexingCreators' => 'Id Indexing Creators',
-				'genderCreator' => 'Gender Creator',
+				'id_indexingCreators' => 'ID',
+				'genderCreator' => 'Gênero',
+				'namesCreators'=> 'Nomes',
+				'nationalitiesCreators' => 'Nacionalidades',
+				'creatorRoles' => 'Actividades/Funções',
+				'vitalDatesCreators' => 'Datas',
 		);
 	}
 
@@ -87,7 +91,7 @@ class IndexingCreators extends CActiveRecord
 				'criteria'=>$criteria,
 		));
 	}
-	
+
 	/**
 	 * Better support of MANY_TO_MANY relations
 	 */
@@ -101,6 +105,88 @@ class IndexingCreators extends CActiveRecord
 	/********************************** My Functions *********************************/
 	/*********************************************************************************/
 
+	public function getNamesCreators_One_text(){
+		$result = '';
 
+		foreach ($this->namesCreators as $namesCreators){
+			$result = CHtml::encode($namesCreators->nameCreator);
+			return $result;
+		}
 
+		return $result;
+	}
+
+	public function getNamesCreators($sp){
+		$result = '';
+		$result_arr = array();
+
+		foreach ($this->namesCreators as $namesCreators){
+			$id = $namesCreators->id_namesCreator;
+			$name = $namesCreators->nameCreator;
+			// se não tiver o type definido
+			isset($namesCreators->type) ? $type = $namesCreators->type : $type = '';
+
+			$tmp = '<b>'.$type.':</b> ';
+			$tmp .= CHtml::link(CHtml::encode($name), array('/namesCreator/'.$id));
+			array_push($result_arr, $tmp);
+		}
+
+		$result .=  implode($sp, $result_arr);
+		return $result;
+	}
+
+	public function getNationalitiesCreators($sp){
+		$result = '';
+		$result_arr = array();
+
+		foreach ($this->nationalitiesCreators as $nationalitiesCreators){
+			$id = $nationalitiesCreators->id_nationalitiesCreator;
+			$nationality = $nationalitiesCreators->nationalitycreator;
+
+			$tmp = CHtml::link($nationality, array('/nationalitiesCreator/'.$id));
+			array_push($result_arr, $tmp);
+		}
+
+		$result .=  implode($sp, $result_arr);
+		return $result;
+	}
+
+	public function getCreatorRoles($sp){
+		$result = '';
+		$result_arr = array();
+
+		foreach ($this->creatorRoles as $creatorRoles){
+			$id = $creatorRoles->id_rolesCreator;
+			$roleCreator = $creatorRoles->roleCreator;
+
+			$tmp = CHtml::link($roleCreator, array('/creatorRoles/'.$id));
+			array_push($result_arr, $tmp);
+		}
+
+		$result .=  implode($sp, $result_arr);
+		return $result;
+	}
+
+	public function getVitalDatesCreators(){
+		$result = '';
+		$result_arr = array();
+
+		foreach ($this->vitalDatesCreators as $vitalDatesCreators){
+			$arr = $vitalDatesCreators->getVitalDatesCreator();
+
+			$id = $arr['id_vitalDatesCreator'];
+			$vitalDatesCreator = $arr['vitalDatesCreator'];
+			$t = CHtml::link($vitalDatesCreator, array('/VitalDatesCreator/'.$id));
+			array_push($result_arr, $t);
+
+			foreach ($arr['0'] as $key => $value){
+				$t = '<b>'.$key.'</b>: '.$value;
+				array_push($result_arr, $t);
+			}
+
+		}
+
+		$result .=  implode('<br/>', $result_arr);
+		return $result;
+	}
 }
