@@ -40,8 +40,9 @@ class CreationPlaces extends CActiveRecord
 		return array(
 			array('creationPlace, Object_Work_Record', 'required'),
 			array('Object_Work_Record', 'numerical', 'integerOnly'=>true),
-			array('creationPlace, termsource, termsourceID', 'length', 'max'=>63),
-			array('placeQualifier', 'length', 'max'=>31),
+			array('termsource, termsourceID', 'length', 'max'=>63),
+			array('creationPlace, termsource, termsourceID', 'length', 'max'=>255),
+			array('placeQualifier', 'length', 'max'=>125),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id_creationPlaces, creationPlace, termsource, termsourceID, placeQualifier, Object_Work_Record', 'safe', 'on'=>'search'),
@@ -67,10 +68,10 @@ class CreationPlaces extends CActiveRecord
 	{
 		return array(
 			'id_creationPlaces' => 'Id Creation Places',
-			'creationPlace' => 'Creation Place',
+			'creationPlace' => 'Lugar de criação',
 			'termsource' => 'Termsource',
 			'termsourceID' => 'Termsource',
-			'placeQualifier' => 'Place Qualifier',
+			'placeQualifier' => 'Significado do lugar',
 			'Object_Work_Record' => 'Object Work Record',
 		);
 	}

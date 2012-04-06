@@ -67,9 +67,9 @@ class IndexingDates extends CActiveRecord
 	{
 		return array(
 			'id_indexingDates' => 'Id Indexing Dates',
-			'dateQualifier' => 'Date Qualifier',
-			'earliestDate' => 'Earliest Date',
-			'latestDate' => 'Latest Date',
+			'dateQualifier' => 'Significado da data',
+			'earliestDate' => 'Data Inferior',
+			'latestDate' => 'Data Superior',
 			'Object_Work_Record' => 'Object Work Record',
 		);
 	}

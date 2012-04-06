@@ -486,10 +486,10 @@ CREATE TABLE TreatmentDates (
 ' ENGINE=InnoDB;
 CREATE TABLE CreationPlaces (
   id_creationPlaces  int(10) NOT NULL AUTO_INCREMENT, 
-  creationPlace      varchar(63) NOT NULL, 
+  creationPlace      varchar(255) NOT NULL, 
   termsource         varchar(63), 
   termsourceID       varchar(63), 
-  placeQualifier     varchar(31) comment 'Definition: A clarification of the significance of the place or location, including an indication that different creative activities took place at different locations (e.g., publication, assembly).
+  placeQualifier     varchar(125) comment 'Definition: A clarification of the significance of the place or location, including an indication that different creative activities took place at different locations (e.g., publication, assembly).
 Controlled list: Control this subcategory with a controlled list', 
   Object_Work_Record int(11) NOT NULL, 
   PRIMARY KEY (id_creationPlaces)) comment='Definition: The location where the creation, design, or production of the work or its

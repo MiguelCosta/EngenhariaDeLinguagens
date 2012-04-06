@@ -11,7 +11,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'creationPlace'); ?>
-		<?php echo $form->textField($model,'creationPlace',array('size'=>60,'maxlength'=>63)); ?>
+		<?php echo $form->textField($model,'creationPlace',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'creationPlace'); ?>
 	</div>
 
@@ -29,7 +29,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'placeQualifier'); ?>
-		<?php echo $form->textField($model,'placeQualifier',array('size'=>31,'maxlength'=>31)); ?>
+		<?php echo $form->textField($model,'placeQualifier',array('size'=>31,'maxlength'=>125)); ?>
 		<?php echo $form->error($model,'placeQualifier'); ?>
 	</div>
 

@@ -80,12 +80,88 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 	
 	
 		
-		
-	<!--  -->
+	<!-- IndexingDates -->
 	<div class="nrow">
 		<?php echo $form->labelEx($Object_Work_Records,'displayCreationDate'); ?>
 		<?php echo $form->textField($Object_Work_Records,'displayCreationDate',array('size'=>60,'maxlength'=>511)); ?>
 		<?php echo $form->error($Object_Work_Records,'displayCreationDate'); ?>
+	</div>
+	
+	<div class="nrow">
+		<?php echo $form->labelEx($IndexingDates,'earliestDate'); ?>
+		<?php 
+			$this->widget('ext.combobox.EJuiComboBox', array(
+					'model' => $IndexingDates,
+	    			'attribute' => 'earliestDate',
+				    // data to populate the select. Must be an array.
+				    'data' => CHtml::listData(EarliestDates::model()->findAll(array('order' => 'earliestDate')), 'id_earliestDate', 'earliestDate'),
+				    // options passed to plugin
+				    'options' => array(
+				        // If false, field value must be present in the select.
+				        // Defaults to true.
+				        'allowText' => false,
+				    ),
+				    // Options passed to the text input
+				    'htmlOptions' => array('size' => 10),
+				));
+		?>
+		<?php echo $form->error($IndexingDates,'earliestDate'); ?>
+	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($IndexingDates,'latestDate'); ?>
+		<?php 
+			$this->widget('ext.combobox.EJuiComboBox', array(
+					'model' => $IndexingDates,
+	    			'attribute' => 'latestDate',
+				    // data to populate the select. Must be an array.
+				    'data' => CHtml::listData(LatestDates::model()->findAll(array('order' => 'latestDate')), 'id_latestDate', 'latestDate'),
+				    // options passed to plugin
+				    'options' => array(
+				        // If false, field value must be present in the select.
+				        // Defaults to true.
+				        'allowText' => false,
+				    ),
+				    // Options passed to the text input
+				    'htmlOptions' => array('size' => 10),
+				));
+		?>
+		<?php echo $form->error($IndexingDates,'latestDate'); ?>
+	</div>
+	
+	<div class="group"> 
+		<div class="title">
+			<?php echo "Detalhes Datas" ?>
+		</div>
+		<div class="row">
+			<?php echo $form->labelEx($IndexingDates,'dateQualifier'); ?>
+			<?php echo $form->dropDownList($IndexingDates,'dateQualifier',
+					array('design' => 'Design', 'execution' => 'Execução', 'alteration' => 'Alteração', 
+							'addition' => 'Adição', 'performance' => 'Performance', 'restoration' => 'Restauração', 
+							'destruction' => 'Destruição', 'discovery' => 'Descoberta', 'printed' => 'Impressão', 'publication' => 'Publicação',
+							'Incorporada no Museu da Emigração e das Comunidades' => 'Incorporada no Museu da Emigração e das Comunidades'), 
+					array('empty' => 'Escolha o significado da data se aplicável...')); ?>
+			<?php echo $form->error($IndexingDates,'dateQualifier'); ?>
+		</div>
+	</div>
+	
+	<div class="group"> 
+		<div class="title">
+			<?php echo "Lugares de criação" ?>
+		</div>
+		<div class="row">
+			<?php echo CHtml::label('Lugar de criação', 'creationPlace') ?>
+			<?php echo $form->textField($CreationPlaces,'creationPlace',array('size'=>60,'maxlength'=>255)); ?>
+			<?php echo $form->error($CreationPlaces,'creationPlace'); ?>
+		</div>
+		<div class="row">
+			<?php echo $form->labelEx($CreationPlaces,'placeQualifier'); ?>
+			<?php echo $form->dropDownList($CreationPlaces,'placeQualifier',
+					array('design' => 'Design', 'execution' => 'Execução', 'alteration' => 'Alteração', 
+							'publication' => 'Publicação',), 
+					array('empty' => 'Escolha o significado do lugar se aplicável...')); ?>
+			<?php echo $form->error($CreationPlaces,'placeQualifier'); ?>
+		</div>
 	</div>
 	
 	<div class="nrow">
@@ -236,7 +312,7 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 					array('empty' => 'Escolha a cultura da peça se aplicável...')); ?>
 		</div>
 	</div>
-		
+	
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($Object_Work_Records->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

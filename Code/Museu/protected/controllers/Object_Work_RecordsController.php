@@ -127,6 +127,7 @@ class Object_Work_RecordsController extends Controller
 		$validMeasureI 	= 	false; // Temporario enquanto nao se tratar os casos 1:N
 		$validMeasureII = 	false; // Temporario enquanto nao se tratar os casos 1:N
 		$validEMaterial	= 	false;
+		$validCPlace	= 	false;
 		$owr 	=	new Object_Work_Records;
 		$owt 	=	new Object_Work_Titles;
 		$owtp 	=	new Object_Work_Types;
@@ -135,9 +136,11 @@ class Object_Work_RecordsController extends Controller
 		$mII 	=	new Measurements;
 		$imt	=	new IndexingMaterialsTech;
 		$emt 	=	new ExtentMaterialsTech;
+		$id 	=	new IndexingDates;
+		$cp		= 	new CreationPlaces;
 		
 		
- 		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles'], $_POST['Object_Work_Types']) )
+ 		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles'], $_POST['Object_Work_Types'], $_POST['IndexingDates']))
  		{
  			// vai buscar o ultimo id de Object_Work_Records
  			$maxRecordNumber = Yii::app()->db->createCommand()
@@ -150,6 +153,7 @@ class Object_Work_RecordsController extends Controller
  			
  			// obtem os dados do form relativos ao Object_Work_Types
  			$owtp->attributes=$_POST['Object_Work_Types']; // TODO 1:N e garantir que é preenchido no form
+ 			// obtem o id_type correspondente ao type obtido atraves do $owtp
  			$id_type = Yii::app()->db->createCommand()
 	 			->select('id_type')
 	 			->from('Object_Work_Types')
@@ -161,6 +165,35 @@ class Object_Work_RecordsController extends Controller
  			// obtem os dados do form relativos ao Object_Work_Titles
  			$owt->attributes=$_POST['Object_Work_Titles']; // TODO 1:N
  			$owt->Object_Work_Record = $maxRecordNumber + 1;
+ 			
+ 			// obtem os dados do form relativos ao IndexingDates
+ 			$id->attributes=$_POST['IndexingDates'];
+ 			$id->Object_Work_Record = $maxRecordNumber + 1;
+ 			$id->earliestDate = Yii::app()->db->createCommand()
+	 			->select('id_earliestDate')
+	 			->from('EarliestDates')
+	 			->where('earliestDate=:date', array(':date'=>$id->earliestDate))
+	 			->queryScalar();
+ 			$id->latestDate = Yii::app()->db->createCommand()
+	 			->select('id_latestDate')
+	 			->from('LatestDates')
+	 			->where('latestDate=:date', array(':date'=>$id->latestDate))
+	 			->queryScalar();
+ 			
+ 			// se os dados referentes a CreationPlaces tiverem sido definidos
+ 			if (isset($_POST['CreationPlaces'])) {
+ 					// obtem os dados do form relativos a Measurements
+ 					$cp->attributes=$_POST['CreationPlaces']; // TODO 1:N. No schema devia ser N:M e nao 1:N...
+ 					
+ 					if ($cp->creationPlace!='') {
+	 					// chave estrangeira da Measurements que referencia IndexingMeasurements
+	 					$cp->Object_Work_Record = $maxRecordNumber + 1;
+	 						
+	 					// valida os models antes de guardar
+	 					$validCPlace=$cp->validate();
+ 					}
+ 			}
+ 			
  			
  			// obtem os dados do form relativos as Medidas/Dimensoes
  			//if (isset($_POST['Measurements']) || isset($_POST['MeasurementII'])) {
@@ -175,7 +208,6 @@ class Object_Work_RecordsController extends Controller
 	 				->queryScalar();
  				
  				// Temporario: Se o primeiro grupo de dados relativos a Measurements tiver sido preenchido
- 				//CVarDumper::dump($_POST['Measurements'],12,true);
  				if (isset($_POST['Measurements'][1])) {
  					// obtem os dados do form relativos a Measurements
  					$m->attributes=$_POST['Measurements'][1]; // TODO 1:N
@@ -255,12 +287,15 @@ class Object_Work_RecordsController extends Controller
  			// valida os models antes de guardar
  			$valid=$owr->validate();
  			$valid=$owt->validate() && $valid;
+ 			$valid=$id->validate() && $valid;
 	
  			if($valid)
  			{
  				// use false parameter to disable validation
  				$owr->save(false);
  				$owt->save(false);
+ 				$id->save(false);
+ 				if ($validCPlace) {$cp->save(false);}
  				if ($validMeasureI || $validMeasureII) {$im->save();}
  				if ($validMeasureI) {$m->save(false);}
  				if ($validMeasureII) {$mII->save(false);}
@@ -280,6 +315,8 @@ class Object_Work_RecordsController extends Controller
  				'Measurements'=>$m,
  				'MeasurementsII'=>$mII, // TODO nao está a funcionar
  				'ExtentMaterialsTech'=>$emt,
+ 				'IndexingDates'=>$id,
+ 				'CreationPlaces'=>$cp
  		));
 	}
 
