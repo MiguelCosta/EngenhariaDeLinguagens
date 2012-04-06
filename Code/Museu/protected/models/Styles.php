@@ -63,7 +63,7 @@ class Styles extends CActiveRecord
 	{
 		return array(
 			'id_styles' => 'Id Styles',
-			'style' => 'Style',
+			'style' => 'Estilo',
 			'termsource' => 'Termsource',
 			'termsourceID' => 'Termsource',
 		);

@@ -210,6 +210,32 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 			<p class="hint">Uma explicação da parte da peça a que os materiais/técnicas são aplicáveis; incluído quando necessário para maior clareza.</p>
 		</div>
 	</div>
+	
+	<div class="group"> 
+		<div class="title">
+			<?php echo "Estilos" ?>
+		</div>
+		<div class="row"> <!-- TODO 1:N -->
+			<?php echo CHtml::label('Estilo', 'ddlStyle') ?>
+			<?php echo CHtml::dropDownList('ddlStyle', 
+					array(), 
+					CHtml::listData(Styles::model()->findAll(array('order' => 'style')), 'id_styles', 'style'), 
+					array('empty' => 'Escolha o estilo da peça se aplicável...')); ?>
+		</div>
+	</div>
+	
+	<div class="group"> 
+		<div class="title">
+			<?php echo "Culturas" ?>
+		</div>
+		<div class="row"> <!-- TODO 1:N -->
+			<?php echo CHtml::label('Cultura', 'ddlCulture') ?>
+			<?php echo CHtml::dropDownList('ddlCulture', 
+					array(), 
+					CHtml::listData(Cultures::model()->findAll(array('order' => 'culture')), 'id_cultures', 'culture'), 
+					array('empty' => 'Escolha a cultura da peça se aplicável...')); ?>
+		</div>
+	</div>
 		
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($Object_Work_Records->isNewRecord ? 'Create' : 'Save'); ?>

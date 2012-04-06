@@ -37,7 +37,7 @@ class LabelRelatedWork extends CActiveRecord
 		return array(
 			array('labelRelatedWork, RelatedWork', 'required'),
 			array('RelatedWork', 'numerical', 'integerOnly'=>true),
-			array('labelRelatedWork', 'length', 'max'=>31),
+			array('labelRelatedWork', 'length', 'max'=>511),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id_labelRelatedWork, labelRelatedWork, RelatedWork', 'safe', 'on'=>'search'),

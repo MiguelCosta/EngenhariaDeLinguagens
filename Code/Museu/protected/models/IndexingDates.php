@@ -37,9 +37,9 @@ class IndexingDates extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Object_Work_Record', 'required'),
+			array('Object_Work_Record, earliestDate, latestDate', 'required'),
 			array('earliestDate, latestDate, Object_Work_Record', 'numerical', 'integerOnly'=>true),
-			array('dateQualifier', 'length', 'max'=>31),
+			array('dateQualifier', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id_indexingDates, dateQualifier, earliestDate, latestDate, Object_Work_Record', 'safe', 'on'=>'search'),

@@ -11,7 +11,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'dateQualifier'); ?>
-		<?php echo $form->textField($model,'dateQualifier',array('size'=>31,'maxlength'=>31)); ?>
+		<?php echo $form->textField($model,'dateQualifier',array('size'=>255,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'dateQualifier'); ?>
 	</div>
 

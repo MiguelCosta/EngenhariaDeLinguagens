@@ -12,7 +12,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'dateQualifier'); ?>
-		<?php echo $form->textField($model,'dateQualifier',array('size'=>31,'maxlength'=>31)); ?>
+		<?php echo $form->textField($model,'dateQualifier',array('size'=>255,'maxlength'=>255)); ?>
 	</div>
 
 	<div class="row">

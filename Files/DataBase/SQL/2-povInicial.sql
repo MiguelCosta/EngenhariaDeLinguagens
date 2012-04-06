@@ -17,8 +17,9 @@ use museu;
 		INSERT INTO NationalitiesCreator (id_nationalitiesCreator, nationalitycreator) VALUES ('1', 'Haitian');
 		INSERT INTO IndexingCreators_NationalitiesCreator (IndexingCreator, NationalityCreator) VALUES ('1','1');
 		INSERT INTO vitalDatesCreator (id_vitalDatesCreator, vitalDatesCreator, birthDate, IndexingCreator) VALUES ('1','1926-','1926','1');
-		INSERT INTO CreatorRoles (id_rolesCreator, roleCreator) VALUES ('1','Fotógrafo');
-		INSERT INTO CreatorRoles (id_rolesCreator, roleCreator) VALUES ('2','Pintor');
+		INSERT INTO CreatorRoles (id_rolesCreator, roleCreator) VALUES ('1','photographer');
+		INSERT INTO CreatorRoles (id_rolesCreator, roleCreator) VALUES ('2','painter');
+		INSERT INTO CreatorRoles (id_rolesCreator, roleCreator) VALUES ('3','artist');
 		INSERT INTO IndexingCreators_RolesCreator (IndexingCreator, CreatorRole) VALUES ('1','1');
 		INSERT INTO IndexingCreators_RolesCreator (IndexingCreator, CreatorRole) VALUES ('1','2');
 		
@@ -27,8 +28,11 @@ use museu;
 		INSERT INTO TermMaterialsTech (id_termMaterialsTech,termMaterialsTech) VALUES ('1','preto e branco');
 		
 /* Tabela Styles */
-		INSERT INTO Styles (id_styles, style) VALUE ('1','indefinida');
+		INSERT INTO Styles (id_styles, style) VALUE ('1','unknown');
 		
+/* Tabela Cultures */
+		INSERT INTO Cultures (id_cultures, culture) VALUE ('1','unknown');
+
 /* Tabela LocationsName */
 		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('1', 'França', 'creationLocation');
 		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('2', 'Museu da Emigração e das Comunidades', 'currentRepository');

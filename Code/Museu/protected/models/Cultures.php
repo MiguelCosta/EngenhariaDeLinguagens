@@ -63,7 +63,7 @@ class Cultures extends CActiveRecord
 	{
 		return array(
 			'id_cultures' => 'Id Cultures',
-			'culture' => 'Culture',
+			'culture' => 'Cultura',
 			'termsource' => 'Termsource',
 			'termsourceID' => 'Termsource',
 		);

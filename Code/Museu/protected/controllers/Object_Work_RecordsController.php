@@ -241,6 +241,15 @@ class Object_Work_RecordsController extends Controller
 				}
  			}
 			
+ 			// obtem os dados relativos ao Style
+ 			if (isset($_POST['ddlStyle']) && $_POST['ddlStyle'] != '') {
+ 				$owr->styles = array($_POST['ddlStyle']); // TODO 1:N
+ 			}
+ 			
+ 			// obtem os dados relativos ao Culture
+ 			if (isset($_POST['ddlCulture']) && $_POST['ddlCulture'] != '') {
+ 				$owr->cultures = array($_POST['ddlCulture']); // TODO 1:N
+ 			}
  			
  			
  			// valida os models antes de guardar

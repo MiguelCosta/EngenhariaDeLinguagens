@@ -199,10 +199,10 @@ CREATE TABLE Cultures_Object_Work_Records (
   Object_Work_Record)) ENGINE=InnoDB;
 CREATE TABLE IndexingDates (
   id_indexingDates   int(10) NOT NULL AUTO_INCREMENT, 
-  dateQualifier      varchar(31) comment 'Description: A clarification of the meaning of the date, used when necessary.
+  dateQualifier      varchar(255) comment 'Description: A clarification of the meaning of the date, used when necessary.
 Data values: design, execution, alteration, performance, restoration, destruction, discovery, and others, as described in CCO and CDWA.', 
-  earliestDate       int(10), 
-  latestDate         int(10), 
+  earliestDate       int(10) NOT NULL, 
+  latestDate         int(10) NOT NULL, 
   Object_Work_Record int(11) NOT NULL, 
   PRIMARY KEY (id_indexingDates)) ENGINE=InnoDB;
 CREATE TABLE EarliestDates (
@@ -332,7 +332,7 @@ CREATE TABLE LinksRelatedWork (
 Data values: From data in the generating system (e.g., marc0359).' ENGINE=InnoDB;
 CREATE TABLE LabelRelatedWork (
   id_labelRelatedWork int(10) NOT NULL AUTO_INCREMENT, 
-  labelRelatedWork    varchar(251) NOT NULL, 
+  labelRelatedWork    varchar(511) NOT NULL, 
   RelatedWork         int(10) NOT NULL, 
   PRIMARY KEY (id_labelRelatedWork)) comment='Description: An identification of the related work, group, collection, or series that will be meaningful to end-users, including some or all of the following information, as necessary for clarity and if known: title, creator, object/work type, and creation date. Display it with the Location of Related Work.
 
