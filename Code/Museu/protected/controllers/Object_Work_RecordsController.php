@@ -128,6 +128,8 @@ class Object_Work_RecordsController extends Controller
 		$validMeasureII = 	false; // Temporario enquanto nao se tratar os casos 1:N
 		$validEMaterial	= 	false;
 		$validCPlace	= 	false;
+		$validProvenance=	false;
+		$validOwnershipD=	false;
 		$owr 	=	new Object_Work_Records;
 		$owt 	=	new Object_Work_Titles;
 		$owtp 	=	new Object_Work_Types;
@@ -138,6 +140,9 @@ class Object_Work_RecordsController extends Controller
 		$emt 	=	new ExtentMaterialsTech;
 		$id 	=	new IndexingDates;
 		$cp		= 	new CreationPlaces;
+		$p		= 	new Provenance;
+		$od		= 	new OwnershipDates;
+		$tm		=	new TransferModes;
 		
 		
  		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles'], $_POST['Object_Work_Types'], $_POST['IndexingDates']))
@@ -284,6 +289,54 @@ class Object_Work_RecordsController extends Controller
  			}
  			
  			
+ 			// se os dados referentes a Provenance tiverem sido definidos
+ 			if (isset($_POST['Provenance'])) {
+ 				// obtem os dados do form relativos a Provenance
+ 				$p->attributes=$_POST['Provenance']; // TODO 1:N
+ 				if ($p->provenanceDescription!='') {
+ 					// chave estrangeira da Measurements que referencia IndexingMeasurements
+ 					$p->Object_Work_Record = $maxRecordNumber + 1;
+ 					
+ 					// obtem os dados relativos ao TranferMode
+ 					if (isset($_POST['ddlTransferModes']) && $_POST['ddlTransferModes'] != '') {
+ 						// vai buscar o ultimo id de Provenance
+ 						$maxPNumber = Yii::app()->db->createCommand()
+	 						->select('max(id_provenance) as max')
+	 						->from('Provenance')
+	 						->queryScalar();
+ 						
+ 						$tm->transferMode = $_POST['ddlTransferModes'];
+ 						$tm->Provenance = $maxPNumber; // TODO 1:N
+ 					}
+ 					
+ 					// se os dados referentes a OwnershipDates tiverem sido definidos
+ 					if (isset($_POST['OwnershipDates'])) {
+ 						// obtem os dados do form relativos a OwnershipDates
+ 						$od->attributes = $_POST['OwnershipDates'];
+ 						
+ 						$od->earliestDate = Yii::app()->db->createCommand()
+	 						->select('id_earliestDate')
+	 						->from('EarliestDates')
+	 						->where('earliestDate=:date', array(':date'=>$od->earliestDate))
+	 						->queryScalar();
+ 						$od->latestDate = Yii::app()->db->createCommand()
+	 						->select('id_latestDate')
+	 						->from('LatestDates')
+	 						->where('latestDate=:date', array(':date'=>$od->latestDate))
+	 						->queryScalar();
+ 						
+ 						$validOwnershipD = $od->validate();
+ 					}
+ 					
+//  					if ($p->Owner=='') $p->Owner=NULL;
+//  					if ($p->OwnershipPlace=='') $p->OwnershipPlace=NULL;
+ 					CVarDumper::dump($od,10,true);
+ 					// valida os models antes de guardar
+ 					$validProvenance=$p->validate();
+ 				}
+ 			}
+ 			
+ 			
  			// valida os models antes de guardar
  			$valid=$owr->validate();
  			$valid=$owt->validate() && $valid;
@@ -303,6 +356,13 @@ class Object_Work_RecordsController extends Controller
  					$imt->save();
  					if ($validEMaterial) { $emt->save(false); }
  				}
+ 				if ($validProvenance) {
+ 					if ($validOwnershipD)
+ 						$od->save(false);
+ 					$p->save(false);
+ 					if (isset($_POST['ddlTransferModes']) && $_POST['ddlTransferModes'] != '')
+ 						$tm->save();
+ 				}
  				// redirect to another page
  				$this->redirect(array('view','id'=>$owr->id_object_Work_Records));
  			}
@@ -316,7 +376,9 @@ class Object_Work_RecordsController extends Controller
  				'MeasurementsII'=>$mII, // TODO nao está a funcionar
  				'ExtentMaterialsTech'=>$emt,
  				'IndexingDates'=>$id,
- 				'CreationPlaces'=>$cp
+ 				'CreationPlaces'=>$cp,
+ 				'Provenance'=>$p,
+ 				'OwnershipDates'=>$od
  		));
 	}
 

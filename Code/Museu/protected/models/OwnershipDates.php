@@ -66,9 +66,9 @@ class OwnershipDates extends CActiveRecord
 	{
 		return array(
 			'id_ownershipDate' => 'Id Ownership Date',
-			'ownershipDate' => 'Ownership Date',
-			'earliestDate' => 'Earliest Date',
-			'latestDate' => 'Latest Date',
+			'ownershipDate' => 'Data de posse',
+			'earliestDate' => 'Data inferior',
+			'latestDate' => 'Data superior',
 		);
 	}
 

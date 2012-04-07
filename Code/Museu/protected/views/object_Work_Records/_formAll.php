@@ -306,7 +306,9 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 					array('empty' => 'Escolha o estilo da peça se aplicável...')); ?>
 		</div>
 	</div>
-
+	
+	
+	<!-- Cultures -->
 	<div class="group">
 		<div class="title">
 			<?php echo "Culturas" ?>
@@ -318,6 +320,106 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 					array(),
 					CHtml::listData(Cultures::model()->findAll(array('order' => 'culture')), 'id_cultures', 'culture'),
 					array('empty' => 'Escolha a cultura da peça se aplicável...')); ?>
+		</div>
+	</div>
+
+	
+	<!-- Provenance -->
+	<div class="group">
+		<div class="title">
+			<?php echo "Proveniência" ?>
+		</div>
+		<div class="row">
+			<?php echo CHtml::label('Descrição da proveniência', 'provenanceDescription') ?>
+			<?php echo $form->textField($Provenance,'provenanceDescription',array('size'=>60,'maxlength'=>511)); ?>
+			<?php echo $form->error($Provenance,'provenanceDescription'); ?>
+			<p class="hint">Uma descrição da proveniência ou história dos donos ou outros que tiveram posse de uma peça.</p>
+		</div>
+		<div class="row">
+			<?php echo $form->labelEx($Provenance,'cost'); ?>
+			<?php echo $form->textField($Provenance,'cost'); ?>
+			<?php echo $form->error($Provenance,'cost'); ?>
+		</div>
+		<div class="row">
+			<?php echo $form->labelEx($Provenance,'legalStatus'); ?>
+			<?php echo $form->dropDownList($Provenance,
+				'legalStatus',
+				array('public property' => 'Propriedade pública', 'scheduled property' => 'Propriedade prevista',
+						'registered property' => 'Propriedade registada', 'national treasure' => 'Tesouro Nacional'),
+				array('empty'=>'Escolha o estatuto jurídico do peça'));?>
+			<?php echo $form->error($Provenance,'legalStatus'); ?>
+		</div>
+		<div class="row">
+			<!-- TODO 1:N -->
+			<?php echo CHtml::label('Modos de transferência', 'ddlTransferModes') ?>
+			<?php echo CHtml::dropDownList('ddlTransferModes', 
+					array(),
+					array('commission' => 'Comissão', 'collection of artist' => 'Colecção de artista', 'original owner' => 'Dono original', 
+							'bequest' => 'Herança', 'gift' => 'Doação', 'purchase' => 'Compra',
+							'exchange' => 'Troca', 'theft' => 'Roubo', 'confiscated' => 'Confiscado', 
+							'transfer' => 'Transferência', 'field collected' => 'Recolhido no campo', 'long-term loan' => 'Empréstimo a longo prazo',
+							'lost' => 'Perdido', 'stolen' => 'Roubado', 'destroyed' => 'Destruído',
+							'auction' => 'Leilão', 'looted' => 'Saqueado', 'leased' => 'Arrendado',
+							'rented' => 'Alugado', 'unknown' => 'Desconhecido'),
+					array('empty' => 'Escolha o modo de transferência se aplicável...')); ?>
+		</div>
+		<div class="row">
+			<?php echo $form->labelEx($Provenance,'Owner'); ?>
+			<?php echo $form->dropDownList($Provenance,'Owner',
+					CHtml::listData(Owners::model()->findAll(array('order' => 'owner')), 'id_owner', 'owner'),
+					array('empty'=>'Escolha o dono da peça na altura da transferência se aplicável...')); ?>
+			<?php echo $form->error($Provenance,'Owner'); ?>
+		</div>
+		<div class="row">
+			<?php echo CHtml::label('Data de posse', 'ownershipDate') ?>
+			<?php echo $form->textField($OwnershipDates,'ownershipDate',array('size'=>31,'maxlength'=>31)); ?>
+			<?php echo $form->error($OwnershipDates,'ownershipDate'); ?>
+		</div>
+		<div class="row">
+			<?php echo $form->labelEx($OwnershipDates,'earliestDate'); ?>
+			<?php 
+			$this->widget('ext.combobox.EJuiComboBox', array(
+					'model' => $OwnershipDates,
+					'attribute' => 'earliestDate',
+					// data to populate the select. Must be an array.
+					'data' => CHtml::listData(EarliestDates::model()->findAll(array('order' => 'earliestDate')), 'id_earliestDate', 'earliestDate'),
+					// options passed to plugin
+					'options' => array(
+							// If false, field value must be present in the select.
+							// Defaults to true.
+							'allowText' => false,
+					),
+					// Options passed to the text input
+					'htmlOptions' => array('size' => 10),
+			));
+			?>
+		</div>
+	
+		<div class="row">
+			<?php echo $form->labelEx($OwnershipDates,'latestDate'); ?>
+			<?php 
+			$this->widget('ext.combobox.EJuiComboBox', array(
+					'model' => $OwnershipDates,
+					'attribute' => 'latestDate',
+					// data to populate the select. Must be an array.
+					'data' => CHtml::listData(LatestDates::model()->findAll(array('order' => 'latestDate')), 'id_latestDate', 'latestDate'),
+					// options passed to plugin
+					'options' => array(
+							// If false, field value must be present in the select.
+							// Defaults to true.
+							'allowText' => false,
+					),
+					// Options passed to the text input
+					'htmlOptions' => array('size' => 10),
+			));
+			?>
+		</div>
+		<div class="row">
+			<?php echo $form->labelEx($Provenance,'OwnershipPlace'); ?>
+			<?php echo $form->dropDownList($Provenance,'OwnershipPlace',
+					CHtml::listData(OwnershipPlaces::model()->findAll(array('order' => 'ownershipPlace')), 'id_ownershipPlaces', 'ownershipPlace'),
+					array('empty'=>'Escolha o lugar onde a peça estava abrigada se aplicável...')); ?>
+			<?php echo $form->error($Provenance,'OwnershipPlace'); ?>
 		</div>
 	</div>
 

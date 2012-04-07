@@ -74,13 +74,13 @@ class Provenance extends CActiveRecord
 	{
 		return array(
 			'id_provenance' => 'Id Provenance',
-			'provenanceDescription' => 'Provenance Description',
-			'cost' => 'Cost',
-			'legalStatus' => 'Legal Status',
+			'provenanceDescription' => 'Descrição da proveniência',
+			'cost' => 'Custo',
+			'legalStatus' => 'Estatuto jurídico',
 			'Object_Work_Record' => 'Object Work Record',
-			'Owner' => 'Owner',
-			'ownershipDate' => 'Ownership Date',
-			'OwnershipPlace' => 'Ownership Place',
+			'Owner' => 'Dono',
+			'ownershipDate' => 'Data de posse',
+			'OwnershipPlace' => 'Lugar de posse',
 		);
 	}
 

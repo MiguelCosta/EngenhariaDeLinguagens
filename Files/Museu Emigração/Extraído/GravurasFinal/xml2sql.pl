@@ -70,7 +70,7 @@ while(exists($data->{cdwalite}->[$ix])){
 	
 	print F $insert; 
 	print F "/* Tabela Object_Work_Types_Object_Work_Records */";
-	print F "\nINSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,$i);";
+	print F "\nINSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,$i);";
 
 	print F "\n/* Tabela Object_Work_Titles */";
 	print F "\nINSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 

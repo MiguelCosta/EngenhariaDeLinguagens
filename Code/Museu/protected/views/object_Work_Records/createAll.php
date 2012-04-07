@@ -20,5 +20,7 @@ $this->menu=array(
 												'MeasurementsII'=>$MeasurementsII,
 												'ExtentMaterialsTech'=>$ExtentMaterialsTech,
 												'IndexingDates'=>$IndexingDates,
-												'CreationPlaces'=>$CreationPlaces)); ?>
+												'CreationPlaces'=>$CreationPlaces,
+												'Provenance'=>$Provenance,
+												'OwnershipDates'=>$OwnershipDates)); ?>
 
