@@ -101,6 +101,7 @@ class Object_Work_Records extends CActiveRecord
 				'locations'=>'Locais',
 				'descriptiveNotes' => 'Descrições',
 				'relatedWorks'=>'Peças/Obras/Trabalhos Relacionados',
+				'indexingCreators' => 'Criadores',
 		);
 	}
 

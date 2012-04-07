@@ -35,15 +35,15 @@ $this->widget('zii.widgets.jui.CJuiSlider', array(
 				'slide'=>'js:
 				function(event,ui){
 				$(".image").width(800*ui.value/100);
-				$("#zoom").text(ui.value+"%");
+				$(".zoom").text(ui.value+"%");
 }',
 		),
 		'htmlOptions'=>array(
-				'style'=>'width:100%; float:left;'
+				'style'=>'width:650px; float:left; margin-bottom:2px;'
 		),
 ));
 ?>
-
+<div class="zoom" style="float: right;"></div>
 <?php
 $this->widget('ext.ETooltip.ETooltip', array("selector"=>"#yw2 img[title]",
 		"tooltip"=>array(
