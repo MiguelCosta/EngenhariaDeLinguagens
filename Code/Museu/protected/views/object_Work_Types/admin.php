@@ -1,12 +1,12 @@
 <?php
 $this->breadcrumbs=array(
-	'Object  Work  Types'=>array('index'),
-	'Manage',
+	'Tipos de Peça'=>array('index'),
+	'Administração',
 );
 
 $this->menu=array(
-	array('label'=>'List Object_Work_Types', 'url'=>array('index')),
-	array('label'=>'Create Object_Work_Types', 'url'=>array('create')),
+	array('label'=>'Índice', 'url'=>array('index')),
+	array('label'=>'Criar', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -23,7 +23,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Object  Work  Types</h1>
+<h1>Administração Tipos de Peça</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>

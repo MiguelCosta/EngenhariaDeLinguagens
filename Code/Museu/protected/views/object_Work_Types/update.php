@@ -1,18 +1,22 @@
 <?php
 $this->breadcrumbs=array(
-	'Object  Work  Types'=>array('index'),
-	$model->id_type=>array('view','id'=>$model->id_type),
-	'Update',
+		'Tipos de Peça'=>array('index'),
+		$model->id_type=>array('view','id'=>$model->id_type),
+		'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Object_Work_Types', 'url'=>array('index')),
-	array('label'=>'Create Object_Work_Types', 'url'=>array('create')),
-	array('label'=>'View Object_Work_Types', 'url'=>array('view', 'id'=>$model->id_type)),
-	array('label'=>'Manage Object_Work_Types', 'url'=>array('admin')),
+		array('label'=>'Ver', 'url'=>array('view', 'id'=>$model->id_type)),
+		array('label'=>'Listar', 'url'=>array('index')),
+		array('label'=>'Criar', 'url'=>array('create')),
+		array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Object_Work_Types <?php echo $model->id_type; ?></h1>
+<h1>
+	Actualizar Tipo de Peça:
+	<?php echo $model->type; ?>
+	<?php echo '('.$model->id_type.')'; ?>
+</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

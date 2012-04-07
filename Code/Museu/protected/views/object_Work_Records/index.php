@@ -10,7 +10,7 @@ $this->menu=array(
 );
 ?>
 
-<h1>Object Work Records</h1>
+<h1>Peças do Museu</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 		'dataProvider'=>$dataProvider,
@@ -26,6 +26,5 @@ $this->menu=array(
 				'displayMaterialsTech',
 				'RecordType',
 				'object_Work_Titles'
-
 		),
 )); ?>

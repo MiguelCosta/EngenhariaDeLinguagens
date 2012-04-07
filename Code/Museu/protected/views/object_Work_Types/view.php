@@ -1,26 +1,47 @@
 <?php
 $this->breadcrumbs=array(
-	'Object  Work  Types'=>array('index'),
-	$model->id_type,
+		'Tipos de Peça'=>array('index'),
+		$model->id_type,
 );
 
 $this->menu=array(
-	array('label'=>'List Object_Work_Types', 'url'=>array('index')),
-	array('label'=>'Create Object_Work_Types', 'url'=>array('create')),
-	array('label'=>'Update Object_Work_Types', 'url'=>array('update', 'id'=>$model->id_type)),
-	array('label'=>'Delete Object_Work_Types', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_type),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Object_Work_Types', 'url'=>array('admin')),
+		array('label'=>'Listar', 'url'=>array('index')),
+		array('label'=>'Criar', 'url'=>array('create')),
+		array('label'=>'Actualizar', 'url'=>array('update', 'id'=>$model->id_type)),
+		array('label'=>'Eliminar', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_type),'confirm'=>'Are you sure you want to delete this item?')),
+		array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View Object_Work_Types #<?php echo $model->id_type; ?></h1>
+<h1>
+	Tipo de peças:
+	<?php echo $model->type; ?>
+	<?php echo '('.$model->id_type.')'; ?>
+</h1>
 
+<br />
+<h2>Detalhes:</h2>
 <?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id_type',
-		'type',
-		'termsource',
-		'termsourceID',
-	),
+		'data'=>$model,
+		'attributes'=>array(
+				'id_type',
+				'type',
+				'termsource',
+				'termsourceID',
+		),
 )); ?>
+
+<br />
+<br />
+<h2>Peças relacionadas:</h2>
+<?php 
+$objects = $model->object_Work_Records;
+
+$dataProvider2 = new CArrayDataProvider($objects, array('keyField'=>'id_object_Work_Records'));
+$dataProvider2->pagination->pageSize=5;
+
+$this->widget('zii.widgets.CListView', array(
+		'dataProvider'=>$dataProvider2,
+		'itemView'=>'/object_Work_Records/_view',
+));
+?>

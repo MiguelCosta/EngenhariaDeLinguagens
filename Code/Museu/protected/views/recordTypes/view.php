@@ -36,6 +36,7 @@ $this->widget('zii.widgets.CDetailView', array(
 $objects = Object_Work_Records::model()->findAllByAttributes(array('RecordType'=>$model->id_recordTypes));
 
 $dataProvider2 = new CArrayDataProvider($objects, array('keyField'=>'id_object_Work_Records'));
+$dataProvider2->pagination->pageSize=5;
 
 $this->widget('zii.widgets.CListView', array(
 		'dataProvider'=>$dataProvider2,

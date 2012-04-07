@@ -102,6 +102,7 @@ class Object_Work_Records extends CActiveRecord
 				'descriptiveNotes' => 'Descrições',
 				'relatedWorks'=>'Peças/Obras/Trabalhos Relacionados',
 				'indexingCreators' => 'Criadores',
+				'object_Work_Types' => 'Tipo de Peça',
 		);
 	}
 
@@ -274,7 +275,7 @@ class Object_Work_Records extends CActiveRecord
 
 			// caso nao tenha descricao
 			$r = 'resourceViewDescription';
-			isset($tmp_arr[$r]) ? $img_desc = $tmp_arr[$r] : $img_desc = ""; 
+			isset($tmp_arr[$r]) ? $img_desc = $tmp_arr[$r] : $img_desc = "";
 
 			$img = CHtml::image($img_path, $img_desc, array('class'=>'image', 'width'=>200, 'title'=>$img_desc));
 			$tmp = CHtml::link($img, $img_path);
@@ -354,6 +355,27 @@ class Object_Work_Records extends CActiveRecord
 				$tmp = CHtml::link($elem_elem['labelRelatedWorks'], array('/LabelRelatedWork/'.$elem_elem['id_labelRelatedWork']));
 				array_push($result_arr, $tmp);
 			}
+		}
+		$result .=  implode("<br/>", $result_arr);
+		return $result;
+	}
+
+	public function getObject_Work_Types(){
+		$result = array();
+		foreach ($this->object_Work_Types as $object_Work_Types){
+			array_push($result, $object_Work_Types->getObject_Work_Types());
+		}
+		return $result;
+	}
+
+	public function getObject_Work_Types_view(){
+		$result = '';
+		$result_arr = array();
+		$arr = $this->getObject_Work_Types();
+
+		foreach ($arr as $elem){
+			$tmp = CHtml::link($elem['type'], array('/object_Work_Types/'.$elem['id_type']));
+			array_push($result_arr, $tmp);
 		}
 		$result .=  implode("<br/>", $result_arr);
 		return $result;

@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Object  Work  Types'=>array('index'),
-	'Create',
+	'Tipos de Peça'=>array('index'),
+	'Criar',
 );
 
 $this->menu=array(
-	array('label'=>'List Object_Work_Types', 'url'=>array('index')),
-	array('label'=>'Manage Object_Work_Types', 'url'=>array('admin')),
+	array('label'=>'Índice', 'url'=>array('index')),
+	array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Object_Work_Types</h1>
+<h1>Criar Tipo de Peça</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

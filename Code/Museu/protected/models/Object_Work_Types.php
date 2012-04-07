@@ -36,12 +36,12 @@ class Object_Work_Types extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('type', 'required'),
-			array('type', 'length', 'max'=>255),
-			array('termsource, termsourceID', 'length', 'max'=>63),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id_type, type, termsource, termsourceID', 'safe', 'on'=>'search'),
+				array('type', 'required'),
+				array('type', 'length', 'max'=>255),
+				array('termsource, termsourceID', 'length', 'max'=>63),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id_type, type, termsource, termsourceID', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -53,7 +53,7 @@ class Object_Work_Types extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'object_Work_Records' => array(self::MANY_MANY, 'ObjectWorkRecords', 'Object_Work_Types_Object_Work_Records(Object_Work_Type, Object_Work_Record)'),
+				'object_Work_Records' => array(self::MANY_MANY, 'Object_Work_Records', 'Object_Work_Types_Object_Work_Records(Object_Work_Type, Object_Work_Record)'),
 		);
 	}
 
@@ -63,10 +63,10 @@ class Object_Work_Types extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_type' => 'Id Type',
-			'type' => 'Tipo de peça',
-			'termsource' => 'Termsource',
-			'termsourceID' => 'Termsource',
+				'id_type' => 'Id Type',
+				'type' => 'Tipo de peça',
+				'termsource' => 'Termsource',
+				'termsourceID' => 'Termsource',
 		);
 	}
 
@@ -90,10 +90,10 @@ class Object_Work_Types extends CActiveRecord
 		$criteria->compare('termsourceID',$this->termsourceID,true);
 
 		return new CActiveDataProvider('Object_Work_Types', array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
 	}
-	
+
 	/**
 	 * Better support of MANY_TO_MANY relations
 	 */
@@ -101,4 +101,16 @@ class Object_Work_Types extends CActiveRecord
 		return array( 'CAdvancedArBehavior' => array(
 				'class' => 'application.extensions.CAdvancedArBehavior'));
 	}
+
+	/*********************************************************************************/
+	/********************************** My Functions *********************************/
+	/*********************************************************************************/
+
+	public function getObject_Work_Types(){
+		return array(
+				'id_type'=>$this->id_type,
+				'type'=>$this->type,
+		);
+	}
+
 }

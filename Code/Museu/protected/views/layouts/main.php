@@ -45,6 +45,12 @@
 								array('label'=>'Administração','url'=>array('/object_Work_Records/admin')),
 						),
 						),
+						array('label'=>'Tipos de Peça','url'=>array('/object_Work_Types/index'), 'items'=>array(
+								array('label'=>'Índice','url'=>array('/object_Work_Types/index')),
+								array('label'=>'Criar','url'=>array('/object_Work_Types/create')),
+								array('label'=>'Administração','url'=>array('/object_Work_Types/admin')),
+						),
+						),
 						array('label'=>'Tipos de Registo','url'=>array('/RecordTypes/index'), 'items'=>array(
 								array('label'=>'Índice','url'=>array('/RecordTypes/index')),
 								array('label'=>'Criar','url'=>array('/RecordTypes/create')),

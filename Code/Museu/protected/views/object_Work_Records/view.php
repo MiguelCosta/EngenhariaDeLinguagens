@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs = array(
-		'Object  Work  Records' => array('index'),
+		'Peças' => array('index'),
 		$model->id_object_Work_Records,
 );
 
@@ -57,9 +57,9 @@ $this->widget('ext.ETooltip.ETooltip', array("selector"=>"#yw2 img[title]",
 <?php
 
 //$c = $model->locations;
-$c = $model->getObjectWorkTitles_Text();
+//$c = $model->getObject_Work_Types_view();
 //print $c;
-//CVarDumper::dump($c, 5, true);
+//CVarDumper::dump($c, 2, true);
 
 $this->widget('zii.widgets.CDetailView', array(
 		'data' => $model,
@@ -74,6 +74,11 @@ $this->widget('zii.widgets.CDetailView', array(
 				array(
 						'name'=>'RecordType',
 						'value'=>$model->recordType->recordType,
+				),
+				array(
+						'name'=>'object_Work_Types',
+						'type'=>'html',
+						'value'=>$model->getObject_Work_Types_view(),
 				),
 				array(
 						'name'=>'object_Work_Titles',
