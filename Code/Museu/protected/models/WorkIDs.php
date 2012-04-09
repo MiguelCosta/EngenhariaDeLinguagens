@@ -65,8 +65,8 @@ class WorkIDs extends CActiveRecord
 	{
 		return array(
 			'id_workIDs' => 'Id Work Ids',
-			'workID' => 'Work',
-			'type' => 'Type',
+			'workID' => 'ID da obra',
+			'type' => 'Tipo',
 			'Location' => 'Location',
 		);
 	}

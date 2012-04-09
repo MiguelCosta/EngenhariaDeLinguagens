@@ -22,5 +22,11 @@ $this->menu=array(
 												'IndexingDates'=>$IndexingDates,
 												'CreationPlaces'=>$CreationPlaces,
 												'Provenance'=>$Provenance,
-												'OwnershipDates'=>$OwnershipDates)); ?>
+												'OwnershipDates'=>$OwnershipDates,
+												'WorkIDs'=>$WorkIDs,
+												'IndexingSubjects'=>$IndexingSubjects,
+												'SubjectTerms'=>$SubjectTerms,
+												'Classifications'=>$Classifications,
+												'DescriptiveNotes'=>$DescriptiveNotes,
+												'Inscriptions'=>$Inscriptions)); ?>
 

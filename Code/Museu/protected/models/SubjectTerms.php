@@ -65,8 +65,8 @@ class SubjectTerms extends CActiveRecord
 	{
 		return array(
 			'id_subjectTerms' => 'Id Subject Terms',
-			'subjectTerm' => 'Subject Term',
-			'type' => 'Type',
+			'subjectTerm' => 'Assunto (Termo)',
+			'type' => 'Tipo',
 			'termsource' => 'Termsource',
 			'termsourceID' => 'Termsource',
 		);
@@ -96,5 +96,13 @@ class SubjectTerms extends CActiveRecord
 		return new CActiveDataProvider('SubjectTerms', array(
 			'criteria'=>$criteria,
 		));
+	}
+	
+	/**
+	 * Better support of MANY_TO_MANY relations
+	 */
+	public function behaviors(){
+		return array( 'CAdvancedArBehavior' => array(
+				'class' => 'application.extensions.CAdvancedArBehavior'));
 	}
 }

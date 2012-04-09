@@ -35,7 +35,11 @@ use museu;
 
 /* Tabela LocationsName */
 		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('1', 'França', 'creationLocation');
-		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('2', 'Museu da Emigração e das Comunidades', 'currentRepository');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('2', 'Museu da Emigração e das Comunidades (Fafe, Portugal)', 'currentRepository');
+		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('3', 'lost');
+		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('4', 'destroyed');
+		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('5', 'location unkown');
+		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('6', 'private collection');
 		
 /* DATAS */
 INSERT INTO EarliestDates (id_earliestDate, earliestDate) VALUES ('1','1901');
@@ -268,7 +272,8 @@ INSERT INTO EarliestDates (id_earliestDate, earliestDate) VALUES ('114','2014');
 INSERT INTO LatestDates (id_latestDate, latestDate) VALUES ('114','2014');
 
 /* Table Classifications */
-INSERT INTO Classifications (id_classifications, classification) VALUEs ('1','Fotografia');
+INSERT INTO Classifications (id_classifications, classification) VALUEs ('1','photographs');
+INSERT INTO Classifications (id_classifications, classification) VALUEs ('2','prints and drawings');
 
 /* Table QualifierMeasurements */
 INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('approximate');

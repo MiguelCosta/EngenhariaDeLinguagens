@@ -22,6 +22,7 @@ my $ix_measure = 107;
 my $cont_dates = 157;
 my $cont_relW = 1;
 my $cont_resLink = 54;
+my $cont_loc = 107;
 
 while(exists($data->{cdwalite}->[$ix])){
 	# Separa os registos em diferentes ficheiros
@@ -127,8 +128,14 @@ while(exists($data->{cdwalite}->[$ix])){
 		$cont_dates++;
 	}
 
-	print F "/* Tabela LocationsName */\n";
-	print F "INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('$i', '2');\n";
+	print F "/* Tabela Locations*/\n";
+	print F "INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES ($cont_loc, $i, '2');\n";
+	print F "INSERT INTO WorkIDs (workID, type, Location) VALUES ($data->{cdwalite}->[$ix]->{administrativeMetadata}->{recordWrap}->{recordID}, 'objectId', $cont_loc);\n";
+	$cont_loc++;
+
+
+	print F "/* Tabela Object_Work_Records_Classifications*/\n";
+	print F "INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES ($i, '2');\n";
 
 
 	if ($desc->{descriptiveNoteWrap}->{descriptiveNoteSet}->{descriptiveNote}) {

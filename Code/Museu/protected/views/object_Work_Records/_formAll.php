@@ -148,7 +148,38 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 			<?php echo $form->error($IndexingDates,'dateQualifier'); ?>
 		</div>
 	</div>
+	
+	
+	<!-- Locations -->
+	<!-- TODO 1:N -->
+	<div class="row">
+		<?php echo CHtml::label('Localização/Repositório', 'ddlLName', array('required'=>true)) ?>
+		<?php echo CHtml::dropDownList('ddlLName', 
+				array(),
+				CHtml::listData(LocationsName::model()->findAll(array('order' => 'locationName')), 'id_locationsName', 'locationName'),
+				array('empty'=>'Escolha o nome do repositório...')); ?>
+		<p class="hint">O nome e localização geográfica do repositório que é responsável pela obra.</p>
+	</div>
+	<div class="group">
+		<div class="title">
+			<?php echo "Detalhes Localização/Repositório" ?>
+		</div>
+		<div class="row">
+			<?php echo CHtml::label('ID da obra', 'workID') ?>
+			<?php echo $form->textField($WorkIDs,'workID',array('size'=>31,'maxlength'=>31)); ?>
+			<?php echo $form->error($WorkIDs,'workID'); ?>
+		</div>
+		<div class="row">
+			<?php echo $form->labelEx($WorkIDs,'type'); ?>
+			<?php echo $form->dropDownList($WorkIDs,'type',
+					array('accession' => 'Número de acesso', 'shelfNumber' => 'Número de prateleira', 'objectId' => 'Id do objeto'),
+					array('empty' => 'Escolha o tipo do identificador se aplicável...')); ?>
+			<?php echo $form->error($WorkIDs,'type'); ?>
+		</div>
+	</div>
+	
 
+	<!-- CreationPlaces -->
 	<div class="group">
 		<div class="title">
 			<?php echo "Lugares de criação" ?>
@@ -168,6 +199,9 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 		</div>
 	</div>
 
+	
+	
+	<!-- RecordTypes -->
 	<div class="nrow">
 		<?php echo $form->labelEx($Object_Work_Records,'RecordType'); ?>
 		<?php echo $form->dropDownList($Object_Work_Records,
@@ -177,8 +211,9 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 		<?php echo $form->error($Object_Work_Records,'RecordType'); ?>
 	</div>
 
+	
 
-	<!-- Medidas -->
+	<!-- Measures -->
 	<div class="group">
 		<div class="title">
 			<?php echo "Medidas/Dimensões" ?>
@@ -251,7 +286,7 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 	</div>
 
 
-	<!-- Materiais -->
+	<!-- Materials -->
 	<div class="nrow">
 		<?php echo $form->labelEx($Object_Work_Records,'displayMaterialsTech'); ?>
 		<?php echo $form->textField($Object_Work_Records,'displayMaterialsTech',
@@ -293,6 +328,8 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 		</div>
 	</div>
 
+	
+	<!-- Styles -->
 	<div class="group">
 		<div class="title">
 			<?php echo "Estilos" ?>
@@ -422,6 +459,115 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 			<?php echo $form->error($Provenance,'OwnershipPlace'); ?>
 		</div>
 	</div>
+	
+	
+	<!-- Subjects -->
+	<div class="group">
+		<div class="title">
+			<?php echo "Assuntos" ?>
+		</div>
+		<!-- TODO 1:N -->
+		<div class="row">
+			<?php echo $form->labelEx($IndexingSubjects,'type'); ?>
+			<?php echo $form->dropDownList($IndexingSubjects,'type',
+				array('description' => 'Descrição', 'identification' => 'Identificação', 'interpretation' => 'Interpretação'),
+				array('empty'=>'Escolha a classificação dos assuntos se aplicável...')); ?>
+			<?php echo $form->error($IndexingSubjects,'type'); ?>
+			<p class="hint">Uma classificação do nível de descrição do assunto indicado pelos termos. 
+			Será utilizada quando for necessário distinguir entre uma descrição alheia ao significado do assunto (Descrição) 
+			e o significado iconográfico, narrativo, temático, ou simbólico do assunto (Identificação e Interpretação).</p>
+		</div>
+	
+		<div class="row">
+			<?php echo $form->labelEx($IndexingSubjects,'extentSubject'); ?>
+			<?php echo $form->dropDownList($IndexingSubjects,'extentSubject',
+				array('recto' => 'Reto', 'verso' => 'Verso', 'side A' => 'Lado A', 'side B' => 'Lado B',
+						'main panel' => 'Painel principal', 'predella' => 'Predela', 'general' => 'Geral',
+						'overall' => 'Global'),
+				array('empty'=>'Escolha o termo que identifica a parte da obra a que os assuntos se aplicam, se aplicável...')); ?>
+			<?php echo $form->error($IndexingSubjects,'extentSubject'); ?>
+			<p class="hint">Termo que indica a parte da obra à qual os assuntos (termos) se aplicam.</p>
+		</div>
+		<div class="row">
+		<!-- TODO 1:N -->
+			<?php echo CHtml::label('Assunto (Termo)', 'subjectTerm') ?>
+			<?php 
+				$this->widget('ext.combobox.EJuiComboBox', array(
+						'model' => $SubjectTerms,
+						'attribute' => 'subjectTerm',
+						// data to populate the select. Must be an array.
+						'data' => CHtml::listData(SubjectTerms::model()->findAll(array('order' => 'subjectTerm')), 'id_subjectTerms', 'subjectTerm'),
+						// options passed to plugin
+						'options' => array(
+								// If false, field value must be present in the select.
+								// Defaults to true.
+								'allowText' => false,
+						),
+						// Options passed to the text input
+						'htmlOptions' => array('size' => 40),
+				));
+			?>
+			<p class="hint">Termos que identificam, descrevem e/ou interpretam o que é retratado na e pela obra.</p>
+		</div>
+	</div>
+	
+	
+	<!-- Classifications -->
+	<div class="group">
+		<div class="title">
+			<?php echo "Classificações" ?>
+		</div>
+		<div class="row">
+		<!-- TODO 1:N -->
+			<?php echo CHtml::label('Classificação', 'classification') ?>
+			<?php 
+				$this->widget('ext.combobox.EJuiComboBox', array(
+						'model' => $Classifications,
+						'attribute' => 'classification',
+						// data to populate the select. Must be an array.
+						'data' => CHtml::listData(Classifications::model()->findAll(array('order' => 'classification')), 'id_classifications', 'classification'),
+						// options passed to plugin
+						'options' => array(
+								// If false, field value must be present in the select.
+								// Defaults to true.
+								'allowText' => false,
+						),
+						// Options passed to the text input
+						'htmlOptions' => array('size' => 30),
+				));
+			?>
+			<p class="hint">Agrupa uma obra com outras de características semelhantes.</p>
+		</div>
+	</div>
+	
+	
+	
+	<!-- DescriptiveNotes -->
+	<div class="group">
+		<div class="title">
+			<?php echo "Notas descritivas" ?>
+		</div>
+		<div class="row">
+			<?php echo $form->labelEx($DescriptiveNotes,'descriptiveNote'); ?>
+			<?php echo $form->textField($DescriptiveNotes,'descriptiveNote',array('size'=>60,'maxlength'=>511)); ?>
+			<?php echo $form->error($DescriptiveNotes,'descriptiveNote'); ?>
+		</div>
+	</div>
+
+	
+	
+	<!-- Inscriptions -->
+	<div class="group">
+		<div class="title">
+			<?php echo "Inscrições" ?>
+		</div>
+		<div class="row">
+			<?php echo CHtml::label('Inscrição', 'inscriptions') ?>
+		<?php echo $form->textArea($Inscriptions,'inscriptions',array('size'=>300,'maxlength'=>511, 'cols'=>80, 'rows'=>6)); ?>
+		<?php echo $form->error($Inscriptions,'inscriptions'); ?>
+		</div>
+	</div>
+	
 
 	<!-- Teste -->
 	<div class="nrow">

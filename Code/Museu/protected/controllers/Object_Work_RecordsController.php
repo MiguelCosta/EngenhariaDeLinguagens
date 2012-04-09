@@ -124,12 +124,16 @@ class Object_Work_RecordsController extends Controller
 // 				'validatedMembers' => $validatedMembers
 // 		));
 
-		$validMeasureI 	= 	false; // Temporario enquanto nao se tratar os casos 1:N
-		$validMeasureII = 	false; // Temporario enquanto nao se tratar os casos 1:N
-		$validEMaterial	= 	false;
-		$validCPlace	= 	false;
-		$validProvenance=	false;
-		$validOwnershipD=	false;
+		$validMeasureI 			= 	false; // Temporario enquanto nao se tratar os casos 1:N
+		$validMeasureII 		= 	false; // Temporario enquanto nao se tratar os casos 1:N
+		$validEMaterial			= 	false;
+		$validCPlace			= 	false;
+		$validProvenance		=	false;
+		$validOwnershipD		=	false;
+		$validSubject			=	false;
+		$validClassification	=	false;
+		$validDNotes			=	false;
+		$validInscriptions		=	false;
 		$owr 	=	new Object_Work_Records;
 		$owt 	=	new Object_Work_Titles;
 		$owtp 	=	new Object_Work_Types;
@@ -143,6 +147,13 @@ class Object_Work_RecordsController extends Controller
 		$p		= 	new Provenance;
 		$od		= 	new OwnershipDates;
 		$tm		=	new TransferModes;
+		$l		=	new Locations;
+		$wi		=	new WorkIDs;
+		$is		= 	new IndexingSubjects;
+		$st		=	new SubjectTerms;
+		$c		= 	new Classifications;
+		$dn		= 	new DescriptiveNotes;
+		$i		=	new Inscriptions;
 		
 		
  		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles'], $_POST['Object_Work_Types'], $_POST['IndexingDates']))
@@ -184,6 +195,30 @@ class Object_Work_RecordsController extends Controller
 	 			->from('LatestDates')
 	 			->where('latestDate=:date', array(':date'=>$id->latestDate))
 	 			->queryScalar();
+ 			
+ 			
+ 			// obtem os dados do form relativos aos Locations Se os dados relativos a LocationName tiverem sido preenchidos
+ 			if (isset($_POST['ddlLName']) && $_POST['ddlLName']!='') { // TODO 1:N
+ 				// chave estrangeira da IndexingMaterialsTech que referencia Object_Work_Records
+ 				$l->Object_Work_Record = $maxRecordNumber + 1;
+ 				// obtem o atributo LocationName
+ 				$l->LocationName = $_POST['ddlLName'];
+ 				
+ 				// obtem os dados relativos a WorkIDs
+ 				if (isset($_POST['WorkIDs'])) {
+ 					$wi->attributes = $_POST['WorkIDs'];
+ 					
+ 					// se o atribtuo workID estiver preenchido, o chave estrangeira é preenchida
+ 					if ($wi->workID != '') {
+ 						// obtem o id_type correspondente ao type obtido atraves do $owtp
+ 						$wi->Location = (Yii::app()->db->createCommand()
+				 			->select('max(id_locations) as max')
+				 			->from('Locations')
+				 			->queryScalar()) + 1;
+ 					}
+ 				}
+ 			}
+ 			
  			
  			// se os dados referentes a CreationPlaces tiverem sido definidos
  			if (isset($_POST['CreationPlaces'])) {
@@ -328,11 +363,78 @@ class Object_Work_RecordsController extends Controller
  						$validOwnershipD = $od->validate();
  					}
  					
-//  					if ($p->Owner=='') $p->Owner=NULL;
-//  					if ($p->OwnershipPlace=='') $p->OwnershipPlace=NULL;
- 					CVarDumper::dump($od,10,true);
  					// valida os models antes de guardar
  					$validProvenance=$p->validate();
+ 				}
+ 			}
+ 			
+ 			
+ 			// se os dados referentes a IndexingSubjects e a SubjectTerms tiverem sido definidos
+ 			if (isset($_POST['IndexingSubjects'], $_POST['SubjectTerms'])) {
+ 				// obtem os dados referentes a IndexingSubjects e a SubjectTerms
+ 				$is->attributes = $_POST['IndexingSubjects'];
+ 				$st->attributes = $_POST['SubjectTerms'];
+ 				// apenas vale a pena guardar se um termo tiver sido seleccionado
+ 				if ($st->subjectTerm != '') {
+ 					// obtem o model SubjectTerms de acordo com o que foi seleccionado no form
+ 					// TODO aqui é preciso ter atencao que se na tabela SubjectTerms existir mais que um registo com o mesmo atributo subjectTerm, o id que ira ser devolvido podera nao corresponder ao que se deseja. 
+	 				// TODO se tal facto se verificar, é necessario garantir, no _formAll, que, ao controller, chega algo que identifique univocamente um registo nessa tabela, ao inves de se usar $st->subjectTerm
+ 					$sTerm=SubjectTerms::model()->find('subjectTerm=:subjectTerm', array(':subjectTerm'=>$st->subjectTerm)); 
+ 					// preenche a tabela N:M IndexingSubjects_SubjectTerms
+ 					$sTerm->indexingSubjects = array((Yii::app()->db->createCommand()
+	 					->select('max(id_indexingSubjects) as max')
+	 					->from('IndexingSubjects')
+	 					->queryScalar()) + 1);
+ 					// chave estrangeira da IndexingSubjects que referencia Object_Work_Records
+ 					$is->Object_Work_Record = $maxRecordNumber + 1;
+ 					
+ 					$validSubject = $is->validate() && $sTerm->validate(); 
+ 				}
+ 			}
+ 			
+ 			
+ 			// se os dados referentes a Classifications tiverem sido definidos
+ 			if (isset($_POST['Classifications'])) {
+ 				// obtem os dados referentes a Classifications
+ 				$c->attributes = $_POST['Classifications']; // TODO 1:N
+ 				// apenas vale a pena guardar se um termo tiver sido seleccionado
+ 				if ($c->classification != '') {
+ 					// obtem o model Classifications de acordo com o que foi seleccionado no form
+ 					$classif=Classifications::model()->find('classification=:classification', array(':classification'=>$c->classification));
+ 					// preenche a tabela N:M Object_Work_Records_Classifications
+ 					$classif->object_Work_Records = array($maxRecordNumber + 1);
+ 			
+ 					$validClassification = $classif->validate();
+ 				}
+ 			}
+ 			
+ 			
+ 			// se os dados referentes a DescriptiveNotes tiverem sido definidos
+ 			if (isset($_POST['DescriptiveNotes'])) {
+ 				// obtem os dados do form relativos a DescriptiveNotes
+ 				$dn->attributes=$_POST['DescriptiveNotes']; // TODO 1:N
+ 			
+ 				if ($dn->descriptiveNote!='') {
+ 					// chave estrangeira da DescriptiveNotes que referencia Object_Work_Records
+ 					$dn->Object_Work_Record = $maxRecordNumber + 1;
+ 			
+ 					// valida os models antes de guardar
+ 					$validDNotes=$dn->validate();
+ 				}
+ 			}
+ 			
+ 			
+ 			// se os dados referentes a Inscriptions tiverem sido definidos
+ 			if (isset($_POST['Inscriptions'])) {
+ 				// obtem os dados do form relativos a Inscriptions
+ 				$i->attributes=$_POST['Inscriptions']; // TODO 1:N
+ 			
+ 				if ($i->inscriptions!='') {
+ 					// chave estrangeira da Inscriptions que referencia Object_Work_Records
+ 					$i->Object_Work_Record = $maxRecordNumber + 1;
+ 			
+ 					// valida os models antes de guardar
+ 					$validInscriptions=$i->validate();
  				}
  			}
  			
@@ -348,6 +450,11 @@ class Object_Work_RecordsController extends Controller
  				$owr->save(false);
  				$owt->save(false);
  				$id->save(false);
+ 				if (isset($_POST['ddlLName']) && $_POST['ddlLName']!='') {
+ 					$l->save();
+ 					if ($wi->workID != '')
+ 						$wi->save();
+ 				}
  				if ($validCPlace) {$cp->save(false);}
  				if ($validMeasureI || $validMeasureII) {$im->save();}
  				if ($validMeasureI) {$m->save(false);}
@@ -363,6 +470,16 @@ class Object_Work_RecordsController extends Controller
  					if (isset($_POST['ddlTransferModes']) && $_POST['ddlTransferModes'] != '')
  						$tm->save();
  				}
+ 				if ($validSubject) {
+ 					$is->save(false);
+ 					$sTerm->save(false);
+ 				}
+ 				if ($validClassification)
+ 					$classif->save(false);
+ 				if ($validDNotes)
+ 					$dn->save(false);
+ 				if ($validInscriptions)
+ 					$i->save(false);
  				// redirect to another page
  				$this->redirect(array('view','id'=>$owr->id_object_Work_Records));
  			}
@@ -378,7 +495,13 @@ class Object_Work_RecordsController extends Controller
  				'IndexingDates'=>$id,
  				'CreationPlaces'=>$cp,
  				'Provenance'=>$p,
- 				'OwnershipDates'=>$od
+ 				'OwnershipDates'=>$od,
+ 				'WorkIDs'=>$wi,
+ 				'IndexingSubjects'=>$is,
+ 				'SubjectTerms'=>$st,
+ 				'Classifications'=>$c,
+ 				'DescriptiveNotes'=>$dn,
+ 				'Inscriptions'=>$i
  		));
 	}
 

@@ -66,8 +66,8 @@ class IndexingSubjects extends CActiveRecord
 	{
 		return array(
 			'id_indexingSubjects' => 'Id Indexing Subjects',
-			'type' => 'Type',
-			'extentSubject' => 'Extent Subject',
+			'type' => 'Tipo',
+			'extentSubject' => 'Âmbito do Assunto',
 			'Object_Work_Record' => 'Object Work Record',
 		);
 	}
