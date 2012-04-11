@@ -19,7 +19,7 @@ class Object_Work_TitlesController extends Controller
 	public function filters()
 	{
 		return array(
-			'accessControl', // perform access control for CRUD operations
+				'accessControl', // perform access control for CRUD operations
 		);
 	}
 
@@ -31,21 +31,21 @@ class Object_Work_TitlesController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
+				array('allow',  // allow all users to perform 'index' and 'view' actions
+						'actions'=>array('index','view'),
+						'users'=>array('*'),
+				),
+				array('allow', // allow authenticated user to perform 'create' and 'update' actions
+						'actions'=>array('create','update', 'attributeNew', 'attributeExists'),
+						'users'=>array('@'),
+				),
+				array('allow', // allow admin user to perform 'admin' and 'delete' actions
+						'actions'=>array('admin','delete'),
+						'users'=>array('admin'),
+				),
+				array('deny',  // deny all users
+						'users'=>array('*'),
+				),
 		);
 	}
 
@@ -55,7 +55,7 @@ class Object_Work_TitlesController extends Controller
 	public function actionView()
 	{
 		$this->render('view',array(
-			'model'=>$this->loadModel(),
+				'model'=>$this->loadModel(),
 		));
 	}
 
@@ -78,7 +78,7 @@ class Object_Work_TitlesController extends Controller
 		}
 
 		$this->render('create',array(
-			'model'=>$model,
+				'model'=>$model,
 		));
 	}
 
@@ -101,7 +101,7 @@ class Object_Work_TitlesController extends Controller
 		}
 
 		$this->render('update',array(
-			'model'=>$model,
+				'model'=>$model,
 		));
 	}
 
@@ -131,7 +131,7 @@ class Object_Work_TitlesController extends Controller
 	{
 		$dataProvider=new CActiveDataProvider('Object_Work_Titles');
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+				'dataProvider'=>$dataProvider,
 		));
 	}
 
@@ -146,7 +146,7 @@ class Object_Work_TitlesController extends Controller
 			$model->attributes=$_GET['Object_Work_Titles'];
 
 		$this->render('admin',array(
-			'model'=>$model,
+				'model'=>$model,
 		));
 	}
 
@@ -178,4 +178,61 @@ class Object_Work_TitlesController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	public function actionAttributeNew()
+	{
+		$model	=	new Object_Work_Titles;
+		$owr 	=	1;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Object_Work_Titles']))
+		{
+			$model->attributes=$_POST['Object_Work_Titles'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id_object_Work_Titles));
+		}
+
+		if(isset($_GET['Object_Work_Records']))
+		{
+			$owr = $_GET['Object_Work_Records'];
+		}
+
+
+
+		$this->render('attributeNew',array(
+				'model'=>$model,
+				'Object_Work_Records'=>$owr,
+		));
+	}
+	
+	public function actionAttributeExists()
+	{
+		$model	=	new Object_Work_Titles;
+		$owr 	=	1;
+	
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+	
+		if(isset($_POST['Object_Work_Titles']))
+		{
+			$model->attributes=$_POST['Object_Work_Titles'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id_object_Work_Titles));
+		}
+	
+		if(isset($_GET['Object_Work_Records']))
+		{
+			$owr = $_GET['Object_Work_Records'];
+		}
+	
+	
+	
+		$this->render('attributeExists',array(
+				'model'=>$model,
+				'Object_Work_Records'=>$owr,
+		));
+	}
+
 }
