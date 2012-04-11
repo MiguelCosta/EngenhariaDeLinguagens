@@ -39,19 +39,16 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 		<?php echo $form->textField($Object_Work_Titles,'title',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($Object_Work_Titles,'title'); ?>
 	</div>
-
 	<div class="group">
 		<div class="title">
 			<?php echo "Detalhes Título" ?>
 		</div>
-
 		<div class="row">
 			<?php echo $form->labelEx($Object_Work_Titles,'pref'); ?>
 			<?php echo $form->dropDownList($Object_Work_Titles,'pref',array('preferred' => 'Preferido', 
 					'alternate' => 'Alternativo'), array('empty' => 'Escolha a preferência se aplicável...')); ?>
 			<?php echo $form->error($Object_Work_Titles,'pref'); ?>
 		</div>
-
 		<div class="row">
 			<?php echo $form->labelEx($Object_Work_Titles,'type'); ?>
 			<?php echo $form->dropDownList($Object_Work_Titles,'type',array('inscribed' => 'Inscrito', 
@@ -60,7 +57,6 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 					array('empty' => 'Escolha o tipo se aplicável...')); ?>
 			<?php echo $form->error($Object_Work_Titles,'type'); ?>
 		</div>
-
 		<div class="row">
 			<?php echo $form->labelEx($Object_Work_Titles,'lang'); ?>
 			<?php echo $form->dropDownList($Object_Work_Titles,'lang', array('Portuguese' => 'Português', 
@@ -68,7 +64,6 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 					array('empty' => 'Escolha a língua se aplicável...')); ?>
 			<?php echo $form->error($Object_Work_Titles,'lang'); ?>
 		</div>
-
 		<div class="row">
 			<?php echo $form->hiddenField($Object_Work_Titles,'Object_Work_Record',array('value'=>1)); ?>
 		</div>
@@ -90,8 +85,7 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 		<?php echo $form->textField($Object_Work_Records,'displayCreationDate',array('size'=>60,'maxlength'=>511)); ?>
 		<?php echo $form->error($Object_Work_Records,'displayCreationDate'); ?>
 	</div>
-
-	<div class="nrow">
+	<div class="row">
 		<?php echo $form->labelEx($IndexingDates,'earliestDate'); ?>
 		<?php 
 		$this->widget('ext.combobox.EJuiComboBox', array(
@@ -111,7 +105,6 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 		?>
 		<?php echo $form->error($IndexingDates,'earliestDate'); ?>
 	</div>
-
 	<div class="row">
 		<?php echo $form->labelEx($IndexingDates,'latestDate'); ?>
 		<?php 
@@ -132,7 +125,6 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 		?>
 		<?php echo $form->error($IndexingDates,'latestDate'); ?>
 	</div>
-
 	<div class="group">
 		<div class="title">
 			<?php echo "Detalhes Datas" ?>
@@ -223,14 +215,12 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 			<?php echo $form->textField($Object_Work_Records,'displayMeasurements',array('size'=>60,'maxlength'=>511)); ?>
 			<?php echo $form->error($Object_Work_Records,'displayMeasurements'); ?>
 		</div>
-
 		<!-- TEMP: 1º grupo de medidas -->
 		<div class="row">
 			<?php echo $form->labelEx($Measurements,'[1]value'); ?>
 			<?php echo $form->textField($Measurements,'[1]value'); ?>
 			<?php echo $form->error($Measurements,'[1]value'); ?>
 		</div>
-
 		<div class="row">
 			<?php echo $form->labelEx($Measurements,'[1]unit'); ?>
 			<?php echo $form->dropDownList($Measurements,'[1]unit',
@@ -239,7 +229,6 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 					array('empty' => 'Escolha a unidade se aplicável...')); ?>
 			<?php echo $form->error($Measurements,'[1]unit'); ?>
 		</div>
-
 		<div class="row">
 			<?php echo $form->labelEx($Measurements,'[1]type'); ?>
 			<?php echo $form->dropDownList($Measurements,'[1]type',
@@ -256,7 +245,6 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 			<?php echo $form->textField($Measurements,'[2]value'); ?>
 			<?php echo $form->error($Measurements,'[2]value'); ?>
 		</div>
-
 		<div class="row">
 			<?php echo $form->labelEx($Measurements,'[2]unit'); ?>
 			<?php echo $form->dropDownList($Measurements,'[2]unit',
@@ -265,7 +253,6 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 					array('empty' => 'Escolha a unidade se aplicável...')); ?>
 			<?php echo $form->error($Measurements,'[2]unit'); ?>
 		</div>
-
 		<div class="row">
 			<?php echo $form->labelEx($Measurements,'[2]type'); ?>
 			<?php echo $form->dropDownList($Measurements,'[2]type',
@@ -275,7 +262,6 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 					array('empty' => 'Escolha o tipo da medida se aplicável...')); ?>
 			<?php echo $form->error($Measurements,'[2]type'); ?>
 		</div>
-
 		<div class="row">
 			<?php echo CHtml::label('Natureza da medida', 'ddlQualifierM') ?>
 			<?php echo CHtml::dropDownList('ddlQualifierM', 
@@ -293,12 +279,10 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 				array('size'=>60,'maxlength'=>511)); ?>
 		<?php echo $form->error($Object_Work_Records,'displayMaterialsTech'); ?>
 	</div>
-
 	<div class="group">
 		<div class="title">
 			<?php echo "Detalhes Materiais e Técnicas" ?>
 		</div>
-
 		<!-- TODO: falta 1:N -->
 		<div class="row">
 			<?php echo CHtml::label('Termo de indexação', 'ddlTermMT') ?>
@@ -307,7 +291,6 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 					CHtml::listData(TermMaterialsTech::model()->findAll(array('order' => 'termMaterialsTech')), 'id_termMaterialsTech', 'termMaterialsTech'),
 					array('empty'=>'Escolha o termo de indexação se aplicável...')); ?>
 		</div>
-
 		<div class="row">
 			<?php echo CHtml::label('Papel', 'ddlTypeMT') ?>
 			<?php echo CHtml::dropDownList('ddlTypeMT', 
@@ -317,7 +300,6 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 					array('empty' => 'Escolha o papel do material/técnica se aplicável...')); ?>
 			<p class="hint">Distingue o papel do material/técnica.</p>
 		</div>
-
 		<div class="row">
 			<?php echo CHtml::label('Explicação', 'extentMaterialsTech') ?>
 			<?php echo $form->textField($ExtentMaterialsTech,'extentMaterialsTech',
@@ -431,7 +413,6 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 			));
 			?>
 		</div>
-	
 		<div class="row">
 			<?php echo $form->labelEx($OwnershipDates,'latestDate'); ?>
 			<?php 
@@ -565,6 +546,107 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 			<?php echo CHtml::label('Inscrição', 'inscriptions') ?>
 		<?php echo $form->textArea($Inscriptions,'inscriptions',array('size'=>300,'maxlength'=>511, 'cols'=>80, 'rows'=>6)); ?>
 		<?php echo $form->error($Inscriptions,'inscriptions'); ?>
+		</div>
+	</div>
+	
+	
+	<!-- RelatedWorks -->
+	<div class="group">
+		<div class="title">
+			<?php echo "Obras relacionadas" ?>
+		</div>
+		<!-- TODO 1:N -->
+		<div class="row">
+			<?php echo CHtml::label('Tipo de relação', 'ddlRelType') ?>
+			<?php echo CHtml::dropDownList('ddlRelType', 
+					array(),
+					array('related to' => 'Relacionado com', 'part of' => 'Parte de', 
+							'model of' => 'Modelo de', 'model for' => 'Modelo para', 'study of' => 'Estudo de',
+							'study for' => 'Estudo para', 'copy of' => 'Cópia de', 
+							'published' => 'Publicado')); ?>
+			<p class="hint">Termo que descreve a natureza do relacionamento entre a obra e a entidade relacionada.</p>
+		</div>
+		<div class="row">
+			<!-- TODO 1:N -->
+			<?php echo CHtml::label('Referência url', 'linkRelatedWork') ?>
+			<?php echo $form->textField($LinksRelatedWork,'linkRelatedWork',array('size'=>60,'maxlength'=>2048)); ?>
+			<?php echo $form->error($LinksRelatedWork,'linkRelatedWork'); ?>
+			<p class="hint">Uma referência uri/url que é universal e no ambiente <i>worldwide web</i>.</p>
+		</div>
+		<div class="row">
+			<!-- TODO 1:N -->
+			<?php echo CHtml::label('Identificação da obra relacionada', 'labelRelatedWork') ?>
+			<?php echo $form->textField($LabelRelatedWork,'labelRelatedWork',array('size'=>60,'maxlength'=>511)); ?>
+			<?php echo $form->error($LabelRelatedWork,'labelRelatedWork'); ?>
+			<p class="hint">Uma identificação da obra, grupo, coleção ou série relacionada que terá significado para o utilizador final,
+			incluindo toda ou alguma da seguinte informação: título, criador, tipo da obra e data de criação.</p>
+		</div>
+		<!-- TODO 1:N -->
+		<div class="row">
+			<?php echo CHtml::label('Localização atual da obra relacionada', 'locationRelatedWork') ?>
+			<?php echo $form->textField($LocationsRelatedWork,'locationRelatedWork',array('size'=>60,'maxlength'=>511)); ?>
+			<?php echo $form->error($LocationsRelatedWork,'locationRelatedWork'); ?>
+		</div>
+		<div class="row">
+			<?php echo CHtml::label('Identificador da obra relacionada no repositório', 'relWorkID') ?>
+			<?php echo $form->textField($LocationsRelatedWork,'relWorkID',array('size'=>31,'maxlength'=>31)); ?>
+			<?php echo $form->error($LocationsRelatedWork,'relWorkID'); ?>
+		</div>
+		<div class="row">
+			<?php echo CHtml::label('Identificador do repositório', 'locID') ?>
+			<?php echo $form->textField($LocationsRelatedWork,'locID',array('size'=>31,'maxlength'=>31)); ?>
+			<?php echo $form->error($LocationsRelatedWork,'locID'); ?>
+		</div>
+	</div>
+
+	
+	<!-- Resources -->
+	<div class="group">
+		<!-- TODO 1:N -->
+		<div class="title">
+			<?php echo "Recursos" ?>
+		</div>
+		<div class="row">
+			<!-- TODO 1:N -->
+			<?php echo CHtml::label('Referência url', 'linkResource') ?>
+			<?php echo $form->textField($LinkResources,'linkResource',array('size'=>60,'maxlength'=>2000)); ?>
+			<?php echo $form->error($LinkResources,'linkResource'); ?>
+			<p class="hint">Uma referência uri/url que é universal e no ambiente <i>worldwide web</i>.</p>
+		</div>
+		<div class="row">
+			<?php echo CHtml::label('Tipo de relação', 'ddlRelType') ?>
+			<?php echo CHtml::dropDownList('ddlRelType', 
+					array(),
+					array('related to' => 'Relacionado com', 'part of' => 'Parte de', 
+							'model of' => 'Modelo de', 'model for' => 'Modelo para', 'study of' => 'Estudo de',
+							'study for' => 'Estudo para', 'copy of' => 'Cópia de', 
+							'published' => 'Publicado')); ?>
+			<p class="hint">Termo que descreve a natureza do relacionamento entre a obra e a entidade relacionada.</p>
+		</div>
+		
+		<div class="row">
+			<!-- TODO 1:N -->
+			<?php echo CHtml::label('Identificação da obra relacionada', 'labelRelatedWork') ?>
+			<?php echo $form->textField($LabelRelatedWork,'labelRelatedWork',array('size'=>60,'maxlength'=>511)); ?>
+			<?php echo $form->error($LabelRelatedWork,'labelRelatedWork'); ?>
+			<p class="hint">Uma identificação da obra, grupo, coleção ou série relacionada que terá significado para o utilizador final,
+			incluindo toda ou alguma da seguinte informação: título, criador, tipo da obra e data de criação.</p>
+		</div>
+		<!-- TODO 1:N -->
+		<div class="row">
+			<?php echo CHtml::label('Localização atual da obra relacionada', 'locationRelatedWork') ?>
+			<?php echo $form->textField($LocationsRelatedWork,'locationRelatedWork',array('size'=>60,'maxlength'=>511)); ?>
+			<?php echo $form->error($LocationsRelatedWork,'locationRelatedWork'); ?>
+		</div>
+		<div class="row">
+			<?php echo CHtml::label('Identificador da obra relacionada no repositório', 'relWorkID') ?>
+			<?php echo $form->textField($LocationsRelatedWork,'relWorkID',array('size'=>31,'maxlength'=>31)); ?>
+			<?php echo $form->error($LocationsRelatedWork,'relWorkID'); ?>
+		</div>
+		<div class="row">
+			<?php echo CHtml::label('Identificador do repositório', 'locID') ?>
+			<?php echo $form->textField($LocationsRelatedWork,'locID',array('size'=>31,'maxlength'=>31)); ?>
+			<?php echo $form->error($LocationsRelatedWork,'locID'); ?>
 		</div>
 	</div>
 	

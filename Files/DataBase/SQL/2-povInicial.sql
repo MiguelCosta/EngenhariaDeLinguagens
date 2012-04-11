@@ -289,3 +289,12 @@ INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('at corners');
 INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('rounded');
 INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('framed');
 INSERT INTO QualifierMeasurements (qualifierMeasurement) VALUEs ('with base');
+
+/*  Table ResourceRelTypes	*/
+INSERT INTO ResourceRelTypes (resourceRelType) VALUES ('conservation image');
+INSERT INTO ResourceRelTypes (resourceRelType) VALUES ('documentary image');
+INSERT INTO ResourceRelTypes (resourceRelType) VALUES ('contextual image');
+INSERT INTO ResourceRelTypes (resourceRelType) VALUES ('historical image');
+INSERT INTO ResourceRelTypes (resourceRelType) VALUES ('reconstruction');
+INSERT INTO ResourceRelTypes (resourceRelType) VALUES ('installation image');
+INSERT INTO ResourceRelTypes (resourceRelType) VALUES ('historical view');

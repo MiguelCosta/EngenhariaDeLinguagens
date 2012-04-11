@@ -28,5 +28,8 @@ $this->menu=array(
 												'SubjectTerms'=>$SubjectTerms,
 												'Classifications'=>$Classifications,
 												'DescriptiveNotes'=>$DescriptiveNotes,
-												'Inscriptions'=>$Inscriptions)); ?>
+												'Inscriptions'=>$Inscriptions,
+												'LinksRelatedWork'=>$LinksRelatedWork,
+												'LabelRelatedWork'=>$LabelRelatedWork,
+												'LocationsRelatedWork'=>$LocationsRelatedWork)); ?>
 

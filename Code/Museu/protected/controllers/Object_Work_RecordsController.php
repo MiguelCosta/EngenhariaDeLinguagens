@@ -154,6 +154,12 @@ class Object_Work_RecordsController extends Controller
 		$c		= 	new Classifications;
 		$dn		= 	new DescriptiveNotes;
 		$i		=	new Inscriptions;
+		$rw		=	new RelatedWorks;
+		$lnkrw	=	new LinksRelatedWork;
+		$lblrw	=	new LabelRelatedWork;
+		$locrw	=	new LocationsRelatedWork;
+		$ri		= 	new RecordsID;
+		
 		
 		
  		if(isset($_POST['Object_Work_Records'], $_POST['Object_Work_Titles'], $_POST['Object_Work_Types'], $_POST['IndexingDates']))
@@ -196,6 +202,8 @@ class Object_Work_RecordsController extends Controller
 	 			->where('latestDate=:date', array(':date'=>$id->latestDate))
 	 			->queryScalar();
  			
+ 			$ri->recordID = $maxRecordNumber + 1;
+ 			$ri->Object_Work_Record = $maxRecordNumber + 1;
  			
  			// obtem os dados do form relativos aos Locations Se os dados relativos a LocationName tiverem sido preenchidos
  			if (isset($_POST['ddlLName']) && $_POST['ddlLName']!='') { // TODO 1:N
@@ -439,10 +447,49 @@ class Object_Work_RecordsController extends Controller
  			}
  			
  			
+ 			// se os dados referentes a RelatedWorks tiverem sido definidos
+ 			if (isset($_POST['LinksRelatedWork'], $_POST['LabelRelatedWork'],$_POST['LocationsRelatedWork'], $_POST['ddlRelType'])) {
+ 				// obtem os dados do form
+ 				$rw->relatedWorkRelType=$_POST['ddlRelType']; // TODO 1:N
+ 				$lnkrw->attributes=$_POST['LinksRelatedWork']; // TODO 1:N
+ 				$lblrw->attributes=$_POST['LabelRelatedWork']; // TODO 1:N
+ 				$locrw->attributes=$_POST['LocationsRelatedWork']; // TODO 1:N
+ 				
+ 				if ($lnkrw->linkRelatedWork != '' || $lblrw->labelRelatedWork != '' || $locrw->locationRelatedWork != '') {
+ 					// chave estrangeira da RelatedWorks que referencia Object_Work_Records
+ 					$rw->Object_Work_Record = $maxRecordNumber + 1;
+ 					
+	 				// vai buscar o ultimo id de RelatedWorks
+	 				$maxRWNumber = Yii::app()->db->createCommand()
+		 				->select('max(id_relatedWorks) as max')
+		 				->from('RelatedWorks')
+		 				->queryScalar();
+	 			
+	 				if ($lnkrw->linkRelatedWork != '') {
+	 					// chave estrangeira da LinksRelatedWork que referencia RelatedWorks
+	 					$lnkrw->RelatedWork = $maxRWNumber + 1;
+	 				}
+	 				if ($lblrw->labelRelatedWork != '') {
+	 					// chave estrangeira da LabelRelatedWork que referencia RelatedWorks
+	 					$lblrw->RelatedWork = $maxRWNumber + 1;
+	 				}
+	 				if ($locrw->locationRelatedWork != '') {
+	 					// chave estrangeira da LocationsRelatedWork que referencia RelatedWorks
+	 					$locrw->RelatedWork = $maxRWNumber + 1;
+	 				}
+ 				}
+ 			}
+ 			
+ 			
+ 			// TODO criar novo model ResourcesID e o ultimo id mais um sera a chave estrangeira na tabela Resources
+ 			
+ 			
+ 			
  			// valida os models antes de guardar
  			$valid=$owr->validate();
  			$valid=$owt->validate() && $valid;
  			$valid=$id->validate() && $valid;
+ 			$valid=$ri->validate() && $valid;
 	
  			if($valid)
  			{
@@ -450,6 +497,7 @@ class Object_Work_RecordsController extends Controller
  				$owr->save(false);
  				$owt->save(false);
  				$id->save(false);
+ 				$ri->save(false);
  				if (isset($_POST['ddlLName']) && $_POST['ddlLName']!='') {
  					$l->save();
  					if ($wi->workID != '')
@@ -480,6 +528,12 @@ class Object_Work_RecordsController extends Controller
  					$dn->save(false);
  				if ($validInscriptions)
  					$i->save(false);
+ 				if ($lnkrw->linkRelatedWork != '' || $lblrw->labelRelatedWork != '' || $locrw->locationRelatedWork != '') {
+ 					$rw->save(false);
+ 					if ($lnkrw->linkRelatedWork != '') $lnkrw->save(false);
+ 					if ($lblrw->labelRelatedWork != '') $lblrw->save(false);
+ 					if ($locrw->locationRelatedWork != '') $locrw->save(false);
+ 				}
  				// redirect to another page
  				$this->redirect(array('view','id'=>$owr->id_object_Work_Records));
  			}
@@ -501,7 +555,10 @@ class Object_Work_RecordsController extends Controller
  				'SubjectTerms'=>$st,
  				'Classifications'=>$c,
  				'DescriptiveNotes'=>$dn,
- 				'Inscriptions'=>$i
+ 				'Inscriptions'=>$i,
+				'LinksRelatedWork'=>$lnkrw,
+				'LabelRelatedWork'=>$lblrw,
+				'LocationsRelatedWork'=>$locrw
  		));
 	}
 
