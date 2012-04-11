@@ -31,5 +31,7 @@ $this->menu=array(
 												'Inscriptions'=>$Inscriptions,
 												'LinksRelatedWork'=>$LinksRelatedWork,
 												'LabelRelatedWork'=>$LabelRelatedWork,
-												'LocationsRelatedWork'=>$LocationsRelatedWork)); ?>
+												'LocationsRelatedWork'=>$LocationsRelatedWork,
+												'LinkResources'=>$LinkResources,
+												'ResourceViewDescriptions'=>$ResourceViewDescriptions)); ?>
 

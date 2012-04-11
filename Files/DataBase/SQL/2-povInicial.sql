@@ -298,3 +298,16 @@ INSERT INTO ResourceRelTypes (resourceRelType) VALUES ('historical image');
 INSERT INTO ResourceRelTypes (resourceRelType) VALUES ('reconstruction');
 INSERT INTO ResourceRelTypes (resourceRelType) VALUES ('installation image');
 INSERT INTO ResourceRelTypes (resourceRelType) VALUES ('historical view');
+
+
+/*  Table ResourceTypes	*/
+INSERT INTO ResourceTypes (resourceType) VALUES ('photograph');
+INSERT INTO ResourceTypes (resourceType) VALUES ('slide');
+INSERT INTO ResourceTypes (resourceType) VALUES ('videotape');
+INSERT INTO ResourceTypes (resourceType) VALUES ('X-ray photograph');
+INSERT INTO ResourceTypes (resourceType) VALUES ('negative');
+INSERT INTO ResourceTypes (resourceType) VALUES ('internegative');
+INSERT INTO ResourceTypes (resourceType) VALUES ('albumen print');
+INSERT INTO ResourceTypes (resourceType) VALUES ('digital image');
+INSERT INTO ResourceTypes (resourceType) VALUES ('duplicate slide');
+INSERT INTO ResourceTypes (resourceType) VALUES ('tactile representation');

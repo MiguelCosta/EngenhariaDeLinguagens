@@ -159,6 +159,10 @@ class Object_Work_RecordsController extends Controller
 		$lblrw	=	new LabelRelatedWork;
 		$locrw	=	new LocationsRelatedWork;
 		$ri		= 	new RecordsID;
+		$r		=	new Resources;
+		$rid	= 	new ResourcesID;
+		$lr		=	new LinkResources;
+		$rvd	=	new ResourceViewDescriptions;
 		
 		
 		
@@ -480,8 +484,58 @@ class Object_Work_RecordsController extends Controller
  				}
  			}
  			
- 			
- 			// TODO criar novo model ResourcesID e o ultimo id mais um sera a chave estrangeira na tabela Resources
+ 			// se os dados referentes a Resources tiverem sido definidos
+ 			if (isset($_POST['LinkResources'], $_POST['ddlResRelType'], $_POST['ddlResType'], $_POST['ResourceViewDescriptions'])) {
+ 				$lr->attributes = $_POST['LinkResources'];
+ 				$rvd->attributes = $_POST['ResourceViewDescriptions'];
+//  				if ($lr->image != '' || $_POST['ddlResRelType']!='' || $_POST['ddlResType']!='' || $rvd->resourceViewDescription!='') {
+ 					// chave estrangeira da Resources que referencia Object_Work_Records
+ 					$r->Object_Work_Record = $maxRecordNumber + 1;
+ 					
+ 					
+ 					$maxResNumber = Yii::app()->db->createCommand()
+	 					->select('max(id_resources) as max')
+	 					->from('Resources')
+	 					->queryScalar();
+ 					
+ 					// TODO mudar o preenchimento deste id
+ 					// chave estrangeira da tabela Resources que é a palavra img concatenada com o ultimo id da tabela Resources + 1
+//  					$r->ResourceID = 'img'.$maxResNumber+1;
+ 					// id da tabela ResourcesID que é a palavra img concatenada com o ultimo id da tabela Resources + 1
+//  					$rid->resourceID = 'img'.$maxResNumber+1;
+//   					CVarDumper::dump($lr,10,true);
+ 					// ---------- TESTE
+ 					$lr->image=CUploadedFile::getInstance($lr,'image');
+ 					$path = "fotos/".($maxResNumber+1);
+ 					$lr->linkResource=	$path;
+ 					
+ 					// -----------
+ 					
+//  					if ($lr->linkResource != ''){
+ 						$maxLRNumber = Yii::app()->db->createCommand()
+	 						->select('max(id_linkResources) as max')
+	 						->from('LinkResources')
+	 						->queryScalar();
+ 						$r->LinkResource = $maxLRNumber + 1;
+//  					}
+ 					
+ 					if ($_POST['ddlResRelType'] != ''){
+ 						$r->resourceRelTypes = array($_POST['ddlResRelType']);
+ 					}
+ 					
+ 					if ($_POST['ddlResType'] != ''){
+ 						$r->resourceTypes = array($_POST['ddlResType']);
+ 					}
+ 					
+ 					if ($rvd->resourceViewDescription != ''){
+ 						$maxRVDNumber = Yii::app()->db->createCommand()
+	 						->select('max(id_resourceViewDescriptions) as max')
+	 						->from('ResourceViewDescriptions')
+	 						->queryScalar();
+ 						$r->resourceViewDescription = $maxRVDNumber + 1;
+ 					}
+//  				}
+ 			}
  			
  			
  			
@@ -534,6 +588,19 @@ class Object_Work_RecordsController extends Controller
  					if ($lblrw->labelRelatedWork != '') $lblrw->save(false);
  					if ($locrw->locationRelatedWork != '') $locrw->save(false);
  				}
+//  				if ($lr->image != '' || $_POST['ddlResRelType']!='' || $_POST['ddlResType']!='' || $rvd->resourceViewDescription!='') {
+ 					// ------------- TESTE
+ 					$lr->save();
+ 					$lr->image->saveAs(Yii::app()->basePath."/../../../Files/Imagens/$lr->linkResource");
+ 					// -------------
+//  					if ($lr->linkResource != '') {
+//  						$lr->save(false);
+//  						//$lr->linkResource->saveAs(Yii::app()->basePath.'/coiso');
+//  					}
+ 					if ($rvd->resourceViewDescription != '') $rvd->save(false);
+//   					$rid->save(false);
+ 					$r->save(false);
+//  				}
  				// redirect to another page
  				$this->redirect(array('view','id'=>$owr->id_object_Work_Records));
  			}
@@ -558,7 +625,9 @@ class Object_Work_RecordsController extends Controller
  				'Inscriptions'=>$i,
 				'LinksRelatedWork'=>$lnkrw,
 				'LabelRelatedWork'=>$lblrw,
-				'LocationsRelatedWork'=>$locrw
+				'LocationsRelatedWork'=>$locrw,
+				'LinkResources'=>$lr,
+				'ResourceViewDescriptions'=>$rvd
  		));
 	}
 

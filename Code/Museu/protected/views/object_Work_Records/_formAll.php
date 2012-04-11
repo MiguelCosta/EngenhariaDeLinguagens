@@ -13,7 +13,9 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 	<?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'object--work--records-form',
 			'enableAjaxValidation'=>false,
-			'htmlOptions'=>array('name'=>'object--work--records-form'),
+			'htmlOptions'=>array('name'=>'object--work--records-form',
+			'enctype'=>'multipart/form-data'
+		),
 )); ?>
 
 	<p class="note">
@@ -607,46 +609,34 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 			<?php echo "Recursos" ?>
 		</div>
 		<div class="row">
-			<!-- TODO 1:N -->
-			<?php echo CHtml::label('Referência url', 'linkResource') ?>
-			<?php echo $form->textField($LinkResources,'linkResource',array('size'=>60,'maxlength'=>2000)); ?>
-			<?php echo $form->error($LinkResources,'linkResource'); ?>
-			<p class="hint">Uma referência uri/url que é universal e no ambiente <i>worldwide web</i>.</p>
+			<?php echo CHtml::label('Referência do recurso', 'linkResource') ?>
+			<?php echo CHtml::activeFileField($LinkResources, 'image'); ?>
+			<?php echo $form->error($LinkResources,'image'); ?>
+			<p class="hint">Uma referência uri/url que é universal e no ambiente <i>worldwide web</i>, 
+			ou um apontador para uma imagem no repositório local.</p>
 		</div>
 		<div class="row">
-			<?php echo CHtml::label('Tipo de relação', 'ddlRelType') ?>
-			<?php echo CHtml::dropDownList('ddlRelType', 
+			<?php echo CHtml::label('Relacionamento do recurso com a obra', 'ddlResRelType') ?>
+			<?php echo CHtml::dropDownList('ddlResRelType', 
 					array(),
-					array('related to' => 'Relacionado com', 'part of' => 'Parte de', 
-							'model of' => 'Modelo de', 'model for' => 'Modelo para', 'study of' => 'Estudo de',
-							'study for' => 'Estudo para', 'copy of' => 'Cópia de', 
-							'published' => 'Publicado')); ?>
-			<p class="hint">Termo que descreve a natureza do relacionamento entre a obra e a entidade relacionada.</p>
-		</div>
-		
-		<div class="row">
-			<!-- TODO 1:N -->
-			<?php echo CHtml::label('Identificação da obra relacionada', 'labelRelatedWork') ?>
-			<?php echo $form->textField($LabelRelatedWork,'labelRelatedWork',array('size'=>60,'maxlength'=>511)); ?>
-			<?php echo $form->error($LabelRelatedWork,'labelRelatedWork'); ?>
-			<p class="hint">Uma identificação da obra, grupo, coleção ou série relacionada que terá significado para o utilizador final,
-			incluindo toda ou alguma da seguinte informação: título, criador, tipo da obra e data de criação.</p>
-		</div>
-		<!-- TODO 1:N -->
-		<div class="row">
-			<?php echo CHtml::label('Localização atual da obra relacionada', 'locationRelatedWork') ?>
-			<?php echo $form->textField($LocationsRelatedWork,'locationRelatedWork',array('size'=>60,'maxlength'=>511)); ?>
-			<?php echo $form->error($LocationsRelatedWork,'locationRelatedWork'); ?>
+					CHtml::listData(ResourceRelTypes::model()->findAll(array('order' => 'resourceRelType')), 'id_resourceRelType', 'resourceRelType'),
+					array('empty'=>'Escolha o tipo de relacionamento se aplicável...')); ?>
+			<p class="hint">O relacionamento do recurso com a obra descrita.</p>
 		</div>
 		<div class="row">
-			<?php echo CHtml::label('Identificador da obra relacionada no repositório', 'relWorkID') ?>
-			<?php echo $form->textField($LocationsRelatedWork,'relWorkID',array('size'=>31,'maxlength'=>31)); ?>
-			<?php echo $form->error($LocationsRelatedWork,'relWorkID'); ?>
+			<?php echo CHtml::label('Tipo do recurso', 'ddlResType') ?>
+			<?php echo CHtml::dropDownList('ddlResType', 
+					array(),
+					CHtml::listData(ResourceTypes::model()->findAll(array('order' => 'resourceType')), 'id_resourceTypes', 'resourceType'),
+					array('empty'=>'Escolha o tipo de recurso se aplicável...')); ?>
+			<p class="hint">Identificação genérica do tipo ou meio que o recurso representa.</p>
 		</div>
 		<div class="row">
-			<?php echo CHtml::label('Identificador do repositório', 'locID') ?>
-			<?php echo $form->textField($LocationsRelatedWork,'locID',array('size'=>31,'maxlength'=>31)); ?>
-			<?php echo $form->error($LocationsRelatedWork,'locID'); ?>
+			<?php echo CHtml::label('Descrição do recurso', 'resourceViewDescription') ?>
+			<?php echo $form->textField($ResourceViewDescriptions,'resourceViewDescription',array('size'=>60,'maxlength'=>511)); ?>
+			<?php echo $form->error($ResourceViewDescriptions,'resourceViewDescription'); ?>
+			<p class="hint">Uma descrição dos aspetos espaciais, cronológicos ou contextuais da obra 
+			tal como é capturada ao visualizar este recurso.</p>
 		</div>
 	</div>
 	

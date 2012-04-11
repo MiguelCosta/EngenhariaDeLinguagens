@@ -18,7 +18,8 @@
 
 			if(file_exists($s)){
 				?>
-			<td width="30%" style="text-align: right;"><?php echo CHtml::link(CHtml::imageButton($data->getResources_One(), array('width'=>150)),array('/object_Work_Records/view', 'id'=>$data->id_object_Work_Records));?>
+			<td width="30%" style="text-align: right;">
+				<?php echo CHtml::link(CHtml::imageButton($data->getResources_One(), array('width'=>150)),array('/object_Work_Records/view', 'id'=>$data->id_object_Work_Records));?>
 			</td>
 			<?php }?>
 		</tr>

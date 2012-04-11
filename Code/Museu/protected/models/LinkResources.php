@@ -11,6 +11,10 @@
  */
 class LinkResources extends CActiveRecord
 {
+	
+	public $image;
+	
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return LinkResources the static model class
@@ -42,6 +46,7 @@ class LinkResources extends CActiveRecord
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id_linkResources, linkResource, type, formatResource', 'safe', 'on'=>'search'),
+			array('image', 'file', 'types'=>'JPG, gif, png'),
 		);
 	}
 
