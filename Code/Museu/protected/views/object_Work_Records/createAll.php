@@ -6,12 +6,12 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 		array('label'=>'Índice', 'url'=>array('index')),
-		array('label'=>'Criar Ficha Completa', 'url'=>array('createAll')),
+		array('label'=>'Criar', 'url'=>array('create')),
 		array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Object_Work_Record</h1>
+<h1>Criar uma Ficha Completa para uma Peça</h1>
 
 <?php echo $this->renderPartial('_formAll', array('Object_Work_Records'=>$Object_Work_Records, 
 												'Object_Work_Titles'=>$Object_Work_Titles,

@@ -11,6 +11,10 @@ $this->menu = array(
 		array('label' => 'Actualizar', 'url' => array('update', 'id' => $model->id_object_Work_Records)),
 		array('label' => 'Eliminar', 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id_object_Work_Records), 'confirm' => 'Are you sure you want to delete this item?')),
 		array('label' => 'Administração', 'url' => array('admin')),
+		array('label' => 'Atribuir Título', 'url' => array('/object_Work_Titles/create')),
+		array('label' => 'Atribuir Legenda', 'url' => array('/Inscriptions/create')),
+		array('label' => 'Atribuir Descrição', 'url' => array('/DescriptiveNotes/create')),
+		array('label' => 'Atribuir Local', 'url' => array('/Locations/create')),
 );
 ?>
 
@@ -43,7 +47,8 @@ $this->widget('zii.widgets.jui.CJuiSlider', array(
 		),
 ));
 ?>
-<div class="zoom" style="float: right;"></div>
+<div class="zoom"
+	style="float: right;"></div>
 <?php
 $this->widget('ext.ETooltip.ETooltip', array("selector"=>"#yw2 img[title]",
 		"tooltip"=>array(
@@ -73,7 +78,8 @@ $this->widget('zii.widgets.CDetailView', array(
 				// My attributes
 				array(
 						'name'=>'RecordType',
-						'value'=>$model->recordType->recordType,
+						'type'=>'html',
+						'value'=>$model->getRecordType_Link(),
 				),
 				array(
 						'name'=>'object_Work_Types',

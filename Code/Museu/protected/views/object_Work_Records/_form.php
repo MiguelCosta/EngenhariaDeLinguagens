@@ -1,11 +1,14 @@
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'object--work--records-form',
-	'enableAjaxValidation'=>false,
+	<?php $form=$this->beginWidget('CActiveForm', array(
+			'id'=>'object--work--records-form',
+			'enableAjaxValidation'=>false,
+			'htmlOptions'=>array('name'=>'object--work--records-form'),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">
+		Fields with <span class="required">*</span> are required.
+	</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -32,10 +35,14 @@
 		<?php echo $form->textField($model,'displayCreationDate',array('size'=>60,'maxlength'=>511)); ?>
 		<?php echo $form->error($model,'displayCreationDate'); ?>
 	</div>
-
-	<div class="row">
+	
+	<!-- RecordTypes -->
+	<div class="nrow">
 		<?php echo $form->labelEx($model,'RecordType'); ?>
-		<?php echo $form->textField($model,'RecordType'); ?>
+		<?php echo $form->dropDownList($model,
+				'RecordType',
+				CHtml::listData(RecordTypes::model()->findAll(array('order' => 'recordType')), 'id_recordTypes', 'recordType'),
+				array('empty'=>'Escolha o tipo do registo'));?>
 		<?php echo $form->error($model,'RecordType'); ?>
 	</div>
 
@@ -43,6 +50,7 @@
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
-<?php $this->endWidget(); ?>
+	<?php $this->endWidget(); ?>
 
-</div><!-- form -->
+</div>
+<!-- form -->
