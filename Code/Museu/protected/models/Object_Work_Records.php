@@ -103,6 +103,7 @@ class Object_Work_Records extends CActiveRecord
 				'relatedWorks'=>'Peças/Obras/Trabalhos Relacionados',
 				'indexingCreators' => 'Criadores',
 				'object_Work_Types' => 'Tipo de Peça',
+				'classifications' => 'Classificações',
 		);
 	}
 
@@ -378,6 +379,23 @@ class Object_Work_Records extends CActiveRecord
 			array_push($result_arr, $tmp);
 		}
 		$result .=  implode("<br/>", $result_arr);
+		return $result;
+	}
+
+
+	public function getClassifications(){
+		$result = array();
+		foreach ($this->classifications as $classifications){
+			$tmp = $classifications->getClassifications();
+			$link = CHtml::link($tmp['classification'], array('/Classifications/'.$tmp['id_classifications']));
+			array_push($result, $link);
+		}
+		return $result;
+	}
+
+	public function getClassifications_view(){
+		$result = '';
+		$result .= implode("<br/>", $this->getClassifications());
 		return $result;
 	}
 

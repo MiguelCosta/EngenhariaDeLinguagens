@@ -62,9 +62,9 @@ $this->widget('ext.ETooltip.ETooltip', array("selector"=>"#yw2 img[title]",
 <?php
 
 //$c = $model->locations;
-//$c = $model->getObject_Work_Types_view();
+//$c = $model->getClassifications_view();
 //print $c;
-//CVarDumper::dump($c, 2, true);
+//CVarDumper::dump($c, 3, true);
 
 $this->widget('zii.widgets.CDetailView', array(
 		'data' => $model,
@@ -85,6 +85,11 @@ $this->widget('zii.widgets.CDetailView', array(
 						'name'=>'object_Work_Types',
 						'type'=>'html',
 						'value'=>$model->getObject_Work_Types_view(),
+				),
+				array(
+						'name'=>'classifications',
+						'type'=>'html',
+						'value'=>$model->getClassifications_view(),
 				),
 				array(
 						'name'=>'object_Work_Titles',
@@ -117,6 +122,7 @@ $this->widget('zii.widgets.CDetailView', array(
 						'type'=>'html',
 						'value'=>$model->getResources_view(),
 				),
+				
 		),
 ));
 

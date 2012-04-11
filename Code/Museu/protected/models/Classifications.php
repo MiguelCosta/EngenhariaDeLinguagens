@@ -36,11 +36,11 @@ class Classifications extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('classification', 'required'),
-			array('classification, termsource, termsourceID', 'length', 'max'=>63),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id_classifications, classification, termsource, termsourceID', 'safe', 'on'=>'search'),
+				array('classification', 'required'),
+				array('classification, termsource, termsourceID', 'length', 'max'=>63),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id_classifications, classification, termsource, termsourceID', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -52,7 +52,7 @@ class Classifications extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'object_Work_Records' => array(self::MANY_MANY, 'ObjectWorkRecords', 'Object_Work_Records_Classifications(Object_Work_Record, Classification)'),
+				'object_Work_Records' => array(self::MANY_MANY, 'ObjectWorkRecords', 'Object_Work_Records_Classifications(Object_Work_Record, Classification)'),
 		);
 	}
 
@@ -62,10 +62,10 @@ class Classifications extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_classifications' => 'Id Classifications',
-			'classification' => 'Classification',
-			'termsource' => 'Termsource',
-			'termsourceID' => 'Termsource',
+				'id_classifications' => 'Id Classifications',
+				'classification' => 'Classification',
+				'termsource' => 'Termsource',
+				'termsourceID' => 'Termsource',
 		);
 	}
 
@@ -89,15 +89,26 @@ class Classifications extends CActiveRecord
 		$criteria->compare('termsourceID',$this->termsourceID,true);
 
 		return new CActiveDataProvider('Classifications', array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
 	}
-	
+
 	/**
 	 * Better support of MANY_TO_MANY relations
 	 */
 	public function behaviors(){
 		return array( 'CAdvancedArBehavior' => array(
 				'class' => 'application.extensions.CAdvancedArBehavior'));
+	}
+
+	/*********************************************************************************/
+	/********************************** My Functions *********************************/
+	/*********************************************************************************/
+
+	public function getClassifications(){
+		return array(
+				'id_classifications'=>$this->id_classifications,
+				'classification'=>$this->classification,
+		);
 	}
 }
