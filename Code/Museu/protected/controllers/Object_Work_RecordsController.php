@@ -506,7 +506,10 @@ class Object_Work_RecordsController extends Controller
    					
  					
   					if ($lr->image != NULL){
-  						$path = "fotos/".($maxResNumber+1);
+					   	if ($owtp->type=='Fotografia')
+					     	$path = "fotos/".($maxResNumber+1);
+						if ($owtp->type=='Zincogravura')
+							$path = "gravuras/".($maxResNumber+1);
   						$lr->linkResource=	$path;
   						
  						$maxLRNumber = Yii::app()->db->createCommand()
