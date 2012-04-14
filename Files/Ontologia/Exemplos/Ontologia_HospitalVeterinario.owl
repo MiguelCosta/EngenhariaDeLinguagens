@@ -1,0 +1,923 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://hospitalveterinario.owl"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     ontologyIRI="http://hospitalveterinario.owl">
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="&xsd;string">Ana Paula Guimaraes
+Fatima Dias
+Pedro Oliveira</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/date"/>
+        <Literal datatypeIRI="&xsd;string">Novembro 2010</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">A ontologia descreve a actividade e as relações que se estabelecem num hospital veterinario.</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Animais"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaoCaniche"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaoCockerSpaniel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaoLabrador"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaoPastorAlemao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaoPerdigueiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cirurgiao"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Distritos"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dono"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DonoAssociado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DonoCentro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DonoNaoAssociado"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DonoNorte"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DonoSul"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Enfermeiro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gato"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GatoEuropeu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GatoPersa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GatoSiames"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pessoas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Raça"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ResidenciaDono"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Veterinario"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#eDono"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fazCirurgias"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fazConsultas"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#fazTratamentosSimples"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#foiConsultado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#foiOperado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#foiTratado"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#pertenceA"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temRaça"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#temResidencia"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#CartaoSocio"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Sexo"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#dataNascimento"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Beja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Bobby"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Braga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Buga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Caniche"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Carlos"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Clarisse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CockerSpaniel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coimbra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Europeu"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Faro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Filipe"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Francisco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Guilherme"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Isabel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Jorge"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Kitty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Labrador"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lara"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Leiria"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Max"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PastorAlemao"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pedro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Perdigueiro"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Persa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Porto"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Raul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ResidenciaClarisse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ResidenciaFrancisco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rita"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Siames"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Susana"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tareco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teco"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Teresa"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#CaoCaniche"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cao"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#temRaça"/>
+                <NamedIndividual IRI="#Caniche"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CaoCockerSpaniel"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cao"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#temRaça"/>
+                <NamedIndividual IRI="#CockerSpaniel"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CaoLabrador"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cao"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#temRaça"/>
+                <NamedIndividual IRI="#Labrador"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CaoPastorAlemao"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cao"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#temRaça"/>
+                <NamedIndividual IRI="#PastorAlemao"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#CaoPerdigueiro"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cao"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#temRaça"/>
+                <NamedIndividual IRI="#Perdigueiro"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Cirurgiao"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pessoas"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#fazCirurgias"/>
+                <Class IRI="#Animais"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Dono"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pessoas"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#eDono"/>
+                <Class IRI="#Animais"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DonoAssociado"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Dono"/>
+            <DataHasValue>
+                <DataProperty IRI="#CartaoSocio"/>
+                <Literal datatypeIRI="&xsd;string">S</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DonoCentro"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ResidenciaDono"/>
+            <ObjectUnionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#temResidencia"/>
+                    <NamedIndividual IRI="#Coimbra"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#temResidencia"/>
+                    <NamedIndividual IRI="#Leiria"/>
+                </ObjectHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DonoNaoAssociado"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Dono"/>
+            <DataHasValue>
+                <DataProperty IRI="#CartaoSocio"/>
+                <Literal datatypeIRI="&xsd;string">N</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DonoNorte"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ResidenciaDono"/>
+            <ObjectUnionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#temResidencia"/>
+                    <NamedIndividual IRI="#Braga"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#temResidencia"/>
+                    <NamedIndividual IRI="#Porto"/>
+                </ObjectHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#DonoSul"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#ResidenciaDono"/>
+            <ObjectUnionOf>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#temResidencia"/>
+                    <NamedIndividual IRI="#Beja"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty IRI="#temResidencia"/>
+                    <NamedIndividual IRI="#Faro"/>
+                </ObjectHasValue>
+            </ObjectUnionOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Enfermeiro"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pessoas"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#fazTratamentosSimples"/>
+                <Class IRI="#Animais"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GatoEuropeu"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Gato"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#temRaça"/>
+                <NamedIndividual IRI="#Europeu"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GatoPersa"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Gato"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#temRaça"/>
+                <NamedIndividual IRI="#Persa"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#GatoSiames"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Gato"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#temRaça"/>
+                <NamedIndividual IRI="#Siames"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Veterinario"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Pessoas"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#fazConsultas"/>
+                <Class IRI="#Animais"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Cao"/>
+        <Class IRI="#Animais"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaoCaniche"/>
+        <Class IRI="#Cao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaoCockerSpaniel"/>
+        <Class IRI="#Cao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaoLabrador"/>
+        <Class IRI="#Cao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaoPastorAlemao"/>
+        <Class IRI="#Cao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaoPerdigueiro"/>
+        <Class IRI="#Cao"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DonoAssociado"/>
+        <Class IRI="#Dono"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DonoCentro"/>
+        <Class IRI="#ResidenciaDono"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DonoNaoAssociado"/>
+        <Class IRI="#Dono"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DonoNorte"/>
+        <Class IRI="#ResidenciaDono"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DonoSul"/>
+        <Class IRI="#ResidenciaDono"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Gato"/>
+        <Class IRI="#Animais"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GatoEuropeu"/>
+        <Class IRI="#Gato"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GatoPersa"/>
+        <Class IRI="#Gato"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GatoSiames"/>
+        <Class IRI="#Gato"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#DonoAssociado"/>
+        <Class IRI="#DonoNaoAssociado"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Ana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Distritos"/>
+        <NamedIndividual IRI="#Beja"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cao"/>
+        <NamedIndividual IRI="#Bobby"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Distritos"/>
+        <NamedIndividual IRI="#Braga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cao"/>
+        <NamedIndividual IRI="#Buga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Raça"/>
+        <NamedIndividual IRI="#Caniche"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Carlos"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Clarisse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Raça"/>
+        <NamedIndividual IRI="#CockerSpaniel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Distritos"/>
+        <NamedIndividual IRI="#Coimbra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Raça"/>
+        <NamedIndividual IRI="#Europeu"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Distritos"/>
+        <NamedIndividual IRI="#Faro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Filipe"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Francisco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Guilherme"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Isabel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Dono"/>
+        <NamedIndividual IRI="#Jorge"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gato"/>
+        <NamedIndividual IRI="#Kitty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Raça"/>
+        <NamedIndividual IRI="#Labrador"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cao"/>
+        <NamedIndividual IRI="#Lara"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Distritos"/>
+        <NamedIndividual IRI="#Leiria"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cao"/>
+        <NamedIndividual IRI="#Max"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Raça"/>
+        <NamedIndividual IRI="#PastorAlemao"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Pedro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Raça"/>
+        <NamedIndividual IRI="#Perdigueiro"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Raça"/>
+        <NamedIndividual IRI="#Persa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Distritos"/>
+        <NamedIndividual IRI="#Porto"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Raul"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResidenciaDono"/>
+        <NamedIndividual IRI="#ResidenciaClarisse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ResidenciaDono"/>
+        <NamedIndividual IRI="#ResidenciaFrancisco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cao"/>
+        <NamedIndividual IRI="#Rex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Rita"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Raça"/>
+        <NamedIndividual IRI="#Siames"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Susana"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gato"/>
+        <NamedIndividual IRI="#Tareco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Gato"/>
+        <NamedIndividual IRI="#Teco"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Pessoas"/>
+        <NamedIndividual IRI="#Teresa"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pertenceA"/>
+        <NamedIndividual IRI="#Bobby"/>
+        <NamedIndividual IRI="#Ana"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temRaça"/>
+        <NamedIndividual IRI="#Bobby"/>
+        <NamedIndividual IRI="#CockerSpaniel"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temRaça"/>
+        <NamedIndividual IRI="#Buga"/>
+        <NamedIndividual IRI="#Caniche"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fazCirurgias"/>
+        <NamedIndividual IRI="#Carlos"/>
+        <NamedIndividual IRI="#Max"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eDono"/>
+        <NamedIndividual IRI="#Clarisse"/>
+        <NamedIndividual IRI="#Kitty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fazConsultas"/>
+        <NamedIndividual IRI="#Filipe"/>
+        <NamedIndividual IRI="#Kitty"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eDono"/>
+        <NamedIndividual IRI="#Guilherme"/>
+        <NamedIndividual IRI="#Teco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eDono"/>
+        <NamedIndividual IRI="#Isabel"/>
+        <NamedIndividual IRI="#Max"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temRaça"/>
+        <NamedIndividual IRI="#Kitty"/>
+        <NamedIndividual IRI="#Siames"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pertenceA"/>
+        <NamedIndividual IRI="#Lara"/>
+        <NamedIndividual IRI="#Francisco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temRaça"/>
+        <NamedIndividual IRI="#Lara"/>
+        <NamedIndividual IRI="#Labrador"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temRaça"/>
+        <NamedIndividual IRI="#Max"/>
+        <NamedIndividual IRI="#Perdigueiro"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fazCirurgias"/>
+        <NamedIndividual IRI="#Pedro"/>
+        <NamedIndividual IRI="#Teco"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#eDono"/>
+        <NamedIndividual IRI="#Raul"/>
+        <NamedIndividual IRI="#Buga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temResidencia"/>
+        <NamedIndividual IRI="#ResidenciaClarisse"/>
+        <NamedIndividual IRI="#Braga"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temResidencia"/>
+        <NamedIndividual IRI="#ResidenciaFrancisco"/>
+        <NamedIndividual IRI="#Leiria"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#foiConsultado"/>
+        <NamedIndividual IRI="#Rex"/>
+        <NamedIndividual IRI="#Teresa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pertenceA"/>
+        <NamedIndividual IRI="#Rex"/>
+        <NamedIndividual IRI="#Rita"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temRaça"/>
+        <NamedIndividual IRI="#Rex"/>
+        <NamedIndividual IRI="#PastorAlemao"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#fazTratamentosSimples"/>
+        <NamedIndividual IRI="#Susana"/>
+        <NamedIndividual IRI="#Bobby"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#pertenceA"/>
+        <NamedIndividual IRI="#Tareco"/>
+        <NamedIndividual IRI="#Jorge"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temRaça"/>
+        <NamedIndividual IRI="#Tareco"/>
+        <NamedIndividual IRI="#Europeu"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#temRaça"/>
+        <NamedIndividual IRI="#Teco"/>
+        <NamedIndividual IRI="#Persa"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sexo"/>
+        <NamedIndividual IRI="#Bobby"/>
+        <Literal datatypeIRI="&xsd;string">M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dataNascimento"/>
+        <NamedIndividual IRI="#Bobby"/>
+        <Literal datatypeIRI="&xsd;date">2008-10-05</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sexo"/>
+        <NamedIndividual IRI="#Buga"/>
+        <Literal datatypeIRI="&xsd;string">F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dataNascimento"/>
+        <NamedIndividual IRI="#Buga"/>
+        <Literal datatypeIRI="&xsd;date">2007-01-01</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#CartaoSocio"/>
+        <NamedIndividual IRI="#Jorge"/>
+        <Literal datatypeIRI="&xsd;string">N</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sexo"/>
+        <NamedIndividual IRI="#Kitty"/>
+        <Literal datatypeIRI="&xsd;string">F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dataNascimento"/>
+        <NamedIndividual IRI="#Kitty"/>
+        <Literal datatypeIRI="&xsd;date">2006-10-04</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sexo"/>
+        <NamedIndividual IRI="#Lara"/>
+        <Literal datatypeIRI="&xsd;string">F</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dataNascimento"/>
+        <NamedIndividual IRI="#Lara"/>
+        <Literal datatypeIRI="&xsd;date">2005-11-12</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sexo"/>
+        <NamedIndividual IRI="#Max"/>
+        <Literal datatypeIRI="&xsd;string">M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dataNascimento"/>
+        <NamedIndividual IRI="#Max"/>
+        <Literal datatypeIRI="&xsd;date">2006-09-03</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sexo"/>
+        <NamedIndividual IRI="#Rex"/>
+        <Literal datatypeIRI="&xsd;string">M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dataNascimento"/>
+        <NamedIndividual IRI="#Rex"/>
+        <Literal datatypeIRI="&xsd;date">2003-10-31</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sexo"/>
+        <NamedIndividual IRI="#Tareco"/>
+        <Literal datatypeIRI="&xsd;string">M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dataNascimento"/>
+        <NamedIndividual IRI="#Tareco"/>
+        <Literal datatypeIRI="&xsd;date">2001-08-27</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Sexo"/>
+        <NamedIndividual IRI="#Teco"/>
+        <Literal datatypeIRI="&xsd;string">M</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#dataNascimento"/>
+        <NamedIndividual IRI="#Teco"/>
+        <Literal datatypeIRI="&xsd;date">1999-01-09</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#fazCirurgias"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#fazConsultas"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#fazTratamentosSimples"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#pertenceA"/>
+        <ObjectProperty IRI="#eDono"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#foiOperado"/>
+        <ObjectProperty IRI="#fazCirurgias"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#fazConsultas"/>
+        <ObjectProperty IRI="#foiConsultado"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#foiTratado"/>
+        <ObjectProperty IRI="#fazTratamentosSimples"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#eDono"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#fazCirurgias"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#fazConsultas"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#fazTratamentosSimples"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#foiConsultado"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#foiOperado"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#foiTratado"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#pertenceA"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#temRaça"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#temResidencia"/>
+    </FunctionalObjectProperty>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.1.0.20069) http://owlapi.sourceforge.net -->
+

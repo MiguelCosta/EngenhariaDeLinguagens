@@ -1,0 +1,946 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY OntologyCartoes "http://www.semanticweb.org/ontologies/2009/9/OntologyCartoes.owl#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2006/12/owl2-xml#"
+     xml:base="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:OntologyCartoes="http://www.semanticweb.org/ontologies/2009/9/OntologyCartoes.owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     URI="http://www.semanticweb.org/ontologies/2009/9/OntologyCartoes.owl">
+    <Annotation annotationURI="&rdfs;comment">
+        <Constant
+            >A ontologia de cartoes de credito que descreve as varias caracteristicas associadas aos cartoes de credito </Constant>
+    </Annotation>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;Anuidade"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&OntologyCartoes;eAnuidade"/>
+            <Class URI="&OntologyCartoes;CartaoCredito"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;Anuidade"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;AnuidadeCondicionadaUtilizacao"/>
+        <ObjectIntersectionOf>
+            <Class URI="&OntologyCartoes;Anuidade"/>
+            <DataSomeValuesFrom>
+                <DataProperty URI="&OntologyCartoes;temAnuidadeCondicionada"/>
+                <DatatypeRestriction>
+                    <Datatype URI="&xsd;integer"/>
+                    <DatatypeFacetRestriction facet="&xsd;minExclusive">
+                        <Constant datatypeURI="&xsd;integer">0</Constant>
+                    </DatatypeFacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;AnuidadeCondicionadaUtilizacao"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;AnuidadeGratis"/>
+        <ObjectIntersectionOf>
+            <Class URI="&OntologyCartoes;Anuidade"/>
+            <DataSomeValuesFrom>
+                <DataProperty URI="&OntologyCartoes;temAnuidadeFixa"/>
+                <DatatypeRestriction>
+                    <Datatype URI="&xsd;integer"/>
+                    <DatatypeFacetRestriction facet="&xsd;maxInclusive">
+                        <Constant datatypeURI="&xsd;integer">0</Constant>
+                    </DatatypeFacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;AnuidadeGratis"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;AnuidadeValorFixo"/>
+        <ObjectIntersectionOf>
+            <Class URI="&OntologyCartoes;Anuidade"/>
+            <DataSomeValuesFrom>
+                <DataProperty URI="&OntologyCartoes;temAnuidadeFixa"/>
+                <DatatypeRestriction>
+                    <Datatype URI="&xsd;integer"/>
+                    <DatatypeFacetRestriction facet="&xsd;minExclusive">
+                        <Constant datatypeURI="&xsd;integer">0</Constant>
+                    </DatatypeFacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;AnuidadeValorFixo"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;Associacao"/>
+        <ObjectOneOf>
+            <Individual URI="&OntologyCartoes;LigaBombeirosPortugueses"/>
+            <Individual URI="&OntologyCartoes;UNICEF"/>
+            <Individual URI="&OntologyCartoes;AmnistiaInternacional"/>
+            <Individual URI="&OntologyCartoes;ABRACO"/>
+            <Individual URI="&OntologyCartoes;AMI"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;Associacao"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&OntologyCartoes;eAssociacao"/>
+            <Class URI="&OntologyCartoes;Beneficio"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;Associacao"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;Beneficio"/>
+        <ObjectOneOf>
+            <Individual URI="&OntologyCartoes;PriorityPass"/>
+            <Individual URI="&OntologyCartoes;ProgramaMilhas"/>
+            <Individual URI="&OntologyCartoes;FraccionamentoSemJuros"/>
+            <Individual URI="&OntologyCartoes;OfertaAnuidadeAno1"/>
+            <Individual URI="&OntologyCartoes;MemberShipRewards"/>
+            <Individual URI="&OntologyCartoes;CashBack"/>
+            <Individual URI="&OntologyCartoes;LinhaCreditoExtra"/>
+            <Individual URI="&OntologyCartoes;AccaoSolidariedade"/>
+            <Individual URI="&OntologyCartoes;IsencaoTaxasGasolineiras"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;Beneficio"/>
+    </Declaration>
+    <Declaration>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;CartaoCreditoEconomico"/>
+        <ObjectIntersectionOf>
+            <Class URI="&OntologyCartoes;CartaoCredito"/>
+            <ObjectUnionOf>
+                <ObjectSomeValuesFrom>
+                    <ObjectProperty URI="&OntologyCartoes;temAnuidade"/>
+                    <Class URI="&OntologyCartoes;AnuidadeGratis"/>
+                </ObjectSomeValuesFrom>
+                <DataSomeValuesFrom>
+                    <DataProperty URI="&OntologyCartoes;temTAEG"/>
+                    <DatatypeRestriction>
+                        <Datatype URI="&xsd;integer"/>
+                        <DatatypeFacetRestriction facet="&xsd;maxExclusive">
+                            <Constant datatypeURI="&xsd;integer">15</Constant>
+                        </DatatypeFacetRestriction>
+                    </DatatypeRestriction>
+                </DataSomeValuesFrom>
+            </ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+                <Individual URI="&OntologyCartoes;IsencaoTaxasGasolineiras"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;CartaoCreditoEconomico"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;CartaoCreditoParticular"/>
+        <ObjectIntersectionOf>
+            <Class URI="&OntologyCartoes;CartaoCredito"/>
+            <DataHasValue>
+                <DataProperty URI="&OntologyCartoes;temTipologia"/>
+                <Constant>P</Constant>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;CartaoCreditoParticular"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;CartaoCreditoPremier"/>
+        <ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty URI="&OntologyCartoes;temGama"/>
+                <Individual URI="&OntologyCartoes;Gold"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty URI="&OntologyCartoes;temGama"/>
+                <Individual URI="&OntologyCartoes;Platinium"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty URI="&OntologyCartoes;temGama"/>
+                <Individual URI="&OntologyCartoes;Silver"/>
+            </ObjectHasValue>
+        </ObjectUnionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&OntologyCartoes;CartaoCreditoPremier"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </SubClassOf>
+    <Declaration>
+        <Class URI="&OntologyCartoes;CartaoCreditoPremier"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;CartaoCreditoViagens"/>
+        <ObjectIntersectionOf>
+            <ObjectUnionOf>
+                <ObjectHasValue>
+                    <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+                    <Individual URI="&OntologyCartoes;PriorityPass"/>
+                </ObjectHasValue>
+                <ObjectHasValue>
+                    <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+                    <Individual URI="&OntologyCartoes;ProgramaMilhas"/>
+                </ObjectHasValue>
+            </ObjectUnionOf>
+            <ObjectHasValue>
+                <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+                <Individual URI="&OntologyCartoes;SeguroViagens"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&OntologyCartoes;CartaoCreditoViagens"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </SubClassOf>
+    <Declaration>
+        <Class URI="&OntologyCartoes;CartaoCreditoViagens"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;Gama"/>
+        <ObjectOneOf>
+            <Individual URI="&OntologyCartoes;Classic"/>
+            <Individual URI="&OntologyCartoes;Gold"/>
+            <Individual URI="&OntologyCartoes;Platinium"/>
+            <Individual URI="&OntologyCartoes;Silver"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&OntologyCartoes;Gama"/>
+        <Class URI="&owl;Thing"/>
+    </SubClassOf>
+    <Declaration>
+        <Class URI="&OntologyCartoes;Gama"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;Rede"/>
+        <ObjectOneOf>
+            <Individual URI="&OntologyCartoes;AmericanExpress"/>
+            <Individual URI="&OntologyCartoes;MasterCard"/>
+            <Individual URI="&OntologyCartoes;Visa"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class URI="&OntologyCartoes;Rede"/>
+        <Class URI="&owl;Thing"/>
+    </SubClassOf>
+    <Declaration>
+        <Class URI="&OntologyCartoes;Rede"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;Seguro"/>
+        <ObjectOneOf>
+            <Individual URI="&OntologyCartoes;SeguroRouboUsoFraudulento"/>
+            <Individual URI="&OntologyCartoes;SeguroProteccaoCredito"/>
+            <Individual URI="&OntologyCartoes;SeguroSaude"/>
+            <Individual URI="&OntologyCartoes;SeguroProteccaoJuridica"/>
+            <Individual URI="&OntologyCartoes;SeguroViagens"/>
+            <Individual URI="&OntologyCartoes;SeguroAssistencia"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;Seguro"/>
+    </Declaration>
+    <Declaration>
+        <Class URI="&OntologyCartoes;Tipo"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;TipoAssistencia"/>
+        <ObjectOneOf>
+            <Individual URI="&OntologyCartoes;AssistenciaDomicilio"/>
+            <Individual URI="&OntologyCartoes;AssistenciaVeiculo"/>
+            <Individual URI="&OntologyCartoes;AssistenciaMedica"/>
+        </ObjectOneOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;TipoAssistencia"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty URI="&OntologyCartoes;eTipoAssistencia"/>
+            <Class URI="&OntologyCartoes;Seguro"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;TipoAssistencia"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;TipoEmpresa"/>
+        <ObjectIntersectionOf>
+            <Class URI="&OntologyCartoes;Tipo"/>
+            <ObjectComplementOf>
+                <Class URI="&OntologyCartoes;TipoParticular"/>
+            </ObjectComplementOf>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <DisjointClasses>
+        <Class URI="&OntologyCartoes;TipoEmpresa"/>
+        <Class URI="&OntologyCartoes;TipoParticular"/>
+    </DisjointClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;TipoEmpresa"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class URI="&OntologyCartoes;TipoParticular"/>
+        <ObjectIntersectionOf>
+            <Class URI="&OntologyCartoes;Tipo"/>
+            <DataHasValue>
+                <DataProperty URI="&OntologyCartoes;temTipologia"/>
+                <Constant>P</Constant>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <Declaration>
+        <Class URI="&OntologyCartoes;TipoParticular"/>
+    </Declaration>
+    <InverseObjectProperties>
+        <ObjectProperty URI="&OntologyCartoes;eAnuidade"/>
+        <ObjectProperty URI="&OntologyCartoes;temAnuidade"/>
+    </InverseObjectProperties>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;eAnuidade"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;eAnuidade"/>
+        <Class URI="&OntologyCartoes;Anuidade"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;eAnuidade"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;eAnuidade"/>
+    </Declaration>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&OntologyCartoes;eAssociacao"/>
+        <ObjectProperty URI="&OntologyCartoes;eBeneficio"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty URI="&OntologyCartoes;eAssociacao"/>
+        <ObjectProperty URI="&OntologyCartoes;temAssociacao"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;eAssociacao"/>
+        <Class URI="&OntologyCartoes;Associacao"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;eAssociacao"/>
+        <Class URI="&OntologyCartoes;Beneficio"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;eAssociacao"/>
+    </Declaration>
+    <TransitiveObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;eBeneficio"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;eBeneficio"/>
+        <Class URI="&OntologyCartoes;Beneficio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;eBeneficio"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;eBeneficio"/>
+    </Declaration>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;eGama"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;eGama"/>
+        <Class URI="&OntologyCartoes;Gama"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;eGama"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;eGama"/>
+    </Declaration>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;eRede"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;eRede"/>
+        <Class URI="&OntologyCartoes;Rede"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;eRede"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;eRede"/>
+    </Declaration>
+    <TransitiveObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;eSeguro"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;eSeguro"/>
+        <Class URI="&OntologyCartoes;Seguro"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;eSeguro"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;eSeguro"/>
+    </Declaration>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;eTipo"/>
+    </InverseFunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;eTipo"/>
+        <Class URI="&OntologyCartoes;Tipo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;eTipo"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;eTipo"/>
+    </Declaration>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&OntologyCartoes;eTipoAssistencia"/>
+        <ObjectProperty URI="&OntologyCartoes;eSeguro"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty URI="&OntologyCartoes;eTipoAssistencia"/>
+        <ObjectProperty URI="&OntologyCartoes;temTipoAssistencia"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;eTipoAssistencia"/>
+        <Class URI="&OntologyCartoes;TipoAssistencia"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;eTipoAssistencia"/>
+        <Class URI="&OntologyCartoes;Seguro"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;eTipoAssistencia"/>
+    </Declaration>
+    <FunctionalObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;temAnuidade"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;temAnuidade"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;temAnuidade"/>
+        <Class URI="&OntologyCartoes;Anuidade"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;temAnuidade"/>
+    </Declaration>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&OntologyCartoes;temAssociacao"/>
+        <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;temAssociacao"/>
+        <Class URI="&OntologyCartoes;Beneficio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;temAssociacao"/>
+        <Class URI="&OntologyCartoes;Associacao"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;temAssociacao"/>
+    </Declaration>
+    <InverseObjectProperties>
+        <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+        <ObjectProperty URI="&OntologyCartoes;eBeneficio"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+        <Class URI="&OntologyCartoes;Beneficio"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+    </Declaration>
+    <InverseObjectProperties>
+        <ObjectProperty URI="&OntologyCartoes;temGama"/>
+        <ObjectProperty URI="&OntologyCartoes;eGama"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;temGama"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;temGama"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;temGama"/>
+        <Class URI="&OntologyCartoes;Gama"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;temGama"/>
+    </Declaration>
+    <InverseObjectProperties>
+        <ObjectProperty URI="&OntologyCartoes;temRede"/>
+        <ObjectProperty URI="&OntologyCartoes;eRede"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;temRede"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;temRede"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;temRede"/>
+        <Class URI="&OntologyCartoes;Rede"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;temRede"/>
+    </Declaration>
+    <InverseObjectProperties>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <ObjectProperty URI="&OntologyCartoes;eSeguro"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Class URI="&OntologyCartoes;Seguro"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+    </Declaration>
+    <InverseObjectProperties>
+        <ObjectProperty URI="&OntologyCartoes;temTipo"/>
+        <ObjectProperty URI="&OntologyCartoes;eTipo"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty URI="&OntologyCartoes;temTipo"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;temTipo"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;temTipo"/>
+        <Class URI="&OntologyCartoes;Tipo"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;temTipo"/>
+    </Declaration>
+    <SubObjectPropertyOf>
+        <ObjectProperty URI="&OntologyCartoes;temTipoAssistencia"/>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty URI="&OntologyCartoes;temTipoAssistencia"/>
+        <Class URI="&OntologyCartoes;Seguro"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty URI="&OntologyCartoes;temTipoAssistencia"/>
+        <Class URI="&OntologyCartoes;TipoAssistencia"/>
+    </ObjectPropertyRange>
+    <Declaration>
+        <ObjectProperty URI="&OntologyCartoes;temTipoAssistencia"/>
+    </Declaration>
+    <FunctionalDataProperty>
+        <DataProperty URI="&OntologyCartoes;temAnuidadeCondicionada"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty URI="&OntologyCartoes;temAnuidadeCondicionada"/>
+        <Class URI="&OntologyCartoes;Anuidade"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty URI="&OntologyCartoes;temAnuidadeCondicionada"/>
+        <Datatype URI="&xsd;integer"/>
+    </DataPropertyRange>
+    <Declaration>
+        <DataProperty URI="&OntologyCartoes;temAnuidadeCondicionada"/>
+    </Declaration>
+    <FunctionalDataProperty>
+        <DataProperty URI="&OntologyCartoes;temAnuidadeFixa"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty URI="&OntologyCartoes;temAnuidadeFixa"/>
+        <Class URI="&OntologyCartoes;Anuidade"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty URI="&OntologyCartoes;temAnuidadeFixa"/>
+        <Datatype URI="&xsd;integer"/>
+    </DataPropertyRange>
+    <Declaration>
+        <DataProperty URI="&OntologyCartoes;temAnuidadeFixa"/>
+    </Declaration>
+    <FunctionalDataProperty>
+        <DataProperty URI="&OntologyCartoes;temPlafond"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty URI="&OntologyCartoes;temPlafond"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty URI="&OntologyCartoes;temPlafond"/>
+        <Datatype URI="&xsd;integer"/>
+    </DataPropertyRange>
+    <Declaration>
+        <DataProperty URI="&OntologyCartoes;temPlafond"/>
+    </Declaration>
+    <FunctionalDataProperty>
+        <DataProperty URI="&OntologyCartoes;temTAEG"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty URI="&OntologyCartoes;temTAEG"/>
+        <Class URI="&OntologyCartoes;CartaoCredito"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty URI="&OntologyCartoes;temTAEG"/>
+        <Datatype URI="&xsd;integer"/>
+    </DataPropertyRange>
+    <Declaration>
+        <DataProperty URI="&OntologyCartoes;temTAEG"/>
+    </Declaration>
+    <FunctionalDataProperty>
+        <DataProperty URI="&OntologyCartoes;temTipologia"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty URI="&OntologyCartoes;temTipologia"/>
+        <Class URI="&OntologyCartoes;Tipo"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty URI="&OntologyCartoes;temTipologia"/>
+        <Datatype URI="&xsd;string"/>
+    </DataPropertyRange>
+    <Declaration>
+        <DataProperty URI="&OntologyCartoes;temTipologia"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;ABRACO"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;AMI"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;AccaoSolidariedade"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;AmericanExpress"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;AmnistiaInternacional"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;AssistenciaDomicilio"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;AssistenciaMedica"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;AssistenciaVeiculo"/>
+    </Declaration>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;PriorityPass"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;ProgramaMilhas"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temBeneficio"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;MemberShipRewards"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temGama"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;Platinium"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temRede"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;AmericanExpress"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;SeguroViagens"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;SeguroSaude"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;SeguroProteccaoCredito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;SeguroAssistencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;SeguroRouboUsoFraudulento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;SeguroProteccaoJuridica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temTipoAssistencia"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;AssistenciaVeiculo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temTipoAssistencia"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;AssistenciaDomicilio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temTipoAssistencia"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Individual URI="&OntologyCartoes;AssistenciaMedica"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty URI="&OntologyCartoes;temAnuidadeFixa"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Constant datatypeURI="&xsd;integer">250</Constant>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty URI="&OntologyCartoes;temTAEG"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Constant datatypeURI="&xsd;integer">26.5</Constant>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty URI="&OntologyCartoes;temTipologia"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+        <Constant datatypeURI="&xsd;string">P</Constant>
+    </DataPropertyAssertion>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;CartaoCreditoAmericanExpressPlatinium"/>
+    </Declaration>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temGama"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Individual URI="&OntologyCartoes;Gold"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temRede"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Individual URI="&OntologyCartoes;Visa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Individual URI="&OntologyCartoes;SeguroRouboUsoFraudulento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Individual URI="&OntologyCartoes;SeguroAssistencia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Individual URI="&OntologyCartoes;SeguroProteccaoCredito"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Individual URI="&OntologyCartoes;SeguroViagens"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Individual URI="&OntologyCartoes;SeguroSaude"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Individual URI="&OntologyCartoes;SeguroProteccaoJuridica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temTipoAssistencia"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Individual URI="&OntologyCartoes;AssistenciaMedica"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temTipoAssistencia"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Individual URI="&OntologyCartoes;AssistenciaVeiculo"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty URI="&OntologyCartoes;temAnuidadeFixa"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Constant datatypeURI="&xsd;integer">50</Constant>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty URI="&OntologyCartoes;temTAEG"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Constant datatypeURI="&xsd;integer">13.7</Constant>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty URI="&OntologyCartoes;temTipologia"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+        <Constant datatypeURI="&xsd;string">P</Constant>
+    </DataPropertyAssertion>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;CartaoCreditoBPIGold"/>
+    </Declaration>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temAssociacao"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoMontepioMaisVida"/>
+        <Individual URI="&OntologyCartoes;AmnistiaInternacional"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temAssociacao"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoMontepioMaisVida"/>
+        <Individual URI="&OntologyCartoes;LigaBombeirosPortugueses"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temGama"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoMontepioMaisVida"/>
+        <Individual URI="&OntologyCartoes;Classic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temRede"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoMontepioMaisVida"/>
+        <Individual URI="&OntologyCartoes;Visa"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temSeguro"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoMontepioMaisVida"/>
+        <Individual URI="&OntologyCartoes;SeguroRouboUsoFraudulento"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty URI="&OntologyCartoes;temTipoAssistencia"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoMontepioMaisVida"/>
+        <Individual URI="&OntologyCartoes;AssistenciaDomicilio"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty URI="&OntologyCartoes;temAnuidadeFixa"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoMontepioMaisVida"/>
+        <Constant datatypeURI="&xsd;integer">20</Constant>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty URI="&OntologyCartoes;temTAEG"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoMontepioMaisVida"/>
+        <Constant datatypeURI="&xsd;integer">21.2</Constant>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty URI="&OntologyCartoes;temTipologia"/>
+        <Individual URI="&OntologyCartoes;CartaoCreditoMontepioMaisVida"/>
+        <Constant datatypeURI="&xsd;string">P</Constant>
+    </DataPropertyAssertion>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;CartaoCreditoMontepioMaisVida"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;CashBack"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;Classic"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;FraccionamentoSemJuros"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;Gold"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;IsencaoTaxasGasolineiras"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;LigaBombeirosPortugueses"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;LinhaCreditoExtra"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;MasterCard"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;MemberShipRewards"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;OfertaAnuidadeAno1"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;Platinium"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;PriorityPass"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;ProgramaMilhas"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;SeguroAssistencia"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;SeguroProteccaoCredito"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;SeguroProteccaoJuridica"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;SeguroRouboUsoFraudulento"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;SeguroSaude"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;SeguroViagens"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;Silver"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;UNICEF"/>
+    </Declaration>
+    <Declaration>
+        <Individual URI="&OntologyCartoes;Visa"/>
+    </Declaration>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1138) http://owlapi.sourceforge.net -->
+

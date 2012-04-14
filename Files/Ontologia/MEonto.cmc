@@ -1,0 +1,43 @@
+%-----A ontologia de base (conceitos e associações)
+conceito(pes,'Pessoa','').
+conceito(emig,'Emigrante','').
+conceito(obra,'Obra','').
+conceito(grav,'Gravura','').
+conceito(doc,'Documento Oficial/Tecnico','').
+conceito(liv,'Livro','').
+conceito(ev,'Evento','').
+conceito(loc,'Local','').
+conceito(data,'Data','').
+conceito(morte,'Morte','').
+conceito(nasc,'Nascimento','').
+conceito(casa,'Casamento','').
+conceito(emb,'Embarque','').
+
+assoc(tipo).
+assoc(ocorre).
+assoc(controi).
+assoc(é-um).
+assoc(retratado).
+assoc(referido).
+assoc(participa).
+
+%----   O mapa de conceitos
+%------ que descreve a nossa UCE em Engenharia de Linguagens
+mapa(emig, e-um,pes).
+
+mapa(pes,constroi,obra).
+mapa(pes,retratado,grav).
+mapa(pes,participa,ev).
+mapa(pes,referido,doc).
+mapa(pes,referido,liv).
+
+mapa(obra,retratada,grav).
+mapa(obra,referida,ev).
+
+mapa(ev,ocorre,loc).
+mapa(ev,ocorre,data).
+mapa(ev,retratado,grav).
+mapa(ev,tipo,morte).
+mapa(ev,tipo,nasc).
+mapa(ev,tipo,casa).
+mapa(ev,tipo,emb).
