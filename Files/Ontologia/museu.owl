@@ -16,22 +16,23 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      ontologyIRI="http://www.semanticweb.org/miguel/ontologies/2012/3/untitled-ontology-3">
-    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
-    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Annotation>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Esta ontologia especifica o conhecimento sobre o Museu da Emigramação e das Comunidades de Fafe.</Literal>
-    </Annotation>
-    <Annotation>
-        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <AnnotationProperty abbreviatedIRI=":versionInfo"/>
         <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">v 1.0</Literal>
     </Annotation>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Bruno Azevedo
 Miguel Costa</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="pt" datatypeIRI="&rdf;PlainLiteral">Esta ontologia especifica o conhecimento sobre o Museu da Emigramação e das Comunidades de Fafe.</Literal>
     </Annotation>
     <Declaration>
         <Class IRI="#Casamento"/>
@@ -82,7 +83,13 @@ Miguel Costa</Literal>
         <ObjectProperty IRI="#constroi"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#emigrouPara"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#ocorre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ocorreu"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#participa"/>
@@ -102,6 +109,9 @@ Miguel Costa</Literal>
     <Declaration>
         <ObjectProperty IRI="#é-um"/>
     </Declaration>
+    <Declaration>
+        <DataProperty IRI="#temProfissao"/>
+    </Declaration>
     <EquivalentClasses>
         <Class IRI="#Evento"/>
         <ObjectSomeValuesFrom>
@@ -119,43 +129,8 @@ Miguel Costa</Literal>
     <EquivalentClasses>
         <Class IRI="#Evento"/>
         <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#referido"/>
-            <Class IRI="#Nascimento"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Evento"/>
-        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#retratado"/>
             <Class IRI="#Gravura"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Evento"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#tipo"/>
-            <Class IRI="#Casamento"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Evento"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#tipo"/>
-            <Class IRI="#Embarque"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Evento"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#tipo"/>
-            <Class IRI="#Morte"/>
-        </ObjectSomeValuesFrom>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#Evento"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#tipo"/>
-            <Class IRI="#Nascimento"/>
         </ObjectSomeValuesFrom>
     </EquivalentClasses>
     <EquivalentClasses>
@@ -230,23 +205,30 @@ Miguel Costa</Literal>
     </EquivalentClasses>
     <SubClassOf>
         <Class IRI="#Casamento"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="#Evento"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Data"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI=":Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Embarque"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class IRI="#Evento"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Emigrante"/>
         <Class IRI="#Pessoa"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Emigrante"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#emigrouPara"/>
+            <Class IRI="#Local"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Evento"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI=":Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Fotografia"/>
@@ -258,39 +240,102 @@ Miguel Costa</Literal>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Livro"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI=":Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Local"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Morte"/>
+        <Class IRI="#Evento"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nascimento"/>
+        <Class IRI="#Evento"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Obra"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI=":Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Pessoa"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI=":Thing"/>
     </SubClassOf>
-    <DisjointClasses>
-        <Class IRI="#Casamento"/>
-        <Class IRI="#Data"/>
-        <Class IRI="#Documento"/>
-        <Class IRI="#Embarque"/>
-        <Class IRI="#Emigrante"/>
-        <Class IRI="#Gravura"/>
-        <Class IRI="#Livro"/>
-        <Class IRI="#Local"/>
-        <Class IRI="#Morte"/>
-        <Class IRI="#Nascimento"/>
-    </DisjointClasses>
-    <SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#ocorreu"/>
         <ObjectProperty IRI="#ocorre"/>
-        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
-    </SubObjectPropertyOf>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#retratado"/>
+        <ObjectProperty IRI="#retrata"/>
+    </InverseObjectProperties>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#constroi"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#emigrouPara"/>
+        <Class IRI="#Emigrante"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ocorre"/>
+        <Class IRI="#Evento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ocorreu"/>
+        <Class IRI="#Local"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#referido"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#retrata"/>
+        <Class IRI="#Peca"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#retratado"/>
+        <Class IRI="#Pessoa"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#tipo"/>
+        <Class IRI="#Evento"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#emigrouPara"/>
+        <Class IRI="#Local"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ocorre"/>
+        <Class IRI="#Local"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#ocorreu"/>
+        <Class IRI="#Evento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#referido"/>
+        <Class IRI="#Documento"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#retratado"/>
+        <Class IRI="#Peca"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#temProfissao"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#temProfissao"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </DataPropertyDomain>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Emigrante</IRI>
+        <Literal datatypeIRI="&rdf;PlainLiteral">Pessoa que emigrou e depois voltou para o país onde nasceu. Estas pessaos são chamadas de Emigrante retorna viagem.</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
 

@@ -14,7 +14,8 @@
 			<?php 
 
 			// absolute path
-			$s = realpath("/opt/lampp/htdocs/EL/Files/Imagens/".$data->getResources_One_path());
+			//$s = realpath("/opt/lampp/htdocs/EL/Files/Imagens/".$data->getResources_One_path());
+			$s = Yii::app()->basePath."/../../../Files/Imagens/".$data->getResources_One_path();
 
 			if(file_exists($s)){
 				?>

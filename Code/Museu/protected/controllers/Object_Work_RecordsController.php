@@ -643,6 +643,8 @@ class Object_Work_RecordsController extends Controller
 		if(isset($_POST['Object_Work_Records']))
 		{
 			$model->attributes=$_POST['Object_Work_Records'];
+			$model->object_Work_Types = array();
+			
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_object_Work_Records));
 		}
