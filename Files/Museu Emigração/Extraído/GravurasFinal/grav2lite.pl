@@ -91,7 +91,7 @@ $body .= "<locationWrap><locationSet><locationName xmlns:ns1=\"http://www.getty.
 	$body .= "</descriptiveMetadata>";
 	$body .= "<administrativeMetadata>";
 	$body .= "<recordWrap><recordID>".$cdwa->{"ni"}."</recordID><recordType/></recordWrap>";
-	my $niNew = $cdwa->{"ni"}
+	my $niNew = $cdwa->{"ni"};
 	$niNew =~ s/GI//g;
 	$body .= "<resourceWrap><resourceSet><linkResource>gravuras/".$niNew.".JPG</linkResource></resourceSet></resourceWrap>";
 	$body .= "</administrativeMetadata>";
