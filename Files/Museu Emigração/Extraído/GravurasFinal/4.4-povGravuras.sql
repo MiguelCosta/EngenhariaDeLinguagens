@@ -2,7 +2,7 @@
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (504, '<Desconhecido>', '8,4 x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,504);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,504);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (504,'Zincogravura', 504);
@@ -12,8 +12,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1005,'8,4','cm','width', 556);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1006,'5,9','cm','height', 556);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('504', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (557, 504, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0451, 'objectId', 557);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (504, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Afonso Nunes Gomes, no seu gabinete de trabalho', 504);
@@ -24,13 +27,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 504);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0451', 504);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('504', 'gravuras/GI0451.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('504', 'gravuras/0451.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('504','504','504');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (505, '<Desconhecido>', '9,2 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,505);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,505);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (505,'Zincogravura', 505);
@@ -40,8 +43,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1007,'9,2','cm','width', 557);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1008,'5,5','cm','height', 557);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('505', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (558, 505, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0452, 'objectId', 558);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (505, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Artur Pinto Bastos', 505);
@@ -56,13 +62,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 505);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0452', 505);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('505', 'gravuras/GI0452.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('505', 'gravuras/0452.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('505','505','505');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (506, '<Desconhecido>', '8,9 x 5,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,506);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,506);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (506,'Zincogravura', 506);
@@ -72,8 +78,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1009,'8,9','cm','width', 558);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1010,'5,8','cm','height', 558);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('506', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (559, 506, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0453, 'objectId', 559);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (506, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('O templo do bom Jesus do monte, em braga, a bela e poética estância que nacionais e estrangeiros frequentam e admiram', 506);
@@ -96,13 +105,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 506);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0453', 506);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('506', 'gravuras/GI0453.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('506', 'gravuras/0453.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('506','506','506');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (507, '<Desconhecido>', '7,2 x 4,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,507);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,507);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (507,'Zincogravura', 507);
@@ -112,8 +121,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1011,'7,2','cm','width', 559);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1012,'4,2','cm','height', 559);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('507', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (560, 507, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0454, 'objectId', 560);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (507, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Sr. Conde Dias Garcia', 507);
@@ -124,13 +136,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 507);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0454', 507);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('507', 'gravuras/GI0454.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('507', 'gravuras/0454.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('507','507','507');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (508, '<Desconhecido>', '7,2 x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,508);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,508);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (508,'Zincogravura', 508);
@@ -140,8 +152,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1013,'7,2','cm','width', 560);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1014,'6,1','cm','height', 560);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('508', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (561, 508, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0455, 'objectId', 561);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (508, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Humor ilustrado', 508);
@@ -152,13 +167,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 508);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0455', 508);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('508', 'gravuras/GI0455.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('508', 'gravuras/0455.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('508','508','508');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (509, '<Desconhecido>', '11 x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,509);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,509);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (509,'Zincogravura', 509);
@@ -168,8 +183,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1015,'11','cm','width', 561);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1016,'6,2','cm','height', 561);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('509', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (562, 509, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0456, 'objectId', 562);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (509, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('António Alberto Pereira Leite de Freitas', 509);
@@ -180,13 +198,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 509);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0456', 509);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('509', 'gravuras/GI0456.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('509', 'gravuras/0456.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('509','509','509');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (510, '<Desconhecido>', '6 x 9,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,510);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,510);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (510,'Zincogravura', 510);
@@ -196,8 +214,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1017,'6','cm','width', 562);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1018,'9,2','cm','height', 562);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('510', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (563, 510, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0457, 'objectId', 563);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (510, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Rio de Janeiro - a chegada do senhor general craveiro Lopes aquela cidade brasileira, por entre significativos sorrisos e delirantes aplausos', 510);
@@ -208,13 +229,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 510);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0457', 510);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('510', 'gravuras/GI0457.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('510', 'gravuras/0457.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('510','510','510');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (511, '<Desconhecido>', '6,5 x 4,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,511);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,511);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (511,'Zincogravura', 511);
@@ -224,8 +245,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1019,'6,5','cm','width', 563);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1020,'4,9','cm','height', 563);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('511', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (564, 511, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0458, 'objectId', 564);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (511, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Dr. António Martins de Freitas', 511);
@@ -236,13 +260,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 511);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0458', 511);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('511', 'gravuras/GI0458.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('511', 'gravuras/0458.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('511','511','511');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (512, '<Desconhecido>', '8,4 x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,512);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,512);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (512,'Zincogravura', 512);
@@ -252,8 +276,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1021,'8,4','cm','width', 564);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1022,'6,4','cm','height', 564);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('512', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (565, 512, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0459, 'objectId', 565);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (512, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('João chagas', 512);
@@ -264,13 +291,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 512);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0459', 512);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('512', 'gravuras/GI0459.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('512', 'gravuras/0459.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('512','512','512');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (513, '<Desconhecido>', '6,2 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,513);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,513);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (513,'Zincogravura', 513);
@@ -280,8 +307,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1023,'6,2','cm','width', 565);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1024,'4','cm','height', 565);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('513', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (566, 513, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0460, 'objectId', 566);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (513, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('António Cândido Fernandes Mota', 513);
@@ -292,13 +322,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 513);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0460', 513);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('513', 'gravuras/GI0460.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('513', 'gravuras/0460.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('513','513','513');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (514, '<Desconhecido>', '8,7 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,514);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,514);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (514,'Zincogravura', 514);
@@ -308,8 +338,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1025,'8,7','cm','width', 566);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1026,'5,6','cm','height', 566);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('514', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (567, 514, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0461, 'objectId', 567);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (514, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Sr. Américo José Pinto Bastos, amigo e companheiro de viagem, e Sr. Mário Gonçalves', 514);
@@ -320,13 +353,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 514);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0461', 514);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('514', 'gravuras/GI0461.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('514', 'gravuras/0461.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('514','514','514');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (515, '<Desconhecido>', '7,2 x 10,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,515);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,515);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (515,'Zincogravura', 515);
@@ -336,8 +369,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1027,'7,2','cm','width', 567);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1028,'10,2','cm','height', 567);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('515', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (568, 515, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0462, 'objectId', 568);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (515, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('dois irmãos: Zé Pedro aos cinco meses e Zé Miguel com 2 anos e meio', 515);
@@ -348,13 +384,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 515);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0462', 515);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('515', 'gravuras/GI0462.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('515', 'gravuras/0462.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('515','515','515');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (516, '<Desconhecido>', '5,1 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,516);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,516);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (516,'Zincogravura', 516);
@@ -364,8 +400,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1029,'5,1','cm','width', 568);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1030,'8','cm','height', 568);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('516', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (569, 516, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0463, 'objectId', 569);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (516, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('frente do Jardim do Calvário - Fafe', 516);
@@ -378,13 +417,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 516);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0463', 516);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('516', 'gravuras/GI0463.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('516', 'gravuras/0463.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('516','516','516');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (517, '<Desconhecido>', '9,2 x 6,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,517);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,517);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (517,'Zincogravura', 517);
@@ -394,8 +433,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1031,'9,2','cm','width', 569);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1032,'6,6','cm','height', 569);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('517', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (570, 517, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0464, 'objectId', 570);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (517, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('(casal saloio) - Ana Cristina Summavielle Mendes de Abreu e o menino Parádio Cabral de Almeida Summavielle', 517);
@@ -406,13 +448,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 517);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0464', 517);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('517', 'gravuras/GI0464.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('517', 'gravuras/0464.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('517','517','517');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (518, '<Desconhecido>', '5,5 x 3,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,518);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,518);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (518,'Zincogravura', 518);
@@ -422,8 +464,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1033,'5,5','cm','width', 570);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1034,'3,3','cm','height', 570);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('518', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (571, 518, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0465, 'objectId', 571);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (518, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Comendador Alvares de Carvalho', 518);
@@ -434,13 +479,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 518);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0465', 518);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('518', 'gravuras/GI0465.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('518', 'gravuras/0465.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('518','518','518');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (519, '<Desconhecido>', '6 x 9,5 cm', '<Desconhecido>', '20-07-41', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,519);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,519);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (519,'Zincogravura', 519);
@@ -450,8 +495,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1035,'6','cm','width', 571);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1036,'9,5','cm','height', 571);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('519', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (572, 519, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0466, 'objectId', 572);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (519, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('A grande peregrinação ao monte da Penha (Guimarães)', 519);
@@ -462,13 +510,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 519);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0466', 519);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('519', 'gravuras/GI0466.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('519', 'gravuras/0466.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('519','519','519');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (520, '<Desconhecido>', '6,3 x 4,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,520);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,520);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (520,'Zincogravura', 520);
@@ -478,8 +526,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1037,'6,3','cm','width', 572);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1038,'4,1','cm','height', 572);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('520', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (573, 520, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0467, 'objectId', 573);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (520, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('João Carlos da Conceição', 520);
@@ -490,13 +541,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 520);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0467', 520);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('520', 'gravuras/GI0467.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('520', 'gravuras/0467.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('520','520','520');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (521, '<Desconhecido>', '6,6 x 10,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,521);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,521);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (521,'Zincogravura', 521);
@@ -506,8 +557,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1039,'6,6','cm','width', 573);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1040,'10,5','cm','height', 573);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('521', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (574, 521, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0468, 'objectId', 574);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (521, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Três irmãos Paulo Alexandre, Nuno Ricardo e Rui Pedro Covas Coelho Barros', 521);
@@ -518,13 +572,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 521);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0468', 521);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('521', 'gravuras/GI0468.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('521', 'gravuras/0468.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('521','521','521');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (522, '<Desconhecido>', '6,5 x 4,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,522);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,522);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (522,'Zincogravura', 522);
@@ -534,8 +588,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1041,'6,5','cm','width', 574);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1042,'4,1','cm','height', 574);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('522', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (575, 522, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0469, 'objectId', 575);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (522, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Manuel Guedes de Freitas', 522);
@@ -546,13 +603,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 522);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0469', 522);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('522', 'gravuras/GI0469.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('522', 'gravuras/0469.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('522','522','522');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (523, 'Manuel Cirne', '6,3 x 8,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,523);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,523);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (523,'Zincogravura', 523);
@@ -564,8 +621,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1043,'6,3','cm','width', 575);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1044,'8,8','cm','height', 575);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('523', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (576, 523, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0470, 'objectId', 576);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (523, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fafe - em dias de mercado - a feira das panelas na Praça da República', 523);
@@ -576,13 +636,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 523);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0470', 523);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('523', 'gravuras/GI0470.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('523', 'gravuras/0470.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('523','523','523');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (524, '<Desconhecido>', '5,3 x 8,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,524);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,524);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (524,'Zincogravura', 524);
@@ -592,8 +652,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1045,'5,3','cm','width', 576);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1046,'8,7','cm','height', 576);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('524', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (577, 524, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0471, 'objectId', 577);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (524, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('S. João da madeira', 524);
@@ -604,13 +667,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 524);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0471', 524);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('524', 'gravuras/GI0471.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('524', 'gravuras/0471.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('524','524','524');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (525, '<Desconhecido>', '8 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,525);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,525);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (525,'Zincogravura', 525);
@@ -620,8 +683,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1047,'8','cm','width', 577);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1048,'6,5','cm','height', 577);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('525', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (578, 525, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0472, 'objectId', 578);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (525, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Quadro do falecido e inspirado pintor José Malhoa', 525);
@@ -632,13 +698,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 525);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0472', 525);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('525', 'gravuras/GI0472.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('525', 'gravuras/0472.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('525','525','525');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (526, '<Desconhecido>', '6,2 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,526);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,526);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (526,'Zincogravura', 526);
@@ -648,8 +714,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1049,'6,2','cm','width', 578);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1050,'4','cm','height', 578);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('526', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (579, 526, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0473, 'objectId', 579);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (526, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Armando da Cunha Vieira de Castro', 526);
@@ -660,19 +729,19 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 526);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0473', 526);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('526', 'gravuras/GI0473.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('526', 'gravuras/0473.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('526','526','526');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (527, 'Manuel Cirrne', '9,1 x 6,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,527);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,527);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (527,'Zincogravura', 527);
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (23,'Manuel Cirrne','personalName');
-INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (23,'masculino');
+INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (23,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (23,23);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (527,23);
 /* Tabela IndexingMeasurements */
@@ -681,8 +750,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1051,'9,1','cm','width', 579);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1052,'6,3','cm','height', 579);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('527', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (580, 527, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0474, 'objectId', 580);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (527, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Palacete João Alves de Freitas', 527);
@@ -693,13 +765,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 527);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0474', 527);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('527', 'gravuras/GI0474.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('527', 'gravuras/0474.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('527','527','527');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (528, '<Desconhecido>', '5,7 x 4,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,528);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,528);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (528,'Zincogravura', 528);
@@ -709,8 +781,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1053,'5,7','cm','width', 580);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1054,'4,3','cm','height', 580);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('528', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (581, 528, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0475, 'objectId', 581);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (528, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Sr. Dr. José Júlio Leite Lage', 528);
@@ -721,13 +796,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 528);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0475', 528);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('528', 'gravuras/GI0475.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('528', 'gravuras/0475.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('528','528','528');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (529, '<Desconhecido>', '5,3 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,529);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,529);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (529,'Zincogravura', 529);
@@ -737,8 +812,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1055,'5,3','cm','width', 581);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1056,'9','cm','height', 581);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('529', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (582, 529, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0476, 'objectId', 582);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (529, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Palacete da Quinta da Feira Velha na Avenida 5 de Outubro', 529);
@@ -749,13 +827,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 529);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0476', 529);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('529', 'gravuras/GI0476.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('529', 'gravuras/0476.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('529','529','529');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (530, '<Desconhecido>', '4,2 x 5,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,530);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,530);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (530,'Zincogravura', 530);
@@ -765,8 +843,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1057,'4,2','cm','width', 582);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1058,'5,8','cm','height', 582);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('530', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (583, 530, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0477, 'objectId', 583);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (530, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('a Sr.ª Marina Horta da Costa e o Sr. Miguel Vieira da Costa', 530);
@@ -777,13 +858,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 530);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0477', 530);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('530', 'gravuras/GI0477.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('530', 'gravuras/0477.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('530','530','530');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (531, '<Desconhecido>', '5,2 x 7,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,531);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,531);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (531,'Zincogravura', 531);
@@ -793,8 +874,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1059,'5,2','cm','width', 583);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1060,'7,6','cm','height', 583);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('531', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (584, 531, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0478, 'objectId', 584);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (531, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('A torre da igreja de Quinchães', 531);
@@ -805,13 +889,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 531);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0478', 531);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('531', 'gravuras/GI0478.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('531', 'gravuras/0478.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('531','531','531');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (532, '<Desconhecido>', '7,3 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,532);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,532);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (532,'Zincogravura', 532);
@@ -821,8 +905,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1061,'7,3','cm','width', 584);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1062,'5,5','cm','height', 584);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('532', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (585, 532, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0479, 'objectId', 585);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (532, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('A estátua de Santa Joana d\'Arc, un Domremy', 532);
@@ -835,13 +922,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 532);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0479', 532);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('532', 'gravuras/GI0479.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('532', 'gravuras/0479.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('532','532','532');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (533, '<Desconhecido>', '6 x 9,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,533);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,533);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (533,'Zincogravura', 533);
@@ -851,8 +938,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1063,'6','cm','width', 585);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1064,'9,2','cm','height', 585);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('533', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (586, 533, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0480, 'objectId', 586);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (533, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Igreja Nova - o seu aspecto antigo quando paralisada', 533);
@@ -865,13 +955,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 533);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0480', 533);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('533', 'gravuras/GI0480.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('533', 'gravuras/0480.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('533','533','533');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (534, '<Desconhecido>', '5,4 x 3,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,534);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,534);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (534,'Zincogravura', 534);
@@ -881,8 +971,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1065,'5,4','cm','width', 586);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1066,'3,4','cm','height', 586);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('534', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (587, 534, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0481, 'objectId', 587);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (534, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Comendador Alfredo da Silva Peixoto', 534);
@@ -893,13 +986,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 534);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0481', 534);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('534', 'gravuras/GI0481.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('534', 'gravuras/0481.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('534','534','534');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (535, '<Desconhecido>', '8,8 x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,535);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,535);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (535,'Zincogravura', 535);
@@ -909,8 +1002,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1067,'8,8','cm','width', 587);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1068,'5,9','cm','height', 587);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('535', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (588, 535, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0482, 'objectId', 588);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (535, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('António Nogueira Mendes', 535);
@@ -921,13 +1017,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 535);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0482', 535);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('535', 'gravuras/GI0482.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('535', 'gravuras/0482.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('535','535','535');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (536, '<Desconhecido>', '5,8 x 3,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,536);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,536);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (536,'Zincogravura', 536);
@@ -937,8 +1033,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1069,'5,8','cm','width', 588);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1070,'3,7','cm','height', 588);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('536', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (589, 536, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0483, 'objectId', 589);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (536, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Padre Ezequiel Freitas', 536);
@@ -949,13 +1048,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 536);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0483', 536);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('536', 'gravuras/GI0483.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('536', 'gravuras/0483.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('536','536','536');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (537, '<Desconhecido>', '5,8 x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,537);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,537);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (537,'Zincogravura', 537);
@@ -965,8 +1064,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1071,'5,8','cm','width', 589);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1072,'7,8','cm','height', 589);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('537', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (590, 537, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0484, 'objectId', 590);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (537, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Igreja da Serra do Pilar - V. N. de Gaia', 537);
@@ -977,13 +1079,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 537);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0484', 537);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('537', 'gravuras/GI0484.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('537', 'gravuras/0484.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('537','537','537');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (538, '<Desconhecido>', '5,2 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,538);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,538);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (538,'Zincogravura', 538);
@@ -993,8 +1095,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1073,'5,2','cm','width', 590);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1074,'7,5','cm','height', 590);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('538', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (591, 538, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0485, 'objectId', 591);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (538, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Hospital de Mondim', 538);
@@ -1005,13 +1110,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 538);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0485', 538);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('538', 'gravuras/GI0485.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('538', 'gravuras/0485.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('538','538','538');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (539, '<Desconhecido>', '8,8 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,539);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,539);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (539,'Zincogravura', 539);
@@ -1021,8 +1126,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1075,'8,8','cm','width', 591);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1076,'5,6','cm','height', 591);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('539', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (592, 539, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0486, 'objectId', 592);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (539, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Dois irmãos: Maria do Carmo e Armando Lameiras Vieira de Castro Rocha', 539);
@@ -1033,13 +1141,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 539);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0486', 539);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('539', 'gravuras/GI0486.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('539', 'gravuras/0486.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('539','539','539');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (540, '<Desconhecido>', '6 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,540);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,540);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (540,'Zincogravura', 540);
@@ -1049,8 +1157,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1077,'6','cm','width', 592);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1078,'10','cm','height', 592);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('540', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (593, 540, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0487, 'objectId', 593);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (540, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Ana Paula, Ricardo Jorge e Fernanda Alberta Rodrigues Gonçalves', 540);
@@ -1061,13 +1172,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 540);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0487', 540);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('540', 'gravuras/GI0487.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('540', 'gravuras/0487.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('540','540','540');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (541, '<Desconhecido>', '6,5 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,541);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,541);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (541,'Zincogravura', 541);
@@ -1077,8 +1188,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1079,'6,5','cm','width', 593);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1080,'4,5','cm','height', 593);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('541', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (594, 541, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0488, 'objectId', 594);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (541, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Ana Maria da Conceição', 541);
@@ -1089,13 +1203,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 541);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0488', 541);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('541', 'gravuras/GI0488.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('541', 'gravuras/0488.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('541','541','541');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (542, '<Desconhecido>', '5,9 x 8,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,542);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,542);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (542,'Zincogravura', 542);
@@ -1105,8 +1219,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1081,'5,9','cm','width', 594);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1082,'8,6','cm','height', 594);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('542', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (595, 542, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0489, 'objectId', 595);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (542, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('S. Tomé - Aspecto do desfile em S. Tomé', 542);
@@ -1117,13 +1234,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 542);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0489', 542);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('542', 'gravuras/GI0489.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('542', 'gravuras/0489.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('542','542','542');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (543, '<Desconhecido>', '6,4 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,543);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,543);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (543,'Zincogravura', 543);
@@ -1133,8 +1250,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1083,'6,4','cm','width', 595);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1084,'4,6','cm','height', 595);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('543', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (596, 543, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0490, 'objectId', 596);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (543, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Dr. Artur Aguiar Nunes', 543);
@@ -1145,19 +1265,19 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 543);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0490', 543);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('543', 'gravuras/GI0490.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('543', 'gravuras/0490.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('543','543','543');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (544, 'Norte - Porto', '6 x 9,5 cm', '<Desconhecido>', '06-01-1955', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,544);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,544);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (544,'Zincogravura', 544);
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (24,'Norte - Porto','personalName');
-INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (24,'masculino');
+INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (24,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (24,24);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (544,24);
 /* Tabela IndexingMeasurements */
@@ -1170,8 +1290,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
 	VALUES (206, 55, 55, 544);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('544', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (597, 544, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0491, 'objectId', 597);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (544, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Um casalinho de crianças duma freguesia, entrega ao Sr. Dr. Maximino de Matos o donativo em dinheiro, que este recebe sorridente.', 544);
@@ -1184,13 +1307,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 544);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0491', 544);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('544', 'gravuras/GI0491.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('544', 'gravuras/0491.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('544','544','544');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (545, '<Desconhecido>', '5,5 x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,545);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,545);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (545,'Zincogravura', 545);
@@ -1200,8 +1323,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1087,'5,5','cm','width', 597);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1088,'9,9','cm','height', 597);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('545', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (598, 545, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0492, 'objectId', 598);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (545, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('A Igreja Nova - Grande obra de Fafe - Arte e Religião', 545);
@@ -1212,13 +1338,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 545);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0492', 545);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('545', 'gravuras/GI0492.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('545', 'gravuras/0492.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('545','545','545');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (546, '<Desconhecido>', '13,2 x 8,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,546);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,546);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (546,'Zincogravura', 546);
@@ -1228,8 +1354,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1089,'13,2','cm','width', 598);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1090,'8,8','cm','height', 598);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('546', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (599, 546, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0493, 'objectId', 599);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (546, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Julho', 546);
@@ -1240,13 +1369,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 546);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0493', 546);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('546', 'gravuras/GI0493.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('546', 'gravuras/0493.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('546','546','546');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (547, '<Desconhecido>', '8,8 x 5,8 cm', '<Desconhecido>', '26-01-1956', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,547);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,547);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (547,'Zincogravura', 547);
@@ -1260,8 +1389,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
 	VALUES (207, 56, 56, 547);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('547', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (600, 547, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0494, 'objectId', 600);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (547, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Casamento de: Sr. Eljo Sousa Pinto de Aragão e Beatriz Pacheco de Paula Leite, na Basílica de Santo António do Embaré, no estado de Santos, no Brasil', 547);
@@ -1272,13 +1404,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 547);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0494', 547);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('547', 'gravuras/GI0494.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('547', 'gravuras/0494.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('547','547','547');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (548, '<Desconhecido>', '4,1 x 6,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,548);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,548);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (548,'Zincogravura', 548);
@@ -1288,8 +1420,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1093,'4,1','cm','width', 600);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1094,'6,7','cm','height', 600);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('548', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (601, 548, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0495, 'objectId', 601);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (548, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('D. Carmelina Lopes Loureiro e Bernardo de Almeida Loureiro', 548);
@@ -1300,13 +1435,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 548);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0495', 548);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('548', 'gravuras/GI0495.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('548', 'gravuras/0495.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('548','548','548');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (549, 'Norte - Porto', '6,2 x 8,4 cm', '<Desconhecido>', '06-01-1955', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,549);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,549);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (549,'Zincogravura', 549);
@@ -1322,8 +1457,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
 	VALUES (208, 55, 55, 549);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('549', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (602, 549, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0496, 'objectId', 602);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (549, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('A freguesia de Freitas desfila no grande cortejo de oferendas', 549);
@@ -1334,13 +1472,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 549);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0496', 549);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('549', 'gravuras/GI0496.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('549', 'gravuras/0496.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('549','549','549');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (550, '<Desconhecido>', '5,3 x 8,7 cm', '<Desconhecido>', '06-01-1955', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,550);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,550);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (550,'Zincogravura', 550);
@@ -1354,8 +1492,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
 	VALUES (209, 55, 55, 550);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('550', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (603, 550, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0497, 'objectId', 603);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (550, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('«Um pitoresco aspecto do grande cortejo de oferendas»', 550);
@@ -1366,13 +1507,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 550);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0497', 550);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('550', 'gravuras/GI0497.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('550', 'gravuras/0497.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('550','550','550');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (551, '<Desconhecido>', '5,9 x 9,2 cm', '<Desconhecido>', '24-02-1957', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,551);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,551);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (551,'Zincogravura', 551);
@@ -1386,8 +1527,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
 	VALUES (210, 57, 57, 551);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('551', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (604, 551, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0498, 'objectId', 604);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (551, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('«Jantar de confraternização do Sporting Clube de Fafe, realizado na Pensão Fafense»', 551);
@@ -1398,13 +1542,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 551);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0498', 551);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('551', 'gravuras/GI0498.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('551', 'gravuras/0498.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('551','551','551');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (552, '<Desconhecido>', '5,3 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,552);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,552);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (552,'Zincogravura', 552);
@@ -1414,8 +1558,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1101,'5,3','cm','width', 604);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1102,'7','cm','height', 604);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('552', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (605, 552, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0499, 'objectId', 605);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (552, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Sr. Bento José da Silva Sélos e D. Elvira Rodrigues da Silva Sélos', 552);
@@ -1428,13 +1575,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 552);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0499', 552);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('552', 'gravuras/GI0499.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('552', 'gravuras/0499.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('552','552','552');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (553, '<Desconhecido>', '8,8 x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,553);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,553);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (553,'Zincogravura', 553);
@@ -1444,8 +1591,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1103,'8,8','cm','width', 605);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1104,'6,1','cm','height', 605);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('553', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (606, 553, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0500, 'objectId', 606);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (553, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('José Gonçalves de Oliveira', 553);
@@ -1458,13 +1608,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 553);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0500', 553);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('553', 'gravuras/GI0500.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('553', 'gravuras/0500.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('553','553','553');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (554, '<Desconhecido>', '4,5 x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,554);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,554);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (554,'Zincogravura', 554);
@@ -1474,8 +1624,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1105,'4,5','cm','width', 606);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1106,'6,2','cm','height', 606);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('554', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (607, 554, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0501, 'objectId', 607);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (554, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('«Um pôr de sol - fotografia tirada da casa do Sr. António Leal (Ranha) Fafe»', 554);
@@ -1492,13 +1645,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 554);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0501', 554);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('554', 'gravuras/GI0501.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('554', 'gravuras/0501.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('554','554','554');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (555, '<Desconhecido>', '8,8 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,555);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,555);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (555,'Zincogravura', 555);
@@ -1508,8 +1661,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1107,'8,8','cm','width', 607);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1108,'6','cm','height', 607);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('555', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (608, 555, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0502, 'objectId', 608);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (555, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Olímpio Mendes de Oliveira', 555);
@@ -1520,13 +1676,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 555);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0502', 555);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('555', 'gravuras/GI0502.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('555', 'gravuras/0502.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('555','555','555');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (556, '<Desconhecido>', '5,4 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,556);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,556);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (556,'Zincogravura', 556);
@@ -1536,8 +1692,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1109,'5,4','cm','width', 608);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1110,'4','cm','height', 608);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('556', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (609, 556, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0503, 'objectId', 609);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (556, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Raul Pinto Bastos', 556);
@@ -1548,13 +1707,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 556);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0503', 556);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('556', 'gravuras/GI0503.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('556', 'gravuras/0503.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('556','556','556');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (557, '<Desconhecido>', '9 x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,557);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,557);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (557,'Zincogravura', 557);
@@ -1564,8 +1723,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1111,'9','cm','width', 609);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1112,'6,2','cm','height', 609);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('557', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (610, 557, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0504, 'objectId', 610);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (557, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('A. Correia de Oliveira', 557);
@@ -1576,13 +1738,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 557);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0504', 557);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('557', 'gravuras/GI0504.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('557', 'gravuras/0504.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('557','557','557');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (558, '<Desconhecido>', '5,6 x 9,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,558);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,558);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (558,'Zincogravura', 558);
@@ -1592,8 +1754,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1113,'5,6','cm','width', 610);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1114,'9,7','cm','height', 610);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('558', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (611, 558, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0505, 'objectId', 611);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (558, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('«O Doutor Afonso Costa e os corpos gerentes do \"Centro Republicano Democrático do Porto\"»', 558);
@@ -1604,13 +1769,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 558);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0505', 558);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('558', 'gravuras/GI0505.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('558', 'gravuras/0505.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('558','558','558');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (559, '<Desconhecido>', '8 x 4,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,559);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,559);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (559,'Zincogravura', 559);
@@ -1620,8 +1785,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1115,'8','cm','width', 611);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1116,'4,7','cm','height', 611);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('559', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (612, 559, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0506, 'objectId', 612);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (559, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Dr. Thomaz D Alvim', 559);
@@ -1632,13 +1800,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 559);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0506', 559);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('559', 'gravuras/GI0506.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('559', 'gravuras/0506.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('559','559','559');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (560, '<Desconhecido>', '5,5 x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,560);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,560);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (560,'Zincogravura', 560);
@@ -1648,8 +1816,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1117,'5,5','cm','width', 612);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1118,'5,4','cm','height', 612);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('560', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (613, 560, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0507, 'objectId', 613);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (560, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Humor Ilustrado', 560);
@@ -1660,13 +1831,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 560);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0507', 560);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('560', 'gravuras/GI0507.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('560', 'gravuras/0507.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('560','560','560');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (561, '<Desconhecido>', '7,8 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,561);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,561);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (561,'Zincogravura', 561);
@@ -1676,8 +1847,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1119,'7,8','cm','width', 613);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1120,'5,5','cm','height', 613);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('561', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (614, 561, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0508, 'objectId', 614);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (561, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('José Carlos de Lemos Costa Pinto e Sr. Dr. José da Costa Pinto', 561);
@@ -1688,13 +1862,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 561);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0508', 561);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('561', 'gravuras/GI0508.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('561', 'gravuras/0508.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('561','561','561');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (562, '<Desconhecido>', '5,5 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,562);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,562);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (562,'Zincogravura', 562);
@@ -1704,8 +1878,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1121,'5,5','cm','width', 614);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1122,'7','cm','height', 614);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('562', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (615, 562, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0509, 'objectId', 615);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (562, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('\"Bodas de Prata\" D. Maria Amélia Silva Vieira de Carvalho e João Ramos Oliveira Pedrosa', 562);
@@ -1716,13 +1893,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 562);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0509', 562);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('562', 'gravuras/GI0509.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('562', 'gravuras/0509.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('562','562','562');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (563, '<Desconhecido>', '6,1 x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,563);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,563);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (563,'Zincogravura', 563);
@@ -1732,8 +1909,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1123,'6,1','cm','width', 615);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1124,'9,9','cm','height', 615);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('563', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (616, 563, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0510, 'objectId', 616);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (563, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('grupo luso-brasileiro em S. João do Estoril. Da esquerda para a direita: Jéssica Castro dos Santos; Regina Castro dos Santos; D. Laura Castro dos Santos; Maria da Glória Castro dos Santos; Lurdes Castro dos Santos; atrás da esquerda para a direita: Sr. Luís Filipe Castro dos Santos; Sr. Luís Filipe Castro dos Santos; Sr. Manuel João dos Santos e Sr. Manuel João dos Santos', 563);
@@ -1744,13 +1924,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 563);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0510', 563);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('563', 'gravuras/GI0510.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('563', 'gravuras/0510.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('563','563','563');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (564, '<Desconhecido>', '4 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,564);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,564);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (564,'Zincogravura', 564);
@@ -1760,8 +1940,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1125,'4','cm','width', 616);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1126,'4','cm','height', 616);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('564', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (617, 564, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0511, 'objectId', 617);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (564, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Padre José Joaquim Ribeiro', 564);
@@ -1776,13 +1959,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 564);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0511', 564);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('564', 'gravuras/GI0511.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('564', 'gravuras/0511.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('564','564','564');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (565, '<Desconhecido>', '7 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,565);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,565);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (565,'Zincogravura', 565);
@@ -1792,8 +1975,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1127,'7','cm','width', 617);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1128,'9','cm','height', 617);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('565', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (618, 565, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0512, 'objectId', 618);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (565, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('A menina Ana Paula Barros Fernandes', 565);
@@ -1804,19 +1990,19 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 565);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0512', 565);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('565', 'gravuras/GI0512.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('565', 'gravuras/0512.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('565','565','565');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (566, 'Mesquita, Porto', '5,6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,566);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,566);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (566,'Zincogravura', 566);
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (25,'Mesquita, Porto','personalName');
-INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (25,'masculino');
+INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (25,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (25,25);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (566,25);
 /* Tabela IndexingMeasurements */
@@ -1825,8 +2011,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1129,'5,6','cm','width', 618);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1130,'9','cm','height', 618);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('566', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (619, 566, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0513, 'objectId', 619);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (566, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('«Barcelos - um aspecto do acto inaugural do Monumento do Bombeiro Voluntário de Portugal»', 566);
@@ -1837,13 +2026,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 566);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0513', 566);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('566', 'gravuras/GI0513.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('566', 'gravuras/0513.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('566','566','566');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (567, '<Desconhecido>', '7,3 x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,567);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,567);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (567,'Zincogravura', 567);
@@ -1853,8 +2042,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1131,'7,3','cm','width', 619);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1132,'9,9','cm','height', 619);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('567', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (620, 567, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0514, 'objectId', 620);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (567, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('quinze amigos: da direita para a esquerda, de pé: Artur Pinto Bastos Júnior; Luiz Pereira de Barros; João Vieira Campos de Carvalho; Carlos Pereira de Barros; José Maria Leite de Campos júnior; 6º empregado de farmácia; Jerónimo Caldeiral; António da Silva; António Esteves Ribeiro; Albino Esteves de Barros. Da direita para a esquerda sentados: Franklin de Moura e Silva; Silvino Matos; Arlindo Soares D` Oliveira; Angélico Pinto Bastos; e um fotógrafo de Guimarães', 567);
@@ -1865,19 +2057,19 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 567);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0514', 567);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('567', 'gravuras/GI0514.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('567', 'gravuras/0514.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('567','567','567');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (568, 'Artur Reis', '5,4 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,568);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,568);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (568,'Zincogravura', 568);
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (26,'Artur Reis','personalName');
-INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (26,'masculino');
+INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (26,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (26,26);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (568,26);
 /* Tabela IndexingMeasurements */
@@ -1886,8 +2078,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1133,'5,4','cm','width', 620);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1134,'5,6','cm','height', 620);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('568', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (621, 568, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0515, 'objectId', 621);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (568, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Barragem do Ermal', 568);
@@ -1898,13 +2093,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 568);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0515', 568);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('568', 'gravuras/GI0515.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('568', 'gravuras/0515.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('568','568','568');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (569, '<Desconhecido>', '8,9 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,569);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,569);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (569,'Zincogravura', 569);
@@ -1914,8 +2109,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1135,'8,9','cm','width', 621);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1136,'7,5','cm','height', 621);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('569', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (622, 569, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0516, 'objectId', 622);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (569, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('No cenário de sonho da ilha verde', 569);
@@ -1926,13 +2124,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 569);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0516', 569);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('569', 'gravuras/GI0516.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('569', 'gravuras/0516.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('569','569','569');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (570, '<Desconhecido>', '4,8 x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,570);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,570);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (570,'Zincogravura', 570);
@@ -1942,8 +2140,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1137,'4,8','cm','width', 622);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1138,'7,8','cm','height', 622);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('570', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (623, 570, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0517, 'objectId', 623);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (570, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('«Artur Pinto Bastos passando pela última vez, pelas ruas da sua querida terra»', 570);
@@ -1954,13 +2155,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 570);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0517', 570);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('570', 'gravuras/GI0517.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('570', 'gravuras/0517.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('570','570','570');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (571, '<Desconhecido>', '9 x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,571);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,571);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (571,'Zincogravura', 571);
@@ -1970,8 +2171,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1139,'9','cm','width', 623);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1140,'6,1','cm','height', 623);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('571', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (624, 571, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0518, 'objectId', 624);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (571, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Carminda Leitão e seu irmão', 571);
@@ -1982,13 +2186,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 571);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0518', 571);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('571', 'gravuras/GI0518.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('571', 'gravuras/0518.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('571','571','571');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (572, '<Desconhecido>', '5,1 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,572);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,572);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (572,'Zincogravura', 572);
@@ -1998,8 +2202,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1141,'5,1','cm','width', 624);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1142,'8','cm','height', 624);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('572', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (625, 572, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0519, 'objectId', 625);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (572, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('«Gerez - o Banco Ramão Ortigão»', 572);
@@ -2012,13 +2219,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 572);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0519', 572);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('572', 'gravuras/GI0519.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('572', 'gravuras/0519.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('572','572','572');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (573, '<Desconhecido>', '6 x 8,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,573);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,573);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (573,'Zincogravura', 573);
@@ -2028,8 +2235,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1143,'6','cm','width', 625);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1144,'8,6','cm','height', 625);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('573', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (626, 573, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0520, 'objectId', 626);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (573, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('D. Andrelina Gonçalves de Oliveira e José Gonçalves de Oliveira', 573);
@@ -2046,13 +2256,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 573);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0520', 573);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('573', 'gravuras/GI0520.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('573', 'gravuras/0520.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('573','573','573');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (574, '<Desconhecido>', '6,2 x 8,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,574);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,574);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (574,'Zincogravura', 574);
@@ -2062,8 +2272,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1145,'6,2','cm','width', 626);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1146,'8,8','cm','height', 626);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('574', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (627, 574, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0521, 'objectId', 627);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (574, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fafe - visita do Rio Ferro', 574);
@@ -2074,13 +2287,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 574);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0521', 574);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('574', 'gravuras/GI0521.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('574', 'gravuras/0521.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('574','574','574');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (575, '<Desconhecido>', '6 x 9,5 cm', '<Desconhecido>', '23-02-1957', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,575);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,575);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (575,'Zincogravura', 575);
@@ -2094,8 +2307,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
 	VALUES (211, 57, 57, 575);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('575', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (628, 575, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0522, 'objectId', 628);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (575, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Sessão Solene no Teatro-Cinema de Fafe, em comemoração das Bodas de Prata do Sporting', 575);
@@ -2106,13 +2322,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 575);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0522', 575);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('575', 'gravuras/GI0522.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('575', 'gravuras/0522.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('575','575','575');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (576, '<Desconhecido>', '7,6 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,576);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,576);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (576,'Zincogravura', 576);
@@ -2122,8 +2338,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1149,'7,6','cm','width', 628);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1150,'5,5','cm','height', 628);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('576', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (629, 576, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0523, 'objectId', 629);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (576, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Dr. Germano Lopes Martins', 576);
@@ -2138,13 +2357,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 576);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0523', 576);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('576', 'gravuras/GI0523.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('576', 'gravuras/0523.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('576','576','576');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (577, '<Desconhecido>', '8,3 x 11 cm', '<Desconhecido>', '27-03-1965', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,577);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,577);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (577,'Zincogravura', 577);
@@ -2158,8 +2377,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
 	VALUES (212, 65, 65, 577);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('577', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (630, 577, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0524, 'objectId', 630);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (577, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('«Casamento de: D. Edviges Joffre Pinto Bastos e Sr. Carlos Teixeira da Silva no Santuário Eucarístico da Penha, em Guimarães»', 577);
@@ -2170,13 +2392,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 577);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0524', 577);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('577', 'gravuras/GI0524.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('577', 'gravuras/0524.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('577','577','577');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (578, '<Desconhecido>', '4,5 x 6,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,578);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,578);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (578,'Zincogravura', 578);
@@ -2186,8 +2408,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1153,'4,5','cm','width', 630);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1154,'6,8','cm','height', 630);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('578', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (631, 578, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0525, 'objectId', 631);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (578, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Propaganda de Portugal-Fonte de Vidago', 578);
@@ -2198,13 +2423,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 578);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0525', 578);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('578', 'gravuras/GI0525.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('578', 'gravuras/0525.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('578','578','578');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (579, '<Desconhecido>', '9,7 x 8,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,579);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,579);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (579,'Zincogravura', 579);
@@ -2214,8 +2439,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1155,'9,7','cm','width', 631);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1156,'8,1','cm','height', 631);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('579', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (632, 579, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0526, 'objectId', 632);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (579, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Bruma do Minho - Rio Cavado - Fão', 579);
@@ -2226,13 +2454,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 579);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0526', 579);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('579', 'gravuras/GI0526.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('579', 'gravuras/0526.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('579','579','579');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (580, '<Desconhecido>', '7,5 x 8,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,580);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,580);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (580,'Zincogravura', 580);
@@ -2242,8 +2470,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1157,'7,5','cm','width', 632);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1158,'8,2','cm','height', 632);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('580', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (633, 580, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0527, 'objectId', 633);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (580, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('O fundador e director deste Almanaque, sua esposa e seus 11 filhos', 580);
@@ -2254,13 +2485,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 580);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0527', 580);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('580', 'gravuras/GI0527.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('580', 'gravuras/0527.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('580','580','580');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (581, '<Desconhecido>', '4,8 x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,581);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,581);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (581,'Zincogravura', 581);
@@ -2270,8 +2501,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1159,'4,8','cm','width', 633);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1160,'7,8','cm','height', 633);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('581', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (634, 581, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0528, 'objectId', 634);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (581, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('«Artur Pinto Bastos, na sua última saída de casa - triste despedida!»', 581);
@@ -2282,13 +2516,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 581);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0528', 581);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('581', 'gravuras/GI0528.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('581', 'gravuras/0528.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('581','581','581');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (582, 'João Alves', '6,1 x 10,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,582);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,582);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (582,'Zincogravura', 582);
@@ -2300,8 +2534,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1161,'6,1','cm','width', 634);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1162,'10,3','cm','height', 634);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('582', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (635, 582, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0529, 'objectId', 635);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (582, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fafe - vista geral da Vila', 582);
@@ -2312,13 +2549,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 582);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0529', 582);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('582', 'gravuras/GI0529.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('582', 'gravuras/0529.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('582','582','582');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (583, '<Desconhecido>', '6 x 5,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,583);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,583);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (583,'Zincogravura', 583);
@@ -2328,8 +2565,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1163,'6','cm','width', 635);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1164,'5,3','cm','height', 635);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('583', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (636, 583, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0530, 'objectId', 636);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (583, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('«Bandeira da casa do Minho, do rio, da autoria do Sr. Frutuoso Pereira Ramos, que a ofereceu ao seu centro regional.»', 583);
@@ -2340,13 +2580,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 583);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0530', 583);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('583', 'gravuras/GI0530.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('583', 'gravuras/0530.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('583','583','583');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (584, '<Desconhecido>', '6,3 x 10 cm', '<Desconhecido>', '16-01-1941', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,584);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,584);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (584,'Zincogravura', 584);
@@ -2360,8 +2600,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
 	VALUES (213, 41, 41, 584);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('584', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (637, 584, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0531, 'objectId', 637);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (584, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fafe - a grande nevada de 16-01-1941. Aspecto da Praça da República (antiga Feira-Velha)', 584);
@@ -2372,13 +2615,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 584);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0531', 584);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('584', 'gravuras/GI0531.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('584', 'gravuras/0531.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('584','584','584');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (585, 'João Alves', '5,3 x 8,6 cm', '<Desconhecido>', '06-01-1955', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,585);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,585);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (585,'Zincogravura', 585);
@@ -2394,8 +2637,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
 	VALUES (214, 55, 55, 585);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('585', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (638, 585, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0532, 'objectId', 638);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (585, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('«Golães esteve bem representado no Cortejo de Oferendas»', 585);
@@ -2406,13 +2652,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 585);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0532', 585);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('585', 'gravuras/GI0532.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('585', 'gravuras/0532.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('585','585','585');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (586, '<Desconhecido>', '7,3 x 4,1 cm', '<Desconhecido>', '1937', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,586);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,586);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (586,'Zincogravura', 586);
@@ -2426,8 +2672,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 /* Tabela IndexingDates */
 INSERT INTO IndexingDates (id_indexingDates, earliestDate, latestDate, Object_Work_Record) 
 	VALUES (215, 37, 37, 586);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('586', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (639, 586, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0533, 'objectId', 639);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (586, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('José Pinto Bastos com sua irmã Maria, seu irmão Américo, seu sobrinho Acácio, na Foz do Douro', 586);
@@ -2438,13 +2687,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 586);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0533', 586);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('586', 'gravuras/GI0533.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('586', 'gravuras/0533.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('586','586','586');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (587, '<Desconhecido>', '6,3 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,587);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,587);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (587,'Zincogravura', 587);
@@ -2454,8 +2703,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1171,'6,3','cm','width', 639);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1172,'9','cm','height', 639);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('587', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (640, 587, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0534, 'objectId', 640);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (587, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('As crianças da escola Manuel Cardoso Martins', 587);
@@ -2466,13 +2718,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 587);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0534', 587);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('587', 'gravuras/GI0534.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('587', 'gravuras/0534.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('587','587','587');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (588, '<Desconhecido>', '5,1x 8,5 cm:', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,588);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,588);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (588,'Zincogravura', 588);
@@ -2482,8 +2734,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1173,'5,1','cm','width', 640);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1174,'8,5','cm','height', 640);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('588', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (641, 588, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0535, 'objectId', 641);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (588, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fafe - A nova rua da Granja', 588);
@@ -2494,13 +2749,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 588);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0535', 588);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('588', 'gravuras/GI0535.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('588', 'gravuras/0535.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('588','588','588');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (589, '<Desconhecido>', '11x 9,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,589);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,589);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (589,'Zincogravura', 589);
@@ -2510,8 +2765,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1175,'11','cm','width', 641);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1176,'9,2','cm','height', 641);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('589', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (642, 589, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0536, 'objectId', 642);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (589, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('S. Francisco Xavier - O apóstolo das Índias', 589);
@@ -2526,13 +2784,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 589);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0536', 589);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('589', 'gravuras/GI0536.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('589', 'gravuras/0536.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('589','589','589');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (590, '<Desconhecido>', '3,8x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,590);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,590);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (590,'Zincogravura', 590);
@@ -2542,8 +2800,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1177,'3,8','cm','width', 642);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1178,'9,9','cm','height', 642);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('590', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (643, 590, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0537, 'objectId', 643);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (590, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('.', 590);
@@ -2578,13 +2839,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 590);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0537', 590);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('590', 'gravuras/GI0537.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('590', 'gravuras/0537.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('590','590','590');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (591, '<Desconhecido>', '6,2x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,591);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,591);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (591,'Zincogravura', 591);
@@ -2594,8 +2855,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1179,'6,2','cm','width', 643);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1180,'8,5','cm','height', 643);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('591', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (644, 591, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0538, 'objectId', 644);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (591, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fafe - Vista Geral da Vila', 591);
@@ -2608,13 +2872,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 591);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0538', 591);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('591', 'gravuras/GI0538.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('591', 'gravuras/0538.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('591','591','591');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (592, '<Desconhecido>', '5,2x 8,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,592);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,592);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (592,'Zincogravura', 592);
@@ -2624,8 +2888,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1181,'5,2','cm','width', 644);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1182,'8,9','cm','height', 644);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('592', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (645, 592, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0539, 'objectId', 645);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (592, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Moçambique - Um aspecto da cidade de Lourenço Marques', 592);
@@ -2636,24 +2903,27 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 592);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0539', 592);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('592', 'gravuras/GI0539.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('592', 'gravuras/0539.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('592','592','592');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (593, '<Desconhecido>', '5,3x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,593);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,593);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
-		VALUES (593,'HASH(0x9189540)', 593);
+		VALUES (593,'HASH(0xa52f160)', 593);
 /* Tabela IndexingMeasurements */
 INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (645,593);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1183,'5,3','cm','width', 645);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1184,'6,2','cm','height', 645);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('593', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (646, 593, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0540, 'objectId', 646);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (593, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (978, 'published', 593);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1927:59', 978);
@@ -2661,13 +2931,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 593);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0540', 593);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('593', 'gravuras/GI0540.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('593', 'gravuras/0540.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('593','593','593');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (594, '<Desconhecido>', '6,9x 5,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,594);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,594);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (594,'Zincogravura', 594);
@@ -2677,8 +2947,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1185,'6,9','cm','width', 646);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1186,'5,1','cm','height', 646);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('594', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (647, 594, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0541, 'objectId', 647);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (594, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (979, 'published', 594);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1934:97', 979);
@@ -2686,19 +2959,19 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 594);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0541', 594);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('594', 'gravuras/GI0541.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('594', 'gravuras/0541.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('594','594','594');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (595, 'Vicente Sá', '8,5x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,595);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,595);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (595,'Zincogravura', 595);
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (27,'Vicente Sá','personalName');
-INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (27,'masculino');
+INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (27,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (27,27);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (595,27);
 /* Tabela IndexingMeasurements */
@@ -2707,8 +2980,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1187,'8,5','cm','width', 647);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1188,'6,5','cm','height', 647);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('595', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (648, 595, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0542, 'objectId', 648);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (595, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('A Igreja Românica de Arões S. Romão', 595);
@@ -2721,13 +2997,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 595);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0542', 595);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('595', 'gravuras/GI0542.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('595', 'gravuras/0542.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('595','595','595');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (596, '<Desconhecido>', '5,5x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,596);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,596);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (596,'Zincogravura (?)', 596);
@@ -2737,8 +3013,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1189,'5,5','cm','width', 648);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1190,'9','cm','height', 648);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('596', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (649, 596, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0543, 'objectId', 649);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (596, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fafe - Um aspecto da Praça da República', 596);
@@ -2749,13 +3028,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 596);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0543', 596);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('596', 'gravuras/GI0543.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('596', 'gravuras/0543.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('596','596','596');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (597, '<Desconhecido>', '5,2x 8,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,597);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,597);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (597,'Zincogravura', 597);
@@ -2765,8 +3044,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1191,'5,2','cm','width', 649);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1192,'8,3','cm','height', 649);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('597', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (650, 597, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0544, 'objectId', 650);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (597, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('A rua Montenegro. À esquerda os asilos das crianças e dos velhos', 597);
@@ -2777,13 +3059,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 597);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0544', 597);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('597', 'gravuras/GI0544.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('597', 'gravuras/0544.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('597','597','597');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (598, '<Desconhecido>', '6,2x 4cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,598);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,598);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (598,'Zincogravura', 598);
@@ -2793,8 +3075,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1193,'6,2','cm','width', 650);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1194,'4','cm','height', 650);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('598', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (651, 598, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0545, 'objectId', 651);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (598, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Dr. António Joaquim Bastos Marques Mendes', 598);
@@ -2805,13 +3090,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 598);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0545', 598);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('598', 'gravuras/GI0545.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('598', 'gravuras/0545.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('598','598','598');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (599, '<Desconhecido>', '6,5x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,599);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,599);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (599,'Zincogravura', 599);
@@ -2821,8 +3106,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1195,'6,5','cm','width', 651);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1196,'9','cm','height', 651);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('599', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (652, 599, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0546, 'objectId', 652);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (599, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Angola - Vista área da cidade de Luanda', 599);
@@ -2835,13 +3123,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 599);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0546', 599);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('599', 'gravuras/GI0546.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('599', 'gravuras/0546.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('599','599','599');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (600, '<Desconhecido>', '6,5x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,600);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,600);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (600,'Zincogravura', 600);
@@ -2851,8 +3139,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1197,'6,5','cm','width', 652);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1198,'8,5','cm','height', 652);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('600', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (653, 600, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0547, 'objectId', 653);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (600, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Armazém de Mercearia e Vinhos de Mário José Gonçalves', 600);
@@ -2863,13 +3154,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 600);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0547', 600);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('600', 'gravuras/GI0547.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('600', 'gravuras/0547.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('600','600','600');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (601, '<Desconhecido>', '6,2x 9,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,601);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,601);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (601,'Zincogravura', 601);
@@ -2879,8 +3170,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1199,'6,2','cm','width', 653);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1200,'9,2','cm','height', 653);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('601', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (654, 601, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0548, 'objectId', 654);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (601, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Vista Geral da Fabrica do Bugio', 601);
@@ -2893,19 +3187,19 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 601);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0548', 601);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('601', 'gravuras/GI0548.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('601', 'gravuras/0548.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('601','601','601');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (602, 'Cliché de Armando Leça', '6,1x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,602);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,602);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (602,'Zincogravura', 602);
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (28,'Cliché de Armando Leça','personalName');
-INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (28,'masculino');
+INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (28,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (28,28);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (602,28);
 /* Tabela IndexingMeasurements */
@@ -2914,8 +3208,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1201,'6,1','cm','width', 654);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1202,'8,5','cm','height', 654);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('602', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (655, 602, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0549, 'objectId', 655);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (602, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('S. Gemil (Fafe) Tempo de Colheitas', 602);
@@ -2928,13 +3225,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 602);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0549', 602);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('602', 'gravuras/GI0549.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('602', 'gravuras/0549.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('602','602','602');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (603, '<Desconhecido>', '5,3x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,603);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,603);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (603,'Zincogravura', 603);
@@ -2944,8 +3241,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1203,'5,3','cm','width', 655);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1204,'6,1','cm','height', 655);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('603', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (656, 603, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0550, 'objectId', 656);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (603, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (992, 'published', 603);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1927:59', 992);
@@ -2953,13 +3253,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 603);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0550', 603);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('603', 'gravuras/GI0550.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('603', 'gravuras/0550.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('603','603','603');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (604, '<Desconhecido>', '5,7x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,604);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,604);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (604,'Zincogravura', 604);
@@ -2969,8 +3269,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1205,'5,7','cm','width', 656);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1206,'9','cm','height', 656);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('604', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (657, 604, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0551, 'objectId', 657);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (604, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Como se castigam as gatas', 604);
@@ -2981,13 +3284,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 604);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0551', 604);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('604', 'gravuras/GI0551.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('604', 'gravuras/0551.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('604','604','604');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (605, '<Desconhecido>', '6,2x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,605);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,605);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (605,'Zincogravura', 605);
@@ -2997,8 +3300,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1207,'6,2','cm','width', 657);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1208,'9,1','cm','height', 657);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('605', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (658, 605, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0552, 'objectId', 658);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (605, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('A Festa da Árvore - Iniciação do Bem', 605);
@@ -3009,13 +3315,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 605);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0552', 605);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('605', 'gravuras/GI0552.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('605', 'gravuras/0552.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('605','605','605');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (606, '<Desconhecido>', '6x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,606);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,606);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (606,'Zincogravura', 606);
@@ -3025,8 +3331,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1209,'6','cm','width', 658);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1210,'9','cm','height', 658);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('606', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (659, 606, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0553, 'objectId', 659);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (606, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('castelo da Pena - Cintra', 606);
@@ -3043,19 +3352,19 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 606);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0553', 606);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('606', 'gravuras/GI0553.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('606', 'gravuras/0553.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('606','606','606');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (607, 'Cliché do Srn. Albano Barros', '5,4x7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,607);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,607);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (607,'Zincogravura', 607);
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (29,'Cliché do Srn. Albano Barros','personalName');
-INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (29,'masculino');
+INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (29,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (29,29);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (607,29);
 /* Tabela IndexingMeasurements */
@@ -3064,8 +3373,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1211,'5,4','cm','width', 659);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1212,'7,5','cm','height', 659);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('607', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (660, 607, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0554, 'objectId', 660);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (607, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Uma nevada na Praça do Brasil', 607);
@@ -3076,13 +3388,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 607);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0554', 607);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('607', 'gravuras/GI0554.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('607', 'gravuras/0554.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('607','607','607');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (608, '<Desconhecido>', '13,2x 8,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,608);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,608);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (608,'Zincogravura', 608);
@@ -3092,8 +3404,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1213,'13,2','cm','width', 660);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1214,'8,1','cm','height', 660);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('608', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (661, 608, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0555, 'objectId', 661);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (608, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (1000, 'published', 608);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1919: Contra Capa', 1000);
@@ -3103,13 +3418,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 608);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0555', 608);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('608', 'gravuras/GI0555.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('608', 'gravuras/0555.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('608','608','608');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (609, '<Desconhecido>', '5x 7,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,609);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,609);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (609,'Zincogravura', 609);
@@ -3119,8 +3434,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1215,'5','cm','width', 661);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1216,'7,6','cm','height', 661);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('609', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (662, 609, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0556, 'objectId', 662);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (609, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Jardim do Calvário - Ringue de Patinagem', 609);
@@ -3133,13 +3451,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 609);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0556', 609);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('609', 'gravuras/GI0556.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('609', 'gravuras/0556.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('609','609','609');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (610, '<Desconhecido>', '6,4x 10,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,610);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,610);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (610,'Zincogravura', 610);
@@ -3149,8 +3467,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1217,'6,4','cm','width', 662);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1218,'10,5','cm','height', 662);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('610', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (663, 610, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0557, 'objectId', 663);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (610, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (1004, 'published', 610);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1966:53', 1004);
@@ -3166,13 +3487,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 610);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0557', 610);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('610', 'gravuras/GI0557.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('610', 'gravuras/0557.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('610','610','610');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (611, '<Desconhecido>', '4,7x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,611);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,611);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (611,'Zincogravura', 611);
@@ -3182,8 +3503,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1219,'4,7','cm','width', 663);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1220,'9,5','cm','height', 663);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('611', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (664, 611, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0558, 'objectId', 664);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (611, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (1009, 'published', 611);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1927:21', 1009);
@@ -3205,13 +3529,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 611);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0558', 611);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('611', 'gravuras/GI0558.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('611', 'gravuras/0558.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('611','611','611');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (612, '<Desconhecido>', '9,5x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,612);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,612);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (612,'Zincogravura', 612);
@@ -3221,8 +3545,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1221,'9,5','cm','width', 664);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1222,'6','cm','height', 664);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('612', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (665, 612, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0559, 'objectId', 665);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (612, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Senhora de Antime', 612);
@@ -3235,13 +3562,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 612);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0559', 612);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('612', 'gravuras/GI0559.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('612', 'gravuras/0559.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('612','612','612');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (613, '<Desconhecido>', '10,5x 8,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,613);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,613);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (613,'Zincogravura', 613);
@@ -3251,8 +3578,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1223,'10,5','cm','width', 665);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1224,'8,2','cm','height', 665);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('613', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (666, 613, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0560, 'objectId', 666);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (613, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('na gravura, salienta-se o fundador deste Almanaque, com os nº que ate á data (1950) publicou.', 613);
@@ -3267,13 +3597,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 613);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0560', 613);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('613', 'gravuras/GI0560.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('613', 'gravuras/0560.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('613','613','613');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (614, '<Desconhecido>', '8,1x 7,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,614);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,614);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (614,'Zincogravura', 614);
@@ -3283,8 +3613,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1225,'8,1','cm','width', 666);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1226,'7,1','cm','height', 666);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('614', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (667, 614, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0561, 'objectId', 667);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (614, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Desenho a traço continuo - Apresentamos o apreciável trabalho do nosso amigo Snr. Tenente Aníbal Leite Teixeira da Silva, desenho que tem o merecimento de ser executado em um so traço continuo e fácil de seguir de uma a outra ponta.', 614);
@@ -3295,13 +3628,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço', 614);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0561', 614);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('614', 'gravuras/GI0561.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('614', 'gravuras/0561.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('614','614','614');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (615, '<Desconhecido>', '6,3x 9,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,615);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,615);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (615,'Zincogravura', 615);
@@ -3311,8 +3644,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1227,'6,3','cm','width', 667);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1228,'9,6','cm','height', 667);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('615', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (668, 615, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0562, 'objectId', 668);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (615, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Bota-Fogo (Rio de Janeiro)', 615);
@@ -3323,19 +3659,19 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 615);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0562', 615);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('615', 'gravuras/GI0562.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('615', 'gravuras/0562.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('615','615','615');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (616, 'Cliché João Alves', '5,3x 8,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,616);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,616);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (616,'Zincogravura', 616);
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (30,'Cliché João Alves','personalName');
-INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (30,'masculino');
+INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (30,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (30,30);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (616,30);
 /* Tabela IndexingMeasurements */
@@ -3344,8 +3680,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1229,'5,3','cm','width', 668);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1230,'8,8','cm','height', 668);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('616', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (669, 616, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0565, 'objectId', 669);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (616, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('O grandioso cortejo', 616);
@@ -3356,13 +3695,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 616);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0565', 616);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('616', 'gravuras/GI0565.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('616', 'gravuras/0565.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('616','616','616');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (617, '<Desconhecido>', '6,3x 5,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,617);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,617);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (617,'Zincogravura', 617);
@@ -3372,8 +3711,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1231,'6,3','cm','width', 669);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1232,'5,2','cm','height', 669);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('617', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (670, 617, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0564, 'objectId', 670);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (617, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (1025, 'published', 617);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1934:117', 1025);
@@ -3381,13 +3723,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 617);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0564', 617);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('617', 'gravuras/GI0564.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('617', 'gravuras/0564.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('617','617','617');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (618, '<Desconhecido>', '5,4x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,618);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,618);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (618,'Zincogravura', 618);
@@ -3397,8 +3739,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1233,'5,4','cm','width', 670);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1234,'9','cm','height', 670);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('618', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (671, 618, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0565, 'objectId', 671);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (618, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Angola - Uma avenida de Sá da Bandeira', 618);
@@ -3411,13 +3756,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço', 618);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0565', 618);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('618', 'gravuras/GI0565.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('618', 'gravuras/0565.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('618','618','618');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (619, '<Desconhecido>', '9,5x 7,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,619);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,619);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (619,'Zincogravura', 619);
@@ -3427,8 +3772,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1235,'9,5','cm','width', 671);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1236,'7,3','cm','height', 671);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('619', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (672, 619, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0566, 'objectId', 672);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (619, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Armazéns Cunha - Fazendas, Malhas, Miudezas.', 619);
@@ -3443,13 +3791,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço', 619);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0566', 619);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('619', 'gravuras/GI0566.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('619', 'gravuras/0566.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('619','619','619');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (620, '<Desconhecido>', '4,7x9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,620);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,620);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (620,'Zincogravura', 620);
@@ -3459,8 +3807,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1237,'4,7','cm','width', 672);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1238,'9,5','cm','height', 672);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('620', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (673, 620, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0567, 'objectId', 673);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (620, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (1031, 'published', 620);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1966:43', 1031);
@@ -3478,13 +3829,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 620);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0567', 620);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('620', 'gravuras/GI0567.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('620', 'gravuras/0567.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('620','620','620');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (621, '<Desconhecido>', '5,4x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,621);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,621);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (621,'Zincogravura', 621);
@@ -3494,8 +3845,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1239,'5,4','cm','width', 673);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1240,'8','cm','height', 673);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('621', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (674, 621, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0568, 'objectId', 674);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (621, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Uma nuvem; Quadro de F. Levé', 621);
@@ -3506,13 +3860,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 621);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0568', 621);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('621', 'gravuras/GI0568.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('621', 'gravuras/0568.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('621','621','621');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (622, '<Desconhecido>', '6x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,622);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,622);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (622,'Zincogravura', 622);
@@ -3522,8 +3876,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1241,'6','cm','width', 674);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1242,'9','cm','height', 674);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('622', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (675, 622, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0569, 'objectId', 675);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (622, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Estabelecimento chique de Fafe - Café Avenida', 622);
@@ -3534,13 +3891,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 622);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0569', 622);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('622', 'gravuras/GI0569.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('622', 'gravuras/0569.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('622','622','622');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (623, '<Desconhecido>', '10,9x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,623);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,623);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (623,'Zincogravura', 623);
@@ -3550,8 +3907,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1243,'10,9','cm','width', 675);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1244,'9,9','cm','height', 675);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('623', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (676, 623, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0570, 'objectId', 676);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (623, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('O sumptuoso prédio onde se encontram instalados os Armazéns Cunha, sede do Banco Português do Atlântico, etc.', 623);
@@ -3610,13 +3970,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 623);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0570', 623);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('623', 'gravuras/GI0570.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('623', 'gravuras/0570.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('623','623','623');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (624, '<Desconhecido>', '10,8x 6,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,624);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,624);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (624,'Zincogravura', 624);
@@ -3626,8 +3986,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1245,'10,8','cm','width', 676);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1246,'6,9','cm','height', 676);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('624', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (677, 624, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0571, 'objectId', 677);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (624, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Natal - adoração dos pastores', 624);
@@ -3638,13 +4001,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 624);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0571', 624);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('624', 'gravuras/GI0571.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('624', 'gravuras/0571.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('624','624','624');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (625, '<Desconhecido>', '11,8x 7,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,625);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,625);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (625,'Zincogravura', 625);
@@ -3654,8 +4017,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1247,'11,8','cm','width', 677);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1248,'7,3','cm','height', 677);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('625', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (678, 625, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0572, 'objectId', 678);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (625, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('D. Rosa de Freitas Gonçalves da Cunha', 625);
@@ -3668,13 +4034,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 625);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0572', 625);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('625', 'gravuras/GI0572.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('625', 'gravuras/0572.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('625','625','625');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (626, '<Desconhecido>', '6,6x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,626);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,626);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (626,'Zincogravura', 626);
@@ -3684,8 +4050,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1249,'6,6','cm','width', 678);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1250,'9,5','cm','height', 678);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('626', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (679, 626, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0573, 'objectId', 679);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (626, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (1067, 'published', 626);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1922:71', 1067);
@@ -3695,13 +4064,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 626);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0573', 626);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('626', 'gravuras/GI0573.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('626', 'gravuras/0573.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('626','626','626');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (627, '<Desconhecido>', '8,5x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,627);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,627);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (627,'Zincogravura', 627);
@@ -3711,8 +4080,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1251,'8,5','cm','width', 679);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1252,'5,4','cm','height', 679);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('627', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (680, 627, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0574, 'objectId', 680);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (627, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('D. Angelina Rosa Martins', 627);
@@ -3723,13 +4095,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 627);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0574', 627);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('627', 'gravuras/GI0574.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('627', 'gravuras/0574.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('627','627','627');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (628, '<Desconhecido>', '11x 7,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,628);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,628);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (628,'Zincogravura', 628);
@@ -3739,8 +4111,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1253,'11','cm','width', 680);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1254,'7,3','cm','height', 680);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('628', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (681, 628, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0575, 'objectId', 681);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (628, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Carlos Eduardo Bleck, filho do snr. Charles H. Bleck, junto do seu aparelho, em Londres.', 628);
@@ -3751,13 +4126,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 628);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0575', 628);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('628', 'gravuras/GI0575.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('628', 'gravuras/0575.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('628','628','628');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (629, '<Desconhecido>', '8x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,629);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,629);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (629,'Zincogravura', 629);
@@ -3767,8 +4142,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1255,'8','cm','width', 681);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1256,'5,5','cm','height', 681);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('629', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (682, 629, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0576, 'objectId', 682);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (629, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Cónego José Maria Gomes', 629);
@@ -3779,13 +4157,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 629);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0576', 629);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('629', 'gravuras/GI0576.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('629', 'gravuras/0576.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('629','629','629');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (630, '<Desconhecido>', '7x 6,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,630);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,630);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (630,'Zincogravura', 630);
@@ -3795,8 +4173,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1257,'7','cm','width', 682);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1258,'6,9','cm','height', 682);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('630', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (683, 630, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0577, 'objectId', 683);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (630, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Desenho a traço continuo oferecido por Snr. Aníbal Silva', 630);
@@ -3807,13 +4188,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 630);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0577', 630);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('630', 'gravuras/GI0577.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('630', 'gravuras/0577.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('630','630','630');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (631, '<Desconhecido>', '6x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,631);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,631);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (631,'Zincogravura', 631);
@@ -3823,8 +4204,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1259,'6','cm','width', 683);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1260,'9','cm','height', 683);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('631', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (684, 631, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0578, 'objectId', 684);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (631, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fafe - Paços do concelho completamente remodelado', 631);
@@ -3837,13 +4221,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 631);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0578', 631);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('631', 'gravuras/GI0578.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('631', 'gravuras/0578.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('631','631','631');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (632, '<Desconhecido>', '4,5x 8,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,632);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,632);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (632,'Zincogravura', 632);
@@ -3853,8 +4237,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1261,'4,5','cm','width', 684);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1262,'8,2','cm','height', 684);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('632', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (685, 632, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0579, 'objectId', 685);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (632, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fafe - Centro da Vila', 632);
@@ -3865,13 +4252,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 632);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0579', 632);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('632', 'gravuras/GI0579.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('632', 'gravuras/0579.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('632','632','632');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (633, '<Desconhecido>', '8,9x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,633);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,633);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (633,'Zincogravura', 633);
@@ -3881,8 +4268,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1263,'8,9','cm','width', 685);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1264,'6,5','cm','height', 685);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('633', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (686, 633, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0580, 'objectId', 686);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (633, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('D. Laura Soares d\'Oliveira Sumaviele', 633);
@@ -3893,13 +4283,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 633);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0580', 633);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('633', 'gravuras/GI0580.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('633', 'gravuras/0580.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('633','633','633');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (634, '<Desconhecido>', '12x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,634);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,634);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (634,'Zincogravura', 634);
@@ -3909,8 +4299,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1265,'12','cm','width', 686);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1266,'7,5','cm','height', 686);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('634', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (687, 634, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0581, 'objectId', 687);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (634, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('\"Março\"', 634);
@@ -3923,13 +4316,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 634);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0581', 634);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('634', 'gravuras/GI0581.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('634', 'gravuras/0581.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('634','634','634');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (635, '<Desconhecido>', '11,7x 7,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,635);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,635);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (635,'Zincogravura', 635);
@@ -3939,8 +4332,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1267,'11,7','cm','width', 687);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1268,'7,9','cm','height', 687);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('635', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (688, 635, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0582, 'objectId', 688);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (635, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('\"Julho\"', 635);
@@ -3953,19 +4349,19 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 635);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0582', 635);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('635', 'gravuras/GI0582.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('635', 'gravuras/0582.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('635','635','635');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (636, 'Foto de João Alves', '5,2x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,636);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,636);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (636,'Zincogravura', 636);
 /* Tabela Object_Work_Records_IndexingCreators */
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (31,'Foto de João Alves','personalName');
-INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (31,'masculino');
+INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (31,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (31,31);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (636,31);
 /* Tabela IndexingMeasurements */
@@ -3974,8 +4370,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1269,'5,2','cm','width', 688);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1270,'8,5','cm','height', 688);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('636', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (689, 636, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0583, 'objectId', 689);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (636, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fafe - um aspecto do Jardim do Calvário coberto de neve - Fevereiro de 1963', 636);
@@ -3988,13 +4387,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 636);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0583', 636);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('636', 'gravuras/GI0583.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('636', 'gravuras/0583.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('636','636','636');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (637, '<Desconhecido>', '8,7x 6,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,637);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,637);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (637,'Zincogravura', 637);
@@ -4004,8 +4403,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1271,'8,7','cm','width', 689);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1272,'6,3','cm','height', 689);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('637', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (690, 637, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0584, 'objectId', 690);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (637, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Um grupo de amigos no Bom Jesus do Monte-Braga', 637);
@@ -4016,13 +4418,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 637);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0584', 637);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('637', 'gravuras/GI0584.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('637', 'gravuras/0584.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('637','637','637');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (638, '<Desconhecido>', '8,9x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,638);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,638);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (638,'Zincogravura', 638);
@@ -4032,8 +4434,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1273,'8,9','cm','width', 690);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1274,'6,1','cm','height', 690);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('638', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (691, 638, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0585, 'objectId', 691);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (638, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (1084, 'published', 638);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1955:116', 1084);
@@ -4043,13 +4448,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 638);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0585', 638);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('638', 'gravuras/GI0585.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('638', 'gravuras/0585.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('638','638','638');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (639, '<Desconhecido>', '6,3x 6,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,639);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,639);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (639,'Zincogravura', 639);
@@ -4059,8 +4464,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1275,'6,3','cm','width', 691);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1276,'6,7','cm','height', 691);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('639', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (692, 639, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0586, 'objectId', 692);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (639, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Minhoto', 639);
@@ -4071,13 +4479,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 639);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0586', 639);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('639', 'gravuras/GI0586.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('639', 'gravuras/0586.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('639','639','639');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (640, '<Desconhecido>', '6,9x 9,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,640);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,640);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (640,'Zincogravura', 640);
@@ -4087,8 +4495,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1277,'6,9','cm','width', 692);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1278,'9,8','cm','height', 692);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('640', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (693, 640, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0587, 'objectId', 693);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (640, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('As grandes criações de gado em Minas Gerais do bom, activo e inteligente fafense Snr. José Joaquim da Cunha.', 640);
@@ -4099,13 +4510,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 640);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0587', 640);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('640', 'gravuras/GI0587.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('640', 'gravuras/0587.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('640','640','640');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (641, '<Desconhecido>', '9,9x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,641);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,641);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (641,'Zincogravura', 641);
@@ -4115,8 +4526,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1279,'9,9','cm','width', 693);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1280,'6,4','cm','height', 693);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('641', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (694, 641, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0588, 'objectId', 694);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (641, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Imagem do imaculado coração de Maria', 641);
@@ -4127,13 +4541,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 641);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0588', 641);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('641', 'gravuras/GI0588.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('641', 'gravuras/0588.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('641','641','641');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (642, '<Desconhecido>', '5,9x 9,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,642);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,642);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (642,'Zincogravura', 642);
@@ -4143,8 +4557,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1281,'5,9','cm','width', 694);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1282,'9,4','cm','height', 694);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('642', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (695, 642, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0589, 'objectId', 695);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (642, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Estação dos Caminhos-de-ferro', 642);
@@ -4155,13 +4572,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 642);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0589', 642);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('642', 'gravuras/GI0589.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('642', 'gravuras/0589.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('642','642','642');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (643, '<Desconhecido>', '6,1x 10,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,643);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,643);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (643,'Zincogravura', 643);
@@ -4171,8 +4588,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1283,'6,1','cm','width', 695);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1284,'10,4','cm','height', 695);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('643', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (696, 643, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0590, 'objectId', 696);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (643, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Porto - a monumental Ponte da Arrábida sobre o Rio Douro', 643);
@@ -4183,13 +4603,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 643);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0590', 643);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('643', 'gravuras/GI0590.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('643', 'gravuras/0590.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('643','643','643');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (644, '<Desconhecido>', '6x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,644);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,644);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (644,'Zincogravura', 644);
@@ -4199,8 +4619,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1285,'6','cm','width', 696);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1286,'9','cm','height', 696);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('644', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (697, 644, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0591, 'objectId', 697);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (644, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fafe - O pitoresco dos seus jardins - um belo trecho do Calvário rio com soberbas vistas', 644);
@@ -4213,13 +4636,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 644);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0591', 644);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('644', 'gravuras/GI0591.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('644', 'gravuras/0591.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('644','644','644');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (645, '<Desconhecido>', '4,8x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,645);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,645);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (645,'Zincogravura', 645);
@@ -4229,8 +4652,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1287,'4,8','cm','width', 697);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1288,'9,5','cm','height', 697);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('645', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (698, 645, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0592, 'objectId', 698);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (645, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (1093, 'published', 645);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1966:39', 1093);
@@ -4248,13 +4674,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 645);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0592', 645);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('645', 'gravuras/GI0592.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('645', 'gravuras/0592.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('645','645','645');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (646, '<Desconhecido>', '7,9x 5,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,646);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,646);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (646,'Zincogravura', 646);
@@ -4264,8 +4690,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1289,'7,9','cm','width', 698);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1290,'5,8','cm','height', 698);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('646', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (699, 646, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0593, 'objectId', 699);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (646, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('É triste o inverno da vida… Um trabalho leve entre quatro paredes (quadro de Marques De Oliveira)', 646);
@@ -4278,13 +4707,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 646);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0593', 646);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('646', 'gravuras/GI0593.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('646', 'gravuras/0593.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('646','646','646');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (647, '<Desconhecido>', '5,4x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,647);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,647);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (647,'Zincogravura', 647);
@@ -4294,8 +4723,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1291,'5,4','cm','width', 699);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1292,'9,1','cm','height', 699);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('647', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (700, 647, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0594, 'objectId', 700);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (647, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Outro aspecto do cortejo de 19 de Março de 1965;Um conjunto folclórico de uma freguesia com o seu donativo', 647);
@@ -4308,13 +4740,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 647);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0594', 647);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('647', 'gravuras/GI0594.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('647', 'gravuras/0594.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('647','647','647');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (648, '<Desconhecido>', '6,1x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,648);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,648);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (648,'Zincogravura', 648);
@@ -4324,8 +4756,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1293,'6,1','cm','width', 700);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1294,'9,1','cm','height', 700);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('648', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (701, 648, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0595, 'objectId', 701);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (648, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Fábrica do Bugio de José Florêncio Soares & C.ª, Suc.res', 648);
@@ -4338,13 +4773,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 648);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0595', 648);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('648', 'gravuras/GI0595.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('648', 'gravuras/0595.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('648','648','648');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (649, '<Desconhecido>', '5,3x 7,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,649);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,649);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (649,'Zincogravura', 649);
@@ -4354,8 +4789,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1295,'5,3','cm','width', 701);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1296,'7,4','cm','height', 701);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('649', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (702, 649, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0596, 'objectId', 702);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (649, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Cabeceiras de Basto modernizada. Antiga Praça Barjona de Freitas, onde há bons 40 anos se realisava o mercado semanal, aos domingos, e hoje, ajardinada tem denominação de Praça da República.', 649);
@@ -4366,13 +4804,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 649);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0596', 649);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('649', 'gravuras/GI0596.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('649', 'gravuras/0596.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('649','649','649');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (650, '<Desconhecido>', '6,1x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,650);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,650);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (650,'Zincogravura', 650);
@@ -4382,8 +4820,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1297,'6,1','cm','width', 702);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1298,'9','cm','height', 702);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('650', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (703, 650, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0597, 'objectId', 703);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (650, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('- Bernardino Pereira de Freitas, - António Alves de Freitas, António Dias Gonçalves', 650);
@@ -4394,13 +4835,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 650);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0597', 650);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('650', 'gravuras/GI0597.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('650', 'gravuras/0597.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('650','650','650');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (651, '<Desconhecido>', '4,7x 7,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,651);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,651);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (651,'Zincogravura', 651);
@@ -4410,8 +4851,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1299,'4,7','cm','width', 703);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1300,'7,6','cm','height', 703);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('651', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (704, 651, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0598, 'objectId', 704);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (651, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Empresa de Malhas S. Jorge, Lda.', 651);
@@ -4424,13 +4868,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 651);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0598', 651);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('651', 'gravuras/GI0598.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('651', 'gravuras/0598.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('651','651','651');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (652, '<Desconhecido>', '7,6x 10,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,652);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,652);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (652,'Zincogravura', 652);
@@ -4440,8 +4884,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1301,'7,6','cm','width', 704);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1302,'10,3','cm','height', 704);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('652', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (705, 652, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0599, 'objectId', 705);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (652, '2');
 /* Tabela DescriptiveNotes */
 INSERT INTO DescriptiveNotes (descriptiveNote, Object_Work_Record)
 			VALUES ('Novo Presidente da Câmara, Dr. António J. M. Mendes e o Governador do Distrito. Em cima: o vereador prof.Gil Pereira, Mário Martins; do Governo Civil de braga, O vereador José Rebelo', 652);
@@ -4452,13 +4899,13 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 652);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0599', 652);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('652', 'gravuras/GI0599.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('652', 'gravuras/0599.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('652','652','652');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (653, '<Desconhecido>', '17x 11,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
-INSERT INTO Object_Work_Types_Object_Work_Records VALUES (1,653);
+INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,653);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (653,'Zincogravura', 653);
@@ -4468,8 +4915,11 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1303,'17','cm','width', 705);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
 			VALUES (1304,'11,3','cm','height', 705);
-/* Tabela LocationsName */
-INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('653', '2');
+/* Tabela Locations*/
+INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (706, 653, '2');
+INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0600, 'objectId', 706);
+/* Tabela Object_Work_Records_Classifications*/
+INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (653, '2');
 /* Tabela RelatedWorks */
 INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES (1110, 'published', 653);
 INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque Ilustrado"; publicado 1976:30', 1110);
@@ -4477,5 +4927,5 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 653);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0600', 653);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('653', 'gravuras/GI0600.JPG');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('653', 'gravuras/0600.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('653','653','653');
