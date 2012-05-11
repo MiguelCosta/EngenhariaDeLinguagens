@@ -201,8 +201,8 @@ CREATE TABLE IndexingDates (
   id_indexingDates   int(10) NOT NULL AUTO_INCREMENT, 
   dateQualifier      varchar(255) comment 'Description: A clarification of the meaning of the date, used when necessary.
 Data values: design, execution, alteration, performance, restoration, destruction, discovery, and others, as described in CCO and CDWA.', 
-  earliestDate       int(10) NOT NULL, 
-  latestDate         int(10) NOT NULL, 
+  earliestDate       int(10), 
+  latestDate         int(10), 
   Object_Work_Record int(11) NOT NULL, 
   PRIMARY KEY (id_indexingDates)) ENGINE=InnoDB;
 CREATE TABLE EarliestDates (

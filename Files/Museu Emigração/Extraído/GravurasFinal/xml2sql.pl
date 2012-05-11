@@ -130,7 +130,7 @@ while(exists($data->{cdwalite}->[$ix])){
 
 	print F "/* Tabela Locations*/\n";
 	print F "INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES ($cont_loc, $i, '2');\n";
-	print F "INSERT INTO WorkIDs (workID, type, Location) VALUES ($data->{cdwalite}->[$ix]->{administrativeMetadata}->{recordWrap}->{recordID}, 'objectId', $cont_loc);\n";
+	print F "INSERT INTO WorkIDs (workID, type, Location) VALUES ('$data->{cdwalite}->[$ix]->{administrativeMetadata}->{recordWrap}->{recordID}', 'objectId', $cont_loc);\n";
 	$cont_loc++;
 
 
