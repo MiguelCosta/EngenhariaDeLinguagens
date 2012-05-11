@@ -14,7 +14,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1306,'9,9','cm','height', 706);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (707, 654, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0601, 'objectId', 707);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0601', 'objectId', 707);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (654, '2');
 /* Tabela DescriptiveNotes */
@@ -45,7 +45,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1308,'6','cm','height', 707);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (708, 655, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0602, 'objectId', 708);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0602', 'objectId', 708);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (655, '2');
 /* Tabela DescriptiveNotes */
@@ -76,7 +76,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1310,'5,5','cm','height', 708);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (709, 656, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0603, 'objectId', 709);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0603', 'objectId', 709);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (656, '2');
 /* Tabela DescriptiveNotes */
@@ -109,7 +109,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1312,'10,1','cm','height', 709);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (710, 657, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0604, 'objectId', 710);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0604', 'objectId', 710);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (657, '2');
 /* Tabela DescriptiveNotes */
@@ -144,7 +144,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1314,'7,9','cm','height', 710);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (711, 658, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0605, 'objectId', 711);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0605', 'objectId', 711);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (658, '2');
 /* Tabela DescriptiveNotes */
@@ -175,7 +175,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1316,'6','cm','height', 711);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (712, 659, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0606, 'objectId', 712);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0606', 'objectId', 712);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (659, '2');
 /* Tabela DescriptiveNotes */
@@ -208,7 +208,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1318,'5','cm','height', 712);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (713, 660, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0607, 'objectId', 713);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0607', 'objectId', 713);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (660, '2');
 /* Tabela DescriptiveNotes */
@@ -239,7 +239,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1320,'5,9','cm','height', 713);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (714, 661, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0608, 'objectId', 714);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0608', 'objectId', 714);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (661, '2');
 /* Tabela DescriptiveNotes */
@@ -270,7 +270,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1322,'8,7','cm','height', 714);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (715, 662, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0609, 'objectId', 715);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0609', 'objectId', 715);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (662, '2');
 /* Tabela DescriptiveNotes */
@@ -303,7 +303,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1324,'11','cm','height', 715);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (716, 663, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0610, 'objectId', 716);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0610', 'objectId', 716);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (663, '2');
 /* Tabela DescriptiveNotes */
@@ -334,7 +334,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1326,'9,6','cm','height', 716);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (717, 664, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0611, 'objectId', 717);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0611', 'objectId', 717);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (664, '2');
 /* Tabela DescriptiveNotes */
@@ -365,7 +365,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1328,'6,4','cm','height', 717);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (718, 665, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0612, 'objectId', 718);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0612', 'objectId', 718);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (665, '2');
 /* Tabela DescriptiveNotes */
@@ -396,7 +396,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1330,'9','cm','height', 718);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (719, 666, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0613, 'objectId', 719);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0613', 'objectId', 719);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (666, '2');
 /* Tabela DescriptiveNotes */
@@ -429,7 +429,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1332,'7,9','cm','height', 719);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (720, 667, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0614, 'objectId', 720);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0614', 'objectId', 720);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (667, '2');
 /* Tabela DescriptiveNotes */
@@ -460,7 +460,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1334,'8','cm','height', 720);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (721, 668, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0615, 'objectId', 721);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0615', 'objectId', 721);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (668, '2');
 /* Tabela DescriptiveNotes */
@@ -491,7 +491,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1336,'7,8','cm','height', 721);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (722, 669, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0616, 'objectId', 722);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0616', 'objectId', 722);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (669, '2');
 /* Tabela DescriptiveNotes */
@@ -522,7 +522,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1338,'9,1','cm','height', 722);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (723, 670, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0617, 'objectId', 723);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0617', 'objectId', 723);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (670, '2');
 /* Tabela DescriptiveNotes */
@@ -553,7 +553,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1340,'9','cm','height', 723);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (724, 671, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0618, 'objectId', 724);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0618', 'objectId', 724);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (671, '2');
 /* Tabela DescriptiveNotes */
@@ -586,7 +586,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1342,'9,4','cm','height', 724);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (725, 672, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0619, 'objectId', 725);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0619', 'objectId', 725);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (672, '2');
 /* Tabela DescriptiveNotes */
@@ -617,7 +617,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1344,'9,1','cm','height', 725);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (726, 673, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0620, 'objectId', 726);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0620', 'objectId', 726);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (673, '2');
 /* Tabela DescriptiveNotes */
@@ -648,7 +648,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1346,'4,1','cm','height', 726);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (727, 674, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0621, 'objectId', 727);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0621', 'objectId', 727);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (674, '2');
 /* Tabela DescriptiveNotes */
@@ -681,7 +681,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1348,'3,7','cm','height', 727);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (728, 675, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0622, 'objectId', 728);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0622', 'objectId', 728);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (675, '2');
 /* Tabela DescriptiveNotes */
@@ -714,7 +714,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1350,'6,2','cm','height', 728);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (729, 676, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0623, 'objectId', 729);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0623', 'objectId', 729);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (676, '2');
 /* Tabela DescriptiveNotes */
@@ -745,7 +745,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1352,'4,1','cm','height', 729);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (730, 677, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0624, 'objectId', 730);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0624', 'objectId', 730);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (677, '2');
 /* Tabela DescriptiveNotes */
@@ -776,7 +776,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1354,'5','cm','height', 730);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (731, 678, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0625, 'objectId', 731);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0625', 'objectId', 731);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (678, '2');
 /* Tabela RelatedWorks */
@@ -804,7 +804,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1356,'11','cm','height', 731);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (732, 679, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0626, 'objectId', 732);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0626', 'objectId', 732);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (679, '2');
 /* Tabela DescriptiveNotes */
@@ -835,7 +835,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1358,'8,5','cm','height', 732);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (733, 680, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0627, 'objectId', 733);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0627', 'objectId', 733);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (680, '2');
 /* Tabela DescriptiveNotes */
@@ -866,7 +866,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1360,'4,2','cm','height', 733);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (734, 681, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0628, 'objectId', 734);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0628', 'objectId', 734);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (681, '2');
 /* Tabela DescriptiveNotes */
@@ -899,7 +899,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1362,'9,5','cm','height', 734);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (735, 682, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0629, 'objectId', 735);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0629', 'objectId', 735);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (682, '2');
 /* Tabela DescriptiveNotes */
@@ -930,7 +930,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1364,'6,1','cm','height', 735);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (736, 683, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0630, 'objectId', 736);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0630', 'objectId', 736);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (683, '2');
 /* Tabela DescriptiveNotes */
@@ -961,7 +961,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1366,'8,9','cm','height', 736);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (737, 684, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0631, 'objectId', 737);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0631', 'objectId', 737);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (684, '2');
 /* Tabela DescriptiveNotes */
@@ -992,7 +992,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1368,'8,9','cm','height', 737);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (738, 685, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0632, 'objectId', 738);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0632', 'objectId', 738);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (685, '2');
 /* Tabela DescriptiveNotes */
@@ -1025,7 +1025,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1370,'5,9','cm','height', 738);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (739, 686, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0633, 'objectId', 739);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0633', 'objectId', 739);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (686, '2');
 /* Tabela DescriptiveNotes */
@@ -1056,7 +1056,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1372,'8','cm','height', 739);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (740, 687, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0634, 'objectId', 740);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0634', 'objectId', 740);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (687, '2');
 /* Tabela DescriptiveNotes */
@@ -1087,7 +1087,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1374,'9,4','cm','height', 740);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (741, 688, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0635, 'objectId', 741);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0635', 'objectId', 741);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (688, '2');
 /* Tabela DescriptiveNotes */
@@ -1118,7 +1118,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1376,'8,9','cm','height', 741);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (742, 689, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0636, 'objectId', 742);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0636', 'objectId', 742);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (689, '2');
 /* Tabela DescriptiveNotes */
@@ -1151,7 +1151,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1378,'5,8','cm','height', 742);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (743, 690, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0637, 'objectId', 743);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0637', 'objectId', 743);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (690, '2');
 /* Tabela DescriptiveNotes */
@@ -1184,7 +1184,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1380,'9','cm','height', 743);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (744, 691, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0638, 'objectId', 744);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0638', 'objectId', 744);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (691, '2');
 /* Tabela DescriptiveNotes */
@@ -1217,7 +1217,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1382,'9,1','cm','height', 744);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (745, 692, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0639, 'objectId', 745);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0639', 'objectId', 745);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (692, '2');
 /* Tabela DescriptiveNotes */
@@ -1248,7 +1248,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1384,'11,7','cm','height', 745);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (746, 693, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0640, 'objectId', 746);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0640', 'objectId', 746);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (693, '2');
 /* Tabela DescriptiveNotes */
@@ -1281,7 +1281,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1386,'9,1','cm','height', 746);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (747, 694, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0641, 'objectId', 747);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0641', 'objectId', 747);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (694, '2');
 /* Tabela DescriptiveNotes */
@@ -1312,7 +1312,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1388,'7,9','cm','height', 747);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (748, 695, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0642, 'objectId', 748);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0642', 'objectId', 748);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (695, '2');
 /* Tabela DescriptiveNotes */
@@ -1345,7 +1345,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1390,'7,5','cm','height', 748);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (749, 696, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0643, 'objectId', 749);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0643', 'objectId', 749);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (696, '2');
 /* Tabela DescriptiveNotes */
@@ -1384,7 +1384,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1392,'8,5','cm','height', 749);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (750, 697, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0644, 'objectId', 750);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0644', 'objectId', 750);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (697, '2');
 /* Tabela DescriptiveNotes */
@@ -1415,7 +1415,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1394,'11,1','cm','height', 750);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (751, 698, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0645, 'objectId', 751);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0645', 'objectId', 751);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (698, '2');
 /* Tabela DescriptiveNotes */
@@ -1446,7 +1446,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1396,'3','cm','height', 751);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (752, 699, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0646, 'objectId', 752);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0646', 'objectId', 752);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (699, '2');
 /* Tabela DescriptiveNotes */
@@ -1477,7 +1477,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1398,'5','cm','height', 752);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (753, 700, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0647, 'objectId', 753);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0647', 'objectId', 753);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (700, '2');
 /* Tabela DescriptiveNotes */
@@ -1508,7 +1508,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1400,'9,1','cm','height', 753);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (754, 701, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0648, 'objectId', 754);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0648', 'objectId', 754);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (701, '2');
 /* Tabela DescriptiveNotes */
@@ -1539,7 +1539,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1402,'9,1','cm','height', 754);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (755, 702, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0649, 'objectId', 755);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0649', 'objectId', 755);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (702, '2');
 /* Tabela DescriptiveNotes */
@@ -1570,7 +1570,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1404,'7.5','cm','height', 755);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (756, 703, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0650, 'objectId', 756);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0650', 'objectId', 756);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (703, '2');
 /* Tabela DescriptiveNotes */
@@ -1601,7 +1601,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1406,'9','cm','height', 756);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (757, 704, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0651, 'objectId', 757);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0651', 'objectId', 757);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (704, '2');
 /* Tabela DescriptiveNotes */
@@ -1632,7 +1632,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1408,'9,1','cm','height', 757);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (758, 705, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0652, 'objectId', 758);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0652', 'objectId', 758);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (705, '2');
 /* Tabela DescriptiveNotes */
@@ -1663,7 +1663,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1410,'10','cm','height', 758);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (759, 706, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0653, 'objectId', 759);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0653', 'objectId', 759);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (706, '2');
 /* Tabela DescriptiveNotes */
@@ -1694,7 +1694,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1412,'5.5','cm','height', 759);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (760, 707, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0654, 'objectId', 760);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0654', 'objectId', 760);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (707, '2');
 /* Tabela DescriptiveNotes */
@@ -1725,7 +1725,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1414,'8.5','cm','height', 760);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (761, 708, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0655, 'objectId', 761);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0655', 'objectId', 761);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (708, '2');
 /* Tabela DescriptiveNotes */
@@ -1756,7 +1756,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1416,'8','cm','height', 761);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (762, 709, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0656, 'objectId', 762);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0656', 'objectId', 762);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (709, '2');
 /* Tabela DescriptiveNotes */
@@ -1787,7 +1787,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1418,'8.5','cm','height', 762);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (763, 710, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0657, 'objectId', 763);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0657', 'objectId', 763);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (710, '2');
 /* Tabela DescriptiveNotes */
@@ -1818,7 +1818,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1420,'9','cm','height', 763);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (764, 711, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0658, 'objectId', 764);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0658', 'objectId', 764);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (711, '2');
 /* Tabela DescriptiveNotes */
@@ -1849,7 +1849,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1422,'6','cm','height', 764);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (765, 712, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0659, 'objectId', 765);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0659', 'objectId', 765);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (712, '2');
 /* Tabela DescriptiveNotes */
@@ -1880,7 +1880,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1424,'6','cm','height', 765);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (766, 713, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0660, 'objectId', 766);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0660', 'objectId', 766);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (713, '2');
 /* Tabela DescriptiveNotes */
@@ -1911,7 +1911,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1426,'6.8','cm','height', 766);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (767, 714, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0661, 'objectId', 767);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0661', 'objectId', 767);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (714, '2');
 /* Tabela DescriptiveNotes */
@@ -1942,7 +1942,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1428,'8','cm','height', 767);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (768, 715, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0662, 'objectId', 768);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0662', 'objectId', 768);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (715, '2');
 /* Tabela DescriptiveNotes */
@@ -1973,7 +1973,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1430,'9,5','cm','height', 768);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (769, 716, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0663, 'objectId', 769);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0663', 'objectId', 769);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (716, '2');
 /* Tabela DescriptiveNotes */
@@ -2004,7 +2004,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1432,'9.3','cm','height', 769);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (770, 717, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0664, 'objectId', 770);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0664', 'objectId', 770);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (717, '2');
 /* Tabela DescriptiveNotes */
@@ -2035,7 +2035,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1434,'9.5','cm','height', 770);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (771, 718, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0665, 'objectId', 771);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0665', 'objectId', 771);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (718, '2');
 /* Tabela DescriptiveNotes */
@@ -2066,7 +2066,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1436,'9,1','cm','height', 771);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (772, 719, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0666, 'objectId', 772);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0666', 'objectId', 772);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (719, '2');
 /* Tabela DescriptiveNotes */
@@ -2097,7 +2097,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1438,'9,1','cm','height', 772);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (773, 720, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0667, 'objectId', 773);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0667', 'objectId', 773);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (720, '2');
 /* Tabela DescriptiveNotes */
@@ -2126,7 +2126,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1439,'4','cm','diameter', 773);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (774, 721, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0668, 'objectId', 774);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0668', 'objectId', 774);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (721, '2');
 /* Tabela DescriptiveNotes */
@@ -2157,7 +2157,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1441,'8.8','cm','height', 774);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (775, 722, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0669, 'objectId', 775);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0669', 'objectId', 775);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (722, '2');
 /* Tabela DescriptiveNotes */
@@ -2188,7 +2188,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1443,'8.8','cm','height', 775);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (776, 723, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0670, 'objectId', 776);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0670', 'objectId', 776);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (723, '2');
 /* Tabela DescriptiveNotes */
@@ -2219,7 +2219,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1445,'6.8','cm','height', 776);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (777, 724, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0671, 'objectId', 777);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0671', 'objectId', 777);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (724, '2');
 /* Tabela DescriptiveNotes */
@@ -2250,7 +2250,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1447,'8.2','cm','height', 777);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (778, 725, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0672, 'objectId', 778);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0672', 'objectId', 778);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (725, '2');
 /* Tabela DescriptiveNotes */
@@ -2281,7 +2281,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1449,'9,1','cm','height', 778);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (779, 726, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0673, 'objectId', 779);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0673', 'objectId', 779);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (726, '2');
 /* Tabela DescriptiveNotes */
@@ -2312,7 +2312,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1451,'7.8','cm','height', 779);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (780, 727, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0674, 'objectId', 780);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0674', 'objectId', 780);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (727, '2');
 /* Tabela DescriptiveNotes */
@@ -2343,7 +2343,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1453,'4','cm','height', 780);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (781, 728, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0675, 'objectId', 781);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0675', 'objectId', 781);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (728, '2');
 /* Tabela DescriptiveNotes */
@@ -2374,7 +2374,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1455,'4','cm','height', 781);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (782, 729, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0676, 'objectId', 782);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0676', 'objectId', 782);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (729, '2');
 /* Tabela DescriptiveNotes */
@@ -2405,7 +2405,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1457,'9,1','cm','height', 782);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (783, 730, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0677, 'objectId', 783);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0677', 'objectId', 783);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (730, '2');
 /* Tabela DescriptiveNotes */
@@ -2434,7 +2434,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1458,'9.7','cm','diameter', 783);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (784, 731, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0678, 'objectId', 784);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0678', 'objectId', 784);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (731, '2');
 /* Tabela DescriptiveNotes */
@@ -2465,7 +2465,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1460,'6','cm','height', 784);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (785, 732, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0679, 'objectId', 785);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0679', 'objectId', 785);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (732, '2');
 /* Tabela DescriptiveNotes */
@@ -2496,7 +2496,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1462,'9','cm','height', 785);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (786, 733, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0680, 'objectId', 786);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0680', 'objectId', 786);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (733, '2');
 /* Tabela DescriptiveNotes */
@@ -2527,7 +2527,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1464,'5.8','cm','height', 786);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (787, 734, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0681, 'objectId', 787);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0681', 'objectId', 787);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (734, '2');
 /* Tabela DescriptiveNotes */
@@ -2558,7 +2558,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1466,'5.5','cm','height', 787);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (788, 735, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0682, 'objectId', 788);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0682', 'objectId', 788);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (735, '2');
 /* Tabela DescriptiveNotes */
@@ -2589,7 +2589,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1468,'8','cm','height', 788);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (789, 736, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0683, 'objectId', 789);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0683', 'objectId', 789);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (736, '2');
 /* Tabela DescriptiveNotes */
@@ -2620,7 +2620,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1470,'9,5','cm','height', 789);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (790, 737, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0684, 'objectId', 790);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0684', 'objectId', 790);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (737, '2');
 /* Tabela DescriptiveNotes */
@@ -2651,7 +2651,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1472,'7.5','cm','height', 790);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (791, 738, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0685, 'objectId', 791);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0685', 'objectId', 791);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (738, '2');
 /* Tabela DescriptiveNotes */
@@ -2682,7 +2682,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1474,'9,1','cm','height', 791);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (792, 739, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0686, 'objectId', 792);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0686', 'objectId', 792);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (739, '2');
 /* Tabela DescriptiveNotes */
@@ -2713,7 +2713,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1476,'9,5','cm','height', 792);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (793, 740, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0687, 'objectId', 793);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0687', 'objectId', 793);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (740, '2');
 /* Tabela DescriptiveNotes */
@@ -2744,7 +2744,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1478,'5.5','cm','height', 793);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (794, 741, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0688, 'objectId', 794);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0688', 'objectId', 794);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (741, '2');
 /* Tabela DescriptiveNotes */
@@ -2775,7 +2775,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1480,'11','cm','height', 794);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (795, 742, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0689, 'objectId', 795);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0689', 'objectId', 795);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (742, '2');
 /* Tabela DescriptiveNotes */
@@ -2806,7 +2806,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1482,'9,1','cm','height', 795);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (796, 743, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0690, 'objectId', 796);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0690', 'objectId', 796);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (743, '2');
 /* Tabela RelatedWorks */
@@ -2834,7 +2834,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1484,'7.5','cm','height', 796);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (797, 744, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0691, 'objectId', 797);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0691', 'objectId', 797);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (744, '2');
 /* Tabela DescriptiveNotes */
@@ -2865,7 +2865,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1486,'9','cm','height', 797);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (798, 745, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0692, 'objectId', 798);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0692', 'objectId', 798);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (745, '2');
 /* Tabela DescriptiveNotes */
@@ -2896,7 +2896,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1488,'8.3','cm','height', 798);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (799, 746, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0693, 'objectId', 799);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0693', 'objectId', 799);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (746, '2');
 /* Tabela DescriptiveNotes */
@@ -2927,7 +2927,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1490,'9','cm','height', 799);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (800, 747, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0694, 'objectId', 800);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0694', 'objectId', 800);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (747, '2');
 /* Tabela DescriptiveNotes */
@@ -2958,7 +2958,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1492,'6','cm','height', 800);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (801, 748, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0695, 'objectId', 801);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0695', 'objectId', 801);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (748, '2');
 /* Tabela DescriptiveNotes */
@@ -2989,7 +2989,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1494,'6','cm','height', 801);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (802, 749, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0696, 'objectId', 802);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0696', 'objectId', 802);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (749, '2');
 /* Tabela DescriptiveNotes */
@@ -3020,7 +3020,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1496,'9.7','cm','height', 802);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (803, 750, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0697, 'objectId', 803);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0697', 'objectId', 803);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (750, '2');
 /* Tabela DescriptiveNotes */
@@ -3051,7 +3051,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1498,'8.2','cm','height', 803);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (804, 751, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0698, 'objectId', 804);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0698', 'objectId', 804);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (751, '2');
 /* Tabela DescriptiveNotes */
@@ -3082,7 +3082,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1500,'9','cm','height', 804);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (805, 752, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0699, 'objectId', 805);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0699', 'objectId', 805);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (752, '2');
 /* Tabela DescriptiveNotes */
@@ -3113,7 +3113,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1502,'3.5','cm','height', 805);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (806, 753, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0700, 'objectId', 806);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0700', 'objectId', 806);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (753, '2');
 /* Tabela DescriptiveNotes */
@@ -3144,7 +3144,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1504,'9','cm','height', 806);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (807, 754, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0701, 'objectId', 807);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0701', 'objectId', 807);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (754, '2');
 /* Tabela DescriptiveNotes */
@@ -3175,7 +3175,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1506,'6','cm','height', 807);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (808, 755, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0702, 'objectId', 808);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0702', 'objectId', 808);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (755, '2');
 /* Tabela DescriptiveNotes */
@@ -3206,7 +3206,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1508,'4.5','cm','height', 808);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (809, 756, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0703, 'objectId', 809);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0703', 'objectId', 809);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (756, '2');
 /* Tabela DescriptiveNotes */
@@ -3237,7 +3237,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1510,'4','cm','height', 809);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (810, 757, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0704, 'objectId', 810);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0704', 'objectId', 810);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (757, '2');
 /* Tabela DescriptiveNotes */
@@ -3268,7 +3268,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1512,'6.5','cm','height', 810);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (811, 758, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0705, 'objectId', 811);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0705', 'objectId', 811);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (758, '2');
 /* Tabela DescriptiveNotes */
@@ -3299,7 +3299,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1514,'5','cm','height', 811);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (812, 759, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0706, 'objectId', 812);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0706', 'objectId', 812);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (759, '2');
 /* Tabela DescriptiveNotes */
@@ -3330,7 +3330,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1516,'6.5','cm','height', 812);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (813, 760, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0707, 'objectId', 813);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0707', 'objectId', 813);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (760, '2');
 /* Tabela DescriptiveNotes */
@@ -3361,7 +3361,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1518,'4','cm','height', 813);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (814, 761, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0708, 'objectId', 814);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0708', 'objectId', 814);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (761, '2');
 /* Tabela DescriptiveNotes */
@@ -3390,7 +3390,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1519,'6','cm','diameter', 814);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (815, 762, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0709, 'objectId', 815);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0709', 'objectId', 815);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (762, '2');
 /* Tabela DescriptiveNotes */
@@ -3421,7 +3421,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1521,'4,5','cm','height', 815);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (816, 763, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0710, 'objectId', 816);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0710', 'objectId', 816);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (763, '2');
 /* Tabela DescriptiveNotes */
@@ -3452,7 +3452,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1523,'6.3','cm','height', 816);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (817, 764, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0711, 'objectId', 817);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0711', 'objectId', 817);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (764, '2');
 /* Tabela DescriptiveNotes */
@@ -3483,7 +3483,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1525,'7.4','cm','height', 817);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (818, 765, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0712, 'objectId', 818);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0712', 'objectId', 818);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (765, '2');
 /* Tabela DescriptiveNotes */
@@ -3514,7 +3514,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1527,'5.9','cm','height', 818);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (819, 766, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0713, 'objectId', 819);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0713', 'objectId', 819);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (766, '2');
 /* Tabela DescriptiveNotes */
@@ -3538,7 +3538,7 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,767);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (767,'Zincogravura', 767);/* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (820, 767, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0714, 'objectId', 820);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0714', 'objectId', 820);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (767, '2');
 /* Tabela DescriptiveNotes */
@@ -3569,7 +3569,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1529,'8.9','cm','height', 819);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (821, 768, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0715, 'objectId', 821);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0715', 'objectId', 821);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (768, '2');
 /* Tabela DescriptiveNotes */
@@ -3600,7 +3600,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1531,'7','cm','height', 820);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (822, 769, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0716, 'objectId', 822);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0716', 'objectId', 822);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (769, '2');
 /* Tabela DescriptiveNotes */
@@ -3631,7 +3631,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1533,'7,5','cm','height', 821);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (823, 770, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0717, 'objectId', 823);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0717', 'objectId', 823);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (770, '2');
 /* Tabela DescriptiveNotes */
@@ -3662,7 +3662,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1535,'5','cm','height', 822);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (824, 771, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0718, 'objectId', 824);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0718', 'objectId', 824);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (771, '2');
 /* Tabela DescriptiveNotes */
@@ -3693,7 +3693,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1537,'12.5','cm','height', 823);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (825, 772, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0719, 'objectId', 825);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0719', 'objectId', 825);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (772, '2');
 /* Tabela DescriptiveNotes */
@@ -3724,7 +3724,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1539,'10','cm','height', 824);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (826, 773, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0720, 'objectId', 826);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0720', 'objectId', 826);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (773, '2');
 /* Tabela DescriptiveNotes */
@@ -3755,7 +3755,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1541,'7','cm','height', 825);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (827, 774, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0721, 'objectId', 827);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0721', 'objectId', 827);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (774, '2');
 /* Tabela DescriptiveNotes */
@@ -3786,7 +3786,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1543,'8','cm','height', 826);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (828, 775, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0722, 'objectId', 828);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0722', 'objectId', 828);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (775, '2');
 /* Tabela DescriptiveNotes */
@@ -3817,7 +3817,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1545,'9','cm','height', 827);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (829, 776, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0723, 'objectId', 829);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0723', 'objectId', 829);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (776, '2');
 /* Tabela DescriptiveNotes */
@@ -3848,7 +3848,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1547,'9','cm','height', 828);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (830, 777, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0724, 'objectId', 830);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0724', 'objectId', 830);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (777, '2');
 /* Tabela DescriptiveNotes */
@@ -3879,7 +3879,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1549,'9','cm','height', 829);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (831, 778, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0725, 'objectId', 831);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0725', 'objectId', 831);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (778, '2');
 /* Tabela DescriptiveNotes */
@@ -3910,7 +3910,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1551,'8','cm','height', 830);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (832, 779, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0726, 'objectId', 832);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0726', 'objectId', 832);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (779, '2');
 /* Tabela DescriptiveNotes */
@@ -3941,7 +3941,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1553,'9','cm','height', 831);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (833, 780, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0727, 'objectId', 833);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0727', 'objectId', 833);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (780, '2');
 /* Tabela DescriptiveNotes */
@@ -3972,7 +3972,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1555,'12','cm','height', 832);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (834, 781, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0728, 'objectId', 834);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0728', 'objectId', 834);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (781, '2');
 /* Tabela DescriptiveNotes */
@@ -4003,7 +4003,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1557,'15','cm','height', 833);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (835, 782, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0729, 'objectId', 835);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0729', 'objectId', 835);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (782, '2');
 /* Tabela DescriptiveNotes */
@@ -4034,7 +4034,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1559,'9.7','cm','height', 834);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (836, 783, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI030, 'objectId', 836);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI030', 'objectId', 836);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (783, '2');
 /* Tabela DescriptiveNotes */
@@ -4065,7 +4065,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1561,'7','cm','height', 835);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (837, 784, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0731, 'objectId', 837);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0731', 'objectId', 837);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (784, '2');
 /* Tabela DescriptiveNotes */
@@ -4096,7 +4096,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1563,'5,4','cm','height', 836);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (838, 785, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0732, 'objectId', 838);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0732', 'objectId', 838);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (785, '2');
 /* Tabela DescriptiveNotes */
@@ -4127,7 +4127,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1565,'8','cm','height', 837);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (839, 786, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0733, 'objectId', 839);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0733', 'objectId', 839);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (786, '2');
 /* Tabela DescriptiveNotes */
@@ -4158,7 +4158,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1567,'5','cm','height', 838);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (840, 787, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0734, 'objectId', 840);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0734', 'objectId', 840);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (787, '2');
 /* Tabela DescriptiveNotes */
@@ -4189,7 +4189,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1569,'9','cm','height', 839);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (841, 788, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0735, 'objectId', 841);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0735', 'objectId', 841);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (788, '2');
 /* Tabela DescriptiveNotes */
@@ -4220,7 +4220,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1571,'4,5','cm','height', 840);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (842, 789, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0736, 'objectId', 842);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0736', 'objectId', 842);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (789, '2');
 /* Tabela DescriptiveNotes */
@@ -4251,7 +4251,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1573,'10','cm','height', 841);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (843, 790, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0737, 'objectId', 843);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0737', 'objectId', 843);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (790, '2');
 /* Tabela DescriptiveNotes */
@@ -4275,7 +4275,7 @@ INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,791);
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
 		VALUES (791,'Zincogravura', 791);/* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (844, 791, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0738, 'objectId', 844);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0738', 'objectId', 844);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (791, '2');
 /* Tabela DescriptiveNotes */
@@ -4306,7 +4306,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1575,'9','cm','height', 842);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (845, 792, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0739, 'objectId', 845);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0739', 'objectId', 845);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (792, '2');
 /* Tabela DescriptiveNotes */
@@ -4337,7 +4337,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1577,'11','cm','height', 843);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (846, 793, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0740, 'objectId', 846);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0740', 'objectId', 846);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (793, '2');
 /* Tabela DescriptiveNotes */
@@ -4368,7 +4368,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1579,'9.5','cm','height', 844);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (847, 794, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0741, 'objectId', 847);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0741', 'objectId', 847);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (794, '2');
 /* Tabela DescriptiveNotes */
@@ -4399,7 +4399,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1581,'6','cm','height', 845);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (848, 795, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0742, 'objectId', 848);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0742', 'objectId', 848);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (795, '2');
 /* Tabela DescriptiveNotes */
@@ -4430,7 +4430,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1583,'6','cm','height', 846);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (849, 796, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0743, 'objectId', 849);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0743', 'objectId', 849);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (796, '2');
 /* Tabela DescriptiveNotes */
@@ -4461,7 +4461,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1585,'9','cm','height', 847);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (850, 797, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0743, 'objectId', 850);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0743', 'objectId', 850);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (797, '2');
 /* Tabela DescriptiveNotes */
@@ -4492,7 +4492,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1587,'10','cm','height', 848);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (851, 798, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0744, 'objectId', 851);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0744', 'objectId', 851);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (798, '2');
 /* Tabela DescriptiveNotes */
@@ -4523,7 +4523,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1589,'8.8','cm','height', 849);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (852, 799, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0745, 'objectId', 852);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0745', 'objectId', 852);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (799, '2');
 /* Tabela DescriptiveNotes */
@@ -4554,7 +4554,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1591,'5,5','cm','height', 850);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (853, 800, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0746, 'objectId', 853);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0746', 'objectId', 853);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (800, '2');
 /* Tabela DescriptiveNotes */
@@ -4585,7 +4585,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1593,'7','cm','height', 851);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (854, 801, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0747, 'objectId', 854);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0747', 'objectId', 854);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (801, '2');
 /* Tabela DescriptiveNotes */
@@ -4616,7 +4616,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1595,'9','cm','height', 852);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (855, 802, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0748, 'objectId', 855);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0748', 'objectId', 855);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (802, '2');
 /* Tabela DescriptiveNotes */
@@ -4647,7 +4647,7 @@ INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasuremen
 			VALUES (1597,'9.5','cm','height', 853);
 /* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (856, 803, '2');
-INSERT INTO WorkIDs (workID, type, Location) VALUES (GI0749, 'objectId', 856);
+INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0749', 'objectId', 856);
 /* Tabela Object_Work_Records_Classifications*/
 INSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES (803, '2');
 /* Tabela DescriptiveNotes */
