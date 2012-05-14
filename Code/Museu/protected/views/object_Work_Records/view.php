@@ -73,8 +73,7 @@ $this->widget('zii.widgets.jui.CJuiSlider', array(
 		),
 ));
 ?>
-<div class="zoom"
-	style="float: right;"></div>
+<div class="zoom" style="float: right;"></div>
 <?php
 $this->widget('ext.ETooltip.ETooltip', array("selector"=>"#yw3 img[title]",
 		"tooltip"=>array(
@@ -148,9 +147,10 @@ $this->widget('zii.widgets.CDetailView', array(
 						'type'=>'html',
 						'value'=>$model->getResources_view(),
 				),
-				
+
 		),
 ));
 
 ?>
+
 
