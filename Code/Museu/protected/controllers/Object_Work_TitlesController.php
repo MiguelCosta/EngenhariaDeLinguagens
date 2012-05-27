@@ -178,8 +178,8 @@ class Object_Work_TitlesController extends Controller
 			Yii::app()->end();
 		}
 	}
-
 	public function actionAttributeNew()
+
 	{
 		$model	=	new Object_Work_Titles;
 		$owr 	=	1;
