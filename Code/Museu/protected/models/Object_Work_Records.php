@@ -398,5 +398,10 @@ class Object_Work_Records extends CActiveRecord
 		$result .= implode("<br/>", $this->getClassifications());
 		return $result;
 	}
+	
+	public function getIndexingCreators_model(){
+		$i = $this->indexingCreators;
+		return $i;
+	}
 
 }

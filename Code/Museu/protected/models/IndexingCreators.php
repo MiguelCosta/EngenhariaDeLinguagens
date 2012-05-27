@@ -134,6 +134,24 @@ class IndexingCreators extends CActiveRecord
 		$result .=  implode($sp, $result_arr);
 		return $result;
 	}
+	
+	public function getNamesCreators_OnlyNames($sp){
+		$result = '';
+		$result_arr = array();
+	
+		foreach ($this->namesCreators as $namesCreators){
+			$id = $namesCreators->id_namesCreator;
+			$name = $namesCreators->nameCreator;
+			// se não tiver o type definido
+			isset($namesCreators->type) ? $type = $namesCreators->type : $type = '';
+	
+			$tmp = CHtml::link(CHtml::encode($name), array('/namesCreator/'.$id));
+			array_push($result_arr, $tmp);
+		}
+	
+		$result .=  implode($sp, $result_arr);
+		return $result;
+	}
 
 	public function getNationalitiesCreators($sp){
 		$result = '';

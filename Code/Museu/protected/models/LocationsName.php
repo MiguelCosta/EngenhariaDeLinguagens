@@ -39,13 +39,13 @@ class LocationsName extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('locationName', 'required'),
-			array('locationName', 'length', 'max'=>255),
-			array('type, termsource, termsourceID', 'length', 'max'=>63),
-			array('locID, locIDtype', 'length', 'max'=>31),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id_locationsName, locationName, type, termsource, termsourceID, locID, locIDtype', 'safe', 'on'=>'search'),
+				array('locationName', 'required'),
+				array('locationName', 'length', 'max'=>255),
+				array('type, termsource, termsourceID', 'length', 'max'=>63),
+				array('locID, locIDtype', 'length', 'max'=>31),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id_locationsName, locationName, type, termsource, termsourceID, locID, locIDtype', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,7 +57,7 @@ class LocationsName extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'locations' => array(self::HAS_MANY, 'Locations', 'LocationName'),
+				'locations' => array(self::HAS_MANY, 'Locations', 'LocationName'),
 		);
 	}
 
@@ -67,13 +67,13 @@ class LocationsName extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_locationsName' => 'Id Locations Name',
-			'locationName' => 'Location Name',
-			'type' => 'Type',
-			'termsource' => 'Termsource',
-			'termsourceID' => 'Termsource',
-			'locID' => 'Loc',
-			'locIDtype' => 'Loc Idtype',
+				'id_locationsName' => 'Id Locations Name',
+				'locationName' => 'Location Name',
+				'type' => 'Type',
+				'termsource' => 'Termsource',
+				'termsourceID' => 'Termsource',
+				'locID' => 'Loc',
+				'locIDtype' => 'Loc Idtype',
 		);
 	}
 
@@ -103,10 +103,19 @@ class LocationsName extends CActiveRecord
 		$criteria->compare('locIDtype',$this->locIDtype,true);
 
 		return new CActiveDataProvider('LocationsName', array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
 	}
-	
-	
-	
+
+
+	/**
+	 * My Functions
+	 */
+
+	public function getLocationsName_Link(){
+		$result = "";
+		$result = CHtml::link(CHtml::encode($this->locationName), array('/LocationsName/'.$this->id_locationsName));
+		return $result;
+	}
+
 }

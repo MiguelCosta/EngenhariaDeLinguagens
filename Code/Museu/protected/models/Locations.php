@@ -63,9 +63,9 @@ class Locations extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_locations' => 'Id Locations',
-			'Object_Work_Record' => 'Object Work Record',
-			'LocationName' => 'Location Name',
+			'id_locations' => 'ID',
+			'Object_Work_Record' => 'Peça',
+			'LocationName' => 'Local',
 		);
 	}
 
