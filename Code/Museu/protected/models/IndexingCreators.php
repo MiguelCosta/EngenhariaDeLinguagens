@@ -17,6 +17,10 @@ class IndexingCreators extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
+	public static function gerald($nome){
+		return $nome;
+	}
 
 	/**
 	 * @return string the associated database table name

@@ -39,6 +39,9 @@ body {
 	padding: 10px 20px;
 	font-size: 200%;
 	text-align: center;
+	height: 135px;
+	background-image: url("logo3.gif");
+	background-repeat: no-repeat;
 }
 
 #mainmenu {
@@ -249,11 +252,23 @@ div.search-form {
 
 table.detail-view a {
 	text-decoration: none;
-	color: #555;
+	color: maroon;
 }
 
 table.detail-view a:hover {
 	text-decoration: none;
 	color: maroon;
 	cursor: pointer;
+	text-decoration: underline;
+}
+
+div.view a{
+	text-decoration: none;
+	color: maroon;
+}
+
+div.view a:HOVER{
+	text-decoration: none;
+	color: maroon;
+	text-decoration: underline;
 }

@@ -29,7 +29,7 @@
 
 <div id="header">
 <div id="logo">
-<?php echo CHtml::encode(Yii::app()->name); ?>
+<?php //cho CHtml::encode(Yii::app()->name); ?>
 </div>
 </div>
 <!-- header -->
@@ -80,7 +80,7 @@
 						),
 
 				)),
-				array('label'=>'Salas','url'=>array('#')),
+				array('label'=>'Salas','url'=>array('/site/sales')),
 				array('label'=>'|'),
 				array('label'=>'Acerca', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contactos', 'url'=>array('/site/contact')),

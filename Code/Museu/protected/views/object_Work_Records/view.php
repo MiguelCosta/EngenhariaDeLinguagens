@@ -54,9 +54,11 @@ $this->menu = array(
 	echo ' (' . $model->id_object_Work_Records . ')';
 	?>
 </h1>
-
+<hr />
 
 <?php echo $this->renderPartial('_viewDetail', array('model'=>$model)); ?>
-
+<hr />
+<br />
+<br />
 <?php echo $this->renderPartial('_viewOntology', array('model'=>$model)); ?>
 

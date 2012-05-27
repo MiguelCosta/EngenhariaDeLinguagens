@@ -12,7 +12,7 @@ $this->widget('zii.widgets.jui.CJuiSlider', array(
 }',
 		),
 		'htmlOptions'=>array(
-				'style'=>'width:650px; float:left; margin-bottom:2px;'
+				'style'=>'width:100px; float:right; margin-bottom:2px;'
 		),
 ));
 ?>
