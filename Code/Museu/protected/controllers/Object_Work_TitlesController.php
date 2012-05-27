@@ -191,7 +191,7 @@ class Object_Work_TitlesController extends Controller
 		{
 			$model->attributes=$_POST['Object_Work_Titles'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_object_Work_Titles));
+				$this->redirect(array('/object_Work_Records/view','id'=>$model->Object_Work_Record));
 		}
 
 		if(isset($_GET['Object_Work_Records']))
@@ -219,7 +219,7 @@ class Object_Work_TitlesController extends Controller
 		{
 			$model->attributes=$_POST['Object_Work_Titles'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_object_Work_Titles));
+				$this->redirect(array('/object_Work_Records/view','id'=>$model->Object_Work_Record));
 		}
 	
 		if(isset($_GET['Object_Work_Records']))
