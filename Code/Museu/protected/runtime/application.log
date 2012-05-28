@@ -3669,3 +3669,64 @@ Stack trace:
 REQUEST_URI=/EL/Code/Museu/index.php/Object_Work_Titles/987
 HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/5
 ---
+2012/05/28 12:13:02 [error] [exception.CException] exception 'CException' with message 'Property "Object_Work_RecordsController.widget" is not defined.' in /opt/lampp/htdocs/EL/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/_viewOntology.php(108): CComponent->__get('widget')
+#1 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(127): require('/opt/lampp/htdo...')
+#2 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#3 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(870): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#4 /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php(63): CController->renderPartial('_viewOntology', Array)
+#5 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(127): require('/opt/lampp/htdo...')
+#6 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#7 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(870): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#8 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#9 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): CController->render('view', Array)
+#10 /opt/lampp/htdocs/EL/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#11 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /opt/lampp/htdocs/EL/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 /opt/lampp/htdocs/EL/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 /opt/lampp/htdocs/EL/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 /opt/lampp/htdocs/EL/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(292): CFilterChain->run()
+#18 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#20 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#21 /opt/lampp/htdocs/EL/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/8?page=3
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/8
+---
+2012/05/28 12:14:31 [error] [exception.CException] exception 'CException' with message 'Property "CListView.userId" is not defined.' in /opt/lampp/htdocs/EL/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /opt/lampp/htdocs/EL/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('userId', '3')
+#1 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(Object_Work_RecordsController), 'zii.widgets.CLi...', Array)
+#2 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#3 /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/_viewOntology.php(106): CBaseController->widget('zii.widgets.CLi...', Array)
+#4 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(127): require('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#6 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(870): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#7 /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php(63): CController->renderPartial('_viewOntology', Array)
+#8 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(127): require('/opt/lampp/htdo...')
+#9 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#10 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(870): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#11 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#12 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): CController->render('view', Array)
+#13 /opt/lampp/htdocs/EL/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#14 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /opt/lampp/htdocs/EL/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /opt/lampp/htdocs/EL/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /opt/lampp/htdocs/EL/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /opt/lampp/htdocs/EL/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#23 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#24 /opt/lampp/htdocs/EL/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/8?page=3
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/8
+---

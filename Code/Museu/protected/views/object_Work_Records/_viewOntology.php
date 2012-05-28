@@ -104,6 +104,8 @@
 					'itemView'=>'/object_Work_Records/_viewCompact',
 			));
 		}
+		
+		//CVarDumper::dump($this, 2, true);
 		?>
 	</div>
 </div>
