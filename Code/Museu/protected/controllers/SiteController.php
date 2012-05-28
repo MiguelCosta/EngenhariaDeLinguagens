@@ -21,6 +21,9 @@ class SiteController extends Controller
 				'sale'=>array(
 						'class'=>'CViewAction',
 				),
+				'search'=>array(
+						'class'=>'CViewAction',
+				),
 		);
 	}
 
@@ -107,5 +110,10 @@ class SiteController extends Controller
 	public function actionSales()
 	{
 		$this->render('sales');
+	}
+	
+	public function actionSearch()
+	{
+		$this->render('search');
 	}
 }

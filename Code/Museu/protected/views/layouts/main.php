@@ -21,6 +21,7 @@
 	href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
 <title><?php echo CHtml::encode($this->pageTitle); ?> </title>
+<link rel="shortcut icon" href="<?php echo Yii::app()->request->baseUrl; ?>/css/favicon.ico" type="image/x-icon" />
 </head>
 
 <body>
@@ -85,6 +86,7 @@
 				array('label'=>'Acerca', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contactos', 'url'=>array('/site/contact')),
 				array('label'=>'|'),
+				array('label'=>'Procurar', 'url'=>array('/site/search')),
 				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 		),

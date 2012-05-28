@@ -12,6 +12,10 @@ $this->menu=array(
 
 <h1>Peças do Museu</h1>
 
+
+<?php $this->widget('ext.search.GoogleSearch'); ?>
+
+
 <?php $this->widget('zii.widgets.CListView', array(
 		'dataProvider'=>$dataProvider,
 		'template'=>'{sorter}{summary}{pager}{items}{pager}{summary}',

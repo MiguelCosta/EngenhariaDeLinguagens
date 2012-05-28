@@ -242,4 +242,18 @@ class IndexingCreators extends CActiveRecord
 		echo '</table>';
 		echo '</div>';
 	}
+	
+	public static function getObjectWorkRecords_NameCreator($name){
+		$names =  NamesCreator::model()->findByAttributes(array('nameCreator'=>$name));
+		$names_indexing = NamesCreator_IndexingCreators::model()->findByAttributes(array('NameCreator'=>$names->id_namesCreator));
+		$indexing = IndexingCreators::model()->findByPk($names_indexing->IndexingCreator);
+		
+		return new CArrayDataProvider($indexing->object_Work_Records, array('keyField'=>'id_object_Work_Records'));
+	}
+	
+	
+	
+	
+	
+	
 }

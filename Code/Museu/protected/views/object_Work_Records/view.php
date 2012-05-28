@@ -56,6 +56,11 @@ $this->menu = array(
 </h1>
 <hr />
 
+<?php $this->widget('ext.search.GoogleSearch'); 
+
+//CVarDumper::dump($this, 3, true);
+?>
+<br />
 <?php echo $this->renderPartial('_viewDetail', array('model'=>$model)); ?>
 <hr />
 <br />

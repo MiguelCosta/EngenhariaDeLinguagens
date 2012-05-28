@@ -3730,3 +3730,102 @@ Stack trace:
 REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/8?page=3
 HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/8
 ---
+2012/05/28 13:36:03 [error] [exception.CException] exception 'CException' with message 'Alias "application.extensions.search.GoogleSearch" is invalid. Make sure it points to an existing PHP file.' in /opt/lampp/htdocs/EL/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /opt/lampp/htdocs/EL/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('application.ext...', true)
+#1 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(Object_Work_RecordsController), 'application.ext...', Array)
+#2 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('application.ext...', Array)
+#3 /opt/lampp/htdocs/EL/Code/Museu/protected/views/object_Work_Records/view.php(65): CBaseController->widget('application.ext...')
+#4 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(127): require('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/EL/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/opt/lampp/htdo...', Array, true)
+#6 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(870): CBaseController->renderFile('/opt/lampp/htdo...', Array, true)
+#7 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#8 /opt/lampp/htdocs/EL/Code/Museu/protected/controllers/Object_Work_RecordsController.php(59): CController->render('view', Array)
+#9 /opt/lampp/htdocs/EL/yii/framework/web/actions/CInlineAction.php(50): Object_Work_RecordsController->actionView()
+#10 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /opt/lampp/htdocs/EL/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /opt/lampp/htdocs/EL/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /opt/lampp/htdocs/EL/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /opt/lampp/htdocs/EL/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(292): CFilterChain->run()
+#17 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(276): CController->run('view')
+#19 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('object_Work_Rec...')
+#20 /opt/lampp/htdocs/EL/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/object_Work_Records/1
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/index
+---
+2012/05/28 13:51:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /opt/lampp/htdocs/EL/yii/framework/web/actions/CViewAction.php:113
+Stack trace:
+#0 /opt/lampp/htdocs/EL/yii/framework/web/actions/CViewAction.php(124): CViewAction->resolveView('index')
+#1 /opt/lampp/htdocs/EL/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#2 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(309): CAction->runWithParams(Array)
+#3 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(287): CController->runAction(Object(CViewAction))
+#4 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(276): CController->run('search')
+#6 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('site/search')
+#7 /opt/lampp/htdocs/EL/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#8 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/site/search
+HTTP_REFERER=http://localhost/EL/Code/Museu/index.php/object_Work_Records/1
+---
+2012/05/28 17:45:13 [error] [php] Trying to get property of non-object (/opt/lampp/htdocs/EL/Code/Museu/protected/views/site/pages/GeraldBlancourt.php:15)
+Stack trace:
+#0 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(870): SiteController->renderFile()
+#1 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /opt/lampp/htdocs/EL/yii/framework/web/actions/CViewAction.php(141): SiteController->render()
+#3 /opt/lampp/htdocs/EL/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#4 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(309): CViewAction->runWithParams()
+#5 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(287): SiteController->runAction()
+#6 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#8 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /opt/lampp/htdocs/EL/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/site/sale?view=GeraldBlancourt
+in /opt/lampp/htdocs/EL/Code/Museu/protected/views/site/pages/GeraldBlancourt.php (15)
+in /opt/lampp/htdocs/EL/Code/Museu/index.php (13)
+2012/05/28 17:45:24 [error] [php] Trying to get property of non-object (/opt/lampp/htdocs/EL/Code/Museu/protected/views/site/pages/GeraldBlancourt.php:15)
+Stack trace:
+#0 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(870): SiteController->renderFile()
+#1 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /opt/lampp/htdocs/EL/yii/framework/web/actions/CViewAction.php(141): SiteController->render()
+#3 /opt/lampp/htdocs/EL/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#4 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(309): CViewAction->runWithParams()
+#5 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(287): SiteController->runAction()
+#6 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#8 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /opt/lampp/htdocs/EL/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/site/sale?view=GeraldBlancourt
+in /opt/lampp/htdocs/EL/Code/Museu/protected/views/site/pages/GeraldBlancourt.php (15)
+in /opt/lampp/htdocs/EL/Code/Museu/index.php (13)
+2012/05/28 17:45:33 [error] [php] Trying to get property of non-object (/opt/lampp/htdocs/EL/Code/Museu/protected/views/site/pages/GeraldBlancourt.php:15)
+Stack trace:
+#0 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(870): SiteController->renderFile()
+#1 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /opt/lampp/htdocs/EL/yii/framework/web/actions/CViewAction.php(141): SiteController->render()
+#3 /opt/lampp/htdocs/EL/yii/framework/web/actions/CAction.php(75): CViewAction->run()
+#4 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(309): CViewAction->runWithParams()
+#5 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(287): SiteController->runAction()
+#6 /opt/lampp/htdocs/EL/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#8 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#9 /opt/lampp/htdocs/EL/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CWebApplication->run()
+REQUEST_URI=/EL/Code/Museu/index.php/site/sale?view=GeraldBlancourt
+in /opt/lampp/htdocs/EL/Code/Museu/protected/views/site/pages/GeraldBlancourt.php (15)
+in /opt/lampp/htdocs/EL/Code/Museu/index.php (13)
+2012/05/28 17:51:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "INdexingCreators".' in /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php:280
+Stack trace:
+#0 /opt/lampp/htdocs/EL/yii/framework/web/CWebApplication.php(135): CWebApplication->runController('INdexingCreator...')
+#1 /opt/lampp/htdocs/EL/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /opt/lampp/htdocs/EL/Code/Museu/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/EL/Code/Museu/index.php/INdexingCreators
+---
