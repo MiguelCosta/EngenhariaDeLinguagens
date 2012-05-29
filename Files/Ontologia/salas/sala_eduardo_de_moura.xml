@@ -3,9 +3,11 @@
     xsi:noNamespaceSchemaLocation="file:/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/Files/Ontologia/salas/sala.xsd">
     <nome>Eduardo de Moura</nome>
     <objectos>
-        <tipo>PecasCriador</tipo>
-        <argumentos>
-            <argumento></argumento>
-        </argumentos>
+        <objecto>
+            <tipo>PecasCriador</tipo>
+            <argumentos>
+                <argumento>Eduardo de Moura</argumento>
+            </argumentos>
+        </objecto>
     </objectos>
 </sala>

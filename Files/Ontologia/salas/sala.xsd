@@ -5,21 +5,27 @@
         <xs:complexType>
             <xs:sequence>
                 <xs:element name="nome" type="xs:string"/>
-                <xs:element maxOccurs="unbounded" name="objectos">
+                <xs:element name="objectos">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="tipo">
-                                <xs:simpleType>
-                                    <xs:restriction base="xs:string">
-                                        <xs:enumeration value="PecasCriador"/>
-                                    </xs:restriction>
-                                </xs:simpleType>
-                            </xs:element>
-                            <xs:element minOccurs="0" name="argumentos">
+                            <xs:element maxOccurs="unbounded" name="objecto">
                                 <xs:complexType>
                                     <xs:sequence>
-                                        <xs:element maxOccurs="unbounded" name="argumento"
-                                            type="xs:string"/>
+                                        <xs:element name="tipo">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                  <xs:enumeration value="PecasCriador"/>
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" name="argumentos">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element maxOccurs="unbounded" name="argumento"
+                                                  type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
                                     </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
