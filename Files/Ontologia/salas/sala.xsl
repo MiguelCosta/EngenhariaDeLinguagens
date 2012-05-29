@@ -22,7 +22,7 @@
             <xsl:if test="string(./tipo) = 'PecasCriador'">              
 &lt;?php 
     $this->widget('zii.widgets.CListView', array(
-            'dataProvider'=>IndexingCreators::getObjectWorkRecords_NameCreator(<xsl:value-of select="./argumentos/argumento"/>, 10),
+            'dataProvider'=>IndexingCreators::getObjectWorkRecords_NameCreator('<xsl:value-of select="./argumentos/argumento"/>', 10),
             'template'=>'{sorter}{summary}{pager}{items}{pager}{summary}',
             'pager'=>array(
                 'maxButtonCount'=>'10',

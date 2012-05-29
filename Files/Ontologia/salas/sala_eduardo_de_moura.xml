@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sala xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="file:/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/Files/Ontologia/salas/sala.xsd">
-    <nome>Eduardo de Moura</nome>
+    <nome>Cerdeira</nome>
     <objectos>
         <objecto>
             <tipo>PecasCriador</tipo>
             <argumentos>
-                <argumento>Eduardo de Moura</argumento>
+                <argumento>Cerdeira</argumento>
             </argumentos>
         </objecto>
     </objectos>
