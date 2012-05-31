@@ -116,4 +116,52 @@ class SiteController extends Controller
 	{
 		$this->render('search');
 	}
+	
+	/**
+	 * Displays the contact page
+	 */
+	public function actionNovaSala()
+	{
+		$model=new NovaSalaForm;
+		if(isset($_POST['NovaSalaForm']))
+		{
+			$model->attributes=$_POST['NovaSalaForm'];
+			if($model->validate())
+			{
+				/* Verificação com o schema */
+				$doc = new DOMDocument();       // DOM xml
+				$doc->loadXML($model->sala);
+					
+				$valido = false;
+				if (!$doc->schemavalidate('protected/components/sala.xsd')) {
+// 					echo "<h3>Erros</h3>Ocorreram erros ao validar o xml, Verifique se o abstract está correcto.";
+					libxml_display_errors();
+				} else {
+					$valido = true;
+					
+					$XSL = new DOMDocument;
+					$XSL->load('protected/components/sala.xsl', LIBXML_NOCDATA);
+					
+					$xslt = new XSLTProcessor();
+					$xslt->importStylesheet($XSL);
+					
+					
+					$nomes = $doc->getElementsByTagName('nome');
+					foreach ($nomes as $nome) {
+						$fh = fopen(dirname(__FILE__)."/../views/site/pages/".$nome->nodeValue.".php", 'w') or die("can't open file");
+						fwrite($fh, $xslt->transformToXML($doc));
+						fclose($fh);
+					}
+					
+// 					CVarDumper::dump(dirname(__FILE__),10);
+// 					 					fwrite($fh, $xslt->transformToXML($doc));
+				}
+				
+				// redirect to another page
+// 				$this->redirect(array('sales'));
+			}
+
+		}
+		$this->render('novaSala',array('model'=>$model));
+	}
 }

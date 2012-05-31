@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  17 MAR 2012 15:04
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.2.21)  31 MAY 2012 16:09
 entering extended mode
  %&-line parsing enabled.
 **pi-relatorio.tex
 (./pi-relatorio.tex
 LaTeX2e <2009/09/24>
 Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
-yphenation, french, basque, portuguese, loaded.
+yphenation, french, basque, loaded.
 (/usr/share/texmf-texlive/tex/latex/base/article.cls
 Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
 (/usr/share/texmf-texlive/tex/latex/base/size10.clo
@@ -34,9 +34,14 @@ File: babel.def 2008/07/06 v3.8l Babel common definitions
 \babel@savecnt=\count87
 \U@D=\dimen103
 )
+
+Package babel Warning: No hyphenation patterns were loaded for
+(babel)                the language `Portuguese'
+(babel)                I will use the patterns loaded for \language=0 instead.
+
+\l@portuges = a dialect from \language0
 Package babel Info: Making " an active character on input line 145.
-))
-(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+)) (/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
@@ -368,28 +373,39 @@ driver: pdftex
 \@twosidetrue \@mparswitchtrue 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 37.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 37.
 [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX warning (ext4): dest
-ination with the same identifier (name{page.1}) has been already used, duplicat
-e ignored
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 39.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 39.
+
+Overfull \hbox (24.83177pt too wide) in paragraph at lines 39--40
+\T1/aer/m/n/10 Este doc-u-mento rep-re-senta toda a documentaï¾$[]$ï¾$[]$o feit
+a para o de-sen-volvi-mento do Museu Vir-tual da Emigraï¾$[]$ï¾$[]$o
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.40 	\end{abstract}
-                     [1] (./pi-relatorio.toc
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 5.
-)
+                     [1] (./pi-relatorio.toc)
 \tf@toc=\write5
 \openout5 = `pi-relatorio.toc'.
 
  [2]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 55.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 55.
+(Font)              <14.4> on input line 52.
  [3]
 LaTeX Font Info:    Try loading font information for T1+aett on input line 69.
 
@@ -398,23 +414,29 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 )
 LaTeX Font Info:    Try loading font information for OMS+aer on input line 77.
 
-(/usr/share/texmf/tex/latex/R/tex/latex/omsaer.fd
+(/usr/share/texmf-texlive/tex/latex/ae/omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 77.
  [4]
-<./imagens/OAIS.png, id=158, 549.05125pt x 287.0725pt>
+<./imagens/OAIS.png, id=163, 549.05125pt x 287.0725pt>
 File: ./imagens/OAIS.png Graphic file (type png)
 
-<use ./imagens/OAIS.png> [5 <./imagens/OAIS.png (PNG copy)>]
-<imagens/CGB052.JPG, id=163, 823.878pt x 542.5068pt>
+<use ./imagens/OAIS.png>
+Overfull \hbox (8.33354pt too wide) in paragraph at lines 117--118
+[]\T1/aer/m/n/10 Neste pro-cesso, o ideal ï¾$[]$ con-seguir en-rique-cer o repo
+sitï¾$[]$rio atravï¾$[]$s do preenchi-mento de um formulï¾$[]$rio
+ []
+
+[5 <./imagens/OAIS.png (PNG copy)>]
+<imagens/CGB052.JPG, id=168, 823.878pt x 542.5068pt>
 File: imagens/CGB052.JPG Graphic file (type jpg)
  <use imagens/CGB052.JPG>
-<imagens/004.jpg, id=164, 269.808pt x 351.9549pt>
+<imagens/004.jpg, id=169, 269.808pt x 351.9549pt>
 File: imagens/004.jpg Graphic file (type jpg)
  <use imagens/004.jpg>
-[6 <./imagens/CGB052.JPG>] <imagens/0059.jpg, id=171, 409.7709pt x 326.6604pt>
+[6 <./imagens/CGB052.JPG>] <imagens/0059.jpg, id=176, 409.7709pt x 326.6604pt>
 File: imagens/0059.jpg Graphic file (type jpg)
 
 <use imagens/0059.jpg> [7 <./imagens/004.jpg> <./imagens/0059.jpg>]
@@ -425,13 +447,13 @@ LaTeX Font Info:    Try loading font information for T1+aess on input line 214.
 File: t1aess.fd 1997/11/16 Font definitions for T1/aess.
 ) [8] (./pi-relatorio.aux) ) 
 Here is how much of TeX's memory you used:
- 6152 strings out of 495014
- 87692 string characters out of 1180707
- 168760 words of memory out of 3000000
- 9133 multiletter control sequences out of 15000+50000
- 40821 words of font info for 81 fonts, out of 3000000 for 9000
- 30 hyphenation exceptions out of 8191
- 38i,8n,39p,591b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 6165 strings out of 495028
+ 87902 string characters out of 1181229
+ 186746 words of memory out of 3000000
+ 9146 multiletter control sequences out of 15000+50000
+ 41734 words of font info for 84 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 38i,8n,39p,625b,368s stack positions out of 5000i,500n,10000p,200000b,50000s
 pdfTeX warning (dest): name{Hfootnote.4} has been r
 eferenced but does not exist, replaced by a fixed one
 
@@ -456,9 +478,9 @@ ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfon
 ts/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8
 .pfb>
-Output written on pi-relatorio.pdf (9 pages, 2948091 bytes).
+Output written on pi-relatorio.pdf (9 pages, 2959397 bytes).
 PDF statistics:
- 242 PDF objects out of 1000 (max. 8388607)
+ 246 PDF objects out of 1000 (max. 8388607)
  43 named destinations out of 1000 (max. 500000)
- 197 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 205 words of extra memory for PDF output out of 10000 (max. 10000000)
 
