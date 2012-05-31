@@ -81,7 +81,7 @@
 						),
 
 				)),
-				array('label'=>'Salas','url'=>array('/site/sales')),
+				array('label'=>'Salas','url'=>array('/site/salas')),
 				array('label'=>'|'),
 				array('label'=>'Acerca', 'url'=>array('/site/page', 'view'=>'about')),
 				array('label'=>'Contactos', 'url'=>array('/site/contact')),

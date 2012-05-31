@@ -18,7 +18,7 @@ class SiteController extends Controller
 				'page'=>array(
 						'class'=>'CViewAction',
 				),
-				'sale'=>array(
+				'sala'=>array(
 						'class'=>'CViewAction',
 				),
 				'search'=>array(
@@ -107,9 +107,9 @@ class SiteController extends Controller
 		$this->redirect(Yii::app()->homeUrl);
 	}
 
-	public function actionSales()
+	public function actionSalas()
 	{
-		$this->render('sales');
+		$this->render('salas');
 	}
 	
 	public function actionSearch()
@@ -126,42 +126,52 @@ class SiteController extends Controller
 		if(isset($_POST['NovaSalaForm']))
 		{
 			$model->attributes=$_POST['NovaSalaForm'];
+			// TODO falta validar o conteudo, ou seja, ver se os tipos e os argumentos sao validos
 			if($model->validate())
 			{
-				/* Verificação com o schema */
+				// carrega a especificacao da sala cujo formato é xml
 				$doc = new DOMDocument();       // DOM xml
 				$doc->loadXML($model->sala);
-					
-				$valido = false;
+
+				// verifica se o documento xml é válido segundo o schema sala.xsd
 				if (!$doc->schemavalidate('protected/components/sala.xsd')) {
-// 					echo "<h3>Erros</h3>Ocorreram erros ao validar o xml, Verifique se o abstract está correcto.";
 					libxml_display_errors();
 				} else {
-					$valido = true;
-					
+					// carrega a stylesheet sala.xsl
 					$XSL = new DOMDocument;
 					$XSL->load('protected/components/sala.xsl', LIBXML_NOCDATA);
 					
+					// importa a stylesheet para o processador XSLT
 					$xslt = new XSLTProcessor();
 					$xslt->importStylesheet($XSL);
 					
-					
+					// obtem o elemento nome do documento objecto sala
+					// o metodo obtem uma lista de elementos, mas segundo o schema, apenas existe um elemento nome
 					$nomes = $doc->getElementsByTagName('nome');
 					foreach ($nomes as $nome) {
-						$fh = fopen(dirname(__FILE__)."/../views/site/pages/".$nome->nodeValue.".php", 'w') or die("can't open file");
+						$nome_ficheiro = str_replace(" ", "", $nome->nodeValue);
+						
+						// acrescenta o link para a nova sala gerada se esta ainda nao existir
+						if (!file_exists(Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php")) {
+							$fh2 = fopen(Yii::app()->basePath."/views/site/listaSalas.php", 'a') or die("can't open file");
+							fwrite($fh2, "\n<?php echo CHtml::link(CHtml::encode('".$nome->nodeValue."'), array('/site/sala', 'view'=>'".$nome_ficheiro."')); ?><br>");
+							fclose($fh2);
+						}
+						
+						// transforma o objecto sala num documento PHP segundo a stylesheet importada
+						// e guarda na diretoria das salas geradas
+						$fh = fopen(Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php", 'w') or die("can't open file");
 						fwrite($fh, $xslt->transformToXML($doc));
 						fclose($fh);
 					}
-					
-// 					CVarDumper::dump(dirname(__FILE__),10);
-// 					 					fwrite($fh, $xslt->transformToXML($doc));
 				}
 				
 				// redirect to another page
-// 				$this->redirect(array('sales'));
+				$this->redirect(array('salas'));
 			}
 
 		}
 		$this->render('novaSala',array('model'=>$model));
 	}
 }
+?>

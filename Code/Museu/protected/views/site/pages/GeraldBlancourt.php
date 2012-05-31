@@ -5,7 +5,7 @@ $NOME = 'Gérald Bloncourt';
 
 $this->pageTitle=Yii::app()->name . ' - Salas';
 $this->breadcrumbs=array(
-		'Salas' => array('/site/sales'),
+		'Salas' => array('/site/salss'),
 		$NOME,
 );
 ?>
