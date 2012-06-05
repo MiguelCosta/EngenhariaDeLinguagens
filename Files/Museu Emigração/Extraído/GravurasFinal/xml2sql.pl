@@ -11,6 +11,7 @@ my $xml = new XML::Simple;
 my $data = $xml->XMLin("gravurasLite.xml");
 
 #open (F, ">", "gravuras.sql") or die "impossivel abrir ficheiro";
+open (F, ">", "4-povGravuras.sql") or die "impossivel abrir ficheiro";
 
 my $cont_records = 0; # serve apenas para poder separar os registos em diferentes ficheiros sql
 my $ix = 0;
@@ -26,29 +27,29 @@ my $cont_loc = 107;
 
 while(exists($data->{cdwalite}->[$ix])){
 	# Separa os registos em diferentes ficheiros
-	if ($cont_records == 0) {
-		open (F, ">", "4.1-povGravuras.sql") or die "impossivel abrir ficheiro";
-	}
-	if ($cont_records == 150) {
-		close F;
-		open (F, ">", "4.2-povGravuras.sql") or die "impossivel abrir ficheiro";
-	}
-	if ($cont_records == 300) {
-		close F;
-		open (F, ">", "4.3-povGravuras.sql") or die "impossivel abrir ficheiro";
-	}
-	if ($cont_records == 450) {
-		close F;
-		open (F, ">", "4.4-povGravuras.sql") or die "impossivel abrir ficheiro";
-	}
-	if ($cont_records == 600) {
-		close F;
-		open (F, ">", "4.5-povGravuras.sql") or die "impossivel abrir ficheiro";
-	}
-	if ($cont_records == 750) {
-		close F;
-		open (F, ">", "4.6-povGravuras.sql") or die "impossivel abrir ficheiro";
-	}
+	#if ($cont_records == 0) {
+	#open (F, ">", "4.1-povGravuras.sql") or die "impossivel abrir ficheiro";
+	#}
+	#if ($cont_records == 150) {
+	#close F;
+	#open (F, ">", "4.2-povGravuras.sql") or die "impossivel abrir ficheiro";
+	#}
+	#if ($cont_records == 300) {
+	#close F;
+	#open (F, ">", "4.3-povGravuras.sql") or die "impossivel abrir ficheiro";
+	#}
+	#if ($cont_records == 450) {
+	#close F;
+	#open (F, ">", "4.4-povGravuras.sql") or die "impossivel abrir ficheiro";
+	#}
+	#if ($cont_records == 600) {
+	#close F;
+	#open (F, ">", "4.5-povGravuras.sql") or die "impossivel abrir ficheiro";
+	#}
+	#if ($cont_records == 750) {
+	#close F;
+	#open (F, ">", "4.6-povGravuras.sql") or die "impossivel abrir ficheiro";
+	#}
 
 
 	my $desc = $data->{cdwalite}->[$ix]->{descriptiveMetadata};

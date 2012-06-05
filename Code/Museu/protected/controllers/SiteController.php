@@ -148,7 +148,7 @@ class SiteController extends Controller
 					$sala_php = "<?php \$NOME = '$sala_xml->nome';       
 	    \$this->pageTitle=Yii::app()->name . ' - Salas';
 	    \$this->breadcrumbs=array(
-	        'Salas' => array('/site/sales'),
+	        'Salas' => array('/site/salas'),
 	        \$NOME,
 	    );
 	?>
