@@ -118,7 +118,7 @@ class SiteController extends Controller
 	}
 	
 	/**
-	 * Displays the contact page
+	 * 
 	 */
 	public function actionNovaSala()
 	{
@@ -129,47 +129,76 @@ class SiteController extends Controller
 			// TODO falta validar o conteudo, ou seja, ver se os tipos e os argumentos sao validos
 			if($model->validate())
 			{
+				
 				// carrega a especificacao da sala cujo formato é xml
 				$doc = new DOMDocument();       // DOM xml
 				$doc->loadXML($model->sala);
-
+				
 				// verifica se o documento xml é válido segundo o schema sala.xsd
 				if (!$doc->schemavalidate('protected/components/sala.xsd')) {
 					libxml_display_errors();
-				} else {
-					// carrega a stylesheet sala.xsl
-					$XSL = new DOMDocument;
-					$XSL->load('protected/components/sala.xsl', LIBXML_NOCDATA);
+				} else {				
+					//Converte o documento XML que contem os conceitos num objecto
+					$conceitos = simplexml_load_file("protected/components/conceitos.xml");
 					
-					// importa a stylesheet para o processador XSLT
-					$xslt = new XSLTProcessor();
-					$xslt->importStylesheet($XSL);
+					//Converte o documento XML que contem os conceitos num objecto
+					$sala_xml = simplexml_load_string($model->sala);
+					
+					// Conteudo constante de uma sala
+					$sala_php = "<?php \$NOME = '$sala_xml->nome';       
+	    \$this->pageTitle=Yii::app()->name . ' - Salas';
+	    \$this->breadcrumbs=array(
+	        'Salas' => array('/site/sales'),
+	        \$NOME,
+	    );
+	?>
+	
+	<h1 align=\"center\">Sala <?php echo \$NOME?></h1>
+	<hr/>";
+					
+					// Percorre cada objeto da sala
+					foreach($sala_xml->xpath('//objecto') as $obj) {
+						// tipo do objecto 
+						$tipo = $obj->tipo;
+						
+						// obtem o template PHP do tipo extraido
+						$conceito = $conceitos->xpath("//value[contains(../key,'$tipo')]");	
+						
+						// para cada argumento deste objecto substitui os valores variaveis, identificados por tags,
+						// pelos valor do argumento correspondente especificado na sala
+						foreach($obj->argumentos->children() as $arg) {
+							// substitui a tag em $conceito que seja igual ao atributo id do argumento iterado 
+							//pelo valor do argumento
+							$tag = "%".$arg['id']."%";
+							$conceito[0] = str_replace($tag, $arg, $conceito[0]);
+						}
+						// concatena este objecto PHP à sala PHP
+						$sala_php .= $conceito[0];
+					}
 					
 					// obtem o elemento nome do documento objecto sala
 					// o metodo obtem uma lista de elementos, mas segundo o schema, apenas existe um elemento nome
-					$nomes = $doc->getElementsByTagName('nome');
-					foreach ($nomes as $nome) {
-						$nome_ficheiro = str_replace(" ", "", $nome->nodeValue);
-						
-						// acrescenta o link para a nova sala gerada se esta ainda nao existir
-						if (!file_exists(Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php")) {
-							$fh2 = fopen(Yii::app()->basePath."/views/site/listaSalas.php", 'a') or die("can't open file");
-							fwrite($fh2, "\n<?php echo CHtml::link(CHtml::encode('".$nome->nodeValue."'), array('/site/sala', 'view'=>'".$nome_ficheiro."')); ?><br>");
-							fclose($fh2);
-						}
-						
-						// transforma o objecto sala num documento PHP segundo a stylesheet importada
-						// e guarda na diretoria das salas geradas
-						$fh = fopen(Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php", 'w') or die("can't open file");
-						fwrite($fh, $xslt->transformToXML($doc));
-						fclose($fh);
+					$nome_ficheiro = str_replace(" ", "", $sala_xml->nome);
+					
+					// acrescenta o link para a nova sala gerada se esta ainda nao existir
+					if (!file_exists(Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php")) {
+						$fh2 = fopen(Yii::app()->basePath."/views/site/listaSalas.php", 'a') or die("can't open file");
+						fwrite($fh2, "\n<?php echo CHtml::link(CHtml::encode('".$sala_xml->nome."'), array('/site/sala', 'view'=>'".$nome_ficheiro."')); ?><br>");
+						fclose($fh2);
 					}
+				
+					// transforma o objecto sala num documento PHP segundo a stylesheet importada
+					// e guarda na diretoria das salas geradas
+					$fh = fopen(Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php", 'w') or die("can't open file");
+					fwrite($fh, $sala_php);
+					fclose($fh);
 				}
 				
+	
 				// redirect to another page
 				$this->redirect(array('salas'));
 			}
-
+	
 		}
 		$this->render('novaSala',array('model'=>$model));
 	}

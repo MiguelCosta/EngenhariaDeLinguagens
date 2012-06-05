@@ -24,17 +24,7 @@ $this->breadcrumbs=array(
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'sala'); ?>
-		<?php echo $form->textArea($model,'sala', array('value'=>'<sala>
-    <nome></nome>
-    <objectos>
-        <objecto>
-            <tipo></tipo>
-            <argumentos>
-                <argumento></argumento>
-            </argumentos>
-        </objecto>
-    </objectos>
-</sala>')); ?>
+		<?php echo $form->textArea($model,'sala'); ?>
 		<?php echo $form->error($model,'sala'); ?>
 	</div>
 
