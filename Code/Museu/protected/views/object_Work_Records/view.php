@@ -22,13 +22,10 @@ $this->menu = array(
 $this->beginWidget('zii.widgets.CPortlet', array(
 		'title'=>'Operações',
 ));
-
-
-
 $this->endWidget();
 
 $this->menu = array(
-		array('label' => 'Índice', 'url' => array('index')),
+		array('label' => 'Índice dff', 'url' => array('index')),
 		array('label' => 'Criar', 'url' => array('create')),
 		array('label' => 'Criar Ficha Completa', 'url' => array('createAll')),
 		array('label' => 'Actualizar', 'url' => array('update', 'id' => $model->id_object_Work_Records)),
@@ -56,10 +53,6 @@ $this->menu = array(
 </h1>
 <hr />
 
-<?php $this->widget('ext.search.GoogleSearch'); 
-
-//CVarDumper::dump($this, 3, true);
-?>
 <br />
 <?php echo $this->renderPartial('_viewDetail', array('model'=>$model)); ?>
 <hr />

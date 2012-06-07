@@ -9,7 +9,7 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Museu das Comunidades e da Emigração',
 	// esta linha define o que é mostrado quando se abre o site
-	'defaultController'=>'Object_Work_Records',
+	//'defaultController'=>'Object_Work_Records',
 	
 	// preloading 'log' component
 	'preload'=>array('log'),
