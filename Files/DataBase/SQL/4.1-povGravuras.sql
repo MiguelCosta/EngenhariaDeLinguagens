@@ -27,7 +27,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 54);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0001', 54);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('54', 'gravuras/0001.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('54', 'gravuras/0001.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('54','54','54');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -58,7 +58,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 55);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0002', 55);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('55', 'gravuras/0002.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('55', 'gravuras/0002.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('55','55','55');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -89,7 +89,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 56);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0003', 56);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('56', 'gravuras/0003.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('56', 'gravuras/0003.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('56','56','56');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -156,7 +156,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 57);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0004', 57);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('57', 'gravuras/0004.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('57', 'gravuras/0004.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('57','57','57');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -187,7 +187,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 58);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0005', 58);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('58', 'gravuras/0005.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('58', 'gravuras/0005.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('58','58','58');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -224,7 +224,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 59);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0006', 59);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('59', 'gravuras/0006.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('59', 'gravuras/0006.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('59','59','59');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -269,7 +269,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 60);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0007', 60);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('60', 'gravuras/0007.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('60', 'gravuras/0007.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('60','60','60');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -304,7 +304,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 61);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0008', 61);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('61', 'gravuras/0008.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('61', 'gravuras/0008.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('61','61','61');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -345,7 +345,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 62);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0009', 62);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('62', 'gravuras/0009.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('62', 'gravuras/0009.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('62','62','62');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -376,7 +376,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 63);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0010', 63);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('63', 'gravuras/0010.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('63', 'gravuras/0010.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('63','63','63');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -407,7 +407,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 64);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0011', 64);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('64', 'gravuras/0011.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('64', 'gravuras/0011.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('64','64','64');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -450,7 +450,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 65);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0012', 65);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('65', 'gravuras/0012.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('65', 'gravuras/0012.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('65','65','65');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -489,7 +489,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 66);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0013', 66);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('66', 'gravuras/0013.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('66', 'gravuras/0013.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('66','66','66');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -520,7 +520,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 67);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0014', 67);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('67', 'gravuras/0014.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('67', 'gravuras/0014.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('67','67','67');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -551,7 +551,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 68);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0015', 68);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('68', 'gravuras/0015.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('68', 'gravuras/0015.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('68','68','68');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -582,7 +582,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 69);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0016', 69);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('69', 'gravuras/0016.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('69', 'gravuras/0016.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('69','69','69');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -613,7 +613,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 70);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0017', 70);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('70', 'gravuras/0017.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('70', 'gravuras/0017.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('70','70','70');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -644,7 +644,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 71);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0018', 71);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('71', 'gravuras/0018.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('71', 'gravuras/0018.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('71','71','71');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -679,7 +679,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 72);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0019', 72);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('72', 'gravuras/0019.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('72', 'gravuras/0019.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('72','72','72');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -710,7 +710,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 73);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0020', 73);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('73', 'gravuras/0020.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('73', 'gravuras/0020.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('73','73','73');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -739,7 +739,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 74);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0021', 74);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('74', 'gravuras/0021.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('74', 'gravuras/0021.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('74','74','74');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -770,7 +770,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 75);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0022', 75);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('75', 'gravuras/0022.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('75', 'gravuras/0022.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('75','75','75');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -801,7 +801,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 76);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0023', 76);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('76', 'gravuras/0023.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('76', 'gravuras/0023.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('76','76','76');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -832,7 +832,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 77);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0024', 77);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('77', 'gravuras/0024.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('77', 'gravuras/0024.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('77','77','77');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -867,7 +867,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 78);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0025', 78);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('78', 'gravuras/0025.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('78', 'gravuras/0025.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('78','78','78');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -898,7 +898,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 79);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0026', 79);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('79', 'gravuras/0026.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('79', 'gravuras/0026.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('79','79','79');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -929,7 +929,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 80);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0027', 80);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('80', 'gravuras/0027.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('80', 'gravuras/0027.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('80','80','80');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -960,7 +960,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 81);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0028', 81);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('81', 'gravuras/0028.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('81', 'gravuras/0028.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('81','81','81');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1005,7 +1005,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 82);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0029', 82);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('82', 'gravuras/0029.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('82', 'gravuras/0029.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('82','82','82');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1036,7 +1036,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 83);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0030', 83);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('83', 'gravuras/0030.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('83', 'gravuras/0030.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('83','83','83');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1067,7 +1067,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 84);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0031', 84);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('84', 'gravuras/0031.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('84', 'gravuras/0031.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('84','84','84');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1098,7 +1098,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 85);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0032', 85);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('85', 'gravuras/0032.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('85', 'gravuras/0032.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('85','85','85');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1134,7 +1134,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 86);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0033', 86);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('86', 'gravuras/0033.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('86', 'gravuras/0033.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('86','86','86');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1165,7 +1165,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 87);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0034', 87);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('87', 'gravuras/0034.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('87', 'gravuras/0034.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('87','87','87');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1210,7 +1210,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 88);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0035', 88);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('88', 'gravuras/0035.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('88', 'gravuras/0035.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('88','88','88');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1241,7 +1241,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 89);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0036', 89);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('89', 'gravuras/0036.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('89', 'gravuras/0036.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('89','89','89');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1290,7 +1290,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 90);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0037', 90);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('90', 'gravuras/0037.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('90', 'gravuras/0037.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('90','90','90');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1325,7 +1325,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 91);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0038', 91);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('91', 'gravuras/0038.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('91', 'gravuras/0038.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('91','91','91');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1356,7 +1356,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 92);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0039', 92);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('92', 'gravuras/0039.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('92', 'gravuras/0039.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('92','92','92');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1389,7 +1389,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 93);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0040', 93);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('93', 'gravuras/0040.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('93', 'gravuras/0040.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('93','93','93');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1420,7 +1420,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 94);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0041', 94);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('94', 'gravuras/0041.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('94', 'gravuras/0041.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('94','94','94');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1481,7 +1481,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 95);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0042', 95);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('95', 'gravuras/0042.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('95', 'gravuras/0042.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('95','95','95');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1512,7 +1512,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 96);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0043', 96);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('96', 'gravuras/0043.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('96', 'gravuras/0043.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('96','96','96');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1543,7 +1543,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 97);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0044', 97);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('97', 'gravuras/0044.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('97', 'gravuras/0044.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('97','97','97');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1576,7 +1576,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 98);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0045', 98);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('98', 'gravuras/0045.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('98', 'gravuras/0045.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('98','98','98');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1633,7 +1633,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 99);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0046', 99);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('99', 'gravuras/0046.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('99', 'gravuras/0046.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('99','99','99');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1666,7 +1666,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 100);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0047', 100);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('100', 'gravuras/0047.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('100', 'gravuras/0047.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('100','100','100');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1697,7 +1697,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 101);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0048', 101);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('101', 'gravuras/0048.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('101', 'gravuras/0048.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('101','101','101');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1728,7 +1728,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 102);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0049', 102);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('102', 'gravuras/0049.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('102', 'gravuras/0049.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('102','102','102');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1759,7 +1759,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 103);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0050', 103);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('103', 'gravuras/0050.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('103', 'gravuras/0050.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('103','103','103');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1790,7 +1790,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 104);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0051', 104);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('104', 'gravuras/0051.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('104', 'gravuras/0051.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('104','104','104');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1821,7 +1821,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 105);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0052', 105);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('105', 'gravuras/0052.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('105', 'gravuras/0052.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('105','105','105');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1852,7 +1852,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 106);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0053', 106);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('106', 'gravuras/0053.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('106', 'gravuras/0053.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('106','106','106');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1889,7 +1889,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 107);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0054', 107);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('107', 'gravuras/0054.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('107', 'gravuras/0054.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('107','107','107');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1929,7 +1929,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('jornal "O 
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Ramboia"', 108);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0055', 108);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('108', 'gravuras/0055.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('108', 'gravuras/0055.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('108','108','108');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -1968,7 +1968,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 109);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0056', 109);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('109', 'gravuras/0056.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('109', 'gravuras/0056.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('109','109','109');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2011,7 +2011,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 110);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0057', 110);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('110', 'gravuras/0057.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('110', 'gravuras/0057.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('110','110','110');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2042,7 +2042,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 111);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0058', 111);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('111', 'gravuras/0058.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('111', 'gravuras/0058.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('111','111','111');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2073,7 +2073,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 112);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0059', 112);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('112', 'gravuras/0059.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('112', 'gravuras/0059.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('112','112','112');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2110,7 +2110,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('jornal "O 
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Rambóia"', 113);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0060', 113);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('113', 'gravuras/0060.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('113', 'gravuras/0060.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('113','113','113');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2147,7 +2147,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('jornal "A 
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Rambóia"', 114);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0061', 114);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('114', 'gravuras/0061.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('114', 'gravuras/0061.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('114','114','114');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2194,7 +2194,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 115);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0062', 115);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('115', 'gravuras/0062.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('115', 'gravuras/0062.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('115','115','115');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2225,7 +2225,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 116);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0063', 116);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('116', 'gravuras/0063.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('116', 'gravuras/0063.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('116','116','116');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2258,7 +2258,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 117);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0064', 117);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('117', 'gravuras/0064.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('117', 'gravuras/0064.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('117','117','117');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2289,7 +2289,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 118);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0065', 118);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('118', 'gravuras/0065.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('118', 'gravuras/0065.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('118','118','118');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2330,7 +2330,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 119);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0066', 119);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('119', 'gravuras/0066.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('119', 'gravuras/0066.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('119','119','119');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2363,7 +2363,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 120);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0067', 120);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('120', 'gravuras/0067.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('120', 'gravuras/0067.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('120','120','120');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2398,7 +2398,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 121);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0068', 121);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('121', 'gravuras/0068.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('121', 'gravuras/0068.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('121','121','121');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2435,7 +2435,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('jornal "O 
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"ORamboia"', 122);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0069', 122);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('122', 'gravuras/0069.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('122', 'gravuras/0069.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('122','122','122');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2475,7 +2475,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('jornal "O 
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Ramboia"', 123);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0070', 123);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('123', 'gravuras/0070.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('123', 'gravuras/0070.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('123','123','123');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2506,7 +2506,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 124);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0071', 124);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('124', 'gravuras/0071.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('124', 'gravuras/0071.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('124','124','124');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2537,7 +2537,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 125);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0072', 125);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('125', 'gravuras/0072.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('125', 'gravuras/0072.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('125','125','125');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2572,7 +2572,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 126);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0073', 126);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('126', 'gravuras/0073.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('126', 'gravuras/0073.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('126','126','126');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2603,7 +2603,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 127);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0074', 127);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('127', 'gravuras/0074.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('127', 'gravuras/0074.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('127','127','127');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2634,7 +2634,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 128);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0075', 128);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('128', 'gravuras/0075.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('128', 'gravuras/0075.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('128','128','128');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2669,7 +2669,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 129);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0076', 129);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('129', 'gravuras/0076.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('129', 'gravuras/0076.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('129','129','129');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2700,7 +2700,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 130);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0077', 130);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('130', 'gravuras/0077.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('130', 'gravuras/0077.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('130','130','130');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2731,7 +2731,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 131);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0078', 131);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('131', 'gravuras/0078.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('131', 'gravuras/0078.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('131','131','131');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2762,7 +2762,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 132);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0079', 132);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('132', 'gravuras/0079.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('132', 'gravuras/0079.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('132','132','132');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2793,7 +2793,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 133);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0080', 133);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('133', 'gravuras/0080.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('133', 'gravuras/0080.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('133','133','133');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2824,7 +2824,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 134);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0081', 134);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('134', 'gravuras/0081.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('134', 'gravuras/0081.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('134','134','134');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2855,7 +2855,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 135);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0082', 135);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('135', 'gravuras/0082.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('135', 'gravuras/0082.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('135','135','135');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2886,7 +2886,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 136);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0083', 136);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('136', 'gravuras/0083.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('136', 'gravuras/0083.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('136','136','136');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2923,7 +2923,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 137);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0084', 137);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('137', 'gravuras/0084.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('137', 'gravuras/0084.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('137','137','137');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2958,7 +2958,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 138);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0085', 138);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('138', 'gravuras/0085.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('138', 'gravuras/0085.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('138','138','138');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -2993,7 +2993,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 139);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0086', 139);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('139', 'gravuras/0086.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('139', 'gravuras/0086.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('139','139','139');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3024,7 +3024,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 140);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0087', 140);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('140', 'gravuras/0087.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('140', 'gravuras/0087.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('140','140','140');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3055,7 +3055,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 141);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0088', 141);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('141', 'gravuras/0088.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('141', 'gravuras/0088.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('141','141','141');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3088,7 +3088,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 142);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0089', 142);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('142', 'gravuras/0089.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('142', 'gravuras/0089.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('142','142','142');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3119,7 +3119,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 143);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0090', 143);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('143', 'gravuras/0090.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('143', 'gravuras/0090.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('143','143','143');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3150,7 +3150,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 144);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0091', 144);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('144', 'gravuras/0091.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('144', 'gravuras/0091.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('144','144','144');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3181,7 +3181,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 145);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0092', 145);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('145', 'gravuras/0092.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('145', 'gravuras/0092.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('145','145','145');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3212,7 +3212,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 146);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0093', 146);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('146', 'gravuras/0093.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('146', 'gravuras/0093.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('146','146','146');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3247,7 +3247,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 147);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0094', 147);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('147', 'gravuras/0094.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('147', 'gravuras/0094.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('147','147','147');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3278,7 +3278,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 148);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0095', 148);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('148', 'gravuras/0095.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('148', 'gravuras/0095.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('148','148','148');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3309,7 +3309,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 149);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0096', 149);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('149', 'gravuras/0096.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('149', 'gravuras/0096.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('149','149','149');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3352,7 +3352,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 150);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0097', 150);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('150', 'gravuras/0097.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('150', 'gravuras/0097.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('150','150','150');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3383,7 +3383,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 151);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0098', 151);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('151', 'gravuras/0098.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('151', 'gravuras/0098.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('151','151','151');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3414,7 +3414,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 152);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0099', 152);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('152', 'gravuras/0099.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('152', 'gravuras/0099.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('152','152','152');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3445,7 +3445,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 153);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0100', 153);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('153', 'gravuras/0100.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('153', 'gravuras/0100.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('153','153','153');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3476,7 +3476,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 154);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0101', 154);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('154', 'gravuras/0101.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('154', 'gravuras/0101.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('154','154','154');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3507,7 +3507,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 155);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0102', 155);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('155', 'gravuras/0102.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('155', 'gravuras/0102.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('155','155','155');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3538,7 +3538,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 156);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0103', 156);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('156', 'gravuras/0103.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('156', 'gravuras/0103.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('156','156','156');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3569,7 +3569,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 157);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0104', 157);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('157', 'gravuras/0104.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('157', 'gravuras/0104.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('157','157','157');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3600,7 +3600,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 158);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0105', 158);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('158', 'gravuras/0105.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('158', 'gravuras/0105.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('158','158','158');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3631,7 +3631,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 159);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0106', 159);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('159', 'gravuras/0106.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('159', 'gravuras/0106.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('159','159','159');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3666,7 +3666,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 160);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0107', 160);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('160', 'gravuras/0107.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('160', 'gravuras/0107.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('160','160','160');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3701,7 +3701,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 161);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0108', 161);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('161', 'gravuras/0108.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('161', 'gravuras/0108.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('161','161','161');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3732,7 +3732,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 162);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0109', 162);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('162', 'gravuras/0109.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('162', 'gravuras/0109.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('162','162','162');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3767,7 +3767,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 163);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0110', 163);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('163', 'gravuras/0110.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('163', 'gravuras/0110.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('163','163','163');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3798,7 +3798,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 164);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0111', 164);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('164', 'gravuras/0111.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('164', 'gravuras/0111.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('164','164','164');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3829,7 +3829,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 165);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0112', 165);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('165', 'gravuras/0112.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('165', 'gravuras/0112.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('165','165','165');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3864,7 +3864,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 166);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0113', 166);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('166', 'gravuras/0113.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('166', 'gravuras/0113.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('166','166','166');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3895,7 +3895,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 167);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0114', 167);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('167', 'gravuras/0114.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('167', 'gravuras/0114.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('167','167','167');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3926,7 +3926,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 168);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0115', 168);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('168', 'gravuras/0115.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('168', 'gravuras/0115.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('168','168','168');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -3957,7 +3957,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 169);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0116', 169);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('169', 'gravuras/0116.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('169', 'gravuras/0116.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('169','169','169');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4000,7 +4000,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 170);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0117', 170);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('170', 'gravuras/0117.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('170', 'gravuras/0117.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('170','170','170');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4031,7 +4031,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 171);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0118', 171);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('171', 'gravuras/0118.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('171', 'gravuras/0118.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('171','171','171');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4062,7 +4062,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 172);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0119', 172);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('172', 'gravuras/0119.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('172', 'gravuras/0119.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('172','172','172');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4093,7 +4093,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 173);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0120', 173);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('173', 'gravuras/0120.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('173', 'gravuras/0120.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('173','173','173');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4124,7 +4124,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 174);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0121', 174);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('174', 'gravuras/0121.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('174', 'gravuras/0121.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('174','174','174');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4155,7 +4155,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 175);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0122', 175);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('175', 'gravuras/0122.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('175', 'gravuras/0122.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('175','175','175');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4188,7 +4188,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 176);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0123', 176);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('176', 'gravuras/0123.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('176', 'gravuras/0123.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('176','176','176');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4219,7 +4219,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 177);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0124', 177);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('177', 'gravuras/0124.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('177', 'gravuras/0124.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('177','177','177');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4254,7 +4254,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 178);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0125', 178);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('178', 'gravuras/0125.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('178', 'gravuras/0125.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('178','178','178');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4285,7 +4285,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 179);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0126', 179);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('179', 'gravuras/0126.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('179', 'gravuras/0126.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('179','179','179');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4316,7 +4316,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 180);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0127', 180);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('180', 'gravuras/0127.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('180', 'gravuras/0127.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('180','180','180');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4353,7 +4353,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 181);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0128', 181);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('181', 'gravuras/0128.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('181', 'gravuras/0128.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('181','181','181');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4384,7 +4384,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 182);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0129', 182);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('182', 'gravuras/0129.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('182', 'gravuras/0129.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('182','182','182');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4415,7 +4415,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 183);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0130', 183);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('183', 'gravuras/0130.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('183', 'gravuras/0130.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('183','183','183');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4450,7 +4450,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 184);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0131', 184);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('184', 'gravuras/0131.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('184', 'gravuras/0131.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('184','184','184');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4481,7 +4481,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 185);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0132', 185);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('185', 'gravuras/0132.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('185', 'gravuras/0132.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('185','185','185');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4512,7 +4512,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 186);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0133', 186);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('186', 'gravuras/0133.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('186', 'gravuras/0133.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('186','186','186');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4549,7 +4549,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 187);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0134', 187);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('187', 'gravuras/0134.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('187', 'gravuras/0134.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('187','187','187');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4586,7 +4586,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 188);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0135', 188);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('188', 'gravuras/0135.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('188', 'gravuras/0135.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('188','188','188');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4617,7 +4617,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 189);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0136', 189);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('189', 'gravuras/0136.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('189', 'gravuras/0136.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('189','189','189');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4650,7 +4650,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 190);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0137', 190);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('190', 'gravuras/0137.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('190', 'gravuras/0137.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('190','190','190');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4686,7 +4686,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 191);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0138', 191);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('191', 'gravuras/0138.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('191', 'gravuras/0138.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('191','191','191');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4725,7 +4725,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 192);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0139', 192);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('192', 'gravuras/0139.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('192', 'gravuras/0139.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('192','192','192');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4766,7 +4766,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 193);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0140', 193);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('193', 'gravuras/0140.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('193', 'gravuras/0140.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('193','193','193');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4797,7 +4797,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 194);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0141', 194);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('194', 'gravuras/0141.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('194', 'gravuras/0141.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('194','194','194');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4828,7 +4828,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 195);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0142', 195);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('195', 'gravuras/0142.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('195', 'gravuras/0142.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('195','195','195');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4859,7 +4859,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 196);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0143', 196);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('196', 'gravuras/0143.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('196', 'gravuras/0143.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('196','196','196');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4896,7 +4896,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 197);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0144', 197);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('197', 'gravuras/0144.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('197', 'gravuras/0144.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('197','197','197');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4927,7 +4927,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 198);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0145', 198);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('198', 'gravuras/0145.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('198', 'gravuras/0145.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('198','198','198');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4960,7 +4960,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 199);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0146', 199);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('199', 'gravuras/0146.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('199', 'gravuras/0146.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('199','199','199');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -4991,7 +4991,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 200);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0147', 200);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('200', 'gravuras/0147.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('200', 'gravuras/0147.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('200','200','200');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -5022,7 +5022,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 201);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0148', 201);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('201', 'gravuras/0148.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('201', 'gravuras/0148.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('201','201','201');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -5058,7 +5058,7 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 202);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0149', 202);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('202', 'gravuras/0149.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('202', 'gravuras/0149.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('202','202','202');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
@@ -5089,5 +5089,5 @@ INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('"Almanaque
 INSERT INTO Provenance (provenanceDescription, Object_Work_Record) VALUES ('"O Desforço"', 203);
 /* Tabela Provenance */
 INSERT INTO RecordsID (recordID, Object_Work_Record) VALUES ('GI0150', 203);
-INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('203', 'gravuras/0150.jpg');
+INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('203', 'gravuras/0150.JPG');
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('203','203','203');

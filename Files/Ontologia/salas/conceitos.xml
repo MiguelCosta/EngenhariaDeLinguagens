@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<conceitos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="file:/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/Files/Ontologia/salas/conceitos.xsd">
+    <conceito>
+        <key>PecasCriador</key>
+        <value>&lt;?php 
+            $this->widget('zii.widgets.CListView', array(
+            'dataProvider'=>IndexingCreators::getObjectWorkRecords_NameCreator('&lt;Criador&gt;', 10),
+            'template'=>'{sorter}{summary}{pager}{items}{pager}{summary}',
+            'pager'=>array(
+            'maxButtonCount'=>'10',
+            ),
+            'itemView'=>'/object_Work_Records/_view',
+            ));
+            ?&gt;</value>
+    </conceito>
+    <conceito>
+        <key>TiaChupa</key>
+        <value>Yeah</value>
+    </conceito>
+</conceitos>

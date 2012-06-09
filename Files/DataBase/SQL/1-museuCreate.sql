@@ -1,3 +1,4 @@
+create database if not exists museu;
 use museu;
 
 CREATE TABLE Object_Work_Records (
@@ -606,6 +607,30 @@ CREATE TABLE Object_Work_Records_IndexingCreators (
   IndexingCreator    int(10) NOT NULL, 
   PRIMARY KEY (Object_Work_Record, 
   IndexingCreator)) ENGINE=InnoDB;
+CREATE TABLE Exhibitions_Rooms (
+	  Exhibitionsid_exhibition int(10) NOT NULL, 
+	  Roomsid_room             int(10) NOT NULL, 
+	  PRIMARY KEY (Exhibitionsid_exhibition, 
+		  Roomsid_room)) ENGINE=InnoDB;
+CREATE TABLE Exhibitions_SubjectTerms (
+	  Exhibitionsid_exhibition    int(10) NOT NULL, 
+	  SubjectTermsid_subjectTerms int(10) NOT NULL, 
+	  PRIMARY KEY (Exhibitionsid_exhibition, 
+		  SubjectTermsid_subjectTerms)) ENGINE=InnoDB;
+CREATE TABLE Exhibitions (
+	  id_exhibition int(10) NOT NULL AUTO_INCREMENT, 
+	  name          varchar(63) NOT NULL, 
+	  description   varchar(255), 
+	  PRIMARY KEY (id_exhibition)) ENGINE=InnoDB;
+CREATE TABLE Rooms (
+	  id_room     int(10) NOT NULL AUTO_INCREMENT, 
+	  name        varchar(63) NOT NULL, 
+	  description varchar(255), 
+	  path        varchar(2002) NOT NULL, 
+	  image_path  varchar(2002), 
+	  PRIMARY KEY (id_room)) ENGINE=InnoDB;
+
+
 ALTER TABLE Object_Work_Records ADD INDEX FKObject_Wor394619 (RecordType), ADD CONSTRAINT FKObject_Wor394619 FOREIGN KEY (RecordType) REFERENCES RecordTypes (id_recordTypes);
 ALTER TABLE Object_Work_Titles ADD INDEX FKObject_Wor387140 (Object_Work_Record), ADD CONSTRAINT FKObject_Wor387140 FOREIGN KEY (Object_Work_Record) REFERENCES Object_Work_Records (id_object_Work_Records);
 ALTER TABLE Object_Work_Titles ADD INDEX FKObject_Wor387141 (Object_Work_Record), ADD CONSTRAINT FKObject_Wor387141 FOREIGN KEY (Object_Work_Record) REFERENCES Object_Work_Records (id_object_Work_Records);
@@ -786,4 +811,10 @@ ALTER TABLE Object_Work_Records_IndexingCreators ADD INDEX FKObject_Wor688841 (O
 ALTER TABLE Object_Work_Records_IndexingCreators ADD INDEX FKObject_Wor724390 (IndexingCreator), ADD CONSTRAINT FKObject_Wor724390 FOREIGN KEY (IndexingCreator) REFERENCES IndexingCreators (id_indexingCreators);
 ALTER TABLE Object_Work_Records_IndexingCreators ADD INDEX FKObject_Wor724391 (IndexingCreator), ADD CONSTRAINT FKObject_Wor724391 FOREIGN KEY (IndexingCreator) REFERENCES IndexingCreators (id_indexingCreators);
 ALTER TABLE Object_Work_Records_IndexingCreators ADD INDEX FKObject_Wor688842 (Object_Work_Record), ADD CONSTRAINT FKObject_Wor688842 FOREIGN KEY (Object_Work_Record) REFERENCES Object_Work_Records (id_object_Work_Records);
-
+ALTER TABLE Exhibitions_Rooms ADD INDEX FKExhibition509254 (Exhibitionsid_exhibition), ADD CONSTRAINT FKExhibition509254 FOREIGN KEY (Exhibitionsid_exhibition) REFERENCES Exhibitions (id_exhibition);
+ALTER TABLE Exhibitions_Rooms ADD INDEX FKExhibition686791 (Roomsid_room), ADD CONSTRAINT FKExhibition686791 FOREIGN KEY (Roomsid_room) REFERENCES Rooms (id_room);
+ALTER TABLE Exhibitions_SubjectTerms ADD INDEX FKExhibition473236 (Exhibitionsid_exhibition), ADD CONSTRAINT FKExhibition473236 FOREIGN KEY (Exhibitionsid_exhibition) REFERENCES Exhibitions (id_exhibition);
+ALTER TABLE Exhibitions_Rooms ADD INDEX FKExhibition509255 (Exhibitionsid_exhibition), ADD CONSTRAINT FKExhibition509255 FOREIGN KEY (Exhibitionsid_exhibition) REFERENCES Exhibitions (id_exhibition);
+ALTER TABLE Exhibitions_Rooms ADD INDEX FKExhibition686792 (Roomsid_room), ADD CONSTRAINT FKExhibition686792 FOREIGN KEY (Roomsid_room) REFERENCES Rooms (id_room);
+ALTER TABLE Exhibitions_SubjectTerms ADD INDEX FKExhibition473237 (Exhibitionsid_exhibition), ADD CONSTRAINT FKExhibition473237 FOREIGN KEY (Exhibitionsid_exhibition) REFERENCES Exhibitions (id_exhibition);
+ALTER TABLE Exhibitions_SubjectTerms ADD INDEX FKExhibition282999 (SubjectTermsid_subjectTerms), ADD CONSTRAINT FKExhibition282999 FOREIGN KEY (SubjectTermsid_subjectTerms) REFERENCES SubjectTerms (id_subjectTerms);
