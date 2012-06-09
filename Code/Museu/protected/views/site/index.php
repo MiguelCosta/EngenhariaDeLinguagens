@@ -21,6 +21,7 @@
 <br />
 
 
+
 <h2>O que somos?</h2>
 
 <table>
@@ -41,7 +42,7 @@
 				inscritos nos processo da viagem como sendo o momento da ruptura
 				cultural.</p>
 		</td>
-		<td><img src="../../myFiles/Imagens/static_pages/Migrantes.jpg" /></td>
+		<td><img src="<? echo Yii::app()->baseUrl;?>/myFiles/Imagens/static_pages/Migrantes.jpg" /></td>
 	</tr>
 </table>
 
