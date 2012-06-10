@@ -4,16 +4,20 @@
  * This is the model class for table "Rooms".
  *
  * The followings are the available columns in table 'Rooms':
- * @property integer $id_Room
+ * @property integer $id_room
  * @property string $name
  * @property string $description
  * @property string $path
  * @property string $image_path
+ *
+ * The followings are the available model relations:
+ * @property Exhibitions[] $exhibitions
  */
 class Rooms extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
+	 * @param string $className active record class name.
 	 * @return Rooms the static model class
 	 */
 	public static function model($className=__CLASS__)
@@ -38,13 +42,12 @@ class Rooms extends CActiveRecord
 		// will receive user inputs.
 		return array(
 				array('name, path', 'required'),
-				array('name', 'unique'),
 				array('name', 'length', 'max'=>63),
 				array('description', 'length', 'max'=>255),
 				array('path, image_path', 'length', 'max'=>2002),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
-				array('name, description', 'safe', 'on'=>'search'),
+				array('id_room, name, description, path, image_path', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -56,7 +59,7 @@ class Rooms extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-				'exhibitions' => array(self::MANY_MANY, 'Exhibitions', 'Exhibitions_Rooms(Exhibitionsid_exhibition, Roomsid_room)'),
+				'exhibitions' => array(self::MANY_MANY, 'Exhibitions', 'Exhibitions_Rooms(Roomsid_room, Exhibitionsid_exhibition)'),
 		);
 	}
 
@@ -66,11 +69,11 @@ class Rooms extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-				'id_Room' => 'Id Room',
+				'id_room' => 'ID',
 				'name' => 'Nome',
 				'description' => 'Descrição',
-				'path' => 'path',
-				'image_path' => 'image_path',
+				'path' => 'Path',
+				'image_path' => 'Image Path',
 		);
 	}
 
@@ -86,16 +89,12 @@ class Rooms extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id_room',$this->id_room);
-
 		$criteria->compare('name',$this->name,true);
-
 		$criteria->compare('description',$this->description,true);
-
 		$criteria->compare('path',$this->path,true);
-		
 		$criteria->compare('image_path',$this->image_path,true);
 
-		return new CActiveDataProvider('Rooms', array(
+		return new CActiveDataProvider($this, array(
 				'criteria'=>$criteria,
 		));
 	}
@@ -107,4 +106,5 @@ class Rooms extends CActiveRecord
 		return array( 'CAdvancedArBehavior' => array(
 				'class' => 'application.extensions.CAdvancedArBehavior'));
 	}
+
 }

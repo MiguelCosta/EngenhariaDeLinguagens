@@ -9,17 +9,12 @@ class RoomsController extends Controller
 	public $layout='//layouts/column2';
 
 	/**
-	 * @var CActiveRecord the currently loaded data model instance.
-	 */
-	private $_model;
-
-	/**
 	 * @return array action filters
 	 */
 	public function filters()
 	{
 		return array(
-			'accessControl', // perform access control for CRUD operations
+				'accessControl', // perform access control for CRUD operations
 		);
 	}
 
@@ -31,30 +26,32 @@ class RoomsController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
-				'users'=>array('*'),
-			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
-				'users'=>array('@'),
-			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('delete'),
-			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
+				array('allow',  // allow all users to perform 'index' and 'view' actions
+						'actions'=>array('index','view'),
+						'users'=>array('*'),
+				),
+				array('allow', // allow authenticated user to perform 'create' and 'update' actions
+						'actions'=>array('create','update'),
+						'users'=>array('@'),
+				),
+				array('allow', // allow admin user to perform 'admin' and 'delete' actions
+						'actions'=>array('admin','delete'),
+						'users'=>array('admin'),
+				),
+				array('deny',  // deny all users
+						'users'=>array('*'),
+				),
 		);
 	}
 
 	/**
 	 * Displays a particular model.
+	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView()
+	public function actionView($id)
 	{
 		$this->render('view',array(
-			'model'=>$this->loadModel(),
+				'model'=>$this->loadModel($id),
 		));
 	}
 
@@ -66,27 +63,27 @@ class RoomsController extends Controller
 	{
 		$session=new CHttpSession;
 		$session->open();
-		
+
 		$model=new Rooms;
 		$model->name = $_SESSION['room_name'];
 		$model->description = $_SESSION['room_description'];
 		$model->path = $_SESSION['room_path'];
 		$model->image_path = "";
-		
+
 		$ex_ids = array();
 		// obtem os id das exibicoes as quais esta sala pertence
 		foreach ($_SESSION['exhibitions'] as $ex_name){
 			$id = Yii::app()->db->createCommand()
-				->select('id_exhibition')
-				->from('Exhibitions')
-				->where('name=:name', array(':name'=>$ex_name))
-				->queryScalar();
-			
+			->select('id_exhibition')
+			->from('Exhibitions')
+			->where('name=:name', array(':name'=>$ex_name))
+			->queryScalar();
+				
 			array_push($ex_ids, $id);
 		}
-		
+
 		$model->exhibitions = $ex_ids;
-		
+
 		if(!$model->save()) {
 			// TODO fazer algo para tratar esta condicao
 		}
@@ -95,28 +92,42 @@ class RoomsController extends Controller
 	/**
 	 * Updates a particular model.
 	 * If update is successful, the browser will be redirected to the 'view' page.
+	 * @param integer $id the ID of the model to be updated
 	 */
-	public function actionUpdate()
+	public function actionUpdate($id)
 	{
-// 		$model=$this->loadModel();
+		$model=$this->loadModel($id);
 
-// 			$model->save();
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+
+		if(isset($_POST['Rooms']))
+		{
+			$model->attributes=$_POST['Rooms'];
+			if($model->save())
+				$this->redirect(array('view','id'=>$model->id_room));
+		}
+
+		$this->render('update',array(
+				'model'=>$model,
+		));
 	}
 
 	/**
 	 * Deletes a particular model.
-	 * If deletion is successful, the browser will be redirected to the 'index' page.
+	 * If deletion is successful, the browser will be redirected to the 'admin' page.
+	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete()
+	public function actionDelete($id)
 	{
 		if(Yii::app()->request->isPostRequest)
 		{
 			// we only allow deletion via POST request
-			$this->loadModel()->delete();
+			$this->loadModel($id)->delete();
 
 			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 			if(!isset($_GET['ajax']))
-				$this->redirect(array('index'));
+				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 		}
 		else
 			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
@@ -129,24 +140,48 @@ class RoomsController extends Controller
 	{
 		$dataProvider=new CActiveDataProvider('Rooms');
 		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
+				'dataProvider'=>$dataProvider,
 		));
 	}
 
+	/**
+	 * Manages all models.
+	 */
+	public function actionAdmin()
+	{
+		$model=new Rooms('search');
+		$model->unsetAttributes();  // clear any default values
+		if(isset($_GET['Rooms']))
+			$model->attributes=$_GET['Rooms'];
+
+		$this->render('admin',array(
+				'model'=>$model,
+		));
+	}
 
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
+	 * @param integer the ID of the model to be loaded
 	 */
-	public function loadModel()
+	public function loadModel($id)
 	{
-		if($this->_model===null)
+		$model=Rooms::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
+
+	/**
+	 * Performs the AJAX validation.
+	 * @param CModel the model to be validated
+	 */
+	protected function performAjaxValidation($model)
+	{
+		if(isset($_POST['ajax']) && $_POST['ajax']==='rooms-form')
 		{
-			if(isset($_GET['id']))
-				$this->_model=Rooms::model()->findbyPk($_GET['id']);
-			if($this->_model===null)
-				throw new CHttpException(404,'The requested page does not exist.');
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
 		}
-		return $this->_model;
 	}
 }
