@@ -6,11 +6,16 @@
  * The followings are the available columns in table 'IndexingSubjects_SubjectTerms':
  * @property integer $IndexingSubject
  * @property integer $SubjectTerm
+ *
+ * The followings are the available model relations:
+ * @property IndexingSubjects $indexingSubject
+ * @property SubjectTerms $subjectTerm
  */
 class IndexingSubjects_SubjectTerms extends CActiveRecord
 {
 	/**
 	 * Returns the static model of the specified AR class.
+	 * @param string $className active record class name.
 	 * @return IndexingSubjects_SubjectTerms the static model class
 	 */
 	public static function model($className=__CLASS__)
@@ -50,6 +55,8 @@ class IndexingSubjects_SubjectTerms extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'indexingSubject' => array(self::BELONGS_TO, 'IndexingSubjects', 'IndexingSubject'),
+			'subjectTerm' => array(self::BELONGS_TO, 'SubjectTerms', 'SubjectTerm'),
 		);
 	}
 
@@ -76,10 +83,9 @@ class IndexingSubjects_SubjectTerms extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('IndexingSubject',$this->IndexingSubject);
-
 		$criteria->compare('SubjectTerm',$this->SubjectTerm);
 
-		return new CActiveDataProvider('IndexingSubjects_SubjectTerms', array(
+		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}

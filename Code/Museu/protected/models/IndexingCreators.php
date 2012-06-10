@@ -212,37 +212,14 @@ class IndexingCreators extends CActiveRecord
 		return $result;
 	}
 	
-	public function getTable(){
-		$creators = IndexingCreators::model()->findAll();
-				
-		echo '<div class="grid-view" style="font-size:10px;">';
-		echo '<table class="items">';
-		echo '<thead>';
-		echo '<tr>';
-		//echo '<th>Sel</th>';
-		echo '<th>ID</th>';
-		echo '<th>Nomes</th>';
-		echo '<th>Nacionalidades</th>';
-		echo '<th>Funções</th>';
-		echo '<th>Datas</th>';
-		echo '</tr>';
-		echo '</thead>';
-		$par = false;
-		foreach ($creators as $creator){
-			$id = $creator->id_indexingCreators;
-			echo '<tr>';
-			//echo '<td><input type="radio" name="indexingCreators" value="'.$id.'"></td>';
-			echo '<td>'.CHtml::link($id, array('/indexingCreators/'.$id), array('target'=>'_blank')).'</td>';
-			echo '<td>'.$creator->getNamesCreators(' ').'</td>';
-			echo '<td>'.$creator->getNationalitiesCreators(' ').'</td>';
-			echo '<td>'.$creator->getCreatorRoles(' ').'</td>';
-			echo '<td>'.$creator->getVitalDatesCreators(' ').'</td>';
-			echo '</tr>';
-		}
-		echo '</table>';
-		echo '</div>';
-	}
-	
+	/**
+	 * A partir do nome de um criador vai devolver a lista de peças que lhe
+	 * estão associadas.
+	 * 
+	 * @version 20120610_1840
+	 * @param strig $name
+	 * @return CArrayDataProvider para Object_Work_Record
+	 */
 	public static function getObjectWorkRecords_NameCreator($name){
 		$names =  NamesCreator::model()->findByAttributes(array('nameCreator'=>$name));
 		$names_indexing = NamesCreator_IndexingCreators::model()->findByAttributes(array('NameCreator'=>$names->id_namesCreator));

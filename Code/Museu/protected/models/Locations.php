@@ -100,4 +100,7 @@ class Locations extends CActiveRecord
 	}
 	
 	
+
+	
+	
 }

@@ -117,5 +117,31 @@ class LocationsName extends CActiveRecord
 		$result = CHtml::link(CHtml::encode($this->locationName), array('/LocationsName/'.$this->id_locationsName));
 		return $result;
 	}
+	
+	
+
+	/**
+	 * Recebe como parametro o nome de um local e devolve uma lista das peças
+	 * associadas a esse local
+	 * 
+	 * @version 20120610_1827
+	 * @param string $nameLocation
+	 * @return CArrayDataProvider para Object_Work_Record
+	 */
+	public static function getObjectWorkRecords_LocationsName($nameLocation){
+		// a partir do nome vai buscar o seu ID
+		$names = LocationsName::model()->findByAttributes(array('locationName'=>$nameLocation));
+		// vai buscar as localizações porque estas é quer permitem ter acesso aos objectos
+		$location = Locations::model()->findAllByAttributes(array('LocationName'=>$names->id_locationsName));
+	
+		$arr = array();
+		// vai a todas as localizações buscar o seu objecto para colocar no array
+		foreach ($location as $l){
+			array_push($arr, Object_Work_Records::model()->findByPk($l->Object_Work_Record));
+		}
+		return new CArrayDataProvider($arr, array('keyField'=>'id_object_Work_Records'));
+	}
+	
+	
 
 }
