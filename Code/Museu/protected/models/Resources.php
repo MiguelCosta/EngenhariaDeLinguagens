@@ -110,7 +110,7 @@ class Resources extends CActiveRecord
 	public function getLinkResource()
 	{
 		$result = '';
-		$result = "/EL/Files/Imagens/".$this->linkResource->linkResource;
+		$result = "../../../../Files/Imagens/".$this->linkResource->linkResource;
 		return $result;
 	}
 
@@ -128,7 +128,7 @@ class Resources extends CActiveRecord
 
 		if(isset( $this->resourceViewDescription)){
 			$result_arr = array(
-					'image_path'=>'/EL/Files/Imagens/'.$this->linkResource->linkResource,
+					'image_path'=>'../../../../Files/Imagens/'.$this->linkResource->linkResource,
 					'resourceViewDescription' => $this->resourceViewDescription->resourceViewDescription,
 					'id_resourceViewDescriptions' => $this->resourceViewDescription->id_resourceViewDescriptions,
 					'type' => $this->resourceViewDescription->type,
@@ -136,13 +136,12 @@ class Resources extends CActiveRecord
 		}
 		else {
 			$result_arr = array(
-					'image_path'=>'/EL/Files/Imagens/'.$this->linkResource->linkResource,
+					'image_path'=>'../../../../Files/Imagens/'.$this->linkResource->linkResource,
 			);
 		}
-
 		return $result_arr;
 	}
-	
+
 	/**
 	 * Better support of MANY_TO_MANY relations
 	 */
