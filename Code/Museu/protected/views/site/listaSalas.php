@@ -1,2 +1,0 @@
-<?php echo CHtml::link(CHtml::encode('Gérald Bloncourt'), array('/site/sala', 'view'=>'GeraldBlancourt')); ?><br>
-<?php echo CHtml::link(CHtml::encode('Cerdeira'), array('/site/sala', 'view'=>'Cerdeira')); ?><br>

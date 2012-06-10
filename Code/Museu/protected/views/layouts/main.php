@@ -84,8 +84,8 @@
 									),
 
 							)),
-							array('label'=>'Exposição','url'=>array('/site/salas'), 'items'=>array(
-									array('label'=>'Salas','url'=>array('/site/salas')),
+							array('label'=>'Exposições', 'items'=>array(
+									array('label'=>'Exposições','url'=>array('/Exhibitions/index')),
 									array('label'=>'Nova Sala','url'=>array('/site/novaSala'))
 							)),
 							array('label'=>'|'),

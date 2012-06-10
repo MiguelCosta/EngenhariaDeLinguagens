@@ -106,6 +106,11 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+	
+	public function actionExposicoes()
+	{
+		$this->render('exposicoes');
+	}
 
 	public function actionSalas()
 	{
@@ -176,31 +181,75 @@ class SiteController extends Controller
 						$sala_php .= $conceito[0];
 					}
 					
-					// obtem o elemento nome do documento objecto sala
-					// o metodo obtem uma lista de elementos, mas segundo o schema, apenas existe um elemento nome
-					$nome_ficheiro = str_replace(" ", "", $sala_xml->nome);
-					
 					// acrescenta o link para a nova sala gerada se esta ainda nao existir
-					if (!file_exists(Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php")) {
+					/*if (!file_exists(Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php")) {
 						$fh2 = fopen(Yii::app()->basePath."/views/site/listaSalas.php", 'a') or die("can't open file");
 						fwrite($fh2, "\n<?php echo CHtml::link(CHtml::encode('".$sala_xml->nome."'), array('/site/sala', 'view'=>'".$nome_ficheiro."')); ?><br>");
 						fclose($fh2);
-					}
+					}*/
+					
+					// elimina espaços do nome da sala. servirá como nome do ficheiro
+					$nome_ficheiro = str_replace(" ", "", $sala_xml->nome);
+					// substitui caracteres especiais por caracteres normais
+					$nome_ficheiro = $this->normalize_str($nome_ficheiro);			
+					
+					// path no directorio onde a sala será armazenada
+					$sala_path = Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php";
+					
+					// variaveis de sessao que guardam a informacao necessaria de uma sala para armazenar na base de dados
+					$session=new CHttpSession;
+					$session->open();
+					$_SESSION['room_name'] = strval($sala_xml->nome);
+					$_SESSION['room_description'] = strval($sala_xml->descricao);
+					$_SESSION['room_path'] = $sala_path;
+					$_SESSION['exhibitions'] = $this->toArrayOfStrings($sala_xml->xpath('//exposicao'));
+					// TODO falta image_path
+
+					// armazena a informacao da sala gerada na base de dados utilizando a accao create do controller rooms
+					$this->forward('/rooms/create',false); 
 				
-					// transforma o objecto sala num documento PHP segundo a stylesheet importada
-					// e guarda na diretoria das salas geradas
-					$fh = fopen(Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php", 'w') or die("can't open file");
-					fwrite($fh, $sala_php);
+					// guarda a sala na diretoria das salas geradas
+					$fh = fopen($sala_path, 'w') or die("can't open file");
+						fwrite($fh, $sala_php);
 					fclose($fh);
 				}
 				
 	
 				// redirect to another page
-				$this->redirect(array('salas'));
+				$this->redirect(array('/Exhibitions/index'));
 			}
 	
 		}
 		$this->render('novaSala',array('model'=>$model));
+	}
+	
+	private function toArrayOfStrings(array $exhibitions){
+			$result = array();
+			foreach ($exhibitions as $ex) {
+				array_push($result, strval($ex));
+			}
+			
+			return $result;
+	}
+	
+	private function normalize_str($str)
+	{
+		$invalid = array('Š'=>'S', 'š'=>'s', 'Đ'=>'Dj', 'đ'=>'dj', 'Ž'=>'Z', 'ž'=>'z',
+				'Č'=>'C', 'č'=>'c', 'Ć'=>'C', 'ć'=>'c', 'À'=>'A', 'Á'=>'A', 'Â'=>'A', 'Ã'=>'A',
+				'Ä'=>'A', 'Å'=>'A', 'Æ'=>'A', 'Ç'=>'C', 'È'=>'E', 'É'=>'E', 'Ê'=>'E', 'Ë'=>'E',
+				'Ì'=>'I', 'Í'=>'I', 'Î'=>'I', 'Ï'=>'I', 'Ñ'=>'N', 'Ò'=>'O', 'Ó'=>'O', 'Ô'=>'O',
+				'Õ'=>'O', 'Ö'=>'O', 'Ø'=>'O', 'Ù'=>'U', 'Ú'=>'U', 'Û'=>'U', 'Ü'=>'U', 'Ý'=>'Y',
+				'Þ'=>'B', 'ß'=>'Ss', 'à'=>'a', 'á'=>'a', 'â'=>'a', 'ã'=>'a', 'ä'=>'a', 'å'=>'a',
+				'æ'=>'a', 'ç'=>'c', 'è'=>'e', 'é'=>'e', 'ê'=>'e',  'ë'=>'e', 'ì'=>'i', 'í'=>'i',
+				'î'=>'i', 'ï'=>'i', 'ð'=>'o', 'ñ'=>'n', 'ò'=>'o', 'ó'=>'o', 'ô'=>'o', 'õ'=>'o',
+				'ö'=>'o', 'ø'=>'o', 'ù'=>'u', 'ú'=>'u', 'û'=>'u', 'ý'=>'y',  'ý'=>'y', 'þ'=>'b',
+				'ÿ'=>'y', 'Ŕ'=>'R', 'ŕ'=>'r', "`" => "'", "´" => "'", "„" => ",", "`" => "'",
+				"´" => "'", "“" => "\"", "”" => "\"", "´" => "'", "&acirc;€™" => "'", "{" => "",
+				"~" => "", "–" => "-", "’" => "'");
+	
+		$str = str_replace(array_keys($invalid), array_values($invalid), $str);
+	
+		return $str;
 	}
 }
 ?>

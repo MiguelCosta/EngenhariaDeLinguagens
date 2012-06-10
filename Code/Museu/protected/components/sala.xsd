@@ -4,14 +4,43 @@
 	<xs:element name="sala">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="nome" type="xs:string"/>
+				<xs:element name="exposicoes">
+					<xs:annotation>
+						<xs:documentation>Exposições das quais a sala faz parte</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" name="exposicao" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>Nome único da exposicao</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="nome" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Nome da sala</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="descricao" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Uma descrição do conteúdo da sala</xs:documentation>
+					</xs:annotation>
+				</xs:element>
 				<xs:element name="objectos">
+					<xs:annotation>
+						<xs:documentation>Os objectos que a sala irá conter</xs:documentation>
+					</xs:annotation>
 					<xs:complexType>
 						<xs:sequence>
 							<xs:element maxOccurs="unbounded" name="objecto">
 								<xs:complexType>
 									<xs:sequence>
 										<xs:element name="tipo">
+											<xs:annotation>
+												<xs:documentation>Identifica o tipo do objecto</xs:documentation>
+											</xs:annotation>
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
 												<xs:enumeration value="PecasCriador"/>
@@ -19,6 +48,9 @@
 											</xs:simpleType>
 										</xs:element>
 										<xs:element minOccurs="0" name="argumentos">
+											<xs:annotation>
+												<xs:documentation>Valores de filtragem para o objecto</xs:documentation>
+											</xs:annotation>
 											<xs:complexType>
 												<xs:sequence>
 												<xs:element maxOccurs="unbounded" name="argumento">
@@ -26,6 +58,9 @@
 												<xs:simpleContent>
 												<xs:extension base="xs:string">
 												<xs:attribute name="id">
+												<xs:annotation>
+												<xs:documentation>Identificador do argumento, que servirá para identificar univocamente cada argumento num objecto</xs:documentation>
+												</xs:annotation>
 												<xs:simpleType>
 												<xs:restriction base="xs:string">
 												<xs:enumeration value="Criador"/>
