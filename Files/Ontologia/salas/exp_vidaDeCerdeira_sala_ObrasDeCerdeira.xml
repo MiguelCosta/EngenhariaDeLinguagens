@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sala>
+    <exposicoes>
+        <exposicao>Vida de Cerdeira</exposicao>
+    </exposicoes>
+    <nome>Tou farto do Cerdeira</nome>
+    <descricao>Testes</descricao>
+    <objectos>
+        <objecto>
+            <tipo>PecasCriador</tipo>
+            <argumentos>
+                <argumento id="Criador">Pintor José Soares - Porto</argumento>
+            </argumentos>
+        </objecto>
+    </objectos>
+</sala>
