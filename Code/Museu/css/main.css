@@ -272,3 +272,8 @@ div.view a:HOVER{
 	color: maroon;
 	text-decoration: underline;
 }
+
+div.view:HOVER{
+	background-color: beige;
+	border: 2px solid;
+}

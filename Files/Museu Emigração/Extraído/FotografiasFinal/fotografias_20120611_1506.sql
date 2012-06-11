@@ -1,4 +1,4 @@
-use museu;
+
 
 /************************************* NOVA FOTOGRAFIA *************************************/
 -- Tabela Object_Work_Records

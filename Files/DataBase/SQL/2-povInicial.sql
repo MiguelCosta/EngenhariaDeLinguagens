@@ -36,10 +36,16 @@ use museu;
 /* Tabela LocationsName */
 		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('1', 'França', 'creationLocation');
 		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('2', 'Museu da Emigração e das Comunidades (Fafe, Portugal)', 'currentRepository');
-		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('3', 'lost');
-		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('4', 'destroyed');
-		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('5', 'location unkown');
-		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('6', 'private collection');
+        INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('3', 'Lisboa', '');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('4', 'Porto', '');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('5', 'Paris', '');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('6', 'Chaves', '');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('7', 'Hendaia', '');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('8', 'Champigny', '');
+		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('9', 'lost');
+		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('10', 'destroyed');
+		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('11', 'location unkown');
+		INSERT INTO LocationsName (id_locationsName, locationName) VALUES ('12', 'private collection');
 		
 /* DATAS */
 INSERT INTO EarliestDates (id_earliestDate, earliestDate) VALUES ('1','1901');

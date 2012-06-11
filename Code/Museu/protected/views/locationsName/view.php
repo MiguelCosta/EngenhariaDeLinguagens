@@ -35,8 +35,11 @@ $this->menu=array(
 
 <br />
 <br />
-<h2>Locais Associados:</h2>
+
 <?php 
+/*
+echo "<h2>Locais Associados:</h2>";
+
 //$objects = $model->locations;
 $c = $model->id_locationsName;
 $objects = Locations::model()->findAllByAttributes(array('LocationName'=>$model->id_locationsName));
@@ -48,4 +51,45 @@ $this->widget('zii.widgets.CListView', array(
 		'dataProvider'=>$dataProvider2,
 		'itemView'=>'/locations/_view',
 ));
+*/
+?>
+
+
+
+<?php
+//
+// ext is your protected.extensions folder
+// gmaps means the subfolder name under your protected.extensions folder
+//  
+Yii::import('ext.gmap.*');
+//Yii::import('application.extensions.egmap.*');
+
+$gMap = new EGMap();
+$gMap->setWidth(300);
+$gMap->setHeight(300);
+$gMap->zoom = 5;
+
+$mapTypeControlOptions = array(
+		'position'=> EGMapControlPosition::LEFT_BOTTOM,
+		'style'=>EGMap::MAPTYPECONTROL_STYLE_DROPDOWN_MENU
+);
+
+$gMap->mapTypeControlOptions= $mapTypeControlOptions;
+
+$sample_address = 'Portugal, Chaves';
+
+// Create geocoded address
+$geocoded_address = new EGMapGeocodedAddress($sample_address);
+$geocoded_address->geocode($gMap->getGMapClient());
+
+// Center the map on geocoded address
+$gMap->setCenter($geocoded_address->getLat(), $geocoded_address->getLng());
+
+// Add marker on geocoded address
+$gMap->addMarker(
+		new EGMapMarker($geocoded_address->getLat(), $geocoded_address->getLng())
+);
+
+$gMap->renderMap();
+
 ?>

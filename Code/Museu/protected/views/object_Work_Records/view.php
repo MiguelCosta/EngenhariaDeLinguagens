@@ -60,3 +60,5 @@ $this->menu = array(
 <br />
 <?php echo $this->renderPartial('_viewOntology', array('model'=>$model)); ?>
 
+<?php $this->widget('application.extensions.WSocialButton', array('style'=>'box'));?>
+

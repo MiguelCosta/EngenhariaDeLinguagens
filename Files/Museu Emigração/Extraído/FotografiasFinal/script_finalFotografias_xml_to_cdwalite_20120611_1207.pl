@@ -91,7 +91,11 @@ while(exists($data->{peca}->[$i])){
 	print "\t\t\t\t<locationName type=\"currentRepository\">Museu da Emigração e das Comunidades</locationName>\n";
 	print "\t\t\t</locationSet>\n";
 	
-	
+	if (findLocal($data->{peca}->[$i]->{legenda}) ne ""){
+		print "\t\t\t<locationSet>\n";
+		print "\t\t\t\t<locationName>".findLocal($data->{peca}->[$i]->{legenda})."</locationName>\n";
+		print "\t\t\t</locationSet>\n";
+	}
 	
 	
 	print "\t\t</locationWrap>\n";
@@ -119,7 +123,6 @@ while(exists($data->{peca}->[$i])){
     print "\t\t\t\t<resourceViewDescription>$data->{peca}->[$i]->{legenda}</resourceViewDescription>";
     print "\t\t\t</resourceSet>\n";
     print "\t\t</resourceWrap>\n";
-    
     print "\t</administrativeMetadata>\n";
 	
 	print "</cdwalite>\n";

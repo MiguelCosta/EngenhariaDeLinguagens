@@ -1,0 +1,4510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdwaliteWrap xmlns="http://www.getty.edu/CDWA/CDWALite"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1111/4 - Paris 1967</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1967</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1967</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Paris </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Emigrante português lendo um jornal do seu país num estaleiro de obras nos subúrbios de Paris, 1967.</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB001</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB001.JPG</linkResource>
+				<resourceViewDescription>Emigrante português lendo um jornal do seu país num estaleiro de obras nos subúrbios de Paris, 1967.</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3417/22 - Porto 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Porto </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Porto 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB002</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB002.JPG</linkResource>
+				<resourceViewDescription>Porto 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3416/26a - Chaves 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Chaves </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Nas montanhas - região de Chaves – as casas de madeira e está frio. Esta mulher decorou as paredes com jornais e organizou as panelas e as tampas com decoração! Os utensílios estão presos, ela não os usa… Para mim, trata-se de um testemunho de resistência, de coragem! Um exemplo magnífico de “cultura”!... 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB003</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB003.JPG</linkResource>
+				<resourceViewDescription>Nas montanhas - região de Chaves – as casas de madeira e está frio. Esta mulher decorou as paredes com jornais e organizou as panelas e as tampas com decoração! Os utensílios estão presos, ela não os usa… Para mim, trata-se de um testemunho de resistência, de coragem! Um exemplo magnífico de “cultura”!... 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3408/12 - Lisboa 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Lisboa – A pequena vendedora de alface. 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB004</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB004.JPG</linkResource>
+				<resourceViewDescription>Lisboa – A pequena vendedora de alface. 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3408/34 - Lisboa 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Lisboa – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB005</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB005.JPG</linkResource>
+				<resourceViewDescription>Lisboa – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3407/15a - Lisboa 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 x 42cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Lisboa – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB006</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB006.JPG</linkResource>
+				<resourceViewDescription>Lisboa – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3409/23a - Lisboa 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Lisboa – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB007</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB007.JPG</linkResource>
+				<resourceViewDescription>Lisboa – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3407/7a - Lisboa 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Lisboa – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB008</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB008.JPG</linkResource>
+				<resourceViewDescription>Lisboa – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3409/30 - Lisboa 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Lisboa – Sobrevive-se como se pode, mesmo a vender brinquedos para fazer bolas de sabão – 1966.</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB009</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB009.JPG</linkResource>
+				<resourceViewDescription>Lisboa – Sobrevive-se como se pode, mesmo a vender brinquedos para fazer bolas de sabão – 1966.</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3411/10 - Chaves 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Chaves </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Nas montanhas de Chaves – A miséria acentua de forma impiedosa o rosto das crianças – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB010</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB010.JPG</linkResource>
+				<resourceViewDescription>Nas montanhas de Chaves – A miséria acentua de forma impiedosa o rosto das crianças – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3414/32a - Lisboa 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Sim! Esta fotografia foi mesmo tirada em Lisboa!... – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB011</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB011.JPG</linkResource>
+				<resourceViewDescription>Sim! Esta fotografia foi mesmo tirada em Lisboa!... – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3414/37a - Chaves 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 x 42cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Chaves </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Chaves – Um povo digno e bom… – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB012</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB012.JPG</linkResource>
+				<resourceViewDescription>Chaves – Um povo digno e bom… – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1139/B30 - Hendaia 1965</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1965</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1965</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Hendaia </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Vagas de emigrantes portugueses passam pela estação de Hendaia, rumo a Paris. Muitos são aqueles que atravessam a pé os Pirenéus. Qui está uma avó exausta, com a sua filha e a sua neta – 1965</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB013</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB013.JPG</linkResource>
+				<resourceViewDescription>Vagas de emigrantes portugueses passam pela estação de Hendaia, rumo a Paris. Muitos são aqueles que atravessam a pé os Pirenéus. Qui está uma avó exausta, com a sua filha e a sua neta – 1965</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3415/22a - Chaves 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Chaves </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Nas montanhas junto a Chaves – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB014</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB014.JPG</linkResource>
+				<resourceViewDescription>Nas montanhas junto a Chaves – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3420/34a - Porto 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 x 42cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Porto </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Porto – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB015</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB015.JPG</linkResource>
+				<resourceViewDescription>Porto – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3407/23a - 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>A chegada do padeiro – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB016</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB016.JPG</linkResource>
+				<resourceViewDescription>A chegada do padeiro – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3411/16a - Chaves 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 x 42cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Chaves </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Chaves – Pastor com manto de palha – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB017</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB017.JPG</linkResource>
+				<resourceViewDescription>Chaves – Pastor com manto de palha – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3407/24a - Lisboa 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Lisboa – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB018</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB018.JPG</linkResource>
+				<resourceViewDescription>Lisboa – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3407/28a - Lisboa 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 x 42cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Lisboa – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB019</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB019.JPG</linkResource>
+				<resourceViewDescription>Lisboa – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3417/30 - Porto 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 x 42cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Porto </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Porto… a mão… – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB020</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB020.JPG</linkResource>
+				<resourceViewDescription>Porto… a mão… – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3418/16 - Chaves 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Chaves </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Chaves – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB021</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB021.JPG</linkResource>
+				<resourceViewDescription>Chaves – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3408/31 - Lisboa 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Lisboa – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB022</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB022.JPG</linkResource>
+				<resourceViewDescription>Lisboa – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3412/10a - Chaves 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Chaves </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Chaves – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB023</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB023.JPG</linkResource>
+				<resourceViewDescription>Chaves – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3420/17a - Porto 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Porto </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Porto – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB024</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB024.JPG</linkResource>
+				<resourceViewDescription>Porto – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3420/15 - Porto 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Porto </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Porto – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB025</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB025.JPG</linkResource>
+				<resourceViewDescription>Porto – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3420/6a - Porto </title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate></displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate></earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Porto </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Porto – Quando criei esta imagem pensei na canção de Jacquelin François: “Les lavandiéres au Portugal”…</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB026</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB026.JPG</linkResource>
+				<resourceViewDescription>Porto – Quando criei esta imagem pensei na canção de Jacquelin François: “Les lavandiéres au Portugal”…</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3419/22 - Porto 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Porto </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Porto – 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB027</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB027.JPG</linkResource>
+				<resourceViewDescription>Porto – 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3418/31 - Chaves 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Chaves </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Chaves – O “palácio Império”… a pequena princesa… 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB028</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB028.JPG</linkResource>
+				<resourceViewDescription>Chaves – O “palácio Império”… a pequena princesa… 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3412/12a - Chaves 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Chaves </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>1966 – Chaves – O pequeno pastor.</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB029</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB029.JPG</linkResource>
+				<resourceViewDescription>1966 – Chaves – O pequeno pastor.</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3413/26a - Porto 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Porto </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Rua do Porto - 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB030</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB030.JPG</linkResource>
+				<resourceViewDescription>Rua do Porto - 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3418/26 - Chaves 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Chaves </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Chaves –1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB031</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB031.JPG</linkResource>
+				<resourceViewDescription>Chaves –1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1118/17a - Champigny 1964</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1964</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1964</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Champigny </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Bairro de lata em Champigny, caixas de correio - 1964</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB032</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB032.JPG</linkResource>
+				<resourceViewDescription>Bairro de lata em Champigny, caixas de correio - 1964</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1112/24 - Hendaia 1965</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1965</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1965</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Hendaia </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>De passagem por Hendaia –1965</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB033</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB033.JPG</linkResource>
+				<resourceViewDescription>De passagem por Hendaia –1965</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1124/13 - Paris 1965</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1965</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1965</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Paris </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Bairro de lata nos subúrbios de Paris. Regresso das compras no mercado vizinho - 1965</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB034</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB034.JPG</linkResource>
+				<resourceViewDescription>Bairro de lata nos subúrbios de Paris. Regresso das compras no mercado vizinho - 1965</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1129/3a - Champigny 1964</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1964</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1964</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Champigny </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Avó portuguesa no bairro de lata de Champigny - 1964</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB035</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB035.JPG</linkResource>
+				<resourceViewDescription>Avó portuguesa no bairro de lata de Champigny - 1964</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1093/31 - Hendaia 1965</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1965</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1965</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Hendaia </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>De passagem por Hendaia, rumo a Paris - 1965</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB036</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB036.JPG</linkResource>
+				<resourceViewDescription>De passagem por Hendaia, rumo a Paris - 1965</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1100/8 - Hendaia 1965</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1965</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1965</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Hendaia </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Em Hendaia, um emigrante verifica os seus documentos. Acaba de chegar a França. Março de 1965</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB037</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB037.JPG</linkResource>
+				<resourceViewDescription>Em Hendaia, um emigrante verifica os seus documentos. Acaba de chegar a França. Março de 1965</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1299 - Paris 1956</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1956</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1956</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Paris </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Filhas de domésticas a brincar à macaca, Paris. Como todas as crianças do mundo, o sonho de ir mais além!... e esquecer que os pais sofrem para garantir a sobrevivência diária… 1956</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB038</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB038.JPG</linkResource>
+				<resourceViewDescription>Filhas de domésticas a brincar à macaca, Paris. Como todas as crianças do mundo, o sonho de ir mais além!... e esquecer que os pais sofrem para garantir a sobrevivência diária… 1956</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1288 - 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm Uma televisão, sim! Porque os pais não têm dinheiro</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>para comprar uma verdadeira! - 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB039</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB039.JPG</linkResource>
+				<resourceViewDescription>para comprar uma verdadeira! - 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1114/18 - 1965</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm O peso da moeda. Este operário português conta os</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1965</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1965</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>tostões. Ainda não se habituou ao franco. Acaba de comprar pão para a merenda, antes de ir trabalhar na fábrica Citroen, perto da Praça Balard - 1965</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB040</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB040.JPG</linkResource>
+				<resourceViewDescription>tostões. Ainda não se habituou ao franco. Acaba de comprar pão para a merenda, antes de ir trabalhar na fábrica Citroen, perto da Praça Balard - 1965</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1089/8 - </title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42 Bairro de lata nos subúrbios de Paris. E agora, que</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate></displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate></earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>futuro?... Chegou há poucos dias. Vai ter de encontrar trabalho…</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB041</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB041.JPG</linkResource>
+				<resourceViewDescription>futuro?... Chegou há poucos dias. Vai ter de encontrar trabalho…</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1110/8 - Paris 1970</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1970</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1970</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Paris </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Estaleiro de obras num subúrbio de Paris - 1970</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB042</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB042.JPG</linkResource>
+				<resourceViewDescription>Estaleiro de obras num subúrbio de Paris - 1970</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1117/7a - </title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm Contratação pela alvorada na Citroen - 1965</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate></displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate></earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>HASH(0x2bebae8)</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB043</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB043.JPG</linkResource>
+				<resourceViewDescription>HASH(0x2bebae8)</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1115/11 - Paris 1965</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm Ida para o trabalho de madrugada. Bairro de lata dos</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1965</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1965</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Paris </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>subúrbios de Paris - 1965</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB044</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB044.JPG</linkResource>
+				<resourceViewDescription>subúrbios de Paris - 1965</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3383/34 - 1974</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1974</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1974</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>“Revolução dos cravos” – 1.º de Maio de 1974</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB045</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB045.JPG</linkResource>
+				<resourceViewDescription>“Revolução dos cravos” – 1.º de Maio de 1974</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3406/22 - Lisboa 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Guarda na prisão de Aljube, em Lisboa, onde foram encarcerados muitos prisioneiros políticos - 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB046</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB046.JPG</linkResource>
+				<resourceViewDescription>Guarda na prisão de Aljube, em Lisboa, onde foram encarcerados muitos prisioneiros políticos - 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>3410/21 - Chaves 1966</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1966</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1966</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Chaves </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Chaves – A miséria devasta tudo: um “velhote” pequeno de alguns meses… - 1966</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB047</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB047.JPG</linkResource>
+				<resourceViewDescription>Chaves – A miséria devasta tudo: um “velhote” pequeno de alguns meses… - 1966</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1139/C18 - Hendaia 1965</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1965</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1965</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Hendaia </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>No comboio Hendaia – paris - 1965</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB048</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB048.JPG</linkResource>
+				<resourceViewDescription>No comboio Hendaia – paris - 1965</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1133/31 - 1964</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm A forma possível para transportar os sacos de carvão ao</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1964</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1964</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>longo dos caminhos da neve. É preciso aquecer-se! O Inverno é rígido!... - 1964</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB049</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB049.JPG</linkResource>
+				<resourceViewDescription>longo dos caminhos da neve. É preciso aquecer-se! O Inverno é rígido!... - 1964</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1133/30 - 1964</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1964</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1964</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Ida para o trabalho através de caminhos escorregadios. É o Inverno - 1964</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB050</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB050.JPG</linkResource>
+				<resourceViewDescription>Ida para o trabalho através de caminhos escorregadios. É o Inverno - 1964</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1289 - 1954</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1954</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1954</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Acampamento do “Abbé” Pierre em Noisy-le-Grand. Esta cabecinha?... É de um homem que vive os seus primeiros meses de inocência… Em que se transformaram estes possíveis génios?... Encontrados algures…Perdidos para sempre na lama do destino? - 1954</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB051</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB051.JPG</linkResource>
+				<resourceViewDescription>Acampamento do “Abbé” Pierre em Noisy-le-Grand. Esta cabecinha?... É de um homem que vive os seus primeiros meses de inocência… Em que se transformaram estes possíveis génios?... Encontrados algures…Perdidos para sempre na lama do destino? - 1954</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1309/14a - 1957</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1957</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1957</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Bairro de lata em Aubervilliers. Pequena madona da miséria… - 1957</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB052</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB052.JPG</linkResource>
+				<resourceViewDescription>Bairro de lata em Aubervilliers. Pequena madona da miséria… - 1957</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1308 - Lisboa 1954</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>59,5 cm x 42</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="59,5" unit="cm" type="width"/>
+				<measurementsSet value="42" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1954</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1954</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Acampamento do “Abbé” Pierre em Noisy-le-Grand. De bairro de lata em bairro de lata… Lisboa…Paris - 1954</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB053</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB053.JPG</linkResource>
+				<resourceViewDescription>Acampamento do “Abbé” Pierre em Noisy-le-Grand. De bairro de lata em bairro de lata… Lisboa…Paris - 1954</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+<cdwalite>
+	<descriptiveMetadata>
+		<objectWorkTypeWrap>
+			<objectWorkType>Fotografia</objectWorkType>
+		</objectWorkTypeWrap>
+		<titleWrap>
+			<titleSet>
+				<title>1088/5 - Lisboa 1965</title>
+			</titleSet>
+		</titleWrap>
+		<displayCreator>Gérald Bloncourt</displayCreator>
+		<indexingCreatorWrap>
+			<indexingCreatorSet>
+				<nameCreatorSet>
+					<nameCreator type="personalName">Gérald Bloncourt</nameCreator>
+				</nameCreatorSet>
+				<nationalityCreator>Haitian</nationalityCreator>
+				<vitalDatesCreator birthdate="1926">1926-</vitalDatesCreator>
+				<genderCreator>masculino</genderCreator>
+				<roleCreator>Fotógrafo</roleCreator>
+				<roleCreator>Pintor</roleCreator>
+			</indexingCreatorSet>
+		</indexingCreatorWrap>
+		<displayMeasurements>42 x 59,5 cm</displayMeasurements>
+		<indexingMeasurementsWrap>
+			<indexingMeasurementsSet>
+				<measurementsSet value="42" unit="cm" type="width"/>
+				<measurementsSet value="59,5" unit="cm" type="height"/>
+			</indexingMeasurementsSet>
+		</indexingMeasurementsWrap>
+		<displayMaterialsTech>Fotografia P/B</displayMaterialsTech>
+		<indexingMaterialsTechWrap>
+			<indexingMaterialsTechSet>
+				<termMaterialsTech>preto e branco</termMaterialsTech>
+			</indexingMaterialsTechSet>
+		</indexingMaterialsTechWrap>
+		<styleWrap>
+			<style>indefinida</style>
+		</styleWrap>
+		<displayCreationDate>1965</displayCreationDate>
+		<indexingDatesWrap>
+			<indexingDatesSet>
+				<dateQualifier>Impressa</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Incorporada no Museu da Emigração e das Comunidades</dateQualifier>
+				<earliestDate>2009</earliestDate>
+			</indexingDatesSet>
+			<indexingDatesSet>
+				<dateQualifier>Tirada</dateQualifier>
+				<earliestDate>1965</earliestDate>
+			</indexingDatesSet>
+		</indexingDatesWrap>
+		<locationWrap>
+			<locationSet>
+				<locationName type="creationLocation">França</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Museu da Emigração e das Comunidades</locationName>
+			</locationSet>
+			<locationSet>
+				<locationName type="currentRepository">Lisboa </locationName>
+			</locationSet>
+		</locationWrap>
+		<classificationWrap>
+			<classification>Fotografia</classification>
+		</classificationWrap>
+		<inscriptionsWrap>
+			<inscriptions>Menina adormecida no comboio Lisboa-Hendaia – Paris, durante a longa viagem de emigração - 1965</inscriptions>
+		</inscriptionsWrap>
+	</descriptiveMetadata>
+	<administrativeMetadata>
+		<recordWrap>
+			<recordID>CGB054</recordID>
+			<recordType/>
+		</recordWrap>
+		<resourceWrap>
+			<resourceSet>
+				<linkResource>fotos/CGB054.JPG</linkResource>
+				<resourceViewDescription>Menina adormecida no comboio Lisboa-Hendaia – Paris, durante a longa viagem de emigração - 1965</resourceViewDescription>			</resourceSet>
+		</resourceWrap>
+	</administrativeMetadata>
+</cdwalite>
+</cdwaliteWrap>

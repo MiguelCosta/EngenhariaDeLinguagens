@@ -23,7 +23,7 @@ my $ix_measure = 107;
 my $cont_dates = 157;
 my $cont_relW = 1;
 my $cont_resLink = 54;
-my $cont_loc = 107;
+my $cont_loc = 150;
 
 while(exists($data->{cdwalite}->[$ix])){
 	# Separa os registos em diferentes ficheiros

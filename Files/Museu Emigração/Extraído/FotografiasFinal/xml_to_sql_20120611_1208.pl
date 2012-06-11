@@ -49,6 +49,12 @@ print "\n-- Tabela Styles
 print "\n-- Tabela LocationsName
 		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('1', 'França', 'creationLocation');
 		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('2', 'Museu da Emigração e das Comunidades', 'currentRepository');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('3', 'Lisboa', '');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('4', 'Porto', '');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('5', 'Paris', '');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('6', 'Chaves', '');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('7', 'Hendaia', '');
+		INSERT INTO LocationsName (id_locationsName, locationName, type) VALUES ('8', 'Champigny', '');
 		";
 
 
@@ -70,7 +76,7 @@ print "\n-- Table Classifications
 		";
 
 my $xml = new XML::Simple;
-my $data = $xml->XMLin("finalFotografias.xml");
+my $data = $xml->XMLin("final.xml");
 
 my $i = 1;
 while(exists($data->{cdwalite}->[$i])){
@@ -155,6 +161,26 @@ print "\n\n-- NOVA FOTOGRAFIA \n-- Tabela Object_Work_Records";
 	print "INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('$i', '1');
 		   INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('$i', '2');
 		";
+	$t = $data->{cdwalite}->[$i]->{descriptiveMetadata}->{locationWrap}->{locationSet}->[2]->{locationName};
+	#print Dumper($data->{cdwalite}->[$i]->{descriptiveMetadata}->{locationWrap});
+	#print Dumper($data->{cdwalite}->[$i]->{descriptiveMetadata}->{locationWrap}->{locationSet});
+	
+	if ($t eq "Lisboa "){
+	print "INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('$i', '3');\n"
+	} elsif ($t eq "Porto "){
+		print "INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('$i', '4');\n"
+	} elsif ($t eq "Paris "){
+		print "INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('$i', '5');\n"
+	} elsif ($t eq "Chaves "){
+		print "INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('$i', '6');\n"
+	} elsif ($t eq "Hendaia "){
+		print "INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('$i', '7');\n"
+	} elsif ($t eq "Champigny "){
+		print "INSERT INTO Locations (Object_Work_Record, LocationName) VALUES ('$i', '8');\n"
+	} else {
+		print "-- nadaLocalOutro\n";
+	}
+		
 	# Classification
 	print "\nINSERT INTO Object_Work_Records_Classifications (Object_Work_Record, Classification) VALUES ('$i', '1');
 	";

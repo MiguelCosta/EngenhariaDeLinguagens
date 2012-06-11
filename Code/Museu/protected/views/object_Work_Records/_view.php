@@ -1,4 +1,9 @@
-<div class="view">
+
+<?php 
+$link = Yii::app()->baseUrl . "/index.php/object_Work_Records/" . $data->id_object_Work_Records;
+?>
+
+<div class="view" onclick="location.href='<? echo $link;?>';" style="cursor:pointer;">
 	<table style="margin-bottom: 0em">
 		<tr>
 			<td width="70%"><b><?php echo CHtml::encode($data->getAttributeLabel('id_object_Work_Records')); ?>:</b>

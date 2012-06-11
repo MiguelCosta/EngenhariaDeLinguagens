@@ -1,3 +1,5 @@
+use museu;
+
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
 INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (654, '<Desconhecido>', '6,2x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
