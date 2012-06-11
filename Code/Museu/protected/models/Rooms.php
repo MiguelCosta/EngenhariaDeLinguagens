@@ -59,7 +59,7 @@ class Rooms extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-				'exhibitions' => array(self::MANY_MANY, 'Exhibitions', 'Exhibitions_Rooms(Roomsid_room, Exhibitionsid_exhibition)'),
+				'exhibitions' => array(self::MANY_MANY, 'Exhibitions', 'Exhibitions_Rooms(Exhibitionsid_exhibition, Roomsid_room)'),
 		);
 	}
 

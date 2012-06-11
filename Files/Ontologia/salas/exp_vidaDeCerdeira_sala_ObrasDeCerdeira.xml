@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sala>
     <exposicoes>
-        <exposicao>Vida de Cerdeira</exposicao>
+        <exposicao>Obras de Cerdeira</exposicao>
     </exposicoes>
-    <nome>Tou farto do Cerdeira</nome>
-    <descricao>Testes</descricao>
+    <nome>Peças de Cerdeira</nome>
+    <descricao>Peças e outras coisas do homem</descricao>
     <objectos>
         <objecto>
             <tipo>PecasCriador</tipo>
             <argumentos>
-                <argumento id="Criador">Pintor José Soares - Porto</argumento>
+                <argumento id="Criador">Cerdeira</argumento>
             </argumentos>
         </objecto>
     </objectos>
