@@ -200,7 +200,6 @@ box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, .5);
 .css_top_item_mylast
 {
 position:relative;
-	float:left;
 	border:rgba(0,0,0,0) solid thin;
 	border-bottom:none;
 	color: white;

@@ -151,6 +151,7 @@ class Object_Work_Records extends CActiveRecord
 		));
 	}
 
+
 	/*********************************************************************************/
 	/********************************** My Functions *********************************/
 	/*********************************************************************************/
@@ -244,8 +245,17 @@ class Object_Work_Records extends CActiveRecord
 	 * Better support of MANY_TO_MANY relations
 	 */
 	public function behaviors(){
-		return array( 'CAdvancedArBehavior' => array(
-				'class' => 'application.extensions.CAdvancedArBehavior'));
+		return array(
+				'CAdvancedArBehavior' => array(
+						'class' => 'application.extensions.CAdvancedArBehavior'),
+				'commentable' => array(
+						'class' => 'ext.comment-module.behaviors.CommentableBehavior',
+						// name of the table created in last step
+						'mapTable' => 'posts_comments_nm',
+						// name of column to related model id in mapTable
+						'mapRelatedColumn' => 'postId'
+				),
+		);
 	}
 
 	public function getResources_One(){
@@ -398,7 +408,7 @@ class Object_Work_Records extends CActiveRecord
 		$result .= implode("<br/>", $this->getClassifications());
 		return $result;
 	}
-	
+
 	public function getIndexingCreators_model(){
 		$i = $this->indexingCreators;
 		return $i;

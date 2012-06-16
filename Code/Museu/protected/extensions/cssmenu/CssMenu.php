@@ -49,9 +49,15 @@ class CssMenu extends CWidget
 	*/
 	private function menuTopLevelItem($item)
 	{
+		//echo CVarDumper::dump($item->getLabel(), 1, true);
 		echo '<div class="css_top_item';
 		if($item->first) echo ' first';
-		if($item->last) echo '_mylast';
+		if($item->last)echo '_mylast';
+		if($item->getLabel() == 'Login') echo '_mylast';
+		if($item->getLabel() == 'Perfil') echo '_mylast';
+		//if($item->getLabel() == 'Register') echo '_mylast';
+		if($item->getLabel() == 'Logout') echo '_mylast';
+		
 		if($this->readCurrentPage and $item->scanForUrl($this->currentPage)) echo ' current';
 		echo '">';
 		$item->makeItem();
@@ -287,6 +293,11 @@ class CssMenuItem
 			}
 		}
 		else return false;
+	}
+	
+	public function getLabel(){
+		return $this->label;
+		
 	}
 }
 
