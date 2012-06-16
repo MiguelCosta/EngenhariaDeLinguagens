@@ -44,7 +44,7 @@ CREATE TABLE `users` (
 --
 -- Dumping data for table `users`
 --
-INSERT INTO `users` VALUES (1,'museu','e6b0c7430d848fa289a22ad4c06b1b91','miguelpintodacosta@gmail.com','75a05d626f6db0a8ec492af676a48004',1,1,'2012-06-11 22:20:06','2012-06-16 00:53:25'),(3,'Miguel','9eb0c9605dc81a68731f61b3e0838937','miguelpintodacosta@hotmail.com','413baf3e7889420250ee53ef3194baf7',0,1,'2012-06-15 21:49:22','2012-06-16 00:53:10');
+INSERT INTO `users` VALUES (1,'museu','e6b0c7430d848fa289a22ad4c06b1b91','miguelpintodacosta@gmail.com','75a05d626f6db0a8ec492af676a48004',1,1,'2012-06-11 22:20:06','2012-06-16 00:53:25');
 
 --
 -- Table structure for table `profiles`
@@ -81,5 +81,5 @@ CREATE TABLE `profiles_fields` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 INSERT INTO `profiles_fields` VALUES (1,'first_name','Nome','VARCHAR',255,3,2,'','','Incorrect First Name (length between 3 and 50 characters).','','','','',1,3),(2,'last_name','Apelido','VARCHAR',255,3,2,'','','Incorrect Last Name (length between 3 and 50 characters).','','','','',2,3);
-
+INSERT INTO `profiles` VALUES (1,'Miguel','Costa');
 
