@@ -275,5 +275,5 @@ div.view a:HOVER{
 
 div.view:HOVER{
 	background-color: beige;
-	border: 2px solid;
+	/*border: 2px solid;*/
 }
