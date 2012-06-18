@@ -8,6 +8,8 @@
  * @version $Id: UserModule.php 132 2011-10-30 10:45:01Z mishamx $
  */
 
+require_once('PHPMailer_v5.1/class.phpmailer.php');
+
 class UserModule extends CWebModule
 {
 	/**
@@ -218,13 +220,68 @@ class UserModule extends CWebModule
 	/**
 	 * Send mail method
 	 */
-	public static function sendMail($email,$subject,$message) {
+	/*public static function sendMail($email,$subject,$message) {
     	$adminEmail = Yii::app()->params['adminEmail'];
 	    $headers = "MIME-Version: 1.0\r\nFrom: $adminEmail\r\nReply-To: $adminEmail\r\nContent-Type: text/html; charset=utf-8";
 	    $message = wordwrap($message, 70);
 	    $message = str_replace("\n.", "\n..", $message);
-	    return mail($email,'=?UTF-8?B?'.base64_encode($subject).'?=',$message,$headers);
+	    
+	    $suc = mail($email,'=?UTF-8?B?'.base64_encode($subject).'?=',$message,$headers);
+	    return $suc;
+	}*/
+	
+	/**
+	 * Função para enviar emails criada usando o Gmail.
+	 * Utiliza configurações definidas em /config/main.php
+	 * Usa o PHPMailer_v5.1
+	 * @param string $email Email para o qual vai ser enviada a mensagem
+	 * @param string $subject Assunto do email
+	 * @param string $message
+	 * @return boolean
+	 * @author Miguel Costa
+	 */
+	public static function sendMail($email,$subject,$message) {
+		
+		require_once('PHPMailer_v5.1/class.phpmailer.php');
+		
+		$adminEmail = Yii::app()->params['adminEmail'];
+		$headers = "MIME-Version: 1.0\r\nFrom: $adminEmail\r\nReply-To: $adminEmail\r\nContent-Type: text/html; charset=utf-8";
+		$message = wordwrap($message, 70);
+		$message = str_replace("\n.", "\n..", $message);
+		
+		$mail	= new PHPMailer();
+		$body	= $message;
+
+		$mail->IsSMTP(); 									// telling the class to use SMTP
+		$mail->SMTPAuth   = true;                  			// enable SMTP authentication
+		$mail->SMTPSecure = "ssl";                 			// sets the prefix to the servier
+		$mail->Host       = "smtp.gmail.com";      			// sets GMAIL as the SMTP server
+		$mail->Port       = 465;                  	 		// set the SMTP port for the GMAIL server
+		$mail->Username   = Yii::app()->params['sendEmailUsername'];  	// GMAIL username
+		$mail->Password   = Yii::app()->params['sendEmailPassword']; 	// GMAIL password
+		
+		$mail->SetFrom('geral@museu-emigrantes.org', 'Museu da Emigracao');
+		
+		$mail->Subject    = '=?UTF-8?B?'.base64_encode($subject).'?=';
+		
+		$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!';
+		$mail->MsgHTML($body);
+		
+		$address = $email;
+		$mail->AddAddress($address, "Utilizador Museu da Emigracao");
+
+		if(!$mail->Send()) {
+			echo "Mailer Error: " . $mail->ErrorInfo;
+			return false;
+		} else {
+			echo "Message sent!";
+			return true;
+		}
+		
+		
 	}
+	
+	
 	
 	/**
 	 * Return safe user data.

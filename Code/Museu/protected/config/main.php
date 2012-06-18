@@ -126,7 +126,7 @@ return array(
 
 				'db'=>array(
 						'connectionString' => 'mysql:host=127.0.0.1;dbname=museu',
-						'emulatePrepare' => true,
+						'emulatePrepare' => false,
 						'username' => 'root',
 						'password' => '',
 						'charset' => 'utf8',
@@ -169,7 +169,11 @@ array(
 		'params'=>array(
 				// this is used in contact page
 				'adminEmail'=>'miguelpintodacosta@gmail.com',
+				// imagem do avatar difault que aparece nos comentários
 				'avatarDefault'=>'http://dl.dropbox.com/u/3025160/avatar2.png',
+				// dados da conta do gmail a partir do qual são enviados os emails
+				'sendEmailUsername'=>'besmart.software@gmail.com',
+				'sendEmailPassword'=>'li4grupo13',
 		),
 );
 

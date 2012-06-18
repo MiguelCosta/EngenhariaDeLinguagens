@@ -53,10 +53,16 @@ class RecoveryController extends Controller
 			    						'{activation_url}'=>$activation_url,
 			    					));
 							
-			    			UserModule::sendMail($user->email,$subject,$message);
 			    			
-							Yii::app()->user->setFlash('recoveryMessage',UserModule::t("Please check your email. An instructions was sent to your email address."));
-			    			$this->refresh();
+			    			if(UserModule::sendMail($user->email,$subject,$message)){
+			    				Yii::app()->user->setFlash('recoveryMessage',UserModule::t("Verifique o seu email. As instruções foram enviadas para o seu endereço de email."));
+			    				$this->refresh();
+			    			}else{
+			    				Yii::app()->user->setFlash('recoveryMessage',UserModule::t("Ocorreu um erro ao enviar o email, contact o administrador."));
+			    				$this->refresh();
+			    			}
+			    			
+							
 			    		}
 			    	}
 		    		$this->render('recovery',array('form'=>$form));
