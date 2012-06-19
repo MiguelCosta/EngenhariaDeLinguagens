@@ -1,0 +1,13 @@
+conceito("pessoa");
+conceito("emigrante");
+conceito("evento");
+conceito("nascimento");
+conceito("morte");
+
+assoc("e um");
+
+mapa("pessoa", "e um", "emigrante");
+mapa("evento", "e um", "nascimento");
+mapa("evento", "e um", "morte");
+
+inst("pessoa" ["nome"="Antonio", "idade"="20"];
