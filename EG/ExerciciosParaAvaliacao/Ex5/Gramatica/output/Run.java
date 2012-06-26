@@ -13,7 +13,7 @@ public class Run {
 	 		mapaconceitosParser parser = new mapaconceitosParser(tokens);
 			mapaconceitosParser.mapaconceitos_return ret = parser.mapaconceitos();
 			
-			System.out.println(((CommonTree)ret.getTree()).toStringTree());
+			//System.out.println(((CommonTree)ret.getTree()).toStringTree());
 			
 			CommonTreeNodeStream tree = new CommonTreeNodeStream(ret.getTree());
 //			System.out.println(tree.toStringTree());
