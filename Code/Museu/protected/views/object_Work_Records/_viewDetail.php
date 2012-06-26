@@ -21,7 +21,7 @@ $this->widget('zii.widgets.jui.CJuiSlider', array(
 <div class="zoom" style="float: right;"></div>
 
 <?php
-$this->widget('ext.ETooltip.ETooltip', array("selector"=>"#yw3 img[title]",
+$this->widget('ext.ETooltip.ETooltip', array("selector"=>"#yw2 img[title]",
 		"tooltip"=>array(
 				"opacity"=>50,
 				"position"=>"top center",

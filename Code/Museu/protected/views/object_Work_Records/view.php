@@ -1,7 +1,7 @@
 <?php
 $this->breadcrumbs = array(
 		'Peças' => array('index'),
-		$model->id_object_Work_Records,
+		$model->getObjectWorkTitles_Text(),
 );
 
 //$url=$this->createUrl($route,$params);
@@ -25,8 +25,6 @@ $this->menu = array(
 
 <h1>
 	<?php
-	
-
 	// Add Titles in Object Work Records
 	// title (i)
 	// example: 3411/10 - Chaves 1966 (9)
@@ -52,9 +50,9 @@ $this->menu = array(
 
 
 <h1>Comentários:</h1>
- 
+
 <?php $this->renderPartial('comment.views.comment.commentList', array(
-    'model'=>$model
+		'model'=>$model
 )); ?>
 
 

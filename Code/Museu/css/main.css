@@ -262,18 +262,18 @@ table.detail-view a:hover {
 	text-decoration: underline;
 }
 
-div.view a{
+div.viewEffects a{
 	text-decoration: none;
 	color: maroon;
 }
 
-div.view a:HOVER{
+div.viewEffects a:HOVER{
 	text-decoration: none;
 	color: maroon;
 	text-decoration: underline;
 }
 
-div.view:HOVER{
+div.viewEffects:HOVER{
 	background-color: beige;
 	/*border: 2px solid;*/
 }
