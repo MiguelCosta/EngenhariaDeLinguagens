@@ -2,19 +2,9 @@ SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='TRADITIONAL';
 
-
--- -----------------------------------------------------
--- Table `mapaconceitos`.`Conceitos`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `mapaconceitos`.`Conceitos` ;
-
-CREATE  TABLE IF NOT EXISTS `mapaconceitos`.`Conceitos` (
-  `id_conceito` INT NOT NULL ,
-  `conceito` VARCHAR(100) NOT NULL ,
-  PRIMARY KEY (`id_conceito`) ,
-  UNIQUE INDEX `conceito_UNIQUE` (`conceito` ASC) )
-ENGINE = InnoDB;
-
+DROP SCHEMA IF EXISTS `mapaconceitos` ;
+CREATE SCHEMA IF NOT EXISTS `mapaconceitos` DEFAULT CHARACTER SET latin1 ;
+USE `mapaconceitos` ;
 
 -- -----------------------------------------------------
 -- Table `mapaconceitos`.`Associacoes`
@@ -22,55 +12,24 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mapaconceitos`.`Associacoes` ;
 
 CREATE  TABLE IF NOT EXISTS `mapaconceitos`.`Associacoes` (
-  `id_associacao` INT NOT NULL ,
   `associacao` VARCHAR(100) NOT NULL ,
-  PRIMARY KEY (`id_associacao`) ,
-  UNIQUE INDEX `associacao_UNIQUE` (`associacao` ASC) )
-ENGINE = InnoDB;
+  UNIQUE INDEX `associacao_UNIQUE` (`associacao` ASC) ,
+  PRIMARY KEY (`associacao`) )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
--- Table `mapaconceitos`.`Mapas`
+-- Table `mapaconceitos`.`Conceitos`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mapaconceitos`.`Mapas` ;
+DROP TABLE IF EXISTS `mapaconceitos`.`Conceitos` ;
 
-CREATE  TABLE IF NOT EXISTS `mapaconceitos`.`Mapas` (
-  `conceito_pai` INT NOT NULL ,
-  `associacao` INT NOT NULL ,
-  `conceito_filho` INT NOT NULL ,
-  PRIMARY KEY (`conceito_pai`, `associacao`, `conceito_filho`) ,
-  INDEX `fk_Conceitos_has_Associacoes_Associacoes1` (`associacao` ASC) ,
-  INDEX `fk_Conceitos_has_Associacoes_Conceitos` (`conceito_pai` ASC) ,
-  INDEX `fk_Mapas_Conceitos1` (`conceito_filho` ASC) ,
-  CONSTRAINT `fk_Conceitos_has_Associacoes_Conceitos`
-    FOREIGN KEY (`conceito_pai` )
-    REFERENCES `mapaconceitos`.`Conceitos` (`id_conceito` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Conceitos_has_Associacoes_Associacoes1`
-    FOREIGN KEY (`associacao` )
-    REFERENCES `mapaconceitos`.`Associacoes` (`id_associacao` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Mapas_Conceitos1`
-    FOREIGN KEY (`conceito_filho` )
-    REFERENCES `mapaconceitos`.`Conceitos` (`id_conceito` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `mapaconceitos`.`Propriedades`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `mapaconceitos`.`Propriedades` ;
-
-CREATE  TABLE IF NOT EXISTS `mapaconceitos`.`Propriedades` (
-  `id_propriedade` INT NOT NULL ,
-  `propriedade` VARCHAR(100) NOT NULL ,
-  PRIMARY KEY (`id_propriedade`) ,
-  UNIQUE INDEX `propriedade_UNIQUE` (`propriedade` ASC) )
-ENGINE = InnoDB;
+CREATE  TABLE IF NOT EXISTS `mapaconceitos`.`Conceitos` (
+  `conceito` VARCHAR(100) NOT NULL ,
+  UNIQUE INDEX `conceito_UNIQUE` (`conceito` ASC) ,
+  PRIMARY KEY (`conceito`) )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
 
 
 -- -----------------------------------------------------
@@ -79,23 +38,87 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mapaconceitos`.`Instancias` ;
 
 CREATE  TABLE IF NOT EXISTS `mapaconceitos`.`Instancias` (
-  `conceito` INT NOT NULL ,
-  `propriedade` INT NOT NULL ,
-  `valor` VARCHAR(100) NOT NULL ,
-  PRIMARY KEY (`conceito`, `propriedade`) ,
-  INDEX `fk_Conceitos_has_Propriedades_Propriedades1` (`propriedade` ASC) ,
-  INDEX `fk_Conceitos_has_Propriedades_Conceitos1` (`conceito` ASC) ,
-  CONSTRAINT `fk_Conceitos_has_Propriedades_Conceitos1`
+  `instancia` VARCHAR(100) NOT NULL ,
+  `conceito` VARCHAR(100) NOT NULL ,
+  PRIMARY KEY (`instancia`) ,
+  INDEX `fk_Instancias_Conceitos1` (`conceito` ASC) ,
+  CONSTRAINT `fk_Instancias_Conceitos1`
     FOREIGN KEY (`conceito` )
-    REFERENCES `mapaconceitos`.`Conceitos` (`id_conceito` )
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Conceitos_has_Propriedades_Propriedades1`
-    FOREIGN KEY (`propriedade` )
-    REFERENCES `mapaconceitos`.`Propriedades` (`id_propriedade` )
+    REFERENCES `mapaconceitos`.`Conceitos` (`conceito` )
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
-ENGINE = InnoDB;
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `mapaconceitos`.`Mapas`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mapaconceitos`.`Mapas` ;
+
+CREATE  TABLE IF NOT EXISTS `mapaconceitos`.`Mapas` (
+  `conceitoPai` VARCHAR(100) NOT NULL ,
+  `conceitoFilho` VARCHAR(100) NOT NULL ,
+  `associacao` VARCHAR(100) NOT NULL ,
+  PRIMARY KEY (`conceitoPai`, `conceitoFilho`, `associacao`) ,
+  INDEX `fk_Mapas_Conceitos1` (`conceitoFilho` ASC) ,
+  INDEX `fk_Mapas_Associacoes1` (`associacao` ASC) ,
+  CONSTRAINT `fk_Mapas_Conceitos`
+    FOREIGN KEY (`conceitoPai` )
+    REFERENCES `mapaconceitos`.`Conceitos` (`conceito` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Mapas_Conceitos1`
+    FOREIGN KEY (`conceitoFilho` )
+    REFERENCES `mapaconceitos`.`Conceitos` (`conceito` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Mapas_Associacoes1`
+    FOREIGN KEY (`associacao` )
+    REFERENCES `mapaconceitos`.`Associacoes` (`associacao` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `mapaconceitos`.`Propriedades`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mapaconceitos`.`Propriedades` ;
+
+CREATE  TABLE IF NOT EXISTS `mapaconceitos`.`Propriedades` (
+  `propriedade` VARCHAR(100) NOT NULL ,
+  UNIQUE INDEX `propriedade_UNIQUE` (`propriedade` ASC) ,
+  PRIMARY KEY (`propriedade`) )
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
+
+
+-- -----------------------------------------------------
+-- Table `mapaconceitos`.`InstProp`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mapaconceitos`.`InstProp` ;
+
+CREATE  TABLE IF NOT EXISTS `mapaconceitos`.`InstProp` (
+  `instancia` VARCHAR(100) NOT NULL ,
+  `propriedade` VARCHAR(100) NOT NULL ,
+  `valor` VARCHAR(100) NOT NULL ,
+  PRIMARY KEY (`instancia`, `propriedade`) ,
+  INDEX `fk_Instancias_has_Propriedades_Propriedades1` (`propriedade` ASC) ,
+  INDEX `fk_Instancias_has_Propriedades_Instancias1` (`instancia` ASC) ,
+  CONSTRAINT `fk_Instancias_has_Propriedades_Instancias1`
+    FOREIGN KEY (`instancia` )
+    REFERENCES `mapaconceitos`.`Instancias` (`instancia` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Instancias_has_Propriedades_Propriedades1`
+    FOREIGN KEY (`propriedade` )
+    REFERENCES `mapaconceitos`.`Propriedades` (`propriedade` )
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = latin1;
 
 
 
