@@ -27,7 +27,10 @@ public class Instancia {
 
 	@Override
 		public String toString() {
-			return "Instancia [id=" + id + ", conceito=" + conceito + "]";
+			return "Instancia [\n\t" +
+				"id=" + id + ",\n\t" +
+				"conceito=" + conceito + 
+				"\n]";
 		}
 }
 

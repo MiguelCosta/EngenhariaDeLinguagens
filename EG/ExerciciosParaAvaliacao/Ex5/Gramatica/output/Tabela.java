@@ -6,7 +6,7 @@ public class Tabela {
 	private TreeSet<String> propriedades;
 	private TreeMap<String, Mapa> mapas;
 	private TreeMap<String, Instancia> instancias;
-	private TreeSet<InstanciaMapa> instanciasMapas;
+	private HashSet<InstanciaMapa> instanciasMapas;
 
 	public Tabela (){ 
 		this.setConceitos(new TreeSet<String>()); 
@@ -14,7 +14,7 @@ public class Tabela {
 		this.setPropriedades(new TreeSet<String>()); 
 		this.setMapas(new TreeMap<String, Mapa>());
 		this.setInstancias(new TreeMap<String, Instancia>());
-		this.setInstanciasMapas(new TreeSet<InstanciaMapa>());
+		this.setInstanciasMapas(new HashSet<InstanciaMapa>());
 	}
 
 	/**
@@ -90,24 +90,28 @@ public class Tabela {
 	/**
 	 * 	 * @return the instanciasMapas
 	 * 	 	 */
-	public TreeSet<InstanciaMapa> getInstanciasMapas() {
+	public HashSet<InstanciaMapa> getInstanciasMapas() {
 		return instanciasMapas;
 	}
 
 	/**
 	 * 	 * @param instanciasMapas the instanciasMapas to set
 	 * 	 	 */
-	public void setInstanciasMapas(TreeSet<InstanciaMapa> instanciasMapas) {
+	public void setInstanciasMapas(HashSet<InstanciaMapa> instanciasMapas) {
 		this.instanciasMapas = instanciasMapas;
-	}   
+	}
 
 	@Override
 		public String toString() {
-			return "Tabela [conceitos=" + conceitos + ", associacoes="
-				+ associacoes + ", propriedades=" + propriedades + ", mapas="
-				+ mapas + ", instancias=" + instancias + ", instanciasMapas="
-				+ instanciasMapas + "]";
-		} 
+			return "Tabela [\n" +
+				"conceitos=" + conceitos + ", \n" +
+				"associacoes=" + associacoes + ", \n" +
+				"propriedades=" + propriedades + ", \n" +
+				"mapas=" + mapas + ", \n" +
+				"instancias=" + instancias + ", \n" +
+				"instanciasMapas=" + instanciasMapas + 
+				"\n]";
+		}
 
 }
 

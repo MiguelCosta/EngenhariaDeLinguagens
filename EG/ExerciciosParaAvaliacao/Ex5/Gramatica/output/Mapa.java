@@ -40,8 +40,11 @@ public class Mapa {
 
 	@Override
 		public String toString() {
-			return "Mapa [id=" + id + ", conceitoFilho=" + conceitoFilho
-				+ ", associacao=" + associacao + ", conceitoPai=" + conceitoPai
-				+ "]";
+			return "Mapa [\n\t" +
+				"id=" + id + ", \n\t" +
+				"conceitoFilho=" + conceitoFilho + ", \n\t" +
+				"associacao=" + associacao + ", \n\t" +
+				"conceitoPai=" + conceitoPai +
+				"\n]";
 		}
 }
