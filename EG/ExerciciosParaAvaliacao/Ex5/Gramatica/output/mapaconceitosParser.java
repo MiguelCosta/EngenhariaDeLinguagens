@@ -1,38 +1,48 @@
-// $ANTLR 3.4 /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g 2012-06-20 00:03:00
+// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g 2012-06-26 02:24:09
 
 import org.antlr.runtime.*;
 import java.util.Stack;
 import java.util.List;
 import java.util.ArrayList;
+import java.util.Map;
+import java.util.HashMap;
 
-import org.antlr.runtime.debug.*;
-import java.io.IOException;
+import org.antlr.runtime.tree.*;
+
+
 @SuppressWarnings({"all", "warnings", "unchecked"})
-public class mapaconceitosParser extends DebugParser {
+public class mapaconceitosParser extends Parser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "ASSOC", "COMMENT", "CONCEITO", "ESC_SEQ", "HEX_DIGIT", "ID", "INSTANCIA", "MAPA", "OCTAL_ESC", "STRING", "UNICODE_ESC", "WS", "'('", "')'", "','", "';'", "'='", "'['", "']'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "ASSOCIACAO", "ASSOCIACOES", "COMMENT", "CONCEITO", "CONCEITOS", "ESC_SEQ", "HEX_DIGIT", "ID", "INSTANCIA", "INSTANCIAMAPA", "INSTANCIAS", "INSTANCIASMAPA", "MAPA", "MAPACONCEITOS", "MAPAS", "OCTAL_ESC", "PROPRIEDADE", "PROPRIEDADES", "STRING", "UNICODE_ESC", "WS", "'('", "')'", "','", "';'", "'STRING'"
     };
 
     public static final int EOF=-1;
-    public static final int T__16=16;
-    public static final int T__17=17;
-    public static final int T__18=18;
-    public static final int T__19=19;
-    public static final int T__20=20;
-    public static final int T__21=21;
-    public static final int T__22=22;
-    public static final int ASSOC=4;
-    public static final int COMMENT=5;
-    public static final int CONCEITO=6;
-    public static final int ESC_SEQ=7;
-    public static final int HEX_DIGIT=8;
-    public static final int ID=9;
-    public static final int INSTANCIA=10;
-    public static final int MAPA=11;
-    public static final int OCTAL_ESC=12;
-    public static final int STRING=13;
-    public static final int UNICODE_ESC=14;
-    public static final int WS=15;
+    public static final int T__25=25;
+    public static final int T__26=26;
+    public static final int T__27=27;
+    public static final int T__28=28;
+    public static final int T__29=29;
+    public static final int ASSOCIACAO=4;
+    public static final int ASSOCIACOES=5;
+    public static final int COMMENT=6;
+    public static final int CONCEITO=7;
+    public static final int CONCEITOS=8;
+    public static final int ESC_SEQ=9;
+    public static final int HEX_DIGIT=10;
+    public static final int ID=11;
+    public static final int INSTANCIA=12;
+    public static final int INSTANCIAMAPA=13;
+    public static final int INSTANCIAS=14;
+    public static final int INSTANCIASMAPA=15;
+    public static final int MAPA=16;
+    public static final int MAPACONCEITOS=17;
+    public static final int MAPAS=18;
+    public static final int OCTAL_ESC=19;
+    public static final int PROPRIEDADE=20;
+    public static final int PROPRIEDADES=21;
+    public static final int STRING=22;
+    public static final int UNICODE_ESC=23;
+    public static final int WS=24;
 
     // delegates
     public Parser[] getDelegates() {
@@ -42,615 +52,322 @@ public class mapaconceitosParser extends DebugParser {
     // delegators
 
 
-public static final String[] ruleNames = new String[] {
-    "invalidRule", "assoc", "propriedades", "mapa", "conceito", "assocs", 
-    "conceitos", "instancia", "mapaconceitos", "propriedade", "instancias", 
-    "mapas"
-};
-
-public static final boolean[] decisionCanBacktrack = new boolean[] {
-    false, // invalid decision
-    false, false, false, false, false
-};
-
- 
-    public int ruleLevel = 0;
-    public int getRuleLevel() { return ruleLevel; }
-    public void incRuleLevel() { ruleLevel++; }
-    public void decRuleLevel() { ruleLevel--; }
     public mapaconceitosParser(TokenStream input) {
-        this(input, DebugEventSocketProxy.DEFAULT_DEBUGGER_PORT, new RecognizerSharedState());
+        this(input, new RecognizerSharedState());
     }
-    public mapaconceitosParser(TokenStream input, int port, RecognizerSharedState state) {
+    public mapaconceitosParser(TokenStream input, RecognizerSharedState state) {
         super(input, state);
-        DebugEventSocketProxy proxy =
-            new DebugEventSocketProxy(this, port, null);
-
-        setDebugListener(proxy);
-        try {
-            proxy.handshake();
-        }
-        catch (IOException ioe) {
-            reportError(ioe);
-        }
     }
 
-public mapaconceitosParser(TokenStream input, DebugEventListener dbg) {
-    super(input, dbg, new RecognizerSharedState());
-}
+protected TreeAdaptor adaptor = new CommonTreeAdaptor();
 
-protected boolean evalPredicate(boolean result, String predicate) {
-    dbg.semanticPredicate(result, predicate);
-    return result;
+public void setTreeAdaptor(TreeAdaptor adaptor) {
+    this.adaptor = adaptor;
 }
-
+public TreeAdaptor getTreeAdaptor() {
+    return adaptor;
+}
     public String[] getTokenNames() { return mapaconceitosParser.tokenNames; }
-    public String getGrammarFileName() { return "/opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g"; }
+    public String getGrammarFileName() { return "/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g"; }
 
+
+    public static class mapaconceitos_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
 
 
     // $ANTLR start "mapaconceitos"
-    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:3:1: mapaconceitos : conceitos ';' assocs ';' mapas ';' instancias ';' ;
-    public final void mapaconceitos() throws RecognitionException {
-        try { dbg.enterRule(getGrammarFileName(), "mapaconceitos");
-        if ( getRuleLevel()==0 ) {dbg.commence();}
-        incRuleLevel();
-        dbg.location(3, 0);
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:24:1: mapaconceitos : conceitos ';' assocs ';' ( propriedades ';' )? mapas ';' ( instancias ';' )? ( instanciasMapas ';' )? -> ^( MAPACONCEITOS conceitos assocs ( propriedades )? mapas ( instancias )? ( instanciasMapas )? ) ;
+    public final mapaconceitosParser.mapaconceitos_return mapaconceitos() throws RecognitionException {
+        mapaconceitosParser.mapaconceitos_return retval = new mapaconceitosParser.mapaconceitos_return();
+        retval.start = input.LT(1);
 
+
+        Object root_0 = null;
+
+        Token char_literal2=null;
+        Token char_literal4=null;
+        Token char_literal6=null;
+        Token char_literal8=null;
+        Token char_literal10=null;
+        Token char_literal12=null;
+        mapaconceitosParser.conceitos_return conceitos1 =null;
+
+        mapaconceitosParser.assocs_return assocs3 =null;
+
+        mapaconceitosParser.propriedades_return propriedades5 =null;
+
+        mapaconceitosParser.mapas_return mapas7 =null;
+
+        mapaconceitosParser.instancias_return instancias9 =null;
+
+        mapaconceitosParser.instanciasMapas_return instanciasMapas11 =null;
+
+
+        Object char_literal2_tree=null;
+        Object char_literal4_tree=null;
+        Object char_literal6_tree=null;
+        Object char_literal8_tree=null;
+        Object char_literal10_tree=null;
+        Object char_literal12_tree=null;
+        RewriteRuleTokenStream stream_28=new RewriteRuleTokenStream(adaptor,"token 28");
+        RewriteRuleSubtreeStream stream_instanciasMapas=new RewriteRuleSubtreeStream(adaptor,"rule instanciasMapas");
+        RewriteRuleSubtreeStream stream_mapas=new RewriteRuleSubtreeStream(adaptor,"rule mapas");
+        RewriteRuleSubtreeStream stream_instancias=new RewriteRuleSubtreeStream(adaptor,"rule instancias");
+        RewriteRuleSubtreeStream stream_conceitos=new RewriteRuleSubtreeStream(adaptor,"rule conceitos");
+        RewriteRuleSubtreeStream stream_assocs=new RewriteRuleSubtreeStream(adaptor,"rule assocs");
+        RewriteRuleSubtreeStream stream_propriedades=new RewriteRuleSubtreeStream(adaptor,"rule propriedades");
         try {
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:4:2: ( conceitos ';' assocs ';' mapas ';' instancias ';' )
-            dbg.enterAlt(1);
-
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:4:4: conceitos ';' assocs ';' mapas ';' instancias ';'
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:25:2: ( conceitos ';' assocs ';' ( propriedades ';' )? mapas ';' ( instancias ';' )? ( instanciasMapas ';' )? -> ^( MAPACONCEITOS conceitos assocs ( propriedades )? mapas ( instancias )? ( instanciasMapas )? ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:25:4: conceitos ';' assocs ';' ( propriedades ';' )? mapas ';' ( instancias ';' )? ( instanciasMapas ';' )?
             {
-            dbg.location(4,4);
-            pushFollow(FOLLOW_conceitos_in_mapaconceitos11);
-            conceitos();
+            pushFollow(FOLLOW_conceitos_in_mapaconceitos113);
+            conceitos1=conceitos();
 
             state._fsp--;
+            if (state.failed) return retval;
+            if ( state.backtracking==0 ) stream_conceitos.add(conceitos1.getTree());
 
-            dbg.location(4,14);
-            match(input,19,FOLLOW_19_in_mapaconceitos13); 
-            dbg.location(4,18);
-            pushFollow(FOLLOW_assocs_in_mapaconceitos15);
-            assocs();
+            char_literal2=(Token)match(input,28,FOLLOW_28_in_mapaconceitos115); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_28.add(char_literal2);
 
-            state._fsp--;
 
-            dbg.location(4,24);
-            match(input,19,FOLLOW_19_in_mapaconceitos16); 
-            dbg.location(4,29);
-            pushFollow(FOLLOW_mapas_in_mapaconceitos19);
-            mapas();
+            pushFollow(FOLLOW_assocs_in_mapaconceitos117);
+            assocs3=assocs();
 
             state._fsp--;
+            if (state.failed) return retval;
+            if ( state.backtracking==0 ) stream_assocs.add(assocs3.getTree());
 
-            dbg.location(4,35);
-            match(input,19,FOLLOW_19_in_mapaconceitos21); 
-            dbg.location(4,39);
-            pushFollow(FOLLOW_instancias_in_mapaconceitos23);
-            instancias();
+            char_literal4=(Token)match(input,28,FOLLOW_28_in_mapaconceitos119); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_28.add(char_literal4);
 
-            state._fsp--;
 
-            dbg.location(4,50);
-            match(input,19,FOLLOW_19_in_mapaconceitos25); 
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:25:29: ( propriedades ';' )?
+            int alt1=2;
+            int LA1_0 = input.LA(1);
+
+            if ( (LA1_0==PROPRIEDADE) ) {
+                alt1=1;
+            }
+            switch (alt1) {
+                case 1 :
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:25:30: propriedades ';'
+                    {
+                    pushFollow(FOLLOW_propriedades_in_mapaconceitos122);
+                    propriedades5=propriedades();
+
+                    state._fsp--;
+                    if (state.failed) return retval;
+                    if ( state.backtracking==0 ) stream_propriedades.add(propriedades5.getTree());
+
+                    char_literal6=(Token)match(input,28,FOLLOW_28_in_mapaconceitos124); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_28.add(char_literal6);
+
+
+                    }
+                    break;
 
             }
 
+
+            pushFollow(FOLLOW_mapas_in_mapaconceitos129);
+            mapas7=mapas();
+
+            state._fsp--;
+            if (state.failed) return retval;
+            if ( state.backtracking==0 ) stream_mapas.add(mapas7.getTree());
+
+            char_literal8=(Token)match(input,28,FOLLOW_28_in_mapaconceitos131); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_28.add(char_literal8);
+
+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:25:60: ( instancias ';' )?
+            int alt2=2;
+            int LA2_0 = input.LA(1);
+
+            if ( (LA2_0==INSTANCIA) ) {
+                alt2=1;
+            }
+            switch (alt2) {
+                case 1 :
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:25:61: instancias ';'
+                    {
+                    pushFollow(FOLLOW_instancias_in_mapaconceitos134);
+                    instancias9=instancias();
+
+                    state._fsp--;
+                    if (state.failed) return retval;
+                    if ( state.backtracking==0 ) stream_instancias.add(instancias9.getTree());
+
+                    char_literal10=(Token)match(input,28,FOLLOW_28_in_mapaconceitos136); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_28.add(char_literal10);
+
+
+                    }
+                    break;
+
+            }
+
+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:25:78: ( instanciasMapas ';' )?
+            int alt3=2;
+            int LA3_0 = input.LA(1);
+
+            if ( (LA3_0==INSTANCIAMAPA) ) {
+                alt3=1;
+            }
+            switch (alt3) {
+                case 1 :
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:25:79: instanciasMapas ';'
+                    {
+                    pushFollow(FOLLOW_instanciasMapas_in_mapaconceitos141);
+                    instanciasMapas11=instanciasMapas();
+
+                    state._fsp--;
+                    if (state.failed) return retval;
+                    if ( state.backtracking==0 ) stream_instanciasMapas.add(instanciasMapas11.getTree());
+
+                    char_literal12=(Token)match(input,28,FOLLOW_28_in_mapaconceitos143); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_28.add(char_literal12);
+
+
+                    }
+                    break;
+
+            }
+
+
+            // AST REWRITE
+            // elements: instancias, mapas, conceitos, instanciasMapas, propriedades, assocs
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 26:2: -> ^( MAPACONCEITOS conceitos assocs ( propriedades )? mapas ( instancias )? ( instanciasMapas )? )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:26:5: ^( MAPACONCEITOS conceitos assocs ( propriedades )? mapas ( instancias )? ( instanciasMapas )? )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                (Object)adaptor.create(MAPACONCEITOS, "MAPACONCEITOS")
+                , root_1);
+
+                adaptor.addChild(root_1, stream_conceitos.nextTree());
+
+                adaptor.addChild(root_1, stream_assocs.nextTree());
+
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:26:38: ( propriedades )?
+                if ( stream_propriedades.hasNext() ) {
+                    adaptor.addChild(root_1, stream_propriedades.nextTree());
+
+                }
+                stream_propriedades.reset();
+
+                adaptor.addChild(root_1, stream_mapas.nextTree());
+
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:26:58: ( instancias )?
+                if ( stream_instancias.hasNext() ) {
+                    adaptor.addChild(root_1, stream_instancias.nextTree());
+
+                }
+                stream_instancias.reset();
+
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:26:70: ( instanciasMapas )?
+                if ( stream_instanciasMapas.hasNext() ) {
+                    adaptor.addChild(root_1, stream_instanciasMapas.nextTree());
+
+                }
+                stream_instanciasMapas.reset();
+
+                adaptor.addChild(root_0, root_1);
+                }
+
+            }
+
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
         }
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
         }
 
         finally {
         	// do for sure before leaving
         }
-        dbg.location(4, 52);
-
-        }
-        finally {
-            dbg.exitRule(getGrammarFileName(), "mapaconceitos");
-            decRuleLevel();
-            if ( getRuleLevel()==0 ) {dbg.terminate();}
-        }
-
-        return ;
+        return retval;
     }
     // $ANTLR end "mapaconceitos"
 
 
+    public static class conceitos_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
+
 
     // $ANTLR start "conceitos"
-    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:6:1: conceitos : conceito ( ';' conceito )* ;
-    public final void conceitos() throws RecognitionException {
-        try { dbg.enterRule(getGrammarFileName(), "conceitos");
-        if ( getRuleLevel()==0 ) {dbg.commence();}
-        incRuleLevel();
-        dbg.location(6, 0);
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:29:1: conceitos : conceito ( ';' conceito )* -> ^( CONCEITOS ( conceito )+ ) ;
+    public final mapaconceitosParser.conceitos_return conceitos() throws RecognitionException {
+        mapaconceitosParser.conceitos_return retval = new mapaconceitosParser.conceitos_return();
+        retval.start = input.LT(1);
 
+
+        Object root_0 = null;
+
+        Token char_literal14=null;
+        mapaconceitosParser.conceito_return conceito13 =null;
+
+        mapaconceitosParser.conceito_return conceito15 =null;
+
+
+        Object char_literal14_tree=null;
+        RewriteRuleTokenStream stream_28=new RewriteRuleTokenStream(adaptor,"token 28");
+        RewriteRuleSubtreeStream stream_conceito=new RewriteRuleSubtreeStream(adaptor,"rule conceito");
         try {
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:7:2: ( conceito ( ';' conceito )* )
-            dbg.enterAlt(1);
-
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:7:4: conceito ( ';' conceito )*
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:30:2: ( conceito ( ';' conceito )* -> ^( CONCEITOS ( conceito )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:30:4: conceito ( ';' conceito )*
             {
-            dbg.location(7,4);
-            pushFollow(FOLLOW_conceito_in_conceitos35);
-            conceito();
+            pushFollow(FOLLOW_conceito_in_conceitos179);
+            conceito13=conceito();
 
             state._fsp--;
+            if (state.failed) return retval;
+            if ( state.backtracking==0 ) stream_conceito.add(conceito13.getTree());
 
-            dbg.location(7,13);
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:7:13: ( ';' conceito )*
-            try { dbg.enterSubRule(1);
-
-            loop1:
-            do {
-                int alt1=2;
-                try { dbg.enterDecision(1, decisionCanBacktrack[1]);
-
-                int LA1_0 = input.LA(1);
-
-                if ( (LA1_0==19) ) {
-                    int LA1_1 = input.LA(2);
-
-                    if ( (LA1_1==CONCEITO) ) {
-                        alt1=1;
-                    }
-
-
-                }
-
-
-                } finally {dbg.exitDecision(1);}
-
-                switch (alt1) {
-            	case 1 :
-            	    dbg.enterAlt(1);
-
-            	    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:7:14: ';' conceito
-            	    {
-            	    dbg.location(7,14);
-            	    match(input,19,FOLLOW_19_in_conceitos38); 
-            	    dbg.location(7,18);
-            	    pushFollow(FOLLOW_conceito_in_conceitos40);
-            	    conceito();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop1;
-                }
-            } while (true);
-            } finally {dbg.exitSubRule(1);}
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-
-        finally {
-        	// do for sure before leaving
-        }
-        dbg.location(7, 27);
-
-        }
-        finally {
-            dbg.exitRule(getGrammarFileName(), "conceitos");
-            decRuleLevel();
-            if ( getRuleLevel()==0 ) {dbg.terminate();}
-        }
-
-        return ;
-    }
-    // $ANTLR end "conceitos"
-
-
-
-    // $ANTLR start "conceito"
-    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:9:1: conceito : CONCEITO '(' STRING ')' ;
-    public final void conceito() throws RecognitionException {
-        Token STRING1=null;
-
-        try { dbg.enterRule(getGrammarFileName(), "conceito");
-        if ( getRuleLevel()==0 ) {dbg.commence();}
-        incRuleLevel();
-        dbg.location(9, 0);
-
-        try {
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:9:9: ( CONCEITO '(' STRING ')' )
-            dbg.enterAlt(1);
-
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:9:11: CONCEITO '(' STRING ')'
-            {
-            dbg.location(9,11);
-            match(input,CONCEITO,FOLLOW_CONCEITO_in_conceito49); 
-            dbg.location(9,20);
-            match(input,16,FOLLOW_16_in_conceito51); 
-            dbg.location(9,24);
-            STRING1=(Token)match(input,STRING,FOLLOW_STRING_in_conceito53); 
-            dbg.location(9,31);
-            match(input,17,FOLLOW_17_in_conceito55); 
-            dbg.location(9,36);
-             System.out.println("INSERT INTO Conceitos VALUES('" + (STRING1!=null?STRING1.getText():null) + "');\n");
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-
-        finally {
-        	// do for sure before leaving
-        }
-        dbg.location(9, 116);
-
-        }
-        finally {
-            dbg.exitRule(getGrammarFileName(), "conceito");
-            decRuleLevel();
-            if ( getRuleLevel()==0 ) {dbg.terminate();}
-        }
-
-        return ;
-    }
-    // $ANTLR end "conceito"
-
-
-
-    // $ANTLR start "assocs"
-    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:11:1: assocs : assoc ( ';' assoc )* ;
-    public final void assocs() throws RecognitionException {
-        try { dbg.enterRule(getGrammarFileName(), "assocs");
-        if ( getRuleLevel()==0 ) {dbg.commence();}
-        incRuleLevel();
-        dbg.location(11, 0);
-
-        try {
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:11:8: ( assoc ( ';' assoc )* )
-            dbg.enterAlt(1);
-
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:11:10: assoc ( ';' assoc )*
-            {
-            dbg.location(11,10);
-            pushFollow(FOLLOW_assoc_in_assocs66);
-            assoc();
-
-            state._fsp--;
-
-            dbg.location(11,16);
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:11:16: ( ';' assoc )*
-            try { dbg.enterSubRule(2);
-
-            loop2:
-            do {
-                int alt2=2;
-                try { dbg.enterDecision(2, decisionCanBacktrack[2]);
-
-                int LA2_0 = input.LA(1);
-
-                if ( (LA2_0==19) ) {
-                    int LA2_1 = input.LA(2);
-
-                    if ( (LA2_1==ASSOC) ) {
-                        alt2=1;
-                    }
-
-
-                }
-
-
-                } finally {dbg.exitDecision(2);}
-
-                switch (alt2) {
-            	case 1 :
-            	    dbg.enterAlt(1);
-
-            	    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:11:17: ';' assoc
-            	    {
-            	    dbg.location(11,17);
-            	    match(input,19,FOLLOW_19_in_assocs69); 
-            	    dbg.location(11,21);
-            	    pushFollow(FOLLOW_assoc_in_assocs71);
-            	    assoc();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop2;
-                }
-            } while (true);
-            } finally {dbg.exitSubRule(2);}
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-
-        finally {
-        	// do for sure before leaving
-        }
-        dbg.location(11, 27);
-
-        }
-        finally {
-            dbg.exitRule(getGrammarFileName(), "assocs");
-            decRuleLevel();
-            if ( getRuleLevel()==0 ) {dbg.terminate();}
-        }
-
-        return ;
-    }
-    // $ANTLR end "assocs"
-
-
-
-    // $ANTLR start "assoc"
-    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:13:1: assoc : ASSOC '(' STRING ')' ;
-    public final void assoc() throws RecognitionException {
-        Token STRING2=null;
-
-        try { dbg.enterRule(getGrammarFileName(), "assoc");
-        if ( getRuleLevel()==0 ) {dbg.commence();}
-        incRuleLevel();
-        dbg.location(13, 0);
-
-        try {
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:13:7: ( ASSOC '(' STRING ')' )
-            dbg.enterAlt(1);
-
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:13:9: ASSOC '(' STRING ')'
-            {
-            dbg.location(13,9);
-            match(input,ASSOC,FOLLOW_ASSOC_in_assoc81); 
-            dbg.location(13,15);
-            match(input,16,FOLLOW_16_in_assoc83); 
-            dbg.location(13,19);
-            STRING2=(Token)match(input,STRING,FOLLOW_STRING_in_assoc85); 
-            dbg.location(13,26);
-            match(input,17,FOLLOW_17_in_assoc87); 
-            dbg.location(13,32);
-             System.out.println("INSERT INTO Associacoes VALUES('" + (STRING2!=null?STRING2.getText():null) + "');\n");
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-
-        finally {
-        	// do for sure before leaving
-        }
-        dbg.location(13, 114);
-
-        }
-        finally {
-            dbg.exitRule(getGrammarFileName(), "assoc");
-            decRuleLevel();
-            if ( getRuleLevel()==0 ) {dbg.terminate();}
-        }
-
-        return ;
-    }
-    // $ANTLR end "assoc"
-
-
-
-    // $ANTLR start "mapas"
-    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:15:1: mapas : mapa ( ';' mapa )* ;
-    public final void mapas() throws RecognitionException {
-        try { dbg.enterRule(getGrammarFileName(), "mapas");
-        if ( getRuleLevel()==0 ) {dbg.commence();}
-        incRuleLevel();
-        dbg.location(15, 0);
-
-        try {
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:15:7: ( mapa ( ';' mapa )* )
-            dbg.enterAlt(1);
-
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:15:9: mapa ( ';' mapa )*
-            {
-            dbg.location(15,9);
-            pushFollow(FOLLOW_mapa_in_mapas99);
-            mapa();
-
-            state._fsp--;
-
-            dbg.location(15,14);
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:15:14: ( ';' mapa )*
-            try { dbg.enterSubRule(3);
-
-            loop3:
-            do {
-                int alt3=2;
-                try { dbg.enterDecision(3, decisionCanBacktrack[3]);
-
-                int LA3_0 = input.LA(1);
-
-                if ( (LA3_0==19) ) {
-                    int LA3_1 = input.LA(2);
-
-                    if ( (LA3_1==MAPA) ) {
-                        alt3=1;
-                    }
-
-
-                }
-
-
-                } finally {dbg.exitDecision(3);}
-
-                switch (alt3) {
-            	case 1 :
-            	    dbg.enterAlt(1);
-
-            	    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:15:15: ';' mapa
-            	    {
-            	    dbg.location(15,15);
-            	    match(input,19,FOLLOW_19_in_mapas102); 
-            	    dbg.location(15,19);
-            	    pushFollow(FOLLOW_mapa_in_mapas104);
-            	    mapa();
-
-            	    state._fsp--;
-
-
-            	    }
-            	    break;
-
-            	default :
-            	    break loop3;
-                }
-            } while (true);
-            } finally {dbg.exitSubRule(3);}
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-
-        finally {
-        	// do for sure before leaving
-        }
-        dbg.location(15, 25);
-
-        }
-        finally {
-            dbg.exitRule(getGrammarFileName(), "mapas");
-            decRuleLevel();
-            if ( getRuleLevel()==0 ) {dbg.terminate();}
-        }
-
-        return ;
-    }
-    // $ANTLR end "mapas"
-
-
-
-    // $ANTLR start "mapa"
-    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:17:1: mapa : MAPA '(' cP= STRING ',' a= STRING ',' cF= STRING ')' ;
-    public final void mapa() throws RecognitionException {
-        Token cP=null;
-        Token a=null;
-        Token cF=null;
-
-        try { dbg.enterRule(getGrammarFileName(), "mapa");
-        if ( getRuleLevel()==0 ) {dbg.commence();}
-        incRuleLevel();
-        dbg.location(17, 0);
-
-        try {
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:17:6: ( MAPA '(' cP= STRING ',' a= STRING ',' cF= STRING ')' )
-            dbg.enterAlt(1);
-
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:17:8: MAPA '(' cP= STRING ',' a= STRING ',' cF= STRING ')'
-            {
-            dbg.location(17,8);
-            match(input,MAPA,FOLLOW_MAPA_in_mapa115); 
-            dbg.location(17,13);
-            match(input,16,FOLLOW_16_in_mapa117); 
-            dbg.location(17,19);
-            cP=(Token)match(input,STRING,FOLLOW_STRING_in_mapa121); 
-            dbg.location(17,27);
-            match(input,18,FOLLOW_18_in_mapa123); 
-            dbg.location(17,32);
-            a=(Token)match(input,STRING,FOLLOW_STRING_in_mapa127); 
-            dbg.location(17,40);
-            match(input,18,FOLLOW_18_in_mapa129); 
-            dbg.location(17,46);
-            cF=(Token)match(input,STRING,FOLLOW_STRING_in_mapa133); 
-            dbg.location(17,54);
-            match(input,17,FOLLOW_17_in_mapa135); 
-            dbg.location(18,7);
-             System.out.println("INSERT INTO Mapas VALUES('" + (cP!=null?cP.getText():null) + "," + (a!=null?a.getText():null) + "," + (cF!=null?cF.getText():null) + "');\n");
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-
-        finally {
-        	// do for sure before leaving
-        }
-        dbg.location(19, 1);
-
-        }
-        finally {
-            dbg.exitRule(getGrammarFileName(), "mapa");
-            decRuleLevel();
-            if ( getRuleLevel()==0 ) {dbg.terminate();}
-        }
-
-        return ;
-    }
-    // $ANTLR end "mapa"
-
-
-
-    // $ANTLR start "instancias"
-    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:21:1: instancias : instancia ( ';' instancia )* ;
-    public final void instancias() throws RecognitionException {
-        try { dbg.enterRule(getGrammarFileName(), "instancias");
-        if ( getRuleLevel()==0 ) {dbg.commence();}
-        incRuleLevel();
-        dbg.location(21, 0);
-
-        try {
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:22:2: ( instancia ( ';' instancia )* )
-            dbg.enterAlt(1);
-
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:22:4: instancia ( ';' instancia )*
-            {
-            dbg.location(22,4);
-            pushFollow(FOLLOW_instancia_in_instancias154);
-            instancia();
-
-            state._fsp--;
-
-            dbg.location(22,14);
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:22:14: ( ';' instancia )*
-            try { dbg.enterSubRule(4);
-
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:30:13: ( ';' conceito )*
             loop4:
             do {
                 int alt4=2;
-                try { dbg.enterDecision(4, decisionCanBacktrack[4]);
-
                 int LA4_0 = input.LA(1);
 
-                if ( (LA4_0==19) ) {
+                if ( (LA4_0==28) ) {
                     int LA4_1 = input.LA(2);
 
-                    if ( (LA4_1==INSTANCIA) ) {
+                    if ( (LA4_1==CONCEITO) ) {
                         alt4=1;
                     }
 
@@ -658,22 +375,20 @@ protected boolean evalPredicate(boolean result, String predicate) {
                 }
 
 
-                } finally {dbg.exitDecision(4);}
-
                 switch (alt4) {
             	case 1 :
-            	    dbg.enterAlt(1);
-
-            	    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:22:15: ';' instancia
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:30:14: ';' conceito
             	    {
-            	    dbg.location(22,15);
-            	    match(input,19,FOLLOW_19_in_instancias157); 
-            	    dbg.location(22,19);
-            	    pushFollow(FOLLOW_instancia_in_instancias159);
-            	    instancia();
+            	    char_literal14=(Token)match(input,28,FOLLOW_28_in_conceitos182); if (state.failed) return retval; 
+            	    if ( state.backtracking==0 ) stream_28.add(char_literal14);
+
+
+            	    pushFollow(FOLLOW_conceito_in_conceitos184);
+            	    conceito15=conceito();
 
             	    state._fsp--;
-
+            	    if (state.failed) return retval;
+            	    if ( state.backtracking==0 ) stream_conceito.add(conceito15.getTree());
 
             	    }
             	    break;
@@ -682,146 +397,250 @@ protected boolean evalPredicate(boolean result, String predicate) {
             	    break loop4;
                 }
             } while (true);
-            } finally {dbg.exitSubRule(4);}
 
+
+            // AST REWRITE
+            // elements: conceito
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 31:2: -> ^( CONCEITOS ( conceito )+ )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:31:5: ^( CONCEITOS ( conceito )+ )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                (Object)adaptor.create(CONCEITOS, "CONCEITOS")
+                , root_1);
+
+                if ( !(stream_conceito.hasNext()) ) {
+                    throw new RewriteEarlyExitException();
+                }
+                while ( stream_conceito.hasNext() ) {
+                    adaptor.addChild(root_1, stream_conceito.nextTree());
+
+                }
+                stream_conceito.reset();
+
+                adaptor.addChild(root_0, root_1);
+                }
 
             }
 
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
         }
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
         }
 
         finally {
         	// do for sure before leaving
         }
-        dbg.location(22, 29);
-
-        }
-        finally {
-            dbg.exitRule(getGrammarFileName(), "instancias");
-            decRuleLevel();
-            if ( getRuleLevel()==0 ) {dbg.terminate();}
-        }
-
-        return ;
+        return retval;
     }
-    // $ANTLR end "instancias"
+    // $ANTLR end "conceitos"
 
 
+    public static class conceito_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
 
-    // $ANTLR start "instancia"
-    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:25:1: instancia : INSTANCIA '(' c= STRING '[' propriedades ']' ;
-    public final void instancia() throws RecognitionException {
-        Token c=null;
 
-        try { dbg.enterRule(getGrammarFileName(), "instancia");
-        if ( getRuleLevel()==0 ) {dbg.commence();}
-        incRuleLevel();
-        dbg.location(25, 0);
+    // $ANTLR start "conceito"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:34:1: conceito : CONCEITO '(' STRING ')' -> ^( CONCEITO STRING ) ;
+    public final mapaconceitosParser.conceito_return conceito() throws RecognitionException {
+        mapaconceitosParser.conceito_return retval = new mapaconceitosParser.conceito_return();
+        retval.start = input.LT(1);
+
+
+        Object root_0 = null;
+
+        Token CONCEITO16=null;
+        Token char_literal17=null;
+        Token STRING18=null;
+        Token char_literal19=null;
+
+        Object CONCEITO16_tree=null;
+        Object char_literal17_tree=null;
+        Object STRING18_tree=null;
+        Object char_literal19_tree=null;
+        RewriteRuleTokenStream stream_CONCEITO=new RewriteRuleTokenStream(adaptor,"token CONCEITO");
+        RewriteRuleTokenStream stream_25=new RewriteRuleTokenStream(adaptor,"token 25");
+        RewriteRuleTokenStream stream_26=new RewriteRuleTokenStream(adaptor,"token 26");
+        RewriteRuleTokenStream stream_STRING=new RewriteRuleTokenStream(adaptor,"token STRING");
 
         try {
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:26:2: ( INSTANCIA '(' c= STRING '[' propriedades ']' )
-            dbg.enterAlt(1);
-
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:26:4: INSTANCIA '(' c= STRING '[' propriedades ']'
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:35:2: ( CONCEITO '(' STRING ')' -> ^( CONCEITO STRING ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:35:4: CONCEITO '(' STRING ')'
             {
-            dbg.location(26,4);
-            match(input,INSTANCIA,FOLLOW_INSTANCIA_in_instancia171); 
-            dbg.location(26,14);
-            match(input,16,FOLLOW_16_in_instancia173); 
-            dbg.location(26,19);
-            c=(Token)match(input,STRING,FOLLOW_STRING_in_instancia177); 
-            dbg.location(26,27);
-            match(input,21,FOLLOW_21_in_instancia179); 
-            dbg.location(26,31);
-            pushFollow(FOLLOW_propriedades_in_instancia181);
-            propriedades();
+            CONCEITO16=(Token)match(input,CONCEITO,FOLLOW_CONCEITO_in_conceito207); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_CONCEITO.add(CONCEITO16);
 
-            state._fsp--;
 
-            dbg.location(26,44);
-            match(input,22,FOLLOW_22_in_instancia183); 
+            char_literal17=(Token)match(input,25,FOLLOW_25_in_conceito209); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_25.add(char_literal17);
+
+
+            STRING18=(Token)match(input,STRING,FOLLOW_STRING_in_conceito211); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_STRING.add(STRING18);
+
+
+            char_literal19=(Token)match(input,26,FOLLOW_26_in_conceito213); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_26.add(char_literal19);
+
+
+            // AST REWRITE
+            // elements: STRING, CONCEITO
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 36:2: -> ^( CONCEITO STRING )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:36:5: ^( CONCEITO STRING )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                stream_CONCEITO.nextNode()
+                , root_1);
+
+                adaptor.addChild(root_1, 
+                stream_STRING.nextNode()
+                );
+
+                adaptor.addChild(root_0, root_1);
+                }
 
             }
 
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
         }
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
         }
 
         finally {
         	// do for sure before leaving
         }
-        dbg.location(26, 46);
-
-        }
-        finally {
-            dbg.exitRule(getGrammarFileName(), "instancia");
-            decRuleLevel();
-            if ( getRuleLevel()==0 ) {dbg.terminate();}
-        }
-
-        return ;
+        return retval;
     }
-    // $ANTLR end "instancia"
+    // $ANTLR end "conceito"
 
 
+    public static class assocs_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
 
-    // $ANTLR start "propriedades"
-    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:28:1: propriedades : propriedade ( ',' propriedade )* ;
-    public final void propriedades() throws RecognitionException {
-        try { dbg.enterRule(getGrammarFileName(), "propriedades");
-        if ( getRuleLevel()==0 ) {dbg.commence();}
-        incRuleLevel();
-        dbg.location(28, 0);
 
+    // $ANTLR start "assocs"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:39:1: assocs : assoc ( ';' assoc )* -> ^( ASSOCIACOES ( assoc )+ ) ;
+    public final mapaconceitosParser.assocs_return assocs() throws RecognitionException {
+        mapaconceitosParser.assocs_return retval = new mapaconceitosParser.assocs_return();
+        retval.start = input.LT(1);
+
+
+        Object root_0 = null;
+
+        Token char_literal21=null;
+        mapaconceitosParser.assoc_return assoc20 =null;
+
+        mapaconceitosParser.assoc_return assoc22 =null;
+
+
+        Object char_literal21_tree=null;
+        RewriteRuleTokenStream stream_28=new RewriteRuleTokenStream(adaptor,"token 28");
+        RewriteRuleSubtreeStream stream_assoc=new RewriteRuleSubtreeStream(adaptor,"rule assoc");
         try {
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:29:2: ( propriedade ( ',' propriedade )* )
-            dbg.enterAlt(1);
-
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:29:4: propriedade ( ',' propriedade )*
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:40:2: ( assoc ( ';' assoc )* -> ^( ASSOCIACOES ( assoc )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:40:4: assoc ( ';' assoc )*
             {
-            dbg.location(29,4);
-            pushFollow(FOLLOW_propriedade_in_propriedades192);
-            propriedade();
+            pushFollow(FOLLOW_assoc_in_assocs234);
+            assoc20=assoc();
 
             state._fsp--;
+            if (state.failed) return retval;
+            if ( state.backtracking==0 ) stream_assoc.add(assoc20.getTree());
 
-            dbg.location(29,16);
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:29:16: ( ',' propriedade )*
-            try { dbg.enterSubRule(5);
-
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:40:10: ( ';' assoc )*
             loop5:
             do {
                 int alt5=2;
-                try { dbg.enterDecision(5, decisionCanBacktrack[5]);
-
                 int LA5_0 = input.LA(1);
 
-                if ( (LA5_0==18) ) {
-                    alt5=1;
+                if ( (LA5_0==28) ) {
+                    int LA5_1 = input.LA(2);
+
+                    if ( (LA5_1==ASSOCIACAO) ) {
+                        alt5=1;
+                    }
+
+
                 }
 
 
-                } finally {dbg.exitDecision(5);}
-
                 switch (alt5) {
             	case 1 :
-            	    dbg.enterAlt(1);
-
-            	    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:29:17: ',' propriedade
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:40:11: ';' assoc
             	    {
-            	    dbg.location(29,17);
-            	    match(input,18,FOLLOW_18_in_propriedades195); 
-            	    dbg.location(29,21);
-            	    pushFollow(FOLLOW_propriedade_in_propriedades197);
-            	    propriedade();
+            	    char_literal21=(Token)match(input,28,FOLLOW_28_in_assocs237); if (state.failed) return retval; 
+            	    if ( state.backtracking==0 ) stream_28.add(char_literal21);
+
+
+            	    pushFollow(FOLLOW_assoc_in_assocs239);
+            	    assoc22=assoc();
 
             	    state._fsp--;
-
+            	    if (state.failed) return retval;
+            	    if ( state.backtracking==0 ) stream_assoc.add(assoc22.getTree());
 
             	    }
             	    break;
@@ -830,135 +649,1603 @@ protected boolean evalPredicate(boolean result, String predicate) {
             	    break loop5;
                 }
             } while (true);
-            } finally {dbg.exitSubRule(5);}
 
+
+            // AST REWRITE
+            // elements: assoc
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 41:2: -> ^( ASSOCIACOES ( assoc )+ )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:41:5: ^( ASSOCIACOES ( assoc )+ )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                (Object)adaptor.create(ASSOCIACOES, "ASSOCIACOES")
+                , root_1);
+
+                if ( !(stream_assoc.hasNext()) ) {
+                    throw new RewriteEarlyExitException();
+                }
+                while ( stream_assoc.hasNext() ) {
+                    adaptor.addChild(root_1, stream_assoc.nextTree());
+
+                }
+                stream_assoc.reset();
+
+                adaptor.addChild(root_0, root_1);
+                }
 
             }
 
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
         }
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
         }
 
         finally {
         	// do for sure before leaving
         }
-        dbg.location(29, 33);
+        return retval;
+    }
+    // $ANTLR end "assocs"
+
+
+    public static class assoc_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
+
+
+    // $ANTLR start "assoc"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:44:1: assoc : ASSOCIACAO '(' STRING ')' -> ^( ASSOCIACAO STRING ) ;
+    public final mapaconceitosParser.assoc_return assoc() throws RecognitionException {
+        mapaconceitosParser.assoc_return retval = new mapaconceitosParser.assoc_return();
+        retval.start = input.LT(1);
+
+
+        Object root_0 = null;
+
+        Token ASSOCIACAO23=null;
+        Token char_literal24=null;
+        Token STRING25=null;
+        Token char_literal26=null;
+
+        Object ASSOCIACAO23_tree=null;
+        Object char_literal24_tree=null;
+        Object STRING25_tree=null;
+        Object char_literal26_tree=null;
+        RewriteRuleTokenStream stream_ASSOCIACAO=new RewriteRuleTokenStream(adaptor,"token ASSOCIACAO");
+        RewriteRuleTokenStream stream_25=new RewriteRuleTokenStream(adaptor,"token 25");
+        RewriteRuleTokenStream stream_26=new RewriteRuleTokenStream(adaptor,"token 26");
+        RewriteRuleTokenStream stream_STRING=new RewriteRuleTokenStream(adaptor,"token STRING");
+
+        try {
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:45:2: ( ASSOCIACAO '(' STRING ')' -> ^( ASSOCIACAO STRING ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:45:4: ASSOCIACAO '(' STRING ')'
+            {
+            ASSOCIACAO23=(Token)match(input,ASSOCIACAO,FOLLOW_ASSOCIACAO_in_assoc263); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_ASSOCIACAO.add(ASSOCIACAO23);
+
+
+            char_literal24=(Token)match(input,25,FOLLOW_25_in_assoc265); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_25.add(char_literal24);
+
+
+            STRING25=(Token)match(input,STRING,FOLLOW_STRING_in_assoc267); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_STRING.add(STRING25);
+
+
+            char_literal26=(Token)match(input,26,FOLLOW_26_in_assoc269); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_26.add(char_literal26);
+
+
+            // AST REWRITE
+            // elements: ASSOCIACAO, STRING
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 46:2: -> ^( ASSOCIACAO STRING )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:46:5: ^( ASSOCIACAO STRING )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                stream_ASSOCIACAO.nextNode()
+                , root_1);
+
+                adaptor.addChild(root_1, 
+                stream_STRING.nextNode()
+                );
+
+                adaptor.addChild(root_0, root_1);
+                }
+
+            }
+
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
 
         }
+
         finally {
-            dbg.exitRule(getGrammarFileName(), "propriedades");
-            decRuleLevel();
-            if ( getRuleLevel()==0 ) {dbg.terminate();}
+        	// do for sure before leaving
+        }
+        return retval;
+    }
+    // $ANTLR end "assoc"
+
+
+    public static class propriedades_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
+
+
+    // $ANTLR start "propriedades"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:49:1: propriedades : propriedade ( ';' propriedade )* -> ^( PROPRIEDADES ( propriedade )+ ) ;
+    public final mapaconceitosParser.propriedades_return propriedades() throws RecognitionException {
+        mapaconceitosParser.propriedades_return retval = new mapaconceitosParser.propriedades_return();
+        retval.start = input.LT(1);
+
+
+        Object root_0 = null;
+
+        Token char_literal28=null;
+        mapaconceitosParser.propriedade_return propriedade27 =null;
+
+        mapaconceitosParser.propriedade_return propriedade29 =null;
+
+
+        Object char_literal28_tree=null;
+        RewriteRuleTokenStream stream_28=new RewriteRuleTokenStream(adaptor,"token 28");
+        RewriteRuleSubtreeStream stream_propriedade=new RewriteRuleSubtreeStream(adaptor,"rule propriedade");
+        try {
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:50:2: ( propriedade ( ';' propriedade )* -> ^( PROPRIEDADES ( propriedade )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:50:4: propriedade ( ';' propriedade )*
+            {
+            pushFollow(FOLLOW_propriedade_in_propriedades289);
+            propriedade27=propriedade();
+
+            state._fsp--;
+            if (state.failed) return retval;
+            if ( state.backtracking==0 ) stream_propriedade.add(propriedade27.getTree());
+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:50:16: ( ';' propriedade )*
+            loop6:
+            do {
+                int alt6=2;
+                int LA6_0 = input.LA(1);
+
+                if ( (LA6_0==28) ) {
+                    int LA6_1 = input.LA(2);
+
+                    if ( (LA6_1==PROPRIEDADE) ) {
+                        alt6=1;
+                    }
+
+
+                }
+
+
+                switch (alt6) {
+            	case 1 :
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:50:17: ';' propriedade
+            	    {
+            	    char_literal28=(Token)match(input,28,FOLLOW_28_in_propriedades292); if (state.failed) return retval; 
+            	    if ( state.backtracking==0 ) stream_28.add(char_literal28);
+
+
+            	    pushFollow(FOLLOW_propriedade_in_propriedades294);
+            	    propriedade29=propriedade();
+
+            	    state._fsp--;
+            	    if (state.failed) return retval;
+            	    if ( state.backtracking==0 ) stream_propriedade.add(propriedade29.getTree());
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop6;
+                }
+            } while (true);
+
+
+            // AST REWRITE
+            // elements: propriedade
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 51:2: -> ^( PROPRIEDADES ( propriedade )+ )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:51:5: ^( PROPRIEDADES ( propriedade )+ )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                (Object)adaptor.create(PROPRIEDADES, "PROPRIEDADES")
+                , root_1);
+
+                if ( !(stream_propriedade.hasNext()) ) {
+                    throw new RewriteEarlyExitException();
+                }
+                while ( stream_propriedade.hasNext() ) {
+                    adaptor.addChild(root_1, stream_propriedade.nextTree());
+
+                }
+                stream_propriedade.reset();
+
+                adaptor.addChild(root_0, root_1);
+                }
+
+            }
+
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
         }
 
-        return ;
+        finally {
+        	// do for sure before leaving
+        }
+        return retval;
     }
     // $ANTLR end "propriedades"
 
 
+    public static class propriedade_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
+
 
     // $ANTLR start "propriedade"
-    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:31:1: propriedade : d= STRING '=' v= STRING ;
-    public final void propriedade() throws RecognitionException {
-        Token d=null;
-        Token v=null;
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:54:1: propriedade : PROPRIEDADE '(' STRING ')' -> ^( PROPRIEDADE STRING ) ;
+    public final mapaconceitosParser.propriedade_return propriedade() throws RecognitionException {
+        mapaconceitosParser.propriedade_return retval = new mapaconceitosParser.propriedade_return();
+        retval.start = input.LT(1);
 
-        try { dbg.enterRule(getGrammarFileName(), "propriedade");
-        if ( getRuleLevel()==0 ) {dbg.commence();}
-        incRuleLevel();
-        dbg.location(31, 0);
+
+        Object root_0 = null;
+
+        Token PROPRIEDADE30=null;
+        Token char_literal31=null;
+        Token STRING32=null;
+        Token char_literal33=null;
+
+        Object PROPRIEDADE30_tree=null;
+        Object char_literal31_tree=null;
+        Object STRING32_tree=null;
+        Object char_literal33_tree=null;
+        RewriteRuleTokenStream stream_PROPRIEDADE=new RewriteRuleTokenStream(adaptor,"token PROPRIEDADE");
+        RewriteRuleTokenStream stream_25=new RewriteRuleTokenStream(adaptor,"token 25");
+        RewriteRuleTokenStream stream_26=new RewriteRuleTokenStream(adaptor,"token 26");
+        RewriteRuleTokenStream stream_STRING=new RewriteRuleTokenStream(adaptor,"token STRING");
 
         try {
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:32:2: (d= STRING '=' v= STRING )
-            dbg.enterAlt(1);
-
-            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:32:4: d= STRING '=' v= STRING
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:55:2: ( PROPRIEDADE '(' STRING ')' -> ^( PROPRIEDADE STRING ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:55:4: PROPRIEDADE '(' STRING ')'
             {
-            dbg.location(32,5);
-            d=(Token)match(input,STRING,FOLLOW_STRING_in_propriedade210); 
-            dbg.location(32,13);
-            match(input,20,FOLLOW_20_in_propriedade212); 
-            dbg.location(32,18);
-            v=(Token)match(input,STRING,FOLLOW_STRING_in_propriedade216); 
+            PROPRIEDADE30=(Token)match(input,PROPRIEDADE,FOLLOW_PROPRIEDADE_in_propriedade317); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_PROPRIEDADE.add(PROPRIEDADE30);
+
+
+            char_literal31=(Token)match(input,25,FOLLOW_25_in_propriedade319); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_25.add(char_literal31);
+
+
+            STRING32=(Token)match(input,STRING,FOLLOW_STRING_in_propriedade321); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_STRING.add(STRING32);
+
+
+            char_literal33=(Token)match(input,26,FOLLOW_26_in_propriedade323); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_26.add(char_literal33);
+
+
+            // AST REWRITE
+            // elements: STRING, PROPRIEDADE
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 56:2: -> ^( PROPRIEDADE STRING )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:56:5: ^( PROPRIEDADE STRING )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                stream_PROPRIEDADE.nextNode()
+                , root_1);
+
+                adaptor.addChild(root_1, 
+                stream_STRING.nextNode()
+                );
+
+                adaptor.addChild(root_0, root_1);
+                }
 
             }
 
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
         }
         catch (RecognitionException re) {
             reportError(re);
             recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
         }
 
         finally {
         	// do for sure before leaving
         }
-        dbg.location(32, 24);
-
-        }
-        finally {
-            dbg.exitRule(getGrammarFileName(), "propriedade");
-            decRuleLevel();
-            if ( getRuleLevel()==0 ) {dbg.terminate();}
-        }
-
-        return ;
+        return retval;
     }
     // $ANTLR end "propriedade"
+
+
+    public static class mapas_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
+
+
+    // $ANTLR start "mapas"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:59:1: mapas : mapa ( ';' mapa )* -> ^( MAPAS ( mapa )+ ) ;
+    public final mapaconceitosParser.mapas_return mapas() throws RecognitionException {
+        mapaconceitosParser.mapas_return retval = new mapaconceitosParser.mapas_return();
+        retval.start = input.LT(1);
+
+
+        Object root_0 = null;
+
+        Token char_literal35=null;
+        mapaconceitosParser.mapa_return mapa34 =null;
+
+        mapaconceitosParser.mapa_return mapa36 =null;
+
+
+        Object char_literal35_tree=null;
+        RewriteRuleTokenStream stream_28=new RewriteRuleTokenStream(adaptor,"token 28");
+        RewriteRuleSubtreeStream stream_mapa=new RewriteRuleSubtreeStream(adaptor,"rule mapa");
+        try {
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:60:2: ( mapa ( ';' mapa )* -> ^( MAPAS ( mapa )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:60:4: mapa ( ';' mapa )*
+            {
+            pushFollow(FOLLOW_mapa_in_mapas345);
+            mapa34=mapa();
+
+            state._fsp--;
+            if (state.failed) return retval;
+            if ( state.backtracking==0 ) stream_mapa.add(mapa34.getTree());
+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:60:9: ( ';' mapa )*
+            loop7:
+            do {
+                int alt7=2;
+                int LA7_0 = input.LA(1);
+
+                if ( (LA7_0==28) ) {
+                    int LA7_1 = input.LA(2);
+
+                    if ( (LA7_1==MAPA) ) {
+                        alt7=1;
+                    }
+
+
+                }
+
+
+                switch (alt7) {
+            	case 1 :
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:60:10: ';' mapa
+            	    {
+            	    char_literal35=(Token)match(input,28,FOLLOW_28_in_mapas348); if (state.failed) return retval; 
+            	    if ( state.backtracking==0 ) stream_28.add(char_literal35);
+
+
+            	    pushFollow(FOLLOW_mapa_in_mapas350);
+            	    mapa36=mapa();
+
+            	    state._fsp--;
+            	    if (state.failed) return retval;
+            	    if ( state.backtracking==0 ) stream_mapa.add(mapa36.getTree());
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop7;
+                }
+            } while (true);
+
+
+            // AST REWRITE
+            // elements: mapa
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 61:2: -> ^( MAPAS ( mapa )+ )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:61:5: ^( MAPAS ( mapa )+ )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                (Object)adaptor.create(MAPAS, "MAPAS")
+                , root_1);
+
+                if ( !(stream_mapa.hasNext()) ) {
+                    throw new RewriteEarlyExitException();
+                }
+                while ( stream_mapa.hasNext() ) {
+                    adaptor.addChild(root_1, stream_mapa.nextTree());
+
+                }
+                stream_mapa.reset();
+
+                adaptor.addChild(root_0, root_1);
+                }
+
+            }
+
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
+        }
+
+        finally {
+        	// do for sure before leaving
+        }
+        return retval;
+    }
+    // $ANTLR end "mapas"
+
+
+    public static class mapa_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
+
+
+    // $ANTLR start "mapa"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:64:1: mapa : ( MAPA '(' ID ',' STRING ',' STRING ',' STRING ')' -> ^( MAPA ID STRING STRING STRING ) | MAPA '(' ID ',' STRING ',' STRING ',' 'STRING' ')' -> ^( MAPA ID STRING STRING 'STRING' ) );
+    public final mapaconceitosParser.mapa_return mapa() throws RecognitionException {
+        mapaconceitosParser.mapa_return retval = new mapaconceitosParser.mapa_return();
+        retval.start = input.LT(1);
+
+
+        Object root_0 = null;
+
+        Token MAPA37=null;
+        Token char_literal38=null;
+        Token ID39=null;
+        Token char_literal40=null;
+        Token STRING41=null;
+        Token char_literal42=null;
+        Token STRING43=null;
+        Token char_literal44=null;
+        Token STRING45=null;
+        Token char_literal46=null;
+        Token MAPA47=null;
+        Token char_literal48=null;
+        Token ID49=null;
+        Token char_literal50=null;
+        Token STRING51=null;
+        Token char_literal52=null;
+        Token STRING53=null;
+        Token char_literal54=null;
+        Token string_literal55=null;
+        Token char_literal56=null;
+
+        Object MAPA37_tree=null;
+        Object char_literal38_tree=null;
+        Object ID39_tree=null;
+        Object char_literal40_tree=null;
+        Object STRING41_tree=null;
+        Object char_literal42_tree=null;
+        Object STRING43_tree=null;
+        Object char_literal44_tree=null;
+        Object STRING45_tree=null;
+        Object char_literal46_tree=null;
+        Object MAPA47_tree=null;
+        Object char_literal48_tree=null;
+        Object ID49_tree=null;
+        Object char_literal50_tree=null;
+        Object STRING51_tree=null;
+        Object char_literal52_tree=null;
+        Object STRING53_tree=null;
+        Object char_literal54_tree=null;
+        Object string_literal55_tree=null;
+        Object char_literal56_tree=null;
+        RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
+        RewriteRuleTokenStream stream_MAPA=new RewriteRuleTokenStream(adaptor,"token MAPA");
+        RewriteRuleTokenStream stream_25=new RewriteRuleTokenStream(adaptor,"token 25");
+        RewriteRuleTokenStream stream_26=new RewriteRuleTokenStream(adaptor,"token 26");
+        RewriteRuleTokenStream stream_27=new RewriteRuleTokenStream(adaptor,"token 27");
+        RewriteRuleTokenStream stream_STRING=new RewriteRuleTokenStream(adaptor,"token STRING");
+        RewriteRuleTokenStream stream_29=new RewriteRuleTokenStream(adaptor,"token 29");
+
+        try {
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:65:2: ( MAPA '(' ID ',' STRING ',' STRING ',' STRING ')' -> ^( MAPA ID STRING STRING STRING ) | MAPA '(' ID ',' STRING ',' STRING ',' 'STRING' ')' -> ^( MAPA ID STRING STRING 'STRING' ) )
+            int alt8=2;
+            int LA8_0 = input.LA(1);
+
+            if ( (LA8_0==MAPA) ) {
+                int LA8_1 = input.LA(2);
+
+                if ( (LA8_1==25) ) {
+                    int LA8_2 = input.LA(3);
+
+                    if ( (LA8_2==ID) ) {
+                        int LA8_3 = input.LA(4);
+
+                        if ( (LA8_3==27) ) {
+                            int LA8_4 = input.LA(5);
+
+                            if ( (LA8_4==STRING) ) {
+                                int LA8_5 = input.LA(6);
+
+                                if ( (LA8_5==27) ) {
+                                    int LA8_6 = input.LA(7);
+
+                                    if ( (LA8_6==STRING) ) {
+                                        int LA8_7 = input.LA(8);
+
+                                        if ( (LA8_7==27) ) {
+                                            int LA8_8 = input.LA(9);
+
+                                            if ( (LA8_8==STRING) ) {
+                                                alt8=1;
+                                            }
+                                            else if ( (LA8_8==29) ) {
+                                                alt8=2;
+                                            }
+                                            else {
+                                                if (state.backtracking>0) {state.failed=true; return retval;}
+                                                NoViableAltException nvae =
+                                                    new NoViableAltException("", 8, 8, input);
+
+                                                throw nvae;
+
+                                            }
+                                        }
+                                        else {
+                                            if (state.backtracking>0) {state.failed=true; return retval;}
+                                            NoViableAltException nvae =
+                                                new NoViableAltException("", 8, 7, input);
+
+                                            throw nvae;
+
+                                        }
+                                    }
+                                    else {
+                                        if (state.backtracking>0) {state.failed=true; return retval;}
+                                        NoViableAltException nvae =
+                                            new NoViableAltException("", 8, 6, input);
+
+                                        throw nvae;
+
+                                    }
+                                }
+                                else {
+                                    if (state.backtracking>0) {state.failed=true; return retval;}
+                                    NoViableAltException nvae =
+                                        new NoViableAltException("", 8, 5, input);
+
+                                    throw nvae;
+
+                                }
+                            }
+                            else {
+                                if (state.backtracking>0) {state.failed=true; return retval;}
+                                NoViableAltException nvae =
+                                    new NoViableAltException("", 8, 4, input);
+
+                                throw nvae;
+
+                            }
+                        }
+                        else {
+                            if (state.backtracking>0) {state.failed=true; return retval;}
+                            NoViableAltException nvae =
+                                new NoViableAltException("", 8, 3, input);
+
+                            throw nvae;
+
+                        }
+                    }
+                    else {
+                        if (state.backtracking>0) {state.failed=true; return retval;}
+                        NoViableAltException nvae =
+                            new NoViableAltException("", 8, 2, input);
+
+                        throw nvae;
+
+                    }
+                }
+                else {
+                    if (state.backtracking>0) {state.failed=true; return retval;}
+                    NoViableAltException nvae =
+                        new NoViableAltException("", 8, 1, input);
+
+                    throw nvae;
+
+                }
+            }
+            else {
+                if (state.backtracking>0) {state.failed=true; return retval;}
+                NoViableAltException nvae =
+                    new NoViableAltException("", 8, 0, input);
+
+                throw nvae;
+
+            }
+            switch (alt8) {
+                case 1 :
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:65:4: MAPA '(' ID ',' STRING ',' STRING ',' STRING ')'
+                    {
+                    MAPA37=(Token)match(input,MAPA,FOLLOW_MAPA_in_mapa375); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_MAPA.add(MAPA37);
+
+
+                    char_literal38=(Token)match(input,25,FOLLOW_25_in_mapa377); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_25.add(char_literal38);
+
+
+                    ID39=(Token)match(input,ID,FOLLOW_ID_in_mapa378); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_ID.add(ID39);
+
+
+                    char_literal40=(Token)match(input,27,FOLLOW_27_in_mapa380); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_27.add(char_literal40);
+
+
+                    STRING41=(Token)match(input,STRING,FOLLOW_STRING_in_mapa383); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_STRING.add(STRING41);
+
+
+                    char_literal42=(Token)match(input,27,FOLLOW_27_in_mapa385); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_27.add(char_literal42);
+
+
+                    STRING43=(Token)match(input,STRING,FOLLOW_STRING_in_mapa387); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_STRING.add(STRING43);
+
+
+                    char_literal44=(Token)match(input,27,FOLLOW_27_in_mapa389); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_27.add(char_literal44);
+
+
+                    STRING45=(Token)match(input,STRING,FOLLOW_STRING_in_mapa391); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_STRING.add(STRING45);
+
+
+                    char_literal46=(Token)match(input,26,FOLLOW_26_in_mapa393); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_26.add(char_literal46);
+
+
+                    // AST REWRITE
+                    // elements: STRING, STRING, ID, STRING, MAPA
+                    // token labels: 
+                    // rule labels: retval
+                    // token list labels: 
+                    // rule list labels: 
+                    // wildcard labels: 
+                    if ( state.backtracking==0 ) {
+
+                    retval.tree = root_0;
+                    RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+                    root_0 = (Object)adaptor.nil();
+                    // 66:2: -> ^( MAPA ID STRING STRING STRING )
+                    {
+                        // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:66:5: ^( MAPA ID STRING STRING STRING )
+                        {
+                        Object root_1 = (Object)adaptor.nil();
+                        root_1 = (Object)adaptor.becomeRoot(
+                        stream_MAPA.nextNode()
+                        , root_1);
+
+                        adaptor.addChild(root_1, 
+                        stream_ID.nextNode()
+                        );
+
+                        adaptor.addChild(root_1, 
+                        stream_STRING.nextNode()
+                        );
+
+                        adaptor.addChild(root_1, 
+                        stream_STRING.nextNode()
+                        );
+
+                        adaptor.addChild(root_1, 
+                        stream_STRING.nextNode()
+                        );
+
+                        adaptor.addChild(root_0, root_1);
+                        }
+
+                    }
+
+
+                    retval.tree = root_0;
+                    }
+
+                    }
+                    break;
+                case 2 :
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:67:4: MAPA '(' ID ',' STRING ',' STRING ',' 'STRING' ')'
+                    {
+                    MAPA47=(Token)match(input,MAPA,FOLLOW_MAPA_in_mapa413); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_MAPA.add(MAPA47);
+
+
+                    char_literal48=(Token)match(input,25,FOLLOW_25_in_mapa415); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_25.add(char_literal48);
+
+
+                    ID49=(Token)match(input,ID,FOLLOW_ID_in_mapa416); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_ID.add(ID49);
+
+
+                    char_literal50=(Token)match(input,27,FOLLOW_27_in_mapa418); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_27.add(char_literal50);
+
+
+                    STRING51=(Token)match(input,STRING,FOLLOW_STRING_in_mapa421); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_STRING.add(STRING51);
+
+
+                    char_literal52=(Token)match(input,27,FOLLOW_27_in_mapa423); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_27.add(char_literal52);
+
+
+                    STRING53=(Token)match(input,STRING,FOLLOW_STRING_in_mapa425); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_STRING.add(STRING53);
+
+
+                    char_literal54=(Token)match(input,27,FOLLOW_27_in_mapa427); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_27.add(char_literal54);
+
+
+                    string_literal55=(Token)match(input,29,FOLLOW_29_in_mapa429); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_29.add(string_literal55);
+
+
+                    char_literal56=(Token)match(input,26,FOLLOW_26_in_mapa431); if (state.failed) return retval; 
+                    if ( state.backtracking==0 ) stream_26.add(char_literal56);
+
+
+                    // AST REWRITE
+                    // elements: STRING, MAPA, ID, STRING, 29
+                    // token labels: 
+                    // rule labels: retval
+                    // token list labels: 
+                    // rule list labels: 
+                    // wildcard labels: 
+                    if ( state.backtracking==0 ) {
+
+                    retval.tree = root_0;
+                    RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+                    root_0 = (Object)adaptor.nil();
+                    // 68:2: -> ^( MAPA ID STRING STRING 'STRING' )
+                    {
+                        // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:68:5: ^( MAPA ID STRING STRING 'STRING' )
+                        {
+                        Object root_1 = (Object)adaptor.nil();
+                        root_1 = (Object)adaptor.becomeRoot(
+                        stream_MAPA.nextNode()
+                        , root_1);
+
+                        adaptor.addChild(root_1, 
+                        stream_ID.nextNode()
+                        );
+
+                        adaptor.addChild(root_1, 
+                        stream_STRING.nextNode()
+                        );
+
+                        adaptor.addChild(root_1, 
+                        stream_STRING.nextNode()
+                        );
+
+                        adaptor.addChild(root_1, 
+                        stream_29.nextNode()
+                        );
+
+                        adaptor.addChild(root_0, root_1);
+                        }
+
+                    }
+
+
+                    retval.tree = root_0;
+                    }
+
+                    }
+                    break;
+
+            }
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
+        }
+
+        finally {
+        	// do for sure before leaving
+        }
+        return retval;
+    }
+    // $ANTLR end "mapa"
+
+
+    public static class instancias_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
+
+
+    // $ANTLR start "instancias"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:71:1: instancias : instancia ( ';' instancia )* -> ^( INSTANCIAS ( instancia )+ ) ;
+    public final mapaconceitosParser.instancias_return instancias() throws RecognitionException {
+        mapaconceitosParser.instancias_return retval = new mapaconceitosParser.instancias_return();
+        retval.start = input.LT(1);
+
+
+        Object root_0 = null;
+
+        Token char_literal58=null;
+        mapaconceitosParser.instancia_return instancia57 =null;
+
+        mapaconceitosParser.instancia_return instancia59 =null;
+
+
+        Object char_literal58_tree=null;
+        RewriteRuleTokenStream stream_28=new RewriteRuleTokenStream(adaptor,"token 28");
+        RewriteRuleSubtreeStream stream_instancia=new RewriteRuleSubtreeStream(adaptor,"rule instancia");
+        try {
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:72:2: ( instancia ( ';' instancia )* -> ^( INSTANCIAS ( instancia )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:72:4: instancia ( ';' instancia )*
+            {
+            pushFollow(FOLLOW_instancia_in_instancias457);
+            instancia57=instancia();
+
+            state._fsp--;
+            if (state.failed) return retval;
+            if ( state.backtracking==0 ) stream_instancia.add(instancia57.getTree());
+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:72:14: ( ';' instancia )*
+            loop9:
+            do {
+                int alt9=2;
+                int LA9_0 = input.LA(1);
+
+                if ( (LA9_0==28) ) {
+                    int LA9_1 = input.LA(2);
+
+                    if ( (LA9_1==INSTANCIA) ) {
+                        alt9=1;
+                    }
+
+
+                }
+
+
+                switch (alt9) {
+            	case 1 :
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:72:15: ';' instancia
+            	    {
+            	    char_literal58=(Token)match(input,28,FOLLOW_28_in_instancias460); if (state.failed) return retval; 
+            	    if ( state.backtracking==0 ) stream_28.add(char_literal58);
+
+
+            	    pushFollow(FOLLOW_instancia_in_instancias462);
+            	    instancia59=instancia();
+
+            	    state._fsp--;
+            	    if (state.failed) return retval;
+            	    if ( state.backtracking==0 ) stream_instancia.add(instancia59.getTree());
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop9;
+                }
+            } while (true);
+
+
+            // AST REWRITE
+            // elements: instancia
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 73:2: -> ^( INSTANCIAS ( instancia )+ )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:73:5: ^( INSTANCIAS ( instancia )+ )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                (Object)adaptor.create(INSTANCIAS, "INSTANCIAS")
+                , root_1);
+
+                if ( !(stream_instancia.hasNext()) ) {
+                    throw new RewriteEarlyExitException();
+                }
+                while ( stream_instancia.hasNext() ) {
+                    adaptor.addChild(root_1, stream_instancia.nextTree());
+
+                }
+                stream_instancia.reset();
+
+                adaptor.addChild(root_0, root_1);
+                }
+
+            }
+
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
+        }
+
+        finally {
+        	// do for sure before leaving
+        }
+        return retval;
+    }
+    // $ANTLR end "instancias"
+
+
+    public static class instancia_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
+
+
+    // $ANTLR start "instancia"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:76:1: instancia : INSTANCIA '(' ID ',' STRING ')' -> ^( INSTANCIA ID STRING ) ;
+    public final mapaconceitosParser.instancia_return instancia() throws RecognitionException {
+        mapaconceitosParser.instancia_return retval = new mapaconceitosParser.instancia_return();
+        retval.start = input.LT(1);
+
+
+        Object root_0 = null;
+
+        Token INSTANCIA60=null;
+        Token char_literal61=null;
+        Token ID62=null;
+        Token char_literal63=null;
+        Token STRING64=null;
+        Token char_literal65=null;
+
+        Object INSTANCIA60_tree=null;
+        Object char_literal61_tree=null;
+        Object ID62_tree=null;
+        Object char_literal63_tree=null;
+        Object STRING64_tree=null;
+        Object char_literal65_tree=null;
+        RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
+        RewriteRuleTokenStream stream_INSTANCIA=new RewriteRuleTokenStream(adaptor,"token INSTANCIA");
+        RewriteRuleTokenStream stream_25=new RewriteRuleTokenStream(adaptor,"token 25");
+        RewriteRuleTokenStream stream_26=new RewriteRuleTokenStream(adaptor,"token 26");
+        RewriteRuleTokenStream stream_27=new RewriteRuleTokenStream(adaptor,"token 27");
+        RewriteRuleTokenStream stream_STRING=new RewriteRuleTokenStream(adaptor,"token STRING");
+
+        try {
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:77:2: ( INSTANCIA '(' ID ',' STRING ')' -> ^( INSTANCIA ID STRING ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:77:4: INSTANCIA '(' ID ',' STRING ')'
+            {
+            INSTANCIA60=(Token)match(input,INSTANCIA,FOLLOW_INSTANCIA_in_instancia485); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_INSTANCIA.add(INSTANCIA60);
+
+
+            char_literal61=(Token)match(input,25,FOLLOW_25_in_instancia487); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_25.add(char_literal61);
+
+
+            ID62=(Token)match(input,ID,FOLLOW_ID_in_instancia489); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_ID.add(ID62);
+
+
+            char_literal63=(Token)match(input,27,FOLLOW_27_in_instancia491); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_27.add(char_literal63);
+
+
+            STRING64=(Token)match(input,STRING,FOLLOW_STRING_in_instancia493); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_STRING.add(STRING64);
+
+
+            char_literal65=(Token)match(input,26,FOLLOW_26_in_instancia494); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_26.add(char_literal65);
+
+
+            // AST REWRITE
+            // elements: STRING, ID, INSTANCIA
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 78:2: -> ^( INSTANCIA ID STRING )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:78:5: ^( INSTANCIA ID STRING )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                stream_INSTANCIA.nextNode()
+                , root_1);
+
+                adaptor.addChild(root_1, 
+                stream_ID.nextNode()
+                );
+
+                adaptor.addChild(root_1, 
+                stream_STRING.nextNode()
+                );
+
+                adaptor.addChild(root_0, root_1);
+                }
+
+            }
+
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
+        }
+
+        finally {
+        	// do for sure before leaving
+        }
+        return retval;
+    }
+    // $ANTLR end "instancia"
+
+
+    public static class instanciasMapas_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
+
+
+    // $ANTLR start "instanciasMapas"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:81:1: instanciasMapas : instanciasMapa ( ';' instanciasMapa )* -> ^( INSTANCIASMAPA ( instanciasMapa )+ ) ;
+    public final mapaconceitosParser.instanciasMapas_return instanciasMapas() throws RecognitionException {
+        mapaconceitosParser.instanciasMapas_return retval = new mapaconceitosParser.instanciasMapas_return();
+        retval.start = input.LT(1);
+
+
+        Object root_0 = null;
+
+        Token char_literal67=null;
+        mapaconceitosParser.instanciasMapa_return instanciasMapa66 =null;
+
+        mapaconceitosParser.instanciasMapa_return instanciasMapa68 =null;
+
+
+        Object char_literal67_tree=null;
+        RewriteRuleTokenStream stream_28=new RewriteRuleTokenStream(adaptor,"token 28");
+        RewriteRuleSubtreeStream stream_instanciasMapa=new RewriteRuleSubtreeStream(adaptor,"rule instanciasMapa");
+        try {
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:82:2: ( instanciasMapa ( ';' instanciasMapa )* -> ^( INSTANCIASMAPA ( instanciasMapa )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:82:4: instanciasMapa ( ';' instanciasMapa )*
+            {
+            pushFollow(FOLLOW_instanciasMapa_in_instanciasMapas517);
+            instanciasMapa66=instanciasMapa();
+
+            state._fsp--;
+            if (state.failed) return retval;
+            if ( state.backtracking==0 ) stream_instanciasMapa.add(instanciasMapa66.getTree());
+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:82:19: ( ';' instanciasMapa )*
+            loop10:
+            do {
+                int alt10=2;
+                int LA10_0 = input.LA(1);
+
+                if ( (LA10_0==28) ) {
+                    int LA10_1 = input.LA(2);
+
+                    if ( (LA10_1==INSTANCIAMAPA) ) {
+                        alt10=1;
+                    }
+
+
+                }
+
+
+                switch (alt10) {
+            	case 1 :
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:82:20: ';' instanciasMapa
+            	    {
+            	    char_literal67=(Token)match(input,28,FOLLOW_28_in_instanciasMapas520); if (state.failed) return retval; 
+            	    if ( state.backtracking==0 ) stream_28.add(char_literal67);
+
+
+            	    pushFollow(FOLLOW_instanciasMapa_in_instanciasMapas522);
+            	    instanciasMapa68=instanciasMapa();
+
+            	    state._fsp--;
+            	    if (state.failed) return retval;
+            	    if ( state.backtracking==0 ) stream_instanciasMapa.add(instanciasMapa68.getTree());
+
+            	    }
+            	    break;
+
+            	default :
+            	    break loop10;
+                }
+            } while (true);
+
+
+            // AST REWRITE
+            // elements: instanciasMapa
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 83:2: -> ^( INSTANCIASMAPA ( instanciasMapa )+ )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:83:5: ^( INSTANCIASMAPA ( instanciasMapa )+ )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                (Object)adaptor.create(INSTANCIASMAPA, "INSTANCIASMAPA")
+                , root_1);
+
+                if ( !(stream_instanciasMapa.hasNext()) ) {
+                    throw new RewriteEarlyExitException();
+                }
+                while ( stream_instanciasMapa.hasNext() ) {
+                    adaptor.addChild(root_1, stream_instanciasMapa.nextTree());
+
+                }
+                stream_instanciasMapa.reset();
+
+                adaptor.addChild(root_0, root_1);
+                }
+
+            }
+
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
+        }
+
+        finally {
+        	// do for sure before leaving
+        }
+        return retval;
+    }
+    // $ANTLR end "instanciasMapas"
+
+
+    public static class instanciasMapa_return extends ParserRuleReturnScope {
+        Object tree;
+        public Object getTree() { return tree; }
+    };
+
+
+    // $ANTLR start "instanciasMapa"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:86:1: instanciasMapa : INSTANCIAMAPA '(' ID ',' ID ',' STRING ')' -> ^( INSTANCIAMAPA ID ID STRING ) ;
+    public final mapaconceitosParser.instanciasMapa_return instanciasMapa() throws RecognitionException {
+        mapaconceitosParser.instanciasMapa_return retval = new mapaconceitosParser.instanciasMapa_return();
+        retval.start = input.LT(1);
+
+
+        Object root_0 = null;
+
+        Token INSTANCIAMAPA69=null;
+        Token char_literal70=null;
+        Token ID71=null;
+        Token char_literal72=null;
+        Token ID73=null;
+        Token char_literal74=null;
+        Token STRING75=null;
+        Token char_literal76=null;
+
+        Object INSTANCIAMAPA69_tree=null;
+        Object char_literal70_tree=null;
+        Object ID71_tree=null;
+        Object char_literal72_tree=null;
+        Object ID73_tree=null;
+        Object char_literal74_tree=null;
+        Object STRING75_tree=null;
+        Object char_literal76_tree=null;
+        RewriteRuleTokenStream stream_INSTANCIAMAPA=new RewriteRuleTokenStream(adaptor,"token INSTANCIAMAPA");
+        RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
+        RewriteRuleTokenStream stream_25=new RewriteRuleTokenStream(adaptor,"token 25");
+        RewriteRuleTokenStream stream_26=new RewriteRuleTokenStream(adaptor,"token 26");
+        RewriteRuleTokenStream stream_27=new RewriteRuleTokenStream(adaptor,"token 27");
+        RewriteRuleTokenStream stream_STRING=new RewriteRuleTokenStream(adaptor,"token STRING");
+
+        try {
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:87:2: ( INSTANCIAMAPA '(' ID ',' ID ',' STRING ')' -> ^( INSTANCIAMAPA ID ID STRING ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:87:4: INSTANCIAMAPA '(' ID ',' ID ',' STRING ')'
+            {
+            INSTANCIAMAPA69=(Token)match(input,INSTANCIAMAPA,FOLLOW_INSTANCIAMAPA_in_instanciasMapa547); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_INSTANCIAMAPA.add(INSTANCIAMAPA69);
+
+
+            char_literal70=(Token)match(input,25,FOLLOW_25_in_instanciasMapa549); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_25.add(char_literal70);
+
+
+            ID71=(Token)match(input,ID,FOLLOW_ID_in_instanciasMapa550); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_ID.add(ID71);
+
+
+            char_literal72=(Token)match(input,27,FOLLOW_27_in_instanciasMapa552); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_27.add(char_literal72);
+
+
+            ID73=(Token)match(input,ID,FOLLOW_ID_in_instanciasMapa555); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_ID.add(ID73);
+
+
+            char_literal74=(Token)match(input,27,FOLLOW_27_in_instanciasMapa557); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_27.add(char_literal74);
+
+
+            STRING75=(Token)match(input,STRING,FOLLOW_STRING_in_instanciasMapa559); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_STRING.add(STRING75);
+
+
+            char_literal76=(Token)match(input,26,FOLLOW_26_in_instanciasMapa561); if (state.failed) return retval; 
+            if ( state.backtracking==0 ) stream_26.add(char_literal76);
+
+
+            // AST REWRITE
+            // elements: ID, ID, INSTANCIAMAPA, STRING
+            // token labels: 
+            // rule labels: retval
+            // token list labels: 
+            // rule list labels: 
+            // wildcard labels: 
+            if ( state.backtracking==0 ) {
+
+            retval.tree = root_0;
+            RewriteRuleSubtreeStream stream_retval=new RewriteRuleSubtreeStream(adaptor,"rule retval",retval!=null?retval.tree:null);
+
+            root_0 = (Object)adaptor.nil();
+            // 88:2: -> ^( INSTANCIAMAPA ID ID STRING )
+            {
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:88:5: ^( INSTANCIAMAPA ID ID STRING )
+                {
+                Object root_1 = (Object)adaptor.nil();
+                root_1 = (Object)adaptor.becomeRoot(
+                stream_INSTANCIAMAPA.nextNode()
+                , root_1);
+
+                adaptor.addChild(root_1, 
+                stream_ID.nextNode()
+                );
+
+                adaptor.addChild(root_1, 
+                stream_ID.nextNode()
+                );
+
+                adaptor.addChild(root_1, 
+                stream_STRING.nextNode()
+                );
+
+                adaptor.addChild(root_0, root_1);
+                }
+
+            }
+
+
+            retval.tree = root_0;
+            }
+
+            }
+
+            retval.stop = input.LT(-1);
+
+
+            if ( state.backtracking==0 ) {
+
+            retval.tree = (Object)adaptor.rulePostProcessing(root_0);
+            adaptor.setTokenBoundaries(retval.tree, retval.start, retval.stop);
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+    	retval.tree = (Object)adaptor.errorNode(input, retval.start, input.LT(-1), re);
+
+        }
+
+        finally {
+        	// do for sure before leaving
+        }
+        return retval;
+    }
+    // $ANTLR end "instanciasMapa"
 
     // Delegated rules
 
 
  
 
-    public static final BitSet FOLLOW_conceitos_in_mapaconceitos11 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_19_in_mapaconceitos13 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_assocs_in_mapaconceitos15 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_19_in_mapaconceitos16 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_mapas_in_mapaconceitos19 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_19_in_mapaconceitos21 = new BitSet(new long[]{0x0000000000000400L});
-    public static final BitSet FOLLOW_instancias_in_mapaconceitos23 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_19_in_mapaconceitos25 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_conceito_in_conceitos35 = new BitSet(new long[]{0x0000000000080002L});
-    public static final BitSet FOLLOW_19_in_conceitos38 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_conceito_in_conceitos40 = new BitSet(new long[]{0x0000000000080002L});
-    public static final BitSet FOLLOW_CONCEITO_in_conceito49 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_16_in_conceito51 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_STRING_in_conceito53 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_conceito55 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_assoc_in_assocs66 = new BitSet(new long[]{0x0000000000080002L});
-    public static final BitSet FOLLOW_19_in_assocs69 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_assoc_in_assocs71 = new BitSet(new long[]{0x0000000000080002L});
-    public static final BitSet FOLLOW_ASSOC_in_assoc81 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_16_in_assoc83 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_STRING_in_assoc85 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_assoc87 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_mapa_in_mapas99 = new BitSet(new long[]{0x0000000000080002L});
-    public static final BitSet FOLLOW_19_in_mapas102 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_mapa_in_mapas104 = new BitSet(new long[]{0x0000000000080002L});
-    public static final BitSet FOLLOW_MAPA_in_mapa115 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_16_in_mapa117 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_STRING_in_mapa121 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_mapa123 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_STRING_in_mapa127 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_18_in_mapa129 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_STRING_in_mapa133 = new BitSet(new long[]{0x0000000000020000L});
-    public static final BitSet FOLLOW_17_in_mapa135 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_instancia_in_instancias154 = new BitSet(new long[]{0x0000000000080002L});
-    public static final BitSet FOLLOW_19_in_instancias157 = new BitSet(new long[]{0x0000000000000400L});
-    public static final BitSet FOLLOW_instancia_in_instancias159 = new BitSet(new long[]{0x0000000000080002L});
-    public static final BitSet FOLLOW_INSTANCIA_in_instancia171 = new BitSet(new long[]{0x0000000000010000L});
-    public static final BitSet FOLLOW_16_in_instancia173 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_STRING_in_instancia177 = new BitSet(new long[]{0x0000000000200000L});
-    public static final BitSet FOLLOW_21_in_instancia179 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_propriedades_in_instancia181 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_22_in_instancia183 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_propriedade_in_propriedades192 = new BitSet(new long[]{0x0000000000040002L});
-    public static final BitSet FOLLOW_18_in_propriedades195 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_propriedade_in_propriedades197 = new BitSet(new long[]{0x0000000000040002L});
-    public static final BitSet FOLLOW_STRING_in_propriedade210 = new BitSet(new long[]{0x0000000000100000L});
-    public static final BitSet FOLLOW_20_in_propriedade212 = new BitSet(new long[]{0x0000000000002000L});
-    public static final BitSet FOLLOW_STRING_in_propriedade216 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_conceitos_in_mapaconceitos113 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_mapaconceitos115 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_assocs_in_mapaconceitos117 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_mapaconceitos119 = new BitSet(new long[]{0x0000000000110000L});
+    public static final BitSet FOLLOW_propriedades_in_mapaconceitos122 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_mapaconceitos124 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_mapas_in_mapaconceitos129 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_mapaconceitos131 = new BitSet(new long[]{0x0000000000003002L});
+    public static final BitSet FOLLOW_instancias_in_mapaconceitos134 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_mapaconceitos136 = new BitSet(new long[]{0x0000000000002002L});
+    public static final BitSet FOLLOW_instanciasMapas_in_mapaconceitos141 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_mapaconceitos143 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_conceito_in_conceitos179 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_conceitos182 = new BitSet(new long[]{0x0000000000000080L});
+    public static final BitSet FOLLOW_conceito_in_conceitos184 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_CONCEITO_in_conceito207 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_conceito209 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_STRING_in_conceito211 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_26_in_conceito213 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_assoc_in_assocs234 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_assocs237 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_assoc_in_assocs239 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_ASSOCIACAO_in_assoc263 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_assoc265 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_STRING_in_assoc267 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_26_in_assoc269 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_propriedade_in_propriedades289 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_propriedades292 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_propriedade_in_propriedades294 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_PROPRIEDADE_in_propriedade317 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_propriedade319 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_STRING_in_propriedade321 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_26_in_propriedade323 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_mapa_in_mapas345 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_mapas348 = new BitSet(new long[]{0x0000000000010000L});
+    public static final BitSet FOLLOW_mapa_in_mapas350 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_MAPA_in_mapa375 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_mapa377 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_ID_in_mapa378 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_mapa380 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_STRING_in_mapa383 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_mapa385 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_STRING_in_mapa387 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_mapa389 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_STRING_in_mapa391 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_26_in_mapa393 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_MAPA_in_mapa413 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_mapa415 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_ID_in_mapa416 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_mapa418 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_STRING_in_mapa421 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_mapa423 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_STRING_in_mapa425 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_mapa427 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_mapa429 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_26_in_mapa431 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_instancia_in_instancias457 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_instancias460 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_instancia_in_instancias462 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_INSTANCIA_in_instancia485 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_instancia487 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_ID_in_instancia489 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_instancia491 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_STRING_in_instancia493 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_26_in_instancia494 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_instanciasMapa_in_instanciasMapas517 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_28_in_instanciasMapas520 = new BitSet(new long[]{0x0000000000002000L});
+    public static final BitSet FOLLOW_instanciasMapa_in_instanciasMapas522 = new BitSet(new long[]{0x0000000010000002L});
+    public static final BitSet FOLLOW_INSTANCIAMAPA_in_instanciasMapa547 = new BitSet(new long[]{0x0000000002000000L});
+    public static final BitSet FOLLOW_25_in_instanciasMapa549 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_ID_in_instanciasMapa550 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_instanciasMapa552 = new BitSet(new long[]{0x0000000000000800L});
+    public static final BitSet FOLLOW_ID_in_instanciasMapa555 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_instanciasMapa557 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_STRING_in_instanciasMapa559 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_26_in_instanciasMapa561 = new BitSet(new long[]{0x0000000000000002L});
 
 }

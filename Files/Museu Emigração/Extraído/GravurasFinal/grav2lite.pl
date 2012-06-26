@@ -109,15 +109,18 @@ sub writeGravs {
 	xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
 	xsi:schemaLocation=\"http://www.getty.edu/CDWA/CDWALite file:/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/Files/Museu%20Emigra%C3%A7%C3%A3o/CDWALite-xsd-public-v1-1.xsd\">\n";
 
+	# divide cada linha do documento word. ainda nao tem informacao do que é ou nao uma peça
 	my @campos_flat = split "\n", $gravura_flat;
 	if (scalar @campos_flat != 0) {
 		foreach(@campos_flat) {
+			# se varios \s forem encontrados (elemento de quebra; o que distingue uma peça de outra no documento) processa os elementos capturados ate a quebra e sao impressos no formato XML
 			if (/^\s*$/){
 				print F "<cdwalite>\n";
 				print F printBody(\%cdwa);
 				print F "</cdwalite>\n";
 				%cdwa = ();
 			}
+			# caso contrario, trata-se de um campo da mesma peca da iteracao anterior
 			elsif($_ =~ /([^:]+):(.*)/) {
 				my $value = trim($2);
 				%cdwa = getValue(\%cdwa, $1, $value);

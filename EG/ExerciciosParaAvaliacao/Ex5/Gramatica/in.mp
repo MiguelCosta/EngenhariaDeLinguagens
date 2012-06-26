@@ -5,10 +5,11 @@ conceito("nascimento");
 conceito("morte");
 conceito("local");
 
-assoc("e um");
-assoc("nasceu em");
-prop("tem nome");
-prop("tem idade");
+associacao("e um");
+associacao("nasceu em");
+
+propriedade("tem nome");
+propriedade("tem idade");
 
 mapa(m1, "pessoa", "e um", "emigrante");
 mapa(m2, "evento", "e um", "nascimento");
@@ -17,10 +18,9 @@ mapa(m4, "pessoa", "nasceu em", "local");
 mapa(m5, "pessoa", "tem nome", STRING);
 mapa(m6, "pessoa", "tem idade", STRING);
 
-inst(pAntonio "pessoa");
-inst(pEmigranteBrasil "emigrante");
+instancia(pAntonio, "pessoa");
+instancia(pEmigranteBrasil, "emigrante");
 
-instMapa(pAntonio, m5, "Antonio");
-instMapa(pAntonio, m6, "20");
-
-instMapa(pEmigranteBrasil, m4, "Fafe");
+instanciaMapa(pAntonio, m5, "Antonio");
+instanciaMapa(pAntonio, m6, "20");
+instanciaMapa(pEmigranteBrasil, m4, "Fafe");

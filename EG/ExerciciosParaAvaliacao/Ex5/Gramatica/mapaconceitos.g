@@ -1,43 +1,92 @@
 grammar mapaconceitos;
 
+options{
+	backtrack = true;
+	output = AST;
+}
+
+tokens {
+	MAPACONCEITOS;
+	CONCEITOS;
+	CONCEITO = 'conceito';
+	ASSOCIACOES;
+	ASSOCIACAO = 'associacao';
+	PROPRIEDADES;
+	PROPRIEDADE = 'propriedade';
+	MAPAS;
+	MAPA = 'mapa';
+	INSTANCIAS;
+	INSTANCIA = 'instancia';
+	INSTANCIASMAPA;
+	INSTANCIAMAPA = 'instanciaMapa';
+}
+
 mapaconceitos
-	:	conceitos ';' assocs';'  mapas ';' instancias ';';
+	:	conceitos ';' assocs ';' (propriedades ';')?  mapas ';' (instancias ';')? (instanciasMapas ';')?
+	-> ^(MAPACONCEITOS conceitos assocs propriedades? mapas instancias? instanciasMapas?)
+	;
 	
 conceitos
-	:	conceito (';' conceito)*;
+	:	conceito (';' conceito)*
+	-> ^(CONCEITOS conceito+)
+	;
 
-conceito:	CONCEITO '(' STRING ')' 	{ System.out.println("INSERT INTO Conceitos VALUES('" + $STRING.text + "');\n");};
+conceito
+	:	CONCEITO '(' STRING ')'
+	-> ^(CONCEITO STRING)
+	;
 
-assocs	:	assoc (';' assoc)*;
+assocs	
+	:	assoc (';' assoc)*
+	-> ^(ASSOCIACOES assoc+)
+	;
 
-assoc	:	ASSOC '(' STRING ')' 		{ System.out.println("INSERT INTO Associacoes VALUES('" + $STRING.text + "');\n");};
+assoc	
+	:	ASSOCIACAO '(' STRING ')'
+	-> ^(ASSOCIACAO STRING)
+	;
 
-mapas	:	mapa (';' mapa )*;
+propriedades
+	:	propriedade (';' propriedade)*
+	-> ^(PROPRIEDADES propriedade+)
+	;
 
-mapa	:	MAPA '(' cP=STRING ',' a=STRING ',' cF=STRING ')'
-						{ System.out.println("INSERT INTO Mapas VALUES('" + $cP.text + "," + $a.text + "," + $cF.text + "');\n");}
+propriedade
+	:	PROPRIEDADE '(' STRING ')'
+	-> ^(PROPRIEDADE STRING)
+	;
+	
+mapas	
+	:	mapa (';' mapa )*
+	-> ^(MAPAS mapa+)
+	;
+
+mapa	
+	:	MAPA '('ID ','  STRING ',' STRING ',' STRING ')'
+	-> ^(MAPA ID STRING STRING STRING)
+	|	MAPA '('ID ','  STRING ',' STRING ',' 'STRING' ')'
+	-> ^(MAPA ID STRING STRING 'STRING')
 	;
 
 instancias
-	:	instancia (';' instancia)*;
+	:	instancia (';' instancia)*
+	-> ^(INSTANCIAS instancia+)
+	;
 
-// inst("pessoa" ["nome"="joaquim", "idade"="20", "casado"="nao"])
 instancia
-	:	INSTANCIA '(' c=STRING '[' propriedades ']';
+	:	INSTANCIA '(' ID ',' STRING')'
+	-> ^(INSTANCIA ID STRING)
+	;
 
-propriedades
-	:	propriedade (',' propriedade)*;
+instanciasMapas	
+	:	instanciasMapa (';' instanciasMapa )*
+	-> ^(INSTANCIASMAPA instanciasMapa+)
+	;
 
-propriedade
-	:	d=STRING '=' v=STRING;
-
-
-
-CONCEITO:	'conceito';
-ASSOC	:	'assoc';
-MAPA	:	'mapa';
-INSTANCIA
-	:	'inst';
+instanciasMapa	
+	:	INSTANCIAMAPA '('ID ','  ID ',' STRING ')'
+	-> ^(INSTANCIAMAPA ID ID STRING) 
+	;
 
 ID  :	('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*
     ;
