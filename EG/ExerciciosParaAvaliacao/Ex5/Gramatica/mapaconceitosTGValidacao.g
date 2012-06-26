@@ -25,9 +25,10 @@ mapaconceitos returns [String erro_out]
 	:	^(MAPACONCEITOS conceitos[tab, erro] 
 						assocs[$conceitos.tab_out, $conceitos.erro_out] 
 						propriedades[$assocs.tab_out, $assocs.erro_out]? 
-						mapas[$propriedades.tab_out, $propriedades.erro_out] {System.out.println("\nTabela mapas:\n\t"+$mapas.tab_out.toString());
-						}
-						instancias[$propriedades.tab_out, $mapas.erro_out]? {//System.out.println("Erros instancias:\n\t"+$instancias.erro_out);
+						mapas[$propriedades.tab_out, $propriedades.erro_out] 
+						instancias[$propriedades.tab_out, $mapas.erro_out]? {
+							System.out.println("\nTabela instancias:\n\t"+$instancias.tab_out);
+							//System.out.println("Erros instancias:\n\t"+$instancias.erro_out);
 						}
 						instanciasMapas[$propriedades.tab_out, $instancias.erro_out]?
 		)
@@ -129,6 +130,7 @@ mapas [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
 	:	^(MAPAS (mapa[$mapas.tab_in, $mapas.erro_in]
 	{
 		$mapas.erro_in = $mapa.erro_out;
+		$mapas.tab_in = $mapas.tab_out;
 	}
 	)+
 	{
@@ -191,10 +193,11 @@ instancias [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_
 	:	^(INSTANCIAS (instancia[$instancias.tab_in, $instancias.erro_in]
 	{
 		$instancias.erro_in = $instancia.erro_out;
+		$instancias.tab_in = $instancias.tab_out;
 	}
 	)+
 	{
-		$instancias.tab_out = $instancias.tab_in;
+		$instancias.tab_out = $instancia.tab_out;
 		$instancias.erro_out = $instancia.erro_out;
 	})
 	;
@@ -202,14 +205,25 @@ instancias [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_
 instancia [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]	
 @init{
 	String erro = $instancia.erro_in;
+	Tabela t = $instancia.tab_in;
 }
 	:	^(INSTANCIA ID STRING)
 	{
-		if (!$instancia.tab_in.getConceitos().contains($STRING.text))
+		Boolean cSemErro = true;
+	
+		// verifica se existem erros e constroi string de erros
+		if (!(cSemErro = $instancia.tab_in.getConceitos().contains($STRING.text)))
 			erro += "\n\t("+$STRING.line+":"+$STRING.pos+")\tO conceito "+$STRING.text+" não foi definido!";
+			
+		// se nao existirem erros insere Mapa na tabela
+		if (cSemErro) {	
+			TreeMap<String, Instancia> instancias = t.getInstancias();
+			instancias.put($ID.text, new Instancia($ID.text, $STRING.text));
+			t.setInstancias(instancias);
+		}	
+			
 		$instancia.erro_out = erro;
-
-		$instancia.tab_out = $instancia.tab_in;
+		$instancia.tab_out = t;
 	}
 	;
 
