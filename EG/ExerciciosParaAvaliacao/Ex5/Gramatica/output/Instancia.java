@@ -25,9 +25,23 @@ public class Instancia {
 		this.conceito = conceito;
 	}
 
+	public String sqlToString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append("INSERT INTO `mapaconceitos`.`Instancias` ");
+		sb.append("(`instancia`, `conceito`) ");
+		sb.append("VALUES ");
+		sb.append("(\""+id+"\", "+ conceito +");\n");
+		return sb.toString();
+	}
+
 	@Override
 		public String toString() {
-			return "Instancia [id=" + id + ", conceito=" + conceito + "]";
+			return "Instancia [\n\t" +
+				"id=" + id + ",\n\t" +
+				"conceito=" + conceito + 
+				"\n]";
 		}
+
+
 }
 

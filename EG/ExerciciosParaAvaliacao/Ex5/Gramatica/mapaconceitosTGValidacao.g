@@ -1,7 +1,7 @@
 tree grammar mapaconceitosTGValidacao;
 
 options{
-	tokenVocab=mapaconceitos;
+	tokenVocab=cmc;
 	ASTLabelType = CommonTree;
 	output = AST;
 	backtrack = true;
@@ -9,38 +9,39 @@ options{
 
 @header{
 	import java.util.TreeSet;
+	import java.util.HashSet;
 	import java.util.TreeMap;
-	}
+}
 
 
 
-mapaconceitos returns [String erro_out]
+cmc returns [String erro_out]
 @init{
 	Tabela tab = new Tabela();
 	String erro = "Erros:";
 }
 @after{
-	//System.out.println($mapaconceitos.erro_out);
+	//System.out.println("\nTabela:\n"+tab);
+	System.out.println("\n\n\nErros:\n\t"+erro);
+	System.out.println(tab.geraInstrucoesSQL());
 }
-	:	^(MAPACONCEITOS conceitos[tab, erro] 
-						assocs[$conceitos.tab_out, $conceitos.erro_out] 
-						propriedades[$assocs.tab_out, $assocs.erro_out]? 
-						mapas[$propriedades.tab_out, $propriedades.erro_out] 
-						instancias[$propriedades.tab_out, $mapas.erro_out]? {
-							System.out.println("\nTabela instancias:\n\t"+$instancias.tab_out);
-							//System.out.println("Erros instancias:\n\t"+$instancias.erro_out);
-						}
-						instanciasMapas[$propriedades.tab_out, $instancias.erro_out]?
+	:	^(CMC (conceitos[tab, erro] {tab = $conceitos.tab_out; erro = $conceitos.erro_out;})
+				(assocs[tab, erro] {tab = $assocs.tab_out; erro = $assocs.erro_out;})
+				(propriedades[tab, erro] {tab = $propriedades.tab_out; erro = $propriedades.erro_out;})? 
+				(mapasConceitos[tab, erro] {tab = $mapasConceitos.tab_out; erro = $mapasConceitos.erro_out;})
+				(mapasConceitoProp[tab, erro] {tab = $mapasConceitoProp.tab_out; erro = $mapasConceitoProp.erro_out;})?
+				(instancias[tab, erro] {tab = $instancias.tab_out; erro = $instancias.erro_out;})?						
+				(mapasInstancias[tab, erro] {tab = $mapasInstancias.tab_out; erro = $mapasInstancias.erro_out;})?
+				(mapasInstanciaProp[tab, erro] {tab = $mapasInstanciaProp.tab_out; erro = $mapasInstanciaProp.erro_out;})?
 		)
 		{
-			$mapaconceitos.erro_out = $instanciasMapas.erro_out;
+			$cmc.erro_out = erro;
 		}
 	;
 	
 conceitos [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
 	:	^(CONCEITOS (conceito[$conceitos.tab_in, $conceitos.erro_in]
 	{
-		//System.out.println("\nCONCEITO:\n\t"+$conceito.tab_out);
 		$conceitos.tab_in = $conceito.tab_out;
 		$conceitos.erro_in = $conceito.erro_out;
 	}
@@ -69,7 +70,6 @@ conceito [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_ou
 assocs [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
 	:	^(ASSOCIACOES (assoc[$assocs.tab_in, $assocs.erro_in]
 	{
-		//System.out.println("\nASSOC:\n\t"+$assoc.tab_out);
 		$assocs.tab_in = $assoc.tab_out;
 		$assocs.erro_in = $assoc.erro_out;
 	}
@@ -99,7 +99,6 @@ assoc [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
 propriedades [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
 	:	^(PROPRIEDADES (propriedade[$propriedades.tab_in, $propriedades.erro_in]
 	{
-		//System.out.println("\npropriedade:\n\t"+$propriedade.tab_out);
 		$propriedades.tab_in = $propriedade.tab_out;
 		$propriedades.erro_in = $propriedade.erro_out;
 	}
@@ -125,75 +124,107 @@ propriedade [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro
 	}
 	;
 
-	
-mapas [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
-	:	^(MAPAS (mapa[$mapas.tab_in, $mapas.erro_in]
+mapasConceitos [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
+@init{
+	Tabela t = $mapasConceitos.tab_in;
+}
+	:	^(MAPASCONCEITOS (mapaConceito[t, $mapasConceitos.erro_in]
 	{
-		$mapas.erro_in = $mapa.erro_out;
-		$mapas.tab_in = $mapas.tab_out;
+		$mapasConceitos.erro_in = $mapaConceito.erro_out;
+		t = $mapaConceito.tab_out;
 	}
 	)+
 	{
-		$mapas.tab_out = $mapa.tab_out;
-		$mapas.erro_out = $mapa.erro_out;
+		$mapasConceitos.tab_out = $mapaConceito.tab_out;
+		$mapasConceitos.erro_out = $mapaConceito.erro_out;
 	}
 	)
 	;
-
-mapa [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]	
+	
+mapaConceito [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]	
 @init{
-	String erro = $mapa.erro_in;
-	Tabela t = $mapa.tab_in;
+	String erro = $mapaConceito.erro_in;
+	Tabela t = $mapaConceito.tab_in;
 }
-	:	^(MAPA ID ci=STRING a=STRING cf=STRING)
+	:	^(MAPACONCEITOS ID ci=STRING a=STRING cf=STRING)
 	{
 		Boolean ciSemErro = true;
 		Boolean aSemErro = true;
 		Boolean cfSemErro = true;
 		
 		// verifica se existem erros e constroi string de erros
-		if (!(ciSemErro = $mapa.tab_in.getConceitos().contains($ci.text)))
+		if (!(ciSemErro = t.getConceitos().contains($ci.text)))
 			erro += "\n\t("+$ci.line+":"+$ci.pos+")\tO conceito "+$ci.text+" não foi definido!";
-		if (!(aSemErro = $mapa.tab_in.getAssociacoes().contains($a.text)))
+		if (!(aSemErro = t.getAssociacoes().contains($a.text)))
 			erro += "\n\t("+$a.line+":"+$a.pos+")\tA associação "+$a.text+" não foi definida!";
-		if (!(cfSemErro = $mapa.tab_in.getConceitos().contains($cf.text)))
+		if (!(cfSemErro = t.getConceitos().contains($cf.text)))
 			erro += "\n\t("+$cf.line+":"+$cf.pos+")\tO conceito "+$cf.text+" não foi definido!";
 
 		// se nao existirem erros insere Mapa na tabela
 		if (ciSemErro && aSemErro && cfSemErro) {	
-			TreeMap<String, Mapa> mapas = t.getMapas();
-			mapas.put($ID.text, new Mapa($ID.text, $ci.text, $a.text, $cf.text));
-			t.setMapas(mapas);
+			TreeMap<String, MapaConceitos> mapas = t.getMapasConceitos();
+			mapas.put($ID.text, new MapaConceitos($ID.text, $ci.text, $a.text, $cf.text));
+			t.setMapasConceitos(mapas);
 		}
+		
+		$mapaConceito.erro_out = erro;
+		$mapaConceito.tab_out = t;
 	}
-	|	^(MAPA ID c=STRING prop=STRING 'STRING')
+	;
+	
+mapasConceitoProp [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
+@init{
+	Tabela t = $mapasConceitoProp.tab_in;
+}
+	:	^(MAPASCONCEITOPROP (mapaConceitoProp[t, $mapasConceitoProp.erro_in]
+	{
+		$mapasConceitoProp.erro_in = $mapaConceitoProp.erro_out;
+		t = $mapaConceitoProp.tab_out;
+	}
+	)+
+	{
+		$mapasConceitoProp.tab_out = $mapaConceitoProp.tab_out;
+		$mapasConceitoProp.erro_out = $mapaConceitoProp.erro_out;
+	}
+	)
+	;
+	
+mapaConceitoProp [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]	
+@init{
+	String erro = $mapaConceitoProp.erro_in;
+	Tabela t = $mapaConceitoProp.tab_in;
+}
+	:	^(MAPACONCEITOPROP ID c=STRING prop=STRING )
 	{
 		Boolean cSemErro = true;
 		Boolean pSemErro = true;	
 	
 		// verifica se existem erros e constroi string de erros
-		if (!(cSemErro = $mapa.tab_in.getConceitos().contains($c.text)))
+		if (!(cSemErro = t.getConceitos().contains($c.text)))
 			erro += "\n\t("+$c.line+":"+$c.pos+")\tO conceito "+$c.text+" não foi definido!";
-		if (!(pSemErro = $mapa.tab_in.getPropriedades().contains($prop.text)))
+		if (!(pSemErro = t.getPropriedades().contains($prop.text)))
 			erro += "\n\t("+$prop.line+":"+$prop.pos+")\tA propriedade "+$prop.text+" não foi definida!";
 		
 		// se nao existirem erros insere Mapa na tabela
 		if (cSemErro && pSemErro) {	
-			TreeMap<String, Mapa> mapas = t.getMapas();
-			mapas.put($ID.text, new Mapa($ID.text, $c.text, $prop.text, "STRING"));
-			t.setMapas(mapas);
+			TreeMap<String, MapaConceitoProp> mapas = t.getMapasConceitoProp();
+			mapas.put($ID.text, new MapaConceitoProp($ID.text, $c.text, $prop.text));
+			t.setMapasConceitoProp(mapas);
 		}
 			
-		$mapa.erro_out = erro;
-		$mapa.tab_out = t;
+		$mapaConceitoProp.erro_out = erro;
+		$mapaConceitoProp.tab_out = t;
 	}
-	;
-
+	;	
+	
 instancias [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
-	:	^(INSTANCIAS (instancia[$instancias.tab_in, $instancias.erro_in]
+@init{
+	Tabela t = $instancias.tab_in;
+}
+	:	^(INSTANCIAS (instancia[t, $instancias.erro_in]
 	{
 		$instancias.erro_in = $instancia.erro_out;
-		$instancias.tab_in = $instancias.tab_out;
+		t = $instancia.tab_out;
 	}
 	)+
 	{
@@ -212,7 +243,7 @@ instancia [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_o
 		Boolean cSemErro = true;
 	
 		// verifica se existem erros e constroi string de erros
-		if (!(cSemErro = $instancia.tab_in.getConceitos().contains($STRING.text)))
+		if (!(cSemErro = t.getConceitos().contains($STRING.text)))
 			erro += "\n\t("+$STRING.line+":"+$STRING.pos+")\tO conceito "+$STRING.text+" não foi definido!";
 			
 		// se nao existirem erros insere Mapa na tabela
@@ -227,18 +258,93 @@ instancia [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_o
 	}
 	;
 
-instanciasMapas	[Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
-	:	^(INSTANCIASMAPA (instanciasMapa[$instanciasMapas.tab_in, $instanciasMapas.erro_in]
+mapasInstancias [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
+@init{
+	Tabela t = $mapasInstancias.tab_in;
+}
+	:	^(MAPASINSTANCIAS (mapaInstancias[t, $mapasInstancias.erro_in]
 	{
-		$instanciasMapas.erro_in = $instanciasMapas.erro_out;
+		$mapasInstancias.erro_in = $mapaInstancias.erro_out;
+		t = $mapaInstancias.tab_out;
 	}
 	)+
 	{
-		$instanciasMapas.tab_out = $instanciasMapas.tab_in;
-		$instanciasMapas.erro_out = $instanciasMapa.erro_out;
+		$mapasInstancias.tab_out = $mapaInstancias.tab_out;
+		$mapasInstancias.erro_out = $mapaInstancias.erro_out;
 	})
 	;
+	
+mapaInstancias [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]	
+@init{
+	String erro = $mapaInstancias.erro_in;
+	Tabela t = $mapaInstancias.tab_in;
+}
+	:	^(MAPAINSTANCIAS instFilho=ID mapaConc=ID instPai=ID) 
+	{
+		Boolean instFilhoSemErro = true;
+		Boolean mapaConceitoSemErro = true;
+		Boolean instPaiSemErro = true;
+	
+		// verifica se existem erros e constroi string de erros
+		if (!(instFilhoSemErro = t.getInstancias().containsKey($instFilho.text)))
+			erro += "\n\t("+$instFilho.line+":"+$instFilho.pos+")\tA instância "+$instFilho.text+" não foi definida!";
+		if (!(mapaConceitoSemErro = t.getMapasConceitos().containsKey($mapaConc.text)))
+			erro += "\n\t("+$mapaConc.line+":"+$mapaConc.pos+")\tO mapa de conceitos "+$mapaConc.text+" não foi definido!";
+		if (!(instPaiSemErro = t.getInstancias().containsKey($instPai.text)))
+			erro += "\n\t("+$instPai.line+":"+$instPai.pos+")\tA instância "+$instPai.text+" não foi definida!";
+			
+		// se nao existirem erros insere Mapa na tabela
+		if (instFilhoSemErro && mapaConceitoSemErro && instPaiSemErro) {	
+			HashSet<MapaInstancias> mapasInstancias = t.getMapasInstancias();
+			mapasInstancias.add(new MapaInstancias($instFilho.text, $mapaConc.text, $instPai.text));
+			t.setMapasInstancias(mapasInstancias);
+		}	
+			
+		$mapaInstancias.erro_out = erro;
+		$mapaInstancias.tab_out = t;
+	}
+	;
 
-instanciasMapa	[Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
-	:	^(INSTANCIAMAPA ID ID STRING) 
+mapasInstanciaProp [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
+@init{
+	Tabela t = $mapasInstanciaProp.tab_in;
+}
+	:	^(MAPASINSTANCIASPROP (mapaInstanciaProp[t, $mapasInstanciaProp.erro_in]
+		{
+			$mapasInstanciaProp.erro_in = $mapaInstanciaProp.erro_out;
+			t = $mapaInstanciaProp.tab_out;
+		}
+		)+
+		{
+			$mapasInstanciaProp.tab_out = $mapaInstanciaProp.tab_out;
+			$mapasInstanciaProp.erro_out = $mapaInstanciaProp.erro_out;
+		})
+	;
+
+mapaInstanciaProp [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]	
+@init{
+	String erro = $mapaInstanciaProp.erro_in;
+	Tabela t = $mapaInstanciaProp.tab_in;
+}
+	:	^(MAPAINSTANCIASPROP inst=ID mapaConcProp=ID val=STRING)
+	{
+		Boolean instSemErro = true;
+		Boolean mapaConcPropSemErro = true;
+	
+		// verifica se existem erros e constroi string de erros
+		if (!(instSemErro = t.getInstancias().containsKey($inst.text)))
+			erro += "\n\t("+$inst.line+":"+$inst.pos+")\tA instância "+$inst.text+" não foi definida!";
+		if (!(mapaConcPropSemErro = t.getMapasConceitoProp().containsKey($mapaConcProp.text)))
+			erro += "\n\t("+$mapaConcProp.line+":"+$mapaConcProp.pos+")\tO mapa entre conceito e propriedade "+$mapaConcProp.text+" não foi definido!";
+			
+		// se nao existirem erros insere Mapa na tabela
+		if (instSemErro && mapaConcPropSemErro) {	
+			HashSet<MapaInstanciaProp> mapasInstanciaProp = t.getMapasInstanciaProp();
+			mapasInstanciaProp.add(new MapaInstanciaProp($inst.text, $mapaConcProp.text, $val.text));
+			t.setMapasInstanciaProp(mapasInstanciaProp);
+		}	
+			
+		$mapaInstanciaProp.erro_out = erro;
+		$mapaInstanciaProp.tab_out = t;
+	}
 	;
