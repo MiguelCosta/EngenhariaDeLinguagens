@@ -13,21 +13,17 @@ tokens {
 	ASSOCIACAO = 'associacao';
 	PROPRIEDADES;
 	PROPRIEDADE = 'propriedade';
-	MAPASCONCEITOS;
-	MAPACONCEITOS = 'mapaConceitos';
-	MAPASCONCEITOPROP;
-	MAPACONCEITOPROP = 'mapaConceitoProp';
+	MAPAS;
+	MAPA = 'mapa';
 	INSTANCIAS;
 	INSTANCIA = 'instancia';
-	MAPASINSTANCIAS;
-	MAPAINSTANCIAS = 'mapaInstancias';
-	MAPASINSTANCIASPROP;
-	MAPAINSTANCIASPROP = 'mapaInstanciaProp';
+	INSTANCIASMAPA;
+	INSTANCIAMAPA = 'instanciaMapa';
 }
 
 mapaconceitos
-	:	conceitos ';' assocs ';' (propriedades ';')?  mapasConceitos ';' (mapasConceitoProp ';')? (instancias ';')? (mapasInstancias ';')? (mapasInstanciaProp ';')?
-	-> ^(MAPACONCEITOS conceitos assocs propriedades? mapasConceitos mapasConceitoProp? instancias? mapasInstancias? mapasInstanciaProp?)
+	:	conceitos ';' assocs ';' (propriedades ';')?  mapas ';' (instancias ';')? (instanciasMapas ';')?
+	-> ^(MAPACONCEITOS conceitos assocs propriedades? mapas instancias? instanciasMapas?)
 	;
 	
 conceitos
@@ -60,25 +56,16 @@ propriedade
 	-> ^(PROPRIEDADE STRING)
 	;
 	
-mapasConceitos	
-	:	mapaConceito (';' mapaConceito )*
-	-> ^(MAPASCONCEITOS mapaConceito+)
+mapas	
+	:	mapa (';' mapa )*
+	-> ^(MAPAS mapa+)
 	;
 
-mapaConceito	
-	:	MAPACONCEITOS '('ID ','  STRING ',' STRING ',' STRING ')'
-	-> ^(MAPACONCEITOS ID STRING STRING STRING)
-	;
-	
-
-mapasConceitoProp	
-	:	mapaConceitoProp (';' mapaConceitoProp )*
-	-> ^(MAPASCONCEITOPROP mapaConceitoProp+)
-	;
-
-mapaConceitoProp	
-	:	MAPACONCEITOPROP '('ID ','  STRING ',' STRING ')'
-	-> ^(MAPACONCEITOPROP ID STRING STRING )
+mapa	
+	:	MAPA '('ID ','  STRING ',' STRING ',' STRING ')'
+	-> ^(MAPA ID STRING STRING STRING)
+	|	MAPA '('ID ','  STRING ',' STRING ',' 'STRING' ')'
+	-> ^(MAPA ID STRING STRING 'STRING')
 	;
 
 instancias
@@ -90,29 +77,16 @@ instancia
 	:	INSTANCIA '(' ID ',' STRING')'
 	-> ^(INSTANCIA ID STRING)
 	;
-	
-mapasInstancias	
-	:	mapaInstancia (';' mapaInstancia )*
-	-> ^(MAPASINSTANCIAS mapaInstancia+)
+
+instanciasMapas	
+	:	instanciasMapa (';' instanciasMapa )*
+	-> ^(INSTANCIASMAPA instanciasMapa+)
 	;
 
-mapaInstancia	
-	:	MAPAINSTANCIAS '('ID ','  ID ',' ID ')'
-	-> ^(MAPAINSTANCIAS ID ID ID) 
+instanciasMapa	
+	:	INSTANCIAMAPA '('ID ','  ID ',' STRING ')'
+	-> ^(INSTANCIAMAPA ID ID STRING) 
 	;
-
-mapasInstanciaProp	
-	:	mapaInstanciaProp (';' mapaInstanciaProp )*
-	-> ^(MAPASINSTANCIASPROP mapaInstanciaProp+)
-	;
-
-mapaInstanciaProp	
-	:	MAPAINSTANCIASPROP '('ID ','  ID ',' STRING ')'
-	-> ^(MAPAINSTANCIASPROP ID ID STRING) 
-	;
-
-
-
 
 ID  :	('a'..'z'|'A'..'Z'|'_') ('a'..'z'|'A'..'Z'|'0'..'9'|'_')*
     ;

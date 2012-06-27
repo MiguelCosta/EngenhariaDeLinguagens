@@ -11,16 +11,19 @@ associacao("nasceu em");
 propriedade("tem nome");
 propriedade("tem idade");
 
-mapa(m1, "pessoa", "e um", "emigrante");
-mapa(m2, "evento", "e um", "nascimento");
-mapa(m3, "evento", "e um", "morte");
-mapa(m4, "pessoa", "nasceu em", "local");
-mapa(m5, "pessoa", "tem nome", STRING);
-mapa(m6, "pessoa", "tem idade", STRING);
+mapaConceitos(m1, "pessoa", "e um", "emigrante");
+mapaConceitos(m2, "evento", "e um", "nascimento");
+mapaConceitos(m3, "evento", "e um", "morte");
+mapaConceitos(m4, "pessoa", "nasceu em", "local");
+
+mapaConceitoProp(m5, "pessoa", "tem nome");
+mapaConceitoProp(m6, "pessoa", "tem idade");
 
 instancia(pAntonio, "pessoa");
+instancia(lFafe, "local");
 instancia(pEmigranteBrasil, "emigrante");
 
-instanciaMapa(pAntonio, m5, "Antonio");
-instanciaMapa(pAntonio, m6, "20");
-instanciaMapa(pEmigranteBrasil, m4, "Fafe");
+mapaInstancias(pAntonio, m4, lFafe);
+
+mapaInstanciaProp(pAntonio, m5, "Antonio");
+mapaInstanciaProp(pAntonio, m6, "20");

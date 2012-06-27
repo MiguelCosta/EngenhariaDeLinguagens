@@ -37,8 +37,10 @@ public class InstanciaMapa {
 
 	@Override
 		public String toString() {
-			return "InstanciaMapa [idInstancia=" + idInstancia + ", idPropriedade="
-				+ idPropriedade + ", valorPropriedade=" + valorPropriedade
-				+ "]";
+			return "InstanciaMapa [\n\t" +
+				"idInstancia=" + idInstancia + ",\n\t" +
+				"idPropriedade=" + idPropriedade + ",\n\t" +
+				"valorPropriedade=" + valorPropriedade +
+				"\n]";
 		}
 }

@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g 2012-06-26 02:24:09
+// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g 2012-06-27 02:58:38
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -8,11 +8,10 @@ import java.util.ArrayList;
 @SuppressWarnings({"all", "warnings", "unchecked"})
 public class mapaconceitosLexer extends Lexer {
     public static final int EOF=-1;
-    public static final int T__25=25;
-    public static final int T__26=26;
-    public static final int T__27=27;
     public static final int T__28=28;
     public static final int T__29=29;
+    public static final int T__30=30;
+    public static final int T__31=31;
     public static final int ASSOCIACAO=4;
     public static final int ASSOCIACOES=5;
     public static final int COMMENT=6;
@@ -22,18 +21,21 @@ public class mapaconceitosLexer extends Lexer {
     public static final int HEX_DIGIT=10;
     public static final int ID=11;
     public static final int INSTANCIA=12;
-    public static final int INSTANCIAMAPA=13;
-    public static final int INSTANCIAS=14;
-    public static final int INSTANCIASMAPA=15;
-    public static final int MAPA=16;
-    public static final int MAPACONCEITOS=17;
-    public static final int MAPAS=18;
-    public static final int OCTAL_ESC=19;
-    public static final int PROPRIEDADE=20;
-    public static final int PROPRIEDADES=21;
-    public static final int STRING=22;
-    public static final int UNICODE_ESC=23;
-    public static final int WS=24;
+    public static final int INSTANCIAS=13;
+    public static final int MAPACONCEITOPROP=14;
+    public static final int MAPACONCEITOS=15;
+    public static final int MAPAINSTANCIAS=16;
+    public static final int MAPAINSTANCIASPROP=17;
+    public static final int MAPASCONCEITOPROP=18;
+    public static final int MAPASCONCEITOS=19;
+    public static final int MAPASINSTANCIAS=20;
+    public static final int MAPASINSTANCIASPROP=21;
+    public static final int OCTAL_ESC=22;
+    public static final int PROPRIEDADE=23;
+    public static final int PROPRIEDADES=24;
+    public static final int STRING=25;
+    public static final int UNICODE_ESC=26;
+    public static final int WS=27;
 
     // delegates
     // delegators
@@ -119,15 +121,15 @@ public class mapaconceitosLexer extends Lexer {
     }
     // $ANTLR end "INSTANCIA"
 
-    // $ANTLR start "INSTANCIAMAPA"
-    public final void mINSTANCIAMAPA() throws RecognitionException {
+    // $ANTLR start "MAPACONCEITOPROP"
+    public final void mMAPACONCEITOPROP() throws RecognitionException {
         try {
-            int _type = INSTANCIAMAPA;
+            int _type = MAPACONCEITOPROP;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:5:15: ( 'instanciaMapa' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:5:17: 'instanciaMapa'
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:5:18: ( 'mapaConceitoProp' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:5:20: 'mapaConceitoProp'
             {
-            match("instanciaMapa"); 
+            match("mapaConceitoProp"); 
 
 
 
@@ -140,17 +142,17 @@ public class mapaconceitosLexer extends Lexer {
         	// do for sure before leaving
         }
     }
-    // $ANTLR end "INSTANCIAMAPA"
+    // $ANTLR end "MAPACONCEITOPROP"
 
-    // $ANTLR start "MAPA"
-    public final void mMAPA() throws RecognitionException {
+    // $ANTLR start "MAPACONCEITOS"
+    public final void mMAPACONCEITOS() throws RecognitionException {
         try {
-            int _type = MAPA;
+            int _type = MAPACONCEITOS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:6:6: ( 'mapa' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:6:8: 'mapa'
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:6:15: ( 'mapaConceitos' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:6:17: 'mapaConceitos'
             {
-            match("mapa"); 
+            match("mapaConceitos"); 
 
 
 
@@ -163,15 +165,61 @@ public class mapaconceitosLexer extends Lexer {
         	// do for sure before leaving
         }
     }
-    // $ANTLR end "MAPA"
+    // $ANTLR end "MAPACONCEITOS"
+
+    // $ANTLR start "MAPAINSTANCIAS"
+    public final void mMAPAINSTANCIAS() throws RecognitionException {
+        try {
+            int _type = MAPAINSTANCIAS;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:7:16: ( 'mapaInstancias' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:7:18: 'mapaInstancias'
+            {
+            match("mapaInstancias"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "MAPAINSTANCIAS"
+
+    // $ANTLR start "MAPAINSTANCIASPROP"
+    public final void mMAPAINSTANCIASPROP() throws RecognitionException {
+        try {
+            int _type = MAPAINSTANCIASPROP;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:8:20: ( 'mapaInstanciaProp' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:8:22: 'mapaInstanciaProp'
+            {
+            match("mapaInstanciaProp"); 
+
+
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "MAPAINSTANCIASPROP"
 
     // $ANTLR start "PROPRIEDADE"
     public final void mPROPRIEDADE() throws RecognitionException {
         try {
             int _type = PROPRIEDADE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:7:13: ( 'propriedade' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:7:15: 'propriedade'
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:9:13: ( 'propriedade' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:9:15: 'propriedade'
             {
             match("propriedade"); 
 
@@ -188,78 +236,15 @@ public class mapaconceitosLexer extends Lexer {
     }
     // $ANTLR end "PROPRIEDADE"
 
-    // $ANTLR start "T__25"
-    public final void mT__25() throws RecognitionException {
-        try {
-            int _type = T__25;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:8:7: ( '(' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:8:9: '('
-            {
-            match('('); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__25"
-
-    // $ANTLR start "T__26"
-    public final void mT__26() throws RecognitionException {
-        try {
-            int _type = T__26;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:9:7: ( ')' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:9:9: ')'
-            {
-            match(')'); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__26"
-
-    // $ANTLR start "T__27"
-    public final void mT__27() throws RecognitionException {
-        try {
-            int _type = T__27;
-            int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:10:7: ( ',' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:10:9: ','
-            {
-            match(','); 
-
-            }
-
-            state.type = _type;
-            state.channel = _channel;
-        }
-        finally {
-        	// do for sure before leaving
-        }
-    }
-    // $ANTLR end "T__27"
-
     // $ANTLR start "T__28"
     public final void mT__28() throws RecognitionException {
         try {
             int _type = T__28;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:11:7: ( ';' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:11:9: ';'
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:10:7: ( '(' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:10:9: '('
             {
-            match(';'); 
+            match('('); 
 
             }
 
@@ -277,12 +262,10 @@ public class mapaconceitosLexer extends Lexer {
         try {
             int _type = T__29;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:12:7: ( 'STRING' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:12:9: 'STRING'
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:11:7: ( ')' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:11:9: ')'
             {
-            match("STRING"); 
-
-
+            match(')'); 
 
             }
 
@@ -295,13 +278,55 @@ public class mapaconceitosLexer extends Lexer {
     }
     // $ANTLR end "T__29"
 
+    // $ANTLR start "T__30"
+    public final void mT__30() throws RecognitionException {
+        try {
+            int _type = T__30;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:12:7: ( ',' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:12:9: ','
+            {
+            match(','); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__30"
+
+    // $ANTLR start "T__31"
+    public final void mT__31() throws RecognitionException {
+        try {
+            int _type = T__31;
+            int _channel = DEFAULT_TOKEN_CHANNEL;
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:13:7: ( ';' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:13:9: ';'
+            {
+            match(';'); 
+
+            }
+
+            state.type = _type;
+            state.channel = _channel;
+        }
+        finally {
+        	// do for sure before leaving
+        }
+    }
+    // $ANTLR end "T__31"
+
     // $ANTLR start "ID"
     public final void mID() throws RecognitionException {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:91:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:91:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:117:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:117:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -313,7 +338,7 @@ public class mapaconceitosLexer extends Lexer {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:91:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:117:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -363,7 +388,7 @@ public class mapaconceitosLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:95:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:121:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -393,13 +418,13 @@ public class mapaconceitosLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:95:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:121:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
                     {
                     match("//"); 
 
 
 
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:95:14: (~ ( '\\n' | '\\r' ) )*
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:121:14: (~ ( '\\n' | '\\r' ) )*
                     loop2:
                     do {
                         int alt2=2;
@@ -433,7 +458,7 @@ public class mapaconceitosLexer extends Lexer {
                     } while (true);
 
 
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:95:28: ( '\\r' )?
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:121:28: ( '\\r' )?
                     int alt3=2;
                     int LA3_0 = input.LA(1);
 
@@ -442,7 +467,7 @@ public class mapaconceitosLexer extends Lexer {
                     }
                     switch (alt3) {
                         case 1 :
-                            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:95:28: '\\r'
+                            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:121:28: '\\r'
                             {
                             match('\r'); 
 
@@ -459,13 +484,13 @@ public class mapaconceitosLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:96:9: '/*' ( options {greedy=false; } : . )* '*/'
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:122:9: '/*' ( options {greedy=false; } : . )* '*/'
                     {
                     match("/*"); 
 
 
 
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:96:14: ( options {greedy=false; } : . )*
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:122:14: ( options {greedy=false; } : . )*
                     loop4:
                     do {
                         int alt4=2;
@@ -490,7 +515,7 @@ public class mapaconceitosLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:96:42: .
+                    	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:122:42: .
                     	    {
                     	    matchAny(); 
 
@@ -527,8 +552,8 @@ public class mapaconceitosLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:99:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:99:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:125:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:125:9: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -558,12 +583,12 @@ public class mapaconceitosLexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:107:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:107:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:133:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:133:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
             {
             match('\"'); 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:107:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:133:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
             loop6:
             do {
                 int alt6=3;
@@ -579,7 +604,7 @@ public class mapaconceitosLexer extends Lexer {
 
                 switch (alt6) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:107:14: ESC_SEQ
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:133:14: ESC_SEQ
             	    {
             	    mESC_SEQ(); 
 
@@ -587,7 +612,7 @@ public class mapaconceitosLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:107:24: ~ ( '\\\\' | '\"' )
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:133:24: ~ ( '\\\\' | '\"' )
             	    {
             	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
             	        input.consume();
@@ -624,7 +649,7 @@ public class mapaconceitosLexer extends Lexer {
     // $ANTLR start "HEX_DIGIT"
     public final void mHEX_DIGIT() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:112:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:138:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
             // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:
             {
             if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'F')||(input.LA(1) >= 'a' && input.LA(1) <= 'f') ) {
@@ -650,7 +675,7 @@ public class mapaconceitosLexer extends Lexer {
     // $ANTLR start "ESC_SEQ"
     public final void mESC_SEQ() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:116:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:142:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
             int alt7=3;
             int LA7_0 = input.LA(1);
 
@@ -703,7 +728,7 @@ public class mapaconceitosLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:116:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:142:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
                     {
                     match('\\'); 
 
@@ -720,7 +745,7 @@ public class mapaconceitosLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:117:9: UNICODE_ESC
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:143:9: UNICODE_ESC
                     {
                     mUNICODE_ESC(); 
 
@@ -728,7 +753,7 @@ public class mapaconceitosLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:118:9: OCTAL_ESC
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:144:9: OCTAL_ESC
                     {
                     mOCTAL_ESC(); 
 
@@ -748,7 +773,7 @@ public class mapaconceitosLexer extends Lexer {
     // $ANTLR start "OCTAL_ESC"
     public final void mOCTAL_ESC() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:123:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:149:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
             int alt8=3;
             int LA8_0 = input.LA(1);
 
@@ -799,7 +824,7 @@ public class mapaconceitosLexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:123:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:149:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -836,7 +861,7 @@ public class mapaconceitosLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:124:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:150:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -863,7 +888,7 @@ public class mapaconceitosLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:125:9: '\\\\' ( '0' .. '7' )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:151:9: '\\\\' ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -892,8 +917,8 @@ public class mapaconceitosLexer extends Lexer {
     // $ANTLR start "UNICODE_ESC"
     public final void mUNICODE_ESC() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:130:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:130:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:156:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:156:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
             {
             match('\\'); 
 
@@ -922,8 +947,8 @@ public class mapaconceitosLexer extends Lexer {
     // $ANTLR end "UNICODE_ESC"
 
     public void mTokens() throws RecognitionException {
-        // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:8: ( ASSOCIACAO | CONCEITO | INSTANCIA | INSTANCIAMAPA | MAPA | PROPRIEDADE | T__25 | T__26 | T__27 | T__28 | T__29 | ID | COMMENT | WS | STRING )
-        int alt9=15;
+        // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:8: ( ASSOCIACAO | CONCEITO | INSTANCIA | MAPACONCEITOPROP | MAPACONCEITOS | MAPAINSTANCIAS | MAPAINSTANCIASPROP | PROPRIEDADE | T__28 | T__29 | T__30 | T__31 | ID | COMMENT | WS | STRING )
+        int alt9=16;
         alt9 = dfa9.predict(input);
         switch (alt9) {
             case 1 :
@@ -951,95 +976,103 @@ public class mapaconceitosLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:40: INSTANCIAMAPA
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:40: MAPACONCEITOPROP
                 {
-                mINSTANCIAMAPA(); 
+                mMAPACONCEITOPROP(); 
 
 
                 }
                 break;
             case 5 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:54: MAPA
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:57: MAPACONCEITOS
                 {
-                mMAPA(); 
+                mMAPACONCEITOS(); 
 
 
                 }
                 break;
             case 6 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:59: PROPRIEDADE
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:71: MAPAINSTANCIAS
+                {
+                mMAPAINSTANCIAS(); 
+
+
+                }
+                break;
+            case 7 :
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:86: MAPAINSTANCIASPROP
+                {
+                mMAPAINSTANCIASPROP(); 
+
+
+                }
+                break;
+            case 8 :
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:105: PROPRIEDADE
                 {
                 mPROPRIEDADE(); 
 
 
                 }
                 break;
-            case 7 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:71: T__25
-                {
-                mT__25(); 
-
-
-                }
-                break;
-            case 8 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:77: T__26
-                {
-                mT__26(); 
-
-
-                }
-                break;
             case 9 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:83: T__27
-                {
-                mT__27(); 
-
-
-                }
-                break;
-            case 10 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:89: T__28
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:117: T__28
                 {
                 mT__28(); 
 
 
                 }
                 break;
-            case 11 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:95: T__29
+            case 10 :
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:123: T__29
                 {
                 mT__29(); 
 
 
                 }
                 break;
+            case 11 :
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:129: T__30
+                {
+                mT__30(); 
+
+
+                }
+                break;
             case 12 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:101: ID
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:135: T__31
+                {
+                mT__31(); 
+
+
+                }
+                break;
+            case 13 :
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:141: ID
                 {
                 mID(); 
 
 
                 }
                 break;
-            case 13 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:104: COMMENT
+            case 14 :
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:144: COMMENT
                 {
                 mCOMMENT(); 
 
 
                 }
                 break;
-            case 14 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:112: WS
+            case 15 :
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:152: WS
                 {
                 mWS(); 
 
 
                 }
                 break;
-            case 15 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:115: STRING
+            case 16 :
+                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitos.g:1:155: STRING
                 {
                 mSTRING(); 
 
@@ -1054,50 +1087,54 @@ public class mapaconceitosLexer extends Lexer {
 
     protected DFA9 dfa9 = new DFA9(this);
     static final String DFA9_eotS =
-        "\1\uffff\5\13\4\uffff\1\13\4\uffff\17\13\1\44\5\13\1\uffff\6\13"+
-        "\1\60\4\13\1\uffff\1\13\1\66\3\13\1\uffff\1\73\1\13\1\75\1\13\1"+
-        "\uffff\1\13\1\uffff\1\13\1\101\1\13\1\uffff\1\103\1\uffff";
+        "\1\uffff\5\12\10\uffff\42\12\1\66\5\12\1\uffff\1\74\3\12\1\100\1"+
+        "\uffff\3\12\1\uffff\2\12\1\106\2\12\1\uffff\1\12\1\113\2\12\1\uffff"+
+        "\1\117\2\12\1\uffff\1\12\1\123\1\12\1\uffff\1\125\1\uffff";
     static final String DFA9_eofS =
-        "\104\uffff";
+        "\126\uffff";
     static final String DFA9_minS =
-        "\1\11\1\163\1\157\1\156\1\141\1\162\4\uffff\1\124\4\uffff\1\163"+
-        "\1\156\1\163\1\160\1\157\1\122\1\157\1\143\1\164\1\141\1\160\1\111"+
-        "\1\143\1\145\1\141\1\60\1\162\1\116\2\151\1\156\1\uffff\1\151\1"+
-        "\107\1\141\1\164\1\143\1\145\1\60\1\143\1\157\1\151\1\144\1\uffff"+
-        "\1\141\1\60\2\141\1\157\1\uffff\1\60\1\144\1\60\1\141\1\uffff\1"+
-        "\145\1\uffff\1\160\1\60\1\141\1\uffff\1\60\1\uffff";
+        "\1\11\1\163\1\157\1\156\1\141\1\162\10\uffff\1\163\1\156\1\163\1"+
+        "\160\2\157\1\143\1\164\1\141\1\160\1\143\1\145\1\141\1\103\1\162"+
+        "\2\151\1\156\1\157\1\156\1\151\1\141\1\164\1\143\1\156\1\163\1\145"+
+        "\1\143\1\157\1\151\1\143\1\164\1\144\1\141\1\60\1\141\1\145\2\141"+
+        "\1\157\1\uffff\1\60\1\151\1\156\1\144\1\60\1\uffff\1\164\1\143\1"+
+        "\145\1\uffff\1\157\1\151\1\60\1\120\1\141\1\uffff\1\162\1\60\1\120"+
+        "\1\157\1\uffff\1\60\1\162\1\160\1\uffff\1\157\1\60\1\160\1\uffff"+
+        "\1\60\1\uffff";
     static final String DFA9_maxS =
-        "\1\172\1\163\1\157\1\156\1\141\1\162\4\uffff\1\124\4\uffff\1\163"+
-        "\1\156\1\163\1\160\1\157\1\122\1\157\1\143\1\164\1\141\1\160\1\111"+
-        "\1\143\1\145\1\141\1\172\1\162\1\116\2\151\1\156\1\uffff\1\151\1"+
-        "\107\1\141\1\164\1\143\1\145\1\172\1\143\1\157\1\151\1\144\1\uffff"+
-        "\1\141\1\172\2\141\1\157\1\uffff\1\172\1\144\1\172\1\141\1\uffff"+
-        "\1\145\1\uffff\1\160\1\172\1\141\1\uffff\1\172\1\uffff";
+        "\1\172\1\163\1\157\1\156\1\141\1\162\10\uffff\1\163\1\156\1\163"+
+        "\1\160\2\157\1\143\1\164\1\141\1\160\1\143\1\145\1\141\1\111\1\162"+
+        "\2\151\1\156\1\157\1\156\1\151\1\141\1\164\1\143\1\156\1\163\1\145"+
+        "\1\143\1\157\1\151\1\143\1\164\1\144\1\141\1\172\1\141\1\145\2\141"+
+        "\1\157\1\uffff\1\172\1\151\1\156\1\144\1\172\1\uffff\1\164\1\143"+
+        "\1\145\1\uffff\1\157\1\151\1\172\1\163\1\141\1\uffff\1\162\1\172"+
+        "\1\163\1\157\1\uffff\1\172\1\162\1\160\1\uffff\1\157\1\172\1\160"+
+        "\1\uffff\1\172\1\uffff";
     static final String DFA9_acceptS =
-        "\6\uffff\1\7\1\10\1\11\1\12\1\uffff\1\14\1\15\1\16\1\17\25\uffff"+
-        "\1\5\13\uffff\1\13\5\uffff\1\2\4\uffff\1\3\1\uffff\1\1\3\uffff\1"+
-        "\6\1\uffff\1\4";
+        "\6\uffff\1\11\1\12\1\13\1\14\1\15\1\16\1\17\1\20\50\uffff\1\2\5"+
+        "\uffff\1\3\3\uffff\1\1\5\uffff\1\10\4\uffff\1\5\3\uffff\1\6\3\uffff"+
+        "\1\4\1\uffff\1\7";
     static final String DFA9_specialS =
-        "\104\uffff}>";
+        "\126\uffff}>";
     static final String[] DFA9_transitionS = {
-            "\2\15\2\uffff\1\15\22\uffff\1\15\1\uffff\1\16\5\uffff\1\6\1"+
-            "\7\2\uffff\1\10\2\uffff\1\14\13\uffff\1\11\5\uffff\22\13\1\12"+
-            "\7\13\4\uffff\1\13\1\uffff\1\1\1\13\1\2\5\13\1\3\3\13\1\4\2"+
-            "\13\1\5\12\13",
+            "\2\14\2\uffff\1\14\22\uffff\1\14\1\uffff\1\15\5\uffff\1\6\1"+
+            "\7\2\uffff\1\10\2\uffff\1\13\13\uffff\1\11\5\uffff\32\12\4\uffff"+
+            "\1\12\1\uffff\1\1\1\12\1\2\5\12\1\3\3\12\1\4\2\12\1\5\12\12",
+            "\1\16",
             "\1\17",
             "\1\20",
             "\1\21",
             "\1\22",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
+            "",
             "\1\23",
-            "",
-            "",
-            "",
-            "",
             "\1\24",
-            "",
-            "",
-            "",
-            "",
             "\1\25",
             "\1\26",
             "\1\27",
@@ -1109,47 +1146,64 @@ public class mapaconceitosLexer extends Lexer {
             "\1\35",
             "\1\36",
             "\1\37",
-            "\1\40",
-            "\1\41",
+            "\1\40\5\uffff\1\41",
             "\1\42",
             "\1\43",
-            "\12\13\7\uffff\32\13\4\uffff\1\13\1\uffff\32\13",
+            "\1\44",
             "\1\45",
             "\1\46",
             "\1\47",
             "\1\50",
             "\1\51",
-            "",
             "\1\52",
             "\1\53",
             "\1\54",
             "\1\55",
             "\1\56",
             "\1\57",
-            "\12\13\7\uffff\32\13\4\uffff\1\13\1\uffff\32\13",
+            "\1\60",
             "\1\61",
             "\1\62",
             "\1\63",
             "\1\64",
-            "",
             "\1\65",
-            "\12\13\7\uffff\32\13\4\uffff\1\13\1\uffff\32\13",
+            "\12\12\7\uffff\32\12\4\uffff\1\12\1\uffff\32\12",
             "\1\67",
             "\1\70",
             "\1\71",
+            "\1\72",
+            "\1\73",
             "",
-            "\12\13\7\uffff\14\13\1\72\15\13\4\uffff\1\13\1\uffff\32\13",
-            "\1\74",
-            "\12\13\7\uffff\32\13\4\uffff\1\13\1\uffff\32\13",
+            "\12\12\7\uffff\32\12\4\uffff\1\12\1\uffff\32\12",
+            "\1\75",
             "\1\76",
-            "",
             "\1\77",
+            "\12\12\7\uffff\32\12\4\uffff\1\12\1\uffff\32\12",
             "",
-            "\1\100",
-            "\12\13\7\uffff\32\13\4\uffff\1\13\1\uffff\32\13",
+            "\1\101",
             "\1\102",
+            "\1\103",
             "",
-            "\12\13\7\uffff\32\13\4\uffff\1\13\1\uffff\32\13",
+            "\1\104",
+            "\1\105",
+            "\12\12\7\uffff\32\12\4\uffff\1\12\1\uffff\32\12",
+            "\1\107\42\uffff\1\110",
+            "\1\111",
+            "",
+            "\1\112",
+            "\12\12\7\uffff\32\12\4\uffff\1\12\1\uffff\32\12",
+            "\1\115\42\uffff\1\114",
+            "\1\116",
+            "",
+            "\12\12\7\uffff\32\12\4\uffff\1\12\1\uffff\32\12",
+            "\1\120",
+            "\1\121",
+            "",
+            "\1\122",
+            "\12\12\7\uffff\32\12\4\uffff\1\12\1\uffff\32\12",
+            "\1\124",
+            "",
+            "\12\12\7\uffff\32\12\4\uffff\1\12\1\uffff\32\12",
             ""
     };
 
@@ -1183,7 +1237,7 @@ public class mapaconceitosLexer extends Lexer {
             this.transition = DFA9_transition;
         }
         public String getDescription() {
-            return "1:1: Tokens : ( ASSOCIACAO | CONCEITO | INSTANCIA | INSTANCIAMAPA | MAPA | PROPRIEDADE | T__25 | T__26 | T__27 | T__28 | T__29 | ID | COMMENT | WS | STRING );";
+            return "1:1: Tokens : ( ASSOCIACAO | CONCEITO | INSTANCIA | MAPACONCEITOPROP | MAPACONCEITOS | MAPAINSTANCIAS | MAPAINSTANCIASPROP | PROPRIEDADE | T__28 | T__29 | T__30 | T__31 | ID | COMMENT | WS | STRING );";
         }
     }
  

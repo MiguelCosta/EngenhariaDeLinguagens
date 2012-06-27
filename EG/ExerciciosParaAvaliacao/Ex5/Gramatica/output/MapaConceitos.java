@@ -1,12 +1,11 @@
 
-public class Mapa {
-
+public class MapaConceitos {
 	private String id;
 	private String conceitoFilho;
 	private String associacao;
 	private String conceitoPai;
 
-	public Mapa(String id, String conceitoFilho, String associacao, String conceitoPai) {
+	public MapaConceitos(String id, String conceitoFilho, String associacao, String conceitoPai) {
 		super();
 		this.id = id;
 		this.conceitoFilho = conceitoFilho;
@@ -58,7 +57,5 @@ public class Mapa {
 				"conceitoPai=" + conceitoPai +
 				"\n]";
 		}
-
-
 }
 
