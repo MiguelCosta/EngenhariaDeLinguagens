@@ -4,7 +4,7 @@ public class MapaConceitos {
 	private String conceitoFilho;
 	private String associacao;
 	private String conceitoPai;
-
+	
 	public MapaConceitos(String id, String conceitoFilho, String associacao, String conceitoPai) {
 		super();
 		this.id = id;
@@ -12,7 +12,7 @@ public class MapaConceitos {
 		this.associacao = associacao;
 		this.conceitoPai = conceitoPai;
 	}
-
+	
 	public String getId() {
 		return id;
 	}
@@ -40,22 +40,20 @@ public class MapaConceitos {
 
 	public String sqlToString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("INSERT INTO `mapaconceitos`.`Mapas` ");
-		sb.append("(`id`, `conceitoPai`, `conceitoFilho`, `associacao`) ");
-		sb.append("VALUES ");
-		if (conceitoPai.equals("STRING")) this.setConceitoPai("\"STRING\"");
-		sb.append("("+id+", "+ conceitoFilho +", "+ associacao +", "+ conceitoPai +");\n");
+			sb.append("INSERT INTO `mapaconceitos`.`MapasConceitos` ");
+			sb.append("(`id`, `conceitoFilho`, `associacao`, `conceitoPai`) ");
+			sb.append("VALUES ");
+			sb.append("(\""+id+"\", "+ conceitoFilho +", "+ associacao +", "+ conceitoPai +");\n");
 		return sb.toString();
 	}
-
+	
 	@Override
-		public String toString() {
-			return "Mapa [\n\t" +
-				"id=" + id + ", \n\t" +
-				"conceitoFilho=" + conceitoFilho + ", \n\t" +
-				"associacao=" + associacao + ", \n\t" +
-				"conceitoPai=" + conceitoPai +
+	public String toString() {
+		return "Mapa [\n\t" +
+					"id=" + id + ", \n\t" +
+					"conceitoFilho=" + conceitoFilho + ", \n\t" +
+					"associacao=" + associacao + ", \n\t" +
+					"conceitoPai=" + conceitoPai +
 				"\n]";
-		}
+	}
 }
-

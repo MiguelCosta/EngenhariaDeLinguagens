@@ -1,4 +1,4 @@
-grammar mapaconceitos;
+grammar cmc;
 
 options{
 	backtrack = true;
@@ -6,7 +6,7 @@ options{
 }
 
 tokens {
-	MAPACONCEITOS;
+	CMC;
 	CONCEITOS;
 	CONCEITO = 'conceito';
 	ASSOCIACOES;
@@ -25,9 +25,9 @@ tokens {
 	MAPAINSTANCIASPROP = 'mapaInstanciaProp';
 }
 
-mapaconceitos
+cmc
 	:	conceitos ';' assocs ';' (propriedades ';')?  mapasConceitos ';' (mapasConceitoProp ';')? (instancias ';')? (mapasInstancias ';')? (mapasInstanciaProp ';')?
-	-> ^(MAPACONCEITOS conceitos assocs propriedades? mapasConceitos mapasConceitoProp? instancias? mapasInstancias? mapasInstanciaProp?)
+	-> ^(CMC conceitos assocs propriedades? mapasConceitos mapasConceitoProp? instancias? mapasInstancias? mapasInstanciaProp?)
 	;
 	
 conceitos
@@ -92,11 +92,11 @@ instancia
 	;
 	
 mapasInstancias	
-	:	mapaInstancia (';' mapaInstancia )*
-	-> ^(MAPASINSTANCIAS mapaInstancia+)
+	:	mapaInstancias (';' mapaInstancias )*
+	-> ^(MAPASINSTANCIAS mapaInstancias+)
 	;
 
-mapaInstancia	
+mapaInstancias	
 	:	MAPAINSTANCIAS '('ID ','  ID ',' ID ')'
 	-> ^(MAPAINSTANCIAS ID ID ID) 
 	;

@@ -7,7 +7,8 @@ public class Tabela {
     private TreeMap<String, MapaConceitos> mapasConceitos;
     private TreeMap<String, MapaConceitoProp> mapasConceitoProp;
     private TreeMap<String, Instancia> instancias;
-    private HashSet<InstanciaMapa> instanciasMapas;
+    private HashSet<MapaInstancias> mapasInstancias;
+    private HashSet<MapaInstanciaProp> mapasInstanciaProp;
 
     public Tabela (){ 
         this.setConceitos(new TreeSet<String>()); 
@@ -16,7 +17,8 @@ public class Tabela {
         this.setMapasConceitos(new TreeMap<String, MapaConceitos>());
         this.setMapasConceitoProp(new TreeMap<String, MapaConceitoProp>());
         this.setInstancias(new TreeMap<String, Instancia>());
-        this.setInstanciasMapas(new HashSet<InstanciaMapa>());
+        this.setMapasInstancias(new HashSet<MapaInstancias>());
+        this.setMapasInstanciaProp(new HashSet<MapaInstanciaProp>());
     }
 
 	/**
@@ -104,19 +106,33 @@ public class Tabela {
 	}
 
 	/**
-	 * @return the instanciasMapas
+	 * @return the mapasInstancias
 	 */
-	public HashSet<InstanciaMapa> getInstanciasMapas() {
-		return instanciasMapas;
+	public HashSet<MapaInstancias> getMapasInstancias() {
+		return mapasInstancias;
 	}
 
 	/**
-	 * @param instanciasMapas the instanciasMapas to set
+	 * @param mapasInstancias the mapasInstancias to set
 	 */
-	public void setInstanciasMapas(HashSet<InstanciaMapa> instanciasMapas) {
-		this.instanciasMapas = instanciasMapas;
+	public void setMapasInstancias(HashSet<MapaInstancias> mapasInstancias) {
+		this.mapasInstancias = mapasInstancias;
 	}
 
+	/**
+	 * @return the mapasInstanciaProp
+	 */
+	public HashSet<MapaInstanciaProp> getMapasInstanciaProp() {
+		return mapasInstanciaProp;
+	}
+
+	/**
+	 * @param mapasInstanciaProp the mapasInstanciaProp to set
+	 */
+	public void setMapasInstanciaProp(HashSet<MapaInstanciaProp> mapasInstanciaProp) {
+		this.mapasInstanciaProp = mapasInstanciaProp;
+	}
+	
 	/**
 	 * @return the SQL instructions to load tabela's data into the CMC Database 
 	 */
@@ -125,9 +141,11 @@ public class Tabela {
 			sb.append(conceitosToString(this.conceitos));
 			sb.append(associacoesToString(this.associacoes));
 			sb.append(propriedadesToString(this.propriedades));
-//			sb.append(mapasToString(this.mapas));
+			sb.append(mapasConceitosToString(this.mapasConceitos));
+			sb.append(mapasConceitoPropToString(this.mapasConceitoProp));
 			sb.append(instanciasToString(this.instancias));
-//			sb.append(instanciasMapasToString(this.instanciasMapas));
+			sb.append(mapasInstanciasToString(this.mapasInstancias));
+			sb.append(mapasInstanciaPropToString(this.mapasInstanciaProp));
 		return sb.toString();
 	}
 	
@@ -177,11 +195,23 @@ public class Tabela {
 	}
 	
 	/**
-	 * @return the SQL instructions to load mapas into the CMC Database 
+	 * @return the SQL instructions to load mapasConceitos into the CMC Database 
 	 */
-	public String mapasToString(TreeMap<String, Mapa> mapas){
+	public String mapasConceitosToString(TreeMap<String, MapaConceitos> mapas){
 		StringBuilder sb = new StringBuilder();
-		for(Mapa mapa : mapas.values()){
+		for(MapaConceitos mapa : mapas.values()){
+			sb.append(mapa.sqlToString());
+		}
+		sb.append("\n");
+		return sb.toString();
+	}
+	
+	/**
+	 * @return the SQL instructions to load mapasConceitoProp into the CMC Database 
+	 */
+	public String mapasConceitoPropToString(TreeMap<String, MapaConceitoProp> mapas){
+		StringBuilder sb = new StringBuilder();
+		for(MapaConceitoProp mapa : mapas.values()){
 			sb.append(mapa.sqlToString());
 		}
 		sb.append("\n");
@@ -201,12 +231,24 @@ public class Tabela {
 	}
 	
 	/**
-	 * @return the SQL instructions to load instanciasMapas into the CMC Database 
+	 * @return the SQL instructions to load mapasInstancias into the CMC Database 
 	 */
-	public String instanciasmapasToString(HashSet<InstanciaMapa> instanciasMapas){
+	public String mapasInstanciasToString(HashSet<MapaInstancias> mapasInstancias){
 		StringBuilder sb = new StringBuilder();
-		for(InstanciaMapa instanciaMapa : instanciasMapas){
-//			sb.append(instanciaMapa.sqlToString());
+		for(MapaInstancias mapaInstancias : mapasInstancias){
+			sb.append(mapaInstancias.sqlToString());
+		}
+		sb.append("\n");
+		return sb.toString();
+	}
+	
+	/**
+	 * @return the SQL instructions to load mapasInstanciaProp into the CMC Database 
+	 */
+	public String mapasInstanciaPropToString(HashSet<MapaInstanciaProp> mapasInstanciaProp){
+		StringBuilder sb = new StringBuilder();
+		for(MapaInstanciaProp mapaInstanciaProp : mapasInstanciaProp){
+			sb.append(mapaInstanciaProp.sqlToString());
 		}
 		sb.append("\n");
 		return sb.toString();
@@ -221,7 +263,8 @@ public class Tabela {
 					"mapasConceitos=" + mapasConceitos + ", \n" +
 					"mapasConceitoProp=" + mapasConceitoProp + ", \n" +
 					"instancias=" + instancias + ", \n" +
-					"instanciasMapas=" + instanciasMapas + 
+					"mapasInstancias=" + mapasInstancias + ", \n" +
+					"mapasInstanciaProp=" + mapasInstanciaProp +
 				"\n]";
 	}
 }

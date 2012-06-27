@@ -8,17 +8,17 @@ public class Run {
 	public static void main(String[] args) throws Exception {
 		try{
 			CharStream in = new ANTLRFileStream(args[0], "UTF8");
-			mapaconceitosLexer lexer = new mapaconceitosLexer(in);
+			cmcLexer lexer = new cmcLexer(in);
 			CommonTokenStream tokens = new CommonTokenStream(lexer);
-	 		mapaconceitosParser parser = new mapaconceitosParser(tokens);
-			mapaconceitosParser.mapaconceitos_return ret = parser.mapaconceitos();
+	 		cmcParser parser = new cmcParser(tokens);
+			cmcParser.cmc_return ret = parser.cmc();
 			
 			//System.out.println(((CommonTree)ret.getTree()).toStringTree());
 			
 			CommonTreeNodeStream tree = new CommonTreeNodeStream(ret.getTree());
 //			System.out.println(tree.toStringTree());
 			mapaconceitosTGValidacao walker = new mapaconceitosTGValidacao(tree);
-			mapaconceitosTGValidacao.mapaconceitos_return walker_ret = walker.mapaconceitos();
+			mapaconceitosTGValidacao.cmc_return walker_ret = walker.cmc();
 			
 			//System.out.println(walker_ret.t);
 		}

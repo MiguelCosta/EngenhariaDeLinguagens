@@ -1,9 +1,9 @@
-// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g 2012-06-27 03:37:54
+// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g 2012-06-27 17:22:04
 
 	import java.util.TreeSet;
 	import java.util.HashSet;
 	import java.util.TreeMap;
-	
+
 
 import org.antlr.runtime.*;
 import org.antlr.runtime.tree.*;
@@ -17,38 +17,39 @@ import java.util.HashMap;
 @SuppressWarnings({"all", "warnings", "unchecked"})
 public class mapaconceitosTGValidacao extends TreeParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "ASSOCIACAO", "ASSOCIACOES", "COMMENT", "CONCEITO", "CONCEITOS", "ESC_SEQ", "HEX_DIGIT", "ID", "INSTANCIA", "INSTANCIAS", "MAPACONCEITOPROP", "MAPACONCEITOS", "MAPAINSTANCIAS", "MAPAINSTANCIASPROP", "MAPASCONCEITOPROP", "MAPASCONCEITOS", "MAPASINSTANCIAS", "MAPASINSTANCIASPROP", "OCTAL_ESC", "PROPRIEDADE", "PROPRIEDADES", "STRING", "UNICODE_ESC", "WS", "'('", "')'", "','", "';'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "ASSOCIACAO", "ASSOCIACOES", "CMC", "COMMENT", "CONCEITO", "CONCEITOS", "ESC_SEQ", "HEX_DIGIT", "ID", "INSTANCIA", "INSTANCIAS", "MAPACONCEITOPROP", "MAPACONCEITOS", "MAPAINSTANCIAS", "MAPAINSTANCIASPROP", "MAPASCONCEITOPROP", "MAPASCONCEITOS", "MAPASINSTANCIAS", "MAPASINSTANCIASPROP", "OCTAL_ESC", "PROPRIEDADE", "PROPRIEDADES", "STRING", "UNICODE_ESC", "WS", "'('", "')'", "','", "';'"
     };
 
     public static final int EOF=-1;
-    public static final int T__28=28;
     public static final int T__29=29;
     public static final int T__30=30;
     public static final int T__31=31;
+    public static final int T__32=32;
     public static final int ASSOCIACAO=4;
     public static final int ASSOCIACOES=5;
-    public static final int COMMENT=6;
-    public static final int CONCEITO=7;
-    public static final int CONCEITOS=8;
-    public static final int ESC_SEQ=9;
-    public static final int HEX_DIGIT=10;
-    public static final int ID=11;
-    public static final int INSTANCIA=12;
-    public static final int INSTANCIAS=13;
-    public static final int MAPACONCEITOPROP=14;
-    public static final int MAPACONCEITOS=15;
-    public static final int MAPAINSTANCIAS=16;
-    public static final int MAPAINSTANCIASPROP=17;
-    public static final int MAPASCONCEITOPROP=18;
-    public static final int MAPASCONCEITOS=19;
-    public static final int MAPASINSTANCIAS=20;
-    public static final int MAPASINSTANCIASPROP=21;
-    public static final int OCTAL_ESC=22;
-    public static final int PROPRIEDADE=23;
-    public static final int PROPRIEDADES=24;
-    public static final int STRING=25;
-    public static final int UNICODE_ESC=26;
-    public static final int WS=27;
+    public static final int CMC=6;
+    public static final int COMMENT=7;
+    public static final int CONCEITO=8;
+    public static final int CONCEITOS=9;
+    public static final int ESC_SEQ=10;
+    public static final int HEX_DIGIT=11;
+    public static final int ID=12;
+    public static final int INSTANCIA=13;
+    public static final int INSTANCIAS=14;
+    public static final int MAPACONCEITOPROP=15;
+    public static final int MAPACONCEITOS=16;
+    public static final int MAPAINSTANCIAS=17;
+    public static final int MAPAINSTANCIASPROP=18;
+    public static final int MAPASCONCEITOPROP=19;
+    public static final int MAPASCONCEITOS=20;
+    public static final int MAPASINSTANCIAS=21;
+    public static final int MAPASINSTANCIASPROP=22;
+    public static final int OCTAL_ESC=23;
+    public static final int PROPRIEDADE=24;
+    public static final int PROPRIEDADES=25;
+    public static final int STRING=26;
+    public static final int UNICODE_ESC=27;
+    public static final int WS=28;
 
     // delegates
     public TreeParser[] getDelegates() {
@@ -77,17 +78,17 @@ public TreeAdaptor getTreeAdaptor() {
     public String getGrammarFileName() { return "/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g"; }
 
 
-    public static class mapaconceitos_return extends TreeRuleReturnScope {
+    public static class cmc_return extends TreeRuleReturnScope {
         public String erro_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
-    // $ANTLR start "mapaconceitos"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:18:1: mapaconceitos returns [String erro_out] : ^( MAPACONCEITOS ( conceitos[tab, erro] ) ( assocs[tab, erro] ) ( propriedades[tab, erro] )? ( mapasConceitos[tab, erro] ) ( mapasConceitoProp[tab, erro] )? ( instancias[tab, erro] )? ( mapasInstancias[tab, erro] )? ( mapasInstanciaProp[tab, erro] )? ) ;
-    public final mapaconceitosTGValidacao.mapaconceitos_return mapaconceitos() throws RecognitionException {
-        mapaconceitosTGValidacao.mapaconceitos_return retval = new mapaconceitosTGValidacao.mapaconceitos_return();
+    // $ANTLR start "cmc"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:18:1: cmc returns [String erro_out] : ^( CMC ( conceitos[tab, erro] ) ( assocs[tab, erro] ) ( propriedades[tab, erro] )? ( mapasConceitos[tab, erro] ) ( mapasConceitoProp[tab, erro] )? ( instancias[tab, erro] )? ( mapasInstancias[tab, erro] )? ( mapasInstanciaProp[tab, erro] )? ) ;
+    public final mapaconceitosTGValidacao.cmc_return cmc() throws RecognitionException {
+        mapaconceitosTGValidacao.cmc_return retval = new mapaconceitosTGValidacao.cmc_return();
         retval.start = input.LT(1);
 
 
@@ -96,7 +97,7 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _first_0 = null;
         CommonTree _last = null;
 
-        CommonTree MAPACONCEITOS1=null;
+        CommonTree CMC1=null;
         mapaconceitosTGValidacao.conceitos_return conceitos2 =null;
 
         mapaconceitosTGValidacao.assocs_return assocs3 =null;
@@ -114,15 +115,15 @@ public TreeAdaptor getTreeAdaptor() {
         mapaconceitosTGValidacao.mapasInstanciaProp_return mapasInstanciaProp9 =null;
 
 
-        CommonTree MAPACONCEITOS1_tree=null;
+        CommonTree CMC1_tree=null;
 
 
         	Tabela tab = new Tabela();
         	String erro = "Erros:";
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:26:2: ( ^( MAPACONCEITOS ( conceitos[tab, erro] ) ( assocs[tab, erro] ) ( propriedades[tab, erro] )? ( mapasConceitos[tab, erro] ) ( mapasConceitoProp[tab, erro] )? ( instancias[tab, erro] )? ( mapasInstancias[tab, erro] )? ( mapasInstanciaProp[tab, erro] )? ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:26:4: ^( MAPACONCEITOS ( conceitos[tab, erro] ) ( assocs[tab, erro] ) ( propriedades[tab, erro] )? ( mapasConceitos[tab, erro] ) ( mapasConceitoProp[tab, erro] )? ( instancias[tab, erro] )? ( mapasInstancias[tab, erro] )? ( mapasInstanciaProp[tab, erro] )? )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:26:2: ( ^( CMC ( conceitos[tab, erro] ) ( assocs[tab, erro] ) ( propriedades[tab, erro] )? ( mapasConceitos[tab, erro] ) ( mapasConceitoProp[tab, erro] )? ( instancias[tab, erro] )? ( mapasInstancias[tab, erro] )? ( mapasInstanciaProp[tab, erro] )? ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:26:4: ^( CMC ( conceitos[tab, erro] ) ( assocs[tab, erro] ) ( propriedades[tab, erro] )? ( mapasConceitos[tab, erro] ) ( mapasConceitoProp[tab, erro] )? ( instancias[tab, erro] )? ( mapasInstancias[tab, erro] )? ( mapasInstanciaProp[tab, erro] )? )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -133,21 +134,21 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            MAPACONCEITOS1=(CommonTree)match(input,MAPACONCEITOS,FOLLOW_MAPACONCEITOS_in_mapaconceitos68); if (state.failed) return retval;
+            CMC1=(CommonTree)match(input,CMC,FOLLOW_CMC_in_cmc68); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
-            MAPACONCEITOS1_tree = (CommonTree)adaptor.dupNode(MAPACONCEITOS1);
+            CMC1_tree = (CommonTree)adaptor.dupNode(CMC1);
 
 
-            root_1 = (CommonTree)adaptor.becomeRoot(MAPACONCEITOS1_tree, root_1);
+            root_1 = (CommonTree)adaptor.becomeRoot(CMC1_tree, root_1);
             }
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:26:20: ( conceitos[tab, erro] )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:26:21: conceitos[tab, erro]
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:26:10: ( conceitos[tab, erro] )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:26:11: conceitos[tab, erro]
             {
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_conceitos_in_mapaconceitos71);
+            pushFollow(FOLLOW_conceitos_in_cmc71);
             conceitos2=conceitos(tab, erro);
 
             state._fsp--;
@@ -163,11 +164,11 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:27:7: ( assocs[tab, erro] )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:27:8: assocs[tab, erro]
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:27:5: ( assocs[tab, erro] )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:27:6: assocs[tab, erro]
             {
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_assocs_in_mapaconceitos84);
+            pushFollow(FOLLOW_assocs_in_cmc82);
             assocs3=assocs(tab, erro);
 
             state._fsp--;
@@ -183,7 +184,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:28:7: ( propriedades[tab, erro] )?
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:28:5: ( propriedades[tab, erro] )?
             int alt1=2;
             int LA1_0 = input.LA(1);
 
@@ -192,10 +193,10 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt1) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:28:8: propriedades[tab, erro]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:28:6: propriedades[tab, erro]
                     {
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_propriedades_in_mapaconceitos97);
+                    pushFollow(FOLLOW_propriedades_in_cmc93);
                     propriedades4=propriedades(tab, erro);
 
                     state._fsp--;
@@ -214,11 +215,11 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:29:7: ( mapasConceitos[tab, erro] )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:29:8: mapasConceitos[tab, erro]
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:29:5: ( mapasConceitos[tab, erro] )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:29:6: mapasConceitos[tab, erro]
             {
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_mapasConceitos_in_mapaconceitos112);
+            pushFollow(FOLLOW_mapasConceitos_in_cmc106);
             mapasConceitos5=mapasConceitos(tab, erro);
 
             state._fsp--;
@@ -234,7 +235,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:30:7: ( mapasConceitoProp[tab, erro] )?
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:30:5: ( mapasConceitoProp[tab, erro] )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -243,10 +244,10 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt2) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:30:8: mapasConceitoProp[tab, erro]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:30:6: mapasConceitoProp[tab, erro]
                     {
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_mapasConceitoProp_in_mapaconceitos125);
+                    pushFollow(FOLLOW_mapasConceitoProp_in_cmc117);
                     mapasConceitoProp6=mapasConceitoProp(tab, erro);
 
                     state._fsp--;
@@ -265,9 +266,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            if ( state.backtracking==0 ) {System.out.println("\nTabela mapasConceitoProp:\n"+tab);}
-
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:31:7: ( instancias[tab, erro] )?
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:31:5: ( instancias[tab, erro] )?
             int alt3=2;
             int LA3_0 = input.LA(1);
 
@@ -276,10 +275,10 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt3) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:31:8: instancias[tab, erro]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:31:6: instancias[tab, erro]
                     {
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_instancias_in_mapaconceitos140);
+                    pushFollow(FOLLOW_instancias_in_cmc129);
                     instancias7=instancias(tab, erro);
 
                     state._fsp--;
@@ -298,7 +297,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:32:7: ( mapasInstancias[tab, erro] )?
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:32:5: ( mapasInstancias[tab, erro] )?
             int alt4=2;
             int LA4_0 = input.LA(1);
 
@@ -307,10 +306,10 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt4) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:32:8: mapasInstancias[tab, erro]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:32:6: mapasInstancias[tab, erro]
                     {
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_mapasInstancias_in_mapaconceitos160);
+                    pushFollow(FOLLOW_mapasInstancias_in_cmc147);
                     mapasInstancias8=mapasInstancias(tab, erro);
 
                     state._fsp--;
@@ -329,7 +328,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:33:7: ( mapasInstanciaProp[tab, erro] )?
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:33:5: ( mapasInstanciaProp[tab, erro] )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -338,10 +337,10 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt5) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:33:8: mapasInstanciaProp[tab, erro]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:33:6: mapasInstanciaProp[tab, erro]
                     {
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_mapasInstanciaProp_in_mapaconceitos174);
+                    pushFollow(FOLLOW_mapasInstanciaProp_in_cmc159);
                     mapasInstanciaProp9=mapasInstanciaProp(tab, erro);
 
                     state._fsp--;
@@ -360,10 +359,12 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
+            if ( state.backtracking==0 ) {System.out.println("\nTabela mapasInstanciaProp:\n"+tab);}
+
             if ( state.backtracking==0 ) {
-            							//System.out.println("\nTabela instanciasMapas:\n"+tab);
-            							//System.out.println("\n\n\nErros instanciasMapas:\n\t"+erro);
-            						}
+            					//System.out.println("\nTabela instanciasMapas:\n"+tab);
+            					//System.out.println("\n\n\nErros instanciasMapas:\n\t"+erro);
+            				}
 
             match(input, Token.UP, null); if (state.failed) return retval;
             adaptor.addChild(root_0, root_1);
@@ -385,7 +386,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
             if ( state.backtracking==0 ) {
-            	//System.out.println(tab.geraInstrucoesSQL());
+            	System.out.println(tab.geraInstrucoesSQL());
             }
         }
         catch (RecognitionException re) {
@@ -398,7 +399,7 @@ public TreeAdaptor getTreeAdaptor() {
         }
         return retval;
     }
-    // $ANTLR end "mapaconceitos"
+    // $ANTLR end "cmc"
 
 
     public static class conceitos_return extends TreeRuleReturnScope {
@@ -440,7 +441,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            CONCEITOS10=(CommonTree)match(input,CONCEITOS,FOLLOW_CONCEITOS_in_conceitos214); if (state.failed) return retval;
+            CONCEITOS10=(CommonTree)match(input,CONCEITOS,FOLLOW_CONCEITOS_in_conceitos198); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             CONCEITOS10_tree = (CommonTree)adaptor.dupNode(CONCEITOS10);
 
@@ -467,7 +468,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:45:17: conceito[$conceitos.tab_in, $conceitos.erro_in]
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_conceito_in_conceitos217);
+            	    pushFollow(FOLLOW_conceito_in_conceitos201);
             	    conceito11=conceito(tab_in, erro_in);
 
             	    state._fsp--;
@@ -570,7 +571,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            CONCEITO12=(CommonTree)match(input,CONCEITO,FOLLOW_CONCEITO_in_conceito250); if (state.failed) return retval;
+            CONCEITO12=(CommonTree)match(input,CONCEITO,FOLLOW_CONCEITO_in_conceito234); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             CONCEITO12_tree = (CommonTree)adaptor.dupNode(CONCEITO12);
 
@@ -581,7 +582,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            STRING13=(CommonTree)match(input,STRING,FOLLOW_STRING_in_conceito252); if (state.failed) return retval;
+            STRING13=(CommonTree)match(input,STRING,FOLLOW_STRING_in_conceito236); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             STRING13_tree = (CommonTree)adaptor.dupNode(STRING13);
 
@@ -669,7 +670,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            ASSOCIACOES14=(CommonTree)match(input,ASSOCIACOES,FOLLOW_ASSOCIACOES_in_assocs275); if (state.failed) return retval;
+            ASSOCIACOES14=(CommonTree)match(input,ASSOCIACOES,FOLLOW_ASSOCIACOES_in_assocs259); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ASSOCIACOES14_tree = (CommonTree)adaptor.dupNode(ASSOCIACOES14);
 
@@ -696,7 +697,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:73:19: assoc[$assocs.tab_in, $assocs.erro_in]
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_assoc_in_assocs278);
+            	    pushFollow(FOLLOW_assoc_in_assocs262);
             	    assoc15=assoc(tab_in, erro_in);
 
             	    state._fsp--;
@@ -799,7 +800,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            ASSOCIACAO16=(CommonTree)match(input,ASSOCIACAO,FOLLOW_ASSOCIACAO_in_assoc310); if (state.failed) return retval;
+            ASSOCIACAO16=(CommonTree)match(input,ASSOCIACAO,FOLLOW_ASSOCIACAO_in_assoc294); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ASSOCIACAO16_tree = (CommonTree)adaptor.dupNode(ASSOCIACAO16);
 
@@ -810,7 +811,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            STRING17=(CommonTree)match(input,STRING,FOLLOW_STRING_in_assoc312); if (state.failed) return retval;
+            STRING17=(CommonTree)match(input,STRING,FOLLOW_STRING_in_assoc296); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             STRING17_tree = (CommonTree)adaptor.dupNode(STRING17);
 
@@ -898,7 +899,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            PROPRIEDADES18=(CommonTree)match(input,PROPRIEDADES,FOLLOW_PROPRIEDADES_in_propriedades335); if (state.failed) return retval;
+            PROPRIEDADES18=(CommonTree)match(input,PROPRIEDADES,FOLLOW_PROPRIEDADES_in_propriedades319); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             PROPRIEDADES18_tree = (CommonTree)adaptor.dupNode(PROPRIEDADES18);
 
@@ -925,7 +926,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:102:20: propriedade[$propriedades.tab_in, $propriedades.erro_in]
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_propriedade_in_propriedades338);
+            	    pushFollow(FOLLOW_propriedade_in_propriedades322);
             	    propriedade19=propriedade(tab_in, erro_in);
 
             	    state._fsp--;
@@ -1028,7 +1029,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            PROPRIEDADE20=(CommonTree)match(input,PROPRIEDADE,FOLLOW_PROPRIEDADE_in_propriedade370); if (state.failed) return retval;
+            PROPRIEDADE20=(CommonTree)match(input,PROPRIEDADE,FOLLOW_PROPRIEDADE_in_propriedade354); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             PROPRIEDADE20_tree = (CommonTree)adaptor.dupNode(PROPRIEDADE20);
 
@@ -1039,7 +1040,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            STRING21=(CommonTree)match(input,STRING,FOLLOW_STRING_in_propriedade372); if (state.failed) return retval;
+            STRING21=(CommonTree)match(input,STRING,FOLLOW_STRING_in_propriedade356); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             STRING21_tree = (CommonTree)adaptor.dupNode(STRING21);
 
@@ -1130,7 +1131,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            MAPASCONCEITOS22=(CommonTree)match(input,MAPASCONCEITOS,FOLLOW_MAPASCONCEITOS_in_mapasConceitos398); if (state.failed) return retval;
+            MAPASCONCEITOS22=(CommonTree)match(input,MAPASCONCEITOS,FOLLOW_MAPASCONCEITOS_in_mapasConceitos382); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             MAPASCONCEITOS22_tree = (CommonTree)adaptor.dupNode(MAPASCONCEITOS22);
 
@@ -1157,7 +1158,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:133:22: mapaConceito[t, $mapasConceitos.erro_in]
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_mapaConceito_in_mapasConceitos401);
+            	    pushFollow(FOLLOW_mapaConceito_in_mapasConceitos385);
             	    mapaConceito23=mapaConceito(t, erro_in);
 
             	    state._fsp--;
@@ -1270,7 +1271,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            MAPACONCEITOS24=(CommonTree)match(input,MAPACONCEITOS,FOLLOW_MAPACONCEITOS_in_mapaConceito439); if (state.failed) return retval;
+            MAPACONCEITOS24=(CommonTree)match(input,MAPACONCEITOS,FOLLOW_MAPACONCEITOS_in_mapaConceito423); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             MAPACONCEITOS24_tree = (CommonTree)adaptor.dupNode(MAPACONCEITOS24);
 
@@ -1281,7 +1282,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            ID25=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaConceito441); if (state.failed) return retval;
+            ID25=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaConceito425); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ID25_tree = (CommonTree)adaptor.dupNode(ID25);
 
@@ -1291,7 +1292,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             _last = (CommonTree)input.LT(1);
-            ci=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaConceito445); if (state.failed) return retval;
+            ci=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaConceito429); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ci_tree = (CommonTree)adaptor.dupNode(ci);
 
@@ -1301,7 +1302,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             _last = (CommonTree)input.LT(1);
-            a=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaConceito449); if (state.failed) return retval;
+            a=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaConceito433); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             a_tree = (CommonTree)adaptor.dupNode(a);
 
@@ -1311,7 +1312,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             _last = (CommonTree)input.LT(1);
-            cf=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaConceito453); if (state.failed) return retval;
+            cf=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaConceito437); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             cf_tree = (CommonTree)adaptor.dupNode(cf);
 
@@ -1415,7 +1416,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            MAPASCONCEITOPROP26=(CommonTree)match(input,MAPASCONCEITOPROP,FOLLOW_MAPASCONCEITOPROP_in_mapasConceitoProp480); if (state.failed) return retval;
+            MAPASCONCEITOPROP26=(CommonTree)match(input,MAPASCONCEITOPROP,FOLLOW_MAPASCONCEITOPROP_in_mapasConceitoProp464); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             MAPASCONCEITOPROP26_tree = (CommonTree)adaptor.dupNode(MAPASCONCEITOPROP26);
 
@@ -1442,7 +1443,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:181:25: mapaConceitoProp[t, $mapasConceitoProp.erro_in]
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_mapaConceitoProp_in_mapasConceitoProp483);
+            	    pushFollow(FOLLOW_mapaConceitoProp_in_mapasConceitoProp467);
             	    mapaConceitoProp27=mapaConceitoProp(t, erro_in);
 
             	    state._fsp--;
@@ -1553,7 +1554,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            MAPACONCEITOPROP28=(CommonTree)match(input,MAPACONCEITOPROP,FOLLOW_MAPACONCEITOPROP_in_mapaConceitoProp521); if (state.failed) return retval;
+            MAPACONCEITOPROP28=(CommonTree)match(input,MAPACONCEITOPROP,FOLLOW_MAPACONCEITOPROP_in_mapaConceitoProp505); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             MAPACONCEITOPROP28_tree = (CommonTree)adaptor.dupNode(MAPACONCEITOPROP28);
 
@@ -1564,7 +1565,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            ID29=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaConceitoProp523); if (state.failed) return retval;
+            ID29=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaConceitoProp507); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ID29_tree = (CommonTree)adaptor.dupNode(ID29);
 
@@ -1574,7 +1575,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             _last = (CommonTree)input.LT(1);
-            c=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaConceitoProp527); if (state.failed) return retval;
+            c=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaConceitoProp511); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             c_tree = (CommonTree)adaptor.dupNode(c);
 
@@ -1584,7 +1585,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             _last = (CommonTree)input.LT(1);
-            prop=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaConceitoProp531); if (state.failed) return retval;
+            prop=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaConceitoProp515); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             prop_tree = (CommonTree)adaptor.dupNode(prop);
 
@@ -1685,7 +1686,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            INSTANCIAS30=(CommonTree)match(input,INSTANCIAS,FOLLOW_INSTANCIAS_in_instancias560); if (state.failed) return retval;
+            INSTANCIAS30=(CommonTree)match(input,INSTANCIAS,FOLLOW_INSTANCIAS_in_instancias544); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             INSTANCIAS30_tree = (CommonTree)adaptor.dupNode(INSTANCIAS30);
 
@@ -1712,7 +1713,7 @@ public TreeAdaptor getTreeAdaptor() {
             	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:226:18: instancia[t, $instancias.erro_in]
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_instancia_in_instancias563);
+            	    pushFollow(FOLLOW_instancia_in_instancias547);
             	    instancia31=instancia(t, erro_in);
 
             	    state._fsp--;
@@ -1821,7 +1822,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            INSTANCIA32=(CommonTree)match(input,INSTANCIA,FOLLOW_INSTANCIA_in_instancia598); if (state.failed) return retval;
+            INSTANCIA32=(CommonTree)match(input,INSTANCIA,FOLLOW_INSTANCIA_in_instancia582); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             INSTANCIA32_tree = (CommonTree)adaptor.dupNode(INSTANCIA32);
 
@@ -1832,7 +1833,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            ID33=(CommonTree)match(input,ID,FOLLOW_ID_in_instancia600); if (state.failed) return retval;
+            ID33=(CommonTree)match(input,ID,FOLLOW_ID_in_instancia584); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ID33_tree = (CommonTree)adaptor.dupNode(ID33);
 
@@ -1842,7 +1843,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             _last = (CommonTree)input.LT(1);
-            STRING34=(CommonTree)match(input,STRING,FOLLOW_STRING_in_instancia602); if (state.failed) return retval;
+            STRING34=(CommonTree)match(input,STRING,FOLLOW_STRING_in_instancia586); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             STRING34_tree = (CommonTree)adaptor.dupNode(STRING34);
 
@@ -1907,7 +1908,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "mapasInstancias"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:263:1: mapasInstancias[Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out] : ^( MAPASINSTANCIAS ( mapaInstancia[t, $mapasInstancias.erro_in] )+ ) ;
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:263:1: mapasInstancias[Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out] : ^( MAPASINSTANCIAS ( mapaInstancias[t, $mapasInstancias.erro_in] )+ ) ;
     public final mapaconceitosTGValidacao.mapasInstancias_return mapasInstancias(Tabela tab_in, String erro_in) throws RecognitionException {
         mapaconceitosTGValidacao.mapasInstancias_return retval = new mapaconceitosTGValidacao.mapasInstancias_return();
         retval.start = input.LT(1);
@@ -1919,7 +1920,7 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree MAPASINSTANCIAS35=null;
-        mapaconceitosTGValidacao.mapaInstancia_return mapaInstancia36 =null;
+        mapaconceitosTGValidacao.mapaInstancias_return mapaInstancias36 =null;
 
 
         CommonTree MAPASINSTANCIAS35_tree=null;
@@ -1928,8 +1929,8 @@ public TreeAdaptor getTreeAdaptor() {
         	Tabela t = tab_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:267:2: ( ^( MAPASINSTANCIAS ( mapaInstancia[t, $mapasInstancias.erro_in] )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:267:4: ^( MAPASINSTANCIAS ( mapaInstancia[t, $mapasInstancias.erro_in] )+ )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:267:2: ( ^( MAPASINSTANCIAS ( mapaInstancias[t, $mapasInstancias.erro_in] )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:267:4: ^( MAPASINSTANCIAS ( mapaInstancias[t, $mapasInstancias.erro_in] )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1940,7 +1941,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            MAPASINSTANCIAS35=(CommonTree)match(input,MAPASINSTANCIAS,FOLLOW_MAPASINSTANCIAS_in_mapasInstancias628); if (state.failed) return retval;
+            MAPASINSTANCIAS35=(CommonTree)match(input,MAPASINSTANCIAS,FOLLOW_MAPASINSTANCIAS_in_mapasInstancias612); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             MAPASINSTANCIAS35_tree = (CommonTree)adaptor.dupNode(MAPASINSTANCIAS35);
 
@@ -1950,7 +1951,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:267:22: ( mapaInstancia[t, $mapasInstancias.erro_in] )+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:267:22: ( mapaInstancias[t, $mapasInstancias.erro_in] )+
             int cnt12=0;
             loop12:
             do {
@@ -1964,17 +1965,22 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt12) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:267:23: mapaInstancia[t, $mapasInstancias.erro_in]
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:267:23: mapaInstancias[t, $mapasInstancias.erro_in]
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_mapaInstancia_in_mapasInstancias631);
-            	    mapaInstancia36=mapaInstancia(t, erro_in);
+            	    pushFollow(FOLLOW_mapaInstancias_in_mapasInstancias615);
+            	    mapaInstancias36=mapaInstancias(t, erro_in);
 
             	    state._fsp--;
             	    if (state.failed) return retval;
             	    if ( state.backtracking==0 ) 
-            	    adaptor.addChild(root_1, mapaInstancia36.getTree());
+            	    adaptor.addChild(root_1, mapaInstancias36.getTree());
 
+
+            	    if ( state.backtracking==0 ) {
+            	    		erro_in = (mapaInstancias36!=null?mapaInstancias36.erro_out:null);
+            	    		t = (mapaInstancias36!=null?mapaInstancias36.tab_out:null);
+            	    	}
 
             	    if ( state.backtracking==0 ) {
             	    }
@@ -1991,6 +1997,11 @@ public TreeAdaptor getTreeAdaptor() {
                 cnt12++;
             } while (true);
 
+
+            if ( state.backtracking==0 ) {
+            		retval.tab_out = (mapaInstancias36!=null?mapaInstancias36.tab_out:null);
+            		retval.erro_out = (mapaInstancias36!=null?mapaInstancias36.erro_out:null);
+            	}
 
             match(input, Token.UP, null); if (state.failed) return retval;
             adaptor.addChild(root_0, root_1);
@@ -2021,7 +2032,7 @@ public TreeAdaptor getTreeAdaptor() {
     // $ANTLR end "mapasInstancias"
 
 
-    public static class mapaInstancia_return extends TreeRuleReturnScope {
+    public static class mapaInstancias_return extends TreeRuleReturnScope {
         public Tabela tab_out;
         public String erro_out;
         CommonTree tree;
@@ -2029,10 +2040,10 @@ public TreeAdaptor getTreeAdaptor() {
     };
 
 
-    // $ANTLR start "mapaInstancia"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:270:1: mapaInstancia[Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out] : ^( MAPAINSTANCIAS ID ID ID ) ;
-    public final mapaconceitosTGValidacao.mapaInstancia_return mapaInstancia(Tabela tab_in, String erro_in) throws RecognitionException {
-        mapaconceitosTGValidacao.mapaInstancia_return retval = new mapaconceitosTGValidacao.mapaInstancia_return();
+    // $ANTLR start "mapaInstancias"
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:279:1: mapaInstancias[Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out] : ^( MAPAINSTANCIAS instFilho= ID mapaConc= ID instPai= ID ) ;
+    public final mapaconceitosTGValidacao.mapaInstancias_return mapaInstancias(Tabela tab_in, String erro_in) throws RecognitionException {
+        mapaconceitosTGValidacao.mapaInstancias_return retval = new mapaconceitosTGValidacao.mapaInstancias_return();
         retval.start = input.LT(1);
 
 
@@ -2041,19 +2052,23 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _first_0 = null;
         CommonTree _last = null;
 
+        CommonTree instFilho=null;
+        CommonTree mapaConc=null;
+        CommonTree instPai=null;
         CommonTree MAPAINSTANCIAS37=null;
-        CommonTree ID38=null;
-        CommonTree ID39=null;
-        CommonTree ID40=null;
 
+        CommonTree instFilho_tree=null;
+        CommonTree mapaConc_tree=null;
+        CommonTree instPai_tree=null;
         CommonTree MAPAINSTANCIAS37_tree=null;
-        CommonTree ID38_tree=null;
-        CommonTree ID39_tree=null;
-        CommonTree ID40_tree=null;
+
+
+        	String erro = erro_in;
+        	Tabela t = tab_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:271:2: ( ^( MAPAINSTANCIAS ID ID ID ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:271:4: ^( MAPAINSTANCIAS ID ID ID )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:284:2: ( ^( MAPAINSTANCIAS instFilho= ID mapaConc= ID instPai= ID ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:284:4: ^( MAPAINSTANCIAS instFilho= ID mapaConc= ID instPai= ID )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2064,7 +2079,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            MAPAINSTANCIAS37=(CommonTree)match(input,MAPAINSTANCIAS,FOLLOW_MAPAINSTANCIAS_in_mapaInstancia655); if (state.failed) return retval;
+            MAPAINSTANCIAS37=(CommonTree)match(input,MAPAINSTANCIAS,FOLLOW_MAPAINSTANCIAS_in_mapaInstancias651); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             MAPAINSTANCIAS37_tree = (CommonTree)adaptor.dupNode(MAPAINSTANCIAS37);
 
@@ -2075,32 +2090,32 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            ID38=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaInstancia657); if (state.failed) return retval;
+            instFilho=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaInstancias655); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
-            ID38_tree = (CommonTree)adaptor.dupNode(ID38);
+            instFilho_tree = (CommonTree)adaptor.dupNode(instFilho);
 
 
-            adaptor.addChild(root_1, ID38_tree);
+            adaptor.addChild(root_1, instFilho_tree);
             }
 
 
             _last = (CommonTree)input.LT(1);
-            ID39=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaInstancia659); if (state.failed) return retval;
+            mapaConc=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaInstancias659); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
-            ID39_tree = (CommonTree)adaptor.dupNode(ID39);
+            mapaConc_tree = (CommonTree)adaptor.dupNode(mapaConc);
 
 
-            adaptor.addChild(root_1, ID39_tree);
+            adaptor.addChild(root_1, mapaConc_tree);
             }
 
 
             _last = (CommonTree)input.LT(1);
-            ID40=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaInstancia661); if (state.failed) return retval;
+            instPai=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaInstancias663); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
-            ID40_tree = (CommonTree)adaptor.dupNode(ID40);
+            instPai_tree = (CommonTree)adaptor.dupNode(instPai);
 
 
-            adaptor.addChild(root_1, ID40_tree);
+            adaptor.addChild(root_1, instPai_tree);
             }
 
 
@@ -2109,6 +2124,30 @@ public TreeAdaptor getTreeAdaptor() {
             _last = _save_last_1;
             }
 
+
+            if ( state.backtracking==0 ) {
+            		Boolean instFilhoSemErro = true;
+            		Boolean mapaConceitoSemErro = true;
+            		Boolean instPaiSemErro = true;
+            	
+            		// verifica se existem erros e constroi string de erros
+            		if (!(instFilhoSemErro = t.getInstancias().containsKey((instFilho!=null?instFilho.getText():null))))
+            			erro += "\n\t("+(instFilho!=null?instFilho.getLine():0)+":"+(instFilho!=null?instFilho.getCharPositionInLine():0)+")\tA instância "+(instFilho!=null?instFilho.getText():null)+" não foi definida!";
+            		if (!(mapaConceitoSemErro = t.getMapasConceitos().containsKey((mapaConc!=null?mapaConc.getText():null))))
+            			erro += "\n\t("+(mapaConc!=null?mapaConc.getLine():0)+":"+(mapaConc!=null?mapaConc.getCharPositionInLine():0)+")\tO mapa de conceitos "+(mapaConc!=null?mapaConc.getText():null)+" não foi definido!";
+            		if (!(instPaiSemErro = t.getInstancias().containsKey((instPai!=null?instPai.getText():null))))
+            			erro += "\n\t("+(instPai!=null?instPai.getLine():0)+":"+(instPai!=null?instPai.getCharPositionInLine():0)+")\tA instância "+(instPai!=null?instPai.getText():null)+" não foi definida!";
+            			
+            		// se nao existirem erros insere Mapa na tabela
+            		if (instFilhoSemErro && mapaConceitoSemErro && instPaiSemErro) {	
+            			HashSet<MapaInstancias> mapasInstancias = t.getMapasInstancias();
+            			mapasInstancias.add(new MapaInstancias((instFilho!=null?instFilho.getText():null), (mapaConc!=null?mapaConc.getText():null), (instPai!=null?instPai.getText():null)));
+            			t.setMapasInstancias(mapasInstancias);
+            		}	
+            			
+            		retval.erro_out = erro;
+            		retval.tab_out = t;
+            	}
 
             if ( state.backtracking==0 ) {
             }
@@ -2130,7 +2169,7 @@ public TreeAdaptor getTreeAdaptor() {
         }
         return retval;
     }
-    // $ANTLR end "mapaInstancia"
+    // $ANTLR end "mapaInstancias"
 
 
     public static class mapasInstanciaProp_return extends TreeRuleReturnScope {
@@ -2142,7 +2181,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "mapasInstanciaProp"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:274:1: mapasInstanciaProp[Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out] : ^( MAPASINSTANCIASPROP ( mapaInstanciaProp[t, $mapasInstanciaProp.erro_in] )+ ) ;
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:310:1: mapasInstanciaProp[Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out] : ^( MAPASINSTANCIASPROP ( mapaInstanciaProp[t, $mapasInstanciaProp.erro_in] )+ ) ;
     public final mapaconceitosTGValidacao.mapasInstanciaProp_return mapasInstanciaProp(Tabela tab_in, String erro_in) throws RecognitionException {
         mapaconceitosTGValidacao.mapasInstanciaProp_return retval = new mapaconceitosTGValidacao.mapasInstanciaProp_return();
         retval.start = input.LT(1);
@@ -2153,18 +2192,18 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _first_0 = null;
         CommonTree _last = null;
 
-        CommonTree MAPASINSTANCIASPROP41=null;
-        mapaconceitosTGValidacao.mapaInstanciaProp_return mapaInstanciaProp42 =null;
+        CommonTree MAPASINSTANCIASPROP38=null;
+        mapaconceitosTGValidacao.mapaInstanciaProp_return mapaInstanciaProp39 =null;
 
 
-        CommonTree MAPASINSTANCIASPROP41_tree=null;
+        CommonTree MAPASINSTANCIASPROP38_tree=null;
 
 
         	Tabela t = tab_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:278:2: ( ^( MAPASINSTANCIASPROP ( mapaInstanciaProp[t, $mapasInstanciaProp.erro_in] )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:278:4: ^( MAPASINSTANCIASPROP ( mapaInstanciaProp[t, $mapasInstanciaProp.erro_in] )+ )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:314:2: ( ^( MAPASINSTANCIASPROP ( mapaInstanciaProp[t, $mapasInstanciaProp.erro_in] )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:314:4: ^( MAPASINSTANCIASPROP ( mapaInstanciaProp[t, $mapasInstanciaProp.erro_in] )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2175,17 +2214,17 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            MAPASINSTANCIASPROP41=(CommonTree)match(input,MAPASINSTANCIASPROP,FOLLOW_MAPASINSTANCIASPROP_in_mapasInstanciaProp685); if (state.failed) return retval;
+            MAPASINSTANCIASPROP38=(CommonTree)match(input,MAPASINSTANCIASPROP,FOLLOW_MAPASINSTANCIASPROP_in_mapasInstanciaProp690); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
-            MAPASINSTANCIASPROP41_tree = (CommonTree)adaptor.dupNode(MAPASINSTANCIASPROP41);
+            MAPASINSTANCIASPROP38_tree = (CommonTree)adaptor.dupNode(MAPASINSTANCIASPROP38);
 
 
-            root_1 = (CommonTree)adaptor.becomeRoot(MAPASINSTANCIASPROP41_tree, root_1);
+            root_1 = (CommonTree)adaptor.becomeRoot(MAPASINSTANCIASPROP38_tree, root_1);
             }
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:278:26: ( mapaInstanciaProp[t, $mapasInstanciaProp.erro_in] )+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:314:26: ( mapaInstanciaProp[t, $mapasInstanciaProp.erro_in] )+
             int cnt13=0;
             loop13:
             do {
@@ -2199,17 +2238,22 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt13) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:278:27: mapaInstanciaProp[t, $mapasInstanciaProp.erro_in]
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:314:27: mapaInstanciaProp[t, $mapasInstanciaProp.erro_in]
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_mapaInstanciaProp_in_mapasInstanciaProp688);
-            	    mapaInstanciaProp42=mapaInstanciaProp(t, erro_in);
+            	    pushFollow(FOLLOW_mapaInstanciaProp_in_mapasInstanciaProp693);
+            	    mapaInstanciaProp39=mapaInstanciaProp(t, erro_in);
 
             	    state._fsp--;
             	    if (state.failed) return retval;
             	    if ( state.backtracking==0 ) 
-            	    adaptor.addChild(root_1, mapaInstanciaProp42.getTree());
+            	    adaptor.addChild(root_1, mapaInstanciaProp39.getTree());
 
+
+            	    if ( state.backtracking==0 ) {
+            	    			erro_in = (mapaInstanciaProp39!=null?mapaInstanciaProp39.erro_out:null);
+            	    			t = (mapaInstanciaProp39!=null?mapaInstanciaProp39.tab_out:null);
+            	    		}
 
             	    if ( state.backtracking==0 ) {
             	    }
@@ -2226,6 +2270,11 @@ public TreeAdaptor getTreeAdaptor() {
                 cnt13++;
             } while (true);
 
+
+            if ( state.backtracking==0 ) {
+            			retval.tab_out = (mapaInstanciaProp39!=null?mapaInstanciaProp39.tab_out:null);
+            			retval.erro_out = (mapaInstanciaProp39!=null?mapaInstanciaProp39.erro_out:null);
+            		}
 
             match(input, Token.UP, null); if (state.failed) return retval;
             adaptor.addChild(root_0, root_1);
@@ -2265,7 +2314,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "mapaInstanciaProp"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:281:1: mapaInstanciaProp[Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out] : ^( MAPAINSTANCIASPROP ID ID STRING ) ;
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:326:1: mapaInstanciaProp[Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out] : ^( MAPAINSTANCIASPROP inst= ID mapaConcProp= ID val= STRING ) ;
     public final mapaconceitosTGValidacao.mapaInstanciaProp_return mapaInstanciaProp(Tabela tab_in, String erro_in) throws RecognitionException {
         mapaconceitosTGValidacao.mapaInstanciaProp_return retval = new mapaconceitosTGValidacao.mapaInstanciaProp_return();
         retval.start = input.LT(1);
@@ -2276,19 +2325,23 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _first_0 = null;
         CommonTree _last = null;
 
-        CommonTree MAPAINSTANCIASPROP43=null;
-        CommonTree ID44=null;
-        CommonTree ID45=null;
-        CommonTree STRING46=null;
+        CommonTree inst=null;
+        CommonTree mapaConcProp=null;
+        CommonTree val=null;
+        CommonTree MAPAINSTANCIASPROP40=null;
 
-        CommonTree MAPAINSTANCIASPROP43_tree=null;
-        CommonTree ID44_tree=null;
-        CommonTree ID45_tree=null;
-        CommonTree STRING46_tree=null;
+        CommonTree inst_tree=null;
+        CommonTree mapaConcProp_tree=null;
+        CommonTree val_tree=null;
+        CommonTree MAPAINSTANCIASPROP40_tree=null;
+
+
+        	String erro = erro_in;
+        	Tabela t = tab_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:282:2: ( ^( MAPAINSTANCIASPROP ID ID STRING ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:282:4: ^( MAPAINSTANCIASPROP ID ID STRING )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:331:2: ( ^( MAPAINSTANCIASPROP inst= ID mapaConcProp= ID val= STRING ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/mapaconceitosTGValidacao.g:331:4: ^( MAPAINSTANCIASPROP inst= ID mapaConcProp= ID val= STRING )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2299,43 +2352,43 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            MAPAINSTANCIASPROP43=(CommonTree)match(input,MAPAINSTANCIASPROP,FOLLOW_MAPAINSTANCIASPROP_in_mapaInstanciaProp711); if (state.failed) return retval;
+            MAPAINSTANCIASPROP40=(CommonTree)match(input,MAPAINSTANCIASPROP,FOLLOW_MAPAINSTANCIASPROP_in_mapaInstanciaProp731); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
-            MAPAINSTANCIASPROP43_tree = (CommonTree)adaptor.dupNode(MAPAINSTANCIASPROP43);
+            MAPAINSTANCIASPROP40_tree = (CommonTree)adaptor.dupNode(MAPAINSTANCIASPROP40);
 
 
-            root_1 = (CommonTree)adaptor.becomeRoot(MAPAINSTANCIASPROP43_tree, root_1);
+            root_1 = (CommonTree)adaptor.becomeRoot(MAPAINSTANCIASPROP40_tree, root_1);
             }
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            ID44=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaInstanciaProp713); if (state.failed) return retval;
+            inst=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaInstanciaProp735); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
-            ID44_tree = (CommonTree)adaptor.dupNode(ID44);
+            inst_tree = (CommonTree)adaptor.dupNode(inst);
 
 
-            adaptor.addChild(root_1, ID44_tree);
+            adaptor.addChild(root_1, inst_tree);
             }
 
 
             _last = (CommonTree)input.LT(1);
-            ID45=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaInstanciaProp715); if (state.failed) return retval;
+            mapaConcProp=(CommonTree)match(input,ID,FOLLOW_ID_in_mapaInstanciaProp739); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
-            ID45_tree = (CommonTree)adaptor.dupNode(ID45);
+            mapaConcProp_tree = (CommonTree)adaptor.dupNode(mapaConcProp);
 
 
-            adaptor.addChild(root_1, ID45_tree);
+            adaptor.addChild(root_1, mapaConcProp_tree);
             }
 
 
             _last = (CommonTree)input.LT(1);
-            STRING46=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaInstanciaProp717); if (state.failed) return retval;
+            val=(CommonTree)match(input,STRING,FOLLOW_STRING_in_mapaInstanciaProp743); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
-            STRING46_tree = (CommonTree)adaptor.dupNode(STRING46);
+            val_tree = (CommonTree)adaptor.dupNode(val);
 
 
-            adaptor.addChild(root_1, STRING46_tree);
+            adaptor.addChild(root_1, val_tree);
             }
 
 
@@ -2344,6 +2397,27 @@ public TreeAdaptor getTreeAdaptor() {
             _last = _save_last_1;
             }
 
+
+            if ( state.backtracking==0 ) {
+            		Boolean instSemErro = true;
+            		Boolean mapaConcPropSemErro = true;
+            	
+            		// verifica se existem erros e constroi string de erros
+            		if (!(instSemErro = t.getInstancias().containsKey((inst!=null?inst.getText():null))))
+            			erro += "\n\t("+(inst!=null?inst.getLine():0)+":"+(inst!=null?inst.getCharPositionInLine():0)+")\tA instância "+(inst!=null?inst.getText():null)+" não foi definida!";
+            		if (!(mapaConcPropSemErro = t.getMapasConceitoProp().containsKey((mapaConcProp!=null?mapaConcProp.getText():null))))
+            			erro += "\n\t("+(mapaConcProp!=null?mapaConcProp.getLine():0)+":"+(mapaConcProp!=null?mapaConcProp.getCharPositionInLine():0)+")\tO mapa entre conceito e propriedade "+(mapaConcProp!=null?mapaConcProp.getText():null)+" não foi definido!";
+            			
+            		// se nao existirem erros insere Mapa na tabela
+            		if (instSemErro && mapaConcPropSemErro) {	
+            			HashSet<MapaInstanciaProp> mapasInstanciaProp = t.getMapasInstanciaProp();
+            			mapasInstanciaProp.add(new MapaInstanciaProp((inst!=null?inst.getText():null), (mapaConcProp!=null?mapaConcProp.getText():null), (val!=null?val.getText():null)));
+            			t.setMapasInstanciaProp(mapasInstanciaProp);
+            		}	
+            			
+            		retval.erro_out = erro;
+            		retval.tab_out = t;
+            	}
 
             if ( state.backtracking==0 ) {
             }
@@ -2372,56 +2446,56 @@ public TreeAdaptor getTreeAdaptor() {
 
  
 
-    public static final BitSet FOLLOW_MAPACONCEITOS_in_mapaconceitos68 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_conceitos_in_mapaconceitos71 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_assocs_in_mapaconceitos84 = new BitSet(new long[]{0x0000000001080000L});
-    public static final BitSet FOLLOW_propriedades_in_mapaconceitos97 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_mapasConceitos_in_mapaconceitos112 = new BitSet(new long[]{0x0000000000342008L});
-    public static final BitSet FOLLOW_mapasConceitoProp_in_mapaconceitos125 = new BitSet(new long[]{0x0000000000302008L});
-    public static final BitSet FOLLOW_instancias_in_mapaconceitos140 = new BitSet(new long[]{0x0000000000300008L});
-    public static final BitSet FOLLOW_mapasInstancias_in_mapaconceitos160 = new BitSet(new long[]{0x0000000000200008L});
-    public static final BitSet FOLLOW_mapasInstanciaProp_in_mapaconceitos174 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_CONCEITOS_in_conceitos214 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_conceito_in_conceitos217 = new BitSet(new long[]{0x0000000000000088L});
-    public static final BitSet FOLLOW_CONCEITO_in_conceito250 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_STRING_in_conceito252 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_ASSOCIACOES_in_assocs275 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_assoc_in_assocs278 = new BitSet(new long[]{0x0000000000000018L});
-    public static final BitSet FOLLOW_ASSOCIACAO_in_assoc310 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_STRING_in_assoc312 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_PROPRIEDADES_in_propriedades335 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_propriedade_in_propriedades338 = new BitSet(new long[]{0x0000000000800008L});
-    public static final BitSet FOLLOW_PROPRIEDADE_in_propriedade370 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_STRING_in_propriedade372 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_MAPASCONCEITOS_in_mapasConceitos398 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_mapaConceito_in_mapasConceitos401 = new BitSet(new long[]{0x0000000000008008L});
-    public static final BitSet FOLLOW_MAPACONCEITOS_in_mapaConceito439 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_ID_in_mapaConceito441 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_STRING_in_mapaConceito445 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_STRING_in_mapaConceito449 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_STRING_in_mapaConceito453 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_MAPASCONCEITOPROP_in_mapasConceitoProp480 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_mapaConceitoProp_in_mapasConceitoProp483 = new BitSet(new long[]{0x0000000000004008L});
-    public static final BitSet FOLLOW_MAPACONCEITOPROP_in_mapaConceitoProp521 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_ID_in_mapaConceitoProp523 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_STRING_in_mapaConceitoProp527 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_STRING_in_mapaConceitoProp531 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_INSTANCIAS_in_instancias560 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_instancia_in_instancias563 = new BitSet(new long[]{0x0000000000001008L});
-    public static final BitSet FOLLOW_INSTANCIA_in_instancia598 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_ID_in_instancia600 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_STRING_in_instancia602 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_MAPASINSTANCIAS_in_mapasInstancias628 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_mapaInstancia_in_mapasInstancias631 = new BitSet(new long[]{0x0000000000010008L});
-    public static final BitSet FOLLOW_MAPAINSTANCIAS_in_mapaInstancia655 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_ID_in_mapaInstancia657 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_ID_in_mapaInstancia659 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_ID_in_mapaInstancia661 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_MAPASINSTANCIASPROP_in_mapasInstanciaProp685 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_mapaInstanciaProp_in_mapasInstanciaProp688 = new BitSet(new long[]{0x0000000000020008L});
-    public static final BitSet FOLLOW_MAPAINSTANCIASPROP_in_mapaInstanciaProp711 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_ID_in_mapaInstanciaProp713 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_ID_in_mapaInstanciaProp715 = new BitSet(new long[]{0x0000000002000000L});
-    public static final BitSet FOLLOW_STRING_in_mapaInstanciaProp717 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_CMC_in_cmc68 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_conceitos_in_cmc71 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_assocs_in_cmc82 = new BitSet(new long[]{0x0000000002100000L});
+    public static final BitSet FOLLOW_propriedades_in_cmc93 = new BitSet(new long[]{0x0000000000100000L});
+    public static final BitSet FOLLOW_mapasConceitos_in_cmc106 = new BitSet(new long[]{0x0000000000684008L});
+    public static final BitSet FOLLOW_mapasConceitoProp_in_cmc117 = new BitSet(new long[]{0x0000000000604008L});
+    public static final BitSet FOLLOW_instancias_in_cmc129 = new BitSet(new long[]{0x0000000000600008L});
+    public static final BitSet FOLLOW_mapasInstancias_in_cmc147 = new BitSet(new long[]{0x0000000000400008L});
+    public static final BitSet FOLLOW_mapasInstanciaProp_in_cmc159 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_CONCEITOS_in_conceitos198 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_conceito_in_conceitos201 = new BitSet(new long[]{0x0000000000000108L});
+    public static final BitSet FOLLOW_CONCEITO_in_conceito234 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_STRING_in_conceito236 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_ASSOCIACOES_in_assocs259 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_assoc_in_assocs262 = new BitSet(new long[]{0x0000000000000018L});
+    public static final BitSet FOLLOW_ASSOCIACAO_in_assoc294 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_STRING_in_assoc296 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_PROPRIEDADES_in_propriedades319 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_propriedade_in_propriedades322 = new BitSet(new long[]{0x0000000001000008L});
+    public static final BitSet FOLLOW_PROPRIEDADE_in_propriedade354 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_STRING_in_propriedade356 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_MAPASCONCEITOS_in_mapasConceitos382 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_mapaConceito_in_mapasConceitos385 = new BitSet(new long[]{0x0000000000010008L});
+    public static final BitSet FOLLOW_MAPACONCEITOS_in_mapaConceito423 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_in_mapaConceito425 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_STRING_in_mapaConceito429 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_STRING_in_mapaConceito433 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_STRING_in_mapaConceito437 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_MAPASCONCEITOPROP_in_mapasConceitoProp464 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_mapaConceitoProp_in_mapasConceitoProp467 = new BitSet(new long[]{0x0000000000008008L});
+    public static final BitSet FOLLOW_MAPACONCEITOPROP_in_mapaConceitoProp505 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_in_mapaConceitoProp507 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_STRING_in_mapaConceitoProp511 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_STRING_in_mapaConceitoProp515 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_INSTANCIAS_in_instancias544 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_instancia_in_instancias547 = new BitSet(new long[]{0x0000000000002008L});
+    public static final BitSet FOLLOW_INSTANCIA_in_instancia582 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_in_instancia584 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_STRING_in_instancia586 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_MAPASINSTANCIAS_in_mapasInstancias612 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_mapaInstancias_in_mapasInstancias615 = new BitSet(new long[]{0x0000000000020008L});
+    public static final BitSet FOLLOW_MAPAINSTANCIAS_in_mapaInstancias651 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_in_mapaInstancias655 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_ID_in_mapaInstancias659 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_ID_in_mapaInstancias663 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_MAPASINSTANCIASPROP_in_mapasInstanciaProp690 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_mapaInstanciaProp_in_mapasInstanciaProp693 = new BitSet(new long[]{0x0000000000040008L});
+    public static final BitSet FOLLOW_MAPAINSTANCIASPROP_in_mapaInstanciaProp731 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_in_mapaInstanciaProp735 = new BitSet(new long[]{0x0000000000001000L});
+    public static final BitSet FOLLOW_ID_in_mapaInstanciaProp739 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_STRING_in_mapaInstanciaProp743 = new BitSet(new long[]{0x0000000000000008L});
 
 }
