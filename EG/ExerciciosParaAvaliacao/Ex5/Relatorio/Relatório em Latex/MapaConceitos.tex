@@ -1,0 +1,136 @@
+\documentclass[a4paper]{article}
+\usepackage[portuguese]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyvrb}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[affil-it]{authblk}
+\usepackage{indentfirst}
+
+\usepackage{titlesec}
+
+\usepackage{aeguill}  % usefull for pdflatex
+\usepackage[compat2,a4paper,twosideshift=0mm,left=20mm,right=20mm,bottom=20mm,top=15mm]{geometry}
+
+\parindent=2em
+
+\usepackage{xcolor}
+\usepackage{listings}
+
+
+\lstdefinestyle{gramatica}{
+	backgroundcolor=\color{yellow!7},%
+    numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt,% 
+    basicstyle=\small\ttfamily\color{blue},%
+    breaklines=true,%                                      allow line breaks
+    moredelim=[s][\color{green!50!black}\ttfamily]{'}{'},% single quotes in green
+    moredelim=*[s][\color{black}\ttfamily]{options}{\}},%  options in black (until trailing })
+    commentstyle={\color{gray}\itshape},%                  gray italics for comments
+    morecomment=[l]{//},%                                  define // comment
+    emph={%
+        STRING%                                            literal strings listed here
+        },emphstyle={\color{blue}\ttfamily},%              and formatted in blue
+    alsoletter={:,|,;},%
+    morekeywords={:,|,;},%                                 define the special characters
+    keywordstyle={\color{black}},%                         and format them in black
+}
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+\lstset{language=Java,
+basicstyle=\ttfamily,
+keywordstyle=\color{javapurple}\bfseries,
+stringstyle=\color{javared},
+commentstyle=\color{javadocblue},
+morecomment=[s][\color{javadocblue}]{/**}{*/},
+numbers=left,
+numberstyle=\tiny\color{black},
+stepnumber=1,
+numbersep=10pt,
+tabsize=4,
+showspaces=false,
+showstringspaces=false,
+breaklines=true}
+
+
+
+\title{Exercí­cio para Avaliação n.º 5}
+\author{Bruno Azevedo%
+\thanks{Email: \texttt{azevedo.252@gmail.com}}}
+ 
+\author{Miguel Costa%
+\thanks{Email: \texttt{miguelpintodacosta@gmail.com}}}
+ 
+\affil{Módulo Engenharia Gramatical,\\ UCE30 Engenharia de Linguagens,
+\\ Mestrado em Engenharia Informatica,\\Universidade do Minho}
+ 
+ 
+\date{\today}
+
+
+\begin{document}
+ 
+ 
+\maketitle
+ 
+\begin{abstract}
+Este documento apresenta as resoluções do Exercício Prático n.º 5 do módulo de Engenharia Gramatical.
+O ecercício está relacionado com a implementação de uma linguagem para definir Mapas de Conceitos em que o output seja um WebSite.
+
+\end{abstract}
+ 
+ 
+\newpage
+ 
+\parskip=0mm
+\tableofcontents
+\parskip=2mm
+ 
+\newpage
+ 
+\section{Ambiente de Trabalho}
+Foi necessário usar um Gerador de Compiladores para gerar o nosso próprio compilador, por isso usámos o AnTLR que é também usado nas aulas. Para facilitar o processo de debugging durante a resolução do problema dado, usámos a ferramenta AnTLRWorks, que tem uma interface bastante agradável e simpática para ajudar a resolver problemas desta natureza.
+ 
+A linguagem de programação adoptada foi o JAVA. De forma a tornar a nossa solução mais legível e estruturada. Para guardar a informação usamos uma Base de Dados relacional em MySQL e para o WiebSite dinâmico usamos a linguagem PHP com o auxilio de JavaScript e JQuery.
+
+\section{Descrição do problema}
+O pretendido para este exercício era gerar um pequeno WebSite, para navegar num Mapa de Conceitos, a partir de uma linguagem simples para descrever esses mesmos mapas.
+
+Na linguagem criado por nós é necessário permitir validar as ligações face aos conceitos e relações declarados e que permitam fazer links para as ocorrências ou instâncias dos conceitos extraídos de uma Base de Dados.
+
+
+\section{Resolução do Problema}
+
+\subsection{Linguagem para descrever os Mapas de Conceitos}
+A linguagem criada por nós, baseia-se muito na linguagem CMC apresentada nas aulas usada para descrever problemas da mesma natureza mas não permite especificar algumas necessidades.
+
+Com a nossa linguem é possível definir conceitos, associações que podem haver entre eles e propriedades para os classificarem. As associações entre conceitos são criadas através de um \verb|mapa|.
+Cada conceito pode ter várias instâncias e estas podem estas caracterizadas pela 
+
+
+
+\subsection{Gramática}
+
+\subsection{Modelo de Dados}
+
+\subsection{WebSite}
+
+ 
+\newpage
+ 
+\section{Conclusões}
+ 
+A resolução deste exercício permitiu perceber melhor a forma como as linguagens podem ser úteis para gerar um programa, que dependo do input que irá receber, o resultado final seja o esperado sem ter de estar a alterar o código do programa que é automaticamente gerado.
+
+Umas das dificuldades foi perceber como o Antlr fazia o parser das frases de forma a não haver ambiguidade e conseguir na mesma produção termos acesso ao valor de dois símbolos terminais, tal como acontece, por exemplo, quando queremos saber a dimensão do terreno, em que a solução foi inserir labels para o compilador saber qual o valor pertendido.
+
+Serviu de consolidação da matéria dada até agora no módulo de Engenharia de Linguagens,
+tendo em conta que conseguimos resolver os exercícios com sucesso.
+ 
+
+\end{document}
