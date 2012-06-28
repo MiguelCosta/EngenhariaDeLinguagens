@@ -9,25 +9,27 @@ tokens {
 	CMC;
 	CONCEITOS;
 	CONCEITO = 'conceito';
-	ASSOCIACOES;
-	ASSOCIACAO = 'associacao';
-	PROPRIEDADES;
-	PROPRIEDADE = 'propriedade';
+	PROPRIEDADESDADOS;
+	PROPRIEDADEDADOS = 'propriedadeDados';
+	PROPRIEDADESCONCEITO;
+	PROPRIEDADECONCEITO = 'propriedadeConceito';
 	MAPASCONCEITOS;
 	MAPACONCEITOS = 'mapaConceitos';
-	MAPASCONCEITOPROP;
-	MAPACONCEITOPROP = 'mapaConceitoProp';
+	MAPASCONCEITOPROPDADOS;
+	MAPACONCEITOPROPDADOS = 'mapaConceitoPropDados';
+	MAPASCONCEITOPROPCONCEITO;
+	MAPACONCEITOPROPCONCEITO = 'mapaConceitoPropConceito';
 	INSTANCIAS;
 	INSTANCIA = 'instancia';
-	MAPASINSTANCIAS;
-	MAPAINSTANCIAS = 'mapaInstancias';
-	MAPASINSTANCIASPROP;
-	MAPAINSTANCIASPROP = 'mapaInstanciaProp';
+	MAPASINSTANCIAPROPDADOS;
+	MAPAINSTANCIAPROPDADOS = 'mapaInstanciaPropDados';
+	MAPASINSTANCIAPROPCONCEITO;
+	MAPAINSTANCIAPROPCONCEITO = 'mapaInstanciaPropConceito';
 }
 
 cmc
-	:	conceitos ';' assocs ';' (propriedades ';')?  mapasConceitos ';' (mapasConceitoProp ';')? (instancias ';')? (mapasInstancias ';')? (mapasInstanciaProp ';')?
-	-> ^(CMC conceitos assocs propriedades? mapasConceitos mapasConceitoProp? instancias? mapasInstancias? mapasInstanciaProp?)
+	:	conceitos ';' (propriedadesDados ';')? (propriedadesConceito ';')?  mapasConceitos ';' (mapasConceitoPropDados ';')? (mapasConceitoPropConceito ';')? (instancias ';')? (mapasInstanciaPropDados ';')? (mapasInstanciaPropConceito ';')?
+	-> ^(CMC conceitos propriedadesDados? propriedadesConceito? mapasConceitos mapasConceitoPropDados? mapasConceitoPropConceito? instancias? mapasInstanciaPropDados? mapasInstanciaPropConceito?)
 	;
 	
 conceitos
@@ -40,45 +42,55 @@ conceito
 	-> ^(CONCEITO STRING)
 	;
 
-assocs	
-	:	assoc (';' assoc)*
-	-> ^(ASSOCIACOES assoc+)
+propriedadesDados
+	:	propriedadeDados (';' propriedadeDados)*
+	-> ^(PROPRIEDADESDADOS propriedadeDados+)
 	;
 
-assoc	
-	:	ASSOCIACAO '(' STRING ')'
-	-> ^(ASSOCIACAO STRING)
+propriedadeDados
+	:	PROPRIEDADEDADOS '(' STRING ')'
+	-> ^(PROPRIEDADEDADOS STRING)
+	;
+	
+propriedadesConceito
+	:	propriedadeConceito (';' propriedadeConceito)*
+	-> ^(PROPRIEDADESCONCEITO propriedadeConceito+)
 	;
 
-propriedades
-	:	propriedade (';' propriedade)*
-	-> ^(PROPRIEDADES propriedade+)
-	;
-
-propriedade
-	:	PROPRIEDADE '(' STRING ')'
-	-> ^(PROPRIEDADE STRING)
+propriedadeConceito
+	:	PROPRIEDADECONCEITO '(' STRING ')'
+	-> ^(PROPRIEDADECONCEITO STRING)
 	;
 	
 mapasConceitos	
-	:	mapaConceito (';' mapaConceito )*
-	-> ^(MAPASCONCEITOS mapaConceito+)
+	:	mapaConceitos (';' mapaConceitos )*
+	-> ^(MAPASCONCEITOS mapaConceitos+)
 	;
 
-mapaConceito	
-	:	MAPACONCEITOS '('ID ','  STRING ',' STRING ',' STRING ')'
-	-> ^(MAPACONCEITOS ID STRING STRING STRING)
+mapaConceitos	
+	:	MAPACONCEITOS '('ID ','  STRING ',' STRING ')'
+	-> ^(MAPACONCEITOS ID STRING STRING)
 	;
 	
 
-mapasConceitoProp	
-	:	mapaConceitoProp (';' mapaConceitoProp )*
-	-> ^(MAPASCONCEITOPROP mapaConceitoProp+)
+mapasConceitoPropDados	
+	:	mapaConceitoPropDados (';' mapaConceitoPropDados )*
+	-> ^(MAPASCONCEITOPROPDADOS mapaConceitoPropDados+)
 	;
 
-mapaConceitoProp	
-	:	MAPACONCEITOPROP '('ID ','  STRING ',' STRING ')'
-	-> ^(MAPACONCEITOPROP ID STRING STRING )
+mapaConceitoPropDados	
+	:	MAPACONCEITOPROPDADOS '('ID ','  STRING ',' STRING ',' tipo ')'
+	-> ^(MAPACONCEITOPROPDADOS ID STRING STRING tipo)
+	;
+	
+mapasConceitoPropConceito	
+	:	mapaConceitoPropConceito (';' mapaConceitoPropConceito )*
+	-> ^(MAPASCONCEITOPROPCONCEITO mapaConceitoPropConceito+)
+	;
+
+mapaConceitoPropConceito	
+	:	MAPACONCEITOPROPCONCEITO '('ID ','  STRING ',' STRING ',' STRING ')'
+	-> ^(MAPACONCEITOPROPCONCEITO ID STRING STRING STRING)
 	;
 
 instancias
@@ -91,26 +103,31 @@ instancia
 	-> ^(INSTANCIA ID STRING)
 	;
 	
-mapasInstancias	
-	:	mapaInstancias (';' mapaInstancias )*
-	-> ^(MAPASINSTANCIAS mapaInstancias+)
+mapasInstanciaPropDados	
+	:	mapaInstanciaPropDados (';' mapaInstanciaPropDados )*
+	-> ^(MAPASINSTANCIAPROPDADOS mapaInstanciaPropDados+)
 	;
 
-mapaInstancias	
-	:	MAPAINSTANCIAS '('ID ','  ID ',' ID ')'
-	-> ^(MAPAINSTANCIAS ID ID ID) 
+mapaInstanciaPropDados	
+	:	MAPAINSTANCIAPROPDADOS '('ID ','  ID ',' STRING ')'
+	-> ^(MAPAINSTANCIAPROPDADOS ID ID STRING) 
+	;
+	
+mapasInstanciaPropConceito	
+	:	mapaInstanciaPropConceito (';' mapaInstanciaPropConceito )*
+	-> ^(MAPASINSTANCIAPROPCONCEITO mapaInstanciaPropConceito+)
 	;
 
-mapasInstanciaProp	
-	:	mapaInstanciaProp (';' mapaInstanciaProp )*
-	-> ^(MAPASINSTANCIASPROP mapaInstanciaProp+)
+mapaInstanciaPropConceito	
+	:	MAPAINSTANCIAPROPCONCEITO '('ID ','  ID ',' ID ')'
+	-> ^(MAPAINSTANCIAPROPCONCEITO ID ID ID) 
 	;
 
-mapaInstanciaProp	
-	:	MAPAINSTANCIASPROP '('ID ','  ID ',' STRING ')'
-	-> ^(MAPAINSTANCIASPROP ID ID STRING) 
+tipo
+	:	'STRING' -> 'STRING'
+	|	'INT' -> 'INT'
+	|	ID	->	ID
 	;
-
 
 
 

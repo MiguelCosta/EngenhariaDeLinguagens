@@ -38,10 +38,7 @@ public class Instancia {
 		public String toString() {
 			return "Instancia [\n\t" +
 				"id=" + id + ",\n\t" +
-				"conceito=" + conceito + 
-				"\n]";
+				"conceito=" + conceito + "\n\t" +
+				"]";
 		}
-
-
 }
-
