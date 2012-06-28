@@ -1,6 +1,6 @@
 
 <?php
-
+/*
 $_con = mysql_connect('localhost', 'root', '');
 mysql_select_db('mapaconceitos');
 
@@ -172,7 +172,7 @@ function random_string($l = 10){
 }
 
 mysql_close($_con);
-
+*/
 ?>
 
 
