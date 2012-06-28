@@ -3,7 +3,8 @@
 \contentsline {section}{\numberline {2}Descri\c c\~ao do problema}{3}
 \contentsline {section}{\numberline {3}Resolu\c c\~ao do Problema}{3}
 \contentsline {subsection}{\numberline {3.1}Linguagem para descrever os Mapas de Conceitos}{3}
-\contentsline {subsection}{\numberline {3.2}Gram\'atica}{3}
-\contentsline {subsection}{\numberline {3.3}Modelo de Dados}{3}
-\contentsline {subsection}{\numberline {3.4}WebSite}{3}
-\contentsline {section}{\numberline {4}Conclus\~oes}{4}
+\contentsline {subsubsection}{\numberline {3.1.1}Exemplo da linguagem}{3}
+\contentsline {subsection}{\numberline {3.2}Gram\'atica}{4}
+\contentsline {subsection}{\numberline {3.3}Modelo de Dados}{4}
+\contentsline {subsection}{\numberline {3.4}WebSite}{4}
+\contentsline {section}{\numberline {4}Conclus\~oes}{6}

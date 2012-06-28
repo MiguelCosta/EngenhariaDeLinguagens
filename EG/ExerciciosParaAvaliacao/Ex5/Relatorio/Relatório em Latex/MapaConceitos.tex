@@ -101,25 +101,77 @@ A linguagem de programação adoptada foi o JAVA. De forma a tornar a nossa soluçã
 \section{Descrição do problema}
 O pretendido para este exercício era gerar um pequeno WebSite, para navegar num Mapa de Conceitos, a partir de uma linguagem simples para descrever esses mesmos mapas.
 
-Na linguagem criado por nós é necessário permitir validar as ligações face aos conceitos e relações declarados e que permitam fazer links para as ocorrências ou instâncias dos conceitos extraídos de uma Base de Dados.
-
+A linguagem criada por nós tem de ser validada para depois ser apresentada a informação visualmente, terá ainda de haver uma forma de mostrar as ocorr?ncias de cada conceito.
 
 \section{Resolução do Problema}
 
 \subsection{Linguagem para descrever os Mapas de Conceitos}
-A linguagem criada por nós, baseia-se muito na linguagem CMC apresentada nas aulas usada para descrever problemas da mesma natureza mas não permite especificar algumas necessidades.
+A linguagem criada por nós baseia-se muito na linguagem CMC apresentada nas aulas, usada para descrever problemas da mesma natureza mas que não permite especificar algumas necessidades.
 
 Com a nossa linguem é possível definir conceitos, associações que podem haver entre eles e propriedades para os classificarem. As associações entre conceitos são criadas através de um \verb|mapa|.
-Cada conceito pode ter várias instâncias e estas podem estas caracterizadas pela 
+Cada conceito pode ter várias instâncias e estas podem estas caracterizadas pela por propriedades.
+
+\subsubsection{Exemplo da linguagem}
+\lstset{caption={Linaguagem criadal},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in.mp}
 
 
+Observando a linguagem verificamos que ela é de fácil leitura, descrevendo cada instrução temos:
+\begin{itemize}
+
+\item \verb|conceito("nome do conceito")| - é através desta produção onde se pode definir todos os conceitos.
+
+\item \verb|associacao("nome da associacao")| - para relacionar os conceitos define-se as várias associações que podem existir.
+
+\item \verb|propriedade("nome da propriedade")| - características de um conceito.
+
+\item \verb|mapaConceitos(id, "nome do conceito pai", "nome da associacao", "nome do conceito filho")| - é aqui que se define as relações entre conceitos, é preciso ter em atenção que os nomes dos conceitos e das associações têm de estar declarados antes.
+
+\item \verb|mapaConceitosProp(id, "nome do conceito", "nome da propriedade")| - permite dizer que um conceito pode ter uma determinada propriedade.
+
+\item \verb|instancia(id, "nome do conceito")| - permite declarar uma instância de um conceito.
+
+\item \verb|mapaInstancias(id Instancia Pai, id do mapaConceitos, id da instancia Filho)| - permite dizer que uma instãncia de um conceito está associada a outra instância de outro conceito.
+
+\item \verb|mapaInstanciaProp(id da Instancia, id do mapaConceitoProp, "valor")| - aqui é possível definir os valores das propriedades de uma instância.
+
+\end{itemize}
 
 \subsection{Gramática}
+
+
 
 \subsection{Modelo de Dados}
 
 \subsection{WebSite}
+O WebSite criado acaba por ser apenas uma página mas que com a ajuda de JavaScript torna-se interactiva e agradável de usar.
 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{site1.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Imagem do site}
+\end{figure}
+
+É possível escolher a orientação da árvore e quando se clica num nodo aparece mais informação caso ela exista, tal como se pode confirmar nas imagens seguintes:
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{site2.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Mais informação disponível na árvore}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{site3.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Detalhes de uma instância}
+\end{figure}
+
+
+As palavras escritas apenas em maiúsculas.... dizer que sao nossas para estruturar a infomraçao da arvore 
+ 
  
 \newpage
  
