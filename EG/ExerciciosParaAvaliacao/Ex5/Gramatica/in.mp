@@ -5,25 +5,27 @@ conceito("nascimento");
 conceito("morte");
 conceito("local");
 
-associacao("e um");
-associacao("nasceu em");
+propriedadeDados("tem nome");
+propriedadeDados("tem idade");
 
-propriedade("tem nome");
-propriedade("tem idade");
+propriedadeConceito("nasceu em");
 
-mapaConceitos(m1, "pessoa", "e um", "emigrante");
-mapaConceitos(m2, "evento", "e um", "nascimento");
-mapaConceitos(m3, "evento", "e um", "morte");
-mapaConceitos(m4, "pessoa", "nasceu em", "local");
+mapaConceitos(m1, "emigrante", "pessoa");
+mapaConceitos(m2, "nascimento", "evento");
+mapaConceitos(m3, "morte", "evento");
 
-mapaConceitoProp(m5, "pessoa", "tem nome");
-mapaConceitoProp(m6, "pessoa", "tem idade");
+mapaConceitoPropDados(m5, "pessoa", "tem nome", STRING);
+mapaConceitoPropDados(m6, "pessoa", "tem idade", STRING);
+mapaConceitoPropDados(m8, "local", "tem nome", STRING);
+
+mapaConceitoPropConceito(m7, "pessoa", "nasceu em", "local");
 
 instancia(pAntonio, "pessoa");
 instancia(lFafe, "local");
 instancia(pEmigranteBrasil, "emigrante");
 
-mapaInstancias(pAntonio, m4, lFafe);
+mapaInstanciaPropDados(pAntonio, m5, "Antonio");
+mapaInstanciaPropDados(pAntonio, m6, "20");
+mapaInstanciaPropDados(lfafe, m8, "Fafe");
 
-mapaInstanciaProp(pAntonio, m5, "Antonio");
-mapaInstanciaProp(pAntonio, m6, "20");
+mapaInstanciaPropConceito(pAntonio, m7, lFafe);
