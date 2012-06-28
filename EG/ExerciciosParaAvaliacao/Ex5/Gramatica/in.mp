@@ -22,15 +22,8 @@ mapaConceitoProp(m6, "pessoa", "tem idade");
 instancia(pAntonio, "pessoa");
 instancia(lFafe, "local");
 instancia(pEmigranteBrasil, "emigrante");
-instancia(iFafe, "local");
-
-mapaInstanciaProp(pAntonio, m5, "Antonio");
-mapaInstanciaProp(pAntonio, m6, "20");
 
 mapaInstancias(pAntonio, m4, lFafe);
-<<<<<<< HEAD
-=======
 
 mapaInstanciaProp(pAntonio, m5, "Antonio");
 mapaInstanciaProp(pAntonio, m6, "20");
->>>>>>> dab994fb9a2a4aeecfd5b7cf77e04acfe333b3a8
