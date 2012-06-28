@@ -23,13 +23,13 @@ tokens {
 	INSTANCIA = 'instancia';
 	MAPASINSTANCIAPROPDADOS;
 	MAPAINSTANCIAPROPDADOS = 'mapaInstanciaPropDados';
-	MAPASINSTANCIASPROPCONCEITO;
-	MAPAINSTANCIASPROPCONCEITO = 'mapaInstanciaPropConceito';
+	MAPASINSTANCIAPROPCONCEITO;
+	MAPAINSTANCIAPROPCONCEITO = 'mapaInstanciaPropConceito';
 }
 
 cmc
-	:	conceitos ';' (propriedadesDados ';')? (propriedadeConceito ';')?  mapasConceitos ';' (mapasConceitoPropDados ';')? (mapasConceitoPropConceito ';')? (instancias ';')? (mapasInstanciaPropDados ';')? (mapasInstanciaPropConceito ';')?
-	-> ^(CMC conceitos propriedadesDados? propriedadeConceito? mapasConceitos mapasConceitoPropDados? mapasConceitoPropConceito? instancias? mapasInstanciaPropDados? mapasInstanciaPropConceito?)
+	:	conceitos ';' (propriedadesDados ';')? (propriedadesConceito ';')?  mapasConceitos ';' (mapasConceitoPropDados ';')? (mapasConceitoPropConceito ';')? (instancias ';')? (mapasInstanciaPropDados ';')? (mapasInstanciaPropConceito ';')?
+	-> ^(CMC conceitos propriedadesDados? propriedadesConceito? mapasConceitos mapasConceitoPropDados? mapasConceitoPropConceito? instancias? mapasInstanciaPropDados? mapasInstanciaPropConceito?)
 	;
 	
 conceitos
@@ -63,11 +63,11 @@ propriedadeConceito
 	;
 	
 mapasConceitos	
-	:	mapaConceito (';' mapaConceito )*
-	-> ^(MAPASCONCEITOS mapaConceito+)
+	:	mapaConceitos (';' mapaConceitos )*
+	-> ^(MAPASCONCEITOS mapaConceitos+)
 	;
 
-mapaConceito	
+mapaConceitos	
 	:	MAPACONCEITOS '('ID ','  STRING ',' STRING ')'
 	-> ^(MAPACONCEITOS ID STRING STRING)
 	;
@@ -115,17 +115,18 @@ mapaInstanciaPropDados
 	
 mapasInstanciaPropConceito	
 	:	mapaInstanciaPropConceito (';' mapaInstanciaPropConceito )*
-	-> ^(MAPASINSTANCIASPROPCONCEITO mapaInstanciaPropConceito+)
+	-> ^(MAPASINSTANCIAPROPCONCEITO mapaInstanciaPropConceito+)
 	;
 
 mapaInstanciaPropConceito	
-	:	MAPAINSTANCIASPROPCONCEITO '('ID ','  ID ',' ID ')'
-	-> ^(MAPAINSTANCIASPROPCONCEITO ID ID ID) 
+	:	MAPAINSTANCIAPROPCONCEITO '('ID ','  ID ',' ID ')'
+	-> ^(MAPAINSTANCIAPROPCONCEITO ID ID ID) 
 	;
 
 tipo
-	:	'STRING'
-	|	'INT'
+	:	'STRING' -> 'STRING'
+	|	'INT' -> 'INT'
+	|	ID	->	ID
 	;
 
 
