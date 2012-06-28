@@ -3,7 +3,7 @@ public class MapaInstanciaPropDados {
 	private String instancia;
 	private String mapaConceitoPropDados;
 	private String valor;
-
+	
 	/**
 	 * @param instancia
 	 * @param mapaConceitoPropDados
@@ -58,14 +58,24 @@ public class MapaInstanciaPropDados {
 	public void setValor(String valor) {
 		this.valor = valor;
 	}
+	
+	public String sqlToString(){
+		StringBuilder sb = new StringBuilder();
+		sb.append("INSERT INTO `mapaconceitos`.`MapasInstanciaPropDados` ");
+		sb.append("(`instancia`, `mapaConceitoPropDados`, `valor`) ");
+		sb.append("VALUES ");
+		sb.append("(\""+ instancia +"\", \""+ mapaConceitoPropDados +"\", " + valor + ");\n");
+	return sb.toString();
+	}
 
 	@Override
-		public String toString() {
-			return "MapaInstanciaPropDados [\n\t" +
+	public String toString() {
+		return "MapaInstanciaPropDados [\n\t" +
 				"instancia=" + instancia+ ",\n\t" +
 				"mapaConceitoPropDados=" + mapaConceitoPropDados + ",\n\t" +
 				"valor=" + valor + "\n\t" +
 				"]";
-		}
-
+	}
+	
+	
 }

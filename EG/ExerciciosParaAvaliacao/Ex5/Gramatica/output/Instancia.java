@@ -2,7 +2,7 @@ public class Instancia {
 
 	private String id;
 	private String conceito;
-
+	
 	public Instancia(String id, String conceito) {
 		super();
 		this.id = id;
@@ -24,21 +24,23 @@ public class Instancia {
 	public void setConceito(String conceito) {
 		this.conceito = conceito;
 	}
-
+	
 	public String sqlToString() {
 		StringBuilder sb = new StringBuilder();
-		sb.append("INSERT INTO `mapaconceitos`.`Instancias` ");
-		sb.append("(`instancia`, `conceito`) ");
-		sb.append("VALUES ");
-		sb.append("(\""+id+"\", "+ conceito +");\n");
+			sb.append("INSERT INTO `mapaconceitos`.`Instancias` ");
+			sb.append("(`instancia`, `conceito`) ");
+			sb.append("VALUES ");
+			sb.append("(\""+id+"\", "+ conceito +");\n");
 		return sb.toString();
 	}
 
 	@Override
-		public String toString() {
-			return "Instancia [\n\t" +
+	public String toString() {
+		return "Instancia [\n\t" +
 				"id=" + id + ",\n\t" +
 				"conceito=" + conceito + "\n\t" +
 				"]";
-		}
+	}
+	
+	
 }

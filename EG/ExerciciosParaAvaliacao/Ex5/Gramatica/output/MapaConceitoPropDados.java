@@ -4,7 +4,7 @@ public class MapaConceitoPropDados {
 	private String conceito;
 	private String propriedadeDados;
 	private String tipo;
-
+	
 	/**
 	 * @param id
 	 * @param conceito
@@ -76,14 +76,24 @@ public class MapaConceitoPropDados {
 		this.tipo = tipo;
 	}
 
+	public String sqlToString(){
+		StringBuilder sb = new StringBuilder();
+		sb.append("INSERT INTO `mapaconceitos`.`MapasConceitoPropDados` ");
+		sb.append("(`id`, `conceito`, `propriedadeDados`, `tipoDados`) ");
+		sb.append("VALUES ");
+		sb.append("(\""+id+"\", "+ conceito +", "+ propriedadeDados +", \"" + tipo + "\");\n");
+	return sb.toString();
+	}
+	
 	@Override
-		public String toString() {
-			return "MapaConceitoPropDados [\n\t" +
+	public String toString() {
+		return "MapaConceitoPropDados [\n\t" +
 				"id=" + id + ",\n\t" +
 				"conceito=" + conceito + ",\n\t" +
 				"propriedadeDados=" + propriedadeDados + ",\n\t" +
 				"tipo=" + tipo + "\n\t" +
 				"]";
-		}
+	}
 
+	
 }

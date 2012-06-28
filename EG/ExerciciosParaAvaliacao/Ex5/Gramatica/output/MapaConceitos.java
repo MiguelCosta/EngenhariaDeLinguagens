@@ -3,7 +3,7 @@ public class MapaConceitos {
 	private String id;
 	private String conceitoFilho;
 	private String conceitoPai;
-
+	
 	/**
 	 * @param id
 	 * @param conceitoFilho
@@ -58,12 +58,21 @@ public class MapaConceitos {
 		this.conceitoPai = conceitoPai;
 	}
 
+	public String sqlToString(){
+		StringBuilder sb = new StringBuilder();
+		sb.append("INSERT INTO `mapaconceitos`.`MapasConceitos` ");
+		sb.append("(`id`, `conceitoFilho`, `conceitoPai`) ");
+		sb.append("VALUES ");
+		sb.append("(\""+id+"\", "+ conceitoFilho +", "+ conceitoPai +");\n");
+	return sb.toString();
+	}
+	
 	@Override
-		public String toString() {
-			return "MapaConceitos [\n\t" +
+	public String toString() {
+		return "MapaConceitos [\n\t" +
 				"id=" + id + ",\n\t" +
 				"conceitoFilho=" + conceitoFilho + ",\n\t" +
 				"conceitoPai=" + conceitoPai + "\n\t" +
 				"]";
-		}
+	}
 }

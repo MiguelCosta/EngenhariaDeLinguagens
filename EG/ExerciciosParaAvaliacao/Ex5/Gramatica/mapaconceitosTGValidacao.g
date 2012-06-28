@@ -21,9 +21,9 @@ cmc returns [String erro_out]
 	String erro = "Erros:";
 }
 @after{
-	System.out.println("\n"+tab);
-	System.out.println("\n\n\n"+erro);
-	//System.out.println(tab.geraInstrucoesSQL());
+	//System.out.println("\n"+tab);
+	//System.out.println("\n\n\n"+erro);
+	System.out.println(tab.geraInstrucoesSQL());
 }
 	:	^(CMC (conceitos[tab, erro] {tab = $conceitos.tab_out; erro = $conceitos.erro_out;})
 				(propriedadesDados[tab, erro] {tab = $propriedadesDados.tab_out; erro = $propriedadesDados.erro_out;})?

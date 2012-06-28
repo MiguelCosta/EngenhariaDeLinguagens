@@ -10,18 +10,18 @@ propriedadeDados("tem idade");
 
 propriedadeConceito("nasceu em");
 
-mapaConceitos(m1, "emigranteFALSE", "pessoa");
-mapaConceitos(m2, "nascimento", "eventoFALSE");
+mapaConceitos(m1, "emigrante", "pessoa");
+mapaConceitos(m2, "nascimento", "evento");
 mapaConceitos(m3, "morte", "evento");
 
-mapaConceitoPropDados(m5, "pessoaFALSE", "tem nome", STRING);
-mapaConceitoPropDados(m6, "pessoa", "tem idadeFALSE", INT);
-mapaConceitoPropDados(m8, "local", "tem nome", STRINGFALSE);
+mapaConceitoPropDados(m5, "pessoa", "tem nome", STRING);
+mapaConceitoPropDados(m6, "pessoa", "tem idade", INT);
+mapaConceitoPropDados(m8, "local", "tem nome", STRING);
 
-mapaConceitoPropConceito(m7, "pessoaFALSE", "nasceu emFALSE", "localFALSE");
+mapaConceitoPropConceito(m7, "pessoa", "nasceu em", "local");
 
 instancia(pAntonio, "pessoa");
-instancia(lFafe, "localFALSE");
+instancia(lFafe, "local");
 instancia(pEmigranteBrasil, "emigrante");
 
 mapaInstanciaPropDados(pAntonio, m5, "Antonio");
