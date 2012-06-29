@@ -17,9 +17,9 @@ public class Run {
 			
 			//System.out.println(((CommonTree)ret.getTree()).toStringTree());
 			//CommonTreeNodeStream nodos = new CommonTreeNodeStream(ret.getTree());
-			CmbTG walker = new CmbTG(new CommonTreeNodeStream(ret.getTree()));
-			CmbTG.programa_return walker_ret = walker.programa();
-			System.out.println(walker_ret.t);
+			CmbTGCFG walker = new CmbTGCFG(new CommonTreeNodeStream(ret.getTree()));
+			CmbTGCFG.programa_return walker_ret = walker.programa();
+			System.out.println(walker_ret.g_out);
 			
 			
 			//CmbTGAnaliseSemantica walker2 = new CmbTGAnaliseSemantica(new CommonTreeNodeStream(ret.getTree()));
