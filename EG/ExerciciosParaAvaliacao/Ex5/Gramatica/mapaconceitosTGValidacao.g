@@ -257,7 +257,7 @@ mapaConceitoPropConceito [Tabela tab_in, String erro_in] returns [Tabela tab_out
 		// se nao existirem erros insere Mapa na tabela
 		if (cSemErro && pSemErro && cpSemErro) {	
 			TreeMap<String, MapaConceitoPropConceito> mapas = t.getMapasConceitoPropConceito();
-			mapas.put($ID.text, new MapaConceitoPropConceito($ID.text, $c.text, $prop.text, $cp.text));
+			mapas.put($ID.text, new MapaConceitoPropConceito($ID.text, $cp.text, $prop.text, $c.text));
 			t.setMapasConceitoPropConceito(mapas);
 		}
 			

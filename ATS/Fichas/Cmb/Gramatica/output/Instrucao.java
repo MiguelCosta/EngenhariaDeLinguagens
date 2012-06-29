@@ -63,9 +63,11 @@ public class Instrucao {
 
 	@Override
 	public String toString() {
-		return "Instrucao [instrucao=" + instrucao + ", variaveis_definidas="
-				+ variaveis_definidas + ", variaveis_referenciadas="
-				+ variaveis_referenciadas + "]";
+		return "\n\tInstrucao [\n\t\t" +
+				"instrucao=" + instrucao + ",\n\t\t" +
+				"variaveis_definidas=" + variaveis_definidas + ",\n\t\t" +
+				"variaveis_referenciadas=" + variaveis_referenciadas + "\n\t" +
+				"]";
 	}
 	
 	
