@@ -1,0 +1,5 @@
+
+		digraph mainmap4 {"pessoa" [URL="conceito.php?conceito=pessoa"];
+"pAntonio" [URL="instancia.php?instancia=pAntonio"];
+ "pessoa" -> "pAntonio";
+}

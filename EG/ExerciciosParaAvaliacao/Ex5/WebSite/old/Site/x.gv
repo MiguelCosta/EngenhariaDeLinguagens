@@ -1,0 +1,16 @@
+
+digraph mainmap {
+  CONCEITOS [URL="pag.php"];
+"evento" [URL="conceito.php?conceito=evento"];
+CONCEITOS -> "evento"[label=é];
+"morte" [URL="conceito.php?conceito=morte"];
+"evento" -> "morte"[label=é];
+"nascimento" [URL="conceito.php?conceito=nascimento"];
+"evento" -> "nascimento"[label=é];
+"local" [URL="conceito.php?conceito=local"];
+CONCEITOS -> "local"[label=é];
+"pessoa" [URL="conceito.php?conceito=pessoa"];
+CONCEITOS -> "pessoa"[label=é];
+"emigrante" [URL="conceito.php?conceito=emigrante"];
+"pessoa" -> "emigrante"[label=é];
+}

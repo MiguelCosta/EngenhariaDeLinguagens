@@ -1,0 +1,5 @@
+
+		digraph mainmap3 {"pessoa" [URL="conceito.php?conceito=pessoa"];
+"local" [URL="conceito.php?conceito=local"];
+"pessoa" -> "local" [label ="nasceu em"];
+}

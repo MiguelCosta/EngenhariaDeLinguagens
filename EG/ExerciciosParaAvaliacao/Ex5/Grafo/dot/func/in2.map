@@ -1,0 +1,5 @@
+digraph mainmap {
+	  URL="http://www.research.att.com/base.html";
+	    conceito [URL="http://www.research.att.com/command.html"];
+		command -> output [URL="colors.html"];
+}

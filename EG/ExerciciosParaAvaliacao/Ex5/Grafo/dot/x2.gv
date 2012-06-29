@@ -1,0 +1,5 @@
+
+		digraph mainmap2 {"pessoa" [URL="conceito.php?conceito=pessoa"];
+ "pessoa" -> "tem nome";
+ "pessoa" -> "tem idade";
+}

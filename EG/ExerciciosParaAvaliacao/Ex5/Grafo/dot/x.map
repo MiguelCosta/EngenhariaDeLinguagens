@@ -1,0 +1,4 @@
+<map id="mainmap" name="mainmap">
+<area shape="poly" id="node1" href="conceito.php?conceito=pessoa" title="pessoa" alt="" coords="146,31 143,23 135,16 122,11 105,7 87,6 68,7 52,11 39,16 30,23 27,31 30,38 39,45 52,50 68,54 87,55 105,54 122,50 135,45 143,38"/>
+<area shape="poly" id="node2" href="conceito.php?conceito=emigrante" title="emigrante" alt="" coords="169,153 165,146 153,139 135,134 112,130 87,129 61,130 38,134 20,139 9,146 5,153 9,161 20,168 38,173 61,177 87,178 112,177 135,173 153,168 165,161"/>
+</map>

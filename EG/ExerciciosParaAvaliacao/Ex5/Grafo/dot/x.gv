@@ -1,0 +1,6 @@
+
+digraph mainmap {
+  "pessoa" [URL="conceito.php?conceito=pessoa"];
+"emigrante" [URL="conceito.php?conceito=emigrante"];
+"pessoa" -> "emigrante"[label=é];
+}

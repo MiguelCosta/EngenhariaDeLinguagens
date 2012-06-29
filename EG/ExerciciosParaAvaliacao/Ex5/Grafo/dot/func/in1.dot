@@ -1,0 +1,9 @@
+
+digraph ontologia {
+	conceito	->	pessoa [URL="http://sapo.pt"];
+	conceito	->	evento;
+	pessoa		->	emigrante;
+	evento		-> 	nascimento;
+	evento		->	morte;
+	conceito	->	local;
+}

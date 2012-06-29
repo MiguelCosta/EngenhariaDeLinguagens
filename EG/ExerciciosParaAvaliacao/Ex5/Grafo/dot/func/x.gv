@@ -1,0 +1,27 @@
+digraph mainmap {
+  URL="http://twiki.di.uminho.pt/twiki/bin/view/Education/EL/FichasEG11";
+  CONCEITOS [URL="pag.php"];
+  pessoa [URL="http://localhost/EL/EG/ExerciciosParaAvaliacao/Ex5/Grafo/dot/conceito.php?conceito=\"pessoa\""];
+  CONCEITOS	->	pessoa ;
+  CONCEITOS	->	evento;
+  CONCEITOS	->	local;
+  evento	->	nascimento;
+  evento	->	morte;
+
+}
+
+
+digraph mainmap {
+  graph [	fontname = "Helvetica-Oblique",
+			fontsize = 36,
+			label = "\n\nMapa de Conceitos",
+			size = "6,6" ];
+  node [color=lightblue2, style=filled];
+  CONCEITOS [shape=box];
+  pessoa [URL="conceito.php?conceito=\"pessoa\""];
+  CONCEITOS	->	pessoa ;
+  CONCEITOS	->	evento;
+  CONCEITOS	->	local;
+  evento	->	nascimento;
+  evento	->	morte;
+}
