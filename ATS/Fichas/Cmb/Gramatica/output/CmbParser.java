@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g 2012-06-28 23:23:18
+// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g 2012-06-29 21:18:26
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -420,7 +420,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: tipo, ID, argumentos
+            // elements: tipo, argumentos, ID
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -666,7 +666,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_statements.add(statements15.getTree());
 
             // AST REWRITE
-            // elements: declaracoes, statements
+            // elements: statements, declaracoes
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1590,7 +1590,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_expr.add(expr35.getTree());
 
             // AST REWRITE
-            // elements: expr, RETURN
+            // elements: RETURN, expr
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1965,7 +1965,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_expr.add(expr45.getTree());
 
             // AST REWRITE
-            // elements: expr, ID, 52
+            // elements: 52, ID, expr
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2079,7 +2079,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: WRITE, expr
+            // elements: expr, WRITE
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2346,7 +2346,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: bloco, expr, IF, bloco
+            // elements: bloco, bloco, IF, expr
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2475,7 +2475,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_bloco.add(bloco65.getTree());
 
             // AST REWRITE
-            // elements: bloco, expr, WHILE
+            // elements: expr, bloco, WHILE
             // token labels: 
             // rule labels: retval
             // token list labels: 

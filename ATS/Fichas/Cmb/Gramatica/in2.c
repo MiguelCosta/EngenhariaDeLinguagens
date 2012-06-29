@@ -18,4 +18,14 @@ void imprime(string nome)
 		print("ELSE 2");
 	}
 	print(b);
+	while ( msg != b) {
+		print("Dentro do WHILE");
+		if (a) {
+			msg = "e é isto";
+		}
+		else {
+			msg = "e é aquilo";
+		}
+	}
+	print("pois");
 }

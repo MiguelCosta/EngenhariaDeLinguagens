@@ -154,13 +154,23 @@ statement [Grafo g_in, int nr_ultima_instrucao_in, int nr_ultima_instrucao2_in] 
 			$statement.nr_ultima_instrucao_out = $ifs.nr_ultima_instrucao_out;
 			$statement.nr_ultima_instrucao2_out = $ifs.nr_ultima_instrucao2_out;
 		}
-	|	whiles[g]
+	|	whiles[g, $statement.nr_ultima_instrucao_in, $statement.nr_ultima_instrucao2_in]
+		{
+			g = $whiles.g_out;
+			
+			$statement.g_out = g;
+			$statement.nr_ultima_instrucao_out = $whiles.nr_ultima_instrucao_out;
+			$statement.nr_ultima_instrucao2_out = $whiles.nr_ultima_instrucao2_out;
+		}
 	|	invocacao
 	|	retorna
 	;
 	
-retorna
+retorna returns [String instrucao]
 	:  ^(RETURN expr)
+	{
+		$retorna.instrucao = $RETURN.text + $expr.instrucao;
+	}
 	;
 
 invocacao returns [String instrucao]
@@ -263,8 +273,46 @@ ifs [Grafo g_in, int nr_ultima_instrucao_in, int nr_ultima_instrucao2_in] return
 		}
 	;
 	
-whiles [Grafo g_in] returns [Grafo g_out]
-	:	 ^(WHILE expr bloco[$whiles.g_in, -1, -1])
+whiles [Grafo g_in, int nr_ultima_instrucao_in, int nr_ultima_instrucao2_in] returns [Grafo g_out, int nr_ultima_instrucao_out, int nr_ultima_instrucao2_out]
+@init {
+	Grafo g = $whiles.g_in;
+	int nr_ult_inst_exp = -1;
+	// TODO o nr_ultima_instrucao pode ser mais que dois devido a if's aninhados. ponderar uso de array de nr_ultimo_isntrucao
+}
+	:	 ^(WHILE expr
+			{
+				// cria nodo no grafo e guarda o nr da instrucao
+				nr_ult_inst_exp = g.putNodo(new Instrucao($WHILE.text + "(" + $expr.instrucao + ")", null, null));
+				
+				// Se a ultima instrucao tiver sido computada
+				if ($whiles.nr_ultima_instrucao_in != -1) {
+					// liga a instrucao anterior com a nova instrucao
+					g.putCaminho($whiles.nr_ultima_instrucao_in, nr_ult_inst_exp);
+					// Se a ultima instrucao foi um if e tinha um bloco else. Liga o bloco else ao a nova instrucao
+					if ($whiles.nr_ultima_instrucao2_in != -1) {
+						// liga a instrucao anterior ( ultima isntrucao do bloco else) com a nova instrucao
+						g.putCaminho($whiles.nr_ultima_instrucao2_in, nr_ult_inst_exp);
+					}
+				}
+			}
+	 		bloco[g, nr_ult_inst_exp, -1] { g = $bloco.g_out; })
+		 	{
+				// Se a ultima instrucao do bloco tiver sido computada
+				if ($bloco.nr_ultima_instrucao_out != -1) {
+					// liga a ultima instrucao do bloco com a intrucao inicial do while, ou seja a expressao
+					g.putCaminho($bloco.nr_ultima_instrucao_out, nr_ult_inst_exp);
+					// Se a ultima instrucao do bloco foi um if e tinha um bloco else. Liga o bloco else a intrucao inicial do while, ou seja a expressao
+					if ($bloco.nr_ultima_instrucao2_out != -1) {
+						// liga a instrucao anterior ( ultima isntrucao do bloco else) com a intrucao inicial do while, ou seja a expressao
+						g.putCaminho($bloco.nr_ultima_instrucao2_out, nr_ult_inst_exp);
+					}
+				}		 	
+		 	
+		 		// é passado o nr da intrucao inicial do while, ou seja a expressao, para que  proximo statement se ligue a este
+				$whiles.nr_ultima_instrucao_out = nr_ult_inst_exp;
+				$whiles.nr_ultima_instrucao2_out = -2;
+				$whiles.g_out = g;
+			}
 	;
 
 bloco [Grafo g_in, int nr_ultima_instrucao_in, int nr_ultima_instrucao2_in] returns [Grafo g_out, int nr_ultima_instrucao_out, int nr_ultima_instrucao2_out]
