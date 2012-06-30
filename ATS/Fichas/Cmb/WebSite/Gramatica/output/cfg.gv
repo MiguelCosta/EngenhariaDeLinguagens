@@ -1,0 +1,25 @@
+digraph mainmap {
+graph [bgcolor=transparent];
+"START" -> "msg = 'blabla'";
+"START" -> "println(null)";
+"START" -> "a = 2+1";
+"START" -> "s = 'luis'";
+"msg = 'blabla'" -> "print(nome)";
+"print(nome)" -> "print(msg)";
+"print(msg)" -> "EXIT";
+"println(null)" -> "EXIT";
+"a = 2+1" -> "if(a==2)";
+"if(a==2)" -> "a = a+1";
+"if(a==2)" -> "b = 5";
+"a = a+1" -> "b = 3";
+"b = 3" -> "while(a<5)";
+"b = 5" -> "while(a<5)";
+"while(a<5)" -> "a = a+5*3";
+"while(a<5)" -> "b = xtop(a+2*3, a)";
+"a = a+5*3" -> "while(a<5)";
+"b = xtop(a+2*3, a)" -> "print(a)";
+"print(a)" -> "EXIT";
+"s = 'luis'" -> "imprime(s)";
+"imprime(s)" -> "return s";
+"return s" -> "EXIT";
+}
