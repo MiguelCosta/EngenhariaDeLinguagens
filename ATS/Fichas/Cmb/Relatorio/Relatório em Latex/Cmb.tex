@@ -1,0 +1,189 @@
+\documentclass[a4paper]{article}
+\usepackage[portuguese]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fancyvrb}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[affil-it]{authblk}
+\usepackage{indentfirst}
+
+\usepackage{titlesec}
+
+\usepackage{aeguill}  % usefull for pdflatex
+\usepackage[compat2,a4paper,twosideshift=0mm,left=20mm,right=20mm,bottom=20mm,top=15mm]{geometry}
+
+\parindent=2em
+
+\usepackage{xcolor}
+\usepackage{listings}
+
+
+\lstdefinestyle{gramatica}{
+	backgroundcolor=\color{yellow!7},%
+    numbers=left, numberstyle=\tiny, stepnumber=1, numbersep=5pt,% 
+    basicstyle=\small\ttfamily\color{blue},%
+    breaklines=true,%                                      allow line breaks
+    moredelim=[s][\color{green!50!black}\ttfamily]{'}{'},% single quotes in green
+    moredelim=*[s][\color{black}\ttfamily]{options}{\}},%  options in black (until trailing })
+    commentstyle={\color{gray}\itshape},%                  gray italics for comments
+    morecomment=[l]{//},%                                  define // comment
+    emph={%
+        STRING%                                            literal strings listed here
+        },emphstyle={\color{blue}\ttfamily},%              and formatted in blue
+    alsoletter={:,|,;},%
+    morekeywords={:,|,;},%                                 define the special characters
+    keywordstyle={\color{black}},%                         and format them in black
+}
+
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+
+\lstset{language=Java,
+basicstyle=\ttfamily,
+keywordstyle=\color{javapurple}\bfseries,
+stringstyle=\color{javared},
+commentstyle=\color{javadocblue},
+morecomment=[s][\color{javadocblue}]{/**}{*/},
+numbers=left,
+numberstyle=\tiny\color{black},
+stepnumber=1,
+numbersep=10pt,
+tabsize=4,
+showspaces=false,
+showstringspaces=false,
+breaklines=true}
+
+
+
+\title{Cmb}
+\author{Bruno Azevedo%
+\thanks{Email: \texttt{azevedo.252@gmail.com}}}
+ 
+\author{Miguel Costa%
+\thanks{Email: \texttt{miguelpintodacosta@gmail.com}}}
+ 
+\affil{Análise e Transformação de Software,\\ UCE30 Engenharia de Linguagens,
+\\ Mestrado em Engenharia Informatica,\\Universidade do Minho}
+ 
+ 
+\date{\today}
+
+
+\begin{document}
+ 
+ 
+\maketitle
+ 
+\begin{abstract}
+Este documento apresenta as resolução do Trabalho Prático de Análise e Transformação de Software em que se usa as técnicas de e construção de ASTs e suas travessias tendo em conta atributos.
+O exercício está relacionado com a implementação da linguagem Cmb, dada nas aulas, e na criação de um Control Flow Graph (CFG), um Program Dependency Graph (PDG), System Dependency Graph (SDG) e ainda de um Directed Acyclic Graph (DAG).
+O resultado é um WebSite para mostrar os vários grafos criados.
+
+\end{abstract}
+ 
+ 
+\newpage
+ 
+\parskip=0mm
+\tableofcontents
+\parskip=2mm
+ 
+\newpage
+ 
+\section{Ambiente de Trabalho}
+Foi necessário usar um Gerador de Compiladores para gerar o nosso próprio compilador, por isso usámos o AnTLR que é também usado nas aulas. Para facilitar o processo de debugging durante a resolução do problema dado, usámos a ferramenta AnTLRWorks, que tem uma interface bastante agradável e simpática para ajudar a resolver problemas desta natureza.
+ 
+A linguagem de programação adoptada foi o JAVA. De forma a tornar a nossa solução mais legível e estruturada. Para guardar a informação usamos uma Base de Dados relacional em MySQL e para o WiebSite dinâmico usamos a linguagem PHP com o auxilio de JavaScript e JQuery.
+
+\section{Descrição do problema}
+O pretendido para este exercício era gerar um pequeno WebSite, para navegar num Mapa de Conceitos, a partir de uma linguagem simples para descrever esses mesmos mapas.
+
+A linguagem criada por nós tem de ser validada para depois ser apresentada a informação visualmente, terá ainda de haver uma forma de mostrar as ocorr?ncias de cada conceito.
+
+\section{Resolução do Problema}
+
+\subsection{Linguagem para descrever os Mapas de Conceitos}
+A linguagem criada por nós baseia-se muito na linguagem CMC apresentada nas aulas, usada para descrever problemas da mesma natureza mas que não permite especificar algumas necessidades.
+
+Com a nossa linguem é possível definir conceitos, associações que podem haver entre eles e propriedades para os classificarem. As associações entre conceitos são criadas através de um \verb|mapa|.
+Cada conceito pode ter várias instâncias e estas podem estas caracterizadas pela por propriedades.
+
+\subsubsection{Exemplo da linguagem}
+\lstset{caption={Linaguagem criadal},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in.mp}
+
+
+Observando a linguagem verificamos que ela é de fácil leitura, descrevendo cada instrução temos:
+\begin{itemize}
+
+\item \verb|conceito("nome do conceito")| - é através desta produção onde se pode definir todos os conceitos.
+
+\item \verb|associacao("nome da associacao")| - para relacionar os conceitos define-se as várias associações que podem existir.
+
+\item \verb|propriedade("nome da propriedade")| - características de um conceito.
+
+\item \verb|mapaConceitos(id, "nome do conceito pai", "nome da associacao", "nome do conceito filho")| - é aqui que se define as relações entre conceitos, é preciso ter em atenção que os nomes dos conceitos e das associações têm de estar declarados antes.
+
+\item \verb|mapaConceitosProp(id, "nome do conceito", "nome da propriedade")| - permite dizer que um conceito pode ter uma determinada propriedade.
+
+\item \verb|instancia(id, "nome do conceito")| - permite declarar uma instância de um conceito.
+
+\item \verb|mapaInstancias(id Instancia Pai, id do mapaConceitos, id da instancia Filho)| - permite dizer que uma instãncia de um conceito está associada a outra instância de outro conceito.
+
+\item \verb|mapaInstanciaProp(id da Instancia, id do mapaConceitoProp, "valor")| - aqui é possível definir os valores das propriedades de uma instância.
+
+\end{itemize}
+
+\subsection{Gramática}
+
+
+
+\subsection{Modelo de Dados}
+
+\subsection{WebSite}
+O WebSite criado acaba por ser apenas uma página mas que com a ajuda de JavaScript torna-se interactiva e agradável de usar.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{site1.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Imagem do site}
+\end{figure}
+
+É possível escolher a orientação da árvore e quando se clica num nodo aparece mais informação caso ela exista, tal como se pode confirmar nas imagens seguintes:
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{site2.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Mais informação disponível na árvore}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.8]{site3.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Detalhes de uma instância}
+\end{figure}
+
+
+As palavras escritas apenas em maiúsculas.... dizer que sao nossas para estruturar a infomraçao da arvore 
+ 
+ 
+\newpage
+ 
+\section{Conclusões}
+ 
+A resolução deste exercício permitiu perceber melhor a forma como as linguagens podem ser úteis para gerar um programa, que dependo do input que irá receber, o resultado final seja o esperado sem ter de estar a alterar o código do programa que é automaticamente gerado.
+
+Umas das dificuldades foi perceber como o Antlr fazia o parser das frases de forma a não haver ambiguidade e conseguir na mesma produção termos acesso ao valor de dois símbolos terminais, tal como acontece, por exemplo, quando queremos saber a dimensão do terreno, em que a solução foi inserir labels para o compilador saber qual o valor pertendido.
+
+Serviu de consolidação da matéria dada até agora no módulo de Engenharia de Linguagens,
+tendo em conta que conseguimos resolver os exercícios com sucesso.
+ 
+
+\end{document}
