@@ -11,6 +11,9 @@ void imprime(string nome)
 	print("ola");
 	if (a == 1) { 
 		print("THEN 1");
+		if (b) {
+			max(1,5);
+		}
 		print("THEN 2");
 	}
 	else {
@@ -28,4 +31,6 @@ void imprime(string nome)
 		}
 	}
 	print("pois");
+	min(a,55);
+	return 1+2;
 }

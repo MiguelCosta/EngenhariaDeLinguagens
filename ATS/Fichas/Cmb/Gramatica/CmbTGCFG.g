@@ -7,14 +7,13 @@ options{
 	backtrack = true;
 }
 
-
+@header{
+	import java.util.TreeSet;
+}
 
 programa returns [Grafo g_out]
 @init {
 	Grafo g = new Grafo();
-}
-@after {
-	//System.out.println(g);
 }
 	: 	^(PROGRAMA (funcao[g]
 	{
@@ -43,7 +42,12 @@ argumentos
 	;
 
 corpo_funcao [Grafo g_in] returns [Grafo g_out]
-	: ^(CORPO declaracoes statements[$corpo_funcao.g_in, "CORPO_FUNCAO", 0, -1])
+@init{
+	TreeSet<Integer> nrs = new TreeSet<Integer>();
+	// 0 <=> Nodo START. É passado como parametro para que o nodo START se ligue à primeira instrucao
+	nrs.add(0);
+}
+	: ^(CORPO declaracoes statements[$corpo_funcao.g_in, "CORPO_FUNCAO", nrs])
 	{
 		$corpo_funcao.g_out = $statements.g_out;
 	}
@@ -64,119 +68,134 @@ tipo
 	|	TD_VAZIO
 	;
 	
-statements [Grafo g_in, String contexto, int nr_ultima_instrucao_in, int nr_ultima_instrucao2_in] returns [Grafo g_out, int nr_ultima_instrucao_out, int nr_ultima_instrucao2_out]
+statements [Grafo g_in, String contexto, TreeSet<Integer> nrs_ultima_instrucao_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out]
 @init {
-	int nr_ultima_instrucao = $statements.nr_ultima_instrucao_in;
-	int nr_ultima_instrucao2 = $statements.nr_ultima_instrucao2_in;
+	Grafo g = $statements.g_in;
+	TreeSet<Integer> nrs_ultima_instrucao = $statements.nrs_ultima_instrucao_in;
 }
-	:	 ^(STATEMENTS (statement[$statements.g_in, nr_ultima_instrucao, nr_ultima_instrucao2]
+	:	 ^(STATEMENTS (statement[g, nrs_ultima_instrucao]
 	{
-		$statements.g_in = $statement.g_out;
-		nr_ultima_instrucao = $statement.nr_ultima_instrucao_out;
-		nr_ultima_instrucao2 = $statement.nr_ultima_instrucao2_out;
+		g = $statement.g_out;
+		nrs_ultima_instrucao = $statement.nrs_ultima_instrucao_out;
 	}
 	)+
 	{
+		// Apos todos os statements do corpo de uma funcao tiverem sido executadas, os ultimos nodos sao ligados ao nodo EXIT
 		if ($statements.contexto.equals("CORPO_FUNCAO")){
-		//TODO No final da execucao do statements em que o contexto (fazer passar isto como atributo) seja "corpo_funcao", ligar o nr_instrucao da ultima instrucao ao noso EXIT
+			// cria nodo EXIT
+			int nodo_exit = g.putNodo(new Instrucao("EXIT", null, null));
+			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes ao nodo EXIT
+			g.checkAndPutCaminho(nrs_ultima_instrucao, nodo_exit);
 		}
-		$statements.g_out = $statement.g_out;
-		$statements.nr_ultima_instrucao_out = nr_ultima_instrucao;
-		$statements.nr_ultima_instrucao2_out = nr_ultima_instrucao2;
+		$statements.g_out = g;
+		$statements.nrs_ultima_instrucao_out = nrs_ultima_instrucao;
 	}
 	)
 	;
 	
 
-statement [Grafo g_in, int nr_ultima_instrucao_in, int nr_ultima_instrucao2_in] returns [Grafo g_out, int nr_ultima_instrucao_out, int nr_ultima_instrucao2_out]
+statement [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out]
 @init {
 	Grafo g = $statement.g_in;
 }
 	:	atribuicao[g] 
 		{
 			g = $atribuicao.g_out;
-			// Se a ultima instrucao tiver sido computada
-			if ($statement.nr_ultima_instrucao_in != -1) {
-				// liga a instrucao anterior com a nova instrucao
-				g.putCaminho($statement.nr_ultima_instrucao_in, $atribuicao.nr_ultima_instrucao_out);
-				// Se a ultima instrucao foi um if e tinha um bloco else. Liga o bloco else ao a nova instrucao
-				if ($statement.nr_ultima_instrucao2_in != -1) {
-					// liga a instrucao anterior ( ultima isntrucao do bloco else) com a nova instrucao
-					g.putCaminho($statement.nr_ultima_instrucao2_in, $atribuicao.nr_ultima_instrucao_out);
-				}
-			}
+
+			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
+			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, $atribuicao.nrs_ultima_instrucao_out.first());
 			
 			$statement.g_out = g;
-			$statement.nr_ultima_instrucao_out = $atribuicao.nr_ultima_instrucao_out;
-			$statement.nr_ultima_instrucao2_out = $atribuicao.nr_ultima_instrucao2_out;
+			$statement.nrs_ultima_instrucao_out = $atribuicao.nrs_ultima_instrucao_out;
 		}
 	|	read[g]
 		{
 			g = $read.g_out;
-			// Se a ultima instrucao tiver sido computada
-			if ($statement.nr_ultima_instrucao_in != -1) {
-				// liga a instrucao anterior com a nova instrucao
-				g.putCaminho($statement.nr_ultima_instrucao_in, $read.nr_ultima_instrucao_out);
-				// Se a ultima instrucao foi um if e tinha um bloco else. Liga o bloco else ao a nova instrucao
-				if ($statement.nr_ultima_instrucao2_in != -1) {
-					// liga a instrucao anterior ( ultima isntrucao do bloco else) com a nova instrucao
-					g.putCaminho($statement.nr_ultima_instrucao2_in, $read.nr_ultima_instrucao_out);
-				}
-			}
+			
+			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
+			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, $read.nrs_ultima_instrucao_out.first());
 			
 			$statement.g_out = g;
-			$statement.nr_ultima_instrucao_out = $read.nr_ultima_instrucao_out;
-			$statement.nr_ultima_instrucao2_out = $read.nr_ultima_instrucao2_out;
+			$statement.nrs_ultima_instrucao_out = $read.nrs_ultima_instrucao_out;
 		}
 	|	write[g]
 		{
 			g = $write.g_out;
-			// Se a ultima instrucao tiver sido computada
-			if ($statement.nr_ultima_instrucao_in != -1) {
-				// liga a instrucao anterior com a nova instrucao
-				g.putCaminho($statement.nr_ultima_instrucao_in, $write.nr_ultima_instrucao_out);
-				// Se a ultima instrucao foi um if e tinha um bloco else. Liga o bloco else ao a nova instrucao
-				if ($statement.nr_ultima_instrucao2_in != -1) {
-					// liga a instrucao anterior ( ultima isntrucao do bloco else) com a nova instrucao
-					g.putCaminho($statement.nr_ultima_instrucao2_in, $write.nr_ultima_instrucao_out);
-				}
-			}
+			
+			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
+			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, $write.nrs_ultima_instrucao_out.first());
 			
 			$statement.g_out = g;
-			$statement.nr_ultima_instrucao_out = $write.nr_ultima_instrucao_out;
-			$statement.nr_ultima_instrucao2_out = $write.nr_ultima_instrucao2_out;
+			$statement.nrs_ultima_instrucao_out = $write.nrs_ultima_instrucao_out;
 		}
-	|	ifs[g, $statement.nr_ultima_instrucao_in, $statement.nr_ultima_instrucao2_in]
+	|	ifs[g, $statement.nrs_ultima_instrucao_in]
 		{
 			g = $ifs.g_out;
 			
 			$statement.g_out = g;
-			$statement.nr_ultima_instrucao_out = $ifs.nr_ultima_instrucao_out;
-			$statement.nr_ultima_instrucao2_out = $ifs.nr_ultima_instrucao2_out;
+			$statement.nrs_ultima_instrucao_out = $ifs.nrs_ultima_instrucao_out;
 		}
-	|	whiles[g, $statement.nr_ultima_instrucao_in, $statement.nr_ultima_instrucao2_in]
+	|	whiles[g, $statement.nrs_ultima_instrucao_in]
 		{
 			g = $whiles.g_out;
 			
 			$statement.g_out = g;
-			$statement.nr_ultima_instrucao_out = $whiles.nr_ultima_instrucao_out;
-			$statement.nr_ultima_instrucao2_out = $whiles.nr_ultima_instrucao2_out;
+			$statement.nrs_ultima_instrucao_out = $whiles.nrs_ultima_instrucao_out;
 		}
-	|	invocacao
-	|	retorna
+	|	invocacao[g, "STATEMENT"]
+		{
+			g = $invocacao.g_out;
+			
+			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
+			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, $invocacao.nrs_ultima_instrucao_out.first());
+
+			$statement.g_out = g;
+			$statement.nrs_ultima_instrucao_out = $invocacao.nrs_ultima_instrucao_out;
+		}
+	|	retorna[g]
+		{
+			g = $retorna.g_out;
+			
+			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
+			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, $retorna.nrs_ultima_instrucao_out.first());
+			
+			$statement.g_out = g;
+			$statement.nrs_ultima_instrucao_out = $retorna.nrs_ultima_instrucao_out;
+		}
 	;
 	
-retorna returns [String instrucao]
+retorna [Grafo g_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out]
+@init {
+	Grafo g = $retorna.g_in;
+}
 	:  ^(RETURN expr)
 	{
-		$retorna.instrucao = $RETURN.text + $expr.instrucao;
+		TreeSet<Integer> nrs = new TreeSet<Integer>();
+		// cria nodo no grafo e guarda o nr da instrucao
+		nrs.add(g.putNodo(new Instrucao($RETURN.text + " " + $expr.instrucao, null, null)));
+		
+		$retorna.nrs_ultima_instrucao_out = nrs;
+		$retorna.g_out = g;
 	}
 	;
 
-invocacao returns [String instrucao]
+invocacao [Grafo g_in, String contexto] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String instrucao]
+@init {
+	Grafo g = $invocacao.g_in;
+}
 	:  ^(INVOCACAO ID args?)
 	{
-		$invocacao.instrucao = $ID.text + "(" + $args.ags + ")";
+		if ($invocacao.contexto.equals("FACTOR")) {
+			$invocacao.instrucao = $ID.text + "(" + $args.ags + ")";
+		}
+		else {
+			TreeSet<Integer> nrs = new TreeSet<Integer>();
+			// cria nodo no grafo e guarda o nr da instrucao
+			nrs.add(g.putNodo(new Instrucao($ID.text + "(" + $args.ags + ")", null, null)));
+			
+			$invocacao.nrs_ultima_instrucao_out = nrs;
+			$invocacao.g_out = g;
+		}
 	}
 	;
 
@@ -189,138 +208,133 @@ args returns [String ags]
 		a += $expr.instrucao + ", ";
 	}
 	)+
-	{$args.ags = a;}
+	{
+		// limpa os caracteres finais ", "
+		$args.ags = a.substring(0,a.length()-2);
+	}
 	)
 	;
 
-atribuicao [Grafo g_in] returns [Grafo g_out, int nr_ultima_instrucao_out, int nr_ultima_instrucao2_out]
+atribuicao [Grafo g_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out]
 @init {
 	Grafo g = $atribuicao.g_in;
 }
 	:	 ^('=' ID expr)
 	{
+		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		$atribuicao.nr_ultima_instrucao_out = g.putNodo(new Instrucao($ID.text + " = " + $expr.instrucao, null, null));
-		$atribuicao.nr_ultima_instrucao2_out = -1;
+		nrs.add(g.putNodo(new Instrucao($ID.text + " = " + $expr.instrucao, null, null)));
+		$atribuicao.nrs_ultima_instrucao_out = nrs;
 		$atribuicao.g_out = g;
 	}
 	;
 
-write [Grafo g_in] returns [Grafo g_out, int nr_ultima_instrucao_out, int nr_ultima_instrucao2_out]
+write [Grafo g_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out]
 @init {
 	Grafo g = $write.g_in;
 }
 	: ^(WRITE expr)
 	{
+		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		$write.nr_ultima_instrucao_out = g.putNodo(new Instrucao($WRITE.text + "(" + $expr.instrucao + ")", null, null));
-		$write.nr_ultima_instrucao2_out = -1;
+		nrs.add(g.putNodo(new Instrucao($WRITE.text + "(" + $expr.instrucao + ")", null, null)));
+		$write.nrs_ultima_instrucao_out = nrs;
 		$write.g_out = g;
 	}
 	;
 	
-read [Grafo g_in] returns [Grafo g_out, int nr_ultima_instrucao_out, int nr_ultima_instrucao2_out]
+read [Grafo g_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out]
 @init {
 	Grafo g = $read.g_in;
 }
 	: ^(READ ID)
 	{
+		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		$read.nr_ultima_instrucao_out = g.putNodo(new Instrucao($READ.text + "(" + $ID.text + ")", null, null));
-		$read.nr_ultima_instrucao2_out = -1;
+		nrs.add(g.putNodo(new Instrucao($READ.text + "(" + $ID.text + ")", null, null)));
+		$read.nrs_ultima_instrucao_out = nrs;
 		$read.g_out = g;
 	}
 	;
 	
 	
-ifs [Grafo g_in, int nr_ultima_instrucao_in, int nr_ultima_instrucao2_in] returns [Grafo g_out, int nr_ultima_instrucao_out, int nr_ultima_instrucao2_out]
+ifs [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out]
 @init {
 	Grafo g = $ifs.g_in;
-	int nr_ultima_instrucao2 = -1;
 	int nr_ult_inst_exp = -1;
-	// TODO o nr_ultima_instrucao pode ser mais que dois devido a if's aninhados. ponderar uso de array de nr_ultimo_isntrucao
+	TreeSet<Integer> nrs_exp = new TreeSet<Integer>();
+	TreeSet<Integer> nrs_out = new TreeSet<Integer>();
 }
 	:	^(IF expr 
 			{
 				// cria nodo no grafo e guarda o nr da instrucao
 				nr_ult_inst_exp = g.putNodo(new Instrucao($IF.text + "(" + $expr.instrucao + ")", null, null));
 				
-				// Se a ultima instrucao tiver sido computada
-				if ($ifs.nr_ultima_instrucao_in != -1) {
-					// liga a instrucao anterior com a nova instrucao
-					g.putCaminho($ifs.nr_ultima_instrucao_in, nr_ult_inst_exp);
-					// Se a ultima instrucao foi um if e tinha um bloco else. Liga o bloco else ao a nova instrucao
-					if ($ifs.nr_ultima_instrucao2_in != -1) {
-						// liga a instrucao anterior ( ultima isntrucao do bloco else) com a nova instrucao
-						g.putCaminho($ifs.nr_ultima_instrucao2_in, nr_ult_inst_exp);
-					}
-				}
+				// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao (expressao)
+				g.checkAndPutCaminho($ifs.nrs_ultima_instrucao_in, nr_ult_inst_exp);
+				
+				// variavel que sera passada aos blocos para indicar o nodo que sera ligado a primeira instrucao de cada bloco
+				nrs_exp.add(nr_ult_inst_exp);
+				
+				// adiciona provisoriamente o nr da expressao. caso exista o bloco else, este é removido ja que a instrucao seguinte, ligar-se-á à última instrucao dos blocos then e else
+				// caso contrario, ligar-se-á à expressão e ao bloco then.
+				nrs_out.add(nr_ult_inst_exp);
+				
 			}
-			a=bloco[g, nr_ult_inst_exp, -1] 
+			a=bloco[g, nrs_exp] 
 			{
 				g = $a.g_out; 
+				// adiciona os nrs das utlimas instrucoes deste bloco
+				nrs_out.addAll($a.nrs_ultima_instrucao_out);
 			} 
-			(b=bloco[g, nr_ult_inst_exp, -1] 
+			(b=bloco[g, nrs_exp] 
 			{ 
 				g = $b.g_out; 
-				nr_ultima_instrucao2 = $b.nr_ultima_instrucao_out; 
+				// remove o nr da expressao adicionado provisoriamente
+				nrs_out.remove(nr_ult_inst_exp);
+				// adiciona os nrs das utlimas instrucoes deste bloco
+				nrs_out.addAll($b.nrs_ultima_instrucao_out);
 			} )?
 		)
 		{
-			$ifs.nr_ultima_instrucao_out = $a.nr_ultima_instrucao_out;
-			$ifs.nr_ultima_instrucao2_out = nr_ultima_instrucao2;
+			$ifs.nrs_ultima_instrucao_out = nrs_out;
 			$ifs.g_out = g;
 		}
 	;
 	
-whiles [Grafo g_in, int nr_ultima_instrucao_in, int nr_ultima_instrucao2_in] returns [Grafo g_out, int nr_ultima_instrucao_out, int nr_ultima_instrucao2_out]
+whiles [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out]
 @init {
 	Grafo g = $whiles.g_in;
 	int nr_ult_inst_exp = -1;
-	// TODO o nr_ultima_instrucao pode ser mais que dois devido a if's aninhados. ponderar uso de array de nr_ultimo_isntrucao
+	TreeSet<Integer> nrs_exp = new TreeSet<Integer>();
 }
 	:	 ^(WHILE expr
 			{
 				// cria nodo no grafo e guarda o nr da instrucao
 				nr_ult_inst_exp = g.putNodo(new Instrucao($WHILE.text + "(" + $expr.instrucao + ")", null, null));
 				
-				// Se a ultima instrucao tiver sido computada
-				if ($whiles.nr_ultima_instrucao_in != -1) {
-					// liga a instrucao anterior com a nova instrucao
-					g.putCaminho($whiles.nr_ultima_instrucao_in, nr_ult_inst_exp);
-					// Se a ultima instrucao foi um if e tinha um bloco else. Liga o bloco else ao a nova instrucao
-					if ($whiles.nr_ultima_instrucao2_in != -1) {
-						// liga a instrucao anterior ( ultima isntrucao do bloco else) com a nova instrucao
-						g.putCaminho($whiles.nr_ultima_instrucao2_in, nr_ult_inst_exp);
-					}
-				}
+				// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao (expressao)
+				g.checkAndPutCaminho($whiles.nrs_ultima_instrucao_in, nr_ult_inst_exp);
+				
+				// variavel que sera passada ao bloco para indicar o nodo que sera ligado a primeira instrucao do bloco
+				nrs_exp.add(nr_ult_inst_exp);
 			}
-	 		bloco[g, nr_ult_inst_exp, -1] { g = $bloco.g_out; })
+	 		bloco[g, nrs_exp] { g = $bloco.g_out; })
 		 	{
-				// Se a ultima instrucao do bloco tiver sido computada
-				if ($bloco.nr_ultima_instrucao_out != -1) {
-					// liga a ultima instrucao do bloco com a intrucao inicial do while, ou seja a expressao
-					g.putCaminho($bloco.nr_ultima_instrucao_out, nr_ult_inst_exp);
-					// Se a ultima instrucao do bloco foi um if e tinha um bloco else. Liga o bloco else a intrucao inicial do while, ou seja a expressao
-					if ($bloco.nr_ultima_instrucao2_out != -1) {
-						// liga a instrucao anterior ( ultima isntrucao do bloco else) com a intrucao inicial do while, ou seja a expressao
-						g.putCaminho($bloco.nr_ultima_instrucao2_out, nr_ult_inst_exp);
-					}
-				}		 	
+				// verifica se existem instrucoes anteriormente executadas no bloco e conecta essas instrucoes à instrucao (expressao)
+				g.checkAndPutCaminho($bloco.nrs_ultima_instrucao_out, nr_ult_inst_exp);			 	
 		 	
-		 		// é passado o nr da intrucao inicial do while, ou seja a expressao, para que  proximo statement se ligue a este
-				$whiles.nr_ultima_instrucao_out = nr_ult_inst_exp;
-				$whiles.nr_ultima_instrucao2_out = -2;
+		 		// é passado o nr da instrucao inicial do while, ou seja a expressao, para que  proximo statement se ligue a este
+		 		$whiles.nrs_ultima_instrucao_out = nrs_exp;
 				$whiles.g_out = g;
 			}
 	;
 
-bloco [Grafo g_in, int nr_ultima_instrucao_in, int nr_ultima_instrucao2_in] returns [Grafo g_out, int nr_ultima_instrucao_out, int nr_ultima_instrucao2_out]
-	:	statements[$bloco.g_in, "BLOCO", $bloco.nr_ultima_instrucao_in, $bloco.nr_ultima_instrucao2_in]
+bloco [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out]
+	:	statements[$bloco.g_in, "BLOCO", $bloco.nrs_ultima_instrucao_in]
 	{
 		$bloco.g_out = $statements.g_out;
-		$bloco.nr_ultima_instrucao_out = $statements.nr_ultima_instrucao_out;
-		$bloco.nr_ultima_instrucao2_out = $statements.nr_ultima_instrucao2_out;
+		$bloco.nrs_ultima_instrucao_out = $statements.nrs_ultima_instrucao_out;
 	}
 //	|	^(STATEMENTS statement)
 	;
@@ -332,7 +346,7 @@ expr returns [String instrucao]
 	|	^('-' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "-" 	+ $b.instrucao;}
 	|	^('*' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "*" 	+ $b.instrucao;}
 	|	^('/' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "/" 	+ $b.instrucao;}
-	//|	^('%' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "%" 	+ $b.instrucao;}
+	|	^(\'%' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "\%" 	+ $b.instrucao;}
 	|	^('>' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + ">" 	+ $b.instrucao;}
 	|	^('<' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "<" 	+ $b.instrucao;}
 	|	^('>=' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + ">=" 	+ $b.instrucao;}
@@ -344,9 +358,9 @@ expr returns [String instrucao]
 	;
 	
 factor returns [String instrucao]
-	:	ID 		{$factor.instrucao = $ID.text;}
-	| constante	{$factor.instrucao = $constante.valor;}
-	| invocacao	{$factor.instrucao = $invocacao.instrucao;}
+	:	ID 						{$factor.instrucao = $ID.text;}
+	| constante					{$factor.instrucao = $constante.valor;}
+	| invocacao[null, "FACTOR"]	{$factor.instrucao = $invocacao.instrucao;}
 	;
 	
 constante returns [String valor]

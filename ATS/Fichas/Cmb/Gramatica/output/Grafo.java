@@ -78,10 +78,41 @@ public class Grafo {
 			this.caminhos.put(nodo_anterior, c);
 		}
 	}
+	
+	/**
+	 * @param nodos_anteriores
+	 * @param nodo_posterior
+	 * 
+	 * Verifica se existem instrucoes anteriormente executadas (nodos_anteriores) e conecta essas instrucoes à nova instrucao (nodo_posterior)
+	 */
+	public void checkAndPutCaminho(TreeSet<Integer> nodos_anteriores, int nodo_posterior) {
+		for (int nodo_ant : nodos_anteriores) {
+			// liga a instrucao anterior com a nova instrucao
+			this.putCaminho(nodo_ant, nodo_posterior);
+		}
+	}
+	
+	/**
+	 * @param nodo_anterior
+	 * @param nodo_anterior2
+	 * @param nodo_posterior
+	 */
+	public void checkAndPutCaminho(int nodo_anterior, int nodo_anterior2, int nodo_posterior) {
+		// Se a ultima instrucao tiver sido computada
+		if (nodo_anterior != -1) {
+			// liga a instrucao anterior com a nova instrucao
+			this.putCaminho(nodo_anterior, nodo_posterior);
+			// Se a ultima instrucao foi um if e tinha um bloco else. Liga o bloco else ao a nova instrucao
+			if (nodo_anterior2 != -1) {
+				// liga a instrucao anterior ( ultima isntrucao do bloco else) com a nova instrucao
+				this.putCaminho(nodo_anterior2, nodo_posterior);
+			}
+		}
+	}
 
 	@Override
 	public String toString() {
-		return "Grafo [\n" +
+		return "Grafo [\n\t" +
 					"nodos=" + nodos + ",\n\n" +
 					"caminhos=" + caminhos + "\n" +
 				"]";
