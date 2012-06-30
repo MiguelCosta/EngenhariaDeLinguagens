@@ -28,6 +28,15 @@ public class Grafo {
 		this.nodos = nodos;
 		this.caminhos = caminhos;
 	}
+	
+	/**
+	 * Construtor de cópia
+	 * @param grafo
+	 */
+	public Grafo (Grafo grafo) {    
+		this.nodos = grafo.getNodos();
+		this.caminhos = grafo.getCaminhos();
+    }
 
 
 	/**

@@ -1,7 +1,4 @@
-// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g 2012-06-30 15:52:53
-
-	import java.util.TreeSet;
-
+// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g 2012-06-30 16:09:53
 
 import org.antlr.runtime.*;
 import org.antlr.runtime.tree.*;
@@ -13,7 +10,7 @@ import java.util.HashMap;
 
 
 @SuppressWarnings({"all", "warnings", "unchecked"})
-public class CmbTGCFG extends TreeParser {
+public class CmbTGPDG extends TreeParser {
     public static final String[] tokenNames = new String[] {
         "<invalid>", "<EOR>", "<DOWN>", "<UP>", "ARGS", "ARGUMENTOS", "ATRIBUICAO", "CAEBECALHO", "CHAR", "COMMENT", "CORPO", "DECLARACAO", "DECLARACOES", "ELSE", "ESC_SEQ", "FALSE", "FUNCAO", "HEX_DIGIT", "ID", "IF", "INT", "INVOCACAO", "OCTAL_ESC", "PROGRAMA", "READ", "RETURN", "STATEMENTS", "STRING", "TD_BOOL", "TD_INT", "TD_STRING", "TD_VAZIO", "THEN", "TRUE", "UNICODE_ESC", "WHILE", "WRITE", "WS", "'!'", "'!='", "'%'", "'&&'", "'('", "')'", "'*'", "'+'", "','", "'-'", "'/'", "';'", "'<'", "'<='", "'='", "'=='", "'>'", "'>='", "'{'", "'||'", "'}'"
     };
@@ -83,10 +80,10 @@ public class CmbTGCFG extends TreeParser {
     // delegators
 
 
-    public CmbTGCFG(TreeNodeStream input) {
+    public CmbTGPDG(TreeNodeStream input) {
         this(input, new RecognizerSharedState());
     }
-    public CmbTGCFG(TreeNodeStream input, RecognizerSharedState state) {
+    public CmbTGPDG(TreeNodeStream input, RecognizerSharedState state) {
         super(input, state);
     }
 
@@ -98,21 +95,21 @@ public void setTreeAdaptor(TreeAdaptor adaptor) {
 public TreeAdaptor getTreeAdaptor() {
     return adaptor;
 }
-    public String[] getTokenNames() { return CmbTGCFG.tokenNames; }
-    public String getGrammarFileName() { return "/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g"; }
+    public String[] getTokenNames() { return CmbTGPDG.tokenNames; }
+    public String getGrammarFileName() { return "/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g"; }
 
 
     public static class programa_return extends TreeRuleReturnScope {
-        public Grafo g_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "programa"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:14:1: programa returns [Grafo g_out] : ^( PROGRAMA ( funcao[g] )+ ) ;
-    public final CmbTGCFG.programa_return programa() throws RecognitionException {
-        CmbTGCFG.programa_return retval = new CmbTGCFG.programa_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:12:1: programa[Grafo cfg] returns [GrafoPDG g_out] : ^( PROGRAMA ( funcao[g] )+ ) ;
+    public final CmbTGPDG.programa_return programa(Grafo cfg) throws RecognitionException {
+        CmbTGPDG.programa_return retval = new CmbTGPDG.programa_return();
         retval.start = input.LT(1);
 
 
@@ -122,17 +119,18 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree PROGRAMA1=null;
-        CmbTGCFG.funcao_return funcao2 =null;
+        CmbTGPDG.funcao_return funcao2 =null;
 
 
         CommonTree PROGRAMA1_tree=null;
 
 
-        	Grafo g = new Grafo();
+        	GrafoPDG g = new GrafoPDG(cfg);
+        	//System.out.println(g);
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:18:2: ( ^( PROGRAMA ( funcao[g] )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:18:5: ^( PROGRAMA ( funcao[g] )+ )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:17:2: ( ^( PROGRAMA ( funcao[g] )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:17:5: ^( PROGRAMA ( funcao[g] )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -143,7 +141,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            PROGRAMA1=(CommonTree)match(input,PROGRAMA,FOLLOW_PROGRAMA_in_programa64); if (state.failed) return retval;
+            PROGRAMA1=(CommonTree)match(input,PROGRAMA,FOLLOW_PROGRAMA_in_programa63); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             PROGRAMA1_tree = (CommonTree)adaptor.dupNode(PROGRAMA1);
 
@@ -153,7 +151,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:18:16: ( funcao[g] )+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:17:16: ( funcao[g] )+
             int cnt1=0;
             loop1:
             do {
@@ -167,10 +165,10 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:18:17: funcao[g]
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:17:17: funcao[g]
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_funcao_in_programa67);
+            	    pushFollow(FOLLOW_funcao_in_programa66);
             	    funcao2=funcao(g);
 
             	    state._fsp--;
@@ -233,16 +231,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class funcao_return extends TreeRuleReturnScope {
-        public Grafo g_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "funcao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:29:1: funcao[Grafo g_in] returns [Grafo g_out] : ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in] ) ;
-    public final CmbTGCFG.funcao_return funcao(Grafo g_in) throws RecognitionException {
-        CmbTGCFG.funcao_return retval = new CmbTGCFG.funcao_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:28:1: funcao[GrafoPDG g_in] returns [GrafoPDG g_out] : ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in] ) ;
+    public final CmbTGPDG.funcao_return funcao(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.funcao_return retval = new CmbTGPDG.funcao_return();
         retval.start = input.LT(1);
 
 
@@ -252,16 +250,16 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree FUNCAO3=null;
-        CmbTGCFG.cabecalho_return cabecalho4 =null;
+        CmbTGPDG.cabecalho_return cabecalho4 =null;
 
-        CmbTGCFG.corpo_funcao_return corpo_funcao5 =null;
+        CmbTGPDG.corpo_funcao_return corpo_funcao5 =null;
 
 
         CommonTree FUNCAO3_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:30:2: ( ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in] ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:30:5: ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in] )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:29:2: ( ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in] ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:29:5: ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in] )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -272,7 +270,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            FUNCAO3=(CommonTree)match(input,FUNCAO,FOLLOW_FUNCAO_in_funcao100); if (state.failed) return retval;
+            FUNCAO3=(CommonTree)match(input,FUNCAO,FOLLOW_FUNCAO_in_funcao99); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             FUNCAO3_tree = (CommonTree)adaptor.dupNode(FUNCAO3);
 
@@ -283,7 +281,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_cabecalho_in_funcao102);
+            pushFollow(FOLLOW_cabecalho_in_funcao101);
             cabecalho4=cabecalho();
 
             state._fsp--;
@@ -293,7 +291,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_corpo_funcao_in_funcao104);
+            pushFollow(FOLLOW_corpo_funcao_in_funcao103);
             corpo_funcao5=corpo_funcao(g_in);
 
             state._fsp--;
@@ -342,9 +340,9 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "cabecalho"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:36:1: cabecalho : ^( CAEBECALHO tipo ID ( argumentos )? ) ;
-    public final CmbTGCFG.cabecalho_return cabecalho() throws RecognitionException {
-        CmbTGCFG.cabecalho_return retval = new CmbTGCFG.cabecalho_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:35:1: cabecalho : ^( CAEBECALHO tipo ID ( argumentos )? ) ;
+    public final CmbTGPDG.cabecalho_return cabecalho() throws RecognitionException {
+        CmbTGPDG.cabecalho_return retval = new CmbTGPDG.cabecalho_return();
         retval.start = input.LT(1);
 
 
@@ -355,17 +353,17 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree CAEBECALHO6=null;
         CommonTree ID8=null;
-        CmbTGCFG.tipo_return tipo7 =null;
+        CmbTGPDG.tipo_return tipo7 =null;
 
-        CmbTGCFG.argumentos_return argumentos9 =null;
+        CmbTGPDG.argumentos_return argumentos9 =null;
 
 
         CommonTree CAEBECALHO6_tree=null;
         CommonTree ID8_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:37:2: ( ^( CAEBECALHO tipo ID ( argumentos )? ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:37:5: ^( CAEBECALHO tipo ID ( argumentos )? )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:36:2: ( ^( CAEBECALHO tipo ID ( argumentos )? ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:36:5: ^( CAEBECALHO tipo ID ( argumentos )? )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -376,7 +374,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            CAEBECALHO6=(CommonTree)match(input,CAEBECALHO,FOLLOW_CAEBECALHO_in_cabecalho123); if (state.failed) return retval;
+            CAEBECALHO6=(CommonTree)match(input,CAEBECALHO,FOLLOW_CAEBECALHO_in_cabecalho122); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             CAEBECALHO6_tree = (CommonTree)adaptor.dupNode(CAEBECALHO6);
 
@@ -387,7 +385,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_tipo_in_cabecalho125);
+            pushFollow(FOLLOW_tipo_in_cabecalho124);
             tipo7=tipo();
 
             state._fsp--;
@@ -397,7 +395,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             _last = (CommonTree)input.LT(1);
-            ID8=(CommonTree)match(input,ID,FOLLOW_ID_in_cabecalho127); if (state.failed) return retval;
+            ID8=(CommonTree)match(input,ID,FOLLOW_ID_in_cabecalho126); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ID8_tree = (CommonTree)adaptor.dupNode(ID8);
 
@@ -406,7 +404,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:37:26: ( argumentos )?
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:36:26: ( argumentos )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -415,10 +413,10 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt2) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:37:26: argumentos
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:36:26: argumentos
                     {
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_argumentos_in_cabecalho129);
+                    pushFollow(FOLLOW_argumentos_in_cabecalho128);
                     argumentos9=argumentos();
 
                     state._fsp--;
@@ -471,9 +469,9 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "argumentos"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:40:1: argumentos : ^( ARGUMENTOS ( declaracao )+ ) ;
-    public final CmbTGCFG.argumentos_return argumentos() throws RecognitionException {
-        CmbTGCFG.argumentos_return retval = new CmbTGCFG.argumentos_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:39:1: argumentos : ^( ARGUMENTOS ( declaracao )+ ) ;
+    public final CmbTGPDG.argumentos_return argumentos() throws RecognitionException {
+        CmbTGPDG.argumentos_return retval = new CmbTGPDG.argumentos_return();
         retval.start = input.LT(1);
 
 
@@ -483,14 +481,14 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree ARGUMENTOS10=null;
-        CmbTGCFG.declaracao_return declaracao11 =null;
+        CmbTGPDG.declaracao_return declaracao11 =null;
 
 
         CommonTree ARGUMENTOS10_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:41:2: ( ^( ARGUMENTOS ( declaracao )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:41:5: ^( ARGUMENTOS ( declaracao )+ )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:40:2: ( ^( ARGUMENTOS ( declaracao )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:40:5: ^( ARGUMENTOS ( declaracao )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -501,7 +499,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            ARGUMENTOS10=(CommonTree)match(input,ARGUMENTOS,FOLLOW_ARGUMENTOS_in_argumentos144); if (state.failed) return retval;
+            ARGUMENTOS10=(CommonTree)match(input,ARGUMENTOS,FOLLOW_ARGUMENTOS_in_argumentos143); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ARGUMENTOS10_tree = (CommonTree)adaptor.dupNode(ARGUMENTOS10);
 
@@ -511,7 +509,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:41:18: ( declaracao )+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:40:18: ( declaracao )+
             int cnt3=0;
             loop3:
             do {
@@ -525,10 +523,10 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt3) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:41:18: declaracao
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:40:18: declaracao
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_declaracao_in_argumentos146);
+            	    pushFollow(FOLLOW_declaracao_in_argumentos145);
             	    declaracao11=declaracao();
 
             	    state._fsp--;
@@ -583,16 +581,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class corpo_funcao_return extends TreeRuleReturnScope {
-        public Grafo g_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "corpo_funcao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:44:1: corpo_funcao[Grafo g_in] returns [Grafo g_out] : ^( CORPO declaracoes statements[$corpo_funcao.g_in, \"CORPO_FUNCAO\", nrs] ) ;
-    public final CmbTGCFG.corpo_funcao_return corpo_funcao(Grafo g_in) throws RecognitionException {
-        CmbTGCFG.corpo_funcao_return retval = new CmbTGCFG.corpo_funcao_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:43:1: corpo_funcao[GrafoPDG g_in] returns [GrafoPDG g_out] : ^( CORPO declaracoes statements[$corpo_funcao.g_in] ) ;
+    public final CmbTGPDG.corpo_funcao_return corpo_funcao(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.corpo_funcao_return retval = new CmbTGPDG.corpo_funcao_return();
         retval.start = input.LT(1);
 
 
@@ -602,21 +600,16 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree CORPO12=null;
-        CmbTGCFG.declaracoes_return declaracoes13 =null;
+        CmbTGPDG.declaracoes_return declaracoes13 =null;
 
-        CmbTGCFG.statements_return statements14 =null;
+        CmbTGPDG.statements_return statements14 =null;
 
 
         CommonTree CORPO12_tree=null;
 
-
-        	TreeSet<Integer> nrs = new TreeSet<Integer>();
-        	// 0 <=> Nodo START. É passado como parametro para que o nodo START se ligue à primeira instrucao
-        	nrs.add(0);
-
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:50:2: ( ^( CORPO declaracoes statements[$corpo_funcao.g_in, \"CORPO_FUNCAO\", nrs] ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:50:4: ^( CORPO declaracoes statements[$corpo_funcao.g_in, \"CORPO_FUNCAO\", nrs] )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:44:2: ( ^( CORPO declaracoes statements[$corpo_funcao.g_in] ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:44:4: ^( CORPO declaracoes statements[$corpo_funcao.g_in] )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -627,7 +620,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            CORPO12=(CommonTree)match(input,CORPO,FOLLOW_CORPO_in_corpo_funcao170); if (state.failed) return retval;
+            CORPO12=(CommonTree)match(input,CORPO,FOLLOW_CORPO_in_corpo_funcao165); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             CORPO12_tree = (CommonTree)adaptor.dupNode(CORPO12);
 
@@ -638,7 +631,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_declaracoes_in_corpo_funcao172);
+            pushFollow(FOLLOW_declaracoes_in_corpo_funcao167);
             declaracoes13=declaracoes();
 
             state._fsp--;
@@ -648,8 +641,8 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_statements_in_corpo_funcao174);
-            statements14=statements(g_in, "CORPO_FUNCAO", nrs);
+            pushFollow(FOLLOW_statements_in_corpo_funcao169);
+            statements14=statements(g_in);
 
             state._fsp--;
             if (state.failed) return retval;
@@ -697,9 +690,9 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "declaracoes"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:56:1: declaracoes : ^( DECLARACOES ( declaracao )+ ) ;
-    public final CmbTGCFG.declaracoes_return declaracoes() throws RecognitionException {
-        CmbTGCFG.declaracoes_return retval = new CmbTGCFG.declaracoes_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:50:1: declaracoes : ^( DECLARACOES ( declaracao )+ ) ;
+    public final CmbTGPDG.declaracoes_return declaracoes() throws RecognitionException {
+        CmbTGPDG.declaracoes_return retval = new CmbTGPDG.declaracoes_return();
         retval.start = input.LT(1);
 
 
@@ -709,14 +702,14 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree DECLARACOES15=null;
-        CmbTGCFG.declaracao_return declaracao16 =null;
+        CmbTGPDG.declaracao_return declaracao16 =null;
 
 
         CommonTree DECLARACOES15_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:57:2: ( ^( DECLARACOES ( declaracao )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:57:4: ^( DECLARACOES ( declaracao )+ )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:51:2: ( ^( DECLARACOES ( declaracao )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:51:4: ^( DECLARACOES ( declaracao )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -727,7 +720,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            DECLARACOES15=(CommonTree)match(input,DECLARACOES,FOLLOW_DECLARACOES_in_declaracoes191); if (state.failed) return retval;
+            DECLARACOES15=(CommonTree)match(input,DECLARACOES,FOLLOW_DECLARACOES_in_declaracoes186); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             DECLARACOES15_tree = (CommonTree)adaptor.dupNode(DECLARACOES15);
 
@@ -737,7 +730,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:57:18: ( declaracao )+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:51:18: ( declaracao )+
             int cnt4=0;
             loop4:
             do {
@@ -751,10 +744,10 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt4) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:57:18: declaracao
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:51:18: declaracao
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_declaracao_in_declaracoes193);
+            	    pushFollow(FOLLOW_declaracao_in_declaracoes188);
             	    declaracao16=declaracao();
 
             	    state._fsp--;
@@ -815,9 +808,9 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "declaracao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:60:1: declaracao : ^( DECLARACAO tipo ID ) ;
-    public final CmbTGCFG.declaracao_return declaracao() throws RecognitionException {
-        CmbTGCFG.declaracao_return retval = new CmbTGCFG.declaracao_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:54:1: declaracao : ^( DECLARACAO tipo ID ) ;
+    public final CmbTGPDG.declaracao_return declaracao() throws RecognitionException {
+        CmbTGPDG.declaracao_return retval = new CmbTGPDG.declaracao_return();
         retval.start = input.LT(1);
 
 
@@ -828,15 +821,15 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree DECLARACAO17=null;
         CommonTree ID19=null;
-        CmbTGCFG.tipo_return tipo18 =null;
+        CmbTGPDG.tipo_return tipo18 =null;
 
 
         CommonTree DECLARACAO17_tree=null;
         CommonTree ID19_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:61:2: ( ^( DECLARACAO tipo ID ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:61:4: ^( DECLARACAO tipo ID )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:55:2: ( ^( DECLARACAO tipo ID ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:55:4: ^( DECLARACAO tipo ID )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -847,7 +840,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            DECLARACAO17=(CommonTree)match(input,DECLARACAO,FOLLOW_DECLARACAO_in_declaracao208); if (state.failed) return retval;
+            DECLARACAO17=(CommonTree)match(input,DECLARACAO,FOLLOW_DECLARACAO_in_declaracao203); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             DECLARACAO17_tree = (CommonTree)adaptor.dupNode(DECLARACAO17);
 
@@ -858,7 +851,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_tipo_in_declaracao210);
+            pushFollow(FOLLOW_tipo_in_declaracao205);
             tipo18=tipo();
 
             state._fsp--;
@@ -868,7 +861,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             _last = (CommonTree)input.LT(1);
-            ID19=(CommonTree)match(input,ID,FOLLOW_ID_in_declaracao212); if (state.failed) return retval;
+            ID19=(CommonTree)match(input,ID,FOLLOW_ID_in_declaracao207); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ID19_tree = (CommonTree)adaptor.dupNode(ID19);
 
@@ -913,9 +906,9 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "tipo"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:64:1: tipo : ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO );
-    public final CmbTGCFG.tipo_return tipo() throws RecognitionException {
-        CmbTGCFG.tipo_return retval = new CmbTGCFG.tipo_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:58:1: tipo : ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO );
+    public final CmbTGPDG.tipo_return tipo() throws RecognitionException {
+        CmbTGPDG.tipo_return retval = new CmbTGPDG.tipo_return();
         retval.start = input.LT(1);
 
 
@@ -929,8 +922,8 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set20_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:65:2: ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:59:2: ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -981,17 +974,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class statements_return extends TreeRuleReturnScope {
-        public Grafo g_out;
-        public TreeSet<Integer> nrs_ultima_instrucao_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "statements"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:71:1: statements[Grafo g_in, String contexto, TreeSet<Integer> nrs_ultima_instrucao_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out] : ^( STATEMENTS ( statement[g, nrs_ultima_instrucao] )+ ) ;
-    public final CmbTGCFG.statements_return statements(Grafo g_in, String contexto, TreeSet<Integer> nrs_ultima_instrucao_in) throws RecognitionException {
-        CmbTGCFG.statements_return retval = new CmbTGCFG.statements_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:65:1: statements[GrafoPDG g_in] returns [GrafoPDG g_out] : ^( STATEMENTS ( statement[g] )+ ) ;
+    public final CmbTGPDG.statements_return statements(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.statements_return retval = new CmbTGPDG.statements_return();
         retval.start = input.LT(1);
 
 
@@ -1001,18 +993,17 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree STATEMENTS21=null;
-        CmbTGCFG.statement_return statement22 =null;
+        CmbTGPDG.statement_return statement22 =null;
 
 
         CommonTree STATEMENTS21_tree=null;
 
 
-        	Grafo g = g_in;
-        	TreeSet<Integer> nrs_ultima_instrucao = nrs_ultima_instrucao_in;
+        	GrafoPDG g = g_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:76:2: ( ^( STATEMENTS ( statement[g, nrs_ultima_instrucao] )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:76:5: ^( STATEMENTS ( statement[g, nrs_ultima_instrucao] )+ )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:69:2: ( ^( STATEMENTS ( statement[g] )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:69:5: ^( STATEMENTS ( statement[g] )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1023,7 +1014,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            STATEMENTS21=(CommonTree)match(input,STATEMENTS,FOLLOW_STATEMENTS_in_statements268); if (state.failed) return retval;
+            STATEMENTS21=(CommonTree)match(input,STATEMENTS,FOLLOW_STATEMENTS_in_statements263); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             STATEMENTS21_tree = (CommonTree)adaptor.dupNode(STATEMENTS21);
 
@@ -1033,7 +1024,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:76:18: ( statement[g, nrs_ultima_instrucao] )+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:69:18: ( statement[g] )+
             int cnt5=0;
             loop5:
             do {
@@ -1047,11 +1038,11 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt5) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:76:19: statement[g, nrs_ultima_instrucao]
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:69:19: statement[g]
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_statement_in_statements271);
-            	    statement22=statement(g, nrs_ultima_instrucao);
+            	    pushFollow(FOLLOW_statement_in_statements266);
+            	    statement22=statement(g);
 
             	    state._fsp--;
             	    if (state.failed) return retval;
@@ -1061,7 +1052,6 @@ public TreeAdaptor getTreeAdaptor() {
 
             	    if ( state.backtracking==0 ) {
             	    		g = (statement22!=null?statement22.g_out:null);
-            	    		nrs_ultima_instrucao = (statement22!=null?statement22.nrs_ultima_instrucao_out:null);
             	    	}
 
             	    if ( state.backtracking==0 ) {
@@ -1081,15 +1071,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             if ( state.backtracking==0 ) {
-            		// Apos todos os statements do corpo de uma funcao tiverem sido executadas, os ultimos nodos sao ligados ao nodo EXIT
-            		if (contexto.equals("CORPO_FUNCAO")){
-            			// cria nodo EXIT
-            			int nodo_exit = g.putNodo(new Instrucao("EXIT", null, null));
-            			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes ao nodo EXIT
-            			g.checkAndPutCaminho(nrs_ultima_instrucao, nodo_exit);
-            		}
             		retval.g_out = g;
-            		retval.nrs_ultima_instrucao_out = nrs_ultima_instrucao;
             	}
 
             match(input, Token.UP, null); if (state.failed) return retval;
@@ -1122,17 +1104,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class statement_return extends TreeRuleReturnScope {
-        public Grafo g_out;
-        public TreeSet<Integer> nrs_ultima_instrucao_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "statement"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:97:1: statement[Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out] : ( atribuicao[g] | read[g] | write[g] | ifs[g, $statement.nrs_ultima_instrucao_in] | whiles[g, $statement.nrs_ultima_instrucao_in] | invocacao[g, \"STATEMENT\"] | retorna[g] );
-    public final CmbTGCFG.statement_return statement(Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in) throws RecognitionException {
-        CmbTGCFG.statement_return retval = new CmbTGCFG.statement_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:81:1: statement[GrafoPDG g_in] returns [GrafoPDG g_out] : ( atribuicao[g] | read[g] | write[g] | ifs[g] | whiles[g] | invocacao[g] | retorna[g] );
+    public final CmbTGPDG.statement_return statement(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.statement_return retval = new CmbTGPDG.statement_return();
         retval.start = input.LT(1);
 
 
@@ -1141,27 +1122,27 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _first_0 = null;
         CommonTree _last = null;
 
-        CmbTGCFG.atribuicao_return atribuicao23 =null;
+        CmbTGPDG.atribuicao_return atribuicao23 =null;
 
-        CmbTGCFG.read_return read24 =null;
+        CmbTGPDG.read_return read24 =null;
 
-        CmbTGCFG.write_return write25 =null;
+        CmbTGPDG.write_return write25 =null;
 
-        CmbTGCFG.ifs_return ifs26 =null;
+        CmbTGPDG.ifs_return ifs26 =null;
 
-        CmbTGCFG.whiles_return whiles27 =null;
+        CmbTGPDG.whiles_return whiles27 =null;
 
-        CmbTGCFG.invocacao_return invocacao28 =null;
+        CmbTGPDG.invocacao_return invocacao28 =null;
 
-        CmbTGCFG.retorna_return retorna29 =null;
-
-
+        CmbTGPDG.retorna_return retorna29 =null;
 
 
-        	Grafo g = g_in;
+
+
+        	GrafoPDG g = g_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:101:2: ( atribuicao[g] | read[g] | write[g] | ifs[g, $statement.nrs_ultima_instrucao_in] | whiles[g, $statement.nrs_ultima_instrucao_in] | invocacao[g, \"STATEMENT\"] | retorna[g] )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:85:2: ( atribuicao[g] | read[g] | write[g] | ifs[g] | whiles[g] | invocacao[g] | retorna[g] )
             int alt6=7;
             switch ( input.LA(1) ) {
             case 52:
@@ -1210,13 +1191,13 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt6) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:101:4: atribuicao[g]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:85:4: atribuicao[g]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_atribuicao_in_statement309);
+                    pushFollow(FOLLOW_atribuicao_in_statement304);
                     atribuicao23=atribuicao(g);
 
                     state._fsp--;
@@ -1228,11 +1209,7 @@ public TreeAdaptor getTreeAdaptor() {
                     if ( state.backtracking==0 ) {
                     			g = (atribuicao23!=null?atribuicao23.g_out:null);
 
-                    			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
-                    			g.checkAndPutCaminho(nrs_ultima_instrucao_in, (atribuicao23!=null?atribuicao23.nrs_ultima_instrucao_out:null).first());
-                    			
                     			retval.g_out = g;
-                    			retval.nrs_ultima_instrucao_out = (atribuicao23!=null?atribuicao23.nrs_ultima_instrucao_out:null);
                     		}
 
                     if ( state.backtracking==0 ) {
@@ -1240,13 +1217,13 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:111:4: read[g]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:91:4: read[g]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_read_in_statement320);
+                    pushFollow(FOLLOW_read_in_statement315);
                     read24=read(g);
 
                     state._fsp--;
@@ -1257,12 +1234,8 @@ public TreeAdaptor getTreeAdaptor() {
 
                     if ( state.backtracking==0 ) {
                     			g = (read24!=null?read24.g_out:null);
-                    			
-                    			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
-                    			g.checkAndPutCaminho(nrs_ultima_instrucao_in, (read24!=null?read24.nrs_ultima_instrucao_out:null).first());
-                    			
+
                     			retval.g_out = g;
-                    			retval.nrs_ultima_instrucao_out = (read24!=null?read24.nrs_ultima_instrucao_out:null);
                     		}
 
                     if ( state.backtracking==0 ) {
@@ -1270,13 +1243,13 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:121:4: write[g]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:97:4: write[g]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_write_in_statement330);
+                    pushFollow(FOLLOW_write_in_statement326);
                     write25=write(g);
 
                     state._fsp--;
@@ -1287,12 +1260,8 @@ public TreeAdaptor getTreeAdaptor() {
 
                     if ( state.backtracking==0 ) {
                     			g = (write25!=null?write25.g_out:null);
-                    			
-                    			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
-                    			g.checkAndPutCaminho(nrs_ultima_instrucao_in, (write25!=null?write25.nrs_ultima_instrucao_out:null).first());
-                    			
+
                     			retval.g_out = g;
-                    			retval.nrs_ultima_instrucao_out = (write25!=null?write25.nrs_ultima_instrucao_out:null);
                     		}
 
                     if ( state.backtracking==0 ) {
@@ -1300,14 +1269,14 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:131:4: ifs[g, $statement.nrs_ultima_instrucao_in]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:103:4: ifs[g]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_ifs_in_statement340);
-                    ifs26=ifs(g, nrs_ultima_instrucao_in);
+                    pushFollow(FOLLOW_ifs_in_statement337);
+                    ifs26=ifs(g);
 
                     state._fsp--;
                     if (state.failed) return retval;
@@ -1317,9 +1286,8 @@ public TreeAdaptor getTreeAdaptor() {
 
                     if ( state.backtracking==0 ) {
                     			g = (ifs26!=null?ifs26.g_out:null);
-                    			
+
                     			retval.g_out = g;
-                    			retval.nrs_ultima_instrucao_out = (ifs26!=null?ifs26.nrs_ultima_instrucao_out:null);
                     		}
 
                     if ( state.backtracking==0 ) {
@@ -1327,14 +1295,14 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:138:4: whiles[g, $statement.nrs_ultima_instrucao_in]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:109:4: whiles[g]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_whiles_in_statement350);
-                    whiles27=whiles(g, nrs_ultima_instrucao_in);
+                    pushFollow(FOLLOW_whiles_in_statement348);
+                    whiles27=whiles(g);
 
                     state._fsp--;
                     if (state.failed) return retval;
@@ -1344,9 +1312,8 @@ public TreeAdaptor getTreeAdaptor() {
 
                     if ( state.backtracking==0 ) {
                     			g = (whiles27!=null?whiles27.g_out:null);
-                    			
+
                     			retval.g_out = g;
-                    			retval.nrs_ultima_instrucao_out = (whiles27!=null?whiles27.nrs_ultima_instrucao_out:null);
                     		}
 
                     if ( state.backtracking==0 ) {
@@ -1354,14 +1321,14 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:145:4: invocacao[g, \"STATEMENT\"]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:115:4: invocacao[g]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_invocacao_in_statement360);
-                    invocacao28=invocacao(g, "STATEMENT");
+                    pushFollow(FOLLOW_invocacao_in_statement359);
+                    invocacao28=invocacao(g);
 
                     state._fsp--;
                     if (state.failed) return retval;
@@ -1371,12 +1338,8 @@ public TreeAdaptor getTreeAdaptor() {
 
                     if ( state.backtracking==0 ) {
                     			g = (invocacao28!=null?invocacao28.g_out:null);
-                    			
-                    			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
-                    			g.checkAndPutCaminho(nrs_ultima_instrucao_in, (invocacao28!=null?invocacao28.nrs_ultima_instrucao_out:null).first());
 
                     			retval.g_out = g;
-                    			retval.nrs_ultima_instrucao_out = (invocacao28!=null?invocacao28.nrs_ultima_instrucao_out:null);
                     		}
 
                     if ( state.backtracking==0 ) {
@@ -1384,7 +1347,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:155:4: retorna[g]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:121:4: retorna[g]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -1401,12 +1364,8 @@ public TreeAdaptor getTreeAdaptor() {
 
                     if ( state.backtracking==0 ) {
                     			g = (retorna29!=null?retorna29.g_out:null);
-                    			
-                    			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
-                    			g.checkAndPutCaminho(nrs_ultima_instrucao_in, (retorna29!=null?retorna29.nrs_ultima_instrucao_out:null).first());
-                    			
+
                     			retval.g_out = g;
-                    			retval.nrs_ultima_instrucao_out = (retorna29!=null?retorna29.nrs_ultima_instrucao_out:null);
                     		}
 
                     if ( state.backtracking==0 ) {
@@ -1435,17 +1394,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class retorna_return extends TreeRuleReturnScope {
-        public Grafo g_out;
-        public TreeSet<Integer> nrs_ultima_instrucao_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "retorna"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:167:1: retorna[Grafo g_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out] : ^( RETURN expr ) ;
-    public final CmbTGCFG.retorna_return retorna(Grafo g_in) throws RecognitionException {
-        CmbTGCFG.retorna_return retval = new CmbTGCFG.retorna_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:129:1: retorna[GrafoPDG g_in] returns [GrafoPDG g_out] : ^( RETURN expr ) ;
+    public final CmbTGPDG.retorna_return retorna(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.retorna_return retval = new CmbTGPDG.retorna_return();
         retval.start = input.LT(1);
 
 
@@ -1455,17 +1413,17 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree RETURN30=null;
-        CmbTGCFG.expr_return expr31 =null;
+        CmbTGPDG.expr_return expr31 =null;
 
 
         CommonTree RETURN30_tree=null;
 
 
-        	Grafo g = g_in;
+        	GrafoPDG g = g_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:171:2: ( ^( RETURN expr ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:171:5: ^( RETURN expr )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:133:2: ( ^( RETURN expr ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:133:5: ^( RETURN expr )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1476,7 +1434,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            RETURN30=(CommonTree)match(input,RETURN,FOLLOW_RETURN_in_retorna400); if (state.failed) return retval;
+            RETURN30=(CommonTree)match(input,RETURN,FOLLOW_RETURN_in_retorna401); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             RETURN30_tree = (CommonTree)adaptor.dupNode(RETURN30);
 
@@ -1487,7 +1445,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_expr_in_retorna402);
+            pushFollow(FOLLOW_expr_in_retorna403);
             expr31=expr();
 
             state._fsp--;
@@ -1503,11 +1461,6 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             if ( state.backtracking==0 ) {
-            		TreeSet<Integer> nrs = new TreeSet<Integer>();
-            		// cria nodo no grafo e guarda o nr da instrucao
-            		nrs.add(g.putNodo(new Instrucao((RETURN30!=null?RETURN30.getText():null) + " " + (expr31!=null?expr31.instrucao:null), null, null)));
-            		
-            		retval.nrs_ultima_instrucao_out = nrs;
             		retval.g_out = g;
             	}
 
@@ -1535,18 +1488,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class invocacao_return extends TreeRuleReturnScope {
-        public Grafo g_out;
-        public TreeSet<Integer> nrs_ultima_instrucao_out;
-        public String instrucao;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "invocacao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:182:1: invocacao[Grafo g_in, String contexto] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String instrucao] : ^( INVOCACAO ID ( args )? ) ;
-    public final CmbTGCFG.invocacao_return invocacao(Grafo g_in, String contexto) throws RecognitionException {
-        CmbTGCFG.invocacao_return retval = new CmbTGCFG.invocacao_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:139:1: invocacao[GrafoPDG g_in] returns [GrafoPDG g_out] : ^( INVOCACAO ID ( args )? ) ;
+    public final CmbTGPDG.invocacao_return invocacao(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.invocacao_return retval = new CmbTGPDG.invocacao_return();
         retval.start = input.LT(1);
 
 
@@ -1557,18 +1508,18 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree INVOCACAO32=null;
         CommonTree ID33=null;
-        CmbTGCFG.args_return args34 =null;
+        CmbTGPDG.args_return args34 =null;
 
 
         CommonTree INVOCACAO32_tree=null;
         CommonTree ID33_tree=null;
 
 
-        	Grafo g = g_in;
+        	GrafoPDG g = g_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:186:2: ( ^( INVOCACAO ID ( args )? ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:186:5: ^( INVOCACAO ID ( args )? )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:143:2: ( ^( INVOCACAO ID ( args )? ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:143:5: ^( INVOCACAO ID ( args )? )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1579,7 +1530,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            INVOCACAO32=(CommonTree)match(input,INVOCACAO,FOLLOW_INVOCACAO_in_invocacao430); if (state.failed) return retval;
+            INVOCACAO32=(CommonTree)match(input,INVOCACAO,FOLLOW_INVOCACAO_in_invocacao431); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             INVOCACAO32_tree = (CommonTree)adaptor.dupNode(INVOCACAO32);
 
@@ -1590,7 +1541,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            ID33=(CommonTree)match(input,ID,FOLLOW_ID_in_invocacao432); if (state.failed) return retval;
+            ID33=(CommonTree)match(input,ID,FOLLOW_ID_in_invocacao433); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ID33_tree = (CommonTree)adaptor.dupNode(ID33);
 
@@ -1599,7 +1550,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:186:20: ( args )?
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:143:20: ( args )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1608,10 +1559,10 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:186:20: args
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:143:20: args
                     {
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_args_in_invocacao434);
+                    pushFollow(FOLLOW_args_in_invocacao435);
                     args34=args();
 
                     state._fsp--;
@@ -1635,17 +1586,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             if ( state.backtracking==0 ) {
-            		if (contexto.equals("FACTOR")) {
-            			retval.instrucao = (ID33!=null?ID33.getText():null) + "(" + (args34!=null?args34.ags:null) + ")";
-            		}
-            		else {
-            			TreeSet<Integer> nrs = new TreeSet<Integer>();
-            			// cria nodo no grafo e guarda o nr da instrucao
-            			nrs.add(g.putNodo(new Instrucao((ID33!=null?ID33.getText():null) + "(" + (args34!=null?args34.ags:null) + ")", null, null)));
-            			
-            			retval.nrs_ultima_instrucao_out = nrs;
-            			retval.g_out = g;
-            		}
+            		retval.g_out = g;
             	}
 
             if ( state.backtracking==0 ) {
@@ -1672,16 +1613,15 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class args_return extends TreeRuleReturnScope {
-        public String ags;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "args"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:202:1: args returns [String ags] : ^( ARGS ( expr )+ ) ;
-    public final CmbTGCFG.args_return args() throws RecognitionException {
-        CmbTGCFG.args_return retval = new CmbTGCFG.args_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:149:1: args : ^( ARGS ( expr )+ ) ;
+    public final CmbTGPDG.args_return args() throws RecognitionException {
+        CmbTGPDG.args_return retval = new CmbTGPDG.args_return();
         retval.start = input.LT(1);
 
 
@@ -1691,17 +1631,14 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree ARGS35=null;
-        CmbTGCFG.expr_return expr36 =null;
+        CmbTGPDG.expr_return expr36 =null;
 
 
         CommonTree ARGS35_tree=null;
 
-
-        	String a = "";
-
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:206:2: ( ^( ARGS ( expr )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:206:5: ^( ARGS ( expr )+ )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:150:2: ( ^( ARGS ( expr )+ ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:150:5: ^( ARGS ( expr )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1712,7 +1649,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            ARGS35=(CommonTree)match(input,ARGS,FOLLOW_ARGS_in_args460); if (state.failed) return retval;
+            ARGS35=(CommonTree)match(input,ARGS,FOLLOW_ARGS_in_args453); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ARGS35_tree = (CommonTree)adaptor.dupNode(ARGS35);
 
@@ -1722,7 +1659,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:206:12: ( expr )+
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:150:12: ( expr )+
             int cnt8=0;
             loop8:
             do {
@@ -1736,10 +1673,10 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt8) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:206:13: expr
+            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:150:12: expr
             	    {
             	    _last = (CommonTree)input.LT(1);
-            	    pushFollow(FOLLOW_expr_in_args463);
+            	    pushFollow(FOLLOW_expr_in_args455);
             	    expr36=expr();
 
             	    state._fsp--;
@@ -1747,10 +1684,6 @@ public TreeAdaptor getTreeAdaptor() {
             	    if ( state.backtracking==0 ) 
             	    adaptor.addChild(root_1, expr36.getTree());
 
-
-            	    if ( state.backtracking==0 ) {
-            	    		a += (expr36!=null?expr36.instrucao:null) + ", ";
-            	    	}
 
             	    if ( state.backtracking==0 ) {
             	    }
@@ -1767,11 +1700,6 @@ public TreeAdaptor getTreeAdaptor() {
                 cnt8++;
             } while (true);
 
-
-            if ( state.backtracking==0 ) {
-            		// limpa os caracteres finais ", "
-            		retval.ags = a.substring(0,a.length()-2);
-            	}
 
             match(input, Token.UP, null); if (state.failed) return retval;
             adaptor.addChild(root_0, root_1);
@@ -1803,17 +1731,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class atribuicao_return extends TreeRuleReturnScope {
-        public Grafo g_out;
-        public TreeSet<Integer> nrs_ultima_instrucao_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "atribuicao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:218:1: atribuicao[Grafo g_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out] : ^( '=' ID expr ) ;
-    public final CmbTGCFG.atribuicao_return atribuicao(Grafo g_in) throws RecognitionException {
-        CmbTGCFG.atribuicao_return retval = new CmbTGCFG.atribuicao_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:153:1: atribuicao[GrafoPDG g_in] returns [GrafoPDG g_out] : ^( '=' ID expr ) ;
+    public final CmbTGPDG.atribuicao_return atribuicao(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.atribuicao_return retval = new CmbTGPDG.atribuicao_return();
         retval.start = input.LT(1);
 
 
@@ -1824,18 +1751,18 @@ public TreeAdaptor getTreeAdaptor() {
 
         CommonTree char_literal37=null;
         CommonTree ID38=null;
-        CmbTGCFG.expr_return expr39 =null;
+        CmbTGPDG.expr_return expr39 =null;
 
 
         CommonTree char_literal37_tree=null;
         CommonTree ID38_tree=null;
 
 
-        	Grafo g = g_in;
+        	GrafoPDG g = g_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:222:2: ( ^( '=' ID expr ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:222:5: ^( '=' ID expr )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:157:2: ( ^( '=' ID expr ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:157:5: ^( '=' ID expr )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1846,7 +1773,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            char_literal37=(CommonTree)match(input,52,FOLLOW_52_in_atribuicao500); if (state.failed) return retval;
+            char_literal37=(CommonTree)match(input,52,FOLLOW_52_in_atribuicao481); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             char_literal37_tree = (CommonTree)adaptor.dupNode(char_literal37);
 
@@ -1857,7 +1784,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            ID38=(CommonTree)match(input,ID,FOLLOW_ID_in_atribuicao502); if (state.failed) return retval;
+            ID38=(CommonTree)match(input,ID,FOLLOW_ID_in_atribuicao483); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ID38_tree = (CommonTree)adaptor.dupNode(ID38);
 
@@ -1867,7 +1794,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_expr_in_atribuicao504);
+            pushFollow(FOLLOW_expr_in_atribuicao485);
             expr39=expr();
 
             state._fsp--;
@@ -1883,10 +1810,6 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             if ( state.backtracking==0 ) {
-            		TreeSet<Integer> nrs = new TreeSet<Integer>();
-            		// cria nodo no grafo e guarda o nr da instrucao
-            		nrs.add(g.putNodo(new Instrucao((ID38!=null?ID38.getText():null) + " = " + (expr39!=null?expr39.instrucao:null), null, null)));
-            		retval.nrs_ultima_instrucao_out = nrs;
             		retval.g_out = g;
             	}
 
@@ -1914,17 +1837,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class write_return extends TreeRuleReturnScope {
-        public Grafo g_out;
-        public TreeSet<Integer> nrs_ultima_instrucao_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "write"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:232:1: write[Grafo g_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out] : ^( WRITE expr ) ;
-    public final CmbTGCFG.write_return write(Grafo g_in) throws RecognitionException {
-        CmbTGCFG.write_return retval = new CmbTGCFG.write_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:163:1: write[GrafoPDG g_in] returns [GrafoPDG g_out] : ^( WRITE expr ) ;
+    public final CmbTGPDG.write_return write(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.write_return retval = new CmbTGPDG.write_return();
         retval.start = input.LT(1);
 
 
@@ -1934,17 +1856,17 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree WRITE40=null;
-        CmbTGCFG.expr_return expr41 =null;
+        CmbTGPDG.expr_return expr41 =null;
 
 
         CommonTree WRITE40_tree=null;
 
 
-        	Grafo g = g_in;
+        	GrafoPDG g = g_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:236:2: ( ^( WRITE expr ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:236:4: ^( WRITE expr )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:167:2: ( ^( WRITE expr ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:167:4: ^( WRITE expr )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1955,7 +1877,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            WRITE40=(CommonTree)match(input,WRITE,FOLLOW_WRITE_in_write531); if (state.failed) return retval;
+            WRITE40=(CommonTree)match(input,WRITE,FOLLOW_WRITE_in_write512); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             WRITE40_tree = (CommonTree)adaptor.dupNode(WRITE40);
 
@@ -1966,7 +1888,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_expr_in_write533);
+            pushFollow(FOLLOW_expr_in_write514);
             expr41=expr();
 
             state._fsp--;
@@ -1982,10 +1904,6 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             if ( state.backtracking==0 ) {
-            		TreeSet<Integer> nrs = new TreeSet<Integer>();
-            		// cria nodo no grafo e guarda o nr da instrucao
-            		nrs.add(g.putNodo(new Instrucao((WRITE40!=null?WRITE40.getText():null) + "(" + (expr41!=null?expr41.instrucao:null) + ")", null, null)));
-            		retval.nrs_ultima_instrucao_out = nrs;
             		retval.g_out = g;
             	}
 
@@ -2013,17 +1931,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class read_return extends TreeRuleReturnScope {
-        public Grafo g_out;
-        public TreeSet<Integer> nrs_ultima_instrucao_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "read"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:246:1: read[Grafo g_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out] : ^( READ ID ) ;
-    public final CmbTGCFG.read_return read(Grafo g_in) throws RecognitionException {
-        CmbTGCFG.read_return retval = new CmbTGCFG.read_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:173:1: read[GrafoPDG g_in] returns [GrafoPDG g_out] : ^( READ ID ) ;
+    public final CmbTGPDG.read_return read(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.read_return retval = new CmbTGPDG.read_return();
         retval.start = input.LT(1);
 
 
@@ -2039,11 +1956,11 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree ID43_tree=null;
 
 
-        	Grafo g = g_in;
+        	GrafoPDG g = g_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:250:2: ( ^( READ ID ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:250:4: ^( READ ID )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:177:2: ( ^( READ ID ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:177:4: ^( READ ID )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2054,7 +1971,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            READ42=(CommonTree)match(input,READ,FOLLOW_READ_in_read561); if (state.failed) return retval;
+            READ42=(CommonTree)match(input,READ,FOLLOW_READ_in_read542); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             READ42_tree = (CommonTree)adaptor.dupNode(READ42);
 
@@ -2065,7 +1982,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            ID43=(CommonTree)match(input,ID,FOLLOW_ID_in_read563); if (state.failed) return retval;
+            ID43=(CommonTree)match(input,ID,FOLLOW_ID_in_read544); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             ID43_tree = (CommonTree)adaptor.dupNode(ID43);
 
@@ -2081,10 +1998,6 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             if ( state.backtracking==0 ) {
-            		TreeSet<Integer> nrs = new TreeSet<Integer>();
-            		// cria nodo no grafo e guarda o nr da instrucao
-            		nrs.add(g.putNodo(new Instrucao((READ42!=null?READ42.getText():null) + "(" + (ID43!=null?ID43.getText():null) + ")", null, null)));
-            		retval.nrs_ultima_instrucao_out = nrs;
             		retval.g_out = g;
             	}
 
@@ -2112,17 +2025,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class ifs_return extends TreeRuleReturnScope {
-        public Grafo g_out;
-        public TreeSet<Integer> nrs_ultima_instrucao_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "ifs"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:261:1: ifs[Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out] : ^( IF expr a= bloco[g, nrs_exp] (b= bloco[g, nrs_exp] )? ) ;
-    public final CmbTGCFG.ifs_return ifs(Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in) throws RecognitionException {
-        CmbTGCFG.ifs_return retval = new CmbTGCFG.ifs_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:184:1: ifs[GrafoPDG g_in] returns [GrafoPDG g_out] : ^( IF expr a= bloco[g] (b= bloco[g] )? ) ;
+    public final CmbTGPDG.ifs_return ifs(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.ifs_return retval = new CmbTGPDG.ifs_return();
         retval.start = input.LT(1);
 
 
@@ -2132,24 +2044,21 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree IF44=null;
-        CmbTGCFG.bloco_return a =null;
+        CmbTGPDG.bloco_return a =null;
 
-        CmbTGCFG.bloco_return b =null;
+        CmbTGPDG.bloco_return b =null;
 
-        CmbTGCFG.expr_return expr45 =null;
+        CmbTGPDG.expr_return expr45 =null;
 
 
         CommonTree IF44_tree=null;
 
 
-        	Grafo g = g_in;
-        	int nr_ult_inst_exp = -1;
-        	TreeSet<Integer> nrs_exp = new TreeSet<Integer>();
-        	TreeSet<Integer> nrs_out = new TreeSet<Integer>();
+        	GrafoPDG g = g_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:268:2: ( ^( IF expr a= bloco[g, nrs_exp] (b= bloco[g, nrs_exp] )? ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:268:4: ^( IF expr a= bloco[g, nrs_exp] (b= bloco[g, nrs_exp] )? )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:188:2: ( ^( IF expr a= bloco[g] (b= bloco[g] )? ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:188:4: ^( IF expr a= bloco[g] (b= bloco[g] )? )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2160,7 +2069,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            IF44=(CommonTree)match(input,IF,FOLLOW_IF_in_ifs593); if (state.failed) return retval;
+            IF44=(CommonTree)match(input,IF,FOLLOW_IF_in_ifs574); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             IF44_tree = (CommonTree)adaptor.dupNode(IF44);
 
@@ -2171,7 +2080,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_expr_in_ifs595);
+            pushFollow(FOLLOW_expr_in_ifs576);
             expr45=expr();
 
             state._fsp--;
@@ -2180,25 +2089,9 @@ public TreeAdaptor getTreeAdaptor() {
             adaptor.addChild(root_1, expr45.getTree());
 
 
-            if ( state.backtracking==0 ) {
-            				// cria nodo no grafo e guarda o nr da instrucao
-            				nr_ult_inst_exp = g.putNodo(new Instrucao((IF44!=null?IF44.getText():null) + "(" + (expr45!=null?expr45.instrucao:null) + ")", null, null));
-            				
-            				// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao (expressao)
-            				g.checkAndPutCaminho(nrs_ultima_instrucao_in, nr_ult_inst_exp);
-            				
-            				// variavel que sera passada aos blocos para indicar o nodo que sera ligado a primeira instrucao de cada bloco
-            				nrs_exp.add(nr_ult_inst_exp);
-            				
-            				// adiciona provisoriamente o nr da expressao. caso exista o bloco else, este é removido ja que a instrucao seguinte, ligar-se-á à última instrucao dos blocos then e else
-            				// caso contrario, ligar-se-á à expressão e ao bloco then.
-            				nrs_out.add(nr_ult_inst_exp);
-            				
-            			}
-
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_bloco_in_ifs608);
-            a=bloco(g, nrs_exp);
+            pushFollow(FOLLOW_bloco_in_ifs584);
+            a=bloco(g);
 
             state._fsp--;
             if (state.failed) return retval;
@@ -2208,11 +2101,9 @@ public TreeAdaptor getTreeAdaptor() {
 
             if ( state.backtracking==0 ) {
             				g = (a!=null?a.g_out:null); 
-            				// adiciona os nrs das utlimas instrucoes deste bloco
-            				nrs_out.addAll((a!=null?a.nrs_ultima_instrucao_out:null));
             			}
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:290:4: (b= bloco[g, nrs_exp] )?
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:193:4: (b= bloco[g] )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -2221,11 +2112,11 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt9) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:290:5: b= bloco[g, nrs_exp]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:193:5: b= bloco[g]
                     {
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_bloco_in_ifs624);
-                    b=bloco(g, nrs_exp);
+                    pushFollow(FOLLOW_bloco_in_ifs598);
+                    b=bloco(g);
 
                     state._fsp--;
                     if (state.failed) return retval;
@@ -2233,12 +2124,8 @@ public TreeAdaptor getTreeAdaptor() {
                     adaptor.addChild(root_1, b.getTree());
 
 
-                    if ( state.backtracking==0 ) { 
+                    if ( state.backtracking==0 ) {
                     				g = (b!=null?b.g_out:null); 
-                    				// remove o nr da expressao adicionado provisoriamente
-                    				nrs_out.remove(nr_ult_inst_exp);
-                    				// adiciona os nrs das utlimas instrucoes deste bloco
-                    				nrs_out.addAll((b!=null?b.nrs_ultima_instrucao_out:null));
                     			}
 
                     if ( state.backtracking==0 ) {
@@ -2256,9 +2143,8 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             if ( state.backtracking==0 ) {
-            			retval.nrs_ultima_instrucao_out = nrs_out;
-            			retval.g_out = g;
-            		}
+            		retval.g_out = g;
+            	}
 
             if ( state.backtracking==0 ) {
             }
@@ -2284,17 +2170,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class whiles_return extends TreeRuleReturnScope {
-        public Grafo g_out;
-        public TreeSet<Integer> nrs_ultima_instrucao_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "whiles"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:305:1: whiles[Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out] : ^( WHILE expr bloco[g, nrs_exp] ) ;
-    public final CmbTGCFG.whiles_return whiles(Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in) throws RecognitionException {
-        CmbTGCFG.whiles_return retval = new CmbTGCFG.whiles_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:203:1: whiles[GrafoPDG g_in] returns [GrafoPDG g_out] : ^( WHILE expr bloco[g] ) ;
+    public final CmbTGPDG.whiles_return whiles(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.whiles_return retval = new CmbTGPDG.whiles_return();
         retval.start = input.LT(1);
 
 
@@ -2304,21 +2189,19 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree WHILE46=null;
-        CmbTGCFG.expr_return expr47 =null;
+        CmbTGPDG.expr_return expr47 =null;
 
-        CmbTGCFG.bloco_return bloco48 =null;
+        CmbTGPDG.bloco_return bloco48 =null;
 
 
         CommonTree WHILE46_tree=null;
 
 
-        	Grafo g = g_in;
-        	int nr_ult_inst_exp = -1;
-        	TreeSet<Integer> nrs_exp = new TreeSet<Integer>();
+        	GrafoPDG g = g_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:311:2: ( ^( WHILE expr bloco[g, nrs_exp] ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:311:5: ^( WHILE expr bloco[g, nrs_exp] )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:207:2: ( ^( WHILE expr bloco[g] ) )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:207:5: ^( WHILE expr bloco[g] )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2329,7 +2212,7 @@ public TreeAdaptor getTreeAdaptor() {
             CommonTree _first_1 = null;
             CommonTree root_1 = (CommonTree)adaptor.nil();
             _last = (CommonTree)input.LT(1);
-            WHILE46=(CommonTree)match(input,WHILE,FOLLOW_WHILE_in_whiles667); if (state.failed) return retval;
+            WHILE46=(CommonTree)match(input,WHILE,FOLLOW_WHILE_in_whiles639); if (state.failed) return retval;
             if ( state.backtracking==0 ) {
             WHILE46_tree = (CommonTree)adaptor.dupNode(WHILE46);
 
@@ -2340,7 +2223,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_expr_in_whiles669);
+            pushFollow(FOLLOW_expr_in_whiles641);
             expr47=expr();
 
             state._fsp--;
@@ -2349,20 +2232,9 @@ public TreeAdaptor getTreeAdaptor() {
             adaptor.addChild(root_1, expr47.getTree());
 
 
-            if ( state.backtracking==0 ) {
-            				// cria nodo no grafo e guarda o nr da instrucao
-            				nr_ult_inst_exp = g.putNodo(new Instrucao((WHILE46!=null?WHILE46.getText():null) + "(" + (expr47!=null?expr47.instrucao:null) + ")", null, null));
-            				
-            				// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao (expressao)
-            				g.checkAndPutCaminho(nrs_ultima_instrucao_in, nr_ult_inst_exp);
-            				
-            				// variavel que sera passada ao bloco para indicar o nodo que sera ligado a primeira instrucao do bloco
-            				nrs_exp.add(nr_ult_inst_exp);
-            			}
-
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_bloco_in_whiles680);
-            bloco48=bloco(g, nrs_exp);
+            pushFollow(FOLLOW_bloco_in_whiles643);
+            bloco48=bloco(g);
 
             state._fsp--;
             if (state.failed) return retval;
@@ -2379,13 +2251,8 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             if ( state.backtracking==0 ) {
-            				// verifica se existem instrucoes anteriormente executadas no bloco e conecta essas instrucoes à instrucao (expressao)
-            				g.checkAndPutCaminho((bloco48!=null?bloco48.nrs_ultima_instrucao_out:null), nr_ult_inst_exp);			 	
-            		 	
-            		 		// é passado o nr da instrucao inicial do while, ou seja a expressao, para que  proximo statement se ligue a este
-            		 		retval.nrs_ultima_instrucao_out = nrs_exp;
-            				retval.g_out = g;
-            			}
+            		retval.g_out = g;
+            	}
 
             if ( state.backtracking==0 ) {
             }
@@ -2411,17 +2278,16 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class bloco_return extends TreeRuleReturnScope {
-        public Grafo g_out;
-        public TreeSet<Integer> nrs_ultima_instrucao_out;
+        public GrafoPDG g_out;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "bloco"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:333:1: bloco[Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out] : statements[$bloco.g_in, \"BLOCO\", $bloco.nrs_ultima_instrucao_in] ;
-    public final CmbTGCFG.bloco_return bloco(Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in) throws RecognitionException {
-        CmbTGCFG.bloco_return retval = new CmbTGCFG.bloco_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:213:1: bloco[GrafoPDG g_in] returns [GrafoPDG g_out] : statements[g_in] ;
+    public final CmbTGPDG.bloco_return bloco(GrafoPDG g_in) throws RecognitionException {
+        CmbTGPDG.bloco_return retval = new CmbTGPDG.bloco_return();
         retval.start = input.LT(1);
 
 
@@ -2430,20 +2296,20 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _first_0 = null;
         CommonTree _last = null;
 
-        CmbTGCFG.statements_return statements49 =null;
+        CmbTGPDG.statements_return statements49 =null;
 
 
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:334:2: ( statements[$bloco.g_in, \"BLOCO\", $bloco.nrs_ultima_instrucao_in] )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:334:4: statements[$bloco.g_in, \"BLOCO\", $bloco.nrs_ultima_instrucao_in]
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:214:2: ( statements[g_in] )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:214:4: statements[g_in]
             {
             root_0 = (CommonTree)adaptor.nil();
 
 
             _last = (CommonTree)input.LT(1);
-            pushFollow(FOLLOW_statements_in_bloco707);
-            statements49=statements(g_in, "BLOCO", nrs_ultima_instrucao_in);
+            pushFollow(FOLLOW_statements_in_bloco667);
+            statements49=statements(g_in);
 
             state._fsp--;
             if (state.failed) return retval;
@@ -2453,7 +2319,6 @@ public TreeAdaptor getTreeAdaptor() {
 
             if ( state.backtracking==0 ) {
             		retval.g_out = (statements49!=null?statements49.g_out:null);
-            		retval.nrs_ultima_instrucao_out = (statements49!=null?statements49.nrs_ultima_instrucao_out:null);
             	}
 
             if ( state.backtracking==0 ) {
@@ -2480,16 +2345,15 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class expr_return extends TreeRuleReturnScope {
-        public String instrucao;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "expr"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:342:1: expr returns [String instrucao] : ( ^( '||' a= expr b= expr ) | ^( '&&' a= expr b= expr ) | ^( '+' a= expr b= expr ) | ^( '-' a= expr b= expr ) | ^( '*' a= expr b= expr ) | ^( '/' a= expr b= expr ) | ^( '%' a= expr b= expr ) | ^( '>' a= expr b= expr ) | ^( '<' a= expr b= expr ) | ^( '>=' a= expr b= expr ) | ^( '<=' a= expr b= expr ) | ^( '==' a= expr b= expr ) | ^( '!=' a= expr b= expr ) | ^( '!' a= expr ) | factor );
-    public final CmbTGCFG.expr_return expr() throws RecognitionException {
-        CmbTGCFG.expr_return retval = new CmbTGCFG.expr_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:221:1: expr : ( ^( '||' expr expr ) | ^( '&&' expr expr ) | ^( '+' expr expr ) | ^( '-' expr expr ) | ^( '*' expr expr ) | ^( '/' expr expr ) | ^( '%' expr expr ) | ^( '>' expr expr ) | ^( '<' expr expr ) | ^( '>=' expr expr ) | ^( '<=' expr expr ) | ^( '==' expr expr ) | ^( '!=' expr expr ) | ^( '!' expr ) | factor );
+    public final CmbTGPDG.expr_return expr() throws RecognitionException {
+        CmbTGPDG.expr_return retval = new CmbTGPDG.expr_return();
         retval.start = input.LT(1);
 
 
@@ -2499,43 +2363,93 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _last = null;
 
         CommonTree string_literal50=null;
-        CommonTree string_literal51=null;
-        CommonTree char_literal52=null;
-        CommonTree char_literal53=null;
-        CommonTree char_literal54=null;
-        CommonTree char_literal55=null;
+        CommonTree string_literal53=null;
         CommonTree char_literal56=null;
-        CommonTree char_literal57=null;
-        CommonTree char_literal58=null;
-        CommonTree string_literal59=null;
-        CommonTree string_literal60=null;
-        CommonTree string_literal61=null;
-        CommonTree string_literal62=null;
-        CommonTree char_literal63=null;
-        CmbTGCFG.expr_return a =null;
+        CommonTree char_literal59=null;
+        CommonTree char_literal62=null;
+        CommonTree char_literal65=null;
+        CommonTree char_literal68=null;
+        CommonTree char_literal71=null;
+        CommonTree char_literal74=null;
+        CommonTree string_literal77=null;
+        CommonTree string_literal80=null;
+        CommonTree string_literal83=null;
+        CommonTree string_literal86=null;
+        CommonTree char_literal89=null;
+        CmbTGPDG.expr_return expr51 =null;
 
-        CmbTGCFG.expr_return b =null;
+        CmbTGPDG.expr_return expr52 =null;
 
-        CmbTGCFG.factor_return factor64 =null;
+        CmbTGPDG.expr_return expr54 =null;
+
+        CmbTGPDG.expr_return expr55 =null;
+
+        CmbTGPDG.expr_return expr57 =null;
+
+        CmbTGPDG.expr_return expr58 =null;
+
+        CmbTGPDG.expr_return expr60 =null;
+
+        CmbTGPDG.expr_return expr61 =null;
+
+        CmbTGPDG.expr_return expr63 =null;
+
+        CmbTGPDG.expr_return expr64 =null;
+
+        CmbTGPDG.expr_return expr66 =null;
+
+        CmbTGPDG.expr_return expr67 =null;
+
+        CmbTGPDG.expr_return expr69 =null;
+
+        CmbTGPDG.expr_return expr70 =null;
+
+        CmbTGPDG.expr_return expr72 =null;
+
+        CmbTGPDG.expr_return expr73 =null;
+
+        CmbTGPDG.expr_return expr75 =null;
+
+        CmbTGPDG.expr_return expr76 =null;
+
+        CmbTGPDG.expr_return expr78 =null;
+
+        CmbTGPDG.expr_return expr79 =null;
+
+        CmbTGPDG.expr_return expr81 =null;
+
+        CmbTGPDG.expr_return expr82 =null;
+
+        CmbTGPDG.expr_return expr84 =null;
+
+        CmbTGPDG.expr_return expr85 =null;
+
+        CmbTGPDG.expr_return expr87 =null;
+
+        CmbTGPDG.expr_return expr88 =null;
+
+        CmbTGPDG.expr_return expr90 =null;
+
+        CmbTGPDG.factor_return factor91 =null;
 
 
         CommonTree string_literal50_tree=null;
-        CommonTree string_literal51_tree=null;
-        CommonTree char_literal52_tree=null;
-        CommonTree char_literal53_tree=null;
-        CommonTree char_literal54_tree=null;
-        CommonTree char_literal55_tree=null;
+        CommonTree string_literal53_tree=null;
         CommonTree char_literal56_tree=null;
-        CommonTree char_literal57_tree=null;
-        CommonTree char_literal58_tree=null;
-        CommonTree string_literal59_tree=null;
-        CommonTree string_literal60_tree=null;
-        CommonTree string_literal61_tree=null;
-        CommonTree string_literal62_tree=null;
-        CommonTree char_literal63_tree=null;
+        CommonTree char_literal59_tree=null;
+        CommonTree char_literal62_tree=null;
+        CommonTree char_literal65_tree=null;
+        CommonTree char_literal68_tree=null;
+        CommonTree char_literal71_tree=null;
+        CommonTree char_literal74_tree=null;
+        CommonTree string_literal77_tree=null;
+        CommonTree string_literal80_tree=null;
+        CommonTree string_literal83_tree=null;
+        CommonTree string_literal86_tree=null;
+        CommonTree char_literal89_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:343:2: ( ^( '||' a= expr b= expr ) | ^( '&&' a= expr b= expr ) | ^( '+' a= expr b= expr ) | ^( '-' a= expr b= expr ) | ^( '*' a= expr b= expr ) | ^( '/' a= expr b= expr ) | ^( '%' a= expr b= expr ) | ^( '>' a= expr b= expr ) | ^( '<' a= expr b= expr ) | ^( '>=' a= expr b= expr ) | ^( '<=' a= expr b= expr ) | ^( '==' a= expr b= expr ) | ^( '!=' a= expr b= expr ) | ^( '!' a= expr ) | factor )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:222:2: ( ^( '||' expr expr ) | ^( '&&' expr expr ) | ^( '+' expr expr ) | ^( '-' expr expr ) | ^( '*' expr expr ) | ^( '/' expr expr ) | ^( '%' expr expr ) | ^( '>' expr expr ) | ^( '<' expr expr ) | ^( '>=' expr expr ) | ^( '<=' expr expr ) | ^( '==' expr expr ) | ^( '!=' expr expr ) | ^( '!' expr ) | factor )
             int alt10=15;
             switch ( input.LA(1) ) {
             case 57:
@@ -2629,7 +2543,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt10) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:343:4: ^( '||' a= expr b= expr )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:222:4: ^( '||' expr expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -2640,7 +2554,7 @@ public TreeAdaptor getTreeAdaptor() {
                     CommonTree _first_1 = null;
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     _last = (CommonTree)input.LT(1);
-                    string_literal50=(CommonTree)match(input,57,FOLLOW_57_in_expr729); if (state.failed) return retval;
+                    string_literal50=(CommonTree)match(input,57,FOLLOW_57_in_expr685); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     string_literal50_tree = (CommonTree)adaptor.dupNode(string_literal50);
 
@@ -2651,23 +2565,23 @@ public TreeAdaptor getTreeAdaptor() {
 
                     match(input, Token.DOWN, null); if (state.failed) return retval;
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr733);
-                    a=expr();
+                    pushFollow(FOLLOW_expr_in_expr687);
+                    expr51=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
+                    adaptor.addChild(root_1, expr51.getTree());
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr737);
-                    b=expr();
+                    pushFollow(FOLLOW_expr_in_expr689);
+                    expr52=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
+                    adaptor.addChild(root_1, expr52.getTree());
 
 
                     match(input, Token.UP, null); if (state.failed) return retval;
@@ -2675,15 +2589,13 @@ public TreeAdaptor getTreeAdaptor() {
                     _last = _save_last_1;
                     }
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + "||" 	+ (b!=null?b.instrucao:null);}
 
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:344:4: ^( '&&' a= expr b= expr )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:223:4: ^( '&&' expr expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -2694,34 +2606,34 @@ public TreeAdaptor getTreeAdaptor() {
                     CommonTree _first_1 = null;
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     _last = (CommonTree)input.LT(1);
-                    string_literal51=(CommonTree)match(input,41,FOLLOW_41_in_expr747); if (state.failed) return retval;
+                    string_literal53=(CommonTree)match(input,41,FOLLOW_41_in_expr696); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
-                    string_literal51_tree = (CommonTree)adaptor.dupNode(string_literal51);
+                    string_literal53_tree = (CommonTree)adaptor.dupNode(string_literal53);
 
 
-                    root_1 = (CommonTree)adaptor.becomeRoot(string_literal51_tree, root_1);
+                    root_1 = (CommonTree)adaptor.becomeRoot(string_literal53_tree, root_1);
                     }
 
 
                     match(input, Token.DOWN, null); if (state.failed) return retval;
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr751);
-                    a=expr();
+                    pushFollow(FOLLOW_expr_in_expr698);
+                    expr54=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
+                    adaptor.addChild(root_1, expr54.getTree());
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr755);
-                    b=expr();
+                    pushFollow(FOLLOW_expr_in_expr700);
+                    expr55=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
+                    adaptor.addChild(root_1, expr55.getTree());
 
 
                     match(input, Token.UP, null); if (state.failed) return retval;
@@ -2729,15 +2641,13 @@ public TreeAdaptor getTreeAdaptor() {
                     _last = _save_last_1;
                     }
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + "&&" 	+ (b!=null?b.instrucao:null);}
 
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:345:4: ^( '+' a= expr b= expr )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:224:4: ^( '+' expr expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -2748,223 +2658,7 @@ public TreeAdaptor getTreeAdaptor() {
                     CommonTree _first_1 = null;
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     _last = (CommonTree)input.LT(1);
-                    char_literal52=(CommonTree)match(input,45,FOLLOW_45_in_expr765); if (state.failed) return retval;
-                    if ( state.backtracking==0 ) {
-                    char_literal52_tree = (CommonTree)adaptor.dupNode(char_literal52);
-
-
-                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal52_tree, root_1);
-                    }
-
-
-                    match(input, Token.DOWN, null); if (state.failed) return retval;
-                    _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr769);
-                    a=expr();
-
-                    state._fsp--;
-                    if (state.failed) return retval;
-                    if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
-
-
-                    _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr773);
-                    b=expr();
-
-                    state._fsp--;
-                    if (state.failed) return retval;
-                    if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
-
-
-                    match(input, Token.UP, null); if (state.failed) return retval;
-                    adaptor.addChild(root_0, root_1);
-                    _last = _save_last_1;
-                    }
-
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + "+" 	+ (b!=null?b.instrucao:null);}
-
-                    if ( state.backtracking==0 ) {
-                    }
-                    }
-                    break;
-                case 4 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:346:4: ^( '-' a= expr b= expr )
-                    {
-                    root_0 = (CommonTree)adaptor.nil();
-
-
-                    _last = (CommonTree)input.LT(1);
-                    {
-                    CommonTree _save_last_1 = _last;
-                    CommonTree _first_1 = null;
-                    CommonTree root_1 = (CommonTree)adaptor.nil();
-                    _last = (CommonTree)input.LT(1);
-                    char_literal53=(CommonTree)match(input,47,FOLLOW_47_in_expr783); if (state.failed) return retval;
-                    if ( state.backtracking==0 ) {
-                    char_literal53_tree = (CommonTree)adaptor.dupNode(char_literal53);
-
-
-                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal53_tree, root_1);
-                    }
-
-
-                    match(input, Token.DOWN, null); if (state.failed) return retval;
-                    _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr787);
-                    a=expr();
-
-                    state._fsp--;
-                    if (state.failed) return retval;
-                    if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
-
-
-                    _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr791);
-                    b=expr();
-
-                    state._fsp--;
-                    if (state.failed) return retval;
-                    if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
-
-
-                    match(input, Token.UP, null); if (state.failed) return retval;
-                    adaptor.addChild(root_0, root_1);
-                    _last = _save_last_1;
-                    }
-
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + "-" 	+ (b!=null?b.instrucao:null);}
-
-                    if ( state.backtracking==0 ) {
-                    }
-                    }
-                    break;
-                case 5 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:347:4: ^( '*' a= expr b= expr )
-                    {
-                    root_0 = (CommonTree)adaptor.nil();
-
-
-                    _last = (CommonTree)input.LT(1);
-                    {
-                    CommonTree _save_last_1 = _last;
-                    CommonTree _first_1 = null;
-                    CommonTree root_1 = (CommonTree)adaptor.nil();
-                    _last = (CommonTree)input.LT(1);
-                    char_literal54=(CommonTree)match(input,44,FOLLOW_44_in_expr801); if (state.failed) return retval;
-                    if ( state.backtracking==0 ) {
-                    char_literal54_tree = (CommonTree)adaptor.dupNode(char_literal54);
-
-
-                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal54_tree, root_1);
-                    }
-
-
-                    match(input, Token.DOWN, null); if (state.failed) return retval;
-                    _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr805);
-                    a=expr();
-
-                    state._fsp--;
-                    if (state.failed) return retval;
-                    if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
-
-
-                    _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr809);
-                    b=expr();
-
-                    state._fsp--;
-                    if (state.failed) return retval;
-                    if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
-
-
-                    match(input, Token.UP, null); if (state.failed) return retval;
-                    adaptor.addChild(root_0, root_1);
-                    _last = _save_last_1;
-                    }
-
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + "*" 	+ (b!=null?b.instrucao:null);}
-
-                    if ( state.backtracking==0 ) {
-                    }
-                    }
-                    break;
-                case 6 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:348:4: ^( '/' a= expr b= expr )
-                    {
-                    root_0 = (CommonTree)adaptor.nil();
-
-
-                    _last = (CommonTree)input.LT(1);
-                    {
-                    CommonTree _save_last_1 = _last;
-                    CommonTree _first_1 = null;
-                    CommonTree root_1 = (CommonTree)adaptor.nil();
-                    _last = (CommonTree)input.LT(1);
-                    char_literal55=(CommonTree)match(input,48,FOLLOW_48_in_expr819); if (state.failed) return retval;
-                    if ( state.backtracking==0 ) {
-                    char_literal55_tree = (CommonTree)adaptor.dupNode(char_literal55);
-
-
-                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal55_tree, root_1);
-                    }
-
-
-                    match(input, Token.DOWN, null); if (state.failed) return retval;
-                    _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr823);
-                    a=expr();
-
-                    state._fsp--;
-                    if (state.failed) return retval;
-                    if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
-
-
-                    _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr827);
-                    b=expr();
-
-                    state._fsp--;
-                    if (state.failed) return retval;
-                    if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
-
-
-                    match(input, Token.UP, null); if (state.failed) return retval;
-                    adaptor.addChild(root_0, root_1);
-                    _last = _save_last_1;
-                    }
-
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + "/" 	+ (b!=null?b.instrucao:null);}
-
-                    if ( state.backtracking==0 ) {
-                    }
-                    }
-                    break;
-                case 7 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:349:4: ^( '%' a= expr b= expr )
-                    {
-                    root_0 = (CommonTree)adaptor.nil();
-
-
-                    _last = (CommonTree)input.LT(1);
-                    {
-                    CommonTree _save_last_1 = _last;
-                    CommonTree _first_1 = null;
-                    CommonTree root_1 = (CommonTree)adaptor.nil();
-                    _last = (CommonTree)input.LT(1);
-                    char_literal56=(CommonTree)match(input,40,FOLLOW_40_in_expr837); if (state.failed) return retval;
+                    char_literal56=(CommonTree)match(input,45,FOLLOW_45_in_expr707); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
                     char_literal56_tree = (CommonTree)adaptor.dupNode(char_literal56);
 
@@ -2975,23 +2669,23 @@ public TreeAdaptor getTreeAdaptor() {
 
                     match(input, Token.DOWN, null); if (state.failed) return retval;
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr841);
-                    a=expr();
+                    pushFollow(FOLLOW_expr_in_expr709);
+                    expr57=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
+                    adaptor.addChild(root_1, expr57.getTree());
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr845);
-                    b=expr();
+                    pushFollow(FOLLOW_expr_in_expr711);
+                    expr58=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
+                    adaptor.addChild(root_1, expr58.getTree());
 
 
                     match(input, Token.UP, null); if (state.failed) return retval;
@@ -3000,14 +2694,220 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + "%" 	+ (b!=null?b.instrucao:null);}
+                    if ( state.backtracking==0 ) {
+                    }
+                    }
+                    break;
+                case 4 :
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:225:4: ^( '-' expr expr )
+                    {
+                    root_0 = (CommonTree)adaptor.nil();
+
+
+                    _last = (CommonTree)input.LT(1);
+                    {
+                    CommonTree _save_last_1 = _last;
+                    CommonTree _first_1 = null;
+                    CommonTree root_1 = (CommonTree)adaptor.nil();
+                    _last = (CommonTree)input.LT(1);
+                    char_literal59=(CommonTree)match(input,47,FOLLOW_47_in_expr718); if (state.failed) return retval;
+                    if ( state.backtracking==0 ) {
+                    char_literal59_tree = (CommonTree)adaptor.dupNode(char_literal59);
+
+
+                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal59_tree, root_1);
+                    }
+
+
+                    match(input, Token.DOWN, null); if (state.failed) return retval;
+                    _last = (CommonTree)input.LT(1);
+                    pushFollow(FOLLOW_expr_in_expr720);
+                    expr60=expr();
+
+                    state._fsp--;
+                    if (state.failed) return retval;
+                    if ( state.backtracking==0 ) 
+                    adaptor.addChild(root_1, expr60.getTree());
+
+
+                    _last = (CommonTree)input.LT(1);
+                    pushFollow(FOLLOW_expr_in_expr722);
+                    expr61=expr();
+
+                    state._fsp--;
+                    if (state.failed) return retval;
+                    if ( state.backtracking==0 ) 
+                    adaptor.addChild(root_1, expr61.getTree());
+
+
+                    match(input, Token.UP, null); if (state.failed) return retval;
+                    adaptor.addChild(root_0, root_1);
+                    _last = _save_last_1;
+                    }
+
+
+                    if ( state.backtracking==0 ) {
+                    }
+                    }
+                    break;
+                case 5 :
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:226:4: ^( '*' expr expr )
+                    {
+                    root_0 = (CommonTree)adaptor.nil();
+
+
+                    _last = (CommonTree)input.LT(1);
+                    {
+                    CommonTree _save_last_1 = _last;
+                    CommonTree _first_1 = null;
+                    CommonTree root_1 = (CommonTree)adaptor.nil();
+                    _last = (CommonTree)input.LT(1);
+                    char_literal62=(CommonTree)match(input,44,FOLLOW_44_in_expr729); if (state.failed) return retval;
+                    if ( state.backtracking==0 ) {
+                    char_literal62_tree = (CommonTree)adaptor.dupNode(char_literal62);
+
+
+                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal62_tree, root_1);
+                    }
+
+
+                    match(input, Token.DOWN, null); if (state.failed) return retval;
+                    _last = (CommonTree)input.LT(1);
+                    pushFollow(FOLLOW_expr_in_expr731);
+                    expr63=expr();
+
+                    state._fsp--;
+                    if (state.failed) return retval;
+                    if ( state.backtracking==0 ) 
+                    adaptor.addChild(root_1, expr63.getTree());
+
+
+                    _last = (CommonTree)input.LT(1);
+                    pushFollow(FOLLOW_expr_in_expr733);
+                    expr64=expr();
+
+                    state._fsp--;
+                    if (state.failed) return retval;
+                    if ( state.backtracking==0 ) 
+                    adaptor.addChild(root_1, expr64.getTree());
+
+
+                    match(input, Token.UP, null); if (state.failed) return retval;
+                    adaptor.addChild(root_0, root_1);
+                    _last = _save_last_1;
+                    }
+
+
+                    if ( state.backtracking==0 ) {
+                    }
+                    }
+                    break;
+                case 6 :
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:227:4: ^( '/' expr expr )
+                    {
+                    root_0 = (CommonTree)adaptor.nil();
+
+
+                    _last = (CommonTree)input.LT(1);
+                    {
+                    CommonTree _save_last_1 = _last;
+                    CommonTree _first_1 = null;
+                    CommonTree root_1 = (CommonTree)adaptor.nil();
+                    _last = (CommonTree)input.LT(1);
+                    char_literal65=(CommonTree)match(input,48,FOLLOW_48_in_expr740); if (state.failed) return retval;
+                    if ( state.backtracking==0 ) {
+                    char_literal65_tree = (CommonTree)adaptor.dupNode(char_literal65);
+
+
+                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal65_tree, root_1);
+                    }
+
+
+                    match(input, Token.DOWN, null); if (state.failed) return retval;
+                    _last = (CommonTree)input.LT(1);
+                    pushFollow(FOLLOW_expr_in_expr742);
+                    expr66=expr();
+
+                    state._fsp--;
+                    if (state.failed) return retval;
+                    if ( state.backtracking==0 ) 
+                    adaptor.addChild(root_1, expr66.getTree());
+
+
+                    _last = (CommonTree)input.LT(1);
+                    pushFollow(FOLLOW_expr_in_expr744);
+                    expr67=expr();
+
+                    state._fsp--;
+                    if (state.failed) return retval;
+                    if ( state.backtracking==0 ) 
+                    adaptor.addChild(root_1, expr67.getTree());
+
+
+                    match(input, Token.UP, null); if (state.failed) return retval;
+                    adaptor.addChild(root_0, root_1);
+                    _last = _save_last_1;
+                    }
+
+
+                    if ( state.backtracking==0 ) {
+                    }
+                    }
+                    break;
+                case 7 :
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:228:4: ^( '%' expr expr )
+                    {
+                    root_0 = (CommonTree)adaptor.nil();
+
+
+                    _last = (CommonTree)input.LT(1);
+                    {
+                    CommonTree _save_last_1 = _last;
+                    CommonTree _first_1 = null;
+                    CommonTree root_1 = (CommonTree)adaptor.nil();
+                    _last = (CommonTree)input.LT(1);
+                    char_literal68=(CommonTree)match(input,40,FOLLOW_40_in_expr751); if (state.failed) return retval;
+                    if ( state.backtracking==0 ) {
+                    char_literal68_tree = (CommonTree)adaptor.dupNode(char_literal68);
+
+
+                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal68_tree, root_1);
+                    }
+
+
+                    match(input, Token.DOWN, null); if (state.failed) return retval;
+                    _last = (CommonTree)input.LT(1);
+                    pushFollow(FOLLOW_expr_in_expr753);
+                    expr69=expr();
+
+                    state._fsp--;
+                    if (state.failed) return retval;
+                    if ( state.backtracking==0 ) 
+                    adaptor.addChild(root_1, expr69.getTree());
+
+
+                    _last = (CommonTree)input.LT(1);
+                    pushFollow(FOLLOW_expr_in_expr755);
+                    expr70=expr();
+
+                    state._fsp--;
+                    if (state.failed) return retval;
+                    if ( state.backtracking==0 ) 
+                    adaptor.addChild(root_1, expr70.getTree());
+
+
+                    match(input, Token.UP, null); if (state.failed) return retval;
+                    adaptor.addChild(root_0, root_1);
+                    _last = _save_last_1;
+                    }
+
 
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 8 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:350:4: ^( '>' a= expr b= expr )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:229:4: ^( '>' expr expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3018,34 +2918,34 @@ public TreeAdaptor getTreeAdaptor() {
                     CommonTree _first_1 = null;
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     _last = (CommonTree)input.LT(1);
-                    char_literal57=(CommonTree)match(input,54,FOLLOW_54_in_expr855); if (state.failed) return retval;
+                    char_literal71=(CommonTree)match(input,54,FOLLOW_54_in_expr762); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
-                    char_literal57_tree = (CommonTree)adaptor.dupNode(char_literal57);
+                    char_literal71_tree = (CommonTree)adaptor.dupNode(char_literal71);
 
 
-                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal57_tree, root_1);
+                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal71_tree, root_1);
                     }
 
 
                     match(input, Token.DOWN, null); if (state.failed) return retval;
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr859);
-                    a=expr();
+                    pushFollow(FOLLOW_expr_in_expr764);
+                    expr72=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
+                    adaptor.addChild(root_1, expr72.getTree());
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr863);
-                    b=expr();
+                    pushFollow(FOLLOW_expr_in_expr766);
+                    expr73=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
+                    adaptor.addChild(root_1, expr73.getTree());
 
 
                     match(input, Token.UP, null); if (state.failed) return retval;
@@ -3053,15 +2953,13 @@ public TreeAdaptor getTreeAdaptor() {
                     _last = _save_last_1;
                     }
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + ">" 	+ (b!=null?b.instrucao:null);}
 
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 9 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:351:4: ^( '<' a= expr b= expr )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:230:4: ^( '<' expr expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3072,34 +2970,34 @@ public TreeAdaptor getTreeAdaptor() {
                     CommonTree _first_1 = null;
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     _last = (CommonTree)input.LT(1);
-                    char_literal58=(CommonTree)match(input,50,FOLLOW_50_in_expr873); if (state.failed) return retval;
+                    char_literal74=(CommonTree)match(input,50,FOLLOW_50_in_expr773); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
-                    char_literal58_tree = (CommonTree)adaptor.dupNode(char_literal58);
+                    char_literal74_tree = (CommonTree)adaptor.dupNode(char_literal74);
 
 
-                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal58_tree, root_1);
+                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal74_tree, root_1);
                     }
 
 
                     match(input, Token.DOWN, null); if (state.failed) return retval;
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr877);
-                    a=expr();
+                    pushFollow(FOLLOW_expr_in_expr775);
+                    expr75=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
+                    adaptor.addChild(root_1, expr75.getTree());
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr881);
-                    b=expr();
+                    pushFollow(FOLLOW_expr_in_expr777);
+                    expr76=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
+                    adaptor.addChild(root_1, expr76.getTree());
 
 
                     match(input, Token.UP, null); if (state.failed) return retval;
@@ -3107,15 +3005,13 @@ public TreeAdaptor getTreeAdaptor() {
                     _last = _save_last_1;
                     }
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + "<" 	+ (b!=null?b.instrucao:null);}
 
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 10 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:352:4: ^( '>=' a= expr b= expr )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:231:4: ^( '>=' expr expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3126,34 +3022,34 @@ public TreeAdaptor getTreeAdaptor() {
                     CommonTree _first_1 = null;
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     _last = (CommonTree)input.LT(1);
-                    string_literal59=(CommonTree)match(input,55,FOLLOW_55_in_expr891); if (state.failed) return retval;
+                    string_literal77=(CommonTree)match(input,55,FOLLOW_55_in_expr784); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
-                    string_literal59_tree = (CommonTree)adaptor.dupNode(string_literal59);
+                    string_literal77_tree = (CommonTree)adaptor.dupNode(string_literal77);
 
 
-                    root_1 = (CommonTree)adaptor.becomeRoot(string_literal59_tree, root_1);
+                    root_1 = (CommonTree)adaptor.becomeRoot(string_literal77_tree, root_1);
                     }
 
 
                     match(input, Token.DOWN, null); if (state.failed) return retval;
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr895);
-                    a=expr();
+                    pushFollow(FOLLOW_expr_in_expr786);
+                    expr78=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
+                    adaptor.addChild(root_1, expr78.getTree());
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr899);
-                    b=expr();
+                    pushFollow(FOLLOW_expr_in_expr788);
+                    expr79=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
+                    adaptor.addChild(root_1, expr79.getTree());
 
 
                     match(input, Token.UP, null); if (state.failed) return retval;
@@ -3161,15 +3057,13 @@ public TreeAdaptor getTreeAdaptor() {
                     _last = _save_last_1;
                     }
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + ">=" 	+ (b!=null?b.instrucao:null);}
 
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 11 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:353:5: ^( '<=' a= expr b= expr )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:232:5: ^( '<=' expr expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3180,34 +3074,34 @@ public TreeAdaptor getTreeAdaptor() {
                     CommonTree _first_1 = null;
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     _last = (CommonTree)input.LT(1);
-                    string_literal60=(CommonTree)match(input,51,FOLLOW_51_in_expr910); if (state.failed) return retval;
+                    string_literal80=(CommonTree)match(input,51,FOLLOW_51_in_expr796); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
-                    string_literal60_tree = (CommonTree)adaptor.dupNode(string_literal60);
+                    string_literal80_tree = (CommonTree)adaptor.dupNode(string_literal80);
 
 
-                    root_1 = (CommonTree)adaptor.becomeRoot(string_literal60_tree, root_1);
+                    root_1 = (CommonTree)adaptor.becomeRoot(string_literal80_tree, root_1);
                     }
 
 
                     match(input, Token.DOWN, null); if (state.failed) return retval;
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr914);
-                    a=expr();
+                    pushFollow(FOLLOW_expr_in_expr798);
+                    expr81=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
+                    adaptor.addChild(root_1, expr81.getTree());
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr918);
-                    b=expr();
+                    pushFollow(FOLLOW_expr_in_expr800);
+                    expr82=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
+                    adaptor.addChild(root_1, expr82.getTree());
 
 
                     match(input, Token.UP, null); if (state.failed) return retval;
@@ -3215,15 +3109,13 @@ public TreeAdaptor getTreeAdaptor() {
                     _last = _save_last_1;
                     }
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + "<=" 	+ (b!=null?b.instrucao:null);}
 
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 12 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:354:4: ^( '==' a= expr b= expr )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:233:4: ^( '==' expr expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3234,34 +3126,34 @@ public TreeAdaptor getTreeAdaptor() {
                     CommonTree _first_1 = null;
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     _last = (CommonTree)input.LT(1);
-                    string_literal61=(CommonTree)match(input,53,FOLLOW_53_in_expr928); if (state.failed) return retval;
+                    string_literal83=(CommonTree)match(input,53,FOLLOW_53_in_expr807); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
-                    string_literal61_tree = (CommonTree)adaptor.dupNode(string_literal61);
+                    string_literal83_tree = (CommonTree)adaptor.dupNode(string_literal83);
 
 
-                    root_1 = (CommonTree)adaptor.becomeRoot(string_literal61_tree, root_1);
+                    root_1 = (CommonTree)adaptor.becomeRoot(string_literal83_tree, root_1);
                     }
 
 
                     match(input, Token.DOWN, null); if (state.failed) return retval;
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr932);
-                    a=expr();
+                    pushFollow(FOLLOW_expr_in_expr809);
+                    expr84=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
+                    adaptor.addChild(root_1, expr84.getTree());
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr936);
-                    b=expr();
+                    pushFollow(FOLLOW_expr_in_expr811);
+                    expr85=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
+                    adaptor.addChild(root_1, expr85.getTree());
 
 
                     match(input, Token.UP, null); if (state.failed) return retval;
@@ -3269,15 +3161,13 @@ public TreeAdaptor getTreeAdaptor() {
                     _last = _save_last_1;
                     }
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + "==" 	+ (b!=null?b.instrucao:null);}
 
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 13 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:355:4: ^( '!=' a= expr b= expr )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:234:4: ^( '!=' expr expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3288,34 +3178,34 @@ public TreeAdaptor getTreeAdaptor() {
                     CommonTree _first_1 = null;
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     _last = (CommonTree)input.LT(1);
-                    string_literal62=(CommonTree)match(input,39,FOLLOW_39_in_expr946); if (state.failed) return retval;
+                    string_literal86=(CommonTree)match(input,39,FOLLOW_39_in_expr818); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
-                    string_literal62_tree = (CommonTree)adaptor.dupNode(string_literal62);
+                    string_literal86_tree = (CommonTree)adaptor.dupNode(string_literal86);
 
 
-                    root_1 = (CommonTree)adaptor.becomeRoot(string_literal62_tree, root_1);
+                    root_1 = (CommonTree)adaptor.becomeRoot(string_literal86_tree, root_1);
                     }
 
 
                     match(input, Token.DOWN, null); if (state.failed) return retval;
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr950);
-                    a=expr();
+                    pushFollow(FOLLOW_expr_in_expr820);
+                    expr87=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
+                    adaptor.addChild(root_1, expr87.getTree());
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr954);
-                    b=expr();
+                    pushFollow(FOLLOW_expr_in_expr822);
+                    expr88=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, b.getTree());
+                    adaptor.addChild(root_1, expr88.getTree());
 
 
                     match(input, Token.UP, null); if (state.failed) return retval;
@@ -3323,15 +3213,13 @@ public TreeAdaptor getTreeAdaptor() {
                     _last = _save_last_1;
                     }
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (a!=null?a.instrucao:null) + "!=" 	+ (b!=null?b.instrucao:null);}
 
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 14 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:356:4: ^( '!' a= expr )
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:235:4: ^( '!' expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3342,24 +3230,24 @@ public TreeAdaptor getTreeAdaptor() {
                     CommonTree _first_1 = null;
                     CommonTree root_1 = (CommonTree)adaptor.nil();
                     _last = (CommonTree)input.LT(1);
-                    char_literal63=(CommonTree)match(input,38,FOLLOW_38_in_expr964); if (state.failed) return retval;
+                    char_literal89=(CommonTree)match(input,38,FOLLOW_38_in_expr829); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
-                    char_literal63_tree = (CommonTree)adaptor.dupNode(char_literal63);
+                    char_literal89_tree = (CommonTree)adaptor.dupNode(char_literal89);
 
 
-                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal63_tree, root_1);
+                    root_1 = (CommonTree)adaptor.becomeRoot(char_literal89_tree, root_1);
                     }
 
 
                     match(input, Token.DOWN, null); if (state.failed) return retval;
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_expr_in_expr968);
-                    a=expr();
+                    pushFollow(FOLLOW_expr_in_expr831);
+                    expr90=expr();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_1, a.getTree());
+                    adaptor.addChild(root_1, expr90.getTree());
 
 
                     match(input, Token.UP, null); if (state.failed) return retval;
@@ -3368,29 +3256,25 @@ public TreeAdaptor getTreeAdaptor() {
                     }
 
 
-                    if ( state.backtracking==0 ) {retval.instrucao = "!" + (a!=null?a.instrucao:null);}
-
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 15 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:357:4: factor
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:236:4: factor
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_factor_in_expr979);
-                    factor64=factor();
+                    pushFollow(FOLLOW_factor_in_expr837);
+                    factor91=factor();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_0, factor64.getTree());
+                    adaptor.addChild(root_0, factor91.getTree());
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (factor64!=null?factor64.instrucao:null);}
 
                     if ( state.backtracking==0 ) {
                     }
@@ -3418,16 +3302,15 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class factor_return extends TreeRuleReturnScope {
-        public String instrucao;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "factor"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:360:1: factor returns [String instrucao] : ( ID | constante | invocacao[null, \"FACTOR\"] );
-    public final CmbTGCFG.factor_return factor() throws RecognitionException {
-        CmbTGCFG.factor_return retval = new CmbTGCFG.factor_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:239:1: factor : ( ID | constante | invocacao[null] );
+    public final CmbTGPDG.factor_return factor() throws RecognitionException {
+        CmbTGPDG.factor_return retval = new CmbTGPDG.factor_return();
         retval.start = input.LT(1);
 
 
@@ -3436,16 +3319,16 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _first_0 = null;
         CommonTree _last = null;
 
-        CommonTree ID65=null;
-        CmbTGCFG.constante_return constante66 =null;
+        CommonTree ID92=null;
+        CmbTGPDG.constante_return constante93 =null;
 
-        CmbTGCFG.invocacao_return invocacao67 =null;
+        CmbTGPDG.invocacao_return invocacao94 =null;
 
 
-        CommonTree ID65_tree=null;
+        CommonTree ID92_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:361:2: ( ID | constante | invocacao[null, \"FACTOR\"] )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:240:2: ( ID | constante | invocacao[null] )
             int alt11=3;
             switch ( input.LA(1) ) {
             case ID:
@@ -3477,66 +3360,60 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt11) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:361:4: ID
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:240:4: ID
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
                     _last = (CommonTree)input.LT(1);
-                    ID65=(CommonTree)match(input,ID,FOLLOW_ID_in_factor1002); if (state.failed) return retval;
+                    ID92=(CommonTree)match(input,ID,FOLLOW_ID_in_factor849); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
-                    ID65_tree = (CommonTree)adaptor.dupNode(ID65);
+                    ID92_tree = (CommonTree)adaptor.dupNode(ID92);
 
 
-                    adaptor.addChild(root_0, ID65_tree);
+                    adaptor.addChild(root_0, ID92_tree);
                     }
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (ID65!=null?ID65.getText():null);}
 
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:362:4: constante
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:241:4: constante
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_constante_in_factor1015);
-                    constante66=constante();
+                    pushFollow(FOLLOW_constante_in_factor854);
+                    constante93=constante();
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_0, constante66.getTree());
+                    adaptor.addChild(root_0, constante93.getTree());
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (constante66!=null?constante66.valor:null);}
 
                     if ( state.backtracking==0 ) {
                     }
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:363:4: invocacao[null, \"FACTOR\"]
+                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:242:4: invocacao[null]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
 
                     _last = (CommonTree)input.LT(1);
-                    pushFollow(FOLLOW_invocacao_in_factor1026);
-                    invocacao67=invocacao(null, "FACTOR");
+                    pushFollow(FOLLOW_invocacao_in_factor859);
+                    invocacao94=invocacao(null);
 
                     state._fsp--;
                     if (state.failed) return retval;
                     if ( state.backtracking==0 ) 
-                    adaptor.addChild(root_0, invocacao67.getTree());
+                    adaptor.addChild(root_0, invocacao94.getTree());
 
-
-                    if ( state.backtracking==0 ) {retval.instrucao = (invocacao67!=null?invocacao67.instrucao:null);}
 
                     if ( state.backtracking==0 ) {
                     }
@@ -3564,16 +3441,15 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     public static class constante_return extends TreeRuleReturnScope {
-        public String valor;
         CommonTree tree;
         public Object getTree() { return tree; }
     };
 
 
     // $ANTLR start "constante"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:366:1: constante returns [String valor] : ( STRING | INT | TRUE | FALSE );
-    public final CmbTGCFG.constante_return constante() throws RecognitionException {
-        CmbTGCFG.constante_return retval = new CmbTGCFG.constante_return();
+    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:245:1: constante : ( STRING | INT | TRUE | FALSE );
+    public final CmbTGPDG.constante_return constante() throws RecognitionException {
+        CmbTGPDG.constante_return retval = new CmbTGPDG.constante_return();
         retval.start = input.LT(1);
 
 
@@ -3582,140 +3458,43 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree _first_0 = null;
         CommonTree _last = null;
 
-        CommonTree STRING68=null;
-        CommonTree INT69=null;
-        CommonTree TRUE70=null;
-        CommonTree FALSE71=null;
+        CommonTree set95=null;
 
-        CommonTree STRING68_tree=null;
-        CommonTree INT69_tree=null;
-        CommonTree TRUE70_tree=null;
-        CommonTree FALSE71_tree=null;
+        CommonTree set95_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:367:2: ( STRING | INT | TRUE | FALSE )
-            int alt12=4;
-            switch ( input.LA(1) ) {
-            case STRING:
-                {
-                alt12=1;
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:246:2: ( STRING | INT | TRUE | FALSE )
+            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:
+            {
+            root_0 = (CommonTree)adaptor.nil();
+
+
+            _last = (CommonTree)input.LT(1);
+            set95=(CommonTree)input.LT(1);
+
+            if ( input.LA(1)==FALSE||input.LA(1)==INT||input.LA(1)==STRING||input.LA(1)==TRUE ) {
+                input.consume();
+                if ( state.backtracking==0 ) {
+                set95_tree = (CommonTree)adaptor.dupNode(set95);
+
+
+                adaptor.addChild(root_0, set95_tree);
                 }
-                break;
-            case INT:
-                {
-                alt12=2;
-                }
-                break;
-            case TRUE:
-                {
-                alt12=3;
-                }
-                break;
-            case FALSE:
-                {
-                alt12=4;
-                }
-                break;
-            default:
+
+                state.errorRecovery=false;
+                state.failed=false;
+            }
+            else {
                 if (state.backtracking>0) {state.failed=true; return retval;}
-                NoViableAltException nvae =
-                    new NoViableAltException("", 12, 0, input);
+                MismatchedSetException mse = new MismatchedSetException(null,input);
+                throw mse;
+            }
 
-                throw nvae;
+            if ( state.backtracking==0 ) {
+            } 
 
             }
 
-            switch (alt12) {
-                case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:367:4: STRING
-                    {
-                    root_0 = (CommonTree)adaptor.nil();
-
-
-                    _last = (CommonTree)input.LT(1);
-                    STRING68=(CommonTree)match(input,STRING,FOLLOW_STRING_in_constante1045); if (state.failed) return retval;
-                    if ( state.backtracking==0 ) {
-                    STRING68_tree = (CommonTree)adaptor.dupNode(STRING68);
-
-
-                    adaptor.addChild(root_0, STRING68_tree);
-                    }
-
-
-                    if ( state.backtracking==0 ) {retval.valor = (STRING68!=null?STRING68.getText():null);}
-
-                    if ( state.backtracking==0 ) {
-                    }
-                    }
-                    break;
-                case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:368:4: INT
-                    {
-                    root_0 = (CommonTree)adaptor.nil();
-
-
-                    _last = (CommonTree)input.LT(1);
-                    INT69=(CommonTree)match(input,INT,FOLLOW_INT_in_constante1052); if (state.failed) return retval;
-                    if ( state.backtracking==0 ) {
-                    INT69_tree = (CommonTree)adaptor.dupNode(INT69);
-
-
-                    adaptor.addChild(root_0, INT69_tree);
-                    }
-
-
-                    if ( state.backtracking==0 ) {retval.valor = (INT69!=null?INT69.getText():null);}
-
-                    if ( state.backtracking==0 ) {
-                    }
-                    }
-                    break;
-                case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:369:4: TRUE
-                    {
-                    root_0 = (CommonTree)adaptor.nil();
-
-
-                    _last = (CommonTree)input.LT(1);
-                    TRUE70=(CommonTree)match(input,TRUE,FOLLOW_TRUE_in_constante1060); if (state.failed) return retval;
-                    if ( state.backtracking==0 ) {
-                    TRUE70_tree = (CommonTree)adaptor.dupNode(TRUE70);
-
-
-                    adaptor.addChild(root_0, TRUE70_tree);
-                    }
-
-
-                    if ( state.backtracking==0 ) {retval.valor = (TRUE70!=null?TRUE70.getText():null);}
-
-                    if ( state.backtracking==0 ) {
-                    }
-                    }
-                    break;
-                case 4 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g:370:4: FALSE
-                    {
-                    root_0 = (CommonTree)adaptor.nil();
-
-
-                    _last = (CommonTree)input.LT(1);
-                    FALSE71=(CommonTree)match(input,FALSE,FOLLOW_FALSE_in_constante1067); if (state.failed) return retval;
-                    if ( state.backtracking==0 ) {
-                    FALSE71_tree = (CommonTree)adaptor.dupNode(FALSE71);
-
-
-                    adaptor.addChild(root_0, FALSE71_tree);
-                    }
-
-
-                    if ( state.backtracking==0 ) {retval.valor = (FALSE71!=null?FALSE71.getText():null);}
-
-                    if ( state.backtracking==0 ) {
-                    }
-                    }
-                    break;
-
-            }
             if ( state.backtracking==0 ) {
 
             retval.tree = (CommonTree)adaptor.rulePostProcessing(root_0);
@@ -3739,104 +3518,100 @@ public TreeAdaptor getTreeAdaptor() {
 
  
 
-    public static final BitSet FOLLOW_PROGRAMA_in_programa64 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_funcao_in_programa67 = new BitSet(new long[]{0x0000000000010008L});
-    public static final BitSet FOLLOW_FUNCAO_in_funcao100 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_cabecalho_in_funcao102 = new BitSet(new long[]{0x0000000000000400L});
-    public static final BitSet FOLLOW_corpo_funcao_in_funcao104 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_CAEBECALHO_in_cabecalho123 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_tipo_in_cabecalho125 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_ID_in_cabecalho127 = new BitSet(new long[]{0x0000000000000028L});
-    public static final BitSet FOLLOW_argumentos_in_cabecalho129 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_ARGUMENTOS_in_argumentos144 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_declaracao_in_argumentos146 = new BitSet(new long[]{0x0000000000000808L});
-    public static final BitSet FOLLOW_CORPO_in_corpo_funcao170 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_declaracoes_in_corpo_funcao172 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_statements_in_corpo_funcao174 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_DECLARACOES_in_declaracoes191 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_declaracao_in_declaracoes193 = new BitSet(new long[]{0x0000000000000808L});
-    public static final BitSet FOLLOW_DECLARACAO_in_declaracao208 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_tipo_in_declaracao210 = new BitSet(new long[]{0x0000000000040000L});
-    public static final BitSet FOLLOW_ID_in_declaracao212 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_STATEMENTS_in_statements268 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_statement_in_statements271 = new BitSet(new long[]{0x0010001803280008L});
-    public static final BitSet FOLLOW_atribuicao_in_statement309 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_read_in_statement320 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_write_in_statement330 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ifs_in_statement340 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_whiles_in_statement350 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_invocacao_in_statement360 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_PROGRAMA_in_programa63 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_funcao_in_programa66 = new BitSet(new long[]{0x0000000000010008L});
+    public static final BitSet FOLLOW_FUNCAO_in_funcao99 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_cabecalho_in_funcao101 = new BitSet(new long[]{0x0000000000000400L});
+    public static final BitSet FOLLOW_corpo_funcao_in_funcao103 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_CAEBECALHO_in_cabecalho122 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_tipo_in_cabecalho124 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_ID_in_cabecalho126 = new BitSet(new long[]{0x0000000000000028L});
+    public static final BitSet FOLLOW_argumentos_in_cabecalho128 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_ARGUMENTOS_in_argumentos143 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_declaracao_in_argumentos145 = new BitSet(new long[]{0x0000000000000808L});
+    public static final BitSet FOLLOW_CORPO_in_corpo_funcao165 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_declaracoes_in_corpo_funcao167 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_statements_in_corpo_funcao169 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_DECLARACOES_in_declaracoes186 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_declaracao_in_declaracoes188 = new BitSet(new long[]{0x0000000000000808L});
+    public static final BitSet FOLLOW_DECLARACAO_in_declaracao203 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_tipo_in_declaracao205 = new BitSet(new long[]{0x0000000000040000L});
+    public static final BitSet FOLLOW_ID_in_declaracao207 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_STATEMENTS_in_statements263 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_statement_in_statements266 = new BitSet(new long[]{0x0010001803280008L});
+    public static final BitSet FOLLOW_atribuicao_in_statement304 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_read_in_statement315 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_write_in_statement326 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ifs_in_statement337 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_whiles_in_statement348 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_invocacao_in_statement359 = new BitSet(new long[]{0x0000000000000002L});
     public static final BitSet FOLLOW_retorna_in_statement370 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RETURN_in_retorna400 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_retorna402 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_INVOCACAO_in_invocacao430 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_ID_in_invocacao432 = new BitSet(new long[]{0x0000000000000018L});
-    public static final BitSet FOLLOW_args_in_invocacao434 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_ARGS_in_args460 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_args463 = new BitSet(new long[]{0x02EDB3C208348008L});
-    public static final BitSet FOLLOW_52_in_atribuicao500 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_ID_in_atribuicao502 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_atribuicao504 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_WRITE_in_write531 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_write533 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_READ_in_read561 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_ID_in_read563 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_IF_in_ifs593 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_ifs595 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_bloco_in_ifs608 = new BitSet(new long[]{0x0000000004000008L});
-    public static final BitSet FOLLOW_bloco_in_ifs624 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_WHILE_in_whiles667 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_whiles669 = new BitSet(new long[]{0x0000000004000000L});
-    public static final BitSet FOLLOW_bloco_in_whiles680 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_statements_in_bloco707 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_57_in_expr729 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr733 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr737 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_41_in_expr747 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr751 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_RETURN_in_retorna401 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_retorna403 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_INVOCACAO_in_invocacao431 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_in_invocacao433 = new BitSet(new long[]{0x0000000000000018L});
+    public static final BitSet FOLLOW_args_in_invocacao435 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_ARGS_in_args453 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_args455 = new BitSet(new long[]{0x02EDB3C208348008L});
+    public static final BitSet FOLLOW_52_in_atribuicao481 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_in_atribuicao483 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_atribuicao485 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_WRITE_in_write512 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_write514 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_READ_in_read542 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_ID_in_read544 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_IF_in_ifs574 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_ifs576 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_bloco_in_ifs584 = new BitSet(new long[]{0x0000000004000008L});
+    public static final BitSet FOLLOW_bloco_in_ifs598 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_WHILE_in_whiles639 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_whiles641 = new BitSet(new long[]{0x0000000004000000L});
+    public static final BitSet FOLLOW_bloco_in_whiles643 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_statements_in_bloco667 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_57_in_expr685 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr687 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr689 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_41_in_expr696 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr698 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr700 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_45_in_expr707 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr709 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr711 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_47_in_expr718 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr720 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr722 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_44_in_expr729 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr731 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr733 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_48_in_expr740 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr742 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr744 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_40_in_expr751 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr753 = new BitSet(new long[]{0x02EDB3C208348000L});
     public static final BitSet FOLLOW_expr_in_expr755 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_45_in_expr765 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr769 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr773 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_47_in_expr783 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr787 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr791 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_44_in_expr801 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr805 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr809 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_48_in_expr819 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr823 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr827 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_40_in_expr837 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr841 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr845 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_54_in_expr855 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr859 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr863 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_50_in_expr873 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr877 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr881 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_55_in_expr891 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr895 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr899 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_51_in_expr910 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr914 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr918 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_53_in_expr928 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr932 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr936 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_39_in_expr946 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr950 = new BitSet(new long[]{0x02EDB3C208348000L});
-    public static final BitSet FOLLOW_expr_in_expr954 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_38_in_expr964 = new BitSet(new long[]{0x0000000000000004L});
-    public static final BitSet FOLLOW_expr_in_expr968 = new BitSet(new long[]{0x0000000000000008L});
-    public static final BitSet FOLLOW_factor_in_expr979 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ID_in_factor1002 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_constante_in_factor1015 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_invocacao_in_factor1026 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_STRING_in_constante1045 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_INT_in_constante1052 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_TRUE_in_constante1060 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_FALSE_in_constante1067 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_54_in_expr762 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr764 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr766 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_50_in_expr773 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr775 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr777 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_55_in_expr784 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr786 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr788 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_51_in_expr796 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr798 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr800 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_53_in_expr807 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr809 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr811 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_39_in_expr818 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr820 = new BitSet(new long[]{0x02EDB3C208348000L});
+    public static final BitSet FOLLOW_expr_in_expr822 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_38_in_expr829 = new BitSet(new long[]{0x0000000000000004L});
+    public static final BitSet FOLLOW_expr_in_expr831 = new BitSet(new long[]{0x0000000000000008L});
+    public static final BitSet FOLLOW_factor_in_expr837 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ID_in_factor849 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_constante_in_factor854 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_invocacao_in_factor859 = new BitSet(new long[]{0x0000000000000002L});
 
 }
