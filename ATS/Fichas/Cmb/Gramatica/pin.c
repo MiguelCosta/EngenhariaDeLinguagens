@@ -15,7 +15,11 @@ void imprime(string nome)
 				print("THEN 1.1.1");
 			}
 			else {
-				print("ELSE 1.1.1");
+				while(1){
+					if (c) {
+						print("ELSE WHILE IF 1.1.1");
+					}
+				}
 			}
 		}
 	}
