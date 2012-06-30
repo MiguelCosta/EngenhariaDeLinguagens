@@ -327,6 +327,18 @@ body{
 	
 }
 
+textarea
+{
+    width:95%;
+    border: 1px solid #999999;
+    background: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+.textwrapper
+{
+}
 /*------------------------- Footer ------------------------*/ 
 .footer{
 	width:940px;

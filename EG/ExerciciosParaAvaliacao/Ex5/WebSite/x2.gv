@@ -1,5 +1,5 @@
 
-		digraph mainmap2 {graph [bgcolor=transparent];"pessoa" [URL="conceito.php?conceito=pessoa"];
- "pessoa" -> "tem nome";
- "pessoa" -> "tem idade";
+digraph mainmap2 {graph [bgcolor=transparent];"pAntonio" [URL="instancia.php?instancia=pAntonio"];
+"lFafe" [URL="instancia.php?instancia=lFafe"];
+ "pAntonio" -> "lFafe" [label="nasceu em"];
 }

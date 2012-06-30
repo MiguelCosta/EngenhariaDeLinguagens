@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g 2012-06-28 20:58:34
+// $ANTLR 3.4 /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g 2012-06-30 00:21:42
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -55,15 +55,15 @@ public class cmcLexer extends Lexer {
     public cmcLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g"; }
+    public String getGrammarFileName() { return "/opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g"; }
 
     // $ANTLR start "CONCEITO"
     public final void mCONCEITO() throws RecognitionException {
         try {
             int _type = CONCEITO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:2:10: ( 'conceito' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:2:12: 'conceito'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:2:10: ( 'conceito' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:2:12: 'conceito'
             {
             match("conceito"); 
 
@@ -85,8 +85,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = INSTANCIA;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:3:11: ( 'instancia' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:3:13: 'instancia'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:3:11: ( 'instancia' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:3:13: 'instancia'
             {
             match("instancia"); 
 
@@ -108,8 +108,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = MAPACONCEITOPROPCONCEITO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:4:26: ( 'mapaConceitoPropConceito' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:4:28: 'mapaConceitoPropConceito'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:4:26: ( 'mapaConceitoPropConceito' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:4:28: 'mapaConceitoPropConceito'
             {
             match("mapaConceitoPropConceito"); 
 
@@ -131,8 +131,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = MAPACONCEITOPROPDADOS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:5:23: ( 'mapaConceitoPropDados' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:5:25: 'mapaConceitoPropDados'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:5:23: ( 'mapaConceitoPropDados' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:5:25: 'mapaConceitoPropDados'
             {
             match("mapaConceitoPropDados"); 
 
@@ -154,8 +154,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = MAPACONCEITOS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:6:15: ( 'mapaConceitos' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:6:17: 'mapaConceitos'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:6:15: ( 'mapaConceitos' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:6:17: 'mapaConceitos'
             {
             match("mapaConceitos"); 
 
@@ -177,8 +177,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = MAPAINSTANCIAPROPCONCEITO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:7:27: ( 'mapaInstanciaPropConceito' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:7:29: 'mapaInstanciaPropConceito'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:7:27: ( 'mapaInstanciaPropConceito' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:7:29: 'mapaInstanciaPropConceito'
             {
             match("mapaInstanciaPropConceito"); 
 
@@ -200,8 +200,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = MAPAINSTANCIAPROPDADOS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:8:24: ( 'mapaInstanciaPropDados' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:8:26: 'mapaInstanciaPropDados'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:8:24: ( 'mapaInstanciaPropDados' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:8:26: 'mapaInstanciaPropDados'
             {
             match("mapaInstanciaPropDados"); 
 
@@ -223,8 +223,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = PROPRIEDADECONCEITO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:9:21: ( 'propriedadeConceito' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:9:23: 'propriedadeConceito'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:9:21: ( 'propriedadeConceito' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:9:23: 'propriedadeConceito'
             {
             match("propriedadeConceito"); 
 
@@ -246,8 +246,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = PROPRIEDADEDADOS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:10:18: ( 'propriedadeDados' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:10:20: 'propriedadeDados'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:10:18: ( 'propriedadeDados' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:10:20: 'propriedadeDados'
             {
             match("propriedadeDados"); 
 
@@ -269,8 +269,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = T__31;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:11:7: ( '(' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:11:9: '('
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:11:7: ( '(' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:11:9: '('
             {
             match('('); 
 
@@ -290,8 +290,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = T__32;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:12:7: ( ')' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:12:9: ')'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:12:7: ( ')' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:12:9: ')'
             {
             match(')'); 
 
@@ -311,8 +311,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = T__33;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:13:7: ( ',' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:13:9: ','
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:13:7: ( ',' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:13:9: ','
             {
             match(','); 
 
@@ -332,8 +332,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = T__34;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:14:7: ( ';' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:14:9: ';'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:14:7: ( ';' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:14:9: ';'
             {
             match(';'); 
 
@@ -353,8 +353,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = T__35;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:15:7: ( 'INT' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:15:9: 'INT'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:15:7: ( 'INT' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:15:9: 'INT'
             {
             match("INT"); 
 
@@ -376,8 +376,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = T__36;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:16:7: ( 'STRING' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:16:9: 'STRING'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:16:7: ( 'STRING' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:16:9: 'STRING'
             {
             match("STRING"); 
 
@@ -399,8 +399,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:134:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:134:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:134:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:134:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -412,7 +412,7 @@ public class cmcLexer extends Lexer {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:134:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:134:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -425,7 +425,7 @@ public class cmcLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:
+            	    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -462,7 +462,7 @@ public class cmcLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:138:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:138:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -492,13 +492,13 @@ public class cmcLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:138:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+                    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:138:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
                     {
                     match("//"); 
 
 
 
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:138:14: (~ ( '\\n' | '\\r' ) )*
+                    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:138:14: (~ ( '\\n' | '\\r' ) )*
                     loop2:
                     do {
                         int alt2=2;
@@ -511,7 +511,7 @@ public class cmcLexer extends Lexer {
 
                         switch (alt2) {
                     	case 1 :
-                    	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:
+                    	    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:
                     	    {
                     	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
                     	        input.consume();
@@ -532,7 +532,7 @@ public class cmcLexer extends Lexer {
                     } while (true);
 
 
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:138:28: ( '\\r' )?
+                    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:138:28: ( '\\r' )?
                     int alt3=2;
                     int LA3_0 = input.LA(1);
 
@@ -541,7 +541,7 @@ public class cmcLexer extends Lexer {
                     }
                     switch (alt3) {
                         case 1 :
-                            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:138:28: '\\r'
+                            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:138:28: '\\r'
                             {
                             match('\r'); 
 
@@ -558,13 +558,13 @@ public class cmcLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:139:9: '/*' ( options {greedy=false; } : . )* '*/'
+                    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:139:9: '/*' ( options {greedy=false; } : . )* '*/'
                     {
                     match("/*"); 
 
 
 
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:139:14: ( options {greedy=false; } : . )*
+                    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:139:14: ( options {greedy=false; } : . )*
                     loop4:
                     do {
                         int alt4=2;
@@ -589,7 +589,7 @@ public class cmcLexer extends Lexer {
 
                         switch (alt4) {
                     	case 1 :
-                    	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:139:42: .
+                    	    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:139:42: .
                     	    {
                     	    matchAny(); 
 
@@ -626,8 +626,8 @@ public class cmcLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:142:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:142:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:142:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:142:9: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -657,12 +657,12 @@ public class cmcLexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:150:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:150:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:150:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:150:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
             {
             match('\"'); 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:150:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:150:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
             loop6:
             do {
                 int alt6=3;
@@ -678,7 +678,7 @@ public class cmcLexer extends Lexer {
 
                 switch (alt6) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:150:14: ESC_SEQ
+            	    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:150:14: ESC_SEQ
             	    {
             	    mESC_SEQ(); 
 
@@ -686,7 +686,7 @@ public class cmcLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:150:24: ~ ( '\\\\' | '\"' )
+            	    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:150:24: ~ ( '\\\\' | '\"' )
             	    {
             	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
             	        input.consume();
@@ -723,8 +723,8 @@ public class cmcLexer extends Lexer {
     // $ANTLR start "HEX_DIGIT"
     public final void mHEX_DIGIT() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:155:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:155:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:
             {
             if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'F')||(input.LA(1) >= 'a' && input.LA(1) <= 'f') ) {
                 input.consume();
@@ -749,7 +749,7 @@ public class cmcLexer extends Lexer {
     // $ANTLR start "ESC_SEQ"
     public final void mESC_SEQ() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:159:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:159:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
             int alt7=3;
             int LA7_0 = input.LA(1);
 
@@ -802,7 +802,7 @@ public class cmcLexer extends Lexer {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:159:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+                    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:159:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
                     {
                     match('\\'); 
 
@@ -819,7 +819,7 @@ public class cmcLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:160:9: UNICODE_ESC
+                    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:160:9: UNICODE_ESC
                     {
                     mUNICODE_ESC(); 
 
@@ -827,7 +827,7 @@ public class cmcLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:161:9: OCTAL_ESC
+                    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:161:9: OCTAL_ESC
                     {
                     mOCTAL_ESC(); 
 
@@ -847,7 +847,7 @@ public class cmcLexer extends Lexer {
     // $ANTLR start "OCTAL_ESC"
     public final void mOCTAL_ESC() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:166:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:166:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
             int alt8=3;
             int LA8_0 = input.LA(1);
 
@@ -898,7 +898,7 @@ public class cmcLexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:166:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+                    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:166:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -935,7 +935,7 @@ public class cmcLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:167:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
+                    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:167:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -962,7 +962,7 @@ public class cmcLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:168:9: '\\\\' ( '0' .. '7' )
+                    // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:168:9: '\\\\' ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -991,8 +991,8 @@ public class cmcLexer extends Lexer {
     // $ANTLR start "UNICODE_ESC"
     public final void mUNICODE_ESC() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:173:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:173:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:173:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
+            // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:173:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
             {
             match('\\'); 
 
@@ -1021,12 +1021,12 @@ public class cmcLexer extends Lexer {
     // $ANTLR end "UNICODE_ESC"
 
     public void mTokens() throws RecognitionException {
-        // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:8: ( CONCEITO | INSTANCIA | MAPACONCEITOPROPCONCEITO | MAPACONCEITOPROPDADOS | MAPACONCEITOS | MAPAINSTANCIAPROPCONCEITO | MAPAINSTANCIAPROPDADOS | PROPRIEDADECONCEITO | PROPRIEDADEDADOS | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | ID | COMMENT | WS | STRING )
+        // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:8: ( CONCEITO | INSTANCIA | MAPACONCEITOPROPCONCEITO | MAPACONCEITOPROPDADOS | MAPACONCEITOS | MAPAINSTANCIAPROPCONCEITO | MAPAINSTANCIAPROPDADOS | PROPRIEDADECONCEITO | PROPRIEDADEDADOS | T__31 | T__32 | T__33 | T__34 | T__35 | T__36 | ID | COMMENT | WS | STRING )
         int alt9=19;
         alt9 = dfa9.predict(input);
         switch (alt9) {
             case 1 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:10: CONCEITO
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:10: CONCEITO
                 {
                 mCONCEITO(); 
 
@@ -1034,7 +1034,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 2 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:19: INSTANCIA
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:19: INSTANCIA
                 {
                 mINSTANCIA(); 
 
@@ -1042,7 +1042,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:29: MAPACONCEITOPROPCONCEITO
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:29: MAPACONCEITOPROPCONCEITO
                 {
                 mMAPACONCEITOPROPCONCEITO(); 
 
@@ -1050,7 +1050,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:54: MAPACONCEITOPROPDADOS
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:54: MAPACONCEITOPROPDADOS
                 {
                 mMAPACONCEITOPROPDADOS(); 
 
@@ -1058,7 +1058,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:76: MAPACONCEITOS
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:76: MAPACONCEITOS
                 {
                 mMAPACONCEITOS(); 
 
@@ -1066,7 +1066,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 6 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:90: MAPAINSTANCIAPROPCONCEITO
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:90: MAPAINSTANCIAPROPCONCEITO
                 {
                 mMAPAINSTANCIAPROPCONCEITO(); 
 
@@ -1074,7 +1074,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 7 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:116: MAPAINSTANCIAPROPDADOS
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:116: MAPAINSTANCIAPROPDADOS
                 {
                 mMAPAINSTANCIAPROPDADOS(); 
 
@@ -1082,7 +1082,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 8 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:139: PROPRIEDADECONCEITO
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:139: PROPRIEDADECONCEITO
                 {
                 mPROPRIEDADECONCEITO(); 
 
@@ -1090,7 +1090,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 9 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:159: PROPRIEDADEDADOS
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:159: PROPRIEDADEDADOS
                 {
                 mPROPRIEDADEDADOS(); 
 
@@ -1098,7 +1098,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 10 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:176: T__31
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:176: T__31
                 {
                 mT__31(); 
 
@@ -1106,7 +1106,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 11 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:182: T__32
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:182: T__32
                 {
                 mT__32(); 
 
@@ -1114,7 +1114,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 12 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:188: T__33
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:188: T__33
                 {
                 mT__33(); 
 
@@ -1122,7 +1122,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 13 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:194: T__34
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:194: T__34
                 {
                 mT__34(); 
 
@@ -1130,7 +1130,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 14 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:200: T__35
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:200: T__35
                 {
                 mT__35(); 
 
@@ -1138,7 +1138,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 15 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:206: T__36
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:206: T__36
                 {
                 mT__36(); 
 
@@ -1146,7 +1146,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 16 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:212: ID
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:212: ID
                 {
                 mID(); 
 
@@ -1154,7 +1154,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 17 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:215: COMMENT
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:215: COMMENT
                 {
                 mCOMMENT(); 
 
@@ -1162,7 +1162,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 18 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:223: WS
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:223: WS
                 {
                 mWS(); 
 
@@ -1170,7 +1170,7 @@ public class cmcLexer extends Lexer {
                 }
                 break;
             case 19 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:226: STRING
+                // /opt/lampp/htdocs/EL/EG/ExerciciosParaAvaliacao/Ex5/Gramatica/cmc.g:1:226: STRING
                 {
                 mSTRING(); 
 
