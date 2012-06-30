@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<title>About - Generic Website Template</title>
+		<title>Instâncias</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<!--[if IE 7]>
 		<link rel="stylesheet" href="css/ie7.css" type="text/css" />
