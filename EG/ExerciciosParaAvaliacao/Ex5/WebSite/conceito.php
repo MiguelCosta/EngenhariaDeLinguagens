@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<title>About - Generic Website Template</title>
+		<title>Conceitos</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<!--[if IE 7]>
 		<link rel="stylesheet" href="css/ie7.css" type="text/css" />
@@ -48,7 +48,9 @@
 				$dot = '
 digraph mainmap {
 graph [bgcolor=transparent];
-"' . $conceitoGET . '" [URL="conceito.php?conceito=' . $conceitoGET . '"];
+"' . $conceitoGET . '" [URL="conceito.php?conceito=' . $conceitoGET . '", color = darkorange1,
+		fontcolor = white,
+		style = filled, ];
 ';
 				fwrite($fh, $dot);
 				fwrite($fh, getConceitosFilhos($conceitoGET));
@@ -64,10 +66,10 @@ graph [bgcolor=transparent];
 				?>
 
 				<?php
-				exec('dot -Tcmapx -ox.map -Tgif -ox.gif x.gv');
+				exec('dot -Tcmapx -ox.map -Tpng -ox.png x.gv');
 				?>
 				<div class="grafo">
-					<IMG SRC="x.gif" USEMAP="#mainmap" />
+					<IMG SRC="x.png" USEMAP="#mainmap" />
 				</div>
 				<?php
 				echo file_get_contents('x.map');
@@ -80,17 +82,17 @@ graph [bgcolor=transparent];
 				</div>
 				<h3>Propriedades:</h3>
 				<div class="grafo">
-					<IMG SRC="x2.gif" USEMAP="#mainmap2" />
+					<IMG SRC="x2.png" USEMAP="#mainmap2" />
 				</div>
 				<hr/>
 				<h3>Relações com outros conceitos:</h3>
 				<div class="grafo">
-					<IMG SRC="x3.gif" USEMAP="#mainmap3" />
+					<IMG SRC="x3.png" USEMAP="#mainmap3" />
 				</div>
 				<hr/>
 				<h3>Instâncias:</h3>
 				<div class="grafo">
-					<IMG SRC="x4.gif" USEMAP="#mainmap4" />
+					<IMG SRC="x4.png" USEMAP="#mainmap4" />
 				</div>
 
 				<ul></ul>
@@ -137,15 +139,15 @@ function getConceitosFilhos($conceitoGET) {
 	}
 	$result = "";
 	while ($conceitoFilho = mysql_fetch_array($conceitosFilhos)) {
-		$result .= '"' . $conceitoFilho['conceitoFilho'] . '" [URL="conceito.php?conceito=' . $conceitoFilho['conceitoFilho'] . '"];' . "\n";
-		$result .= "\"" . $conceitoGET . "\" -> \"" . $conceitoFilho['conceitoFilho'] . "\"[label=é];\n";
+		$result .= '"' . $conceitoFilho['conceitoFilho'] . '" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=' . $conceitoFilho['conceitoFilho'] . '"];' . "\n";
+		$result .= "\"" . $conceitoGET . "\" -> \"" . $conceitoFilho['conceitoFilho'] . "\"[label=é, color=\"#444444\", fontcolor=\"#444444\"];\n";
 
 		$sql2 = "SELECT conceitoFilho FROM MapasConceitos WHERE conceitoPai='" . $conceitoFilho['conceitoFilho'] . "' ORDER BY conceitoFilho;";
 		$conceitos2 = mysql_query($sql2);
 		if (mysql_num_rows($conceitos2) > 0) {
 			while ($conceito2 = mysql_fetch_array($conceitos2)) {
-				$result .= '"' . $conceito2['conceitoFilho'] . '" [URL="conceito.php?conceito=' . $conceito2['conceitoFilho'] . '"];' . "\n";
-				$result .= "\"" . $conceito['conceito'] . "\" -> \"" . $conceito2['conceitoFilho'] . "\"[label=é];\n";
+				$result .= '"' . $conceito2['conceitoFilho'] . '" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=' . $conceito2['conceitoFilho'] . '"];' . "\n";
+				$result .= "\"" . $conceito['conceito'] . "\" -> \"" . $conceito2['conceitoFilho'] . "\"[label=é, color=\"#444444\", fontcolor=\"#444444\"];\n";
 			}
 		}
 	}
@@ -160,7 +162,10 @@ function getPropriedades($conceitoGET) {
 
 	$dot = '
 		digraph mainmap2 {graph [bgcolor=transparent];';
-	$dot .= '"' . $conceitoGET . '" [URL="conceito.php?conceito=' . $conceitoGET . '"];' . "\n";
+	$dot .= '"' . $conceitoGET . '" [URL="conceito.php?conceito=' . $conceitoGET . '", 
+		color = blue,
+		fontcolor = white,
+		style = filled,];' . "\n";
 	fwrite($fh, $dot);
 	fwrite($fh, getPropriedadesDot($conceitoGET));
 
@@ -169,7 +174,7 @@ function getPropriedades($conceitoGET) {
 
 	fclose($fh);
 
-	exec('dot -Tcmapx -ox2.map -Tgif -ox2.gif -Gsize="30,30" x2.gv');
+	exec('dot -Tcmapx -ox2.map -Tpng -ox2.png -Gsize="30,30" x2.gv');
 }
 
 function getPropriedadesDot($conceitoGET) {
@@ -181,7 +186,8 @@ function getPropriedadesDot($conceitoGET) {
 	}
 	$result = "";
 	while ($propriedade = mysql_fetch_array($propriedades)) {
-		$result .= ' "' . $conceitoGET . '" -> "' . $propriedade['propriedadeDados'] . '";' . "\n";
+		$result .= '"' . $propriedade['propriedadeDados'] . '" [color="blue", fontcolor="#444444"];' . "\n";
+		$result .= ' "' . $conceitoGET . '" -> "' . $propriedade['propriedadeDados'] . '" [color="#444444", fontcolor="#444444"];' . "\n";
 
 	}
 
@@ -195,7 +201,10 @@ function getRelacoes($conceitoGET) {
 
 	$dot = '
 		digraph mainmap3 {graph [bgcolor=transparent];';
-	$dot .= '"' . $conceitoGET . '" [URL="conceito.php?conceito=' . $conceitoGET . '"];' . "\n";
+	$dot .= '"' . $conceitoGET . '" [URL="conceito.php?conceito=' . $conceitoGET . '", 
+		color ="#006400",
+		fontcolor = white,
+		style = filled,];' . "\n";
 	fwrite($fh, $dot);
 	fwrite($fh, getRelacoesDot($conceitoGET));
 
@@ -204,11 +213,11 @@ function getRelacoes($conceitoGET) {
 
 	fclose($fh);
 
-	exec('dot -Tcmapx -ox3.map -Tgif -ox3.gif x3.gv');
+	exec('dot -Tcmapx -ox3.map -Tpng -ox3.png x3.gv');
 }
 
 function getRelacoesDot($conceitoGET) {
-	$sql = "SELECT * FROM MapasConceitoPropConceito WHERE conceitoFilho='" . $conceitoGET . "'";
+	$sql = "SELECT * FROM MapasConceitoPropConceito WHERE conceitoPai='" . $conceitoGET . "'";
 	$conceitos = mysql_query($sql);
 
 	if (mysql_num_rows($conceitos) == 0) {
@@ -216,8 +225,8 @@ function getRelacoesDot($conceitoGET) {
 	}
 	$result = "";
 	while ($conceito = mysql_fetch_array($conceitos)) {
-		$result .= '"' . $conceito['conceitoPai'] . '" [URL="conceito.php?conceito=' . $conceito['conceitoPai'] . '"];' . "\n";
-		$result .= '"' . $conceitoGET . '" -> "' . $conceito['conceitoPai'] . '" [label ="' . $conceito['propriedadeConceito'] . '"];' . "\n";
+		$result .= '"' . $conceito['conceitoFilho'] . '" [color="#006400", fontcolor="#444444", URL="conceito.php?conceito=' . $conceito['conceitoPai'] . '"];' . "\n";
+		$result .= '"' . $conceitoGET . '" -> "' . $conceito['conceitoFilho'] . '" [label ="' . $conceito['propriedadeConceito'] . '", color="#444444", fontcolor="#444444"];' . "\n";
 	}
 	return $result;
 }
@@ -229,7 +238,10 @@ function getInstancias($conceitoGET) {
 
 	$dot = '
 		digraph mainmap4 {graph [bgcolor=transparent];';
-	$dot .= '"' . $conceitoGET . '" [URL="conceito.php?conceito=' . $conceitoGET . '"];' . "\n";
+	$dot .= '"' . $conceitoGET . '" [URL="conceito.php?conceito=' . $conceitoGET . '", 
+		color ="#800000",
+		fontcolor = white,
+		style = filled,];' . "\n";
 	fwrite($fh, $dot);
 	fwrite($fh, getInstanciasDot($conceitoGET));
 
@@ -238,7 +250,7 @@ function getInstancias($conceitoGET) {
 
 	fclose($fh);
 
-	exec('dot -Tcmapx -ox4.map -Tgif -ox4.gif x4.gv');
+	exec('dot -Tcmapx -ox4.map -Tpng -ox4.png x4.gv');
 }
 
 function getInstanciasDot($conceitoGET) {
@@ -250,8 +262,8 @@ function getInstanciasDot($conceitoGET) {
 	}
 	$result = "";
 	while ($instancia = mysql_fetch_array($instancias)) {
-		$result .= '"' . $instancia['instancia'] . '" [URL="instancia.php?instancia=' . $instancia['instancia'] . '"];' . "\n";
-		$result .= ' "' . $conceitoGET . '" -> "' . $instancia['instancia'] . '";' . "\n";
+		$result .= '"' . $instancia['instancia'] . '" [color="#800000", fontcolor="#444444",URL="instancia.php?instancia=' . $instancia['instancia'] . '"];' . "\n";
+		$result .= ' "' . $conceitoGET . '" -> "' . $instancia['instancia'] . '" [color="#444444", fontcolor="#444444"];' . "\n";
 	}
 	return $result;
 }

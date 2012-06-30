@@ -1,5 +1,10 @@
 
-		digraph mainmap2 {graph [bgcolor=transparent];"pessoa" [URL="conceito.php?conceito=pessoa"];
- "pessoa" -> "tem nome";
- "pessoa" -> "tem idade";
+		digraph mainmap2 {graph [bgcolor=transparent];"pessoa" [URL="conceito.php?conceito=pessoa", 
+		color = blue,
+		fontcolor = white,
+		style = filled,];
+"tem nome" [color="blue", fontcolor="#444444"];
+ "pessoa" -> "tem nome" [color="#444444", fontcolor="#444444"];
+"tem idade" [color="blue", fontcolor="#444444"];
+ "pessoa" -> "tem idade" [color="#444444", fontcolor="#444444"];
 }
