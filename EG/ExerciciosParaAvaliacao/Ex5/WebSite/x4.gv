@@ -1,8 +1,8 @@
 
-		digraph mainmap4 {graph [bgcolor=transparent];"emigrante" [URL="conceito.php?conceito=emigrante", 
+		digraph mainmap4 {graph [bgcolor=transparent];"pessoa" [URL="conceito.php?conceito=pessoa", 
 		color ="#800000",
 		fontcolor = white,
 		style = filled,];
-"pEmigranteBrasil" [color="#800000", fontcolor="#444444",URL="instancia.php?instancia=pEmigranteBrasil"];
- "emigrante" -> "pEmigranteBrasil" [color="#444444", fontcolor="#444444"];
+"pAntonio" [color="#800000", fontcolor="#444444",URL="instancia.php?instancia=pAntonio"];
+ "pessoa" -> "pAntonio" [color="#444444", fontcolor="#444444"];
 }

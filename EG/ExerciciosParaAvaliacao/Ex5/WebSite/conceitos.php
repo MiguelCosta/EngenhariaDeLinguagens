@@ -132,9 +132,9 @@ digraph mainmap {
 					&#169; Copyright &#169; 2012
 				</p>
 				<div class="connect">
-					<a href="http://facebook.com/freewebsitetemplates" id="facebook">facebook</a>
-					<a href="http://twitter.com/fwtemplates" id="twitter">twitter</a>
-					<a href="http://www.youtube.com/fwtemplates" id="vimeo">vimeo</a>
+					<a href="#" id="facebook">facebook</a>
+					<a href="#" id="twitter">twitter</a>
+					<a href="#" id="vimeo">vimeo</a>
 				</div>
 			</div>
 		</div>

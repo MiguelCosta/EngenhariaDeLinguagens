@@ -1,4 +1,4 @@
 <map id="mainmap4" name="mainmap4">
-<area shape="poly" id="node1" href="conceito.php?conceito=emigrante" title="emigrante" alt="" coords="214,31 210,23 198,16 180,11 157,7 132,6 107,7 84,11 66,16 54,23 50,31 54,38 66,45 84,50 107,54 132,55 157,54 180,50 198,45 210,38"/>
-<area shape="poly" id="node2" href="instancia.php?instancia=pEmigranteBrasil" title="pEmigranteBrasil" alt="" coords="258,129 252,122 234,115 206,110 171,106 132,105 93,106 58,110 30,115 12,122 6,129 12,137 30,144 58,149 93,153 132,154 171,153 206,149 234,144 252,137"/>
+<area shape="poly" id="node1" href="conceito.php?conceito=pessoa" title="pessoa" alt="" coords="139,31 136,23 128,16 115,11 98,7 80,6 62,7 45,11 32,16 24,23 21,31 24,38 32,45 45,50 62,54 80,55 98,54 115,50 128,45 136,38"/>
+<area shape="poly" id="node2" href="instancia.php?instancia=pAntonio" title="pAntonio" alt="" coords="154,129 151,122 140,115 124,110 103,106 80,105 57,106 36,110 20,115 9,122 6,129 9,137 20,144 36,149 57,153 80,154 103,153 124,149 140,144 151,137"/>
 </map>
