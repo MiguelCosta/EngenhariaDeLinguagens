@@ -1,5 +1,6 @@
 
-		digraph mainmap3 {graph [bgcolor=transparent];"pessoa" [URL="conceito.php?conceito=pessoa"];
-"local" [URL="conceito.php?conceito=local"];
-"pessoa" -> "local" [label ="nasceu em"];
+		digraph mainmap3 {graph [bgcolor=transparent];"emigrante" [URL="conceito.php?conceito=emigrante", 
+		color ="#006400",
+		fontcolor = white,
+		style = filled,];
 }

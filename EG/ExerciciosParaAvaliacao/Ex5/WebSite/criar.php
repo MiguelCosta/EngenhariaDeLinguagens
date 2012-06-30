@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<title>About - Generic Website Template</title>
+		<title>Criar Mapa</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<!--[if IE 7]>
 		<link rel="stylesheet" href="css/ie7.css" type="text/css" />
@@ -89,7 +89,7 @@ mapaInstanciaPropConceito(pAntonio, m7, lFafe);
 				</ul>
 
 				<p>
-					&#169; Copyright &#169; 2011. Company name all rights reserved
+					&#169; Copyright &#169; 2012
 				</p>
 				<div class="connect">
 					<a href="#" id="facebook">facebook</a>

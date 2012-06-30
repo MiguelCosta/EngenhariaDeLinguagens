@@ -1,17 +1,20 @@
 
 digraph mainmap {
 	graph [bgcolor=transparent];
-  CONCEITOS [URL="conceitos.php"];
-"evento" [URL="conceito.php?conceito=evento"];
-CONCEITOS -> "evento"[label=é];
-"morte" [URL="conceito.php?conceito=morte"];
-"evento" -> "morte"[label=é];
-"nascimento" [URL="conceito.php?conceito=nascimento"];
-"evento" -> "nascimento"[label=é];
-"local" [URL="conceito.php?conceito=local"];
-CONCEITOS -> "local"[label=é];
-"pessoa" [URL="conceito.php?conceito=pessoa"];
-CONCEITOS -> "pessoa"[label=é];
-"emigrante" [URL="conceito.php?conceito=emigrante"];
-"pessoa" -> "emigrante"[label=é];
+  CONCEITOS [URL="conceitos.php",
+		color = darkorange1,
+		fontcolor = white,
+		style = filled,];
+"evento" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=evento"];
+CONCEITOS -> "evento"[label=é, color="#444444", fontcolor="#444444"];
+"morte" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=morte"];
+"evento" -> "morte"[label=é, color="#444444", fontcolor="#444444"];
+"nascimento" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=nascimento"];
+"evento" -> "nascimento"[label=é, color="#444444", fontcolor="#444444"];
+"local" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=local"];
+CONCEITOS -> "local"[label=é, color="#444444", fontcolor="#444444"];
+"pessoa" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=pessoa"];
+CONCEITOS -> "pessoa"[label=é, color="#444444", fontcolor="#444444"];
+"emigrante" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=emigrante"];
+"pessoa" -> "emigrante"[label=é, color="#444444", fontcolor="#444444"];
 }

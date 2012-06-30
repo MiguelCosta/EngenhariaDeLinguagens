@@ -45,7 +45,10 @@
 					$dot = '
 digraph mainmap {
 	graph [bgcolor=transparent];
-  CONCEITOS [URL="conceitos.php"];
+  CONCEITOS [URL="conceitos.php",
+		color = darkorange1,
+		fontcolor = white,
+		style = filled,];
 ';
 					fwrite($fh, $dot);
 					fwrite($fh, getConceitosPais());
@@ -71,15 +74,15 @@ digraph mainmap {
 						}
 						$result = "";
 						while ($conceito = mysql_fetch_array($conceitos)) {
-							$result .= '"' . $conceito['conceito'] . '" [URL="conceito.php?conceito=' . $conceito['conceito'] . '"];' . "\n";
-							$result .= "CONCEITOS -> \"" . $conceito['conceito'] . "\"[label=é];\n";
+							$result .= '"' . $conceito['conceito'] . '" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=' . $conceito['conceito'] . '"];' . "\n";
+							$result .= "CONCEITOS -> \"" . $conceito['conceito'] . "\"[label=é, color=\"#444444\", fontcolor=\"#444444\"];\n";
 
 							$sql2 = "SELECT conceitoFilho FROM MapasConceitos WHERE conceitoPai='" . $conceito['conceito'] . "' ORDER BY conceitoFilho;";
 							$conceitos2 = mysql_query($sql2);
 							if (mysql_num_rows($conceitos2) > 0) {
 								while ($conceito2 = mysql_fetch_array($conceitos2)) {
-									$result .= '"' . $conceito2['conceitoFilho'] . '" [URL="conceito.php?conceito=' . $conceito2['conceitoFilho'] . '"];' . "\n";
-									$result .= "\"" . $conceito['conceito'] . "\" -> \"" . $conceito2['conceitoFilho'] . "\"[label=é];\n";
+									$result .= '"' . $conceito2['conceitoFilho'] . '" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=' . $conceito2['conceitoFilho'] . '"];' . "\n";
+									$result .= "\"" . $conceito['conceito'] . "\" -> \"" . $conceito2['conceitoFilho'] . "\"[label=é, color=\"#444444\", fontcolor=\"#444444\"];\n";
 								}
 							}
 						}
@@ -89,10 +92,10 @@ digraph mainmap {
 					?>
 
 					<?php
-					exec('dot -Tcmapx -ox.map -Tgif -ox.gif x.gv');
+					exec('dot -Tcmapx -ox.map -Tpng -ox.png x.gv');
 					?>
 					<div class="grafo">
-						<IMG SRC="x.gif" USEMAP="#mainmap" />
+						<IMG SRC="x.png" USEMAP="#mainmap" />
 					</div>
 					<?php
 					echo file_get_contents('x.map');
@@ -126,7 +129,7 @@ digraph mainmap {
 					</li>
 				</ul>
 				<p>
-					&#169; Copyright &#169; 2011. Company name all rights reserved
+					&#169; Copyright &#169; 2012
 				</p>
 				<div class="connect">
 					<a href="http://facebook.com/freewebsitetemplates" id="facebook">facebook</a>

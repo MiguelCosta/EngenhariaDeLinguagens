@@ -65,7 +65,7 @@
 				</ul>
 
 				<p>
-					&#169; Copyright &#169; 2011. Company name all rights reserved
+					&#169; Copyright &#169; 2012
 				</p>
 				<div class="connect">
 					<a href="#" id="facebook">facebook</a>

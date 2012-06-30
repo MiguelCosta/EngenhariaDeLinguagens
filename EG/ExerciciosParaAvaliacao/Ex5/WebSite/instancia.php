@@ -3,7 +3,7 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<title>About - Generic Website Template</title>
+		<title>Instâncias</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		<!--[if IE 7]>
 		<link rel="stylesheet" href="css/ie7.css" type="text/css" />
@@ -48,7 +48,10 @@
 				$dot = '
 digraph mainmap {
 graph [bgcolor=transparent];
-"' . $instanciaGET . '" [URL="instancia.php?instancia=' . $instanciaGET . '"];
+"' . $instanciaGET . '" [URL="instancia.php?instancia=' . $instanciaGET . '", 
+		color ="#800000",
+		fontcolor = white,
+		style = filled,];
 ';
 				fwrite($fh, $dot);
 				fwrite($fh, getInstanciasValores($instanciaGET));
@@ -62,17 +65,17 @@ graph [bgcolor=transparent];
 				?>
 
 				<?php
-				exec('dot -Tcmapx -ox.map -Tgif -ox.gif x.gv');
+				exec('dot -Tcmapx -ox.map -Tpng -ox.png x.gv');
 				?>
 				<h3>Valores das Propriedades:</h3>
 				<div class="grafo">
-					<IMG SRC="x.gif" USEMAP="#mainmap" />
+					<IMG SRC="x.png" USEMAP="#mainmap" />
 				</div>
 				<br/>
 				<hr />
 				<h3>Relações com outras instâncias:</h3>
 				<div class="grafo">
-					<IMG SRC="x2.gif" USEMAP="#mainmap2" />
+					<IMG SRC="x2.png" USEMAP="#mainmap2" />
 				</div>
 				<?php
 				echo file_get_contents('x.map');
@@ -96,7 +99,7 @@ graph [bgcolor=transparent];
 				</ul>
 
 				<p>
-					&#169; Copyright &#169; 2011. Company name all rights reserved
+					&#169; Copyright &#169; 2012
 				</p>
 				<div class="connect">
 					<a href="#" id="facebook">facebook</a>
@@ -124,8 +127,8 @@ ORDER BY propriedadeDados;";
 	}
 	$result = "";
 	while ($valor = mysql_fetch_array($valores)) {
-		$result .= '"' . $instanciaGET . '" [URL="instancia.php?instancia=' . $valor . '"];' . "\n";
-		$result .= "\"" . $instanciaGET . "\" -> \"" . $valor['valor'] . "\"[label=\"" . $valor['propriedadeDados'] . "\"];\n";
+		$result .= '"' . $valor['valor'] . '" [color="#800000", fontcolor="#444444"];' . "\n";
+		$result .= "\"" . $instanciaGET . "\" -> \"" . $valor['valor'] . "\"[label=\"" . $valor['propriedadeDados'] . "\", color=\"#444444\", fontcolor=\"#444444\"];\n";
 	}
 
 	return $result;
@@ -138,7 +141,10 @@ function getInstanciasConceitos($instanciaGET) {
 
 	$dot = '
 digraph mainmap2 {graph [bgcolor=transparent];';
-	$dot .= '"' . $instanciaGET . '" [URL="instancia.php?instancia=' . $instanciaGET . '"];' . "\n";
+	$dot .= '"' . $instanciaGET . '" [URL="instancia.php?instancia=' . $instanciaGET . '", 
+		color ="#800000",
+		fontcolor = white,
+		style = filled,];' . "\n";
 	fwrite($fh, $dot);
 	fwrite($fh, getInstanciasConceitosDot($instanciaGET));
 
@@ -147,7 +153,7 @@ digraph mainmap2 {graph [bgcolor=transparent];';
 
 	fclose($fh);
 
-	exec('dot -Tcmapx -ox2.map -Tgif -ox2.gif x2.gv');
+	exec('dot -Tcmapx -ox2.map -Tpng -ox2.png x2.gv');
 }
 
 function getInstanciasConceitosDot($instanciaGET) {
@@ -162,8 +168,8 @@ AND id=mapaConceitoPropConceito;";
 	}
 	$result = "";
 	while ($instancia = mysql_fetch_array($instancias)) {
-		$result .= '"' . $instancia['instanciaPai'] . '" [URL="instancia.php?instancia=' . $instancia['instanciaPai'] . '"];' . "\n";
-		$result .= ' "' . $instanciaGET . '" -> "' . $instancia['instanciaPai'] . '" [label="' . $instancia['propriedadeConceito'] . '"];' . "\n";
+		$result .= '"' . $instancia['instanciaPai'] . '" [color="#800000", fontcolor="#444444", URL="instancia.php?instancia=' . $instancia['instanciaPai'] . '"];' . "\n";
+		$result .= ' "' . $instanciaGET . '" -> "' . $instancia['instanciaPai'] . '" [label="' . $instancia['propriedadeConceito'] . '", color="#444444", fontcolor="#444444"];' . "\n";
 	}
 	return $result;
 }
