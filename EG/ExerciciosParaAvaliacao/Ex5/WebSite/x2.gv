@@ -1,6 +1,6 @@
 
-		digraph mainmap2 {graph [bgcolor=transparent];"evento" [URL="conceito.php?conceito=evento", 
-		color = blue,
+digraph mainmap2 {graph [bgcolor=transparent];"lFafe" [URL="instancia.php?instancia=lFafe", 
+		color ="#800000",
 		fontcolor = white,
 		style = filled,];
 }

@@ -1,10 +1,16 @@
 import java.util.HashSet;
+import java.util.HashMap;
 
 public class Instrucao {
 	
 	private String instrucao;
 	private HashSet<String> variaveis_definidas;
 	private HashSet<String> variaveis_referenciadas;
+	// hash que dizem as versões das variáveis
+	private HashMap<String, Integer> versoesDefinidas;
+	private HashMap<String, Integer> versoesReferenciadas;
+	// esta string já tem as variaveis com as versoes, por exemplo: a0 = max(b1,c2)
+	private String instrucaoVariaveisVersoes;
 	
 	/**
 	 * @param instrucao
@@ -31,6 +37,16 @@ public class Instrucao {
 	 */
 	public String getInstrucaoDot() {
 		return instrucao.replaceAll("\"", "'");
+	}
+	
+	/**
+	 * devolve a versão da variável
+	 */
+	public Integer getVersaoVariavel(String v){
+		if(versoesDefinidas.containsKey(v)) {
+			return versoesDefinidas.get(v);
+		} 
+		else return -1;
 	}
 	
 	/**
