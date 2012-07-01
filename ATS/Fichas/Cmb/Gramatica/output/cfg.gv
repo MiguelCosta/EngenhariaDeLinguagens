@@ -1,0 +1,20 @@
+digraph mainmap {
+graph [bgcolor=transparent];
+"START" -> "if(a==1)";
+"if(a==1)" -> "print('THEN 1')";
+"if(a==1)" -> "print('ELSE 1')";
+"print('THEN 1')" -> "if(b)";
+"if(b)" -> "print('THEN 1.1')";
+"if(b)" -> "if(1)";
+"print('THEN 1.1')" -> "print(b)";
+"if(1)" -> "print('THEN 1.1.1')";
+"if(1)" -> "while(1)";
+"print('THEN 1.1.1')" -> "print(b)";
+"while(1)" -> "if(c)";
+"while(1)" -> "print(b)";
+"if(c)" -> "while(1)";
+"if(c)" -> "print('ELSE WHILE IF 1.1.1')";
+"print('ELSE WHILE IF 1.1.1')" -> "while(1)";
+"print('ELSE 1')" -> "print(b)";
+"print(b)" -> "EXIT";
+}

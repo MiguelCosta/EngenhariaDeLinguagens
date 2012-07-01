@@ -27,25 +27,30 @@ programa returns [Grafo g_out]
 	;
 
 funcao [Grafo g_in] returns [Grafo g_out]
-	:  ^(FUNCAO cabecalho corpo_funcao[$funcao.g_in])
+	:  ^(FUNCAO cabecalho corpo_funcao[$funcao.g_in, $cabecalho.id])
 	{
 		$funcao.g_out = $corpo_funcao.g_out;
 	}
 	;
 	
-cabecalho
+cabecalho returns [String id]
 	:  ^(CAEBECALHO tipo ID argumentos?)
+	{
+		$cabecalho.id = $ID.text;	
+	}
 	;
 
 argumentos
 	:  ^(ARGUMENTOS declaracao+)
 	;
 
-corpo_funcao [Grafo g_in] returns [Grafo g_out]
+corpo_funcao [Grafo g_in, String id_funcao] returns [Grafo g_out]
 @init{
+	Grafo g = $corpo_funcao.g_in;
 	TreeSet<Integer> nrs = new TreeSet<Integer>();
 	// 0 <=> Nodo START. É passado como parametro para que o nodo START se ligue à primeira instrucao
-	nrs.add(0);
+	int nr = g.putNodo(0, new Instrucao("START", null, null));
+	nrs.add(nr);
 }
 	: ^(CORPO declaracoes statements[$corpo_funcao.g_in, "CORPO_FUNCAO", nrs])
 	{

@@ -13,7 +13,7 @@ public class Grafo {
 	public Grafo() {
 		super();
 		this.nodos = new TreeMap<Integer, Instrucao>();
-		this.nodos.put(0,new Instrucao("START", null, null));
+		//this.nodos.put(0,new Instrucao("START", null, null));
 		this.caminhos = new TreeMap<Integer, TreeSet<Integer>>();
 	}
 	
@@ -75,6 +75,12 @@ public class Grafo {
 		this.nodos.put(last_key, instrucao);
 		
 		return last_key;
+	}
+	
+	public int putNodo(int key, Instrucao instrucao){
+		this.nodos.put(key, instrucao);
+		
+		return key;
 	}
 
 	public void putCaminho(int nodo_anterior, int nodo_posterior) {

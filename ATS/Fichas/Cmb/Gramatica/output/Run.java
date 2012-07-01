@@ -19,8 +19,9 @@ public class Run {
 			CmbTGCFG.programa_return walker_ret = walker.programa();
 			//System.out.println(walker_ret.g_out);
 			
+
 			CmbTGPDG walkerPDG = new CmbTGPDG(new CommonTreeNodeStream(ret.getTree()));
-			CmbTGPDG.programa_return walkerPDG_ret = walkerPDG.programa(walker_ret.g_out);
+			CmbTGPDG.programa_return walkerPDG_ret = walkerPDG.programa();
 			System.out.println(walkerPDG_ret.g_out);
 			
 			

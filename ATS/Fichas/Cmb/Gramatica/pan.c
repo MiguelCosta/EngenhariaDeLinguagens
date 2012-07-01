@@ -7,11 +7,9 @@ void imprime(string nome)
 
 	if (a % 1) { 
 		print("THEN 1");
-		if (b) {
-			print("THEN 1.1");
-		}
-		else {
-			print("ELSE 1.1");
+		while (b) {
+			print("WHILE 1.1");
+			print("WHILE 1.2");
 		}
 	}
 	else {
