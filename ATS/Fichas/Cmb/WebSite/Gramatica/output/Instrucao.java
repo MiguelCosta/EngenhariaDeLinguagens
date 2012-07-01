@@ -70,10 +70,10 @@ public class Instrucao {
 
 	@Override
 	public String toString() {
-		return "\n\tInstrucao [\n\t\t" +
-				"instrucao=" + instrucao + ",\n\t\t" +
-				"variaveis_definidas=" + variaveis_definidas + ",\n\t\t" +
-				"variaveis_referenciadas=" + variaveis_referenciadas + "\n\t" +
+		return "Instrucao [\n\t" +
+				"instrucao=" + instrucao + ",\n\t" +
+				"variaveis_definidas=" + variaveis_definidas + ",\n\t" +
+				"variaveis_referenciadas=" + variaveis_referenciadas + "\n" +
 				"]";
 	}
 	

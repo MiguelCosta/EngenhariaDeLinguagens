@@ -15,20 +15,16 @@ public class Run {
 	 		CmbParser parser = new CmbParser(tokens);
 			CmbParser.programa_return ret = parser.programa();
 			
-			//System.out.println(((CommonTree)ret.getTree()).toStringTree());
-			//CommonTreeNodeStream nodos = new CommonTreeNodeStream(ret.getTree());
 			CmbTGCFG walker = new CmbTGCFG(new CommonTreeNodeStream(ret.getTree()));
 			CmbTGCFG.programa_return walker_ret = walker.programa();
 			System.out.println(walker_ret.g_out);
 			
+
+			CmbTGPDG walkerPDG = new CmbTGPDG(new CommonTreeNodeStream(ret.getTree()));
+			CmbTGPDG.programa_return walkerPDG_ret = walkerPDG.programa();
+			System.out.println(walkerPDG_ret.g_out);
 			
-			//CmbTGAnaliseSemantica walker2 = new CmbTGAnaliseSemantica(new CommonTreeNodeStream(ret.getTree()));
-			//CmbTGAnaliseSemantica.programa_return walker2_ret = walker2.programa(walker_ret.t);
 			
-			/*
-			CmbTGCOUNT walker2 = new CmbTGCOUNT(new CommonTreeNodeStream(ret.getTree()));
-			CmbTGCOUNT.programa_return walker2_ret = walker2.programa();
-			System.out.println(walker2_ret.n_funcoes);*/
 		}
 		catch(Exception e){
 			e.printStackTrace();
