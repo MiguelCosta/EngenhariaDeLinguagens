@@ -1,8 +1,6 @@
 
-		digraph mainmap4 {graph [bgcolor=transparent];"pessoa" [URL="conceito.php?conceito=pessoa", 
+		digraph mainmap4 {graph [bgcolor=transparent];"evento" [URL="conceito.php?conceito=evento", 
 		color ="#800000",
 		fontcolor = white,
 		style = filled,];
-"pAntonio" [color="#800000", fontcolor="#444444",URL="instancia.php?instancia=pAntonio"];
- "pessoa" -> "pAntonio" [color="#444444", fontcolor="#444444"];
 }
