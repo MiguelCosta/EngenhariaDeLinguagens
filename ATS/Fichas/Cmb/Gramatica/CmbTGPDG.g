@@ -9,6 +9,7 @@ options{
 
 @header{
 	import java.util.TreeSet;
+	import java.util.HashSet;
 }
 
 programa returns [GrafoPDG g_out]
@@ -179,25 +180,31 @@ retorna [GrafoPDG g_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_ins
 	{
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		nrs.add(g.putNodo(new Instrucao($RETURN.text + " " + $expr.instrucao, null, null)));		
+		nrs.add(g.putNodo(new Instrucao($RETURN.text + " " + $expr.instrucao, null, $expr.vars_ref)));		
 		$retorna.nrs_ultima_instrucao_out = nrs;
 		$retorna.g_out = g;
 	}
 	;
 
-invocacao [GrafoPDG g_in, String contexto] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String instrucao]
+invocacao [GrafoPDG g_in, String contexto] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String instrucao, HashSet<String> vars_ref]
 @init {
 	GrafoPDG g = $invocacao.g_in;
+	HashSet<String> variaveis_referenciadas = null;
 }
-	:  ^(INVOCACAO ID args?)
+	:  ^(INVOCACAO ID (args 
+		{
+			variaveis_referenciadas =  $args.vars_ref;
+		}
+		)?)
 	{
 		if ($invocacao.contexto.equals("FACTOR")) {
 			$invocacao.instrucao = $ID.text + "(" + $args.ags + ")";
+			$invocacao.vars_ref = variaveis_referenciadas;
 		}
 		else {
 			TreeSet<Integer> nrs = new TreeSet<Integer>();
 			// cria nodo no grafo e guarda o nr da instrucao
-			nrs.add(g.putNodo(new Instrucao($ID.text + "(" + $args.ags + ")", null, null)));
+			nrs.add(g.putNodo(new Instrucao($ID.text + "(" + $args.ags + ")", null, variaveis_referenciadas)));
 			
 			$invocacao.nrs_ultima_instrucao_out = nrs;
 			$invocacao.g_out = g;
@@ -205,18 +212,22 @@ invocacao [GrafoPDG g_in, String contexto] returns [GrafoPDG g_out, TreeSet<Inte
 	}
 	;
 
-args returns [String ags]
+args returns [String ags, HashSet<String> vars_ref]
 @init{
 	String a = "";
+	HashSet<String> variaveis_referenciadas = new HashSet<String>();
 }
 	:  ^(ARGS (expr
 	{
 		a += $expr.instrucao + ", ";
+		// so faz sentido adicionar variaveis. coisas como constantes sao devolvidas como null
+		if($expr.vars_ref != null) variaveis_referenciadas.add($expr.vars_ref);
 	}
 	)+
 	{
 		// limpa os caracteres finais ", "
 		$args.ags = a.substring(0,a.length()-2);
+		$args.vars_ref = variaveis_referenciadas;
 	}
 	)
 	;
@@ -224,12 +235,13 @@ args returns [String ags]
 atribuicao [GrafoPDG g_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out]
 @init {
 	GrafoPDG g = $atribuicao.g_in;
+	HashSet<String> variaveis_definidas = new HashSet<String>();
 }
-	:	 ^('=' ID expr)
+	:	 ^('=' ID {variaveis_definidas.add($ID.text);} expr)
 	{
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		nrs.add(g.putNodo(new Instrucao($ID.text + " = " + $expr.instrucao, null, null)));
+		nrs.add(g.putNodo(new Instrucao($ID.text + " = " + $expr.instrucao, variaveis_definidas, $expr.vars_ref)));
 		$atribuicao.nrs_ultima_instrucao_out = nrs;
 		$atribuicao.g_out = g;
 	}
@@ -243,7 +255,7 @@ write [GrafoPDG g_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instr
 	{
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		nrs.add(g.putNodo(new Instrucao($WRITE.text + "(" + $expr.instrucao + ")", null, null)));
+		nrs.add(g.putNodo(new Instrucao($WRITE.text + "(" + $expr.instrucao + ")", null, $expr.vars_ref)));
 		$write.nrs_ultima_instrucao_out = nrs;
 		$write.g_out = g;
 	}
@@ -252,12 +264,13 @@ write [GrafoPDG g_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instr
 read [GrafoPDG g_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out]
 @init {
 	GrafoPDG g = $read.g_in;
+	HashSet<String> variaveis_definidas = new HashSet<String>();
 }
-	: ^(READ ID)
+	: ^(READ ID {variaveis_definidas.add($ID.text);})
 	{
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		nrs.add(g.putNodo(new Instrucao($READ.text + "(" + $ID.text + ")", null, null)));
+		nrs.add(g.putNodo(new Instrucao($READ.text + "(" + $ID.text + ")", variaveis_definidas, null)));
 		$read.nrs_ultima_instrucao_out = nrs;
 		$read.g_out = g;
 	}
@@ -273,7 +286,7 @@ ifs [GrafoPDG g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [GrafoPDG 
 	:	^(IF expr 
 			{
 				// cria nodo no grafo e guarda o nr da instrucao
-				nr_ult_inst_exp = g.putNodo(new Instrucao($IF.text + "(" + $expr.instrucao + ")", null, null));
+				nr_ult_inst_exp = g.putNodo(new Instrucao($IF.text + "(" + $expr.instrucao + ")", null, $expr.vars_ref));
 				
 				// variavel que sera passada aos blocos para indicar o nodo que sera ligado as instrucoes de cada bloco
 				nrs_exp.add(nr_ult_inst_exp);
@@ -303,7 +316,7 @@ whiles [GrafoPDG g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [GrafoP
 	:	 ^(WHILE expr
 			{
 				// cria nodo no grafo e guarda o nr da instrucao
-				nr_ult_inst_exp = g.putNodo(new Instrucao($WHILE.text + "(" + $expr.instrucao + ")", null, null));
+				nr_ult_inst_exp = g.putNodo(new Instrucao($WHILE.text + "(" + $expr.instrucao + ")", null, $expr.vars_ref));
 				
 				// variavel que sera passada ao bloco para indicar o nodo que sera ligado as instrucoes do bloco
 				nrs_exp.add(nr_ult_inst_exp);
@@ -320,33 +333,52 @@ bloco [GrafoPDG g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [GrafoPD
 	:	statements[$bloco.g_in, "BLOCO", $bloco.nrs_ultima_instrucao_in]
 	{
 		$bloco.g_out = $statements.g_out;
-		//$bloco.nrs_ultima_instrucao_out = $statements.nrs_ultima_instrucao_out;
 	}
 //	|	^(STATEMENTS statement)
 	;
 	
-expr returns [String instrucao]
-	:	^('||' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "||" 	+ $b.instrucao;}
-	|	^('&&' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "&&" 	+ $b.instrucao;}
-	|	^('+' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "+" 	+ $b.instrucao;}
-	|	^('-' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "-" 	+ $b.instrucao;}
-	|	^('*' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "*" 	+ $b.instrucao;}
-	|	^('/' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "/" 	+ $b.instrucao;}
-	|	^(\'%' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "\%" 	+ $b.instrucao;}
-	|	^('>' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + ">" 	+ $b.instrucao;}
-	|	^('<' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "<" 	+ $b.instrucao;}
-	|	^('>=' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + ">=" 	+ $b.instrucao;}
-	| 	^('<=' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "<=" 	+ $b.instrucao;}
-	|	^('==' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "==" 	+ $b.instrucao;}
-	|	^('!=' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "!=" 	+ $b.instrucao;}
-	|	^('!' a=expr) 			{$expr.instrucao = "!" + $a.instrucao;}
-	|	factor 					{$expr.instrucao = $factor.instrucao;}
+expr returns [String instrucao, HashSet<String> vars_ref]
+@init {
+	HashSet<String> vf = null;
+}
+	:	^('||' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "||" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^('&&' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "&&" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^('+' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "+" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^('-' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "-" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^('*' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "*" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^('/' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "/" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^(\'%' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "\%" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^('>' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + ">" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^('<' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "<" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^('>=' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + ">=" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	| 	^('<=' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "<=" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^('==' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "==" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^('!=' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "!=" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^('!' a=expr) 			{$expr.instrucao = "!" + $a.instrucao; 					vf = $a.vars_ref; $expr.vars_ref = vf;}
+	|	factor 					{$expr.instrucao = $factor.instrucao;					$expr.vars_ref = $factor.vars_ref;}
 	;
 	
-factor returns [String instrucao]
-	:	ID 						{$factor.instrucao = $ID.text;}
-	| constante					{$factor.instrucao = $constante.valor;}
-	| invocacao[null, "FACTOR"]	{$factor.instrucao = $invocacao.instrucao;}
+factor returns [String instrucao, HashSet<String> vars_ref]
+@init {
+	HashSet<String> variaveis_ref = null;
+}
+	:	ID 						
+	{
+		$factor.instrucao = $ID.text; 
+		variaveis_ref = new HashSet<String>(); 
+		variaveis_ref.add($ID.text); 
+		$factor.vars_ref=variaveis_ref;
+	}
+	| constante					
+	{
+		$factor.instrucao = $constante.valor; 
+		$factor.vars_ref= null;
+	}
+	| invocacao[null, "FACTOR"]	
+	{
+		$factor.instrucao = $invocacao.instrucao; 
+		$factor.vars_ref= $invocacao.vars_ref;
+	}
 	;
 	
 constante returns [String valor]
