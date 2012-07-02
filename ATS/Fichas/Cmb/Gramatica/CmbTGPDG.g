@@ -221,7 +221,8 @@ args returns [String ags, HashSet<String> vars_ref]
 	{
 		a += $expr.instrucao + ", ";
 		// so faz sentido adicionar variaveis. coisas como constantes sao devolvidas como null
-		if($expr.vars_ref != null) variaveis_referenciadas.add($expr.vars_ref);
+		//if($expr.vars_ref != null) 
+		variaveis_referenciadas.addAll($expr.vars_ref);
 	}
 	)+
 	{
@@ -339,7 +340,7 @@ bloco [GrafoPDG g_in, TreeSet<Integer> nrs_ultima_instrucao_in] returns [GrafoPD
 	
 expr returns [String instrucao, HashSet<String> vars_ref]
 @init {
-	HashSet<String> vf = null;
+	HashSet<String> vf = new HashSet<String>();
 }
 	:	^('||' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "||" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
 	|	^('&&' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "&&" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
@@ -347,7 +348,7 @@ expr returns [String instrucao, HashSet<String> vars_ref]
 	|	^('-' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "-" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
 	|	^('*' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "*" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
 	|	^('/' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "/" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
-	|	^(\'%' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "\%" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
+	|	^(\'%' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "\%" 	+ $b.instrucao; vf = $a.vars_ref;System.out.println(">>>>>>>"+vf); vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
 	|	^('>' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + ">" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
 	|	^('<' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "<" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
 	|	^('>=' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + ">=" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
@@ -372,7 +373,7 @@ factor returns [String instrucao, HashSet<String> vars_ref]
 	| constante					
 	{
 		$factor.instrucao = $constante.valor; 
-		$factor.vars_ref= null;
+		$factor.vars_ref= new HashSet<String>();
 	}
 	| invocacao[null, "FACTOR"]	
 	{
