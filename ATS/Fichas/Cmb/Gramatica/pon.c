@@ -27,8 +27,12 @@ void imprime(string nome)
 		while(1){
 			scan(c);
 		}
+		c = "ola";
 	}
 	else {
+		while(3){
+			scan(c);
+		}
 		print(c);
 	}
 
