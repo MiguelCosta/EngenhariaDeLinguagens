@@ -11,6 +11,9 @@ public class Instrucao {
 	private HashMap<String, Integer> versoesReferenciadas;
 	// esta string já tem as variaveis com as versoes, por exemplo: a0 = max(b1,c2)
 	private String instrucaoVariaveisVersoes;
+	private String contexto;
+	private String bloco_if;
+	
 	
 	/**
 	 * @param instrucao
@@ -23,6 +26,28 @@ public class Instrucao {
 		this.instrucao = instrucao;
 		this.variaveis_definidas = variaveis_definidas;
 		this.variaveis_referenciadas = variaveis_referenciadas;
+		this.contexto = "";
+		this.bloco_if = "";
+	}
+	
+	public Instrucao(String instrucao, HashSet<String> variaveis_definidas,
+			HashSet<String> variaveis_referenciadas, String contexto) {
+		super();
+		this.instrucao = instrucao;
+		this.variaveis_definidas = variaveis_definidas;
+		this.variaveis_referenciadas = variaveis_referenciadas;
+		this.contexto = contexto;
+		this.bloco_if = "";
+	}
+	
+	public Instrucao(String instrucao, HashSet<String> variaveis_definidas,
+			HashSet<String> variaveis_referenciadas, String contexto, String bloco_if) {
+		super();
+		this.instrucao = instrucao;
+		this.variaveis_definidas = variaveis_definidas;
+		this.variaveis_referenciadas = variaveis_referenciadas;
+		this.contexto = contexto;
+		this.bloco_if = bloco_if;
 	}
 
 	/**
@@ -84,12 +109,42 @@ public class Instrucao {
 		this.variaveis_referenciadas = variaveis_referenciadas;
 	}
 
+	/**
+	 * @return the contexto
+	 */
+	public String getContexto() {
+		return contexto;
+	}
+
+	/**
+	 * @param contexto the contexto to set
+	 */
+	public void setContexto(String contexto) {
+		this.contexto = contexto;
+	}
+	
+	/**
+	 * @return the bloco_if
+	 */
+	public String getBloco_if() {
+		return bloco_if;
+	}
+
+	/**
+	 * @param bloco_if the bloco_if to set
+	 */
+	public void setBloco_if(String bloco_if) {
+		this.bloco_if = bloco_if;
+	}
+	
 	@Override
 	public String toString() {
-		return "Instrucao [\n\t" +
-				"instrucao=" + instrucao + ",\n\t" +
-				"variaveis_definidas=" + variaveis_definidas + ",\n\t" +
-				"variaveis_referenciadas=" + variaveis_referenciadas + "\n" +
+		return "Instrucao [\n\t\t" +
+				"instrucao=" + instrucao + ",\n\t\t" +
+				"variaveis_definidas=" + variaveis_definidas + ",\n\t\t" +
+				"variaveis_referenciadas=" + variaveis_referenciadas + ",\n\t\t" +
+				"contexto=" + contexto + ",\n\t\t" +
+				"bloco_if=" + bloco_if + "\n\t" +
 				"]";
 	}
 	

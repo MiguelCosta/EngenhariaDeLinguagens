@@ -1,12 +1,35 @@
 void imprime(string nome)
 {
-	string msg;
+	int a;
+	int b;
+	string c;
 
-	a = 5;
-	if (a>0) {
-		a=10;
+	print(a);
+	while(1){
+		b=a;
+		if(b){
+			a=2;
+		}
+		else {
+			a = b + a;
+		}
+		a=a;
 	}
-	max(a, 1);
-	return msg;
+	print(b);
+	while(1){
+		while(2){
+			a=a;
+		}
+		print("Teste");
+	}
+	if (a) {
+		b= b+1;
+		while(1){
+			scan(c);
+		}
+	}
+	else {
+		print(c);
+	}
 
 }
