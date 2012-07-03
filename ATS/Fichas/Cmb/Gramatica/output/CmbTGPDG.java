@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g 2012-07-03 01:16:46
+// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g 2012-07-03 05:33:27
 
 	import java.util.TreeSet;
 	import java.util.HashSet;
@@ -1627,7 +1627,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         	GrafoPDG g = g_in;
-        	HashSet<String> variaveis_referenciadas = null;
+        	HashSet<String> variaveis_referenciadas = new HashSet<String>();
         	String cx = contexto_in;
         	TreeSet<Integer> nrs_instrucao_while = nrs_instrucao_while_in;
         	String bi = bloco_if_in;

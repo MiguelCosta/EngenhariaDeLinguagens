@@ -133,7 +133,7 @@ public class Grafo {
 		return "Grafo [\n\t" +
 					"nodos=" + nodos + ",\n\n" +
 					"caminhos=" + caminhos + "\n" +
-				"]";
+				"]\n";
 	}
 	
 	public void toDot(){

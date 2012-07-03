@@ -236,7 +236,7 @@ retorna [GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while
 invocacao [GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String instrucao, HashSet<String> vars_ref, TreeSet<Integer> nrs_instrucao_while_out]
 @init {
 	GrafoPDG g = $invocacao.g_in;
-	HashSet<String> variaveis_referenciadas = null;
+	HashSet<String> variaveis_referenciadas = new HashSet<String>();
 	String cx = $invocacao.contexto_in;
 	TreeSet<Integer> nrs_instrucao_while = $invocacao.nrs_instrucao_while_in;
 	String bi = $invocacao.bloco_if_in;

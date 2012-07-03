@@ -29,3 +29,6 @@ mapaInstanciaPropDados(pAntonio, m6, "20");
 mapaInstanciaPropDados(lFafe, m8, "Fafe");
 
 mapaInstanciaPropConceito(pAntonio, m7, lFafe);
+		
+		
+	

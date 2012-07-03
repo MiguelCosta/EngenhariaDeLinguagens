@@ -10,6 +10,9 @@ public class MyThread extends Thread {
 	private CmbTGPDG _walkerPDG;
 	private CmbTGPDG.programa_return _walkerPDGRet;
 	
+	//private CmbTGSSA _walkerSSA;
+	//private CmbTGSSA.programa_return _walkerSSARet;
+	
 	/** TIPOS DISPONIVEIS
 	* 1 - CmbTGCFG
 	* 2 - CmbTGPDG
@@ -21,7 +24,8 @@ public class MyThread extends Thread {
 		 
 		 switch(tipo) {
 			 case 1: _walker = (CmbTGCFG)walker; break;
-			 case 2: _walkerPDG = (CmbTGPDG)walker; break;			 
+			 case 2: _walkerPDG = (CmbTGPDG)walker; break;
+					 //case 3: _walkerSSA = (CmbTGSSA)walker; break;			 
 		 }
 	}
 	
@@ -37,6 +41,10 @@ public class MyThread extends Thread {
 					_walkerPDGRet = _walkerPDG.programa();
 					System.out.println(_walkerPDGRet.g_out);
 					break;
+					//case 3:
+					//_walkerSSARet = _walkerSSA.programa();
+					//System.out.println(_walkerSSARet.g_out);
+					//break;
 			}
 		}catch(Exception e){
 			e.printStackTrace();

@@ -1,5 +1,17 @@
 digraph mainmap {
 graph [bgcolor=transparent];
+<<<<<<< HEAD
+"START" -> "if(b)";
+"if(b)" -> "print('THEN 1')";
+"if(b)" -> "print('ELSE 1')";
+"print('THEN 1')" -> "if(a)";
+"if(a)" -> "max(1, 2)";
+"if(a)" -> "print('THEN 2')";
+"max(1, 2)" -> "print('THEN 2')";
+"print('THEN 2')" -> "return msg";
+"print('ELSE 1')" -> "return msg";
+"return msg" -> "EXIT";
+=======
 "START" -> "while(1)";
 "while(1)" -> "b = a";
 "while(1)" -> "EXIT";
@@ -9,4 +21,5 @@ graph [bgcolor=transparent];
 "a = 2" -> "a = a";
 "a = b+a" -> "a = a";
 "a = a" -> "while(1)";
+>>>>>>> 35173ed475f5a18c789505ec8b4066df3d6b79a6
 }

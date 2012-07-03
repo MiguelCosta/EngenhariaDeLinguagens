@@ -47,6 +47,7 @@
 
 				$dot = '
 digraph mainmap {
+	rankdir = BT;
 graph [bgcolor=transparent];
 "' . $conceitoGET . '" [URL="conceito.php?conceito=' . $conceitoGET . '", color = darkorange1,
 		fontcolor = white,
@@ -140,14 +141,14 @@ function getConceitosFilhos($conceitoGET) {
 	$result = "";
 	while ($conceitoFilho = mysql_fetch_array($conceitosFilhos)) {
 		$result .= '"' . $conceitoFilho['conceitoFilho'] . '" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=' . $conceitoFilho['conceitoFilho'] . '"];' . "\n";
-		$result .= "\"" . $conceitoGET . "\" -> \"" . $conceitoFilho['conceitoFilho'] . "\"[label=é, color=\"#444444\", fontcolor=\"#444444\"];\n";
+		$result .= "\"" . $conceitoFilho['conceitoFilho'] . "\" -> \"" .  $conceitoGET . "\"[label=é, color=\"#444444\", fontcolor=\"#444444\"];\n";
 
 		$sql2 = "SELECT conceitoFilho FROM MapasConceitos WHERE conceitoPai='" . $conceitoFilho['conceitoFilho'] . "' ORDER BY conceitoFilho;";
 		$conceitos2 = mysql_query($sql2);
 		if (mysql_num_rows($conceitos2) > 0) {
 			while ($conceito2 = mysql_fetch_array($conceitos2)) {
 				$result .= '"' . $conceito2['conceitoFilho'] . '" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=' . $conceito2['conceitoFilho'] . '"];' . "\n";
-				$result .= "\"" . $conceito['conceito'] . "\" -> \"" . $conceito2['conceitoFilho'] . "\"[label=é, color=\"#444444\", fontcolor=\"#444444\"];\n";
+				$result .= "\"" .  $conceito2['conceitoFilho']  . "\" -> \"" . $conceito['conceito'] . "\"[label=é, color=\"#444444\", fontcolor=\"#444444\"];\n";
 			}
 		}
 	}

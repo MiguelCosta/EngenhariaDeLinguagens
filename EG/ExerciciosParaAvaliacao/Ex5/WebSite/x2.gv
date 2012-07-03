@@ -1,6 +1,6 @@
 
-digraph mainmap2 {graph [bgcolor=transparent];"lFafe" [URL="instancia.php?instancia=lFafe", 
-		color ="#800000",
+		digraph mainmap2 {graph [bgcolor=transparent];"morte" [URL="conceito.php?conceito=morte", 
+		color = blue,
 		fontcolor = white,
 		style = filled,];
 }
