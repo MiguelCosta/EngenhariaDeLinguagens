@@ -39,6 +39,15 @@ public class GrafoPDG extends Grafo {
 		this.dependencias_dados = dependencias_dados;
 	}
 	
+	
+	public void checkDependenciasDadosWhile(TreeSet<Integer> nrs_instrucao_while){
+//		System.out.println("Nrs instrucao do while:\t"+nrs_instrucao_while);
+	}
+	
+	public void checkDependenciasDados(Integer nr_instrucao){
+//		System.out.println("Nr instrucao no corpo da funcao:\t"+nr_instrucao);
+		
+	}
 
 	@Override
 	public String toString() {
