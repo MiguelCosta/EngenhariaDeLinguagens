@@ -30,6 +30,8 @@ int main(int x, int y)
 	b = xtop(a+2*3,a);
 	
 	print (a);
+	
+	scan (a);
 }
 
 bool xtop (bool t, int i)

@@ -1,13 +1,13 @@
 digraph mainmap {
 graph [bgcolor=transparent];
-"START" -> "if(a%1)";
-"if(a%1)" -> "print('THEN 1')";
-"if(a%1)" -> "print('ELSE 1')";
-"print('THEN 1')" -> "while(b)";
-"while(b)" -> "print('WHILE 1.1')";
-"while(b)" -> "print(b)";
-"print('WHILE 1.1')" -> "print('WHILE 1.2')";
-"print('WHILE 1.2')" -> "while(b)";
-"print('ELSE 1')" -> "print(b)";
-"print(b)" -> "EXIT";
+"START" -> "if(b)";
+"if(b)" -> "print('THEN 1')";
+"if(b)" -> "print('ELSE 1')";
+"print('THEN 1')" -> "if(a)";
+"if(a)" -> "max(1, 2)";
+"if(a)" -> "print('THEN 2')";
+"max(1, 2)" -> "print('THEN 2')";
+"print('THEN 2')" -> "return msg";
+"print('ELSE 1')" -> "return msg";
+"return msg" -> "EXIT";
 }

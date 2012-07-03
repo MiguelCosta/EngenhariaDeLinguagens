@@ -18,13 +18,14 @@ public class Run {
 			/** Tipos disponiveis para usar nas threads
 			* 1 - CmbTGCFG
 			* 2 - CmbTGPDG
+			* 3 - CmbTGSSA
 			* */
 			
 			CmbTGCFG walker = new CmbTGCFG(new CommonTreeNodeStream(ret.getTree()));			
 			//CmbTGCFG.programa_return walker_ret = walker.programa();
 			//System.out.println(walker_ret.g_out);
 			Thread tCFG = new MyThread(walker, 1);
-			tCFG.start();
+			//tCFG.start();
 			System.out.println("Começou CFG");			
 
 
@@ -32,13 +33,21 @@ public class Run {
 			//CmbTGPDG.programa_return walkerPDG_ret = walkerPDG.programa();
 			//System.out.println(walkerPDG_ret.g_out);
 			Thread tPDG = new MyThread(walkerPDG, 2);
-			tPDG.start();
+			//tPDG.start();
 			System.out.println("Começou PDG");
+			
+			CmbTGSSA walkerSSA = new CmbTGSSA(new CommonTreeNodeStream(ret.getTree()));
+			//CmbTGPDG.programa_return walkerPDG_ret = walkerPDG.programa();
+			//System.out.println(walkerPDG_ret.g_out);
+			Thread tSSA = new MyThread(walkerSSA, 3);
+			tSSA.start();
+			System.out.println("Começou SSA");
 
 
 			// esperar que terminem as threads
-			tCFG.join();
-			tPDG.join();
+			//tCFG.join();
+			//tPDG.join();
+			tSSA.join();
 			System.out.println("Terminou tudo!");
 			
 		}

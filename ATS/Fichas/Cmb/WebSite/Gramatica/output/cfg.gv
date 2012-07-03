@@ -1,28 +1,13 @@
 digraph mainmap {
 graph [bgcolor=transparent];
-"START" -> "msg = 'blabla'";
-"msg = 'blabla'" -> "msg2 = 'bilu blilu'";
-"msg2 = 'bilu blilu'" -> "scan(a)";
-"scan(a)" -> "print('ola')";
-"print('ola')" -> "if(a==1)";
-"if(a==1)" -> "print('THEN 1')";
-"if(a==1)" -> "print('ELSE 1')";
-"print('THEN 1')" -> "if(b)";
-"if(b)" -> "max(1, 5)";
-"if(b)" -> "print('THEN 2')";
-"max(1, 5)" -> "print('THEN 2')";
-"print('THEN 2')" -> "print(b)";
-"print('ELSE 1')" -> "print('ELSE 2')";
-"print('ELSE 2')" -> "print(b)";
-"print(b)" -> "while(msg!=b)";
-"while(msg!=b)" -> "print('Dentro do WHILE')";
-"while(msg!=b)" -> "print('pois')";
-"print('Dentro do WHILE')" -> "if(a)";
-"if(a)" -> "msg = 'e é isto'";
-"if(a)" -> "msg = 'e é aquilo'";
-"msg = 'e é isto'" -> "while(msg!=b)";
-"msg = 'e é aquilo'" -> "while(msg!=b)";
-"print('pois')" -> "min(a, 55)";
-"min(a, 55)" -> "return 1+2";
-"return 1+2" -> "EXIT";
+"START" -> "if(a%1)";
+"if(a%1)" -> "print('THEN 1')";
+"if(a%1)" -> "print('ELSE 1')";
+"print('THEN 1')" -> "while(b)";
+"while(b)" -> "print('WHILE 1.1')";
+"while(b)" -> "print(b)";
+"print('WHILE 1.1')" -> "print('WHILE 1.2')";
+"print('WHILE 1.2')" -> "while(b)";
+"print('ELSE 1')" -> "print(b)";
+"print(b)" -> "EXIT";
 }

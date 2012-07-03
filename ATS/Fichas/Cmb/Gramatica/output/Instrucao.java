@@ -24,6 +24,20 @@ public class Instrucao {
 		this.variaveis_definidas = variaveis_definidas;
 		this.variaveis_referenciadas = variaveis_referenciadas;
 	}
+	
+	/**
+	 * @param instrucao
+	 * @param variaveis_definidas
+	 * @param variaveis_referenciadas
+	 */
+	public Instrucao(String instrucao, HashSet<String> variaveis_definidas,
+			HashSet<String> variaveis_referenciadas, String instrucaoVariaveisVersoes) {
+		super();
+		this.instrucao = instrucao;
+		this.variaveis_definidas = variaveis_definidas;
+		this.variaveis_referenciadas = variaveis_referenciadas;
+		this.instrucaoVariaveisVersoes = instrucaoVariaveisVersoes;
+	}
 
 	/**
 	 * @return the instrucao
@@ -88,8 +102,10 @@ public class Instrucao {
 	public String toString() {
 		return "Instrucao [\n\t" +
 				"instrucao=" + instrucao + ",\n\t" +
+				"instrucaoVariaveisVersoes=" + instrucaoVariaveisVersoes + ",\n\t" +
 				"variaveis_definidas=" + variaveis_definidas + ",\n\t" +
-				"variaveis_referenciadas=" + variaveis_referenciadas + "\n" +
+				"versoesDefinidas=" + variaveis_referenciadas + "\n\t" +
+				"versoesReferenciadas=" + variaveis_referenciadas + "\n\t" +
 				"]";
 	}
 	

@@ -68,14 +68,14 @@ function getConceitosFilhos($conceitoGET){
 	$result = "";
 	while($conceitoFilho = mysql_fetch_array($conceitosFilhos)){
 		$result .= '"'.$conceitoFilho['conceitoFilho'].'" [URL="conceito.php?conceito='.$conceitoFilho['conceitoFilho'].'"];'."\n" ;
-		$result .= "\"".$conceitoGET."\" -> \"" . $conceitoFilho['conceitoFilho'] . "\"[label=é];\n";
+		$result .= "\"". $conceitoFilho['conceitoFilho'] ."\" -> \"" . $conceitoGET . "\"[label=é];\n";
 		
 		$sql2 = "SELECT conceitoFilho FROM MapasConceitos WHERE conceitoPai='".$conceitoFilho['conceitoFilho']."' ORDER BY conceitoFilho;";
 		$conceitos2 = mysql_query($sql2);
 		if (mysql_num_rows($conceitos2) > 0){
 			while($conceito2 = mysql_fetch_array($conceitos2)){
 				$result .= '"'.$conceito2['conceitoFilho'].'" [URL="conceito.php?conceito='.$conceito2['conceitoFilho'].'"];'."\n" ;
-				$result .= "\"".$conceito['conceito']."\" -> \"" . $conceito2['conceitoFilho'] . "\"[label=é];\n";
+				$result .= "\"". $conceito2['conceitoFilho'] ."\" -> \"" . $conceito['conceito'] . "\"[label=é];\n";
 			}
 		}
 	}
