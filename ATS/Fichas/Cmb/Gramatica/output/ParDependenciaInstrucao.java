@@ -3,6 +3,16 @@ public class ParDependenciaInstrucao {
 	private int ultima_instrucao_no_bloco_seguinte;
 	private boolean procurar_fora_bloco;
 	private int nr_instrucoes;
+	private int instrucao_dependente = -1;
+	private boolean reflexa;
+	
+	
+	public ParDependenciaInstrucao() {
+		super();
+		this.existe_dependencia = false;
+		this.ultima_instrucao_no_bloco_seguinte = -1;
+		this.procurar_fora_bloco = false;
+	}
 	
 	/**
 	 * @param existe_dependencia
@@ -46,6 +56,22 @@ public class ParDependenciaInstrucao {
 		this.nr_instrucoes = nr_instrucoes;
 	}
 
+	/**
+	 * 
+	 * @param reflexa
+	 * @param existe_dependencia
+	 * @param ultima_instrucao_no_bloco_seguinte
+	 * @param nr_instrucoes
+	 */
+	public ParDependenciaInstrucao(boolean reflexa, boolean existe_dependencia,
+			int ultima_instrucao_no_bloco_seguinte, int nr_instrucoes) {
+		super();
+		this.existe_dependencia = existe_dependencia;
+		this.ultima_instrucao_no_bloco_seguinte = ultima_instrucao_no_bloco_seguinte;
+		this.nr_instrucoes = nr_instrucoes;
+		this.setReflexa(reflexa);
+	}
+	
 
 	/**
 	 * @return the existe_dependencia
@@ -112,6 +138,34 @@ public class ParDependenciaInstrucao {
 	 */
 	public void setNr_instrucoes(int nr_instrucoes) {
 		this.nr_instrucoes = nr_instrucoes;
+	}
+
+	/**
+	 * @return the instrucao_dependente
+	 */
+	public int getInstrucao_dependente() {
+		return instrucao_dependente;
+	}
+
+	/**
+	 * @param instrucao_dependente the instrucao_dependente to set
+	 */
+	public void setInstrucao_dependente(int instrucao_dependente) {
+		this.instrucao_dependente = instrucao_dependente;
+	}
+
+	/**
+	 * @return the reflexa
+	 */
+	public boolean isReflexa() {
+		return reflexa;
+	}
+
+	/**
+	 * @param reflexa the reflexa to set
+	 */
+	public void setReflexa(boolean reflexa) {
+		this.reflexa = reflexa;
 	}
 	
 }

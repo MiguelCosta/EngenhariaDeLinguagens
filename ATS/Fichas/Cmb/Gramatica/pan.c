@@ -1,18 +1,29 @@
 void imprime(string nome)
 {
-	string msg;
-	string msg2;
 	int a;
-	string b;
+	int b;
+	int c;
+	int d;
 
+	a = 55;
+	b = 55;
+	c = 55;
 	while (a) {
 		b = a;
 		if (b) {
-			a = 2;
+			c = c-2;
+			a=c*2;
 		}
 		else {
 			a = b +a;
+			c = a;
 		}
 		a=a+1;
 	}
+	if (c>a) {
+		d = a +b+c;
+		c = 5;
+	}
+	d = d /c;
+
 }

@@ -71,15 +71,23 @@ public class GrafoPDG extends Grafo {
 		//percorre as instrucoes do while por ordem descendente, ou seja, da ultima instrucao para a primeira
 		for (int inst_dependente : nrs_instrucao_while.descendingSet()){
 			Instrucao i = this.getNodos().get(inst_dependente);
-			
+			System.out.println("\n\nINST_DEPENDENTE:\t"+inst_dependente+"\nPRIMEIRA INST WHILE:\t"+primeira_inst_while+"\nULTIMA INSTRUCA WHILE:\t"+ultima_inst_while);
 			// para cada variavel referenciada na instrucao vai procurar a primeira instrucao que defina essa variavel, 
 			// no conjunto de instrucoes a partir de inst_dependente e ate à instrucao que no ciclo fica imediatamente apos inst_dependente
 			for (String var_ref : i.getVariaveis_referenciadas()){
+				// se uma dependencia de dados nao foi encontrada para var_ref da instrucao inst_dependente no ciclo while
+				// entao continua-se a procurar nas instrucoes imediatamente anteriores ao ciclo while
+				boolean dep_encontrada_fora_while = false;
 				// numero de instrucoes comparadas em cada iteracao
 				int nr_inst_comparadas = 1;
 				// nr da instrucao que está a ser comparada com inst_dependente em cada iteração
 				int inst_comp = inst_dependente;
 				dep_encontrada = false;
+				// variavel auxiliar que indica que apesar da instrucao sobre a qual estamos a procura de dependencias 
+				// se encontra dentro de um bloco then ou else, as procuras a gazer sao "normais"
+				boolean proc_fora_bloco = false;
+				int dependencia_entre_blocos =  -1;
+				boolean reflexa = false;
 // TODO ter cuidado com expressoes que estao num bloco then ou else	; considerar usar checkDependenciasDados
 				// percorre o conjunto de instrucoes a partir de inst_dependente e ate à instrucao que no ciclo fica imediatamente apos inst_dependente
 				while(nr_inst_comparadas <= nr_inst_a_comparar && !dep_encontrada){
@@ -89,52 +97,93 @@ public class GrafoPDG extends Grafo {
 					
 					
 					
-					
-					// se for uma instrucao no corpo da funcao e nao se encontrar num bloco then ou else
-					if (!i_comp.getBloco_if().equals("THEN") && !i_comp.getBloco_if().equals("ELSE")) {
-						
-						
-						// se var_ref foi definida na instrucao inst_comp entao inst_dependente é dependente de inst_comp
-						if (i_comp.getVariaveis_definidas() != null && i_comp.getVariaveis_definidas().contains(var_ref)){
-							// se a dependencia detectada for na mesma instrucao
-							// entao esta dependência é guardada temporariamente
-							// porque pode ainda ser detectada uma dependencia em instrucoes anteriores
-							// nesse caso, descarta-se a dependencia temporaria e aceita-se essa nova dependencia encontrada
-							if (inst_dependente==inst_comp){
-								inst_dependente_temp = inst_dependente;
-							}
-							else {
-								inst_dependente_temp = -1;
-								// adiciona dependencia de inst_comp para inst_dependente ao grafo
-								this.putDependenciaDados(inst_comp, inst_dependente);
-								// pára de procurar por dependencias para var_ref, passando a procurar para outra variavel referenciada nesta instrucao
-								dep_encontrada = true;
+					// caso a instrucao sobre a qual estamos a tentar encontrar dependencias nao se encontre dentro de um if 
+					if ((!i.getBloco_if().equals("THEN") && !i.getBloco_if().equals("ELSE")) || proc_fora_bloco) {
+						// se for uma instrucao no corpo da funcao e nao se encontrar num bloco then ou else
+						if (!i_comp.getBloco_if().equals("THEN") && !i_comp.getBloco_if().equals("ELSE")) {
+							
+							
+							// se var_ref foi definida na instrucao inst_comp entao inst_dependente é dependente de inst_comp
+							if (i_comp.getVariaveis_definidas() != null && i_comp.getVariaveis_definidas().contains(var_ref)){
+								// se a dependencia detectada for na mesma instrucao
+								// entao esta dependência é guardada temporariamente
+								// porque pode ainda ser detectada uma dependencia em instrucoes anteriores
+								// nesse caso, descarta-se a dependencia temporaria e aceita-se essa nova dependencia encontrada
+								if (inst_dependente==inst_comp){
+									inst_dependente_temp = inst_dependente;
+								}
+								else {
+									inst_dependente_temp = -1;
+									// adiciona dependencia de inst_comp para inst_dependente ao grafo
+									this.putDependenciaDados(inst_comp, inst_dependente);
+									// pára de procurar por dependencias para var_ref, passando a procurar para outra variavel referenciada nesta instrucao
+									dep_encontrada = true;
+								}
+								// Se uma dependencia for encontrada entao uma suposta dependencia entre blocos de um if deixa de ser possivel
+								if (dependencia_entre_blocos!=-1) {
+									dependencia_entre_blocos=-1;
+								}
+								// se a dependencia encontrada for entre uma instrucao e outra que seja posterior à primeira 
+								// entao ainda é necessario procurar fora do ciclo while
+								if (inst_comp < inst_dependente) dep_encontrada_fora_while = true;
 							}
 						}
-					}
-					// se for uma instrucao num bloco else procura no bloco else e tambem no then
-					else if (i_comp.getBloco_if().equals("ELSE")) {
-						ParDependenciaInstrucao pdi_else = checkDependenciasDadosElse(inst_comp, inst_dependente, var_ref);
-						ParDependenciaInstrucao pdi_then = checkDependenciasDadosThen(pdi_else.getUltima_instrucao_no_bloco_seguinte(), inst_dependente, var_ref);
-						
-						if (pdi_else.isExiste_dependencia() && pdi_then.isExiste_dependencia()) 
-							dep_encontrada = true;
-						else 
+						// se for uma instrucao num bloco else procura no bloco else e tambem no then
+						else if (i_comp.getBloco_if().equals("ELSE")) {System.out.println("\tEntrou ELSE");
+							ParDependenciaInstrucao pdi_else = checkDependenciasDadosElse(inst_comp, inst_dependente, var_ref, nr_inst_comparadas ,nr_inst_a_comparar);
+							ParDependenciaInstrucao pdi_then = checkDependenciasDadosThen(pdi_else.getUltima_instrucao_no_bloco_seguinte(), inst_dependente, var_ref, nr_inst_comparadas ,nr_inst_a_comparar);
+							
+							// se existir uma dependencia tanto no boco then como no else 
+							// entao nao vale a pena procurar mais
+							if (pdi_else.isExiste_dependencia() && pdi_then.isExiste_dependencia()) {
+								dep_encontrada = true;
+								inst_dependente_temp = -1;
+								// nao necessita de procurar fora do ciclo while
+								dep_encontrada_fora_while = true;
+							}
+							else 
+								dep_encontrada = false;
+							inst_comp = pdi_then.getUltima_instrucao_no_bloco_seguinte()+1;
+							nr_instrucoes = pdi_else.getNr_instrucoes() + pdi_then.getNr_instrucoes();
+							
+						}
+						// se for uma instrucao num bloco then procura no bloco then e tambem nas instrucoes anteriores a expressao if
+						else if (i_comp.getBloco_if().equals("THEN")) {System.out.println("\tEntrou THEN");
+							ParDependenciaInstrucao pdi_then = checkDependenciasDadosThen(inst_comp, inst_dependente, var_ref, nr_inst_comparadas ,nr_inst_a_comparar);
+							
 							dep_encontrada = false;
-						// TODO garantir que o +1 está correcto
+							inst_comp = pdi_then.getUltima_instrucao_no_bloco_seguinte()+1;
+							nr_instrucoes = pdi_then.getNr_instrucoes();
+						}
+					}
+					// caso a instrucao sobre a qual estamos a tentar encontrar dependencias se encontre dentro de um else procura apenas no bloco else e fora do bloco if
+					else if (i.getBloco_if().equals("ELSE")) {
+						ParDependenciaInstrucao pdi_else = checkDependenciasDadosElse(inst_comp, inst_dependente, var_ref, nr_inst_comparadas ,nr_inst_a_comparar);
+						ParDependenciaInstrucao pdi_then = checkDependenciasDadosThen(pdi_else.getUltima_instrucao_no_bloco_seguinte(), var_ref, nr_inst_comparadas ,nr_inst_a_comparar, pdi_else.isExiste_dependencia());
+						
+						if(dep_encontrada = pdi_else.isExiste_dependencia()){
+							if (pdi_then.isExiste_dependencia())
+								dependencia_entre_blocos = pdi_then.getInstrucao_dependente();
+							dep_encontrada_fora_while = true;
+						}
+						
 						inst_comp = pdi_then.getUltima_instrucao_no_bloco_seguinte()+1;
 						nr_instrucoes = pdi_else.getNr_instrucoes() + pdi_then.getNr_instrucoes();
-					}
-					// se for uma instrucao num bloco then procura no bloco then e tambem nas instrucoes anteriores a expressao if
-					else if (i_comp.getBloco_if().equals("THEN")) {
-						ParDependenciaInstrucao pdi_then = checkDependenciasDadosThen(inst_comp, inst_dependente, var_ref);
+						reflexa = pdi_else.isReflexa() && pdi_then.isReflexa();
 						
-						dep_encontrada = false;
-						// TODO garantir que o +1 está correcto
-						inst_comp = pdi_then.getUltima_instrucao_no_bloco_seguinte()+1;
-						nr_instrucoes = pdi_then.getNr_instrucoes();
+						proc_fora_bloco = true;
 					}
-					
+					// caso a instrucao sobre a qual estamos a tentar encontrar dependencias se encontre dentro de um then procura apenas no bloco then e fora do bloco if
+					else if (i.getBloco_if().equals("THEN")) {
+						ParDependenciaInstrucao pdi_then = checkDependenciasDadosThen(inst_comp, inst_dependente, var_ref, nr_inst_comparadas ,nr_inst_a_comparar);
+						
+						dep_encontrada = pdi_then.isExiste_dependencia();
+						if (dep_encontrada) dep_encontrada_fora_while = true;
+						inst_comp = pdi_then.getUltima_instrucao_no_bloco_seguinte()+1;
+						proc_fora_bloco = true;
+						reflexa = pdi_then.isReflexa();
+					}
+					// TODO para instrucoes que estejam num while de outro nivel mais interno nao vai funcionar
 					
 					
 					
@@ -149,7 +198,8 @@ public class GrafoPDG extends Grafo {
 					// incrementa o numero de instrucoes comparadas
 					System.out.println("NR DE INSTRUCOES COMPARADAS:\t"+nr_instrucoes);
 					nr_inst_comparadas += nr_instrucoes;
-				}
+					System.out.println("PROXIMA ISNTRUCAO A COMPARAR:\t"+inst_comp+"\nDEPENDENCIA ENCONTRADA:\t"+dep_encontrada);
+				}System.out.println("PAROU COMPARACAO DE INSTRUCOES");
 				
 				// se a dependencia temporaria nao tiver sido descartada entao adiciona-se esta dependência ao grafo
 				if (inst_dependente_temp != -1){
@@ -157,16 +207,24 @@ public class GrafoPDG extends Grafo {
 					this.putDependenciaDados(inst_dependente_temp, inst_dependente_temp);
 					inst_dependente_temp = -1;
 				}
+				if (dependencia_entre_blocos != -1){
+					// adiciona dependencia entre blocos e inst_dependente
+					this.putDependenciaDados(dependencia_entre_blocos, inst_dependente);
+					dependencia_entre_blocos = -1;
+				}
+				if (reflexa) {
+					// adiciona dependencia de inst_dependente_temp para si mesmo ao grafo
+					this.putDependenciaDados(inst_dependente, inst_dependente);
+					reflexa = false;
+				}
 				
-				// se uma dependencia de dados nao foi encontrada para var_ref da instrucao inst_dependente no ciclo while
-				// entao continua-se a procurar nas instrucoes imediatamente anteriores ao ciclo while
-				boolean dep_encontrada_fora_while = false;
+				
 				// inicia a procura a partir da instrucao imediatamente anterior à expressao do while
 				int inst = primeira_inst_while-1;
 				boolean procurar_fora_bloco = false;
 //				System.out.println("inicia a procura a partir da instrucao imediatamente anterior à expressao do while: "+inst);
 				while (!dep_encontrada_fora_while && inst>0) {
-//					System.out.println("Esta no ciclo da procura com a variavel dep_encontrada_fora_while: "+dep_encontrada_fora_while);
+					System.out.println("Esta no ciclo da procura com a variavel dep_encontrada_fora_while: "+dep_encontrada_fora_while);
 					ParDependenciaInstrucao p = checkDependenciasDados(inst, inst_dependente, var_ref, procurar_fora_bloco);
 					dep_encontrada_fora_while = p.isExiste_dependencia();
 					inst = p.getUltima_instrucao_no_bloco_seguinte();
@@ -217,7 +275,7 @@ public class GrafoPDG extends Grafo {
 		// caso a instrucao sobre a qual estamos a tentar encontrar dependencias nao se encontre dentro de um if 
 		if ((!i_post.getBloco_if().equals("THEN") && !i_post.getBloco_if().equals("ELSE")) || procurar_fora_bloco) {
 		
-			// se a instrucao a comparar estiver num while procurar dependencias dentro do while e tambem nas isntrucoes anteriores ao while
+			// se a instrucao a comparar estiver num while procurar dependencias dentro do while e tambem nas instrucoes anteriores ao while
 			if (i.getContexto().equals("WHILE")){
 				ParDependenciaInstrucao pdi_while = checkDependenciasDadosWhile(nodo_anterior, nodo_posterior, var_ref);
 				
@@ -393,6 +451,54 @@ public class GrafoPDG extends Grafo {
 	}
 	
 	/**
+	 * 
+	 * @param nodo_anterior
+	 * @param nodo_posterior
+	 * @param var_ref
+	 * @param nr_inst_comparadas
+	 * @param nr_inst_a_comparar
+	 * @return
+	 */
+	private ParDependenciaInstrucao checkDependenciasDadosElse(int nodo_anterior, int nodo_posterior, String var_ref, int nr_inst_comparadas, int nr_inst_a_comparar) {
+		boolean dep_encontrada = false;
+		int conta_instrucoes = 0;
+		boolean reflexa = false;
+		// procura no bloco else uma dependencia de dados
+		while (!dep_encontrada && this.getNodos().get(nodo_anterior).getBloco_if().equals("ELSE") && nr_inst_comparadas <= nr_inst_a_comparar) {
+			
+//			ParDependenciaInstrucao p = checkDependenciasDados(nodo_anterior, nodo_posterior, var_ref, false);
+//			dep_encontrada = p.isExiste_dependencia();
+//			nodo_anterior = p.getUltima_instrucao_no_bloco_seguinte();
+			
+			Instrucao i = this.getNodos().get(nodo_anterior);
+			
+			// se var_ref foi definida na instrucao i
+			if (i.getVariaveis_definidas() != null && i.getVariaveis_definidas().contains(var_ref)){
+				if (nodo_anterior != nodo_posterior) {
+					// adiciona dependencia de inst_comp para inst_dependente ao grafo
+					this.putDependenciaDados(nodo_anterior, nodo_posterior);
+					// pára de procurar por dependencias para var_ref, passando a procurar para outra variavel referenciada nesta instrucao
+					dep_encontrada = true;
+					reflexa = false;
+				}
+				else
+					reflexa = true;
+			}
+			nodo_anterior--;
+			nr_inst_comparadas++;
+			conta_instrucoes++;
+		}
+		
+		// encontra a útlima instrucao do bloco then
+		while(this.getNodos().get(nodo_anterior).getBloco_if().equals("ELSE")) {
+			nodo_anterior--;
+			conta_instrucoes++;
+		}
+		
+		return new ParDependenciaInstrucao(reflexa, dep_encontrada, nodo_anterior, conta_instrucoes);
+	}
+
+	/**
 	 * Procura dependencias no bloco then e devolve a ultima instrucao do bloco anterior (expressao if) e indica se foi encontrada uma dependencia
 	 * @param nodo_anterior
 	 * @param nodo_posterior
@@ -429,6 +535,99 @@ public class GrafoPDG extends Grafo {
 		}
 		
 		return new ParDependenciaInstrucao(dep_encontrada, nodo_anterior, conta_instrucoes);
+	}
+	
+	/**
+	 * 
+	 * @param nodo_anterior
+	 * @param nodo_posterior
+	 * @param var_ref
+	 * @param nr_inst_comparadas
+	 * @param nr_inst_a_comparar
+	 * @return
+	 */
+	private ParDependenciaInstrucao checkDependenciasDadosThen(int nodo_anterior, int nodo_posterior, String var_ref, int nr_inst_comparadas, int nr_inst_a_comparar) {
+		boolean dep_encontrada = false;
+		int conta_instrucoes = 0;
+		boolean reflexa = false;
+		
+		// procura no bloco then uma dependencia de dados
+		while (!dep_encontrada && this.getNodos().get(nodo_anterior).getBloco_if().equals("THEN") && nr_inst_comparadas <= nr_inst_a_comparar) {
+			
+//			ParDependenciaInstrucao p = checkDependenciasDados(nodo_anterior, nodo_posterior, var_ref, false);
+//			dep_encontrada = p.isExiste_dependencia();
+//			nodo_anterior = p.getUltima_instrucao_no_bloco_seguinte();
+			
+			Instrucao i = this.getNodos().get(nodo_anterior);
+			
+			// se var_ref foi definida na instrucao i
+			if (i.getVariaveis_definidas() != null && i.getVariaveis_definidas().contains(var_ref)){
+				if (nodo_anterior != nodo_posterior) {
+					// adiciona dependencia de inst_comp para inst_dependente ao grafo
+					this.putDependenciaDados(nodo_anterior, nodo_posterior);
+					// pára de procurar por dependencias para var_ref, passando a procurar para outra variavel referenciada nesta instrucao
+					dep_encontrada = true;
+					reflexa = false;
+				}
+				else reflexa =  true;
+			}
+			nodo_anterior--;
+			nr_inst_comparadas++;
+			conta_instrucoes++;
+		}
+		
+		// encontra a útlima isntrucao do bloco then
+		while(this.getNodos().get(nodo_anterior).getBloco_if().equals("THEN")) {
+			nodo_anterior--;
+			conta_instrucoes++;
+		}
+		
+		return new ParDependenciaInstrucao(reflexa, dep_encontrada, nodo_anterior, conta_instrucoes);
+	}
+	
+	/**
+	 * Verifica apenas se existe dependencia de dados dentro de um bloco then
+	 * @param nodo_anterior
+	 * @param var_ref
+	 * @return se encontrou dependencia, o nr da isntrucao da expressao do if e o nr de instrucoes comparadas
+	 */
+	private ParDependenciaInstrucao checkDependenciasDadosThen(int nodo_anterior, String var_ref, int nr_inst_comparadas, int nr_inst_a_comparar, boolean dep_encontrada) {
+		int conta_instrucoes = 0;
+		boolean reflexa = false;
+		ParDependenciaInstrucao p = new ParDependenciaInstrucao();
+		
+		// procura no bloco then uma dependencia de dados
+		while (!dep_encontrada && this.getNodos().get(nodo_anterior).getBloco_if().equals("THEN") && nr_inst_comparadas <= nr_inst_a_comparar) {
+			
+//			ParDependenciaInstrucao p = checkDependenciasDados(nodo_anterior, nodo_posterior, var_ref, false);
+//			dep_encontrada = p.isExiste_dependencia();
+//			nodo_anterior = p.getUltima_instrucao_no_bloco_seguinte();
+			
+			Instrucao i = this.getNodos().get(nodo_anterior);
+			
+			// se var_ref foi definida na instrucao i
+			if (i.getVariaveis_definidas() != null && i.getVariaveis_definidas().contains(var_ref)){
+				// pára de procurar por dependencias para var_ref, passando a procurar para outra variavel referenciada nesta instrucao
+				dep_encontrada = true;
+				p.setInstrucao_dependente(nodo_anterior);
+				reflexa = false;
+			}
+			nodo_anterior--;
+			nr_inst_comparadas++;
+			conta_instrucoes++;
+		}
+		
+		// encontra a útlima isntrucao do bloco then
+		while(this.getNodos().get(nodo_anterior).getBloco_if().equals("THEN")) {
+			nodo_anterior--;
+			conta_instrucoes++;
+		}
+		
+		p.setExiste_dependencia(dep_encontrada);
+		p.setUltima_instrucao_no_bloco_seguinte(nodo_anterior);
+		p.setNr_instrucoes(conta_instrucoes);
+		p.setReflexa(reflexa);
+		return p;
 	}
 	
 	/**
