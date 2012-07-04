@@ -40,6 +40,18 @@ public class GrafoPDG extends Grafo {
 		this.dependencias_dados = dependencias_dados;
 	}
 	
+	public void putDependenciaDados(int nodo_anterior, int nodo_posterior) {
+		if (this.dependencias_dados.containsKey(nodo_anterior)){
+			TreeSet<Integer> caminhos_posteriores = this.dependencias_dados.get(nodo_anterior);
+			caminhos_posteriores.add(nodo_posterior);
+		}
+		else {
+			TreeSet<Integer> c = new TreeSet<Integer>();
+			c.add(nodo_posterior);
+			this.dependencias_dados.put(nodo_anterior, c);
+		}
+	}
+	
 	
 	public void checkDependenciasDadosWhile(TreeSet<Integer> nrs_instrucao_while){
 //		System.out.println("Nrs instrucao no while:\t"+nrs_instrucao_while);
@@ -56,11 +68,8 @@ public class GrafoPDG extends Grafo {
 		// variavel auxiliar que indica se uma dependencia foi encontrada
 		boolean dep_encontrada = false;
 		
-		Iterator<Integer> it_nr = nrs_instrucao_while.descendingIterator();
-		
 		//percorre as instrucoes do while por ordem descendente, ou seja, da ultima instrucao para a primeira
-		while(it_nr.hasNext()){
-			int inst_dependente = it_nr.next();
+		for (int inst_dependente : nrs_instrucao_while.descendingSet()){
 			Instrucao i = this.getNodos().get(inst_dependente);
 			
 			// para cada variavel referenciada na instrucao vai procurar a primeira instrucao que defina essa variavel, 
@@ -87,7 +96,8 @@ public class GrafoPDG extends Grafo {
 						}
 						else {
 							inst_dependente_temp = -1;
-							// TODO adicionar dep de nr_def para nr ao grafo
+							// adiciona dependencia de inst_comp para inst_dependente ao grafo
+							this.putDependenciaDados(inst_comp, inst_dependente);
 							// pára de procurar por dependencias para var_ref, passando a procurar para outra variavel referenciada nesta instrucao
 							dep_encontrada = true;
 							System.out.println("DEPENDENCIA ENCONTRADA para "+var_ref+".\n\t"+inst_comp+" --> "+inst_dependente+"\n");
@@ -103,21 +113,45 @@ public class GrafoPDG extends Grafo {
 				
 				// se a dependencia temporaria nao tiver sido descartada entao adiciona-se esta dependência ao grafo
 				if (inst_dependente_temp != -1){
-					// TODO adicionar dep de inst_dependente_temp para si mesmo ao grafo
+					// adiciona dependencia de inst_dependente_temp para si mesmo ao grafo
+					this.putDependenciaDados(inst_dependente_temp, inst_dependente_temp);
 					inst_dependente_temp = -1;
 				}
-				// se uma dependencia de dados nao foi encontrada para var_ref da instrucao inst_dependente
+				
+				// se uma dependencia de dados nao foi encontrada para var_ref da instrucao inst_dependente no ciclo while
 				// entao continua-se a procurar nas instrucoes imediatamente anteriores ao ciclo while
-				else if (!dep_encontrada) {
-					// TODO continuar a procurar com o metodo normal a partir da instrucao primeira_inst_while-1
+				boolean dep_encontrada_fora_while = false;
+				// inicia a procura a partir da instrucao imediatamente anterior à expressao do while
+				int inst = primeira_inst_while-1;
+				System.out.println("ISNT "+inst);
+				while (!dep_encontrada_fora_while && inst>0) {
+					System.out.println("DEPENDENCIA ENCONTRADA para "+var_ref+".\n\t"+inst+" --> "+inst_dependente+"\n");
+					dep_encontrada_fora_while = checkDependenciasDados(inst, var_ref);
+					inst--;
 				}
 			}
 		}
 	}
 	
-	public void checkDependenciasDados(Integer nr_instrucao){
+	public void checkDependenciasDados(int nr_instrucao){
 		//System.out.println("Nr instrucao no corpo da funcao:\t"+nr_instrucao);
-		
+		Instrucao i = this.getNodos().get(nr_instrucao);
+
+		// para cada 
+		for (String var_ref : i.getVariaveis_referenciadas()){
+			boolean dep_encontrada = false;
+			// inicia a procura a partir da instrucao imediatamente anterior à expressao do while
+			int inst_comp = nr_instrucao-1;
+			while (!dep_encontrada && inst_comp>0) {
+				dep_encontrada = checkDependenciasDados(inst_comp, var_ref);
+				inst_comp--;
+			}
+		}
+	}
+	
+	public boolean checkDependenciasDados(int nr_instrucao, String var_ref){
+		//System.out.println("Nr instrucao no corpo da funcao:\t"+nr_instrucao);
+		return true;
 	}
 
 	@Override
