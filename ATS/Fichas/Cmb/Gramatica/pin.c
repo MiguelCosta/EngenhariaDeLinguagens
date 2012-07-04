@@ -2,16 +2,23 @@ void imprime(string nome)
 {
 	int a;
 	int b;
+	int c;
+	int d;
 
 	a = 55;
-	while(1){
-		b=a;
-		if(b){
-			a=2;
-		}
-		else{
-			a=b+a;
-		}
-		a=a+1;
+	b = 55;
+	c = 55;
+	a = b -a ;
+	if (b) {
+		c = a;
+		c = c + 30;
+		b = 20;
 	}
+	else {
+		c=c+1;
+		c = 10 -c;
+		b = 10;
+	}
+	d = a +b+ c;
+
 }
