@@ -1,3 +1,4 @@
+import java.util.Iterator;
 import java.util.TreeMap;
 import java.util.TreeSet;
 
@@ -39,14 +40,118 @@ public class GrafoPDG extends Grafo {
 		this.dependencias_dados = dependencias_dados;
 	}
 	
-	
-	public void checkDependenciasDadosWhile(TreeSet<Integer> nrs_instrucao_while){
-//		System.out.println("Nrs instrucao do while:\t"+nrs_instrucao_while);
+	public void putDependenciaDados(int nodo_anterior, int nodo_posterior) {
+		if (this.dependencias_dados.containsKey(nodo_anterior)){
+			TreeSet<Integer> caminhos_posteriores = this.dependencias_dados.get(nodo_anterior);
+			caminhos_posteriores.add(nodo_posterior);
+		}
+		else {
+			TreeSet<Integer> c = new TreeSet<Integer>();
+			c.add(nodo_posterior);
+			this.dependencias_dados.put(nodo_anterior, c);
+		}
 	}
 	
-	public void checkDependenciasDados(Integer nr_instrucao){
-//		System.out.println("Nr instrucao no corpo da funcao:\t"+nr_instrucao);
+	
+	public void checkDependenciasDadosWhile(TreeSet<Integer> nrs_instrucao_while){
+//		System.out.println("Nrs instrucao no while:\t"+nrs_instrucao_while);
+		System.out.println("\n\n\nACABOU BLOCO WHILE\n");
 		
+		// variavel que guarda uma dependencia temporaria. caso da dependencia de uma instrucao para si mesma
+		int inst_dependente_temp = -1;
+		// primeira instrucao do bloco while
+		int primeira_inst_while = nrs_instrucao_while.first();
+		// ultima instrucao do bloco while 
+		int ultima_inst_while = nrs_instrucao_while.last();
+		// numero de instrucoes
+		int nr_inst_a_comparar = nrs_instrucao_while.size();
+		// variavel auxiliar que indica se uma dependencia foi encontrada
+		boolean dep_encontrada = false;
+		
+		//percorre as instrucoes do while por ordem descendente, ou seja, da ultima instrucao para a primeira
+		for (int inst_dependente : nrs_instrucao_while.descendingSet()){
+			Instrucao i = this.getNodos().get(inst_dependente);
+			
+			// para cada variavel referenciada na instrucao vai procurar a primeira instrucao que defina essa variavel, 
+			// no conjunto de instrucoes a partir de inst_dependente e ate à instrucao que no ciclo fica imediatamente apos inst_dependente
+			for (String var_ref : i.getVariaveis_referenciadas()){
+				// numero de instrucoes comparadas em cada iteracao
+				int nr_inst_comparadas = 1;
+				// nr da instrucao que está a ser comparada com inst_dependente em cada iteração
+				int inst_comp = inst_dependente;
+				dep_encontrada = false;
+				
+				// percorre o conjunto de instrucoes a partir de inst_dependente e ate à instrucao que no ciclo fica imediatamente apos inst_dependente
+				while(nr_inst_comparadas <= nr_inst_a_comparar && !dep_encontrada){System.out.println("A comparar a variavel " + var_ref + " da instrucao " + inst_dependente+" com "+inst_comp);
+					Instrucao i_comp = this.getNodos().get(inst_comp);
+					
+					// se var_ref foi definida na instrucao inst_comp entao inst_dependente é dependente de inst_comp
+					if (i_comp.getVariaveis_definidas() != null && i_comp.getVariaveis_definidas().contains(var_ref)){
+						// se a dependencia detectada for na mesma instrucao
+						// entao esta dependência é guardada temporariamente
+						// porque pode ainda ser detectada uma dependencia em instrucoes anteriores
+						// nesse caso, descarta-se a dependencia temporaria e aceita-se essa nova dependencia encontrada
+						if (inst_dependente==inst_comp){
+							inst_dependente_temp = inst_dependente;
+						}
+						else {
+							inst_dependente_temp = -1;
+							// adiciona dependencia de inst_comp para inst_dependente ao grafo
+							this.putDependenciaDados(inst_comp, inst_dependente);
+							// pára de procurar por dependencias para var_ref, passando a procurar para outra variavel referenciada nesta instrucao
+							dep_encontrada = true;
+							System.out.println("DEPENDENCIA ENCONTRADA para "+var_ref+".\n\t"+inst_comp+" --> "+inst_dependente+"\n");
+						}
+					}
+					
+					// atualiza a isntrucao a ser comparada na proxima iteracao
+					if (inst_comp == primeira_inst_while) inst_comp = ultima_inst_while;
+					else inst_comp--;
+					// incrementa o numero de instrucoes comparadas
+					nr_inst_comparadas++;
+				}
+				
+				// se a dependencia temporaria nao tiver sido descartada entao adiciona-se esta dependência ao grafo
+				if (inst_dependente_temp != -1){
+					// adiciona dependencia de inst_dependente_temp para si mesmo ao grafo
+					this.putDependenciaDados(inst_dependente_temp, inst_dependente_temp);
+					inst_dependente_temp = -1;
+				}
+				
+				// se uma dependencia de dados nao foi encontrada para var_ref da instrucao inst_dependente no ciclo while
+				// entao continua-se a procurar nas instrucoes imediatamente anteriores ao ciclo while
+				boolean dep_encontrada_fora_while = false;
+				// inicia a procura a partir da instrucao imediatamente anterior à expressao do while
+				int inst = primeira_inst_while-1;
+				System.out.println("ISNT "+inst);
+				while (!dep_encontrada_fora_while && inst>0) {
+					System.out.println("DEPENDENCIA ENCONTRADA para "+var_ref+".\n\t"+inst+" --> "+inst_dependente+"\n");
+					dep_encontrada_fora_while = checkDependenciasDados(inst, var_ref);
+					inst--;
+				}
+			}
+		}
+	}
+	
+	public void checkDependenciasDados(int nr_instrucao){
+		//System.out.println("Nr instrucao no corpo da funcao:\t"+nr_instrucao);
+		Instrucao i = this.getNodos().get(nr_instrucao);
+
+		// para cada 
+		for (String var_ref : i.getVariaveis_referenciadas()){
+			boolean dep_encontrada = false;
+			// inicia a procura a partir da instrucao imediatamente anterior à expressao do while
+			int inst_comp = nr_instrucao-1;
+			while (!dep_encontrada && inst_comp>0) {
+				dep_encontrada = checkDependenciasDados(inst_comp, var_ref);
+				inst_comp--;
+			}
+		}
+	}
+	
+	public boolean checkDependenciasDados(int nr_instrucao, String var_ref){
+		//System.out.println("Nr instrucao no corpo da funcao:\t"+nr_instrucao);
+		return true;
 	}
 
 	@Override

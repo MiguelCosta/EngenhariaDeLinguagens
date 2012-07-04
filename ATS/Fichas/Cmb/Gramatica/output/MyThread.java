@@ -16,6 +16,7 @@ public class MyThread extends Thread {
 	/** TIPOS DISPONIVEIS
 	* 1 - CmbTGCFG
 	* 2 - CmbTGPDG
+	* 3 - CmbTGSSA
 	* */
 	private int _tipo;
 	
@@ -23,9 +24,9 @@ public class MyThread extends Thread {
 		 _tipo = tipo;
 		 
 		 switch(tipo) {
-			 case 1: _walker = (CmbTGCFG)walker; break;
-			 case 2: _walkerPDG = (CmbTGPDG)walker; break;
-			 case 3: _walkerSSA = (CmbTGSSA)walker; break;			 
+			case 1: _walker = (CmbTGCFG)walker; break;
+			case 2: _walkerPDG = (CmbTGPDG)walker; break;
+			case 3: _walkerSSA = (CmbTGSSA)walker; break;			 
 		 }
 	}
 	
