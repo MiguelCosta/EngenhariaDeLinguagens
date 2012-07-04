@@ -76,6 +76,11 @@ public class Instrucao {
 		return instrucao.replaceAll("\"", "'");
 	}
 	
+	public String getInstrucaoVersaoDot() {
+		if(instrucaoVariaveisVersoes == null) return  getInstrucaoDot();
+		return instrucaoVariaveisVersoes.replaceAll("\"", "'");
+	}
+	
 	/**
 	 * devolve a versão da variável
 	 */

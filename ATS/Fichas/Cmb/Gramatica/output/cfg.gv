@@ -1,25 +1,20 @@
 digraph mainmap {
 graph [bgcolor=transparent];
-<<<<<<< HEAD
-"START" -> "if(b)";
-"if(b)" -> "print('THEN 1')";
-"if(b)" -> "print('ELSE 1')";
-"print('THEN 1')" -> "if(a)";
-"if(a)" -> "max(1, 2)";
-"if(a)" -> "print('THEN 2')";
-"max(1, 2)" -> "print('THEN 2')";
-"print('THEN 2')" -> "return msg";
-"print('ELSE 1')" -> "return msg";
-"return msg" -> "EXIT";
-=======
-"START" -> "while(1)";
-"while(1)" -> "b = a";
-"while(1)" -> "EXIT";
-"b = a" -> "if(b)";
-"if(b)" -> "a = 2";
-"if(b)" -> "a = b+a";
-"a = 2" -> "a = a";
-"a = b+a" -> "a = a";
-"a = a" -> "while(1)";
->>>>>>> 35173ed475f5a18c789505ec8b4066df3d6b79a6
+"START" -> "a = 2+1";
+"a = 2+1" -> "if(a==2)";
+"if(a==2)" -> "a = a+1";
+"if(a==2)" -> "b = 5";
+"a = a+1" -> "b = 3";
+"b = 3" -> "while(a<5)";
+"b = 5" -> "while(a<5)";
+"while(a<5)" -> "a = a+5*3";
+"while(a<5)" -> "b = xtop(a+2*3, a)";
+"a = a+5*3" -> "if(a>0)";
+"if(a>0)" -> "a = a+1";
+"if(a>0)" -> "a = a-1";
+"a = a+1" -> "while(a<5)";
+"a = a-1" -> "while(a<5)";
+"b = xtop(a+2*3, a)" -> "print(a)";
+"print(a)" -> "scan(a)";
+"scan(a)" -> "EXIT";
 }

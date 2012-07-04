@@ -26,7 +26,7 @@ public class Run {
 			//System.out.println(walker_ret.g_out);
 			Thread tCFG = new MyThread(walker, 1);
 			//tCFG.start();
-			System.out.println("Começou CFG");			
+			//System.out.println("Começou CFG");			
 
 
 			CmbTGPDG walkerPDG = new CmbTGPDG(new CommonTreeNodeStream(ret.getTree()));
@@ -34,7 +34,7 @@ public class Run {
 			//System.out.println(walkerPDG_ret.g_out);
 			Thread tPDG = new MyThread(walkerPDG, 2);
 			//tPDG.start();
-			System.out.println("Começou PDG");
+			//System.out.println("Começou PDG");
 			
 			CmbTGSSA walkerSSA = new CmbTGSSA(new CommonTreeNodeStream(ret.getTree()));
 			//CmbTGPDG.programa_return walkerPDG_ret = walkerPDG.programa();
