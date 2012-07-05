@@ -13,14 +13,16 @@ public class Run {
 	 		cmcParser parser = new cmcParser(tokens);
 			cmcParser.cmc_return ret = parser.cmc();
 			
-			//System.out.println(((CommonTree)ret.getTree()).toStringTree());
-			
+			// obtem a AST utilizando as regras de reescrita da gramática criada
 			CommonTreeNodeStream tree = new CommonTreeNodeStream(ret.getTree());
-//			System.out.println(tree.toStringTree());
+
+			// Tree Walking. Utiliza a Tree Grammar criada
 			mapaconceitosTGValidacao walker = new mapaconceitosTGValidacao(tree);
 			mapaconceitosTGValidacao.cmc_return walker_ret = walker.cmc();
 			
-			//System.out.println(walker_ret.t);
+			//System.out.println(walker_ret.tab_out);
+			//System.out.println(walker_ret.erro_out);
+			
 		}
 		catch(Exception e){
 			e.printStackTrace();

@@ -3,7 +3,6 @@ tree grammar mapaconceitosTGValidacao;
 options{
 	tokenVocab=cmc;
 	ASTLabelType = CommonTree;
-	output = AST;
 	backtrack = true;
 }
 
@@ -15,7 +14,7 @@ options{
 
 
 
-cmc returns [String erro_out]
+cmc returns [Tabela tab_out, String erro_out]
 @init{
 	Tabela tab = new Tabela();
 	String erro = "Erros:";
@@ -23,7 +22,7 @@ cmc returns [String erro_out]
 @after{
 	//System.out.println("\n"+tab);
 	//System.out.println("\n\n\n"+erro);
-	System.out.println(tab.geraInstrucoesSQL());
+	//System.out.println(tab.geraInstrucoesSQL());
 }
 	:	^(CMC (conceitos[tab, erro] {tab = $conceitos.tab_out; erro = $conceitos.erro_out;})
 				(propriedadesDados[tab, erro] {tab = $propriedadesDados.tab_out; erro = $propriedadesDados.erro_out;})?
@@ -37,10 +36,11 @@ cmc returns [String erro_out]
 		)
 		{
 			$cmc.erro_out = erro;
+			$cmc.tab_out = tab;
 		}
 	;
 	
-conceitos [Tabela tab_in, String erro_in]	 returns [Tabela tab_out, String erro_out]
+conceitos [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_out]
 	:	^(CONCEITOS (conceito[$conceitos.tab_in, $conceitos.erro_in]
 	{
 		$conceitos.tab_in = $conceito.tab_out;
@@ -58,12 +58,12 @@ conceito [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_ou
 	:	^(CONCEITO STRING) 
 	{
 		Tabela t = $conceito.tab_in;
+		// adiciona o conceito à tabela
 		TreeSet<String> conceitos = t.getConceitos();
 		conceitos.add($STRING.text);
 		t.setConceitos(conceitos);
 		
 		$conceito.tab_out = t;
-		
 		$conceito.erro_out = $conceito.erro_in;
 	}
 	;
@@ -86,12 +86,12 @@ propriedadeDados [Tabela tab_in, String erro_in] returns [Tabela tab_out, String
 	:	^(PROPRIEDADEDADOS STRING)
 	{
 		Tabela t = $propriedadeDados.tab_in;
+		// adiciona a propriedade de dados à tabela
 		TreeSet<String> propriedadesDados = t.getPropriedadesDados();
 		propriedadesDados.add($STRING.text);
 		t.setPropriedadesDados(propriedadesDados);
 		
 		$propriedadeDados.tab_out = t;
-		
 		$propriedadeDados.erro_out = $propriedadeDados.erro_in ;
 	}
 	;
@@ -114,12 +114,12 @@ propriedadeConceito [Tabela tab_in, String erro_in] returns [Tabela tab_out, Str
 	:	^(PROPRIEDADECONCEITO STRING)
 	{
 		Tabela t = $propriedadeConceito.tab_in;
+		// adiciona a propriedade de conceito à tabela
 		TreeSet<String> propriedadesConceito = t.getPropriedadesConceito();
 		propriedadesConceito.add($STRING.text);
 		t.setPropriedadesConceito(propriedadesConceito);
 		
 		$propriedadeConceito.tab_out = t;
-		
 		$propriedadeConceito.erro_out = $propriedadeConceito.erro_in ;
 	}
 	;
@@ -295,7 +295,7 @@ instancia [Tabela tab_in, String erro_in] returns [Tabela tab_out, String erro_o
 		if (!(cSemErro = t.getConceitos().contains($STRING.text)))
 			erro += "\n\t("+$STRING.line+":"+$STRING.pos+")\tO conceito "+$STRING.text+" não foi definido!";
 			
-		// se nao existirem erros insere Mapa na tabela
+		// se nao existirem erros insere instancia na tabela
 		if (cSemErro) {	
 			TreeMap<String, Instancia> instancias = t.getInstancias();
 			instancias.put($ID.text, new Instancia($ID.text, $STRING.text));
