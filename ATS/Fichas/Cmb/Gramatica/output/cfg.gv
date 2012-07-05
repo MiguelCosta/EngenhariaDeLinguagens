@@ -1,20 +1,7 @@
 digraph mainmap {
 graph [bgcolor=transparent];
-"START" -> "a = 2+1";
-"a = 2+1" -> "if(a==2)";
-"if(a==2)" -> "a = a+1";
-"if(a==2)" -> "b = 5";
-"a = a+1" -> "b = 3";
-"b = 3" -> "while(a<5)";
-"b = 5" -> "while(a<5)";
-"while(a<5)" -> "a = a+5*3";
-"while(a<5)" -> "b = xtop(a+2*3, a)";
-"a = a+5*3" -> "if(a>0)";
-"if(a>0)" -> "a = a+1";
-"if(a>0)" -> "a = a-1";
-"a = a+1" -> "while(a<5)";
-"a = a-1" -> "while(a<5)";
-"b = xtop(a+2*3, a)" -> "print(a)";
-"print(a)" -> "scan(a)";
-"scan(a)" -> "EXIT";
+"START" -> "s = 'luis'";
+"s = 'luis'" -> "imprime(s)";
+"imprime(s)" -> "return s";
+"return s" -> "EXIT";
 }
