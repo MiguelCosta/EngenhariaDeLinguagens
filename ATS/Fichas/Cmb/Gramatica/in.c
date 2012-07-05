@@ -6,8 +6,6 @@ void imprime(string nome)
 	print (msg);
 }
 
-void imprime(){int a;println();}
-
 int main(int x, int y)
 {
 	int a;

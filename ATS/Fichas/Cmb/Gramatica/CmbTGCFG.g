@@ -9,27 +9,29 @@ options{
 
 @header{
 	import java.util.TreeSet;
+	import java.util.TreeMap;
 }
 
-programa returns [Grafo g_out]
+programa returns [TreeMap<String, Grafo> grafos_out]
 @init {
-	Grafo g = new Grafo();
+	TreeMap<String, Grafo> grafos = new TreeMap<String, Grafo>();
 }
-	: 	^(PROGRAMA (funcao[g]
+	: 	^(PROGRAMA (funcao[new Grafo()]
 	{
-		g = $funcao.g_out;
+		grafos.put($funcao.func_id, $funcao.g_out);
 	}
 	)+
 	{
-		$programa.g_out = g;
+		$programa.grafos_out = grafos;
 	}
 	)
 	;
 
-funcao [Grafo g_in] returns [Grafo g_out]
+funcao [Grafo g_in] returns [Grafo g_out, String func_id]
 	:  ^(FUNCAO cabecalho corpo_funcao[$funcao.g_in, $cabecalho.id])
 	{
 		$funcao.g_out = $corpo_funcao.g_out;
+		$funcao.func_id = $cabecalho.id;
 	}
 	;
 	
