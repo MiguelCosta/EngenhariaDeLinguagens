@@ -36,11 +36,11 @@ public class MyThread extends Thread {
 			switch(_tipo){
 				case 1:
 					_walkerRet = _walker.programa();
-					System.out.println(_walkerRet.grafos_out);
+					System.out.println("CFG OUTPUT:\n"+_walkerRet.grafos_out);
 					break;
 				case 2:
-					_walkerPDGRet = _walkerPDG.programa();
-					System.out.println(_walkerPDGRet.g_out);
+					//_walkerPDGRet = _walkerPDG.programa();
+					//System.out.println(_walkerPDGRet.g_out);
 					break;
 					//case 3:
 					//_walkerSSARet = _walkerSSA.programa();

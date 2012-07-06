@@ -1,7 +1,22 @@
 digraph mainmap {
 graph [bgcolor=transparent];
-"START" -> "s = 'luis'";
-"s = 'luis'" -> "imprime(s)";
-"imprime(s)" -> "return s";
-"return s" -> "EXIT";
+"START" -> "a = 55";
+"a = 55" -> "b = 55";
+"b = 55" -> "c = 55";
+"c = 55" -> "while(a)";
+"while(a)" -> "b = a";
+"while(a)" -> "if(c>a)";
+"b = a" -> "if(b)";
+"if(b)" -> "c = c-2";
+"if(b)" -> "a = b+a";
+"c = c-2" -> "a = c*2";
+"a = c*2" -> "a = a+1";
+"a = b+a" -> "c = a";
+"c = a" -> "a = a+1";
+"a = a+1" -> "while(a)";
+"if(c>a)" -> "d = a+b+c";
+"if(c>a)" -> "d = d/c";
+"d = a+b+c" -> "c = 5";
+"c = 5" -> "d = d/c";
+"d = d/c" -> "EXIT";
 }
