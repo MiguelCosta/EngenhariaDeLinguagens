@@ -1,12 +1,21 @@
 
 digraph mainmap {
-graph [bgcolor=transparent];
-"pAntonio" [URL="instancia.php?instancia=pAntonio", 
-		color ="#800000",
+	graph [bgcolor=transparent];
+	rankdir = BT;
+  CONCEITOS [URL="conceitos.php",
+		color = darkorange1,
 		fontcolor = white,
 		style = filled,];
-"20" [color="#800000", fontcolor="#444444"];
-"pAntonio" -> "20"[label="tem idade", color="#444444", fontcolor="#444444"];
-"Antonio" [color="#800000", fontcolor="#444444"];
-"pAntonio" -> "Antonio"[label="tem nome", color="#444444", fontcolor="#444444"];
+"evento" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=evento"];
+"evento" -> CONCEITOS [label=é, color="#444444", fontcolor="#444444"];
+"morte" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=morte"];
+"morte" -> "evento"[label=é, color="#444444", fontcolor="#444444"];
+"nascimento" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=nascimento"];
+"nascimento" -> "evento"[label=é, color="#444444", fontcolor="#444444"];
+"local" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=local"];
+"local" -> CONCEITOS [label=é, color="#444444", fontcolor="#444444"];
+"pessoa" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=pessoa"];
+"pessoa" -> CONCEITOS [label=é, color="#444444", fontcolor="#444444"];
+"emigrante" [color="darkorange1", fontcolor="#444444",URL="conceito.php?conceito=emigrante"];
+"emigrante" -> "pessoa"[label=é, color="#444444", fontcolor="#444444"];
 }

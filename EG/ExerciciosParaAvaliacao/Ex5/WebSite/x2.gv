@@ -1,8 +1,6 @@
 
-digraph mainmap2 {graph [bgcolor=transparent];"pAntonio" [URL="instancia.php?instancia=pAntonio", 
+digraph mainmap2 {graph [bgcolor=transparent];"lFafe" [URL="instancia.php?instancia=lFafe", 
 		color ="#800000",
 		fontcolor = white,
 		style = filled,];
-"lFafe" [color="#800000", fontcolor="#444444", URL="instancia.php?instancia=lFafe"];
- "pAntonio" -> "lFafe" [label="nasceu em", color="#444444", fontcolor="#444444"];
 }

@@ -60,6 +60,19 @@ public class Instrucao {
 		this.label = "";
 	}
 	
+	public Instrucao(String label, String instrucao, HashSet<String> variaveis_definidas,
+			HashSet<String> variaveis_referenciadas, String contexto) {
+		super();
+		this.instrucao = instrucao;
+		if (variaveis_definidas == null) this.variaveis_definidas = new HashSet<String>();
+		else this.variaveis_definidas = variaveis_definidas;
+		if (variaveis_referenciadas == null) this.variaveis_referenciadas = new HashSet<String>();
+		else this.variaveis_referenciadas = variaveis_referenciadas;
+		this.contexto = contexto;
+		this.bloco_if = "";
+		this.label = label;
+	}
+	
 	public Instrucao(String instrucao, HashSet<String> variaveis_definidas,
 			HashSet<String> variaveis_referenciadas, String contexto, String bloco_if) {
 		super();
@@ -71,6 +84,19 @@ public class Instrucao {
 		this.contexto = contexto;
 		this.bloco_if = bloco_if;
 		this.label = "";
+	}
+	
+	public Instrucao(String label, String instrucao, HashSet<String> variaveis_definidas,
+			HashSet<String> variaveis_referenciadas, String contexto, String bloco_if) {
+		super();
+		this.instrucao = instrucao;
+		if (variaveis_definidas == null) this.variaveis_definidas = new HashSet<String>();
+		else this.variaveis_definidas = variaveis_definidas;
+		if (variaveis_referenciadas == null) this.variaveis_referenciadas = new HashSet<String>();
+		else this.variaveis_referenciadas = variaveis_referenciadas;
+		this.contexto = contexto;
+		this.bloco_if = bloco_if;
+		this.label = label;
 	}
 	
 	
@@ -86,6 +112,20 @@ public class Instrucao {
 		this.bloco_if = bloco_if;
 		this.instrucaoVariaveisVersoes = instrucaoVariaveisVersoes;
 		this.label = "";
+	}
+	
+	public Instrucao(String label, String instrucao, HashSet<String> variaveis_definidas,
+			HashSet<String> variaveis_referenciadas, String contexto, String bloco_if, String instrucaoVariaveisVersoes) {
+		super();
+		this.instrucao = instrucao;
+		if (variaveis_definidas == null) this.variaveis_definidas = new HashSet<String>();
+		else this.variaveis_definidas = variaveis_definidas;
+		if (variaveis_referenciadas == null) this.variaveis_referenciadas = new HashSet<String>();
+		else this.variaveis_referenciadas = variaveis_referenciadas;
+		this.contexto = contexto;
+		this.bloco_if = bloco_if;
+		this.instrucaoVariaveisVersoes = instrucaoVariaveisVersoes;
+		this.label = label;
 	}
 
 	/**

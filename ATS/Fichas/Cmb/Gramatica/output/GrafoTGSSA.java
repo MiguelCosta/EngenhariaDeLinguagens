@@ -145,7 +145,7 @@ public class GrafoTGSSA extends Grafo {
 	}
 	
 	public void toDot(){
-		String s = "digraph mainmapSSA {\n     \n";
+		/*String s = "digraph mainmapSSA {\n     \n";
 		// graph [bgcolor=transparent];
 		TreeMap<Integer, TreeSet<Integer>> caminhos = super.getCaminhos();
 		TreeMap<Integer, Instrucao> nodos = super.getNodos();
@@ -169,7 +169,7 @@ public class GrafoTGSSA extends Grafo {
 		out.close();
 		}catch (Exception e){//Catch exception if any
 			  System.err.println("Error: " + e.getMessage());
-		 }
+		 }*/
 		
 	}
 	

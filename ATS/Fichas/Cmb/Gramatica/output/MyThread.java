@@ -7,11 +7,11 @@ public class MyThread extends Thread {
 	private CmbTGCFG _walker;
 	private CmbTGCFG.programa_return _walkerRet;
 	
-	//private CmbTGPDG _walkerPDG;
-	//private CmbTGPDG.programa_return _walkerPDGRet;
+	private CmbTGPDG _walkerPDG;
+	private CmbTGPDG.programa_return _walkerPDGRet;
 	
-	//private CmbTGSSA _walkerSSA;
-	//private CmbTGSSA.programa_return _walkerSSARet;
+	private CmbTGSSA _walkerSSA;
+	private CmbTGSSA.programa_return _walkerSSARet;
 	
 	/** TIPOS DISPONIVEIS
 	* 1 - CmbTGCFG
@@ -25,8 +25,8 @@ public class MyThread extends Thread {
 		 
 		 switch(tipo) {
 			case 1: _walker = (CmbTGCFG)walker; break;
-			//case 2: _walkerPDG = (CmbTGPDG)walker; break;
-			//case 3: _walkerSSA = (CmbTGSSA)walker; break;			 
+			case 2: _walkerPDG = (CmbTGPDG)walker; break;
+			case 3: _walkerSSA = (CmbTGSSA)walker; break;			 
 		 }
 	}
 	
@@ -40,12 +40,13 @@ public class MyThread extends Thread {
 					toDotCFG(_walkerRet.grafos_out);
 					break;
 				case 2:
-					//_walkerPDGRet = _walkerPDG.programa();
-					//System.out.println(_walkerPDGRet.g_out);
+					_walkerPDGRet = _walkerPDG.programa();
+					System.out.println(_walkerPDGRet.g_out);
 					break;
 				case 3:
-					//_walkerSSARet = _walkerSSA.programa();
-					//System.out.println(_walkerSSARet.g_out);
+					_walkerSSARet = _walkerSSA.programa();
+					System.out.println(_walkerSSARet.g_out);
+					toDotSSA(_walkerSSARet.g_out);
 					break;
 			}
 		}catch(Exception e){
@@ -77,11 +78,9 @@ public class MyThread extends Thread {
 						s += "[label=" + '"' + nl.getLabel() + '"' + "]";
 					}
  					s += ";\n\t";
-				}
-				
+				}		
 			}
 		}
-		
 		
 		s+= "}";
 		try{
@@ -95,6 +94,50 @@ public class MyThread extends Thread {
 		
 	}
 	
-	
-	
+	public void toDotSSA(GrafoTGSSA grafo){
+		String s = "digraph mainmapSSA {\ngraph [bgcolor=transparent];\n";
+		
+		// graph [bgcolor=transparent];
+		TreeMap<Integer, TreeSet<ParNrInstrucaoLabel>> caminhos = grafo.getCaminhos();
+		TreeMap<Integer, Instrucao> nodos = grafo.getNodos();
+		
+		for(Integer n : nodos.keySet()){
+			s+= '"' + nodos.get(n).getInstrucaoDot() + '"' + "[label=" + '"' +nodos.get(n).getInstrucaoVersaoDot() + '"' +"];\n";
+		}
+		
+		for(Integer o : caminhos.keySet()){
+			
+			for(ParNrInstrucaoLabel nl : caminhos.get(o)){
+				
+				//s+= '"' + nodos.get(nl.getNr_instrucao()).getInstrucaoDot() + '"' + "[label=" + '"' +nodos.get(nl.getNr_instrucao()).getInstrucaoVersaoDot() + '"' +"];\n";
+				
+				s += '"' + nodos.get(o).getInstrucaoDot() + '"';
+				s += " -> " ;
+ 				s += '"' + nodos.get(nl.getNr_instrucao()).getInstrucaoDot() + '"'; 
+ 					
+ 				if(!nl.getLabel().equals("")){
+					s += "[label=" + '"' + nl.getLabel() + '"' + "]";
+				}
+ 				s += ";\n\t";
+			}
+			
+			
+			/*for(Integer d : caminhos.get(o)){
+				
+				s+= '"' + nodos.get(o).getInstrucaoDot() + '"' + " -> " + '"' + nodos.get(d).getInstrucaoDot() + '"' +  ";\n";
+			}*/
+		}
+		
+		s+= "}";
+		try{
+			FileWriter fstream = new FileWriter("ssa.gv");
+			BufferedWriter out = new BufferedWriter(fstream);
+			out.write(s);
+			out.close();
+		} catch (Exception e){//Catch exception if any
+			  System.err.println("Error: " + e.getMessage());
+		}
+		
+	}
+		
 }
