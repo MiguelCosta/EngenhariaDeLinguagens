@@ -93,7 +93,7 @@ statements [Grafo g_in, String contexto, TreeSet<Integer> nrs_ultima_instrucao_i
 			// cria nodo EXIT
 			int nodo_exit = g.putNodo(new Instrucao("EXIT", null, null));
 			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes ao nodo EXIT
-			g.checkAndPutCaminho(nrs_ultima_instrucao, nodo_exit);
+			g.checkAndPutCaminho(nrs_ultima_instrucao, new ParNrInstrucaoLabel(nodo_exit, $statement.label_out));
 		}
 		$statements.g_out = g;
 		$statements.nrs_ultima_instrucao_out = nrs_ultima_instrucao;
@@ -112,7 +112,7 @@ statement [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in
 			g = $atribuicao.g_out;
 
 			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
-			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, $atribuicao.nrs_ultima_instrucao_out.first());
+			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel($atribuicao.nrs_ultima_instrucao_out.first(), $statement.label_in));
 			
 			$statement.g_out = g;
 			$statement.nrs_ultima_instrucao_out = $atribuicao.nrs_ultima_instrucao_out;
@@ -123,7 +123,7 @@ statement [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in
 			g = $read.g_out;
 			
 			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
-			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, $read.nrs_ultima_instrucao_out.first());
+			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel($read.nrs_ultima_instrucao_out.first(), $statement.label_in));
 			
 			$statement.g_out = g;
 			$statement.nrs_ultima_instrucao_out = $read.nrs_ultima_instrucao_out;
@@ -134,7 +134,7 @@ statement [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in
 			g = $write.g_out;
 			
 			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
-			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, $write.nrs_ultima_instrucao_out.first());
+			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel($write.nrs_ultima_instrucao_out.first(), $statement.label_in));
 			
 			$statement.g_out = g;
 			$statement.nrs_ultima_instrucao_out = $write.nrs_ultima_instrucao_out;
@@ -161,7 +161,7 @@ statement [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in
 			g = $invocacao.g_out;
 			
 			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
-			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, $invocacao.nrs_ultima_instrucao_out.first());
+			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel($invocacao.nrs_ultima_instrucao_out.first(), $statement.label_in));
 
 			$statement.g_out = g;
 			$statement.nrs_ultima_instrucao_out = $invocacao.nrs_ultima_instrucao_out;
@@ -172,7 +172,7 @@ statement [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in
 			g = $retorna.g_out;
 			
 			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
-			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, $retorna.nrs_ultima_instrucao_out.first());
+			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel($retorna.nrs_ultima_instrucao_out.first(), $statement.label_in));
 			
 			$statement.g_out = g;
 			$statement.nrs_ultima_instrucao_out = $retorna.nrs_ultima_instrucao_out;
@@ -294,7 +294,7 @@ ifs [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in] retu
 				nr_ult_inst_exp = g.putNodo(new Instrucao($ifs.label_in, $IF.text + "(" + $expr.instrucao + ")", null, null));
 				
 				// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao (expressao)
-				g.checkAndPutCaminho($ifs.nrs_ultima_instrucao_in, nr_ult_inst_exp);
+				g.checkAndPutCaminho($ifs.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel(nr_ult_inst_exp, $ifs.label_in));
 				
 				// variavel que sera passada aos blocos para indicar o nodo que sera ligado a primeira instrucao de cada bloco
 				nrs_exp.add(nr_ult_inst_exp);
@@ -323,8 +323,9 @@ ifs [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in] retu
 		{
 			$ifs.nrs_ultima_instrucao_out = nrs_out;
 			$ifs.g_out = g;
-			if(entrou_else) $ifs.label_out = "";
-			else $ifs.label_out = "F";
+			//if(entrou_else) 
+			$ifs.label_out = "";
+			//else $ifs.label_out = "F";
 			
 		}
 	;
@@ -341,7 +342,7 @@ whiles [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in] r
 				nr_ult_inst_exp = g.putNodo(new Instrucao($whiles.label_in, $WHILE.text + "(" + $expr.instrucao + ")", null, null));
 				
 				// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao (expressao)
-				g.checkAndPutCaminho($whiles.nrs_ultima_instrucao_in, nr_ult_inst_exp);
+				g.checkAndPutCaminho($whiles.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel(nr_ult_inst_exp, $whiles.label_in));
 				
 				// variavel que sera passada ao bloco para indicar o nodo que sera ligado a primeira instrucao do bloco
 				nrs_exp.add(nr_ult_inst_exp);
@@ -349,7 +350,7 @@ whiles [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in] r
 	 		bloco[g, nrs_exp, "T"] { g = $bloco.g_out; })
 		 	{
 				// verifica se existem instrucoes anteriormente executadas no bloco e conecta essas instrucoes à instrucao (expressao)
-				g.checkAndPutCaminho($bloco.nrs_ultima_instrucao_out, nr_ult_inst_exp);			 	
+				g.checkAndPutCaminho($bloco.nrs_ultima_instrucao_out, new ParNrInstrucaoLabel(nr_ult_inst_exp, $bloco.label_out));
 		 	
 		 		// é passado o nr da instrucao inicial do while, ou seja a expressao, para que  proximo statement se ligue a este
 		 		$whiles.nrs_ultima_instrucao_out = nrs_exp;
