@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g 2012-07-03 02:50:13
+// $ANTLR 3.4 /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g 2012-07-06 21:38:33
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -97,7 +97,7 @@ public TreeAdaptor getTreeAdaptor() {
     return adaptor;
 }
     public String[] getTokenNames() { return CmbParser.tokenNames; }
-    public String getGrammarFileName() { return "/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g"; }
+    public String getGrammarFileName() { return "/opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g"; }
 
 
     public static class programa_return extends ParserRuleReturnScope {
@@ -107,7 +107,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "programa"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:26:1: programa : ( funcao )+ -> ^( PROGRAMA ( funcao )+ ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:26:1: programa : ( funcao )+ -> ^( PROGRAMA ( funcao )+ ) ;
     public final CmbParser.programa_return programa() throws RecognitionException {
         CmbParser.programa_return retval = new CmbParser.programa_return();
         retval.start = input.LT(1);
@@ -120,10 +120,10 @@ public TreeAdaptor getTreeAdaptor() {
 
         RewriteRuleSubtreeStream stream_funcao=new RewriteRuleSubtreeStream(adaptor,"rule funcao");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:27:2: ( ( funcao )+ -> ^( PROGRAMA ( funcao )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:27:4: ( funcao )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:27:2: ( ( funcao )+ -> ^( PROGRAMA ( funcao )+ ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:27:4: ( funcao )+
             {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:27:4: ( funcao )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:27:4: ( funcao )+
             int cnt1=0;
             loop1:
             do {
@@ -137,7 +137,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:27:4: funcao
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:27:4: funcao
             	    {
             	    pushFollow(FOLLOW_funcao_in_programa91);
             	    funcao1=funcao();
@@ -175,7 +175,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 28:2: -> ^( PROGRAMA ( funcao )+ )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:28:5: ^( PROGRAMA ( funcao )+ )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:28:5: ^( PROGRAMA ( funcao )+ )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -233,7 +233,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "funcao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:31:1: funcao : cabecalho '{' corpo_funcao '}' -> ^( FUNCAO cabecalho corpo_funcao ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:31:1: funcao : cabecalho '{' corpo_funcao '}' -> ^( FUNCAO cabecalho corpo_funcao ) ;
     public final CmbParser.funcao_return funcao() throws RecognitionException {
         CmbParser.funcao_return retval = new CmbParser.funcao_return();
         retval.start = input.LT(1);
@@ -255,8 +255,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_cabecalho=new RewriteRuleSubtreeStream(adaptor,"rule cabecalho");
         RewriteRuleSubtreeStream stream_corpo_funcao=new RewriteRuleSubtreeStream(adaptor,"rule corpo_funcao");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:32:2: ( cabecalho '{' corpo_funcao '}' -> ^( FUNCAO cabecalho corpo_funcao ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:32:4: cabecalho '{' corpo_funcao '}'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:32:2: ( cabecalho '{' corpo_funcao '}' -> ^( FUNCAO cabecalho corpo_funcao ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:32:4: cabecalho '{' corpo_funcao '}'
             {
             pushFollow(FOLLOW_cabecalho_in_funcao113);
             cabecalho2=cabecalho();
@@ -295,7 +295,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 33:2: -> ^( FUNCAO cabecalho corpo_funcao )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:33:5: ^( FUNCAO cabecalho corpo_funcao )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:33:5: ^( FUNCAO cabecalho corpo_funcao )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -348,7 +348,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "cabecalho"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:36:1: cabecalho : tipo ID '(' ( argumentos )? ')' -> ^( CAEBECALHO tipo ID ( argumentos )? ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:36:1: cabecalho : tipo ID '(' ( argumentos )? ')' -> ^( CAEBECALHO tipo ID ( argumentos )? ) ;
     public final CmbParser.cabecalho_return cabecalho() throws RecognitionException {
         CmbParser.cabecalho_return retval = new CmbParser.cabecalho_return();
         retval.start = input.LT(1);
@@ -373,8 +373,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_tipo=new RewriteRuleSubtreeStream(adaptor,"rule tipo");
         RewriteRuleSubtreeStream stream_argumentos=new RewriteRuleSubtreeStream(adaptor,"rule argumentos");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:37:2: ( tipo ID '(' ( argumentos )? ')' -> ^( CAEBECALHO tipo ID ( argumentos )? ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:37:4: tipo ID '(' ( argumentos )? ')'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:37:2: ( tipo ID '(' ( argumentos )? ')' -> ^( CAEBECALHO tipo ID ( argumentos )? ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:37:4: tipo ID '(' ( argumentos )? ')'
             {
             pushFollow(FOLLOW_tipo_in_cabecalho142);
             tipo6=tipo();
@@ -391,7 +391,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_42.add(char_literal8);
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:37:16: ( argumentos )?
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:37:16: ( argumentos )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -400,7 +400,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt2) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:37:16: argumentos
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:37:16: argumentos
                     {
                     pushFollow(FOLLOW_argumentos_in_cabecalho148);
                     argumentos9=argumentos();
@@ -434,7 +434,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 38:2: -> ^( CAEBECALHO tipo ID ( argumentos )? )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:38:5: ^( CAEBECALHO tipo ID ( argumentos )? )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:38:5: ^( CAEBECALHO tipo ID ( argumentos )? )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -447,7 +447,7 @@ public TreeAdaptor getTreeAdaptor() {
                 stream_ID.nextNode()
                 );
 
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:38:26: ( argumentos )?
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:38:26: ( argumentos )?
                 if ( stream_argumentos.hasNext() ) {
                     adaptor.addChild(root_1, stream_argumentos.nextTree());
 
@@ -496,7 +496,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "argumentos"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:41:1: argumentos : declaracao ( ',' declaracao )* -> ^( ARGUMENTOS ( declaracao )+ ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:41:1: argumentos : declaracao ( ',' declaracao )* -> ^( ARGUMENTOS ( declaracao )+ ) ;
     public final CmbParser.argumentos_return argumentos() throws RecognitionException {
         CmbParser.argumentos_return retval = new CmbParser.argumentos_return();
         retval.start = input.LT(1);
@@ -514,8 +514,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_46=new RewriteRuleTokenStream(adaptor,"token 46");
         RewriteRuleSubtreeStream stream_declaracao=new RewriteRuleSubtreeStream(adaptor,"rule declaracao");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:42:2: ( declaracao ( ',' declaracao )* -> ^( ARGUMENTOS ( declaracao )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:42:4: declaracao ( ',' declaracao )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:42:2: ( declaracao ( ',' declaracao )* -> ^( ARGUMENTOS ( declaracao )+ ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:42:4: declaracao ( ',' declaracao )*
             {
             pushFollow(FOLLOW_declaracao_in_argumentos176);
             declaracao11=declaracao();
@@ -524,7 +524,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_declaracao.add(declaracao11.getTree());
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:42:15: ( ',' declaracao )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:42:15: ( ',' declaracao )*
             loop3:
             do {
                 int alt3=2;
@@ -537,7 +537,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt3) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:42:16: ',' declaracao
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:42:16: ',' declaracao
             	    {
             	    char_literal12=(Token)match(input,46,FOLLOW_46_in_argumentos179); if (state.failed) return retval; 
             	    if ( state.backtracking==0 ) stream_46.add(char_literal12);
@@ -574,7 +574,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 43:2: -> ^( ARGUMENTOS ( declaracao )+ )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:43:5: ^( ARGUMENTOS ( declaracao )+ )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:43:5: ^( ARGUMENTOS ( declaracao )+ )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -632,7 +632,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "corpo_funcao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:46:1: corpo_funcao : declaracoes statements -> ^( CORPO declaracoes statements ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:46:1: corpo_funcao : declaracoes statements -> ^( CORPO declaracoes statements ) ;
     public final CmbParser.corpo_funcao_return corpo_funcao() throws RecognitionException {
         CmbParser.corpo_funcao_return retval = new CmbParser.corpo_funcao_return();
         retval.start = input.LT(1);
@@ -648,8 +648,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_statements=new RewriteRuleSubtreeStream(adaptor,"rule statements");
         RewriteRuleSubtreeStream stream_declaracoes=new RewriteRuleSubtreeStream(adaptor,"rule declaracoes");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:47:2: ( declaracoes statements -> ^( CORPO declaracoes statements ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:47:4: declaracoes statements
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:47:2: ( declaracoes statements -> ^( CORPO declaracoes statements ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:47:4: declaracoes statements
             {
             pushFollow(FOLLOW_declaracoes_in_corpo_funcao204);
             declaracoes14=declaracoes();
@@ -666,7 +666,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_statements.add(statements15.getTree());
 
             // AST REWRITE
-            // elements: declaracoes, statements
+            // elements: statements, declaracoes
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -680,7 +680,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 48:2: -> ^( CORPO declaracoes statements )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:48:5: ^( CORPO declaracoes statements )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:48:5: ^( CORPO declaracoes statements )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -733,7 +733,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "declaracoes"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:52:1: declaracoes : ( declaracao ';' )+ -> ^( DECLARACOES ( declaracao )+ ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:52:1: declaracoes : ( declaracao ';' )+ -> ^( DECLARACOES ( declaracao )+ ) ;
     public final CmbParser.declaracoes_return declaracoes() throws RecognitionException {
         CmbParser.declaracoes_return retval = new CmbParser.declaracoes_return();
         retval.start = input.LT(1);
@@ -749,10 +749,10 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_49=new RewriteRuleTokenStream(adaptor,"token 49");
         RewriteRuleSubtreeStream stream_declaracao=new RewriteRuleSubtreeStream(adaptor,"rule declaracao");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:53:2: ( ( declaracao ';' )+ -> ^( DECLARACOES ( declaracao )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:53:4: ( declaracao ';' )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:53:2: ( ( declaracao ';' )+ -> ^( DECLARACOES ( declaracao )+ ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:53:4: ( declaracao ';' )+
             {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:53:4: ( declaracao ';' )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:53:4: ( declaracao ';' )+
             int cnt4=0;
             loop4:
             do {
@@ -766,7 +766,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt4) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:53:5: declaracao ';'
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:53:5: declaracao ';'
             	    {
             	    pushFollow(FOLLOW_declaracao_in_declaracoes230);
             	    declaracao16=declaracao();
@@ -808,7 +808,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 54:2: -> ^( DECLARACOES ( declaracao )+ )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:54:5: ^( DECLARACOES ( declaracao )+ )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:54:5: ^( DECLARACOES ( declaracao )+ )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -866,7 +866,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "declaracao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:57:1: declaracao : tipo ID -> ^( DECLARACAO tipo ID ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:57:1: declaracao : tipo ID -> ^( DECLARACAO tipo ID ) ;
     public final CmbParser.declaracao_return declaracao() throws RecognitionException {
         CmbParser.declaracao_return retval = new CmbParser.declaracao_return();
         retval.start = input.LT(1);
@@ -882,8 +882,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
         RewriteRuleSubtreeStream stream_tipo=new RewriteRuleSubtreeStream(adaptor,"rule tipo");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:58:2: ( tipo ID -> ^( DECLARACAO tipo ID ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:58:4: tipo ID
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:58:2: ( tipo ID -> ^( DECLARACAO tipo ID ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:58:4: tipo ID
             {
             pushFollow(FOLLOW_tipo_in_declaracao256);
             tipo18=tipo();
@@ -897,7 +897,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: ID, tipo
+            // elements: tipo, ID
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -911,7 +911,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 59:2: -> ^( DECLARACAO tipo ID )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:59:5: ^( DECLARACAO tipo ID )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:59:5: ^( DECLARACAO tipo ID )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -966,7 +966,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "tipo"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:62:1: tipo : ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:62:1: tipo : ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO );
     public final CmbParser.tipo_return tipo() throws RecognitionException {
         CmbParser.tipo_return retval = new CmbParser.tipo_return();
         retval.start = input.LT(1);
@@ -979,8 +979,8 @@ public TreeAdaptor getTreeAdaptor() {
         Object set20_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:63:2: ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:63:2: ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:
             {
             root_0 = (Object)adaptor.nil();
 
@@ -1035,7 +1035,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "statements"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:69:1: statements : ( statement )+ -> ^( STATEMENTS ( statement )+ ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:69:1: statements : ( statement )+ -> ^( STATEMENTS ( statement )+ ) ;
     public final CmbParser.statements_return statements() throws RecognitionException {
         CmbParser.statements_return retval = new CmbParser.statements_return();
         retval.start = input.LT(1);
@@ -1048,10 +1048,10 @@ public TreeAdaptor getTreeAdaptor() {
 
         RewriteRuleSubtreeStream stream_statement=new RewriteRuleSubtreeStream(adaptor,"rule statement");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:70:2: ( ( statement )+ -> ^( STATEMENTS ( statement )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:70:4: ( statement )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:70:2: ( ( statement )+ -> ^( STATEMENTS ( statement )+ ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:70:4: ( statement )+
             {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:70:4: ( statement )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:70:4: ( statement )+
             int cnt5=0;
             loop5:
             do {
@@ -1065,7 +1065,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt5) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:70:4: statement
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:70:4: statement
             	    {
             	    pushFollow(FOLLOW_statement_in_statements313);
             	    statement21=statement();
@@ -1103,7 +1103,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 71:2: -> ^( STATEMENTS ( statement )+ )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:71:5: ^( STATEMENTS ( statement )+ )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:71:5: ^( STATEMENTS ( statement )+ )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -1161,7 +1161,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "statement"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:75:1: statement : ( atribuicao ';' -> atribuicao | read ';' -> read | write ';' -> write | ifs -> ifs | whiles -> whiles | invocacao ';' -> invocacao | retorna ';' -> retorna );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:75:1: statement : ( atribuicao ';' -> atribuicao | read ';' -> read | write ';' -> write | ifs -> ifs | whiles -> whiles | invocacao ';' -> invocacao | retorna ';' -> retorna );
     public final CmbParser.statement_return statement() throws RecognitionException {
         CmbParser.statement_return retval = new CmbParser.statement_return();
         retval.start = input.LT(1);
@@ -1203,7 +1203,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_ifs=new RewriteRuleSubtreeStream(adaptor,"rule ifs");
         RewriteRuleSubtreeStream stream_invocacao=new RewriteRuleSubtreeStream(adaptor,"rule invocacao");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:76:2: ( atribuicao ';' -> atribuicao | read ';' -> read | write ';' -> write | ifs -> ifs | whiles -> whiles | invocacao ';' -> invocacao | retorna ';' -> retorna )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:76:2: ( atribuicao ';' -> atribuicao | read ';' -> read | write ';' -> write | ifs -> ifs | whiles -> whiles | invocacao ';' -> invocacao | retorna ';' -> retorna )
             int alt6=7;
             switch ( input.LA(1) ) {
             case ID:
@@ -1262,7 +1262,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt6) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:76:4: atribuicao ';'
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:76:4: atribuicao ';'
                     {
                     pushFollow(FOLLOW_atribuicao_in_statement337);
                     atribuicao22=atribuicao();
@@ -1301,7 +1301,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:77:4: read ';'
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:77:4: read ';'
                     {
                     pushFollow(FOLLOW_read_in_statement349);
                     read24=read();
@@ -1340,7 +1340,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:78:4: write ';'
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:78:4: write ';'
                     {
                     pushFollow(FOLLOW_write_in_statement361);
                     write26=write();
@@ -1379,7 +1379,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:79:4: ifs
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:79:4: ifs
                     {
                     pushFollow(FOLLOW_ifs_in_statement373);
                     ifs28=ifs();
@@ -1414,7 +1414,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:80:4: whiles
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:80:4: whiles
                     {
                     pushFollow(FOLLOW_whiles_in_statement384);
                     whiles29=whiles();
@@ -1449,7 +1449,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:81:4: invocacao ';'
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:81:4: invocacao ';'
                     {
                     pushFollow(FOLLOW_invocacao_in_statement395);
                     invocacao30=invocacao();
@@ -1488,7 +1488,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:82:4: retorna ';'
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:82:4: retorna ';'
                     {
                     pushFollow(FOLLOW_retorna_in_statement406);
                     retorna32=retorna();
@@ -1559,7 +1559,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "retorna"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:85:1: retorna : RETURN expr -> ^( RETURN expr ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:85:1: retorna : RETURN expr -> ^( RETURN expr ) ;
     public final CmbParser.retorna_return retorna() throws RecognitionException {
         CmbParser.retorna_return retval = new CmbParser.retorna_return();
         retval.start = input.LT(1);
@@ -1575,8 +1575,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_RETURN=new RewriteRuleTokenStream(adaptor,"token RETURN");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:86:2: ( RETURN expr -> ^( RETURN expr ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:86:4: RETURN expr
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:86:2: ( RETURN expr -> ^( RETURN expr ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:86:4: RETURN expr
             {
             RETURN34=(Token)match(input,RETURN,FOLLOW_RETURN_in_retorna424); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_RETURN.add(RETURN34);
@@ -1590,7 +1590,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_expr.add(expr35.getTree());
 
             // AST REWRITE
-            // elements: RETURN, expr
+            // elements: expr, RETURN
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1604,7 +1604,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 87:2: -> ^( RETURN expr )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:87:5: ^( RETURN expr )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:87:5: ^( RETURN expr )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -1655,7 +1655,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "invocacao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:90:1: invocacao : ID '(' ( args )? ')' -> ^( INVOCACAO ID ( args )? ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:90:1: invocacao : ID '(' ( args )? ')' -> ^( INVOCACAO ID ( args )? ) ;
     public final CmbParser.invocacao_return invocacao() throws RecognitionException {
         CmbParser.invocacao_return retval = new CmbParser.invocacao_return();
         retval.start = input.LT(1);
@@ -1677,8 +1677,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_ID=new RewriteRuleTokenStream(adaptor,"token ID");
         RewriteRuleSubtreeStream stream_args=new RewriteRuleSubtreeStream(adaptor,"rule args");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:91:2: ( ID '(' ( args )? ')' -> ^( INVOCACAO ID ( args )? ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:91:4: ID '(' ( args )? ')'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:91:2: ( ID '(' ( args )? ')' -> ^( INVOCACAO ID ( args )? ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:91:4: ID '(' ( args )? ')'
             {
             ID36=(Token)match(input,ID,FOLLOW_ID_in_invocacao446); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_ID.add(ID36);
@@ -1688,7 +1688,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_42.add(char_literal37);
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:91:11: ( args )?
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:91:11: ( args )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1697,7 +1697,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:91:11: args
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:91:11: args
                     {
                     pushFollow(FOLLOW_args_in_invocacao450);
                     args38=args();
@@ -1717,7 +1717,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: ID, args
+            // elements: args, ID
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1731,7 +1731,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 92:2: -> ^( INVOCACAO ID ( args )? )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:92:5: ^( INVOCACAO ID ( args )? )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:92:5: ^( INVOCACAO ID ( args )? )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -1742,7 +1742,7 @@ public TreeAdaptor getTreeAdaptor() {
                 stream_ID.nextNode()
                 );
 
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:92:20: ( args )?
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:92:20: ( args )?
                 if ( stream_args.hasNext() ) {
                     adaptor.addChild(root_1, stream_args.nextTree());
 
@@ -1791,7 +1791,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "args"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:95:1: args : expr ( ',' expr )* -> ^( ARGS ( expr )+ ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:95:1: args : expr ( ',' expr )* -> ^( ARGS ( expr )+ ) ;
     public final CmbParser.args_return args() throws RecognitionException {
         CmbParser.args_return retval = new CmbParser.args_return();
         retval.start = input.LT(1);
@@ -1809,8 +1809,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_46=new RewriteRuleTokenStream(adaptor,"token 46");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:96:2: ( expr ( ',' expr )* -> ^( ARGS ( expr )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:96:4: expr ( ',' expr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:96:2: ( expr ( ',' expr )* -> ^( ARGS ( expr )+ ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:96:4: expr ( ',' expr )*
             {
             pushFollow(FOLLOW_expr_in_args476);
             expr40=expr();
@@ -1819,7 +1819,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_expr.add(expr40.getTree());
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:96:9: ( ',' expr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:96:9: ( ',' expr )*
             loop8:
             do {
                 int alt8=2;
@@ -1832,7 +1832,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt8) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:96:11: ',' expr
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:96:11: ',' expr
             	    {
             	    char_literal41=(Token)match(input,46,FOLLOW_46_in_args480); if (state.failed) return retval; 
             	    if ( state.backtracking==0 ) stream_46.add(char_literal41);
@@ -1869,7 +1869,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 97:2: -> ^( ARGS ( expr )+ )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:97:5: ^( ARGS ( expr )+ )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:97:5: ^( ARGS ( expr )+ )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -1927,7 +1927,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "atribuicao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:100:1: atribuicao : ID '=' expr -> ^( '=' ID expr ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:100:1: atribuicao : ID '=' expr -> ^( '=' ID expr ) ;
     public final CmbParser.atribuicao_return atribuicao() throws RecognitionException {
         CmbParser.atribuicao_return retval = new CmbParser.atribuicao_return();
         retval.start = input.LT(1);
@@ -1946,8 +1946,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_52=new RewriteRuleTokenStream(adaptor,"token 52");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:101:2: ( ID '=' expr -> ^( '=' ID expr ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:101:4: ID '=' expr
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:101:2: ( ID '=' expr -> ^( '=' ID expr ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:101:4: ID '=' expr
             {
             ID43=(Token)match(input,ID,FOLLOW_ID_in_atribuicao506); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_ID.add(ID43);
@@ -1965,7 +1965,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_expr.add(expr45.getTree());
 
             // AST REWRITE
-            // elements: ID, 52, expr
+            // elements: ID, expr, 52
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1979,7 +1979,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 102:2: -> ^( '=' ID expr )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:102:5: ^( '=' ID expr )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:102:5: ^( '=' ID expr )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -2034,7 +2034,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "write"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:105:1: write : WRITE '(' expr ')' -> ^( WRITE expr ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:105:1: write : WRITE '(' expr ')' -> ^( WRITE expr ) ;
     public final CmbParser.write_return write() throws RecognitionException {
         CmbParser.write_return retval = new CmbParser.write_return();
         retval.start = input.LT(1);
@@ -2056,8 +2056,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_WRITE=new RewriteRuleTokenStream(adaptor,"token WRITE");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:106:2: ( WRITE '(' expr ')' -> ^( WRITE expr ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:106:4: WRITE '(' expr ')'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:106:2: ( WRITE '(' expr ')' -> ^( WRITE expr ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:106:4: WRITE '(' expr ')'
             {
             WRITE46=(Token)match(input,WRITE,FOLLOW_WRITE_in_write534); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_WRITE.add(WRITE46);
@@ -2079,7 +2079,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: expr, WRITE
+            // elements: WRITE, expr
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2093,7 +2093,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 107:2: -> ^( WRITE expr )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:107:5: ^( WRITE expr )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:107:5: ^( WRITE expr )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -2144,7 +2144,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "read"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:110:1: read : READ '(' ID ')' -> ^( READ ID ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:110:1: read : READ '(' ID ')' -> ^( READ ID ) ;
     public final CmbParser.read_return read() throws RecognitionException {
         CmbParser.read_return retval = new CmbParser.read_return();
         retval.start = input.LT(1);
@@ -2167,8 +2167,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleTokenStream stream_READ=new RewriteRuleTokenStream(adaptor,"token READ");
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:111:2: ( READ '(' ID ')' -> ^( READ ID ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:111:4: READ '(' ID ')'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:111:2: ( READ '(' ID ')' -> ^( READ ID ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:111:4: READ '(' ID ')'
             {
             READ50=(Token)match(input,READ,FOLLOW_READ_in_read562); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_READ.add(READ50);
@@ -2187,7 +2187,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: READ, ID
+            // elements: ID, READ
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2201,7 +2201,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 112:2: -> ^( READ ID )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:112:5: ^( READ ID )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:112:5: ^( READ ID )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -2254,7 +2254,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "ifs"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:116:1: ifs : IF '(' expr ')' bloco ( ELSE bloco )? -> ^( IF expr bloco ( bloco )? ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:116:1: ifs : IF '(' expr ')' bloco ( ELSE bloco )? -> ^( IF expr bloco ( bloco )? ) ;
     public final CmbParser.ifs_return ifs() throws RecognitionException {
         CmbParser.ifs_return retval = new CmbParser.ifs_return();
         retval.start = input.LT(1);
@@ -2284,8 +2284,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_bloco=new RewriteRuleSubtreeStream(adaptor,"rule bloco");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:2: ( IF '(' expr ')' bloco ( ELSE bloco )? -> ^( IF expr bloco ( bloco )? ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:4: IF '(' expr ')' bloco ( ELSE bloco )?
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:2: ( IF '(' expr ')' bloco ( ELSE bloco )? -> ^( IF expr bloco ( bloco )? ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:4: IF '(' expr ')' bloco ( ELSE bloco )?
             {
             IF54=(Token)match(input,IF,FOLLOW_IF_in_ifs591); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_IF.add(IF54);
@@ -2313,7 +2313,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) stream_bloco.add(bloco58.getTree());
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:26: ( ELSE bloco )?
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:26: ( ELSE bloco )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -2326,7 +2326,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt9) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:27: ELSE bloco
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:27: ELSE bloco
                     {
                     ELSE59=(Token)match(input,ELSE,FOLLOW_ELSE_in_ifs602); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_ELSE.add(ELSE59);
@@ -2346,7 +2346,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: IF, bloco, expr, bloco
+            // elements: bloco, expr, IF, bloco
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2360,7 +2360,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 118:2: -> ^( IF expr bloco ( bloco )? )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:118:5: ^( IF expr bloco ( bloco )? )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:118:5: ^( IF expr bloco ( bloco )? )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -2371,7 +2371,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 adaptor.addChild(root_1, stream_bloco.nextTree());
 
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:118:21: ( bloco )?
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:118:21: ( bloco )?
                 if ( stream_bloco.hasNext() ) {
                     adaptor.addChild(root_1, stream_bloco.nextTree());
 
@@ -2420,7 +2420,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "whiles"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:121:1: whiles : WHILE '(' expr ')' bloco -> ^( WHILE expr bloco ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:121:1: whiles : WHILE '(' expr ')' bloco -> ^( WHILE expr bloco ) ;
     public final CmbParser.whiles_return whiles() throws RecognitionException {
         CmbParser.whiles_return retval = new CmbParser.whiles_return();
         retval.start = input.LT(1);
@@ -2445,8 +2445,8 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_bloco=new RewriteRuleSubtreeStream(adaptor,"rule bloco");
         RewriteRuleSubtreeStream stream_expr=new RewriteRuleSubtreeStream(adaptor,"rule expr");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:122:2: ( WHILE '(' expr ')' bloco -> ^( WHILE expr bloco ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:122:4: WHILE '(' expr ')' bloco
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:122:2: ( WHILE '(' expr ')' bloco -> ^( WHILE expr bloco ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:122:4: WHILE '(' expr ')' bloco
             {
             WHILE61=(Token)match(input,WHILE,FOLLOW_WHILE_in_whiles634); if (state.failed) return retval; 
             if ( state.backtracking==0 ) stream_WHILE.add(WHILE61);
@@ -2489,7 +2489,7 @@ public TreeAdaptor getTreeAdaptor() {
             root_0 = (Object)adaptor.nil();
             // 123:2: -> ^( WHILE expr bloco )
             {
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:123:5: ^( WHILE expr bloco )
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:123:5: ^( WHILE expr bloco )
                 {
                 Object root_1 = (Object)adaptor.nil();
                 root_1 = (Object)adaptor.becomeRoot(
@@ -2542,7 +2542,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "bloco"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:126:1: bloco : ( '{' statements '}' -> statements | statement -> ^( STATEMENTS statement ) );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:126:1: bloco : ( '{' statements '}' -> statements | statement -> ^( STATEMENTS statement ) );
     public final CmbParser.bloco_return bloco() throws RecognitionException {
         CmbParser.bloco_return retval = new CmbParser.bloco_return();
         retval.start = input.LT(1);
@@ -2564,7 +2564,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_statement=new RewriteRuleSubtreeStream(adaptor,"rule statement");
         RewriteRuleSubtreeStream stream_statements=new RewriteRuleSubtreeStream(adaptor,"rule statements");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:127:2: ( '{' statements '}' -> statements | statement -> ^( STATEMENTS statement ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:127:2: ( '{' statements '}' -> statements | statement -> ^( STATEMENTS statement ) )
             int alt10=2;
             int LA10_0 = input.LA(1);
 
@@ -2584,7 +2584,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt10) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:127:4: '{' statements '}'
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:127:4: '{' statements '}'
                     {
                     char_literal66=(Token)match(input,56,FOLLOW_56_in_bloco664); if (state.failed) return retval; 
                     if ( state.backtracking==0 ) stream_56.add(char_literal66);
@@ -2627,7 +2627,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:128:4: statement
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:128:4: statement
                     {
                     pushFollow(FOLLOW_statement_in_bloco680);
                     statement69=statement();
@@ -2651,7 +2651,7 @@ public TreeAdaptor getTreeAdaptor() {
                     root_0 = (Object)adaptor.nil();
                     // 128:17: -> ^( STATEMENTS statement )
                     {
-                        // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:128:21: ^( STATEMENTS statement )
+                        // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:128:21: ^( STATEMENTS statement )
                         {
                         Object root_1 = (Object)adaptor.nil();
                         root_1 = (Object)adaptor.becomeRoot(
@@ -2704,7 +2704,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expr"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:131:1: expr : orExpr -> orExpr ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:131:1: expr : orExpr -> orExpr ;
     public final CmbParser.expr_return expr() throws RecognitionException {
         CmbParser.expr_return retval = new CmbParser.expr_return();
         retval.start = input.LT(1);
@@ -2717,8 +2717,8 @@ public TreeAdaptor getTreeAdaptor() {
 
         RewriteRuleSubtreeStream stream_orExpr=new RewriteRuleSubtreeStream(adaptor,"rule orExpr");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:132:2: ( orExpr -> orExpr )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:132:4: orExpr
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:132:2: ( orExpr -> orExpr )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:132:4: orExpr
             {
             pushFollow(FOLLOW_orExpr_in_expr704);
             orExpr70=orExpr();
@@ -2783,7 +2783,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "orExpr"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:136:1: orExpr : andExpr ( opOr ^ andExpr )* ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:136:1: orExpr : andExpr ( opOr ^ andExpr )* ;
     public final CmbParser.orExpr_return orExpr() throws RecognitionException {
         CmbParser.orExpr_return retval = new CmbParser.orExpr_return();
         retval.start = input.LT(1);
@@ -2800,8 +2800,8 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:137:2: ( andExpr ( opOr ^ andExpr )* )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:137:4: andExpr ( opOr ^ andExpr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:137:2: ( andExpr ( opOr ^ andExpr )* )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:137:4: andExpr ( opOr ^ andExpr )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2813,7 +2813,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, andExpr71.getTree());
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:137:12: ( opOr ^ andExpr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:137:12: ( opOr ^ andExpr )*
             loop11:
             do {
                 int alt11=2;
@@ -2826,7 +2826,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt11) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:137:13: opOr ^ andExpr
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:137:13: opOr ^ andExpr
             	    {
             	    pushFollow(FOLLOW_opOr_in_orExpr725);
             	    opOr72=opOr();
@@ -2884,7 +2884,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "andExpr"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:140:1: andExpr : equalityExpr ( opAnd ^ equalityExpr )* ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:140:1: andExpr : equalityExpr ( opAnd ^ equalityExpr )* ;
     public final CmbParser.andExpr_return andExpr() throws RecognitionException {
         CmbParser.andExpr_return retval = new CmbParser.andExpr_return();
         retval.start = input.LT(1);
@@ -2901,8 +2901,8 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:141:2: ( equalityExpr ( opAnd ^ equalityExpr )* )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:141:4: equalityExpr ( opAnd ^ equalityExpr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:141:2: ( equalityExpr ( opAnd ^ equalityExpr )* )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:141:4: equalityExpr ( opAnd ^ equalityExpr )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -2914,7 +2914,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, equalityExpr74.getTree());
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:141:16: ( opAnd ^ equalityExpr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:141:16: ( opAnd ^ equalityExpr )*
             loop12:
             do {
                 int alt12=2;
@@ -2927,7 +2927,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt12) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:141:17: opAnd ^ equalityExpr
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:141:17: opAnd ^ equalityExpr
             	    {
             	    pushFollow(FOLLOW_opAnd_in_andExpr745);
             	    opAnd75=opAnd();
@@ -2985,7 +2985,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "equalityExpr"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:144:1: equalityExpr : additiveExpr ( opRel ^ additiveExpr )* ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:144:1: equalityExpr : additiveExpr ( opRel ^ additiveExpr )* ;
     public final CmbParser.equalityExpr_return equalityExpr() throws RecognitionException {
         CmbParser.equalityExpr_return retval = new CmbParser.equalityExpr_return();
         retval.start = input.LT(1);
@@ -3002,8 +3002,8 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:145:2: ( additiveExpr ( opRel ^ additiveExpr )* )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:145:4: additiveExpr ( opRel ^ additiveExpr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:145:2: ( additiveExpr ( opRel ^ additiveExpr )* )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:145:4: additiveExpr ( opRel ^ additiveExpr )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3015,7 +3015,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, additiveExpr77.getTree());
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:145:17: ( opRel ^ additiveExpr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:145:17: ( opRel ^ additiveExpr )*
             loop13:
             do {
                 int alt13=2;
@@ -3028,7 +3028,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt13) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:145:18: opRel ^ additiveExpr
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:145:18: opRel ^ additiveExpr
             	    {
             	    pushFollow(FOLLOW_opRel_in_equalityExpr766);
             	    opRel78=opRel();
@@ -3086,7 +3086,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "additiveExpr"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:149:1: additiveExpr : multiplicativeExpr ( opAdd ^ multiplicativeExpr )* ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:149:1: additiveExpr : multiplicativeExpr ( opAdd ^ multiplicativeExpr )* ;
     public final CmbParser.additiveExpr_return additiveExpr() throws RecognitionException {
         CmbParser.additiveExpr_return retval = new CmbParser.additiveExpr_return();
         retval.start = input.LT(1);
@@ -3103,8 +3103,8 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:150:2: ( multiplicativeExpr ( opAdd ^ multiplicativeExpr )* )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:150:4: multiplicativeExpr ( opAdd ^ multiplicativeExpr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:150:2: ( multiplicativeExpr ( opAdd ^ multiplicativeExpr )* )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:150:4: multiplicativeExpr ( opAdd ^ multiplicativeExpr )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3116,7 +3116,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, multiplicativeExpr80.getTree());
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:150:23: ( opAdd ^ multiplicativeExpr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:150:23: ( opAdd ^ multiplicativeExpr )*
             loop14:
             do {
                 int alt14=2;
@@ -3129,7 +3129,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt14) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:150:24: opAdd ^ multiplicativeExpr
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:150:24: opAdd ^ multiplicativeExpr
             	    {
             	    pushFollow(FOLLOW_opAdd_in_additiveExpr787);
             	    opAdd81=opAdd();
@@ -3187,7 +3187,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "multiplicativeExpr"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:153:1: multiplicativeExpr : notExpr ( opMul ^ notExpr )* ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:153:1: multiplicativeExpr : notExpr ( opMul ^ notExpr )* ;
     public final CmbParser.multiplicativeExpr_return multiplicativeExpr() throws RecognitionException {
         CmbParser.multiplicativeExpr_return retval = new CmbParser.multiplicativeExpr_return();
         retval.start = input.LT(1);
@@ -3204,8 +3204,8 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:154:2: ( notExpr ( opMul ^ notExpr )* )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:154:4: notExpr ( opMul ^ notExpr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:154:2: ( notExpr ( opMul ^ notExpr )* )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:154:4: notExpr ( opMul ^ notExpr )*
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3217,7 +3217,7 @@ public TreeAdaptor getTreeAdaptor() {
             if (state.failed) return retval;
             if ( state.backtracking==0 ) adaptor.addChild(root_0, notExpr83.getTree());
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:154:12: ( opMul ^ notExpr )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:154:12: ( opMul ^ notExpr )*
             loop15:
             do {
                 int alt15=2;
@@ -3230,7 +3230,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt15) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:154:13: opMul ^ notExpr
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:154:13: opMul ^ notExpr
             	    {
             	    pushFollow(FOLLOW_opMul_in_multiplicativeExpr808);
             	    opMul84=opMul();
@@ -3288,7 +3288,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "notExpr"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:157:1: notExpr : ( opNot ^)? negationExpr ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:157:1: notExpr : ( opNot ^)? negationExpr ;
     public final CmbParser.notExpr_return notExpr() throws RecognitionException {
         CmbParser.notExpr_return retval = new CmbParser.notExpr_return();
         retval.start = input.LT(1);
@@ -3303,13 +3303,13 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:158:2: ( ( opNot ^)? negationExpr )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:158:4: ( opNot ^)? negationExpr
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:158:2: ( ( opNot ^)? negationExpr )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:158:4: ( opNot ^)? negationExpr
             {
             root_0 = (Object)adaptor.nil();
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:158:4: ( opNot ^)?
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:158:4: ( opNot ^)?
             int alt16=2;
             int LA16_0 = input.LA(1);
 
@@ -3318,7 +3318,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt16) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:158:5: opNot ^
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:158:5: opNot ^
                     {
                     pushFollow(FOLLOW_opNot_in_notExpr827);
                     opNot86=opNot();
@@ -3373,7 +3373,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "negationExpr"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:161:1: negationExpr : ( '-' ^)? factor ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:161:1: negationExpr : ( '-' ^)? factor ;
     public final CmbParser.negationExpr_return negationExpr() throws RecognitionException {
         CmbParser.negationExpr_return retval = new CmbParser.negationExpr_return();
         retval.start = input.LT(1);
@@ -3388,13 +3388,13 @@ public TreeAdaptor getTreeAdaptor() {
         Object char_literal88_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:162:2: ( ( '-' ^)? factor )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:162:4: ( '-' ^)? factor
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:162:2: ( ( '-' ^)? factor )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:162:4: ( '-' ^)? factor
             {
             root_0 = (Object)adaptor.nil();
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:162:4: ( '-' ^)?
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:162:4: ( '-' ^)?
             int alt17=2;
             int LA17_0 = input.LA(1);
 
@@ -3403,7 +3403,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt17) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:162:5: '-' ^
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:162:5: '-' ^
                     {
                     char_literal88=(Token)match(input,47,FOLLOW_47_in_negationExpr844); if (state.failed) return retval;
                     if ( state.backtracking==0 ) {
@@ -3459,7 +3459,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "opAdd"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:166:1: opAdd : ( '+' | '-' );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:166:1: opAdd : ( '+' | '-' );
     public final CmbParser.opAdd_return opAdd() throws RecognitionException {
         CmbParser.opAdd_return retval = new CmbParser.opAdd_return();
         retval.start = input.LT(1);
@@ -3472,8 +3472,8 @@ public TreeAdaptor getTreeAdaptor() {
         Object set90_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:167:2: ( '+' | '-' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:167:2: ( '+' | '-' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3528,7 +3528,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "opMul"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:171:1: opMul : ( '*' | '/' | '%' );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:171:1: opMul : ( '*' | '/' | '%' );
     public final CmbParser.opMul_return opMul() throws RecognitionException {
         CmbParser.opMul_return retval = new CmbParser.opMul_return();
         retval.start = input.LT(1);
@@ -3541,8 +3541,8 @@ public TreeAdaptor getTreeAdaptor() {
         Object set91_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:172:2: ( '*' | '/' | '%' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:172:2: ( '*' | '/' | '%' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3597,7 +3597,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "opOr"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:177:1: opOr : '||' ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:177:1: opOr : '||' ;
     public final CmbParser.opOr_return opOr() throws RecognitionException {
         CmbParser.opOr_return retval = new CmbParser.opOr_return();
         retval.start = input.LT(1);
@@ -3610,8 +3610,8 @@ public TreeAdaptor getTreeAdaptor() {
         Object string_literal92_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:177:5: ( '||' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:177:7: '||'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:177:5: ( '||' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:177:7: '||'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3657,7 +3657,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "opAnd"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:180:1: opAnd : '&&' ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:180:1: opAnd : '&&' ;
     public final CmbParser.opAnd_return opAnd() throws RecognitionException {
         CmbParser.opAnd_return retval = new CmbParser.opAnd_return();
         retval.start = input.LT(1);
@@ -3670,8 +3670,8 @@ public TreeAdaptor getTreeAdaptor() {
         Object string_literal93_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:181:2: ( '&&' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:181:4: '&&'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:181:2: ( '&&' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:181:4: '&&'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3717,7 +3717,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "opRel"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:184:1: opRel : ( '>' | '<' | '>=' | '<=' | '==' | '!=' );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:184:1: opRel : ( '>' | '<' | '>=' | '<=' | '==' | '!=' );
     public final CmbParser.opRel_return opRel() throws RecognitionException {
         CmbParser.opRel_return retval = new CmbParser.opRel_return();
         retval.start = input.LT(1);
@@ -3730,8 +3730,8 @@ public TreeAdaptor getTreeAdaptor() {
         Object set94_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:185:2: ( '>' | '<' | '>=' | '<=' | '==' | '!=' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:185:2: ( '>' | '<' | '>=' | '<=' | '==' | '!=' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3786,7 +3786,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "opNot"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:193:1: opNot : '!' ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:193:1: opNot : '!' ;
     public final CmbParser.opNot_return opNot() throws RecognitionException {
         CmbParser.opNot_return retval = new CmbParser.opNot_return();
         retval.start = input.LT(1);
@@ -3799,8 +3799,8 @@ public TreeAdaptor getTreeAdaptor() {
         Object char_literal95_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:194:2: ( '!' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:194:4: '!'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:194:2: ( '!' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:194:4: '!'
             {
             root_0 = (Object)adaptor.nil();
 
@@ -3846,7 +3846,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "factor"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:197:1: factor : ( ID | constante -> constante | invocacao -> invocacao );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:197:1: factor : ( ID | constante -> constante | invocacao -> invocacao );
     public final CmbParser.factor_return factor() throws RecognitionException {
         CmbParser.factor_return retval = new CmbParser.factor_return();
         retval.start = input.LT(1);
@@ -3864,7 +3864,7 @@ public TreeAdaptor getTreeAdaptor() {
         RewriteRuleSubtreeStream stream_constante=new RewriteRuleSubtreeStream(adaptor,"rule constante");
         RewriteRuleSubtreeStream stream_invocacao=new RewriteRuleSubtreeStream(adaptor,"rule invocacao");
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:198:2: ( ID | constante -> constante | invocacao -> invocacao )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:198:2: ( ID | constante -> constante | invocacao -> invocacao )
             int alt18=3;
             int LA18_0 = input.LA(1);
 
@@ -3899,7 +3899,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt18) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:198:4: ID
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:198:4: ID
                     {
                     root_0 = (Object)adaptor.nil();
 
@@ -3915,7 +3915,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:199:4: constante
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:199:4: constante
                     {
                     pushFollow(FOLLOW_constante_in_factor1003);
                     constante97=constante();
@@ -3950,7 +3950,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:200:4: invocacao
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:200:4: invocacao
                     {
                     pushFollow(FOLLOW_invocacao_in_factor1014);
                     invocacao98=invocacao();
@@ -4017,7 +4017,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "constante"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:203:1: constante : ( STRING | INT | TRUE | FALSE );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:203:1: constante : ( STRING | INT | TRUE | FALSE );
     public final CmbParser.constante_return constante() throws RecognitionException {
         CmbParser.constante_return retval = new CmbParser.constante_return();
         retval.start = input.LT(1);
@@ -4030,8 +4030,8 @@ public TreeAdaptor getTreeAdaptor() {
         Object set99_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:204:2: ( STRING | INT | TRUE | FALSE )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:204:2: ( STRING | INT | TRUE | FALSE )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:
             {
             root_0 = (Object)adaptor.nil();
 
@@ -4080,8 +4080,8 @@ public TreeAdaptor getTreeAdaptor() {
 
     // $ANTLR start synpred17_Cmb
     public final void synpred17_Cmb_fragment() throws RecognitionException {
-        // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:27: ( ELSE bloco )
-        // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:27: ELSE bloco
+        // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:27: ( ELSE bloco )
+        // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:117:27: ELSE bloco
         {
         match(input,ELSE,FOLLOW_ELSE_in_synpred17_Cmb602); if (state.failed) return ;
 

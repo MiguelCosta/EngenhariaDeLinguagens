@@ -1,7 +1,0 @@
-digraph mainmap {
-graph [bgcolor=transparent];
-"START" -> "s = 'luis'";
-"s = 'luis'" -> "imprime(s)";
-"imprime(s)" -> "return s";
-"return s" -> "EXIT";
-}
