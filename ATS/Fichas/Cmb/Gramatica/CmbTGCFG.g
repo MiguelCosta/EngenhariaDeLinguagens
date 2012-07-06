@@ -88,13 +88,14 @@ statements [Grafo g_in, String contexto, TreeSet<Integer> nrs_ultima_instrucao_i
 	}
 	)+
 	{
-		// Apos todos os statements do corpo de uma funcao tiverem sido executadas, os ultimos nodos sao ligados ao nodo EXIT
+		// Apos todos os statements do corpo de uma funcao tiverem sido executados, os ultimos nodos sao ligados ao nodo EXIT
 		if ($statements.contexto.equals("CORPO_FUNCAO")){
 			// cria nodo EXIT
 			int nodo_exit = g.putNodo(new Instrucao("EXIT", null, null));
 			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes ao nodo EXIT
 			g.checkAndPutCaminho(nrs_ultima_instrucao, new ParNrInstrucaoLabel(nodo_exit, $statement.label_out));
 		}
+		
 		$statements.g_out = g;
 		$statements.nrs_ultima_instrucao_out = nrs_ultima_instrucao;
 		$statements.label_out = $statement.label_out;
@@ -238,10 +239,10 @@ atribuicao [Grafo g_in, String label_in] returns [Grafo g_out, TreeSet<Integer> 
 	Grafo g = $atribuicao.g_in;
 }
 	:	 ^('=' ID expr)
-	{System.out.println("ATRIBUICAO ("+$ID.line+") - label="+$atribuicao.label_in);
+	{
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		nrs.add(g.putNodo(new Instrucao($atribuicao.label_in, $ID.text + " = " + $expr.instrucao, null, null)));
+		nrs.add(g.putNodo(new Instrucao($ID.text + " = " + $expr.instrucao, null, null)));
 		
 		$atribuicao.nrs_ultima_instrucao_out = nrs;
 		$atribuicao.g_out = g;
@@ -257,7 +258,8 @@ write [Grafo g_in, String label_in] returns [Grafo g_out, TreeSet<Integer> nrs_u
 	{
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		nrs.add(g.putNodo(new Instrucao($write.label_in, $WRITE.text + "(" + $expr.instrucao + ")", null, null)));
+		nrs.add(g.putNodo(new Instrucao($WRITE.text + "(" + $expr.instrucao + ")", null, null)));
+		
 		$write.nrs_ultima_instrucao_out = nrs;
 		$write.g_out = g;
 		$write.label_out = "";
@@ -272,7 +274,7 @@ read [Grafo g_in, String label_in] returns [Grafo g_out, TreeSet<Integer> nrs_ul
 	{
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		nrs.add(g.putNodo(new Instrucao($read.label_in, $READ.text + "(" + $ID.text + ")", null, null)));
+		nrs.add(g.putNodo(new Instrucao($READ.text + "(" + $ID.text + ")", null, null)));
 		$read.nrs_ultima_instrucao_out = nrs;
 		$read.g_out = g;
 		$read.label_out = "";
@@ -286,12 +288,11 @@ ifs [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in] retu
 	int nr_ult_inst_exp = -1;
 	TreeSet<Integer> nrs_exp = new TreeSet<Integer>();
 	TreeSet<Integer> nrs_out = new TreeSet<Integer>();
-	boolean entrou_else = false;
 }
 	:	^(IF expr 
 			{
 				// cria nodo no grafo e guarda o nr da instrucao
-				nr_ult_inst_exp = g.putNodo(new Instrucao($ifs.label_in, $IF.text + "(" + $expr.instrucao + ")", null, null));
+				nr_ult_inst_exp = g.putNodo(new Instrucao($IF.text + "(" + $expr.instrucao + ")", null, null));
 				
 				// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao (expressao)
 				g.checkAndPutCaminho($ifs.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel(nr_ult_inst_exp, $ifs.label_in));
@@ -302,7 +303,6 @@ ifs [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in] retu
 				// adiciona provisoriamente o nr da expressao. caso exista o bloco else, este é removido ja que a instrucao seguinte, ligar-se-á à última instrucao dos blocos then e else
 				// caso contrario, ligar-se-á à expressão e ao bloco then.
 				nrs_out.add(nr_ult_inst_exp);
-				
 			}
 			a=bloco[g, nrs_exp, "T"] 
 			{
@@ -316,16 +316,13 @@ ifs [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in] retu
 				// remove o nr da expressao adicionado provisoriamente
 				nrs_out.remove(nr_ult_inst_exp);
 				// adiciona os nrs das utlimas instrucoes deste bloco
-				nrs_out.addAll($b.nrs_ultima_instrucao_out);
-				entrou_else = true;
+				nrs_out.addAll($b.nrs_ultima_instrucao_out); 
 			} )?
 		)
 		{
 			$ifs.nrs_ultima_instrucao_out = nrs_out;
 			$ifs.g_out = g;
-			//if(entrou_else) 
 			$ifs.label_out = "";
-			//else $ifs.label_out = "F";
 			
 		}
 	;
@@ -337,27 +334,27 @@ whiles [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in] r
 	TreeSet<Integer> nrs_exp = new TreeSet<Integer>();
 }
 	:	 ^(WHILE expr
-			{
-				// cria nodo no grafo e guarda o nr da instrucao
-				nr_ult_inst_exp = g.putNodo(new Instrucao($whiles.label_in, $WHILE.text + "(" + $expr.instrucao + ")", null, null));
-				
-				// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao (expressao)
-				g.checkAndPutCaminho($whiles.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel(nr_ult_inst_exp, $whiles.label_in));
-				
-				// variavel que sera passada ao bloco para indicar o nodo que sera ligado a primeira instrucao do bloco
-				nrs_exp.add(nr_ult_inst_exp);
-			}
-	 		bloco[g, nrs_exp, "T"] { g = $bloco.g_out; })
-		 	{
-				// verifica se existem instrucoes anteriormente executadas no bloco e conecta essas instrucoes à instrucao (expressao)
-				g.checkAndPutCaminho($bloco.nrs_ultima_instrucao_out, new ParNrInstrucaoLabel(nr_ult_inst_exp, $bloco.label_out));
-		 	
-		 		// é passado o nr da instrucao inicial do while, ou seja a expressao, para que  proximo statement se ligue a este
-		 		$whiles.nrs_ultima_instrucao_out = nrs_exp;
-				$whiles.g_out = g;
-				// devolve "F" porque a proxima instrucao so acontece quando a expressao do while der falso
-				$whiles.label_out = "F";
-			}
+		{
+			// cria nodo no grafo e guarda o nr da instrucao
+			nr_ult_inst_exp = g.putNodo(new Instrucao($WHILE.text + "(" + $expr.instrucao + ")", null, null));
+			
+			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao (expressao)
+			g.checkAndPutCaminho($whiles.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel(nr_ult_inst_exp, $whiles.label_in));
+			
+			// variavel que sera passada ao bloco para indicar o nodo que sera ligado a primeira instrucao do bloco
+			nrs_exp.add(nr_ult_inst_exp);
+		}
+	 	bloco[g, nrs_exp, "T"] { g = $bloco.g_out; })
+		{
+			// verifica se existem instrucoes anteriormente executadas no bloco e conecta essas instrucoes à instrucao (expressao)
+			g.checkAndPutCaminho($bloco.nrs_ultima_instrucao_out, new ParNrInstrucaoLabel(nr_ult_inst_exp, $bloco.label_out));
+			
+			// é passado o nr da instrucao inicial do while, ou seja a expressao, para que  proximo statement se ligue a este
+			$whiles.nrs_ultima_instrucao_out = nrs_exp;
+			$whiles.g_out = g;
+			// devolve "F" porque a proxima instrucao so acontece quando a expressao do while der falso
+			$whiles.label_out = "F";
+		}
 	;
 
 bloco [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in] returns [Grafo g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out]
