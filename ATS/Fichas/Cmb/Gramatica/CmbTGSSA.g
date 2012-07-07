@@ -190,7 +190,7 @@ retorna [GrafoTGSSA g_in, String label_in] returns [GrafoTGSSA g_out, TreeSet<In
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
 		//nrs.add(g.putNodo(new Instrucao($retorna.label_in, $RETURN.text + " " + $expr.instrucao, null, null)));
-		nrs.add(g.putNodo(new Instrucao($retorna.label_in, $RETURN.text + " " + $expr.instrucao, null, null,"" ,"" , $expr.instrucaoVersao)));
+		nrs.add(g.putNodo(new Instrucao($RETURN.text + " " + $expr.instrucao, null, null,"" ,"" , $expr.instrucaoVersao)));
 		
 		$retorna.nrs_ultima_instrucao_out = nrs;
 		$retorna.g_out = g;
@@ -212,7 +212,7 @@ invocacao [GrafoTGSSA g_in, String contexto, String label_in] returns [GrafoTGSS
 			TreeSet<Integer> nrs = new TreeSet<Integer>();
 			// cria nodo no grafo e guarda o nr da instrucao
 			//nrs.add(g.putNodo(new Instrucao($invocacao.label_in, $ID.text + "(" + $args.ags + ")", null, null)));
-			nrs.add(g.putNodo(new Instrucao($invocacao.label_in, $ID.text + "(" + $args.ags + ")", null, null,"", "", $ID.text + "(" + $args.agsVersao + ")")));
+			nrs.add(g.putNodo(new Instrucao($ID.text + "(" + $args.ags + ")", null, null,"", "", $ID.text + "(" + $args.agsVersao + ")")));
 			
 			$invocacao.nrs_ultima_instrucao_out = nrs;
 			$invocacao.g_out = g;
@@ -252,7 +252,7 @@ atribuicao [GrafoTGSSA g_in, String label_in, String contexto_in] returns [Grafo
 		// cria nodo no grafo e guarda o nr da instrucao
 		Integer i_id = $atribuicao.g_in.getVersaoVariavelNext($ID.text);
 		//nrs.add(g.putNodo(new Instrucao($atribuicao.label_in, $ID.text + " = " + $expr.instrucao, null, null)));
-		nrs.add(g.putNodo(new Instrucao($atribuicao.label_in, $ID.text + " = " + $expr.instrucao, null, null, "", "", $ID.text + i_id + " = " + $expr.instrucaoVersao)));
+		nrs.add(g.putNodo(new Instrucao($ID.text + " = " + $expr.instrucao, null, null, "", "", $ID.text + i_id + " = " + $expr.instrucaoVersao)));
 		
 		//como ha uma atribuicao, a versao da variavel vai ter de ser incrementada
 		Integer i = g.incrementaVariavel($ID.text);
@@ -277,7 +277,7 @@ write [GrafoTGSSA g_in, String label_in] returns [GrafoTGSSA g_out, TreeSet<Inte
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
 		//nrs.add(g.putNodo(new Instrucao($write.label_in, $WRITE.text + "(" + $expr.instrucao + ")", null, null)));
-		nrs.add(g.putNodo(new Instrucao($write.label_in, $WRITE.text + "(" + $expr.instrucao + ")", null, null,"", "", $WRITE.text + "(" + $expr.instrucaoVersao + ")")));
+		nrs.add(g.putNodo(new Instrucao($WRITE.text + "(" + $expr.instrucao + ")", null, null,"", "", $WRITE.text + "(" + $expr.instrucaoVersao + ")")));
 		$write.nrs_ultima_instrucao_out = nrs;
 		$write.g_out = g;
 		$write.label_out = "";
@@ -294,7 +294,7 @@ read [GrafoTGSSA g_in, String label_in, String contexto_in] returns [GrafoTGSSA 
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
 		//nrs.add(g.putNodo(new Instrucao($read.label_in, $READ.text + "(" + $ID.text + ")", null, null)));
-		nrs.add(g.putNodo(new Instrucao($read.label_in, $READ.text + "(" + $ID.text + ")", null, null)));
+		nrs.add(g.putNodo(new Instrucao($READ.text + "(" + $ID.text + ")", null, null)));
 		
 		//como ha uma atribuicao, a versao da variavel vai ter de ser incrementada
 		Integer i = g.incrementaVariavel($ID.text);
@@ -323,7 +323,7 @@ ifs [GrafoTGSSA g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in]
 			{
 				// cria nodo no grafo e guarda o nr da instrucao
 				//nr_ult_inst_exp = g.putNodo(new Instrucao($ifs.label_in, $IF.text + "(" + $expr.instrucao + ")", null, null));
-				nr_ult_inst_exp = g.putNodo(new Instrucao($ifs.label_in, $IF.text + "(" + $expr.instrucao + ")", null, null,"", "", $IF.text + "(" + $expr.instrucaoVersao + ")"));
+				nr_ult_inst_exp = g.putNodo(new Instrucao($IF.text + "(" + $expr.instrucao + ")", null, null,"", "", $IF.text + "(" + $expr.instrucaoVersao + ")"));
 				
 				// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao (expressao)
 				g.checkAndPutCaminho($ifs.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel(nr_ult_inst_exp, $ifs.label_in));
@@ -368,7 +368,7 @@ whiles [GrafoTGSSA g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_
 			{
 				// cria nodo no grafo e guarda o nr da instrucao
 				//nr_ult_inst_exp = g.putNodo(new Instrucao($whiles.label_in, $WHILE.text + "(" + $expr.instrucao + ")", null, null));
-				nr_ult_inst_exp = g.putNodo(new Instrucao($whiles.label_in, $WHILE.text + "(" + $expr.instrucao + ")", null, null,"","", $WHILE.text + "(" + $expr.instrucaoVersao + ")"));
+				nr_ult_inst_exp = g.putNodo(new Instrucao($WHILE.text + "(" + $expr.instrucao + ")", null, null,"","", $WHILE.text + "(" + $expr.instrucaoVersao + ")"));
 				
 				//System.out.println("antlr while " + $expr.instrucaoVersao);
 				
