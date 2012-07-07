@@ -15,17 +15,14 @@ options{
 
 programa returns [TreeMap<String, GrafoPDG> grafos_out]
 @init {
-	//GrafoPDG g = new GrafoPDG();
 	TreeMap<String, GrafoPDG> grafos = new TreeMap<String, GrafoPDG>();
 }
 	: 	^(PROGRAMA (funcao[new GrafoPDG()]
 	{
-		//g = $funcao.g_out;
 		grafos.put($funcao.func_id, $funcao.g_out);
 	}
 	)+
 	{
-		//$programa.g_out = g;
 		$programa.grafos_out = grafos;
 	}
 	)
@@ -69,7 +66,7 @@ corpo_funcao [GrafoPDG g_in, String id_funcao, HashSet<String> vars_def] returns
 	int nr = g.putNodo(0, new Instrucao("ENTER (" + $corpo_funcao.id_funcao + ")", $corpo_funcao.vars_def, null));
 	nrs.add(nr);
 }
-	: ^(CORPO declaracoes statements[$corpo_funcao.g_in, "CORPO_FUNCAO", nrs, "",nrs_while, ""])
+	: ^(CORPO declaracoes statements[$corpo_funcao.g_in, "CORPO_FUNCAO", nrs, "", nrs_while, ""])
 	{
 		$corpo_funcao.g_out = $statements.g_out;
 	}
