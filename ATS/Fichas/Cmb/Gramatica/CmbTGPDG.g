@@ -10,27 +10,32 @@ options{
 @header{
 	import java.util.TreeSet;
 	import java.util.HashSet;
+	import java.util.TreeMap;
 }
 
-programa returns [GrafoPDG g_out]
+programa returns [TreeMap<String, GrafoPDG> grafos_out]
 @init {
-	GrafoPDG g = new GrafoPDG();
+	//GrafoPDG g = new GrafoPDG();
+	TreeMap<String, GrafoPDG> grafos = new TreeMap<String, GrafoPDG>();
 }
-	: 	^(PROGRAMA (funcao[g]
+	: 	^(PROGRAMA (funcao[new GrafoPDG()]
 	{
-		g = $funcao.g_out;
+		//g = $funcao.g_out;
+		grafos.put($funcao.func_id, $funcao.g_out);
 	}
 	)+
 	{
-		$programa.g_out = g;
+		//$programa.g_out = g;
+		$programa.grafos_out = grafos;
 	}
 	)
 	;
 	
-funcao [GrafoPDG g_in] returns [GrafoPDG g_out]
+funcao [GrafoPDG g_in] returns [GrafoPDG g_out, String func_id]
 	:  ^(FUNCAO cabecalho corpo_funcao[$funcao.g_in, $cabecalho.id])
 	{
 		$funcao.g_out = $corpo_funcao.g_out;
+		$funcao.func_id = $cabecalho.id;
 	}
 	;
 

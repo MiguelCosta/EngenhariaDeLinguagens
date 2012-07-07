@@ -13,7 +13,6 @@ public class Instrucao {
 	private String instrucaoVariaveisVersoes;
 	private String contexto;
 	private String bloco_if;
-//	private String label;
 	
 	
 	/**
@@ -31,21 +30,7 @@ public class Instrucao {
 		else this.variaveis_referenciadas = variaveis_referenciadas;
 		this.contexto = "";
 		this.bloco_if = "";
-//		this.label = "";
 	}
-	
-//	public Instrucao(String label, String instrucao, HashSet<String> variaveis_definidas,
-//			HashSet<String> variaveis_referenciadas) {
-//		super();
-//		this.instrucao = instrucao;
-//		if (variaveis_definidas == null) this.variaveis_definidas = new HashSet<String>();
-//		else this.variaveis_definidas = variaveis_definidas;
-//		if (variaveis_referenciadas == null) this.variaveis_referenciadas = new HashSet<String>();
-//		else this.variaveis_referenciadas = variaveis_referenciadas;
-//		this.contexto = "";
-//		this.bloco_if = "";
-//		this.label = label;
-//	}
 	
 	public Instrucao(String instrucao, HashSet<String> variaveis_definidas,
 			HashSet<String> variaveis_referenciadas, String contexto) {
@@ -57,21 +42,7 @@ public class Instrucao {
 		else this.variaveis_referenciadas = variaveis_referenciadas;
 		this.contexto = contexto;
 		this.bloco_if = "";
-//		this.label = "";
 	}
-	
-//	public Instrucao(String label, String instrucao, HashSet<String> variaveis_definidas,
-//			HashSet<String> variaveis_referenciadas, String contexto) {
-//		super();
-//		this.instrucao = instrucao;
-//		if (variaveis_definidas == null) this.variaveis_definidas = new HashSet<String>();
-//		else this.variaveis_definidas = variaveis_definidas;
-//		if (variaveis_referenciadas == null) this.variaveis_referenciadas = new HashSet<String>();
-//		else this.variaveis_referenciadas = variaveis_referenciadas;
-//		this.contexto = contexto;
-//		this.bloco_if = "";
-//		this.label = label;
-//	}
 	
 	public Instrucao(String instrucao, HashSet<String> variaveis_definidas,
 			HashSet<String> variaveis_referenciadas, String contexto, String bloco_if) {
@@ -83,21 +54,7 @@ public class Instrucao {
 		else this.variaveis_referenciadas = variaveis_referenciadas;
 		this.contexto = contexto;
 		this.bloco_if = bloco_if;
-//		this.label = "";
 	}
-	
-//	public Instrucao(String label, String instrucao, HashSet<String> variaveis_definidas,
-//			HashSet<String> variaveis_referenciadas, String contexto, String bloco_if) {
-//		super();
-//		this.instrucao = instrucao;
-//		if (variaveis_definidas == null) this.variaveis_definidas = new HashSet<String>();
-//		else this.variaveis_definidas = variaveis_definidas;
-//		if (variaveis_referenciadas == null) this.variaveis_referenciadas = new HashSet<String>();
-//		else this.variaveis_referenciadas = variaveis_referenciadas;
-//		this.contexto = contexto;
-//		this.bloco_if = bloco_if;
-//		this.label = label;
-//	}
 	
 	
 	public Instrucao(String instrucao, HashSet<String> variaveis_definidas,
@@ -111,22 +68,8 @@ public class Instrucao {
 		this.contexto = contexto;
 		this.bloco_if = bloco_if;
 		this.instrucaoVariaveisVersoes = instrucaoVariaveisVersoes;
-//		this.label = "";
 	}
 	
-//	public Instrucao(String label, String instrucao, HashSet<String> variaveis_definidas,
-//			HashSet<String> variaveis_referenciadas, String contexto, String bloco_if, String instrucaoVariaveisVersoes) {
-//		super();
-//		this.instrucao = instrucao;
-//		if (variaveis_definidas == null) this.variaveis_definidas = new HashSet<String>();
-//		else this.variaveis_definidas = variaveis_definidas;
-//		if (variaveis_referenciadas == null) this.variaveis_referenciadas = new HashSet<String>();
-//		else this.variaveis_referenciadas = variaveis_referenciadas;
-//		this.contexto = contexto;
-//		this.bloco_if = bloco_if;
-//		this.instrucaoVariaveisVersoes = instrucaoVariaveisVersoes;
-//		this.label = label;
-//	}
 
 	/**
 	 * @return the instrucao
@@ -230,23 +173,7 @@ public class Instrucao {
 //				"versoesReferenciadas=" + variaveis_referenciadas + "\n\t\t" +
 				"contexto=" + contexto + ",\n\t\t" +
 				"bloco_if=" + bloco_if + "\n\t" +
-//				"label=" + label + "\n\t" +
 				"]";
 	}
 
-//	/**
-//	 * @return the label
-//	 */
-//	public String getLabel() {
-//		return label;
-//	}
-//
-//	/**
-//	 * @param label the label to set
-//	 */
-//	public void setLabel(String label) {
-//		this.label = label;
-//	}
-	
-	
 }

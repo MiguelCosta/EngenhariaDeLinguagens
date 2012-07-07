@@ -41,7 +41,7 @@ public class MyThread extends Thread {
 					break;
 				case 2:
 					_walkerPDGRet = _walkerPDG.programa();
-					System.out.println("PDG OUTPUT:\n"+_walkerPDGRet.g_out);
+					System.out.println("PDG OUTPUT:\n"+_walkerPDGRet.grafos_out);
 					break;
 				case 3:
 					//_walkerSSARet = _walkerSSA.programa();

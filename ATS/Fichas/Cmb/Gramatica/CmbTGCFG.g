@@ -189,7 +189,7 @@ retorna [Grafo g_in, String label_in] returns [Grafo g_out, TreeSet<Integer> nrs
 	{
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		nrs.add(g.putNodo(new Instrucao($retorna.label_in, $RETURN.text + " " + $expr.instrucao, null, null)));
+		nrs.add(g.putNodo(new Instrucao($RETURN.text + " " + $expr.instrucao, null, null)));
 		
 		$retorna.nrs_ultima_instrucao_out = nrs;
 		$retorna.g_out = g;
@@ -209,7 +209,7 @@ invocacao [Grafo g_in, String contexto, String label_in] returns [Grafo g_out, T
 		else {
 			TreeSet<Integer> nrs = new TreeSet<Integer>();
 			// cria nodo no grafo e guarda o nr da instrucao
-			nrs.add(g.putNodo(new Instrucao($invocacao.label_in, $ID.text + "(" + $args.ags + ")", null, null)));
+			nrs.add(g.putNodo(new Instrucao($ID.text + "(" + $args.ags + ")", null, null)));
 			
 			$invocacao.nrs_ultima_instrucao_out = nrs;
 			$invocacao.g_out = g;

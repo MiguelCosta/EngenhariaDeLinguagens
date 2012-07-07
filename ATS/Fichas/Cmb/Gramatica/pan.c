@@ -1,9 +1,8 @@
-void imprime(string nome)
+void calcula(int d)
 {
 	int a;
 	int b;
 	int c;
-	int d;
 
 	a = 55;
 	b = 55;

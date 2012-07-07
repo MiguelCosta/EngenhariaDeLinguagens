@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g 2012-07-07 00:52:08
+// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGCFG.g 2012-07-07 02:18:03
 
 	import java.util.TreeSet;
 	import java.util.TreeMap;
@@ -1528,7 +1528,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) {
             		TreeSet<Integer> nrs = new TreeSet<Integer>();
             		// cria nodo no grafo e guarda o nr da instrucao
-            		nrs.add(g.putNodo(new Instrucao(label_in, (RETURN30!=null?RETURN30.getText():null) + " " + (expr31!=null?expr31.instrucao:null), null, null)));
+            		nrs.add(g.putNodo(new Instrucao((RETURN30!=null?RETURN30.getText():null) + " " + (expr31!=null?expr31.instrucao:null), null, null)));
             		
             		retval.nrs_ultima_instrucao_out = nrs;
             		retval.g_out = g;
@@ -1666,7 +1666,7 @@ public TreeAdaptor getTreeAdaptor() {
             		else {
             			TreeSet<Integer> nrs = new TreeSet<Integer>();
             			// cria nodo no grafo e guarda o nr da instrucao
-            			nrs.add(g.putNodo(new Instrucao(label_in, (ID33!=null?ID33.getText():null) + "(" + (args34!=null?args34.ags:null) + ")", null, null)));
+            			nrs.add(g.putNodo(new Instrucao((ID33!=null?ID33.getText():null) + "(" + (args34!=null?args34.ags:null) + ")", null, null)));
             			
             			retval.nrs_ultima_instrucao_out = nrs;
             			retval.g_out = g;
