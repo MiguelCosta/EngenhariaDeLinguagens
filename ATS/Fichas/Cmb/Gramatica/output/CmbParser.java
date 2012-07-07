@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g 2012-07-07 00:45:10
+// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g 2012-07-07 02:44:12
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -281,7 +281,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: cabecalho, corpo_funcao
+            // elements: corpo_funcao, cabecalho
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -420,7 +420,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: tipo, ID, argumentos
+            // elements: argumentos, ID, tipo
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -897,7 +897,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: tipo, ID
+            // elements: ID, tipo
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -1965,7 +1965,7 @@ public TreeAdaptor getTreeAdaptor() {
             if ( state.backtracking==0 ) stream_expr.add(expr45.getTree());
 
             // AST REWRITE
-            // elements: 52, expr, ID
+            // elements: ID, expr, 52
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2079,7 +2079,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: WRITE, expr
+            // elements: expr, WRITE
             // token labels: 
             // rule labels: retval
             // token list labels: 
@@ -2346,7 +2346,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             // AST REWRITE
-            // elements: bloco, expr, bloco, IF
+            // elements: bloco, bloco, IF, expr
             // token labels: 
             // rule labels: retval
             // token list labels: 

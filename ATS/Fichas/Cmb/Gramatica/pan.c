@@ -1,10 +1,9 @@
-void calcula(int d)
+void calcula(int a, int d)
 {
 	int a;
 	int b;
 	int c;
 
-	a = 55;
 	b = 55;
 	c = 55;
 	while (a) {
@@ -14,7 +13,7 @@ void calcula(int d)
 			a=c*2;
 		}
 		else {
-			b = b/c;
+			a = b/c;
 		}
 		c = 1;
 	}

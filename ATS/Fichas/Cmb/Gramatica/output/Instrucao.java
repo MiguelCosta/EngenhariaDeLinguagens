@@ -32,6 +32,13 @@ public class Instrucao {
 		this.bloco_if = "";
 	}
 	
+	/**
+	 * 
+	 * @param instrucao
+	 * @param variaveis_definidas
+	 * @param variaveis_referenciadas
+	 * @param contexto
+	 */
 	public Instrucao(String instrucao, HashSet<String> variaveis_definidas,
 			HashSet<String> variaveis_referenciadas, String contexto) {
 		super();
@@ -44,6 +51,14 @@ public class Instrucao {
 		this.bloco_if = "";
 	}
 	
+	/**
+	 * 
+	 * @param instrucao
+	 * @param variaveis_definidas
+	 * @param variaveis_referenciadas
+	 * @param contexto
+	 * @param bloco_if
+	 */
 	public Instrucao(String instrucao, HashSet<String> variaveis_definidas,
 			HashSet<String> variaveis_referenciadas, String contexto, String bloco_if) {
 		super();
@@ -56,7 +71,15 @@ public class Instrucao {
 		this.bloco_if = bloco_if;
 	}
 	
-	
+	/**
+	 * 
+	 * @param instrucao
+	 * @param variaveis_definidas
+	 * @param variaveis_referenciadas
+	 * @param contexto
+	 * @param bloco_if
+	 * @param instrucaoVariaveisVersoes
+	 */
 	public Instrucao(String instrucao, HashSet<String> variaveis_definidas,
 			HashSet<String> variaveis_referenciadas, String contexto, String bloco_if, String instrucaoVariaveisVersoes) {
 		super();

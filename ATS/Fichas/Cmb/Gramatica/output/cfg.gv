@@ -1,17 +1,16 @@
 digraph mainmap {
 graph [bgcolor=transparent];
-"START" -> "a = 55";
-	"a = 55" -> "b = 55";
+"START" -> "b = 55";
 	"b = 55" -> "c = 55";
 	"c = 55" -> "while(a)";
 	"while(a)" -> "b = a"[label="T"];
 	"while(a)" -> "if(c>a)"[label="F"];
 	"b = a" -> "if(b)";
 	"if(b)" -> "c = c-2"[label="T"];
-	"if(b)" -> "b = b/c"[label="F"];
+	"if(b)" -> "a = b/c"[label="F"];
 	"c = c-2" -> "a = c*2";
 	"a = c*2" -> "c = 1";
-	"b = b/c" -> "c = 1";
+	"a = b/c" -> "c = 1";
 	"c = 1" -> "while(a)";
 	"if(c>a)" -> "d = a+b+c"[label="T"];
 	"if(c>a)" -> "d = d/c";

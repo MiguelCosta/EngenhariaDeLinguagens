@@ -32,7 +32,7 @@ programa returns [TreeMap<String, GrafoPDG> grafos_out]
 	;
 	
 funcao [GrafoPDG g_in] returns [GrafoPDG g_out, String func_id]
-	:  ^(FUNCAO cabecalho corpo_funcao[$funcao.g_in, $cabecalho.id])
+	:  ^(FUNCAO cabecalho corpo_funcao[$funcao.g_in, $cabecalho.id, $cabecalho.vars_def])
 	{
 		$funcao.g_out = $corpo_funcao.g_out;
 		$funcao.func_id = $cabecalho.id;
@@ -40,24 +40,33 @@ funcao [GrafoPDG g_in] returns [GrafoPDG g_out, String func_id]
 	;
 
 	
-cabecalho returns [String id]
-	:  ^(CAEBECALHO tipo ID argumentos?)
+cabecalho returns [String id, HashSet<String> vars_def]
+@init{
+	HashSet<String> variaveis_definidas = new HashSet<String>();
+}
+	:  ^(CAEBECALHO tipo ID (argumentos{variaveis_definidas = $argumentos.vars_def; })?)
 	{
 		$cabecalho.id = $ID.text;	
+		$cabecalho.vars_def = variaveis_definidas;
 	}
 	;
 
-argumentos
-	:  ^(ARGUMENTOS declaracao+)
+argumentos returns [HashSet<String> vars_def]
+@init{
+	HashSet<String> variaveis_definidas = new HashSet<String>();
+}
+	:  ^(ARGUMENTOS (declaracao	{ variaveis_definidas.add($declaracao.var_def);}
+	)+)
+	{ $argumentos.vars_def = variaveis_definidas;}
 	;
 
-corpo_funcao [GrafoPDG g_in, String id_funcao] returns [GrafoPDG g_out]
+corpo_funcao [GrafoPDG g_in, String id_funcao, HashSet<String> vars_def] returns [GrafoPDG g_out]
 @init{
 	GrafoPDG g = $corpo_funcao.g_in;
 	TreeSet<Integer> nrs = new TreeSet<Integer>();
 	TreeSet<Integer> nrs_while = new TreeSet<Integer>();
 	// 0 <=> Nodo START. É passado como parametro para que o nodo START se ligue à primeira instrucao
-	int nr = g.putNodo(0, new Instrucao("ENTER (" + $corpo_funcao.id_funcao + ")", null, null));
+	int nr = g.putNodo(0, new Instrucao("ENTER (" + $corpo_funcao.id_funcao + ")", $corpo_funcao.vars_def, null));
 	nrs.add(nr);
 }
 	: ^(CORPO declaracoes statements[$corpo_funcao.g_in, "CORPO_FUNCAO", nrs, "",nrs_while, ""])
@@ -70,8 +79,8 @@ declaracoes
 	: ^(DECLARACOES declaracao+)
 	;
 	
-declaracao
-	:	^(DECLARACAO tipo ID)
+declaracao returns [String var_def]
+	:	^(DECLARACAO tipo ID {$declaracao.var_def = $ID.text;})
 	;
 	
 tipo
