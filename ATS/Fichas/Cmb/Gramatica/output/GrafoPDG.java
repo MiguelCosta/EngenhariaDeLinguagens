@@ -683,9 +683,16 @@ public class GrafoPDG extends Grafo {
 	
 	@Override
 	public String toString() {
+		String c = "caminhos={";
+		
+		for (int nr : super.getCaminhos().keySet()) {
+			c += "\n\t"+nr+"="+super.getCaminhos().get(nr)+",";
+		}
+		c += "\n}";
+		
 		return "Grafo [\n\t" +
 				"nodos=" + super.getNodos() + ",\n\n" +
-				"caminhos=" + super.getCaminhos() + "\n\n" +
+				c + "\n\n" +
 				"dependencias_dados=" + dependencias_dados + "\n" +
 			"]";
 	}

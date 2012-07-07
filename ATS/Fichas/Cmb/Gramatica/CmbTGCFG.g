@@ -288,6 +288,7 @@ ifs [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in] retu
 	int nr_ult_inst_exp = -1;
 	TreeSet<Integer> nrs_exp = new TreeSet<Integer>();
 	TreeSet<Integer> nrs_out = new TreeSet<Integer>();
+//	boolean entrou_else = false;
 }
 	:	^(IF expr 
 			{
@@ -317,12 +318,15 @@ ifs [Grafo g_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in] retu
 				nrs_out.remove(nr_ult_inst_exp);
 				// adiciona os nrs das utlimas instrucoes deste bloco
 				nrs_out.addAll($b.nrs_ultima_instrucao_out); 
+			//	entrou_else = true;
 			} )?
 		)
 		{
 			$ifs.nrs_ultima_instrucao_out = nrs_out;
 			$ifs.g_out = g;
+			//if (entrou_else) 
 			$ifs.label_out = "";
+		//	else $ifs.label_out = "F";
 			
 		}
 	;

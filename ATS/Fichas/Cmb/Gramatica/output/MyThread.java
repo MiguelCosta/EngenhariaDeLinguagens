@@ -41,12 +41,12 @@ public class MyThread extends Thread {
 					break;
 				case 2:
 					_walkerPDGRet = _walkerPDG.programa();
-					System.out.println(_walkerPDGRet.g_out);
+					System.out.println("PDG OUTPUT:\n"+_walkerPDGRet.g_out);
 					break;
 				case 3:
-					_walkerSSARet = _walkerSSA.programa();
-					System.out.println(_walkerSSARet.g_out);
-					toDotSSA(_walkerSSARet.g_out);
+					//_walkerSSARet = _walkerSSA.programa();
+					//System.out.println(_walkerSSARet.g_out);
+					//toDotSSA(_walkerSSARet.g_out);
 					break;
 			}
 		}catch(Exception e){

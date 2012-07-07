@@ -14,6 +14,10 @@ void imprime(string nome)
 			c = c-2;
 			a=c*2;
 		}
+		else {
+			b = b/c;
+		}
+		c = 1;
 	}
 	if (c>a) {
 		d = a +b+c;
