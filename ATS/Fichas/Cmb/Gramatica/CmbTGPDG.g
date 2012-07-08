@@ -62,7 +62,7 @@ corpo_funcao [GrafoPDG g_in, String id_funcao, HashSet<String> vars_def] returns
 	GrafoPDG g = $corpo_funcao.g_in;
 	TreeSet<Integer> nrs = new TreeSet<Integer>();
 	TreeSet<Integer> nrs_while = new TreeSet<Integer>();
-	// 0 <=> Nodo START. É passado como parametro para que o nodo START se ligue à primeira instrucao
+	// 0 <=> Nodo inicial. É passado como parametro para que as restantes instrucoes se liguem a este
 	int nr = g.putNodo(0, new Instrucao("ENTER (" + $corpo_funcao.id_funcao + ")", $corpo_funcao.vars_def, null));
 	nrs.add(nr);
 }
@@ -126,7 +126,6 @@ statement [GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instru
 			g = $atribuicao.g_out;
 
 			// verifica se existem instrucoes anteriormente executadas e conecta essas instrucoes à nova instrucao
-			//g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, $atribuicao.nrs_ultima_instrucao_out.first());
 			g.checkAndPutCaminho($statement.nrs_ultima_instrucao_in, new ParNrInstrucaoLabel($atribuicao.nrs_ultima_instrucao_out.first(), $statement.label_in));
 			
 			$statement.g_out = g;
@@ -192,7 +191,7 @@ statement [GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instru
 			
 			// conecta o nodo while a si proprio
 			//g.checkAndPutCaminho($whiles.nrs_ultima_instrucao_out, $whiles.nrs_ultima_instrucao_out.first());
-			g.checkAndPutCaminho($whiles.nrs_ultima_instrucao_out, new ParNrInstrucaoLabel($whiles.nrs_ultima_instrucao_out.first(), $statement.label_in));
+			g.checkAndPutCaminho($whiles.nrs_ultima_instrucao_out, new ParNrInstrucaoLabel($whiles.nrs_ultima_instrucao_out.first(), ""));
 			
 			$statement.g_out = g;
 			$statement.contexto_out = cx;
@@ -336,7 +335,6 @@ atribuicao [GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer>
 	{
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
-		//nrs.add(g.putNodo(new Instrucao($ID.text + " = " + $expr.instrucao, variaveis_definidas, $expr.vars_ref, cx, bi)));
 		nrs.add(g.putNodo(new Instrucao($ID.text + " = " + $expr.instrucao, variaveis_definidas, $expr.vars_ref, cx, bi)));
 		
 		// verifica existencia de dependencia de dados apenas se for uma instrucao que nao se encontre dentro de um if ou while (contexto "IF" ou "WHILE")
@@ -428,7 +426,6 @@ ifs [GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in
 	:	^(IF expr 
 			{
 				// cria nodo no grafo e guarda o nr da instrucao
-				//nr_ult_inst_exp = g.putNodo(new Instrucao($IF.text + "(" + $expr.instrucao + ")", null, $expr.vars_ref, cx));
 				nr_ult_inst_exp = g.putNodo(new Instrucao($IF.text + "(" + $expr.instrucao + ")", null, $expr.vars_ref, cx));
 				
 				// variavel que sera passada aos blocos para indicar o nodo que sera ligado as instrucoes de cada bloco
@@ -482,7 +479,6 @@ whiles [GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao
 	:	 ^(WHILE expr
 			{
 				// cria nodo no grafo e guarda o nr da instrucao
-				//nr_ult_inst_exp = g.putNodo(new Instrucao($WHILE.text + "(" + $expr.instrucao + ")", null, $expr.vars_ref, "WHILE", bi));
 				nr_ult_inst_exp = g.putNodo(new Instrucao($WHILE.text + "(" + $expr.instrucao + ")", null, $expr.vars_ref, "WHILE", bi));
 				
 				// variavel que sera passada ao bloco para indicar o nodo que sera ligado as instrucoes do bloco
@@ -497,6 +493,7 @@ whiles [GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao
 	 			nrs_instrucao_while.addAll($bloco.nrs_instrucao_while_out);
 	 		})
 		 	{
+		 		// se este while for o mais externo entao é feita a verificacao de existencia de dependencias
 		 		if (cx.equals("CORPO_FUNCAO")) {
 		 			g.checkDependenciasDadosWhile(nrs_instrucao_while);
 		 			nrs_instrucao_while.clear();
