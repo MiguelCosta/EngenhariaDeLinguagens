@@ -1,6 +1,7 @@
 digraph mainmap {
 graph [bgcolor=transparent];
 "START" -> "a = 5";
+<<<<<<< HEAD
 	"a = 5" -> "if(a)";
 	"if(a)" -> "b = a"[label="T"];
 	"if(a)" -> "e = a+b+c+d";
@@ -11,4 +12,12 @@ graph [bgcolor=transparent];
 	"b = 5" -> "while(b)";
 	"d = b*c-a" -> "e = a+b+c+d";
 	"e = a+b+c+d" -> "EXIT";
+=======
+	"a = 5" -> "c = 55";
+	"c = 55" -> "if(b)";
+	"if(b)" -> "d = a"[label="T"];
+	"if(b)" -> "EXIT";
+	"d = a" -> "b = c+1";
+	"b = c+1" -> "EXIT";
+>>>>>>> b621fb1217a22e7e470f60e18f1ba43cc39b8c96
 	}

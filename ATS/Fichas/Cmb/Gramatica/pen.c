@@ -2,15 +2,9 @@ void coiso() {
 	int a;
 
 	a = 5;
-
-	if(a) {
-		b = a;
-		while(b){
-			c=a+b;
-			b=5;
-		}
-		d=b*c-a;
+c = 55;
+	if(b) {
+		d = a;
+		b = c+1;
 	}
-
-	e = a+b+c+d;
 }
