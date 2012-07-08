@@ -71,7 +71,7 @@ public class GrafoPDG extends Grafo {
 		//percorre as instrucoes do while por ordem descendente, ou seja, da ultima instrucao para a primeira
 		for (int inst_dependente : nrs_instrucao_while.descendingSet()){
 			Instrucao i = this.getNodos().get(inst_dependente);
-			
+			System.out.println("\n\nINST_DEPENDENTE:\t"+inst_dependente+"\nPRIMEIRA INST WHILE:\t"+primeira_inst_while+"\nULTIMA INSTRUCA WHILE:\t"+ultima_inst_while);
 			// para cada variavel referenciada na instrucao vai procurar a primeira instrucao que defina essa variavel, 
 			// no conjunto de instrucoes a partir de inst_dependente e ate à instrucao que no ciclo fica imediatamente apos inst_dependente
 			for (String var_ref : i.getVariaveis_referenciadas()){
@@ -92,8 +92,10 @@ public class GrafoPDG extends Grafo {
 				// percorre o conjunto de instrucoes a partir de inst_dependente e ate à instrucao que no ciclo fica imediatamente apos inst_dependente
 				while(nr_inst_comparadas <= nr_inst_a_comparar && !dep_encontrada){
 					int nr_instrucoes = 1;
-//					System.out.println("A comparar a variavel " + var_ref + " da instrucao " + inst_dependente+" com "+inst_comp);
+					System.out.println("A comparar a variavel " + var_ref + " da instrucao " + inst_dependente+" com "+inst_comp);
 					Instrucao i_comp = this.getNodos().get(inst_comp);
+					
+					
 					
 					// caso a instrucao sobre a qual estamos a tentar encontrar dependencias nao se encontre dentro de um if 
 					if ((!i.getBloco_if().equals("THEN") && !i.getBloco_if().equals("ELSE")) || proc_fora_bloco) {
@@ -117,8 +119,7 @@ public class GrafoPDG extends Grafo {
 									// pára de procurar por dependencias para var_ref, passando a procurar para outra variavel referenciada nesta instrucao
 									dep_encontrada = true;
 								}
-								// Se uma dependencia extra blocos for encontrada entao uma suposta dependencia entre blocos de um if 
-								// deixa de ser possivel
+								// Se uma dependencia extra blocos for encontrada entao uma suposta dependencia entre blocos de um if deixa de ser possivel
 								if (dependencia_entre_blocos!=-1) {
 									dependencia_entre_blocos=-1;
 								}
@@ -131,7 +132,7 @@ public class GrafoPDG extends Grafo {
 							}
 						}
 						// se for uma instrucao num bloco else procura no bloco else e tambem no then
-						else if (i_comp.getBloco_if().equals("ELSE")) {
+						else if (i_comp.getBloco_if().equals("ELSE")) {System.out.println("\tEntrou ELSE");
 							ParDependenciaInstrucao pdi_else = checkDependenciasDadosElse(inst_comp, inst_dependente, var_ref, nr_inst_comparadas ,nr_inst_a_comparar);
 							ParDependenciaInstrucao pdi_then = checkDependenciasDadosThen(pdi_else.getUltima_instrucao_no_bloco_seguinte(), inst_dependente, var_ref, nr_inst_comparadas ,nr_inst_a_comparar);
 							
@@ -151,7 +152,7 @@ public class GrafoPDG extends Grafo {
 							
 						}
 						// se for uma instrucao num bloco then procura no bloco then e tambem nas instrucoes anteriores a expressao if
-						else if (i_comp.getBloco_if().equals("THEN")) {
+						else if (i_comp.getBloco_if().equals("THEN")) {System.out.println("\tEntrou THEN");
 							ParDependenciaInstrucao pdi_then = checkDependenciasDadosThen(inst_comp, inst_dependente, var_ref, nr_inst_comparadas ,nr_inst_a_comparar);
 							
 							dep_encontrada = false;
@@ -191,15 +192,23 @@ public class GrafoPDG extends Grafo {
 						
 						reflexa = pdi_then.isReflexa();
 					}
+					// TODO para instrucoes que estejam num while de outro nivel mais interno nao vai funcionar
+					
+					
+					
+					
+					
+					
+					
 					
 					// atualiza a isntrucao a ser comparada na proxima iteracao
 					if (inst_comp == primeira_inst_while) inst_comp = ultima_inst_while;
 					else inst_comp--;
 					// incrementa o numero de instrucoes comparadas
+					System.out.println("NR DE INSTRUCOES COMPARADAS:\t"+nr_instrucoes);
 					nr_inst_comparadas += nr_instrucoes;
-				}
-				
-				
+					System.out.println("PROXIMA ISNTRUCAO A COMPARAR:\t"+inst_comp+"\nDEPENDENCIA ENCONTRADA:\t"+dep_encontrada);
+				}System.out.println("PAROU COMPARACAO DE INSTRUCOES");
 				
 				// se a dependencia temporaria nao tiver sido descartada entao adiciona-se esta dependência ao grafo
 				if (inst_dependente_temp != -1){
@@ -222,7 +231,9 @@ public class GrafoPDG extends Grafo {
 				// inicia a procura a partir da instrucao imediatamente anterior à expressao do while
 				int inst = primeira_inst_while-1;
 				boolean procurar_fora_bloco = false;
+//				System.out.println("inicia a procura a partir da instrucao imediatamente anterior à expressao do while: "+inst);
 				while (!dep_encontrada_fora_while && inst>=0) {
+					System.out.println("Esta no ciclo da procura com a variavel dep_encontrada_fora_while: "+dep_encontrada_fora_while);
 					ParDependenciaInstrucao p = checkDependenciasDados(inst, inst_dependente, var_ref, procurar_fora_bloco);
 					dep_encontrada_fora_while = p.isExiste_dependencia();
 					inst = p.getUltima_instrucao_no_bloco_seguinte();
@@ -256,7 +267,7 @@ public class GrafoPDG extends Grafo {
 	
 	/**
 	 * Detecta as dependencias de dados na instrucao nodo_anterior para a variavel referenciada na instrucao nodo_posterior var_ref
-	 * Trata diversos cenarios para a instrucao sobre a qual estamos a tentar encontrar dependencias 
+	 * Trata diversos casos em que a instrucao na qual se procura se uma variavel está definida 
 	 * @param nodo_anterior
 	 * @param nodo_posterior
 	 * @param var_ref
@@ -336,10 +347,7 @@ public class GrafoPDG extends Grafo {
 	
 	
 	/**
-	 * Procura dependencias no bloco then e devolve a ultima instrucao do bloco anterior (expressao if) 
-	 * e indica se foi encontrada uma dependencia
-	 * Usada quando a instrucao sobre a qual se esta a testar a dependencia está no corpo da função
-	 * Insere dependencia de dados no grafo quando encontra
+	 * Procura dependencias no bloco then e devolve a ultima instrucao do bloco anterior (expressao if) e indica se foi encontrada uma dependencia
 	 * @param nodo_anterior
 	 * @param nodo_posterior
 	 * @param var_ref
@@ -351,6 +359,7 @@ public class GrafoPDG extends Grafo {
 		
 		// procura no bloco then uma dependencia de dados
 		while (!dep_encontrada && this.getNodos().get(nodo_anterior).getBloco_if().equals("THEN")) {
+//			System.out.println("NR INSTRUCAO PENDENTE?:\t"+nodo_posterior);
 //				ParDependenciaInstrucao p = checkDependenciasDados(nodo_anterior, nodo_posterior, var_ref, true);
 //				dep_encontrada = p.isExiste_dependencia();
 //				nodo_anterior = p.getUltima_instrucao_no_bloco_seguinte();
@@ -375,10 +384,7 @@ public class GrafoPDG extends Grafo {
 	}
 
 	/**
-	 * Procura dependencias no bloco else e devolve a ultima instrucao do bloco anterior (expressao if) 
-	 * e indica se foi encontrada uma dependencia
-	 * Usada quando a instrucao sobre a qual se esta a testar a dependencia está no corpo da função
-	 * Insere dependencia de dados no grafo quando encontra
+	 * Procura dependencias no bloco else e devolve a ultima instrucao do bloco anterior (expressao if) e indica se foi encontrada uma dependencia
 	 * @param nodo_anterior
 	 * @param nodo_posterior
 	 * @param var_ref
@@ -416,9 +422,6 @@ public class GrafoPDG extends Grafo {
 
 	/**
 	 * Procura dependencias no bloco else e devolve a ultima instrucao do bloco anterior (then) e indica se foi encontrada uma dependencia
-	 * Usada quando a instrucao sobre a qual se esta a testar a dependencia está no corpo da função
-	 * Insere dependencia de dados no grafo quando encontra
-	 * 
 	 * @param nodo_anterior
 	 * @param nodo_posterior
 	 * @param var_ref
@@ -457,10 +460,7 @@ public class GrafoPDG extends Grafo {
 	}
 	
 	/**
-	 * Procura no bloco else parando quando encontrar dependencia ou quando todas as instrucoes do ciclo while tiverem sido percorridas
-	 * Usada quando a instrucao sobre a qual se esta a testar a dependencia está dentro de um ciclo while
-	 * Insere dependencia de dados no grafo quando encontra
-	 * 
+	 * Procura no bloco else parando quando encontrar dependencia ou quando todas as isntrucoes do ciclo while tiverem sido percorridas
 	 * @param nodo_anterior
 	 * @param nodo_posterior
 	 * @param var_ref
@@ -510,10 +510,7 @@ public class GrafoPDG extends Grafo {
 	}
 
 	/**
-	 * Procura dependencias no bloco then e devolve a ultima instrucao do bloco anterior (expressao if) 
-	 * e indica se foi encontrada uma dependencia
-	 * Insere dependencia de dados no grafo quando encontra
-	 * Utilizada quando a instrucao sobre a qual se esta a testar a dependencia está no corpo da função
+	 * Procura dependencias no bloco then e devolve a ultima instrucao do bloco anterior (expressao if) e indica se foi encontrada uma dependencia
 	 * @param nodo_anterior
 	 * @param nodo_posterior
 	 * @param var_ref
@@ -552,9 +549,7 @@ public class GrafoPDG extends Grafo {
 	}
 	
 	/**
-	 * Procura dependencias no bloco then e devolve a ultima instrucao do bloco anterior (expressao if) 
-	 * e indica se foi encontrada uma dependencia
-	 * Insere dependencia de dados no grafo quando encontra
+	 * Procura dependencias no bloco then e devolve a ultima instrucao do bloco anterior (expressao if) e indica se foi encontrada uma dependencia
 	 * Usada quando a instrucao sobre a qual se esta a testar a dependencia está dentro de um ciclo while
 	 * @param nodo_anterior
 	 * @param nodo_posterior
@@ -604,8 +599,6 @@ public class GrafoPDG extends Grafo {
 	
 	/**
 	 * Verifica apenas se existe dependencia de dados dentro de um bloco then
-	 * Não insere dependencia de dados no grafo quando encontra
-	 * Usada quando a instrucao sobre a qual se esta a testar a dependencia está dentro de um ciclo while
 	 * @param nodo_anterior
 	 * @param var_ref
 	 * @return se encontrou dependencia, o nr da isntrucao da expressao do if e o nr de instrucoes comparadas
