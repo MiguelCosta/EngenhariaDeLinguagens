@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g 2012-07-08 18:47:21
+// $ANTLR 3.4 /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g 2012-07-09 00:31:27
 
 	import java.util.TreeSet;
 	import java.util.HashSet;
@@ -101,7 +101,7 @@ public TreeAdaptor getTreeAdaptor() {
     return adaptor;
 }
     public String[] getTokenNames() { return CmbTGPDG.tokenNames; }
-    public String getGrammarFileName() { return "/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g"; }
+    public String getGrammarFileName() { return "/opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g"; }
 
 
     public static class programa_return extends TreeRuleReturnScope {
@@ -112,7 +112,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "programa"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:16:1: programa returns [TreeMap<String, GrafoPDG> grafos_out] : ^( PROGRAMA ( funcao[new GrafoPDG()] )+ ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:16:1: programa returns [TreeMap<String, GrafoPDG> grafos_out] : ^( PROGRAMA ( funcao[new GrafoPDG()] )+ ) ;
     public final CmbTGPDG.programa_return programa() throws RecognitionException {
         CmbTGPDG.programa_return retval = new CmbTGPDG.programa_return();
         retval.start = input.LT(1);
@@ -133,8 +133,8 @@ public TreeAdaptor getTreeAdaptor() {
         	TreeMap<String, GrafoPDG> grafos = new TreeMap<String, GrafoPDG>();
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:20:2: ( ^( PROGRAMA ( funcao[new GrafoPDG()] )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:20:5: ^( PROGRAMA ( funcao[new GrafoPDG()] )+ )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:20:2: ( ^( PROGRAMA ( funcao[new GrafoPDG()] )+ ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:20:5: ^( PROGRAMA ( funcao[new GrafoPDG()] )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -155,7 +155,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:20:16: ( funcao[new GrafoPDG()] )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:20:16: ( funcao[new GrafoPDG()] )+
             int cnt1=0;
             loop1:
             do {
@@ -169,7 +169,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:20:17: funcao[new GrafoPDG()]
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:20:17: funcao[new GrafoPDG()]
             	    {
             	    _last = (CommonTree)input.LT(1);
             	    pushFollow(FOLLOW_funcao_in_programa67);
@@ -243,7 +243,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "funcao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:31:1: funcao[GrafoPDG g_in] returns [GrafoPDG g_out, String func_id] : ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in, $cabecalho.id, $cabecalho.vars_def] ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:31:1: funcao[GrafoPDG g_in] returns [GrafoPDG g_out, String func_id] : ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in, $cabecalho.id, $cabecalho.vars_def] ) ;
     public final CmbTGPDG.funcao_return funcao(GrafoPDG g_in) throws RecognitionException {
         CmbTGPDG.funcao_return retval = new CmbTGPDG.funcao_return();
         retval.start = input.LT(1);
@@ -263,8 +263,8 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree FUNCAO3_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:32:2: ( ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in, $cabecalho.id, $cabecalho.vars_def] ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:32:5: ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in, $cabecalho.id, $cabecalho.vars_def] )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:32:2: ( ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in, $cabecalho.id, $cabecalho.vars_def] ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:32:5: ^( FUNCAO cabecalho corpo_funcao[$funcao.g_in, $cabecalho.id, $cabecalho.vars_def] )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -348,7 +348,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "cabecalho"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:40:1: cabecalho returns [String id, HashSet<String> vars_def] : ^( CAEBECALHO tipo ID ( argumentos )? ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:40:1: cabecalho returns [String id, HashSet<String> vars_def] : ^( CAEBECALHO tipo ID ( argumentos )? ) ;
     public final CmbTGPDG.cabecalho_return cabecalho() throws RecognitionException {
         CmbTGPDG.cabecalho_return retval = new CmbTGPDG.cabecalho_return();
         retval.start = input.LT(1);
@@ -373,8 +373,8 @@ public TreeAdaptor getTreeAdaptor() {
         	HashSet<String> variaveis_definidas = new HashSet<String>();
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:44:2: ( ^( CAEBECALHO tipo ID ( argumentos )? ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:44:5: ^( CAEBECALHO tipo ID ( argumentos )? )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:44:2: ( ^( CAEBECALHO tipo ID ( argumentos )? ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:44:5: ^( CAEBECALHO tipo ID ( argumentos )? )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -415,7 +415,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:44:26: ( argumentos )?
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:44:26: ( argumentos )?
             int alt2=2;
             int LA2_0 = input.LA(1);
 
@@ -424,7 +424,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt2) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:44:27: argumentos
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:44:27: argumentos
                     {
                     _last = (CommonTree)input.LT(1);
                     pushFollow(FOLLOW_argumentos_in_cabecalho140);
@@ -488,7 +488,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "argumentos"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:51:1: argumentos returns [HashSet<String> vars_def] : ^( ARGUMENTOS ( declaracao )+ ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:51:1: argumentos returns [HashSet<String> vars_def] : ^( ARGUMENTOS ( declaracao )+ ) ;
     public final CmbTGPDG.argumentos_return argumentos() throws RecognitionException {
         CmbTGPDG.argumentos_return retval = new CmbTGPDG.argumentos_return();
         retval.start = input.LT(1);
@@ -509,8 +509,8 @@ public TreeAdaptor getTreeAdaptor() {
         	HashSet<String> variaveis_definidas = new HashSet<String>();
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:55:2: ( ^( ARGUMENTOS ( declaracao )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:55:5: ^( ARGUMENTOS ( declaracao )+ )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:55:2: ( ^( ARGUMENTOS ( declaracao )+ ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:55:5: ^( ARGUMENTOS ( declaracao )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -531,7 +531,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:55:18: ( declaracao )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:55:18: ( declaracao )+
             int cnt3=0;
             loop3:
             do {
@@ -545,7 +545,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt3) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:55:19: declaracao
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:55:19: declaracao
             	    {
             	    _last = (CommonTree)input.LT(1);
             	    pushFollow(FOLLOW_declaracao_in_argumentos171);
@@ -614,7 +614,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "corpo_funcao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:60:1: corpo_funcao[GrafoPDG g_in, String id_funcao, HashSet<String> vars_def] returns [GrafoPDG g_out] : ^( CORPO declaracoes statements[$corpo_funcao.g_in, \"CORPO_FUNCAO\", nrs, \"\", nrs_while, \"\"] ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:60:1: corpo_funcao[GrafoPDG g_in, String id_funcao, HashSet<String> vars_def] returns [GrafoPDG g_out] : ^( CORPO declaracoes statements[$corpo_funcao.g_in, \"CORPO_FUNCAO\", nrs, \"\", nrs_while, \"\"] ) ;
     public final CmbTGPDG.corpo_funcao_return corpo_funcao(GrafoPDG g_in, String id_funcao, HashSet<String> vars_def) throws RecognitionException {
         CmbTGPDG.corpo_funcao_return retval = new CmbTGPDG.corpo_funcao_return();
         retval.start = input.LT(1);
@@ -642,8 +642,8 @@ public TreeAdaptor getTreeAdaptor() {
         	nrs.add(nr);
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:69:2: ( ^( CORPO declaracoes statements[$corpo_funcao.g_in, \"CORPO_FUNCAO\", nrs, \"\", nrs_while, \"\"] ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:69:4: ^( CORPO declaracoes statements[$corpo_funcao.g_in, \"CORPO_FUNCAO\", nrs, \"\", nrs_while, \"\"] )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:69:2: ( ^( CORPO declaracoes statements[$corpo_funcao.g_in, \"CORPO_FUNCAO\", nrs, \"\", nrs_while, \"\"] ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:69:4: ^( CORPO declaracoes statements[$corpo_funcao.g_in, \"CORPO_FUNCAO\", nrs, \"\", nrs_while, \"\"] )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -724,7 +724,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "declaracoes"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:75:1: declaracoes : ^( DECLARACOES ( declaracao )+ ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:75:1: declaracoes : ^( DECLARACOES ( declaracao )+ ) ;
     public final CmbTGPDG.declaracoes_return declaracoes() throws RecognitionException {
         CmbTGPDG.declaracoes_return retval = new CmbTGPDG.declaracoes_return();
         retval.start = input.LT(1);
@@ -742,8 +742,8 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree DECLARACOES15_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:76:2: ( ^( DECLARACOES ( declaracao )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:76:4: ^( DECLARACOES ( declaracao )+ )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:76:2: ( ^( DECLARACOES ( declaracao )+ ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:76:4: ^( DECLARACOES ( declaracao )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -764,7 +764,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:76:18: ( declaracao )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:76:18: ( declaracao )+
             int cnt4=0;
             loop4:
             do {
@@ -778,7 +778,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt4) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:76:18: declaracao
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:76:18: declaracao
             	    {
             	    _last = (CommonTree)input.LT(1);
             	    pushFollow(FOLLOW_declaracao_in_declaracoes226);
@@ -843,7 +843,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "declaracao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:79:1: declaracao returns [String var_def] : ^( DECLARACAO tipo ID ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:79:1: declaracao returns [String var_def] : ^( DECLARACAO tipo ID ) ;
     public final CmbTGPDG.declaracao_return declaracao() throws RecognitionException {
         CmbTGPDG.declaracao_return retval = new CmbTGPDG.declaracao_return();
         retval.start = input.LT(1);
@@ -863,8 +863,8 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree ID19_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:80:2: ( ^( DECLARACAO tipo ID ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:80:4: ^( DECLARACAO tipo ID )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:80:2: ( ^( DECLARACAO tipo ID ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:80:4: ^( DECLARACAO tipo ID )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -943,7 +943,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "tipo"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:83:1: tipo : ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:83:1: tipo : ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO );
     public final CmbTGPDG.tipo_return tipo() throws RecognitionException {
         CmbTGPDG.tipo_return retval = new CmbTGPDG.tipo_return();
         retval.start = input.LT(1);
@@ -959,8 +959,8 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree set20_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:84:2: ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:84:2: ( TD_INT | TD_BOOL | TD_STRING | TD_VAZIO )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1021,7 +1021,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "statements"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:90:1: statements[GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( STATEMENTS ( statement[g, cx, nrs_ultima_instrucao, $statements.label_in, nrs_instrucao_while, bi] )+ ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:90:1: statements[GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( STATEMENTS ( statement[g, cx, nrs_ultima_instrucao, $statements.label_in, nrs_instrucao_while, bi] )+ ) ;
     public final CmbTGPDG.statements_return statements(GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in) throws RecognitionException {
         CmbTGPDG.statements_return retval = new CmbTGPDG.statements_return();
         retval.start = input.LT(1);
@@ -1046,8 +1046,8 @@ public TreeAdaptor getTreeAdaptor() {
         	String bi = bloco_if_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:98:2: ( ^( STATEMENTS ( statement[g, cx, nrs_ultima_instrucao, $statements.label_in, nrs_instrucao_while, bi] )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:98:5: ^( STATEMENTS ( statement[g, cx, nrs_ultima_instrucao, $statements.label_in, nrs_instrucao_while, bi] )+ )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:98:2: ( ^( STATEMENTS ( statement[g, cx, nrs_ultima_instrucao, $statements.label_in, nrs_instrucao_while, bi] )+ ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:98:5: ^( STATEMENTS ( statement[g, cx, nrs_ultima_instrucao, $statements.label_in, nrs_instrucao_while, bi] )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1068,7 +1068,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:98:18: ( statement[g, cx, nrs_ultima_instrucao, $statements.label_in, nrs_instrucao_while, bi] )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:98:18: ( statement[g, cx, nrs_ultima_instrucao, $statements.label_in, nrs_instrucao_while, bi] )+
             int cnt5=0;
             loop5:
             do {
@@ -1082,7 +1082,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt5) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:98:19: statement[g, cx, nrs_ultima_instrucao, $statements.label_in, nrs_instrucao_while, bi]
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:98:19: statement[g, cx, nrs_ultima_instrucao, $statements.label_in, nrs_instrucao_while, bi]
             	    {
             	    _last = (CommonTree)input.LT(1);
             	    pushFollow(FOLLOW_statement_in_statements310);
@@ -1168,7 +1168,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "statement"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:118:1: statement[GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, String contexto_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out, String label_out, String bloco_if_out] : ( atribuicao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | read[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | write[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | ifs[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in] | whiles[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in, bi] | invocacao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | retorna[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:118:1: statement[GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, String contexto_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out, String label_out, String bloco_if_out] : ( atribuicao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | read[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | write[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | ifs[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in] | whiles[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in, bi] | invocacao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | retorna[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] );
     public final CmbTGPDG.statement_return statement(GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in) throws RecognitionException {
         CmbTGPDG.statement_return retval = new CmbTGPDG.statement_return();
         retval.start = input.LT(1);
@@ -1201,7 +1201,7 @@ public TreeAdaptor getTreeAdaptor() {
         	String bi = bloco_if_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:124:2: ( atribuicao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | read[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | write[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | ifs[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in] | whiles[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in, bi] | invocacao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | retorna[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:124:2: ( atribuicao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | read[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | write[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | ifs[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in] | whiles[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in, bi] | invocacao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] | retorna[g, $statement.label_in, cx, nrs_instrucao_while_in, bi] )
             int alt6=7;
             switch ( input.LA(1) ) {
             case 52:
@@ -1250,7 +1250,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt6) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:124:4: atribuicao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi]
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:124:4: atribuicao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -1285,7 +1285,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:139:4: read[g, $statement.label_in, cx, nrs_instrucao_while_in, bi]
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:139:4: read[g, $statement.label_in, cx, nrs_instrucao_while_in, bi]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -1320,7 +1320,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:154:4: write[g, $statement.label_in, cx, nrs_instrucao_while_in, bi]
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:154:4: write[g, $statement.label_in, cx, nrs_instrucao_while_in, bi]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -1355,7 +1355,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:169:4: ifs[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in]
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:169:4: ifs[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -1390,7 +1390,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:184:4: whiles[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in, bi]
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:184:4: whiles[g, cx, $statement.nrs_ultima_instrucao_in, $statement.label_in, nrs_instrucao_while_in, bi]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -1429,7 +1429,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:203:4: invocacao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi]
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:203:4: invocacao[g, $statement.label_in, cx, nrs_instrucao_while_in, bi]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -1464,7 +1464,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:218:4: retorna[g, $statement.label_in, cx, nrs_instrucao_while_in, bi]
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:218:4: retorna[g, $statement.label_in, cx, nrs_instrucao_while_in, bi]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -1530,7 +1530,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "retorna"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:235:1: retorna[GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( RETURN expr ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:235:1: retorna[GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( RETURN expr ) ;
     public final CmbTGPDG.retorna_return retorna(GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in) throws RecognitionException {
         CmbTGPDG.retorna_return retval = new CmbTGPDG.retorna_return();
         retval.start = input.LT(1);
@@ -1554,8 +1554,8 @@ public TreeAdaptor getTreeAdaptor() {
         	String bi = bloco_if_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:242:2: ( ^( RETURN expr ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:242:5: ^( RETURN expr )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:242:2: ( ^( RETURN expr ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:242:5: ^( RETURN expr )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1649,7 +1649,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "invocacao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:265:1: invocacao[GrafoPDG g_in, String contexto_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String instrucao, String label_out, HashSet<String> vars_ref, TreeSet<Integer> nrs_instrucao_while_out] : ^( INVOCACAO ID ( args )? ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:265:1: invocacao[GrafoPDG g_in, String contexto_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String instrucao, String label_out, HashSet<String> vars_ref, TreeSet<Integer> nrs_instrucao_while_out] : ^( INVOCACAO ID ( args )? ) ;
     public final CmbTGPDG.invocacao_return invocacao(GrafoPDG g_in, String contexto_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in) throws RecognitionException {
         CmbTGPDG.invocacao_return retval = new CmbTGPDG.invocacao_return();
         retval.start = input.LT(1);
@@ -1676,8 +1676,8 @@ public TreeAdaptor getTreeAdaptor() {
         	String bi = bloco_if_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:273:2: ( ^( INVOCACAO ID ( args )? ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:273:5: ^( INVOCACAO ID ( args )? )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:273:2: ( ^( INVOCACAO ID ( args )? ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:273:5: ^( INVOCACAO ID ( args )? )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1708,7 +1708,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:273:20: ( args )?
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:273:20: ( args )?
             int alt7=2;
             int LA7_0 = input.LA(1);
 
@@ -1717,7 +1717,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt7) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:273:21: args
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:273:21: args
                     {
                     _last = (CommonTree)input.LT(1);
                     pushFollow(FOLLOW_args_in_invocacao475);
@@ -1805,7 +1805,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "args"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:305:1: args returns [String ags, HashSet<String> vars_ref] : ^( ARGS ( expr )+ ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:305:1: args returns [String ags, HashSet<String> vars_ref] : ^( ARGS ( expr )+ ) ;
     public final CmbTGPDG.args_return args() throws RecognitionException {
         CmbTGPDG.args_return retval = new CmbTGPDG.args_return();
         retval.start = input.LT(1);
@@ -1827,8 +1827,8 @@ public TreeAdaptor getTreeAdaptor() {
         	HashSet<String> variaveis_referenciadas = new HashSet<String>();
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:310:2: ( ^( ARGS ( expr )+ ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:310:5: ^( ARGS ( expr )+ )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:310:2: ( ^( ARGS ( expr )+ ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:310:5: ^( ARGS ( expr )+ )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -1849,7 +1849,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             match(input, Token.DOWN, null); if (state.failed) return retval;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:310:12: ( expr )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:310:12: ( expr )+
             int cnt8=0;
             loop8:
             do {
@@ -1863,7 +1863,7 @@ public TreeAdaptor getTreeAdaptor() {
 
                 switch (alt8) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:310:13: expr
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:310:13: expr
             	    {
             	    _last = (CommonTree)input.LT(1);
             	    pushFollow(FOLLOW_expr_in_args513);
@@ -1944,7 +1944,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "atribuicao"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:326:1: atribuicao[GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( '=' ID expr ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:326:1: atribuicao[GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( '=' ID expr ) ;
     public final CmbTGPDG.atribuicao_return atribuicao(GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in) throws RecognitionException {
         CmbTGPDG.atribuicao_return retval = new CmbTGPDG.atribuicao_return();
         retval.start = input.LT(1);
@@ -1971,8 +1971,8 @@ public TreeAdaptor getTreeAdaptor() {
         	String bi = bloco_if_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:334:2: ( ^( '=' ID expr ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:334:5: ^( '=' ID expr )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:334:2: ( ^( '=' ID expr ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:334:5: ^( '=' ID expr )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2075,7 +2075,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "write"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:356:1: write[GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( WRITE expr ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:356:1: write[GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( WRITE expr ) ;
     public final CmbTGPDG.write_return write(GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in) throws RecognitionException {
         CmbTGPDG.write_return retval = new CmbTGPDG.write_return();
         retval.start = input.LT(1);
@@ -2099,8 +2099,8 @@ public TreeAdaptor getTreeAdaptor() {
         	String bi = bloco_if_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:363:2: ( ^( WRITE expr ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:363:4: ^( WRITE expr )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:363:2: ( ^( WRITE expr ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:363:4: ^( WRITE expr )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2192,7 +2192,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "read"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:386:1: read[GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( READ ID ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:386:1: read[GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( READ ID ) ;
     public final CmbTGPDG.read_return read(GrafoPDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in) throws RecognitionException {
         CmbTGPDG.read_return retval = new CmbTGPDG.read_return();
         retval.start = input.LT(1);
@@ -2217,8 +2217,8 @@ public TreeAdaptor getTreeAdaptor() {
         	String bi = bloco_if_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:394:2: ( ^( READ ID ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:394:4: ^( READ ID )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:394:2: ( ^( READ ID ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:394:4: ^( READ ID )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2312,7 +2312,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "ifs"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:418:1: ifs[GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( IF expr a= bloco[g, cx, nrs_exp, \"T\", nrs_instrucao_while, \"THEN\"] (b= bloco[g, cx, nrs_exp, \"F\", nrs_instrucao_while, \"ELSE\"] )? ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:418:1: ifs[GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( IF expr a= bloco[g, cx, nrs_exp, \"T\", nrs_instrucao_while, \"THEN\"] (b= bloco[g, cx, nrs_exp, \"F\", nrs_instrucao_while, \"ELSE\"] )? ) ;
     public final CmbTGPDG.ifs_return ifs(GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in) throws RecognitionException {
         CmbTGPDG.ifs_return retval = new CmbTGPDG.ifs_return();
         retval.start = input.LT(1);
@@ -2341,8 +2341,8 @@ public TreeAdaptor getTreeAdaptor() {
         	String cx = contexto_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:426:2: ( ^( IF expr a= bloco[g, cx, nrs_exp, \"T\", nrs_instrucao_while, \"THEN\"] (b= bloco[g, cx, nrs_exp, \"F\", nrs_instrucao_while, \"ELSE\"] )? ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:426:4: ^( IF expr a= bloco[g, cx, nrs_exp, \"T\", nrs_instrucao_while, \"THEN\"] (b= bloco[g, cx, nrs_exp, \"F\", nrs_instrucao_while, \"ELSE\"] )? )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:426:2: ( ^( IF expr a= bloco[g, cx, nrs_exp, \"T\", nrs_instrucao_while, \"THEN\"] (b= bloco[g, cx, nrs_exp, \"F\", nrs_instrucao_while, \"ELSE\"] )? ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:426:4: ^( IF expr a= bloco[g, cx, nrs_exp, \"T\", nrs_instrucao_while, \"THEN\"] (b= bloco[g, cx, nrs_exp, \"F\", nrs_instrucao_while, \"ELSE\"] )? )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2409,7 +2409,7 @@ public TreeAdaptor getTreeAdaptor() {
             				}
             			}
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:452:4: (b= bloco[g, cx, nrs_exp, \"F\", nrs_instrucao_while, \"ELSE\"] )?
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:452:4: (b= bloco[g, cx, nrs_exp, \"F\", nrs_instrucao_while, \"ELSE\"] )?
             int alt9=2;
             int LA9_0 = input.LA(1);
 
@@ -2418,7 +2418,7 @@ public TreeAdaptor getTreeAdaptor() {
             }
             switch (alt9) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:452:5: b= bloco[g, cx, nrs_exp, \"F\", nrs_instrucao_while, \"ELSE\"]
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:452:5: b= bloco[g, cx, nrs_exp, \"F\", nrs_instrucao_while, \"ELSE\"]
                     {
                     _last = (CommonTree)input.LT(1);
                     pushFollow(FOLLOW_bloco_in_ifs678);
@@ -2493,7 +2493,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "whiles"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:470:1: whiles[GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( WHILE expr bloco[g, \"WHILE\", nrs_exp, \"T\" ,nrs_instrucao_while, bi] ) ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:470:1: whiles[GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String label_out, TreeSet<Integer> nrs_instrucao_while_out] : ^( WHILE expr bloco[g, \"WHILE\", nrs_exp, \"T\" ,nrs_instrucao_while, bi] ) ;
     public final CmbTGPDG.whiles_return whiles(GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in) throws RecognitionException {
         CmbTGPDG.whiles_return retval = new CmbTGPDG.whiles_return();
         retval.start = input.LT(1);
@@ -2521,8 +2521,8 @@ public TreeAdaptor getTreeAdaptor() {
         	String bi = bloco_if_in;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:479:2: ( ^( WHILE expr bloco[g, \"WHILE\", nrs_exp, \"T\" ,nrs_instrucao_while, bi] ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:479:5: ^( WHILE expr bloco[g, \"WHILE\", nrs_exp, \"T\" ,nrs_instrucao_while, bi] )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:479:2: ( ^( WHILE expr bloco[g, \"WHILE\", nrs_exp, \"T\" ,nrs_instrucao_while, bi] ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:479:5: ^( WHILE expr bloco[g, \"WHILE\", nrs_exp, \"T\" ,nrs_instrucao_while, bi] )
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2632,7 +2632,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "bloco"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:511:1: bloco[GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_instrucao_while_out, String label_out] : statements[$bloco.g_in, $bloco.contexto_in, $bloco.nrs_ultima_instrucao_in, $bloco.label_in, $bloco.nrs_instrucao_while_in, $bloco.bloco_if_in] ;
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:511:1: bloco[GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoPDG g_out, TreeSet<Integer> nrs_instrucao_while_out, String label_out] : statements[$bloco.g_in, $bloco.contexto_in, $bloco.nrs_ultima_instrucao_in, $bloco.label_in, $bloco.nrs_instrucao_while_in, $bloco.bloco_if_in] ;
     public final CmbTGPDG.bloco_return bloco(GrafoPDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in) throws RecognitionException {
         CmbTGPDG.bloco_return retval = new CmbTGPDG.bloco_return();
         retval.start = input.LT(1);
@@ -2648,8 +2648,8 @@ public TreeAdaptor getTreeAdaptor() {
 
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:512:2: ( statements[$bloco.g_in, $bloco.contexto_in, $bloco.nrs_ultima_instrucao_in, $bloco.label_in, $bloco.nrs_instrucao_while_in, $bloco.bloco_if_in] )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:512:4: statements[$bloco.g_in, $bloco.contexto_in, $bloco.nrs_ultima_instrucao_in, $bloco.label_in, $bloco.nrs_instrucao_while_in, $bloco.bloco_if_in]
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:512:2: ( statements[$bloco.g_in, $bloco.contexto_in, $bloco.nrs_ultima_instrucao_in, $bloco.label_in, $bloco.nrs_instrucao_while_in, $bloco.bloco_if_in] )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:512:4: statements[$bloco.g_in, $bloco.contexto_in, $bloco.nrs_ultima_instrucao_in, $bloco.label_in, $bloco.nrs_instrucao_while_in, $bloco.bloco_if_in]
             {
             root_0 = (CommonTree)adaptor.nil();
 
@@ -2702,7 +2702,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "expr"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:521:1: expr returns [String instrucao, HashSet<String> vars_ref] : ( ^( '||' a= expr b= expr ) | ^( '&&' a= expr b= expr ) | ^( '+' a= expr b= expr ) | ^( '-' a= expr b= expr ) | ^( '*' a= expr b= expr ) | ^( '/' a= expr b= expr ) | ^( '%' a= expr b= expr ) | ^( '>' a= expr b= expr ) | ^( '<' a= expr b= expr ) | ^( '>=' a= expr b= expr ) | ^( '<=' a= expr b= expr ) | ^( '==' a= expr b= expr ) | ^( '!=' a= expr b= expr ) | ^( '!' a= expr ) | factor );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:521:1: expr returns [String instrucao, HashSet<String> vars_ref] : ( ^( '||' a= expr b= expr ) | ^( '&&' a= expr b= expr ) | ^( '+' a= expr b= expr ) | ^( '-' a= expr b= expr ) | ^( '*' a= expr b= expr ) | ^( '/' a= expr b= expr ) | ^( '%' a= expr b= expr ) | ^( '>' a= expr b= expr ) | ^( '<' a= expr b= expr ) | ^( '>=' a= expr b= expr ) | ^( '<=' a= expr b= expr ) | ^( '==' a= expr b= expr ) | ^( '!=' a= expr b= expr ) | ^( '!' a= expr ) | factor );
     public final CmbTGPDG.expr_return expr() throws RecognitionException {
         CmbTGPDG.expr_return retval = new CmbTGPDG.expr_return();
         retval.start = input.LT(1);
@@ -2753,7 +2753,7 @@ public TreeAdaptor getTreeAdaptor() {
         	HashSet<String> vf = new HashSet<String>();
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:525:2: ( ^( '||' a= expr b= expr ) | ^( '&&' a= expr b= expr ) | ^( '+' a= expr b= expr ) | ^( '-' a= expr b= expr ) | ^( '*' a= expr b= expr ) | ^( '/' a= expr b= expr ) | ^( '%' a= expr b= expr ) | ^( '>' a= expr b= expr ) | ^( '<' a= expr b= expr ) | ^( '>=' a= expr b= expr ) | ^( '<=' a= expr b= expr ) | ^( '==' a= expr b= expr ) | ^( '!=' a= expr b= expr ) | ^( '!' a= expr ) | factor )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:525:2: ( ^( '||' a= expr b= expr ) | ^( '&&' a= expr b= expr ) | ^( '+' a= expr b= expr ) | ^( '-' a= expr b= expr ) | ^( '*' a= expr b= expr ) | ^( '/' a= expr b= expr ) | ^( '%' a= expr b= expr ) | ^( '>' a= expr b= expr ) | ^( '<' a= expr b= expr ) | ^( '>=' a= expr b= expr ) | ^( '<=' a= expr b= expr ) | ^( '==' a= expr b= expr ) | ^( '!=' a= expr b= expr ) | ^( '!' a= expr ) | factor )
             int alt10=15;
             switch ( input.LA(1) ) {
             case 57:
@@ -2847,7 +2847,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt10) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:525:4: ^( '||' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:525:4: ^( '||' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -2901,7 +2901,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:526:4: ^( '&&' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:526:4: ^( '&&' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -2955,7 +2955,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:527:4: ^( '+' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:527:4: ^( '+' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3009,7 +3009,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:528:4: ^( '-' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:528:4: ^( '-' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3063,7 +3063,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 5 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:529:4: ^( '*' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:529:4: ^( '*' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3117,7 +3117,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 6 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:530:4: ^( '/' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:530:4: ^( '/' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3171,7 +3171,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 7 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:531:4: ^( '%' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:531:4: ^( '%' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3225,7 +3225,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 8 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:532:4: ^( '>' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:532:4: ^( '>' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3279,7 +3279,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 9 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:533:4: ^( '<' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:533:4: ^( '<' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3333,7 +3333,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 10 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:534:4: ^( '>=' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:534:4: ^( '>=' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3387,7 +3387,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 11 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:535:5: ^( '<=' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:535:5: ^( '<=' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3441,7 +3441,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 12 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:536:4: ^( '==' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:536:4: ^( '==' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3495,7 +3495,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 13 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:537:4: ^( '!=' a= expr b= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:537:4: ^( '!=' a= expr b= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3549,7 +3549,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 14 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:538:4: ^( '!' a= expr )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:538:4: ^( '!' a= expr )
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3593,7 +3593,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 15 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:539:4: factor
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:539:4: factor
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3644,7 +3644,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "factor"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:542:1: factor returns [String instrucao, HashSet<String> vars_ref] : ( ID | constante | invocacao[null, \"FACTOR\", \"\", null, \"\"] );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:542:1: factor returns [String instrucao, HashSet<String> vars_ref] : ( ID | constante | invocacao[null, \"FACTOR\", \"\", null, \"\"] );
     public final CmbTGPDG.factor_return factor() throws RecognitionException {
         CmbTGPDG.factor_return retval = new CmbTGPDG.factor_return();
         retval.start = input.LT(1);
@@ -3667,7 +3667,7 @@ public TreeAdaptor getTreeAdaptor() {
         	HashSet<String> variaveis_ref = null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:546:2: ( ID | constante | invocacao[null, \"FACTOR\", \"\", null, \"\"] )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:546:2: ( ID | constante | invocacao[null, \"FACTOR\", \"\", null, \"\"] )
             int alt11=3;
             switch ( input.LA(1) ) {
             case ID:
@@ -3699,7 +3699,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt11) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:546:4: ID
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:546:4: ID
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3726,7 +3726,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:553:4: constante
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:553:4: constante
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3751,7 +3751,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:558:4: invocacao[null, \"FACTOR\", \"\", null, \"\"]
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:558:4: invocacao[null, \"FACTOR\", \"\", null, \"\"]
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3804,7 +3804,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
     // $ANTLR start "constante"
-    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:565:1: constante returns [String valor] : ( STRING | INT | TRUE | FALSE );
+    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:565:1: constante returns [String valor] : ( STRING | INT | TRUE | FALSE );
     public final CmbTGPDG.constante_return constante() throws RecognitionException {
         CmbTGPDG.constante_return retval = new CmbTGPDG.constante_return();
         retval.start = input.LT(1);
@@ -3826,7 +3826,7 @@ public TreeAdaptor getTreeAdaptor() {
         CommonTree FALSE71_tree=null;
 
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:566:2: ( STRING | INT | TRUE | FALSE )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:566:2: ( STRING | INT | TRUE | FALSE )
             int alt12=4;
             switch ( input.LA(1) ) {
             case STRING:
@@ -3860,7 +3860,7 @@ public TreeAdaptor getTreeAdaptor() {
 
             switch (alt12) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:566:4: STRING
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:566:4: STRING
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3882,7 +3882,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:567:4: INT
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:567:4: INT
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3904,7 +3904,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:568:4: TRUE
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:568:4: TRUE
                     {
                     root_0 = (CommonTree)adaptor.nil();
 
@@ -3926,7 +3926,7 @@ public TreeAdaptor getTreeAdaptor() {
                     }
                     break;
                 case 4 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:569:4: FALSE
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGPDG.g:569:4: FALSE
                     {
                     root_0 = (CommonTree)adaptor.nil();
 

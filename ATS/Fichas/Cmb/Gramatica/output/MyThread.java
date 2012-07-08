@@ -17,7 +17,11 @@ public class MyThread extends Thread {
 	private CmbTGSDG.programa_return _walkerSDGRet;
 
 	/**
-	 * TIPOS DISPONIVEIS 1 - CmbTGCFG 2 - CmbTGPDG 3 - CmbTGSSA
+	 * Tipos disponiveis para usar nas threads 
+	 * 1 - CmbTGCFG;
+	 * 2 - CmbTGPDG;
+	 * 3 - CmbTGSSA;
+	 * 4 - CmbTGSDG
 	 * */
 	private int _tipo;
 
@@ -46,22 +50,24 @@ public class MyThread extends Thread {
 			switch (_tipo) {
 			case 1:
 				_walkerRet = _walker.programa();
-				//System.out.println("CFG OUTPUT:\n" + _walkerRet.grafos_out);
+				// System.out.println("CFG OUTPUT:\n" + _walkerRet.grafos_out);
 				toDotCFG(_walkerRet.grafos_out);
 				break;
 			case 2:
 				_walkerPDGRet = _walkerPDG.programa();
-				//System.out.println("PDG OUTPUT:\n" + _walkerPDGRet.grafos_out);
+				// System.out.println("PDG OUTPUT:\n" +
+				// _walkerPDGRet.grafos_out);
 				toDotPDG(_walkerPDGRet.grafos_out);
 				break;
 			case 3:
 				_walkerSSARet = _walkerSSA.programa();
-				//System.out.println(_walkerSSARet.g_out);
+				// System.out.println(_walkerSSARet.g_out);
 				toDotSSA(_walkerSSARet.g_out);
 				break;
 			case 4:
 				_walkerSDGRet = _walkerSDG.programa();
-				//System.out.println("SDG OUTPUT:\n" + _walkerSDGRet.grafos_out);
+				// System.out.println("SDG OUTPUT:\n" +
+				// _walkerSDGRet.grafos_out);
 				toDotSDG(_walkerSDGRet.grafos_out);
 				System.out.println("SDG OUTPUT Funcaoes:\n"
 						+ _walkerSDGRet.funcoes_out);
@@ -237,25 +243,22 @@ public class MyThread extends Thread {
 					s += ";\n\t";
 				}
 			}
-			
+
 			s += "\n\n";
 
-			
 			TreeMap<Integer, ChamadasFuncao> cfuncoes = f.getChamadasFuncao();
-			for (Integer  c_int : cfuncoes.keySet()){
-				
+			for (Integer c_int : cfuncoes.keySet()) {
+
 				s += '"' + c_int.toString() + ":"
 						+ nodos.get(c_int).getInstrucaoDot() + '"';
 				s += " -> ";
-				s += '"' + "0:ENTER ("
-						+ cfuncoes.get(c_int).getNomeFuncao()
+				s += '"' + "0:ENTER (" + cfuncoes.get(c_int).getNomeFuncao()
 						+ ")" + '"' + " [style=dotted]";
 
 				s += ";\n\t";
-				
+
 			}
-			
-			
+
 		}
 
 		s += "}";

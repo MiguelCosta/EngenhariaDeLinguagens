@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGSDG.g 2012-07-08 22:44:39
+// $ANTLR 3.4 /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGSDG.g 2012-07-09 00:31:37
 
 	import java.util.TreeSet;
 	import java.util.HashSet;
