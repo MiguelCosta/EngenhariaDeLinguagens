@@ -1,0 +1,65 @@
+digraph mainmapPDG {
+graph [bgcolor=transparent];
+"0:ENTER (calcula)"[label="0: ENTER (calcula)"];
+"1:b = 55"[label="1: b = 55"];
+"2:c = 55"[label="2: c = 55"];
+"3:while(a)"[label="3: while(a)"];
+"4:b = a"[label="4: b = a"];
+"5:if(b)"[label="5: if(b)"];
+"6:c = c-2"[label="6: c = c-2"];
+"7:a = c*2"[label="7: a = c*2"];
+"8:a = c"[label="8: a = c"];
+"9:d = 1"[label="9: d = 1"];
+"10:if(c>a)"[label="10: if(c>a)"];
+"11:d = a+b+c"[label="11: d = a+b+c"];
+"12:c = 5"[label="12: c = 5"];
+"13:d = d/c"[label="13: d = d/c"];
+
+
+"0:ENTER (calcula)" -> "1:b = 55";
+	"0:ENTER (calcula)" -> "2:c = 55";
+	"0:ENTER (calcula)" -> "3:while(a)";
+	"0:ENTER (calcula)" -> "10:if(c>a)";
+	"0:ENTER (calcula)" -> "13:d = d/c";
+	"3:while(a)" -> "3:while(a)";
+	"3:while(a)" -> "4:b = a"[label="T"];
+	"3:while(a)" -> "5:if(b)"[label="T"];
+	"3:while(a)" -> "9:d = 1"[label="T"];
+	"5:if(b)" -> "6:c = c-2"[label="T"];
+	"5:if(b)" -> "7:a = c*2"[label="T"];
+	"5:if(b)" -> "8:a = c"[label="F"];
+	"10:if(c>a)" -> "11:d = a+b+c"[label="T"];
+	"10:if(c>a)" -> "12:c = 5"[label="T"];
+	
+
+"0:ENTER (calcula)" -> "3:while(a)" [style=dotted];
+	"0:ENTER (calcula)" -> "4:b = a" [style=dotted];
+	"0:ENTER (calcula)" -> "10:if(c>a)" [style=dotted];
+	"0:ENTER (calcula)" -> "11:d = a+b+c" [style=dotted];
+	"0:ENTER (calcula)" -> "13:d = d/c" [style=dotted];
+	"1:b = 55" -> "11:d = a+b+c" [style=dotted];
+	"2:c = 55" -> "6:c = c-2" [style=dotted];
+	"2:c = 55" -> "8:a = c" [style=dotted];
+	"2:c = 55" -> "10:if(c>a)" [style=dotted];
+	"2:c = 55" -> "11:d = a+b+c" [style=dotted];
+	"2:c = 55" -> "13:d = d/c" [style=dotted];
+	"4:b = a" -> "5:if(b)" [style=dotted];
+	"4:b = a" -> "11:d = a+b+c" [style=dotted];
+	"6:c = c-2" -> "6:c = c-2" [style=dotted];
+	"6:c = c-2" -> "7:a = c*2" [style=dotted];
+	"6:c = c-2" -> "8:a = c" [style=dotted];
+	"6:c = c-2" -> "10:if(c>a)" [style=dotted];
+	"6:c = c-2" -> "11:d = a+b+c" [style=dotted];
+	"6:c = c-2" -> "13:d = d/c" [style=dotted];
+	"7:a = c*2" -> "3:while(a)" [style=dotted];
+	"7:a = c*2" -> "4:b = a" [style=dotted];
+	"7:a = c*2" -> "10:if(c>a)" [style=dotted];
+	"7:a = c*2" -> "11:d = a+b+c" [style=dotted];
+	"8:a = c" -> "3:while(a)" [style=dotted];
+	"8:a = c" -> "4:b = a" [style=dotted];
+	"8:a = c" -> "10:if(c>a)" [style=dotted];
+	"8:a = c" -> "11:d = a+b+c" [style=dotted];
+	"9:d = 1" -> "13:d = d/c" [style=dotted];
+	"11:d = a+b+c" -> "13:d = d/c" [style=dotted];
+	"12:c = 5" -> "13:d = d/c" [style=dotted];
+	}

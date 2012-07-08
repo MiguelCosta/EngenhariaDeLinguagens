@@ -1,0 +1,35 @@
+digraph mainmapSDG {
+graph [bgcolor=transparent];
+"0:ENTER (calcula)"[shape=record, label="{{void|0: ENTER (calcula)|a|d}}"];
+"1:b = 55"[label="1: b = 55"];
+"2:c = 55"[label="2: c = 55"];
+"3:while(a)"[label="3: while(a)"];
+"4:b = a"[label="4: b = a"];
+"5:if(b)"[label="5: if(b)"];
+"6:c = c-2"[label="6: c = c-2"];
+"7:a = c*2"[label="7: a = c*2"];
+"8:a = c"[label="8: a = c"];
+"9:d = 1"[label="9: d = 1"];
+"10:if(c>a)"[label="10: if(c>a)"];
+"11:d = a+b+c"[label="11: d = a+b+c"];
+"12:c = 5"[label="12: c = 5"];
+"13:d = d/c"[label="13: d = d/c"];
+
+
+"0:ENTER (calcula)" -> "1:b = 55";
+	"0:ENTER (calcula)" -> "2:c = 55";
+	"0:ENTER (calcula)" -> "3:while(a)";
+	"0:ENTER (calcula)" -> "10:if(c>a)";
+	"0:ENTER (calcula)" -> "13:d = d/c";
+	"3:while(a)" -> "3:while(a)";
+	"3:while(a)" -> "4:b = a"[label="T"];
+	"3:while(a)" -> "5:if(b)"[label="T"];
+	"3:while(a)" -> "9:d = 1"[label="T"];
+	"5:if(b)" -> "6:c = c-2"[label="T"];
+	"5:if(b)" -> "7:a = c*2"[label="T"];
+	"5:if(b)" -> "8:a = c"[label="F"];
+	"10:if(c>a)" -> "11:d = a+b+c"[label="T"];
+	"10:if(c>a)" -> "12:c = 5"[label="T"];
+	
+
+}

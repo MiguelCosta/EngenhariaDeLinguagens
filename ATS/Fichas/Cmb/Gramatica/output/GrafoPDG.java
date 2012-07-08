@@ -171,7 +171,6 @@ public class GrafoPDG extends Grafo {
 						
 						// se encontrou dependencia no bloco else nao necessita de procurar fora do while
 						if(dep_encontrada = pdi_else.isExiste_dependencia()){
-							
 							dep_encontrada_fora_while = true;
 						}
 						else // se encontrou dependencia no bloco then do mesmo if entao guarda temporariamente o nr da instrucao 
@@ -181,9 +180,8 @@ public class GrafoPDG extends Grafo {
 						
 						inst_comp = pdi_then.getInstrucao_seguinte()+1;
 						nr_instrucoes = pdi_else.getNr_instrucoes() + pdi_then.getNr_instrucoes();
-						// é reflexa (se nao encontrar dependencia de si para si) se for reflexa no bloco else e no bloco then
+						// é reflexa (se nao encontrar dependencia de si para si) se se mantiver reflexa no bloco else e no bloco then
 						reflexa = pdi_else.isReflexa() && pdi_then.isReflexa();
-						
 						// variavel de controlo
 						proc_fora_bloco = true;
 					}
