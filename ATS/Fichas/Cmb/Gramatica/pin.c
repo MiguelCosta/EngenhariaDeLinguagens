@@ -12,7 +12,7 @@ void imprime(string nome)
 	if (b) {
 		c = a;
 		c = c + 30;
-		b = 20;
+		a = 20;
 	}
 	else {
 		c=c+1;
