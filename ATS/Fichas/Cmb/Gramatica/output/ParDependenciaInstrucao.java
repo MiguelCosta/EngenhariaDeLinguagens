@@ -1,6 +1,6 @@
 public class ParDependenciaInstrucao {
 	private boolean existe_dependencia;
-	private int instrucao_seguinte;
+	private int ultima_instrucao_no_bloco_seguinte;
 	private boolean procurar_fora_bloco;
 	private int nr_instrucoes;
 	private int instrucao_dependente = -1;
@@ -10,19 +10,19 @@ public class ParDependenciaInstrucao {
 	public ParDependenciaInstrucao() {
 		super();
 		this.existe_dependencia = false;
-		this.instrucao_seguinte = -1;
+		this.ultima_instrucao_no_bloco_seguinte = -1;
 		this.procurar_fora_bloco = false;
 	}
 	
 	/**
 	 * @param existe_dependencia
-	 * @param instrucao_seguinte
+	 * @param ultima_instrucao_no_bloco_seguinte
 	 */
 	public ParDependenciaInstrucao(boolean existe_dependencia,
-			int instrucao_seguinte) {
+			int ultima_instrucao_no_bloco_seguinte) {
 		super();
 		this.existe_dependencia = existe_dependencia;
-		this.instrucao_seguinte = instrucao_seguinte;
+		this.ultima_instrucao_no_bloco_seguinte = ultima_instrucao_no_bloco_seguinte;
 		this.procurar_fora_bloco = false;
 	}
 	
@@ -30,14 +30,14 @@ public class ParDependenciaInstrucao {
 
 	/**
 	 * @param existe_dependencia
-	 * @param instrucao_seguinte
+	 * @param ultima_instrucao_no_bloco_seguinte
 	 * @param procurar_fora_bloco
 	 */
 	public ParDependenciaInstrucao(boolean existe_dependencia,
-			int instrucao_seguinte, boolean procurar_fora_bloco) {
+			int ultima_instrucao_no_bloco_seguinte, boolean procurar_fora_bloco) {
 		super();
 		this.existe_dependencia = existe_dependencia;
-		this.instrucao_seguinte = instrucao_seguinte;
+		this.ultima_instrucao_no_bloco_seguinte = ultima_instrucao_no_bloco_seguinte;
 		this.procurar_fora_bloco = procurar_fora_bloco;
 	}
 
@@ -45,14 +45,14 @@ public class ParDependenciaInstrucao {
 	/**
 	 * 
 	 * @param existe_dependencia
-	 * @param instrucao_seguinte
+	 * @param ultima_instrucao_no_bloco_seguinte
 	 * @param nr_instrucoes
 	 */
 	public ParDependenciaInstrucao(boolean existe_dependencia,
-			int instrucao_seguinte, int nr_instrucoes) {
+			int ultima_instrucao_no_bloco_seguinte, int nr_instrucoes) {
 		super();
 		this.existe_dependencia = existe_dependencia;
-		this.instrucao_seguinte = instrucao_seguinte;
+		this.ultima_instrucao_no_bloco_seguinte = ultima_instrucao_no_bloco_seguinte;
 		this.nr_instrucoes = nr_instrucoes;
 	}
 
@@ -60,14 +60,14 @@ public class ParDependenciaInstrucao {
 	 * 
 	 * @param reflexa
 	 * @param existe_dependencia
-	 * @param instrucao_seguinte
+	 * @param ultima_instrucao_no_bloco_seguinte
 	 * @param nr_instrucoes
 	 */
 	public ParDependenciaInstrucao(boolean reflexa, boolean existe_dependencia,
-			int instrucao_seguinte, int nr_instrucoes) {
+			int ultima_instrucao_no_bloco_seguinte, int nr_instrucoes) {
 		super();
 		this.existe_dependencia = existe_dependencia;
-		this.instrucao_seguinte = instrucao_seguinte;
+		this.ultima_instrucao_no_bloco_seguinte = ultima_instrucao_no_bloco_seguinte;
 		this.nr_instrucoes = nr_instrucoes;
 		this.setReflexa(reflexa);
 	}
@@ -88,6 +88,20 @@ public class ParDependenciaInstrucao {
 	}
 
 	/**
+	 * @return the ultima_instrucao_no_bloco_seguinte
+	 */
+	public int getUltima_instrucao_no_bloco_seguinte() {
+		return ultima_instrucao_no_bloco_seguinte;
+	}
+
+	/**
+	 * @param ultima_instrucao_no_bloco_seguinte the ultima_instrucao_no_bloco_seguinte to set
+	 */
+	public void setUltima_instrucao_no_bloco_seguinte(int ultima_instrucao_no_bloco_seguinte) {
+		this.ultima_instrucao_no_bloco_seguinte = ultima_instrucao_no_bloco_seguinte;
+	}
+	
+	/**
 	 * @return the procurar_fora_bloco
 	 */
 	public boolean isProcurar_fora_bloco() {
@@ -100,25 +114,11 @@ public class ParDependenciaInstrucao {
 	public void setProcurar_fora_bloco(boolean procurar_fora_bloco) {
 		this.procurar_fora_bloco = procurar_fora_bloco;
 	}
-	
-	/**
-	 * @return the instrucao_seguinte
-	 */
-	public int getInstrucao_seguinte() {
-		return instrucao_seguinte;
-	}
-
-	/**
-	 * @param instrucao_seguinte the instrucao_seguinte to set
-	 */
-	public void setInstrucao_seguinte(int instrucao_seguinte) {
-		this.instrucao_seguinte = instrucao_seguinte;
-	}
 
 	@Override
 	public String toString() {
 		return "ParDependenciaInstrucao [existe_dependencia="
-				+ existe_dependencia + ", instrucao_seguinte=" + instrucao_seguinte
+				+ existe_dependencia + ", ultima_instrucao_no_bloco_seguinte=" + ultima_instrucao_no_bloco_seguinte
 				+ "]";
 	}
 
