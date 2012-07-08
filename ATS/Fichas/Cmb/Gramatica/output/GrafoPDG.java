@@ -53,7 +53,7 @@ public class GrafoPDG extends Grafo {
 	
 	
 	/**
-	 * Detecta as dependencias de todas as instrucoes internas de um while
+	 * Deteta as dependencias de todas as instrucoes internas de um ciclo while
 	 * @param nrs_instrucao_while
 	 */
 	public void checkDependenciasDadosWhile(TreeSet<Integer> nrs_instrucao_while){
@@ -63,7 +63,7 @@ public class GrafoPDG extends Grafo {
 		int primeira_inst_while = nrs_instrucao_while.first();
 		// ultima instrucao do bloco while 
 		int ultima_inst_while = nrs_instrucao_while.last();
-		// numero de instrucoes
+		// numero de instrucoes do ciclo while
 		int nr_inst_a_comparar = nrs_instrucao_while.size();
 		// variavel auxiliar que indica se uma dependencia foi encontrada
 		boolean dep_encontrada = false;
@@ -86,7 +86,11 @@ public class GrafoPDG extends Grafo {
 				// variavel auxiliar que indica que apesar da instrucao sobre a qual estamos a procura de dependencias 
 				// se encontra dentro de um bloco then ou else, as procuras a gazer sao "normais"
 				boolean proc_fora_bloco = false;
+				// guarda temporariamente uma possivel dependencia entre uma instrucao de um bloco else e o bloco then desse mesmo if.
+				// tal dependencia pode nao ser possivel se uma dependencia for encontrada entre a instrucao que esta no else 
+				// e outra instrucao fora do if
 				int dependencia_entre_blocos =  -1;
+				// esta variavel trata casos de dependencia reflexa dentro de um if
 				boolean reflexa = false;
 
 				// percorre o conjunto de instrucoes a partir de inst_dependente e ate à instrucao que no ciclo fica imediatamente apos inst_dependente
@@ -117,15 +121,16 @@ public class GrafoPDG extends Grafo {
 									// pára de procurar por dependencias para var_ref, passando a procurar para outra variavel referenciada nesta instrucao
 									dep_encontrada = true;
 								}
-								// Se uma dependencia extra blocos for encontrada entao uma suposta dependencia entre blocos de um if 
-								// deixa de ser possivel
+								// Se uma dependencia entre um instrucao que está dentro de um else 
+								// e outra que esteja fora dessa estrutura if for encontrada, 
+								// entao uma suposta dependencia entre blocos de um if deixa de ser possivel
 								if (dependencia_entre_blocos!=-1) {
 									dependencia_entre_blocos=-1;
 								}
 								// se a dependencia encontrada for entre uma instrucao e outra que seja posterior à primeira 
 								// entao ainda é necessario procurar fora do ciclo while
 								if (inst_comp < inst_dependente) dep_encontrada_fora_while = true;
-								// esta variavel trata casos de dependencia reflexa dentro de ifs, por isso se foi encontrada
+								// esta variavel trata casos de dependencia reflexa dentro de um if, por isso se foi encontrada
 								// uma dependencia fora de um if, a existencia de uma reflexa é invalidada
 								reflexa = false;
 							}
@@ -159,13 +164,15 @@ public class GrafoPDG extends Grafo {
 							nr_instrucoes = pdi_then.getNr_instrucoes();
 						}
 					}
-					// caso a instrucao sobre a qual estamos a tentar encontrar dependencias se encontre dentro de um else procura apenas no bloco else e fora do bloco if
+					// caso a instrucao sobre a qual estamos a tentar encontrar dependencias se encontre dentro de um else procura no bloco else e no then
 					else if (i.getBloco_if().equals("ELSE")) {
 						ParDependenciaInstrucao pdi_else = checkDependenciasDadosElse(inst_comp, inst_dependente, var_ref, nr_inst_comparadas ,nr_inst_a_comparar);
 						ParDependenciaInstrucao pdi_then = checkDependenciasDadosThen(pdi_else.getInstrucao_seguinte(), var_ref, nr_inst_comparadas ,nr_inst_a_comparar, pdi_else.isExiste_dependencia());
 						
-						// se encontrou dependencia no bloco else
+						// se encontrou dependencia no bloco else nao necessita de procurar fora do while
 						if(dep_encontrada = pdi_else.isExiste_dependencia()){
+							// se encontrou dependencia no bloco then do mesmo if entao guarda temporariamente o nr da instrucao 
+							// que influencia a que esta no else, ja que pode existir uma dependencia fora do if o que invalida a temporaria 
 							if (pdi_then.isExiste_dependencia())
 								dependencia_entre_blocos = pdi_then.getInstrucao_dependente();
 							dep_encontrada_fora_while = true;
@@ -179,7 +186,7 @@ public class GrafoPDG extends Grafo {
 						// variavel de controlo
 						proc_fora_bloco = true;
 					}
-					// caso a instrucao sobre a qual estamos a tentar encontrar dependencias se encontre dentro de um then procura apenas no bloco then e fora do bloco if
+					// caso a instrucao sobre a qual estamos a tentar encontrar dependencias se encontre dentro de um then procura no bloco then e fora do bloco if
 					else if (i.getBloco_if().equals("THEN")) {
 						ParDependenciaInstrucao pdi_then = checkDependenciasDadosThen(inst_comp, inst_dependente, var_ref, nr_inst_comparadas ,nr_inst_a_comparar);
 						
@@ -200,18 +207,24 @@ public class GrafoPDG extends Grafo {
 				}
 				
 				
-				
-				// se a dependencia temporaria nao tiver sido descartada entao adiciona-se esta dependência ao grafo
+				/*
+				 *  Insere possíveis dependencias encontradas na procura, mas que so podem ser confirmadas no final da procura
+				 */
+				// se a dependencia temporaria (reflexa) nao tiver sido descartada entao adiciona-se esta dependência ao grafo
 				if (inst_dependente_temp != -1){
 					// adiciona dependencia de inst_dependente_temp para si mesmo ao grafo
 					this.putDependenciaDados(inst_dependente_temp, inst_dependente_temp);
 					inst_dependente_temp = -1;
 				}
+				// se a dependencia temporaria entre o bloco then e else de um mesmo if nao tiver sido anulada, ou seja, 
+				// se outra dependencia fora do if tiver sido encontrada
 				if (dependencia_entre_blocos != -1){
 					// adiciona dependencia entre blocos e inst_dependente
 					this.putDependenciaDados(dependencia_entre_blocos, inst_dependente);
 					dependencia_entre_blocos = -1;
 				}
+				// se nao foi encontrada uma dependencia para alem da reflexa (neste caso dentro de um bloco de um if), 
+				// entao adiciona-se essa dependencia ao grafo
 				if (reflexa) {
 					// adiciona dependencia de inst_dependente_temp para si mesmo ao grafo
 					this.putDependenciaDados(inst_dependente, inst_dependente);
@@ -219,7 +232,9 @@ public class GrafoPDG extends Grafo {
 				}
 				
 				
-				// inicia a procura a partir da instrucao imediatamente anterior à expressao do while
+				/* 
+				 * Inicia a procura a partir da instrucao imediatamente anterior à expressao do while
+				 */
 				int inst = primeira_inst_while-1;
 				boolean procurar_fora_bloco = false;
 				while (!dep_encontrada_fora_while && inst>=0) {
