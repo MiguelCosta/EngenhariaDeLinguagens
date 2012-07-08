@@ -1,10 +1,20 @@
 digraph mainmap {
 graph [bgcolor=transparent];
-"START" -> "a = 5";
-	"a = 5" -> "c = 55";
-	"c = 55" -> "if(b)";
-	"if(b)" -> "d = a"[label="T"];
-	"if(b)" -> "EXIT";
-	"d = a" -> "b = c+1";
-	"b = c+1" -> "EXIT";
+"START" -> "b = 55";
+	"b = 55" -> "c = 55";
+	"c = 55" -> "while(a)";
+	"while(a)" -> "b = a"[label="T"];
+	"while(a)" -> "if(c>a)"[label="F"];
+	"b = a" -> "if(b)";
+	"if(b)" -> "c = c-2"[label="T"];
+	"if(b)" -> "a = c"[label="F"];
+	"c = c-2" -> "a = c*2";
+	"a = c*2" -> "d = 1";
+	"a = c" -> "d = 1";
+	"d = 1" -> "while(a)";
+	"if(c>a)" -> "d = a+b+c"[label="T"];
+	"if(c>a)" -> "d = d/c";
+	"d = a+b+c" -> "c = 5";
+	"c = 5" -> "d = d/c";
+	"d = d/c" -> "EXIT";
 	}
