@@ -117,7 +117,8 @@ public class GrafoPDG extends Grafo {
 									// pára de procurar por dependencias para var_ref, passando a procurar para outra variavel referenciada nesta instrucao
 									dep_encontrada = true;
 								}
-								// Se uma dependencia extra blocos for encontrada entao uma suposta dependencia entre blocos de um if deixa de ser possivel
+								// Se uma dependencia extra blocos for encontrada entao uma suposta dependencia entre blocos de um if 
+								// deixa de ser possivel
 								if (dependencia_entre_blocos!=-1) {
 									dependencia_entre_blocos=-1;
 								}
