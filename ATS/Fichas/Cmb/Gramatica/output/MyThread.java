@@ -90,10 +90,26 @@ public class MyThread extends Thread {
 			for (Integer o : cam.keySet()) {
 
 				for (ParNrInstrucaoLabel nl : cam.get(o)) {
-					s += '"' + nodos.get(o).getInstrucaoDot() + '"';
+					String nodo_Pai = "";
+					if(nodos.get(o).getInstrucaoDot().equals("START")){
+						nodo_Pai = "ENTER (" + nomeFunc + ")";
+					}
+					else {
+						nodo_Pai = nodos.get(o).getInstrucaoDot();
+					}
+					
+					String nodo_Filho = "";
+					if(nodos.get(nl.getNr_instrucao()).getInstrucaoDot().equals("EXIT")){
+						nodo_Filho = "EXIT (" + nomeFunc + ")";
+					}
+					else {
+						nodo_Filho = nodos.get(nl.getNr_instrucao())
+							.getInstrucaoDot();
+					}
+					
+					s += '"' + nodo_Pai + '"';
 					s += " -> ";
-					s += '"' + nodos.get(nl.getNr_instrucao())
-							.getInstrucaoDot() + '"';
+					s += '"' + nodo_Filho + '"';
 
 					if (!nl.getLabel().equals("")) {
 						s += "[label=" + '"' + nl.getLabel() + '"' + "]";

@@ -1,10 +1,10 @@
 digraph mainmap {
 graph [bgcolor=transparent];
-"START" -> "msg = 'blabla'";
+"ENTER (imprime)" -> "msg = 'blabla'";
 	"msg = 'blabla'" -> "print(nome)";
 	"print(nome)" -> "print(msg)";
-	"print(msg)" -> "EXIT";
-	"START" -> "a = 2+1";
+	"print(msg)" -> "EXIT (imprime)";
+	"ENTER (main)" -> "a = 2+1";
 	"a = 2+1" -> "if(a==2)";
 	"if(a==2)" -> "a = a+1"[label="T"];
 	"if(a==2)" -> "b = 5"[label="F"];
@@ -16,9 +16,9 @@ graph [bgcolor=transparent];
 	"a = a+5*3" -> "while(a<5)";
 	"b = xtop(a+2*3, a)" -> "print(a)";
 	"print(a)" -> "scan(a)";
-	"scan(a)" -> "EXIT";
-	"START" -> "s = 'luis'";
+	"scan(a)" -> "EXIT (main)";
+	"ENTER (xtop)" -> "s = 'luis'";
 	"s = 'luis'" -> "imprime(s)";
 	"imprime(s)" -> "return s";
-	"return s" -> "EXIT";
+	"return s" -> "EXIT (xtop)";
 	}
