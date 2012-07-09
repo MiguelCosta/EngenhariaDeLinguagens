@@ -50,7 +50,7 @@ public class MyThread extends Thread {
 			switch (_tipo) {
 			case 1:
 				_walkerRet = _walker.programa();
-				// System.out.println("CFG OUTPUT:\n" + _walkerRet.grafos_out);
+				 System.out.println("CFG OUTPUT:\n" + _walkerRet.grafos_out);
 				toDotCFG(_walkerRet.grafos_out);
 				break;
 			case 2:
