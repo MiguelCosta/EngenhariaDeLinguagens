@@ -1,0 +1,3 @@
+atribuicao
+		:	 ^('=' ID expr)
+		;

@@ -21,6 +21,9 @@ void calcula(int a, int d)
 		d = a +b+c;
 		c = 5;
 	}
+	else {
+		b = c;
+	}
 	d = d /c;
 
 }

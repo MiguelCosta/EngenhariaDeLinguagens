@@ -61,7 +61,7 @@ public class MyThread extends Thread {
 			case 3:
 				_walkerSSARet = _walkerSSA.programa();
 				// System.out.println(_walkerSSARet.g_out);
-				toDotSSA(_walkerSSARet.g_out);
+				toDotSSA(_walkerSSARet.grafos_out);
 				break;
 			case 4:
 				_walkerSDGRet = _walkerSDG.programa();
@@ -90,10 +90,26 @@ public class MyThread extends Thread {
 			for (Integer o : cam.keySet()) {
 
 				for (ParNrInstrucaoLabel nl : cam.get(o)) {
-					s += '"' + nodos.get(o).getInstrucaoDot() + '"';
+					String nodo_Pai = "";
+					if(nodos.get(o).getInstrucaoDot().equals("START")){
+						nodo_Pai = "ENTER (" + nomeFunc + ")";
+					}
+					else {
+						nodo_Pai = nodos.get(o).getInstrucaoDot();
+					}
+					
+					String nodo_Filho = "";
+					if(nodos.get(nl.getNr_instrucao()).getInstrucaoDot().equals("EXIT")){
+						nodo_Filho = "EXIT (" + nomeFunc + ")";
+					}
+					else {
+						nodo_Filho = nodos.get(nl.getNr_instrucao())
+							.getInstrucaoDot();
+					}
+					
+					s += '"' + nodo_Pai + '"';
 					s += " -> ";
-					s += '"' + nodos.get(nl.getNr_instrucao())
-							.getInstrucaoDot() + '"';
+					s += '"' + nodo_Filho + '"';
 
 					if (!nl.getLabel().equals("")) {
 						s += "[label=" + '"' + nl.getLabel() + '"' + "]";
@@ -270,31 +286,47 @@ public class MyThread extends Thread {
 
 	}
 
-	public void toDotSSA(GrafoTGSSA grafo) {
+	public void toDotSSA(TreeMap<String, GrafoTGSSA> in) {
 		String s = "digraph mainmapSSA {\ngraph [bgcolor=transparent];\n";
 
-		// graph [bgcolor=transparent];
-		TreeMap<Integer, TreeSet<ParNrInstrucaoLabel>> caminhos = grafo
-				.getCaminhos();
-		TreeMap<Integer, Instrucao> nodos = grafo.getNodos();
+		for (String nomeFunc : in.keySet()) {
+			// grafo
+			Grafo f = in.get(nomeFunc);
 
+
+		// graph [bgcolor=transparent];
+		TreeMap<Integer, TreeSet<ParNrInstrucaoLabel>> cam = f.getCaminhos();
+		TreeMap<Integer, Instrucao> nodos = f.getNodos();
+		
 		for (Integer n : nodos.keySet()) {
 			s += '"' + nodos.get(n).getInstrucaoDot() + '"' + "[label=" + '"'
 					+ nodos.get(n).getInstrucaoVersaoDot() + '"' + "];\n";
 		}
 
-		for (Integer o : caminhos.keySet()) {
+		for (Integer o : cam.keySet()) {
 
-			for (ParNrInstrucaoLabel nl : caminhos.get(o)) {
+			for (ParNrInstrucaoLabel nl : cam.get(o)) {
 
-				// s+= '"' + nodos.get(nl.getNr_instrucao()).getInstrucaoDot() +
-				// '"' + "[label=" + '"'
-				// +nodos.get(nl.getNr_instrucao()).getInstrucaoVersaoDot() +
-				// '"' +"];\n";
+				String nodo_Pai = "";
+				if(nodos.get(o).getInstrucaoDot().equals("START")){
+						nodo_Pai = "ENTER (" + nomeFunc + ")";
+				}
+				else {
+					nodo_Pai = nodos.get(o).getInstrucaoDot();
+				}
+					
+				String nodo_Filho = "";
+				if(nodos.get(nl.getNr_instrucao()).getInstrucaoDot().equals("EXIT")){
+					nodo_Filho = "EXIT (" + nomeFunc + ")";
+				}
+				else {
+					nodo_Filho = nodos.get(nl.getNr_instrucao())
+							.getInstrucaoDot();
+				}
 
-				s += '"' + nodos.get(o).getInstrucaoDot() + '"';
+				s += '"' + nodo_Pai + '"';
 				s += " -> ";
-				s += '"' + nodos.get(nl.getNr_instrucao()).getInstrucaoDot() + '"';
+				s += '"' + nodo_Filho + '"';
 
 				if (!nl.getLabel().equals("")) {
 					s += "[label=" + '"' + nl.getLabel() + '"' + "]";
@@ -309,7 +341,7 @@ public class MyThread extends Thread {
 			 * nodos.get(d).getInstrucaoDot() + '"' + ";\n"; }
 			 */
 		}
-
+}
 		s += "}";
 		try {
 			FileWriter fstream = new FileWriter("ssa.gv");

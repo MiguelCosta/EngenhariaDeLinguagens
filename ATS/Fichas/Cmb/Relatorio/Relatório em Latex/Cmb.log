@@ -1,0 +1,510 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  9 JUL 2012 21:58
+entering extended mode
+ %&-line parsing enabled.
+**Cmb.tex
+(./Cmb.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, french, basque, portuguese, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/portuges.ldf
+Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count87
+\U@D=\dimen103
+)
+Package babel Info: Making " an active character on input line 145.
+))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+))
+(/usr/share/texmf-texlive/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz) (/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+\FV@CodeLineNo=\count88
+\FV@InFile=\read1
+\FV@TabBox=\box26
+\c@FancyVerbLine=\count89
+\FV@StepNumber=\count90
+\FV@OutFile=\write3
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count91
+))
+\Gin@req@height=\dimen104
+\Gin@req@width=\dimen105
+)
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count92
+\float@exts=\toks17
+\float@box=\box27
+\@float@everytoks=\toks18
+\@floatcapt=\box28
+)
+(/usr/share/texmf-texlive/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip43
+\@affilsep=\skip44
+\c@Maxaffil=\count93
+\c@authors=\count94
+\c@affil=\count95
+)
+(/usr/share/texmf-texlive/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2007/08/12 v2.8 Sectioning titles
+\ttl@box=\box29
+\beforetitleunit=\skip45
+\aftertitleunit=\skip46
+\ttl@plus=\dimen106
+\ttl@minus=\dimen107
+\ttl@toksa=\toks19
+\titlewidth=\dimen108
+\titlewidthlast=\dimen109
+\titlewidthfirst=\dimen110
+)
+(/usr/share/texmf-texlive/tex/latex/aeguill/aeguill.sty
+Package: aeguill 2003/08/02 1.02 AE fonts with french guillemets (D. Roegel)
+
+(/usr/share/texmf-texlive/tex/latex/ae/ae.sty
+Package: ae 2001/02/12 1.3 Almost European Computer Modern
+
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)
+LaTeX Font Info:    Try loading font information for T1+aer on input line 100.
+
+(/usr/share/texmf-texlive/tex/latex/ae/t1aer.fd
+File: t1aer.fd 1997/11/16 Font definitions for T1/aer.
+))))
+(/usr/share/texmf-texlive/tex/latex/geometry/geometry.sty
+Package: geometry 2008/12/21 v4.2 Page Geometry
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count96
+\Gm@cntv=\count97
+\c@Gm@tempcnt=\count98
+\Gm@bindingoffset=\dimen111
+\Gm@wd@mp=\dimen112
+\Gm@odd@mp=\dimen113
+\Gm@even@mp=\dimen114
+\Gm@dimlist=\toks20
+
+
+Package geometry Warning: Over-specification in `h'-direction.
+    `width' (0.8\paperwidth ) is ignored.
+
+
+Package geometry Warning: Over-specification in `v'-direction.
+    `height' (0.9\paperheight ) is ignored.
+
+) (/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count99
+\lst@gtempboxa=\box30
+\lst@token=\toks21
+\lst@length=\count100
+\lst@currlwidth=\dimen115
+\lst@column=\count101
+\lst@pos=\count102
+\lst@lostspace=\dimen116
+\lst@width=\dimen117
+\lst@newlines=\count103
+\lst@lineno=\count104
+\lst@maxwidth=\dimen118
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count105
+\lst@skipnumbers=\count106
+\lst@framebox=\box31
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+) (./Cmb.aux
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+)
+\openout1 = `Cmb.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+ (/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count107
+\scratchdimen=\dimen119
+\scratchbox=\box32
+\nofMPsegments=\count108
+\nofMParguments=\count109
+\everyMPshowfont=\toks22
+\MPscratchCnt=\count110
+\MPscratchDim=\dimen120
+\MPnumerator=\count111
+\everyMPtoPDFconversion=\toks23
+)
+*geometry auto-detecting driver*
+*geometry detected driver: pdftex*
+-------------------- Geometry parameters
+paper: a4paper
+landscape: --
+twocolumn: --
+twoside: true
+asymmetric: --
+h-parts: 56.9055pt, 483.69687pt, 56.9055pt
+v-parts: 42.67912pt, 745.46222pt, 56.9055pt
+hmarginratio: --
+vmarginratio: --
+lines: --
+heightrounded: --
+bindingoffset: 0.0pt
+truedimen: --
+includehead: true
+includefoot: true
+includemp: --
+driver: pdftex
+-------------------- Page layout dimensions and switches
+\paperwidth  597.50787pt
+\paperheight 845.04684pt
+\textwidth  483.69687pt
+\textheight 678.46222pt
+\oddsidemargin  -15.36449pt
+\evensidemargin -15.36449pt
+\topmargin  -29.59087pt
+\headheight 12.0pt
+\headsep    25.0pt
+\footskip   30.0pt
+\marginparwidth 57.0pt
+\marginparsep   11.0pt
+\columnsep  10.0pt
+\skip\footins  9.0pt plus 4.0pt minus 2.0pt
+\hoffset 0.0pt
+\voffset 0.0pt
+\mag 1000
+\@twosidetrue \@mparswitchtrue 
+(1in=72.27pt, 1cm=28.45pt)
+-----------------------
+\c@lstlisting=\count112
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 79.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 79.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 79.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 79.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 79.
+(/usr/share/texmf-texlive/tex/latex/ae/t1aett.fd
+File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
+) [1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Cmb.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+)
+\tf@toc=\write4
+\openout4 = `Cmb.toc'.
+
+ [2]
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+) (./in/inCod1.c
+
+LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
+(Font)              using `T1/aett/m/n' instead on input line 1.
+
+[3]) [4]
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 140.
+
+ (/usr/share/texmf/tex/latex/R/tex/latex/omsaer.fd
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+ [5] (./in/in1.g)
+(./in/in2.g) [6] (./in/in3.g) (./in/in4.g [7]) (./in/in5.g) (./in/in6.g)
+(./in/in7.g [8]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 19.
+) (./in/in8.g) (./in/in9.g [9]) (./in/in10.g) (./in/in11.g)
+<in/cfg.png, id=48, 828.09375pt x 1067.99pt>
+File: in/cfg.png Graphic file (type png)
+ <use in/cfg.png> [10] [11 <./in/cfg.png>] [12] (./in/in12.g) (./in/in13.g) (./
+in/in14.g) [13] (./in/in15.g)
+(./in/in16.g) [14] (./in/in17.g) (./in/in18.g [15]) (./in/in19.g [16]) [17]
+(./in/cod1.java) (./in/cod2.java [18]) [19] (./in/cod3.java) [20]
+<in/pdg.png, id=89, 2320.67pt x 714.67pt>
+File: in/pdg.png Graphic file (type png)
+ <use in/pdg.png> [21 <./in/pdg.png>]
+(./in/in20.g) (./in/in21.g) [22] (./in/in22.g) [23] (./in/in23.g) (./in/in24.g)
+(./in/in25.g) <in/sdg.png, id=100, 1477.52pt x 613.29124pt>
+File: in/sdg.png Graphic file (type png)
+ <use in/sdg.png>
+[24] (./in/cod4.java [25 <./in/sdg.png>]) (./in/in26.g) [26]
+<in/ssa.png, id=112, 1180.41pt x 966.61125pt>
+File: in/ssa.png Graphic file (type png)
+ <use in/ssa.png> [27 <./in/ssa.png>] <in/site1.png, id=117, 983.675pt x 706.64
+pt>
+File: in/site1.png Graphic file (type png)
+ <use in/site1.png>
+Overfull \hbox (8.13943pt too wide) in paragraph at lines 526--528
+ [][] 
+ []
+
+<in/site2.png, id=118, 976.64874pt x 711.65875pt>
+File: in/site2.png Graphic file (type png)
+ <use in/site2.png>
+Overfull \hbox (4.62631pt too wide) in paragraph at lines 535--537
+ [][] 
+ []
+
+[28 <./in/site1.png (PNG copy)>]
+<in/site3.png, id=122, 647.41875pt x 721.69624pt>
+File: in/site3.png Graphic file (type png)
+ <use in/site3.png> [29 <./in/site2.png (PNG copy)>] <in/site4.png, id=126, 966
+.61125pt x 671.50874pt>
+File: in/site4.png Graphic file (type png)
+
+<use in/site4.png> [30 <./in/site3.png (PNG copy)>]
+<in/site5.png, id=130, 977.6525pt x 795.97375pt>
+File: in/site5.png Graphic file (type png)
+ <use in/site5.png>
+Overfull \hbox (5.12819pt too wide) in paragraph at lines 558--560
+ [][] 
+ []
+
+[31 <./in/site4.png (PNG copy)>]
+<in/site6.png, id=135, 961.5925pt x 736.7525pt>
+File: in/site6.png Graphic file (type png)
+ <use in/site6.png> [32 <./in/site5.png (PNG copy)>] [33 <./in/site6.png (PNG c
+opy)>] (./Cmb.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 6085 strings out of 495014
+ 79054 string characters out of 1180707
+ 299916 words of memory out of 3000000
+ 9038 multiletter control sequences out of 15000+50000
+ 49027 words of font info for 99 fonts, out of 3000000 for 9000
+ 30 hyphenation exceptions out of 8191
+ 35i,8n,52p,1400b,1705s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
+re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
+xlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/
+type1/public/amsfonts/cm/cmitt10.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmr10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr12.pf
+b></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/shar
+e/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-texlive/fonts/type
+1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-texlive/fonts/type1/public/amsf
+onts/cm/cmr8.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmr9.
+pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/s
+hare/texmf-texlive/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-t
+exlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts
+/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texmf-texlive/fonts/type1/publ
+ic/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.p
+fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on Cmb.pdf (33 pages, 3100686 bytes).
+PDF statistics:
+ 207 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+

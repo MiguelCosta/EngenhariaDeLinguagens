@@ -27,6 +27,9 @@
 						<a href="pdg.php">PDG</a>
 					</li>
 					<li>
+						<a href="ssa.php">SSA</a>
+					</li>
+					<li>
 						<a href="sdg.php">SDG</a>
 					</li>
 				</ul>
@@ -39,12 +42,17 @@
 				exec('dot -Tpng -o cfg.png ./Gramatica/output/cfg.gv');
 				?>
 				<div class="grafo">
-					<IMG SRC="cfg.png"/>
+					<IMG SRC="cfg.png" width="600"/>
 				</div>
+				<textarea rows="50">
+				<?php
+				echo file_get_contents("Gramatica/input.c");
+	  			?>
+				</textarea>
 			</div>
 			<div class="footer">
 				<ul>
-					<li class="selected">
+					<li>
 						<a href="index.php">Ínicio</a>
 					</li>
 					<li>
@@ -57,17 +65,18 @@
 						<a href="pdg.php">PDG</a>
 					</li>
 					<li>
+						<a href="ssa.php">SSA</a>
+					</li>
+					<li>
 						<a href="sdg.php">SDG</a>
 					</li>
 				</ul>
 				<p>
 					&#169; Copyright &#169; 2012
+					<div class="connect">
+						Bruno Azevedo e Miguel Costa
+					</div>
 				</p>
-				<div class="connect">
-					<a href="#" id="facebook">facebook</a>
-					<a href="#" id="twitter">twitter</a>
-					<a href="#" id="vimeo">vimeo</a>
-				</div>
 			</div>
 		</div>
 	</body>

@@ -24,9 +24,9 @@ INSERT INTO `mapaconceitos`.`Instancias` (`instancia`, `conceito`) VALUES ("lFaf
 INSERT INTO `mapaconceitos`.`Instancias` (`instancia`, `conceito`) VALUES ("pAntonio", "pessoa");
 INSERT INTO `mapaconceitos`.`Instancias` (`instancia`, `conceito`) VALUES ("pEmigranteBrasil", "emigrante");
 
-INSERT INTO `mapaconceitos`.`MapasInstanciaPropDados` (`instancia`, `mapaConceitoPropDados`, `valor`) VALUES ("pAntonio", "m6", "20");
-INSERT INTO `mapaconceitos`.`MapasInstanciaPropDados` (`instancia`, `mapaConceitoPropDados`, `valor`) VALUES ("pAntonio", "m5", "Antonio");
 INSERT INTO `mapaconceitos`.`MapasInstanciaPropDados` (`instancia`, `mapaConceitoPropDados`, `valor`) VALUES ("lFafe", "m8", "Fafe");
+INSERT INTO `mapaconceitos`.`MapasInstanciaPropDados` (`instancia`, `mapaConceitoPropDados`, `valor`) VALUES ("pAntonio", "m5", "Antonio");
+INSERT INTO `mapaconceitos`.`MapasInstanciaPropDados` (`instancia`, `mapaConceitoPropDados`, `valor`) VALUES ("pAntonio", "m6", "20");
 
 INSERT INTO `mapaconceitos`.`MapasInstanciaPropConceito` (`instanciaPai`, `mapaConceitoPropConceito`, `instanciaFilho`) VALUES ("lFafe", "m7", "pAntonio");
 

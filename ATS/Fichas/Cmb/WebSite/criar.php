@@ -13,6 +13,7 @@
 		<div class="page">
 			<div class="header">
 				<a href="index.php" id="logo"><h1>Cmb</h1></a>
+				<
 				<ul>
 					<li>
 						<a href="index.php">Ínicio</a>
@@ -25,6 +26,9 @@
 					</li>
 					<li>
 						<a href="pdg.php">PDG</a>
+					</li>
+					<li>
+						<a href="ssa.php">SSA</a>
 					</li>
 					<li>
 						<a href="sdg.php">SDG</a>
@@ -84,7 +88,8 @@ bool xtop (bool t, int i)
 }		
 		
 	</textarea>
-</div>					<input type="submit" value="submeter" />
+					</div>
+					<input type="submit" value="submeter" />
 				</form>
 
 			</div>
@@ -93,7 +98,7 @@ bool xtop (bool t, int i)
 					<li>
 						<a href="index.php">Ínicio</a>
 					</li>
-					<li>
+					<li class="selected">
 						<a href="criar.php">Inserir código</a>
 					</li>
 					<li>
@@ -103,18 +108,19 @@ bool xtop (bool t, int i)
 						<a href="pdg.php">PDG</a>
 					</li>
 					<li>
+						<a href="ssa.php">SSA</a>
+					</li>
+					<li>
 						<a href="sdg.php">SDG</a>
 					</li>
 				</ul>
 
 				<p>
 					&#169; Copyright &#169; 2012
+					<div class="connect">
+						Bruno Azevedo e Miguel Costa
+					</div>
 				</p>
-				<div class="connect">
-					<a href="#" id="facebook">facebook</a>
-					<a href="#" id="twitter">twitter</a>
-					<a href="#" id="vimeo">vimeo</a>
-				</div>
 			</div>
 		</div>
 	</body>
