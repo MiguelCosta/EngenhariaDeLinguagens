@@ -27,16 +27,38 @@
 						<a href="pdg.php">PDG</a>
 					</li>
 					<li>
+						<a href="ssa.php">SSA</a>
+					</li>
+					<li>
 						<a href="sdg.php">SDG</a>
 					</li>
 				</ul>
+				</ul>
 			</div>
-			<div class="body">
+			<div class="body" style="height: 510px">
 				<div id="featured">
 					<h3>O que é este Site?</h3>
 					<p>
-						colocar alguma coisa que esteja no relatório
-					</p>
+						Usando as técnicas de construção de ASTs e suas travessias tendo em conta atributos
+						construimos 4 módulos em que cada um é responsável pela criação de:
+						<br/>
+						- Um Control Flow Graph (CFG)
+						<br/>
+						- Um Program Dependency Graph (PDG)
+						<br/>
+						- Um System Dependency Graph (SDG)
+						<br/>
+						- Transformar o código fonte de acordo com a noção de Single Static Assignment (SSA)
+						<br/>
+						<br/>
+						Este trabalho foi desenvolvido para a disciplina de Análise e Transformação de Software
+						integrada na UCE30 Engenharia de Linguagens do Mestrado em Engenharia Informática pelos alunos:
+						<br/>
+						- Bruno Azevedo - azevedo.252@gmail.com <br/>
+						- Miguel Costa - miguelpintodacosta@gmail.com
+					</p>	
+
+					
 					<!--
 					<input type="button" value="Read more" onClick="parent.location='blog.html'"/>
 					-->
@@ -44,7 +66,7 @@
 			</div>
 			<div class="footer">
 				<ul>
-					<li class="selected">
+					<li>
 						<a href="index.php">Ínicio</a>
 					</li>
 					<li>
@@ -57,17 +79,17 @@
 						<a href="pdg.php">PDG</a>
 					</li>
 					<li>
+						<a href="ssa.php">SSA</a>
+					</li>
+					<li>
 						<a href="sdg.php">SDG</a>
 					</li>
 				</ul>
-				<p>
-					&#169; Copyright &#169; 2012
-				</p>
+				&#169; Copyright &#169; 2012
 				<div class="connect">
-					<a href="#" id="facebook">facebook</a>
-					<a href="#" id="twitter">twitter</a>
-					<a href="#" id="vimeo">vimeo</a>
+					Bruno Azevedo e Miguel Costa
 				</div>
+				</p>
 			</div>
 		</div>
 	</body>

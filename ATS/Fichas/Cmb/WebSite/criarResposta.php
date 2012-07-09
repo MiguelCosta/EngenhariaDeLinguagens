@@ -27,6 +27,9 @@
 						<a href="pdg.php">PDG</a>
 					</li>
 					<li>
+						<a href="ssa.php">SSA</a>
+					</li>
+					<li>
 						<a href="sdg.php">SDG</a>
 					</li>
 				</ul>
@@ -45,45 +48,46 @@
 				putenv("CLASSPATH=$CLASSPATH");
 
 				$texto_entrada = $_POST['texto'];
-				
+
 				$myFile = "Gramatica/input.c";
 				$fh = fopen($myFile, 'w');
 				fwrite($fh, $texto_entrada);
 				fclose($fh);
-				
-				echo file_get_contents($myFile);
-				
+
+				//echo file_get_contents($myFile);
+
 				$output = shell_exec('cd Gramatica/output && java Run ../input.c');
-				
-				
-				
-				
+				echo $output;
 				?>
 			</div>
 			<div class="footer">
 				<ul>
 					<li>
-						<a href="index.php">Íncio</a>
+						<a href="index.php">Ínicio</a>
 					</li>
 					<li>
-						<a href="criar.php">Criar Mapa</a>
+						<a href="criar.php">Inserir código</a>
 					</li>
 					<li>
-						<a href="criar.php">Conceitos</a>
+						<a href="cfg.php">CFG</a>
 					</li>
 					<li>
-						<a href="blog.html">Instâncias</a>
+						<a href="pdg.php">PDG</a>
+					</li>
+					<li>
+						<a href="ssa.php">SSA</a>
+					</li>
+					<li>
+						<a href="sdg.php">SDG</a>
 					</li>
 				</ul>
 
 				<p>
 					&#169; Copyright &#169; 2012
+					<div class="connect">
+						Bruno Azevedo e Miguel Costa
+					</div>
 				</p>
-				<div class="connect">
-					<a href="#" id="facebook">facebook</a>
-					<a href="#" id="twitter">twitter</a>
-					<a href="#" id="vimeo">vimeo</a>
-				</div>
 			</div>
 		</div>
 	</body>
