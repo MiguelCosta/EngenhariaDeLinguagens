@@ -1,0 +1,53 @@
+digraph mainmapSDG {
+graph [bgcolor=transparent];
+"0:ENTER (imprime)"[shape=record, label="{{void|0: ENTER (imprime)|nome}}"];
+"1:msg = 'blabla'"[label="1: msg = 'blabla'"];
+"2:print(nome)"[label="2: print(nome)"];
+"3:print(msg)"[label="3: print(msg)"];
+
+
+"0:ENTER (imprime)" -> "1:msg = 'blabla'";
+	"0:ENTER (imprime)" -> "2:print(nome)";
+	"0:ENTER (imprime)" -> "3:print(msg)";
+	
+
+"0:ENTER (main)"[shape=record, label="{{int|0: ENTER (main)|x|y}}"];
+"1:a = 2+1"[label="1: a = 2+1"];
+"2:if(a==2)"[label="2: if(a==2)"];
+"3:a = a+1"[label="3: a = a+1"];
+"4:b = 3"[label="4: b = 3"];
+"5:b = 5"[label="5: b = 5"];
+"6:while(a<5)"[label="6: while(a<5)"];
+"7:a = a+5*3"[label="7: a = a+5*3"];
+"8:b = xtop(a+2*3, a)"[label="8: b = xtop(a+2*3, a)"];
+"9:print(a)"[label="9: print(a)"];
+"10:scan(a)"[label="10: scan(a)"];
+
+
+"0:ENTER (main)" -> "1:a = 2+1";
+	"0:ENTER (main)" -> "2:if(a==2)";
+	"0:ENTER (main)" -> "6:while(a<5)";
+	"0:ENTER (main)" -> "8:b = xtop(a+2*3, a)";
+	"0:ENTER (main)" -> "9:print(a)";
+	"0:ENTER (main)" -> "10:scan(a)";
+	"2:if(a==2)" -> "3:a = a+1"[label="T"];
+	"2:if(a==2)" -> "4:b = 3"[label="T"];
+	"2:if(a==2)" -> "5:b = 5"[label="F"];
+	"6:while(a<5)" -> "6:while(a<5)";
+	"6:while(a<5)" -> "7:a = a+5*3"[label="T"];
+	
+
+"8:b = xtop(a+2*3, a)" -> "0:ENTER (xtop)" [style=dotted];
+	"0:ENTER (xtop)"[shape=record, label="{{bool|0: ENTER (xtop)|t|i}}"];
+"1:s = 'luis'"[label="1: s = 'luis'"];
+"2:imprime(s)"[label="2: imprime(s)"];
+"3:return s"[label="3: return s"];
+
+
+"0:ENTER (xtop)" -> "1:s = 'luis'";
+	"0:ENTER (xtop)" -> "2:imprime(s)";
+	"0:ENTER (xtop)" -> "3:return s"[label="CORPO_FUNCAO"];
+	
+
+"2:imprime(s)" -> "0:ENTER (imprime)" [style=dotted];
+	}
