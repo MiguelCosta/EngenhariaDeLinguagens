@@ -1,19 +1,26 @@
-void imprime(string nome)
+void calcula(int a, int d)
 {
-	string msg;
-	string msg2;
 	int a;
-	string b;
+	int b;
+	int c;
 
-	if (a % 1) { 
-		print("THEN 1");
-		while (b) {
-			print("WHILE 1.1");
-			print("WHILE 1.2");
+	b = 55;
+	c = 55;
+	while (a) {
+		b = a;
+		if (b) {
+			c = c-2;
+			a=c*2;
 		}
+		else {
+			a = c;
+		}
+		d = 1;
 	}
-	else {
-		print("ELSE 1");
+	if (c>a) {
+		d = a +b+c;
+		c = 5;
 	}
-	print(b);
+	d = d /c;
+
 }

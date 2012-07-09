@@ -1,22 +1,24 @@
 void imprime(string nome)
 {
-	string msg;
-	string msg2;
 	int a;
-	string b;
+	int b;
+	int c;
+	int d;
 
-	if (a == 1) { 
-		print("THEN 1");
-		if (b) {
-			print("THEN 1.1");
-		}
-		else {
-			print("ELSE 1.1");
-		}
-		print("THEN 2");
+	a = 55;
+	b = 55;
+	c = 55;
+	a = b -a ;
+	if (b) {
+		c = a;
+		c = c + 30;
+		a = 20;
 	}
 	else {
-		print("ELSE 1");
+		c=c+1;
+		c = 10 -c;
+		b = 10;
 	}
-	print(b);
+	d = a +b+ c;
+
 }

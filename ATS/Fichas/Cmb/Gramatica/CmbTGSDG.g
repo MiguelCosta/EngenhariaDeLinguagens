@@ -30,7 +30,7 @@ programa returns [TreeMap<String, GrafoSDG> grafos_out, TreeMap<String, Cabecalh
 		//$programa.g_out = g;
 		$programa.grafos_out = grafos;
 		$programa.funcoes_out = funcoes;
-		System.out.println("TUDO: " + funcoes);
+		//System.out.println("TUDO: " + funcoes);
 	}
 	)
 	;
@@ -272,7 +272,8 @@ retorna [GrafoSDG g_in, String label_in, String contexto_in, TreeSet<Integer> nr
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
 		//nrs.add(g.putNodo(new Instrucao($RETURN.text + " " + $expr.instrucao, null, $expr.vars_ref, cx, bi)));
-		nrs.add(g.putNodo(new Instrucao($RETURN.text + " " + $expr.instrucao, null, $expr.vars_ref, cx, bi)));
+		Integer numero_instrucao = g.putNodo(new Instrucao($RETURN.text + " " + $expr.instrucao, null, $expr.vars_ref, cx, bi));
+		nrs.add(numero_instrucao);
 		
 		// verifica existencia de dependencia de dados apenas se for uma instrucao que nao se encontre dentro de um if ou while (contexto "IF" ou "WHILE")
 		if (cx.equals("CORPO_FUNCAO")) {
@@ -283,6 +284,12 @@ retorna [GrafoSDG g_in, String label_in, String contexto_in, TreeSet<Integer> nr
 			nrs_instrucao_while.addAll(nrs);
 		}
 		
+		//  caso exista vai adicionar uma invocacao a uma funcao
+		if($expr.cFuncao_out != null){
+			$expr.cFuncao_out.setNrInstrucao(numero_instrucao);
+			g.putChamadaFuncao(numero_instrucao, $expr.cFuncao_out);
+		}
+		
 		$retorna.nrs_ultima_instrucao_out = nrs; 
 		$retorna.nrs_instrucao_while_out = nrs_instrucao_while;
 		$retorna.g_out = g;
@@ -290,7 +297,7 @@ retorna [GrafoSDG g_in, String label_in, String contexto_in, TreeSet<Integer> nr
 	}
 	;
 
-invocacao [GrafoSDG g_in, String contexto_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoSDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String instrucao, String label_out, HashSet<String> vars_ref, TreeSet<Integer> nrs_instrucao_while_out]
+invocacao [GrafoSDG g_in, String contexto_in, String label_in, TreeSet<Integer> nrs_instrucao_while_in, String bloco_if_in] returns [GrafoSDG g_out, TreeSet<Integer> nrs_ultima_instrucao_out, String instrucao, String label_out, HashSet<String> vars_ref, TreeSet<Integer> nrs_instrucao_while_out, ChamadasFuncao cFuncao_out]
 @init {
 	GrafoSDG g = $invocacao.g_in;
 	HashSet<String> variaveis_referenciadas = new HashSet<String>();
@@ -308,7 +315,13 @@ invocacao [GrafoSDG g_in, String contexto_in, String label_in, TreeSet<Integer> 
 			$invocacao.instrucao = $ID.text + "(" + $args.ags + ")";
 			$invocacao.vars_ref = variaveis_referenciadas;
 			
-			System.out.println("\t\tAPANHEI FACTOR: " + $invocacao.instrucao);
+			//System.out.println("\t\tAPANHEI FACTOR: " + $invocacao.instrucao);
+			
+			ChamadasFuncao cf_t = new ChamadasFuncao();
+			cf_t.setNomeFuncao($ID.text);
+			cf_t.setParametros($args.parametros_out);
+			
+			$invocacao.cFuncao_out = cf_t;
 		}
 		else {
 			TreeSet<Integer> nrs = new TreeSet<Integer>();
@@ -322,6 +335,7 @@ invocacao [GrafoSDG g_in, String contexto_in, String label_in, TreeSet<Integer> 
 			cf.setParametros($args.parametros_out);
 			g.putChamadaFuncao(numero_instrucao, cf);
 			
+			$invocacao.cFuncao_out = null; // já está adicionado
 			
 			// verifica existencia de dependencia de dados apenas se for uma instrucao que nao se encontre dentro de um if ou while (contexto "IF" ou "WHILE")
 			if (cx.equals("CORPO_FUNCAO")) {
@@ -379,7 +393,15 @@ atribuicao [GrafoSDG g_in, String label_in, String contexto_in, TreeSet<Integer>
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
 		//nrs.add(g.putNodo(new Instrucao($ID.text + " = " + $expr.instrucao, variaveis_definidas, $expr.vars_ref, cx, bi)));
-		nrs.add(g.putNodo(new Instrucao($ID.text + " = " + $expr.instrucao, variaveis_definidas, $expr.vars_ref, cx, bi)));
+		
+		Integer numero_instrucao = g.putNodo(new Instrucao($ID.text + " = " + $expr.instrucao, variaveis_definidas, $expr.vars_ref, cx, bi));
+		nrs.add(numero_instrucao);
+		
+		//  caso exista vai adicionar uma invocacao a uma funcao
+		if($expr.cFuncao_out != null){
+			$expr.cFuncao_out.setNrInstrucao(numero_instrucao);
+			g.putChamadaFuncao(numero_instrucao, $expr.cFuncao_out);
+		}
 		
 		// verifica existencia de dependencia de dados apenas se for uma instrucao que nao se encontre dentro de um if ou while (contexto "IF" ou "WHILE")
 		if (cx.equals("CORPO_FUNCAO")) {
@@ -409,7 +431,14 @@ write [GrafoSDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao
 		//nrs.add(g.putNodo(new Instrucao($WRITE.text + "(" + $expr.instrucao + ")", null, $expr.vars_ref, cx, bi)));
-		nrs.add(g.putNodo(new Instrucao($WRITE.text + "(" + $expr.instrucao + ")", null, $expr.vars_ref, cx, bi)));
+		Integer numero_instrucao = g.putNodo(new Instrucao($WRITE.text + "(" + $expr.instrucao + ")", null, $expr.vars_ref, cx, bi));
+		nrs.add(numero_instrucao);
+		
+		//  caso exista vai adicionar uma invocacao a uma funcao
+		if($expr.cFuncao_out != null){
+			$expr.cFuncao_out.setNrInstrucao(numero_instrucao);
+			g.putChamadaFuncao(numero_instrucao, $expr.cFuncao_out);
+		}
 		
 		// verifica existencia de dependencia de dados apenas se for uma instrucao que nao se encontre dentro de um if ou while (contexto "IF" ou "WHILE")
 		if (cx.equals("CORPO_FUNCAO")) {
@@ -419,6 +448,8 @@ write [GrafoSDG g_in, String label_in, String contexto_in, TreeSet<Integer> nrs_
 		if (cx.equals("WHILE")) {
 			nrs_instrucao_while.addAll(nrs);
 		}
+		
+		
 		
 		$write.nrs_ultima_instrucao_out = nrs;
 		$write.nrs_instrucao_while_out = nrs_instrucao_while;
@@ -485,6 +516,12 @@ ifs [GrafoSDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_in
 					nrs_instrucao_while.addAll(nrs_exp);
 				}
 				
+				//  caso exista vai adicionar uma invocacao a uma funcao
+				if($expr.cFuncao_out != null){
+					$expr.cFuncao_out.setNrInstrucao(nr_ult_inst_exp);
+					g.putChamadaFuncao(nr_ult_inst_exp, $expr.cFuncao_out);
+				}
+				
 			}
 			a=bloco[g, cx, nrs_exp, "T", nrs_instrucao_while, "THEN"] 
 			{
@@ -532,6 +569,13 @@ whiles [GrafoSDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao
 
 				// se for uma instrucao que se encontre dentro de um while, entao o nr da instrucao é guardado para ser verificado no final do bloco while
 				nrs_instrucao_while.addAll(nrs_exp);
+				
+				if($expr.cFuncao_out != null){
+					$expr.cFuncao_out.setNrInstrucao(nr_ult_inst_exp);
+					g.putChamadaFuncao(nr_ult_inst_exp, $expr.cFuncao_out);
+				}
+				
+				
 			}
 	 		bloco[g, "WHILE", nrs_exp, "T" ,nrs_instrucao_while, bi] 
 	 		{
@@ -563,7 +607,7 @@ bloco [GrafoSDG g_in, String contexto_in, TreeSet<Integer> nrs_ultima_instrucao_
 //	|	^(STATEMENTS statement)
 	;	
 
-expr returns [String instrucao, HashSet<String> vars_ref]
+expr returns [String instrucao, HashSet<String> vars_ref, ChamadasFuncao cFuncao_out]
 @init {
 	HashSet<String> vf = new HashSet<String>();
 }
@@ -580,11 +624,11 @@ expr returns [String instrucao, HashSet<String> vars_ref]
 	| 	^('<=' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "<=" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
 	|	^('==' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "==" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
 	|	^('!=' a=expr b=expr) 	{$expr.instrucao = $a.instrucao + "!=" 	+ $b.instrucao; vf = $a.vars_ref; vf.addAll($b.vars_ref); $expr.vars_ref = vf;}
-	|	^('!' a=expr) 			{$expr.instrucao = "!" + $a.instrucao; 					vf = $a.vars_ref; $expr.vars_ref = vf;}
-	|	factor 					{$expr.instrucao = $factor.instrucao;					$expr.vars_ref = $factor.vars_ref;}
+	|	^('!' a=expr) 		{$expr.instrucao = "!" + $a.instrucao; 					vf = $a.vars_ref; $expr.vars_ref = vf;}
+	|	factor 			{$expr.instrucao = $factor.instrucao;					$expr.vars_ref = $factor.vars_ref; $expr.cFuncao_out = $factor.cFuncao_out; }
 	;
 	
-factor returns [String instrucao, HashSet<String> vars_ref]
+factor returns [String instrucao, HashSet<String> vars_ref, ChamadasFuncao cFuncao_out]
 @init {
 	HashSet<String> variaveis_ref = null;
 }
@@ -604,6 +648,7 @@ factor returns [String instrucao, HashSet<String> vars_ref]
 	{
 		$factor.instrucao = $invocacao.instrucao; 
 		$factor.vars_ref= $invocacao.vars_ref;
+		$factor.cFuncao_out = $invocacao.cFuncao_out;
 	}
 	;
 	

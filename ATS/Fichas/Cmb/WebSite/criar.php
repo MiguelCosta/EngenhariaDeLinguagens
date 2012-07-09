@@ -35,9 +35,9 @@
 
 				<h2>Texto de entrada:</h2>
 
-<form name="form" action="criarResposta.php" method="post">
-	<div class="textwrapper"><textarea name="texto" rows="25">
-
+				<form name="form" action="criarResposta.php" method="post">
+					<div class="textwrapper">
+						<textarea name="texto" rows="25">
 void imprime(string nome)
 {
 	string msg;
@@ -45,8 +45,6 @@ void imprime(string nome)
 	print (nome);
 	print (msg);
 }
-
-void imprime(){int a;println();}
 
 int main(int x, int y)
 {
@@ -70,6 +68,8 @@ int main(int x, int y)
 	b = xtop(a+2*3,a);
 	
 	print (a);
+	
+	scan (a);
 }
 
 bool xtop (bool t, int i)
@@ -81,13 +81,11 @@ bool xtop (bool t, int i)
 	imprime (s);
 	
 	return s;
-}
-
+}		
 		
-		
-	</textarea></div>
-	<input type="submit" value="submeter" />
-</form>
+	</textarea>
+</div>					<input type="submit" value="submeter" />
+				</form>
 
 			</div>
 			<div class="footer">

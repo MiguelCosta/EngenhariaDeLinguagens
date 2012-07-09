@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g 2012-07-09 00:48:19
+// $ANTLR 3.4 /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g 2012-07-09 00:58:48
 
 import org.antlr.runtime.*;
 import java.util.Stack;
@@ -77,15 +77,15 @@ public class CmbLexer extends Lexer {
     public CmbLexer(CharStream input, RecognizerSharedState state) {
         super(input,state);
     }
-    public String getGrammarFileName() { return "/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g"; }
+    public String getGrammarFileName() { return "/opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g"; }
 
     // $ANTLR start "T__38"
     public final void mT__38() throws RecognitionException {
         try {
             int _type = T__38;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:2:7: ( '!' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:2:9: '!'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:2:7: ( '!' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:2:9: '!'
             {
             match('!'); 
 
@@ -105,8 +105,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__39;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:3:7: ( '!=' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:3:9: '!='
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:3:7: ( '!=' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:3:9: '!='
             {
             match("!="); 
 
@@ -128,8 +128,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__40;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:4:7: ( '%' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:4:9: '%'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:4:7: ( '%' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:4:9: '%'
             {
             match('%'); 
 
@@ -149,8 +149,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__41;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:5:7: ( '&&' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:5:9: '&&'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:5:7: ( '&&' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:5:9: '&&'
             {
             match("&&"); 
 
@@ -172,8 +172,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__42;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:6:7: ( '(' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:6:9: '('
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:6:7: ( '(' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:6:9: '('
             {
             match('('); 
 
@@ -193,8 +193,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__43;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:7:7: ( ')' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:7:9: ')'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:7:7: ( ')' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:7:9: ')'
             {
             match(')'); 
 
@@ -214,8 +214,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__44;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:8:7: ( '*' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:8:9: '*'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:8:7: ( '*' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:8:9: '*'
             {
             match('*'); 
 
@@ -235,8 +235,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__45;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:9:7: ( '+' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:9:9: '+'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:9:7: ( '+' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:9:9: '+'
             {
             match('+'); 
 
@@ -256,8 +256,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__46;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:10:7: ( ',' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:10:9: ','
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:10:7: ( ',' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:10:9: ','
             {
             match(','); 
 
@@ -277,8 +277,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__47;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:11:7: ( '-' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:11:9: '-'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:11:7: ( '-' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:11:9: '-'
             {
             match('-'); 
 
@@ -298,8 +298,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__48;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:12:7: ( '/' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:12:9: '/'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:12:7: ( '/' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:12:9: '/'
             {
             match('/'); 
 
@@ -319,8 +319,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__49;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:13:7: ( ';' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:13:9: ';'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:13:7: ( ';' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:13:9: ';'
             {
             match(';'); 
 
@@ -340,8 +340,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__50;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:14:7: ( '<' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:14:9: '<'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:14:7: ( '<' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:14:9: '<'
             {
             match('<'); 
 
@@ -361,8 +361,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__51;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:15:7: ( '<=' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:15:9: '<='
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:15:7: ( '<=' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:15:9: '<='
             {
             match("<="); 
 
@@ -384,8 +384,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__52;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:16:7: ( '=' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:16:9: '='
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:16:7: ( '=' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:16:9: '='
             {
             match('='); 
 
@@ -405,8 +405,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__53;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:17:7: ( '==' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:17:9: '=='
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:17:7: ( '==' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:17:9: '=='
             {
             match("=="); 
 
@@ -428,8 +428,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__54;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:18:7: ( '>' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:18:9: '>'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:18:7: ( '>' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:18:9: '>'
             {
             match('>'); 
 
@@ -449,8 +449,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__55;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:19:7: ( '>=' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:19:9: '>='
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:19:7: ( '>=' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:19:9: '>='
             {
             match(">="); 
 
@@ -472,8 +472,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__56;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:20:7: ( '{' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:20:9: '{'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:20:7: ( '{' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:20:9: '{'
             {
             match('{'); 
 
@@ -493,8 +493,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__57;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:21:7: ( '||' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:21:9: '||'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:21:7: ( '||' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:21:9: '||'
             {
             match("||"); 
 
@@ -516,8 +516,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = T__58;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:22:7: ( '}' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:22:9: '}'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:22:7: ( '}' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:22:9: '}'
             {
             match('}'); 
 
@@ -537,8 +537,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = RETURN;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:215:9: ( 'return' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:215:11: 'return'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:215:9: ( 'return' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:215:11: 'return'
             {
             match("return"); 
 
@@ -560,8 +560,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = IF;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:217:5: ( 'if' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:217:7: 'if'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:217:5: ( 'if' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:217:7: 'if'
             {
             match("if"); 
 
@@ -583,8 +583,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = ELSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:219:6: ( 'else' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:219:8: 'else'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:219:6: ( 'else' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:219:8: 'else'
             {
             match("else"); 
 
@@ -606,8 +606,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = TD_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:221:8: ( 'int' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:221:10: 'int'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:221:8: ( 'int' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:221:10: 'int'
             {
             match("int"); 
 
@@ -629,8 +629,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = TD_BOOL;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:223:9: ( 'bool' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:223:11: 'bool'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:223:9: ( 'bool' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:223:11: 'bool'
             {
             match("bool"); 
 
@@ -652,8 +652,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = TD_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:225:11: ( 'string' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:225:13: 'string'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:225:11: ( 'string' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:225:13: 'string'
             {
             match("string"); 
 
@@ -675,8 +675,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = TD_VAZIO;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:227:10: ( 'void' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:227:12: 'void'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:227:10: ( 'void' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:227:12: 'void'
             {
             match("void"); 
 
@@ -698,8 +698,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = WHILE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:229:8: ( 'while' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:229:10: 'while'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:229:8: ( 'while' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:229:10: 'while'
             {
             match("while"); 
 
@@ -721,8 +721,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = TRUE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:231:7: ( 'true' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:231:9: 'true'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:231:7: ( 'true' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:231:9: 'true'
             {
             match("true"); 
 
@@ -744,8 +744,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = FALSE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:233:8: ( 'false' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:233:10: 'false'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:233:8: ( 'false' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:233:10: 'false'
             {
             match("false"); 
 
@@ -767,8 +767,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = WRITE;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:235:8: ( 'print' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:235:10: 'print'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:235:8: ( 'print' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:235:10: 'print'
             {
             match("print"); 
 
@@ -790,8 +790,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = READ;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:237:7: ( 'scan' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:237:9: 'scan'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:237:7: ( 'scan' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:237:9: 'scan'
             {
             match("scan"); 
 
@@ -813,8 +813,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:239:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:239:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:239:5: ( ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )* )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:239:7: ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             {
             if ( (input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
                 input.consume();
@@ -826,7 +826,7 @@ public class CmbLexer extends Lexer {
             }
 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:239:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:239:31: ( 'a' .. 'z' | 'A' .. 'Z' | '0' .. '9' | '_' )*
             loop1:
             do {
                 int alt1=2;
@@ -839,7 +839,7 @@ public class CmbLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'Z')||input.LA(1)=='_'||(input.LA(1) >= 'a' && input.LA(1) <= 'z') ) {
             	        input.consume();
@@ -876,10 +876,10 @@ public class CmbLexer extends Lexer {
         try {
             int _type = INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:242:5: ( ( '0' .. '9' )+ )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:242:7: ( '0' .. '9' )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:242:5: ( ( '0' .. '9' )+ )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:242:7: ( '0' .. '9' )+
             {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:242:7: ( '0' .. '9' )+
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:242:7: ( '0' .. '9' )+
             int cnt2=0;
             loop2:
             do {
@@ -893,7 +893,7 @@ public class CmbLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:
             	    {
             	    if ( (input.LA(1) >= '0' && input.LA(1) <= '9') ) {
             	        input.consume();
@@ -934,7 +934,7 @@ public class CmbLexer extends Lexer {
         try {
             int _type = COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:246:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:246:5: ( '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n' | '/*' ( options {greedy=false; } : . )* '*/' )
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -964,13 +964,13 @@ public class CmbLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:246:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:246:9: '//' (~ ( '\\n' | '\\r' ) )* ( '\\r' )? '\\n'
                     {
                     match("//"); 
 
 
 
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:246:14: (~ ( '\\n' | '\\r' ) )*
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:246:14: (~ ( '\\n' | '\\r' ) )*
                     loop3:
                     do {
                         int alt3=2;
@@ -983,7 +983,7 @@ public class CmbLexer extends Lexer {
 
                         switch (alt3) {
                     	case 1 :
-                    	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:
+                    	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:
                     	    {
                     	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '\t')||(input.LA(1) >= '\u000B' && input.LA(1) <= '\f')||(input.LA(1) >= '\u000E' && input.LA(1) <= '\uFFFF') ) {
                     	        input.consume();
@@ -1004,7 +1004,7 @@ public class CmbLexer extends Lexer {
                     } while (true);
 
 
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:246:28: ( '\\r' )?
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:246:28: ( '\\r' )?
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -1013,7 +1013,7 @@ public class CmbLexer extends Lexer {
                     }
                     switch (alt4) {
                         case 1 :
-                            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:246:28: '\\r'
+                            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:246:28: '\\r'
                             {
                             match('\r'); 
 
@@ -1030,13 +1030,13 @@ public class CmbLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:247:9: '/*' ( options {greedy=false; } : . )* '*/'
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:247:9: '/*' ( options {greedy=false; } : . )* '*/'
                     {
                     match("/*"); 
 
 
 
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:247:14: ( options {greedy=false; } : . )*
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:247:14: ( options {greedy=false; } : . )*
                     loop5:
                     do {
                         int alt5=2;
@@ -1061,7 +1061,7 @@ public class CmbLexer extends Lexer {
 
                         switch (alt5) {
                     	case 1 :
-                    	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:247:42: .
+                    	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:247:42: .
                     	    {
                     	    matchAny(); 
 
@@ -1098,8 +1098,8 @@ public class CmbLexer extends Lexer {
         try {
             int _type = WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:250:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:250:9: ( ' ' | '\\t' | '\\r' | '\\n' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:250:5: ( ( ' ' | '\\t' | '\\r' | '\\n' ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:250:9: ( ' ' | '\\t' | '\\r' | '\\n' )
             {
             if ( (input.LA(1) >= '\t' && input.LA(1) <= '\n')||input.LA(1)=='\r'||input.LA(1)==' ' ) {
                 input.consume();
@@ -1129,12 +1129,12 @@ public class CmbLexer extends Lexer {
         try {
             int _type = STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:258:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:258:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:258:5: ( '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:258:8: '\"' ( ESC_SEQ |~ ( '\\\\' | '\"' ) )* '\"'
             {
             match('\"'); 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:258:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:258:12: ( ESC_SEQ |~ ( '\\\\' | '\"' ) )*
             loop7:
             do {
                 int alt7=3;
@@ -1150,7 +1150,7 @@ public class CmbLexer extends Lexer {
 
                 switch (alt7) {
             	case 1 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:258:14: ESC_SEQ
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:258:14: ESC_SEQ
             	    {
             	    mESC_SEQ(); 
 
@@ -1158,7 +1158,7 @@ public class CmbLexer extends Lexer {
             	    }
             	    break;
             	case 2 :
-            	    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:258:24: ~ ( '\\\\' | '\"' )
+            	    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:258:24: ~ ( '\\\\' | '\"' )
             	    {
             	    if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '!')||(input.LA(1) >= '#' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
             	        input.consume();
@@ -1197,12 +1197,12 @@ public class CmbLexer extends Lexer {
         try {
             int _type = CHAR;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:261:5: ( '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\'' )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:261:8: '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\''
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:261:5: ( '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\'' )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:261:8: '\\'' ( ESC_SEQ |~ ( '\\'' | '\\\\' ) ) '\\''
             {
             match('\''); 
 
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:261:13: ( ESC_SEQ |~ ( '\\'' | '\\\\' ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:261:13: ( ESC_SEQ |~ ( '\\'' | '\\\\' ) )
             int alt8=2;
             int LA8_0 = input.LA(1);
 
@@ -1221,7 +1221,7 @@ public class CmbLexer extends Lexer {
             }
             switch (alt8) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:261:15: ESC_SEQ
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:261:15: ESC_SEQ
                     {
                     mESC_SEQ(); 
 
@@ -1229,7 +1229,7 @@ public class CmbLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:261:25: ~ ( '\\'' | '\\\\' )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:261:25: ~ ( '\\'' | '\\\\' )
                     {
                     if ( (input.LA(1) >= '\u0000' && input.LA(1) <= '&')||(input.LA(1) >= '(' && input.LA(1) <= '[')||(input.LA(1) >= ']' && input.LA(1) <= '\uFFFF') ) {
                         input.consume();
@@ -1263,8 +1263,8 @@ public class CmbLexer extends Lexer {
     // $ANTLR start "HEX_DIGIT"
     public final void mHEX_DIGIT() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:266:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:266:11: ( ( '0' .. '9' | 'a' .. 'f' | 'A' .. 'F' ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:
             {
             if ( (input.LA(1) >= '0' && input.LA(1) <= '9')||(input.LA(1) >= 'A' && input.LA(1) <= 'F')||(input.LA(1) >= 'a' && input.LA(1) <= 'f') ) {
                 input.consume();
@@ -1289,7 +1289,7 @@ public class CmbLexer extends Lexer {
     // $ANTLR start "ESC_SEQ"
     public final void mESC_SEQ() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:270:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:270:5: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' ) | UNICODE_ESC | OCTAL_ESC )
             int alt9=3;
             int LA9_0 = input.LA(1);
 
@@ -1342,7 +1342,7 @@ public class CmbLexer extends Lexer {
             }
             switch (alt9) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:270:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:270:9: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | '\\\"' | '\\'' | '\\\\' )
                     {
                     match('\\'); 
 
@@ -1359,7 +1359,7 @@ public class CmbLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:271:9: UNICODE_ESC
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:271:9: UNICODE_ESC
                     {
                     mUNICODE_ESC(); 
 
@@ -1367,7 +1367,7 @@ public class CmbLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:272:9: OCTAL_ESC
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:272:9: OCTAL_ESC
                     {
                     mOCTAL_ESC(); 
 
@@ -1387,7 +1387,7 @@ public class CmbLexer extends Lexer {
     // $ANTLR start "OCTAL_ESC"
     public final void mOCTAL_ESC() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:277:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:277:5: ( '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) ( '0' .. '7' ) | '\\\\' ( '0' .. '7' ) )
             int alt10=3;
             int LA10_0 = input.LA(1);
 
@@ -1438,7 +1438,7 @@ public class CmbLexer extends Lexer {
             }
             switch (alt10) {
                 case 1 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:277:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:277:9: '\\\\' ( '0' .. '3' ) ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -1475,7 +1475,7 @@ public class CmbLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:278:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:278:9: '\\\\' ( '0' .. '7' ) ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -1502,7 +1502,7 @@ public class CmbLexer extends Lexer {
                     }
                     break;
                 case 3 :
-                    // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:279:9: '\\\\' ( '0' .. '7' )
+                    // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:279:9: '\\\\' ( '0' .. '7' )
                     {
                     match('\\'); 
 
@@ -1531,8 +1531,8 @@ public class CmbLexer extends Lexer {
     // $ANTLR start "UNICODE_ESC"
     public final void mUNICODE_ESC() throws RecognitionException {
         try {
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:284:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
-            // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:284:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:284:5: ( '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT )
+            // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:284:9: '\\\\' 'u' HEX_DIGIT HEX_DIGIT HEX_DIGIT HEX_DIGIT
             {
             match('\\'); 
 
@@ -1561,12 +1561,12 @@ public class CmbLexer extends Lexer {
     // $ANTLR end "UNICODE_ESC"
 
     public void mTokens() throws RecognitionException {
-        // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:8: ( T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | RETURN | IF | ELSE | TD_INT | TD_BOOL | TD_STRING | TD_VAZIO | WHILE | TRUE | FALSE | WRITE | READ | ID | INT | COMMENT | WS | STRING | CHAR )
+        // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:8: ( T__38 | T__39 | T__40 | T__41 | T__42 | T__43 | T__44 | T__45 | T__46 | T__47 | T__48 | T__49 | T__50 | T__51 | T__52 | T__53 | T__54 | T__55 | T__56 | T__57 | T__58 | RETURN | IF | ELSE | TD_INT | TD_BOOL | TD_STRING | TD_VAZIO | WHILE | TRUE | FALSE | WRITE | READ | ID | INT | COMMENT | WS | STRING | CHAR )
         int alt11=39;
         alt11 = dfa11.predict(input);
         switch (alt11) {
             case 1 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:10: T__38
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:10: T__38
                 {
                 mT__38(); 
 
@@ -1574,7 +1574,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 2 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:16: T__39
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:16: T__39
                 {
                 mT__39(); 
 
@@ -1582,7 +1582,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 3 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:22: T__40
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:22: T__40
                 {
                 mT__40(); 
 
@@ -1590,7 +1590,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 4 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:28: T__41
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:28: T__41
                 {
                 mT__41(); 
 
@@ -1598,7 +1598,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 5 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:34: T__42
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:34: T__42
                 {
                 mT__42(); 
 
@@ -1606,7 +1606,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 6 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:40: T__43
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:40: T__43
                 {
                 mT__43(); 
 
@@ -1614,7 +1614,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 7 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:46: T__44
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:46: T__44
                 {
                 mT__44(); 
 
@@ -1622,7 +1622,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 8 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:52: T__45
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:52: T__45
                 {
                 mT__45(); 
 
@@ -1630,7 +1630,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 9 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:58: T__46
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:58: T__46
                 {
                 mT__46(); 
 
@@ -1638,7 +1638,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 10 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:64: T__47
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:64: T__47
                 {
                 mT__47(); 
 
@@ -1646,7 +1646,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 11 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:70: T__48
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:70: T__48
                 {
                 mT__48(); 
 
@@ -1654,7 +1654,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 12 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:76: T__49
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:76: T__49
                 {
                 mT__49(); 
 
@@ -1662,7 +1662,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 13 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:82: T__50
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:82: T__50
                 {
                 mT__50(); 
 
@@ -1670,7 +1670,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 14 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:88: T__51
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:88: T__51
                 {
                 mT__51(); 
 
@@ -1678,7 +1678,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 15 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:94: T__52
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:94: T__52
                 {
                 mT__52(); 
 
@@ -1686,7 +1686,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 16 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:100: T__53
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:100: T__53
                 {
                 mT__53(); 
 
@@ -1694,7 +1694,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 17 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:106: T__54
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:106: T__54
                 {
                 mT__54(); 
 
@@ -1702,7 +1702,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 18 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:112: T__55
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:112: T__55
                 {
                 mT__55(); 
 
@@ -1710,7 +1710,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 19 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:118: T__56
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:118: T__56
                 {
                 mT__56(); 
 
@@ -1718,7 +1718,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 20 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:124: T__57
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:124: T__57
                 {
                 mT__57(); 
 
@@ -1726,7 +1726,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 21 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:130: T__58
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:130: T__58
                 {
                 mT__58(); 
 
@@ -1734,7 +1734,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 22 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:136: RETURN
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:136: RETURN
                 {
                 mRETURN(); 
 
@@ -1742,7 +1742,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 23 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:143: IF
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:143: IF
                 {
                 mIF(); 
 
@@ -1750,7 +1750,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 24 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:146: ELSE
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:146: ELSE
                 {
                 mELSE(); 
 
@@ -1758,7 +1758,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 25 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:151: TD_INT
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:151: TD_INT
                 {
                 mTD_INT(); 
 
@@ -1766,7 +1766,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 26 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:158: TD_BOOL
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:158: TD_BOOL
                 {
                 mTD_BOOL(); 
 
@@ -1774,7 +1774,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 27 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:166: TD_STRING
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:166: TD_STRING
                 {
                 mTD_STRING(); 
 
@@ -1782,7 +1782,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 28 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:176: TD_VAZIO
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:176: TD_VAZIO
                 {
                 mTD_VAZIO(); 
 
@@ -1790,7 +1790,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 29 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:185: WHILE
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:185: WHILE
                 {
                 mWHILE(); 
 
@@ -1798,7 +1798,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 30 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:191: TRUE
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:191: TRUE
                 {
                 mTRUE(); 
 
@@ -1806,7 +1806,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 31 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:196: FALSE
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:196: FALSE
                 {
                 mFALSE(); 
 
@@ -1814,7 +1814,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 32 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:202: WRITE
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:202: WRITE
                 {
                 mWRITE(); 
 
@@ -1822,7 +1822,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 33 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:208: READ
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:208: READ
                 {
                 mREAD(); 
 
@@ -1830,7 +1830,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 34 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:213: ID
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:213: ID
                 {
                 mID(); 
 
@@ -1838,7 +1838,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 35 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:216: INT
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:216: INT
                 {
                 mINT(); 
 
@@ -1846,7 +1846,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 36 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:220: COMMENT
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:220: COMMENT
                 {
                 mCOMMENT(); 
 
@@ -1854,7 +1854,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 37 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:228: WS
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:228: WS
                 {
                 mWS(); 
 
@@ -1862,7 +1862,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 38 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:231: STRING
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:231: STRING
                 {
                 mSTRING(); 
 
@@ -1870,7 +1870,7 @@ public class CmbLexer extends Lexer {
                 }
                 break;
             case 39 :
-                // /home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:238: CHAR
+                // /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/Cmb.g:1:238: CHAR
                 {
                 mCHAR(); 
 
