@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  9 JUL 2012 04:37
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  9 JUL 2012 21:58
 entering extended mode
  %&-line parsing enabled.
 **Cmb.tex
@@ -276,6 +276,33 @@ LaTeX Warning: Label `DescriptiveLabel' multiply defined.
 
 LaTeX Warning: Label `DescriptiveLabel' multiply defined.
 
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
 )
 \openout1 = `Cmb.aux'.
 
@@ -361,33 +388,87 @@ File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./Cmb.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 5.
+(Font)              <7> on input line 6.
 )
 \tf@toc=\write4
 \openout4 = `Cmb.toc'.
 
- [2] [3]
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 132.
-
-
-(/usr/share/texmf/tex/latex/R/tex/latex/omsaer.fd
-File: omsaer.fd 1999/12/27
+ [2]
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
 )
-LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 132.
- [4] (./in/in1.g) (./in/in2.g) [5] (./in/in3.g) (./in/in4.g [6]) (./in/in5.g) (
-./in/in6.g) [7] (./in/in7.g
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 19.
-)
-(./in/in8.g) (./in/in9.g [8]) (./in/in10.g) (./in/in11.g) [9] [10] (./in/in12.g
-) (./in/in13.g [11]) (./in/in14.g) (./in/in15.g) (./in/in16.g [12])
-(./in/in17.g [13]) (./in/in18.g [14]) (./in/in19.g) [15] (./in/cod1.java
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+) (./in/inCod1.c
 
 LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
 (Font)              using `T1/aett/m/n' instead on input line 1.
 
-[16]) (./in/cod2.java) [17] (./in/cod3.java [18]) [19] [20] (./Cmb.aux)
+[3]) [4]
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 140.
+
+ (/usr/share/texmf/tex/latex/R/tex/latex/omsaer.fd
+File: omsaer.fd 1999/12/27
+)
+LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+ [5] (./in/in1.g)
+(./in/in2.g) [6] (./in/in3.g) (./in/in4.g [7]) (./in/in5.g) (./in/in6.g)
+(./in/in7.g [8]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 19.
+) (./in/in8.g) (./in/in9.g [9]) (./in/in10.g) (./in/in11.g)
+<in/cfg.png, id=48, 828.09375pt x 1067.99pt>
+File: in/cfg.png Graphic file (type png)
+ <use in/cfg.png> [10] [11 <./in/cfg.png>] [12] (./in/in12.g) (./in/in13.g) (./
+in/in14.g) [13] (./in/in15.g)
+(./in/in16.g) [14] (./in/in17.g) (./in/in18.g [15]) (./in/in19.g [16]) [17]
+(./in/cod1.java) (./in/cod2.java [18]) [19] (./in/cod3.java) [20]
+<in/pdg.png, id=89, 2320.67pt x 714.67pt>
+File: in/pdg.png Graphic file (type png)
+ <use in/pdg.png> [21 <./in/pdg.png>]
+(./in/in20.g) (./in/in21.g) [22] (./in/in22.g) [23] (./in/in23.g) (./in/in24.g)
+(./in/in25.g) <in/sdg.png, id=100, 1477.52pt x 613.29124pt>
+File: in/sdg.png Graphic file (type png)
+ <use in/sdg.png>
+[24] (./in/cod4.java [25 <./in/sdg.png>]) (./in/in26.g) [26]
+<in/ssa.png, id=112, 1180.41pt x 966.61125pt>
+File: in/ssa.png Graphic file (type png)
+ <use in/ssa.png> [27 <./in/ssa.png>] <in/site1.png, id=117, 983.675pt x 706.64
+pt>
+File: in/site1.png Graphic file (type png)
+ <use in/site1.png>
+Overfull \hbox (8.13943pt too wide) in paragraph at lines 526--528
+ [][] 
+ []
+
+<in/site2.png, id=118, 976.64874pt x 711.65875pt>
+File: in/site2.png Graphic file (type png)
+ <use in/site2.png>
+Overfull \hbox (4.62631pt too wide) in paragraph at lines 535--537
+ [][] 
+ []
+
+[28 <./in/site1.png (PNG copy)>]
+<in/site3.png, id=122, 647.41875pt x 721.69624pt>
+File: in/site3.png Graphic file (type png)
+ <use in/site3.png> [29 <./in/site2.png (PNG copy)>] <in/site4.png, id=126, 966
+.61125pt x 671.50874pt>
+File: in/site4.png Graphic file (type png)
+
+<use in/site4.png> [30 <./in/site3.png (PNG copy)>]
+<in/site5.png, id=130, 977.6525pt x 795.97375pt>
+File: in/site5.png Graphic file (type png)
+ <use in/site5.png>
+Overfull \hbox (5.12819pt too wide) in paragraph at lines 558--560
+ [][] 
+ []
+
+[31 <./in/site4.png (PNG copy)>]
+<in/site6.png, id=135, 961.5925pt x 736.7525pt>
+File: in/site6.png Graphic file (type png)
+ <use in/site6.png> [32 <./in/site5.png (PNG copy)>] [33 <./in/site6.png (PNG c
+opy)>] (./Cmb.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -396,13 +477,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 5520 strings out of 495014
- 70890 string characters out of 1180707
- 289916 words of memory out of 3000000
- 8516 multiletter control sequences out of 15000+50000
+ 6085 strings out of 495014
+ 79054 string characters out of 1180707
+ 299916 words of memory out of 3000000
+ 9038 multiletter control sequences out of 15000+50000
  49027 words of font info for 99 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 35i,8n,42p,1387b,1704s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,8n,52p,1400b,1705s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/
@@ -421,9 +502,9 @@ exlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts
 ic/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.p
 fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Cmb.pdf (20 pages, 333247 bytes).
+Output written on Cmb.pdf (33 pages, 3100686 bytes).
 PDF statistics:
- 151 PDF objects out of 1000 (max. 8388607)
+ 207 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

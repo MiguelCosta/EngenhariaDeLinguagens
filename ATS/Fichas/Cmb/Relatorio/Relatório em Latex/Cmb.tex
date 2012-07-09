@@ -79,7 +79,7 @@ breaklines=true}
 \maketitle
  
 \begin{abstract}
-Este documento apresenta as resolução do Trabalho Prático de Análise e Transformação de Software em que se usa as técnicas de e construção de ASTs e suas travessias tendo em conta atributos.
+Este documento apresenta as resolução do Trabalho Prático de Análise e Transformação de Software em que se usa as técnicas de construção de ASTs e suas travessias tendo em conta atributos.
 O exercício está relacionado com a implementação da linguagem Cmb, dada nas aulas, e na criação de um Control Flow Graph (CFG), um Program Dependency Graph (PDG), System Dependency Graph (SDG) e ainda de um Directed Acyclic Graph (DAG).
 O resultado é um WebSite para mostrar os vários grafos criados.
 
@@ -102,7 +102,15 @@ A linguagem de programação adoptada foi o JAVA. De forma a tornar a nossa soluçã
 \section{Descrição do problema}
 O pretendido para este exercício era gerar um pequeno WebSite, para navegar num Mapa de Conceitos, a partir de uma linguagem simples para descrever esses mesmos mapas.
 
-A linguagem criada por nós tem de ser validada para depois ser apresentada a informação visualmente, terá ainda de haver uma forma de mostrar as ocorr?ncias de cada conceito.
+A linguagem criada por nós tem de ser validada para depois ser apresentada a informação visualmente, terá ainda de haver uma forma de mostrar as ocorrências de cada conceito.
+
+
+\section{Exemplo de um programa em Cmb}
+Em todos os exemplos que vão ser apresentados neste relatório, o input introduzido é o que se segue:
+\lstset{caption={Linguagem Cmb},label=DescriptiveLabel}
+\lstinputlisting[language=c]{in/inCod1.c}
+
+
 
 \section{Gramáticas}
 
@@ -139,7 +147,7 @@ O problema apresentado, exige a construção de 4 TG (módulos), por isso, dividire
 A primeira referente ao Control Flow Graph (CFG), o segundo ao Program Dependency Graph (PDG), o terceiro ao System Dependency Graph (SDG) e o último referente ao Single Static Assignment (SSA).
 
 \subsubsection{Control Flow Graph}
-Um Control Flow Graph (CFG) é um grafo direcionado com a adição de um único nodo de entrada START e um único nodo de saída STOP, tal que cada nodo no grafo tem no máximo dois sucessores. Assume-se que nodos com dois sucessores têm atributos ?T? (Verdadeiro) e ?F? (Falso) associados aos ramos que saem, assume-se também que, para cada nodo N no grafo, existe um caminho de START a N e um caminho de N a STOP.
+Um Control Flow Graph (CFG) é um grafo direcionado com a adição de um único nodo de entrada START e um único nodo de saída STOP, tal que cada nodo no grafo tem no máximo dois sucessores. Assume-se que nodos com dois sucessores têm atributos "T" (Verdadeiro) e "F" (Falso) associados aos ramos que saem, assume-se também que, para cada nodo N no grafo, existe um caminho de START a N e um caminho de N a STOP.
 
 Este tipo de grafos pode servir para verificar se os programas que representam estão corretos, verificando se determinados nodos são atingíveis ou não e a partir de aí otimizar o código, por exemplo, eliminando \textit{dead code}, código que que é executado mas cujo resultado nunca é utilizado em mais nenhuma computação.
 
@@ -149,7 +157,7 @@ A classe Grafo é uma classe Java que armazena os nodos e os caminhos do CFG enco
 
 A lista com números de instrução é atualizada com o número da última instrução, no caso de uma atribuição, read, write, invocação ou return, ou das últimas instruções no caso de um if, while ou vários dos mesmos aninhados. Na instrução seguinte, a lista é utilizada para conectar os números contidas nela ao número da nova instrução visitada. A lista é inicializada com o número do nodo START (0) e após a última instrução de uma função ser executada, o conteúdo da lista é conectado ao nodo EXIT que é gerado na altura.
 
-Finalmente, a string label é inicializada com uma string vazia e apenas toma o valor ?T? quando o bloco then de um statement if ou quando o bloco de instruções de um while é visitado. E toma o valor ?F? quando o bloco else de um statement if é visitado ou o bloco de instruções de um while termina. Nos restantes casos, depois de um statement ser visitado esta volta a tomar o valor de string vazia.
+Finalmente, a string label é inicializada com uma string vazia e apenas toma o valor "T" quando o bloco then de um statement if ou quando o bloco de instruções de um while é visitado. E toma o valor "F" quando o bloco else de um statement if é visitado ou o bloco de instruções de um while termina. Nos restantes casos, depois de um statement ser visitado esta volta a tomar o valor de string vazia.
 
 No final da execução da TG um TreeMap contendo um mapeamento entre o identificador de uma função e o respetivo grafo CFG é retornado à Interface Java (esta será explicada posteriormente).
 
@@ -160,7 +168,7 @@ Começamos pela produção inicial, cujo símbolo não terminal representa o axioma d
 \lstset{caption={Produção programa},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{in/in1.g}
 
-A ação criada para tratar cada função, mais especificamente o símbolo não terminal (SNT) corpo\_funcao. Nesta produção, apenas na primeira visita, o TreeSet que guarda os números das últimas instruções executadas é instanciado, assim como o nodo inicial START é adicionado ao grafo e o número criado para este (0) é adicionado-o ao TreeSet. Num CFG as declarações de uma função são ignoradas, por isso apenas nos interessa a parte dos statements. Este símbolo não terminal recebe como atributos de entrada (herdados) para além dos três atributos já mencionados, uma string contexto que toma valores entre ?CORPO\_FUNCAO? e ?BLOCO?, o seu significado será explicado posteriormente. A produção é exibida de seguida:
+A ação criada para tratar cada função, mais especificamente o símbolo não terminal (SNT) corpo\_funcao. Nesta produção, apenas na primeira visita, o TreeSet que guarda os números das últimas instruções executadas é instanciado, assim como o nodo inicial START é adicionado ao grafo e o número criado para este (0) é adicionado-o ao TreeSet. Num CFG as declarações de uma função são ignoradas, por isso apenas nos interessa a parte dos statements. Este símbolo não terminal recebe como atributos de entrada (herdados) para além dos três atributos já mencionados, uma string contexto que toma valores entre "CORPO\_FUNCAO" e "BLOCO", o seu significado será explicado posteriormente. A produção é exibida de seguida:
 
 \lstset{caption={Produção corpo funcao},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{in/in2.g}
@@ -196,12 +204,12 @@ O primeiro passo é a criação do nodo correspondente à expressão do if no grafo, 
 \lstset{caption={Produção ifs},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{in/in7.g}
 
-Ao bloco de instruções then são passados como atributos herdados o grafo, o TreeSet com o número da instrução correspondente à expressão do if, ou seja, a última instrução executada e a string ?T?, que corresponde à label que indica que a próxima instrução será conectada à expressão com a label ?T?. Após a sua execução o grafo e o TreeSet das últimas instruções são atualizados com os atributos sintetizados pelo bloco.
+Ao bloco de instruções then são passados como atributos herdados o grafo, o TreeSet com o número da instrução correspondente à expressão do if, ou seja, a última instrução executada e a string "T", que corresponde à label que indica que a próxima instrução será conectada à expressão com a label "T". Após a sua execução o grafo e o TreeSet das últimas instruções são atualizados com os atributos sintetizados pelo bloco.
 
 \lstset{caption={Produção bloco},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{in/in8.g}
 
-O bloco de instruções else é semelhante ao bloco anterior, apenas difere no atributo herdado label que passa a ser ?F? e, tal como, foi dito acima, o TreeSet nrs\_out tinha guardado temporariamente o número da instrução da expressão do if, se o bloco else for visitado significa que este existe, logo não faz sentido que a instrução da expressão seja conectada à próxima instrução.
+O bloco de instruções else é semelhante ao bloco anterior, apenas difere no atributo herdado label que passa a ser "F" e, tal como, foi dito acima, o TreeSet nrs\_out tinha guardado temporariamente o número da instrução da expressão do if, se o bloco else for visitado significa que este existe, logo não faz sentido que a instrução da expressão seja conectada à próxima instrução.
 
 \lstset{caption={Produção bloco},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{in/in9.g}
@@ -216,13 +224,20 @@ O primeiro passo é semelhante ao do if, ou seja, criamos o nodo correspondente à
 \lstset{caption={Produção whiles},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{in/in11.g}
 
-Ao bloco de instruções são passados como atributos herdados o grafo, o TreeSet com o número da instrução correspondente à expressão do while e a string ?T?. Após a sua execução o grafo é atualizado com o grafo passado como atributo sintetizado pelo bloco.
+Ao bloco de instruções são passados como atributos herdados o grafo, o TreeSet com o número da instrução correspondente à expressão do while e a string "T". Após a sua execução o grafo é atualizado com o grafo passado como atributo sintetizado pelo bloco.
 
-Finalmente, novos caminhos entre as últimas instruções do bloco e a expressão são inseridos no grafo. O TreeSet com o número da instrução correspondente à expressão de condição, o grafo e label com o valor ?F? para que a próxima instrução seja conectada com essa label são retornadas como atributos sintetizados.
+Finalmente, novos caminhos entre as últimas instruções do bloco e a expressão são inseridos no grafo. O TreeSet com o número da instrução correspondente à expressão de condição, o grafo e label com o valor "F" para que a próxima instrução seja conectada com essa label são retornadas como atributos sintetizados.
 
 Desta forma, apresentámos a implementação da solução encontrada para construir um ou mais CFG a partir de um programa Cmb.
 A Tree Grammar completa (CmbTGCFG.g) pode ser consultada em anexo.
 
+\textbf{Exemplo de um grafo CFG gerado:}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{in/cfg.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Grafo CFG}
+\end{figure}
 
 \subsubsection{Program Dependency Graph}
 Um Program Dependency Graph (PDG) é uma representação de um programa que contém os mesmos nodos que o CFG e dois tipos de arestas: arestas de controlo de dependência e arestas de controlo de dados. Portanto, é um grafo direcionado em que os vértices correspondem a statements e predicados de controlo, e as arestas correspondem a dados e a controlos de dependência.
@@ -233,13 +248,13 @@ Vamos dividir a explicação da nossa estratégia em duas partes, correspondentes à
 
 \textbf{Dependências de controlo}
 
-As dependências de controlo diferem um pouco das do CFG, no sentido em que o fluxo das instruções é representado da esquerda para a direita, sendo o nodo pai o nodo que representa a entrada na função e os restantes nodos, correspondentes às instruções no contexto desta função, são conectados a este nodo inicial. Quando um ciclo while ou uma estrutura if são encontrados, é gerada uma sub-árvore, sendo a raiz desta sub-árvore a expressão de controlo da estrutura. Por isso, a estratégia passa também por fazer passar como atributo uma instância de uma classe GrafoPDG (herdado: GrafoPDG g\_in; sintetizado: GrafoPDG g\_out) por grande parte da AST, uma lista (herdado: TreeSet<Integer> nrs\_ultima\_instrucao\_in; sintetizado: TreeSet<Integer> nrs\_ultima\_instrucao\_out) com o  número da instrução inicial, ou quando o contexto mudar (quando um ciclo while ou uma estrutura de controlo if for encontrado) o número da instrução do predicado de controlo dessa estrutura, com o objetivo de conectar as instruções de modo a representar o fluxo de dados pretendido e, finalmente, uma string label (herdado: String label\_in; sintetizado: String label\_out), ?T? se a instrução pertence a um bloco then ou ao bloco de instruções de um while e ?F? se pertence a um bloco else. Esta label estará depois associada a uma aresta entre um predicado de controlo e uma instrução.
+As dependências de controlo diferem um pouco das do CFG, no sentido em que o fluxo das instruções é representado da esquerda para a direita, sendo o nodo pai o nodo que representa a entrada na função e os restantes nodos, correspondentes às instruções no contexto desta função, são conectados a este nodo inicial. Quando um ciclo while ou uma estrutura if são encontrados, é gerada uma sub-árvore, sendo a raiz desta sub-árvore a expressão de controlo da estrutura. Por isso, a estratégia passa também por fazer passar como atributo uma instância de uma classe GrafoPDG (herdado: GrafoPDG g\_in; sintetizado: GrafoPDG g\_out) por grande parte da AST, uma lista (herdado: TreeSet<Integer> nrs\_ultima\_instrucao\_in; sintetizado: TreeSet<Integer> nrs\_ultima\_instrucao\_out) com o  número da instrução inicial, ou quando o contexto mudar (quando um ciclo while ou uma estrutura de controlo if for encontrado) o número da instrução do predicado de controlo dessa estrutura, com o objetivo de conectar as instruções de modo a representar o fluxo de dados pretendido e, finalmente, uma string label (herdado: String label\_in; sintetizado: String label\_out), "T" se a instrução pertence a um bloco then ou ao bloco de instruções de um while e "F" se pertence a um bloco else. Esta label estará depois associada a uma aresta entre um predicado de controlo e uma instrução.
 
 A classe GrafoPDG é uma extensão à classe Grafo, herdando as variáveis e métodos da classe Grafo, adicionalmente possui uma variável que representa as dependências de dados numa função, ou seja, é um TreeMap que conecta um número de instrução a outros, cujas variáveis referenciadas nessas instruções são dependentes da variável definida na primeira. Mais tarde, quando as dependências de dados forem abordadas, será explicado com mais detalhe esta implementação. Também neste módulo, um grafo é gerado para cada função existente no programa de input.
 
 A lista com o número da última instrução é atualizado sempre que o contexto muda, ou seja, quando uma estrutura while ou if são executadas. Em cada instrução, a lista é utilizada para conectar o número contido nela ao número da nova instrução executada. A lista é inicializada com o número do nodo inicial (0).
 
-Finalmente, a string label é inicializada com uma string vazia e apenas toma o valor ?T? quando o bloco then de um statement if ou quando o bloco de instruções de um while é visitado. E toma o valor ?F? quando o bloco else de um statement if é visitado. Nos restantes casos, depois de um statement ser visitado esta volta a tomar o valor de string vazia.
+Finalmente, a string label é inicializada com uma string vazia e apenas toma o valor "T" quando o bloco then de um statement if ou quando o bloco de instruções de um while é visitado. E toma o valor "F" quando o bloco else de um statement if é visitado. Nos restantes casos, depois de um statement ser visitado esta volta a tomar o valor de string vazia.
 No final da execução da TG um TreeMap contendo um mapeamento entre o identificador de uma função e o respetivo grafo PDG é retornado à Interface Java (esta será explicada posteriormente).
 
 A implementação das ações associadas à deteção de dependências de controlo, por ser semelhante à do CFG, não será ilustrada. A Tree Grammar pode ser consultada em anexo.
@@ -253,9 +268,9 @@ Uma dependência de dados existe entre duas instruções sempre que uma variável qu
 \item Sempre que um ciclo while for visitado, a procura de dependências para as instruções pertencentes ao seu bloco são adiadas até que o final do bloco seja atingido, altura em que uma procura a estas instruções é feita com um algoritmo diferente ao anterior, visto tratar-se de um ciclo e a ordem das instruções ser afetada;
 \end{itemize}
 
-Para que as abordagens referidas acima fossem possíveis, foi necessário fazer passar como atributo na TG, para além daqueles já referidos para as dependências de controlo, uma string contexto (herdado: String contexto\_in, sintetizado: String contexto\_out) para poder distinguir o contexto em que uma instrução é visitada e assim, se essa string contiver ?CORPO\_FUNCAO?, podemos iniciar a procura de dependências, mas se contiver ?WHILE?, essa procura é adiada, tal como foi explicado na segunda abordagem. Também, para auxiliar a segunda metodologia, uma lista de números de instrução (herdado: TreeSet<Integer> nrs\_instrucao\_while\_in, sintetizado: TreeSet<Integer> nrs\_instrucao\_while\_out) vai armazenar os números das instruções que são adiadas, para que no final do bloco estas possam ser alvo de uma procura de dependências. Finalmente, o último atributo (herdado: String bloco\_if\_in; sintetizado: String bloco\_if\_out) surge da necessidade de distinguir diferentes cenários em que uma dependência pode ser encontrada, estes cenários serão explicados posteriormente, mas estes  dependem do bloco de instruções de uma estrutura if em que ambas as instruções envolvidas numa dependência se encontram. Este atributo toma o valor ?THEN? quando o bloco then de um if é visitado e ?ELSE? quando o bloco else é visitado.
+Para que as abordagens referidas acima fossem possíveis, foi necessário fazer passar como atributo na TG, para além daqueles já referidos para as dependências de controlo, uma string contexto (herdado: String contexto\_in, sintetizado: String contexto\_out) para poder distinguir o contexto em que uma instrução é visitada e assim, se essa string contiver "CORPO\_FUNCAO", podemos iniciar a procura de dependências, mas se contiver "WHILE", essa procura é adiada, tal como foi explicado na segunda abordagem. Também, para auxiliar a segunda metodologia, uma lista de números de instrução (herdado: TreeSet<Integer> nrs\_instrucao\_while\_in, sintetizado: TreeSet<Integer> nrs\_instrucao\_while\_out) vai armazenar os números das instruções que são adiadas, para que no final do bloco estas possam ser alvo de uma procura de dependências. Finalmente, o último atributo (herdado: String bloco\_if\_in; sintetizado: String bloco\_if\_out) surge da necessidade de distinguir diferentes cenários em que uma dependência pode ser encontrada, estes cenários serão explicados posteriormente, mas estes  dependem do bloco de instruções de uma estrutura if em que ambas as instruções envolvidas numa dependência se encontram. Este atributo toma o valor "THEN" quando o bloco then de um if é visitado e "ELSE" quando o bloco else é visitado.
 
-O primeiro passo, para que a deteção de dependência de dados fosse possível, foi modificar a inserção de nodos no grafo, isto é, em termos de conteúdo. No CFG, tínhamos mencionado que da classe Instrucao apenas nos interessava a própria instrução em si. No PDG, isso já não se verifica e 4 novas variáveis foram adicionadas à classe. Para detetar uma dependência entre duas instruções é necessário sabermos que variáveis são referenciadas e também definidas, por isso, na classe Instrucao, foram criados dois HashSet<String> (variaveis\_definidas e variaveis\_referenciadas) para guardar exatamente essas variáveis. E também como já foi referido, é necessário saber o contexto em que uma instrução surge (?CORPO\_FUNCAO? ou ?WHILE?) e se esta está num bloco then, else ou em nenhum (?THEN?, ?ELSE?, ??), por isso, as outras duas variáveis adicionadas à classe foram String contexto e String bloco\_if, respetivamente.
+O primeiro passo, para que a deteção de dependência de dados fosse possível, foi modificar a inserção de nodos no grafo, isto é, em termos de conteúdo. No CFG, tínhamos mencionado que da classe Instrucao apenas nos interessava a própria instrução em si. No PDG, isso já não se verifica e 4 novas variáveis foram adicionadas à classe. Para detetar uma dependência entre duas instruções é necessário sabermos que variáveis são referenciadas e também definidas, por isso, na classe Instrucao, foram criados dois HashSet<String> (variaveis\_definidas e variaveis\_referenciadas) para guardar exatamente essas variáveis. E também como já foi referido, é necessário saber o contexto em que uma instrução surge ("CORPO\_FUNCAO" ou "WHILE") e se esta está num bloco then, else ou em nenhum ("THEN", "ELSE", ""), por isso, as outras duas variáveis adicionadas à classe foram String contexto e String bloco\_if, respetivamente.
 
 Dos 6 tipos de instrução existentes na linguagem Cmb, as instruções onde existe definição de variáveis são o scan (read) e a atribuição (atribuicao), e em todas as 6 é possível referenciar variáveis. Posto isto, para que na altura da inserção de um novo nodo no grafo, as variáveis definidas e referenciadas estivessem presentes, foi necessário sintetizá-las até cada uma das 6 instruções. De seguida mostramos a produção original da instrução atribuição para auxiliar a explicação.
 
@@ -302,14 +317,14 @@ A produção seguinte é a do SNT ifs, que apenas difere da atribuicao pela existên
 \lstset{caption={Produção ifs},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{in/in18.g}
 
-As ações executadas após o predicado de controlo são as mesmas que para a atribuição. Ao o bloco de instruções then são passados os mesmo atributos que foram passados em todas as produções que mostrámos, mas com valores diferentes, o número da última instrução executada é o número do predicado de controlo (expressão) para que as instruções do bloco se conectem a essa instrução, a label é passada com o valor ?T? para associar aos ramos das conexões que serão criadas, e o bloco\_if com o valor ?THEN? para identificar as instruções como pertencentes a um bloco then. Após a execução do bloco, se as instruções do if surgirem no contexto de um while então os números que foram guardados no bloco são adicionados a uma variável que será depois sintetizada no final da produção. O bloco else é idêntico, só mudam os valores  da label para ?F? e o bloco\_if para ?ELSE?.
+As ações executadas após o predicado de controlo são as mesmas que para a atribuição. Ao o bloco de instruções then são passados os mesmo atributos que foram passados em todas as produções que mostrámos, mas com valores diferentes, o número da última instrução executada é o número do predicado de controlo (expressão) para que as instruções do bloco se conectem a essa instrução, a label é passada com o valor "T" para associar aos ramos das conexões que serão criadas, e o bloco\_if com o valor "THEN" para identificar as instruções como pertencentes a um bloco then. Após a execução do bloco, se as instruções do if surgirem no contexto de um while então os números que foram guardados no bloco são adicionados a uma variável que será depois sintetizada no final da produção. O bloco else é idêntico, só mudam os valores  da label para "F" e o bloco\_if para "ELSE".
 
 Finalmente, a última produção é a do SNT whiles, onde no final da execução dos SNT do lado direito da produção, caso o ciclo while tenha surgido no contexto do corpo da função (isto é, se existirem whiles aninhados, todas as instruções internas são adiadas até ao final do mais externo), é feita a verificação da existência de dependências de dados para as instruções que foram adiadas.
 
 \lstset{caption={Produção whiles},label=DescriptiveLabel}
 \lstinputlisting[style=gramatica]{in/in19.g}
 
-Nesta produção a verificação de dependências de todas as instruções pertencentes ao while, inclusive o predicado de controlo são adiadas até ao final da produção. Ao bloco de instruções é passado o atributo contexto\_in com o valor ?WHILE?, que obriga ao adiamento da verificação de dependências das instruções no bloco, o atributo nrs\_ultima\_instrucao\_in com o número de instrução do predicado de controlo (expressão) e o atributo label\_in com o valor ?T? (todas as instruções de um bloco while têm no caminho criado do predicado de controlo para si a label ?T?). Por fim, a verificação de dependências de dados é feita fazendo uma chamada ao método checkDependenciasDadosWhile da instância do grafo.
+Nesta produção a verificação de dependências de todas as instruções pertencentes ao while, inclusive o predicado de controlo são adiadas até ao final da produção. Ao bloco de instruções é passado o atributo contexto\_in com o valor "WHILE", que obriga ao adiamento da verificação de dependências das instruções no bloco, o atributo nrs\_ultima\_instrucao\_in com o número de instrução do predicado de controlo (expressão) e o atributo label\_in com o valor "T" (todas as instruções de um bloco while têm no caminho criado do predicado de controlo para si a label "T"). Por fim, a verificação de dependências de dados é feita fazendo uma chamada ao método checkDependenciasDadosWhile da instância do grafo.
 
 A Tree Grammar completa pode ser consultada em anexo.
 
@@ -384,21 +399,181 @@ No cenário 2 (B pertence a um bloco then) se uma dependência for encontrada no i
 
 As classes Java podem ser consultadas em anexo.
 
+\textbf{Exemplo de um grafo PDG gerado:}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.2]{in/pdg.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Grafo PDG}
+\end{figure}
+
+\subsubsection{System Dependency Graph}
+
+Um System Dependecy Graph é um representação de um programa com uma estrutura idêntica ao PDG mas com outra informação. Neste tipo de grafos temos a representado o fluxo das instruções, as dependências de dados, as chamadas de funções e a passagem de parâmetros.
+
+Aqui as verificações que são realizadas são geralmente na passagem de parametros quando ocorre a invocação de outras funções do sistema. A optimização pode ocorrer, por exemplo, quando a invocação de uma função é feita sempre com os mesmos parâmetros.
+
+Para a implementação deste modulo apoiamo-nos na estrutura já criada para o PDG adicionando alguns atributos á gramática e criando novas classes para guardar a informação.
+
+É essencial guardar o cabeçalho de uma função para sabermos que argumentos são esperados e o valor que será retornado. O atributo \verb|TreeMap<String, CabecalhoFuncao> funcoes_out| que existe na produção \verb|funcao| da gramática é responsável por armazenar tudo o que precisamos de saber para invocar uma função. O \verb|TreeMap<String, CabecalhoFuncao>| tem como chave o nome da função (logo partimos do principio que não há funções com o mesmo nome) e o valor é uma instância de \verb|CabecalhoFuncao|, esta classe guarda o nome da função, o tipo de retorno e ainda os parametros com a respectiva ordem.
+
+É na produção \verb|cabeçalho| que se consegue obter o que necessitamos:
+
+\lstset{caption={Produção cabecalho},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in20.g}
+
+É na produção \verb|argumentos| que se obtêm os parametros e se calcula a ordem pela qual aparecem.
+
+\lstset{caption={Produção argumentos},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in21.g}
+
+A classe GrafoSDG agora utilizada, é um \verb|extends| da classe GrafoPDG em que se acrescentou as variáveis de instância necessárias para guardar as invocações e os cabecalhos das funções.
+
+Já recolhemos a estrutura das funções, agora precisamos de ver quando ocorre uma invocação e arranjar uma forma para fazer um \textit{mapping} entre o cabecalho e a função.
+
+A estratégia foi criar uma classe chamada \verb|ChamadasFuncao| onde é registado o número da instrução, o nome da função invocada, as variáveis que podem ser retornadas e ainda os parametros com a respectiva ordem. Através da classe \verb|CabecalhoFuncao| e \verb|CahamdasFuncao| e tendo em conta as suas variáveis de instância, verificamos que é agora possível fazer um \textit{mapping} entre as invocações de um função com a respectiva função. De seguida é apresentada a forma utilizada para detectar as invocações.
+
+Como não poderia deixar de ser, na própria produção \verb|invocacao| é registada a chamada a uma função, no entanto não é possível registar tudo aqui, isto porque se a invocação não for uma instrução isolada (ou seja, se estiver na condição de um if ou de while por exemplo) temos de sintetizar alguma informação recolhida neste ponto até à produção onde jé temos tudo o que é necessário.
+
+\lstset{caption={Produção instrução},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in22.g}
+
+Caso a invocação venha do contexto "FACTOR" (vai entrar no Then do IF) é necessário sintetizar a instância da classe \verb|ChamadasFuncao| para uma produção onde se consiga saber o número da instrução onde ocorre.
+
+Mesmo em \verb|factor| não se consegue saber, por isso continua a sintetizar a chamada da funcao (CF):
+
+\lstset{caption={Produção funcao},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in23.g}
+
+O mesmo acontece na \verb|expr|:
+
+\lstset{caption={Produção expr},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in24.g}
 
 
+Depois da produção \verb|expr| sintetizar a CF, vamos estar perante outras produção em que já é possível obter o número da instrução. Essas produções são: atribuição, write, ifs e whiles, só não é o read porque como é óbvio não é possível ler do standard input para uma função. Nas produções referidas existe em todas algo como:
+
+\lstset{caption={Produção expr},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in25.g}
+
+A partir deste momento já temos registado todas as funções e todas as invocações que existem, o que se seguiu vou apenas criar um método que recebesse uma instância da classe GrafoSDG e gerar linguagem Dot para desenhar um grafo que representasse graficamente o resultado.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.3]{in/sdg.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Grafo SDG}
+\end{figure}
+
+Analisando o grafo gerado, podemos verificar que algumas ligações não estão representadas mas estãom implititas, no caso dos argumentos, visto que foram colocados pela mesma ordem não achamos necessário estar a colocar. No entanto a ligação do "return" para a variavel que está a invocar a função é que não está implementada, falta concluir este pormenor. 
+
+\subsubsection{Single Static Assignment}
+Single Static Assignment (SSA) é uma propriedade de ua representação intermédia (RI), que diz que cada variável é definida uma vez. AS variáveis que já existem na RI original são divididas em versões, em que as novas variáveis são normalmente representadas pelo nome original seguida de um digito. Mostrando alguns exemplos verificamos que os benificios são relativamente simples de detectar.
+
+Se tivermos definido:
+\begin{verbatim}
+a = 3
+a = 14
+b = a
+\end{verbatim}
+
+Á primeira vista reparamos logo que a primeira atribuição é desnecessária, se passarmos o código para o formato SSA ele ficará:
+
+\begin{verbatim}
+a1 = 3
+a2 = 14
+b1 = a2
+\end{verbatim}
+
+Se estivermos perante um bom compilador, ele agora irá detectar que a primeira instrução não é necessária e que o "b" irá tomar o valor de "a2".
+
+A ideia inicial era criar um texto igual ao de entrada mas no formato SSA, no entando o que nós fizemos foi um grafo como o CFG mas com as instruções no formato SSA. 
+
+Para resolver o problema criamos a classe \verb|GrafoTGSSA| que é uma extensão da classe \verb|Grafo|, nesta classe temos definidos:
+
+\lstset{caption={Classe GrafoTGSSA},label=DescriptiveLabel}
+\lstinputlisting[language=java]{in/cod4.java}
+
+em \verb|versoesVariaveis| guardamos a variável com o número da última versão que foi definida, enquanto que na variável de instância \verb|contextoVariavel| fica guardado a variável com a respectiva versão e o contexto em que ela foi definida. Isto de ter o contexto é necessário por exemplo para o caso em que a seguir a um "IF" temos uma variável que está a ser definida no "THEN" ou no "ELSE", nesta situação o que estiver a seguir ao "IF" não vai saber de onde é que vem o valor calculado, pode ser de um dos 2.
+
+Para resolver o problema começamos por identificar onde é que as variáveis podem ser definidas e chegamos à conclusão que podem em: read e atribuição. Logo, é nestas produções que a versão de uma variável vai ser alterada:
+
+\lstset{caption={Produção atribuicao e read},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in26.g}
+
+Quando se chama o método incrementaVariavel(ID.text) ele vai automaticamente incremetar no TreeMap versoesVariaveis a versão daquela variável e devolve o valor da actual versão. De seguida adicionamos à estrutura onde estão os contextos o que nos interessa para no final conseguirmos fazer todas as verificações necessárias (adicionaVariavelContexto($ID.text + i, $atribuicao.contexto\_in)).
+
+Com toda a informação guardada que é necessária, bastou criar um método que calcula-se quais as dependências que podiam existir para uma variável, esse método está definido na classe GrafoTGSSA e chama-se getVersaoVariavelDependentes, recebe como parametro uma variável e vai verificar no que já está definido e tendo em conta o contexto as variáveis das quais o seu valor pode depender.
 
 
- 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{in/ssa.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Grafo SSA}
+\end{figure}
+
+Nota: No grafo a letra "F" dentro dos nodos representa o símbolo phi.
+
 \newpage
  
+\section{WebSite} 
+
+Foi dada a sugestão de criar um pequeno site com páginas para mostrar os resultados, o que nós fizemos foi colocar um formulário para submeter o código que é pretendido analisar e depois o resultado é mostrado nas correspondentes opções do menu.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{in/site1.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Página inicial}
+\end{figure}
+
+Esta é a página inicial apenas, em baixo aparece a página para se submeter o código a analisar:
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{in/site2.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Página de submissão do código}
+\end{figure}
+
+Depois de submetido o código, é possível ver os resultados que se pretende escolhendo CFG, PDG, SSA ou SDG nas categorias disponiveis.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.7]{in/site3.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Página do CFG}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{in/site4.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Página do PDG}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{in/site5.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Página do SSA}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{in/site6.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Página do SDG}
+\end{figure}
+
+Estas páginas foram feitas utilizando a linaguagem PHP e são feitas invocações ao java para executar o Run fornecido nas aulas para analisar a gramática e ainda ao dot para gerar os grafos visualmente.
+
+
 \section{Conclusões}
  
-A resolução deste exercício permitiu perceber melhor a forma como as linguagens podem ser úteis para gerar um programa, que dependo do input que irá receber, o resultado final seja o esperado sem ter de estar a alterar o código do programa que é automaticamente gerado.
 
-Umas das dificuldades foi perceber como o Antlr fazia o parser das frases de forma a não haver ambiguidade e conseguir na mesma produção termos acesso ao valor de dois símbolos terminais, tal como acontece, por exemplo, quando queremos saber a dimensão do terreno, em que a solução foi inserir labels para o compilador saber qual o valor pertendido.
-
-Serviu de consolidação da matéria dada até agora no módulo de Engenharia de Linguagens,
-tendo em conta que conseguimos resolver os exercícios com sucesso.
+Serviu de consolidação da matéria dada no módulo de Análise e Transformação de Software, apesar de haver alguns pormenores que podiam ser melhorados para a resolução dos problemas.
  
 
 \end{document}
