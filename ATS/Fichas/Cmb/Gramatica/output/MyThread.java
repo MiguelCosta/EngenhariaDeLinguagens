@@ -55,8 +55,7 @@ public class MyThread extends Thread {
 				break;
 			case 2:
 				_walkerPDGRet = _walkerPDG.programa();
-				// System.out.println("PDG OUTPUT:\n" +
-				// _walkerPDGRet.grafos_out);
+				//System.out.println("PDG OUTPUT:\n" + _walkerPDGRet.grafos_out);
 				toDotPDG(_walkerPDGRet.grafos_out);
 				break;
 			case 3:
@@ -69,8 +68,6 @@ public class MyThread extends Thread {
 				// System.out.println("SDG OUTPUT:\n" +
 				// _walkerSDGRet.grafos_out);
 				toDotSDG(_walkerSDGRet.grafos_out);
-				System.out.println("SDG OUTPUT Funcaoes:\n"
-						+ _walkerSDGRet.funcoes_out);
 				break;
 			}
 		} catch (Exception e) {

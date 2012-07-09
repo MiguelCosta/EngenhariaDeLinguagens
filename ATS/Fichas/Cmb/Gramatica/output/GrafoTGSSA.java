@@ -83,11 +83,14 @@ public class GrafoTGSSA extends Grafo {
 		String res = "";
 		
 		if (versoesVariaveis.containsKey(v)) {
+			
 			Integer i = versoesVariaveis.get(v);
+			
 			String vTmp = v+i;
+			
 			String cont = contextoVariaveis.get(vTmp);
 			
-			while(!cont.equals("") && i >= 0){
+			while(cont !=null && !cont.equals("") && i >= 0){
 				vTmp = v+i;
 				
 				// para algo no ELSE não depender do THEN
@@ -95,9 +98,12 @@ public class GrafoTGSSA extends Grafo {
 					
 					res += vTmp + ", ";
 				}
+				
 				cont = contextoVariaveis.get(vTmp);
+				
 				i--;
 			}
+			
 			if (res.length()-2 > 0){
 				return "F(" + res.substring(0, res.length()-2) + ")";
 			} else {

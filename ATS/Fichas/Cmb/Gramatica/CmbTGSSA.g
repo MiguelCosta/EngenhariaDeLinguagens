@@ -246,7 +246,7 @@ atribuicao [GrafoTGSSA g_in, String label_in, String contexto_in] returns [Grafo
 }
 	:	 ^('=' ID expr[g, $atribuicao.contexto_in])
 	{
-		System.out.println("ATRIBUICAO ("+$ID.line+") - label="+$atribuicao.label_in);
+		//System.out.println("ATRIBUICAO ("+$ID.line+") - label="+$atribuicao.label_in);
 		
 		TreeSet<Integer> nrs = new TreeSet<Integer>();
 		// cria nodo no grafo e guarda o nr da instrucao

@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGSDG.g 2012-07-09 00:31:37
+// $ANTLR 3.4 /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGSDG.g 2012-07-09 01:11:18
 
 	import java.util.TreeSet;
 	import java.util.HashSet;
@@ -210,7 +210,7 @@ public TreeAdaptor getTreeAdaptor() {
             		//$programa.g_out = g;
             		retval.grafos_out = grafos;
             		retval.funcoes_out = funcoes;
-            		System.out.println("TUDO: " + funcoes);
+            		//System.out.println("TUDO: " + funcoes);
             	}
 
             match(input, Token.UP, null); if (state.failed) return retval;
@@ -1891,7 +1891,7 @@ public TreeAdaptor getTreeAdaptor() {
             			retval.instrucao = (ID36!=null?ID36.getText():null) + "(" + (args37!=null?args37.ags:null) + ")";
             			retval.vars_ref = variaveis_referenciadas;
             			
-            			System.out.println("\t\tAPANHEI FACTOR: " + retval.instrucao);
+            			//System.out.println("\t\tAPANHEI FACTOR: " + retval.instrucao);
             			
             			ChamadasFuncao cf_t = new ChamadasFuncao();
             			cf_t.setNomeFuncao((ID36!=null?ID36.getText():null));

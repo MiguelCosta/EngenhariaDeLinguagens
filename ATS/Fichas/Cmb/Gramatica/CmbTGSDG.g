@@ -30,7 +30,7 @@ programa returns [TreeMap<String, GrafoSDG> grafos_out, TreeMap<String, Cabecalh
 		//$programa.g_out = g;
 		$programa.grafos_out = grafos;
 		$programa.funcoes_out = funcoes;
-		System.out.println("TUDO: " + funcoes);
+		//System.out.println("TUDO: " + funcoes);
 	}
 	)
 	;
@@ -315,7 +315,7 @@ invocacao [GrafoSDG g_in, String contexto_in, String label_in, TreeSet<Integer> 
 			$invocacao.instrucao = $ID.text + "(" + $args.ags + ")";
 			$invocacao.vars_ref = variaveis_referenciadas;
 			
-			System.out.println("\t\tAPANHEI FACTOR: " + $invocacao.instrucao);
+			//System.out.println("\t\tAPANHEI FACTOR: " + $invocacao.instrucao);
 			
 			ChamadasFuncao cf_t = new ChamadasFuncao();
 			cf_t.setNomeFuncao($ID.text);

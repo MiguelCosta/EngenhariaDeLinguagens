@@ -1,4 +1,4 @@
-// $ANTLR 3.4 /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGSSA.g 2012-07-09 00:31:47
+// $ANTLR 3.4 /opt/lampp/htdocs/EL/ATS/Fichas/Cmb/Gramatica/CmbTGSSA.g 2012-07-09 01:32:41
 
 	import java.util.TreeSet;
 
@@ -1917,7 +1917,7 @@ public TreeAdaptor getTreeAdaptor() {
 
 
             if ( state.backtracking==0 ) {
-            		System.out.println("ATRIBUICAO ("+(ID38!=null?ID38.getLine():0)+") - label="+label_in);
+            		//System.out.println("ATRIBUICAO ("+(ID38!=null?ID38.getLine():0)+") - label="+label_in);
             		
             		TreeSet<Integer> nrs = new TreeSet<Integer>();
             		// cria nodo no grafo e guarda o nr da instrucao

@@ -13,9 +13,9 @@ void calcula(int a, int d)
 			a=c*2;
 		}
 		else {
-			a = b/c;
+			a = c;
 		}
-		c = 1;
+		d = 1;
 	}
 	if (c>a) {
 		d = a +b+c;
