@@ -515,6 +515,115 @@ Com toda a informação guardada que é necessária, bastou criar um método que calc
 Nota: No grafo a letra "F" dentro dos nodos representa o símbolo phi.
 
 \newpage
+
+
+\section{Interface JAVA}
+
+É necessário criar uma interface Java para obter o output do ANTLR, obter a AST da gramática e executar o parsing da Tree Grammar (tree walking).
+O funcionamento desta interface resume-se no seguinte esquema:
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{in/InterfaceJava.jpg}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Esquema da Interface JAVA}
+\end{figure}
+
+Primeiro é necessário ligar todas as componentes da gramática geradas pelo ANTLR, nomeadamente o lexer (cmcLexer), o parser (cmcParser).
+
+\begin{verbatim}
+CharStream in = new ANTLRFileStream(args[0], "UTF8"); 
+cmcLexer lexer = new cmcLexer(in); 
+CommonTokenStream tokens = new CommonTokenStream(lexer); 
+cmcParser parser = new cmcParser(tokens);
+cmcParser.cmc_return ret = parser.cmc();
+\end{verbatim}
+
+É criado então um  ANTLRFileStream para receber o ficheiro de input. Depois alimenta-se o lexer com o input e finalmente alimenta-se o parser com os tokens gerados a partir do lexer. A última instrução inicia o processo de parsing.
+
+Após o parsing ter terminado, é possível obter a árvore (AST) da gramática através do método getTree(), que devolve a raiz da árvore.
+
+Após o parsing ter terminado, é possível obter a árvore (AST) da gramática através do método getTree(), que devolve a raiz da árvore.
+
+\begin{verbatim}
+// obtem a AST utilizando as regras de reescrita da gramática criada 
+CommonTreeNodeStream tree = new CommonTreeNodeStream(ret.getTree());
+\end{verbatim}
+
+O último passo consiste na navegação e manipulação da árvore, utilizando para isso a Tree Grammar.
+
+Tendo em conta que vamos fazer diferentes análises da mesma Tree Grammar (para gerar os diferentes grafos), o processo de analise pode ser efectuado em paralelo, ou seja, várias threads com a mesma árvore podem ser chamados ao mesmo tempo para se obter os diferentes resultados. Para isso criamos a classe MyThread que vai fazer essa gestão das threads.
+
+As várias threads são executadas da seguinte forma:
+
+\begin{verbatim}
+/** Tipos disponiveis para usar nas threads
+* 1 - CmbTGCFG
+* 2 - CmbTGPDG
+* 3 - CmbTGSSA
+* 4 - CmbTGSDG
+* */
+
+CmbTGCFG walker = new CmbTGCFG(new CommonTreeNodeStream(ret.getTree()));			
+Thread tCFG = new MyThread(walker, 1);
+tCFG.start();
+System.out.println("Começou CFG");
+
+CmbTGPDG walkerPDG = new CmbTGPDG(new CommonTreeNodeStream(ret.getTree()));
+Thread tPDG = new MyThread(walkerPDG, 2);
+tPDG.start();
+System.out.println("Começou PDG");
+		
+CmbTGSSA walkerSSA = new CmbTGSSA(new CommonTreeNodeStream(ret.getTree()));
+Thread tSSA = new MyThread(walkerSSA, 3);
+tSSA.start();
+System.out.println("Começou SSA");
+
+CmbTGSDG walkerSDG = new CmbTGSDG(new CommonTreeNodeStream(ret.getTree()));
+Thread tSDG = new MyThread(walkerSDG, 4);
+tSDG.start();
+System.out.println("Começou SDG");
+
+//// esperar que terminem as threads
+tCFG.join();
+tPDG.join();
+tSSA.join();
+tSDG.join();
+\end{verbatim}
+
+A classe MyThread, dependendo do valor inteiro que indica o tipo de processo que se pretende analisar, vai fazer obter o output correspondente:
+
+\begin{verbatim}
+    public void run() {
+        try {
+            switch (_tipo) {
+            case 1:
+                _walkerRet = _walker.programa();
+                toDotCFG(_walkerRet.grafos_out);
+                break;
+            case 2:
+                _walkerPDGRet = _walkerPDG.programa();
+                toDotPDG(_walkerPDGRet.grafos_out);
+                break;
+            case 3:
+                _walkerSSARet = _walkerSSA.programa();
+                toDotSSA(_walkerSSARet.grafos_out);
+                break;
+            case 4:
+                _walkerSDGRet = _walkerSDG.programa()
+                toDotSDG(_walkerSDGRet.grafos_out);
+                break;
+            }  
+        } catch (Exception e) { e.printStackTrace(); }
+    }
+\end{verbatim}
+
+A AST é usada na TG e depois o processo de parsing da árvore é iniciado na instrução \verb|waker.programa();|.
+
+Nesta altura, através de \verb|walkerRet| podemos aceder aos valores de retorno da TG, ou seja, a estrutura com os vários Grafos (\verb|grafos.out|) que foram gerados, a seguir basta pegar nessa instrutura e gerar o código Dot para ser criado graficamente o grafo. As funções \verb|toDot| estão defenidas também na classe MyThread.
+
+
+\newpage
  
 \section{WebSite} 
 

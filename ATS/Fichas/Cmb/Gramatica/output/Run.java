@@ -21,7 +21,6 @@ public class Run {
 			* 3 - CmbTGSSA
 			* 4 - CmbTGSDG
 			* */
-			
 			CmbTGCFG walker = new CmbTGCFG(new CommonTreeNodeStream(ret.getTree()));			
 			////CmbTGCFG.programa_return walker_ret = walker.programa();
 			////System.out.println(walker_ret.g_out);
