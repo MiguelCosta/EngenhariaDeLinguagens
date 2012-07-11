@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  9 JUL 2012 21:58
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  9 JUL 2012 23:48
 entering extended mode
  %&-line parsing enabled.
 **Cmb.tex
@@ -303,6 +303,12 @@ LaTeX Warning: Label `DescriptiveLabel' multiply defined.
 
 LaTeX Warning: Label `DescriptiveLabel' multiply defined.
 
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
+
+LaTeX Warning: Label `DescriptiveLabel' multiply defined.
+
 )
 \openout1 = `Cmb.aux'.
 
@@ -405,13 +411,13 @@ LaTeX Font Warning: Font shape `T1/aett/bx/n' undefined
 (Font)              using `T1/aett/m/n' instead on input line 1.
 
 [3]) [4]
-LaTeX Font Info:    Try loading font information for OMS+aer on input line 140.
+LaTeX Font Info:    Try loading font information for OMS+aer on input line 139.
 
  (/usr/share/texmf/tex/latex/R/tex/latex/omsaer.fd
 File: omsaer.fd 1999/12/27
 )
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 140.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 139.
  [5] (./in/in1.g)
 (./in/in2.g) [6] (./in/in3.g) (./in/in4.g [7]) (./in/in5.g) (./in/in6.g)
 (./in/in7.g [8]
@@ -438,14 +444,14 @@ File: in/ssa.png Graphic file (type png)
 pt>
 File: in/site1.png Graphic file (type png)
  <use in/site1.png>
-Overfull \hbox (8.13943pt too wide) in paragraph at lines 526--528
+Overfull \hbox (8.13943pt too wide) in paragraph at lines 525--527
  [][] 
  []
 
 <in/site2.png, id=118, 976.64874pt x 711.65875pt>
 File: in/site2.png Graphic file (type png)
  <use in/site2.png>
-Overfull \hbox (4.62631pt too wide) in paragraph at lines 535--537
+Overfull \hbox (4.62631pt too wide) in paragraph at lines 534--536
  [][] 
  []
 
@@ -460,7 +466,7 @@ File: in/site4.png Graphic file (type png)
 <in/site5.png, id=130, 977.6525pt x 795.97375pt>
 File: in/site5.png Graphic file (type png)
  <use in/site5.png>
-Overfull \hbox (5.12819pt too wide) in paragraph at lines 558--560
+Overfull \hbox (5.12819pt too wide) in paragraph at lines 557--559
  [][] 
  []
 
@@ -468,7 +474,9 @@ Overfull \hbox (5.12819pt too wide) in paragraph at lines 558--560
 <in/site6.png, id=135, 961.5925pt x 736.7525pt>
 File: in/site6.png Graphic file (type png)
  <use in/site6.png> [32 <./in/site5.png (PNG copy)>] [33 <./in/site6.png (PNG c
-opy)>] (./Cmb.aux)
+opy)>] (./in/Cmb.g [34] [35]
+[36] [37]) [38] (./in/CmbTGCFG.g [39] [40] [41] [42] [43] [44] [45]) [46]
+[47] (./Cmb.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -477,13 +485,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 6085 strings out of 495014
- 79054 string characters out of 1180707
- 299916 words of memory out of 3000000
- 9038 multiletter control sequences out of 15000+50000
+ 6365 strings out of 495014
+ 82311 string characters out of 1180707
+ 339916 words of memory out of 3000000
+ 9313 multiletter control sequences out of 15000+50000
  49027 words of font info for 99 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
- 35i,8n,52p,1400b,1705s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 35i,8n,52p,1400b,1707s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/sha
 re/texmf-texlive/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-te
 xlive/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texmf-texlive/fonts/
@@ -502,9 +510,9 @@ exlive/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-texlive/fonts
 ic/amsfonts/cm/cmti12.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.p
 fb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on Cmb.pdf (33 pages, 3100686 bytes).
+Output written on Cmb.pdf (47 pages, 3147744 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
+ 253 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

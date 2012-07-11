@@ -100,10 +100,9 @@ Foi necessário usar um Gerador de Compiladores para gerar o nosso próprio compil
 A linguagem de programação adoptada foi o JAVA. De forma a tornar a nossa solução mais legível e estruturada. Para mostrar a informação criamos um site com a linguagem PHP.
 
 \section{Descrição do problema}
-O pretendido para este exercício era gerar um pequeno WebSite, para navegar num Mapa de Conceitos, a partir de uma linguagem simples para descrever esses mesmos mapas.
+O pretendido para este exercício usar as técnicas de construção de ASTs e suas travessias tendo em conta atributos e construir, tal como já foi indicado, um CFG, PDG, SDG e SSA tendo como linguagem o Cmb desenvolvido nas aulas.
 
-A linguagem criada por nós tem de ser validada para depois ser apresentada a informação visualmente, terá ainda de haver uma forma de mostrar as ocorrências de cada conceito.
-
+O resultado deve ser apresentado no formato de WebSite.
 
 \section{Exemplo de um programa em Cmb}
 Em todos os exemplos que vão ser apresentados neste relatório, o input introduzido é o que se segue:
@@ -571,9 +570,34 @@ Estas páginas foram feitas utilizando a linaguagem PHP e são feitas invocações a
 
 
 \section{Conclusões}
+
+A utilização de Tree Grammars levou a que a construção de qualquer módulo se tornasse uma tarefa mais simples, já que o seu processo de construção se revelou sistemático. O facto de podermos fazer a travessia de uma AST através de uma gramática de atributos é uma mais valia pois de outra forma seria mais trabalhoso. Acima de tudo a utilização desta metodologia agilizou e simplificou todo o processo.
+
+O estudo e implementação dos algoritmos de construção dos grafos fez-nos entender a facilidade que é, a partir destes meios, a otimização de código, como por exemplo a remoção de dead code, assim como, a transformação eficiente e poderosa de programas .
  
 
-Serviu de consolidação da matéria dada no módulo de Análise e Transformação de Software, apesar de haver alguns pormenores que podiam ser melhorados para a resolução dos problemas.
+\newpage 
  
+\section{Anexos}
+
+\subsection{Gramática final}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/Cmb.g}
+\newpage
+
+\subsection{CmbTGCFG}
+
+Todas as Tree Grammars encontram-se na pasta Antlr.
+
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/CmbTGCFG.g}
+\newpage
+
+
+\subsection{Código Java}
+Todo o código java encontra-se na pasta Java.
+\newpage
+
+
 
 \end{document}

@@ -96,93 +96,451 @@ O ecercício está relacionado com a implementação de uma linguagem para definir M
 \section{Ambiente de Trabalho}
 Foi necessário usar um Gerador de Compiladores para gerar o nosso próprio compilador, por isso usámos o AnTLR que é também usado nas aulas. Para facilitar o processo de debugging durante a resolução do problema dado, usámos a ferramenta AnTLRWorks, que tem uma interface bastante agradável e simpática para ajudar a resolver problemas desta natureza.
  
-A linguagem de programação adoptada foi o JAVA. De forma a tornar a nossa solução mais legível e estruturada. Para guardar a informação usamos uma Base de Dados relacional em MySQL e para o WiebSite dinâmico usamos a linguagem PHP com o auxilio de JavaScript e JQuery.
+A linguagem de programação adoptada foi o JAVA. De forma a tornar a nossa solução mais legível e estruturada. Para guardar a informação usamos uma Base de Dados relacional em MySQL e para o WebSite dinâmico usamos a linguagem PHP.
 
 \section{Descrição do problema}
 O pretendido para este exercício era gerar um pequeno WebSite, para navegar num Mapa de Conceitos, a partir de uma linguagem simples para descrever esses mesmos mapas.
 
-A linguagem criada por nós tem de ser validada para depois ser apresentada a informação visualmente, terá ainda de haver uma forma de mostrar as ocorr?ncias de cada conceito.
+A linguagem criada por nós tem de ser validada para depois ser apresentada a informação visualmente, terá ainda de haver uma forma de mostrar as ocorrências de cada conceito.
 
-\section{Resolução do Problema}
+\section{Gramática}
+Neste capítulo, iremos mostrar a gramática criada para definir uma linguagem para descrição de Mapa de Conceitos. Para isso, enunciaremos o que é pretendido da linguagem e estabeleceremos um mapeamento entre as necessidades da linguagem e as produções criadas.
 
-\subsection{Linguagem para descrever os Mapas de Conceitos}
-A linguagem criada por nós baseia-se muito na linguagem CMC apresentada nas aulas, usada para descrever problemas da mesma natureza mas que não permite especificar algumas necessidades.
+De seguida, falaremos da abordagem utilizada (AST e Tree Grammar) para realizar as validações requeridas, assim como o armazenamento da informação contida no ficheiro de input para posterior geração de instruções de povoamento da base de dados.
 
-Com a nossa linguem é possível definir conceitos, associações que podem haver entre eles e propriedades para os classificarem. As associações entre conceitos são criadas através de um \verb|mapa|.
-Cada conceito pode ter várias instâncias e estas podem estas caracterizadas pela por propriedades.
+\textbf{Conceitos}
 
-\subsubsection{Exemplo da linguagem}
-\lstset{caption={Linaguagem criadal},label=DescriptiveLabel}
-\lstinputlisting[style=gramatica]{in.mp}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in1.g}
 
+Um conceito é definido utilizando a palavra reservada 'conceito' seguida do conceito entre parênteses.
 
-Observando a linguagem verificamos que ela é de fácil leitura, descrevendo cada instrução temos:
+\textbf{Relacionamento entre dois conceitos:}
+
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in2.g}
+
+É possível definir mais que um relacionamento, utilizando um ';' para separar cada definição.
+
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in3.g}
+
+Um relacionamento é definido utilizando a palavra reservada 'mapaConceitos' seguida de um identificador do relacionamento e dois conceitos entre parênteses.
+
+Este tipo de relacionamento só por si limita a informação que pretendemos armazenar no Mapa de Conceitos, por isso, surge a necessidade de se poder definir propriedades sobre os conceitos, melhorando assim a semântica associada a um conceito. Estas propriedades serão dividas em dois tipos: propriedades de dados e propriedades de conceitos. 
+
+As propriedades de dados associam uma determinada propriedade a um conceito, por exemplo, é possível definir que o conceito "Pessoa" possui a propriedade "tem nome", para isso criámos um mapeamento entre um conceito, uma propriedade de dados e um tipo de dados que determina o tipo de dados da propriedade.
+
+Surgem assim, dois novos elementos na nossa gramática. 
+
+\textbf{Propriedades de dados:}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in4.g}
+
+É possível definir mais que uma propriedade de dados, utilizando um ';' para separar cada definição.
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in5.g}
+
+Uma propriedade de dados é definida utilizando a palavra reservada 'propriedadeDados' seguida 	do propriedade entre parênteses.
+
+\textbf{Mapeamento entre  um conceito, uma propriedade de dados e um tipo de dados:}
+
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in6.g}
+
+É possível definir mais que um mapeamento, utilizando um ';' para separar cada definição.
+
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in7.g}
+
+Um mapeamento é definido utilizando a palavra reservada 'mapaConceitoPropDados' seguida 	de um identificador do mapeamento, dois conceitos e o tipo de dados da propriedade entre parênteses.
+
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in8.g}
+
+O tipo tomar os valores STRING, INT e pode ser também um identificador.
+
+As propriedades de conceito definem um novo tipo de relacionamento entre dois conceitos, expandindo o tipo de relacionamento que nos era permitido. Desta forma, deixamos de ter apenas relacionamentos do tipo ?é um? e passamos a ter, por exemplo, o relacionamento ?nasceu em?, que relaciona o conceito ?emigrante? com o conceito ?local? e dá-nos a saber que determinado emigrante nasceu em determinado local. Para isto ser possível, criámos um mapeamento entre um conceito, uma propriedade de conceito e um segundo conceito.
+
+Com isto, adicionámos mais dois elementos na nossa gramática:
+
+\textbf{Propriedades de conceito:}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in9.g}
+
+É possível definir mais que uma propriedade de conceito, utilizando um ';' para separar cada definição.
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in10.g}
+
+Uma propriedade de conceito é definida utilizando a palavra reservada 'propriedadeConceito' seguida da propriedade entre parênteses.
+
+\textbf{Mapeamento entre Conceito e Propriedade de Conceito:}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in11.g}
+
+É possível definir mais que um mapeamento, utilizando um ';' para separar cada definição.
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in12.g}
+
+Um mapeamento é definido utilizando a palavra reservada 'mapaConceitoPropConceito' seguida 	de um identificador do mapeamento, um conceito, a propriedade de conceito e outro conceito entre parênteses.
+
+Os elementos enunciados anteriormente não tem realmente valor semântico associado, por exemplo, sabemos que um conceito ?Emigrante ? está relacionado com um conceito ?Local? através de uma propriedade ?nasceu em?, mas de facto, não sabemos quem é o emigrante, nem o o local onde este terá nascido. Também sabemos que um conceito ?Emigrante? está relacionado com uma propriedade de dados ?tem nome?, no entanto, não se sabe que valor esta propriedade toma. 
+
+Para colmatar estas falhas, surgiu a necessidade de se criarem instâncias, que tal como o nome indicam representam instâncias de conceitos, sobre as quais se podem utilizar as propriedades para relacioná-las entre si. Por exemplo, uma instância do conceito ?Emigrante? chamada António e uma propriedade de conceito ?nasceu em? podem ser utilizadas para relacionar a instância António com a instância Fafe que é uma instância do conceito ?Local?. Da mesma forma, é possível relacionar a instância António com a propriedade de dados ?tem nome? e o valor da propriedade ?António José?.
+
+Para finalizar, adicionámos à gramática três novos elementos para suportar o que foi introduzido acima:
+
+\textbf{Instâncias:}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in13.g}
+
+É possível definir mais que uma instância, utilizando um ';' para separar cada definição.
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in14.g}
+
+Uma instância é definida utilizando a palavra reservada 'instancia' seguida de um identificador e um conceito entre parênteses.
+
+\textbf{Mapeamento entre Instância e Propriedade de dados:}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in15.g}
+
+É possível definir mais que um mapeamento, utilizando um ';' para separar cada definição.
+
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in16.g}
+
+Um mapeamento é definido utilizando a palavra reservada 'mapaInstanciaPropDados' seguida de uma instância, um mapeamento entre um conceito e uma propriedade de dados e o valor da propriedade entre parênteses.
+
+\textbf{Mapeamento entre Instância e Propriedade de conceito:}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in17.g}
+
+É possível definir mais que um mapeamento, utilizando um ';' para separar cada definição.
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in18.g}
+
+Um mapeamento é definido utilizando a palavra reservada 'mapaInstanciaPropConceito' seguida de uma instância, um mapeamento entre um conceito e uma propriedade de conceito e outra instância entre parênteses.
+
+Finalmente, o símbolo não terminal, onde o processo de derivação inicia, o axioma da nossa gramática e a produção associada:
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in19.g}
+
+Após criada a gramática, o próximo passo seria validar o texto de input. Mas como fazê-lo? Existem várias abordagens, uma delas e a que iremos utilizar neste trabalho é a geração de uma representação intermédia para que a partir dela se possam efetuar as validações requeridas, essencialmente, validações semânticas. Na secção seguinte, iremos falar desta abordagem e a nossa implementação da mesma.
+
+\subsection{AST}
+Uma Representação Intermédia (RI) é uma versão independente de qualquer linguagem ou máquina do código original. A utilização de uma RI traz algumas vantagens tais como o aumento do nível de abstração e uma separação mais limpa entre o produto inicial e o final.
+
+Existem várias representações intermédias e a que iremos utilizar é a AST (Abstract Syntax Tree) que é  uma representação em árvore da estrutura sintática abstrata do código fonte. A sintaxe é abstrata no sentido em que não representa cada detalhe que aparece na sintaxe real, ou seja, elementos como parênteses de agrupamento estão implícitos na estrutura da árvore e uma construção sintática tal como uma condição if e os seus blocos then e else pode ser representada através de um único nodo e dois ramos, e símbolos intermédios e palavras reservadas são tipicamente eliminados. Basicamente, mantém-se uma estrutura suficiente para realizar processos semânticos e geração de código. 
+
+O próximo passo será, então, criar a AST, para isso é necessário criar regras de reescrita sobre a gramática criada, um mecanismo que o ANTLR oferece. Enquanto que uma gramática de parsing especifica como reconhecer input, as regras de reescrita são gramáticas geradoras, ou seja, especificam como gerar output. 
+
+Assim sendo, por cada produção da gramática vamos criar uma regra de reescrita e cada regra representa um novo nodo na AST. Cada regra possui um token imaginário para agrupar os elementos presentes numa produção, ou seja, referências a tokens  que não se encontram na produção original.
+
+Tal como foi dito, elementos tais como ';', ou parênteses são eliminados e elementos com o mesmo nome numa produção são agrupados numa única lista.
+
+A gramática final com as regras de reescrita pode ser consultada em anexo.
+
+\subsection{Tree Grammar}
+O próximo passo consiste na construção de um parser da AST gerada, que permitirá atravessá-la (tree walker) e manipulá-la, transformando-a gradualmente em diversas fases de tradução até que se obtenha uma forma final que satisfaça as nossas necessidades. Este parser será construído, utilizando um mecanismo fornecido pelo ANTLR, uma Tree Grammar (TG). As ações numa TG possuem um contexto muito nítido e conseguem aceder a informação passada das regras invocadas.
+
+A utilização de TG, para além da utilização referida acima, também nos fornece algumas vantagens:
+
 \begin{itemize}
-
-\item \verb|conceito("nome do conceito")| - é através desta produção onde se pode definir todos os conceitos.
-
-\item \verb|associacao("nome da associacao")| - para relacionar os conceitos define-se as várias associações que podem existir.
-
-\item \verb|propriedade("nome da propriedade")| - características de um conceito.
-
-\item \verb|mapaConceitos(id, "nome do conceito pai", "nome da associacao", "nome do conceito filho")| - é aqui que se define as relações entre conceitos, é preciso ter em atenção que os nomes dos conceitos e das associações têm de estar declarados antes.
-
-\item \verb|mapaConceitosProp(id, "nome do conceito", "nome da propriedade")| - permite dizer que um conceito pode ter uma determinada propriedade.
-
-\item \verb|instancia(id, "nome do conceito")| - permite declarar uma instância de um conceito.
-
-\item \verb|mapaInstancias(id Instancia Pai, id do mapaConceitos, id da instancia Filho)| - permite dizer que uma instãncia de um conceito está associada a outra instância de outro conceito.
-
-\item \verb|mapaInstanciaProp(id da Instancia, id do mapaConceitoProp, "valor")| - aqui é possível definir os valores das propriedades de uma instância.
-
+\item uma especificação formal, concisa e independente de um sistema da estrutura da AST;
+\item as ações têm um contexto implícito graças à sua localização na gramática;
+\item os dados podem ser passados entre as ações de forma livre utilizando parâmetros (atributos), valores de retorno e variáveis locais.
 \end{itemize}
 
-\subsection{Gramática}
+A estratégia que utilizámos para efetuar a validação exigida consiste, na passagem de uma instância de uma classe Java Tabela (esta será explicada de seguida) assim como uma string de erros por todas as regras da TG. Todo o código externo à TG está escrito na linguagem de programação Java.
 
+A Tabela consiste numa classe Java que armazena os elementos da nossa linguagem, ou seja, os conceitos, as propriedades de dados, as propriedades de conceito, os mapeamentos entre conceitos, os mapeamentos entre um conceito e uma propriedade de dados, os mapeamentos entre dois conceitos e uma propriedade de conceito, as instâncias, os mapeamentos entre uma instância, uma propriedade de dados e um valor para a propriedade e finalmente os mapeamentos entre duas instâncias e uma propriedade de conceito. Adicionalmente, criámos um método nesta classe que gera instruções de inserção na base de dados criada dos dados presentes na instância Tabela.
 
+As classes Java criadas podem ser consultadas em anexo.
 
-\subsection{Modelo de Dados}
+A string de erros consiste numa string à qual, por cada erro resultante das verificações feitas ao longo da TG, é anexado esse erro. 
 
-\subsection{WebSite}
-O WebSite criado acaba por ser apenas uma página mas que com a ajuda de JavaScript torna-se interactiva e agradável de usar.
+No final da execução da TG a tabela e a string de erros são retornadas à Interface Java criada (esta será explicada posteriormente).
+
+As ações criadas para o processo de validação e povoamento da instância Tabela são bastante simples e o processo de criação foi sistemático. Ou seja, as ações criadas são de dois tipos, no que diz respeito, à forma de construção.
+
+\textbf{Ações de passagem de parâmetros (atributos herdados) aos símbolos não terminais presentes na produção e retorno dos resultados dos mesmos  símbolos (atributos sintetizados). Para ilustrar este tipo de ação, basta apenas um exemplo:}
+
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in20.g}
+
+Tal como foi explicado, a produção conceitos recebe como atributos a instância da Tabela e a string de erros. 
+
+Esta produção ilustra uma lista de conceitos, ou seja, um ou mais conceitos.
+
+Um conceito recebe como atributos de entrada os atributos recebidos por conceitos. Após ter processado conceito os atributos são atualizados com os valores de retorno de conceito, para que cada conceito da lista tenha sempre uma tabela e uma string de erros atualizada.
+
+No final, os valores de retorno da produção conceitos são atualizadas com os valores de retorno do último conceito da lista.
+
+\textbf{Ações de povoamento da tabela com a informação presente na produção. Adicionalmente em algumas produções é feita uma verificação de existência de erros, que condiciona o povoamento. Para ilustrar este tipo de ação iremos exibir dois casos representativos:}
+
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in21.g}
+
+Tal como foi explicado, a produção conceito recebe como atributos a instância da Tabela e a string de erros. 
+
+Esta produção ilustra a definição de um conceito, sendo que o conceito em si pode ser obtido a partir da propriedade text do token STRING.
+
+O conceito é adicionado à instância tabela através da variável de instância conceitos.
+
+Neste exemplo, não existe verificação de erros porque a definição de conceitos não possui quaisquer tipo de restrições.
+No final, os valores de retorno da produção são atualizados.
+
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in22.g}
+
+À semelhança de todas as produções, a produção instancia recebe como atributos a instância da Tabela e a string de erros. 
+
+Esta produção ilustra a definição de uma instância, sendo que o identificador e o conceito podem ser obtidos através da propriedade text dos tokens ID e STRING, respetivamente.
+
+É feita uma verificação da existência do conceito na tabela, se este não existir, ou seja, não tiver sido definido previamente, então uma mensagem de erro é adicionada à variável erro. Esta mensagem de erro é constituída pela linha e coluna do conceito inexistente seguidas da mensagem de erro.
+
+Se não tiver sido detetado nenhum erro, então a instância é adicionada à tabela, utilizando a variável de instância instancias.
+
+Analogamente, esta verificação da existência de erros é feita nas produções mapaConceitos, mapaConceitoPropDados, mapaConceitoPropConceito, mapaInstanciaPropDados e mapaInstanciaPropConceito.
+
+A produção inicial também é do primeiro tipo, mas ao invés de receber atributos de entrada com a tabela e a string de erros, estes são inicializados nesta produção.
+
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/in23.g}
+
+Pode-se observar que para cada símbolo não terminal nesta produção, a tabela e a string de erros são passados como atributos de entrada e, após a execução do mesmo, esses atributos são atualizados com os valores de retorno do símbolo.
+
+No final, os valores de retorno da produção são atualizados para que possam ser passados à interface Java.
+
+A Tree Grammar pode ser consultada em anexo.
+
+\subsection{Interface Java}
+É necessário criar uma interface Java para obter o output do ANTLR, obter a AST da gramática e executar o parsing da Tree Grammar (tree walking).
+
+O funcionamento desta interface resume-se no seguinte esquema:
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{site1.png}
+\includegraphics[scale=0.8]{in/img1.png}
 % imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
-\caption{Imagem do site}
+\caption{}
 \end{figure}
 
-É possível escolher a orientação da árvore e quando se clica num nodo aparece mais informação caso ela exista, tal como se pode confirmar nas imagens seguintes:
+Primeiro é necessário ligar todas as componentes da gramática geradas pelo ANTLR, nomeadamente o lexer (cmcLexer), o parser (cmcParser).
+
+\begin{verbatim}
+CharStream in = new ANTLRFileStream(args[0], "UTF8"); 
+cmcLexer lexer = new cmcLexer(in); 
+CommonTokenStream tokens = new CommonTokenStream(lexer); 
+cmcParser parser = new cmcParser(tokens);
+cmcParser.cmc_return ret = parser.cmc();
+\end{verbatim}
+
+É criado então um  ANTLRFileStream para receber o ficheiro de input. Depois alimenta-se o lexer com o input e finalmente alimenta-se o parser com os tokens gerados a partir do lexer. A última instrução inicia o processo de parsing.
+
+Após o parsing ter terminado, é possível obter a árvore (AST) da gramática através do método getTree(), que devolve a raiz da árvore.
+
+\begin{verbatim}
+// obtem a AST utilizando as regras de reescrita da gramática criada 
+CommonTreeNodeStream tree = new CommonTreeNodeStream(ret.getTree());
+\end{verbatim}
+
+O último passo consiste na navegação e manipulação da árvore, utilizando para isso a Tree Grammar.
+
+\begin{verbatim}
+// Tree Walking. Utiliza a Tree Grammar criada 
+mapaconceitosTGValidacao walker = new mapaconceitosTGValidacao(tree); 
+mapaconceitosTGValidacao.cmc_return walker_ret = walker.cmc();
+\end{verbatim}
+
+A AST é então passada como argumento à TG e depois o processo de parsing da árvore é iniciado na ultima instrução.
+
+Nesta altura, através de walker\_ret podemos aceder aos valores de retorno da TG, ou seja, a instância da classe Tabela já povoada e a string de erros com os possíveis erros encontrados.
+
+Esta interface pode ser consultada em anexo.
+
+\section{Base de Dados}
+Neste capítulo, iremos apresentar uma contextualização sobre a necessidade desta base de dados e a nossa solução final de base de dados. Para isso enunciaremos as tabelas criadas e explicaremos a sua razão de ser.
+
+\subsection{Contextualização}
+Para poder guardar a informação relativa ao mapa de conceitos, foi decido que esta seria armazenada numa base de dados relacional para que esta fosse de fácil acesso aquando da navegação pelo web site criado.
+Com base na linguagem criada, decidimos que o esquema final da nossa BD seria muito semelhante em termos de estrutura, senão igual, à gramática criada e então chegámos a um modelo final que passaremos a descrever na secção seguinte.
+
+\subsection{Modelo Lógico de Dados}
+As chaves primárias são representadas por atributos sublinhados e as chaves estrangeiras por atributos em itálico.
+
+\textbf{Conceitos} \{\underline{conceito}\}\\
+Esta é a tabela que armazena os conceitos definidos na linguagem.\\
+\textit{Atributos:}\\
+- conceito: é chave primária, já que identifica univocamente cada conceito; string que é o próprio conceito.
+
+\textbf{PropriedadesDados} \{\underline{propriedadeDados}\}\\
+Tabela que armazena as propriedades de dados definidas na linguagem.\\
+\textit{Atributos:}\\
+- propriedadeDados: é chave primária, já que identifica univocamente cada propriedade de dados; string que é a própria propriedade.
+
+\textbf{PropriedadesConceito} \{\underline{propriedadeConceito}\}\\
+Tabela que armazena as propriedades de conceito definidas na linguagem.\\
+\textit{Atributos:}\\
+- propriedadeConceito: é chave primária, já que identifica univocamente cada propriedade de conceito; string que é a própria propriedade.
+
+\textbf{MapasConceitos} \{\underline{id}, \textit{conceitoFilho}, \textit{ conceitoPai}\}\\
+Tabela que armazena os relacionamentos entre conceitos definidos na linguagem.\\
+\textit{Atributos:}\\
+- id: é chave primária, já que identifica univocamente cada mapa de conceitos; string introduzida pelo utilizador;\\
+- conceitoFilho: chave estrangeira da tabela Conceitos. String que identifica o conceito que faz parte de um conceito mais abrangente;\\
+- conceitoPai: chave estrangeira da tabela Conceitos. String que identifica o conceito mais abrangente.
+
+\textbf{MapasConceitoPropDados} \{\underline{id}, \textit{conceito}, \textit{propriedadeDados}, tipoDados\}\\
+Tabela que armazena os mapeamentos entre conceitos e propriedades de dados definidos na linguagem.\\
+\textit{Atributos:}\\
+- id: é chave primária, já que identifica univocamente cada mapeamento; string introduzida pelo utilizador;\\
+- conceito: chave estrangeira da tabela Conceitos. String que identifica o conceito ao qual se irá mapear uma propriedade de dados;\\
+- propriedadeDados: chave estrangeira da tabela PropriedadesDados. String que identifica a propriedade de dados que será mapeada a um conceito;\\
+- tipoDados: string que identifica o tipo de dados que propriedadeDados pode receber.
+
+\textbf{MapasConceitoPropConceito} \{\underline{id}, \textit{conceitoPai}, \textit{propriedadeConceito}, \textit{conceitoFilho}\}\\
+Tabela que armazena os mapeamentos entre conceitos e propriedades de cocneito definidos na linguagem.\\
+\textit{Atributos:}\\
+- id: é chave primária, já que identifica univocamente cada mapeamento; string introduzida pelo utilizador;\\
+- conceitoPai: chave estrangeira da tabela Conceitos. String que identifica o conceito que servirá de destino à propriedade de conceito;\\
+- propriedadeConceito: chave estrangeira da tabela PropriedadesConceitos. String que identifica a propriedade de conceito que relacionará os dois conceitos;\\
+- conceitoFilho: chave estrangeira da tabela Conceitos. String que identifica o conceito que servirá de partida à propriedade de conceito;
+
+\textbf{Instancias} \{\underline{instancia}, \textit{conceito}\}\\
+Esta é a tabela que armazena as instâncias definidos na linguagem.\\
+\textit{Atributos:}\\
+- instancia: é chave primária, já que identifica univocamente cada instância; string que é a própria instância;\\
+- conceito: chave estrangeira da tabela Conceitos. String que identifica o conceito sobre o qual se está a criar uma instância.
+
+\textbf{MapasInstanciaPropDados} \{\textit{instancia}, \textit{mapaConceitopropDados}, valor\}\\
+Tabela que armazena os mapeamentos entre uma instância, um mapeamentos entre um conceito e uma propriedade de dados e o valor da propriedade de dados para a instância definidos na linguagem.\\
+\textit{Atributos:}\\
+- instancia: chave estrangeira da tabela Instancias;\\
+- mapaConceitopropDados: chave estrangeira da tabela MapasConceitopropDados;\\
+- valor: string que é o valor da propriedade de dados para a instância.\\
+	A chave primária é composta pelos atributos instancia e mapaConceitopropDados.
+
+\textbf{MapasInstanciaPropConceito} \{\textit{instanciaPai}, \textit{mapaConceitopropConceito}, \textit{instanciaFilho}\}\\
+Tabela que armazena os mapeamentos entre duas instâncias e um mapeamento entre um conceito e uma propriedade de conceito definidos na linguagem.\\
+\textit{Atributos:}\\
+- instanciaPai: chave estrangeira da tabela Instancias que servirá de destino ao mapeamento; \\
+- mapaConceitopropConceito: chave estrangeira da tabela MapasConceitopropConceito;\\
+- instanciaFilho: chave estrangeira da tabela Instancias que servirá de partida ao mapeamento.
+
+
+
+\section{WebSite}
+No site criado é possível instroduzir um texto de acordo com a nossa gramática e depois navegar por todas as navegações que possam existir entre os conceitos e as suas instãncias.
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{site2.png}
+\includegraphics[scale=0.5]{in/site1.png}
 % imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
-\caption{Mais informação disponível na árvore}
+\caption{Página para criar uma mapa de conceitos}
 \end{figure}
+
+Depois se submetida a informação, é possível ver o resultado em "Conceitos":
 
 \begin{figure}[H]
 \centering
-\includegraphics[scale=0.8]{site3.png}
+\includegraphics[scale=0.5]{in/site2.png}
 % imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
-\caption{Detalhes de uma instância}
+\caption{Página dos conceitos}
 \end{figure}
 
+É possível clicar nos nodos para se conseguir ver mais informação, se clicarmos em "pessoa" vai ser apresentada a seguinte página:
 
-As palavras escritas apenas em maiúsculas.... dizer que sao nossas para estruturar a infomraçao da arvore 
- 
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{in/site3.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Página de detalhe de um conceito}
+\end{figure}
+
+Esta página está dividida em 4 partes:
+\begin{itemize}
+\item Parte em que mostra os "filhos" do conceito em questão, neste caso só existe "emigrante";
+\item Propriedades que o conceito possa ter associadas a si;
+\item Relações que existem com outros conceitos;
+\item Instãncias que possam existir daquele conceito.
+\end{itemize}
+
+Nesta página, é também possível clicar num dos nodos para obter mais informação, se formos para as intâncias e clicarmos em "pAntonio" é apresentada a seguinte página:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{in/site4.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\caption{Página de detalhe de um conceito}
+\end{figure}
+
+Nesta página é possível ver as relações que uma instância tem para com outras relações e ainda ver os valores das propriedades que lhe estão associadas.
  
 \newpage
  
 \section{Conclusões}
- 
-A resolução deste exercício permitiu perceber melhor a forma como as linguagens podem ser úteis para gerar um programa, que dependo do input que irá receber, o resultado final seja o esperado sem ter de estar a alterar o código do programa que é automaticamente gerado.
 
-Umas das dificuldades foi perceber como o Antlr fazia o parser das frases de forma a não haver ambiguidade e conseguir na mesma produção termos acesso ao valor de dois símbolos terminais, tal como acontece, por exemplo, quando queremos saber a dimensão do terreno, em que a solução foi inserir labels para o compilador saber qual o valor pertendido.
+A utilização de Tree Grammars levou a que a construção de qualquer módulo se tornasse uma tarefa mais simples, já que o seu processo de construção se revelou sistemático. O facto de podermos fazer a travessia de uma AST através de uma gramática de atributos é uma mais valia pois de outra forma seria mais trabalhoso. Acima de tudo a utilização desta metodologia agilizou e simplificou todo o processo.
 
-Serviu de consolidação da matéria dada até agora no módulo de Engenharia de Linguagens,
-tendo em conta que conseguimos resolver os exercícios com sucesso.
+A linguagem criada revelou-se ser eficaz e muito simples para especificar ontologias, apesar de não ter tadas as propriedades de outras linguagens para o mesmo efeito, é de fácil leitura e contêm as característica essenciais para desenvolver uma árvore de conhecimento.
  
+
+\newpage 
+ 
+\section{Anexos}
+
+\subsection{Gramática final}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/cmc.g}
+
+\subsection{Tree Grammar}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[style=gramatica]{in/mapaconceitosTGValidacao.g}
+
+\newpage
+
+\subsection{Classes Java}
+\subsubsection{Run.java}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[language=java]{in/Run.java}
+
+\subsubsection{Tabela.java}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[language=java]{in/Tabela.java}
+
+\subsubsection{MapaConceitos.java}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[language=java]{in/MapaConceitos.java}
+
+\subsubsection{Instancia.java}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[language=java]{in/Instancia.java}
+
+\subsubsection{MapaConceitoPropConceito.java}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[language=java]{in/MapaConceitoPropConceito.java}
+
+\subsubsection{MapaConceitoPropDados.java}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[language=java]{in/MapaConceitoPropDados.java}
+
+\subsubsection{MapaInstanciaPropConceito.java}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[language=java]{in/MapaInstanciaPropConceito.java}
+
+\subsubsection{MapaInstanciaPropDados.java}
+\lstset{caption={},label=DescriptiveLabel}
+\lstinputlisting[language=java]{in/MapaInstanciaPropDados.java}
+
+\newpage
+
+
+\subsection{Esquema da Base de Dados}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.5]{in/bd.png}
+% imag2.png: 688x477 pixel, 72dpi, 24.27x16.83 cm, bb=0 0 688 477
+\end{figure}
+
 
 \end{document}
