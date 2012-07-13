@@ -4,9 +4,9 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-		array('label'=>'Criar', 'url'=>array('create')),
+		array('label'=>'Criar Exposição', 'url'=>array('create')),
 		array('label'=>'Administração', 'url'=>array('admin')),
-		array('label'=>'Nova Sala','url'=>array('/site/novaSala'))
+		array('label'=>'Criar Sala','url'=>array('/site/novaSala'))
 );
 ?>
 

@@ -6,11 +6,11 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 		array('label'=>'Índice', 'url'=>array('index')),
-		array('label'=>'Criar', 'url'=>array('create')),
+		array('label'=>'Criar Exposição', 'url'=>array('create')),
 		array('label'=>'Actualizar', 'url'=>array('update', 'id'=>$model->id_exhibition)),
 		array('label'=>'Eliminar', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_exhibition),'confirm'=>'Are you sure you want to delete this item?')),
 		array('label'=>'Administração', 'url'=>array('admin')),
-		array('label'=>'Nova Sala','url'=>array('/site/novaSala'))
+		array('label'=>'Criar Sala','url'=>array('/site/novaSala'))
 );
 ?>
 

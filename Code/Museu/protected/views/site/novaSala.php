@@ -1,7 +1,7 @@
 <?php
 $this->pageTitle=Yii::app()->name . ' - Nova sala';
 $this->breadcrumbs=array(
-	'Sala',
+		'Sala',
 );
 ?>
 
@@ -10,15 +10,17 @@ $this->breadcrumbs=array(
 
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'sala-form',
-	'enableClientValidation'=>true,
-	'clientOptions'=>array(
-		'validateOnSubmit'=>true,
-	),
+	<?php $form=$this->beginWidget('CActiveForm', array(
+			'id'=>'sala-form',
+			'enableClientValidation'=>true,
+			'clientOptions'=>array(
+					'validateOnSubmit'=>true,
+			),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note">
+		Fields with <span class="required">*</span> are required.
+	</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
@@ -32,6 +34,7 @@ $this->breadcrumbs=array(
 		<?php echo CHtml::submitButton('Submit'); ?>
 	</div>
 
-<?php $this->endWidget(); ?>
+	<?php $this->endWidget(); ?>
 
-</div><!-- form -->
+</div>
+<!-- form -->

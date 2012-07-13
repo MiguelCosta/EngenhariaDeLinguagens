@@ -134,68 +134,68 @@ class SiteController extends Controller
 			// TODO falta validar o conteudo, ou seja, ver se os tipos e os argumentos sao validos
 			if($model->validate())
 			{
-				
+			
 				// carrega a especificacao da sala cujo formato é xml
 				$doc = new DOMDocument();       // DOM xml
 				$doc->loadXML($model->sala);
-				
+			
 				// verifica se o documento xml é válido segundo o schema sala.xsd
 				if (!$doc->schemavalidate('protected/components/sala.xsd')) {
 					libxml_display_errors();
-				} else {				
+				} else {
 					//Converte o documento XML que contem os conceitos num objecto
 					$conceitos = simplexml_load_file("protected/components/conceitos.xml");
-					
+						
 					//Converte o documento XML que contem os conceitos num objecto
 					$sala_xml = simplexml_load_string($model->sala);
-					
+						
 					// Conteudo constante de uma sala
-					$sala_php = "<?php \$NOME = '$sala_xml->nome';       
-	    \$this->pageTitle=Yii::app()->name . ' - Salas';
-	    \$this->breadcrumbs=array(
-	    	'Exposições'=>array('/Exhibitions/index'),
-	        \$NOME,
-	    );
-	?>
-	
-	<h1 align=\"center\">Sala <?php echo \$NOME?></h1>
-	<hr/>";
-					
+					$sala_php = "<?php \$NOME = '$sala_xml->nome';
+					\$this->pageTitle=Yii::app()->name . ' - Salas';
+					\$this->breadcrumbs=array(
+					'Exposições'=>array('/Exhibitions/index'),
+					\$NOME,
+					);
+					?>
+			
+					<h1 align=\"center\">Sala <?php echo \$NOME?></h1>
+					<hr/>";
+						
 					// Percorre cada objeto da sala
 					foreach($sala_xml->xpath('//objecto') as $obj) {
-						// tipo do objecto 
-						$tipo = $obj->tipo;
-						
+					// tipo do objecto
+					$tipo = $obj->tipo;
+			
 						// obtem o template PHP do tipo extraido
-						$conceito = $conceitos->xpath("//value[contains(../key,'$tipo')]");	
-						
-						// para cada argumento deste objecto substitui os valores variaveis, identificados por tags,
-						// pelos valor do argumento correspondente especificado na sala
-						foreach($obj->argumentos->children() as $arg) {
-							// substitui a tag em $conceito que seja igual ao atributo id do argumento iterado 
-							//pelo valor do argumento
-							$tag = "%".$arg['id']."%";
-							$conceito[0] = str_replace($tag, $arg, $conceito[0]);
-						}
-						// concatena este objecto PHP à sala PHP
-						$sala_php .= $conceito[0];
+					$conceito = $conceitos->xpath("//value[contains(../key,'$tipo')]");
+			
+					// para cada argumento deste objecto substitui os valores variaveis, identificados por tags,
+					// pelos valor do argumento correspondente especificado na sala
+					foreach($obj->argumentos->children() as $arg) {
+					// substitui a tag em $conceito que seja igual ao atributo id do argumento iterado
+						//pelo valor do argumento
+					$tag = "%".$arg['id']."%";
+					$conceito[0] = str_replace($tag, $arg, $conceito[0]);
 					}
-					
+					// concatena este objecto PHP à sala PHP
+					$sala_php .= $conceito[0];
+					}
+						
 					// acrescenta o link para a nova sala gerada se esta ainda nao existir
 					/*if (!file_exists(Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php")) {
-						$fh2 = fopen(Yii::app()->basePath."/views/site/listaSalas.php", 'a') or die("can't open file");
-						fwrite($fh2, "\n<?php echo CHtml::link(CHtml::encode('".$sala_xml->nome."'), array('/site/sala', 'view'=>'".$nome_ficheiro."')); ?><br>");
-						fclose($fh2);
+					$fh2 = fopen(Yii::app()->basePath."/views/site/listaSalas.php", 'a') or die("can't open file");
+					fwrite($fh2, "\n<?php echo CHtml::link(CHtml::encode('".$sala_xml->nome."'), array('/site/sala', 'view'=>'".$nome_ficheiro."')); ?><br>");
+					fclose($fh2);
 					}*/
-					
+						
 					// elimina espaços do nome da sala. servirá como nome do ficheiro
 					$nome_ficheiro = str_replace(" ", "", $sala_xml->nome);
 					// substitui caracteres especiais por caracteres normais
-					$nome_ficheiro = $this->normalize_str($nome_ficheiro);			
-					
+					$nome_ficheiro = $this->normalize_str($nome_ficheiro);
+						
 					// path no directorio onde a sala será armazenada
 					$sala_path = Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php";
-					
+						
 					// variaveis de sessao que guardam a informacao necessaria de uma sala para armazenar na base de dados
 					$session=new CHttpSession;
 					$session->open();
@@ -204,21 +204,20 @@ class SiteController extends Controller
 					$_SESSION['room_path'] = $sala_path;
 					$_SESSION['exhibitions'] = $this->toArrayOfStrings($sala_xml->xpath('//exposicao'));
 					// TODO falta image_path
-
+			
 					// armazena a informacao da sala gerada na base de dados utilizando a accao create do controller rooms
-					$this->forward('/rooms/create',false); 
-				
+					$this->forward('/rooms/create',false);
+			
 					// guarda a sala na diretoria das salas geradas
 					$fh = fopen($sala_path, 'w') or die("can't open file");
-						fwrite($fh, $sala_php);
+					fwrite($fh, $sala_php);
 					fclose($fh);
 				}
-				
-	
+			
+			
 				// redirect to another page
-				$this->redirect(array('/Exhibitions/index'));
-			}
-	
+					$this->redirect(array('/Exhibitions/index'));
+				}
 		}
 		$this->render('novaSala',array('model'=>$model));
 	}
