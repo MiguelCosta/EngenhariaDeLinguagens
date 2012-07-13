@@ -1,7 +1,7 @@
 <?php $NOME = 'Peças de Cerdeira';       
 	    $this->pageTitle=Yii::app()->name . ' - Salas';
 	    $this->breadcrumbs=array(
-	        'Salas' => array('/site/salas'),
+	    	'Exposições'=>array('/Exhibitions/index'),
 	        $NOME,
 	    );
 	?>

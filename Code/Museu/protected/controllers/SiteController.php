@@ -107,15 +107,15 @@ class SiteController extends Controller
 		$this->redirect(Yii::app()->homeUrl);
 	}
 	
-	public function actionExposicoes()
-	{
-		$this->render('exposicoes');
-	}
+// 	public function actionExposicoes()
+// 	{
+// 		$this->render('exposicoes');
+// 	}
 
-	public function actionSalas()
-	{
-		$this->render('salas');
-	}
+// 	public function actionSalas()
+// 	{
+// 		$this->render('salas');
+// 	}
 	
 	public function actionSearch()
 	{
@@ -153,7 +153,7 @@ class SiteController extends Controller
 					$sala_php = "<?php \$NOME = '$sala_xml->nome';       
 	    \$this->pageTitle=Yii::app()->name . ' - Salas';
 	    \$this->breadcrumbs=array(
-	        'Salas' => array('/site/salas'),
+	    	'Exposições'=>array('/Exhibitions/index'),
 	        \$NOME,
 	    );
 	?>

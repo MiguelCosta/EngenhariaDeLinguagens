@@ -1,6 +1,6 @@
 <?php
 $this->breadcrumbs=array(
-		'Tipos de Peça'=>array('index'),
+ 		'Tipos de Peça'=>array('index'),
 		$model->id_type,
 );
 
