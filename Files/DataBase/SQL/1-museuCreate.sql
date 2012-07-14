@@ -610,6 +610,8 @@ CREATE TABLE Object_Work_Records_IndexingCreators (
 CREATE TABLE Exhibitions_Rooms (
 	  Exhibitionsid_exhibition int(10) NOT NULL, 
 	  Roomsid_room             int(10) NOT NULL, 
+	  ord_nr                   int(10) NOT NULL comment 'Ordination number of room within an exhibition', 
+	  ord_def_by_user          tinyint DEFAULT 0 NOT NULL,
 	  PRIMARY KEY (Exhibitionsid_exhibition, 
 		  Roomsid_room)) ENGINE=InnoDB;
 CREATE TABLE Exhibitions_SubjectTerms (

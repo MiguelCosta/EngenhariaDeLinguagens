@@ -131,6 +131,7 @@ class SiteController extends Controller
 		if(isset($_POST['NovaSalaForm']))
 		{
 			$model->attributes=$_POST['NovaSalaForm'];
+// 			CVarDumper::dump($model,10,true);
 			// TODO falta validar o conteudo, ou seja, ver se os tipos e os argumentos sao validos
 			if($model->validate())
 			{
