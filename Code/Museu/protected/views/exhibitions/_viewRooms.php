@@ -2,7 +2,7 @@
 
 	<?php 
 		$rooms = $model->rooms;
-		CVarDumper::dump($rooms, 10, true);
+// 		CVarDumper::dump($rooms, 10, true);
 		$dataProvider = new CArrayDataProvider($rooms, array('keyField'=>'id_room', 
 // 				'sort'=>array(
 //         			'attributes'=>array( 'id', 'username', 'email',),

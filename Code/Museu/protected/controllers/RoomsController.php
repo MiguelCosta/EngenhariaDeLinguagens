@@ -70,22 +70,73 @@ class RoomsController extends Controller
 		$model->path = $_SESSION['room_path'];
 		$model->image_path = "";
 
-		$ex_ids = array();
+// 		$ex_ids = array();
+		$exhib_rooms_models = array();
+		
+		// vai buscar o ultimo id de Rooms
+		$idRoom = Yii::app()->db->createCommand()
+			->select('max(id_room) as max')
+			->from('Rooms')
+			->queryScalar();
+		$idRoom++;
+		
 		// obtem os id das exibicoes as quais esta sala pertence
 		foreach ($_SESSION['exhibitions'] as $ex_name){
-			$id = Yii::app()->db->createCommand()
-			->select('id_exhibition')
-			->from('Exhibitions')
-			->where('name=:name', array(':name'=>$ex_name))
-			->queryScalar();
+			$idExhibition = Yii::app()->db->createCommand()
+				->select('id_exhibition')
+				->from('Exhibitions')
+				->where('name=:name', array(':name'=>$ex_name))
+				->queryScalar();
+
+			$model_exhib_room = new Exhibitions_Rooms;
+			$model_exhib_room->Exhibitionsid_exhibition = $idExhibition;
+			$model_exhib_room->Roomsid_room = $idRoom;
+			
+			// vai buscar o maior número de ordenacao de uma exibicao
+			$last_ord_nr = Yii::app()->db->createCommand()
+				->select('max(ord_nr) as max')
+				->from('Exhibitions_Rooms')
+				->where('Exhibitionsid_exhibition=:ex_id', array(':ex_id'=>$idExhibition))
+				->queryScalar();
+			/* se a ordenação for por defeito ou se for definida pelo utilizador mas o número de ordenação estiver vazio,
+			 * o número de ordenacao da nova sala é um número consequente ao último
+			 */
+			if ($_SESSION['tipo_ordenacao']==0 || ($_SESSION['tipo_ordenacao']==1 && $_SESSION['ord_nr']=="")) {
+				$model_exhib_room->ord_def_by_user = 0;
+				$model_exhib_room->ord_nr = $last_ord_nr + 1;
+			}
+			else {
+				$model_exhib_room->ord_def_by_user = 1;
+				// TODO criar sistema de reoordenacao
 				
-			array_push($ex_ids, $id);
+				// se o número definido pelo utilizador for um número maior que o número de salas existentes
+				// na exposicao + 1 (nova sala) entao o novo número passa a ser o número consequente ao da última sala
+				if ($_SESSION['ord_nr'] > $last_ord_nr+1)					
+					$model_exhib_room->ord_nr = $last_ord_nr+1;
+				else
+					$model_exhib_room->ord_nr = intval($_SESSION['ord_nr']);
+
+				
+				$models_reordered = Exhibitions_Rooms::model()->reorderOrdNr($idExhibition, $model_exhib_room->ord_nr);
+				array_push($exhib_rooms_models, $models_reordered);
+			}
+			
+			array_push($exhib_rooms_models, $model_exhib_room);
+// 			array_push($ex_ids, $id);
 		}
 
-		$model->exhibitions = $ex_ids;
+// 		$model->exhibitions = $ex_ids;
 
-		if(!$model->save()) {
+		$valid = false;
+		if ($valid=$model->validate())
+			foreach ($exhib_rooms_models as $ex_mod)
+				$valid=$ex_mod->validate() && $valid;
+			
+		if ($valid) {
 			// TODO fazer algo para tratar esta condicao
+// 			$model->save(false);
+// 			foreach ($exhib_rooms_models as $ex_mod)
+// 				$ex_mod->save(false);
 		}
 	}
 

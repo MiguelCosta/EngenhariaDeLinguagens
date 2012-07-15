@@ -65,6 +65,11 @@ div.form .row
 	margin: 5px 0;
 }
 
+div.form .row .tipo_ordenacao
+{
+	margin: 5px 0;
+}
+
 div.form .nrow
 {
 	margin: 5px 0;
@@ -85,6 +90,15 @@ div.form .group .title
 div.form .group .row
 {
 	margin: 5px 20px;
+}
+
+DIV#content DIV.compactRadioGroup {
+    padding-left: 1em;
+}
+ 
+DIV#content .compactRadioGroup LABEL,
+DIV#content .compactRadioGroup INPUT {
+    display: inline;
 }
 
 div.form .hint

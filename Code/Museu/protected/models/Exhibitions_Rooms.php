@@ -34,7 +34,7 @@ class Exhibitions_Rooms extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Exhibitionsid_exhibition, Roomsid_room', 'required'),
+			array('Exhibitionsid_exhibition, Roomsid_room, ord_nr, ord_def_by_user', 'required'),
 			array('Exhibitionsid_exhibition, Roomsid_room', 'numerical', 'integerOnly'=>true),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -82,5 +82,26 @@ class Exhibitions_Rooms extends CActiveRecord
 		return new CActiveDataProvider('Exhibitions_Rooms', array(
 			'criteria'=>$criteria,
 		));
+	}
+	
+	/**
+	 * Sistema de Reordenação
+	 * Dado um novo número de ordenação definido pelo utilizador, é feita uma reordenação das salas existentes.
+	 * 
+	 * @param unknown_type $new_ord_nr
+	 */
+	public function reorderOrdNr($exhib_id, $new_ord_nr){
+		$models = $this->findAllBySql('SELECT * 
+				FROM Exhibitions_Rooms 
+				WHERE Exhibitionsid_exhibition=:id and ord_nr >= :ord_nr', 
+				array(':id'=>$exhib_id, ':ord_nr'=>$new_ord_nr));
+		
+		$reordered_models = array();
+		foreach ($models as $m) {
+			$m->ord_nr++;
+// 			array_push($reordered_models, $m);
+		}
+//  		CVarDumper::dump($models,3,true);
+		return $models;
 	}
 }

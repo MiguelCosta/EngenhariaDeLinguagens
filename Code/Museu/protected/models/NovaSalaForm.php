@@ -8,7 +8,8 @@
 class NovaSalaForm extends CFormModel
 {
 	public $sala;
-	public $tipo_ordenacao;
+	public $tipo_ordenacao = 0;
+	public $ord_nr;
 
 	/**
 	 * Declares the validation rules.
@@ -18,7 +19,8 @@ class NovaSalaForm extends CFormModel
 		return array(
 			// sala is required
 			array('sala, tipo_ordenacao', 'required'),
-			array('tipo_ordenacao', 'numerical')
+			array('tipo_ordenacao', 'numerical'),
+			array('ord_nr', 'numerical', 'min'=>1, 'tooSmall'=>'O número mínimo é 1.')
 		);
 	}
 
@@ -30,6 +32,7 @@ class NovaSalaForm extends CFormModel
 	public function attributeLabels()
 	{
 		return array('sala'=>'Sala',
-				'tipo_ordenacao'=>'Tipo de ordenação');
+				'tipo_ordenacao'=>'Tipo de ordenação',
+				'ord_nr'=>'Número de ordenação');
 	}
 }

@@ -131,11 +131,10 @@ class SiteController extends Controller
 		if(isset($_POST['NovaSalaForm']))
 		{
 			$model->attributes=$_POST['NovaSalaForm'];
-// 			CVarDumper::dump($model,10,true);
+//  			CVarDumper::dump($model,10,true);
 			// TODO falta validar o conteudo, ou seja, ver se os tipos e os argumentos sao validos
 			if($model->validate())
 			{
-			
 				// carrega a especificacao da sala cujo formato é xml
 				$doc = new DOMDocument();       // DOM xml
 				$doc->loadXML($model->sala);
@@ -164,30 +163,23 @@ class SiteController extends Controller
 						
 					// Percorre cada objeto da sala
 					foreach($sala_xml->xpath('//objecto') as $obj) {
-					// tipo do objecto
-					$tipo = $obj->tipo;
-			
-						// obtem o template PHP do tipo extraido
-					$conceito = $conceitos->xpath("//value[contains(../key,'$tipo')]");
-			
-					// para cada argumento deste objecto substitui os valores variaveis, identificados por tags,
-					// pelos valor do argumento correspondente especificado na sala
-					foreach($obj->argumentos->children() as $arg) {
-					// substitui a tag em $conceito que seja igual ao atributo id do argumento iterado
-						//pelo valor do argumento
-					$tag = "%".$arg['id']."%";
-					$conceito[0] = str_replace($tag, $arg, $conceito[0]);
+						// tipo do objecto
+						$tipo = $obj->tipo;
+				
+							// obtem o template PHP do tipo extraido
+						$conceito = $conceitos->xpath("//value[contains(../key,'$tipo')]");
+				
+						// para cada argumento deste objecto substitui os valores variaveis, identificados por tags,
+						// pelos valor do argumento correspondente especificado na sala
+						foreach($obj->argumentos->children() as $arg) {
+							// substitui a tag em $conceito que seja igual ao atributo id do argumento iterado
+							//pelo valor do argumento
+							$tag = "%".$arg['id']."%";
+							$conceito[0] = str_replace($tag, $arg, $conceito[0]);
+						}
+						// concatena este objecto PHP à sala PHP
+						$sala_php .= $conceito[0];
 					}
-					// concatena este objecto PHP à sala PHP
-					$sala_php .= $conceito[0];
-					}
-						
-					// acrescenta o link para a nova sala gerada se esta ainda nao existir
-					/*if (!file_exists(Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php")) {
-					$fh2 = fopen(Yii::app()->basePath."/views/site/listaSalas.php", 'a') or die("can't open file");
-					fwrite($fh2, "\n<?php echo CHtml::link(CHtml::encode('".$sala_xml->nome."'), array('/site/sala', 'view'=>'".$nome_ficheiro."')); ?><br>");
-					fclose($fh2);
-					}*/
 						
 					// elimina espaços do nome da sala. servirá como nome do ficheiro
 					$nome_ficheiro = str_replace(" ", "", $sala_xml->nome);
@@ -197,7 +189,7 @@ class SiteController extends Controller
 					// path no directorio onde a sala será armazenada
 					$sala_path = Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php";
 						
-					// variaveis de sessao que guardam a informacao necessaria de uma sala para armazenar na base de dados
+					// variaveis de sessao que guardam a informacao necessaria de uma sala para armazenar na BD
 					$session=new CHttpSession;
 					$session->open();
 					$_SESSION['room_name'] = strval($sala_xml->nome);
@@ -205,6 +197,8 @@ class SiteController extends Controller
 					$_SESSION['room_path'] = $sala_path;
 					$_SESSION['exhibitions'] = $this->toArrayOfStrings($sala_xml->xpath('//exposicao'));
 					// TODO falta image_path
+					$_SESSION['tipo_ordenacao'] = $model->tipo_ordenacao;
+					$_SESSION['ord_nr'] = $model->ord_nr;
 			
 					// armazena a informacao da sala gerada na base de dados utilizando a accao create do controller rooms
 					$this->forward('/rooms/create',false);
@@ -217,8 +211,8 @@ class SiteController extends Controller
 			
 			
 				// redirect to another page
-					$this->redirect(array('/Exhibitions/index'));
-				}
+				$this->redirect(array('/Exhibitions/index'));
+			}
 		}
 		$this->render('novaSala',array('model'=>$model));
 	}

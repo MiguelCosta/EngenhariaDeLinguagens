@@ -1,15 +1,27 @@
 <?php
-$this->pageTitle=Yii::app()->name . ' - Nova sala';
+$this->pageTitle=Yii::app()->name . ' - Criar sala';
 $this->breadcrumbs=array(
 		'Sala',
 );
 ?>
 
-<h1>Nova Sala</h1>
+<script language="javascript">
+	function tipo_ordenacaoChange(tipo_ordenacao)
+	{   
+	    if(tipo_ordenacao==1){
+	    	$('#ord_nr').val("");
+	    	$('.tipo_ordenacao').show();
+	    }
+	    else {
+	    	$('.tipo_ordenacao').hide();
+	    }
+	}
+</script>
+
+<h1>Criar Sala</h1>
 
 
 <div class="form">
-
 	<?php $form=$this->beginWidget('CActiveForm', array(
 			'id'=>'sala-form',
 			'enableClientValidation'=>true,
@@ -31,18 +43,34 @@ $this->breadcrumbs=array(
 	</div>
 	
 	<div class="row">
-		<?php echo $form->labelEx($model,'tipo_ordenacao'); ?><br>
-		<?php echo $form->radioButtonList($model,'tipo_ordenacao', 
-				array(0=>'Ordenação por defeito', 1=>'Ordenação definida pelo utilizador')); ?>
-		<?php echo $form->error($model,'tipo_ordenacao'); ?>
-<!-- 		TODO por ord_nr a aparecer e desaparecer -->
+		<?php echo $form->labelEx($model,'tipo_ordenacao'); ?>
+		<div class="compactRadioGroup">
+			<?php echo $form->radioButtonList($model,'tipo_ordenacao', 
+					array(0=>'Ordenação por defeito', 1=>'Ordenação definida pelo utilizador'), 
+					array(
+							//'labelOptions'=>array('style'=>'display:inline'),
+	    					//'separator'=>'',
+							'onchange' => 'tipo_ordenacaoChange(this.value);')); ?>
+			<?php echo $form->error($model,'tipo_ordenacao'); ?>
+			
+			<div id="OrdNrDiv" class="row tipo_ordenacao">
+		        <?php echo $form->labelEx($model,'ord_nr'); ?>
+		        <?php echo $form->textField($model, 'ord_nr', array('id'=>'ord_nr','value'=>1)); ?>      
+		        <p class="hint">Se nenhum número for definido, assume-se a ordenação por defeito.</p>
+		        <?php echo $form->error($model,'ord_nr'); ?>
+		    </div>
+		</div>
 	</div>
-
+    
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Submit'); ?>
 	</div>
 
 	<?php $this->endWidget(); ?>
-
 </div>
+
+<script language="javascript">
+	tipo_ordenacaoChange('<?php echo $model->tipo_ordenacao;?>');
+</script>
+
 <!-- form -->
