@@ -6,7 +6,9 @@
 				FROM Exhibitions_Rooms
 				INNER JOIN Rooms
 					ON Roomsid_room = id_room
-				ORDER BY ord_nr');
+				WHERE Exhibitionsid_exhibition=:id_exhib
+				ORDER BY ord_nr',
+				array(':id_exhib'=>$model->id_exhibition));
 		
 		$dataProvider = new CArrayDataProvider($rooms, array(
 				'keyField'=>'id_room',

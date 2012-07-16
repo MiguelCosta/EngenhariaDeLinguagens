@@ -134,86 +134,88 @@ class SiteController extends Controller
 			$model->attributes=$_POST['NovaSalaForm'];
 			// TODO falta validar o conteudo, ou seja, ver se os tipos e os argumentos sao validos
 			if($model->validate()) {
-				// carrega a especificacao da sala cujo formato é xml
-				$doc = new DOMDocument();       // DOM xml
-				$doc->loadXML($model->sala);
+				//Converte o documento XML que contem os conceitos num objecto
+				$conceitos = simplexml_load_file("protected/components/conceitos.xml");
+					
+				//Converte o documento XML que contem os conceitos num objecto
+				$sala_xml = simplexml_load_string($model->sala);
+					
+				// Conteudo constante de uma sala
+				$sala_php = "<?php 
+					\$NOME = '$sala_xml->nome';
+					\$this->pageTitle=Yii::app()->name . ' - Salas';
+					\$this->breadcrumbs=array(
+						'Exposições'=>array('/Exhibitions/index'),
+						\$NOME,
+					);
+				?>
+		
+				<h1 align=\"center\">Sala <?php echo \$NOME?></h1>
+				<hr/>";
+					
+				// Percorre cada objeto (componente) da sala
+				foreach($sala_xml->xpath('//objecto') as $obj) {
+					// tipo do objecto
+					$tipo = $obj->tipo;
 			
-				// verifica se o documento xml é válido segundo o schema sala.xsd
-				if (!$doc->schemavalidate('protected/components/sala.xsd')) {
-					libxml_display_errors();
-				} else {
-					//Converte o documento XML que contem os conceitos num objecto
-					$conceitos = simplexml_load_file("protected/components/conceitos.xml");
-						
-					//Converte o documento XML que contem os conceitos num objecto
-					$sala_xml = simplexml_load_string($model->sala);
-						
-					// Conteudo constante de uma sala
-					$sala_php = "<?php 
-						\$NOME = '$sala_xml->nome';
-						\$this->pageTitle=Yii::app()->name . ' - Salas';
-						\$this->breadcrumbs=array(
-							'Exposições'=>array('/Exhibitions/index'),
-							\$NOME,
-						);
-					?>
-			
-					<h1 align=\"center\">Sala <?php echo \$NOME?></h1>
-					<hr/>";
-						
-					// Percorre cada objeto da sala
-					foreach($sala_xml->xpath('//objecto') as $obj) {
-						// tipo do objecto
-						$tipo = $obj->tipo;
-				
-							// obtem o template PHP do tipo extraido
-						$conceito = $conceitos->xpath("//value[contains(../key,'$tipo')]");
-				
-						// para cada argumento deste objecto substitui os valores variaveis, identificados por tags,
-						// pelos valor do argumento correspondente especificado na sala
-						foreach($obj->argumentos->children() as $arg) {
-							// substitui a tag em $conceito que seja igual ao atributo id do argumento iterado
-							//pelo valor do argumento
-							$tag = "%".$arg['id']."%";
-							$conceito[0] = str_replace($tag, $arg, $conceito[0]);
-						}
-						// concatena este objecto PHP à sala PHP
-						$sala_php .= $conceito[0];
+					// obtem o template PHP do tipo extraido
+					$template_php = $conceitos->xpath("//value[contains(../key,'$tipo')]");
+					
+					$nr_itens_encontrado = false;
+					
+					// substitui a variável de um argumento no template_php pelo valor real correspondente
+					foreach($obj->argumentos->children() as $arg) {
+						// substitui a tag (valor variável) em $template_php[0] que seja igual ao atributo id do argumento iterado
+						// pelo valor do argumento
+						$tag = "%".$arg['id']."%";
+						// variavel de controlo (utilizada depois do ciclo)
+						if ($tag=="%NrItens%")
+							$nr_itens_encontrado = true;
+						// $tag: The value being searched for
+						// $arg: The replacement value that replaces found $tag values
+						// $template_php[0]: The string or array being searched and replaced on
+						$template_php[0] = str_replace($tag, $arg, $template_php[0]);
 					}
-						
-					// elimina espaços do nome da sala. servirá como nome do ficheiro
-					$nome_ficheiro = str_replace(" ", "", $sala_xml->nome);
-					// substitui caracteres especiais por caracteres normais
-					$nome_ficheiro = $this->normalize_str($nome_ficheiro);
-						
-					// variaveis de sessao que guardam a informacao necessaria de uma sala para armazenar na BD
-					$session=new CHttpSession;
-					$session->open();
-					$_SESSION['room_name'] = strval($sala_xml->nome);
-					$_SESSION['room_description'] = strval($sala_xml->descricao);
-					$_SESSION['room_file_name'] = $nome_ficheiro;
-					$_SESSION['exhibitions'] = $this->toArrayOfStrings($sala_xml->xpath('//exposicao'));
-					// TODO falta image_path
-					$_SESSION['tipo_ordenacao'] = $model->tipo_ordenacao;
-					$_SESSION['ord_nr'] = $model->ord_nr;
-			
-					// armazena a informacao da sala gerada na base de dados utilizando a accao create do controller rooms
-					$this->forward('/rooms/create',false);
-			
+					// se o argumento NrItens não for definido um valor por defeito é utilizado
+					if (!$nr_itens_encontrado)
+						$template_php[0] = str_replace("%NrItens%", 10, $template_php[0]);
 					
-					// adiciona à sala o sistema de navegação
-					$sala_php = $this->roomNavigationSystem($sala_php, $_SESSION['id_exhib'], $_SESSION['id_nova_sala']);
-					
-					// guarda a sala na diretoria das salas geradas
-					$fh = fopen($_SESSION['room_path'], 'w') or die("can't open file");
-					fwrite($fh, $sala_php);
-					fclose($fh);
+					// concatena o template PHP à sala PHP
+					$sala_php .= $template_php[0];
 				}
-			
+					
+				// elimina espaços do nome da sala. servirá como nome do ficheiro
+				$nome_ficheiro = str_replace(" ", "", $sala_xml->nome);
+				// substitui caracteres especiais por caracteres normais
+				$nome_ficheiro = $this->normalize_str($nome_ficheiro);
+					
+				// variaveis de sessao que guardam a informacao necessaria de uma sala para armazenar na BD
+				$session=new CHttpSession;
+				$session->open();
+				$_SESSION['room_name'] = strval($sala_xml->nome);
+				$_SESSION['room_description'] = strval($sala_xml->descricao);
+				$_SESSION['room_file_name'] = $nome_ficheiro;
+// 				$_SESSION['exhibitions'] = $this->toArrayOfStrings($sala_xml->xpath('//exposicao'));
+				$_SESSION['exhibition'] = strval($sala_xml->exposicao);
+				// TODO falta image_path
+				$_SESSION['tipo_ordenacao'] = $model->tipo_ordenacao;
+				$_SESSION['ord_nr'] = $model->ord_nr;
+		
+				// armazena a informacao da sala gerada na base de dados utilizando a accao create do controller rooms
+				$this->forward('/rooms/create',false);
+		
+				
+				// adiciona à sala o sistema de navegação
+				$sala_php = $this->roomNavigationSystem($sala_php, $_SESSION['id_exhib'], $_SESSION['id_nova_sala']);
+				
+				// guarda a sala na diretoria das salas geradas
+				$fh = fopen($_SESSION['room_path'], 'w') or die("can't open file");
+				fwrite($fh, $sala_php);
+				fclose($fh);
 			
 				// redirect to another page
 				$this->redirect(array('/Exhibitions/index'));
-			}
+			} 
 		}
 		$this->render('novaSala',array('model'=>$model));
 	}
@@ -261,8 +263,8 @@ class SiteController extends Controller
 				else echo CHtml::encode(\$prev_room[0]->name);
 			}
 		?>
-			 <br/>
-			 <?php
+		<br/>
+		<?php
 			 if (!empty(\$next_room)) {
 			 	\$matches = array();
 			 	\$subject = \$next_room[0]->path;
