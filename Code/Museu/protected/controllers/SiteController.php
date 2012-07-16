@@ -128,13 +128,12 @@ class SiteController extends Controller
 	public function actionNovaSala()
 	{
 		$model=new NovaSalaForm;
+		
 		if(isset($_POST['NovaSalaForm']))
 		{
 			$model->attributes=$_POST['NovaSalaForm'];
-//  			CVarDumper::dump($model,10,true);
 			// TODO falta validar o conteudo, ou seja, ver se os tipos e os argumentos sao validos
-			if($model->validate())
-			{
+			if($model->validate()) {
 				// carrega a especificacao da sala cujo formato é xml
 				$doc = new DOMDocument();       // DOM xml
 				$doc->loadXML($model->sala);
@@ -150,12 +149,13 @@ class SiteController extends Controller
 					$sala_xml = simplexml_load_string($model->sala);
 						
 					// Conteudo constante de uma sala
-					$sala_php = "<?php \$NOME = '$sala_xml->nome';
-					\$this->pageTitle=Yii::app()->name . ' - Salas';
-					\$this->breadcrumbs=array(
-					'Exposições'=>array('/Exhibitions/index'),
-					\$NOME,
-					);
+					$sala_php = "<?php 
+						\$NOME = '$sala_xml->nome';
+						\$this->pageTitle=Yii::app()->name . ' - Salas';
+						\$this->breadcrumbs=array(
+							'Exposições'=>array('/Exhibitions/index'),
+							\$NOME,
+						);
 					?>
 			
 					<h1 align=\"center\">Sala <?php echo \$NOME?></h1>
@@ -186,15 +186,12 @@ class SiteController extends Controller
 					// substitui caracteres especiais por caracteres normais
 					$nome_ficheiro = $this->normalize_str($nome_ficheiro);
 						
-					// path no directorio onde a sala será armazenada
-					$sala_path = Yii::app()->basePath."/views/site/pages/".$nome_ficheiro.".php";
-						
 					// variaveis de sessao que guardam a informacao necessaria de uma sala para armazenar na BD
 					$session=new CHttpSession;
 					$session->open();
 					$_SESSION['room_name'] = strval($sala_xml->nome);
 					$_SESSION['room_description'] = strval($sala_xml->descricao);
-					$_SESSION['room_path'] = $sala_path;
+					$_SESSION['room_file_name'] = $nome_ficheiro;
 					$_SESSION['exhibitions'] = $this->toArrayOfStrings($sala_xml->xpath('//exposicao'));
 					// TODO falta image_path
 					$_SESSION['tipo_ordenacao'] = $model->tipo_ordenacao;
@@ -203,8 +200,12 @@ class SiteController extends Controller
 					// armazena a informacao da sala gerada na base de dados utilizando a accao create do controller rooms
 					$this->forward('/rooms/create',false);
 			
+					
+					// adiciona à sala o sistema de navegação
+					$sala_php = $this->roomNavigationSystem($sala_php, $_SESSION['id_exhib'], $_SESSION['id_nova_sala']);
+					
 					// guarda a sala na diretoria das salas geradas
-					$fh = fopen($sala_path, 'w') or die("can't open file");
+					$fh = fopen($_SESSION['room_path'], 'w') or die("can't open file");
 					fwrite($fh, $sala_php);
 					fclose($fh);
 				}
@@ -215,6 +216,66 @@ class SiteController extends Controller
 			}
 		}
 		$this->render('novaSala',array('model'=>$model));
+	}
+	
+	
+	
+	/**
+	 * Sistema de navegação para uma sala
+	 * Cria link para sala anterior e posterior segundo o número de ordenação estabelecido para cada sala
+	 * @param unknown_type $sala_php
+	 * @param unknown_type $id_exhib
+	 * @param unknown_type $id_room
+	 */
+	private function roomNavigationSystem($sala_php, $id_exhib, $id_room) {
+		$sala_php .= "\n<!-- Sistema de navegação -->
+		<?php
+			\$prev_room = Rooms::model()->findAllBySql('SELECT R.*
+					FROM Rooms R
+					INNER JOIN Exhibitions_Rooms ER
+					ON ER.Roomsid_room = R.id_room
+					WHERE ER.Exhibitionsid_exhibition=".$id_exhib."
+					and ER.ord_nr + 1 = (SELECT ord_nr
+					FROM Exhibitions_Rooms
+					WHERE Exhibitionsid_exhibition=".$id_exhib." and Roomsid_room=".$id_room.")'
+			);
+			
+			\$next_room = Rooms::model()->findAllBySql('SELECT R.*
+					FROM Rooms R
+					INNER JOIN Exhibitions_Rooms ER
+					ON ER.Roomsid_room = R.id_room
+					WHERE ER.Exhibitionsid_exhibition=".$id_exhib."
+					and ER.ord_nr - 1 = (SELECT ord_nr
+					FROM Exhibitions_Rooms
+					WHERE Exhibitionsid_exhibition=".$id_exhib." and Roomsid_room=".$id_room.")'
+			);
+			
+			if (!empty(\$prev_room)) {
+				\$matches = array();
+				\$subject = \$prev_room[0]->path;
+				\$pattern = '@(?:[^/]+/)(\w+)(\.php)$@'; // extrai apenas o nome do ficheiro da sala
+				preg_match(\$pattern, \$subject, \$matches);
+				if (isset(\$matches[1]))
+					// Estabelece o link entre o nome da sala e a localizacao da sala
+					echo CHtml::link(CHtml::encode(\"Anterior - \".\$prev_room[0]->name), array('/site/sala', 'view'=>\$matches[1]));
+				else echo CHtml::encode(\$prev_room[0]->name);
+			}
+		?>
+			 <br/>
+			 <?php
+			 if (!empty(\$next_room)) {
+			 	\$matches = array();
+			 	\$subject = \$next_room[0]->path;
+			 	\$pattern = '@(?:[^/]+/)(\w+)(\.php)$@'; // extrai apenas o nome do ficheiro da sala
+			 	preg_match(\$pattern, \$subject, \$matches);
+			 	if (isset(\$matches[1]))
+			 		// Estabelece o link entre o nome da sala e a localizacao da sala
+			 		echo CHtml::link(CHtml::encode(\"Seguinte - \".\$next_room[0]->name), array('/site/sala', 'view'=>\$matches[1]));
+			 	else echo CHtml::encode(\$next_room[0]->name);
+			 }
+		?>";
+		
+		return $sala_php;
 	}
 	
 	private function toArrayOfStrings(array $exhibitions){

@@ -67,10 +67,8 @@ class RoomsController extends Controller
 		$model=new Rooms;
 		$model->name = $_SESSION['room_name'];
 		$model->description = $_SESSION['room_description'];
-		$model->path = $_SESSION['room_path'];
 		$model->image_path = "";
 
-// 		$ex_ids = array();
 		$exhib_rooms_models = array();
 		
 		// vai buscar o ultimo id de Rooms
@@ -81,6 +79,7 @@ class RoomsController extends Controller
 		$idRoom++;
 		
 		// obtem os id das exibicoes as quais esta sala pertence
+		// apesar de estar assim representado, uma sala não pertence a mais que uma exibição
 		foreach ($_SESSION['exhibitions'] as $ex_name){
 			$idExhibition = Yii::app()->db->createCommand()
 				->select('id_exhibition')
@@ -88,6 +87,10 @@ class RoomsController extends Controller
 				->where('name=:name', array(':name'=>$ex_name))
 				->queryScalar();
 
+			// path no directorio onde a sala será armazenada
+			// atualiza o nome do ficheiro da sala para conter o id da exposicao a que pertence no nome
+			$model->path = Yii::app()->basePath."/views/site/pages/"."exp_".$idExhibition."_".$_SESSION['room_file_name'].".php";
+			
 			$model_exhib_room = new Exhibitions_Rooms;
 			$model_exhib_room->Exhibitionsid_exhibition = $idExhibition;
 			$model_exhib_room->Roomsid_room = $idRoom;
@@ -115,24 +118,34 @@ class RoomsController extends Controller
 				else
 					$model_exhib_room->ord_nr = intval($_SESSION['ord_nr']);
 
-				
-				$models_reordered = Exhibitions_Rooms::model()->reorderOrdNr($idExhibition, $model_exhib_room->ord_nr);
-				$exhib_rooms_models = array_merge($exhib_rooms_models, $models_reordered);
+					// reordena as salas de acordo com o número de ordenação definido pelo utilizador
+					$models_reordered = Exhibitions_Rooms::model()->reorderOrdNr($idExhibition, $model_exhib_room->ord_nr);
+					// junta salas atualizadas com a(s) nova(s)
+					$exhib_rooms_models = array_merge($exhib_rooms_models, $models_reordered);
 			}
 			
 			array_push($exhib_rooms_models, $model_exhib_room);
 		}
 
+		// valida os modelos
 		$valid = false;
 		if ($valid=$model->validate())
+			// apesar de estar assim representado, uma sala não pertence a mais que uma exibição
 			foreach ($exhib_rooms_models as $ex_mod)
 				$valid=$ex_mod->validate() && $valid;
 			
+		// guarda se todos os modelos forem validos
 		if ($valid) {
-			// TODO fazer algo para tratar esta condicao
 			$model->save(false);
+			
+			$_SESSION['room_path'] = $model->path;
+			
+			// apesar de estar assim representado, uma sala não pertence a mais que uma exibição
 			foreach ($exhib_rooms_models as $ex_mod)
 				$ex_mod->save(false);
+			
+			$_SESSION['id_nova_sala'] = $model->id_room;
+			$_SESSION['id_exhib'] = $idExhibition;
 		}
 	}
 
