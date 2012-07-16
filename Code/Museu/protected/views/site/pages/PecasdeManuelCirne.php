@@ -1,4 +1,4 @@
-<?php $NOME = 'Peças de João Trovisco';
+<?php $NOME = 'Peças de Manuel Cirne';
 					$this->pageTitle=Yii::app()->name . ' - Salas';
 					$this->breadcrumbs=array(
 					'Exposições'=>array('/Exhibitions/index'),
@@ -9,7 +9,7 @@
 					<h1 align="center">Sala <?php echo $NOME?></h1>
 					<hr/><?php 
             $this->widget('zii.widgets.CListView', array(
-            'dataProvider'=>IndexingCreators::getObjectWorkRecords_NameCreator('João Trovisco', 10),
+            'dataProvider'=>IndexingCreators::getObjectWorkRecords_NameCreator('Manuel Cirne', 10),
             'template'=>'{sorter}{summary}{pager}{items}{pager}{summary}',
             'pager'=>array(
             'maxButtonCount'=>'10',

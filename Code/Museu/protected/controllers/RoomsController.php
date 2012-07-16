@@ -107,7 +107,6 @@ class RoomsController extends Controller
 			}
 			else {
 				$model_exhib_room->ord_def_by_user = 1;
-				// TODO criar sistema de reoordenacao
 				
 				// se o número definido pelo utilizador for um número maior que o número de salas existentes
 				// na exposicao + 1 (nova sala) entao o novo número passa a ser o número consequente ao da última sala
@@ -118,14 +117,11 @@ class RoomsController extends Controller
 
 				
 				$models_reordered = Exhibitions_Rooms::model()->reorderOrdNr($idExhibition, $model_exhib_room->ord_nr);
-				array_push($exhib_rooms_models, $models_reordered);
+				$exhib_rooms_models = array_merge($exhib_rooms_models, $models_reordered);
 			}
 			
 			array_push($exhib_rooms_models, $model_exhib_room);
-// 			array_push($ex_ids, $id);
 		}
-
-// 		$model->exhibitions = $ex_ids;
 
 		$valid = false;
 		if ($valid=$model->validate())
@@ -134,9 +130,9 @@ class RoomsController extends Controller
 			
 		if ($valid) {
 			// TODO fazer algo para tratar esta condicao
-// 			$model->save(false);
-// 			foreach ($exhib_rooms_models as $ex_mod)
-// 				$ex_mod->save(false);
+			$model->save(false);
+			foreach ($exhib_rooms_models as $ex_mod)
+				$ex_mod->save(false);
 		}
 	}
 

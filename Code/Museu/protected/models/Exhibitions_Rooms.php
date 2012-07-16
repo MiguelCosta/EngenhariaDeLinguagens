@@ -99,9 +99,7 @@ class Exhibitions_Rooms extends CActiveRecord
 		$reordered_models = array();
 		foreach ($models as $m) {
 			$m->ord_nr++;
-// 			array_push($reordered_models, $m);
 		}
-//  		CVarDumper::dump($models,3,true);
 		return $models;
 	}
 }
