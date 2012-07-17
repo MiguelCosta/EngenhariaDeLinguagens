@@ -7,7 +7,20 @@
  */
 class NovaSalaForm extends CFormModel
 {
-	public $sala;
+	public $sala = "<sala>
+    <exposicao>Obras de Cerdeira</exposicao>
+    <nome>Peças de Cerdeira</nome>
+    <descricao>Peças e outras coisas do homem</descricao>
+    <objectos>
+        <objecto>
+            <tipo>PecasCriador</tipo>
+            <argumentos>
+                <argumento id=\"Criador\">Cerdeira</argumento>
+                <argumento id=\"NrItens\">5</argumento>
+            </argumentos>
+        </objecto>
+    </objectos>
+</sala>";
 	public $tipo_ordenacao = 0;
 	public $ord_nr;
 
@@ -19,7 +32,6 @@ class NovaSalaForm extends CFormModel
 		return array(
 			// sala is required
 			array('sala, tipo_ordenacao', 'required'),
-// 			array('sala', 'XSDValido'),
 			array('sala', 'conteudoValido'),
 			array('tipo_ordenacao', 'numerical'),
 			array('ord_nr', 'numerical', 'min'=>1, 'tooSmall'=>'O número mínimo é 1.')
@@ -75,20 +87,6 @@ class NovaSalaForm extends CFormModel
 				$this->addErrors( array($attribute=>"A sala '".$sala_xml->nome."' já existe na exposição '". $sala_xml->exposicao ."'!"));
 		}
 		else {
-			$this->addErrors( array($attribute=> $this->libxml_display_errors()));
-		}
-	}
-	
-	public function XSDValido($attribute,$params) {
-		// Enable user error handling
-		libxml_use_internal_errors(true);
-		
-		// carrega a especificacao da sala cujo formato é xml
-		$doc = new DOMDocument();       // DOM xml
-		$doc->loadXML($this->$attribute);
-		
-		// verifica se o documento xml é válido segundo o schema sala.xsd
-		if (!$doc->schemavalidate('protected/components/sala.xsd')) {
 			$this->addErrors( array($attribute=> $this->libxml_display_errors()));
 		}
 	}

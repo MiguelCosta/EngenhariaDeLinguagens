@@ -132,15 +132,15 @@ class SiteController extends Controller
 		if(isset($_POST['NovaSalaForm']))
 		{
 			$model->attributes=$_POST['NovaSalaForm'];
-			// TODO falta validar o conteudo, ou seja, ver se os tipos e os argumentos sao validos
+			// se a sala for valida segundo o schema e o conteudo (nao testa os argumentos)
 			if($model->validate()) {
-				//Converte o documento XML que contem os conceitos num objecto
+				//Converte o documento XML que contem os conceitos (templates) num objecto
 				$conceitos = simplexml_load_file("protected/components/conceitos.xml");
 					
-				//Converte o documento XML que contem os conceitos num objecto
+				//Converte a sala num objecto
 				$sala_xml = simplexml_load_string($model->sala);
 					
-				// Conteudo constante de uma sala
+				// Conteudo constante de uma sala php
 				$sala_php = "<?php 
 					\$NOME = '$sala_xml->nome';
 					\$this->pageTitle=Yii::app()->name . ' - Salas';
@@ -153,7 +153,7 @@ class SiteController extends Controller
 				<h1 align=\"center\">Sala <?php echo \$NOME?></h1>
 				<hr/>";
 					
-				// Percorre cada objeto (componente) da sala
+				// Anexa os templates php à sala php já com o conteúdo introduzido no formulário
 				foreach($sala_xml->xpath('//objecto') as $obj) {
 					// tipo do objecto
 					$tipo = $obj->tipo;
@@ -176,7 +176,7 @@ class SiteController extends Controller
 						// $template_php[0]: The string or array being searched and replaced on
 						$template_php[0] = str_replace($tag, $arg, $template_php[0]);
 					}
-					// se o argumento NrItens não for definido um valor por defeito é utilizado
+					// se o argumento NrItens não for definido, um valor por defeito é utilizado
 					if (!$nr_itens_encontrado)
 						$template_php[0] = str_replace("%NrItens%", 10, $template_php[0]);
 					
@@ -195,7 +195,6 @@ class SiteController extends Controller
 				$_SESSION['room_name'] = strval($sala_xml->nome);
 				$_SESSION['room_description'] = strval($sala_xml->descricao);
 				$_SESSION['room_file_name'] = $nome_ficheiro;
-// 				$_SESSION['exhibitions'] = $this->toArrayOfStrings($sala_xml->xpath('//exposicao'));
 				$_SESSION['exhibition'] = strval($sala_xml->exposicao);
 				// TODO falta image_path
 				$_SESSION['tipo_ordenacao'] = $model->tipo_ordenacao;
