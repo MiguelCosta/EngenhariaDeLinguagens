@@ -223,9 +223,9 @@ class SiteController extends Controller
 	/**
 	 * Sistema de navegação para uma sala
 	 * Cria link para sala anterior e posterior segundo o número de ordenação estabelecido para cada sala
-	 * @param unknown_type $sala_php
-	 * @param unknown_type $id_exhib
-	 * @param unknown_type $id_room
+	 * @param STRING $sala_php
+	 * @param Integer $id_exhib
+	 * @param Integer $id_room
 	 */
 	private function roomNavigationSystem($sala_php, $id_exhib, $id_room) {
 		$sala_php .= "\n<!-- Sistema de navegação -->

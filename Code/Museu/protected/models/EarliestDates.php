@@ -92,4 +92,5 @@ class EarliestDates extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	
 }

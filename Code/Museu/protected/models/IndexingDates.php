@@ -37,12 +37,12 @@ class IndexingDates extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Object_Work_Record, earliestDate, latestDate', 'required'),
-			array('earliestDate, latestDate, Object_Work_Record', 'numerical', 'integerOnly'=>true),
-			array('dateQualifier', 'length', 'max'=>255),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id_indexingDates, dateQualifier, earliestDate, latestDate, Object_Work_Record', 'safe', 'on'=>'search'),
+				array('Object_Work_Record, earliestDate, latestDate', 'required'),
+				array('earliestDate, latestDate, Object_Work_Record', 'numerical', 'integerOnly'=>true),
+				array('dateQualifier', 'length', 'max'=>255),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id_indexingDates, dateQualifier, earliestDate, latestDate, Object_Work_Record', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,9 +54,9 @@ class IndexingDates extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'object_Work_Record' => array(self::BELONGS_TO, 'ObjectWorkRecords', 'Object_Work_Record'),
-			'latestDate0' => array(self::BELONGS_TO, 'LatestDates', 'latestDate'),
-			'earliestDate0' => array(self::BELONGS_TO, 'EarliestDates', 'earliestDate'),
+				'object_Work_Record' => array(self::BELONGS_TO, 'ObjectWorkRecords', 'Object_Work_Record'),
+				'latestDate0' => array(self::BELONGS_TO, 'LatestDates', 'latestDate'),
+				'earliestDate0' => array(self::BELONGS_TO, 'EarliestDates', 'earliestDate'),
 		);
 	}
 
@@ -66,11 +66,11 @@ class IndexingDates extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_indexingDates' => 'Id Indexing Dates',
-			'dateQualifier' => 'Significado da data',
-			'earliestDate' => 'Data Inferior',
-			'latestDate' => 'Data Superior',
-			'Object_Work_Record' => 'Object Work Record',
+				'id_indexingDates' => 'Id Indexing Dates',
+				'dateQualifier' => 'Significado da data',
+				'earliestDate' => 'Data Inferior',
+				'latestDate' => 'Data Superior',
+				'Object_Work_Record' => 'Object Work Record',
 		);
 	}
 
@@ -96,7 +96,46 @@ class IndexingDates extends CActiveRecord
 		$criteria->compare('Object_Work_Record',$this->Object_Work_Record);
 
 		return new CActiveDataProvider('IndexingDates', array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
 	}
+
+
+	/**
+	 * Recebe como parametro uma data e vai devolver uma lista de peças
+	 * associadas a essa data
+	 *
+	 * @version 20120717_0123
+	 * @param string $Date
+	 * @return CArrayDataProvider para Object_Work_Record
+	 */
+	public static function getObjectWorkRecords_Dates($Date){
+		$datesEarliest = EarliestDates::model()->findByAttributes(array('earliestDate'=>$Date));
+		$datesLatest = LatestDates::model()->findByAttributes(array('latestDate'=>$Date));
+
+		$indexing1 = IndexingDates::model()->findAllByAttributes(array('earliestDate'=>$datesEarliest->id_earliestDate));
+		$indexing2 = IndexingDates::model()->findAllByAttributes(array('latestDate'=>$datesLatest->id_latestDate));
+
+		$pecas = array();
+		foreach ($indexing1 as $i){
+			if(!in_array($i->Object_Work_Record, $pecas)){
+				array_push($pecas, $i->Object_Work_Record);
+			}
+		}
+		
+		foreach ($indexing2 as $i){
+			if(!in_array($i->Object_Work_Record, $pecas)){
+				array_push($pecas, $i->Object_Work_Record);
+			}
+		}
+		
+		$pecasModels = array();
+		foreach ($pecas as $p){
+			array_push($pecasModels, Object_Work_Records::model()->findByPk($p));
+		}
+
+		return new CArrayDataProvider($pecasModels, array('keyField'=>'id_object_Work_Records'));
+	}
+
+
 }

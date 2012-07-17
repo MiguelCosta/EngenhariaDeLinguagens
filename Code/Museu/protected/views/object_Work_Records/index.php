@@ -10,6 +10,13 @@ $this->menu=array(
 );
 ?>
 
+<?php 
+//$var = IndexingDates::getObjectWorkRecords_Dates('1960');
+//echo CVarDumper::dump($var, 3, true);
+?>
+
+
+
 <h1>Peças do Museu</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
