@@ -13,13 +13,17 @@ $this->menu=array(
 );
 ?>
 
-<h1>View Inscriptions #<?php echo $model->id_inscriptions; ?></h1>
+<h1>Legenda</h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id_inscriptions',
-		'inscriptions',
-		'Object_Work_Record',
+		array(
+					'name'=>'inscriptions',
+					'type'=>'html',
+					'value'=>$model->inscriptions,
+			),
+		'Object_Work_Record',	
 	),
 )); ?>
