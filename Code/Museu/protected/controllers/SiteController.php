@@ -230,7 +230,7 @@ class SiteController extends Controller
 	 * @param Integer $id_room
 	 */
 	private function roomNavigationSystem($sala_php, $id_exhib, $id_room) {
-		$sala_php .= "\n<!-- Sistema de navegação -->
+		$sala_php .= "\n<!-- Sistema de navegação --><br/><br/><hr/>
 		<?php
 			\$prev_room = Rooms::model()->findAllBySql('SELECT R.*
 					FROM Rooms R
@@ -257,26 +257,41 @@ class SiteController extends Controller
 				\$subject = \$prev_room[0]->path;
 				\$pattern = '@(?:[^/]+/)(\w+)(\.php)$@'; // extrai apenas o nome do ficheiro da sala
 				preg_match(\$pattern, \$subject, \$matches);
-				if (isset(\$matches[1]))
+				if (isset(\$matches[1])){
+					\$link = Yii::app()->baseUrl . '/index.php/site/sala?view=' . \$matches[1];
+					?>
+					<div class=\"salaPrevious\" onclick=\"location.href='<? echo \$link;?>';\" style=\"cursor: pointer;\">
+					<?php
 					// Estabelece o link entre o nome da sala e a localizacao da sala
-					echo CHtml::link(CHtml::encode(\"Anterior - \".\$prev_room[0]->name), array('/site/sala', 'view'=>\$matches[1]));
+					echo CHtml::encode(\"Anterior - \".\$prev_room[0]->name);
+					?>
+					</div>
+					<?php
+				}
 				else echo CHtml::encode(\$prev_room[0]->name);
 			}
 		?>
-		<br/>
 		<?php
 			 if (!empty(\$next_room)) {
 			 	\$matches = array();
 			 	\$subject = \$next_room[0]->path;
 			 	\$pattern = '@(?:[^/]+/)(\w+)(\.php)$@'; // extrai apenas o nome do ficheiro da sala
 			 	preg_match(\$pattern, \$subject, \$matches);
-			 	if (isset(\$matches[1]))
+			 	if (isset(\$matches[1])){
+			 		\$link = Yii::app()->baseUrl . '/index.php/site/sala?view=' . \$matches[1];
+			 		?>
+			 		<div class=\"salaNext\" onclick=\"location.href='<? echo \$link;?>';\" style=\"cursor: pointer;\">
+			 		<?php
 			 		// Estabelece o link entre o nome da sala e a localizacao da sala
-			 		echo CHtml::link(CHtml::encode(\"Seguinte - \".\$next_room[0]->name), array('/site/sala', 'view'=>\$matches[1]));
+			 		echo CHtml::encode(\"Seguinte - \".\$next_room[0]->name);
+			 		?>
+					</div>
+					<?php
+				}
 			 	else echo CHtml::encode(\$next_room[0]->name);
 			 }
 		?>";
-		
+
 		return $sala_php;
 	}
 	

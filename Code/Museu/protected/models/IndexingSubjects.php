@@ -36,13 +36,13 @@ class IndexingSubjects extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('Object_Work_Record', 'required'),
-			array('Object_Work_Record', 'numerical', 'integerOnly'=>true),
-			array('type', 'length', 'max'=>15),
-			array('extentSubject', 'length', 'max'=>31),
-			// The following rule is used by search().
-			// Please remove those attributes that should not be searched.
-			array('id_indexingSubjects, type, extentSubject, Object_Work_Record', 'safe', 'on'=>'search'),
+				array('Object_Work_Record', 'required'),
+				array('Object_Work_Record', 'numerical', 'integerOnly'=>true),
+				array('type', 'length', 'max'=>15),
+				array('extentSubject', 'length', 'max'=>31),
+				// The following rule is used by search().
+				// Please remove those attributes that should not be searched.
+				array('id_indexingSubjects, type, extentSubject, Object_Work_Record', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,8 +54,8 @@ class IndexingSubjects extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'object_Work_Record' => array(self::BELONGS_TO, 'ObjectWorkRecords', 'Object_Work_Record'),
-			'subjectTerms' => array(self::MANY_MANY, 'SubjectTerms', 'IndexingSubjects_SubjectTerms(IndexingSubject, SubjectTerm)'),
+				'object_Work_Record' => array(self::BELONGS_TO, 'ObjectWorkRecords', 'Object_Work_Record'),
+				'subjectTerms' => array(self::MANY_MANY, 'SubjectTerms', 'IndexingSubjects_SubjectTerms(IndexingSubject, SubjectTerm)'),
 		);
 	}
 
@@ -65,10 +65,10 @@ class IndexingSubjects extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_indexingSubjects' => 'Id Indexing Subjects',
-			'type' => 'Tipo',
-			'extentSubject' => 'Âmbito do Assunto',
-			'Object_Work_Record' => 'Object Work Record',
+				'id_indexingSubjects' => 'Id Indexing Subjects',
+				'type' => 'Tipo',
+				'extentSubject' => 'Âmbito do Assunto',
+				'Object_Work_Record' => 'Object Work Record',
 		);
 	}
 
@@ -92,7 +92,32 @@ class IndexingSubjects extends CActiveRecord
 		$criteria->compare('Object_Work_Record',$this->Object_Work_Record);
 
 		return new CActiveDataProvider('IndexingSubjects', array(
-			'criteria'=>$criteria,
+				'criteria'=>$criteria,
 		));
+	}
+
+
+
+
+	/**
+	 * A partir de uma tag vai devolver a lista de peças que lhe
+	 * estão associadas.
+	 *
+	 * @version 20120717_0455
+	 * @param strig $tag
+	 * @return CArrayDataProvider para Object_Work_Record
+	 */
+	public static function getObjectWorkRecords_Subject($subject){
+		$tags = SubjectTerms::model()->findByAttributes(array('subjectTerm'=>$subject));
+			
+		if($tags != null){
+			$tags_indexing = IndexingSubjects_SubjectTerms::model()->findByAttributes(array('SubjectTerm'=>$tags->id_subjectTerms));
+			if($tags_indexing != null){
+				$indexing = IndexingSubjects_SubjectTerms::model()->findByPk($tags_indexing->IndexingSubject);
+				return new CArrayDataProvider($indexing->object_Work_Record, array('keyField'=>'id_object_Work_Records'));
+			}
+		}
+			
+		return null;
 	}
 }

@@ -277,3 +277,21 @@ div.viewEffects:HOVER{
 	background-color: beige;
 	/*border: 2px solid;*/
 }
+
+div.salaNext{
+	float: right;
+	background-image:  url("forward.png");
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	font-weight: bold;
+	height: 75px;
+}
+
+div.salaPrevious{
+	float: left;
+	background-image:  url("back.png");
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	font-weight: bold;
+	height: 75px;
+}
