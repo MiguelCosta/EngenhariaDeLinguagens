@@ -76,74 +76,74 @@ class RoomsController extends Controller
 			->select('max(id_room) as max')
 			->from('Rooms')
 			->queryScalar();
+		// incrementa o id, ou seja, é o identificador da nova sala a ser gerada
 		$idRoom++;
 		
-		// obtem os id das exibicoes as quais esta sala pertence
-		// apesar de estar assim representado, uma sala não pertence a mais que uma exibição
-		foreach ($_SESSION['exhibitions'] as $ex_name){
-			$idExhibition = Yii::app()->db->createCommand()
-				->select('id_exhibition')
-				->from('Exhibitions')
-				->where('name=:name', array(':name'=>$ex_name))
-				->queryScalar();
+		// obtem o id da exposicao cujo nome é passado por variavel de sessao
+		$idExhibition = Yii::app()->db->createCommand()
+			->select('id_exhibition')
+			->from('Exhibitions')
+			->where('name=:name', array(':name'=>$_SESSION['exhibition']))
+			->queryScalar();
 
-			// path no directorio onde a sala será armazenada
-			// atualiza o nome do ficheiro da sala para conter o id da exposicao a que pertence no nome
-			$model->path = Yii::app()->basePath."/views/site/pages/"."exp_".$idExhibition."_".$_SESSION['room_file_name'].".php";
+		// path no directorio onde a sala será armazenada
+		// atualiza o nome do ficheiro da sala para conter o id da exposicao a que pertence no nome
+		$model->path = Yii::app()->basePath."/views/site/pages/"."exp_".$idExhibition."_".$_SESSION['room_file_name'].".php";
+		
+		/*
+		 * Novo registo na tabela de conexão
+		 */
+		$model_exhib_room = new Exhibitions_Rooms;
+		$model_exhib_room->Exhibitionsid_exhibition = $idExhibition;
+		$model_exhib_room->Roomsid_room = $idRoom;
+		
+		// obtem o maior número de ordenacao de uma exibicao
+		$last_ord_nr = Yii::app()->db->createCommand()
+			->select('max(ord_nr) as max')
+			->from('Exhibitions_Rooms')
+			->where('Exhibitionsid_exhibition=:ex_id', array(':ex_id'=>$idExhibition))
+			->queryScalar();
 			
-			$model_exhib_room = new Exhibitions_Rooms;
-			$model_exhib_room->Exhibitionsid_exhibition = $idExhibition;
-			$model_exhib_room->Roomsid_room = $idRoom;
-			
-			// vai buscar o maior número de ordenacao de uma exibicao
-			$last_ord_nr = Yii::app()->db->createCommand()
-				->select('max(ord_nr) as max')
-				->from('Exhibitions_Rooms')
-				->where('Exhibitionsid_exhibition=:ex_id', array(':ex_id'=>$idExhibition))
-				->queryScalar();
-			/* se a ordenação for por defeito ou se for definida pelo utilizador mas o número de ordenação estiver vazio,
-			 * o número de ordenacao da nova sala é um número consequente ao último
-			 */
-			if ($_SESSION['tipo_ordenacao']==0 || ($_SESSION['tipo_ordenacao']==1 && $_SESSION['ord_nr']=="")) {
-				$model_exhib_room->ord_def_by_user = 0;
-				$model_exhib_room->ord_nr = $last_ord_nr + 1;
-			}
-			else {
-				$model_exhib_room->ord_def_by_user = 1;
-				
-				// se o número definido pelo utilizador for um número maior que o número de salas existentes
-				// na exposicao + 1 (nova sala) entao o novo número passa a ser o número consequente ao da última sala
-				if ($_SESSION['ord_nr'] > $last_ord_nr+1)					
-					$model_exhib_room->ord_nr = $last_ord_nr+1;
-				else
-					$model_exhib_room->ord_nr = intval($_SESSION['ord_nr']);
-
-					// reordena as salas de acordo com o número de ordenação definido pelo utilizador
-					$models_reordered = Exhibitions_Rooms::model()->reorderOrdNr($idExhibition, $model_exhib_room->ord_nr);
-					// junta salas atualizadas com a(s) nova(s)
-					$exhib_rooms_models = array_merge($exhib_rooms_models, $models_reordered);
-			}
-			
-			array_push($exhib_rooms_models, $model_exhib_room);
+		/* se a ordenação for por defeito ou se for definida pelo utilizador mas o número de ordenação estiver vazio,
+		 * o número de ordenacao da nova sala é um número consequente ao último
+		 */
+		if ($_SESSION['tipo_ordenacao']==0 || ($_SESSION['tipo_ordenacao']==1 && $_SESSION['ord_nr']=="")) {
+			$model_exhib_room->ord_def_by_user = 0;
+			$model_exhib_room->ord_nr = $last_ord_nr + 1;
 		}
+		else {
+			$model_exhib_room->ord_def_by_user = 1;
+			
+			/* se o número definido pelo utilizador ($_SESSION['ord_nr']) não se encontrar no âmbito de números existentes nessa exposicao 
+			 * incluindo o que será gerado (+1) entao este passa a ser o número consequente ao da última sala,
+			 * senao assume o número definido pelo utilizador e uma reordenação das restantes salas é iniciada
+			 */
+			if ($_SESSION['ord_nr'] > $last_ord_nr+1)					
+				$model_exhib_room->ord_nr = $last_ord_nr+1;
+			else
+				$model_exhib_room->ord_nr = intval($_SESSION['ord_nr']);
+
+				// reordena as salas de acordo com o número de ordenação definido pelo utilizador e adiciona-as às salas a guardar/atualizar
+				$exhib_rooms_models = Exhibitions_Rooms::model()->reorderOrdNr($idExhibition, $model_exhib_room->ord_nr);
+		}
+		// adiciona o modelo correspondente ao novo registo da tabela de conexão
+		array_push($exhib_rooms_models, $model_exhib_room);
 
 		// valida os modelos
 		$valid = false;
 		if ($valid=$model->validate())
-			// apesar de estar assim representado, uma sala não pertence a mais que uma exibição
 			foreach ($exhib_rooms_models as $ex_mod)
 				$valid=$ex_mod->validate() && $valid;
 			
-		// guarda se todos os modelos forem validos
+		// guarda na BD se todos os modelos forem validos
 		if ($valid) {
 			$model->save(false);
 			
-			$_SESSION['room_path'] = $model->path;
-			
-			// apesar de estar assim representado, uma sala não pertence a mais que uma exibição
 			foreach ($exhib_rooms_models as $ex_mod)
 				$ex_mod->save(false);
 			
+			// para serem utilizados no metodo create do SiteController
+			$_SESSION['room_path'] = $model->path;
 			$_SESSION['id_nova_sala'] = $model->id_room;
 			$_SESSION['id_exhib'] = $idExhibition;
 		}

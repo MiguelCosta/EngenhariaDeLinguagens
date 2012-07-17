@@ -4,19 +4,10 @@
 	<xs:element name="sala">
 		<xs:complexType>
 			<xs:sequence>
-				<xs:element name="exposicoes">
+				<xs:element name="exposicao" type="xs:string">
 					<xs:annotation>
-						<xs:documentation>Exposições das quais a sala faz parte</xs:documentation>
+						<xs:documentation>Nome único da exposicao</xs:documentation>
 					</xs:annotation>
-					<xs:complexType>
-						<xs:sequence>
-							<xs:element maxOccurs="unbounded" name="exposicao" type="xs:string">
-								<xs:annotation>
-									<xs:documentation>Nome único da exposicao</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-						</xs:sequence>
-					</xs:complexType>
 				</xs:element>
 				<xs:element name="nome" type="xs:string">
 					<xs:annotation>
@@ -64,7 +55,7 @@
 												<xs:simpleType>
 												<xs:restriction base="xs:string">
 												<xs:enumeration value="Criador"/>
-												<xs:enumeration value="NrItems"/>
+												<xs:enumeration value="NrItens"/>
 												</xs:restriction>
 												</xs:simpleType>
 												</xs:attribute>

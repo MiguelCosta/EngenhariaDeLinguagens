@@ -38,7 +38,23 @@ $this->breadcrumbs=array(
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'sala'); ?>
-		<?php echo $form->textArea($model,'sala'); ?>
+		<?php
+			$model->sala = "<sala>
+    <exposicao>Obras de Cerdeira</exposicao>
+    <nome>Peças de Cerdeira</nome>
+    <descricao>Peças e outras coisas do homem</descricao>
+    <objectos>
+        <objecto>
+            <tipo>PecasCriador</tipo>
+            <argumentos>
+                <argumento id=\"Criador\">Cerdeira</argumento>
+                <argumento id=\"NrItens\">5</argumento>
+            </argumentos>
+        </objecto>
+    </objectos>
+</sala>";
+			echo $form->textArea($model,'sala', array('size'=>300,'maxlength'=>2000, 'cols'=>80, 'rows'=>20	)); 
+		?>
 		<?php echo $form->error($model,'sala'); ?>
 	</div>
 	

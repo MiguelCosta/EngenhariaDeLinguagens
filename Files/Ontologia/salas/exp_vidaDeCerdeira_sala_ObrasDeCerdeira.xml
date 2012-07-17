@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sala>
-    <exposicoes>
-        <exposicao>Obras de Cerdeira</exposicao>
-    </exposicoes>
+    <exposicao>Obras de Cerdeira</exposicao>
     <nome>Peças de Cerdeira</nome>
     <descricao>Peças e outras coisas do homem</descricao>
     <objectos>
@@ -10,6 +8,7 @@
             <tipo>PecasCriador</tipo>
             <argumentos>
                 <argumento id="Criador">Cerdeira</argumento>
+                <argumento id="NrItens">5</argumento>
             </argumentos>
         </objecto>
     </objectos>

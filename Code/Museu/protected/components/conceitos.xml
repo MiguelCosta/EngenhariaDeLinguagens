@@ -3,8 +3,11 @@
     <conceito>
         <key>PecasCriador</key>
         <value>&lt;?php 
+            $dataProvider = IndexingCreators::getObjectWorkRecords_NameCreator('%Criador%');
+            $dataProvider->pagination->pageSize=%NrItens%;
+            
             $this->widget('zii.widgets.CListView', array(
-            'dataProvider'=>IndexingCreators::getObjectWorkRecords_NameCreator('%Criador%', 10),
+            'dataProvider'=>$dataProvider,
             'template'=>'{sorter}{summary}{pager}{items}{pager}{summary}',
             'pager'=>array(
             'maxButtonCount'=>'10',
