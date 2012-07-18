@@ -8,7 +8,7 @@
 		<?php echo CHtml::link(CHtml::encode($data->name), array('exhibitions/view', 'id'=>$data->id_exhibition)); ?>
 		<br/> 
 		<b><?php echo CHtml::encode($data->getAttributeLabel('description')); ?>:</b>
-		<?php echo CHtml::encode($data->description); ?>
+		<?php echo $data->description; ?>
 		<br/>
 	</div>
 </div>
