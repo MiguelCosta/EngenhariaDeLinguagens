@@ -623,6 +623,7 @@ CREATE TABLE Exhibitions (
 	  id_exhibition int(10) NOT NULL AUTO_INCREMENT, 
 	  name          varchar(63) NOT NULL, 
 	  description   varchar(255), 
+	  image_path    varchar(2002), 
 	  PRIMARY KEY (id_exhibition)) ENGINE=InnoDB;
 CREATE TABLE Rooms (
 	  id_room     int(10) NOT NULL AUTO_INCREMENT, 

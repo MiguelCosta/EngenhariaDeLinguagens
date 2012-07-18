@@ -18,7 +18,30 @@ $this->menu=array(
 	Exposição:
 	<?php echo $model->name; ?>
 </h1>
-<br />
+<?php 
+	// caminho para a imagem desta exibição
+	$image_path = "/../myFiles/Imagens/exhibitions/$model->image_path";
+
+	// se a imagem existir exibe-a
+	if(!empty($model->image_path) && file_exists(Yii::app()->basePath.$image_path)){
+		
+		// Gera uma image tag
+		$img = CHtml::image("..".$image_path, $model->name, array('class'=>'image', 'width'=>200, 'title'=>$model->name));
+		// Exibe a imagem num CDetailView
+		$this->widget('zii.widgets.CDetailView', array(
+			'data' => $model,
+			'attributes' => array(
+				array(
+					'name'=>'image_path',
+					'type'=>'html',
+					'value'=>CHtml::link($img, "..".$image_path),
+				),
+	
+			),
+		));
+	} 
+?>
+<br/>
 <h3><?php echo "Descrição:"; ?></h3>
 &nbsp;&nbsp;&nbsp;<?php echo $model->description ?>
 

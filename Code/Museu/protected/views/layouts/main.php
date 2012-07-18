@@ -89,9 +89,10 @@
 									),
 
 							)),
-							array('label'=>'Exposições', 'items'=>array(
-									array('label'=>'Exposições','url'=>array('/Exhibitions/index')),
-									array('label'=>'Nova Sala','url'=>array('/site/novaSala'))
+							array('label'=>'Exposições','url'=>array('/Exhibitions/index'), 'items'=>array(
+									array('label'=>'Visualizar Exposições','url'=>array('/Exhibitions/index')),
+									array('label'=>'Criar Exposição','url'=>array('/Exhibitions/create')),
+									array('label'=>'Criar Sala','url'=>array('/site/novaSala'))
 							)),
 							array('label'=>'|'),
 							array('label'=>'Acerca', 'url'=>array('/site/page', 'view'=>'about')),

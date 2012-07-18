@@ -16,4 +16,52 @@
             ));
             ?&gt;</value>
     </conceito>
+    <conceito>
+        <key>PecasLocal</key>
+        <value>&lt;?php 
+            $dataProvider = LocationsName::getObjectWorkRecords_LocationsName('%Local%');
+            $dataProvider->pagination->pageSize=%NrItens%;
+            
+            $this->widget('zii.widgets.CListView', array(
+            'dataProvider'=>$dataProvider,
+            'template'=>'{sorter}{summary}{pager}{items}{pager}{summary}',
+            'pager'=>array(
+            'maxButtonCount'=>'10',
+            ),
+            'itemView'=>'/object_Work_Records/_view',
+            ));
+            ?&gt;</value>
+    </conceito>
+    <conceito>
+        <key>PecasData</key>
+        <value>&lt;?php 
+            $dataProvider = IndexingDates::getObjectWorkRecords_Dates('%Data%');
+            $dataProvider->pagination->pageSize=%NrItens%;
+            
+            $this->widget('zii.widgets.CListView', array(
+            'dataProvider'=>$dataProvider,
+            'template'=>'{sorter}{summary}{pager}{items}{pager}{summary}',
+            'pager'=>array(
+            'maxButtonCount'=>'10',
+            ),
+            'itemView'=>'/object_Work_Records/_view',
+            ));
+            ?&gt;</value>
+    </conceito>
+    <conceito>
+        <key>PecasTag</key>
+        <value>&lt;?php 
+            $dataProvider = IndexingSubjects::getObjectWorkRecords_Subject('%Tag%');
+            $dataProvider->pagination->pageSize=%NrItens%;
+            
+            $this->widget('zii.widgets.CListView', array(
+            'dataProvider'=>$dataProvider,
+            'template'=>'{sorter}{summary}{pager}{items}{pager}{summary}',
+            'pager'=>array(
+            'maxButtonCount'=>'10',
+            ),
+            'itemView'=>'/object_Work_Records/_view',
+            ));
+            ?&gt;</value>
+    </conceito>
 </conceitos>

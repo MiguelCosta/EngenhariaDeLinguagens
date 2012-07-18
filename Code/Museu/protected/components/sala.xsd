@@ -35,6 +35,9 @@
 											<xs:simpleType>
 												<xs:restriction base="xs:string">
 												<xs:enumeration value="PecasCriador"/>
+												<xs:enumeration value="PecasLocal"/>
+												<xs:enumeration value="PecasData"/>
+												<xs:enumeration value="PecasTag"/>
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
@@ -55,6 +58,9 @@
 												<xs:simpleType>
 												<xs:restriction base="xs:string">
 												<xs:enumeration value="Criador"/>
+												<xs:enumeration value="Local"/>
+												<xs:enumeration value="Data"/>
+												<xs:enumeration value="Tag"/>
 												<xs:enumeration value="NrItens"/>
 												</xs:restriction>
 												</xs:simpleType>
