@@ -1,3 +1,11 @@
+<?php 
+//$var = Object_Work_Records::getObjectWorkRecords_NameCreator_TAG('Gérald Bloncourt', 'fotografia');
+//CVarDumper::dump($var, 3, true);
+
+
+?>
+
+
 <?php
 $this->breadcrumbs = array(
 		'Peças' => array('index'),

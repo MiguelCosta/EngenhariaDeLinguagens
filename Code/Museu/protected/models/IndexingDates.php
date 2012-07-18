@@ -136,6 +136,6 @@ class IndexingDates extends CActiveRecord
 
 		return new CArrayDataProvider($pecasModels, array('keyField'=>'id_object_Work_Records'));
 	}
-
+	
 
 }

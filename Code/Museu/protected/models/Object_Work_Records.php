@@ -413,7 +413,7 @@ class Object_Work_Records extends CActiveRecord
 		$i = $this->indexingCreators;
 		return $i;
 	}
-	
+
 	public function getSubjectTerms_view(){
 		$result = array();
 		foreach ($this->indexingSubjects as $indexingSubjects){
@@ -423,9 +423,71 @@ class Object_Work_Records extends CActiveRecord
 		$resultStr .= implode("<br/>", $result);
 		return $resultStr;
 	}
-	
-	
-	
-	
+
+
+
+	/**
+	 * Funções essencialmente para as salas
+	 */
+
+	/**
+	 * Verifica se está tagada com uma determinada tag
+	 *
+	 * @version 20120718_0428
+	 * @param String $tag
+	 * @return bool Se tem ou não a tag
+	 */
+	public function containsTag($tag){
+		//começa pelo model que tem a tag
+		$tags = SubjectTerms::model()->findByAttributes(array('subjectTerm'=>$tag));
+
+		// se aquela tag estiver na base de dados
+		if($tags != null){
+			// vai buscar os registos da tabela que resulta de muitos para muitos
+			$tags_indexing = IndexingSubjects_SubjectTerms::model()->findAllByAttributes(array('SubjectTerm'=>$tags->id_subjectTerms));
+
+			// vai buscar os registos da tabela IndexingSubjects para ter acesso aos objectos
+			if($tags_indexing != null){
+
+				foreach ($tags_indexing as $indexing_subjects){
+					$tmp = IndexingSubjects::model()->findByPk($indexing_subjects->IndexingSubject);
+					if ($tmp->Object_Work_Record == $this->id_object_Work_Records) return true;
+				}
+			}
+		}
+
+		return false;
+	}
+
+	/**
+	 * A partir de uma tag e de um criador vai devolver a lista de peças que lhe
+	 * estão associadas.
+	 *
+	 * @version 20120718_0428
+	 * @param String $name
+	 * @param String $tag
+	 * @return CArrayDataProvider para Object_Work_Record
+	 */
+	public static function getObjectWorkRecords_NameCreator_TAG($name, $tag){
+		$names =  NamesCreator::model()->findByAttributes(array('nameCreator'=>$name));
+		$names_indexing = NamesCreator_IndexingCreators::model()->findByAttributes(array('NameCreator'=>$names->id_namesCreator));
+		$indexing = IndexingCreators::model()->findByPk($names_indexing->IndexingCreator);
+
+		$objects = array();
+
+		foreach ($indexing->object_Work_Records as $obj){
+			if ($obj->containsTag($tag)){
+				array_push($objects, $obj);
+			}
+		}
+
+		return new CArrayDataProvider($objects, array('keyField'=>'id_object_Work_Records'));
+	}
+
+
+
+
+
+
 
 }

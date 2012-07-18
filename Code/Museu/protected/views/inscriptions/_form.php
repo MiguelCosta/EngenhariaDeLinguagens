@@ -15,7 +15,7 @@
 		-->
 		<?php $this->widget('application.extensions.eckeditor.ECKEditor', array(
                 'model'=>$model,
-                'attribute'=>'inscriptions',
+                'attribute'=>'inscriptions',				
                 )); ?>
 		
 		

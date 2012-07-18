@@ -423,6 +423,14 @@ INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `Subject
 INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('52', '5');
 
 
+INSERT INTO `museu`.`IndexingSubjects` (`id_indexingSubjects`, `Object_Work_Record`) VALUES ('53', '53');
+INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('53', '1');
+INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('53', '2');
+INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('53', '3');
+INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('53', '4');
+INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('53', '5');
+
+
 INSERT INTO `museu`.`IndexingSubjects` (`id_indexingSubjects`, `Object_Work_Record`) VALUES ('54', '54');
 INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('54', '5');
 INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('54', '6');
@@ -5076,5 +5084,10 @@ INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `Subject
 INSERT INTO `museu`.`IndexingSubjects` (`id_indexingSubjects`, `Object_Work_Record`) VALUES ('984', '984');
 INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('984', '5');
 INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('984', '6');
+
+
+INSERT INTO `museu`.`IndexingSubjects` (`id_indexingSubjects`, `Object_Work_Record`) VALUES ('985', '985');
+INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('985', '5');
+INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('985', '6');
 
 

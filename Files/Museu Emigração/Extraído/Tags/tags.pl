@@ -14,7 +14,7 @@ print "INSERT INTO `museu`.`SubjectTerms` (`id_subjectTerms`, `subjectTerm`) VAL
 my $p = 1;
 my $i = 1;
 
-while($p < 53){
+while($p < 54){
 	print "INSERT INTO `museu`.`IndexingSubjects` (`id_indexingSubjects`, `Object_Work_Record`) VALUES ('$i', '$p');\n";
 	print "INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('$i', '1');\n";
 	print "INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('$i', '2');\n";
@@ -28,7 +28,7 @@ while($p < 53){
 
 $p = 54;
 $i = 54;
-while($p < 985){
+while($p < 986){
 	print "INSERT INTO `museu`.`IndexingSubjects` (`id_indexingSubjects`, `Object_Work_Record`) VALUES ('$i', '$p');\n";
 	print "INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('$i', '5');\n";
 	print "INSERT INTO `museu`.`IndexingSubjects_SubjectTerms` (`IndexingSubject`, `SubjectTerm`) VALUES ('$i', '6');\n\n\n";

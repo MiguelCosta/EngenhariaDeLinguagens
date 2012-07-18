@@ -127,7 +127,7 @@ class IndexingSubjects extends CActiveRecord
 			}
 		}
 			
-		return null;
+		return new CArrayDataProvider(array(), array('keyField'=>'id_object_Work_Records'));
 	}
 	
 	/**
