@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Subject Terms'=>array('index'),
-	'Create',
+	'Tags'=>array('index'),
+	'Criar',
 );
 
 $this->menu=array(
-	array('label'=>'List SubjectTerms', 'url'=>array('index')),
-	array('label'=>'Manage SubjectTerms', 'url'=>array('admin')),
+	array('label'=>'Índice', 'url'=>array('index')),
+	array('label'=>'Actualizar', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create SubjectTerms</h1>
+<h1>Criar Tag</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

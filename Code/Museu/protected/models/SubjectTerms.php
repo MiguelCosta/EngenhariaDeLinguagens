@@ -64,8 +64,8 @@ class SubjectTerms extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'id_subjectTerms' => 'Id Subject Terms',
-			'subjectTerm' => 'Assunto (Termo)',
+			'id_subjectTerms' => 'ID',
+			'subjectTerm' => 'Tag',
 			'type' => 'Tipo',
 			'termsource' => 'Termsource',
 			'termsourceID' => 'Termsource',
@@ -104,5 +104,6 @@ class SubjectTerms extends CActiveRecord
 	public function behaviors(){
 		return array( 'CAdvancedArBehavior' => array(
 				'class' => 'application.extensions.CAdvancedArBehavior'));
-	}
+	}	
+	
 }

@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Subject Terms',
+	'Tags',
 );
 
 $this->menu=array(
-	array('label'=>'Create SubjectTerms', 'url'=>array('create')),
-	array('label'=>'Manage SubjectTerms', 'url'=>array('admin')),
+	array('label'=>'Criar', 'url'=>array('create')),
+	array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Subject Terms</h1>
+<h1>Tags</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

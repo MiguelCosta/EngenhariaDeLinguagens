@@ -1,19 +1,19 @@
 <?php
 $this->breadcrumbs=array(
-	'Subject Terms'=>array('index'),
-	$model->id_subjectTerms,
+	'Tags'=>array('index'),
+	$model->subjectTerm,
 );
 
 $this->menu=array(
-	array('label'=>'List SubjectTerms', 'url'=>array('index')),
-	array('label'=>'Create SubjectTerms', 'url'=>array('create')),
-	array('label'=>'Update SubjectTerms', 'url'=>array('update', 'id'=>$model->id_subjectTerms)),
-	array('label'=>'Delete SubjectTerms', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_subjectTerms),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage SubjectTerms', 'url'=>array('admin')),
+	array('label'=>'Índice', 'url'=>array('index')),
+	array('label'=>'Criar', 'url'=>array('create')),
+	array('label'=>'Actualizar', 'url'=>array('update', 'id'=>$model->id_subjectTerms)),
+	array('label'=>'Eliminar', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_subjectTerms),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>View SubjectTerms #<?php echo $model->id_subjectTerms; ?></h1>
+<h1>Tag: <?php echo $model->subjectTerm; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -25,3 +25,18 @@ $this->menu=array(
 		'termsourceID',
 	),
 )); ?>
+
+
+<?php 
+
+echo "<br/><br/>";
+echo "<h2>Peças Associadas:</h2>";
+
+$dataProvider = IndexingSubjects::getObjectWorkRecords_Subject($model->subjectTerm);
+$dataProvider->pagination->pageSize=5;
+
+$this->widget('zii.widgets.CListView', array(
+		'dataProvider'=>$dataProvider,
+		'itemView'=>'/object_Work_Records/_view',
+));
+?>

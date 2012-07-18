@@ -1,18 +1,21 @@
 <?php
 $this->breadcrumbs=array(
-	'Subject Terms'=>array('index'),
-	$model->id_subjectTerms=>array('view','id'=>$model->id_subjectTerms),
-	'Update',
+		'Subject Terms'=>array('index'),
+		$model->subjectTerm=>array('view','id'=>$model->id_subjectTerms),
+		'Actualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List SubjectTerms', 'url'=>array('index')),
-	array('label'=>'Create SubjectTerms', 'url'=>array('create')),
-	array('label'=>'View SubjectTerms', 'url'=>array('view', 'id'=>$model->id_subjectTerms)),
-	array('label'=>'Manage SubjectTerms', 'url'=>array('admin')),
+		array('label'=>'Ver', 'url'=>array('view', 'id'=>$model->id_subjectTerms)),
+		array('label'=>'Índice', 'url'=>array('index')),
+		array('label'=>'Criar', 'url'=>array('create')),
+		array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update SubjectTerms <?php echo $model->id_subjectTerms; ?></h1>
+<h1>
+	Actualizar tag: 
+	<?php echo $model->subjectTerm; ?>
+</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

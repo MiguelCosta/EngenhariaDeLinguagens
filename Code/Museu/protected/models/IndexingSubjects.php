@@ -97,27 +97,57 @@ class IndexingSubjects extends CActiveRecord
 	}
 
 
-
-
 	/**
 	 * A partir de uma tag vai devolver a lista de peças que lhe
 	 * estão associadas.
 	 *
-	 * @version 20120717_0455
-	 * @param strig $tag
+	 * @version 20120718_0340
+	 * @param string $tag
 	 * @return CArrayDataProvider para Object_Work_Record
 	 */
 	public static function getObjectWorkRecords_Subject($subject){
+		//começa pelo model que tem a tag
 		$tags = SubjectTerms::model()->findByAttributes(array('subjectTerm'=>$subject));
-			
+		
+		// se aquela tag estiver na base de dados
 		if($tags != null){
-			$tags_indexing = IndexingSubjects_SubjectTerms::model()->findByAttributes(array('SubjectTerm'=>$tags->id_subjectTerms));
+			// vai buscar os registos da tabela que resulta de muitos para muitos
+			$tags_indexing = IndexingSubjects_SubjectTerms::model()->findAllByAttributes(array('SubjectTerm'=>$tags->id_subjectTerms));
+			
+			// vai buscar os registos da tabela IndexingSubjects para ter acesso aos objectos
 			if($tags_indexing != null){
-				$indexing = IndexingSubjects_SubjectTerms::model()->findByPk($tags_indexing->IndexingSubject);
-				return new CArrayDataProvider($indexing->object_Work_Record, array('keyField'=>'id_object_Work_Records'));
+				$objects = array();
+				
+				foreach ($tags_indexing as $indexing_subjects){
+					$tmp = IndexingSubjects::model()->findByPk($indexing_subjects->IndexingSubject);
+					$object = Object_Work_Records::model()->findByPk($tmp->Object_Work_Record);
+					array_push($objects, $object);
+				}
+				return new CArrayDataProvider($objects, array('keyField'=>'id_object_Work_Records'));
 			}
 		}
 			
 		return null;
 	}
+	
+	/**
+	 * Devolve as tags que estão associadas
+	 * 
+	 * @version 20120718_0340
+	 * @return String com as tags (links) separadas por ,
+	 */
+	public function getSubjectTerms(){
+		$result = array();
+		
+		foreach ($this->subjectTerms as $subjectTerms){
+			$tmp = CHtml::link($subjectTerms->subjectTerm, array('/SubjectTerms/'.$subjectTerms->id_subjectTerms));
+			array_push($result, $tmp);
+		}
+		
+		$resultStr = '';
+		$resultStr .= implode(", ", $result);
+		
+		return $resultStr;
+	}
+	
 }

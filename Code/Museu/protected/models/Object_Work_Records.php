@@ -104,6 +104,7 @@ class Object_Work_Records extends CActiveRecord
 				'indexingCreators' => 'Criadores',
 				'object_Work_Types' => 'Tipo de Peça',
 				'classifications' => 'Classificações',
+				'indexingSubjects' => 'Tags',
 		);
 	}
 
@@ -392,7 +393,6 @@ class Object_Work_Records extends CActiveRecord
 		return $result;
 	}
 
-
 	public function getClassifications(){
 		$result = array();
 		foreach ($this->classifications as $classifications){
@@ -413,5 +413,19 @@ class Object_Work_Records extends CActiveRecord
 		$i = $this->indexingCreators;
 		return $i;
 	}
+	
+	public function getSubjectTerms_view(){
+		$result = array();
+		foreach ($this->indexingSubjects as $indexingSubjects){
+			array_push($result, $indexingSubjects->getSubjectTerms());
+		}
+		$resultStr = '';
+		$resultStr .= implode("<br/>", $result);
+		return $resultStr;
+	}
+	
+	
+	
+	
 
 }
