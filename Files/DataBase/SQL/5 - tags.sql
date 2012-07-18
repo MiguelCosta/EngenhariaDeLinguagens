@@ -1,4 +1,4 @@
-use 'museu';
+use museu;
 INSERT INTO `museu`.`SubjectTerms` (`id_subjectTerms`, `subjectTerm`) VALUES (1, 'fotografia');
 INSERT INTO `museu`.`SubjectTerms` (`id_subjectTerms`, `subjectTerm`) VALUES (2, 'franca');
 INSERT INTO `museu`.`SubjectTerms` (`id_subjectTerms`, `subjectTerm`) VALUES (3, 'gerald bloncourt');
