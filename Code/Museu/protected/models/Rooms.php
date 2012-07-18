@@ -43,7 +43,7 @@ class Rooms extends CActiveRecord
 		return array(
 				array('name, path', 'required'),
 				array('name', 'length', 'max'=>63),
-				array('description', 'length', 'max'=>255),
+				array('description', 'length', 'max'=>5002),
 				array('path, image_path', 'length', 'max'=>2002),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.

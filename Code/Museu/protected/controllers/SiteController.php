@@ -26,6 +26,35 @@ class SiteController extends Controller
 				),
 		);
 	}
+	
+	/**
+	 * @return array action filters
+	 */
+	public function filters()
+	{
+		return array(
+				'accessControl', // perform access control for CRUD operations
+		);
+	}
+	
+	/**
+	 * Specifies the access control rules.
+	 * This method is used by the 'accessControl' filter.
+	 * @return array access control rules
+	 */
+	public function accessRules()
+	{
+		return array(
+				array('allow', // allow admin user to perform 'admin' and 'delete' actions
+						'actions'=>array('novaSala'),
+						'users'=>array('@', 'admin', 'museu'),
+				),
+				array('allow',  // deny all users
+						'users'=>array('*'),
+				),
+		);
+	}
+	
 
 	/**
 	 * This is the default 'index' action that is invoked
@@ -107,23 +136,13 @@ class SiteController extends Controller
 		$this->redirect(Yii::app()->homeUrl);
 	}
 	
-// 	public function actionExposicoes()
-// 	{
-// 		$this->render('exposicoes');
-// 	}
-
-// 	public function actionSalas()
-// 	{
-// 		$this->render('salas');
-// 	}
-	
 	public function actionSearch()
 	{
 		$this->render('search');
 	}
 	
 	/**
-	 * 
+	 * Cria uma nova sala de uma exposicao
 	 */
 	public function actionNovaSala()
 	{
@@ -226,7 +245,8 @@ class SiteController extends Controller
 				fclose($fh);
 			
 				// redirect to another page
-				$this->redirect(array('/Exhibitions/index'));
+// 				$this->redirect(array('/Exhibitions/index'));
+				$this->redirect(array('/Exhibitions/view','id'=>$_SESSION['id_exhib']));
 			} 
 		}
 		$this->render('novaSala',array('model'=>$model));
@@ -247,49 +267,42 @@ class SiteController extends Controller
 					);
 					
 					\$model = Rooms::model()->findByAttributes(array('id_room'=>".($last_id_room+1)."));
+					
+					\$this->widget('zii.widgets.CMenu', array(
+      					'items'=>array(
+      						//array('label'=>'Visualizar Exposições','url'=>array('/Exhibitions/index')),
+      						//array('label'=>'Criar Exposição','url'=>array('/Exhibitions/create')),
+      						//array('label'=>'Criar Sala','url'=>array('/site/novaSala')),
+      						//array('label'=>'Eliminar sala', 'url'=>'#', 'linkOptions'=>array( 'submit'=>array( '/rooms/delete', 'id'=>".($last_id_room+1)."), 'confirm'=>'Tem a certeza que pretende remover esta sala?' )),
+      						),
+   						)
+   					);
 				?>
-		
-				<table>
+				
+				<table style=\"margin-bottom: 0em\">
 					<tr>
-						<td>
-							<tr>
-								<td>
-									<h1 align=\"center\">Sala <?php echo \$NOME?></h1>
-								</td>
-								<td>
-									<h3><?php echo \"Descrição:\" ?></h3>
-&nbsp;&nbsp;&nbsp;<?php echo \$model->description; ?>
-								</td>
-							</tr>
+						<td width=\"60%\">
+							<h1>
+								<?php echo \$NOME ?>
+							</h1>
 						</td>
-						<td>
-							<?php 
-								// caminho para a imagem desta exibição
-								\$image_path = \"/../myFiles/Imagens/rooms/\$model->image_path\";
-							
-								// se a imagem existir exibe-a
-								if(!empty(\$model->image_path) && file_exists(Yii::app()->basePath.\$image_path)){
-									
-									// Gera uma image tag
-									\$img = CHtml::image(\"..\".\$image_path, \$model->name, array('class'=>'image', 'width'=>200, 'title'=>\$model->name));
-									// Exibe a imagem num CDetailView
-									\$this->widget('zii.widgets.CDetailView', array(
-										'data' => \$model,
-										'attributes' => array(
-											array(
-												'name'=>'image_path',
-												'type'=>'html',
-												'value'=>CHtml::link(\$img, \"..\".\$image_path),
-											),
-								
-										),
-									));
-								} 
+						<td width=\"40%\" style=\"text-align: right;\"><?php 
+							// caminho para a imagem desta exibição
+							\$image_path = \"/../myFiles/Imagens/rooms/\$model->image_path\";
+					
+							// se a imagem existir exibe-a
+							if(!empty(\$model->image_path) && file_exists(Yii::app()->basePath.\$image_path)){
+								// Gera uma image tag
+								\$img = CHtml::image(\"..\".\$image_path, \$model->name, array('class'=>'image', 'width'=>200, 'title'=>\$model->name));
+								echo \$img;
+							}
 							?>
 						</td>
 					</tr>
 				</table>
-				<hr/>";
+				
+				<h3><?php echo \"Descrição:\" ?></h3>
+&nbsp;&nbsp;&nbsp;<?php echo \$model->description; ?>";
 	}
 	
 	

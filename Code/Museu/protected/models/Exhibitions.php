@@ -41,7 +41,7 @@ class Exhibitions extends CActiveRecord
 				array('name', 'required'),
 				array('name', 'unique'),
 				array('name', 'length', 'max'=>63),
-				array('description', 'length', 'max'=>255),
+				array('description', 'length', 'max'=>5002),
 				array('image_path', 'length', 'max'=>2002),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.

@@ -8,7 +8,7 @@
 class NovaSalaForm extends CFormModel
 {
 	public $sala = "<sala>
-    <exposicao>Obras de Cerdeira</exposicao>
+    <exposicao>Obras de Autores</exposicao>
     <nome>Peças de Cerdeira</nome>
     <descricao>Peças e outras coisas do homem</descricao>
     <objectos>

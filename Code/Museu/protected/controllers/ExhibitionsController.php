@@ -35,7 +35,9 @@ class ExhibitionsController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin'
+						//,'delete'
+						),
 				'users'=>array('admin', 'museu'),
 			),
 			array('deny',  // deny all users
@@ -50,9 +52,11 @@ class ExhibitionsController extends Controller
 	 */
 	public function actionView($id)
 	{
-		$this->render('view',array(
-			'model'=>$this->loadModel($id),
-		));
+// 		$model = $this->loadModel($id);
+// 		if ($model->deleted == 0)
+			$this->render('view',array(
+				'model'=>$this->loadModel($id),
+			));
 	}
 
 	/**
@@ -111,8 +115,21 @@ class ExhibitionsController extends Controller
 		if(isset($_POST['Exhibitions']))
 		{
 			$model->attributes=$_POST['Exhibitions'];
-			if($model->save())
+			$model->image=CUploadedFile::getInstance($model,'image');
+			
+			if ($model->image != NULL){
+				// nome do ficheiro passa a ser o id da exibicao a ser atualizado
+				$model->image_path = $model->id_exhibition.".jpg";
+			}
+			
+			if($model->save()) {
+				if ($model->image != NULL)
+					// guarda imagem no repositorio
+					// Yii::app()->basePath : pasta protected
+					$model->image->saveAs(Yii::app()->basePath."/../myFiles/Imagens/exhibitions/$model->image_path");
+				
 				$this->redirect(array('view','id'=>$model->id_exhibition));
+			}
 		}
 
 		$this->render('update',array(
@@ -129,12 +146,18 @@ class ExhibitionsController extends Controller
 	{
 		if(Yii::app()->request->isPostRequest)
 		{
+// 			$model=$this->loadModel($id);
+
 			// we only allow deletion via POST request
 			$this->loadModel($id)->delete();
-
-			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-			if(!isset($_GET['ajax']))
-				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+			
+// 			$model->deleted = 1;
+			
+// 			if($model->save()) {
+				// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
+				if(!isset($_GET['ajax']))
+					$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
+// 			}
 		}
 		else
 			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');

@@ -2,7 +2,10 @@
 <conceitos>
     <conceito>
         <key>PecasCriador</key>
-        <value>&lt;?php 
+        <value>
+            &lt;br&gt;&lt;br&gt;
+            &lt;h5&gt;Peças de %Criador%&lt;/h5&gt;
+            &lt;?php 
             $dataProvider = IndexingCreators::getObjectWorkRecords_NameCreator('%Criador%');
             $dataProvider->pagination->pageSize=%NrItens%;
             
@@ -18,7 +21,9 @@
     </conceito>
     <conceito>
         <key>PecasLocal</key>
-        <value>&lt;?php 
+        <value>&lt;br&gt;&lt;br&gt;
+            &lt;h5&gt;Peças de %Local%&lt;/h5&gt;
+            &lt;?php 
             $dataProvider = LocationsName::getObjectWorkRecords_LocationsName('%Local%');
             $dataProvider->pagination->pageSize=%NrItens%;
             
@@ -34,7 +39,9 @@
     </conceito>
     <conceito>
         <key>PecasData</key>
-        <value>&lt;?php 
+        <value>&lt;br&gt;&lt;br&gt;
+            &lt;h5&gt;Peças de %Data%&lt;/h5&gt;
+            &lt;?php 
             $dataProvider = IndexingDates::getObjectWorkRecords_Dates('%Data%');
             $dataProvider->pagination->pageSize=%NrItens%;
             
@@ -50,8 +57,28 @@
     </conceito>
     <conceito>
         <key>PecasTag</key>
-        <value>&lt;?php 
+        <value>&lt;br&gt;&lt;br&gt;
+            &lt;h5&gt;Peças sobre %Tag%&lt;/h5&gt;
+            &lt;?php 
             $dataProvider = IndexingSubjects::getObjectWorkRecords_Subject('%Tag%');
+            $dataProvider->pagination->pageSize=%NrItens%;
+            
+            $this->widget('zii.widgets.CListView', array(
+            'dataProvider'=>$dataProvider,
+            'template'=>'{sorter}{summary}{pager}{items}{pager}{summary}',
+            'pager'=>array(
+            'maxButtonCount'=>'10',
+            ),
+            'itemView'=>'/object_Work_Records/_view',
+            ));
+            ?&gt;</value>
+    </conceito>
+    <conceito>
+        <key>PecasCriadorTag</key>
+        <value>&lt;br&gt;&lt;br&gt;
+            &lt;h5&gt;Peças de %Criador% sobre %Tag%&lt;/h5&gt;
+            &lt;?php 
+            $dataProvider = Object_Work_Records::getObjectWorkRecords_NameCreator_TAG('%Criador%', '%Tag%');
             $dataProvider->pagination->pageSize=%NrItens%;
             
             $this->widget('zii.widgets.CListView', array(

@@ -622,15 +622,17 @@ CREATE TABLE Exhibitions_SubjectTerms (
 CREATE TABLE Exhibitions (
 	  id_exhibition int(10) NOT NULL AUTO_INCREMENT, 
 	  name          varchar(63) NOT NULL, 
-	  description   varchar(255), 
+	  description   varchar(5002), 
 	  image_path    varchar(2002), 
+	  deleted       tinyint DEFAULT 0 NOT NULL, 
 	  PRIMARY KEY (id_exhibition)) ENGINE=InnoDB;
 CREATE TABLE Rooms (
 	  id_room     int(10) NOT NULL AUTO_INCREMENT, 
 	  name        varchar(63) NOT NULL, 
-	  description varchar(255), 
+	  description varchar(5002), 
 	  path        varchar(2002) NOT NULL, 
 	  image_path  varchar(2002), 
+	  deleted     tinyint DEFAULT 0 NOT NULL,
 	  PRIMARY KEY (id_room)) ENGINE=InnoDB;
 
 

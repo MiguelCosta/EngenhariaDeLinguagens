@@ -8,7 +8,14 @@ $this->menu=array(
 		array('label'=>'Índice', 'url'=>array('index')),
 		array('label'=>'Criar Exposição', 'url'=>array('create')),
 		array('label'=>'Actualizar', 'url'=>array('update', 'id'=>$model->id_exhibition)),
-		array('label'=>'Eliminar', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_exhibition),'confirm'=>'Are you sure you want to delete this item?')),
+// 		array('label'=>'Eliminar', 'url'=>'#', 
+// 				'linkOptions'=>array(
+// 					'submit'=>array(
+// 						'delete',
+// 						'id'=>$model->id_exhibition
+// 					)
+// 					,'confirm'=>'Tem a certeza que pretende eliminar esta exposição?'
+// 			)),
 		array('label'=>'Administração', 'url'=>array('admin')),
 		array('label'=>'Criar Sala','url'=>array('/site/novaSala'))
 );

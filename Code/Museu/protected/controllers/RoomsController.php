@@ -35,7 +35,9 @@ class RoomsController extends Controller
 						'users'=>array('@'),
 				),
 				array('allow', // allow admin user to perform 'admin' and 'delete' actions
-						'actions'=>array('admin','delete'),
+						'actions'=>array('admin'
+								//,'delete'
+								),
 						'users'=>array('admin', 'museu'),
 				),
 				array('deny',  // deny all users
@@ -72,12 +74,12 @@ class RoomsController extends Controller
 		$exhib_rooms_models = array();
 		
 		// vai buscar o ultimo id de Rooms
-		$idRoom = Yii::app()->db->createCommand()
-			->select('max(id_room) as max')
-			->from('Rooms')
-			->queryScalar();
-		// incrementa o id, ou seja, é o identificador da nova sala a ser gerada
-		$idRoom++;
+// 		$idRoom = Yii::app()->db->createCommand()
+// 			->select('max(id_room) as max')
+// 			->from('Rooms')
+// 			->queryScalar();
+// 		// incrementa o id, ou seja, é o identificador da nova sala a ser gerada
+// 		$idRoom++;
 		
 		// obtem o id da exposicao cujo nome é passado por variavel de sessao
 		$idExhibition = Yii::app()->db->createCommand()
@@ -95,7 +97,8 @@ class RoomsController extends Controller
 		 */
 		$model_exhib_room = new Exhibitions_Rooms;
 		$model_exhib_room->Exhibitionsid_exhibition = $idExhibition;
-		$model_exhib_room->Roomsid_room = $idRoom;
+		// valor temporario apenas para passar na validacao; depois o valor é atribuido apos armazenamento da sala
+		$model_exhib_room->Roomsid_room = 0;
 		
 		// obtem o maior número de ordenacao de uma exibicao
 		$last_ord_nr = Yii::app()->db->createCommand()
@@ -139,8 +142,11 @@ class RoomsController extends Controller
 		if ($valid) {
 			$model->save(false);
 			
-			foreach ($exhib_rooms_models as $ex_mod)
+			foreach ($exhib_rooms_models as $ex_mod) {
+				if ($ex_mod->Roomsid_room == 0)
+					$ex_mod->Roomsid_room = $model->id_room;
 				$ex_mod->save(false);
+			}
 			
 			// para serem utilizados no metodo create do SiteController
 			$_SESSION['room_path'] = $model->path;
@@ -183,11 +189,16 @@ class RoomsController extends Controller
 		if(Yii::app()->request->isPostRequest)
 		{
 			// we only allow deletion via POST request
-			$this->loadModel($id)->delete();
+			$model = $this->loadModel($id);
+			$path = $model->path;
+			
+			
+			if ($model->delete())
+				unlink($path);
 
 			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 			if(!isset($_GET['ajax']))
-				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('/Exhibitions/index'));
 		}
 		else
 			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');

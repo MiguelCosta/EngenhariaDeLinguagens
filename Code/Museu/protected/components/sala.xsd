@@ -38,6 +38,7 @@
 												<xs:enumeration value="PecasLocal"/>
 												<xs:enumeration value="PecasData"/>
 												<xs:enumeration value="PecasTag"/>
+												<xs:enumeration value="PecasCriadorTag"/>
 												</xs:restriction>
 											</xs:simpleType>
 										</xs:element>
