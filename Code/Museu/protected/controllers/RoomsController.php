@@ -67,7 +67,7 @@ class RoomsController extends Controller
 		$model=new Rooms;
 		$model->name = $_SESSION['room_name'];
 		$model->description = $_SESSION['room_description'];
-		$model->image_path = "";
+		$model->image_path = $_SESSION['image_path'];
 
 		$exhib_rooms_models = array();
 		

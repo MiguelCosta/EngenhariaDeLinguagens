@@ -127,31 +127,48 @@ class SiteController extends Controller
 	 */
 	public function actionNovaSala()
 	{
-		$model=new NovaSalaForm;
+		$session=new CHttpSession;
+		$session->open();
+		
+		$model = new NovaSalaForm;
 		
 		if(isset($_POST['NovaSalaForm']))
 		{
 			$model->attributes=$_POST['NovaSalaForm'];
+			$model->image=CUploadedFile::getInstance($model,'image');
+			
 			// se a sala for valida segundo o schema e o conteudo (nao testa os argumentos)
 			if($model->validate()) {
+				// obtem o ultimo id da tabela Exhibitions
+				$last_id_room = Yii::app()->db->createCommand()
+					->select('max(id_room) as max')
+					->from('Rooms')
+					->queryScalar();
+				
+				$_SESSION['image_path'] = null;
+				
+				// se uma imagem tiver sido carregada entao a imagem é guardada no repositorio e algumas variaveis sao preenchidas
+				if ($model->image != NULL){
+					// nome do ficheiro passa a ser o id da exibicao a ser criada
+					$model->image_path = ($last_id_room+1).".jpg";
+						
+					// variavel de sessao que guarda a informacao do image_path e que será acedida no create
+					$_SESSION['image_path'] = $model->image_path;
+				
+					// guarda imagem no repositorio
+					// Yii::app()->basePath : pasta protected
+					$model->image->saveAs(Yii::app()->basePath."/../myFiles/Imagens/rooms/$model->image_path");
+				}
+				
+				
 				//Converte o documento XML que contem os conceitos (templates) num objecto
 				$conceitos = simplexml_load_file("protected/components/conceitos.xml");
 					
 				//Converte a sala num objecto
 				$sala_xml = simplexml_load_string($model->sala);
 					
-				// Conteudo constante de uma sala php
-				$sala_php = "<?php 
-					\$NOME = '$sala_xml->nome';
-					\$this->pageTitle=Yii::app()->name . ' - Salas';
-					\$this->breadcrumbs=array(
-						'Exposições'=>array('/Exhibitions/index'),
-						\$NOME,
-					);
-				?>
-		
-				<h1 align=\"center\">Sala <?php echo \$NOME?></h1>
-				<hr/>";
+				// Cabecalho de uma sala php (titulo, descricao e imagem)
+				$sala_php = $this->cabecalho($sala_xml, $last_id_room);
 					
 				// Anexa os templates php à sala php já com o conteúdo introduzido no formulário
 				foreach($sala_xml->xpath('//objecto') as $obj) {
@@ -190,20 +207,16 @@ class SiteController extends Controller
 				$nome_ficheiro = $this->normalize_str($nome_ficheiro);
 					
 				// variaveis de sessao que guardam a informacao necessaria de uma sala para armazenar na BD
-				$session=new CHttpSession;
-				$session->open();
 				$_SESSION['room_name'] = strval($sala_xml->nome);
 				$_SESSION['room_description'] = strval($sala_xml->descricao);
 				$_SESSION['room_file_name'] = $nome_ficheiro;
 				$_SESSION['exhibition'] = strval($sala_xml->exposicao);
-				// TODO falta image_path
 				$_SESSION['tipo_ordenacao'] = $model->tipo_ordenacao;
 				$_SESSION['ord_nr'] = $model->ord_nr;
-		
+				
 				// armazena a informacao da sala gerada na base de dados utilizando a accao create do controller rooms
 				$this->forward('/rooms/create',false);
 		
-				
 				// adiciona à sala o sistema de navegação
 				$sala_php = $this->roomNavigationSystem($sala_php, $_SESSION['id_exhib'], $_SESSION['id_nova_sala']);
 				
@@ -219,6 +232,65 @@ class SiteController extends Controller
 		$this->render('novaSala',array('model'=>$model));
 	}
 	
+	/**
+	 * Devolve a parte da sala correspondente ao cabecalho
+	 * @param unknown_type $sala_xml
+	 * @param unknown_type $last_id_room
+	 */
+	private function cabecalho($sala_xml, $last_id_room) {
+		return "<?php 
+					\$NOME = '$sala_xml->nome';
+					\$this->pageTitle=Yii::app()->name . ' - Salas';
+					\$this->breadcrumbs=array(
+						'Exposições'=>array('/Exhibitions/index'),
+						\$NOME,
+					);
+					
+					\$model = Rooms::model()->findByAttributes(array('id_room'=>".($last_id_room+1)."));
+				?>
+		
+				<table>
+					<tr>
+						<td>
+							<tr>
+								<td>
+									<h1 align=\"center\">Sala <?php echo \$NOME?></h1>
+								</td>
+								<td>
+									<h3><?php echo \"Descrição:\" ?></h3>
+&nbsp;&nbsp;&nbsp;<?php echo \$model->description; ?>
+								</td>
+							</tr>
+						</td>
+						<td>
+							<?php 
+								// caminho para a imagem desta exibição
+								\$image_path = \"/../myFiles/Imagens/rooms/\$model->image_path\";
+							
+								// se a imagem existir exibe-a
+								if(!empty(\$model->image_path) && file_exists(Yii::app()->basePath.\$image_path)){
+									
+									// Gera uma image tag
+									\$img = CHtml::image(\"..\".\$image_path, \$model->name, array('class'=>'image', 'width'=>200, 'title'=>\$model->name));
+									// Exibe a imagem num CDetailView
+									\$this->widget('zii.widgets.CDetailView', array(
+										'data' => \$model,
+										'attributes' => array(
+											array(
+												'name'=>'image_path',
+												'type'=>'html',
+												'value'=>CHtml::link(\$img, \"..\".\$image_path),
+											),
+								
+										),
+									));
+								} 
+							?>
+						</td>
+					</tr>
+				</table>
+				<hr/>";
+	}
 	
 	
 	/**

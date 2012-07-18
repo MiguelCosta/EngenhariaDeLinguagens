@@ -1,9 +1,15 @@
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'exhibitions-form',
-	'enableAjaxValidation'=>false,
-)); ?>
+<?php 
+	$form=$this->beginWidget(
+		'CActiveForm', 
+		array(
+			'id'=>'exhibitions-form',
+			'enableAjaxValidation'=>false,
+			'htmlOptions' => array('enctype' => 'multipart/form-data'),
+		)
+	); 
+?>
 
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
@@ -21,6 +27,15 @@
 		<?php echo $form->error($model,'description'); ?>
 	</div>
 
+	<div class="row">
+		<?php 
+			echo $form->labelEx($model, 'image');
+			echo $form->fileField($model, 'image');
+			echo $form->error($model, 'image');
+		?>
+		<p class="hint">Uma imagem ilustrativa do conteúdo da exposição.</p>
+	</div>
+	
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

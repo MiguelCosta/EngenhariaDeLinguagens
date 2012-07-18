@@ -10,6 +10,9 @@
  */
 class Exhibitions extends CActiveRecord
 {
+	
+	public $image;
+	
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @return Exhibitions the static model class
@@ -39,9 +42,11 @@ class Exhibitions extends CActiveRecord
 				array('name', 'unique'),
 				array('name', 'length', 'max'=>63),
 				array('description', 'length', 'max'=>255),
+				array('image_path', 'length', 'max'=>2002),
 				// The following rule is used by search().
 				// Please remove those attributes that should not be searched.
-				array('name, description', 'safe', 'on'=>'search'),
+				array('name, description, image_path', 'safe', 'on'=>'search'),
+				array('image', 'file', 'types'=>'jpg, gif, png', 'allowEmpty' => true),
 		);
 	}
 
@@ -66,6 +71,7 @@ class Exhibitions extends CActiveRecord
 				'id_exhibition' => 'id_exhibition',
 				'name' => 'Nome',
 				'description' => 'Descrição',
+				'image_path' => 'Imagem'
 		);
 	}
 
@@ -85,6 +91,8 @@ class Exhibitions extends CActiveRecord
 		$criteria->compare('name',$this->name,true);
 
 		$criteria->compare('description',$this->description,true);
+		
+		$criteria->compare('image_path',$this->image_path,true);
 
 		return new CActiveDataProvider('Rooms', array(
 				'criteria'=>$criteria,

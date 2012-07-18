@@ -28,6 +28,7 @@ $this->breadcrumbs=array(
 			'clientOptions'=>array(
 					'validateOnSubmit'=>true,
 			),
+			'htmlOptions' => array('enctype' => 'multipart/form-data'),
 )); ?>
 
 	<p class="note">
@@ -40,6 +41,15 @@ $this->breadcrumbs=array(
 		<?php echo $form->labelEx($model,'sala'); ?>
 		<?php echo $form->textArea($model,'sala', array('size'=>300,'maxlength'=>2000, 'cols'=>80, 'rows'=>20));	?>
 		<?php echo $form->error($model,'sala'); ?>
+	</div>
+	
+	<div class="row">
+		<?php 
+			echo $form->labelEx($model, 'image');
+			echo $form->fileField($model, 'image');
+			echo $form->error($model, 'image');
+		?>
+		<p class="hint">Uma imagem ilustrativa do conteúdo da sala.</p>
 	</div>
 	
 	<div class="row">

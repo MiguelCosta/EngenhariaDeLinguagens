@@ -69,8 +69,26 @@ class ExhibitionsController extends Controller
 		if(isset($_POST['Exhibitions']))
 		{
 			$model->attributes=$_POST['Exhibitions'];
-			if($model->save())
+			$model->image=CUploadedFile::getInstance($model,'image');
+			
+			if ($model->image != NULL){
+				// obtem o ultimo id da tabela Exhibitions
+				$last_id_exhibition = Yii::app()->db->createCommand()
+				->select('max(id_exhibition) as max')
+				->from('Exhibitions')
+				->queryScalar();
+				
+				// nome do ficheiro passa a ser o id da exibicao a ser criada
+				$model->image_path = ($last_id_exhibition+1).".jpg";
+			}
+			
+			if($model->save()) {
+				if ($model->image != NULL)
+					// guarda imagem no repositorio
+					// Yii::app()->basePath : pasta protected
+					$model->image->saveAs(Yii::app()->basePath."/../myFiles/Imagens/exhibitions/$model->image_path");
 				$this->redirect(array('view','id'=>$model->id_exhibition));
+			}
 		}
 
 		$this->render('create',array(
