@@ -71,6 +71,17 @@ $this->breadcrumbs=array(
 		    </div>
 		</div>
 	</div>
+	
+	<div class="row">
+		<?php echo $form->labelEx($model,'template'); ?>
+		<div class="compactRadioGroup">
+			<?php echo $form->radioButtonList($model,'template', 
+					array(0=>'1', 1=>'2', 2=>'3'), 
+					array()); 
+			?>
+			<?php echo $form->error($model,'template'); ?>
+		</div>
+	</div>
     
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Submit'); ?>

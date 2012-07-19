@@ -25,6 +25,7 @@ class NovaSalaForm extends CFormModel
 	public $ord_nr;
 	public $image_path;
 	public $image;
+	public $template = 0;
 
 	/**
 	 * Declares the validation rules.
@@ -33,7 +34,7 @@ class NovaSalaForm extends CFormModel
 	{
 		return array(
 			// sala is required
-			array('sala, tipo_ordenacao', 'required'),
+			array('sala, tipo_ordenacao, template', 'required'),
 			array('sala', 'conteudoValido'),
 			array('image_path', 'length', 'max'=>2002),
 			array('tipo_ordenacao', 'numerical'),
@@ -52,7 +53,8 @@ class NovaSalaForm extends CFormModel
 		return array('sala'=>'Sala',
 				'tipo_ordenacao'=>'Tipo de ordenação',
 				'ord_nr'=>'Número de ordenação',
-				'image_path' => 'Imagem');
+				'image_path' => 'Imagem',
+				'template' => 'Template');
 	}
 	
 	public function conteudoValido($attribute,$params) {

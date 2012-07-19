@@ -245,7 +245,6 @@ class SiteController extends Controller
 				fclose($fh);
 			
 				// redirect to another page
-// 				$this->redirect(array('/Exhibitions/index'));
 				$this->redirect(array('/Exhibitions/view','id'=>$_SESSION['id_exhib']));
 			} 
 		}
