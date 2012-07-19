@@ -485,6 +485,27 @@ class Object_Work_Records extends CActiveRecord
 	}
 
 
+	
+	/**
+	 * Funções para o CDWA-Lite
+	 */
+	
+	public function getCDWAlite(){
+		// string que vai conter o xml
+		$cdwa = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
+		$cdwa .= '<cdwaliteWrap xmlns="http://www.getty.edu/CDWA/CDWALite" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">' . "\n";
+		$cdwa .= "\t" . '<cdwalite>' . "\n";
+		
+		
+		
+		
+		
+		$cdwa .= "\t" . '</cdwalite>' . "\n";
+		$cdwa .= '</cdwaliteWrap>';
+		
+		return $cdwa;
+	}
+	
 
 
 

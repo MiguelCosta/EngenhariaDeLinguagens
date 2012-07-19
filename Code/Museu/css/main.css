@@ -295,3 +295,13 @@ div.salaPrevious{
 	font-weight: bold;
 	height: 75px;
 }
+
+div.downloadCDWA{
+	width: 150px;
+	text-align: center;
+	margin-left: auto ;
+	margin-right: auto ;
+	font-weight: bold;
+	height: 150px;
+}
+

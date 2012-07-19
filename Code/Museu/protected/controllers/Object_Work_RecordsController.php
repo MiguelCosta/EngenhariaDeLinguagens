@@ -32,7 +32,7 @@ class Object_Work_RecordsController extends Controller
 	{
 		return array(
 				array('allow',  // allow all users to perform 'index' and 'view' actions
-						'actions'=>array('index','view', 'search'),
+						'actions'=>array('index','view', 'search', 'CDWAlite'),
 						'users'=>array('*'),
 				),
 				array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -740,6 +740,26 @@ class Object_Work_RecordsController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+	
+	/**
+	 * Download no formato CDWA-Lite.
+	 */
+	public function actionCDWAlite()
+	{
+		$model=$this->loadModel();
+		
+		$cdwa = $model->getCDWAlite();
+		
+		$fh = fopen(Yii::app()->basePath."/../myFiles/CDWA/$model->id_object_Work_Records.xml", 'w') or die("can't open file");
+		fwrite($fh, $cdwa);
+		fclose($fh);
+		
+		
+		
+		$this->render('cdwa',array(
+				'model'=>$this->loadModel(),
+		));
 	}
 
 
