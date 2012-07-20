@@ -88,7 +88,7 @@ Yii::app()->clientScript->registerCss('ext-comment', "
 	</span>
 
 	<p>
-		<?php echo nl2br(CHtml::encode($data->message)); ?>
+		<?php echo nl2br($data->message); ?>
 	</p>
 
 	<br style="clear: both;" />

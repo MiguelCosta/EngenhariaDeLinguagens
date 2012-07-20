@@ -15,6 +15,7 @@ $this->breadcrumbs = array(
 //$url=$this->createUrl($route,$params);
 
 $this->menu = array(
+		array('label' => 'Ver', 'url' => array('view', 'id' => $model->id_object_Work_Records)),
 		array('label' => 'Índice', 'url' => array('index')),
 		array('label' => 'Criar', 'url' => array('create')),
 		array('label' => 'Criar Ficha Completa', 'url' => array('createAll')),

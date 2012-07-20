@@ -21,8 +21,18 @@ if (Yii::app()->user->isGuest) {
 
 	<div class="row">
 		<?php echo $form->labelEx($comment,'message'); ?>
-		<?php echo $form->textArea($comment,'message',array('rows'=>6, 'cols'=>50, 
-				'style'=>'width:95%;border: 3px solid #cccccc;padding: 5px;font-family: Tahoma, sans-serif;')); ?>
+		<?php /*echo $form->textArea($comment,'message',array('rows'=>6, 'cols'=>50, 
+				'style'=>'width:95%;border: 3px solid #cccccc;padding: 5px;font-family: Tahoma, sans-serif;'));*/ ?>
+		<?php $this->widget('application.extensions.eckeditor.ECKEditor', array(
+				'model'=>$comment,
+				'attribute'=>'message',
+				"config" => array(
+						"height"=>"250px",
+						"width"=>"900px",
+						"toolbar"=>"Full",
+				),
+                )); ?>
+
 		<?php echo $form->error($comment,'message'); ?>
 	</div>
 

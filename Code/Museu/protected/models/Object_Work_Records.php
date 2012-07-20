@@ -510,9 +510,16 @@ class Object_Work_Records extends CActiveRecord
 		$cdwa .= $this->getCDWAlite_indexingDatesWrap();
 		$cdwa .= $this->getCDWAlite_locationWrap();
 		$cdwa .= $this->getCDWAlite_classificationWrap();
-
+		$cdwa .= $this->getCDWAlite_inscriptionsWrap();
 
 		$cdwa .= '</descriptiveMetadata>';
+
+		$cdwa .= '<administrativeMetadata>';
+
+		$cdwa .= $this->getCDWAlite_resourceWrap();
+
+		$cdwa .= '</administrativeMetadata>';
+
 		$cdwa .= '</cdwalite>';
 		$cdwa .= '</cdwaliteWrap>';
 
@@ -683,17 +690,44 @@ class Object_Work_Records extends CActiveRecord
 		$cdwa .= '</locationWrap>';
 		return $cdwa;
 	}
-	
+
 	public function getCDWAlite_classificationWrap(){
 		$cdwa = '';
 		$cdwa .= '<classificationWrap>';
-	
+
 		foreach ($this->classifications as $classifications){
 			$cdwa .= '<classification>' . $classifications->classification . '</classification>';
 		}
-	
+
 		$cdwa .= '</classificationWrap>';
 		return $cdwa;
 	}
+
+	public function getCDWAlite_inscriptionsWrap(){
+		$cdwa = '';
+		$cdwa .= '<inscriptionsWrap>';
+
+		foreach ($this->inscriptions as $inscriptions){
+			$cdwa .= '<inscriptions>' . $inscriptions->inscriptions . '</inscriptions>';
+		}
+
+		$cdwa .= '</inscriptionsWrap>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_resourceWrap(){
+		$cdwa = '';
+		$cdwa .= '<resourceWrap>';
+
+		foreach ($this->resources as $resource){
+			$cdwa .= '<resourceSet>';
+			$cdwa .= '<linkResource>' . Yii::app()->baseURL . '/../../Files/Imagens/' .  $resource->linkResource->linkResource . '</linkResource>';
+			$cdwa .= '<resourceViewDescription>' . $resource->resourceViewDescription->resourceViewDescription . '</resourceViewDescription>';
+			$cdwa .= '</resourceSet>';
+		}
+		$cdwa .= '</resourceWrap>';
+		return $cdwa;
+	}
+
 
 }
