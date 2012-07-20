@@ -485,30 +485,215 @@ class Object_Work_Records extends CActiveRecord
 	}
 
 
-	
+
 	/**
 	 * Funções para o CDWA-Lite
 	 */
-	
+
 	public function getCDWAlite(){
 		// string que vai conter o xml
-		$cdwa = '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
-		$cdwa .= '<cdwaliteWrap xmlns="http://www.getty.edu/CDWA/CDWALite" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">' . "\n";
-		$cdwa .= "\t" . '<cdwalite>' . "\n";
-		
-		
-		
-		
-		
-		$cdwa .= "\t" . '</cdwalite>' . "\n";
+		$cdwa = '<?xml version="1.0" encoding="UTF-8"?>';
+		$cdwa .= '<cdwaliteWrap xmlns="http://www.getty.edu/CDWA/CDWALite" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">';
+		$cdwa .= '<cdwalite>';
+		$cdwa .= '<descriptiveMetadata>';
+
+		$cdwa .= $this->getCDWAlite_objectWorkTypeWrap();
+		$cdwa .= $this->getCDWAlite_titleWrap();
+		$cdwa .= $this->getCDWAlite_displayCreator();
+		$cdwa .= $this->getCDWAlite_indexingCreatorWrap();
+		$cdwa .= $this->getCDWAlite_displayMeasurements();
+		$cdwa .= $this->getCDWAlite_indexingMeasurementsWrap();
+		$cdwa .= $this->getCDWAlite_displayMaterialsTech();
+		$cdwa .= $this->getCDWAlite_indexingMaterialsTechWrap();
+		$cdwa .= $this->getCDWAlite_styleWrap();
+		$cdwa .= $this->getCDWAlite_displayCreationDate();
+		$cdwa .= $this->getCDWAlite_indexingDatesWrap();
+		$cdwa .= $this->getCDWAlite_locationWrap();
+		$cdwa .= $this->getCDWAlite_classificationWrap();
+
+
+		$cdwa .= '</descriptiveMetadata>';
+		$cdwa .= '</cdwalite>';
 		$cdwa .= '</cdwaliteWrap>';
-		
+
+		return $cdwa;
+	}
+
+	public function getCDWAlite_objectWorkTypeWrap(){
+		$cdwa = '';
+		$cdwa .= '<objectWorkTypeWrap>';
+		foreach ($this->object_Work_Types as $type){
+			$cdwa .= '<objectWorkType>'.$type->type.'</objectWorkType>';
+		}
+		$cdwa .= '</objectWorkTypeWrap>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_titleWrap(){
+		$cdwa = '';
+		$cdwa .= '<titleWrap>';
+		foreach ($this->object_Work_Titles as $title){
+			$cdwa .= '<titleSet>';
+			$cdwa .= '<title>'.$title->title.'</title>';
+			$cdwa .= '</titleSet>';
+		}
+		$cdwa .= '</titleWrap>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_displayCreator(){
+		$cdwa = '';
+		$cdwa .= '<displayCreator>' . $this->displayCreator . '</displayCreator>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_indexingCreatorWrap(){
+		$cdwa = '';
+		$cdwa .= '<indexingCreatorWrap>';
+		foreach ($this->indexingCreators as $indexingCreator){
+			$cdwa .= '<indexingCreatorSet>';
+
+			foreach($indexingCreator->namesCreators as $names){
+				$cdwa .= '<nameCreatorSet>';
+				$cdwa .= '<nameCreator type="'. $names->type .'">'.$names->nameCreator.'</nameCreator>';
+				$cdwa .= '</nameCreatorSet>';
+			}
+
+			foreach($indexingCreator->nationalitiesCreators as $natio){
+				$cdwa .= '<nationalityCreator>'.$natio->nationalitycreator.'</nationalityCreator>';
+			}
+
+			foreach($indexingCreator->vitalDatesCreators as $dates){
+				$cdwa .= '<vitalDatesCreator ';
+				if ($dates->birthDate != ""){
+					$cdwa .= 'birthDate="'. $dates->birthDate . '" ';
+				}
+				if ($dates->deathDate != ""){
+					$cdwa .= 'deathDate="'. $dates->deathDate . '" ';
+				}
+
+				$cdwa .= '>' .$dates->vitalDatesCreator . '</vitalDatesCreator>';
+			}
+
+			$cdwa .= '<genderCreator>' . $indexingCreator->genderCreator . '</genderCreator>';
+
+			foreach($indexingCreator->creatorRoles as $role){
+				$cdwa .= '<roleCreator>'.$role->roleCreator.'</roleCreator>';
+			}
+
+			$cdwa .= '</indexingCreatorSet>';
+		}
+		$cdwa .= '</indexingCreatorWrap>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_displayMeasurements(){
+		$cdwa = '';
+		$cdwa .= '<displayMeasurements>' . $this->displayMeasurements . '</displayMeasurements>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_indexingMeasurementsWrap(){
+		$cdwa = '';
+		$cdwa .= '<indexingMeasurementsWrap>';
+		$cdwa .= '<indexingMeasurementsSet>';
+		foreach ($this->indexingMeasurements as $indexingMeasurements){
+
+			foreach ($indexingMeasurements->measurements as $measurements){
+				$cdwa .= '<measurementsSet ';
+				$cdwa .= 'value="' . $measurements->value . '" ';
+				$cdwa .= 'unit="' . $measurements->unit . '" ';
+				$cdwa .= 'type="' . $measurements->type . '"';
+				$cdwa .= '/>';
+			}
+		}
+
+		$cdwa .= '</indexingMeasurementsSet>';
+		$cdwa .= '</indexingMeasurementsWrap>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_displayMaterialsTech(){
+		$cdwa = '';
+		$cdwa .= '<displayMaterialsTech>' . $this->displayMaterialsTech . '</displayMaterialsTech>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_indexingMaterialsTechWrap(){
+		$cdwa = '';
+		$cdwa .= '<indexingMaterialsTechWrap>';
+		$cdwa .= '<indexingMaterialsTechSet>';
+		foreach ($this->indexingMaterialsTeches as $indexingMaterialsTeches){
+			foreach ($indexingMaterialsTeches->termMaterialsTeches as $termMaterialsTeches){
+				$cdwa .= '<termMaterialsTech>' . $termMaterialsTeches->termMaterialsTech . '</termMaterialsTech>';
+			}
+		}
+
+		$cdwa .= '</indexingMaterialsTechSet>';
+		$cdwa .= '</indexingMaterialsTechWrap>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_styleWrap(){
+		$cdwa = '';
+		$cdwa .= '<styleWrap>';
+		foreach ($this->styles as $style){
+			$cdwa .= '<style>' . $style->style . '</style>';
+		}
+		$cdwa .= '</styleWrap>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_displayCreationDate(){
+		$cdwa = '';
+		$cdwa .= '<displayCreationDate>' . $this->displayCreationDate . '</displayCreationDate>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_indexingDatesWrap(){
+		$cdwa = '';
+		$cdwa .= '<indexingDatesWrap>';
+
+		foreach ($this->indexingDates as $indexingDates){
+			$cdwa .= '<indexingDatesSet>';
+			$cdwa .= '<dateQualifier>' . $indexingDates->dateQualifier . '</dateQualifier>';
+			if($indexingDates->earliestDate0 != null){
+				$cdwa .= '<earliestDate>' . $indexingDates->earliestDate0->earliestDate . '</earliestDate>';
+			}
+			if ($indexingDates->latestDate0 !=null){
+				$cdwa .= '<latestDate>' . $indexingDates->latestDate0->latestDate . '</latestDate>';
+			}
+			$cdwa .= '</indexingDatesSet>';
+		}
+
+		$cdwa .= '</indexingDatesWrap>';
+		return $cdwa;
+	}
+
+	public function getCDWAlite_locationWrap(){
+		$cdwa = '';
+		$cdwa .= '<locationWrap>';
+
+		foreach ($this->locations as $locations){
+			$cdwa .= '<locationSet>';
+			$cdwa .= '<locationName type="'.$locations->locationName->type.'">' . $locations->locationName->locationName . '</locationName>';
+			$cdwa .= '</locationSet>';
+		}
+
+		$cdwa .= '</locationWrap>';
 		return $cdwa;
 	}
 	
-
-
-
-
+	public function getCDWAlite_classificationWrap(){
+		$cdwa = '';
+		$cdwa .= '<classificationWrap>';
+	
+		foreach ($this->classifications as $classifications){
+			$cdwa .= '<classification>' . $classifications->classification . '</classification>';
+		}
+	
+		$cdwa .= '</classificationWrap>';
+		return $cdwa;
+	}
 
 }

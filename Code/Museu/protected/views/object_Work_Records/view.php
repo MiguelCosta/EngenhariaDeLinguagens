@@ -16,6 +16,7 @@ $this->breadcrumbs = array(
 
 $this->menu = array(
 		array('label' => 'Índice', 'url' => array('index')),
+		array('label' => 'CDWA-Lite', 'url' => array('CDWAlite', 'id' => $model->id_object_Work_Records)),
 		array('label' => 'Criar', 'url' => array('create')),
 		array('label' => 'Criar Ficha Completa', 'url' => array('createAll')),
 		array('label' => 'Actualizar', 'url' => array('update', 'id' => $model->id_object_Work_Records)),
