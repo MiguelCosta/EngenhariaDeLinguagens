@@ -1,6 +1,6 @@
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (54, '<Desconhecido>', '5,5 x 8,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (54, 'Desconhecido', '5,5 x 8,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,54);
 /* Tabela Object_Work_Titles */
@@ -31,7 +31,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('54', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('54','54','54');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (55, '<Desconhecido>', '5 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (55, 'Desconhecido', '5 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,55);
 /* Tabela Object_Work_Titles */
@@ -62,7 +62,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('55', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('55','55','55');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (56, '<Desconhecido>', '9, 5 x 14,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (56, 'Desconhecido', '9, 5 x 14,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,56);
 /* Tabela Object_Work_Titles */
@@ -93,7 +93,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('56', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('56','56','56');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (57, '<Desconhecido>', '12,8 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (57, 'Desconhecido', '12,8 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,57);
 /* Tabela Object_Work_Titles */
@@ -160,7 +160,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('57', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('57','57','57');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (58, '<Desconhecido>', '7,4 x 11 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (58, 'Desconhecido', '7,4 x 11 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,58);
 /* Tabela Object_Work_Titles */
@@ -191,7 +191,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('58', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('58','58','58');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (59, '<Desconhecido>', '7,3 x 10,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (59, 'Desconhecido', '7,3 x 10,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,59);
 /* Tabela Object_Work_Titles */
@@ -228,7 +228,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('59', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('59','59','59');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (60, '<Desconhecido>', '10,7 x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (60, 'Desconhecido', '10,7 x 7,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,60);
 /* Tabela Object_Work_Titles */
@@ -273,7 +273,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('60', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('60','60','60');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (61, '<Desconhecido>', '12,3 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (61, 'Desconhecido', '12,3 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,61);
 /* Tabela Object_Work_Titles */
@@ -308,7 +308,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('61', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('61','61','61');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (62, '<Desconhecido>', '12,8 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (62, 'Desconhecido', '12,8 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,62);
 /* Tabela Object_Work_Titles */
@@ -349,7 +349,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('62', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('62','62','62');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (63, '<Desconhecido>', '8,5 x 11,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (63, 'Desconhecido', '8,5 x 11,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,63);
 /* Tabela Object_Work_Titles */
@@ -380,7 +380,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('63', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('63','63','63');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (64, '<Desconhecido>', '13,3 x 10,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (64, 'Desconhecido', '13,3 x 10,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,64);
 /* Tabela Object_Work_Titles */
@@ -411,7 +411,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('64', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('64','64','64');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (65, '<Desconhecido>', '13 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (65, 'Desconhecido', '13 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,65);
 /* Tabela Object_Work_Titles */
@@ -454,7 +454,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('65', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('65','65','65');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (66, '<Desconhecido>', '13,3 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (66, 'Desconhecido', '13,3 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,66);
 /* Tabela Object_Work_Titles */
@@ -493,7 +493,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('66', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('66','66','66');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (67, '<Desconhecido>', '9,4 x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (67, 'Desconhecido', '9,4 x 6,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,67);
 /* Tabela Object_Work_Titles */
@@ -524,7 +524,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('67', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('67','67','67');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (68, '<Desconhecido>', '7,5 x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (68, 'Desconhecido', '7,5 x 9,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,68);
 /* Tabela Object_Work_Titles */
@@ -555,7 +555,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('68', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('68','68','68');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (69, '<Desconhecido>', '8 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (69, 'Desconhecido', '8 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,69);
 /* Tabela Object_Work_Titles */
@@ -586,7 +586,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('69', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('69','69','69');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (70, '<Desconhecido>', '6,5 x 7,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (70, 'Desconhecido', '6,5 x 7,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,70);
 /* Tabela Object_Work_Titles */
@@ -617,7 +617,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('70', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('70','70','70');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (71, '<Desconhecido>', '8,5 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (71, 'Desconhecido', '8,5 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,71);
 /* Tabela Object_Work_Titles */
@@ -648,7 +648,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('71', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('71','71','71');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (72, '<Desconhecido>', '5,8 x 9,2 cm', '<Desconhecido>', '1917', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (72, 'Desconhecido', '5,8 x 9,2 cm', 'Desconhecido', '1917', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,72);
 /* Tabela Object_Work_Titles */
@@ -683,7 +683,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('72', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('72','72','72');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (73, '<Desconhecido>', '6,3 x 10,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (73, 'Desconhecido', '6,3 x 10,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,73);
 /* Tabela Object_Work_Titles */
@@ -714,7 +714,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('73', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('73','73','73');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (74, 'Eduardo de Moura', '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (74, 'Eduardo de Moura', 'Desconhecido', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,74);
 /* Tabela Object_Work_Titles */
@@ -743,7 +743,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('74', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('74','74','74');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (75, '<Desconhecido>', '7,2 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (75, 'Desconhecido', '7,2 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,75);
 /* Tabela Object_Work_Titles */
@@ -774,7 +774,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('75', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('75','75','75');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (76, '<Desconhecido>', '8,2 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (76, 'Desconhecido', '8,2 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,76);
 /* Tabela Object_Work_Titles */
@@ -805,7 +805,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('76', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('76','76','76');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (77, '<Desconhecido>', '8,9 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (77, 'Desconhecido', '8,9 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,77);
 /* Tabela Object_Work_Titles */
@@ -836,7 +836,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('77', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('77','77','77');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (78, '<Desconhecido>', '8,6 x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (78, 'Desconhecido', '8,6 x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,78);
 /* Tabela Object_Work_Titles */
@@ -871,7 +871,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('78', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('78','78','78');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (79, '<Desconhecido>', '7,3 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (79, 'Desconhecido', '7,3 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,79);
 /* Tabela Object_Work_Titles */
@@ -902,7 +902,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('79', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('79','79','79');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (80, '<Desconhecido>', '7,3 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (80, 'Desconhecido', '7,3 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,80);
 /* Tabela Object_Work_Titles */
@@ -933,7 +933,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('80', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('80','80','80');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (81, '<Desconhecido>', '7,6 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (81, 'Desconhecido', '7,6 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,81);
 /* Tabela Object_Work_Titles */
@@ -964,7 +964,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('81', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('81','81','81');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (82, '<Desconhecido>', '7,2 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (82, 'Desconhecido', '7,2 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,82);
 /* Tabela Object_Work_Titles */
@@ -1009,7 +1009,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('82', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('82','82','82');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (83, '<Desconhecido>', '7 x 4,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (83, 'Desconhecido', '7 x 4,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,83);
 /* Tabela Object_Work_Titles */
@@ -1040,7 +1040,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('83', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('83','83','83');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (84, '<Desconhecido>', '6,8 x 4,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (84, 'Desconhecido', '6,8 x 4,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,84);
 /* Tabela Object_Work_Titles */
@@ -1071,7 +1071,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('84', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('84','84','84');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (85, '<Desconhecido>', '6,3 x 4,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (85, 'Desconhecido', '6,3 x 4,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,85);
 /* Tabela Object_Work_Titles */
@@ -1102,7 +1102,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('85', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('85','85','85');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (86, 'Gomes Ferreira', '7,5 x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (86, 'Gomes Ferreira', '7,5 x 6,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,86);
 /* Tabela Object_Work_Titles */
@@ -1138,7 +1138,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('86', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('86','86','86');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (87, '<Desconhecido>', '6,4 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (87, 'Desconhecido', '6,4 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,87);
 /* Tabela Object_Work_Titles */
@@ -1169,7 +1169,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('87', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('87','87','87');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (88, '<Desconhecido>', '7 x 4,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (88, 'Desconhecido', '7 x 4,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,88);
 /* Tabela Object_Work_Titles */
@@ -1214,7 +1214,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('88', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('88','88','88');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (89, '<Desconhecido>', '8 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (89, 'Desconhecido', '8 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,89);
 /* Tabela Object_Work_Titles */
@@ -1245,7 +1245,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('89', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('89','89','89');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (90, '<Desconhecido>', '9,5 x 4,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (90, 'Desconhecido', '9,5 x 4,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,90);
 /* Tabela Object_Work_Titles */
@@ -1294,7 +1294,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('90', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('90','90','90');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (91, '<Desconhecido>', '5,8 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (91, 'Desconhecido', '5,8 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,91);
 /* Tabela Object_Work_Titles */
@@ -1329,7 +1329,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('91', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('91','91','91');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (92, '<Desconhecido>', '8,7 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (92, 'Desconhecido', '8,7 x 5,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,92);
 /* Tabela Object_Work_Titles */
@@ -1360,7 +1360,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('92', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('92','92','92');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (93, '<Desconhecido>', '8 x 5,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (93, 'Desconhecido', '8 x 5,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,93);
 /* Tabela Object_Work_Titles */
@@ -1393,7 +1393,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('93', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('93','93','93');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (94, '<Desconhecido>', '6,9 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (94, 'Desconhecido', '6,9 x 5,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,94);
 /* Tabela Object_Work_Titles */
@@ -1424,7 +1424,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('94', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('94','94','94');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (95, '<Desconhecido>', '4,5 x 9.6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (95, 'Desconhecido', '4,5 x 9.6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,95);
 /* Tabela Object_Work_Titles */
@@ -1485,7 +1485,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('95', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('95','95','95');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (96, '<Desconhecido>', '5,5 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (96, 'Desconhecido', '5,5 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,96);
 /* Tabela Object_Work_Titles */
@@ -1516,7 +1516,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('96', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('96','96','96');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (97, '<Desconhecido>', '6,9 x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (97, 'Desconhecido', '6,9 x 6,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,97);
 /* Tabela Object_Work_Titles */
@@ -1547,7 +1547,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('97', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('97','97','97');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (98, '<Desconhecido>', '5,1 x 3,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (98, 'Desconhecido', '5,1 x 3,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,98);
 /* Tabela Object_Work_Titles */
@@ -1580,7 +1580,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('98', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('98','98','98');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (99, '<Desconhecido>', '6,6 x 4,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (99, 'Desconhecido', '6,6 x 4,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,99);
 /* Tabela Object_Work_Titles */
@@ -1637,7 +1637,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('99', 'gravur
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('99','99','99');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (100, '<Desconhecido>', '3 x 5,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (100, 'Desconhecido', '3 x 5,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,100);
 /* Tabela Object_Work_Titles */
@@ -1670,7 +1670,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('100', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('100','100','100');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (101, '<Desconhecido>', '6,4 x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (101, 'Desconhecido', '6,4 x 5,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,101);
 /* Tabela Object_Work_Titles */
@@ -1701,7 +1701,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('101', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('101','101','101');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (102, '<Desconhecido>', '5,4 x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (102, 'Desconhecido', '5,4 x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,102);
 /* Tabela Object_Work_Titles */
@@ -1732,7 +1732,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('102', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('102','102','102');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (103, '<Desconhecido>', '6 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (103, 'Desconhecido', '6 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,103);
 /* Tabela Object_Work_Titles */
@@ -1763,7 +1763,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('103', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('103','103','103');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (104, '<Desconhecido>', '5,5 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (104, 'Desconhecido', '5,5 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,104);
 /* Tabela Object_Work_Titles */
@@ -1794,7 +1794,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('104', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('104','104','104');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (105, '<Desconhecido>', '5,4 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (105, 'Desconhecido', '5,4 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,105);
 /* Tabela Object_Work_Titles */
@@ -1825,7 +1825,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('105', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('105','105','105');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (106, '<Desconhecido>', '9,7 x 6,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (106, 'Desconhecido', '9,7 x 6,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,106);
 /* Tabela Object_Work_Titles */
@@ -1856,7 +1856,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('106', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('106','106','106');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (107, '<Desconhecido>', '19,4 x 14,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (107, 'Desconhecido', '19,4 x 14,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,107);
 /* Tabela Object_Work_Titles */
@@ -1893,7 +1893,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('107', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('107','107','107');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (108, 'Cerdeira', '16,8 x 8,9 cm', '<Desconhecido>', '1924', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (108, 'Cerdeira', '16,8 x 8,9 cm', 'Desconhecido', '1924', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,108);
 /* Tabela Object_Work_Titles */
@@ -1933,7 +1933,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('108', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('108','108','108');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (109, '<Desconhecido>', '12,7 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (109, 'Desconhecido', '12,7 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,109);
 /* Tabela Object_Work_Titles */
@@ -1972,7 +1972,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('109', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('109','109','109');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (110, '<Desconhecido>', '11,8 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (110, 'Desconhecido', '11,8 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,110);
 /* Tabela Object_Work_Titles */
@@ -2015,7 +2015,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('110', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('110','110','110');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (111, '<Desconhecido>', '12,5 x 7,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (111, 'Desconhecido', '12,5 x 7,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,111);
 /* Tabela Object_Work_Titles */
@@ -2046,7 +2046,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('111', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('111','111','111');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (112, '<Desconhecido>', '11,1 x 14,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (112, 'Desconhecido', '11,1 x 14,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,112);
 /* Tabela Object_Work_Titles */
@@ -2077,7 +2077,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('112', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('112','112','112');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (113, 'Cerdeira', '73,9 x 9,1 cm', '<Desconhecido>', '1924', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (113, 'Cerdeira', '73,9 x 9,1 cm', 'Desconhecido', '1924', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,113);
 /* Tabela Object_Work_Titles */
@@ -2114,7 +2114,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('113', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('113','113','113');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (114, 'Cerdeira', '14,4 x 7,3 cm', '<Desconhecido>', '1924', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (114, 'Cerdeira', '14,4 x 7,3 cm', 'Desconhecido', '1924', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,114);
 /* Tabela Object_Work_Titles */
@@ -2151,7 +2151,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('114', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('114','114','114');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (115, '<Desconhecido>', '72,9 x 8,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (115, 'Desconhecido', '72,9 x 8,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,115);
 /* Tabela Object_Work_Titles */
@@ -2198,7 +2198,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('115', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('115','115','115');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (116, '<Desconhecido>', '10,6 x 9,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (116, 'Desconhecido', '10,6 x 9,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,116);
 /* Tabela Object_Work_Titles */
@@ -2229,7 +2229,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('116', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('116','116','116');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (117, '<Desconhecido>', '9,8 x 7,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (117, 'Desconhecido', '9,8 x 7,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,117);
 /* Tabela Object_Work_Titles */
@@ -2262,7 +2262,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('117', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('117','117','117');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (118, '<Desconhecido>', '9,3 x 6,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (118, 'Desconhecido', '9,3 x 6,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,118);
 /* Tabela Object_Work_Titles */
@@ -2293,7 +2293,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('118', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('118','118','118');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (119, '<Desconhecido>', '10,3 x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (119, 'Desconhecido', '10,3 x 7,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,119);
 /* Tabela Object_Work_Titles */
@@ -2334,7 +2334,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('119', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('119','119','119');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (120, '<Desconhecido>', '9,6 x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (120, 'Desconhecido', '9,6 x 5,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,120);
 /* Tabela Object_Work_Titles */
@@ -2367,7 +2367,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('120', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('120','120','120');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (121, '<Desconhecido>', '9,8 x 7 cm', '<Desconhecido>', '1929', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (121, 'Desconhecido', '9,8 x 7 cm', 'Desconhecido', '1929', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,121);
 /* Tabela Object_Work_Titles */
@@ -2402,7 +2402,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('121', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('121','121','121');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (122, 'Cerdeira', '9,1 x 3,8 cm', '<Desconhecido>', '1924', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (122, 'Cerdeira', '9,1 x 3,8 cm', 'Desconhecido', '1924', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,122);
 /* Tabela Object_Work_Titles */
@@ -2439,7 +2439,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('122', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('122','122','122');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (123, 'Cordeiro/Cerdeira', '9,4 x 3,1 cm', '<Desconhecido>', '1921', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (123, 'Cordeiro/Cerdeira', '9,4 x 3,1 cm', 'Desconhecido', '1921', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,123);
 /* Tabela Object_Work_Titles */
@@ -2479,7 +2479,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('123', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('123','123','123');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (124, '<Desconhecido>', '5,7 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (124, 'Desconhecido', '5,7 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,124);
 /* Tabela Object_Work_Titles */
@@ -2510,7 +2510,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('124', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('124','124','124');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (125, '<Desconhecido>', '7,5 x 10,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (125, 'Desconhecido', '7,5 x 10,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,125);
 /* Tabela Object_Work_Titles */
@@ -2541,7 +2541,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('125', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('125','125','125');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (126, '<Desconhecido>', '10,9 x 7,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (126, 'Desconhecido', '10,9 x 7,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,126);
 /* Tabela Object_Work_Titles */
@@ -2576,7 +2576,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('126', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('126','126','126');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (127, '<Desconhecido>', '9,1 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (127, 'Desconhecido', '9,1 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,127);
 /* Tabela Object_Work_Titles */
@@ -2607,7 +2607,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('127', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('127','127','127');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (128, '<Desconhecido>', '8,9 x 5,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (128, 'Desconhecido', '8,9 x 5,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,128);
 /* Tabela Object_Work_Titles */
@@ -2638,7 +2638,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('128', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('128','128','128');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (129, '<Desconhecido>', '7,1 x 9,9 cm', '<Desconhecido>', '1970', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (129, 'Desconhecido', '7,1 x 9,9 cm', 'Desconhecido', '1970', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,129);
 /* Tabela Object_Work_Titles */
@@ -2673,7 +2673,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('129', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('129','129','129');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (130, '<Desconhecido>', '8 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (130, 'Desconhecido', '8 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,130);
 /* Tabela Object_Work_Titles */
@@ -2704,7 +2704,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('130', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('130','130','130');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (131, '<Desconhecido>', '8,3 x 10,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (131, 'Desconhecido', '8,3 x 10,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,131);
 /* Tabela Object_Work_Titles */
@@ -2735,7 +2735,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('131', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('131','131','131');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (132, '<Desconhecido>', '8,7 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (132, 'Desconhecido', '8,7 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,132);
 /* Tabela Object_Work_Titles */
@@ -2766,7 +2766,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('132', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('132','132','132');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (133, '<Desconhecido>', '9,5 x 7,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (133, 'Desconhecido', '9,5 x 7,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,133);
 /* Tabela Object_Work_Titles */
@@ -2797,7 +2797,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('133', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('133','133','133');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (134, '<Desconhecido>', '8,9 x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (134, 'Desconhecido', '8,9 x 5,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,134);
 /* Tabela Object_Work_Titles */
@@ -2828,7 +2828,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('134', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('134','134','134');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (135, '<Desconhecido>', '4 x 6,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (135, 'Desconhecido', '4 x 6,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,135);
 /* Tabela Object_Work_Titles */
@@ -2859,7 +2859,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('135', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('135','135','135');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (136, '<Desconhecido>', '4,6 x 7, 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (136, 'Desconhecido', '4,6 x 7, 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,136);
 /* Tabela Object_Work_Titles */
@@ -2890,7 +2890,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('136', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('136','136','136');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (137, '<Desconhecido>', '9,4 x 5,1 cm', '<Desconhecido>', '1944', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (137, 'Desconhecido', '9,4 x 5,1 cm', 'Desconhecido', '1944', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,137);
 /* Tabela Object_Work_Titles */
@@ -2927,7 +2927,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('137', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('137','137','137');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (138, '<Desconhecido>', '9,6 x 6,6 cm', '<Desconhecido>', '...-06-1960', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (138, 'Desconhecido', '9,6 x 6,6 cm', 'Desconhecido', '...-06-1960', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,138);
 /* Tabela Object_Work_Titles */
@@ -2962,7 +2962,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('138', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('138','138','138');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (139, '<Desconhecido>', '8,9 x 6,5 cm', '<Desconhecido>', '15-07-1940', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (139, 'Desconhecido', '8,9 x 6,5 cm', 'Desconhecido', '15-07-1940', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,139);
 /* Tabela Object_Work_Titles */
@@ -2997,7 +2997,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('139', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('139','139','139');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (140, '<Desconhecido>', '4,2 x 3,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (140, 'Desconhecido', '4,2 x 3,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,140);
 /* Tabela Object_Work_Titles */
@@ -3028,7 +3028,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('140', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('140','140','140');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (141, '<Desconhecido>', '8,4 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (141, 'Desconhecido', '8,4 x 5,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,141);
 /* Tabela Object_Work_Titles */
@@ -3059,7 +3059,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('141', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('141','141','141');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (142, '<Desconhecido>', '5,8 x 3,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (142, 'Desconhecido', '5,8 x 3,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,142);
 /* Tabela Object_Work_Titles */
@@ -3092,7 +3092,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('142', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('142','142','142');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (143, '<Desconhecido>', '6,2 x 5,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (143, 'Desconhecido', '6,2 x 5,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,143);
 /* Tabela Object_Work_Titles */
@@ -3123,7 +3123,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('143', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('143','143','143');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (144, '<Desconhecido>', '6 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (144, 'Desconhecido', '6 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,144);
 /* Tabela Object_Work_Titles */
@@ -3154,7 +3154,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('144', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('144','144','144');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (145, '<Desconhecido>', '6,1 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (145, 'Desconhecido', '6,1 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,145);
 /* Tabela Object_Work_Titles */
@@ -3185,7 +3185,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('145', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('145','145','145');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (146, '<Desconhecido>', '5,9 x 9,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (146, 'Desconhecido', '5,9 x 9,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,146);
 /* Tabela Object_Work_Titles */
@@ -3216,7 +3216,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('146', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('146','146','146');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (147, '<Desconhecido>', '5,7 x 4,8 cm', '<Desconhecido>', '06-01-1955', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (147, 'Desconhecido', '5,7 x 4,8 cm', 'Desconhecido', '06-01-1955', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,147);
 /* Tabela Object_Work_Titles */
@@ -3251,7 +3251,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('147', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('147','147','147');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (148, '<Desconhecido>', '7,3 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (148, 'Desconhecido', '7,3 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,148);
 /* Tabela Object_Work_Titles */
@@ -3282,7 +3282,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('148', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('148','148','148');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (149, '<Desconhecido>', '6,9 x 9,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (149, 'Desconhecido', '6,9 x 9,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,149);
 /* Tabela Object_Work_Titles */
@@ -3313,7 +3313,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('149', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('149','149','149');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (150, '<Desconhecido>', '6,2 x 9,9 cm', '<Desconhecido>', '16-01-1941', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (150, 'Desconhecido', '6,2 x 9,9 cm', 'Desconhecido', '16-01-1941', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,150);
 /* Tabela Object_Work_Titles */
@@ -3356,7 +3356,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('150', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('150','150','150');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (151, '<Desconhecido>', '4,9 x 6,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (151, 'Desconhecido', '4,9 x 6,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,151);
 /* Tabela Object_Work_Titles */
@@ -3387,7 +3387,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('151', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('151','151','151');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (152, '<Desconhecido>', '6,6 x 7,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (152, 'Desconhecido', '6,6 x 7,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,152);
 /* Tabela Object_Work_Titles */
@@ -3418,7 +3418,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('152', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('152','152','152');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (153, '<Desconhecido>', '6,3 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (153, 'Desconhecido', '6,3 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,153);
 /* Tabela Object_Work_Titles */
@@ -3449,7 +3449,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('153', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('153','153','153');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (154, '<Desconhecido>', '6,8 x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (154, 'Desconhecido', '6,8 x 6,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,154);
 /* Tabela Object_Work_Titles */
@@ -3480,7 +3480,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('154', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('154','154','154');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (155, '<Desconhecido>', '6,2 x 7,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (155, 'Desconhecido', '6,2 x 7,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,155);
 /* Tabela Object_Work_Titles */
@@ -3511,7 +3511,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('155', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('155','155','155');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (156, '<Desconhecido>', '5,9 x 9,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (156, 'Desconhecido', '5,9 x 9,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,156);
 /* Tabela Object_Work_Titles */
@@ -3542,7 +3542,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('156', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('156','156','156');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (157, '<Desconhecido>', '6,7 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (157, 'Desconhecido', '6,7 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,157);
 /* Tabela Object_Work_Titles */
@@ -3573,7 +3573,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('157', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('157','157','157');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (158, '<Desconhecido>', '7,5 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (158, 'Desconhecido', '7,5 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,158);
 /* Tabela Object_Work_Titles */
@@ -3604,7 +3604,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('158', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('158','158','158');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (159, '<Desconhecido>', '5,8 x 10,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (159, 'Desconhecido', '5,8 x 10,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,159);
 /* Tabela Object_Work_Titles */
@@ -3635,7 +3635,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('159', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('159','159','159');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (160, '<Desconhecido>', '8,6 x 5.8 cm', '<Desconhecido>', '18-12-1965', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (160, 'Desconhecido', '8,6 x 5.8 cm', 'Desconhecido', '18-12-1965', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,160);
 /* Tabela Object_Work_Titles */
@@ -3670,7 +3670,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('160', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('160','160','160');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (161, '<Desconhecido>', '7 x 9,9 cm', '<Desconhecido>', '19-09-1981', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (161, 'Desconhecido', '7 x 9,9 cm', 'Desconhecido', '19-09-1981', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,161);
 /* Tabela Object_Work_Titles */
@@ -3705,7 +3705,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('161', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('161','161','161');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (162, '<Desconhecido>', '8 x 7,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (162, 'Desconhecido', '8 x 7,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,162);
 /* Tabela Object_Work_Titles */
@@ -3736,7 +3736,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('162', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('162','162','162');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (163, '<Desconhecido>', '5,5 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (163, 'Desconhecido', '5,5 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,163);
 /* Tabela Object_Work_Titles */
@@ -3771,7 +3771,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('163', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('163','163','163');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (164, '<Desconhecido>', '4,5 x 7,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (164, 'Desconhecido', '4,5 x 7,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,164);
 /* Tabela Object_Work_Titles */
@@ -3802,7 +3802,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('164', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('164','164','164');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (165, '<Desconhecido>', '6,5 x 4,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (165, 'Desconhecido', '6,5 x 4,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,165);
 /* Tabela Object_Work_Titles */
@@ -3833,7 +3833,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('165', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('165','165','165');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (166, '<Desconhecido>', '6,7 x 8,5 cm', '<Desconhecido>', '…-07-1912', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (166, 'Desconhecido', '6,7 x 8,5 cm', 'Desconhecido', '…-07-1912', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,166);
 /* Tabela Object_Work_Titles */
@@ -3868,7 +3868,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('166', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('166','166','166');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (167, '<Desconhecido>', '5,8 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (167, 'Desconhecido', '5,8 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,167);
 /* Tabela Object_Work_Titles */
@@ -3899,7 +3899,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('167', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('167','167','167');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (168, '<Desconhecido>', '6,7 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (168, 'Desconhecido', '6,7 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,168);
 /* Tabela Object_Work_Titles */
@@ -3930,7 +3930,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('168', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('168','168','168');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (169, '<Desconhecido>', '6,1 x 4,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (169, 'Desconhecido', '6,1 x 4,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,169);
 /* Tabela Object_Work_Titles */
@@ -3961,7 +3961,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('169', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('169','169','169');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (170, '<Desconhecido>', '8,7 x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (170, 'Desconhecido', '8,7 x 5,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,170);
 /* Tabela Object_Work_Titles */
@@ -4004,7 +4004,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('170', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('170','170','170');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (171, '<Desconhecido>', '6,5 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (171, 'Desconhecido', '6,5 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,171);
 /* Tabela Object_Work_Titles */
@@ -4035,7 +4035,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('171', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('171','171','171');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (172, '<Desconhecido>', '7,1 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (172, 'Desconhecido', '7,1 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,172);
 /* Tabela Object_Work_Titles */
@@ -4066,7 +4066,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('172', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('172','172','172');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (173, '<Desconhecido>', '6,1 x 7,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (173, 'Desconhecido', '6,1 x 7,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,173);
 /* Tabela Object_Work_Titles */
@@ -4097,7 +4097,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('173', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('173','173','173');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (174, '<Desconhecido>', '9,6 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (174, 'Desconhecido', '9,6 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,174);
 /* Tabela Object_Work_Titles */
@@ -4128,7 +4128,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('174', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('174','174','174');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (175, '<Desconhecido>', '4,2 x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (175, 'Desconhecido', '4,2 x 6,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,175);
 /* Tabela Object_Work_Titles */
@@ -4159,7 +4159,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('175', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('175','175','175');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (176, '<Desconhecido>', '6,9 x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (176, 'Desconhecido', '6,9 x 6,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,176);
 /* Tabela Object_Work_Titles */
@@ -4192,7 +4192,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('176', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('176','176','176');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (177, '<Desconhecido>', '5,6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (177, 'Desconhecido', '5,6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,177);
 /* Tabela Object_Work_Titles */
@@ -4223,7 +4223,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('177', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('177','177','177');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (178, '<Desconhecido>', '7 x 5,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (178, 'Desconhecido', '7 x 5,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,178);
 /* Tabela Object_Work_Titles */
@@ -4258,7 +4258,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('178', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('178','178','178');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (179, '<Desconhecido>', '5,5 x 5,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (179, 'Desconhecido', '5,5 x 5,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,179);
 /* Tabela Object_Work_Titles */
@@ -4289,7 +4289,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('179', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('179','179','179');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (180, '<Desconhecido>', '6,2 x 8,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (180, 'Desconhecido', '6,2 x 8,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,180);
 /* Tabela Object_Work_Titles */
@@ -4320,7 +4320,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('180', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('180','180','180');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (181, '<Desconhecido>', '6 x 8,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (181, 'Desconhecido', '6 x 8,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,181);
 /* Tabela Object_Work_Titles */
@@ -4357,7 +4357,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('181', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('181','181','181');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (182, '<Desconhecido>', '5,3 x 7,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (182, 'Desconhecido', '5,3 x 7,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,182);
 /* Tabela Object_Work_Titles */
@@ -4388,7 +4388,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('182', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('182','182','182');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (183, '<Desconhecido>', '5,2 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (183, 'Desconhecido', '5,2 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,183);
 /* Tabela Object_Work_Titles */
@@ -4419,7 +4419,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('183', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('183','183','183');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (184, '<Desconhecido>', '7,2 x 7,3 cm', '<Desconhecido>', '10-08-1974', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (184, 'Desconhecido', '7,2 x 7,3 cm', 'Desconhecido', '10-08-1974', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,184);
 /* Tabela Object_Work_Titles */
@@ -4454,7 +4454,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('184', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('184','184','184');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (185, '<Desconhecido>', '5,7 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (185, 'Desconhecido', '5,7 x 5,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,185);
 /* Tabela Object_Work_Titles */
@@ -4485,7 +4485,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('185', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('185','185','185');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (186, '<Desconhecido>', '8,2 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (186, 'Desconhecido', '8,2 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,186);
 /* Tabela Object_Work_Titles */
@@ -4516,7 +4516,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('186', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('186','186','186');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (187, '<Desconhecido>', '5,3 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (187, 'Desconhecido', '5,3 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,187);
 /* Tabela Object_Work_Titles */
@@ -4553,7 +4553,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('187', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('187','187','187');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (188, '<Desconhecido>', '6,3 x 9,9 cm', '<Desconhecido>', '16-01-1941', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (188, 'Desconhecido', '6,3 x 9,9 cm', 'Desconhecido', '16-01-1941', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,188);
 /* Tabela Object_Work_Titles */
@@ -4590,7 +4590,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('188', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('188','188','188');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (189, '<Desconhecido>', '5,8 x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (189, 'Desconhecido', '5,8 x 5,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,189);
 /* Tabela Object_Work_Titles */
@@ -4621,7 +4621,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('189', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('189','189','189');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (190, '<Desconhecido>', '7,8 x 5,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (190, 'Desconhecido', '7,8 x 5,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,190);
 /* Tabela Object_Work_Titles */
@@ -4654,7 +4654,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('190', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('190','190','190');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (191, 'Foto Marques Abreu', '10 x 11 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (191, 'Foto Marques Abreu', '10 x 11 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,191);
 /* Tabela Object_Work_Titles */
@@ -4690,7 +4690,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('191', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('191','191','191');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (192, '<Desconhecido>', '12,8 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (192, 'Desconhecido', '12,8 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,192);
 /* Tabela Object_Work_Titles */
@@ -4729,7 +4729,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('192', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('192','192','192');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (193, '<Desconhecido>', '5,9 x 4,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (193, 'Desconhecido', '5,9 x 4,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,193);
 /* Tabela Object_Work_Titles */
@@ -4770,7 +4770,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('193', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('193','193','193');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (194, '<Desconhecido>', '5,3 x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (194, 'Desconhecido', '5,3 x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,194);
 /* Tabela Object_Work_Titles */
@@ -4801,7 +4801,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('194', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('194','194','194');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (195, '<Desconhecido>', '6,0 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (195, 'Desconhecido', '6,0 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,195);
 /* Tabela Object_Work_Titles */
@@ -4832,7 +4832,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('195', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('195','195','195');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (196, '<Desconhecido>', '5,6 x 8,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (196, 'Desconhecido', '5,6 x 8,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,196);
 /* Tabela Object_Work_Titles */
@@ -4863,7 +4863,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('196', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('196','196','196');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (197, '<Desconhecido>', '8,9 x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (197, 'Desconhecido', '8,9 x 6,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,197);
 /* Tabela Object_Work_Titles */
@@ -4900,7 +4900,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('197', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('197','197','197');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (198, '<Desconhecido>', '6,8 x 4,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (198, 'Desconhecido', '6,8 x 4,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,198);
 /* Tabela Object_Work_Titles */
@@ -4931,7 +4931,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('198', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('198','198','198');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (199, '<Desconhecido>', '5,0 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (199, 'Desconhecido', '5,0 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,199);
 /* Tabela Object_Work_Titles */
@@ -4964,7 +4964,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('199', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('199','199','199');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (200, '<Desconhecido>', '6,7 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (200, 'Desconhecido', '6,7 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,200);
 /* Tabela Object_Work_Titles */
@@ -4995,7 +4995,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('200', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('200','200','200');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (201, '<Desconhecido>', '5,5 x 9,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (201, 'Desconhecido', '5,5 x 9,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,201);
 /* Tabela Object_Work_Titles */
@@ -5026,7 +5026,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('201', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('201','201','201');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (202, 'Magalhães Lima', '5 x 8,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (202, 'Magalhães Lima', '5 x 8,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,202);
 /* Tabela Object_Work_Titles */
@@ -5062,7 +5062,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('202', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('202','202','202');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (203, '<Desconhecido>', '6 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (203, 'Desconhecido', '6 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,203);
 /* Tabela Object_Work_Titles */
@@ -5093,7 +5093,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('203', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('203','203','203');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (204, '<Desconhecido>', '4,9 x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (204, 'Desconhecido', '4,9 x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,204);
 /* Tabela Object_Work_Titles */
@@ -5124,7 +5124,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('204', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('204','204','204');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (205, '<Desconhecido>', '7,5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (205, 'Desconhecido', '7,5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,205);
 /* Tabela Object_Work_Titles */
@@ -5165,7 +5165,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('205', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('205','205','205');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (206, '<Desconhecido>', '4,7 x 3,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (206, 'Desconhecido', '4,7 x 3,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,206);
 /* Tabela Object_Work_Titles */
@@ -5196,7 +5196,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('206', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('206','206','206');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (207, '<Desconhecido>', '6,3 x 5,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (207, 'Desconhecido', '6,3 x 5,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,207);
 /* Tabela Object_Work_Titles */
@@ -5227,7 +5227,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('207', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('207','207','207');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (208, '<Desconhecido>', '6 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (208, 'Desconhecido', '6 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,208);
 /* Tabela Object_Work_Titles */
@@ -5262,7 +5262,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('208', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('208','208','208');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (209, '<Desconhecido>', '6,4 x 4,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (209, 'Desconhecido', '6,4 x 4,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,209);
 /* Tabela Object_Work_Titles */
@@ -5295,7 +5295,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('209', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('209','209','209');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (210, '<Desconhecido>', '8,2 x 5,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (210, 'Desconhecido', '8,2 x 5,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,210);
 /* Tabela Object_Work_Titles */
@@ -5330,7 +5330,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('210', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('210','210','210');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (211, '<Desconhecido>', '8,7 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (211, 'Desconhecido', '8,7 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,211);
 /* Tabela Object_Work_Titles */
@@ -5361,7 +5361,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('211', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('211','211','211');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (212, '<Desconhecido>', '5,8 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (212, 'Desconhecido', '5,8 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,212);
 /* Tabela Object_Work_Titles */
@@ -5394,7 +5394,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('212', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('212','212','212');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (213, '<Desconhecido>', '6,1 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (213, 'Desconhecido', '6,1 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,213);
 /* Tabela Object_Work_Titles */
@@ -5425,7 +5425,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('213', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('213','213','213');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (214, 'João Trovisco', '6,6 x 9,3 cm', '<Desconhecido>', '…-07-1912', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (214, 'João Trovisco', '6,6 x 9,3 cm', 'Desconhecido', '…-07-1912', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,214);
 /* Tabela Object_Work_Titles */
@@ -5465,7 +5465,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('214', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('214','214','214');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (215, 'Abreu & Cia', '6,6 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (215, 'Abreu & Cia', '6,6 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,215);
 /* Tabela Object_Work_Titles */
@@ -5513,7 +5513,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('215', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('215','215','215');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (216, '<Desconhecido>', '8,5 x 5,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (216, 'Desconhecido', '8,5 x 5,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,216);
 /* Tabela Object_Work_Titles */
@@ -5544,7 +5544,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('216', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('216','216','216');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (217, '<Desconhecido>', '7 x 5 cm', '<Desconhecido>', '19-09-1977', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (217, 'Desconhecido', '7 x 5 cm', 'Desconhecido', '19-09-1977', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,217);
 /* Tabela Object_Work_Titles */
@@ -5579,7 +5579,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('217', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('217','217','217');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (218, '<Desconhecido>', '6,6 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (218, 'Desconhecido', '6,6 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,218);
 /* Tabela Object_Work_Titles */
@@ -5610,7 +5610,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('218', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('218','218','218');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (219, '<Desconhecido>', '7 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (219, 'Desconhecido', '7 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,219);
 /* Tabela Object_Work_Titles */
@@ -5643,7 +5643,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('219', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('219','219','219');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (220, '<Desconhecido>', '6,7 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (220, 'Desconhecido', '6,7 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,220);
 /* Tabela Object_Work_Titles */
@@ -5674,7 +5674,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('220', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('220','220','220');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (221, '<Desconhecido>', '6,5 x 4,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (221, 'Desconhecido', '6,5 x 4,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,221);
 /* Tabela Object_Work_Titles */
@@ -5707,7 +5707,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('221', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('221','221','221');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (222, '<Desconhecido>', '10,9 x 6,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (222, 'Desconhecido', '10,9 x 6,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,222);
 /* Tabela Object_Work_Titles */
@@ -5738,7 +5738,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('222', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('222','222','222');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (223, '<Desconhecido>', '8,9 x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (223, 'Desconhecido', '8,9 x 6,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,223);
 /* Tabela Object_Work_Titles */
@@ -5775,7 +5775,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('223', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('223','223','223');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (224, '<Desconhecido>', '9 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (224, 'Desconhecido', '9 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,224);
 /* Tabela Object_Work_Titles */
@@ -5806,7 +5806,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('224', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('224','224','224');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (225, '<Desconhecido>', '7,9 x 5,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (225, 'Desconhecido', '7,9 x 5,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,225);
 /* Tabela Object_Work_Titles */
@@ -5837,7 +5837,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('225', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('225','225','225');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (226, '<Desconhecido>', '6,8 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (226, 'Desconhecido', '6,8 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,226);
 /* Tabela Object_Work_Titles */
@@ -5868,7 +5868,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('226', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('226','226','226');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (227, '<Desconhecido>', '8,7 x 5,8 cm', '<Desconhecido>', '21-09-1970', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (227, 'Desconhecido', '8,7 x 5,8 cm', 'Desconhecido', '21-09-1970', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,227);
 /* Tabela Object_Work_Titles */
@@ -5903,7 +5903,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('227', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('227','227','227');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (228, '<Desconhecido>', '8,7 x 5,8 cm', '<Desconhecido>', '21-09-1970', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (228, 'Desconhecido', '8,7 x 5,8 cm', 'Desconhecido', '21-09-1970', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,228);
 /* Tabela Object_Work_Titles */
@@ -5938,7 +5938,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('228', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('228','228','228');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (229, '<Desconhecido>', '8,9 x 5,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (229, 'Desconhecido', '8,9 x 5,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,229);
 /* Tabela Object_Work_Titles */
@@ -5969,7 +5969,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('229', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('229','229','229');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (230, '<Desconhecido>', '9 x 5,8 cm', '<Desconhecido>', '…-08-1959', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (230, 'Desconhecido', '9 x 5,8 cm', 'Desconhecido', '…-08-1959', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,230);
 /* Tabela Object_Work_Titles */
@@ -6004,7 +6004,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('230', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('230','230','230');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (231, '<Desconhecido>', '4,5 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (231, 'Desconhecido', '4,5 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,231);
 /* Tabela Object_Work_Titles */
@@ -6035,7 +6035,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('231', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('231','231','231');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (232, '<Desconhecido>', '9,9 x 15 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (232, 'Desconhecido', '9,9 x 15 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,232);
 /* Tabela Object_Work_Titles */
@@ -6066,7 +6066,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('232', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('232','232','232');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (233, '<Desconhecido>', '8,9 x 6,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (233, 'Desconhecido', '8,9 x 6,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,233);
 /* Tabela Object_Work_Titles */
@@ -6097,7 +6097,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('233', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('233','233','233');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (234, '<Desconhecido>', '7,2 x 10,6 cm', '<Desconhecido>', '02-05-1981', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (234, 'Desconhecido', '7,2 x 10,6 cm', 'Desconhecido', '02-05-1981', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,234);
 /* Tabela Object_Work_Titles */
@@ -6132,7 +6132,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('234', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('234','234','234');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (235, 'João Alves', '5,4 x 8,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (235, 'João Alves', '5,4 x 8,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,235);
 /* Tabela Object_Work_Titles */
@@ -6168,7 +6168,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('235', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('235','235','235');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (236, '<Desconhecido>', '3,5 x 6,8 cm', '<Desconhecido>', '11-10-1950', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (236, 'Desconhecido', '3,5 x 6,8 cm', 'Desconhecido', '11-10-1950', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,236);
 /* Tabela Object_Work_Titles */
@@ -6203,7 +6203,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('236', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('236','236','236');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (237, '<Desconhecido>', '5,5 x 8,9 cm', '<Desconhecido>', '01-03-1970', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (237, 'Desconhecido', '5,5 x 8,9 cm', 'Desconhecido', '01-03-1970', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,237);
 /* Tabela Object_Work_Titles */
@@ -6240,7 +6240,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('237', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('237','237','237');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (238, '<Desconhecido>', '5,5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (238, 'Desconhecido', '5,5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,238);
 /* Tabela Object_Work_Titles */
@@ -6271,7 +6271,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('238', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('238','238','238');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (239, '<Desconhecido>', '7 x 9,4 cm', '<Desconhecido>', '16-11-1927', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (239, 'Desconhecido', '7 x 9,4 cm', 'Desconhecido', '16-11-1927', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,239);
 /* Tabela Object_Work_Titles */
@@ -6306,7 +6306,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('239', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('239','239','239');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (240, 'Foto Jóia', '5,5 x 9,2 cm', '<Desconhecido>', '19-03-1965', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (240, 'Foto Jóia', '5,5 x 9,2 cm', 'Desconhecido', '19-03-1965', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,240);
 /* Tabela Object_Work_Titles */
@@ -6346,7 +6346,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('240', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('240','240','240');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (241, '<Desconhecido>', '5,7 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (241, 'Desconhecido', '5,7 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,241);
 /* Tabela Object_Work_Titles */
@@ -6377,7 +6377,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('241', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('241','241','241');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (242, '<Desconhecido>', '6,1 x 8,7 cm', '<Desconhecido>', '17-02-1939', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (242, 'Desconhecido', '6,1 x 8,7 cm', 'Desconhecido', '17-02-1939', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,242);
 /* Tabela Object_Work_Titles */
@@ -6412,7 +6412,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('242', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('242','242','242');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (243, '<Desconhecido>', '6,7 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (243, 'Desconhecido', '6,7 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,243);
 /* Tabela Object_Work_Titles */
@@ -6445,7 +6445,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('243', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('243','243','243');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (244, '<Desconhecido>', '6 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (244, 'Desconhecido', '6 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,244);
 /* Tabela Object_Work_Titles */
@@ -6476,7 +6476,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('244', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('244','244','244');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (245, '<Desconhecido>', '5,5 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (245, 'Desconhecido', '5,5 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,245);
 /* Tabela Object_Work_Titles */
@@ -6507,7 +6507,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('245', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('245','245','245');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (246, '<Desconhecido>', '7,3 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (246, 'Desconhecido', '7,3 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,246);
 /* Tabela Object_Work_Titles */
@@ -6538,7 +6538,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('246', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('246','246','246');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (247, '<Desconhecido>', '7 x 4,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (247, 'Desconhecido', '7 x 4,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,247);
 /* Tabela Object_Work_Titles */
@@ -6571,7 +6571,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('247', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('247','247','247');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (248, '<Desconhecido>', '6,4 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (248, 'Desconhecido', '6,4 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,248);
 /* Tabela Object_Work_Titles */
@@ -6602,7 +6602,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('248', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('248','248','248');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (249, '<Desconhecido>', '8 x 5 cm', '<Desconhecido>', '20-07-1957', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (249, 'Desconhecido', '8 x 5 cm', 'Desconhecido', '20-07-1957', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,249);
 /* Tabela Object_Work_Titles */
@@ -6637,7 +6637,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('249', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('249','249','249');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (250, '<Desconhecido>', '6,5 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (250, 'Desconhecido', '6,5 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,250);
 /* Tabela Object_Work_Titles */
@@ -6668,7 +6668,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('250', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('250','250','250');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (251, '<Desconhecido>', '5 x 3,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (251, 'Desconhecido', '5 x 3,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,251);
 /* Tabela Object_Work_Titles */
@@ -6699,7 +6699,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('251', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('251','251','251');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (252, 'Amer', '9,4 x 5,8 cm', '<Desconhecido>', '…-07-1934', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (252, 'Amer', '9,4 x 5,8 cm', 'Desconhecido', '…-07-1934', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,252);
 /* Tabela Object_Work_Titles */
@@ -6739,7 +6739,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('252', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('252','252','252');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (253, '<Desconhecido>', '6,4 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (253, 'Desconhecido', '6,4 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,253);
 /* Tabela Object_Work_Titles */
@@ -6770,7 +6770,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('253', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('253','253','253');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (254, '<Desconhecido>', '5,7 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (254, 'Desconhecido', '5,7 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,254);
 /* Tabela Object_Work_Titles */
@@ -6801,7 +6801,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('254', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('254','254','254');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (255, '<Desconhecido>', '5,2 x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (255, 'Desconhecido', '5,2 x 9,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,255);
 /* Tabela Object_Work_Titles */
@@ -6832,7 +6832,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('255', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('255','255','255');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (256, '<Desconhecido>', '8,2 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (256, 'Desconhecido', '8,2 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,256);
 /* Tabela Object_Work_Titles */
@@ -6863,7 +6863,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('256', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('256','256','256');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (257, '<Desconhecido>', '7,9 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (257, 'Desconhecido', '7,9 x 5,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,257);
 /* Tabela Object_Work_Titles */
@@ -6894,7 +6894,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('257', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('257','257','257');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (258, '<Desconhecido>', '6,3 x 4,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (258, 'Desconhecido', '6,3 x 4,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,258);
 /* Tabela Object_Work_Titles */
@@ -6925,7 +6925,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('258', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('258','258','258');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (259, '<Desconhecido>', '7,3 x 4,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (259, 'Desconhecido', '7,3 x 4,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,259);
 /* Tabela Object_Work_Titles */
@@ -6956,7 +6956,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('259', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('259','259','259');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (260, '<Desconhecido>', '5,3 x 9,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (260, 'Desconhecido', '5,3 x 9,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,260);
 /* Tabela Object_Work_Titles */
@@ -6987,7 +6987,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('260', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('260','260','260');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (261, '<Desconhecido>', '7,6 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (261, 'Desconhecido', '7,6 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,261);
 /* Tabela Object_Work_Titles */
@@ -7018,7 +7018,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('261', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('261','261','261');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (262, '<Desconhecido>', '9 x 5,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (262, 'Desconhecido', '9 x 5,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,262);
 /* Tabela Object_Work_Titles */
@@ -7049,7 +7049,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('262', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('262','262','262');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (263, '<Desconhecido>', '9,2 x 7,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (263, 'Desconhecido', '9,2 x 7,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,263);
 /* Tabela Object_Work_Titles */
@@ -7080,7 +7080,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('263', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('263','263','263');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (264, '<Desconhecido>', '6,2 x 8,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (264, 'Desconhecido', '6,2 x 8,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,264);
 /* Tabela Object_Work_Titles */
@@ -7111,7 +7111,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('264', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('264','264','264');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (265, '<Desconhecido>', '8,4 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (265, 'Desconhecido', '8,4 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,265);
 /* Tabela Object_Work_Titles */
@@ -7142,7 +7142,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('265', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('265','265','265');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (266, 'Raul', '10 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (266, 'Raul', '10 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,266);
 /* Tabela Object_Work_Titles */
@@ -7178,7 +7178,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('266', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('266','266','266');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (267, '<Desconhecido>', '8,5 x 5,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (267, 'Desconhecido', '8,5 x 5,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,267);
 /* Tabela Object_Work_Titles */
@@ -7209,7 +7209,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('267', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('267','267','267');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (268, '<Desconhecido>', '6,9 x 5,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (268, 'Desconhecido', '6,9 x 5,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,268);
 /* Tabela Object_Work_Titles */
@@ -7240,7 +7240,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('268', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('268','268','268');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (269, '<Desconhecido>', '7,8 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (269, 'Desconhecido', '7,8 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,269);
 /* Tabela Object_Work_Titles */
@@ -7271,7 +7271,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('269', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('269','269','269');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (270, 'Pintor José Soares - Porto', '16 x 13,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (270, 'Pintor José Soares - Porto', '16 x 13,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,270);
 /* Tabela Object_Work_Titles */
@@ -7307,7 +7307,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('270', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('270','270','270');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (271, '<Desconhecido>', '13 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (271, 'Desconhecido', '13 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,271);
 /* Tabela Object_Work_Titles */
@@ -7340,7 +7340,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('271', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('271','271','271');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (272, '<Desconhecido>', '12 x 7,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (272, 'Desconhecido', '12 x 7,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,272);
 /* Tabela Object_Work_Titles */
@@ -7379,7 +7379,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('272', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('272','272','272');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (273, '<Desconhecido>', '11,7 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (273, 'Desconhecido', '11,7 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,273);
 /* Tabela Object_Work_Titles */
@@ -7418,7 +7418,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('273', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('273','273','273');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (274, '<Desconhecido>', '13 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (274, 'Desconhecido', '13 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,274);
 /* Tabela Object_Work_Titles */
@@ -7451,7 +7451,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('274', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('274','274','274');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (275, '<Desconhecido>', '13,1 x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (275, 'Desconhecido', '13,1 x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,275);
 /* Tabela Object_Work_Titles */
@@ -7484,7 +7484,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('275', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('275','275','275');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (276, '<Desconhecido>', '13,2 x 9,2 cm', '<Desconhecido>', '26-06-1982', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (276, 'Desconhecido', '13,2 x 9,2 cm', 'Desconhecido', '26-06-1982', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,276);
 /* Tabela Object_Work_Titles */
@@ -7519,7 +7519,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('276', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('276','276','276');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (277, '<Desconhecido>', '10,4 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (277, 'Desconhecido', '10,4 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,277);
 /* Tabela Object_Work_Titles */
@@ -7550,7 +7550,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('277', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('277','277','277');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (278, '<Desconhecido>', '9,2 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (278, 'Desconhecido', '9,2 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,278);
 /* Tabela Object_Work_Titles */
@@ -7581,7 +7581,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('278', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('278','278','278');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (279, '<Desconhecido>', '11,56 x 4,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (279, 'Desconhecido', '11,56 x 4,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,279);
 /* Tabela Object_Work_Titles */
@@ -7616,7 +7616,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('279', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('279','279','279');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (280, 'Manuel Sampaio', '8,4 x 6,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (280, 'Manuel Sampaio', '8,4 x 6,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,280);
 /* Tabela Object_Work_Titles */
@@ -7652,7 +7652,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('280', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('280','280','280');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (281, '<Desconhecido>', '8,6 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (281, 'Desconhecido', '8,6 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,281);
 /* Tabela Object_Work_Titles */
@@ -7685,7 +7685,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('281', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('281','281','281');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (282, '<Desconhecido>', '7,2 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (282, 'Desconhecido', '7,2 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,282);
 /* Tabela Object_Work_Titles */
@@ -7718,7 +7718,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('282', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('282','282','282');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (283, '<Desconhecido>', '8,5 x 5,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (283, 'Desconhecido', '8,5 x 5,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,283);
 /* Tabela Object_Work_Titles */
@@ -7749,7 +7749,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('283', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('283','283','283');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (284, '<Desconhecido>', '8,5 x 5,5 cm', '<Desconhecido>', '…-04-1967', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (284, 'Desconhecido', '8,5 x 5,5 cm', 'Desconhecido', '…-04-1967', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,284);
 /* Tabela Object_Work_Titles */
@@ -7784,7 +7784,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('284', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('284','284','284');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (285, '<Desconhecido>', '8,5 x 7,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (285, 'Desconhecido', '8,5 x 7,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,285);
 /* Tabela Object_Work_Titles */
@@ -7815,7 +7815,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('285', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('285','285','285');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (286, '<Desconhecido>', '8,8 x 6,0 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (286, 'Desconhecido', '8,8 x 6,0 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,286);
 /* Tabela Object_Work_Titles */
@@ -7846,7 +7846,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('286', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('286','286','286');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (287, '<Desconhecido>', '8,3 x 5,5 cm', '<Desconhecido>', '…-07-1933', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (287, 'Desconhecido', '8,3 x 5,5 cm', 'Desconhecido', '…-07-1933', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,287);
 /* Tabela Object_Work_Titles */
@@ -7881,7 +7881,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('287', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('287','287','287');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (288, '<Desconhecido>', '7,8 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (288, 'Desconhecido', '7,8 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,288);
 /* Tabela Object_Work_Titles */
@@ -7914,7 +7914,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('288', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('288','288','288');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (289, '<Desconhecido>', '10,5 x 6,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (289, 'Desconhecido', '10,5 x 6,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,289);
 /* Tabela Object_Work_Titles */
@@ -7953,7 +7953,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('289', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('289','289','289');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (290, '<Desconhecido>', '8,5 x 5,3 cm', '<Desconhecido>', '16-05-1935', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (290, 'Desconhecido', '8,5 x 5,3 cm', 'Desconhecido', '16-05-1935', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,290);
 /* Tabela Object_Work_Titles */
@@ -7990,7 +7990,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('290', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('290','290','290');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (291, '<Desconhecido>', '9,2 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (291, 'Desconhecido', '9,2 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,291);
 /* Tabela Object_Work_Titles */
@@ -8021,7 +8021,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('291', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('291','291','291');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (292, '<Desconhecido>', '8,4 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (292, 'Desconhecido', '8,4 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,292);
 /* Tabela Object_Work_Titles */
@@ -8052,7 +8052,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('292', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('292','292','292');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (293, '<Desconhecido>', '8,7 x 5,7 cm', '<Desconhecido>', '19-04-1965', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (293, 'Desconhecido', '8,7 x 5,7 cm', 'Desconhecido', '19-04-1965', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,293);
 /* Tabela Object_Work_Titles */
@@ -8087,7 +8087,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('293', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('293','293','293');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (294, '<Desconhecido>', '8,1 x 5,5 cm', '<Desconhecido>', '…-07-1933', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (294, 'Desconhecido', '8,1 x 5,5 cm', 'Desconhecido', '…-07-1933', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,294);
 /* Tabela Object_Work_Titles */
@@ -8122,7 +8122,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('294', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('294','294','294');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (295, '<Desconhecido>', '8,7 x 6 cm', '<Desconhecido>', 'Verão de 1980', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (295, 'Desconhecido', '8,7 x 6 cm', 'Desconhecido', 'Verão de 1980', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,295);
 /* Tabela Object_Work_Titles */
@@ -8157,7 +8157,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('295', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('295','295','295');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (296, '<Desconhecido>', '7 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (296, 'Desconhecido', '7 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,296);
 /* Tabela Object_Work_Titles */
@@ -8188,7 +8188,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('296', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('296','296','296');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (297, '<Desconhecido>', '8,7 x 5,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (297, 'Desconhecido', '8,7 x 5,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,297);
 /* Tabela Object_Work_Titles */
@@ -8219,7 +8219,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('297', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('297','297','297');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (298, '<Desconhecido>', '6,4 x 9,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (298, 'Desconhecido', '6,4 x 9,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,298);
 /* Tabela Object_Work_Titles */
@@ -8250,7 +8250,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('298', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('298','298','298');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (299, '<Desconhecido>', '6,4 x 11,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (299, 'Desconhecido', '6,4 x 11,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,299);
 /* Tabela Object_Work_Titles */
@@ -8281,7 +8281,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('299', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('299','299','299');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (300, '<Desconhecido>', '11 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (300, 'Desconhecido', '11 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,300);
 /* Tabela Object_Work_Titles */
@@ -8312,7 +8312,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('300', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('300','300','300');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (301, '<Desconhecido>', '8,1 x 5,5 cm', '<Desconhecido>', '17-11-1956', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (301, 'Desconhecido', '8,1 x 5,5 cm', 'Desconhecido', '17-11-1956', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,301);
 /* Tabela Object_Work_Titles */
@@ -8347,7 +8347,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('301', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('301','301','301');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (302, '<Desconhecido>', '7,9 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (302, 'Desconhecido', '7,9 x 5,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,302);
 /* Tabela Object_Work_Titles */
@@ -8378,7 +8378,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('302', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('302','302','302');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (303, 'Foto Mesquita', '6 x 8,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (303, 'Foto Mesquita', '6 x 8,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,303);
 /* Tabela Object_Work_Titles */
@@ -8414,7 +8414,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('303', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('303','303','303');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (304, '<Desconhecido>', '5,9 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (304, 'Desconhecido', '5,9 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,304);
 /* Tabela Object_Work_Titles */
@@ -8445,7 +8445,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('304', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('304','304','304');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (305, '<Desconhecido>', '5,5 x 9 cm', '<Desconhecido>', '19-05-1966', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (305, 'Desconhecido', '5,5 x 9 cm', 'Desconhecido', '19-05-1966', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,305);
 /* Tabela Object_Work_Titles */
@@ -8480,7 +8480,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('305', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('305','305','305');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (306, '<Desconhecido>', '6,3 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (306, 'Desconhecido', '6,3 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,306);
 /* Tabela Object_Work_Titles */
@@ -8515,7 +8515,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('306', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('306','306','306');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (307, '<Desconhecido>', '7 x 4,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (307, 'Desconhecido', '7 x 4,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,307);
 /* Tabela Object_Work_Titles */
@@ -8546,7 +8546,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('307', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('307','307','307');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (308, '<Desconhecido>', '7,5 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (308, 'Desconhecido', '7,5 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,308);
 /* Tabela Object_Work_Titles */
@@ -8577,7 +8577,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('308', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('308','308','308');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (309, '<Desconhecido>', '8,9 x 8,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (309, 'Desconhecido', '8,9 x 8,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,309);
 /* Tabela Object_Work_Titles */
@@ -8612,7 +8612,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('309', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('309','309','309');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (310, '<Desconhecido>', '8,5 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (310, 'Desconhecido', '8,5 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,310);
 /* Tabela Object_Work_Titles */
@@ -8653,7 +8653,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('310', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('310','310','310');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (311, '<Desconhecido>', '8,2 x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (311, 'Desconhecido', '8,2 x 5,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,311);
 /* Tabela Object_Work_Titles */
@@ -8684,7 +8684,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('311', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('311','311','311');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (312, '<Desconhecido>', '5,5 x 8,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (312, 'Desconhecido', '5,5 x 8,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,312);
 /* Tabela Object_Work_Titles */
@@ -8715,7 +8715,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('312', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('312','312','312');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (313, '<Desconhecido>', '7,8 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (313, 'Desconhecido', '7,8 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,313);
 /* Tabela Object_Work_Titles */
@@ -8746,7 +8746,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('313', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('313','313','313');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (314, '<Desconhecido>', '9,8 x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (314, 'Desconhecido', '9,8 x 6,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,314);
 /* Tabela Object_Work_Titles */
@@ -8779,7 +8779,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('314', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('314','314','314');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (315, '<Desconhecido>', '7,5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (315, 'Desconhecido', '7,5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,315);
 /* Tabela Object_Work_Titles */
@@ -8812,7 +8812,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('315', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('315','315','315');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (316, '<Desconhecido>', '7,5 x 5,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (316, 'Desconhecido', '7,5 x 5,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,316);
 /* Tabela Object_Work_Titles */
@@ -8843,7 +8843,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('316', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('316','316','316');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (317, '<Desconhecido>', '7,9 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (317, 'Desconhecido', '7,9 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,317);
 /* Tabela Object_Work_Titles */
@@ -8874,7 +8874,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('317', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('317','317','317');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (318, '<Desconhecido>', '9 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (318, 'Desconhecido', '9 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,318);
 /* Tabela Object_Work_Titles */
@@ -8905,7 +8905,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('318', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('318','318','318');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (319, '<Desconhecido>', '10,5 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (319, 'Desconhecido', '10,5 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,319);
 /* Tabela Object_Work_Titles */
@@ -8936,7 +8936,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('319', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('319','319','319');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (320, '<Desconhecido>', '6,5 x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (320, 'Desconhecido', '6,5 x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,320);
 /* Tabela Object_Work_Titles */
@@ -8967,7 +8967,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('320', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('320','320','320');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (321, '<Desconhecido>', '9,8 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (321, 'Desconhecido', '9,8 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,321);
 /* Tabela Object_Work_Titles */
@@ -9002,7 +9002,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('321', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('321','321','321');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (322, '<Desconhecido>', '10,9 x 7,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (322, 'Desconhecido', '10,9 x 7,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,322);
 /* Tabela Object_Work_Titles */
@@ -9037,7 +9037,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('322', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('322','322','322');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (323, 'Manuel Cirne', '9,5 x 6,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (323, 'Manuel Cirne', '9,5 x 6,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,323);
 /* Tabela Object_Work_Titles */
@@ -9073,7 +9073,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('323', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('323','323','323');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (324, '<Desconhecido>', '9 x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (324, 'Desconhecido', '9 x 6,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,324);
 /* Tabela Object_Work_Titles */
@@ -9112,7 +9112,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('324', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('324','324','324');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (325, 'José Mesquita - Porto', '6 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (325, 'José Mesquita - Porto', '6 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,325);
 /* Tabela Object_Work_Titles */
@@ -9148,7 +9148,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('325', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('325','325','325');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (326, '<Desconhecido>', '9 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (326, 'Desconhecido', '9 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,326);
 /* Tabela Object_Work_Titles */
@@ -9209,7 +9209,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('326', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('326','326','326');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (327, '<Desconhecido>', '10,2 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (327, 'Desconhecido', '10,2 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,327);
 /* Tabela Object_Work_Titles */
@@ -9240,7 +9240,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('327', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('327','327','327');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (328, '<Desconhecido>', '8,5 x 5,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (328, 'Desconhecido', '8,5 x 5,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,328);
 /* Tabela Object_Work_Titles */
@@ -9271,7 +9271,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('328', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('328','328','328');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (329, '<Desconhecido>', '8 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (329, 'Desconhecido', '8 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,329);
 /* Tabela Object_Work_Titles */
@@ -9302,7 +9302,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('329', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('329','329','329');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (330, '<Desconhecido>', '7,8 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (330, 'Desconhecido', '7,8 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,330);
 /* Tabela Object_Work_Titles */
@@ -9333,7 +9333,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('330', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('330','330','330');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (331, '<Desconhecido>', '5,4 x 8,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (331, 'Desconhecido', '5,4 x 8,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,331);
 /* Tabela Object_Work_Titles */
@@ -9366,7 +9366,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('331', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('331','331','331');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (332, '<Desconhecido>', '7,5 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (332, 'Desconhecido', '7,5 x 5,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,332);
 /* Tabela Object_Work_Titles */
@@ -9401,7 +9401,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('332', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('332','332','332');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (333, '<Desconhecido>', '6,4 x 4,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (333, 'Desconhecido', '6,4 x 4,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,333);
 /* Tabela Object_Work_Titles */
@@ -9432,7 +9432,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('333', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('333','333','333');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (334, '<Desconhecido>', '3,2 x 2,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (334, 'Desconhecido', '3,2 x 2,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,334);
 /* Tabela Object_Work_Titles */
@@ -9463,7 +9463,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('334', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('334','334','334');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (335, '<Desconhecido>', '7,5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (335, 'Desconhecido', '7,5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,335);
 /* Tabela Object_Work_Titles */
@@ -9496,7 +9496,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('335', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('335','335','335');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (336, '<Desconhecido>', '6,9 x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (336, 'Desconhecido', '6,9 x 5,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,336);
 /* Tabela Object_Work_Titles */
@@ -9527,7 +9527,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('336', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('336','336','336');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (337, '<Desconhecido>', '7 x 4,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (337, 'Desconhecido', '7 x 4,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,337);
 /* Tabela Object_Work_Titles */
@@ -9562,7 +9562,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('337', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('337','337','337');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (338, '<Desconhecido>', '6,4 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (338, 'Desconhecido', '6,4 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,338);
 /* Tabela Object_Work_Titles */
@@ -9593,7 +9593,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('338', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('338','338','338');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (339, '<Desconhecido>', '4,5 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (339, 'Desconhecido', '4,5 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,339);
 /* Tabela Object_Work_Titles */
@@ -9624,7 +9624,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('339', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('339','339','339');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (340, '<Desconhecido>', '6,5 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (340, 'Desconhecido', '6,5 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,340);
 /* Tabela Object_Work_Titles */
@@ -9655,7 +9655,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('340', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('340','340','340');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (341, '<Desconhecido>', '3,9 x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (341, 'Desconhecido', '3,9 x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,341);
 /* Tabela Object_Work_Titles */
@@ -9686,7 +9686,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('341', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('341','341','341');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (342, '<Desconhecido>', '6,9 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (342, 'Desconhecido', '6,9 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,342);
 /* Tabela Object_Work_Titles */
@@ -9717,7 +9717,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('342', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('342','342','342');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (343, '<Desconhecido>', '3,5 x 8 cm', '<Desconhecido>', '22-04-1961', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (343, 'Desconhecido', '3,5 x 8 cm', 'Desconhecido', '22-04-1961', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,343);
 /* Tabela Object_Work_Titles */
@@ -9752,7 +9752,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('343', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('343','343','343');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (344, 'João de Reis', '5,5 x 9,6 cm', '<Desconhecido>', '1928', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (344, 'João de Reis', '5,5 x 9,6 cm', 'Desconhecido', '1928', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,344);
 /* Tabela Object_Work_Titles */
@@ -9792,7 +9792,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('344', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('344','344','344');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (345, '<Desconhecido>', '6 x 9,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (345, 'Desconhecido', '6 x 9,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,345);
 /* Tabela Object_Work_Titles */
@@ -9827,7 +9827,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('345', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('345','345','345');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (346, '<Desconhecido>', '6,4 x 4,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (346, 'Desconhecido', '6,4 x 4,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,346);
 /* Tabela Object_Work_Titles */
@@ -9876,7 +9876,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('346', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('346','346','346');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (347, '<Desconhecido>', '5 x 3,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (347, 'Desconhecido', '5 x 3,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,347);
 /* Tabela Object_Work_Titles */
@@ -9907,7 +9907,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('347', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('347','347','347');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (348, '<Desconhecido>', '7 x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (348, 'Desconhecido', '7 x 5,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,348);
 /* Tabela Object_Work_Titles */
@@ -9938,7 +9938,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('348', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('348','348','348');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (349, '<Desconhecido>', '4,5 x 3,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (349, 'Desconhecido', '4,5 x 3,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,349);
 /* Tabela Object_Work_Titles */
@@ -9969,7 +9969,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('349', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('349','349','349');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (350, '<Desconhecido>', '6,4 x 4,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (350, 'Desconhecido', '6,4 x 4,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,350);
 /* Tabela Object_Work_Titles */
@@ -10004,7 +10004,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('350', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('350','350','350');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (351, '<Desconhecido>', '3,8 x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (351, 'Desconhecido', '3,8 x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,351);
 /* Tabela Object_Work_Titles */
@@ -10035,7 +10035,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('351', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('351','351','351');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (352, '<Desconhecido>', '7 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (352, 'Desconhecido', '7 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,352);
 /* Tabela Object_Work_Titles */
@@ -10066,7 +10066,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('352', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('352','352','352');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (353, '<Desconhecido>', '3,9 x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (353, 'Desconhecido', '3,9 x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,353);
 /* Tabela Object_Work_Titles */
@@ -10097,7 +10097,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('353', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('353','353','353');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (354, '<Desconhecido>', '8 x 5,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (354, 'Desconhecido', '8 x 5,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,354);
 /* Tabela Object_Work_Titles */
@@ -10128,7 +10128,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('354', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('354','354','354');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (355, '<Desconhecido>', '6,5 x 5,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (355, 'Desconhecido', '6,5 x 5,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,355);
 /* Tabela Object_Work_Titles */
@@ -10161,7 +10161,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('355', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('355','355','355');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (356, '<Desconhecido>', '5,4 x 8,5 cm', '<Desconhecido>', '…-07-1931', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (356, 'Desconhecido', '5,4 x 8,5 cm', 'Desconhecido', '…-07-1931', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,356);
 /* Tabela Object_Work_Titles */
@@ -10210,7 +10210,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('356', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('356','356','356');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (357, '<Desconhecido>', '4,5 x 3,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (357, 'Desconhecido', '4,5 x 3,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,357);
 /* Tabela Object_Work_Titles */
@@ -10241,7 +10241,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('357', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('357','357','357');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (358, '<Desconhecido>', '8,5 x 5,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (358, 'Desconhecido', '8,5 x 5,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,358);
 /* Tabela Object_Work_Titles */
@@ -10272,7 +10272,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('358', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('358','358','358');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (359, '<Desconhecido>', '4,6 x 23,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (359, 'Desconhecido', '4,6 x 23,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,359);
 /* Tabela Object_Work_Titles */
@@ -10303,7 +10303,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('359', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('359','359','359');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (360, '<Desconhecido>', '8 x 4,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (360, 'Desconhecido', '8 x 4,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,360);
 /* Tabela Object_Work_Titles */
@@ -10334,7 +10334,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('360', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('360','360','360');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (361, '<Desconhecido>', '5,2 x 3,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (361, 'Desconhecido', '5,2 x 3,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,361);
 /* Tabela Object_Work_Titles */
@@ -10365,7 +10365,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('361', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('361','361','361');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (362, '<Desconhecido>', '5,3 x 3,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (362, 'Desconhecido', '5,3 x 3,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,362);
 /* Tabela Object_Work_Titles */
@@ -10396,7 +10396,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('362', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('362','362','362');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (363, '<Desconhecido>', '9,5 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (363, 'Desconhecido', '9,5 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,363);
 /* Tabela Object_Work_Titles */
@@ -10439,7 +10439,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('363', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('363','363','363');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (364, '<Desconhecido>', '5,9 x 3,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (364, 'Desconhecido', '5,9 x 3,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,364);
 /* Tabela Object_Work_Titles */
@@ -10470,7 +10470,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('364', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('364','364','364');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (365, '<Desconhecido>', '6,4 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (365, 'Desconhecido', '6,4 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,365);
 /* Tabela Object_Work_Titles */
@@ -10501,7 +10501,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('365', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('365','365','365');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (366, '<Desconhecido>', '4,2 x 3,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (366, 'Desconhecido', '4,2 x 3,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,366);
 /* Tabela Object_Work_Titles */
@@ -10532,7 +10532,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('366', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('366','366','366');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (367, '<Desconhecido>', '4,2 x 4,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (367, 'Desconhecido', '4,2 x 4,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,367);
 /* Tabela Object_Work_Titles */
@@ -10563,7 +10563,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('367', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('367','367','367');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (368, '<Desconhecido>', '4,2 x 3,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (368, 'Desconhecido', '4,2 x 3,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,368);
 /* Tabela Object_Work_Titles */
@@ -10594,7 +10594,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('368', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('368','368','368');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (369, '<Desconhecido>', '4,9 x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (369, 'Desconhecido', '4,9 x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,369);
 /* Tabela Object_Work_Titles */
@@ -10625,7 +10625,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('369', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('369','369','369');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (370, '<Desconhecido>', '4,2 x 4,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (370, 'Desconhecido', '4,2 x 4,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,370);
 /* Tabela Object_Work_Titles */
@@ -10656,7 +10656,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('370', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('370','370','370');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (371, '<Desconhecido>', '5,6 x 4,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (371, 'Desconhecido', '5,6 x 4,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,371);
 /* Tabela Object_Work_Titles */
@@ -10687,7 +10687,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('371', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('371','371','371');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (372, '<Desconhecido>', '3,3 x 4,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (372, 'Desconhecido', '3,3 x 4,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,372);
 /* Tabela Object_Work_Titles */
@@ -10718,7 +10718,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('372', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('372','372','372');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (373, '<Desconhecido>', '6 x 8,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (373, 'Desconhecido', '6 x 8,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,373);
 /* Tabela Object_Work_Titles */
@@ -10749,7 +10749,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('373', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('373','373','373');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (374, '<Desconhecido>', '3,2 x 22 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (374, 'Desconhecido', '3,2 x 22 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,374);
 /* Tabela Object_Work_Titles */
@@ -10780,7 +10780,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('374', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('374','374','374');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (375, '<Desconhecido>', '5,5 x 3,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (375, 'Desconhecido', '5,5 x 3,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,375);
 /* Tabela Object_Work_Titles */
@@ -10811,7 +10811,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('375', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('375','375','375');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (376, '<Desconhecido>', '5,4 x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (376, 'Desconhecido', '5,4 x 5,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,376);
 /* Tabela Object_Work_Titles */
@@ -10842,7 +10842,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('376', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('376','376','376');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (377, '<Desconhecido>', '5,6 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (377, 'Desconhecido', '5,6 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,377);
 /* Tabela Object_Work_Titles */
@@ -10873,7 +10873,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('377', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('377','377','377');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (378, '<Desconhecido>', '6,2 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (378, 'Desconhecido', '6,2 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,378);
 /* Tabela Object_Work_Titles */
@@ -10904,7 +10904,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('378', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('378','378','378');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (379, '<Desconhecido>', '4,9 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (379, 'Desconhecido', '4,9 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,379);
 /* Tabela Object_Work_Titles */
@@ -10935,7 +10935,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('379', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('379','379','379');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (380, '<Desconhecido>', '4,5 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (380, 'Desconhecido', '4,5 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,380);
 /* Tabela Object_Work_Titles */
@@ -10966,7 +10966,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('380', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('380','380','380');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (381, '<Desconhecido>', '6,4 x 4,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (381, 'Desconhecido', '6,4 x 4,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,381);
 /* Tabela Object_Work_Titles */
@@ -10997,7 +10997,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('381', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('381','381','381');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (382, '<Desconhecido>', '6 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (382, 'Desconhecido', '6 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,382);
 /* Tabela Object_Work_Titles */
@@ -11028,7 +11028,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('382', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('382','382','382');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (383, '<Desconhecido>', '6,5 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (383, 'Desconhecido', '6,5 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,383);
 /* Tabela Object_Work_Titles */
@@ -11059,7 +11059,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('383', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('383','383','383');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (384, '<Desconhecido>', '6,5 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (384, 'Desconhecido', '6,5 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,384);
 /* Tabela Object_Work_Titles */
@@ -11090,7 +11090,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('384', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('384','384','384');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (385, '<Desconhecido>', '6,5 x 4,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (385, 'Desconhecido', '6,5 x 4,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,385);
 /* Tabela Object_Work_Titles */
@@ -11121,7 +11121,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('385', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('385','385','385');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (386, '<Desconhecido>', '6 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (386, 'Desconhecido', '6 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,386);
 /* Tabela Object_Work_Titles */
@@ -11152,7 +11152,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('386', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('386','386','386');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (387, '<Desconhecido>', '5 x 3,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (387, 'Desconhecido', '5 x 3,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,387);
 /* Tabela Object_Work_Titles */
@@ -11185,7 +11185,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('387', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('387','387','387');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (388, '<Desconhecido>', '7 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (388, 'Desconhecido', '7 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,388);
 /* Tabela Object_Work_Titles */
@@ -11216,7 +11216,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('388', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('388','388','388');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (389, '<Desconhecido>', '5,6 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (389, 'Desconhecido', '5,6 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,389);
 /* Tabela Object_Work_Titles */
@@ -11247,7 +11247,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('389', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('389','389','389');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (390, '<Desconhecido>', '6,1 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (390, 'Desconhecido', '6,1 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,390);
 /* Tabela Object_Work_Titles */
@@ -11280,7 +11280,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('390', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('390','390','390');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (391, '<Desconhecido>', '5,4 x 3,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (391, 'Desconhecido', '5,4 x 3,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,391);
 /* Tabela Object_Work_Titles */
@@ -11311,7 +11311,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('391', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('391','391','391');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (392, '<Desconhecido>', '6,5 x 9 cm', '<Desconhecido>', '10-01-1915', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (392, 'Desconhecido', '6,5 x 9 cm', 'Desconhecido', '10-01-1915', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,392);
 /* Tabela Object_Work_Titles */
@@ -11348,7 +11348,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('392', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('392','392','392');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (393, '<Desconhecido>', '6,5 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (393, 'Desconhecido', '6,5 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,393);
 /* Tabela Object_Work_Titles */
@@ -11391,7 +11391,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('393', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('393','393','393');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (394, '<Desconhecido>', '7,8 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (394, 'Desconhecido', '7,8 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,394);
 /* Tabela Object_Work_Titles */
@@ -11422,7 +11422,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('394', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('394','394','394');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (395, '<Desconhecido>', '6,2 x 4,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (395, 'Desconhecido', '6,2 x 4,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,395);
 /* Tabela Object_Work_Titles */
@@ -11457,7 +11457,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('395', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('395','395','395');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (396, '<Desconhecido>', '7,2 x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (396, 'Desconhecido', '7,2 x 5,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,396);
 /* Tabela Object_Work_Titles */
@@ -11488,7 +11488,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('396', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('396','396','396');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (397, '<Desconhecido>', '5,5 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (397, 'Desconhecido', '5,5 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,397);
 /* Tabela Object_Work_Titles */
@@ -11519,7 +11519,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('397', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('397','397','397');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (398, '<Desconhecido>', '8,2 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (398, 'Desconhecido', '8,2 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,398);
 /* Tabela Object_Work_Titles */
@@ -11550,7 +11550,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('398', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('398','398','398');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (399, '<Desconhecido>', '7,5 x 4,9 cm', '<Desconhecido>', 'Maio de 1956', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (399, 'Desconhecido', '7,5 x 4,9 cm', 'Desconhecido', 'Maio de 1956', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,399);
 /* Tabela Object_Work_Titles */
@@ -11585,7 +11585,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('399', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('399','399','399');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (400, '<Desconhecido>', '8,3 x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (400, 'Desconhecido', '8,3 x 5,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,400);
 /* Tabela Object_Work_Titles */
@@ -11616,7 +11616,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('400', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('400','400','400');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (401, '<Desconhecido>', '5 x 8 cm', '<Desconhecido>', '22-04-1961', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (401, 'Desconhecido', '5 x 8 cm', 'Desconhecido', '22-04-1961', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,401);
 /* Tabela Object_Work_Titles */
@@ -11651,7 +11651,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('401', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('401','401','401');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (402, '<Desconhecido>', '9,9 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (402, 'Desconhecido', '9,9 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,402);
 /* Tabela Object_Work_Titles */
@@ -11682,7 +11682,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('402', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('402','402','402');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (403, '<Desconhecido>', '6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (403, 'Desconhecido', '6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,403);
 /* Tabela Object_Work_Titles */
@@ -11713,7 +11713,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('403', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('403','403','403');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (404, '<Desconhecido>', '6,3 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (404, 'Desconhecido', '6,3 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,404);
 /* Tabela Object_Work_Titles */
@@ -11744,7 +11744,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('404', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('404','404','404');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (405, '<Desconhecido>', '6 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (405, 'Desconhecido', '6 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,405);
 /* Tabela Object_Work_Titles */
@@ -11775,7 +11775,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('405', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('405','405','405');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (406, '<Desconhecido>', '7,5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (406, 'Desconhecido', '7,5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,406);
 /* Tabela Object_Work_Titles */
@@ -11810,7 +11810,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('406', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('406','406','406');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (407, '<Desconhecido>', '5 x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (407, 'Desconhecido', '5 x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,407);
 /* Tabela Object_Work_Titles */
@@ -11841,7 +11841,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('407', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('407','407','407');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (408, '<Desconhecido>', '8,1 x 5,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (408, 'Desconhecido', '8,1 x 5,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,408);
 /* Tabela Object_Work_Titles */
@@ -11872,7 +11872,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('408', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('408','408','408');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (409, '<Desconhecido>', '5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (409, 'Desconhecido', '5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,409);
 /* Tabela Object_Work_Titles */
@@ -11903,7 +11903,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('409', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('409','409','409');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (410, '<Desconhecido>', '7,8 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (410, 'Desconhecido', '7,8 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,410);
 /* Tabela Object_Work_Titles */
@@ -11958,7 +11958,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('410', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('410','410','410');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (411, '<Desconhecido>', '6 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (411, 'Desconhecido', '6 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,411);
 /* Tabela Object_Work_Titles */
@@ -11989,7 +11989,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('411', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('411','411','411');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (412, '<Desconhecido>', '5,5 x 8,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (412, 'Desconhecido', '5,5 x 8,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,412);
 /* Tabela Object_Work_Titles */
@@ -12028,7 +12028,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('412', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('412','412','412');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (413, '<Desconhecido>', '6,2 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (413, 'Desconhecido', '6,2 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,413);
 /* Tabela Object_Work_Titles */
@@ -12059,7 +12059,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('413', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('413','413','413');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (414, '<Desconhecido>', '8,5 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (414, 'Desconhecido', '8,5 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,414);
 /* Tabela Object_Work_Titles */
@@ -12090,7 +12090,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('414', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('414','414','414');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (415, '<Desconhecido>', '9 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (415, 'Desconhecido', '9 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,415);
 /* Tabela Object_Work_Titles */
@@ -12121,7 +12121,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('415', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('415','415','415');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (416, '<Desconhecido>', '2,5 x 2,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (416, 'Desconhecido', '2,5 x 2,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,416);
 /* Tabela Object_Work_Titles */
@@ -12154,7 +12154,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('416', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('416','416','416');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (417, '<Desconhecido>', '6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (417, 'Desconhecido', '6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,417);
 /* Tabela Object_Work_Titles */
@@ -12185,7 +12185,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('417', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('417','417','417');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (418, '<Desconhecido>', '5,5 x 8,9 cm', '<Desconhecido>', '06-08-1977', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (418, 'Desconhecido', '5,5 x 8,9 cm', 'Desconhecido', '06-08-1977', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,418);
 /* Tabela Object_Work_Titles */
@@ -12220,7 +12220,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('418', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('418','418','418');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (419, '<Desconhecido>', '9,2 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (419, 'Desconhecido', '9,2 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,419);
 /* Tabela Object_Work_Titles */
@@ -12251,7 +12251,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('419', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('419','419','419');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (420, '<Desconhecido>', '6 x 4,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (420, 'Desconhecido', '6 x 4,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,420);
 /* Tabela Object_Work_Titles */
@@ -12282,7 +12282,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('420', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('420','420','420');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (421, '<Desconhecido>', '5,2 x 11,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (421, 'Desconhecido', '5,2 x 11,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,421);
 /* Tabela Object_Work_Titles */
@@ -12313,7 +12313,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('421', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('421','421','421');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (422, '<Desconhecido>', '6,7 x 5,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (422, 'Desconhecido', '6,7 x 5,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,422);
 /* Tabela Object_Work_Titles */
@@ -12344,7 +12344,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('422', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('422','422','422');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (423, '<Desconhecido>', '5,5 x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (423, 'Desconhecido', '5,5 x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,423);
 /* Tabela Object_Work_Titles */
@@ -12375,7 +12375,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('423', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('423','423','423');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (424, '<Desconhecido>', '4,1 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (424, 'Desconhecido', '4,1 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,424);
 /* Tabela Object_Work_Titles */
@@ -12406,7 +12406,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('424', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('424','424','424');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (425, 'David Ramos', '8,5 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (425, 'David Ramos', '8,5 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,425);
 /* Tabela Object_Work_Titles */
@@ -12444,7 +12444,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('425', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('425','425','425');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (426, '<Desconhecido>', '5,5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (426, 'Desconhecido', '5,5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,426);
 /* Tabela Object_Work_Titles */
@@ -12475,7 +12475,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('426', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('426','426','426');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (427, '<Desconhecido>', '8,5 x 13,5 cm', '<Desconhecido>', '09-02-1928', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (427, 'Desconhecido', '8,5 x 13,5 cm', 'Desconhecido', '09-02-1928', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,427);
 /* Tabela Object_Work_Titles */
@@ -12510,7 +12510,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('427', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('427','427','427');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (428, '<Desconhecido>', '3,5 x 1,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (428, 'Desconhecido', '3,5 x 1,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,428);
 /* Tabela Object_Work_Titles */
@@ -12555,7 +12555,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('428', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('428','428','428');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (429, '<Desconhecido>', '5 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (429, 'Desconhecido', '5 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,429);
 /* Tabela Object_Work_Titles */
@@ -12586,7 +12586,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('429', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('429','429','429');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (430, '<Desconhecido>', '6,5 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (430, 'Desconhecido', '6,5 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,430);
 /* Tabela Object_Work_Titles */
@@ -12617,7 +12617,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('430', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('430','430','430');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (431, '<Desconhecido>', '7,4 x 5,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (431, 'Desconhecido', '7,4 x 5,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,431);
 /* Tabela Object_Work_Titles */
@@ -12658,7 +12658,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('431', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('431','431','431');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (432, '<Desconhecido>', '4,5 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (432, 'Desconhecido', '4,5 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,432);
 /* Tabela Object_Work_Titles */
@@ -12713,7 +12713,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('432', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('432','432','432');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (433, '<Desconhecido>', '5,9 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (433, 'Desconhecido', '5,9 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,433);
 /* Tabela Object_Work_Titles */
@@ -12744,7 +12744,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('433', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('433','433','433');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (434, '<Desconhecido>', '7 x 10,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (434, 'Desconhecido', '7 x 10,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,434);
 /* Tabela Object_Work_Titles */
@@ -12775,7 +12775,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('434', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('434','434','434');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (435, 'Eduardo Mendes', '7 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (435, 'Eduardo Mendes', '7 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,435);
 /* Tabela Object_Work_Titles */
@@ -12811,7 +12811,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('435', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('435','435','435');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (436, '<Desconhecido>', '10 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (436, 'Desconhecido', '10 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,436);
 /* Tabela Object_Work_Titles */
@@ -12842,7 +12842,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('436', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('436','436','436');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (437, '<Desconhecido>', '4,5 x 3,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (437, 'Desconhecido', '4,5 x 3,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,437);
 /* Tabela Object_Work_Titles */
@@ -12873,7 +12873,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('437', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('437','437','437');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (438, '<Desconhecido>', '10 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (438, 'Desconhecido', '10 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,438);
 /* Tabela Object_Work_Titles */
@@ -12908,7 +12908,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('438', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('438','438','438');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (439, '<Desconhecido>', '4,5 x 3,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (439, 'Desconhecido', '4,5 x 3,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,439);
 /* Tabela Object_Work_Titles */
@@ -12939,7 +12939,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('439', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('439','439','439');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (440, '<Desconhecido>', '7,4 x 11 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (440, 'Desconhecido', '7,4 x 11 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,440);
 /* Tabela Object_Work_Titles */
@@ -12970,7 +12970,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('440', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('440','440','440');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (441, 'João dos Reis', '3,5 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (441, 'João dos Reis', '3,5 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,441);
 /* Tabela Object_Work_Titles */
@@ -13022,7 +13022,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('441', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('441','441','441');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (442, '<Desconhecido>', '8,8 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (442, 'Desconhecido', '8,8 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,442);
 /* Tabela Object_Work_Titles */
@@ -13053,7 +13053,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('442', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('442','442','442');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (443, '<Desconhecido>', '6,3 x 4,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (443, 'Desconhecido', '6,3 x 4,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,443);
 /* Tabela Object_Work_Titles */
@@ -13084,7 +13084,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('443', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('443','443','443');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (444, '<Desconhecido>', '4,2 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (444, 'Desconhecido', '4,2 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,444);
 /* Tabela Object_Work_Titles */
@@ -13117,7 +13117,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('444', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('444','444','444');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (445, '<Desconhecido>', '7 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (445, 'Desconhecido', '7 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,445);
 /* Tabela Object_Work_Titles */
@@ -13148,7 +13148,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('445', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('445','445','445');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (446, '<Desconhecido>', '5,7 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (446, 'Desconhecido', '5,7 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,446);
 /* Tabela Object_Work_Titles */
@@ -13179,7 +13179,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('446', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('446','446','446');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (447, '<Desconhecido>', '4,9 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (447, 'Desconhecido', '4,9 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,447);
 /* Tabela Object_Work_Titles */
@@ -13210,7 +13210,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('447', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('447','447','447');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (448, '<Desconhecido>', '6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (448, 'Desconhecido', '6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,448);
 /* Tabela Object_Work_Titles */
@@ -13245,7 +13245,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('448', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('448','448','448');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (449, '<Desconhecido>', '7 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (449, 'Desconhecido', '7 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,449);
 /* Tabela Object_Work_Titles */
@@ -13276,7 +13276,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('449', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('449','449','449');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (450, '<Desconhecido>', '6,4 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (450, 'Desconhecido', '6,4 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,450);
 /* Tabela Object_Work_Titles */
@@ -13309,7 +13309,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('450', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('450','450','450');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (451, 'João dos Reis', '5,5 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (451, 'João dos Reis', '5,5 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,451);
 /* Tabela Object_Work_Titles */
@@ -13342,7 +13342,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('451', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('451','451','451');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (452, '<Desconhecido>', '6 x 9 cm', '<Desconhecido>', '20-08-1911', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (452, 'Desconhecido', '6 x 9 cm', 'Desconhecido', '20-08-1911', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,452);
 /* Tabela Object_Work_Titles */
@@ -13377,7 +13377,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('452', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('452','452','452');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (453, '<Desconhecido>', '9 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (453, 'Desconhecido', '9 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,453);
 /* Tabela Object_Work_Titles */
@@ -13408,7 +13408,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('453', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('453','453','453');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (454, '<Desconhecido>', '6,7 x 4,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (454, 'Desconhecido', '6,7 x 4,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,454);
 /* Tabela Object_Work_Titles */
@@ -13439,7 +13439,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('454', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('454','454','454');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (455, '<Desconhecido>', '5,5 x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (455, 'Desconhecido', '5,5 x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,455);
 /* Tabela Object_Work_Titles */
@@ -13470,7 +13470,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('455', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('455','455','455');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (456, '<Desconhecido>', '5,5 x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (456, 'Desconhecido', '5,5 x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,456);
 /* Tabela Object_Work_Titles */
@@ -13513,7 +13513,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('456', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('456','456','456');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (457, '<Desconhecido>', '5,3 x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (457, 'Desconhecido', '5,3 x 7,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,457);
 /* Tabela Object_Work_Titles */
@@ -13544,7 +13544,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('457', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('457','457','457');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (458, '<Desconhecido>', '7 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (458, 'Desconhecido', '7 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,458);
 /* Tabela Object_Work_Titles */
@@ -13579,7 +13579,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('458', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('458','458','458');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (459, '<Desconhecido>', '7,8 x 5,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (459, 'Desconhecido', '7,8 x 5,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,459);
 /* Tabela Object_Work_Titles */
@@ -13610,7 +13610,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('459', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('459','459','459');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (460, '<Desconhecido>', '3,0 x 2,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (460, 'Desconhecido', '3,0 x 2,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,460);
 /* Tabela Object_Work_Titles */
@@ -13641,7 +13641,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('460', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('460','460','460');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (461, '<Desconhecido>', '12,5 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (461, 'Desconhecido', '12,5 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,461);
 /* Tabela Object_Work_Titles */
@@ -13680,7 +13680,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('461', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('461','461','461');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (462, '<Desconhecido>', '10 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (462, 'Desconhecido', '10 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,462);
 /* Tabela Object_Work_Titles */
@@ -13711,7 +13711,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('462', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('462','462','462');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (463, '<Desconhecido>', '5,5 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (463, 'Desconhecido', '5,5 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,463);
 /* Tabela Object_Work_Titles */
@@ -13744,7 +13744,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('463', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('463','463','463');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (464, '<Desconhecido>', '5,2 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (464, 'Desconhecido', '5,2 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,464);
 /* Tabela Object_Work_Titles */
@@ -13775,7 +13775,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('464', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('464','464','464');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (465, '<Desconhecido>', '8,9 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (465, 'Desconhecido', '8,9 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,465);
 /* Tabela Object_Work_Titles */
@@ -13806,7 +13806,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('465', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('465','465','465');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (466, '<Desconhecido>', '5,5 x 8,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (466, 'Desconhecido', '5,5 x 8,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,466);
 /* Tabela Object_Work_Titles */
@@ -13837,7 +13837,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('466', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('466','466','466');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (467, '<Desconhecido>', '7,8 x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (467, 'Desconhecido', '7,8 x 5,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,467);
 /* Tabela Object_Work_Titles */
@@ -13868,7 +13868,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('467', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('467','467','467');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (468, '<Desconhecido>', '7,1 x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (468, 'Desconhecido', '7,1 x 6,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,468);
 /* Tabela Object_Work_Titles */
@@ -13899,7 +13899,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('468', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('468','468','468');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (469, '<Desconhecido>', '8,5 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (469, 'Desconhecido', '8,5 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,469);
 /* Tabela Object_Work_Titles */
@@ -13934,7 +13934,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('469', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('469','469','469');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (470, '<Desconhecido>', '7,5 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (470, 'Desconhecido', '7,5 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,470);
 /* Tabela Object_Work_Titles */
@@ -13973,7 +13973,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('470', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('470','470','470');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (471, '<Desconhecido>', '12 x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (471, 'Desconhecido', '12 x 7,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,471);
 /* Tabela Object_Work_Titles */
@@ -14012,7 +14012,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('471', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('471','471','471');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (472, '<Desconhecido>', '13,5 x 8,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (472, 'Desconhecido', '13,5 x 8,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,472);
 /* Tabela Object_Work_Titles */
@@ -14047,7 +14047,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('472', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('472','472','472');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (473, '<Desconhecido>', '10,8 x 7,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (473, 'Desconhecido', '10,8 x 7,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,473);
 /* Tabela Object_Work_Titles */
@@ -14078,7 +14078,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('473', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('473','473','473');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (474, '<Desconhecido>', '8,9 x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (474, 'Desconhecido', '8,9 x 5,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,474);
 /* Tabela Object_Work_Titles */
@@ -14109,7 +14109,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('474', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('474','474','474');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (475, '<Desconhecido>', '6,5 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (475, 'Desconhecido', '6,5 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,475);
 /* Tabela Object_Work_Titles */
@@ -14140,7 +14140,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('475', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('475','475','475');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (476, '<Desconhecido>', '9 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (476, 'Desconhecido', '9 x 5,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,476);
 /* Tabela Object_Work_Titles */
@@ -14175,7 +14175,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('476', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('476','476','476');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (477, '<Desconhecido>', '6,5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (477, 'Desconhecido', '6,5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,477);
 /* Tabela Object_Work_Titles */
@@ -14220,7 +14220,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('477', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('477','477','477');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (478, '<Desconhecido>', '9 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (478, 'Desconhecido', '9 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,478);
 /* Tabela Object_Work_Titles */
@@ -14255,7 +14255,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('478', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('478','478','478');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (479, '<Desconhecido>', '5,5 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (479, 'Desconhecido', '5,5 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,479);
 /* Tabela Object_Work_Titles */
@@ -14286,7 +14286,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('479', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('479','479','479');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (480, '<Desconhecido>', '9 x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (480, 'Desconhecido', '9 x 6,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,480);
 /* Tabela Object_Work_Titles */
@@ -14319,7 +14319,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('480', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('480','480','480');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (481, '<Desconhecido>', '6,2 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (481, 'Desconhecido', '6,2 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,481);
 /* Tabela Object_Work_Titles */
@@ -14350,7 +14350,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('481', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('481','481','481');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (482, '<Desconhecido>', '9,8 x 6,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (482, 'Desconhecido', '9,8 x 6,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,482);
 /* Tabela Object_Work_Titles */
@@ -14381,7 +14381,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('482', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('482','482','482');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (483, '<Desconhecido>', '6,5 x 4,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (483, 'Desconhecido', '6,5 x 4,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,483);
 /* Tabela Object_Work_Titles */
@@ -14412,7 +14412,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('483', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('483','483','483');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (484, '<Desconhecido>', '10,1 x 6,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (484, 'Desconhecido', '10,1 x 6,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,484);
 /* Tabela Object_Work_Titles */
@@ -14443,7 +14443,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('484', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('484','484','484');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (485, '<Desconhecido>', '6,2 x 10,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (485, 'Desconhecido', '6,2 x 10,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,485);
 /* Tabela Object_Work_Titles */
@@ -14474,7 +14474,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('485', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('485','485','485');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (486, '<Desconhecido>', '8,5 x 5,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (486, 'Desconhecido', '8,5 x 5,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,486);
 /* Tabela Object_Work_Titles */
@@ -14507,7 +14507,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('486', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('486','486','486');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (487, '<Desconhecido>', '5,2 x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (487, 'Desconhecido', '5,2 x 7,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,487);
 /* Tabela Object_Work_Titles */
@@ -14538,7 +14538,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('487', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('487','487','487');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (488, '<Desconhecido>', '7 x 4,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (488, 'Desconhecido', '7 x 4,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,488);
 /* Tabela Object_Work_Titles */
@@ -14569,7 +14569,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('488', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('488','488','488');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (489, '<Desconhecido>', '6 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (489, 'Desconhecido', '6 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,489);
 /* Tabela Object_Work_Titles */
@@ -14600,7 +14600,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('489', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('489','489','489');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (490, '<Desconhecido>', '7,8 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (490, 'Desconhecido', '7,8 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,490);
 /* Tabela Object_Work_Titles */
@@ -14633,7 +14633,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('490', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('490','490','490');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (491, '<Desconhecido>', '4,5 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (491, 'Desconhecido', '4,5 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,491);
 /* Tabela Object_Work_Titles */
@@ -14664,7 +14664,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('491', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('491','491','491');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (492, '<Desconhecido>', '8,7 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (492, 'Desconhecido', '8,7 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,492);
 /* Tabela Object_Work_Titles */
@@ -14695,7 +14695,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('492', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('492','492','492');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (493, '<Desconhecido>', '5,5 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (493, 'Desconhecido', '5,5 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,493);
 /* Tabela Object_Work_Titles */
@@ -14726,7 +14726,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('493', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('493','493','493');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (494, '<Desconhecido>', '8,5 x 5,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (494, 'Desconhecido', '8,5 x 5,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,494);
 /* Tabela Object_Work_Titles */
@@ -14761,7 +14761,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('494', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('494','494','494');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (495, '<Desconhecido>', '6,5 x 5,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (495, 'Desconhecido', '6,5 x 5,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,495);
 /* Tabela Object_Work_Titles */
@@ -14796,7 +14796,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('495', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('495','495','495');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (496, '<Desconhecido>', '8 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (496, 'Desconhecido', '8 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,496);
 /* Tabela Object_Work_Titles */
@@ -14827,7 +14827,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('496', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('496','496','496');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (497, '<Desconhecido>', '4,5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (497, 'Desconhecido', '4,5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,497);
 /* Tabela Object_Work_Titles */
@@ -14858,7 +14858,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('497', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('497','497','497');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (498, '<Desconhecido>', '7,9 x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (498, 'Desconhecido', '7,9 x 5,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,498);
 /* Tabela Object_Work_Titles */
@@ -14889,7 +14889,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('498', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('498','498','498');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (499, '<Desconhecido>', '5 x 3,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (499, 'Desconhecido', '5 x 3,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,499);
 /* Tabela Object_Work_Titles */
@@ -14922,7 +14922,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('499', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('499','499','499');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (500, '<Desconhecido>', '7 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (500, 'Desconhecido', '7 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,500);
 /* Tabela Object_Work_Titles */
@@ -14953,7 +14953,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('500', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('500','500','500');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (501, '<Desconhecido>', '6,5 x 4,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (501, 'Desconhecido', '6,5 x 4,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,501);
 /* Tabela Object_Work_Titles */
@@ -14984,7 +14984,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('501', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('501','501','501');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (502, '<Desconhecido>', '8,4 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (502, 'Desconhecido', '8,4 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,502);
 /* Tabela Object_Work_Titles */
@@ -15017,7 +15017,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('502', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('502','502','502');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (503, '<Desconhecido>', '4,5 x 3,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (503, 'Desconhecido', '4,5 x 3,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,503);
 /* Tabela Object_Work_Titles */
@@ -15048,7 +15048,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('503', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('503','503','503');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (504, '<Desconhecido>', '8,4 x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (504, 'Desconhecido', '8,4 x 5,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,504);
 /* Tabela Object_Work_Titles */
@@ -15079,7 +15079,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('504', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('504','504','504');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (505, '<Desconhecido>', '9,2 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (505, 'Desconhecido', '9,2 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,505);
 /* Tabela Object_Work_Titles */
@@ -15114,7 +15114,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('505', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('505','505','505');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (506, '<Desconhecido>', '8,9 x 5,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (506, 'Desconhecido', '8,9 x 5,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,506);
 /* Tabela Object_Work_Titles */
@@ -15157,7 +15157,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('506', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('506','506','506');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (507, '<Desconhecido>', '7,2 x 4,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (507, 'Desconhecido', '7,2 x 4,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,507);
 /* Tabela Object_Work_Titles */
@@ -15188,7 +15188,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('507', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('507','507','507');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (508, '<Desconhecido>', '7,2 x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (508, 'Desconhecido', '7,2 x 6,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,508);
 /* Tabela Object_Work_Titles */
@@ -15219,7 +15219,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('508', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('508','508','508');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (509, '<Desconhecido>', '11 x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (509, 'Desconhecido', '11 x 6,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,509);
 /* Tabela Object_Work_Titles */
@@ -15250,7 +15250,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('509', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('509','509','509');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (510, '<Desconhecido>', '6 x 9,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (510, 'Desconhecido', '6 x 9,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,510);
 /* Tabela Object_Work_Titles */
@@ -15281,7 +15281,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('510', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('510','510','510');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (511, '<Desconhecido>', '6,5 x 4,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (511, 'Desconhecido', '6,5 x 4,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,511);
 /* Tabela Object_Work_Titles */
@@ -15312,7 +15312,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('511', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('511','511','511');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (512, '<Desconhecido>', '8,4 x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (512, 'Desconhecido', '8,4 x 6,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,512);
 /* Tabela Object_Work_Titles */
@@ -15343,7 +15343,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('512', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('512','512','512');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (513, '<Desconhecido>', '6,2 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (513, 'Desconhecido', '6,2 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,513);
 /* Tabela Object_Work_Titles */
@@ -15374,7 +15374,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('513', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('513','513','513');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (514, '<Desconhecido>', '8,7 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (514, 'Desconhecido', '8,7 x 5,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,514);
 /* Tabela Object_Work_Titles */
@@ -15405,7 +15405,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('514', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('514','514','514');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (515, '<Desconhecido>', '7,2 x 10,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (515, 'Desconhecido', '7,2 x 10,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,515);
 /* Tabela Object_Work_Titles */
@@ -15436,7 +15436,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('515', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('515','515','515');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (516, '<Desconhecido>', '5,1 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (516, 'Desconhecido', '5,1 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,516);
 /* Tabela Object_Work_Titles */
@@ -15469,7 +15469,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('516', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('516','516','516');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (517, '<Desconhecido>', '9,2 x 6,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (517, 'Desconhecido', '9,2 x 6,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,517);
 /* Tabela Object_Work_Titles */
@@ -15500,7 +15500,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('517', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('517','517','517');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (518, '<Desconhecido>', '5,5 x 3,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (518, 'Desconhecido', '5,5 x 3,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,518);
 /* Tabela Object_Work_Titles */
@@ -15531,7 +15531,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('518', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('518','518','518');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (519, '<Desconhecido>', '6 x 9,5 cm', '<Desconhecido>', '20-07-41', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (519, 'Desconhecido', '6 x 9,5 cm', 'Desconhecido', '20-07-41', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,519);
 /* Tabela Object_Work_Titles */
@@ -15562,7 +15562,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('519', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('519','519','519');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (520, '<Desconhecido>', '6,3 x 4,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (520, 'Desconhecido', '6,3 x 4,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,520);
 /* Tabela Object_Work_Titles */
@@ -15593,7 +15593,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('520', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('520','520','520');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (521, '<Desconhecido>', '6,6 x 10,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (521, 'Desconhecido', '6,6 x 10,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,521);
 /* Tabela Object_Work_Titles */
@@ -15624,7 +15624,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('521', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('521','521','521');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (522, '<Desconhecido>', '6,5 x 4,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (522, 'Desconhecido', '6,5 x 4,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,522);
 /* Tabela Object_Work_Titles */
@@ -15655,7 +15655,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('522', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('522','522','522');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (523, 'Manuel Cirne', '6,3 x 8,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (523, 'Manuel Cirne', '6,3 x 8,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,523);
 /* Tabela Object_Work_Titles */
@@ -15688,7 +15688,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('523', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('523','523','523');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (524, '<Desconhecido>', '5,3 x 8,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (524, 'Desconhecido', '5,3 x 8,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,524);
 /* Tabela Object_Work_Titles */
@@ -15719,7 +15719,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('524', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('524','524','524');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (525, '<Desconhecido>', '8 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (525, 'Desconhecido', '8 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,525);
 /* Tabela Object_Work_Titles */
@@ -15750,7 +15750,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('525', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('525','525','525');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (526, '<Desconhecido>', '6,2 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (526, 'Desconhecido', '6,2 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,526);
 /* Tabela Object_Work_Titles */
@@ -15781,7 +15781,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('526', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('526','526','526');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (527, 'Manuel Cirrne', '9,1 x 6,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (527, 'Manuel Cirrne', '9,1 x 6,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,527);
 /* Tabela Object_Work_Titles */
@@ -15817,7 +15817,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('527', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('527','527','527');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (528, '<Desconhecido>', '5,7 x 4,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (528, 'Desconhecido', '5,7 x 4,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,528);
 /* Tabela Object_Work_Titles */
@@ -15848,7 +15848,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('528', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('528','528','528');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (529, '<Desconhecido>', '5,3 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (529, 'Desconhecido', '5,3 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,529);
 /* Tabela Object_Work_Titles */
@@ -15879,7 +15879,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('529', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('529','529','529');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (530, '<Desconhecido>', '4,2 x 5,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (530, 'Desconhecido', '4,2 x 5,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,530);
 /* Tabela Object_Work_Titles */
@@ -15910,7 +15910,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('530', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('530','530','530');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (531, '<Desconhecido>', '5,2 x 7,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (531, 'Desconhecido', '5,2 x 7,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,531);
 /* Tabela Object_Work_Titles */
@@ -15941,7 +15941,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('531', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('531','531','531');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (532, '<Desconhecido>', '7,3 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (532, 'Desconhecido', '7,3 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,532);
 /* Tabela Object_Work_Titles */
@@ -15974,7 +15974,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('532', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('532','532','532');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (533, '<Desconhecido>', '6 x 9,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (533, 'Desconhecido', '6 x 9,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,533);
 /* Tabela Object_Work_Titles */
@@ -16007,7 +16007,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('533', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('533','533','533');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (534, '<Desconhecido>', '5,4 x 3,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (534, 'Desconhecido', '5,4 x 3,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,534);
 /* Tabela Object_Work_Titles */
@@ -16038,7 +16038,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('534', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('534','534','534');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (535, '<Desconhecido>', '8,8 x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (535, 'Desconhecido', '8,8 x 5,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,535);
 /* Tabela Object_Work_Titles */
@@ -16069,7 +16069,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('535', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('535','535','535');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (536, '<Desconhecido>', '5,8 x 3,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (536, 'Desconhecido', '5,8 x 3,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,536);
 /* Tabela Object_Work_Titles */
@@ -16100,7 +16100,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('536', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('536','536','536');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (537, '<Desconhecido>', '5,8 x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (537, 'Desconhecido', '5,8 x 7,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,537);
 /* Tabela Object_Work_Titles */
@@ -16131,7 +16131,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('537', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('537','537','537');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (538, '<Desconhecido>', '5,2 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (538, 'Desconhecido', '5,2 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,538);
 /* Tabela Object_Work_Titles */
@@ -16162,7 +16162,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('538', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('538','538','538');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (539, '<Desconhecido>', '8,8 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (539, 'Desconhecido', '8,8 x 5,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,539);
 /* Tabela Object_Work_Titles */
@@ -16193,7 +16193,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('539', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('539','539','539');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (540, '<Desconhecido>', '6 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (540, 'Desconhecido', '6 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,540);
 /* Tabela Object_Work_Titles */
@@ -16224,7 +16224,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('540', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('540','540','540');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (541, '<Desconhecido>', '6,5 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (541, 'Desconhecido', '6,5 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,541);
 /* Tabela Object_Work_Titles */
@@ -16255,7 +16255,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('541', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('541','541','541');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (542, '<Desconhecido>', '5,9 x 8,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (542, 'Desconhecido', '5,9 x 8,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,542);
 /* Tabela Object_Work_Titles */
@@ -16286,7 +16286,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('542', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('542','542','542');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (543, '<Desconhecido>', '6,4 x 4,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (543, 'Desconhecido', '6,4 x 4,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,543);
 /* Tabela Object_Work_Titles */
@@ -16317,7 +16317,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('543', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('543','543','543');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (544, 'Norte - Porto', '6 x 9,5 cm', '<Desconhecido>', '06-01-1955', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (544, 'Norte - Porto', '6 x 9,5 cm', 'Desconhecido', '06-01-1955', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,544);
 /* Tabela Object_Work_Titles */
@@ -16359,7 +16359,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('544', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('544','544','544');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (545, '<Desconhecido>', '5,5 x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (545, 'Desconhecido', '5,5 x 9,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,545);
 /* Tabela Object_Work_Titles */
@@ -16390,7 +16390,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('545', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('545','545','545');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (546, '<Desconhecido>', '13,2 x 8,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (546, 'Desconhecido', '13,2 x 8,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,546);
 /* Tabela Object_Work_Titles */
@@ -16421,7 +16421,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('546', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('546','546','546');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (547, '<Desconhecido>', '8,8 x 5,8 cm', '<Desconhecido>', '26-01-1956', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (547, 'Desconhecido', '8,8 x 5,8 cm', 'Desconhecido', '26-01-1956', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,547);
 /* Tabela Object_Work_Titles */
@@ -16456,7 +16456,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('547', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('547','547','547');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (548, '<Desconhecido>', '4,1 x 6,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (548, 'Desconhecido', '4,1 x 6,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,548);
 /* Tabela Object_Work_Titles */
@@ -16487,7 +16487,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('548', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('548','548','548');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (549, 'Norte - Porto', '6,2 x 8,4 cm', '<Desconhecido>', '06-01-1955', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (549, 'Norte - Porto', '6,2 x 8,4 cm', 'Desconhecido', '06-01-1955', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,549);
 /* Tabela Object_Work_Titles */
@@ -16524,7 +16524,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('549', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('549','549','549');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (550, '<Desconhecido>', '5,3 x 8,7 cm', '<Desconhecido>', '06-01-1955', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (550, 'Desconhecido', '5,3 x 8,7 cm', 'Desconhecido', '06-01-1955', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,550);
 /* Tabela Object_Work_Titles */
@@ -16559,7 +16559,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('550', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('550','550','550');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (551, '<Desconhecido>', '5,9 x 9,2 cm', '<Desconhecido>', '24-02-1957', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (551, 'Desconhecido', '5,9 x 9,2 cm', 'Desconhecido', '24-02-1957', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,551);
 /* Tabela Object_Work_Titles */
@@ -16594,7 +16594,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('551', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('551','551','551');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (552, '<Desconhecido>', '5,3 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (552, 'Desconhecido', '5,3 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,552);
 /* Tabela Object_Work_Titles */
@@ -16627,7 +16627,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('552', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('552','552','552');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (553, '<Desconhecido>', '8,8 x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (553, 'Desconhecido', '8,8 x 6,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,553);
 /* Tabela Object_Work_Titles */
@@ -16660,7 +16660,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('553', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('553','553','553');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (554, '<Desconhecido>', '4,5 x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (554, 'Desconhecido', '4,5 x 6,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,554);
 /* Tabela Object_Work_Titles */
@@ -16697,7 +16697,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('554', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('554','554','554');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (555, '<Desconhecido>', '8,8 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (555, 'Desconhecido', '8,8 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,555);
 /* Tabela Object_Work_Titles */
@@ -16728,7 +16728,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('555', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('555','555','555');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (556, '<Desconhecido>', '5,4 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (556, 'Desconhecido', '5,4 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,556);
 /* Tabela Object_Work_Titles */
@@ -16759,7 +16759,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('556', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('556','556','556');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (557, '<Desconhecido>', '9 x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (557, 'Desconhecido', '9 x 6,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,557);
 /* Tabela Object_Work_Titles */
@@ -16790,7 +16790,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('557', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('557','557','557');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (558, '<Desconhecido>', '5,6 x 9,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (558, 'Desconhecido', '5,6 x 9,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,558);
 /* Tabela Object_Work_Titles */
@@ -16821,7 +16821,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('558', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('558','558','558');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (559, '<Desconhecido>', '8 x 4,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (559, 'Desconhecido', '8 x 4,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,559);
 /* Tabela Object_Work_Titles */
@@ -16852,7 +16852,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('559', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('559','559','559');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (560, '<Desconhecido>', '5,5 x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (560, 'Desconhecido', '5,5 x 5,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,560);
 /* Tabela Object_Work_Titles */
@@ -16883,7 +16883,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('560', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('560','560','560');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (561, '<Desconhecido>', '7,8 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (561, 'Desconhecido', '7,8 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,561);
 /* Tabela Object_Work_Titles */
@@ -16914,7 +16914,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('561', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('561','561','561');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (562, '<Desconhecido>', '5,5 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (562, 'Desconhecido', '5,5 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,562);
 /* Tabela Object_Work_Titles */
@@ -16945,7 +16945,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('562', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('562','562','562');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (563, '<Desconhecido>', '6,1 x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (563, 'Desconhecido', '6,1 x 9,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,563);
 /* Tabela Object_Work_Titles */
@@ -16976,7 +16976,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('563', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('563','563','563');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (564, '<Desconhecido>', '4 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (564, 'Desconhecido', '4 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,564);
 /* Tabela Object_Work_Titles */
@@ -17011,7 +17011,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('564', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('564','564','564');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (565, '<Desconhecido>', '7 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (565, 'Desconhecido', '7 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,565);
 /* Tabela Object_Work_Titles */
@@ -17042,7 +17042,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('565', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('565','565','565');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (566, 'Mesquita, Porto', '5,6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (566, 'Mesquita, Porto', '5,6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,566);
 /* Tabela Object_Work_Titles */
@@ -17078,7 +17078,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('566', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('566','566','566');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (567, '<Desconhecido>', '7,3 x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (567, 'Desconhecido', '7,3 x 9,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,567);
 /* Tabela Object_Work_Titles */
@@ -17109,7 +17109,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('567', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('567','567','567');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (568, 'Artur Reis', '5,4 x 5,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (568, 'Artur Reis', '5,4 x 5,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,568);
 /* Tabela Object_Work_Titles */
@@ -17145,7 +17145,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('568', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('568','568','568');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (569, '<Desconhecido>', '8,9 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (569, 'Desconhecido', '8,9 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,569);
 /* Tabela Object_Work_Titles */
@@ -17176,7 +17176,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('569', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('569','569','569');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (570, '<Desconhecido>', '4,8 x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (570, 'Desconhecido', '4,8 x 7,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,570);
 /* Tabela Object_Work_Titles */
@@ -17207,7 +17207,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('570', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('570','570','570');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (571, '<Desconhecido>', '9 x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (571, 'Desconhecido', '9 x 6,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,571);
 /* Tabela Object_Work_Titles */
@@ -17238,7 +17238,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('571', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('571','571','571');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (572, '<Desconhecido>', '5,1 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (572, 'Desconhecido', '5,1 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,572);
 /* Tabela Object_Work_Titles */
@@ -17271,7 +17271,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('572', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('572','572','572');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (573, '<Desconhecido>', '6 x 8,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (573, 'Desconhecido', '6 x 8,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,573);
 /* Tabela Object_Work_Titles */
@@ -17308,7 +17308,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('573', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('573','573','573');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (574, '<Desconhecido>', '6,2 x 8,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (574, 'Desconhecido', '6,2 x 8,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,574);
 /* Tabela Object_Work_Titles */
@@ -17339,7 +17339,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('574', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('574','574','574');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (575, '<Desconhecido>', '6 x 9,5 cm', '<Desconhecido>', '23-02-1957', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (575, 'Desconhecido', '6 x 9,5 cm', 'Desconhecido', '23-02-1957', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,575);
 /* Tabela Object_Work_Titles */
@@ -17374,7 +17374,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('575', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('575','575','575');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (576, '<Desconhecido>', '7,6 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (576, 'Desconhecido', '7,6 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,576);
 /* Tabela Object_Work_Titles */
@@ -17409,7 +17409,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('576', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('576','576','576');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (577, '<Desconhecido>', '8,3 x 11 cm', '<Desconhecido>', '27-03-1965', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (577, 'Desconhecido', '8,3 x 11 cm', 'Desconhecido', '27-03-1965', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,577);
 /* Tabela Object_Work_Titles */
@@ -17444,7 +17444,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('577', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('577','577','577');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (578, '<Desconhecido>', '4,5 x 6,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (578, 'Desconhecido', '4,5 x 6,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,578);
 /* Tabela Object_Work_Titles */
@@ -17475,7 +17475,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('578', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('578','578','578');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (579, '<Desconhecido>', '9,7 x 8,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (579, 'Desconhecido', '9,7 x 8,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,579);
 /* Tabela Object_Work_Titles */
@@ -17506,7 +17506,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('579', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('579','579','579');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (580, '<Desconhecido>', '7,5 x 8,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (580, 'Desconhecido', '7,5 x 8,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,580);
 /* Tabela Object_Work_Titles */
@@ -17537,7 +17537,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('580', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('580','580','580');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (581, '<Desconhecido>', '4,8 x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (581, 'Desconhecido', '4,8 x 7,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,581);
 /* Tabela Object_Work_Titles */
@@ -17568,7 +17568,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('581', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('581','581','581');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (582, 'João Alves', '6,1 x 10,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (582, 'João Alves', '6,1 x 10,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,582);
 /* Tabela Object_Work_Titles */
@@ -17601,7 +17601,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('582', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('582','582','582');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (583, '<Desconhecido>', '6 x 5,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (583, 'Desconhecido', '6 x 5,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,583);
 /* Tabela Object_Work_Titles */
@@ -17632,7 +17632,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('583', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('583','583','583');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (584, '<Desconhecido>', '6,3 x 10 cm', '<Desconhecido>', '16-01-1941', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (584, 'Desconhecido', '6,3 x 10 cm', 'Desconhecido', '16-01-1941', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,584);
 /* Tabela Object_Work_Titles */
@@ -17667,7 +17667,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('584', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('584','584','584');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (585, 'João Alves', '5,3 x 8,6 cm', '<Desconhecido>', '06-01-1955', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (585, 'João Alves', '5,3 x 8,6 cm', 'Desconhecido', '06-01-1955', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,585);
 /* Tabela Object_Work_Titles */
@@ -17704,7 +17704,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('585', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('585','585','585');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (586, '<Desconhecido>', '7,3 x 4,1 cm', '<Desconhecido>', '1937', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (586, 'Desconhecido', '7,3 x 4,1 cm', 'Desconhecido', '1937', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,586);
 /* Tabela Object_Work_Titles */
@@ -17739,7 +17739,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('586', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('586','586','586');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (587, '<Desconhecido>', '6,3 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (587, 'Desconhecido', '6,3 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,587);
 /* Tabela Object_Work_Titles */
@@ -17770,7 +17770,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('587', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('587','587','587');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (588, '<Desconhecido>', '5,1x 8,5 cm:', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (588, 'Desconhecido', '5,1x 8,5 cm:', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,588);
 /* Tabela Object_Work_Titles */
@@ -17801,7 +17801,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('588', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('588','588','588');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (589, '<Desconhecido>', '11x 9,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (589, 'Desconhecido', '11x 9,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,589);
 /* Tabela Object_Work_Titles */
@@ -17836,7 +17836,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('589', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('589','589','589');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (590, '<Desconhecido>', '3,8x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (590, 'Desconhecido', '3,8x 9,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,590);
 /* Tabela Object_Work_Titles */
@@ -17891,7 +17891,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('590', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('590','590','590');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (591, '<Desconhecido>', '6,2x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (591, 'Desconhecido', '6,2x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,591);
 /* Tabela Object_Work_Titles */
@@ -17924,7 +17924,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('591', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('591','591','591');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (592, '<Desconhecido>', '5,2x 8,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (592, 'Desconhecido', '5,2x 8,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,592);
 /* Tabela Object_Work_Titles */
@@ -17955,12 +17955,12 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('592', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('592','592','592');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (593, '<Desconhecido>', '5,3x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (593, 'Desconhecido', '5,3x 6,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,593);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
-		VALUES (593,'HASH(0x32f96b0)', 593);
+		VALUES (593,'HASH(0xa55b630)', 593);
 /* Tabela IndexingMeasurements */
 INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (645,593);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 
@@ -17983,7 +17983,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('593', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('593','593','593');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (594, '<Desconhecido>', '6,9x 5,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (594, 'Desconhecido', '6,9x 5,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,594);
 /* Tabela Object_Work_Titles */
@@ -18011,7 +18011,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('594', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('594','594','594');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (595, 'Vicente Sá', '8,5x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (595, 'Vicente Sá', '8,5x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,595);
 /* Tabela Object_Work_Titles */
@@ -18049,7 +18049,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('595', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('595','595','595');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (596, '<Desconhecido>', '5,5x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (596, 'Desconhecido', '5,5x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,596);
 /* Tabela Object_Work_Titles */
@@ -18080,7 +18080,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('596', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('596','596','596');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (597, '<Desconhecido>', '5,2x 8,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (597, 'Desconhecido', '5,2x 8,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,597);
 /* Tabela Object_Work_Titles */
@@ -18111,7 +18111,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('597', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('597','597','597');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (598, '<Desconhecido>', '6,2x 4cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (598, 'Desconhecido', '6,2x 4cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,598);
 /* Tabela Object_Work_Titles */
@@ -18142,7 +18142,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('598', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('598','598','598');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (599, '<Desconhecido>', '6,5x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (599, 'Desconhecido', '6,5x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,599);
 /* Tabela Object_Work_Titles */
@@ -18175,7 +18175,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('599', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('599','599','599');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (600, '<Desconhecido>', '6,5x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (600, 'Desconhecido', '6,5x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,600);
 /* Tabela Object_Work_Titles */
@@ -18206,7 +18206,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('600', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('600','600','600');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (601, '<Desconhecido>', '6,2x 9,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (601, 'Desconhecido', '6,2x 9,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,601);
 /* Tabela Object_Work_Titles */
@@ -18239,7 +18239,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('601', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('601','601','601');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (602, 'Cliché de Armando Leça', '6,1x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (602, 'Cliché de Armando Leça', '6,1x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,602);
 /* Tabela Object_Work_Titles */
@@ -18277,7 +18277,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('602', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('602','602','602');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (603, '<Desconhecido>', '5,3x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (603, 'Desconhecido', '5,3x 6,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,603);
 /* Tabela Object_Work_Titles */
@@ -18305,7 +18305,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('603', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('603','603','603');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (604, '<Desconhecido>', '5,7x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (604, 'Desconhecido', '5,7x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,604);
 /* Tabela Object_Work_Titles */
@@ -18336,7 +18336,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('604', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('604','604','604');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (605, '<Desconhecido>', '6,2x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (605, 'Desconhecido', '6,2x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,605);
 /* Tabela Object_Work_Titles */
@@ -18367,7 +18367,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('605', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('605','605','605');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (606, '<Desconhecido>', '6x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (606, 'Desconhecido', '6x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,606);
 /* Tabela Object_Work_Titles */
@@ -18404,7 +18404,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('606', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('606','606','606');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (607, 'Cliché do Srn. Albano Barros', '5,4x7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (607, 'Cliché do Srn. Albano Barros', '5,4x7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,607);
 /* Tabela Object_Work_Titles */
@@ -18440,7 +18440,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('607', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('607','607','607');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (608, '<Desconhecido>', '13,2x 8,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (608, 'Desconhecido', '13,2x 8,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,608);
 /* Tabela Object_Work_Titles */
@@ -18470,7 +18470,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('608', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('608','608','608');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (609, '<Desconhecido>', '5x 7,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (609, 'Desconhecido', '5x 7,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,609);
 /* Tabela Object_Work_Titles */
@@ -18503,7 +18503,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('609', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('609','609','609');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (610, '<Desconhecido>', '6,4x 10,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (610, 'Desconhecido', '6,4x 10,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,610);
 /* Tabela Object_Work_Titles */
@@ -18539,7 +18539,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('610', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('610','610','610');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (611, '<Desconhecido>', '4,7x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (611, 'Desconhecido', '4,7x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,611);
 /* Tabela Object_Work_Titles */
@@ -18581,7 +18581,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('611', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('611','611','611');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (612, '<Desconhecido>', '9,5x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (612, 'Desconhecido', '9,5x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,612);
 /* Tabela Object_Work_Titles */
@@ -18614,7 +18614,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('612', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('612','612','612');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (613, '<Desconhecido>', '10,5x 8,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (613, 'Desconhecido', '10,5x 8,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,613);
 /* Tabela Object_Work_Titles */
@@ -18649,7 +18649,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('613', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('613','613','613');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (614, '<Desconhecido>', '8,1x 7,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (614, 'Desconhecido', '8,1x 7,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,614);
 /* Tabela Object_Work_Titles */
@@ -18680,7 +18680,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('614', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('614','614','614');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (615, '<Desconhecido>', '6,3x 9,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (615, 'Desconhecido', '6,3x 9,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,615);
 /* Tabela Object_Work_Titles */
@@ -18711,7 +18711,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('615', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('615','615','615');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (616, 'Cliché João Alves', '5,3x 8,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (616, 'Cliché João Alves', '5,3x 8,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,616);
 /* Tabela Object_Work_Titles */
@@ -18747,7 +18747,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('616', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('616','616','616');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (617, '<Desconhecido>', '6,3x 5,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (617, 'Desconhecido', '6,3x 5,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,617);
 /* Tabela Object_Work_Titles */
@@ -18775,7 +18775,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('617', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('617','617','617');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (618, '<Desconhecido>', '5,4x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (618, 'Desconhecido', '5,4x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,618);
 /* Tabela Object_Work_Titles */
@@ -18808,7 +18808,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('618', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('618','618','618');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (619, '<Desconhecido>', '9,5x 7,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (619, 'Desconhecido', '9,5x 7,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,619);
 /* Tabela Object_Work_Titles */
@@ -18843,7 +18843,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('619', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('619','619','619');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (620, '<Desconhecido>', '4,7x9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (620, 'Desconhecido', '4,7x9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,620);
 /* Tabela Object_Work_Titles */
@@ -18881,7 +18881,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('620', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('620','620','620');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (621, '<Desconhecido>', '5,4x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (621, 'Desconhecido', '5,4x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,621);
 /* Tabela Object_Work_Titles */
@@ -18912,7 +18912,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('621', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('621','621','621');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (622, '<Desconhecido>', '6x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (622, 'Desconhecido', '6x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,622);
 /* Tabela Object_Work_Titles */
@@ -18943,7 +18943,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('622', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('622','622','622');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (623, '<Desconhecido>', '10,9x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (623, 'Desconhecido', '10,9x 9,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,623);
 /* Tabela Object_Work_Titles */
@@ -19022,7 +19022,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('623', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('623','623','623');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (624, '<Desconhecido>', '10,8x 6,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (624, 'Desconhecido', '10,8x 6,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,624);
 /* Tabela Object_Work_Titles */
@@ -19053,7 +19053,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('624', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('624','624','624');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (625, '<Desconhecido>', '11,8x 7,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (625, 'Desconhecido', '11,8x 7,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,625);
 /* Tabela Object_Work_Titles */
@@ -19086,7 +19086,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('625', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('625','625','625');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (626, '<Desconhecido>', '6,6x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (626, 'Desconhecido', '6,6x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,626);
 /* Tabela Object_Work_Titles */
@@ -19116,7 +19116,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('626', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('626','626','626');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (627, '<Desconhecido>', '8,5x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (627, 'Desconhecido', '8,5x 5,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,627);
 /* Tabela Object_Work_Titles */
@@ -19147,7 +19147,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('627', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('627','627','627');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (628, '<Desconhecido>', '11x 7,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (628, 'Desconhecido', '11x 7,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,628);
 /* Tabela Object_Work_Titles */
@@ -19178,7 +19178,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('628', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('628','628','628');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (629, '<Desconhecido>', '8x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (629, 'Desconhecido', '8x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,629);
 /* Tabela Object_Work_Titles */
@@ -19209,7 +19209,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('629', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('629','629','629');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (630, '<Desconhecido>', '7x 6,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (630, 'Desconhecido', '7x 6,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,630);
 /* Tabela Object_Work_Titles */
@@ -19240,7 +19240,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('630', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('630','630','630');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (631, '<Desconhecido>', '6x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (631, 'Desconhecido', '6x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,631);
 /* Tabela Object_Work_Titles */
@@ -19273,7 +19273,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('631', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('631','631','631');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (632, '<Desconhecido>', '4,5x 8,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (632, 'Desconhecido', '4,5x 8,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,632);
 /* Tabela Object_Work_Titles */
@@ -19304,7 +19304,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('632', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('632','632','632');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (633, '<Desconhecido>', '8,9x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (633, 'Desconhecido', '8,9x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,633);
 /* Tabela Object_Work_Titles */
@@ -19335,7 +19335,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('633', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('633','633','633');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (634, '<Desconhecido>', '12x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (634, 'Desconhecido', '12x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,634);
 /* Tabela Object_Work_Titles */
@@ -19368,7 +19368,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('634', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('634','634','634');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (635, '<Desconhecido>', '11,7x 7,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (635, 'Desconhecido', '11,7x 7,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,635);
 /* Tabela Object_Work_Titles */
@@ -19401,7 +19401,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('635', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('635','635','635');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (636, 'Foto de João Alves', '5,2x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (636, 'Foto de João Alves', '5,2x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,636);
 /* Tabela Object_Work_Titles */
@@ -19439,7 +19439,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('636', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('636','636','636');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (637, '<Desconhecido>', '8,7x 6,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (637, 'Desconhecido', '8,7x 6,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,637);
 /* Tabela Object_Work_Titles */
@@ -19470,7 +19470,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('637', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('637','637','637');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (638, '<Desconhecido>', '8,9x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (638, 'Desconhecido', '8,9x 6,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,638);
 /* Tabela Object_Work_Titles */
@@ -19500,7 +19500,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('638', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('638','638','638');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (639, '<Desconhecido>', '6,3x 6,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (639, 'Desconhecido', '6,3x 6,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,639);
 /* Tabela Object_Work_Titles */
@@ -19531,7 +19531,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('639', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('639','639','639');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (640, '<Desconhecido>', '6,9x 9,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (640, 'Desconhecido', '6,9x 9,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,640);
 /* Tabela Object_Work_Titles */
@@ -19562,7 +19562,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('640', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('640','640','640');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (641, '<Desconhecido>', '9,9x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (641, 'Desconhecido', '9,9x 6,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,641);
 /* Tabela Object_Work_Titles */
@@ -19593,7 +19593,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('641', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('641','641','641');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (642, '<Desconhecido>', '5,9x 9,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (642, 'Desconhecido', '5,9x 9,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,642);
 /* Tabela Object_Work_Titles */
@@ -19624,7 +19624,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('642', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('642','642','642');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (643, '<Desconhecido>', '6,1x 10,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (643, 'Desconhecido', '6,1x 10,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,643);
 /* Tabela Object_Work_Titles */
@@ -19655,7 +19655,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('643', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('643','643','643');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (644, '<Desconhecido>', '6x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (644, 'Desconhecido', '6x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,644);
 /* Tabela Object_Work_Titles */
@@ -19688,7 +19688,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('644', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('644','644','644');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (645, '<Desconhecido>', '4,8x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (645, 'Desconhecido', '4,8x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,645);
 /* Tabela Object_Work_Titles */
@@ -19726,7 +19726,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('645', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('645','645','645');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (646, '<Desconhecido>', '7,9x 5,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (646, 'Desconhecido', '7,9x 5,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,646);
 /* Tabela Object_Work_Titles */
@@ -19759,7 +19759,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('646', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('646','646','646');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (647, '<Desconhecido>', '5,4x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (647, 'Desconhecido', '5,4x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,647);
 /* Tabela Object_Work_Titles */
@@ -19792,7 +19792,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('647', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('647','647','647');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (648, '<Desconhecido>', '6,1x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (648, 'Desconhecido', '6,1x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,648);
 /* Tabela Object_Work_Titles */
@@ -19825,7 +19825,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('648', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('648','648','648');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (649, '<Desconhecido>', '5,3x 7,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (649, 'Desconhecido', '5,3x 7,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,649);
 /* Tabela Object_Work_Titles */
@@ -19856,7 +19856,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('649', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('649','649','649');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (650, '<Desconhecido>', '6,1x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (650, 'Desconhecido', '6,1x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,650);
 /* Tabela Object_Work_Titles */
@@ -19887,7 +19887,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('650', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('650','650','650');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (651, '<Desconhecido>', '4,7x 7,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (651, 'Desconhecido', '4,7x 7,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,651);
 /* Tabela Object_Work_Titles */
@@ -19920,7 +19920,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('651', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('651','651','651');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (652, '<Desconhecido>', '7,6x 10,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (652, 'Desconhecido', '7,6x 10,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,652);
 /* Tabela Object_Work_Titles */
@@ -19951,7 +19951,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('652', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('652','652','652');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (653, '<Desconhecido>', '17x 11,3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (653, 'Desconhecido', '17x 11,3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,653);
 /* Tabela Object_Work_Titles */
@@ -19979,7 +19979,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('653', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('653','653','653');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (654, '<Desconhecido>', '6,2x 9,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (654, 'Desconhecido', '6,2x 9,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,654);
 /* Tabela Object_Work_Titles */
@@ -20010,7 +20010,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('654', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('654','654','654');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (655, '<Desconhecido>', '8,6x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (655, 'Desconhecido', '8,6x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,655);
 /* Tabela Object_Work_Titles */
@@ -20041,7 +20041,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('655', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('655','655','655');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (656, '<Desconhecido>', '8,8x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (656, 'Desconhecido', '8,8x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,656);
 /* Tabela Object_Work_Titles */
@@ -20074,7 +20074,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('656', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('656','656','656');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (657, '<Desconhecido>', '4,6x 10,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (657, 'Desconhecido', '4,6x 10,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,657);
 /* Tabela Object_Work_Titles */
@@ -20109,7 +20109,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('657', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('657','657','657');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (658, '<Desconhecido>', '12x 7,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (658, 'Desconhecido', '12x 7,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,658);
 /* Tabela Object_Work_Titles */
@@ -20140,7 +20140,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('658', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('658','658','658');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (659, '<Desconhecido>', '6x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (659, 'Desconhecido', '6x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,659);
 /* Tabela Object_Work_Titles */
@@ -20173,7 +20173,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('659', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('659','659','659');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (660, '<Desconhecido>', '7,9x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (660, 'Desconhecido', '7,9x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,660);
 /* Tabela Object_Work_Titles */
@@ -20204,7 +20204,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('660', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('660','660','660');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (661, '<Desconhecido>', '7,9x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (661, 'Desconhecido', '7,9x 5,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,661);
 /* Tabela Object_Work_Titles */
@@ -20235,7 +20235,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('661', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('661','661','661');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (662, '<Desconhecido>', '5,4x 8,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (662, 'Desconhecido', '5,4x 8,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,662);
 /* Tabela Object_Work_Titles */
@@ -20268,7 +20268,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('662', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('662','662','662');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (663, '<Desconhecido>', '6x 11 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (663, 'Desconhecido', '6x 11 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,663);
 /* Tabela Object_Work_Titles */
@@ -20299,7 +20299,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('663', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('663','663','663');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (664, '<Desconhecido>', '4,7x 9,6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (664, 'Desconhecido', '4,7x 9,6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,664);
 /* Tabela Object_Work_Titles */
@@ -20330,7 +20330,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('664', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('664','664','664');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (665, '<Desconhecido>', '8,8x 6,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (665, 'Desconhecido', '8,8x 6,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,665);
 /* Tabela Object_Work_Titles */
@@ -20361,7 +20361,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('665', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('665','665','665');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (666, '<Desconhecido>', '6,5x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (666, 'Desconhecido', '6,5x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,666);
 /* Tabela Object_Work_Titles */
@@ -20394,7 +20394,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('666', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('666','666','666');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (667, '<Desconhecido>', '12,8x 7,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (667, 'Desconhecido', '12,8x 7,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,667);
 /* Tabela Object_Work_Titles */
@@ -20425,7 +20425,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('667', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('667','667','667');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (668, '<Desconhecido>', '11,6x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (668, 'Desconhecido', '11,6x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,668);
 /* Tabela Object_Work_Titles */
@@ -20456,7 +20456,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('668', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('668','668','668');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (669, '<Desconhecido>', '11,7x 7,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (669, 'Desconhecido', '11,7x 7,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,669);
 /* Tabela Object_Work_Titles */
@@ -20487,7 +20487,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('669', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('669','669','669');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (670, '<Desconhecido>', '6,1x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (670, 'Desconhecido', '6,1x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,670);
 /* Tabela Object_Work_Titles */
@@ -20518,7 +20518,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('670', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('670','670','670');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (671, '<Desconhecido>', '12,7x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (671, 'Desconhecido', '12,7x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,671);
 /* Tabela Object_Work_Titles */
@@ -20551,7 +20551,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('671', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('671','671','671');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (672, '<Desconhecido>', '12,9x 9,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (672, 'Desconhecido', '12,9x 9,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,672);
 /* Tabela Object_Work_Titles */
@@ -20582,7 +20582,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('672', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('672','672','672');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (673, '<Desconhecido>', '12,7x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (673, 'Desconhecido', '12,7x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,673);
 /* Tabela Object_Work_Titles */
@@ -20613,7 +20613,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('673', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('673','673','673');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (674, '<Desconhecido>', '8,4x 4,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (674, 'Desconhecido', '8,4x 4,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,674);
 /* Tabela Object_Work_Titles */
@@ -20646,7 +20646,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('674', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('674','674','674');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (675, '<Desconhecido>', '4,5x 3,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (675, 'Desconhecido', '4,5x 3,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,675);
 /* Tabela Object_Work_Titles */
@@ -20679,7 +20679,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('675', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('675','675','675');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (676, '<Desconhecido>', '5,9x 6,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (676, 'Desconhecido', '5,9x 6,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,676);
 /* Tabela Object_Work_Titles */
@@ -20710,7 +20710,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('676', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('676','676','676');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (677, '<Desconhecido>', '6,5x 4,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (677, 'Desconhecido', '6,5x 4,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,677);
 /* Tabela Object_Work_Titles */
@@ -20741,7 +20741,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('677', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('677','677','677');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (678, '<Desconhecido>', '6,3x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (678, 'Desconhecido', '6,3x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,678);
 /* Tabela Object_Work_Titles */
@@ -20769,7 +20769,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('678', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('678','678','678');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (679, '<Desconhecido>', '7,6x 11 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (679, 'Desconhecido', '7,6x 11 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,679);
 /* Tabela Object_Work_Titles */
@@ -20800,7 +20800,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('679', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('679','679','679');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (680, '<Desconhecido>', '9x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (680, 'Desconhecido', '9x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,680);
 /* Tabela Object_Work_Titles */
@@ -20831,7 +20831,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('680', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('680','680','680');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (681, '<Desconhecido>', '6,4x 4,2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (681, 'Desconhecido', '6,4x 4,2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,681);
 /* Tabela Object_Work_Titles */
@@ -20864,7 +20864,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('681', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('681','681','681');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (682, '<Desconhecido>', '7x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (682, 'Desconhecido', '7x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,682);
 /* Tabela Object_Work_Titles */
@@ -20895,7 +20895,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('682', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('682','682','682');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (683, '<Desconhecido>', '9,2x 6,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (683, 'Desconhecido', '9,2x 6,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,683);
 /* Tabela Object_Work_Titles */
@@ -20926,7 +20926,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('683', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('683','683','683');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (684, '<Desconhecido>', '5,9x 8,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (684, 'Desconhecido', '5,9x 8,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,684);
 /* Tabela Object_Work_Titles */
@@ -20957,7 +20957,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('684', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('684','684','684');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (685, '<Desconhecido>', '12,8x 8,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (685, 'Desconhecido', '12,8x 8,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,685);
 /* Tabela Object_Work_Titles */
@@ -20990,7 +20990,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('685', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('685','685','685');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (686, '<Desconhecido>', '7x 5,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (686, 'Desconhecido', '7x 5,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,686);
 /* Tabela Object_Work_Titles */
@@ -21021,7 +21021,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('686', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('686','686','686');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (687, '<Desconhecido>', '12x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (687, 'Desconhecido', '12x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,687);
 /* Tabela Object_Work_Titles */
@@ -21052,7 +21052,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('687', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('687','687','687');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (688, '<Desconhecido>', '10,7x 9,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (688, 'Desconhecido', '10,7x 9,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,688);
 /* Tabela Object_Work_Titles */
@@ -21083,7 +21083,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('688', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('688','688','688');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (689, '<Desconhecido>', '12,8x 8,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (689, 'Desconhecido', '12,8x 8,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,689);
 /* Tabela Object_Work_Titles */
@@ -21116,7 +21116,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('689', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('689','689','689');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (690, '<Desconhecido>', '7,9x 5,8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (690, 'Desconhecido', '7,9x 5,8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,690);
 /* Tabela Object_Work_Titles */
@@ -21149,7 +21149,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('690', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('690','690','690');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (691, '<Desconhecido>', '6,2x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (691, 'Desconhecido', '6,2x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,691);
 /* Tabela Object_Work_Titles */
@@ -21182,7 +21182,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('691', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('691','691','691');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (692, '<Desconhecido>', '6,2x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (692, 'Desconhecido', '6,2x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,692);
 /* Tabela Object_Work_Titles */
@@ -21213,7 +21213,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('692', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('692','692','692');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (693, '<Desconhecido>', '8,1x 11,7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (693, 'Desconhecido', '8,1x 11,7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,693);
 /* Tabela Object_Work_Titles */
@@ -21246,7 +21246,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('693', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('693','693','693');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (694, '<Desconhecido>', '6x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (694, 'Desconhecido', '6x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,694);
 /* Tabela Object_Work_Titles */
@@ -21277,7 +21277,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('694', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('694','694','694');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (695, '<Desconhecido>', '12,8x 7,9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (695, 'Desconhecido', '12,8x 7,9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,695);
 /* Tabela Object_Work_Titles */
@@ -21310,7 +21310,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('695', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('695','695','695');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (696, '<Desconhecido>', '9,6x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (696, 'Desconhecido', '9,6x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,696);
 /* Tabela Object_Work_Titles */
@@ -21349,7 +21349,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('696', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('696','696','696');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (697, '<Desconhecido>', '5,2x 8,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (697, 'Desconhecido', '5,2x 8,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,697);
 /* Tabela Object_Work_Titles */
@@ -21380,7 +21380,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('697', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('697','697','697');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (698, '<Desconhecido>', '7,2x 11,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (698, 'Desconhecido', '7,2x 11,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,698);
 /* Tabela Object_Work_Titles */
@@ -21411,7 +21411,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('698', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('698','698','698');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (699, '<Desconhecido>', '3,9x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (699, 'Desconhecido', '3,9x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,699);
 /* Tabela Object_Work_Titles */
@@ -21442,7 +21442,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('699', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('699','699','699');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (700, '<Desconhecido>', '5,3x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (700, 'Desconhecido', '5,3x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,700);
 /* Tabela Object_Work_Titles */
@@ -21473,7 +21473,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('700', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('700','700','700');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (701, '<Desconhecido>', '5,8x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (701, 'Desconhecido', '5,8x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,701);
 /* Tabela Object_Work_Titles */
@@ -21504,7 +21504,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('701', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('701','701','701');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (702, '<Desconhecido>', '6x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (702, 'Desconhecido', '6x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,702);
 /* Tabela Object_Work_Titles */
@@ -21535,7 +21535,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('702', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('702','702','702');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (703, '<Desconhecido>', '4 x 7.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (703, 'Desconhecido', '4 x 7.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,703);
 /* Tabela Object_Work_Titles */
@@ -21566,7 +21566,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('703', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('703','703','703');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (704, '<Desconhecido>', '5.9x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (704, 'Desconhecido', '5.9x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,704);
 /* Tabela Object_Work_Titles */
@@ -21597,7 +21597,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('704', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('704','704','704');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (705, '<Desconhecido>', '6x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (705, 'Desconhecido', '6x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,705);
 /* Tabela Object_Work_Titles */
@@ -21628,7 +21628,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('705', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('705','705','705');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (706, '<Desconhecido>', '6x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (706, 'Desconhecido', '6x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,706);
 /* Tabela Object_Work_Titles */
@@ -21659,7 +21659,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('706', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('706','706','706');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (707, '<Desconhecido>', '7.3x 5.5cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (707, 'Desconhecido', '7.3x 5.5cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,707);
 /* Tabela Object_Work_Titles */
@@ -21690,7 +21690,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('707', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('707','707','707');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (708, '<Desconhecido>', '6x 8.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (708, 'Desconhecido', '6x 8.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,708);
 /* Tabela Object_Work_Titles */
@@ -21721,7 +21721,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('708', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('708','708','708');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (709, '<Desconhecido>', '4.8x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (709, 'Desconhecido', '4.8x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,709);
 /* Tabela Object_Work_Titles */
@@ -21752,7 +21752,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('709', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('709','709','709');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (710, '<Desconhecido>', '5.5x 8.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (710, 'Desconhecido', '5.5x 8.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,710);
 /* Tabela Object_Work_Titles */
@@ -21783,7 +21783,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('710', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('710','710','710');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (711, '<Desconhecido>', '5.2x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (711, 'Desconhecido', '5.2x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,711);
 /* Tabela Object_Work_Titles */
@@ -21814,7 +21814,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('711', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('711','711','711');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (712, '<Desconhecido>', '7.7x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (712, 'Desconhecido', '7.7x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,712);
 /* Tabela Object_Work_Titles */
@@ -21845,7 +21845,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('712', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('712','712','712');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (713, '<Desconhecido>', '9x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (713, 'Desconhecido', '9x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,713);
 /* Tabela Object_Work_Titles */
@@ -21876,7 +21876,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('713', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('713','713','713');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (714, '<Desconhecido>', '9x 6.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (714, 'Desconhecido', '9x 6.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,714);
 /* Tabela Object_Work_Titles */
@@ -21907,7 +21907,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('714', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('714','714','714');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (715, '<Desconhecido>', '5.5x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (715, 'Desconhecido', '5.5x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,715);
 /* Tabela Object_Work_Titles */
@@ -21938,7 +21938,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('715', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('715','715','715');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (716, '<Desconhecido>', '6x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (716, 'Desconhecido', '6x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,716);
 /* Tabela Object_Work_Titles */
@@ -21969,7 +21969,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('716', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('716','716','716');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (717, '<Desconhecido>', '6x 9.3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (717, 'Desconhecido', '6x 9.3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,717);
 /* Tabela Object_Work_Titles */
@@ -22000,7 +22000,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('717', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('717','717','717');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (718, '<Desconhecido>', '6.8x 9.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (718, 'Desconhecido', '6.8x 9.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,718);
 /* Tabela Object_Work_Titles */
@@ -22031,7 +22031,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('718', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('718','718','718');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (719, '<Desconhecido>', '6x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (719, 'Desconhecido', '6x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,719);
 /* Tabela Object_Work_Titles */
@@ -22062,7 +22062,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('719', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('719','719','719');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (720, '<Desconhecido>', '6.5x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (720, 'Desconhecido', '6.5x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,720);
 /* Tabela Object_Work_Titles */
@@ -22093,7 +22093,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('720', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('720','720','720');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (721, '<Desconhecido>', '4cm (diâmetro)', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (721, 'Desconhecido', '4cm (diâmetro)', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,721);
 /* Tabela Object_Work_Titles */
@@ -22122,7 +22122,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('721', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('721','721','721');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (722, '<Desconhecido>', '6.4x 8.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (722, 'Desconhecido', '6.4x 8.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,722);
 /* Tabela Object_Work_Titles */
@@ -22153,7 +22153,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('722', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('722','722','722');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (723, '<Desconhecido>', '6x 8.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (723, 'Desconhecido', '6x 8.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,723);
 /* Tabela Object_Work_Titles */
@@ -22184,7 +22184,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('723', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('723','723','723');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (724, '<Desconhecido>', '5.2x 6.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (724, 'Desconhecido', '5.2x 6.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,724);
 /* Tabela Object_Work_Titles */
@@ -22215,7 +22215,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('724', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('724','724','724');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (725, '<Desconhecido>', '11.4x 8.2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (725, 'Desconhecido', '11.4x 8.2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,725);
 /* Tabela Object_Work_Titles */
@@ -22246,7 +22246,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('725', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('725','725','725');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (726, '<Desconhecido>', '6x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (726, 'Desconhecido', '6x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,726);
 /* Tabela Object_Work_Titles */
@@ -22277,7 +22277,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('726', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('726','726','726');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (727, '<Desconhecido>', '5.3x 7.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (727, 'Desconhecido', '5.3x 7.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,727);
 /* Tabela Object_Work_Titles */
@@ -22308,7 +22308,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('727', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('727','727','727');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (728, '<Desconhecido>', '5.5x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (728, 'Desconhecido', '5.5x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,728);
 /* Tabela Object_Work_Titles */
@@ -22339,7 +22339,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('728', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('728','728','728');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (729, '<Desconhecido>', '6.5x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (729, 'Desconhecido', '6.5x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,729);
 /* Tabela Object_Work_Titles */
@@ -22370,7 +22370,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('729', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('729','729','729');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (730, '<Desconhecido>', '5.5x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (730, 'Desconhecido', '5.5x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,730);
 /* Tabela Object_Work_Titles */
@@ -22401,7 +22401,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('730', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('730','730','730');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (731, '<Desconhecido>', '9.7 (diâmetro) cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (731, 'Desconhecido', '9.7 (diâmetro) cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,731);
 /* Tabela Object_Work_Titles */
@@ -22430,7 +22430,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('731', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('731','731','731');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (732, '<Desconhecido>', '8.5x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (732, 'Desconhecido', '8.5x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,732);
 /* Tabela Object_Work_Titles */
@@ -22461,7 +22461,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('732', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('732','732','732');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (733, '<Desconhecido>', '5.4x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (733, 'Desconhecido', '5.4x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,733);
 /* Tabela Object_Work_Titles */
@@ -22492,7 +22492,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('733', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('733','733','733');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (734, '<Desconhecido>', '6.5x 5.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (734, 'Desconhecido', '6.5x 5.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,734);
 /* Tabela Object_Work_Titles */
@@ -22523,7 +22523,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('734', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('734','734','734');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (735, '<Desconhecido>', '8.3x 5.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (735, 'Desconhecido', '8.3x 5.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,735);
 /* Tabela Object_Work_Titles */
@@ -22554,7 +22554,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('735', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('735','735','735');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (736, '<Desconhecido>', '5.4x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (736, 'Desconhecido', '5.4x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,736);
 /* Tabela Object_Work_Titles */
@@ -22585,7 +22585,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('736', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('736','736','736');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (737, '<Desconhecido>', '5.5x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (737, 'Desconhecido', '5.5x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,737);
 /* Tabela Object_Work_Titles */
@@ -22616,7 +22616,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('737', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('737','737','737');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (738, '<Desconhecido>', '5 x 7.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (738, 'Desconhecido', '5 x 7.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,738);
 /* Tabela Object_Work_Titles */
@@ -22647,7 +22647,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('738', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('738','738','738');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (739, '<Desconhecido>', '6x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (739, 'Desconhecido', '6x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,739);
 /* Tabela Object_Work_Titles */
@@ -22678,7 +22678,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('739', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('739','739','739');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (740, '<Desconhecido>', '6x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (740, 'Desconhecido', '6x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,740);
 /* Tabela Object_Work_Titles */
@@ -22709,7 +22709,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('740', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('740','740','740');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (741, '<Desconhecido>', '7x 5.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (741, 'Desconhecido', '7x 5.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,741);
 /* Tabela Object_Work_Titles */
@@ -22740,7 +22740,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('741', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('741','741','741');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (742, '<Desconhecido>', '7x 11 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (742, 'Desconhecido', '7x 11 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,742);
 /* Tabela Object_Work_Titles */
@@ -22771,7 +22771,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('742', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('742','742','742');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (743, '<Desconhecido>', '6x 9,1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (743, 'Desconhecido', '6x 9,1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,743);
 /* Tabela Object_Work_Titles */
@@ -22799,7 +22799,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('743', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('743','743','743');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (744, '<Desconhecido>', '4.5x 7.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (744, 'Desconhecido', '4.5x 7.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,744);
 /* Tabela Object_Work_Titles */
@@ -22830,7 +22830,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('744', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('744','744','744');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (745, '<Desconhecido>', '6.5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (745, 'Desconhecido', '6.5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,745);
 /* Tabela Object_Work_Titles */
@@ -22861,7 +22861,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('745', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('745','745','745');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (746, '<Desconhecido>', '5 x 8.3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (746, 'Desconhecido', '5 x 8.3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,746);
 /* Tabela Object_Work_Titles */
@@ -22892,7 +22892,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('746', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('746','746','746');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (747, '<Desconhecido>', '5x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (747, 'Desconhecido', '5x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,747);
 /* Tabela Object_Work_Titles */
@@ -22923,7 +22923,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('747', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('747','747','747');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (748, '<Desconhecido>', '5 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (748, 'Desconhecido', '5 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,748);
 /* Tabela Object_Work_Titles */
@@ -22954,7 +22954,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('748', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('748','748','748');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (749, '<Desconhecido>', '5 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (749, 'Desconhecido', '5 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,749);
 /* Tabela Object_Work_Titles */
@@ -22985,7 +22985,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('749', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('749','749','749');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (750, '<Desconhecido>', '5.1 x 9.7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (750, 'Desconhecido', '5.1 x 9.7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,750);
 /* Tabela Object_Work_Titles */
@@ -23016,7 +23016,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('750', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('750','750','750');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (751, '<Desconhecido>', '6. x 8.2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (751, 'Desconhecido', '6. x 8.2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,751);
 /* Tabela Object_Work_Titles */
@@ -23047,7 +23047,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('751', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('751','751','751');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (752, '<Desconhecido>', '4.8 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (752, 'Desconhecido', '4.8 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,752);
 /* Tabela Object_Work_Titles */
@@ -23078,7 +23078,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('752', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('752','752','752');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (753, '<Desconhecido>', '3 x 3.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (753, 'Desconhecido', '3 x 3.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,753);
 /* Tabela Object_Work_Titles */
@@ -23109,7 +23109,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('753', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('753','753','753');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (754, '<Desconhecido>', '4.9 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (754, 'Desconhecido', '4.9 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,754);
 /* Tabela Object_Work_Titles */
@@ -23140,7 +23140,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('754', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('754','754','754');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (755, '<Desconhecido>', '8.8 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (755, 'Desconhecido', '8.8 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,755);
 /* Tabela Object_Work_Titles */
@@ -23171,7 +23171,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('755', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('755','755','755');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (756, '<Desconhecido>', '6.5 x 4.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (756, 'Desconhecido', '6.5 x 4.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,756);
 /* Tabela Object_Work_Titles */
@@ -23202,7 +23202,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('756', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('756','756','756');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (757, '<Desconhecido>', '6 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (757, 'Desconhecido', '6 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,757);
 /* Tabela Object_Work_Titles */
@@ -23233,7 +23233,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('757', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('757','757','757');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (758, '<Desconhecido>', '6 x 6.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (758, 'Desconhecido', '6 x 6.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,758);
 /* Tabela Object_Work_Titles */
@@ -23264,7 +23264,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('758', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('758','758','758');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (759, '<Desconhecido>', '5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (759, 'Desconhecido', '5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,759);
 /* Tabela Object_Work_Titles */
@@ -23295,7 +23295,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('759', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('759','759','759');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (760, '<Desconhecido>', '9.5 x 6.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (760, 'Desconhecido', '9.5 x 6.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,760);
 /* Tabela Object_Work_Titles */
@@ -23326,7 +23326,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('760', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('760','760','760');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (761, '<Desconhecido>', '6,5 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (761, 'Desconhecido', '6,5 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,761);
 /* Tabela Object_Work_Titles */
@@ -23357,7 +23357,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('761', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('761','761','761');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (762, '<Desconhecido>', '6 cm (diâmetro)', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (762, 'Desconhecido', '6 cm (diâmetro)', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,762);
 /* Tabela Object_Work_Titles */
@@ -23386,7 +23386,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('762', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('762','762','762');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (763, '<Desconhecido>', '6,5 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (763, 'Desconhecido', '6,5 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,763);
 /* Tabela Object_Work_Titles */
@@ -23417,7 +23417,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('763', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('763','763','763');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (764, '<Desconhecido>', '9 x 6.3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (764, 'Desconhecido', '9 x 6.3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,764);
 /* Tabela Object_Work_Titles */
@@ -23448,7 +23448,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('764', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('764','764','764');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (765, '<Desconhecido>', '5.9 x 7.4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (765, 'Desconhecido', '5.9 x 7.4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,765);
 /* Tabela Object_Work_Titles */
@@ -23479,7 +23479,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('765', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('765','765','765');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (766, '<Desconhecido>', '9.9 x 5.9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (766, 'Desconhecido', '9.9 x 5.9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,766);
 /* Tabela Object_Work_Titles */
@@ -23510,7 +23510,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('766', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('766','766','766');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (767, '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (767, 'Desconhecido', 'Desconhecido', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,767);
 /* Tabela Object_Work_Titles */
@@ -23534,7 +23534,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('767', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('767','767','767');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (768, '<Desconhecido>', '5.3 x 8.9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (768, 'Desconhecido', '5.3 x 8.9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,768);
 /* Tabela Object_Work_Titles */
@@ -23565,7 +23565,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('768', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('768','768','768');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (769, '<Desconhecido>', '9.9 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (769, 'Desconhecido', '9.9 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,769);
 /* Tabela Object_Work_Titles */
@@ -23596,7 +23596,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('769', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('769','769','769');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (770, '<Desconhecido>', '8.8 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (770, 'Desconhecido', '8.8 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,770);
 /* Tabela Object_Work_Titles */
@@ -23627,7 +23627,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('770', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('770','770','770');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (771, '<Desconhecido>', '7.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (771, 'Desconhecido', '7.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,771);
 /* Tabela Object_Work_Titles */
@@ -23658,7 +23658,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('771', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('771','771','771');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (772, '<Desconhecido>', '7.7 x 12.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (772, 'Desconhecido', '7.7 x 12.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,772);
 /* Tabela Object_Work_Titles */
@@ -23689,7 +23689,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('772', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('772','772','772');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (773, '<Desconhecido>', '6.3 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (773, 'Desconhecido', '6.3 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,773);
 /* Tabela Object_Work_Titles */
@@ -23720,7 +23720,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('773', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('773','773','773');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (774, '<Desconhecido>', '5.1 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (774, 'Desconhecido', '5.1 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,774);
 /* Tabela Object_Work_Titles */
@@ -23751,7 +23751,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('774', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('774','774','774');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (775, '<Desconhecido>', '13x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (775, 'Desconhecido', '13x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,775);
 /* Tabela Object_Work_Titles */
@@ -23782,7 +23782,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('775', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('775','775','775');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (776, '<Desconhecido>', '6.5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (776, 'Desconhecido', '6.5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,776);
 /* Tabela Object_Work_Titles */
@@ -23813,7 +23813,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('776', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('776','776','776');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (777, '<Desconhecido>', '6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (777, 'Desconhecido', '6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,777);
 /* Tabela Object_Work_Titles */
@@ -23844,7 +23844,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('777', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('777','777','777');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (778, '<Desconhecido>', '6 x 9cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (778, 'Desconhecido', '6 x 9cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,778);
 /* Tabela Object_Work_Titles */
@@ -23875,7 +23875,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('778', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('778','778','778');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (779, '<Desconhecido>', '6 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (779, 'Desconhecido', '6 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,779);
 /* Tabela Object_Work_Titles */
@@ -23906,7 +23906,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('779', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('779','779','779');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (780, '<Desconhecido>', '5.5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (780, 'Desconhecido', '5.5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,780);
 /* Tabela Object_Work_Titles */
@@ -23937,7 +23937,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('780', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('780','780','780');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (781, '<Desconhecido>', '7.5 x 12 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (781, 'Desconhecido', '7.5 x 12 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,781);
 /* Tabela Object_Work_Titles */
@@ -23968,7 +23968,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('781', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('781','781','781');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (782, '<Desconhecido>', '8 x 15 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (782, 'Desconhecido', '8 x 15 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,782);
 /* Tabela Object_Work_Titles */
@@ -23999,7 +23999,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('782', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('782','782','782');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (783, '<Desconhecido>', '7 x 9.7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (783, 'Desconhecido', '7 x 9.7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,783);
 /* Tabela Object_Work_Titles */
@@ -24030,7 +24030,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('783', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('783','783','783');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (784, '<Desconhecido>', '10 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (784, 'Desconhecido', '10 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,784);
 /* Tabela Object_Work_Titles */
@@ -24061,7 +24061,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('784', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('784','784','784');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (785, '<Desconhecido>', '7.4 x 5,4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (785, 'Desconhecido', '7.4 x 5,4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,785);
 /* Tabela Object_Work_Titles */
@@ -24092,7 +24092,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('785', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('785','785','785');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (786, '<Desconhecido>', '12.5 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (786, 'Desconhecido', '12.5 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,786);
 /* Tabela Object_Work_Titles */
@@ -24123,7 +24123,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('786', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('786','786','786');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (787, '<Desconhecido>', '5.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (787, 'Desconhecido', '5.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,787);
 /* Tabela Object_Work_Titles */
@@ -24154,7 +24154,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('787', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('787','787','787');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (788, '<Desconhecido>', '6.3 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (788, 'Desconhecido', '6.3 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,788);
 /* Tabela Object_Work_Titles */
@@ -24185,7 +24185,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('788', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('788','788','788');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (789, '<Desconhecido>', '6 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (789, 'Desconhecido', '6 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,789);
 /* Tabela Object_Work_Titles */
@@ -24216,7 +24216,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('789', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('789','789','789');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (790, '<Desconhecido>', '5 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (790, 'Desconhecido', '5 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,790);
 /* Tabela Object_Work_Titles */
@@ -24247,7 +24247,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('790', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('790','790','790');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (791, '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (791, 'Desconhecido', 'Desconhecido', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,791);
 /* Tabela Object_Work_Titles */
@@ -24271,7 +24271,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('791', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('791','791','791');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (792, '<Desconhecido>', '6.7 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (792, 'Desconhecido', '6.7 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,792);
 /* Tabela Object_Work_Titles */
@@ -24302,7 +24302,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('792', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('792','792','792');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (793, '<Desconhecido>', '7 x 11 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (793, 'Desconhecido', '7 x 11 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,793);
 /* Tabela Object_Work_Titles */
@@ -24333,7 +24333,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('793', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('793','793','793');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (794, '<Desconhecido>', '6.7 x 9.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (794, 'Desconhecido', '6.7 x 9.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,794);
 /* Tabela Object_Work_Titles */
@@ -24364,7 +24364,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('794', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('794','794','794');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (795, '<Desconhecido>', '8 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (795, 'Desconhecido', '8 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,795);
 /* Tabela Object_Work_Titles */
@@ -24395,7 +24395,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('795', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('795','795','795');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (796, '<Desconhecido>', '5.8 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (796, 'Desconhecido', '5.8 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,796);
 /* Tabela Object_Work_Titles */
@@ -24426,7 +24426,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('796', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('796','796','796');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (797, '<Desconhecido>', '6.3 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (797, 'Desconhecido', '6.3 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,797);
 /* Tabela Object_Work_Titles */
@@ -24457,7 +24457,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('797', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('797','797','797');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (798, '<Desconhecido>', '7 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (798, 'Desconhecido', '7 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,798);
 /* Tabela Object_Work_Titles */
@@ -24488,7 +24488,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('798', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('798','798','798');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (799, '<Desconhecido>', '6.4 x 8.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (799, 'Desconhecido', '6.4 x 8.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,799);
 /* Tabela Object_Work_Titles */
@@ -24519,7 +24519,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('799', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('799','799','799');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (800, '<Desconhecido>', '7 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (800, 'Desconhecido', '7 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,800);
 /* Tabela Object_Work_Titles */
@@ -24550,7 +24550,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('800', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('800','800','800');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (801, '<Desconhecido>', '11 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (801, 'Desconhecido', '11 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,801);
 /* Tabela Object_Work_Titles */
@@ -24581,7 +24581,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('801', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('801','801','801');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (802, '<Desconhecido>', '5.1 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (802, 'Desconhecido', '5.1 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,802);
 /* Tabela Object_Work_Titles */
@@ -24612,7 +24612,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('802', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('802','802','802');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (803, '<Desconhecido>', '6.5 x 9.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (803, 'Desconhecido', '6.5 x 9.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,803);
 /* Tabela Object_Work_Titles */
@@ -24643,7 +24643,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('803', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('803','803','803');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (804, '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (804, 'Desconhecido', 'Desconhecido', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,804);
 /* Tabela Object_Work_Titles */
@@ -24667,7 +24667,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('804', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('804','804','804');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (805, '<Desconhecido>', '9.5 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (805, 'Desconhecido', '9.5 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,805);
 /* Tabela Object_Work_Titles */
@@ -24698,7 +24698,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('805', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('805','805','805');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (806, '<Desconhecido>', '6.5 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (806, 'Desconhecido', '6.5 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,806);
 /* Tabela Object_Work_Titles */
@@ -24729,7 +24729,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('806', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('806','806','806');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (807, '<Desconhecido>', '6 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (807, 'Desconhecido', '6 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,807);
 /* Tabela Object_Work_Titles */
@@ -24760,7 +24760,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('807', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('807','807','807');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (808, '<Desconhecido>', '6 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (808, 'Desconhecido', '6 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,808);
 /* Tabela Object_Work_Titles */
@@ -24791,7 +24791,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('808', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('808','808','808');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (809, '<Desconhecido>', '6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (809, 'Desconhecido', '6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,809);
 /* Tabela Object_Work_Titles */
@@ -24822,7 +24822,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('809', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('809','809','809');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (810, '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (810, 'Desconhecido', 'Desconhecido', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,810);
 /* Tabela Object_Work_Titles */
@@ -24846,7 +24846,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('810', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('810','810','810');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (811, '<Desconhecido>', '6 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (811, 'Desconhecido', '6 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,811);
 /* Tabela Object_Work_Titles */
@@ -24877,7 +24877,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('811', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('811','811','811');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (812, '<Desconhecido>', '7.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (812, 'Desconhecido', '7.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,812);
 /* Tabela Object_Work_Titles */
@@ -24908,7 +24908,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('812', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('812','812','812');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (813, '<Desconhecido>', '12.5 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (813, 'Desconhecido', '12.5 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,813);
 /* Tabela Object_Work_Titles */
@@ -24939,7 +24939,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('813', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('813','813','813');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (814, '<Desconhecido>', '5.5 x 4.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (814, 'Desconhecido', '5.5 x 4.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,814);
 /* Tabela Object_Work_Titles */
@@ -24970,7 +24970,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('814', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('814','814','814');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (815, '<Desconhecido>', '8 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (815, 'Desconhecido', '8 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,815);
 /* Tabela Object_Work_Titles */
@@ -25001,7 +25001,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('815', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('815','815','815');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (816, '<Desconhecido>', '7 x 11 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (816, 'Desconhecido', '7 x 11 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,816);
 /* Tabela Object_Work_Titles */
@@ -25032,7 +25032,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('816', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('816','816','816');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (817, '<Desconhecido>', '6 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (817, 'Desconhecido', '6 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,817);
 /* Tabela Object_Work_Titles */
@@ -25063,7 +25063,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('817', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('817','817','817');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (818, '<Desconhecido>', '6 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (818, 'Desconhecido', '6 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,818);
 /* Tabela Object_Work_Titles */
@@ -25094,7 +25094,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('818', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('818','818','818');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (819, '<Desconhecido>', '5.5 x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (819, 'Desconhecido', '5.5 x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,819);
 /* Tabela Object_Work_Titles */
@@ -25125,7 +25125,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('819', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('819','819','819');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (820, '<Desconhecido>', '4 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (820, 'Desconhecido', '4 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,820);
 /* Tabela Object_Work_Titles */
@@ -25156,7 +25156,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('820', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('820','820','820');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (821, '<Desconhecido>', '7.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (821, 'Desconhecido', '7.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,821);
 /* Tabela Object_Work_Titles */
@@ -25187,7 +25187,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('821', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('821','821','821');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (822, '<Desconhecido>', '5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (822, 'Desconhecido', '5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,822);
 /* Tabela Object_Work_Titles */
@@ -25218,7 +25218,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('822', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('822','822','822');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (823, '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (823, 'Desconhecido', 'Desconhecido', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,823);
 /* Tabela Object_Work_Titles */
@@ -25242,7 +25242,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('823', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('823','823','823');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (824, '<Desconhecido>', '6.5 x 4,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (824, 'Desconhecido', '6.5 x 4,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,824);
 /* Tabela Object_Work_Titles */
@@ -25273,7 +25273,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('824', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('824','824','824');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (825, '<Desconhecido>', '5.5 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (825, 'Desconhecido', '5.5 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,825);
 /* Tabela Object_Work_Titles */
@@ -25304,7 +25304,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('825', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('825','825','825');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (826, '<Desconhecido>', '4.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (826, 'Desconhecido', '4.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,826);
 /* Tabela Object_Work_Titles */
@@ -25335,7 +25335,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('826', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('826','826','826');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (827, '<Desconhecido>', '10.5 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (827, 'Desconhecido', '10.5 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,827);
 /* Tabela Object_Work_Titles */
@@ -25366,7 +25366,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('827', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('827','827','827');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (828, '<Desconhecido>', '6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (828, 'Desconhecido', '6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,828);
 /* Tabela Object_Work_Titles */
@@ -25397,7 +25397,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('828', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('828','828','828');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (829, '<Desconhecido>', '7 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (829, 'Desconhecido', '7 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,829);
 /* Tabela Object_Work_Titles */
@@ -25428,7 +25428,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('829', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('829','829','829');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (830, '<Desconhecido>', '7.5 x 95 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (830, 'Desconhecido', '7.5 x 95 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,830);
 /* Tabela Object_Work_Titles */
@@ -25459,7 +25459,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('830', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('830','830','830');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (831, '<Desconhecido>', '6.5 x 9.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (831, 'Desconhecido', '6.5 x 9.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,831);
 /* Tabela Object_Work_Titles */
@@ -25490,7 +25490,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('831', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('831','831','831');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (832, '<Desconhecido>', '9 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (832, 'Desconhecido', '9 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,832);
 /* Tabela Object_Work_Titles */
@@ -25521,7 +25521,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('832', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('832','832','832');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (833, '<Desconhecido>', '8.5 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (833, 'Desconhecido', '8.5 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,833);
 /* Tabela Object_Work_Titles */
@@ -25552,7 +25552,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('833', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('833','833','833');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (834, '<Desconhecido>', '9.5 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (834, 'Desconhecido', '9.5 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,834);
 /* Tabela Object_Work_Titles */
@@ -25583,7 +25583,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('834', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('834','834','834');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (835, '<Desconhecido>', '6.5 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (835, 'Desconhecido', '6.5 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,835);
 /* Tabela Object_Work_Titles */
@@ -25614,7 +25614,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('835', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('835','835','835');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (836, '<Desconhecido>', '6.7 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (836, 'Desconhecido', '6.7 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,836);
 /* Tabela Object_Work_Titles */
@@ -25645,7 +25645,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('836', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('836','836','836');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (837, '<Desconhecido>', '7.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (837, 'Desconhecido', '7.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,837);
 /* Tabela Object_Work_Titles */
@@ -25676,7 +25676,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('837', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('837','837','837');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (838, '<Desconhecido>', '7 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (838, 'Desconhecido', '7 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,838);
 /* Tabela Object_Work_Titles */
@@ -25707,7 +25707,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('838', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('838','838','838');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (839, '<Desconhecido>', '8 x 5.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (839, 'Desconhecido', '8 x 5.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,839);
 /* Tabela Object_Work_Titles */
@@ -25738,7 +25738,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('839', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('839','839','839');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (840, '<Desconhecido>', '6.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (840, 'Desconhecido', '6.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,840);
 /* Tabela Object_Work_Titles */
@@ -25769,7 +25769,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('840', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('840','840','840');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (841, '<Desconhecido>', '5.5 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (841, 'Desconhecido', '5.5 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,841);
 /* Tabela Object_Work_Titles */
@@ -25800,7 +25800,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('841', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('841','841','841');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (842, '<Desconhecido>', '6 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (842, 'Desconhecido', '6 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,842);
 /* Tabela Object_Work_Titles */
@@ -25831,7 +25831,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('842', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('842','842','842');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (843, '<Desconhecido>', '9.6 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (843, 'Desconhecido', '9.6 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,843);
 /* Tabela Object_Work_Titles */
@@ -25862,7 +25862,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('843', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('843','843','843');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (844, '<Desconhecido>', '10 x 6,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (844, 'Desconhecido', '10 x 6,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,844);
 /* Tabela Object_Work_Titles */
@@ -25893,7 +25893,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('844', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('844','844','844');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (845, '<Desconhecido>', '8.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (845, 'Desconhecido', '8.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,845);
 /* Tabela Object_Work_Titles */
@@ -25924,7 +25924,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('845', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('845','845','845');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (846, '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (846, 'Desconhecido', 'Desconhecido', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,846);
 /* Tabela Object_Work_Titles */
@@ -25948,7 +25948,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('846', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('846','846','846');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (847, '<Desconhecido>', '7 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (847, 'Desconhecido', '7 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,847);
 /* Tabela Object_Work_Titles */
@@ -25979,7 +25979,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('847', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('847','847','847');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (848, '<Desconhecido>', '6.5 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (848, 'Desconhecido', '6.5 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,848);
 /* Tabela Object_Work_Titles */
@@ -26010,7 +26010,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('848', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('848','848','848');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (849, '<Desconhecido>', '6 x 9,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (849, 'Desconhecido', '6 x 9,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,849);
 /* Tabela Object_Work_Titles */
@@ -26041,7 +26041,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('849', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('849','849','849');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (850, '<Desconhecido>', '6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (850, 'Desconhecido', '6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,850);
 /* Tabela Object_Work_Titles */
@@ -26072,7 +26072,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('850', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('850','850','850');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (851, '<Desconhecido>', '5 x 8.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (851, 'Desconhecido', '5 x 8.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,851);
 /* Tabela Object_Work_Titles */
@@ -26103,7 +26103,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('851', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('851','851','851');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (852, '<Desconhecido>', '7 x 5,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (852, 'Desconhecido', '7 x 5,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,852);
 /* Tabela Object_Work_Titles */
@@ -26134,7 +26134,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('852', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('852','852','852');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (853, '<Desconhecido>', '5 x 7,5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (853, 'Desconhecido', '5 x 7,5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,853);
 /* Tabela Object_Work_Titles */
@@ -26165,7 +26165,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('853', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('853','853','853');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (854, '<Desconhecido>', '5.5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (854, 'Desconhecido', '5.5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,854);
 /* Tabela Object_Work_Titles */
@@ -26196,7 +26196,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('854', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('854','854','854');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (855, '<Desconhecido>', '18x 12.1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (855, 'Desconhecido', '18x 12.1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,855);
 /* Tabela Object_Work_Titles */
@@ -26224,7 +26224,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('855', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('855','855','855');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (856, '<Desconhecido>', '14.5 x 12.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (856, 'Desconhecido', '14.5 x 12.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,856);
 /* Tabela Object_Work_Titles */
@@ -26255,7 +26255,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('856', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('856','856','856');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (857, '<Desconhecido>', '5 x 8.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (857, 'Desconhecido', '5 x 8.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,857);
 /* Tabela Object_Work_Titles */
@@ -26286,7 +26286,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('857', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('857','857','857');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (858, '<Desconhecido>', '6.5 x 6.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (858, 'Desconhecido', '6.5 x 6.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,858);
 /* Tabela Object_Work_Titles */
@@ -26317,7 +26317,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('858', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('858','858','858');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (859, '<Desconhecido>', '5.5 x 5.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (859, 'Desconhecido', '5.5 x 5.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,859);
 /* Tabela Object_Work_Titles */
@@ -26348,7 +26348,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('859', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('859','859','859');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (860, '<Desconhecido>', '6 x 5.7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (860, 'Desconhecido', '6 x 5.7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,860);
 /* Tabela Object_Work_Titles */
@@ -26379,7 +26379,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('860', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('860','860','860');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (861, '<Desconhecido>', '6.4 x 4.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (861, 'Desconhecido', '6.4 x 4.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,861);
 /* Tabela Object_Work_Titles */
@@ -26410,7 +26410,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('861', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('861','861','861');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (862, '<Desconhecido>', '5.7 x 5.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (862, 'Desconhecido', '5.7 x 5.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,862);
 /* Tabela Object_Work_Titles */
@@ -26441,7 +26441,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('862', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('862','862','862');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (863, '<Desconhecido>', '5.3 x 5.1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (863, 'Desconhecido', '5.3 x 5.1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,863);
 /* Tabela Object_Work_Titles */
@@ -26472,7 +26472,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('863', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('863','863','863');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (864, '<Desconhecido>', '9.2 x 5.7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (864, 'Desconhecido', '9.2 x 5.7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,864);
 /* Tabela Object_Work_Titles */
@@ -26503,7 +26503,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('864', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('864','864','864');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (865, '<Desconhecido>', '6.3 x 5.1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (865, 'Desconhecido', '6.3 x 5.1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,865);
 /* Tabela Object_Work_Titles */
@@ -26534,7 +26534,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('865', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('865','865','865');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (866, '<Desconhecido>', '3.5 x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (866, 'Desconhecido', '3.5 x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,866);
 /* Tabela Object_Work_Titles */
@@ -26565,7 +26565,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('866', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('866','866','866');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (867, '<Desconhecido>', '6.5 x 8.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (867, 'Desconhecido', '6.5 x 8.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,867);
 /* Tabela Object_Work_Titles */
@@ -26596,7 +26596,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('867', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('867','867','867');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (868, '<Desconhecido>', '4.8 x 4.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (868, 'Desconhecido', '4.8 x 4.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,868);
 /* Tabela Object_Work_Titles */
@@ -26627,7 +26627,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('868', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('868','868','868');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (869, '<Desconhecido>', '6.3 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (869, 'Desconhecido', '6.3 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,869);
 /* Tabela Object_Work_Titles */
@@ -26658,7 +26658,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('869', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('869','869','869');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (870, '<Desconhecido>', '6 x 8.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (870, 'Desconhecido', '6 x 8.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,870);
 /* Tabela Object_Work_Titles */
@@ -26689,7 +26689,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('870', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('870','870','870');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (871, '<Desconhecido>', '4.7 x 5.2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (871, 'Desconhecido', '4.7 x 5.2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,871);
 /* Tabela Object_Work_Titles */
@@ -26720,7 +26720,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('871', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('871','871','871');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (872, '<Desconhecido>', '7 x 9.2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (872, 'Desconhecido', '7 x 9.2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,872);
 /* Tabela Object_Work_Titles */
@@ -26751,7 +26751,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('872', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('872','872','872');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (873, '<Desconhecido>', '6.5 x 10.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (873, 'Desconhecido', '6.5 x 10.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,873);
 /* Tabela Object_Work_Titles */
@@ -26782,7 +26782,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('873', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('873','873','873');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (874, '<Desconhecido>', '9 x 6.3cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (874, 'Desconhecido', '9 x 6.3cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,874);
 /* Tabela Object_Work_Titles */
@@ -26813,7 +26813,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('874', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('874','874','874');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (875, '<Desconhecido>', '7.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (875, 'Desconhecido', '7.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,875);
 /* Tabela Object_Work_Titles */
@@ -26844,7 +26844,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('875', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('875','875','875');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (876, '<Desconhecido>', '5 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (876, 'Desconhecido', '5 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,876);
 /* Tabela Object_Work_Titles */
@@ -26875,7 +26875,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('876', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('876','876','876');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (877, '<Desconhecido>', '6.3 x 9.6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (877, 'Desconhecido', '6.3 x 9.6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,877);
 /* Tabela Object_Work_Titles */
@@ -26906,7 +26906,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('877', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('877','877','877');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (878, '<Desconhecido>', '7.8 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (878, 'Desconhecido', '7.8 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,878);
 /* Tabela Object_Work_Titles */
@@ -26937,7 +26937,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('878', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('878','878','878');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (879, '<Desconhecido>', '7.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (879, 'Desconhecido', '7.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,879);
 /* Tabela Object_Work_Titles */
@@ -26965,7 +26965,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('879', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('879','879','879');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (880, '<Desconhecido>', '6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (880, 'Desconhecido', '6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,880);
 /* Tabela Object_Work_Titles */
@@ -26996,7 +26996,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('880', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('880','880','880');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (881, '<Desconhecido>', '8.3 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (881, 'Desconhecido', '8.3 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,881);
 /* Tabela Object_Work_Titles */
@@ -27027,7 +27027,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('881', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('881','881','881');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (882, '<Desconhecido>', '9 x 6.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (882, 'Desconhecido', '9 x 6.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,882);
 /* Tabela Object_Work_Titles */
@@ -27058,7 +27058,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('882', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('882','882','882');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (883, '<Desconhecido>', '6 x 4.6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (883, 'Desconhecido', '6 x 4.6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,883);
 /* Tabela Object_Work_Titles */
@@ -27089,7 +27089,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('883', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('883','883','883');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (884, '<Desconhecido>', '5.7 x 8.9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (884, 'Desconhecido', '5.7 x 8.9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,884);
 /* Tabela Object_Work_Titles */
@@ -27120,7 +27120,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('884', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('884','884','884');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (885, '<Desconhecido>', '6.5x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (885, 'Desconhecido', '6.5x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,885);
 /* Tabela Object_Work_Titles */
@@ -27151,7 +27151,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('885', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('885','885','885');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (886, '<Desconhecido>', '5.5 x 8.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (886, 'Desconhecido', '5.5 x 8.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,886);
 /* Tabela Object_Work_Titles */
@@ -27182,7 +27182,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('886', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('886','886','886');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (887, '<Desconhecido>', '5.4 x 8.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (887, 'Desconhecido', '5.4 x 8.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,887);
 /* Tabela Object_Work_Titles */
@@ -27213,7 +27213,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('887', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('887','887','887');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (888, '<Desconhecido>', '5.3 x 8.6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (888, 'Desconhecido', '5.3 x 8.6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,888);
 /* Tabela Object_Work_Titles */
@@ -27244,7 +27244,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('888', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('888','888','888');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (889, '<Desconhecido>', '6.5 x 4.6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (889, 'Desconhecido', '6.5 x 4.6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,889);
 /* Tabela Object_Work_Titles */
@@ -27275,7 +27275,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('889', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('889','889','889');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (890, '<Desconhecido>', '5.5 x 8.4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (890, 'Desconhecido', '5.5 x 8.4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,890);
 /* Tabela Object_Work_Titles */
@@ -27306,7 +27306,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('890', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('890','890','890');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (891, '<Desconhecido>', '9 x 5.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (891, 'Desconhecido', '9 x 5.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,891);
 /* Tabela Object_Work_Titles */
@@ -27337,7 +27337,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('891', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('891','891','891');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (892, '<Desconhecido>', '6 x 9.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (892, 'Desconhecido', '6 x 9.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,892);
 /* Tabela Object_Work_Titles */
@@ -27368,7 +27368,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('892', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('892','892','892');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (893, '<Desconhecido>', '5.6 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (893, 'Desconhecido', '5.6 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,893);
 /* Tabela Object_Work_Titles */
@@ -27399,7 +27399,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('893', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('893','893','893');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (894, '<Desconhecido>', '5.1 x 8.7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (894, 'Desconhecido', '5.1 x 8.7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,894);
 /* Tabela Object_Work_Titles */
@@ -27430,7 +27430,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('894', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('894','894','894');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (895, '<Desconhecido>', '5.7 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (895, 'Desconhecido', '5.7 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,895);
 /* Tabela Object_Work_Titles */
@@ -27461,7 +27461,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('895', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('895','895','895');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (896, '<Desconhecido>', '5.5 x 6.8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (896, 'Desconhecido', '5.5 x 6.8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,896);
 /* Tabela Object_Work_Titles */
@@ -27492,7 +27492,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('896', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('896','896','896');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (897, '<Desconhecido>', '7.5 x 5.1 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (897, 'Desconhecido', '7.5 x 5.1 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,897);
 /* Tabela Object_Work_Titles */
@@ -27523,7 +27523,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('897', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('897','897','897');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (898, '<Desconhecido>', '5.3 x 8.9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (898, 'Desconhecido', '5.3 x 8.9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,898);
 /* Tabela Object_Work_Titles */
@@ -27551,7 +27551,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('898', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('898','898','898');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (899, '<Desconhecido>', '6 x 8.7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (899, 'Desconhecido', '6 x 8.7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,899);
 /* Tabela Object_Work_Titles */
@@ -27579,7 +27579,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('899', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('899','899','899');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (900, '<Desconhecido>', '6.5 x 4.6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (900, 'Desconhecido', '6.5 x 4.6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,900);
 /* Tabela Object_Work_Titles */
@@ -27610,7 +27610,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('900', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('900','900','900');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (901, '<Desconhecido>', '6 x 8.9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (901, 'Desconhecido', '6 x 8.9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,901);
 /* Tabela Object_Work_Titles */
@@ -27641,7 +27641,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('901', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('901','901','901');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (902, '<Desconhecido>', '7.8 x 6.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (902, 'Desconhecido', '7.8 x 6.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,902);
 /* Tabela Object_Work_Titles */
@@ -27672,7 +27672,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('902', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('902','902','902');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (903, '<Desconhecido>', '3.6 x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (903, 'Desconhecido', '3.6 x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,903);
 /* Tabela Object_Work_Titles */
@@ -27703,7 +27703,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('903', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('903','903','903');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (904, '<Desconhecido>', '6.2 x 5.7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (904, 'Desconhecido', '6.2 x 5.7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,904);
 /* Tabela Object_Work_Titles */
@@ -27734,7 +27734,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('904', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('904','904','904');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (905, '<Desconhecido>', '5 x 5.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (905, 'Desconhecido', '5 x 5.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,905);
 /* Tabela Object_Work_Titles */
@@ -27765,7 +27765,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('905', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('905','905','905');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (906, '<Desconhecido>', '7.8 x 5.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (906, 'Desconhecido', '7.8 x 5.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,906);
 /* Tabela Object_Work_Titles */
@@ -27796,7 +27796,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('906', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('906','906','906');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (907, '<Desconhecido>', '8.5 x 7.4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (907, 'Desconhecido', '8.5 x 7.4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,907);
 /* Tabela Object_Work_Titles */
@@ -27827,7 +27827,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('907', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('907','907','907');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (908, '<Desconhecido>', '5.4 x 8.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (908, 'Desconhecido', '5.4 x 8.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,908);
 /* Tabela Object_Work_Titles */
@@ -27858,7 +27858,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('908', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('908','908','908');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (909, '<Desconhecido>', '7.2 x 4.2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (909, 'Desconhecido', '7.2 x 4.2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,909);
 /* Tabela Object_Work_Titles */
@@ -27889,7 +27889,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('909', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('909','909','909');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (910, '<Desconhecido>', '5.2 x 8.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (910, 'Desconhecido', '5.2 x 8.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,910);
 /* Tabela Object_Work_Titles */
@@ -27920,7 +27920,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('910', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('910','910','910');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (911, '<Desconhecido>', '7.5 x 9.3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (911, 'Desconhecido', '7.5 x 9.3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,911);
 /* Tabela Object_Work_Titles */
@@ -27951,7 +27951,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('911', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('911','911','911');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (912, '<Desconhecido>', '8 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (912, 'Desconhecido', '8 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,912);
 /* Tabela Object_Work_Titles */
@@ -27982,7 +27982,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('912', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('912','912','912');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (913, '<Desconhecido>', '5.5 x 9.2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (913, 'Desconhecido', '5.5 x 9.2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,913);
 /* Tabela Object_Work_Titles */
@@ -28013,7 +28013,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('913', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('913','913','913');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (914, '<Desconhecido>', '5.3 x 5.3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (914, 'Desconhecido', '5.3 x 5.3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,914);
 /* Tabela Object_Work_Titles */
@@ -28044,7 +28044,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('914', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('914','914','914');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (915, '<Desconhecido>', '5 x 7.4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (915, 'Desconhecido', '5 x 7.4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,915);
 /* Tabela Object_Work_Titles */
@@ -28075,7 +28075,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('915', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('915','915','915');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (916, '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (916, 'Desconhecido', 'Desconhecido', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,916);
 /* Tabela Object_Work_Titles */
@@ -28099,7 +28099,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('916', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('916','916','916');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (917, '<Desconhecido>', '8 x 10.3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (917, 'Desconhecido', '8 x 10.3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,917);
 /* Tabela Object_Work_Titles */
@@ -28130,7 +28130,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('917', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('917','917','917');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (918, '<Desconhecido>', '5.5 x 4 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (918, 'Desconhecido', '5.5 x 4 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,918);
 /* Tabela Object_Work_Titles */
@@ -28161,7 +28161,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('918', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('918','918','918');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (919, '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (919, 'Desconhecido', 'Desconhecido', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,919);
 /* Tabela Object_Work_Titles */
@@ -28185,7 +28185,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('919', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('919','919','919');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (920, '<Desconhecido>', '6.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (920, 'Desconhecido', '6.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,920);
 /* Tabela Object_Work_Titles */
@@ -28216,7 +28216,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('920', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('920','920','920');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (921, '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (921, 'Desconhecido', 'Desconhecido', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,921);
 /* Tabela Object_Work_Titles */
@@ -28240,7 +28240,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('921', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('921','921','921');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (922, '<Desconhecido>', '5.5 x 5.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (922, 'Desconhecido', '5.5 x 5.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,922);
 /* Tabela Object_Work_Titles */
@@ -28271,7 +28271,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('922', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('922','922','922');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (923, '<Desconhecido>', '5 x 6.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (923, 'Desconhecido', '5 x 6.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,923);
 /* Tabela Object_Work_Titles */
@@ -28302,7 +28302,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('923', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('923','923','923');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (924, '<Desconhecido>', '6.5 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (924, 'Desconhecido', '6.5 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,924);
 /* Tabela Object_Work_Titles */
@@ -28333,7 +28333,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('924', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('924','924','924');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (925, '<Desconhecido>', '5.5 x 3.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (925, 'Desconhecido', '5.5 x 3.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,925);
 /* Tabela Object_Work_Titles */
@@ -28364,7 +28364,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('925', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('925','925','925');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (926, '<Desconhecido>', '7 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (926, 'Desconhecido', '7 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,926);
 /* Tabela Object_Work_Titles */
@@ -28395,7 +28395,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('926', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('926','926','926');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (927, '<Desconhecido>', '6 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (927, 'Desconhecido', '6 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,927);
 /* Tabela Object_Work_Titles */
@@ -28426,7 +28426,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('927', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('927','927','927');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (928, '<Desconhecido>', '6 x 8.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (928, 'Desconhecido', '6 x 8.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,928);
 /* Tabela Object_Work_Titles */
@@ -28457,7 +28457,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('928', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('928','928','928');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (929, '<Desconhecido>', '5.5 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (929, 'Desconhecido', '5.5 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,929);
 /* Tabela Object_Work_Titles */
@@ -28488,7 +28488,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('929', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('929','929','929');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (930, '<Desconhecido>', '6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (930, 'Desconhecido', '6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,930);
 /* Tabela Object_Work_Titles */
@@ -28519,7 +28519,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('930', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('930','930','930');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (931, '<Desconhecido>', '5.5 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (931, 'Desconhecido', '5.5 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,931);
 /* Tabela Object_Work_Titles */
@@ -28550,7 +28550,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('931', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('931','931','931');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (932, '<Desconhecido>', '5.5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (932, 'Desconhecido', '5.5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,932);
 /* Tabela Object_Work_Titles */
@@ -28581,7 +28581,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('932', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('932','932','932');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (933, '<Desconhecido>', '6.5 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (933, 'Desconhecido', '6.5 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,933);
 /* Tabela Object_Work_Titles */
@@ -28612,7 +28612,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('933', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('933','933','933');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (934, '<Desconhecido>', '5.5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (934, 'Desconhecido', '5.5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,934);
 /* Tabela Object_Work_Titles */
@@ -28643,7 +28643,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('934', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('934','934','934');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (935, '<Desconhecido>', '7 x 12 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (935, 'Desconhecido', '7 x 12 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,935);
 /* Tabela Object_Work_Titles */
@@ -28674,7 +28674,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('935', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('935','935','935');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (936, '<Desconhecido>', '4.5 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (936, 'Desconhecido', '4.5 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,936);
 /* Tabela Object_Work_Titles */
@@ -28702,7 +28702,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('936', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('936','936','936');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (937, '<Desconhecido>', '12.5 x 5.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (937, 'Desconhecido', '12.5 x 5.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,937);
 /* Tabela Object_Work_Titles */
@@ -28733,7 +28733,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('937', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('937','937','937');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (938, '<Desconhecido>', '5.5 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (938, 'Desconhecido', '5.5 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,938);
 /* Tabela Object_Work_Titles */
@@ -28764,7 +28764,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('938', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('938','938','938');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (939, '<Desconhecido>', '6.5 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (939, 'Desconhecido', '6.5 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,939);
 /* Tabela Object_Work_Titles */
@@ -28795,7 +28795,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('939', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('939','939','939');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (940, '<Desconhecido>', '5 x 7.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (940, 'Desconhecido', '5 x 7.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,940);
 /* Tabela Object_Work_Titles */
@@ -28826,7 +28826,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('940', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('940','940','940');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (941, '<Desconhecido>', '5.5 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (941, 'Desconhecido', '5.5 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,941);
 /* Tabela Object_Work_Titles */
@@ -28857,7 +28857,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('941', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('941','941','941');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (942, '<Desconhecido>', '8 x 12.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (942, 'Desconhecido', '8 x 12.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,942);
 /* Tabela Object_Work_Titles */
@@ -28888,7 +28888,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('942', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('942','942','942');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (943, '<Desconhecido>', '8 x 12.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (943, 'Desconhecido', '8 x 12.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,943);
 /* Tabela Object_Work_Titles */
@@ -28919,7 +28919,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('943', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('943','943','943');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (944, '<Desconhecido>', '12 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (944, 'Desconhecido', '12 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,944);
 /* Tabela Object_Work_Titles */
@@ -28950,7 +28950,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('944', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('944','944','944');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (945, '<Desconhecido>', '16.5 x 12 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (945, 'Desconhecido', '16.5 x 12 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,945);
 /* Tabela Object_Work_Titles */
@@ -28978,7 +28978,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('945', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('945','945','945');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (946, '<Desconhecido>', '6 x 8.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (946, 'Desconhecido', '6 x 8.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,946);
 /* Tabela Object_Work_Titles */
@@ -29009,7 +29009,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('946', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('946','946','946');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (947, '<Desconhecido>', '5.5 x 10 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (947, 'Desconhecido', '5.5 x 10 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,947);
 /* Tabela Object_Work_Titles */
@@ -29040,7 +29040,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('947', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('947','947','947');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (948, '<Desconhecido>', '6.5 x 9.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (948, 'Desconhecido', '6.5 x 9.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,948);
 /* Tabela Object_Work_Titles */
@@ -29071,7 +29071,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('948', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('948','948','948');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (949, '<Desconhecido>', '9 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (949, 'Desconhecido', '9 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,949);
 /* Tabela Object_Work_Titles */
@@ -29102,7 +29102,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('949', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('949','949','949');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (950, '<Desconhecido>', '6 x 3 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (950, 'Desconhecido', '6 x 3 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,950);
 /* Tabela Object_Work_Titles */
@@ -29133,7 +29133,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('950', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('950','950','950');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (951, '<Desconhecido>', '8.5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (951, 'Desconhecido', '8.5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,951);
 /* Tabela Object_Work_Titles */
@@ -29164,7 +29164,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('951', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('951','951','951');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (952, '<Desconhecido>', '6 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (952, 'Desconhecido', '6 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,952);
 /* Tabela Object_Work_Titles */
@@ -29195,7 +29195,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('952', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('952','952','952');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (953, '<Desconhecido>', '9 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (953, 'Desconhecido', '9 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,953);
 /* Tabela Object_Work_Titles */
@@ -29226,7 +29226,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('953', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('953','953','953');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (954, '<Desconhecido>', '3.5 x 6.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (954, 'Desconhecido', '3.5 x 6.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,954);
 /* Tabela Object_Work_Titles */
@@ -29257,7 +29257,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('954', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('954','954','954');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (955, '<Desconhecido>', '5.5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (955, 'Desconhecido', '5.5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,955);
 /* Tabela Object_Work_Titles */
@@ -29288,7 +29288,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('955', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('955','955','955');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (956, '<Desconhecido>', '9 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (956, 'Desconhecido', '9 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,956);
 /* Tabela Object_Work_Titles */
@@ -29321,7 +29321,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('956', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('956','956','956');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (957, '<Desconhecido>', '4 x 7.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (957, 'Desconhecido', '4 x 7.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,957);
 /* Tabela Object_Work_Titles */
@@ -29352,7 +29352,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('957', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('957','957','957');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (958, '<Desconhecido>', '9 x 7 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (958, 'Desconhecido', '9 x 7 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,958);
 /* Tabela Object_Work_Titles */
@@ -29383,7 +29383,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('958', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('958','958','958');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (959, '<Desconhecido>', '7.5 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (959, 'Desconhecido', '7.5 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,959);
 /* Tabela Object_Work_Titles */
@@ -29414,7 +29414,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('959', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('959','959','959');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (960, '<Desconhecido>', '7 x 5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (960, 'Desconhecido', '7 x 5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,960);
 /* Tabela Object_Work_Titles */
@@ -29445,7 +29445,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('960', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('960','960','960');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (961, '<Desconhecido>', '5.5 x 2.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (961, 'Desconhecido', '5.5 x 2.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,961);
 /* Tabela Object_Work_Titles */
@@ -29478,7 +29478,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('961', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('961','961','961');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (962, '<Desconhecido>', '5.5 x 8.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (962, 'Desconhecido', '5.5 x 8.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,962);
 /* Tabela Object_Work_Titles */
@@ -29509,7 +29509,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('962', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('962','962','962');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (963, '<Desconhecido>', '8.5 x 6.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (963, 'Desconhecido', '8.5 x 6.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,963);
 /* Tabela Object_Work_Titles */
@@ -29542,7 +29542,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('963', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('963','963','963');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (964, '<Desconhecido>', '5 x 9.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (964, 'Desconhecido', '5 x 9.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,964);
 /* Tabela Object_Work_Titles */
@@ -29575,7 +29575,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('964', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('964','964','964');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (965, '<Desconhecido>', '6.5 x 9.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (965, 'Desconhecido', '6.5 x 9.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,965);
 /* Tabela Object_Work_Titles */
@@ -29606,7 +29606,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('965', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('965','965','965');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (966, '<Desconhecido>', '12.5 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (966, 'Desconhecido', '12.5 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,966);
 /* Tabela Object_Work_Titles */
@@ -29637,7 +29637,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('966', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('966','966','966');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (967, '<Desconhecido>', '13 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (967, 'Desconhecido', '13 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,967);
 /* Tabela Object_Work_Titles */
@@ -29668,7 +29668,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('967', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('967','967','967');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (968, '<Desconhecido>', '6 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (968, 'Desconhecido', '6 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,968);
 /* Tabela Object_Work_Titles */
@@ -29699,7 +29699,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('968', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('968','968','968');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (969, '<Desconhecido>', '11.5 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (969, 'Desconhecido', '11.5 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,969);
 /* Tabela Object_Work_Titles */
@@ -29730,7 +29730,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('969', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('969','969','969');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (970, '<Desconhecido>', '5.5 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (970, 'Desconhecido', '5.5 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,970);
 /* Tabela Object_Work_Titles */
@@ -29761,7 +29761,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('970', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('970','970','970');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (971, '<Desconhecido>', '6 x 4.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (971, 'Desconhecido', '6 x 4.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,971);
 /* Tabela Object_Work_Titles */
@@ -29792,7 +29792,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('971', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('971','971','971');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (972, '<Desconhecido>', '6 x 5.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (972, 'Desconhecido', '6 x 5.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,972);
 /* Tabela Object_Work_Titles */
@@ -29823,7 +29823,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('972', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('972','972','972');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (973, '<Desconhecido>', '7.5 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (973, 'Desconhecido', '7.5 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,973);
 /* Tabela Object_Work_Titles */
@@ -29854,7 +29854,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('973', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('973','973','973');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (974, '<Desconhecido>', '13 x 9 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (974, 'Desconhecido', '13 x 9 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,974);
 /* Tabela Object_Work_Titles */
@@ -29885,7 +29885,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('974', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('974','974','974');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (975, '<Desconhecido>', '12.5 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (975, 'Desconhecido', '12.5 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,975);
 /* Tabela Object_Work_Titles */
@@ -29916,7 +29916,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('975', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('975','975','975');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (976, '<Desconhecido>', '6 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (976, 'Desconhecido', '6 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,976);
 /* Tabela Object_Work_Titles */
@@ -29947,7 +29947,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('976', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('976','976','976');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (977, '<Desconhecido>', '10 x 7.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (977, 'Desconhecido', '10 x 7.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,977);
 /* Tabela Object_Work_Titles */
@@ -29978,7 +29978,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('977', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('977','977','977');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (978, '<Desconhecido>', '6.5 x 2 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (978, 'Desconhecido', '6.5 x 2 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,978);
 /* Tabela Object_Work_Titles */
@@ -30009,7 +30009,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('978', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('978','978','978');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (979, '<Desconhecido>', '6.5 x 5.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (979, 'Desconhecido', '6.5 x 5.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,979);
 /* Tabela Object_Work_Titles */
@@ -30040,7 +30040,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('979', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('979','979','979');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (980, '<Desconhecido>', '8.5 x 6 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (980, 'Desconhecido', '8.5 x 6 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,980);
 /* Tabela Object_Work_Titles */
@@ -30071,7 +30071,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('980', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('980','980','980');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (981, '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (981, 'Desconhecido', 'Desconhecido', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,981);
 /* Tabela Object_Work_Titles */
@@ -30095,7 +30095,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('981', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('981','981','981');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (982, '<Desconhecido>', '4.5 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (982, 'Desconhecido', '4.5 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,982);
 /* Tabela Object_Work_Titles */
@@ -30148,7 +30148,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('982', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('982','982','982');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (983, '<Desconhecido>', '6.3 x 8 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (983, 'Desconhecido', '6.3 x 8 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,983);
 /* Tabela Object_Work_Titles */
@@ -30185,7 +30185,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('983', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('983','983','983');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (984, '<Desconhecido>', '7.7 x 12 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (984, 'Desconhecido', '7.7 x 12 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,984);
 /* Tabela Object_Work_Titles */
@@ -30216,7 +30216,7 @@ INSERT INTO LinkResources (id_linkResources, linkResource) VALUES ('984', 'gravu
 INSERT INTO Resources (id_resources,LinkResource, Object_Work_Record) VALUES ('984','984','984');
 /*NOVA GRAVURA */
 /* Tabela Object_Work_Records */
-INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (985, '<Desconhecido>', '14.5 x 10.5 cm', '<Desconhecido>', '<Desconhecido>', 1);
+INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, displayMeasurements, displayMaterialsTech, displayCreationDate, RecordType)	VALUES (985, 'Desconhecido', '14.5 x 10.5 cm', 'Desconhecido', 'Desconhecido', 1);
 /* Tabela Object_Work_Types_Object_Work_Records */
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,985);
 /* Tabela Object_Work_Titles */

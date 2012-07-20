@@ -61,13 +61,13 @@ while(exists($data->{cdwalite}->[$ix])){
 	#if (ref($desc->{displayCreationDate}) ne "HASH") {$insert .= "displayCreationDate, "};
 	#$insert .= "RecordType)	VALUES ($i,";
 		if (ref($desc->{displayCreator}) ne "HASH") {$insert .= "'$desc->{displayCreator}', "}
-		else {$insert .= "'<Desconhecido>', "}
+		else {$insert .= "'Desconhecido', "}
 		if (ref($desc->{displayMeasurements}) ne "HASH") {$insert .= "'$desc->{displayMeasurements}', "}
-		else {$insert .= "'<Desconhecido>', "}
+		else {$insert .= "'Desconhecido', "}
 		if (ref($desc->{displayMaterialsTech}) ne "HASH") {$insert .= "'$desc->{displayMaterialsTech}', "}
-		else {$insert .= "'<Desconhecido>', "}
+		else {$insert .= "'Desconhecido', "}
 		if (ref($desc->{displayCreationDate}) ne "HASH") {$insert .= "'$desc->{displayCreationDate}', "}
-		else {$insert .= "'<Desconhecido>', "}
+		else {$insert .= "'Desconhecido', "}
 		$insert .= "1);\n";
 	
 	print F $insert; 
