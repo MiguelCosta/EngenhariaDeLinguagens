@@ -76,7 +76,9 @@ $this->breadcrumbs=array(
 		<?php echo $form->labelEx($model,'template'); ?>
 		<div class="compactRadioGroup">
 			<?php echo $form->radioButtonList($model,'template', 
-					array(0=>'1', 1=>'2', 2=>'3'), 
+					array(0=>'<img alt="Template 1" src="' . Yii::app()->baseUrl . '/myFiles/Temas/tema1.png' . '"/>', 
+							1=>'<img alt="Template 1" src="' . Yii::app()->baseUrl . '/myFiles/Temas/tema2.png' . '"/>', 
+							2=>'<img alt="Template 1" src="' . Yii::app()->baseUrl . '/myFiles/Temas/tema3.png' . '"/>'), 
 					array()); 
 			?>
 			<?php echo $form->error($model,'template'); ?>
