@@ -6,6 +6,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 		array('label'=>'Criar', 'url'=>array('create')),
 		array('label'=>'Criar Ficha Completa', 'url'=>array('createAll')),
+		array('label' => 'Importar CDWA-Lite', 'url' => array('CreateCDWA')),
 		array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>

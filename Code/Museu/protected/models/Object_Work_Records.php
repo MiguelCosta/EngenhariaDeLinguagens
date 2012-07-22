@@ -729,5 +729,4 @@ class Object_Work_Records extends CActiveRecord
 		return $cdwa;
 	}
 
-
 }
