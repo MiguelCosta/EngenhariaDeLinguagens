@@ -40,7 +40,7 @@ sub getValue {
 }
 
 # Devolve o esqueleto e respectivo conteudo para um objecto
-sub	 printBody {
+sub	 printGravura {
 	my $cdwa = shift;
 
 	my $body = "<descriptiveMetadata>";
@@ -69,7 +69,7 @@ sub	 printBody {
 	my $ano = "";
 	if ($cdwa->{"dat"} =~ /([0-9]{4})/) {$ano=$1}
 	$body .= "<indexingDatesWrap><indexingDatesSet><earliestDate>$ano</earliestDate><latestDate>$ano</latestDate></indexingDatesSet></indexingDatesWrap>";
-$body .= "<locationWrap><locationSet><locationName xmlns:ns1=\"http://www.getty.edu/CDWA/CDWALite\" ns1:type=\"currentRepository\">Museu da Emigração e das Comunidades</locationName></locationSet></locationWrap>";
+	$body .= "<locationWrap><locationSet><locationName xmlns:ns1=\"http://www.getty.edu/CDWA/CDWALite\" ns1:type=\"currentRepository\">Museu da Emigração e das Comunidades</locationName></locationSet></locationWrap>";
 	$body .= "<descriptiveNoteWrap><descriptiveNoteSet><descriptiveNote>".$cdwa->{"desc"}."</descriptiveNote></descriptiveNoteSet></descriptiveNoteWrap>" if ($cdwa->{"desc"} ne "");
 	if ($cdwa->{"imp"} ne "") {
 		$cdwa->{"imp"} =~ /([^0-9]*)(.*)/; # encontra objecto onde foi publicado e as respectivas datas/nr
@@ -98,25 +98,25 @@ $body .= "<locationWrap><locationSet><locationName xmlns:ns1=\"http://www.getty.
 
 	return $body;
 }
+
 # Escreve para um ficheiro xml ($destiny) o documento Word estruturado segundo o cdwa-lite. Invoca funcoes auxiliares.
 sub writeGravs {
-	my $gravura_flat = shift;
+	my $text_word = shift;
 	my %cdwa = ();
 
 	open (F, ">:utf8",$destiny);
 	print F "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
 	print F "<cdwaliteWrap xmlns=\"http://www.getty.edu/CDWA/CDWALite\"
-	xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"
-	xsi:schemaLocation=\"http://www.getty.edu/CDWA/CDWALite file:/home/bruno/Documents/MEI/EL/PI/Engenharia-de-Linguagens---Projeto-Integrado/Files/Museu%20Emigra%C3%A7%C3%A3o/CDWALite-xsd-public-v1-1.xsd\">\n";
+	>\n";
 
 	# divide cada linha do documento word. ainda nao tem informacao do que é ou nao uma peça
-	my @campos_flat = split "\n", $gravura_flat;
-	if (scalar @campos_flat != 0) {
-		foreach(@campos_flat) {
+	my @line_text_word = split "\n", $text_word;
+	if (scalar @line_text_word != 0) {
+		foreach(@line_text_word) {
 			# se varios \s forem encontrados (elemento de quebra; o que distingue uma peça de outra no documento) processa os elementos capturados ate a quebra e sao impressos no formato XML
 			if (/^\s*$/){
 				print F "<cdwalite>\n";
-				print F printBody(\%cdwa);
+				print F printGravura(\%cdwa);
 				print F "</cdwalite>\n";
 				%cdwa = ();
 			}
@@ -135,6 +135,7 @@ sub writeGravs {
 sub wordToXML {
 	my $file = Text::Extract::Word->new($origin); # Passed either a file name or an open file handle, this constructor returns an instance that can be used to query the file contents.
 	my $body = $file->get_body(); # Returns the text for the main body of the Word document. This excludes headers, footers, and annotations.
+
 	$body =~ s/´+//g; # Limpa lixo
 	$body =~ s/\n[ \t]+\n//g; # Limpa lixo
 	$body =~ s/\n{2,}/\n\n/g; # Limpa \n a mais
@@ -147,8 +148,8 @@ sub wordToXML {
 	$body =~ s/Impress[ao] no/imp:/g; # 
 	$body =~ s/Proveniência:?\/Incorporação/pi/g; # 
 	$body =~ s/&/&amp;/g; # 
-
 	$body = trim($body);
+
 	writeGravs($body);
 }
 

@@ -154,8 +154,6 @@ while(exists($data->{cdwalite}->[$ix])){
 
 		if (ref($r) eq "ARRAY") {
 			foreach my $w (@$r) {
-				#print ref($_)."\n";
-				#my $w;
 				print F "INSERT INTO RelatedWorks (id_relatedWorks, relatedWorkRelType, Object_Work_Record) VALUES ($cont_relW, '$w->{relatedWorkRelType}', $i);\n";
 				print F "INSERT INTO LabelRelatedWork (labelRelatedWork, RelatedWork) VALUES ('$w->{labelRelatedWork}', $cont_relW);\n";
 				$cont_relW++;
@@ -209,7 +207,7 @@ __END__
 
 =head1 AUTHOR
 
-	Miguel Costa
+	Bruno Azevedo e Miguel Costa
 
 =head1 SEE ALSO
 
