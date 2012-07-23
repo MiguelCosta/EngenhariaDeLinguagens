@@ -65,22 +65,100 @@ class ResourcesController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Resources;
+		$model	=	new Resources;
+		$rid	= 	new ResourcesID;
+		$lr		=	new LinkResources;
+		$rvd	=	new ResourceViewDescriptions;
 
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
-		if(isset($_POST['Resources']))
-		{
+		
+		// se os dados referentes a Resources tiverem sido definidos
+		if (isset($_POST['LinkResources'], $_POST['ddlResRelType'], $_POST['ddlResType'], $_POST['ResourceViewDescriptions'])) {
 			$model->attributes=$_POST['Resources'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id_resources));
+			$lr->attributes = $_POST['LinkResources'];
+			$lr->image=CUploadedFile::getInstance($lr,'image');
+			$rvd->attributes = $_POST['ResourceViewDescriptions'];
+			if ($lr->image != NULL || $_POST['ddlResRelType']!='' || $_POST['ddlResType']!='' || $rvd->resourceViewDescription!='') {
+				// obtem o ultimo id da tabela Resources
+				$maxResNumber = Yii::app()->db->createCommand()
+				->select('max(id_resources) as max')
+				->from('Resources')
+				->queryScalar();
+		
+				// chave estrangeira da tabela Resources que é a palavra img concatenada com o ultimo id da tabela Resources + 1
+				$model->ResourceID = "img".($maxResNumber+1).".JPG";
+				// id da tabela ResourcesID que é a palavra img concatenada com o ultimo id da tabela Resources + 1
+				$rid->resourceID = "img".($maxResNumber+1).".JPG";
+		
+		
+				if ($lr->image != NULL){
+// 					if ($owtp->type=='Fotografia')
+// 						$path = "fotos/".($maxResNumber+1);
+// 					if ($owtp->type=='Zincogravura')
+// 						$path = "gravuras/".($maxResNumber+1);
+// 					else
+						$path = "img".($maxResNumber+1).".JPG";
+					
+					$lr->linkResource=	$path;
+		
+					$maxLRNumber = Yii::app()->db->createCommand()
+					->select('max(id_linkResources) as max')
+					->from('LinkResources')
+					->queryScalar();
+					// chave estrangeira da tabela Resources que referencia a LinkResources
+					$model->LinkResource = $maxLRNumber + 1;
+				}
+		
+				if ($_POST['ddlResRelType'] != ''){
+					$model->resourceRelTypes = array($_POST['ddlResRelType']);
+				}
+		
+				if ($_POST['ddlResType'] != ''){
+					$model->resourceTypes = array($_POST['ddlResType']);
+				}
+		
+				if ($rvd->resourceViewDescription != ''){
+					$maxRVDNumber = Yii::app()->db->createCommand()
+					->select('max(id_resourceViewDescriptions) as max')
+					->from('ResourceViewDescriptions')
+					->queryScalar();
+					$model->ResourceViewDescription = $maxRVDNumber + 1;
+				}
+			}
+// 			$model->Object_Work_Record = 5555;
+// 			CVarDumper::dump($model,10,true);
+			
+			if ($lr->linkResource != '' || $_POST['ddlResRelType']!='' || $_POST['ddlResType']!='' || $rvd->resourceViewDescription!='') {
+// 				if ($lr->validate() && $rvd->validate() && $rid->validate() && $model->validate()) {
+					if ($lr->linkResource != '') {
+						$lr->save();
+						$lr->image->saveAs(Yii::app()->basePath."/../../../Files/Imagens/img".($maxResNumber+1).".JPG");
+					}
+					if ($rvd->resourceViewDescription != '') $rvd->save(false);
+					$rid->save(false);
+					$model->save(false);
+// 				}
+			}
+			
+			$this->redirect(array('/object_Work_Records/view','id'=>$model->Object_Work_Record));
 		}
-
-		$this->render('create',array(
-			'model'=>$model,
-		));
+		
+		
+		if(isset($_GET['Object_Work_Record']))
+		{
+			$this->render('create_another',array(
+					'model'=>$model,
+					'Object_Work_Record'=>$_GET['Object_Work_Record'],
+					'LinkResources'=>$lr,
+					'ResourceViewDescriptions'=>$rvd
+			));
+		}
+		else {
+			$this->render('create',array(
+				'model'=>$model,
+			));
+		}			
 	}
+	
 
 	/**
 	 * Updates a particular model.

@@ -164,7 +164,6 @@ class SiteController extends Controller
 				->from('Rooms')
 				->queryScalar();
 
-				$_SESSION['image_path'] = null;
 
 				// se uma imagem tiver sido carregada entao a imagem é guardada no repositorio e algumas variaveis sao preenchidas
 				if ($model->image != NULL){
@@ -178,6 +177,7 @@ class SiteController extends Controller
 					// Yii::app()->basePath : pasta protected
 					$model->image->saveAs(Yii::app()->basePath."/../myFiles/Imagens/rooms/$model->image_path");
 				}
+				else $_SESSION['image_path'] = null;
 
 
 				//Converte o documento XML que contem os conceitos (templates) num objecto
@@ -314,24 +314,24 @@ class SiteController extends Controller
 	}
 	?>
 	<?php
-	if (!empty(\$next_room)) {
-	\$matches = array();
-	\$subject = \$next_room[0]->path;
-	\$pattern = '@(?:[^/]+/)(\w+)(\.php)$@'; // extrai apenas o nome do ficheiro da sala
-	preg_match(\$pattern, \$subject, \$matches);
-	if (isset(\$matches[1])){
-	\$link = Yii::app()->baseUrl . '/index.php/site/sala?view=' . \$matches[1];
+		if (!empty(\$next_room)) {
+			\$matches = array();
+			\$subject = \$next_room[0]->path;
+			\$pattern = '@(?:[^/]+/)(\w+)(\.php)$@'; // extrai apenas o nome do ficheiro da sala
+			preg_match(\$pattern, \$subject, \$matches);
+			if (isset(\$matches[1])){
+				\$link = Yii::app()->baseUrl . '/index.php/site/sala?view=' . \$matches[1];
 	?>
-	<div class=\"salaNext\" onclick=\"location.href='<? echo \$link;?>';\" style=\"cursor: pointer;\">
+				<div class=\"salaNext\" onclick=\"location.href='<? echo \$link;?>';\" style=\"cursor: pointer;\">
 	<?php
-	// Estabelece o link entre o nome da sala e a localizacao da sala
-	echo CHtml::encode(\"Seguinte - \".\$next_room[0]->name);
+				// Estabelece o link entre o nome da sala e a localizacao da sala
+				echo CHtml::encode(\"Seguinte - \".\$next_room[0]->name);
 	?>
-	</div>
+				</div>
 	<?php
-	}
-	else echo CHtml::encode(\$next_room[0]->name);
-	}
+			}
+			else echo CHtml::encode(\$next_room[0]->name);
+		}
 	?>";
 
 		return $sala_php;
@@ -366,6 +366,13 @@ class SiteController extends Controller
 		return $str;
 	}
 
+	/**
+	 * O gajo que fez esta função não sabe fazer comentários --'
+	 * @param unknown_type $model
+	 * @param unknown_type $sala_xml
+	 * @param unknown_type $last_id_room
+	 * @param unknown_type $conceitos
+	 */
 	private function template0($model, $sala_xml, $last_id_room, $conceitos){
 
 		// Cabecalho de uma sala php (titulo, descricao e imagem)

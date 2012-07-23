@@ -128,7 +128,7 @@ class Resources extends CActiveRecord
 
 		if(isset( $this->resourceViewDescription)){
 			$result_arr = array(
-					'image_path'=>'../../../../Files/Imagens/'.$this->linkResource->linkResource,
+ 					'image_path'=>'../../../../Files/Imagens/'.$this->linkResource->linkResource,
 					'resourceViewDescription' => $this->resourceViewDescription->resourceViewDescription,
 					'id_resourceViewDescriptions' => $this->resourceViewDescription->id_resourceViewDescriptions,
 					'type' => $this->resourceViewDescription->type,

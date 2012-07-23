@@ -28,6 +28,7 @@ $this->menu = array(
 		array('label' => 'Atribuir Legenda', 'url' => array('/Inscriptions/create')),
 		array('label' => 'Atribuir Descrição', 'url' => array('/DescriptiveNotes/create')),
 		array('label' => 'Atribuir Local', 'url' => array('/Locations/create')),
+		array('label' => 'Associar imagem', 'url' => array('/Resources/create/Object_Work_Record/'.$model->id_object_Work_Records)),
 );
 
 ?>

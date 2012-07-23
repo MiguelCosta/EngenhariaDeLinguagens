@@ -45,7 +45,7 @@ $this->breadcrumbs=array(
 	
 	<div class="row">
 		<?php 
-			echo $form->labelEx($model, 'image');
+			echo $form->labelEx($model, 'image_path');
 			echo $form->fileField($model, 'image');
 			echo $form->error($model, 'image');
 		?>
