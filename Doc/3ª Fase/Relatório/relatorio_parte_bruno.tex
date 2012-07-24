@@ -1,222 +1,289 @@
-\documentclass[a4paper,titlepage]{article}
-\usepackage[portuguese]{babel}
-\usepackage[latin1]{inputenc}
+% This file was converted to LaTeX by Writer2LaTeX ver. 1.0.2
+% see http://writer2latex.sourceforge.net for more info
+\documentclass[letterpaper]{article}
+\usepackage[ascii]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage{fancyvrb}
-\usepackage{url}				% para url
-\usepackage{graphicx}			% para as imagens
-\usepackage{float}				% para as imagens
-\usepackage[affil-it]{authblk}	% para colocar affil no titulo
-\usepackage{indentfirst}		% para identar o 1ï¿½ paragrafo
-\usepackage{hyperref}			% para criar links
-\usepackage[bottom]{footmisc}	% para o footnote
-
-\usepackage{titlesec}
-
-\usepackage{aeguill}  % usefull for pdflatex
-\usepackage[compat2,a4paper,twosideshift=0mm,left=20mm,right=20mm,bottom=20mm,top=15mm]{geometry}
-
-\usepackage{listings}
-
-\parindent=2em
-
-
-\title{\textbf{Museu Virtual da Emigração e das Comunidades}\\Projecto Integrado de Engenharia de Linguagens \\ Relatório Final}
-
+\usepackage[portuges,english,english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb,amsfonts,textcomp}
+\usepackage{color}
+\usepackage{array}
+\usepackage{hhline}
+\usepackage{hyperref}
+\hypersetup{pdftex, colorlinks=true, linkcolor=blue, citecolor=blue, filecolor=blue, urlcolor=blue, pdftitle=, pdfauthor=Bruno Azevedo, pdfsubject=, pdfkeywords=}
+\usepackage[pdftex]{graphicx}
+% Text styles
+\newcommand\textbf[1]{\textbf{#1}}
+% Outline numbering
+\setcounter{secnumdepth}{0}
+% List styles
+\newcommand{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{{\textbullet}}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommandi{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommandii{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommandv{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommand\liststyleLv{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommand{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommandi{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommandii{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommandx{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommand\liststyleLx{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommand\liststyleLxi{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommand\liststyleLxii{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommand{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommand{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommand{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{{\textbullet}}
+\renewcommand\labelitemiii{{\textbullet}}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommandi{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{{\textbullet}}
+\renewcommand\labelitemiii{{\textbullet}}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommandii{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommandiii{%
+\renewcommand\labelitemi{{\textbullet}}
+\renewcommand\labelitemii{{\textbullet}}
+\renewcommand\labelitemiii{{\textbullet}}
+\renewcommand\labelitemiv{{\textbullet}}
+}
+\newcommand\liststyleLxix{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+\newcommand{%
+\renewcommand\labelitemi{[27A2?]}
+\renewcommand\labelitemii{[27A2?]}
+\renewcommand\labelitemiii{[27A2?]}
+\renewcommand\labelitemiv{[27A2?]}
+}
+% Page layout (geometry)
+\setlength\voffset{-1in}
+\setlength\hoffset{-1in}
+\setlength\topmargin{0.7874in}
+\setlength\oddsidemargin{0.7874in}
+\setlength\textheight{9.4251995in}
+\setlength\textwidth{6.9251995in}
+\setlength\footskip{0.0cm}
+\setlength\headheight{0cm}
+\setlength\headsep{0cm}
+% Footnote rule
+\setlength{\skip\footins}{0.0469in}
+\renewcommand\footnoterule{\vspace*{-0.0071in}\setlength\leftskip{0pt}\setlength\rightskip{0pt plus 1fil}\noindent\textcolor{black}{\rule{0.25\columnwidth}{0.0071in}}\vspace*{0.0398in}}
+% Pages styles
+\makeatletter
+\newcommand\ps@Standard{
+  \renewcommand\@oddhead{}
+  \renewcommand\@evenhead{}
+  \renewcommand\@oddfoot{}
+  \renewcommand\@evenfoot{}
+  \renewcommand\thepage{\arabic{page}}
+}
+\makeatother
+\pagestyle{Standard}
+% footnotes configuration
+\makeatletter
+\renewcommand\thefootnote{\arabic{footnote}}
+\makeatother
+\title{}
 \author{Bruno Azevedo}
-\author{Miguel Costa}
-
-\affil{ Mestrado em Engenharia Informática,\\ Departamento de Informática,\\Universidade do Minho}
-
-\date{De: 7 de Novembro de 2011 \\ Até: \today}
-
-\renewcommand\Authands{ and }
-
+\date{2012-07-24}
 \begin{document}
-
-\begin{titlepage}
-	\maketitle
-
-	\begin{abstract}
-	Este documento representa toda a documentação feita para o desenvolvimento do Museu Virtual da Emigração e das Comunidades. Neste momento contém essencialmente o caso de estudo definido, análise de requisitos, alguma especificação UML e as principais decisões tomadas até ao momento.
-	\end{abstract}
-
-\end{titlepage}
-
-\newpage
-
-\parskip=0mm
-\tableofcontents
-\parskip=2mm
-
-\newpage
-
-\section{introdução}
-No âmbito da UCE30 Engenharia de Linguagens do Mestrado em Engenharia Informática, é pretendido para o Projeto Integrado que se desenvolva um Museu Virtual (MV).
-
-Este MV terá ainda uma Ontologia\footnote{Ontologia é um termo que foi adoptado pela comunidade de Inteligência Artificial para referir conceitos e termos para descrever alguma área do conhecimento ou construir uma representação desse conhecimento.} associada para a informação que estiver guarda na base de dados esteja relacionada entre si. Através desta Ontologia será possivél implementar uma característica importante no projeto, que é gerar automaticamente salas de exposição. Assim, o utilizador poderá fazer uma visita orientada por tema/história.
-
-	Os conhecimentos que foram e serão adquiridos nos vários módulos desta UCE30, quando aplicados neste projeto irão permitir-nos fazer ferramentes mais genéricas, eficientes e permitir que este MV possa comunicar com outros já existintes. Isto porque irão ser adoptados modelos internacionais para a recolha e partilha de indormação.
+\subsection[Base de Dados]{ Base de Dados}
+{
+Neste cap\'itulo, iremos apresentar uma contextualiza\c{c}\~ao sobre a
+necessidade desta base de dados e a nossa solu\c{c}\~ao final de base
+de dados. Para isso, enunciaremos as tabelas criadas e explicaremos a
+sua raz\~ao de ser.}
 
 
 
-\newpage
+\subsubsection[Contextualiza\c{c}\~ao]{
+Contextualiza\c{c}\~ao}
+{
+Uma das funcionalidades exigidas neste projeto \'e o arquivamento do
+esp\'olio do museu. \ Arquivar o esp\'olio significa receber
+meta-informa\c{c}\~ao sobre cada objeto do esp\'olio (eventualmente o
+pr\'oprio objeto se ele for digital), classific\'a-lo \`a luz de uma
+ontologia definida \`a partida (mas que poder\'a ir evoluindo) e
+armazenar a meta-informa\c{c}\~ao ap\'os classifica\c{c}\~ao. }
 
-\section{Contextualização}
-	Hoje em dia, devido ao grande processamente que os computadores possuem, é possível processar enormes quantidades de informação. O problema talvez seja agora arranjar mecanismos de comunicação entre serviços, isto é, encontrar uma linguagem para partilhar informação que qualquer programa consiga entender sem grande esforço.
-	
-	Devido à dificuldade de transferência de informação, o XML acabou por se tornar uma óptima opção e é considerado o standart para a resolução deste problema, logo, no nosso Museu Virtual (MV), terá de ter mecanismos de recolha de informação de um ficheiro XML de peças para serem expostas e, ainda, exportar essa informação também em XML.
-	
-	Os Museus para exporem as suas peças, tem de definir regras de catalogação para o tipo de peça que é pretendido descrever, devido à necessidade de uniformizar estas regras, foram criadas diversas normas para os mais diversos objectos que podem ser apresentados num museu, por exemplo, desde monumentos até cartas ou roupa. No nosso caso, vamos adoptar essencialmente os modelos internacionais do CDWA\footnote{Categories for the Description of Works of Art (CDWA) - \url{http://www.getty.edu/research/publications/
-electronic_publications/cdwa/introduction.html}} e do CCO\footnote{Cataloging Cultural Objects (CCO) - \url{http://cco.vrafoundation.org/}}. Estes modelos contém uma grande quantidade de elementos que se podem usar, em que alguns deles são obrigatórios, mas para além destes, de acordo com o que precisamos, dos que não eram obrigatï¿½rios, selecionamos aqueles que nos pareceram mais relevantes e uteis para o nosso caso de estudo.
+{
+Outra grande funcionalidade exigida \'e a \ gera\c{c}\~ao autom\'atica
+de espa\c{c}os de aprendizagem na forma de salas de exposi\c{c}\~ao do
+museu. \ Cada sala de exposi\c{c}\~ao de um Museu Virtual (MV) \'e um
+s\'itio Web atrav\'es do qual se podem ver os objetos em
+exposi\c{c}\~ao, ou a sua descri\c{c}\~ao, devidamente relacionados
+entre si de forma a transmitir o conhecimento correspondente ao tema
+dessa exposi\c{c}\~ao. Estes espa\c{c}os de aprendizagem tamb\'em
+necessitam de ser armazenados.}
 
-
-\section{Objectivos pretendidos}
-	O objectivo da realização deste projecto é desenvolver um Sistema para Geração Automáica de Salas de Exposições em Museus Virtuais com base em Ontologias, ou seja, criação de um WebSite que permita ser gerido como um Museu, seja possivél alguns utilizadores colocarem peças para exposição, outros com direitos de adminsitração gerirem as salas e o museu e, como finalidade óbvia, mostrar a qualquer pessoa que entre no WebSite, as peças que estão arquivadas.
-
-Por outras palavras, os objectivos principais são:
-\begin{itemize}
-	\item arquivar o espólio do museu,
-	\item gerar automaticamente os espaços de aprendizagem na forma de salas de exposição do museu,
-	\item guiar as visitas recebendo delas informação.
-\end{itemize}
-
-
-	Quando falamos em "arquivar o espólio", estamos a referir-nos a receber meta-informação sobre cada objecto, classificá-lo tendo em conta a ontologia e armazenar essa meta-informação depois de classificada.
-	
-	O MV vai ter várias salas de exposição, em que cada uma delas transmite o conhecimento que relacionada todos os objectos que pertencem à sala. O tema ou conhecimento que é pretendido ser transmitido, será descrito por uma ontologia. É esta ontologia que define os objectos a serem expostos e as relações entre eles.
-	
-	Dizer "guiar as visitas recebendo delas informação", é a nossa solução basear-se em apresentar o sítio web com base na ontologia da exposição e permitir que o visitante possa fazer comentários e até fornecer conhecimento que pode ser arquivada no MV, quer acrescentando novo objectos ou ligações, quer corrigindo informações incorrectas.
-	
-	O nosso repositório para o MV tem de seguir o modelo de referência Internacional OAIS\footnote{Open Archivel Information System - consiste numa organização de pessoas e sistemas que tem a responsabilidade de preservar a informação e torna-la disponível para uma comunidade designada.} que indica como se deverá estruturar a Figura \ref{fig:esquema_oais}.
-	
-Neste repositório terá de haver três grandes processos:
-	\begin{itemize}
-		\item ingestão - processo que permite ingerir conteï¿½do no sistema.
-		\item administração - gestão de utilizadores, gestão dos arquivos armazenados...
-		\item disseminação - processo que permite ver o conteúdo armazenado. Pode ser através de uma página web ou da criação de um ficheiro xml.
-	\end{itemize}
-
-\subsection{Modelo de referência internacional OAIS}
-	O modelo que se vai usar para a recepção, disponibilizar e gerir a informação é o OAIS e possui a estrutura que é ilustrada na Figura \ref{fig:esquema_oais}.
-	
-\begin{figure}[H]
- \centering
- \includegraphics[scale=0.8]{./imagens/OAIS.png}
- \caption{Modelo de refer?ncia internacional OAIS}
- \label{fig:esquema_oais}
-\end{figure}
-
-A estrutura baseada neste modelo inclui 3 actores distintos:
-\begin{itemize}
-	\item Produtor - corresponde aos utilizadores que irão submeter informação no repositório.
-	\item Administrador - realiza todas as tarefas de manutenção do sistema.
-	\item Consumidor - utilizador que consulta e pesquisa a informação do repositório.
-\end{itemize}
-
-\subsubsection{SIP e o Processo de Ingestão}
-
-Neste processo, o ideal é conseguir enriquecer o repositório através do preenchimento de um formulário e ainda através de um ficheiro XML que respeite o Schema do CDWA-Lite.
-
-Quando se inserir alguma informação no MV, essa informação irá sofrer um processo até ficar completamente armazenado no sistema para se conseguir relacionar com outras obras presentes no museu.
-
-\subsubsection{AIP e armazenamento de projetos}
-Neste repositório, vamos ter uma solução híbrida, com a metainformação guardada na Base de Dados relacional e a outra informação que corresponde a outros ficheiros incluídos no SIP que estejam relacionados com as obras, como imagens, documentos word, etc, guardados num Sistema de Ficheiros.
-
-\subsubsection{DIP e a disseminação/publicação de conteúdos}
-
-Um DIP pode ser disponibilizado de duas formas, ou através de um Website criado para o efeito ou então através de um ficheiro XML.
-
-No Website será possivél ver o espï¿½lio do museu, ver a sua informação e ainda entrar em salas que serï¿½o geradas automaticamente para mostrar obras que tinham algum fio de ligaï¿½ï¿½o entre elas.
+{
+Finalmente, a terceira grande funcionalidade passa por guiar as visitas
+pelas salas de exposi\c{c}\~ao recebendo delas informa\c{c}\~ao.
+\ Guiar a visita significa apresentar o s\'itio criado com base na
+ontologia da exposi\c{c}\~ao e as indica\c{c}\~oes relativas \`a
+disposi\c{c}\~ao dos objetos na sala e permitir que o visitante da
+p\'agina possa deixar coment\'arios.}
 
 
-\section{Caso de Estudo}
 
-Depois de um grande impace sobre o Museu que iríamos tratar, optamos por um projeto já com algum desenvolvimento que é o Museu da Emigração e das Comunidades de Fafe.
+{
+O reposit\'orio que ir\'a armazenar toda esta informa\c{c}\~ao, ser\'a
+constitu\'ido por uma base de dados relacional assim como num conjunto
+de diretorias no servidor da aplica\c{c}\~ao. Neste cap\'itulo,
+ir-nos-emos focar no desenvolvimento da base de dados.}
 
-Dentro deste Museu existe uma grande variedade de peças de arte, em que grande parte estï¿½o relacionadas com a emigração de portugueses no início do século XX. Muitas das reliquias pertenceram a "Brasileiros retorna viagem", pessoas que emigraram para o Brasil, enriqueceram e quando voltaram para Portugal queria ser importantes na sua terra, para isso mandavam construir edifícios (escolas, hospitais...) e alguns até tinha o seu próprio jornal/almanaque.
+{
+A especifica\c{c}\~ao do modelo de dados relacional foi baseado no
+estudo das seguintes normas \textit{Categories for the Description of
+Works of Art (CDWA)} e \textit{Cataloging Cultural Objects (CCO) }e
+\textit{CDWA Lite}. \ }
 
-Do vário material que poderíamos tratar, optámos pelas \textbf{fotografias} e pelas \textbf{zincogravuras}.
+{
+O CDWA descreve o conte\'udo de bases de dados de arte articulando uma
+\textit{framework} conceptual para descrever e aceder a
+informa\c{c}\~ao sobre obras de arte, arquitetura, outro materiais de
+cultura, grupos e cole\c{c}\~oes de obras e imagens relacionadas. O
+CDWA inclui 532 categorias e subcategorias. }
 
-As fotografias foram tiradas pelo fotógrafo e pintor Gérald Bloncourt, de nacionalidade Haitiana, que tirou muitas fotografias ao dia a dia dos emigrantes portugueses em França.
+{
+O CCO \'e um guia ao inv\'es de um conjunto de elementos de meta-dados.
+Os elementos que abrange s\~ao referentes a \'areas de informa\c{c}\~ao
+num registo de cataloga\c{c}\~ao que podem ser mapeadas para v\'arios
+elementos de meta-dados tais como CDWA ou CDWA Lite. Basicamente, \'e
+um documento lato que inclui regras para formata\c{c}\~ao de dados,
+sugest\~oes para informa\c{c}\~ao obrigat\'oria, requisitos para
+vocabul\'ario controlado e problemas de apresenta\c{c}\~ao.}
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{imagens/CGB052.JPG}
-%\caption{Bidonville d'un Aubervilliers - 1957}
-\end{figure}
-
-Quanto às zincogravuras, elas foram usadas para diversos fins, como cartons em almanaques, capas de jornais, fotografias de famï¿½lias e retratos, logótipos...
-
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{imagens/004.jpg}
-\caption{RANILON - Correia plana de plástico e couro}
-\end{figure}
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.6]{imagens/0059.jpg}
-\caption{''Director deste Almanaque, esposa e seus 10 filhos'' - O Desforço }
-\end{figure}
-
-
-\section{Levantamento de Requisitos}
-
-Na explicação do que era pretendido fazer, já descrevemos um pouco os requisitos necessários, fazendo uma síntese dos objectivos temos então:
-\begin{enumerate}
-	\item Basear a especificação no estudo e análise das normas internacinais: CCO e CDWA.
-	\item Criar um modelo para uma Base de Dados Relacional que permita guardar a informação proveniente de documentos com os formatos internacionais já mencionados.
-	\item Tendo em conta o caso de estudo, encontrar uma solução para inserir a informação no repositório de forma a que as diferentes obras se possam relacionar entre si.
-\end{enumerate}
+{
+Para facilitar a partilha de registos complacentes com CDWA atrav\'es do
+protocolo \textit{Open Archives Initiative -- Protocol for Metadata
+Harvesting (OAI-PMH)}, o Getty Research Institute criou o schema \ XML
+CDWA Lite baseado nas categorias consideradas essenciais (core) do CDWA
+que descreve um formato para registos essenciais de obras de arte e
+material cultural baseados no CDWA e CCO.}
 
 
-\subsection{Especificação dos Requisitos}
 
-\subsubsection{análise das normas internacionais para a catalogação de obras de arte}
+{
+Ap\'os uma an\'alise a todas estas normas e estruturas, cheg\'amos a um
+modelo final que passaremos a descrever na sec\c{c}\~ao seguinte.}
 
-\subsubsection{Dados}
 
-\subsubsection{Pedidos}
 
-\subsubsection{Relações}
 
-\section{Concepção/desenho da Resolução}
-\subsection{análise das normas internacionais para a catalogação de obras de arte}
 
-\subsection{Base de Dados}
-Neste capítulo, iremos apresentar uma contextualização sobre a necessidade desta base de dados e a nossa solução final de base de dados. Para isso, enunciaremos as tabelas criadas e explicaremos a sua razão de ser.
+\subsubsection[Modelo de Dados]{ Modelo de
+Dados}
+{
+O modelo representa uma simplifica\c{c}\~ao do que \'e sugerido pelo
+CDWA, apenas representando os meta-dados core e outros que ach\'amos
+que seriam interessantes e importantes para a descri\c{c}\~ao de uma
+obra de arte. Trata-se ent\~ao de uma estrutura capaz de representar
+tudo que \'e necess\'ario para cobrir os requisitos apresentados.}
 
-\subsubsection{Contextualização}
-Uma das funcionalidades exigidas neste projeto é o arquivamento do espólio do museu.  Arquivar o espólio significa receber meta-informação sobre cada objeto do espólio (eventualmente o próprio objeto se ele for digital), classificá-lo à luz de uma ontologia definida à partida (mas que poderá ir evoluindo) e armazenar a meta-informação após classificação. 
 
-Outra grande funcionalidade exigida é a  geração automática de espaços de aprendizagem na forma de salas de exposição do museu.  Cada sala de exposição de um Museu Virtual (MV) é um sítio Web através do qual se podem ver os objetos em exposição, ou a sua descrição, devidamente relacionados entre si de forma a transmitir o conhecimento correspondente ao tema dessa exposição. Estes espaços de aprendizagem também necessitam de ser armazenados.
 
-Finalmente, a terceira grande funcionalidade passa por guiar as visitas pelas salas de exposição recebendo delas informação.  Guiar a visita significa apresentar o sítio criado com base na ontologia da exposição e as indicações relativas à disposição dos objetos na sala e permitir que o visitante da página possa deixar comentários.
+{
+Para representar a primeira funcionalidade enunciada anteriormente,
+descreveremos cada uma das tabelas criadas assim como a(s) categoria(s)
+do CDWA que pretendem representar.}
 
-O repositório que irá armazenar toda esta informação, será constituído por uma base de dados relacional assim como num conjunto de diretorias no servidor da aplicação. Neste capítulo, ir-nos-emos focar no desenvolvimento da base de dados.
 
-A especificação do modelo de dados relacional foi baseado no estudo das seguintes normas \textit{Categories for the Description of Works of Art (CDWA) e Cataloging Cultural Objects (CCO) e CDWA Lite}.  
 
-O CDWA descreve o conteúdo de bases de dados de arte articulando uma \textit{framework} conceptual para descrever e aceder a informação sobre obras de arte, arquitetura, outro materiais de cultura, grupos e coleções de obras e imagens relacionadas. O CDWA inclui 532 categorias e subcategorias. 
+{
+As chaves prim\'arias s\~ao representadas por atributos sublinhados e as
+chaves estrangeiras por atributos em it\'alico.}
 
-O CCO é um guia ao invés de um conjunto de elementos de meta-dados. Os elementos que abrange são referentes a áreas de informação num registo de catalogação que podem ser mapeadas para vários elementos de meta-dados tais como CDWA ou CDWA Lite. Basicamente, é um documento lato que inclui regras para formatação de dados, sugestões para informação obrigatória, requisitos para vocabulário controlado e problemas de apresentação.
 
-Para facilitar a partilha de registos complacentes com CDWA através do protocolo \textit{Open Archives Initiative ? Protocol for Metadata Harvesting (OAI-PMH)}, o Getty Research Institute criou o schema  XML CDWA Lite baseado nas categorias consideradas essenciais (core) do CDWA que descreve um formato para registos essenciais de obras de arte e material cultural baseados no CDWA e CCO.
 
-Após uma análise a todas estas normas e estruturas, chegámos a um modelo final que passaremos a descrever na secção seguinte.
-
-\subsubsection{Modelo de Dados}
-O modelo representa uma simplificação do que é sugerido pelo CDWA, apenas representando os meta-dados core e outros que achámos que seriam interessantes e importantes para a descrição de uma obra de arte. Trata-se então de uma estrutura capaz de representar tudo que é necessário para cobrir os requisitos apresentados.
-
-Para representar a primeira funcionalidade enunciada anteriormente, descreveremos cada uma das tabelas criadas assim como a(s) categoria(s) do CDWA que pretendem representar.
-
-As chaves primárias são representadas por atributos sublinhados e as chaves estrangeiras por atributos em itálico.
-
-\textbf{Tabelas com origem em entidades e relacionamentos 1:N}
-
-As seguintes tabelas foram criadas com base nos meta-dados que pretendemos armazenar:
+\paragraph[Tabelas com origem em entidades e relacionamentos
+1:N]{ Tabelas com origem em entidades e
+relacionamentos 1:N}
+{
+As seguintes tabelas foram criadas com base nos meta-dados que
+pretendemos armazenar:}
 
 
 \begin{itemize}
@@ -226,13 +293,16 @@ displayCreator, displayMeasurements, displayMaterialsTech,
 displayCreationDate, \textit{RecordType}\}}
 
 {Correspondente \`a categoria
-}\textbf{{Object/Work}}
-\textbf{{\textmd{.
+}\textbf{{Object/Work}}\textbf{{\textmd{.
 Esta tabela identifica o foco l\'ogico da discuss\~ao. Representa uma
 obra de arte (objeto) no reposit\'orio, descreve o que \'e a obra e
 possibilita a procura de obras de um determinados tipo.}}}
 
-{Atributos:}
+
+
+{
+Atributos:}
+
 \begin{itemize}
 \item {
 \textbf{id\_object\_Work\_Records:} \'e chave prim\'aria, j\'a que
@@ -268,24 +338,29 @@ nuance.}
 \item {
 \textbf{RecordType:} \'e chave estrangeira da tabela RecordType. Inteiro
 que identifica o tipo de de registo da obra.}
+\end{itemize}
+\end{itemize}
 
-\end{itemize}
-\end{itemize}
+
 
 \begin{itemize}
 \item {\bfseries
 Object\_Work\_Types\textmd{ \{}\textmd{id\_type}\textmd{, type,
 termsource, termsourceID\}}}
-
+\end{itemize}
 {
-{Correspondente \`a categoria
+{\ \ Correspondente \`a categoria
 }{\textbf{Object/Work
 Type}}{. Esta
 }\textbf{{\textmd{tabela}}}{
 representa um termo que identifica o tipo espec\'ifico de objeto ou
 obra descrita.}}
 
+
+
 {Atributos:}
+
+i
 \begin{itemize}
 \item {
 \textbf{id\_type:} \'e chave prim\'aria, j\'a que identifica
@@ -299,9 +374,9 @@ termsource: \textmd{string que identifica a fonte do termo.}}
 \textbf{termsourceID:} string que representa o identificador do termo na
 fonte.}
 \end{itemize}
-\end{itemize}
 
-% Object_Work_Titles
+
+
 \begin{itemize}
 \item {
 \textbf{Object\_Work\_Titles
@@ -315,8 +390,12 @@ Names}}{. Esta
 representa os t\'itulos ou nomes dados a uma obra de arte, arquitetura,
 ou grupo, assim como o tipo do t\'itulo e as datas quando o t\'itulo
 era v\'alido.}
+\end{itemize}
+
 
 {Atributos:}
+
+ii
 \begin{itemize}
 \item {
 \textbf{id\_object\_Work\_Titles:} \'e chave prim\'aria, j\'a que
@@ -340,9 +419,11 @@ identifica a l\'ingua.}
 \textbf{Object\_Work\_Record:} \'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra.}
 \end{itemize}
-\end{itemize}
 
-%% INICIO - SourceTitles %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% SourceTitles
+
+
 \begin{itemize}
 \item {
 \textbf{SourceTitles} \{id\_sourceTitles, sourceTitle\}}
@@ -350,8 +431,12 @@ Object\_Work\_Record. Inteiro que identifica a obra.}
 {Esta
 }\textbf{{\textmd{tabela}}}{
 representa a fonte para o t\'itulo, genericamente uma fonte publicada.}
+\end{itemize}
+
 
 {Atributos:}
+
+ii
 \begin{itemize}
 \item {
 \textbf{i}\textbf{d\_sourceTitles}\textbf{:} \'e chave prim\'aria, j\'a
@@ -361,10 +446,10 @@ incrementado;}
 \textbf{sourceTitle:} string que identifica a fonte para o t\'itulo,
 geralmente uma fonte publicada.}
 \end{itemize}
-\end{itemize}
-%% FIM - SourceTitles %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - IndexingMeasurements %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% IndexingMeasurements
+
 \begin{itemize}
 \item {\bfseries
 IndexingMeasurements\textmd{
@@ -378,9 +463,12 @@ Esta
 representa as dimens\~oes, tamanho, forma, escala, formato, ou
 configura\c{c}\~ao de armazenamento, incluindo volume, peso, \'area ou
 tempo de execu\c{c}\~ao.}
+\end{itemize}
+
 
 {Atributos:}
 
+v
 \begin{itemize}
 \item {
 \textbf{id\_indexingMeasurements: }\'e chave prim\'aria, j\'a que
@@ -390,13 +478,12 @@ incrementado;}
 \textbf{Object\_Work\_Record}: \'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra.}
 \end{itemize}
-\end{itemize}
-%% FIM - IndexingMeasurements %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - Measurements %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Measurements
+
 \begin{itemize}
 \item[] 
-\bigskip
 \item {\bfseries
 Measurements\textmd{ \{}\textmd{id\_measurements}\textmd{, value, unit,
 type, }\textmd{\textit{IndexingMeasurement}}\textmd{\}}}
@@ -412,8 +499,11 @@ Unit}}{\textbf{.
 }\textbf{{\textmd{tabela}}}{
 representa as dimens\~oes ou outras medidas de outros aspetos de uma
 obra.}
+\end{itemize}
+
 
 {Atributos:}
+
 \begin{itemize}
 \item {
 \textbf{id\_measurements: }\'e chave prim\'aria, j\'a que identifica
@@ -430,10 +520,10 @@ em espec\'ifico ou parte de uma obra.}
 \textbf{Object\_Work\_Record}: \'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra.}
 \end{itemize}
-\end{itemize}
-%% FIM - Measurements %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - QualifierMeasurements %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{}
+% QualifierMeasurements
+
 \begin{itemize}
 \item {\bfseries
 QualifierMeasurements\textmd{
@@ -445,8 +535,12 @@ Qualifier}}{. Esta
 }\textbf{{\textmd{tabela}}}{
 representa uma palavra ou frase que elabora na natureza da obra quando
 necess\'ario, tal como quando as medidas s\~ao pr\'oximas.}
+\end{itemize}
+
 
 {Atributos:}
+
+\liststyleLv
 \begin{itemize}
 \item {
 \textbf{id\_qualifierMeasurements:} \'e chave prim\'aria, j\'a que
@@ -457,10 +551,11 @@ incrementado;}
 frase que elabora na natureza da obra quando necess\'ario, tal como
 quando as medidas s\~ao pr\'oximas.}
 \end{itemize}
-\end{itemize}
-%% FIM - QualifierMeasurements %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - IndexingMaterialsTech %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{}
+
+% IndexingMaterialsTech
+
 \begin{itemize}
 \item {
 \textbf{IndexingMaterialsTech} \{id\_indexingMaterialsTech, type,
@@ -472,8 +567,11 @@ Esta
 }\textbf{{\textmd{tabela}}}{
 representa materiais e t\'ecnicas indexadas com termos controlados para
 pesquisa.}
+\end{itemize}
+
 
 {Atributos:}
+
 \begin{itemize}
 \item {
 \textbf{id\_indexingMaterialsTech:} \'e chave prim\'aria, j\'a que
@@ -487,10 +585,11 @@ utens\'ilio.}}
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra.}
 \end{itemize}
-\end{itemize}
-%% FIM - IndexingMaterialsTech %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - TermMaterialsTech %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{}
+
+% TermMaterialsTech
+
 \begin{itemize}
 \item {\bfseries
 TermMaterialsTech\textmd{ \{}\textmd{id\_termMaterialsTech}\textmd{,
@@ -503,7 +602,10 @@ Description}}{. Esta
 representa }{um termo que indexa um material
 ou t\'ecnica.}
 
-{Atributos:}
+
+
+{
+Atributos:}
 
 \begin{itemize}
 \item {
@@ -518,11 +620,8 @@ material ou t\'ecnica}
 termsourceID:\textmd{ string que representa o identificador do termo na
 fonte.}}
 \end{itemize}
-\end{itemize}
-%% FIM - TermMaterialsTech %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - ExtentMaterialsTech %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{itemize}
+% ExtentMaterialsTech
 \item {\bfseries
 ExtentMaterialsTech\textmd{ \{}\textmd{id\_extentMaterialsTech}\textmd{,
 extentMaterialsTech,
@@ -534,9 +633,12 @@ Extent}}{. Esta
 }\textbf{{\textmd{tabela}}}{
 representa uma explica\c{c}\~ao da parte da obra \`a qual os materiais
 ou t\'ecnicas se aplicam.}
+\end{itemize}
+
 
 {Atributos:}
 
+i
 \begin{itemize}
 \item {
 \textbf{id\_extentMaterialsTech:} \'e chave prim\'aria, j\'a que
@@ -549,10 +651,10 @@ da parte da obra \`a qual os materiais ou t\'ecnicas se aplicam.}
 \textbf{IndexingMaterialsTech:}\textit{ }\'e chave estrangeira da tabela
 IndexingMaterialsTech. Inteiro que identifica o material/t\'ecnica.}
 \end{itemize}
-\end{itemize}
-%% FIM - ExtentMaterialsTech %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - ConservationTreatmentHistory %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{}
+% ConservationTreatmentHistory
+
 \begin{itemize}
 \item {
 \textbf{ConservationTreatmentHistory}
@@ -565,8 +667,12 @@ History}}{. Esta
 }\textbf{{\textmd{tabela}}}{
 representa o hist\'orico dos procedimentos ou a\c{c}\~oes a que uma
 obra foi sujeita para repar\'a-la, conserv\'a-la ou estabiliz\'a-la.}
+\end{itemize}
+
 
 {Atributos:}
+
+ii
 \begin{itemize}
 \item {
 \textbf{id\_conservationTreatmentHistory:} \'e chave prim\'aria, j\'a
@@ -579,12 +685,13 @@ Inteiro que identifica a data de tratamento.}
 \textbf{Object\_Work\_Record:} \'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra.}
 
-\end{itemize}
-\end{itemize}
 
-%% FIM - ConservationTreatmentHistory %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
+{}
 
-%% INICIO - TreatmentTypes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%TreatmentTypes
+
 \begin{itemize}
 \item {\bfseries
 TreatmentTypes\textmd{ \{}\textmd{id\_treatmentTypes}\textmd{,
@@ -598,8 +705,11 @@ Type}}{\textmd{. Esta
 representa o nome do tratamento de conserva\c{c}\~ao ou procedimento de
 restaura\c{c}\~ao t\'ecnica/cient\'ifica realizado na obra.}}}
 
+
+
 {Atributos:}
 
+x
 \begin{itemize}
 \item {
 \textbf{id\_treatmentTypes}:\textbf{ }\'e chave prim\'aria, j\'a que
@@ -609,10 +719,11 @@ identifica univocamente cada nome. Inteiro que \'e auto incrementado;}
 conserva\c{c}\~ao ou procedimento de restaura\c{c}\~ao
 t\'ecnica/cient\'ifica realizado na obra.}
 
-\end{itemize}
-%% FIM - TreatmentTypes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - ConservationTreatmentDescriptions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
+{}
+
+% ConservationTreatmentDescriptions
 \begin{itemize}
 \item {\bfseries
 ConservationTreatmentDescriptions\textmd{
@@ -627,10 +738,12 @@ Description}}{. Esta
 representa uma descri\c{c}\~ao em prosa de procedimentos ou a\c{c}\~oes
 a que uma obra foi sujeita para repar\'a-la, conserv\'a-la ou
 estabiliz\'a-la.}
+\end{itemize}
 
 
 {Atributos:}
 
+\liststyleLx
 \begin{itemize}
 \item {
 \textbf{id\_conservationTreatmentDescriptions:} \'e chave prim\'aria,
@@ -644,33 +757,12 @@ foi sujeita para repar\'a-la, conserv\'a-la ou estabiliz\'a-la. }
 \textbf{ConservationTreatmentHistory:}\textit{ }\'e chave estrangeira da
 tabela ConservationTreatmentHistory. Inteiro que identifica o
 hist\'orico.}
+
+
 \end{itemize}
-\end{itemize}
-%% FIM - ConservationTreatmentDescriptions %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{}
 
-
-
-
-
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-%% INICIO - treatmentDate %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TreatmentDates
 \begin{itemize}
 \item {\bfseries
 TreatmentDates\textmd{ \{}\textmd{id\_treatmentDates}\textmd{,
@@ -684,9 +776,12 @@ Date}}{\textmd{. Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa a data em que um determinado procedimento ou tratamento se
 realizou.}}}
+\end{itemize}
+
 
 {Atributos:}
 
+\liststyleLxi
 \begin{itemize}
 \item {
 \textbf{id\_treatmentDates:} \'e chave prim\'aria, j\'a que identifica
@@ -701,15 +796,14 @@ Inteiro que identifica a data inferior.}
 \textbf{latestDate:} \'e chave estrangeira da tabela LatestDates.
 Inteiro que identifica a data mais posterior.}
 \end{itemize}
-\end{itemize}
-%% FIM - treatmentDate %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - earliestDate %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{itemize}
 \item {\bfseries
 EarliestDates\textmd{ \{}\textmd{id\_earliestDate}\textmd{,
 earliestDate, termsource\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Earliest}\textbf{{
@@ -718,8 +812,11 @@ Date}}{\textmd{. Esta
 representa um ano que amplamente delimita o in\'icio de um espa\c{c}o
 de tempo entre datas.}}}
 
-{ Atributos:}
 
+
+{Atributos:}
+
+\liststyleLxii
 \begin{itemize}
 \item {
 \textbf{id\_earliestDate: }\'e chave prim\'aria, j\'a que identifica
@@ -730,24 +827,26 @@ delimita o in\'icio de um espa\c{c}o de tempo entre datas.}
 \item {
 \textbf{termsource:} string que identifica a fonte do termo.}
 \end{itemize}
-\end{itemize}
-%% FIM - earliestDate %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - LatestDates %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{itemize}
 \item {
 \textbf{LatestDates}\{id\_latestDate, latestDate, termsource\}}
-
+\end{itemize}
 {
-{Correspondente \`a categoria
+{\ \ Correspondente \`a categoria
 }\textbf{{Latest
 Date}}{. Esta
 }\textbf{{\textmd{tabela}}}{
 representa um ano que amplamente delimita o final de um espa\c{c}o de
 tempo entre datas.}}
 
+
+
 {Atributos:}
 
+\liststyleLxii
 \begin{itemize}
 \item {
 \textbf{id\_latestDate: }\'e chave prim\'aria, j\'a que identifica
@@ -758,10 +857,9 @@ delimita o final de um espa\c{c}o de tempo entre datas.}
 \item {
 \textbf{termsource:} string que identifica a fonte do termo.}
 \end{itemize}
-\end{itemize}
-%% FIM - LatestDates %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - IndexingCreators %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{itemize}
 \item {\bfseries
 IndexingCreators\textmd{ \{}\textmd{id\_indexingCreators}\textmd{,
@@ -773,9 +871,11 @@ genderCreator\}}}
 Descritpion}}{\textmd{. Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa os criadores de uma obra.}}}
+\end{itemize}
 
 
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -784,15 +884,14 @@ univocamente cada criador. Inteiro que \'e auto incrementado;}
 \item {\bfseries
 genderCreator:\textmd{ string que identifica o sexo do criador.}}
 \end{itemize}
-\end{itemize}
-%% FIM - IndexingCreators %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - NamesCreator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{itemize}
 \item {\bfseries
 NamesCreator\textmd{ \{}\textmd{id\_namesCreator}\textmd{, nameCreator,
 type, termsource, termsourceID\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Creator
@@ -805,7 +904,9 @@ para o desenho, cria\c{c}\~ao, produ\c{c}\~ao, manufatura ou
 altera\c{c}\~ao da obra.}}}
 
 
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -825,22 +926,25 @@ singular ou coletiva.}}
 \textbf{termsourceID:} string que representa o identificador do nome na
 fonte.}
 \end{itemize}
-\end{itemize}
-%% FIM - NamesCreator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - SourceNamesCreator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{}
+% SourceNamesCreator
+
 \begin{itemize}
 \item {\bfseries
 SourceNamesCreator\textmd{ \{}\textmd{id\_sourceNamesCreator}\textmd{,
 sourceNameCreator\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa a fonte para o nome, genericamente uma fonte publicada.}}}
 
+
+
 {Atributos:}
 
+ii
 \begin{itemize}
 \item {
 \textbf{i}\textbf{d\_sourceNamesCreator}\textbf{:} \'e chave prim\'aria,
@@ -850,15 +954,14 @@ incrementado;}
 \textbf{sourceNameCreator:} string que identifica a fonte para o nome,
 geralmente uma fonte publicada.}
 \end{itemize}
-\end{itemize}
-%% FIM - SourceNamesCreator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - NationalitiesCreator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{itemize}
 \item {\bfseries
 NationalitiesCreator\textmd{
 \{}\textmd{id\_nationalitiesCreator}\textmd{, nationalitycreator\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Creator
@@ -867,7 +970,10 @@ Descritpion}}{\textmd{. Esta
 representa a afilia\c{c}\~ao nacional ou cultural da pessoa singular ou
 coletiva.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -878,17 +984,15 @@ incrementado;}
 \textbf{nationalitycreator}: string que representa a afilia\c{c}\~ao
 nacional ou cultural da pessoa singular ou coletiva.}
 
-\end{itemize}
-\end{itemize}
-%% FIM - NationalitiesCreator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - vitalDatesCreator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{itemize}
+
 \begin{itemize}
 \item {\bfseries
 vitalDatesCreator\textmd{ \{}\textmd{id\_vitalDatesCreator}\textmd{,
 vitalDatesCreator, birthDate, deathDate, termSource,
 }\textmd{\textit{IndexingCreator}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\ \ }{\textmd{Correspondente
 \`a categoria
@@ -898,7 +1002,10 @@ Descritpion}}{\textmd{. Esta
 representa uma descri\c{c}\~ao do tempo de vida da pessoa singular ou
 da exist\^encia da pessoa coletiva.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -920,15 +1027,14 @@ criador.}
 \textbf{IndexingCreator}\textbf{:} \'e chave estrangeira da tabela
 IndexingCreators. Inteiro que identifica o criador.}
 \end{itemize}
-\end{itemize}
-%% FIM - vitalDatesCreator %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - CreatorRoles %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{itemize}
 \item {\bfseries
 CreatorRoles\textmd{ \{}\textmd{id\_rolesCreator}\textmd{, roleCreator,
 termsource, termsourceID\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Creator
@@ -937,7 +1043,11 @@ Descritpion}}{\textmd{. Esta
 representa o papel do criador ou outro agente na cria\c{c}\~ao ou
 produ\c{c}\~ao da obra.}}}
 
+
+
 {Atributos:}
+
+
 \begin{itemize}
 \item {
 \textbf{id\_rolesCreator: }\'e chave prim\'aria, j\'a que identifica
@@ -951,16 +1061,15 @@ agente na cria\c{c}\~ao ou produ\c{c}\~ao da obra.}
 \textbf{termsourceID:} string que representa o identificador do papel na
 fonte.}
 \end{itemize}
-\end{itemize}
-%% FIM - CreatorRoles %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - Styles %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{itemize}
 \item {
 \textbf{Styles} \{id\_styles, style, termsource, termsourceID\}}
-
+\end{itemize}
 {
-{Correspondente \`a categoria
+{\ \ Correspondente \`a categoria
 }\textbf{{Styles/Periods
 Indexing Terms}}{. Esta
 }\textbf{{\textmd{tabela}}}{
@@ -968,7 +1077,10 @@ representa o termo que identifica estilo, per\'iodo art\'istico ou
 hist\'orico, movimento, grupo ou escola cujas caracter\'isticas est\~ao
 representadas na obra.}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -984,23 +1096,25 @@ caracter\'isticas est\~ao representadas na obra.}
 \textbf{termsourceID:} string que representa o identificador do estilo
 na fonte.}
 \end{itemize}
-\end{itemize}
-%% FIM - Styles %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - Cultures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{itemize}
 \item {
 \textbf{Cultures }\{id\_cultures, culture, termsource, termsourceID\}}
-
+\end{itemize}
 {
-{Correspondente \`a categoria
+{\ \ Correspondente \`a categoria
 }\textbf{{Object/Work
 Culture}}{. Esta
 }\textbf{{\textmd{tabela}}}{
 representa o nome da cultura, povo, ou nacionalidade da qual a obra \'e
 origin\'aria.}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1015,21 +1129,16 @@ nacionalidade da qual a obra \'e origin\'aria.}
 \textbf{termsourceID:} string que representa o identificador da cultura
 na fonte.}
 \end{itemize}
-\end{itemize}
-%% FIM - Cultures %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-%% INICIO - IndexingDates %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% IndexingDates
 \begin{itemize}
 \item {\bfseries
 IndexingDates\textmd{ \{}\textmd{id\_indexingDates}\textmd{,
 dateQualifier, }\textmd{\textit{earliestDate}}\textmd{,
 }\textmd{\textit{latestDate}}\textmd{,
 }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Creation
@@ -1038,7 +1147,10 @@ Date}}{\textmd{. Esta
 representa um conjunto de anos que delimitam a dura\c{c}\~ao da
 cria\c{c}\~ao e produ\c{c}\~ao da obra.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1058,16 +1170,15 @@ Inteiro que identifica a data mais posterior.}
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra.}
 \end{itemize}
-\end{itemize}
-%% FIM - IndexingDates %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - CreationPlaces %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{itemize}
 \item {\bfseries
 CreationPlaces\textmd{ \{}\textmd{id\_creationPlaces}\textmd{,
 creationPlace, termsource, termsourceID, placeQualifier,
 }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Creation
@@ -1078,7 +1189,10 @@ representa a localiza\c{c}\~ao onde a cria\c{c}\~ao, desenho ou
 produ\c{c}\~ao da obra ou os seus componentes se realizou, ou a
 localiza\c{c}\~ao original da obra.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1102,10 +1216,9 @@ significado do lugar ou localiza\c{c}\~ao.}}
 Object\_Work\_Record:\textmd{\textit{ }}\textmd{\'e chave estrangeira da
 tabela Object\_Work\_Record. Inteiro que identifica a obra.}}
 \end{itemize}
-\end{itemize}
-%% FIM - CreationPlaces %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - Provenance %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \begin{itemize}
 \item {\bfseries
 Provenance\textmd{ \{}\textmd{id\_provenance}\textmd{,
@@ -1114,7 +1227,7 @@ provenanceDescription, cost, legalStatus,
 }\textmd{\textit{Owner}}\textmd{,
 }\textmd{\textit{ownershipDate}}\textmd{,
 }\textmd{\textit{OwnershipPlace}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Ownership}\textbf{{/Collecting
@@ -1124,7 +1237,10 @@ representa a proveni\^encia ou hist\'oria dos propriet\'arios de uma
 obra de arte, obra arquitet\'onica ou grupo desde a sua cria\c{c}\~ao
 at\'e ao presente.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1153,11 +1269,10 @@ Inteiro que identifica o per\'iodo de posse da obra.}
 \textbf{OwnershipPlace:} \'e chave estrangeira da tabela
 OwnershipPlaces. Inteiro que identifica a localiza\c{c}\~ao da obra
 durante a posse.}
-\end{itemize}
-\end{itemize}
-%% FIM - Provenance %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - TransferModes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{itemize}
+
 \begin{itemize}
 \item {\bfseries
 TransferModes\textmd{ \{}\textmd{id\_transferMode}\textmd{,
@@ -1171,7 +1286,10 @@ Mode}}{\textmd{. Esta
 representa o meio (modo de transfer\^encia) pelo qual uma obra entrou
 na cole\c{c}\~ao de uma pessoa singular ou coletiva.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1186,17 +1304,15 @@ pessoa singular ou coletiva.}
 \textbf{Provenance}:\textit{ }\'e chave estrangeira da tabela
 Provenance. Inteiro que identifica a proveni\^encia.}
 \end{itemize}
-%% FIM - TransferModes %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Owners
 \begin{itemize}
 \item {\bfseries
 Owners\textmd{ \{}\textmd{id\_owner}\textmd{, owner}\textmd{,
 termsource, termsourceID,
 }\textmd{\textit{OwnerRolesid\_ownerRole}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Owner}\textbf{{/Agent}}{\textmd{.
@@ -1206,7 +1322,10 @@ representa o nome de uma pessoa singular ou coletiva que era
 propriet\'aria ou estava na posse da obra, ou serviu como agente na sua
 transfer\^encia entre propriet\'arios.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1225,14 +1344,14 @@ fonte.}
 \textbf{OwnerRolesid\_ownerRole}:\textit{ }\'e chave estrangeira da
 tabela OwnerRoles. Inteiro que identifica o papel do propriet\'ario.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 OwnerRoles\textmd{ \{}\textmd{id\_ownerRole}\textmd{, ownerRole,
 termsource, termsourceID\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Owner}\textbf{{/Agent
@@ -1242,7 +1361,10 @@ representa o papel desempenhado por uma pessoa singular ou coletiva no
 que diz respeito \`a propriedade, posse ou transfer\^encia de
 propriet\'ario da obra.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1258,7 +1380,7 @@ ou transfer\^encia de propriet\'ario da obra.}
 \textbf{termsourceID:} string que representa o identificador do papel na
 fonte.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
@@ -1266,7 +1388,7 @@ fonte.}
 OwnershipDates\textmd{ \{}\textmd{id\_ownershipDate}\textmd{,
 ownershipDate, }\textmd{\textit{earliestDate}}\textmd{,
 }\textmd{\textit{latestDate}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Ownership}\textbf{{
@@ -1275,7 +1397,10 @@ Date}}{\textmd{. Esta
 representa o per\'iodo de tempo durante o qual pertenceu ou estava na
 posse de determinado propriet\'ario ou agente.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1292,14 +1417,14 @@ Inteiro que identifica a data inferior.}
 \textbf{latestDate:} \'e chave estrangeira da tabela LatestDates.
 Inteiro que identifica a data mais posterior.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 OwnershipPlaces\textmd{ \{}\textmd{id\_ownershipPlaces}\textmd{,
 ownershipPlace, termsource, termsourceID\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Owner}\textbf{{ship
@@ -1308,7 +1433,10 @@ Place}}{\textmd{. Esta
 representa o local onde a obra estava alojada aquando da posse por
 determinado propriet\'ario.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1323,25 +1451,28 @@ estava alojada aquando da posse por determinado propriet\'ario.}
 \textbf{termsourceID:} string que representa o identificador do local na
 fonte.}
 \end{itemize}
-\end{itemize}
 
 
+% ExhibitionHistory
 
 \begin{itemize}
 \item {
 \textbf{ExhibitionHistory }\{id\_exhibitionHistory,
 exhibitionDescription, exhibitionObjectLabel, remarks,
 \textit{exhibitionType,} \textit{Object\_Work\_Record}\}}
-
+\end{itemize}
 {
-{Correspondente \`a categoria
+{\ \ Correspondente \`a categoria
 }{\textbf{Exhibition}}\textbf{{/Loan
 History}}{. Esta
 }\textbf{{\textmd{tabela}}}{
 representa um registo hist\'orico de uma exposi\c{c}\~ao p\'ublica de
 uma obra.}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1365,7 +1496,6 @@ ExhibitionTypes. Inteiro que identifica o tipo da exposi\c{c}\~ao.}
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra.\ \ }
 \end{itemize}
-\end{itemize}
 
 
 
@@ -1373,7 +1503,7 @@ Object\_Work\_Record. Inteiro que identifica a obra.\ \ }
 \item {\bfseries
 ExhibitionTitles\textmd{ \{}\textmd{id\_exhibitionTitles}\textmd{,
 }\textmd{\textit{ExhibitionHistory}}\textmd{, exhibitionTitle\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Exhibition}\textbf{{
@@ -1381,6 +1511,8 @@ Title or Name}}{\textmd{. Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa o t\'itulo ou nome das exposi\c{c}\~oes tal como formuladas
 pela institui\c{c}\~ao organizadora.}}}
+
+
 
 {Atributos:}
 
@@ -1397,14 +1529,14 @@ organizadora.}
 \textbf{ExhibitionHistory:}\textit{ }\'e chave estrangeira da tabela
 ExhibitionHistory. Inteiro que identifica a exposi\c{c}\~ao.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 ExhibitionTypes\textmd{ \{}\textmd{id\_exhibitionTypes}\textmd{,
 exhibitionType\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Exhibition}\textbf{{
@@ -1413,7 +1545,10 @@ Type}}{\textmd{. Esta
 representa uma indica\c{c}\~ao do tipo de exposi\c{c}\~ao ou
 empr\'estimo.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1423,7 +1558,7 @@ univocamente cada tipo. Inteiro que \'e auto incrementado;}
 \textbf{exhibitionType: }string que representa uma indica\c{c}\~ao do
 tipo de exposi\c{c}\~ao ou empr\'estimo.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
@@ -1431,6 +1566,7 @@ tipo de exposi\c{c}\~ao ou empr\'estimo.}
 ExhibitionVenues\textmd{ \{}\textmd{id\_exhibitionVenues}\textmd{,
 }\textmd{\textit{ExhibitionHistory}}\textmd{, exhibitionVenue,
 }\textmd{\textit{ExhibitionVenueDate}}\textmd{\}}}
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Exhibition}\textbf{{
@@ -1440,7 +1576,9 @@ representa uma apresenta\c{c}\~ao dos nomes, locais e datas de quando a
 exposi\c{c}\~ao ou obra estava em exibi\c{c}\~ao.}}}
 
 
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1459,7 +1597,7 @@ ExhibitionHistory. Inteiro que identifica a exposi\c{c}\~ao.}
 ExhibitionVenueDates. Inteiro que identifica o per\'iodo de
 exposi\c{c}\~ao.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
@@ -1469,7 +1607,7 @@ ExhibitionVenueNames\textmd{
 exhibitionVenuePlace, nameTermsource, nameTermsourceID,
 placeTermsource, placeTermsourceID,
 }\textmd{\textit{ExhibitionVenue}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Venue}\textbf{{
@@ -1479,7 +1617,10 @@ representa o nome da institui\c{c}\~ao, galeria, outra instala\c{c}\~ao
 e o a localiza\c{c}\~ao geogr\'afica onde uma exposi\c{c}\~ao teve
 lugar.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1507,7 +1648,7 @@ localiza\c{c}\~ao geogr\'afica na fonte.}
 \textbf{ExhibitionVenue: }\'e chave estrangeira da tabela
 ExhibitionVenues. Inteiro que identifica a apresenta\c{c}\~ao do nome.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
@@ -1516,6 +1657,7 @@ ExhibitionVenueDates\textmd{
 \{}\textmd{id\_ExhibitionVenueDate}\textmd{, exhibitionVenueDate,
 }\textmd{\textit{earliestDate}}\textmd{,
 }\textmd{\textit{latestDate}}\textmd{\}}}
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Venue
@@ -1524,7 +1666,10 @@ Date}}{\textmd{. Esta
 representa uma descri\c{c}\~ao da data ou \^ambito de datas de quando a
 obra estava em exposi\c{c}\~ao numa determinada venue.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1541,7 +1686,7 @@ Inteiro que identifica a data inferior.}
 \textbf{latestDate:} \'e chave estrangeira da tabela LatestDates.
 Inteiro que identifica a data mais posterior.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
@@ -1551,7 +1696,7 @@ ExhibitionOrganizers\textmd{
 exhibitionOrganizerLocation, nameTermsource, nameTermsourceID,
 locationTermsource, locationTermsourceID,
 }\textmd{\textit{ExhibitionHistory}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Exhibition
@@ -1560,7 +1705,10 @@ Organizer}}{\textmd{. Esta
 representa o nome e localiza\c{c}\~ao da pessoa ou ag\^encia
 respons\'avel pela exposi\c{c}\~ao ou empr\'estimo.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1589,18 +1737,15 @@ localiza\c{c}\~ao geogr\'afica na fonte.}
 \textbf{ExhibitionHistory:}\textit{ }\'e chave estrangeira da tabela
 ExhibitionHistory. Inteiro que identifica a exposi\c{c}\~ao.}
 \end{itemize}
-\end{itemize}
 
 
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Locations
 \begin{itemize}
 \item {\bfseries
 Locations\textmd{ \{}\textmd{id\_locations}\textmd{,
 }\textmd{\textit{Object\_Work\_Record}}\textmd{,
 }\textmd{\textit{LocationName}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Current
@@ -1622,14 +1767,14 @@ Object\_Work\_Record. Inteiro que identifica a obra.}
 \textbf{LocationName:} \'e chave estrangeira da tabela LocationsName.
 Inteiro que identifica o nome da localiza\c{c}\~ao.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 LocationsName\textmd{ \{}\textmd{id\_locationsName}\textmd{,
 locationName, type, termsource, termsourceID, locID, locIDtype\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Current
@@ -1639,7 +1784,10 @@ Esta
 representa o nome do reposit\'orio que atualmente aloja a obra e a
 localiza\c{c}\~ao geogr\'afica onde a obra se encontra.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1663,14 +1811,14 @@ univocamente o reposit\'orio.}
 \textbf{locIDtype:} string que representa o tipo do identificador
 \'unico do reposit\'orio.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 WorkIDs\textmd{ \{}\textmd{id\_workIDs}\textmd{, workID, type,
 }\textmd{\textit{Location}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Object/Work
@@ -1679,7 +1827,10 @@ Label/Identification}}{\textmd{. Esta
 representa qualquer identificador num\'erico ou alfa num\'erico
 atribu\'ido \`a obra.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1695,14 +1846,14 @@ ou alfa num\'erico atribu\'ido \`a obra.}
 \textbf{Location:} \'e chave estrangeira da tabela Locations. Inteiro
 que identifica a localiza\c{c}\~ao do reposit\'orio.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 IndexingSubjects\textmd{ \{}\textmd{id\_indexingSubjects}\textmd{, type,
 extentSubject, }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Subject
@@ -1711,7 +1862,10 @@ Matter}}{\textmd{. Esta
 representa um conjunto de termos que refletem o que \'e descrito na
 obra e pela obra.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1729,14 +1883,14 @@ os termos se aplicam.}
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 SubjectTerms \textmd{\{}\textmd{id\_subjectTerms}\textmd{, subjectTerm,
 type, termsource, termsourceID\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{General Subject
@@ -1745,7 +1899,10 @@ Terms}}{\textmd{. Esta
 representa os termos que identificam, descrevem e/ou interpretam o que
 \'e descrito na e pela obra.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1762,7 +1919,7 @@ descreve e/ou interpreta o que \'e descrito na e pela obra.}
 \textbf{termsourceID:} string que representa o identificador do termo na
 fonte.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
@@ -1770,7 +1927,7 @@ fonte.}
 Classifications\textmd{
 \{}\textmd{\textit{id\_classifications}}\textmd{, classification,
 termsource, termsourceID\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Classification}}{\textmd{.
@@ -1779,7 +1936,10 @@ Esta
 representa os termos utilizados para categorizar um obra, agrupando-a
 com outras obras com base em caracter\'isticas semelhantes.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1796,14 +1956,14 @@ caracter\'isticas semelhantes.}
 \textbf{termsourceID:} string que representa o identificador do termo na
 fonte.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 DescriptiveNotes\textmd{ \{}\textmd{id\_descriptiveNotes}\textmd{,
 descriptiveNote, }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\ \ }{\textmd{Correspondente
 \`a categoria
@@ -1813,7 +1973,10 @@ Note}}{\textmd{. Esta
 representa um texto breve que descreve o conte\'udo e contexto da
 obra.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1827,7 +1990,7 @@ descreve o conte\'udo e contexto da obra.}
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
@@ -1835,15 +1998,18 @@ Object\_Work\_Record. Inteiro que identifica a obra.}
 DescriptiveNoteSources\textmd{
 \{}\textmd{id\_descriptiveNoteSources}\textmd{,
 descriptiveNoteSource\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa a fonte para a nota descritiva, geralmente uma fonte
 publicada.}}}
 
+
+
 {Atributos:}
 
+ii
 \begin{itemize}
 \item {
 \textbf{i}\textbf{d\_descriptiveNoteSources}\textbf{:} \'e chave
@@ -1853,15 +2019,14 @@ prim\'aria, j\'a que identifica univocamente cada fonte. Inteiro que
 \textbf{descriptiveNoteSource:} string que identifica a fonte para a
 nota descritiva, geralmente uma fonte publicada.}
 \end{itemize}
-\end{itemize}
 
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+% Inscriptions
 \begin{itemize}
 \item {\bfseries
 Inscriptions\textmd{ \{}\textmd{id\_inscriptions}\textmd{, inscriptions,
 }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Inscriptions/Marks}}{\textmd{.
@@ -1872,7 +2037,10 @@ inscri\c{c}\~ao f\'isica distingu\'ivel ou identific\'avel,
 anota\c{c}\~oes, textos, marcas ou etiquetas que s\~ao afixadas,
 aplicadas, estampadas, escritas, inscritas ou anexadas \`a obra.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1889,13 +2057,14 @@ s\~ao afixadas, aplicadas, estampadas, escritas, inscritas ou anexadas
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 RelatedWorks\textmd{ \{}\textmd{id\_relatedWorks}\textmd{,
 relatedWorkRelType, }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Related
@@ -1904,7 +2073,10 @@ Works}}{\textmd{. Esta
 representa obras de arte ou arquitet\'onicas relacionadas com a obra a
 ser descrita e uma descri\c{c}\~ao do relacionamento entre as obras.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1919,21 +2091,24 @@ relacionada.}
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra a ser descrita.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 LinksRelatedWork\textmd{ \{}\textmd{id\_linksRelatedWork}\textmd{,
 linkRelatedWork, linkscheme, }\textmd{\textit{RelatedWork}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa uma refer\^encia uri/url que \'e universal e \'e acess\'ivel
 no ambiente worldwide web.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1949,14 +2124,14 @@ linkscheme:\textmd{ string que representa o esquema do link.}}
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra a ser descrita.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 LabelRelatedWork\textmd{ \{}\textmd{id\_labelRelatedWork}\textmd{,
 labelRelatedWork, }\textmd{\textit{RelatedWork}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Related Work
@@ -1966,7 +2141,10 @@ Label/Identification}}\textbf{{\textmd{.
 representa uma identifica\c{c}\~ao da obra relacionada, grupo,
 cole\c{c}\~ao ou s\'erie que ter\'a significado para os end-users.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -1981,7 +2159,7 @@ significado para os end-users.}
 \textbf{RelatedWork:}\textit{ }\'e chave estrangeira da tabela
 RelatedWorks. Inteiro que identifica a obra relacionada.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
@@ -1990,14 +2168,17 @@ LocationsRelatedWork\textmd{
 \{}\textmd{id\_locationsRelatedWork}\textmd{, locationRelatedWork,
 relWorkID, locID, }\textmd{locIDtype, termsource,
 }\textmd{\textit{RelatedWork}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 \textbf{{\textmd{\ \ }}}{\textmd{Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa a localiza\c{c}\~ao atual da obra relacionada, geralmente um
 reposit\'orio.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2021,14 +2202,14 @@ locIDtype: \textmd{string que representa a fonte que fornece o locID.}}
 \textbf{RelatedWork:}\textit{ }\'e chave estrangeira da tabela
 RelatedWorks. Inteiro que identifica a obra relacionada.\ \ }
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 RightsWork\textmd{ \{}\textmd{id\_rightsWork}\textmd{, rightsWork, type,
 }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}\textbf{{Copyright/Restrictions}}\textbf{{\textmd{.
@@ -2056,14 +2237,14 @@ direitos de gest\~ao.}
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra a ser descrita.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 RecordsID\textmd{ \{}\textmd{id\_recordsID}\textmd{, recordID, type,
 }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Correspondente \`a categoria
 }}{Object}\textbf{{/Work
@@ -2072,7 +2253,10 @@ Record ID}}\textbf{{\textmd{.
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa um identificador \'unico de registo no sistema.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2088,21 +2272,24 @@ registo no sistema.}
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra a ser descrita.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 RecordSources\textmd{ \{}\textmd{id\_recordSources}\textmd{,
 recordSource, }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa a fonte de informa\c{c}\~ao neste registo, geralmente o
 reposit\'orio ou outra institui\c{c}\~ao.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2116,20 +2303,23 @@ neste registo, geralmente o reposit\'orio ou outra institui\c{c}\~ao.}
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra a ser descrita.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 RecordInfo\textmd{ \{}\textmd{id\_recordInfo}\textmd{, type,
 }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa informa\c{c}\~ao de meta-dados deste registo.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2142,17 +2332,14 @@ que identifica univocamente cada grupo de informa\c{c}\~ao. Inteiro que
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra a ser descrita.}
 \end{itemize}
-\end{itemize}
 
 
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% RecordsInfoID
 \begin{itemize}
 \item {\bfseries
 RecordsInfoID\textmd{ \{}\textmd{recordInfoID}\textmd{, type,
 }\textmd{\textit{RecordInfo}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
@@ -2161,7 +2348,10 @@ defini\c{c}\~ao que o
 }}{\textmd{\textit{RecordsID}}}{\textmd{,
 mas fora do contexto de um sistema local.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2174,21 +2364,24 @@ utilizador;}
 \textbf{RecordInfo:}\textit{ }\'e chave estrangeira da tabela
 RecordInfo. Inteiro que identifica a informa\c{c}\~ao.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 RecordInfoLinks\textmd{ \{}\textmd{id\_recordInfoLinks}\textmd{,
 recordInfoLink, }\textmd{\textit{RecordInfo}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa um link para os meta-dados (n\~ao se trata do mesmo link do
 objeto)}}{\textmd{.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2201,21 +2394,24 @@ meta-dados.}
 \textbf{RecordInfo:}\textit{ }\'e chave estrangeira da tabela
 RecordInfo. Inteiro que identifica a informa\c{c}\~ao.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 RecordsRelID\textmd{ \{}\textmd{recordRelID}\textmd{, type,
 }\textmd{\textit{RecordInfo}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa um identificador \'unico dos meta-dados do objeto
 relacionado}}{\textmd{.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2227,7 +2423,7 @@ univocamente cada identificador. String definida pelo utilizador;}
 RecordInfo:\textmd{\textit{ }}\textmd{\'e chave estrangeira da tabela
 RecordInfo. Inteiro que identifica a informa\c{c}\~ao.}}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
@@ -2235,14 +2431,17 @@ RecordInfo. Inteiro que identifica a informa\c{c}\~ao.}}
 RecordMetadataLocations\textmd{
 \{}\textmd{id\_recordMetadataLocations}\textmd{,
 recordMetadataLocation, type, }\textmd{\textit{RecordInfo}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa um apontador para outros meta-dados (administrativos,
 t\'ecnicos, estruturais)}}{\textmd{.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2258,7 +2457,7 @@ outros meta-dados (administrativos, t\'ecnicos, estruturais).}
 RecordInfo:\textmd{\textit{ }}\textmd{\'e chave estrangeira da tabela
 RecordInfo. Inteiro que identifica a informa\c{c}\~ao.}}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
@@ -2266,14 +2465,17 @@ RecordInfo. Inteiro que identifica a informa\c{c}\~ao.}}
 RecordMetadataDates\textmd{ \{}\textmd{id\_recordMetadataDates}\textmd{,
 recordMetadataDate, type, termsource,
 }\textmd{\textit{RecordInfo}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa a data de cria\c{c}\~ao ou a data de modifica\c{c}\~ao do
 registo}}{\textmd{.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2291,13 +2493,13 @@ termSource:\textmd{ string que representa a fonte da data.}}
 RecordInfo\textmd{:}\textmd{\textit{ }}\textmd{\'e chave estrangeira da
 tabela RecordInfo. Inteiro que identifica a informa\c{c}\~ao.}}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 RecordTypes\textmd{ \{}\textmd{id\_recordTypes}\textmd{, recordType\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
@@ -2305,7 +2507,10 @@ representa um termo que estabelece se o registo representa um item
 individual ou uma cole\c{c}\~ao, s\'erie ou grupo de
 obras}}{\textmd{.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2316,7 +2521,7 @@ identifica univocamente cada termo. Inteiro que \'e auto incrementado;}
 registo representa um item individual ou uma cole\c{c}\~ao, s\'erie ou
 grupo de obras.\ \ }
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
@@ -2326,14 +2531,17 @@ Resources\textmd{ \{}\textmd{id\_resources}\textmd{,
 }\textmd{\textit{ResourceID}}\textmd{,
 }\textmd{\textit{ResourceViewDescription}}\textmd{,
 }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa informa\c{c}\~ao sobre imagens ou outros recursos que servem
 como substitutos visuais da obra.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2353,21 +2561,24 @@ ResourceViewDescription. Inteiro que identifica a descri\c{c}\~ao.}
 \textbf{Object\_Work\_Record:}\textit{ }\'e chave estrangeira da tabela
 Object\_Work\_Record. Inteiro que identifica a obra a ser descrita.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 LinkResources\textmd{ \{}\textmd{id\_linkResources}\textmd{,
 linkResource, type, formatResource\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa uma refer\^encia uri/url que \'e universal e \'e acess\'ivel
 no ambiente worlwide web}}{\textmd{.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2382,20 +2593,23 @@ que \'e universal e \'e acess\'ivel no ambiente worlwide web.}
 \item {\bfseries
 formatResource:\textmd{ string que indica o formato do recurso.}}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 ResourcesID\textmd{ \{}\textmd{resourceID}\textmd{, type\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa um identificador \'unico num\'erico ou alfa num\'erico do
 recurso}}{\textmd{.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2404,20 +2618,24 @@ univocamente cada identificador. String definida pelo utilizador.}
 \item {
 \textbf{type:} string que representa o tipo de identificador.}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {\bfseries
 ResourceRelTypes\textmd{ \{}\textmd{id\_resourceRelType}\textmd{,
 resourceRelType\}}}
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa o relacionamento entre o recurso e a obra
 descrita}}{\textmd{.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2428,23 +2646,24 @@ incrementado;}
 \textbf{resourceRelType:} string que representa o relacionamento entre o
 recurso e a obra descrita.}
 \end{itemize}
-\end{itemize}
 
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{itemize}
 \item {\bfseries
 ResourceTypes\textmd{ \{}\textmd{id\_resourceTypes}\textmd{,
 resourceType, termsource, termsourceID\}}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
 representa a identifica\c{c}\~ao gen\'erica do meio da imagem ou outro
 recurso}}{\textmd{.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2460,14 +2679,14 @@ gen\'erica do meio da imagem ou outro recurso.}
 termsourceID\textmd{: string que representa o identificador do termo na
 fonte.}}
 \end{itemize}
-\end{itemize}
+
 
 
 \begin{itemize}
 \item {
 \textbf{ResourceViewDescriptions} \{id\_resourceViewDescriptions,
 resourceViewDescription\}}
-
+\end{itemize}
 {\bfseries
 {\textmd{\ \ }}{\textmd{Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
@@ -2475,7 +2694,10 @@ representa uma descri\c{c}\~ao dos aspetos espaciais, cronol\'ogicos ou
 contextuais da obra, tal como \'e vista neste recurso em
 espec\'ifico.}}}
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {
@@ -2487,31 +2709,25 @@ auto incrementado;}
 descri\c{c}\~ao dos aspetos espaciais, cronol\'ogicos ou contextuais da
 obra, tal como \'e vista neste recurso em espec\'ifico.}
 \end{itemize}
-\end{itemize}
 
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{Tabelas com origem em entidades e relacionamentos
-N:M}
-
+\paragraph[Tabelas com origem em entidades e relacionamentos
+N:M]{\bfseries Tabelas com origem em entidades
+e relacionamentos N:M}
+{
 As tabelas seguintes, resultam de relacionamentos N:M existentes entre
-as tabelas apresentadas anteriormente:
+as tabelas apresentadas anteriormente:}
 
-
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+% Object\_Work\_Types\_Object\_Work\_Records
 \begin{itemize}
 \item {\bfseries
 Object\_Work\_Types\_Object\_Work\_Records\textmd{
 \{}\textmd{\textit{Object\_Work\_Type}}\textmd{,
 }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 \ \ \textmd{Resultante do relacionamento N:M entre as tabelas
 Object\_Work\_Records} \textmd{e Object\_Work\_Types.}}
-\end{itemize}
 
 
 
@@ -2521,11 +2737,11 @@ Object\_Work\_Records} \textmd{e Object\_Work\_Types.}}
 SourceTitle\_Object\_Work\_Titles\textmd{
 \{}\textmd{\textit{SourceTitle}}\textmd{,
 }\textmd{\textit{Object\_Work\_Title}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas SourceTitles e
 Object\_Work\_Titles.}
-\end{itemize}
+
 
 
 
@@ -2534,26 +2750,24 @@ Object\_Work\_Titles.}
 QualifierMeasurements\_IndexingMeasurements\textmd{
 \{}\textmd{\textit{QualifierMeasurement}}\textmd{,
 }\textmd{\textit{IndexingMeasurement}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas
 QualifierMeasurements e IndexingMeasurements.}
-\end{itemize}
 
 
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{itemize}
 \item {\bfseries
 TermMaterialsTech\_IndexingMaterialsTech\textmd{
 \{}\textmd{\textit{TermMaterialsTech}}\textmd{,
 }\textmd{\textit{IndexingMaterialsTech}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 \ \ \textmd{Resultante do relacionamento N:M entre as tabelas
 TermMaterialsTech e IndexingMaterialsTech.}}
-\end{itemize}
+
 
 
 
@@ -2562,11 +2776,11 @@ TermMaterialsTech e IndexingMaterialsTech.}}
 TreatmentTypes\_ConservationTreatmentHistory\textmd{
 \{}\textmd{\textit{TreatmentType}}\textmd{,
 }\textmd{\textit{ConservationTreatmentHistory}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas TreatmentTypes e
 ConservationTreatmentHistory.}
-\end{itemize}
+
 
 
 
@@ -2575,11 +2789,11 @@ ConservationTreatmentHistory.}
 \textbf{Object\_Work\_Records\_IndexingCreators
 \{}\textit{Object\_Work\_Record}\textbf{,
 }\textit{IndexingCreator}\textbf{\}}}
-
+\end{itemize}
 {
 \textbf{\ \ }Resultante do relacionamento N:M entre as tabelas
 Object\_Work\_Records e IndexingCreators.}
-\end{itemize}
+
 
 
 
@@ -2588,11 +2802,11 @@ Object\_Work\_Records e IndexingCreators.}
 NamesCreator\_IndexingCreators\textmd{
 \{}\textmd{\textit{NameCreator}}\textmd{,
 }\textmd{\textit{IndexingCreator}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas NamesCreator e
 IndexingCreators.}
-\end{itemize}
+
 
 
 
@@ -2604,18 +2818,17 @@ IndexingCreators.}
 {
 Resultante do relacionamento N:M entre as tabelas SourceNamesCreator e
 IndexingCreators.}
-\end{itemize}
 
-\begin{itemize}
+
 \item {\bfseries
 IndexingCreators\_NationalitiesCreator\textmd{
 \{}\textmd{\textit{IndexingCreator}}\textmd{,
 }\textmd{\textit{NationalityCreator}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas IndexingCreators e
 NationalitiesCreator.}
-\end{itemize}
+
 
 
 
@@ -2624,11 +2837,11 @@ NationalitiesCreator.}
 IndexingCreators\_RolesCreator\textmd{
 \{}\textmd{\textit{IndexingCreator}}\textmd{,
 }\textmd{\textit{CreatorRole}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas IndexingCreators e
 CreatorRoles.}
-\end{itemize}
+
 
 
 
@@ -2637,11 +2850,11 @@ CreatorRoles.}
 Styles\_Object\_Work\_Records\textmd{
 \{}\textmd{\textit{Style}}\textmd{,
 }\textmd{\textit{Object\_Work\_Record}}\}}
-
+\end{itemize}
 {\bfseries
 \ \ \textmd{Resultante do relacionamento N:M entre as tabelas Styles e
 Object\_Work\_Records.}}
-\end{itemize}
+
 
 
 
@@ -2650,11 +2863,11 @@ Object\_Work\_Records.}}
 Cultures\_Object\_Work\_Records\textmd{
 \{}\textmd{\textit{Culture}}\textmd{,
 }\textmd{\textit{Object\_Work\_Record}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas Cultures e
 Object\_Work\_Records.}
-\end{itemize}
+
 
 
 
@@ -2663,11 +2876,11 @@ Object\_Work\_Records.}
 IndexingSubjects\_SubjectTerms\textmd{
 \{}\textmd{\textit{IndexingSubject}}\textmd{,
 }\textmd{\textit{SubjectTerm}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas IndexingSubjects e
 SubjectTerms.}
-\end{itemize}
+
 
 
 
@@ -2676,11 +2889,11 @@ SubjectTerms.}
 Object\_Work\_Records\_Classifications\textmd{
 \{}\textmd{\textit{Object\_Work\_Record}}\textmd{,
 }\textmd{\textit{Classification}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas
 Object\_Work\_Records e Classifications.}
-\end{itemize}
+
 
 
 
@@ -2689,11 +2902,11 @@ Object\_Work\_Records e Classifications.}
 DescriptiveNotes\_DescriptiveNoteSources\textmd{
 \{}\textmd{\textit{DescriptiveNote}}\textmd{,
 }\textmd{\textit{DescriptiveNoteSource}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas DescriptiveNotes e
 DescriptiveNotesSources.}
-\end{itemize}
+
 
 
 
@@ -2702,11 +2915,11 @@ DescriptiveNotesSources.}
 ResourceRelTypes\_Resources\textmd{
 \{}\textmd{\textit{ResourceRelType}}\textmd{,
 }\textmd{\textit{Resource}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas ResourceRelTypes e
 Resources.}
-\end{itemize}
+
 
 
 
@@ -2715,27 +2928,34 @@ Resources.}
 ResourceTypes\_Resources\textmd{
 \{}\textmd{\textit{ResourceType}}\textmd{,
 }\textmd{\textit{Resource}}\textmd{\}}}
-
+\end{itemize}
 {
 \ \ Resultante do relacionamento N:M entre as tabelas ResourcesTypes e
 Resources.}
-\end{itemize}
-%% INICIO - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% FIM - %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\textbf{Tabelas para a gera\c{c}\~ao
+
+
+
+
+\paragraph[Tabelas para a gera\c{c}\~ao de salas de
+exposi\c{c}\~ao]{ Tabelas para a gera\c{c}\~ao
 de salas de exposi\c{c}\~ao}
 {
 Estas tabelas resultam da necessidade de armazenar os meta-dados
 relativos \`as exposi\c{c}\~oes e \`as respetivas salas.}
 
 
+
+
 \begin{itemize}
 \item {\bfseries
 Exhibitions\textmd{ \{}\textmd{id\_exhibition}\textmd{, name,
 description, image\_path, deleted\}}}
+\end{itemize}
+{
+\ \ Armazena os meta-dados relativos a uma exposi\c{c}\~ao.}
 
-{Armazena os meta-dados relativos a uma exposi\c{c}\~ao.}
+
 
 {Atributos:}
 
@@ -2755,18 +2975,22 @@ automaticamente \`a imagem associada \`a exposi\c{c}\~ao;}}
 deleted:\textmd{ inteiro que indica se a exposi\c{c}\~ao foi removida ou
 n\~ao.}}
 \end{itemize}
-\end{itemize}
 
 
+iii
 \begin{itemize}
 \item {\bfseries
 Rooms\textmd{ \{}\textmd{id\_room}\textmd{, name, description, path,
 image\_path, deleted\}}}
+\end{itemize}
+{
+\ \ Armazena os emta-dados relativos a uma sala de exposi\c{c}\~ao.}
 
-{Armazena os emta-dados relativos a uma sala de exposi\c{c}\~ao.}
+
 
 {Atributos:}
 
+\liststyleLxix
 \begin{itemize}
 \item {
 \textbf{id\_room:} \'e chave prim\'aria, j\'a que identifica
@@ -2786,21 +3010,24 @@ automaticamente \`a imagem associada \`a sala;}
 \textbf{deleted:} inteiro que indica se a sala foi removida ou
 n\~ao.\ \ }
 \end{itemize}
-\end{itemize}
 
 
+iii
 \begin{itemize}
 \item {\bfseries
 Exhibitions\_Rooms
 \textmd{\{}\textmd{\textit{Exhibitionsid\_exhibition}}\textmd{,
 }\textmd{\textit{Roomsid\_room}}\textmd{, ord\_nr,
 ord\_def\_by\_user\}}}
-
+\end{itemize}
 {\bfseries
 \textmd{\ \ Resultante do relacionamento N:M entre as tabelas
 Exhibitions e Rooms.}\ \ }
 
+
+
 {Atributos:}
+
 
 \begin{itemize}
 \item {\bfseries
@@ -2811,247 +3038,603 @@ ord\_def\_by\_user:\textmd{ inteiro que indica se o n\'umero de
 ordena\c{c}\~ao foi atribu\'ido automaticamente ou definido pelo
 utilizador.}}
 \end{itemize}
-\end{itemize}
 
 
+iii
 \begin{itemize}
 \item {\bfseries
 Exhibitions\_SubjectTerms\textmd{
 \{}\textmd{\textit{Exhibitionsid\_exhibition}}\textmd{,
 }\textmd{\textit{SubjectTermsid\_subjectTerms}}\textmd{\}}}
-
+\end{itemize}
 {\bfseries
 \textmd{\ \ Resultante do relacionamento N:M entre as tabelas
 Exhibitions e SubjectTerms.}\ \ }
-\end{itemize}
-
-\subsubsection{Escolha do Motor de Base de Dados}
-A escolha do motor de Base de Dados a utilizar revelou-se imediata visto que estamos a utilizar o web server Apache XAMPP, que contém MySQL, PHP e Perl, daí que o motor escolhido foi MySQL. Para além disso, este motor fornece capacidades de escalabilidade, controlo de concorrência e é open source.
 
 
-\subsection{Algoritmos}
-Nesta secção são apresentados os diferentes casos referentes aos meta-dados já existentes no formato digital do Museu da Emigração e das Comunidades de Fafe e o respetivos processos de extração, transformação e carregamento para o repositório.
 
-\subsubsection{Zincogravuras}
-Os recursos fornecidos que continham os meta-dados de zincogravuras eram constituídos por um único documento Word contendo meta-dados referentes a 933 zincogravuras e uma pasta contendo as imagens de cada uma das zincogravuras com a particularidade do nome de cada ficheiro corresponder ao número de inventário da zincogravura correspondente o que facilita a associação entre ambos.
 
-\textbf{Extração}
-O documento Word fornecido continha os meta-dados bem estruturados, sendo que cada zincogravura fazia-se distinguir de outras através da utilização de múltiplas linhas em branco, desta forma detetámos o elemento de quebra para cada zincogravura. 
-De seguida, era necessário identificar os atributos e respetivos valores para cada zincogravura. Esta parte também se revelou fácil, visto que cada atributo mantinha sempre a mesma label e desta forma detetámos elementos para extrair os meta-dados.
 
-Para proceder à parte da extração criámos uma script utilizando a linguagem de programação Perl visto tratar-se uma linguagem que torna fácil este tipo de processos. Para extrair o texto do corpo do documento Word, utilizámos um módulo Perl (\verb|Text::Extract::Word|) que o possibilita através de uma única chamada a uma função fornecida por esse módulo. As seguintes linhas de código ilustram essa extração:
-\begin{verbatim}
-my $file = Text::Extract::Word->new($origin); # Passed either a file name or an open file 
-handle, this constructor returns an instance that can be used to query the file contents. 
 
-my $body = $file->get_body(); # Returns the text for the main body of the Word document.
-This excludes headers, footers, and annotations.
-\end{verbatim}
 
-\textbf{Transformação}
-Tendo acesso ao texto extraído do documento em memória, o processo de transformação pode ser iniciado.
+\subsubsection[\ Escolha do Motor de Base de
+Dados]{ \ Escolha do Motor de Base de Dados}
+{
+A escolha do motor de Base de Dados a utilizar revelou-se imediata visto
+que estamos a utilizar o web server Apache XAMPP, que cont\'em MySQL,
+PHP e Perl, da\'i que o motor escolhido foi MySQL. Para al\'em disso,
+este motor fornece capacidades de escalabilidade, controlo de
+concorr\^encia e \'e open source.}
 
-Começámos por fazer uma limpeza de certos elementos textuais que dificultavam o parsing dos elementos identificados anteriormente. E de seguida efetuámos uma substituição das labels de cada atributo por outras mais limpas e mais simples sem caracteres especiais (ex: '/') ou acentos. Esta transformação também foi necessária porque as labels originais foram, possivelmente, escritas à mão e existiam alguns casos em que estas nem sempre eram iguais possuindo, por exemplo, um acento numa zincogravura e noutra não, ou abreviações de palavras numas e noutras não.
 
-Este processo não foi obtido apenas com uma iteração, uma análise cuidada aos dados originais e observação dos resultados obtidos da transformação em cada nova iteração, levou a que pequenas alterações fossem feitas a este processo, obtendo no final o seguinte código:
 
-\begin{verbatim}
-    $body =~ s/´+//g; # Limpa lixo 
-    $body =~ s/\n[ \t]+\n//g; # Limpa lixo 
-    $body =~ s/\n{2,}/\n\n/g; # Limpa \n a mais 
-    $body =~ s/Denominação\/T[ií]tulo/dt/g; # 
-    $body =~ s/Autor\/Produção/ap/g; # 
-    $body =~ s/Datação/dat/g; # 
-    $body =~ s/Dimensões/dim/g; # 
-    $body =~ s/[ \t]*(Nº|Número) de Inventário/ni/g; # 
-    $body =~ s/Descrição/desc/g; # 
-    $body =~ s/Impress[ao] no/imp:/g; # 
-    $body =~ s/Proveniência:?\/Incorporação/pi/g; # 
-    $body =~ s/&/&amp;/g; # 
 
-    $body = trim($body); 
-\end{verbatim}
 
-\textbf{Carregamento para documento XML}
-Após a transformação dos meta-dados originais e estando estes acessíveis em memória, só restava o carregamento destes para uma estrutura. Como adotámos a norma CDWA e nos baseámos no schema CDWA Lite, optámos por carregá-los para um documento XML que fosse válido segundo esse schema.
 
-Este processo consiste, então, na iteração de todas as linhas do documento Word que está em memória. Se o elemento de quebra não for detetado numa dessas linhas então trata-se de um atributo de uma zincogravura e este é inserido numa hash com a seguinte estrutura (label\_atributo => valor\_atributo), a utilidade desta hash será explicada de seguida.
 
-No entanto, se for detetado o elemento de quebra, significa que todos os elementos de uma zincogravura já foram iterados e estes estão presentes na hash mencionada anteriormente. Então, esta hash é utilizada para alimentar uma função de escrita destes atributos de uma zincogravura no ficheiro XML final. Após esta escrita, a hash é ?limpa? para que os atributos da próxima zincogravura possam ser adicionados.
+\subsection[Algoritmos]{ Algoritmos}
+{
+Nesta sec\c{c}\~ao s\~ao apresentados os diferentes casos referentes aos
+meta-dados j\'a existentes no formato digital do Museu da
+Emigra\c{c}\~ao e das Comunidades de Fafe e o respetivos processos de
+extra\c{c}\~ao, transforma\c{c}\~ao e carregamento para o
+reposit\'orio.}
 
-Eis a função que executa este processo:
-\begin{verbatim}
-# Escreve para um ficheiro xml ($destiny) o documento Word estruturado segundo o cdwa-lite.
-Invoca funcoes auxiliares. 
-sub writeGravs { 
-    my $text_word = shift; 
-    my %cdwa = (); 
+\subsubsection[Zincogravuras]{ Zincogravuras}
+{
+Os recursos fornecidos que continham os meta-dados de zincogravuras eram
+constitu\'idos por um \'unico documento Word contendo meta-dados
+referentes a 933 zincogravuras e uma pasta contendo as imagens de cada
+uma das zincogravuras com a particularidade do nome de cada ficheiro
+corresponder ao n\'umero de invent\'ario da zincogravura correspondente
+o que facilita a associa\c{c}\~ao entre ambos.}
 
-    open (F, ">:utf8",$destiny); 
-    print F "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"; 
-    print F "<cdwaliteWrap xmlns=\"http://www.getty.edu/CDWA/CDWALite\" 
-    >\n"; 
+\paragraph[Extra\c{c}\~ao]{ Extra\c{c}\~ao}
+{
+O documento Word fornecido continha os meta-dados bem estruturados,
+sendo que cada zincogravura fazia-se distinguir de outras atrav\'es da
+utiliza\c{c}\~ao de m\'ultiplas linhas em branco, desta forma
+detet\'amos o elemento de quebra para cada zincogravura. }
 
-    # divide cada linha do documento word. ainda nao tem informacao do que é ou nao uma peça 
-    my @line_text_word = split "\n", $text_word; 
-    if (scalar @line_text_word != 0) { 
-        foreach(@line_text_word) { 
-            # se varios \s forem encontrados (elemento de quebra; o que distingue uma peça
-             de outra no documento) processa os elementos capturados ate a quebra e sao
-              impressos no formato XML 
-            if (/^\s*$/){ 
-                print F "<cdwalite>\n"; 
-                print F printGravura(\%cdwa); 
-                print F "</cdwalite>\n"; 
-                %cdwa = (); 
-            } 
-            # caso contrario, trata-se de um campo da mesma peca da iteracao anterior 
-            elsif($_ =~ /([^:]+):(.*)/) { 
-                my $value = trim($2); 
-                %cdwa = getValue(\%cdwa, $1, $value); 
-            } 
-        } 
-    } 
-    print F "</cdwaliteWrap>"; 
-    close F; 
+{
+De seguida, era necess\'ario identificar os atributos e respetivos
+valores para cada zincogravura. Esta parte tamb\'em se revelou f\'acil,
+visto que cada atributo mantinha sempre a mesma \textit{label} e desta
+forma detet\'amos elementos para extrair os meta-dados.}
+
+
+
+{
+Para proceder \`a parte da extra\c{c}\~ao cri\'amos uma script
+utilizando a linguagem de programa\c{c}\~ao Perl visto tratar-se uma
+linguagem que torna f\'acil este tipo de processos. Para extrair o
+texto do corpo do documento Word, utiliz\'amos um m\'odulo Perl
+(\textit{Text::Extract::Word}) que o possibilita atrav\'es de uma
+\'unica chamada a uma fun\c{c}\~ao fornecida por esse m\'odulo. As
+seguintes linhas de c\'odigo ilustram essa extra\c{c}\~ao:}
+
+{
+\ \ \ \ my \$file = Text::Extract::Word-{\textgreater}new(\$origin); \#
+Passed either a file name or an open file handle, this constructor
+returns an instance that can be used to query the file contents. }
+
+{
+\ \ \ \ my \$body = \$file-{\textgreater}get\_body(); \# Returns the
+text for the main body of the Word document. This excludes headers,
+footers, and annotations.}
+
+
+
+\paragraph[Transforma\c{c}\~ao]{
+Transforma\c{c}\~ao}
+{
+Tendo acesso ao texto extra\'ido do documento em mem\'oria, o processo
+de transforma\c{c}\~ao pode ser iniciado.}
+
+{
+Come\c{c}\'amos por fazer uma limpeza de certos elementos textuais que
+dificultavam o parsing dos elementos identificados anteriormente. E de
+seguida efetu\'amos uma substitui\c{c}\~ao das labels de cada atributo
+por outras mais limpas e mais simples sem caracteres especiais (ex:
+{\textquotesingle}/{\textquotesingle}) ou acentos. Esta
+transforma\c{c}\~ao tamb\'em foi necess\'aria porque as labels
+originais foram, possivelmente, escritas \`a m\~ao e existiam alguns
+casos em que estas nem sempre eram iguais possuindo, por exemplo, um
+acento numa zincogravura e noutra n\~ao, ou abrevia\c{c}\~oes de
+palavras numas e noutras n\~ao.}
+
+{
+Este processo n\~ao foi obtido apenas com uma itera\c{c}\~ao, uma
+an\'alise cuidada aos dados originais e observa\c{c}\~ao dos resultados
+obtidos da transforma\c{c}\~ao em cada nova itera\c{c}\~ao, levou a que
+pequenas altera\c{c}\~oes fossem feitas a este processo, obtendo no
+final o seguinte c\'odigo:}
+
+{
+\ \ \ \ \$body =\~{} s/{\textasciiacute}+//g; \# Limpa lixo }
+
+{
+\ \ \ \ \$body =\~{} s/{\textbackslash}n[
+{\textbackslash}t]+{\textbackslash}n//g; \# Limpa lixo }
+
+{
+\ \ \ \ \$body =\~{}
+s/{\textbackslash}n\{2,\}/{\textbackslash}n{\textbackslash}n/g; \#
+Limpa {\textbackslash}n a mais }
+
+{
+\ \ \ \ \$body =\~{}
+s/Denomina\c{c}\~ao{\textbackslash}/T[i\'i]tulo/dt/g; \# }
+
+{
+\ \ \ \ \$body =\~{} s/Autor{\textbackslash}/Produ\c{c}\~ao/ap/g; \# }
+
+{
+\ \ \ \ \$body =\~{} s/Data\c{c}\~ao/dat/g; \# }
+
+{
+\ \ \ \ \$body =\~{} s/Dimens\~oes/dim/g; \# }
+
+{
+\ \ \ \ \$body =\~{} s/[
+{\textbackslash}t]*(N{\textordmasculine}{\textbar}N\'umero) de
+Invent\'ario/ni/g; \# }
+
+{
+\ \ \ \ \$body =\~{} s/Descri\c{c}\~ao/desc/g; \# }
+
+{
+\ \ \ \ \$body =\~{} s/Impress[ao] no/imp:/g; \# }
+
+{
+\ \ \ \ \$body =\~{}
+s/Proveni\^encia:?{\textbackslash}/Incorpora\c{c}\~ao/pi/g; \# }
+
+{
+\ \ \ \ \$body =\~{} s/\&/\&amp;/g; \# }
+
+
+
+{
+\ \ \ \ \$body = trim(\$body); }
+
+\paragraph[Carregamento para documento XML]{
+Carregamento para documento XML}
+{
+Ap\'os a transforma\c{c}\~ao dos meta-dados originais e estando estes
+acess\'iveis em mem\'oria, s\'o restava o carregamento destes para uma
+estrutura. Como adot\'amos a norma CDWA e nos base\'amos no schema CDWA
+Lite, opt\'amos por carreg\'a-los para um documento XML que fosse
+v\'alido segundo esse schema.}
+
+{
+Este processo consiste, ent\~ao, na itera\c{c}\~ao de todas as linhas do
+documento Word que est\'a em mem\'oria. Se o elemento de quebra n\~ao
+for detetado numa dessas linhas ent\~ao trata-se de um atributo de uma
+zincogravura e este \'e inserido numa hash com a seguinte estrutura
+(label\_atributo ={\textgreater} valor\_atributo), a utilidade desta
+hash ser\'a explicada de seguida.}
+
+{
+No entanto, se for detetado o elemento de quebra, significa que todos os
+elementos de uma zincogravura j\'a foram iterados e estes est\~ao
+presentes na hash mencionada anteriormente. Ent\~ao, esta hash \'e
+utilizada para alimentar uma fun\c{c}\~ao de escrita destes atributos
+de uma zincogravura no ficheiro XML final. Ap\'os esta escrita, a hash
+\'e {\textquotedblleft}limpa{\textquotedblright} para que os atributos
+da pr\'oxima zincogravura possam ser adicionados.}
+
+{
+Eis a fun\c{c}\~ao que executa este processo:}
+
+{
+\# Escreve para um ficheiro xml (\$destiny) o documento Word estruturado
+segundo o cdwa-lite. Invoca funcoes auxiliares. }
+
+{
+sub writeGravs \{ }
+
+{
+\ \ \ \ my \$text\_word = shift; }
+
+{
+\ \ \ \ my \%cdwa = (); }
+
+
+
+{
+\ \ \ \ open (F,
+{\textquotedbl}{\textgreater}:utf8{\textquotedbl},\$destiny); }
+
+{
+\ \ \ \ print F {\textquotedbl}{\textless}?xml
+version={\textbackslash}{\textquotedbl}1.0{\textbackslash}{\textquotedbl}
+encoding={\textbackslash}{\textquotedbl}UTF-8{\textbackslash}{\textquotedbl}?{\textgreater}{\textbackslash}n{\textquotedbl};
 }
-\end{verbatim}
 
-Finalmente falta apenas fazer uma pequena explicação da função que escreve uma zincogravura no ficheiro XML. 
+{
+\ \ \ \ print F {\textquotedbl}{\textless}cdwaliteWrap
+xmlns={\textbackslash}{\textquotedbl}http://www.getty.edu/CDWA/CDWALite{\textbackslash}{\textquotedbl}
+}
 
-Nesta função é feito um mapeamento entre os atributos presentes na hash passada à função e os elementos correspondentes no schema CDWA Lite. Os atributos fornecidos no documento Word não possuem todos os elementos obrigatórios segundo o CDWA, por isso alguns elementos, que apesar de não possuírem valor, são escritos no ficheiro XML final.
-
-É feita uma grande utilização de expressões regulares sobre os valores dos atributos, como por exemplo, no atributo correspondente às medidas, para que se possa saber quais o valores correspondentes à altura, largura ou mesmo diâmetro e qual a unidade desse valor. Também, para extrair os meta-dados referentes às obras relacionadas, ou seja, onde e quando é que a zincogravura foi impressa.
-
-\textbf{Carregamento para o repositório}
-Após criação do documento XML, resta apenas o carregamento destes meta-dados para o repositório, utilizando para isso o documento XML.
-Este carregamento é feito através de outra script Perl. Nesta script foi utilizada um módulo Perl (XML::Simple) para que fosse possível transformar o documento XML num objeto em memória, assim como a sua navegação.
-Como esta script será utilizada após a script correspondente à dos meta-dados das fotografias, são utilizados alguns contadores que iniciam com determinados valores e servirão para povoar os identificadores de algumas tabelas na base de dados.
-Este processo decorre através da iteração de cada elemento correspondente a uma obra de arte. Em cada iteração, é feito um mapeamento entre cada elemento (se este possuir valor) e uma instrução SQL (MySQL).
-
-Ambas as scripts podem ser consultadas na pasta Codigo/Scripts.
-
-\subsection{Plataforma Web}
-
-\subsubsection{Back office}
-
-Um dos principais requisitos é a parte de gestão e manutenção de toda a plataforma, nós com a ajuda da Yii Framework implementámos todas essas funcionalidades. O back office baseia-se essencialmente em formulários que permitem enriquecer, ou mesmo alterar/elimiar, o conteúdo disponível no MV.
-
-Tendo em conta que usámos a metodologia MVC, algumas das terefas necessárias foram geradas recorrendo à ajuda da própria framework. Através da Gii (uma extensão da Yii Framework) é possível gerar algumas tarefas basicas, designadas por CRUD (acrônimo de Create, Read, Update e Delete), para todas as tabelas que existiam na Base de Dados, foram geradas estas operações sendo assim possível logo à partida conseguir manusear a informação no repositório.
-
-Apesar de terem sido gerados os formulários para as várias operações, foi necessário criar novos ou fazer alterações nos que já existiam. As alterações nos que já existiam foram essencialmente a nível de chaves estrangeiras, ou seja, em vez de se ter de colocar o valor número correspondente ao ID de algo que se pretendia associar, em alguns casos colocamos comboboxs para o utilizador seleccionar a opção pretendida.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{imagens/form1.png}
-\caption{Formulário para inserir uma nova peça - Exemplo de um formulário criado por nós}
-\end{figure}
-
-Existe ainda uma página chama de "Administração" onde é possível ver todos os registos que existe de uma determinada tabela e ter acesso às operações de Ver, Editar e Eliminar.
-
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{imagens/form2.png}
-\caption{Página de adminstração das peças}
-\end{figure}
+{
+\ \ \ \ {\textgreater}{\textbackslash}n{\textquotedbl}; }
 
 
-\subsubsection{Front office}
-O front office e o back office partilham a mesma plataforma, no entanto as operações de back office só estão disponíveis caso o utilizador esteja logado.
 
-Praticamente todas as páginas do site apresentam a seguinte estrutura:
+{
+\ \ \ \ \# divide cada linha do documento word. ainda nao tem informacao
+do que \'e ou nao uma pe\c{c}a }
 
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{imagens/esq.png}
-\caption{Esquema das páginas}
-\end{figure}
+{
+\ \ \ \ my @line\_text\_word = split
+{\textquotedbl}{\textbackslash}n{\textquotedbl}, \$text\_word; }
 
-A nossa página está dividida em 4 áreas:
-\begin{enumerate}
-\item - Cabeçalho
-\item - Menu
-\item - Conteúdo da página
-\item - Operações disponíveis, só aparece caso o utilizador esteja logado.
-\end{enumerate}
+{
+\ \ \ \ if (scalar @line\_text\_word != 0) \{ }
 
-Os registos principais das peças que existem são as obras de arte e um utilizador exigente não se limita a ficar satisfeito em ver apenas a descrição de uma obra de arte, vai querer ver outras peças relacionadas, fazer comentários e até partilhar através das redes sociais, por isso uma página para mostrar uma peça de arte está estruturada apresentada a seguir.
+{
+\ \ \ \ \ \ \ \ foreach(@line\_text\_word) \{ }
 
-Começa por apresentar os detalhes da obra de arte.
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{imagens/img2.png}
-\caption{Detalhes de uma obra}
-\end{figure}
+{
+\ \ \ \ \ \ \ \ \ \ \ \ \# se varios {\textbackslash}s forem encontrados
+(elemento de quebra; o que distingue uma pe\c{c}a de outra no
+documento) processa os elementos capturados ate a quebra e sao
+impressos no formato XML }
 
-Apresenta as peças que estao de alguma forma relacionadas com a que está a ser vista.
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{imagens/img3.png}
-\caption{Área onde mostra obras relacionadas}
-\end{figure}
+{
+\ \ \ \ \ \ \ \ \ \ \ \ if (/\^{}{\textbackslash}s*\$/)\{ }
 
-Existe ainda uma área onde se pode partilhar a obra de arte ou fazer comentários.
-\begin{figure}[H]
-\centering
-\includegraphics[scale=0.4]{imagens/img5.png}
-\caption{Área social - partilhar e fazer comentários}
-\end{figure}
+{
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print F
+{\textquotedbl}{\textless}cdwalite{\textgreater}{\textbackslash}n{\textquotedbl};
+}
 
-Os comentários são importantes porque podem servir para um utilizador comum ajudar a enriquecer o repositório.
+{
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print F
+printGravura({\textbackslash}\%cdwa); }
 
+{
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ print F
+{\textquotedbl}{\textless}/cdwalite{\textgreater}{\textbackslash}n{\textquotedbl};
+}
 
-\subsection{Salas de Exposição do Museu}
-Um dos objetivos propostos para este projeto passava pela geração automática de espaços de aprendizagem na forma de salas de exposição do museu. É então possível a criação de exposições que são um conjunto de salas e cuja navegação sobre essa salas segue uma ordem que pode ser definida pela ordem de criação da sala ou pelo utilizador. Essa mesma ordem é exibida aquando da listagem das salas de uma exposição. Cada exposição possui um nome, uma descrição do tema da exposição, uma imagem e um conjunto de tags que descrevem o que é exibido na exposição. 
+{
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \%cdwa = (); }
 
-Numa sala de exposição é possível ver os objetos em exposição devidamente relacionados entre si de forma a transmitir o conhecimento correspondente ao tema dessa exposição. Este tema, ou conhecimento a transmitir, é descrito por um conjunto de funções, em que cada uma delas, extrai os objetos do arquivo de acordo com determinados argumentos definidos para essas funções e cria os links apropriados. Também é possível definir o layout pretendido para uma sala de exposição. Assim como a exposição, uma sala possui um nome, uma descrição do tema da sala e uma imagem associada ao tema.
+{
+\ \ \ \ \ \ \ \ \ \ \ \ \} }
 
-\subsubsection{Geração de Salas de Exposição}
-Para a geração de salas definimos uma DSL1 em XML que permite a especificação dos meta-dados de uma sala, tais como a exposição a que pertence, o nome, a descrição e os objetos que serão exibidos na sala, sendo cada objeto constituído por um tipo de objeto (indica o tipo dos objetos a apresentar em que cada tipo corresponde a uma função que aplica determinados filtros às obras) e uma lista de argumentos (que complementam os filtros utilizados na função do tipo selecionado). O input desta DSL e os restantes meta-dados, a imagem, o número de ordenação da sala e o layout pretendido para a exibição da sala são capturados através de um formulário.
+{
+\ \ \ \ \ \ \ \ \ \ \ \ \# caso contrario, trata-se de um campo da mesma
+peca da iteracao anterior }
 
-Neste formulário, antes de os meta-dados serem submetidos, uma validação do input da DSL segundo o schema XSD criado (o schema XSD pode ser consultado em anexo) é realizada, assim como uma validação da não existência da exposição mencionada e da não existência de uma sala com o nome especificado na exposição especificada.
+{
+\ \ \ \ \ \ \ \ \ \ \ \ elsif(\$\_ =\~{} /([\^{}:]+):(.*)/) \{ }
 
-Após validação, é iniciado um processo de transformação do input da DSL para aquela que será a sala em formato PHP especificada na DSL, assim como o armazenamento dos seus meta-dados na base de dados.
+{
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ my \$value = trim(\$2); }
 
-Este processo consiste na criação de um ficheiro PHP que será a sala criada. Nela constarão os meta-dados especificados, sendo que estes serão simplesmente impressos na sala PHP, no entanto os objetos que serão exibidos na sala não seguem esse procedimento. Para que o respetivo código de extração das obras pretendidas para um objeto seja possível, um documento XML foi criado, que contém um mapeamento entre os tipos de objetos existentes na DSL e um extrato de código (este ficheiro pode ser consultado em componentes/conceitos.xml). Esse código é o responsável pela extração das obras do arquivo e apresentação dos mesmos no site. O código possui embutido em si mesmo, palavras reservadas (envolvidas por dois caracteres '\%') correspondentes a determinados argumentos necessários à devida extração dos objetos. Um exemplo de um mapeamento existente no documento XML é apresentado de seguida:
+{
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \%cdwa =
+getValue({\textbackslash}\%cdwa, \$1, \$value); }
 
-\lstinputlisting[language=XML]{code/xml1.txt}
+{
+\ \ \ \ \ \ \ \ \ \ \ \ \} }
 
-O armazenamento dos meta-dados na base de dados tem em conta o número de ordenação da sala definido ou não pelo utilizador. Isto é, se o utilizador não o definir então a nova sala será a consequente à última sala já existente nessa exposição, ou seja, a ordem é a da data de criação das salas. 
+{
+\ \ \ \ \ \ \ \ \} }
 
-Já se o utilizador definir um número de ordenação este é atribuído à sala. Caso o número esteja compreendido no âmbito de salas existentes, isto é, se o utilizador especificar que a sala será a sala número 100 quando só existem 5 salas nessa exposição, então esta sala será a última dessa exposição. Caso o número esteja compreendido no âmbito de salas existentes, esse número é atribuído à sala e as restantes salas cujo número de ordenação seja igual ou superior a esse número sofrem um alteração, passando 1 unidade acima, ou seja, existe uma reordenação das salas.
+{
+\ \ \ \ \} }
 
-Finalmente, à sala gerada é anexado um sistema de navegação entre salas, sistema este que consiste num link que para a sala imediatamente anterior a essa sala e outro para aquela imediatamente posterior.
+{
+\ \ \ \ print F
+{\textquotedbl}{\textless}/cdwaliteWrap{\textgreater}{\textquotedbl}; }
 
+{
+\ \ \ \ close F; }
 
-\section{Codificação e Testes}
-\subsection{Alternativas, Decisões e Problemas de Implementação}
-\subsection{Testes realizados e Resultados}
-
-Mostram-se a seguir alguns testes feitos (valores introduzidos) e os
-respectivos resultados obtidos:
-
-\begin{Verbatim}
-  Input:
-
-  7
-
-  Output:
-
-  1 1 2 3 5 8 13
-\end{Verbatim}
+{
+\}}
 
 
-\section{Conclusões}
-Síntese do Documento.\\
-Estado final do projecto. Análise crítica dos resultados.\\
-Sugestões para trabalho futuro.
 
-\appendix
-\section{Código do Programa}
+{
+Finalmente falta apenas fazer uma pequena explica\c{c}\~ao da
+fun\c{c}\~ao que escreve uma zincogravura no ficheiro XML. }
 
-Lista-se a seguir o código \textsf{C} do programa que foi
-desenvolvido.
+{
+Nesta fun\c{c}\~ao \'e feito um mapeamento entre os atributos presentes
+na hash passada \`a fun\c{c}\~ao e os elementos correspondentes no
+schema CDWA Lite. Os atributos fornecidos no documento Word n\~ao
+possuem todos os elementos obrigat\'orios segundo o CDWA, por isso
+alguns elementos, que apesar de n\~ao possu\'irem valor, s\~ao escritos
+no ficheiro XML final.}
+
+{
+\'E feita uma grande utiliza\c{c}\~ao de express\~oes regulares sobre os
+valores dos atributos, como por exemplo, no atributo correspondente
+\`as medidas, para que se possa saber quais o valores correspondentes
+\`a altura, largura ou mesmo di\^ametro e qual a unidade desse valor.
+Tamb\'em, para extrair os meta-dados referentes \`as obras
+relacionadas, ou seja, onde e quando \'e que a zincogravura foi
+impressa.}
+
+\paragraph[Carregamento para o reposit\'orio]{
+Carregamento para o reposit\'orio}
+{
+Ap\'os cria\c{c}\~ao do documento XML, resta apenas o carregamento
+destes meta-dados para o reposit\'orio, utilizando para isso o
+documento XML.}
+
+{
+Este carregamento \'e feito atrav\'es de outra script Perl. Nesta script
+foi utilizada um m\'odulo Perl (\textit{XML::Simple}) para que fosse
+poss\'ivel transformar o documento XML num objeto em mem\'oria, assim
+como a sua navega\c{c}\~ao.}
+
+{
+Como esta script ser\'a utilizada ap\'os a script correspondente \`a dos
+meta-dados das fotografias, s\~ao utilizados alguns contadores que
+iniciam com determinados valores e servir\~ao para povoar os
+identificadores de algumas tabelas na base de dados.}
+
+{
+Este processo decorre atrav\'es da itera\c{c}\~ao de cada elemento
+correspondente a uma obra de arte. Em cada itera\c{c}\~ao, \'e feito um
+mapeamento entre cada elemento (se este possuir valor) e uma
+instru\c{c}\~ao SQL (MySQL).}
 
 
+
+{
+Ambas as scripts podem ser consultadas na pasta Codigo/Scripts.}
+
+
+
+\section[Website]{ Website}
+\subsection[Salas de Exposi\c{c}\~ao do Museu]{
+Salas de Exposi\c{c}\~ao do Museu}
+{
+Um dos objetivos propostos para este projeto passava pela gera\c{c}\~ao
+autom\'atica de espa\c{c}os de aprendizagem na forma de salas de
+exposi\c{c}\~ao do museu. \'E ent\~ao poss\'ivel a cria\c{c}\~ao de
+exposi\c{c}\~oes que s\~ao um conjunto de salas e cuja navega\c{c}\~ao
+sobre essa salas segue uma ordem que pode ser definida pela ordem de
+cria\c{c}\~ao da sala ou pelo utilizador. Essa mesma ordem \'e exibida
+aquando da listagem das salas de uma exposi\c{c}\~ao. Cada
+exposi\c{c}\~ao possui um nome, uma descri\c{c}\~ao do tema da
+exposi\c{c}\~ao, uma imagem e um conjunto de tags que descrevem o que
+\'e exibido na exposi\c{c}\~ao. }
+
+{
+Numa sala de exposi\c{c}\~ao \'e poss\'ivel ver os objetos em
+exposi\c{c}\~ao devidamente relacionados entre si de forma a transmitir
+o conhecimento correspondente ao tema dessa exposi\c{c}\~ao. Este tema,
+ou conhecimento a transmitir, \'e descrito por um conjunto de
+fun\c{c}\~oes, em que cada uma delas, extrai os objetos do arquivo de
+acordo com determinados argumentos definidos para essas fun\c{c}\~oes e
+cria os links apropriados. Tamb\'em \'e poss\'ivel definir o layout
+pretendido para uma sala de exposi\c{c}\~ao. Assim como a
+exposi\c{c}\~ao, uma sala possui um nome, uma descri\c{c}\~ao do tema
+da sala e uma imagem associada ao tema.}
+
+
+
+\subsubsection[Gera\c{c}\~ao de Salas de
+Exposi\c{c}\~ao]{ Gera\c{c}\~ao de Salas de
+Exposi\c{c}\~ao}
+{
+Para a gera\c{c}\~ao de salas definimos uma DSL\footnote{DSL: Uma
+linguagem de programa\c{c}\~ao ou linguagem de especifica\c{c}\~ao
+dedicada um problema de dom\'inio espec\'ifico.} em XML que permite a
+especifica\c{c}\~ao dos meta-dados de uma sala, tais como a
+exposi\c{c}\~ao a que pertence, o nome, a descri\c{c}\~ao e os objetos
+que ser\~ao exibidos na sala, sendo cada objeto constitu\'ido por um
+tipo de objeto (indica o tipo dos objetos a apresentar em que cada tipo
+corresponde a uma fun\c{c}\~ao que aplica determinados filtros \`as
+obras) e uma lista de argumentos (que complementam os filtros
+utilizados na fun\c{c}\~ao do tipo selecionado). O input desta DSL e os
+restantes meta-dados, a imagem, o n\'umero de ordena\c{c}\~ao da sala e
+o layout pretendido para a exibi\c{c}\~ao da sala s\~ao capturados
+atrav\'es de um formul\'ario.}
+
+{
+Neste formul\'ario, antes de os meta-dados serem submetidos, uma
+valida\c{c}\~ao do input da DSL segundo o schema XSD criado (o schema
+XSD pode ser consultado em anexo) \'e realizada, assim como uma
+valida\c{c}\~ao da n\~ao exist\^encia da exposi\c{c}\~ao mencionada e
+da n\~ao exist\^encia de uma sala com o nome especificado na
+exposi\c{c}\~ao especificada.}
+
+{
+Ap\'os valida\c{c}\~ao, \'e iniciado um processo de transforma\c{c}\~ao
+do input da DSL para aquela que ser\'a a sala em formato PHP
+especificada na DSL, assim como o armazenamento dos seus meta-dados na
+base de dados.}
+
+{
+Este processo consiste na cria\c{c}\~ao de um ficheiro PHP que ser\'a a
+sala criada. Nela constar\~ao os meta-dados especificados, sendo que
+estes ser\~ao simplesmente impressos na sala PHP, no entanto os objetos
+que ser\~ao exibidos na sala n\~ao seguem esse procedimento. Para que o
+respetivo c\'odigo de extra\c{c}\~ao das obras pretendidas para um
+objeto seja poss\'ivel, um documento XML foi criado, que cont\'em um
+mapeamento entre os tipos de objetos existentes na DSL e um extrato de
+c\'odigo (este ficheiro pode ser consultado em
+componentes/conceitos.xml). Esse c\'odigo \'e o respons\'avel pela
+extra\c{c}\~ao das obras do arquivo e apresenta\c{c}\~ao dos mesmos no
+site. O c\'odigo possui embutido em si mesmo, palavras reservadas
+(envolvidas por dois caracteres {\textquotesingle}\%{\textquotesingle})
+correspondentes a determinados argumentos necess\'arios \`a devida
+extra\c{c}\~ao dos objetos. Um exemplo de um mapeamento existente no
+documento XML \'e apresentado de seguida:}
+
+{
+\textcolor[rgb]{0.0,0.0,0.5882353}{{\textless}conceitos{\textgreater}}\textcolor{black}{\newline
+
+\ \ \ }\textcolor[rgb]{0.0,0.0,0.5882353}{{\textless}conceito{\textgreater}}\newline
+\textcolor{black}{
+\ \ \ \ \ \ \ }\textcolor[rgb]{0.0,0.0,0.5882353}{{\textless}key{\textgreater}}\textcolor{black}{PecasCriador}\textcolor[rgb]{0.0,0.0,0.5882353}{{\textless}/key{\textgreater}}\textcolor{black}{\newline
+
+\ \ \ \ \ \ \ }\textcolor[rgb]{0.0,0.0,0.5882353}{{\textless}value{\textgreater}}\textcolor{black}{\newline
+
+\ \ \ \ \ \ \ \ \ \ \ }\textcolor[rgb]{0.5882353,0.5882353,0.0}{\&lt;}\textcolor{black}{br}\textcolor[rgb]{0.5882353,0.5882353,0.0}{\&gt;\&lt;}\textcolor{black}{br}\textcolor[rgb]{0.5882353,0.5882353,0.0}{\&gt;}\newline
+\textcolor{black}{
+\ \ \ \ \ \ \ \ \ \ \ }\textcolor[rgb]{0.5882353,0.5882353,0.0}{\&lt;}\textcolor{black}{h5}\textcolor[rgb]{0.5882353,0.5882353,0.0}{\&gt;}\textcolor{black}{Pe\c{c}as
+de
+\%Criador\%}\textcolor[rgb]{0.5882353,0.5882353,0.0}{\&lt;}\textcolor{black}{/h5}\textcolor[rgb]{0.5882353,0.5882353,0.0}{\&gt;}\textcolor{black}{\newline
+
+\ \ \ \ \ \ \ \ \ \ \ }\textcolor[rgb]{0.5882353,0.5882353,0.0}{\&lt;}\textcolor{black}{?php
+\newline
+ \ \ \ \ \ \ \ \ \ \ \ \$dataProvider =
+IndexingCreators::getObjectWorkRecords\_NameCreator({\textquotesingle}\%Criador\%{\textquotesingle});\newline
+
+\ \ \ \ \ \ \ \ \ \ \ \$dataProvider-{\textgreater}pagination-{\textgreater}pageSize=\%NrItens\%;\newline
+ \ \ \ \ \ \ \ \ \ \ \ \newline
+
+\ \ \ \ \ \ \ \ \ \ \ \$this-{\textgreater}widget({\textquotesingle}zii.widgets.CListView{\textquotesingle},
+array(\newline
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ {\textquotesingle}dataProvider{\textquotesingle}={\textgreater}\$dataProvider,\newline
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ {\textquotesingle}template{\textquotesingle}={\textgreater}{\textquotesingle}\{sorter\}\{summary\}\{pager\}\{items\}\{pager\}\{summary\}{\textquotesingle},\newline
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ {\textquotesingle}pager{\textquotesingle}={\textgreater}array(\newline
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ {\textquotesingle}maxButtonCount{\textquotesingle}={\textgreater}{\textquotesingle}10{\textquotesingle},\newline
+ \ \ \ \ \ \ \ \ \ \ \ \ \ ),\newline
+
+\ \ \ \ \ \ \ \ \ \ \ \ \ {\textquotesingle}itemView{\textquotesingle}={\textgreater}{\textquotesingle}/object\_Work\_Records/\_view{\textquotesingle},\newline
+ \ \ \ \ \ \ \ \ \ \ \ ));\newline
+
+\ \ \ \ \ \ \ \ \ \ \ ?}\textcolor[rgb]{0.5882353,0.5882353,0.0}{\&gt;}}
+
+{
+\textcolor[rgb]{0.5882353,0.5882353,0.0}{\ \ \ \ \ \ \ \ }\textcolor[rgb]{0.0,0.0,0.5882353}{{\textless}/value{\textgreater}}\textcolor{black}{\newline
+
+\ \ \ }\textcolor[rgb]{0.0,0.0,0.5882353}{{\textless}/conceito{\textgreater}}}
+
+{\color[rgb]{0.0,0.0,0.5882353}
+\ \ \ \ {\dots}}
+
+{\color[rgb]{0.0,0.0,0.5882353}
+{\textless}/conceitos{\textgreater}}
+
+
+
+{
+O armazenamento dos meta-dados na base de dados tem em conta o n\'umero
+de ordena\c{c}\~ao da sala definido ou n\~ao pelo utilizador. Isto \'e,
+se o utilizador n\~ao o definir ent\~ao a nova sala ser\'a a
+consequente \`a \'ultima sala j\'a existente nessa exposi\c{c}\~ao, ou
+seja, a ordem \'e a da data de cria\c{c}\~ao das salas. }
+
+{
+J\'a se o utilizador definir um n\'umero de ordena\c{c}\~ao este \'e
+atribu\'ido \`a sala. Caso o n\'umero esteja compreendido no \^ambito
+de salas existentes, isto \'e, se o utilizador especificar que a sala
+ser\'a a sala n\'umero 100 quando s\'o existem 5 salas nessa
+exposi\c{c}\~ao, ent\~ao esta sala ser\'a a \'ultima dessa
+exposi\c{c}\~ao. Caso o n\'umero esteja compreendido no \^ambito de
+salas existentes, esse n\'umero \'e atribu\'ido \`a sala e as restantes
+salas cujo n\'umero de ordena\c{c}\~ao seja igual ou superior a esse
+n\'umero sofrem um altera\c{c}\~ao, passando 1 unidade acima, ou seja,
+existe uma reordena\c{c}\~ao das salas.}
+
+{
+Finalmente, \`a sala gerada \'e anexado um sistema de navega\c{c}\~ao
+entre salas, sistema este que consiste num link que para a sala
+imediatamente anterior a essa sala e outro para aquela imediatamente
+posterior.}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section[Anexos]{ Anexos}
+\subsection[Schema XSD da DSL para especificar uma
+sala]{ Schema XSD da DSL para especificar uma
+sala}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\begin{center}
+\includegraphics[width=4.0299in,height=9.4in]{relatoriopartebruno-img1.jpg}
+\end{center}
 \end{document}

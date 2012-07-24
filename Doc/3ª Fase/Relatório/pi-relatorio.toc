@@ -15,13 +15,19 @@
 \contentsline {subsubsection}{\numberline {5.1.4}Rela\c c\~oes}{8}{subsubsection.5.1.4}
 \contentsline {section}{\numberline {6}Concep\c c\~ao/desenho da Resolu\c c\~ao}{8}{section.6}
 \contentsline {subsection}{\numberline {6.1}an\'alise das normas internacionais para a cataloga\c c\~ao de obras de arte}{8}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Estruturas de Dados}{8}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Algoritmos}{8}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Plataforma Web}{8}{subsection.6.4}
-\contentsline {subsubsection}{\numberline {6.4.1}Back office}{8}{subsubsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.2}Front office}{10}{subsubsection.6.4.2}
-\contentsline {section}{\numberline {7}Codifica\c c\~ao e Testes}{12}{section.7}
-\contentsline {subsection}{\numberline {7.1}Alternativas, Decis\~oes e Problemas de Implementa\c c\~ao}{12}{subsection.7.1}
-\contentsline {subsection}{\numberline {7.2}Testes realizados e Resultados}{12}{subsection.7.2}
-\contentsline {section}{\numberline {8}Conclus\~oes}{13}{section.8}
-\contentsline {section}{\numberline {A}C\'odigo do Programa}{13}{section.A}
+\contentsline {subsection}{\numberline {6.2}Base de Dados}{8}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Contextualiza\c c\~ao}{8}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Modelo de Dados}{9}{subsubsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.3}Escolha do Motor de Base de Dados}{27}{subsubsection.6.2.3}
+\contentsline {subsection}{\numberline {6.3}Algoritmos}{28}{subsection.6.3}
+\contentsline {subsubsection}{\numberline {6.3.1}Zincogravuras}{28}{subsubsection.6.3.1}
+\contentsline {subsection}{\numberline {6.4}Plataforma Web}{30}{subsection.6.4}
+\contentsline {subsubsection}{\numberline {6.4.1}Back office}{30}{subsubsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.2}Front office}{32}{subsubsection.6.4.2}
+\contentsline {subsection}{\numberline {6.5}Salas de Exposi\c c\~ao do Museu}{34}{subsection.6.5}
+\contentsline {subsubsection}{\numberline {6.5.1}Gera\c c\~ao de Salas de Exposi\c c\~ao}{35}{subsubsection.6.5.1}
+\contentsline {section}{\numberline {7}Codifica\c c\~ao e Testes}{36}{section.7}
+\contentsline {subsection}{\numberline {7.1}Alternativas, Decis\~oes e Problemas de Implementa\c c\~ao}{36}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Testes realizados e Resultados}{36}{subsection.7.2}
+\contentsline {section}{\numberline {8}Conclus\~oes}{36}{section.8}
+\contentsline {section}{\numberline {A}C\'odigo do Programa}{36}{section.A}
