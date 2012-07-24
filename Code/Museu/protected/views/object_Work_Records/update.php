@@ -10,7 +10,7 @@ $this->menu=array(
 		array('label'=>'Índice', 'url'=>array('index')),
 		array('label'=>'Criar', 'url'=>array('create')),
 		array('label'=>'Criar Ficha Completa', 'url'=>array('createAll')),
-		array('label' => 'Importar CDWA-Lite', 'url' => array('CreateCDWA')),
+		array('label' => 'Importar obras de arte', 'url' => array('CreateCDWA')),
 		array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>

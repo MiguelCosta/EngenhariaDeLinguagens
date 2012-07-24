@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sat Mar 17 16:02:09 WET 2012
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=pi-rel-fase2.tex
+outputFile=pi-rel-fase2.pdf
+langSpell=en
+markDer=true
+srcDir=

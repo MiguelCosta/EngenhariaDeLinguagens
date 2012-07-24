@@ -16,10 +16,10 @@ $this->breadcrumbs = array(
 
 $this->menu = array(
 		array('label' => 'Índice', 'url' => array('index')),
-		array('label' => 'CDWA-Lite', 'url' => array('CDWAlite', 'id' => $model->id_object_Work_Records)),
+		array('label' => 'Exportar', 'url' => array('CDWAlite', 'id' => $model->id_object_Work_Records)),
 		array('label' => 'Criar', 'url' => array('create')),
 		array('label' => 'Criar Ficha Completa', 'url' => array('createAll')),
-		array('label' => 'Importar CDWA-Lite', 'url' => array('CreateCDWA')),
+		array('label' => 'Importar obras de arte', 'url' => array('CreateCDWA')),
 		array('label' => 'Actualizar', 'url' => array('update', 'id' => $model->id_object_Work_Records)),
 		array('label' => 'Eliminar', 'url' => '#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->id_object_Work_Records), 'confirm' => 'Are you sure you want to delete this item?')),
 		array('label' => 'Administração', 'url' => array('admin')),
