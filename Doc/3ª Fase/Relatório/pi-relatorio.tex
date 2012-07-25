@@ -70,7 +70,6 @@ Este MV terá ainda uma Ontologia\footnote{Ontologia é um termo que foi adoptado 
 	Os Museus para exporem as suas peças, tem de definir regras de catalogação para o tipo de peça que é pretendido descrever, devido à necessidade de uniformizar estas regras, foram criadas diversas normas para os mais diversos objectos que podem ser apresentados num museu, por exemplo, desde monumentos até cartas ou roupa. No nosso caso, vamos adoptar essencialmente os modelos internacionais do CDWA\footnote{Categories for the Description of Works of Art (CDWA) - \url{http://www.getty.edu/research/publications/
 electronic_publications/cdwa/introduction.html}} e do CCO\footnote{Cataloging Cultural Objects (CCO) - \url{http://cco.vrafoundation.org/}}. Estes modelos contém uma grande quantidade de elementos que se podem usar, em que alguns deles são obrigatórios, mas para além destes, de acordo com o que precisamos, dos que não eram obrigatï¿½rios, selecionamos aqueles que nos pareceram mais relevantes e uteis para o nosso caso de estudo.
 
-
 \section{Objectivos pretendidos}
 	O objectivo da realização deste projecto é desenvolver um Sistema para Geração Automáica de Salas de Exposições em Museus Virtuais com base em Ontologias, ou seja, criação de um WebSite que permita ser gerido como um Museu, seja possivél alguns utilizadores colocarem peças para exposição, outros com direitos de adminsitração gerirem as salas e o museu e, como finalidade óbvia, mostrar a qualquer pessoa que entre no WebSite, as peças que estão arquivadas.
 
@@ -146,7 +145,7 @@ As fotografias foram tiradas pelo fotógrafo e pintor Gérald Bloncourt, de nacion
 %\caption{Bidonville d'un Aubervilliers - 1957}
 \end{figure}
 
-Quanto às zincogravuras, elas foram usadas para diversos fins, como cartons em almanaques, capas de jornais, fotografias de famï¿½lias e retratos, logótipos...
+Quanto às zincogravuras, elas foram usadas para diversos fins, como cartons em almanaques, capas de jornais, fotografias de famílias e retratos, logótipos...
 
 
 \begin{figure}[H]
@@ -182,8 +181,52 @@ Na explicação do que era pretendido fazer, já descrevemos um pouco os requisitos
 
 \subsubsection{Relações}
 
+\section{Ambiente de Trabalho}
+
+Para um projecto de uma dimensão considerável como este, é necessário procurar boas ferramentes que nos facilitem a execução das tarefas e ainda usar linguagens de programação que sejam "eficazes" para a implementação do nosso sistema.
+
+\subsection{Linguagens de Programação}
+O nosso sistema baseia-se essencialmente numa plataforma Web e a linguagem adoptada foi o PHP. No entanto, desenvolver um Website agradável requer o uso de outras linguagens como por exemplo JavaScript essencial para a interação do utilizador com a página.
+
+De experi?ncia que tinhamos da utilização do PHP, havia tarefas chatas e repetitivas, por isso procuramos uma framework que nos facilitasse essas tarefas e acabamos por escolher a Yii Framework.
+
+\subsubsection{Yii Framework}
+Esta framework adopta a metodologia MVC, já tem operações de caching, autenticação, controlo de acessos por utilizadores diferentes, scaffolding e testing. Foi essencialmente por causa destas características que escolhemos utilizar esta framework.
+
+\textbf{Extensões utilizadas}
+
+A Yii Framework tem uma grande biblioteca de extensões para integrar no site, nós tiramos proveito de algumas:
+\begin{itemize}
+\item \textbf{Gii} - A partir da Base de Dados criamos todos o código essencial para começar a trabalhar, models e as operações CRUD.
+
+\item \textbf{Yii-user} - essencial para controlo de utilizadores no site (registar, alterar dados pessoais e eliminar utilizadores).
+
+\item \textbf{comment} - extensão para controlar os comentários numa página.
+
+\item \textbf{cssmenu} - Para criar uma barra de menus mais funcional.
+
+\item \textbf{gmap} - Inserção do Google Maps nas nossas páginas.
+
+\item \textbf{Etooltip} - Mostrar as descriões das imagens.
+
+\end{itemize} 
+
+Algumas destas extensões tiveram de criar tabelas na Base de Dados para guardar a informação que precisavam, por exemplo dos utilizadores e dos comentários.
+
+\subsection{Ferramentas}
+As ferramentas usadas foram:
+\begin{itemize}
+\item \textbf{Eclipse} - Essencialmente para criar as páginas Web.
+\item \textbf{Vim} - Para a criação das scripts em perl.
+\item \textbf{OxygenXML} - Para todas as tarefas que estivessem relacionadas com o XML.
+\item \textbf{TexMaker} - Fazer toda a documentação em latex.
+\end{itemize}
+
+
+
+
+
 \section{Concepção/desenho da Resolução}
-\subsection{análise das normas internacionais para a catalogação de obras de arte}
 
 \subsection{Base de Dados}
 Neste capítulo, iremos apresentar uma contextualização sobre a necessidade desta base de dados e a nossa solução final de base de dados. Para isso, enunciaremos as tabelas criadas e explicaremos a sua razão de ser.
@@ -201,14 +244,14 @@ A especificação do modelo de dados relacional foi baseado no estudo das seguinte
 
 O CDWA descreve o conteúdo de bases de dados de arte articulando uma \textit{framework} conceptual para descrever e aceder a informação sobre obras de arte, arquitetura, outro materiais de cultura, grupos e coleções de obras e imagens relacionadas. O CDWA inclui 532 categorias e subcategorias. 
 
-O CCO é um guia ao invés de um conjunto de elementos de meta-dados. Os elementos que abrange são referentes a áreas de informação num registo de catalogação que podem ser mapeadas para vários elementos de meta-dados tais como CDWA ou CDWA Lite. Basicamente, é um documento lato que inclui regras para formatação de dados, sugestões para informação obrigatória, requisitos para vocabulário controlado e problemas de apresentação.
+O CCO é um guia ao invés de um conjunto de elementos de metadados. Os elementos que abrange são referentes a áreas de informação num registo de catalogação que podem ser mapeadas para vários elementos de metadados tais como CDWA ou CDWA Lite. Basicamente, é um documento lato que inclui regras para formatação de dados, sugestões para informação obrigatória, requisitos para vocabulário controlado e problemas de apresentação.
 
 Para facilitar a partilha de registos complacentes com CDWA através do protocolo \textit{Open Archives Initiative ? Protocol for Metadata Harvesting (OAI-PMH)}, o Getty Research Institute criou o schema  XML CDWA Lite baseado nas categorias consideradas essenciais (core) do CDWA que descreve um formato para registos essenciais de obras de arte e material cultural baseados no CDWA e CCO.
 
 Após uma análise a todas estas normas e estruturas, chegámos a um modelo final que passaremos a descrever na secção seguinte.
 
 \subsubsection{Modelo de Dados}
-O modelo representa uma simplificação do que é sugerido pelo CDWA, apenas representando os meta-dados core e outros que achámos que seriam interessantes e importantes para a descrição de uma obra de arte. Trata-se então de uma estrutura capaz de representar tudo que é necessário para cobrir os requisitos apresentados.
+O modelo representa uma simplificação do que é sugerido pelo CDWA, apenas representando os metadados core e outros que achámos que seriam interessantes e importantes para a descrição de uma obra de arte. Trata-se então de uma estrutura capaz de representar tudo que é necessário para cobrir os requisitos apresentados.
 
 Para representar a primeira funcionalidade enunciada anteriormente, descreveremos cada uma das tabelas criadas assim como a(s) categoria(s) do CDWA que pretendem representar.
 
@@ -216,7 +259,7 @@ As chaves primárias são representadas por atributos sublinhados e as chaves estr
 
 \textbf{Tabelas com origem em entidades e relacionamentos 1:N}
 
-As seguintes tabelas foram criadas com base nos meta-dados que pretendemos armazenar:
+As seguintes tabelas foram criadas com base nos metadados que pretendemos armazenar:
 
 
 \begin{itemize}
@@ -2127,7 +2170,7 @@ RecordInfo\textmd{ \{}\textmd{id\_recordInfo}\textmd{, type,
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
-representa informa\c{c}\~ao de meta-dados deste registo.}}}
+representa informa\c{c}\~ao de metadados deste registo.}}}
 
 {Atributos:}
 
@@ -2156,7 +2199,7 @@ RecordsInfoID\textmd{ \{}\textmd{recordInfoID}\textmd{, type,
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
-representa o identificador \'unico para os meta-dados. Possui a mesma
+representa o identificador \'unico para os metadados. Possui a mesma
 defini\c{c}\~ao que o
 }}{\textmd{\textit{RecordsID}}}{\textmd{,
 mas fora do contexto de um sistema local.}}}
@@ -2185,7 +2228,7 @@ recordInfoLink, }\textmd{\textit{RecordInfo}}\textmd{\}}}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
-representa um link para os meta-dados (n\~ao se trata do mesmo link do
+representa um link para os metadados (n\~ao se trata do mesmo link do
 objeto)}}{\textmd{.}}}
 
 {Atributos:}
@@ -2196,7 +2239,7 @@ objeto)}}{\textmd{.}}}
 identifica univocamente cada link. Inteiro que \'e auto incrementado;}
 \item {
 \textbf{recordInfoLink:} string que representa \ um link para os
-meta-dados.}
+metadados.}
 \item {
 \textbf{RecordInfo:}\textit{ }\'e chave estrangeira da tabela
 RecordInfo. Inteiro que identifica a informa\c{c}\~ao.}
@@ -2212,7 +2255,7 @@ RecordsRelID\textmd{ \{}\textmd{recordRelID}\textmd{, type,
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
-representa um identificador \'unico dos meta-dados do objeto
+representa um identificador \'unico dos metadados do objeto
 relacionado}}{\textmd{.}}}
 
 {Atributos:}
@@ -2239,7 +2282,7 @@ recordMetadataLocation, type, }\textmd{\textit{RecordInfo}}\textmd{\}}}
 {\bfseries
 {\textmd{\ \ Esta
 }}\textbf{{\textmd{tabela}}}{\textmd{
-representa um apontador para outros meta-dados (administrativos,
+representa um apontador para outros metadados (administrativos,
 t\'ecnicos, estruturais)}}{\textmd{.}}}
 
 {Atributos:}
@@ -2251,7 +2294,7 @@ j\'a que identifica univocamente cada apontador. Inteiro que \'e auto
 incrementado;}
 \item {
 \textbf{recordMetadataLocation:} string que representa um apontador para
-outros meta-dados (administrativos, t\'ecnicos, estruturais).}
+outros metadados (administrativos, t\'ecnicos, estruturais).}
 \item {
 \textbf{type:} string que representa o tipo do apontador.}
 \item {\bfseries
@@ -2726,7 +2769,7 @@ Resources.}
 \textbf{Tabelas para a gera\c{c}\~ao
 de salas de exposi\c{c}\~ao}
 {
-Estas tabelas resultam da necessidade de armazenar os meta-dados
+Estas tabelas resultam da necessidade de armazenar os metadados
 relativos \`as exposi\c{c}\~oes e \`as respetivas salas.}
 
 
@@ -2735,7 +2778,7 @@ relativos \`as exposi\c{c}\~oes e \`as respetivas salas.}
 Exhibitions\textmd{ \{}\textmd{id\_exhibition}\textmd{, name,
 description, image\_path, deleted\}}}
 
-{Armazena os meta-dados relativos a uma exposi\c{c}\~ao.}
+{Armazena os metadados relativos a uma exposi\c{c}\~ao.}
 
 {Atributos:}
 
@@ -2830,14 +2873,76 @@ A escolha do motor de Base de Dados a utilizar revelou-se imediata visto que est
 
 
 \subsection{Algoritmos}
-Nesta secção são apresentados os diferentes casos referentes aos meta-dados já existentes no formato digital do Museu da Emigração e das Comunidades de Fafe e o respetivos processos de extração, transformação e carregamento para o repositório.
+Nesta secção são apresentados os diferentes casos referentes aos metadados já existentes no formato digital do Museu da Emigração e das Comunidades de Fafe e o respetivos processos de extração, transformação e carregamento para o repositório.
 
-\subsubsection{Zincogravuras}
-Os recursos fornecidos que continham os meta-dados de zincogravuras eram constituídos por um único documento Word contendo meta-dados referentes a 933 zincogravuras e uma pasta contendo as imagens de cada uma das zincogravuras com a particularidade do nome de cada ficheiro corresponder ao número de inventário da zincogravura correspondente o que facilita a associação entre ambos.
+\subsubsection{Fotografias}
+Todas as fotografias que nos foram disponibilizadas, tinham a sua metainformação num documento do Word e tivemos também acesso as imagens que representavam as fotgrafias. O nome dos ficheiros de imagem era o n.º de inventário que estava descrito no documento do Word, por isso tornou-se relativamente simples associar uma imagem com a respectiva metainformação.
 
 \textbf{Extração}
-O documento Word fornecido continha os meta-dados bem estruturados, sendo que cada zincogravura fazia-se distinguir de outras através da utilização de múltiplas linhas em branco, desta forma detetámos o elemento de quebra para cada zincogravura. 
-De seguida, era necessário identificar os atributos e respetivos valores para cada zincogravura. Esta parte também se revelou fácil, visto que cada atributo mantinha sempre a mesma label e desta forma detetámos elementos para extrair os meta-dados.
+
+A informação que existia no documento do Word tinha uma estrutura bem delineada por isso a parte de extração da informação acabou por não ser muito complexa.
+
+Exemplo do que estava no focumento Word:
+\begin{verbatim}
+Inventário                      CGB003
+Classificação Genérica          Fotografia
+Objecto/Documento               Fotografia P/B
+Título / Id. pelo Autor         3416/26a
+Autor/Produção                  Gérald Bloncourt
+Material/Suporte                Papel 
+Técnica                         Fotografia P/B ? Impressão digital
+Dimensões                       42 x 59,5 cm
+Legenda                         Nas montanhas - região de Chaves ? as casas de madeira e está frio. 
+                                Esta mulher decorou as paredes com jornais e organizou as panelas 
+                                e as tampas com decoração! Os utensílios estão presos, ela 
+                                não os usa... Para mim, trata-se de um testemunho de resistência, 
+                                de coragem! Um exemplo magnífico de "cultura"!... 1966
+Datação                         Impressão em 2009
+
+Lugar de Produção               França
+História do objecto             Sem moldura. Não foi exposto neste Museu.  
+Incorporação                    Doação do autor ao Museu das Migrações no ano de 2009.
+\end{verbatim}
+
+Para facilitar o trabalho de recolher todo a informação e depois inserir na Base de Dados, através do ficheiro do Word geremos um ficheiro XML com uma estrutura feita por nós.
+
+\begin{verbatim}
+<catalogo>
+  <peca>
+    <inventario>CGB001</inventario>
+    <classificacao_generica>Fotografia</classificacao_generica>
+    <objecto>Fotografia P/B</objecto>
+    <titulo>1111/4</titulo>
+    <autor>Gérald Bloncourt</autor>
+    <suporte>Papel</suporte>
+    <tecnica>Fotografia P/B ? Impressão digital</tecnica>
+    <dimensoes>42 x 59,5 cm</dimensoes>
+    <legenda>Emigrante português lendo um jornal do seu país num estaleiro de obras nos subúrbios de Paris, 1967.</legenda>
+    <datacao>Impressão em 2009</datacao>
+    <lugar_producao>França</lugar_producao>
+    <historia>Sem moldura. Não foi exposto neste Museu.</historia>
+    <incorporacao>Doação do autor ao Museu das Migrações no ano de 2009.</incorporacao>
+  </peca>
+  ...
+  </catalogo>
+\end{verbatim}
+
+\textbf{Transformação}
+
+A partir deste ficheiro XML criado por nós foi mais simples gerou outro ficheiro XML de acordo com o Schema CDWA-Lite e foi a partir deste que a inserção na Base de Dados foi gerada. Assim, é possível aproveitar o código para inserir outras peças de acordo com a norma CDWA.
+
+\textbf{Carregamento para o repositório}
+
+O carregamento para a nossa Base de Dados foi feita gerando comandos SQL e depois executados esses comandos na respectiva BD para o repositório. Os comandos SQL foram gerados a partir do ficheiro CDWA.
+
+
+\subsubsection{Zincogravuras}
+Os recursos fornecidos que continham os metadados de zincogravuras eram constituídos por um único documento Word contendo metadados referentes a 933 zincogravuras e uma pasta contendo as imagens de cada uma das zincogravuras com a particularidade do nome de cada ficheiro corresponder ao número de inventário da zincogravura correspondente o que facilita a associação entre ambos.
+
+\textbf{Extração}
+
+O documento Word fornecido continha os metadados bem estruturados, sendo que cada zincogravura fazia-se distinguir de outras através da utilização de múltiplas linhas em branco, desta forma detetámos o elemento de quebra para cada zincogravura. 
+De seguida, era necessário identificar os atributos e respetivos valores para cada zincogravura. Esta parte também se revelou fácil, visto que cada atributo mantinha sempre a mesma label e desta forma detetámos elementos para extrair os metadados.
 
 Para proceder à parte da extração criámos uma script utilizando a linguagem de programação Perl visto tratar-se uma linguagem que torna fácil este tipo de processos. Para extrair o texto do corpo do documento Word, utilizámos um módulo Perl (\verb|Text::Extract::Word|) que o possibilita através de uma única chamada a uma função fornecida por esse módulo. As seguintes linhas de código ilustram essa extração:
 \begin{verbatim}
@@ -2849,6 +2954,7 @@ This excludes headers, footers, and annotations.
 \end{verbatim}
 
 \textbf{Transformação}
+
 Tendo acesso ao texto extraído do documento em memória, o processo de transformação pode ser iniciado.
 
 Começámos por fazer uma limpeza de certos elementos textuais que dificultavam o parsing dos elementos identificados anteriormente. E de seguida efetuámos uma substituição das labels de cada atributo por outras mais limpas e mais simples sem caracteres especiais (ex: '/') ou acentos. Esta transformação também foi necessária porque as labels originais foram, possivelmente, escritas à mão e existiam alguns casos em que estas nem sempre eram iguais possuindo, por exemplo, um acento numa zincogravura e noutra não, ou abreviações de palavras numas e noutras não.
@@ -2873,7 +2979,7 @@ Este processo não foi obtido apenas com uma iteração, uma análise cuidada aos da
 \end{verbatim}
 
 \textbf{Carregamento para documento XML}
-Após a transformação dos meta-dados originais e estando estes acessíveis em memória, só restava o carregamento destes para uma estrutura. Como adotámos a norma CDWA e nos baseámos no schema CDWA Lite, optámos por carregá-los para um documento XML que fosse válido segundo esse schema.
+Após a transformação dos metadados originais e estando estes acessíveis em memória, só restava o carregamento destes para uma estrutura. Como adotámos a norma CDWA e nos baseámos no schema CDWA Lite, optámos por carregá-los para um documento XML que fosse válido segundo esse schema.
 
 Este processo consiste, então, na iteração de todas as linhas do documento Word que está em memória. Se o elemento de quebra não for detetado numa dessas linhas então trata-se de um atributo de uma zincogravura e este é inserido numa hash com a seguinte estrutura (label\_atributo => valor\_atributo), a utilidade desta hash será explicada de seguida.
 
@@ -2921,12 +3027,13 @@ Finalmente falta apenas fazer uma pequena explicação da função que escreve uma z
 
 Nesta função é feito um mapeamento entre os atributos presentes na hash passada à função e os elementos correspondentes no schema CDWA Lite. Os atributos fornecidos no documento Word não possuem todos os elementos obrigatórios segundo o CDWA, por isso alguns elementos, que apesar de não possuírem valor, são escritos no ficheiro XML final.
 
-É feita uma grande utilização de expressões regulares sobre os valores dos atributos, como por exemplo, no atributo correspondente às medidas, para que se possa saber quais o valores correspondentes à altura, largura ou mesmo diâmetro e qual a unidade desse valor. Também, para extrair os meta-dados referentes às obras relacionadas, ou seja, onde e quando é que a zincogravura foi impressa.
+É feita uma grande utilização de expressões regulares sobre os valores dos atributos, como por exemplo, no atributo correspondente às medidas, para que se possa saber quais o valores correspondentes à altura, largura ou mesmo diâmetro e qual a unidade desse valor. Também, para extrair os metadados referentes às obras relacionadas, ou seja, onde e quando é que a zincogravura foi impressa.
 
 \textbf{Carregamento para o repositório}
-Após criação do documento XML, resta apenas o carregamento destes meta-dados para o repositório, utilizando para isso o documento XML.
+
+Após criação do documento XML, resta apenas o carregamento destes metadados para o repositório, utilizando para isso o documento XML.
 Este carregamento é feito através de outra script Perl. Nesta script foi utilizada um módulo Perl (XML::Simple) para que fosse possível transformar o documento XML num objeto em memória, assim como a sua navegação.
-Como esta script será utilizada após a script correspondente à dos meta-dados das fotografias, são utilizados alguns contadores que iniciam com determinados valores e servirão para povoar os identificadores de algumas tabelas na base de dados.
+Como esta script será utilizada após a script correspondente à dos metadados das fotografias, são utilizados alguns contadores que iniciam com determinados valores e servirão para povoar os identificadores de algumas tabelas na base de dados.
 Este processo decorre através da iteração de cada elemento correspondente a uma obra de arte. Em cada iteração, é feito um mapeamento entre cada elemento (se este possuir valor) e uma instrução SQL (MySQL).
 
 Ambas as scripts podem ser consultadas na pasta Codigo/Scripts.
@@ -3001,45 +3108,82 @@ Existe ainda uma área onde se pode partilhar a obra de arte ou fazer comentários
 Os comentários são importantes porque podem servir para um utilizador comum ajudar a enriquecer o repositório.
 
 
-\subsection{Salas de Exposição do Museu}
-Um dos objetivos propostos para este projeto passava pela geração automática de espaços de aprendizagem na forma de salas de exposição do museu. É então possível a criação de exposições que são um conjunto de salas e cuja navegação sobre essa salas segue uma ordem que pode ser definida pela ordem de criação da sala ou pelo utilizador. Essa mesma ordem é exibida aquando da listagem das salas de uma exposição. Cada exposição possui um nome, uma descrição do tema da exposição, uma imagem e um conjunto de tags que descrevem o que é exibido na exposição. 
+\subsubsection{Salas de Exposição do Museu}
+Um dos objetivos propostos para este projeto passava pela geração automática de espaços de aprendizagem na forma de salas de exposição do museu. É então possível a criação de exposições que são um conjunto de salas e cuja navegação sobre essas salas segue uma ordem que pode ser definida pela ordem de criação da sala ou pelo utilizador. Essa mesma ordem é exibida aquando da listagem das salas de uma exposição. Cada exposição possui um nome, uma descrição do tema da exposição, uma imagem e um conjunto de tags que descrevem o que é exibido na exposição. 
 
 Numa sala de exposição é possível ver os objetos em exposição devidamente relacionados entre si de forma a transmitir o conhecimento correspondente ao tema dessa exposição. Este tema, ou conhecimento a transmitir, é descrito por um conjunto de funções, em que cada uma delas, extrai os objetos do arquivo de acordo com determinados argumentos definidos para essas funções e cria os links apropriados. Também é possível definir o layout pretendido para uma sala de exposição. Assim como a exposição, uma sala possui um nome, uma descrição do tema da sala e uma imagem associada ao tema.
+\\
+\\
+\textbf{Geração de Salas de Exposição}
 
-\subsubsection{Geração de Salas de Exposição}
-Para a geração de salas definimos uma DSL1 em XML que permite a especificação dos meta-dados de uma sala, tais como a exposição a que pertence, o nome, a descrição e os objetos que serão exibidos na sala, sendo cada objeto constituído por um tipo de objeto (indica o tipo dos objetos a apresentar em que cada tipo corresponde a uma função que aplica determinados filtros às obras) e uma lista de argumentos (que complementam os filtros utilizados na função do tipo selecionado). O input desta DSL e os restantes meta-dados, a imagem, o número de ordenação da sala e o layout pretendido para a exibição da sala são capturados através de um formulário.
+Para a geração de salas definimos uma DSL\footnote{Uma linguagem de programação ou linguagem de especificação dedicada um problema de domínio específico.} em XML que permite a especificação dos metadados de uma sala, tais como a exposição a que pertence, o nome, a descrição e os objetos que serão exibidos na sala, sendo cada objeto constituído por um tipo de objeto (indica o tipo dos objetos a apresentar em que cada tipo corresponde a uma função que aplica determinados filtros às obras) e uma lista de argumentos (que complementam os filtros utilizados na função do tipo selecionado). O input desta DSL e os restantes metadados, a imagem, o número de ordenação da sala e o layout pretendido para a exibição da sala são capturados através de um formulário.
 
-Neste formulário, antes de os meta-dados serem submetidos, uma validação do input da DSL segundo o schema XSD criado (o schema XSD pode ser consultado em anexo) é realizada, assim como uma validação da não existência da exposição mencionada e da não existência de uma sala com o nome especificado na exposição especificada.
+Neste formulário, antes de os metadados serem submetidos, uma validação do input da DSL segundo o schema XSD criado (o schema XSD pode ser consultado em anexo) é realizada, assim como uma validação da não existência da exposição mencionada e da não existência de uma sala com o nome especificado na exposição especificada.
 
-Após validação, é iniciado um processo de transformação do input da DSL para aquela que será a sala em formato PHP especificada na DSL, assim como o armazenamento dos seus meta-dados na base de dados.
+Após validação, é iniciado um processo de transformação do input da DSL para aquela que será a sala em formato PHP especificada na DSL, assim como o armazenamento dos seus metadados na base de dados.
 
-Este processo consiste na criação de um ficheiro PHP que será a sala criada. Nela constarão os meta-dados especificados, sendo que estes serão simplesmente impressos na sala PHP, no entanto os objetos que serão exibidos na sala não seguem esse procedimento. Para que o respetivo código de extração das obras pretendidas para um objeto seja possível, um documento XML foi criado, que contém um mapeamento entre os tipos de objetos existentes na DSL e um extrato de código (este ficheiro pode ser consultado em componentes/conceitos.xml). Esse código é o responsável pela extração das obras do arquivo e apresentação dos mesmos no site. O código possui embutido em si mesmo, palavras reservadas (envolvidas por dois caracteres '\%') correspondentes a determinados argumentos necessários à devida extração dos objetos. Um exemplo de um mapeamento existente no documento XML é apresentado de seguida:
+Este processo consiste na criação de um ficheiro PHP que será a sala criada. Nela constarão os metadados especificados, sendo que estes serão simplesmente impressos na sala PHP, no entanto os objetos que serão exibidos na sala não seguem esse procedimento. Para que o respetivo código de extração das obras pretendidas para um objeto seja possível, um documento XML foi criado, que contém um mapeamento entre os tipos de objetos existentes na DSL e um extrato de código (este ficheiro pode ser consultado em componentes/conceitos.xml). Esse código é o responsável pela extração das obras do arquivo e apresentação das mesmos no site. O código possui embutido em si mesmo, palavras reservadas (envolvidas por dois caracteres '\%') correspondentes a determinados argumentos necessários à devida extração dos objetos. Um exemplo de um mapeamento existente no documento XML é apresentado de seguida:
 
 \lstinputlisting[language=XML]{code/xml1.txt}
 
-O armazenamento dos meta-dados na base de dados tem em conta o número de ordenação da sala definido ou não pelo utilizador. Isto é, se o utilizador não o definir então a nova sala será a consequente à última sala já existente nessa exposição, ou seja, a ordem é a da data de criação das salas. 
+O armazenamento dos metadados na base de dados tem em conta o número de ordenação da sala definido ou não pelo utilizador. Isto é, se o utilizador não o definir então a nova sala será a consequente à última sala já existente nessa exposição, ou seja, a ordem é a da data de criação das salas. 
 
 Já se o utilizador definir um número de ordenação este é atribuído à sala. Caso o número esteja compreendido no âmbito de salas existentes, isto é, se o utilizador especificar que a sala será a sala número 100 quando só existem 5 salas nessa exposição, então esta sala será a última dessa exposição. Caso o número esteja compreendido no âmbito de salas existentes, esse número é atribuído à sala e as restantes salas cujo número de ordenação seja igual ou superior a esse número sofrem um alteração, passando 1 unidade acima, ou seja, existe uma reordenação das salas.
 
-Finalmente, à sala gerada é anexado um sistema de navegação entre salas, sistema este que consiste num link que para a sala imediatamente anterior a essa sala e outro para aquela imediatamente posterior.
+Finalmente, à sala gerada é anexado um sistema de navegação entre salas, sistema este que consiste num link para a sala imediatamente anterior a essa sala e outro para aquela imediatamente posterior.
+
+\textbf{Informação que se pode colocar nas salas}
+
+O conteúdo de uma sala é inserido através de código XML, na parte dos objectos há várias possibilidades de informação que podemos querer:
+
+\begin{itemize}
+\item \textbf{PecasCriador} - Mostra as peças de um determinado criador.
+\item \textbf{PecasLocal} - Mostra as peças de um determinado local.
+\item \textbf{PecasData} - Mostra as pelas de uma determinad data.
+\item \textbf{PecasTag} - Peças que tenham associadas uma tag.
+\item \textbf{PecasCriadorTag} - Peças de um criador que tenho uma determinada tag. 
+\end{itemize}
+
+Neste momento são estes os tipos de objectos que se pode colocar numa sala.
 
 
-\section{Codificação e Testes}
-\subsection{Alternativas, Decisões e Problemas de Implementação}
-\subsection{Testes realizados e Resultados}
+\textbf{Layout das Salas de Exposição}
 
-Mostram-se a seguir alguns testes feitos (valores introduzidos) e os
-respectivos resultados obtidos:
+Dependendo da informação que se pretenda colocar numa sala, pode ser útil variar o layout para uma apresentação mais agradável ao utilizador, por isso foram criados por enquanto 3 layouts diferentes:
 
-\begin{Verbatim}
-  Input:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagens/tema1.png}
+\caption{Template 1}
+\end{figure}
 
-  7
+O template 1 baseia-se em ter duas colunas com informação.
 
-  Output:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagens/tema2.png}
+\caption{Template 2}
+\end{figure}
 
-  1 1 2 3 5 8 13
-\end{Verbatim}
+O template 2, é idêntico ao anterior mas aqui é possível ainda adicionar mais informação depois das duas colunas.
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagens/tema3.png}
+\caption{Template 3}
+\end{figure}
+
+Por último, este template é o mais simples e baseia-se em ter a informação toda seguida.
+
+\section{Trabalho futuro}
+
+Muitas funcionalidades apesar de estarem implementadas há melhoramentos que se podem fazer, tanto a nível de back office como na geração das salas de exposição.
+
+Ao nível do back office pode-se fazer melhoramentos na parte de enriquecimento da Base de Dados (criação de mais operações para associar informação) e ainda na ingestão de novas peça, tanto pelo formulário como pelo upload de um ficheiro XML (no formato CDWA).
+
+A geração de salas também pode ser melhorada fazendo um formulário em vez de se inserir código XML. A parte das visitas guiadas talvez outro mecanismo de controlo seria mais apropriado.
+
+Algo que não ficou muito bem defenido é a ontologia que controla a navegação no Website. Seria importante fazer uma abordagem diferente da que nós utilizamos.
 
 
 \section{Conclusões}
@@ -3047,11 +3191,15 @@ Síntese do Documento.\\
 Estado final do projecto. Análise crítica dos resultados.\\
 Sugestões para trabalho futuro.
 
-\appendix
-\section{Código do Programa}
+\newpage
 
-Lista-se a seguir o código \textsf{C} do programa que foi
-desenvolvido.
+\appendix
+\section{Schema XSD da DSL para especificar uma sala}
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{relatoriopartebruno-img1.jpg}
+\end{figure}
+
 
 
 \end{document}

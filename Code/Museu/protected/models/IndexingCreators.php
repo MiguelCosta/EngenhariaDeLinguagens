@@ -17,7 +17,7 @@ class IndexingCreators extends CActiveRecord
 	{
 		return parent::model($className);
 	}
-	
+
 	public static function gerald($nome){
 		return $nome;
 	}
@@ -138,21 +138,21 @@ class IndexingCreators extends CActiveRecord
 		$result .=  implode($sp, $result_arr);
 		return $result;
 	}
-	
+
 	public function getNamesCreators_OnlyNames($sp){
 		$result = '';
 		$result_arr = array();
-	
+
 		foreach ($this->namesCreators as $namesCreators){
 			$id = $namesCreators->id_namesCreator;
 			$name = $namesCreators->nameCreator;
 			// se não tiver o type definido
 			isset($namesCreators->type) ? $type = $namesCreators->type : $type = '';
-	
+
 			$tmp = CHtml::link(CHtml::encode($name), array('/namesCreator/'.$id));
 			array_push($result_arr, $tmp);
 		}
-	
+
 		$result .=  implode($sp, $result_arr);
 		return $result;
 	}
@@ -211,11 +211,11 @@ class IndexingCreators extends CActiveRecord
 		$result .=  implode('<br/>', $result_arr);
 		return $result;
 	}
-	
+
 	/**
 	 * A partir do nome de um criador vai devolver a lista de peças que lhe
 	 * estão associadas.
-	 * 
+	 *
 	 * @version 20120610_1840
 	 * @param strig $name
 	 * @return CArrayDataProvider para Object_Work_Record
@@ -224,13 +224,41 @@ class IndexingCreators extends CActiveRecord
 		$names =  NamesCreator::model()->findByAttributes(array('nameCreator'=>$name));
 		$names_indexing = NamesCreator_IndexingCreators::model()->findByAttributes(array('NameCreator'=>$names->id_namesCreator));
 		$indexing = IndexingCreators::model()->findByPk($names_indexing->IndexingCreator);
-		
+
 		return new CArrayDataProvider($indexing->object_Work_Records, array('keyField'=>'id_object_Work_Records'));
 	}
-	
-	
-	
-	
-	
-	
+
+	/**
+	 * A partir de uma nacionalidade vai devolver a lista de peças que lhe
+	 * estão associadas.
+	 *
+	 * @version 20120610_1840
+	 * @param strig $name
+	 * @return CArrayDataProvider para Object_Work_Record
+	 */
+	public static function getObjectWorkRecords_NationalitiesCreator($nationalitie){
+		$objs = array();
+		$nationalities = NationalitiesCreator::model()->findByAttributes(array('nationalitycreator'=>$nationalitie));
+
+		if($nationalities != null){
+				
+			$nationalities_indexing = IndexingCreators_NationalitiesCreator::model()->findAllByAttributes(array('NationalityCreator'=>$nationalities->id_nationalitiesCreator));
+
+			foreach ($nationalities_indexing as $ind){
+				$indexing = IndexingCreators::model()->findByPk($ind->IndexingCreator);
+				foreach ($indexing->object_Work_Records as $ob){
+					array_push($objs, $ob);
+				}
+			}
+
+		}
+		
+		return new CArrayDataProvider($objs, array('keyField'=>'id_object_Work_Records'));
+	}
+
+
+
+
+
+
 }

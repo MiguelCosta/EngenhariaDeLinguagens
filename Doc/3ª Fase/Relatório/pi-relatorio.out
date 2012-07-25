@@ -12,21 +12,22 @@
 \BOOKMARK [3][-]{subsubsection.5.1.2}{Dados}{subsection.5.1}
 \BOOKMARK [3][-]{subsubsection.5.1.3}{Pedidos}{subsection.5.1}
 \BOOKMARK [3][-]{subsubsection.5.1.4}{Rela\347\365es}{subsection.5.1}
-\BOOKMARK [1][-]{section.6}{Concep\347\343o/desenho da Resolu\347\343o}{}
-\BOOKMARK [2][-]{subsection.6.1}{an\341lise das normas internacionais para a cataloga\347\343o de obras de arte}{section.6}
-\BOOKMARK [2][-]{subsection.6.2}{Base de Dados}{section.6}
-\BOOKMARK [3][-]{subsubsection.6.2.1}{Contextualiza\347\343o}{subsection.6.2}
-\BOOKMARK [3][-]{subsubsection.6.2.2}{Modelo de Dados}{subsection.6.2}
-\BOOKMARK [3][-]{subsubsection.6.2.3}{Escolha do Motor de Base de Dados}{subsection.6.2}
-\BOOKMARK [2][-]{subsection.6.3}{Algoritmos}{section.6}
-\BOOKMARK [3][-]{subsubsection.6.3.1}{Zincogravuras}{subsection.6.3}
-\BOOKMARK [2][-]{subsection.6.4}{Plataforma Web}{section.6}
-\BOOKMARK [3][-]{subsubsection.6.4.1}{Back office}{subsection.6.4}
-\BOOKMARK [3][-]{subsubsection.6.4.2}{Front office}{subsection.6.4}
-\BOOKMARK [2][-]{subsection.6.5}{Salas de Exposi\347\343o do Museu}{section.6}
-\BOOKMARK [3][-]{subsubsection.6.5.1}{Gera\347\343o de Salas de Exposi\347\343o}{subsection.6.5}
-\BOOKMARK [1][-]{section.7}{Codifica\347\343o e Testes}{}
-\BOOKMARK [2][-]{subsection.7.1}{Alternativas, Decis\365es e Problemas de Implementa\347\343o}{section.7}
-\BOOKMARK [2][-]{subsection.7.2}{Testes realizados e Resultados}{section.7}
-\BOOKMARK [1][-]{section.8}{Conclus\365es}{}
-\BOOKMARK [1][-]{section.A}{C\363digo do Programa}{}
+\BOOKMARK [1][-]{section.6}{Ambiente de Trabalho}{}
+\BOOKMARK [2][-]{subsection.6.1}{Linguagens de Programa\347\343o}{section.6}
+\BOOKMARK [3][-]{subsubsection.6.1.1}{Yii Framework}{subsection.6.1}
+\BOOKMARK [2][-]{subsection.6.2}{Ferramentas}{section.6}
+\BOOKMARK [1][-]{section.7}{Concep\347\343o/desenho da Resolu\347\343o}{}
+\BOOKMARK [2][-]{subsection.7.1}{Base de Dados}{section.7}
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Contextualiza\347\343o}{subsection.7.1}
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Modelo de Dados}{subsection.7.1}
+\BOOKMARK [3][-]{subsubsection.7.1.3}{Escolha do Motor de Base de Dados}{subsection.7.1}
+\BOOKMARK [2][-]{subsection.7.2}{Algoritmos}{section.7}
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Fotografias}{subsection.7.2}
+\BOOKMARK [3][-]{subsubsection.7.2.2}{Zincogravuras}{subsection.7.2}
+\BOOKMARK [2][-]{subsection.7.3}{Plataforma Web}{section.7}
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Back office}{subsection.7.3}
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Front office}{subsection.7.3}
+\BOOKMARK [3][-]{subsubsection.7.3.3}{Salas de Exposi\347\343o do Museu}{subsection.7.3}
+\BOOKMARK [1][-]{section.8}{Trabalho futuro}{}
+\BOOKMARK [1][-]{section.9}{Conclus\365es}{}
+\BOOKMARK [1][-]{section.A}{Schema XSD da DSL para especificar uma sala}{}
