@@ -15,6 +15,7 @@ use museu;
 		INSERT INTO NamesCreator(id_namesCreator, nameCreator, type) VALUES ('1','Gérald Bloncourt','personalName');
 		INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES ('1','1');
 		INSERT INTO NationalitiesCreator (id_nationalitiesCreator, nationalitycreator) VALUES ('1', 'Haitian');
+		INSERT INTO NationalitiesCreator (id_nationalitiesCreator, nationalitycreator) VALUES ('2', 'Portuguese');
 		INSERT INTO IndexingCreators_NationalitiesCreator (IndexingCreator, NationalityCreator) VALUES ('1','1');
 		INSERT INTO vitalDatesCreator (id_vitalDatesCreator, vitalDatesCreator, birthDate, IndexingCreator) VALUES ('1','1926-','1926','1');
 		INSERT INTO CreatorRoles (id_rolesCreator, roleCreator) VALUES ('1','photographer');
