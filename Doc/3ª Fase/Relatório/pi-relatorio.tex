@@ -38,7 +38,7 @@
 	\maketitle
 
 	\begin{abstract}
-	Este documento representa toda a documentação feita para o desenvolvimento do Museu Virtual da Emigração e das Comunidades. Neste momento contém essencialmente o caso de estudo definido, análise de requisitos, alguma especificação UML e as principais decisões tomadas até ao momento.
+	Este documento representa toda a documentação feita para o desenvolvimento do Museu Virtual da Emigração e das Comunidades. Contém o caso de estudo definido, análise de requisitos, alguma especificação UML, as principais decisões tomadas e a descrição da plataforma criada.
 	\end{abstract}
 
 \end{titlepage}
@@ -170,17 +170,6 @@ Na explicação do que era pretendido fazer, já descrevemos um pouco os requisitos
 	\item Tendo em conta o caso de estudo, encontrar uma solução para inserir a informação no repositório de forma a que as diferentes obras se possam relacionar entre si.
 \end{enumerate}
 
-
-\subsection{Especificação dos Requisitos}
-
-\subsubsection{análise das normas internacionais para a catalogação de obras de arte}
-
-\subsubsection{Dados}
-
-\subsubsection{Pedidos}
-
-\subsubsection{Relações}
-
 \section{Ambiente de Trabalho}
 
 Para um projecto de uma dimensão considerável como este, é necessário procurar boas ferramentes que nos facilitem a execução das tarefas e ainda usar linguagens de programação que sejam "eficazes" para a implementação do nosso sistema.
@@ -208,6 +197,8 @@ A Yii Framework tem uma grande biblioteca de extensões para integrar no site, nó
 \item \textbf{gmap} - Inserção do Google Maps nas nossas páginas.
 
 \item \textbf{Etooltip} - Mostrar as descriões das imagens.
+
+\item \textbf{googlesearch} - Para fazer pesquisas.
 
 \end{itemize} 
 
@@ -2983,7 +2974,7 @@ Após a transformação dos metadados originais e estando estes acessíveis em memór
 
 Este processo consiste, então, na iteração de todas as linhas do documento Word que está em memória. Se o elemento de quebra não for detetado numa dessas linhas então trata-se de um atributo de uma zincogravura e este é inserido numa hash com a seguinte estrutura (label\_atributo => valor\_atributo), a utilidade desta hash será explicada de seguida.
 
-No entanto, se for detetado o elemento de quebra, significa que todos os elementos de uma zincogravura já foram iterados e estes estão presentes na hash mencionada anteriormente. Então, esta hash é utilizada para alimentar uma função de escrita destes atributos de uma zincogravura no ficheiro XML final. Após esta escrita, a hash é ?limpa? para que os atributos da próxima zincogravura possam ser adicionados.
+No entanto, se for detetado o elemento de quebra, significa que todos os elementos de uma zincogravura já foram iterados e estes estão presentes na hash mencionada anteriormente. Então, esta hash é utilizada para alimentar uma função de escrita destes atributos de uma zincogravura no ficheiro XML final. Após esta escrita, a hash é "limpa" para que os atributos da próxima zincogravura possam ser adicionados.
 
 Eis a função que executa este processo:
 \begin{verbatim}
@@ -3031,9 +3022,12 @@ Nesta função é feito um mapeamento entre os atributos presentes na hash passada 
 
 \textbf{Carregamento para o repositório}
 
-Após criação do documento XML, resta apenas o carregamento destes metadados para o repositório, utilizando para isso o documento XML.
+Após criação do documento XML, resta apenas o carregamento destes metadados para o repositório, utilizando para isso esse documento.
+
 Este carregamento é feito através de outra script Perl. Nesta script foi utilizada um módulo Perl (XML::Simple) para que fosse possível transformar o documento XML num objeto em memória, assim como a sua navegação.
+
 Como esta script será utilizada após a script correspondente à dos metadados das fotografias, são utilizados alguns contadores que iniciam com determinados valores e servirão para povoar os identificadores de algumas tabelas na base de dados.
+
 Este processo decorre através da iteração de cada elemento correspondente a uma obra de arte. Em cada iteração, é feito um mapeamento entre cada elemento (se este possuir valor) e uma instrução SQL (MySQL).
 
 Ambas as scripts podem ser consultadas na pasta Codigo/Scripts.
@@ -3097,6 +3091,7 @@ Apresenta as peças que estao de alguma forma relacionadas com a que está a ser v
 \includegraphics[scale=0.4]{imagens/img3.png}
 \caption{Área onde mostra obras relacionadas}
 \end{figure}
+É nesta secção que a ontologia é mostrada, ou seja, neste exemplo podemos ver que uma peça tem locais associados e depois ver outras peças que que também fazem parte desse local.
 
 Existe ainda uma área onde se pode partilhar a obra de arte ou fazer comentários.
 \begin{figure}[H]
@@ -3106,6 +3101,18 @@ Existe ainda uma área onde se pode partilhar a obra de arte ou fazer comentários
 \end{figure}
 
 Os comentários são importantes porque podem servir para um utilizador comum ajudar a enriquecer o repositório.
+
+\textbf{Procura}
+
+Uma funcionalidade útil nos sites é ter uma caixa de procura, nós utilizamos uma extensão que utiliza o Google para encontrar os resultados:
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.4]{imagens/procura.png}
+\caption{Pesquisa}
+\end{figure}
+
+Neste momento, como o nosso site ainda não está indexado pelo Google, a pesquisa está a ser feita no site antigo do museu (http://www.museu-emigrantes.org/).
+
 
 
 \subsubsection{Salas de Exposição do Museu}
@@ -3175,18 +3182,21 @@ O template 2, é idêntico ao anterior mas aqui é possível ainda adicionar mais in
 
 Por último, este template é o mais simples e baseia-se em ter a informação toda seguida.
 
+\newpage
+
 \section{Trabalho futuro}
 
 Muitas funcionalidades apesar de estarem implementadas há melhoramentos que se podem fazer, tanto a nível de back office como na geração das salas de exposição.
 
 Ao nível do back office pode-se fazer melhoramentos na parte de enriquecimento da Base de Dados (criação de mais operações para associar informação) e ainda na ingestão de novas peça, tanto pelo formulário como pelo upload de um ficheiro XML (no formato CDWA).
 
-A geração de salas também pode ser melhorada fazendo um formulário em vez de se inserir código XML. A parte das visitas guiadas talvez outro mecanismo de controlo seria mais apropriado.
+A geração de salas também pode ser melhorada fazendo um formulário em vez de se inserir código XML. A parte das visitas guiadas talvez outro mecanismo de controlo seria mais apropriado, tirando mais proveito da ontologia e ainda de opções que o utilizador tivesse disponível.
 
-Algo que não ficou muito bem defenido é a ontologia que controla a navegação no Website. Seria importante fazer uma abordagem diferente da que nós utilizamos.
+Algo que não ficou muito bem defenido é a ontologia que controla a navegação no Website. Seria importante fazer uma abordagem diferente da que nós utilizamos. O que é feito é tirar proveito das relações que existem na Base de Dados e no front office mostrar a informação que é possível cruzar.
 
 
 \section{Conclusões}
+
 Síntese do Documento.\\
 Estado final do projecto. Análise crítica dos resultados.\\
 Sugestões para trabalho futuro.
