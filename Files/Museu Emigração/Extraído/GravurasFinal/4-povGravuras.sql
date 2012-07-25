@@ -724,6 +724,7 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (2,'Eduardo de Moura','personalName');
 INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (2,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (2,2);
+INSERT INTO IndexingCreators_NationalitiesCreator (IndexingCreator, NationalityCreator) VALUES (2,2);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (74,2);/* Tabela Locations*/
 INSERT INTO Locations (id_locations, Object_Work_Record, LocationName) VALUES (170, 74, '2');
 INSERT INTO WorkIDs (workID, type, Location) VALUES ('GI0021', 'objectId', 170);
@@ -1112,6 +1113,7 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (3,'Gomes Ferreira','personalName');
 INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (3,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (3,3);
+INSERT INTO IndexingCreators_NationalitiesCreator (IndexingCreator, NationalityCreator) VALUES (3,2);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (86,3);
 /* Tabela IndexingMeasurements */
 INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (138,86);
@@ -1903,6 +1905,7 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (4,'Cerdeira','personalName');
 INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (4,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (4,4);
+INSERT INTO IndexingCreators_NationalitiesCreator (IndexingCreator, NationalityCreator) VALUES (4,2);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (108,4);
 /* Tabela IndexingMeasurements */
 INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (160,108);
@@ -6142,6 +6145,7 @@ INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record
 INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES (10,'João Alves','personalName');
 INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES (10,'male');
 INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES (10,10);
+INSERT INTO IndexingCreators_NationalitiesCreator (IndexingCreator, NationalityCreator) VALUES (10,2);
 INSERT INTO Object_Work_Records_IndexingCreators (Object_Work_Record, IndexingCreator) VALUES (235,10);
 /* Tabela IndexingMeasurements */
 INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (287,235);
@@ -17960,7 +17964,7 @@ INSERT INTO Object_Work_Records (id_object_Work_Records, displayCreator, display
 INSERT INTO Object_Work_Types_Object_Work_Records VALUES (2,593);
 /* Tabela Object_Work_Titles */
 INSERT INTO Object_Work_Titles (id_object_Work_Titles, title, Object_Work_Record) 
-		VALUES (593,'HASH(0xa55b630)', 593);
+		VALUES (593,'HASH(0x8f1e4d8)', 593);
 /* Tabela IndexingMeasurements */
 INSERT INTO IndexingMeasurements (id_indexingMeasurements, Object_Work_Record) VALUES (645,593);
 INSERT INTO Measurements (id_measurements, value, unit, type, IndexingMeasurement) 

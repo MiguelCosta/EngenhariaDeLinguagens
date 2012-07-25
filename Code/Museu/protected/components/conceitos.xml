@@ -91,4 +91,23 @@
             ));
             ?&gt;</value>
     </conceito>
+    <conceito>
+        <key>PecasNacionalidade</key>
+        <value>
+            &lt;br&gt;&lt;br&gt;
+            &lt;h5&gt;Salas %Nacionalidade%&lt;/h5&gt;
+            &lt;?php 
+            $dataProvider = IndexingCreators::getObjectWorkRecords_NationalitiesCreator('%Nacionalidade%');
+            $dataProvider->pagination->pageSize=%NrItens%;
+            
+            $this->widget('zii.widgets.CListView', array(
+            'dataProvider'=>$dataProvider,
+            'template'=>'{sorter}{summary}{pager}{items}{pager}{summary}',
+            'pager'=>array(
+            'maxButtonCount'=>'10',
+            ),
+            'itemView'=>'/object_Work_Records/_view',
+            ));
+            ?&gt;</value>
+    </conceito>
 </conceitos>
