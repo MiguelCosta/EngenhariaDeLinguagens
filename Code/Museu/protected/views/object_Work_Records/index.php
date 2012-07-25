@@ -12,10 +12,9 @@ $this->menu=array(
 ?>
 
 <?php 
-//$var = IndexingSubjects::getObjectWorkRecords_Subject('foto');
+//$var = IndexingCreators::getObjectWorkRecords_NationalitiesCreator('Haitian');
 //echo CVarDumper::dump($var, 3, true);
 ?>
-
 
 <h1>Peças do Museu</h1>
 
