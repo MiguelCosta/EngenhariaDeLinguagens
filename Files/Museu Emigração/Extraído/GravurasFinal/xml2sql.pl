@@ -87,6 +87,9 @@ while(exists($data->{cdwalite}->[$ix])){
 			print F "INSERT INTO NamesCreator (id_namesCreator, nameCreator, type) VALUES ($cont_criadores,'$criador','personalName');\n";
 			print F	"INSERT INTO IndexingCreators (id_indexingCreators, genderCreator) VALUES ($cont_criadores,'male');\n";
 			print F "INSERT INTO NamesCreator_IndexingCreators (NameCreator, IndexingCreator) VALUES ($cont_criadores,$cont_criadores);\n";
+			#TEMPORARIO
+			if ($criador eq "Eduardo de Moura" || $criador eq "Cerdeira" || $criador eq "João Alves" || $criador eq "Gomes Ferreira") 
+				print F "INSERT INTO IndexingCreators_NationalitiesCreator (IndexingCreator, NationalityCreator) VALUES ($cont_criadores,2);\n";
 
 			$cont_criadores++;
 		}
