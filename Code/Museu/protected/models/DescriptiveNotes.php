@@ -64,11 +64,11 @@ class DescriptiveNotes extends CActiveRecord
 	{
 		return array(
 			'id_descriptiveNotes' => 'Id Descriptive Notes',
-			'descriptiveNote' => 'Descriptive Note',
+			'descriptiveNote' => 'Descrição',
 			'Object_Work_Record' => 'Object Work Record',
 		);
 	}
-
+	
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.

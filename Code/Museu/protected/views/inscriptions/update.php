@@ -1,18 +1,21 @@
 <?php
 $this->breadcrumbs=array(
-	'Inscriptions'=>array('index'),
+	'Legendas'=>array('index'),
 	$model->id_inscriptions=>array('view','id'=>$model->id_inscriptions),
-	'Update',
+	'Atualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List Inscriptions', 'url'=>array('index')),
-	array('label'=>'Create Inscriptions', 'url'=>array('create')),
-	array('label'=>'View Inscriptions', 'url'=>array('view', 'id'=>$model->id_inscriptions)),
-	array('label'=>'Manage Inscriptions', 'url'=>array('admin')),
+	array('label'=>'Ver', 'url'=>array('view', 'id'=>$model->id_inscriptions)),
+	array('label'=>'Índice', 'url'=>array('index')),
+	array('label'=>'Criar', 'url'=>array('create')),
+	array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update Inscriptions <?php echo $model->id_inscriptions; ?></h1>
+<h1>Atualizar Legenda:
+	<?php echo $model->inscriptions; ?>
+	<?php echo '('. $model->id_inscriptions .')'; ?>
+</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -1,18 +1,21 @@
 <?php
 $this->breadcrumbs=array(
-	'Descriptive Notes'=>array('index'),
+	'Descrições'=>array('index'),
 	$model->id_descriptiveNotes=>array('view','id'=>$model->id_descriptiveNotes),
-	'Update',
+	'Atualizar',
 );
 
 $this->menu=array(
-	array('label'=>'List DescriptiveNotes', 'url'=>array('index')),
-	array('label'=>'Create DescriptiveNotes', 'url'=>array('create')),
-	array('label'=>'View DescriptiveNotes', 'url'=>array('view', 'id'=>$model->id_descriptiveNotes)),
-	array('label'=>'Manage DescriptiveNotes', 'url'=>array('admin')),
+	array('label'=>'Ver', 'url'=>array('view', 'id'=>$model->id_descriptiveNotes)),
+	array('label'=>'Índice', 'url'=>array('index')),
+	array('label'=>'Criar', 'url'=>array('create')),
+	array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Update DescriptiveNotes <?php echo $model->id_descriptiveNotes; ?></h1>
+<h1>Atualizar Descrição: 
+	<?php echo $model->descriptiveNote; ?>
+	<?php echo '('. $model->id_descriptiveNotes .')'; ?>
+</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -35,9 +35,9 @@ class Inscriptions extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('inscriptions, Object_Work_Record', 'required'),
+			array('inscriptions,  Object_Work_Record', 'required'),
 			array('Object_Work_Record', 'numerical', 'integerOnly'=>true),
-			array('inscriptions', 'length', 'max'=>5000),
+			array('inscriptions', 'length', 'max'=>511),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id_inscriptions, inscriptions, Object_Work_Record', 'safe', 'on'=>'search'),
@@ -63,7 +63,7 @@ class Inscriptions extends CActiveRecord
 	{
 		return array(
 			'id_inscriptions' => 'Id Inscriptions',
-			'inscriptions' => 'Inscriptions',
+			'inscriptions' => 'Legenda',
 			'Object_Work_Record' => 'Object Work Record',
 		);
 	}

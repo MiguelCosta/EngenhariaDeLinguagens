@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Descriptive Notes',
+	'Descrições',
 );
 
 $this->menu=array(
-	array('label'=>'Create DescriptiveNotes', 'url'=>array('create')),
-	array('label'=>'Manage DescriptiveNotes', 'url'=>array('admin')),
+	array('label'=>'Criar', 'url'=>array('create')),
+	array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Descriptive Notes</h1>
+<h1>Descrições</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

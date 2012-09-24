@@ -1,15 +1,15 @@
 <?php
 $this->breadcrumbs=array(
-	'Inscriptions'=>array('index'),
-	'Create',
+	'Legendas'=>array('index'),
+	'Criar',
 );
 
 $this->menu=array(
-	array('label'=>'List Inscriptions', 'url'=>array('index')),
-	array('label'=>'Manage Inscriptions', 'url'=>array('admin')),
+	array('label'=>'Índice', 'url'=>array('index')),
+	array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Inscriptions</h1>
+<h1>Criar Legenda</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

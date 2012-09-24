@@ -10,11 +10,11 @@ $this->menu=array(
 );
 ?>
 
-<h1>Atribuir um Título Novo</h1>
+<h1>Atribuir um Título Existente</h1>
 
 
 
-<?php echo $this->renderPartial('_formAttributeNew', array(
+<?php echo $this->renderPartial('_formAttributeExists', array(
 											'model'=>$model,
 											'Object_Work_Records'=>$Object_Work_Records)); ?>
 

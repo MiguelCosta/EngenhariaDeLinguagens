@@ -2,7 +2,7 @@
 $this->breadcrumbs=array(
 		'Títulos'=>array('index'),
 		$model->title=>array('view','id'=>$model->id_object_Work_Titles),
-		'Actualizar',
+		'Atualizar',
 );
 
 $this->menu=array(
@@ -14,7 +14,7 @@ $this->menu=array(
 ?>
 
 <h1>
-	Actualizar Título: 
+	Atualizar Título: 
 	<?php echo $model->title; ?>
 	<?php echo '('. $model->id_object_Work_Titles .')'; ?>
 </h1>

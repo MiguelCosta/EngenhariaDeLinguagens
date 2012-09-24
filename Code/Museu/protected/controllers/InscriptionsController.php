@@ -36,7 +36,7 @@ class InscriptionsController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update', 'attributeNew', 'attributeExists'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -178,4 +178,56 @@ class InscriptionsController extends Controller
 			Yii::app()->end();
 		}
 	}
+	
+	public function actionAttributeNew()
+	
+	{
+		$model = new Inscriptions();
+		$owr  = 1;
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+		if(isset($_POST['Inscriptions']))
+		{
+			$model->attributes=$_POST['Inscriptions'];
+			if($model->save())
+				$this->redirect(array('/Inscriptions/view','id'=>$model->Object_Work_Record));
+		}
+		if(isset($_GET['Object_Work_Records']))
+		{
+			$owr = $_GET['Object_Work_Records'];
+		}
+		$this->render('attributeNew',array(
+				'model'=>$model,
+				'Object_Work_Records'=>$owr,
+		));
+	}
+	
+	public function actionAttributeExists()
+	{
+		$model	=	new Inscriptions;
+		$owr 	=	1;
+	
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+	
+		if(isset($_POST['Inscriptions']))
+		{
+			$model->attributes=$_POST['Inscriptions'];
+			if($model->save())
+				$this->redirect(array('/object_Work_Records/view','id'=>$model->Object_Work_Record));
+		}
+	
+		if(isset($_GET['Object_Work_Records']))
+		{
+			$owr = $_GET['Object_Work_Records'];
+		}
+	
+	
+	
+		$this->render('attributeExists',array(
+				'model'=>$model,
+				'Object_Work_Records'=>$owr,
+		));
+	}
+	
 }

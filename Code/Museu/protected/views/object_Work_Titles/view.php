@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 		array('label'=>'Índice', 'url'=>array('index')),
 		array('label'=>'Criar', 'url'=>array('create')),
-		array('label'=>'Actualizar', 'url'=>array('update', 'id'=>$model->id_object_Work_Titles)),
+		array('label'=>'Atualizar', 'url'=>array('update', 'id'=>$model->id_object_Work_Titles)),
 		array('label'=>'Eliminar', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_object_Work_Titles),'confirm'=>'Are you sure you want to delete this item?')),
 		array('label'=>'Administração', 'url'=>array('admin')),
 );
