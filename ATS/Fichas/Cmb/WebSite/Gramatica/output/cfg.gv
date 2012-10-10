@@ -1,10 +1,6 @@
 digraph mainmap {
 graph [bgcolor=transparent];
-"ENTER (imprime)" -> "msg = 'blabla'";
-	"msg = 'blabla'" -> "print(nome)";
-	"print(nome)" -> "print(msg)";
-	"print(msg)" -> "EXIT (imprime)";
-	"ENTER (main)" -> "a = 2+1";
+"ENTER (main)" -> "a = 2+1";
 	"a = 2+1" -> "if(a==2)";
 	"if(a==2)" -> "a = a+1"[label="T"];
 	"if(a==2)" -> "b = 5"[label="F"];

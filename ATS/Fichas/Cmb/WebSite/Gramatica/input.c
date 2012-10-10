@@ -1,10 +1,4 @@
-void imprime(string nome)
-{
-	string msg;
-	msg = "blabla";
-	print (nome);
-	print (msg);
-}
+
 
 int main(int x, int y)
 {

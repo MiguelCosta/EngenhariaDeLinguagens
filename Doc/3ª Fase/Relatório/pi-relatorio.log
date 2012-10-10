@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  25 JUL 2012 04:15
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2011.12.3)  25 JUL 2012 14:22
 entering extended mode
  %&-line parsing enabled.
 **pi-relatorio.tex
@@ -429,17 +429,17 @@ File: omsaer.fd 1999/12/27
 LaTeX Font Info:    Font shape `OMS/aer/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 78.
  [4]
-<./imagens/OAIS.png, id=188, 549.05125pt x 287.0725pt>
+<./imagens/OAIS.png, id=193, 549.05125pt x 287.0725pt>
 File: ./imagens/OAIS.png Graphic file (type png)
 
 <use ./imagens/OAIS.png> [5 <./imagens/OAIS.png (PNG copy)>]
-<imagens/CGB052.JPG, id=193, 823.878pt x 542.5068pt>
+<imagens/CGB052.JPG, id=198, 823.878pt x 542.5068pt>
 File: imagens/CGB052.JPG Graphic file (type jpg)
  <use imagens/CGB052.JPG>
-<imagens/004.jpg, id=194, 269.808pt x 351.9549pt>
+<imagens/004.jpg, id=199, 269.808pt x 351.9549pt>
 File: imagens/004.jpg Graphic file (type jpg)
  <use imagens/004.jpg>
-[6 <./imagens/CGB052.JPG>] <imagens/0059.jpg, id=200, 409.7709pt x 326.6604pt>
+[6 <./imagens/CGB052.JPG>] <imagens/0059.jpg, id=205, 409.7709pt x 326.6604pt>
 File: imagens/0059.jpg Graphic file (type jpg)
 
 <use imagens/0059.jpg> [7 <./imagens/004.jpg> <./imagens/0059.jpg>] [8]
@@ -527,28 +527,28 @@ Overfull \hbox (11.49649pt too wide) in paragraph at lines 3027--3028
 esta script foi uti-li-zada um mó-dulo Perl (XML::Simple)
  []
 
-[31] <imagens/form1.png, id=315, 957.5775pt x 745.78625pt>
+[31] <imagens/form1.png, id=320, 957.5775pt x 745.78625pt>
 File: imagens/form1.png Graphic file (type png)
 
-<use imagens/form1.png> <imagens/form2.png, id=316, 962.59625pt x 771.88374pt>
+<use imagens/form1.png> <imagens/form2.png, id=321, 962.59625pt x 771.88374pt>
 File: imagens/form2.png Graphic file (type png)
 
 <use imagens/form2.png> [32 <./imagens/form1.png (PNG copy)>]
-<imagens/esq.png, id=322, 537.50812pt x 442.65375pt>
+<imagens/esq.png, id=327, 537.50812pt x 442.65375pt>
 File: imagens/esq.png Graphic file (type png)
  <use imagens/esq.png>
 [33 <./imagens/form2.png (PNG copy)> <./imagens/esq.png (PNG copy)>]
-<imagens/img2.png, id=329, 964.60374pt x 716.6775pt>
+<imagens/img2.png, id=334, 964.60374pt x 716.6775pt>
 File: imagens/img2.png Graphic file (type png)
  <use imagens/img2.png>
-<imagens/img3.png, id=330, 729.72626pt x 478.78876pt>
+<imagens/img3.png, id=335, 729.72626pt x 478.78876pt>
 File: imagens/img3.png Graphic file (type png)
  <use imagens/img3.png>
 [34 <./imagens/img2.png (PNG copy)>]
-<imagens/img5.png, id=340, 872.25874pt x 512.91624pt>
+<imagens/img5.png, id=345, 872.25874pt x 512.91624pt>
 File: imagens/img5.png Graphic file (type png)
  <use imagens/img5.png>
-<imagens/procura.png, id=341, 965.6075pt x 755.82375pt>
+<imagens/procura.png, id=346, 965.6075pt x 755.82375pt>
 File: imagens/procura.png Graphic file (type png)
 
 <use imagens/procura.png> [35 <./imagens/img3.png (PNG copy)> <./imagens/img5.p
@@ -567,32 +567,32 @@ File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 3134.
  (./code/xml1.txt)
-[37] <imagens/tema1.png, id=385, 199.74625pt x 250.9375pt>
+[37] <imagens/tema1.png, id=390, 199.74625pt x 250.9375pt>
 File: imagens/tema1.png Graphic file (type png)
 
-<use imagens/tema1.png> <imagens/tema2.png, id=386, 196.735pt x 252.945pt>
+<use imagens/tema1.png> <imagens/tema2.png, id=391, 196.735pt x 252.945pt>
 File: imagens/tema2.png Graphic file (type png)
 
-<use imagens/tema2.png> <imagens/tema3.png, id=387, 200.75pt x 253.94875pt>
+<use imagens/tema2.png> <imagens/tema3.png, id=392, 200.75pt x 253.94875pt>
 File: imagens/tema3.png Graphic file (type png)
 
 <use imagens/tema3.png> [38 <./imagens/tema1.png (PNG copy)> <./imagens/tema2.p
 ng (PNG copy)> <./imagens/tema3.png (PNG copy)>] [39] [40]
-<relatoriopartebruno-img1.jpg, id=403, 648.4225pt x 1508.63625pt>
+<relatoriopartebruno-img1.jpg, id=408, 648.4225pt x 1508.63625pt>
 File: relatoriopartebruno-img1.jpg Graphic file (type jpg)
 
 <use relatoriopartebruno-img1.jpg> [41 <./relatoriopartebruno-img1.jpg>]
-(./pi-relatorio.aux) ) 
+[42] (./pi-relatorio.aux) ) 
 Here is how much of TeX's memory you used:
- 7963 strings out of 495014
- 111521 string characters out of 1180707
- 219192 words of memory out of 3000000
- 10831 multiletter control sequences out of 15000+50000
+ 7966 strings out of 495014
+ 111548 string characters out of 1180707
+ 220192 words of memory out of 3000000
+ 10832 multiletter control sequences out of 15000+50000
  44644 words of font info for 87 fonts, out of 3000000 for 9000
  30 hyphenation exceptions out of 8191
  38i,8n,52p,923b,1127s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Hfootnote.5} has been referen
-ced but does not exist, replaced by a fixed one
+pdfTeX warning (dest): name{Hfootnote.5} has been re
+ferenced but does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exist
 , replaced by a fixed one
@@ -620,9 +620,9 @@ fonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cm
 ti10.pfb></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmti12.pfb></
 usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/t
 exmf-texlive/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on pi-relatorio.pdf (42 pages, 4056297 bytes).
+Output written on pi-relatorio.pdf (43 pages, 4057860 bytes).
 PDF statistics:
- 487 PDF objects out of 1000 (max. 8388607)
- 120 named destinations out of 1000 (max. 500000)
- 300 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 498 PDF objects out of 1000 (max. 8388607)
+ 122 named destinations out of 1000 (max. 500000)
+ 308 words of extra memory for PDF output out of 10000 (max. 10000000)
 

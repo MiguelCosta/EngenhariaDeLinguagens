@@ -1,13 +1,6 @@
 digraph mainmapSSA {
 graph [bgcolor=transparent];
-"ENTER (imprime)"[label="ENTER (imprime)"];
-"msg = 'blabla'"[label="msg0 = 'blabla'"];
-"print(nome)"[label="print(nome0)"];
-"print(msg)"[label="print(msg0)"];
-"ENTER (imprime)" -> "msg = 'blabla'";
-	"msg = 'blabla'" -> "print(nome)";
-	"print(nome)" -> "print(msg)";
-	"ENTER (main)"[label="ENTER (main)"];
+"ENTER (main)"[label="ENTER (main)"];
 "a = 2+1"[label="a0 = 2+1"];
 "if(a==2)"[label="if(a0==2)"];
 "a = a+1"[label="a1 = a0+1"];

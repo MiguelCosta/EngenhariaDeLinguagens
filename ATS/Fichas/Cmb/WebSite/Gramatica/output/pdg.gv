@@ -1,19 +1,6 @@
 digraph mainmapPDG {
 graph [bgcolor=transparent];
-"0:ENTER (imprime)"[label="0: ENTER (imprime)"];
-"1:msg = 'blabla'"[label="1: msg = 'blabla'"];
-"2:print(nome)"[label="2: print(nome)"];
-"3:print(msg)"[label="3: print(msg)"];
-
-
-"0:ENTER (imprime)" -> "1:msg = 'blabla'";
-	"0:ENTER (imprime)" -> "2:print(nome)";
-	"0:ENTER (imprime)" -> "3:print(msg)";
-	
-
-"0:ENTER (imprime)" -> "2:print(nome)" [style=dotted];
-	"1:msg = 'blabla'" -> "3:print(msg)" [style=dotted];
-	"0:ENTER (main)"[label="0: ENTER (main)"];
+"0:ENTER (main)"[label="0: ENTER (main)"];
 "1:a = 2+1"[label="1: a = 2+1"];
 "2:if(a==2)"[label="2: if(a==2)"];
 "3:a = a+1"[label="3: a = a+1"];
