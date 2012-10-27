@@ -7,6 +7,7 @@ $this->breadcrumbs=array(
 $this->menu=array(
 		array('label'=>'Índice', 'url'=>array('index')),
 		array('label'=>'Criar', 'url'=>array('create')),
+		array('label' => 'Importar obras de arte', 'url' => array('CreateCDWA')),
 		array('label'=>'Administração', 'url'=>array('admin')),
 );
 ?>

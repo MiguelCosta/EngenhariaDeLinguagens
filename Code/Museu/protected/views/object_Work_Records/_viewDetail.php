@@ -92,6 +92,11 @@ $this->widget('zii.widgets.CDetailView', array(
 						'type'=>'html',
 						'value'=>$model->getResources_view(),
 				),
+				array(
+						'name'=>'indexingSubjects',
+						'type'=>'html',
+						'value'=>$model->getSubjectTerms_view(),
+				),
 
 		),
 ));

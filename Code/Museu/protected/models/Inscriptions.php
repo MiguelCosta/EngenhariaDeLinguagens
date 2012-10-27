@@ -37,7 +37,7 @@ class Inscriptions extends CActiveRecord
 		return array(
 			array('inscriptions,  Object_Work_Record', 'required'),
 			array('Object_Work_Record', 'numerical', 'integerOnly'=>true),
-			array('inscriptions', 'length', 'max'=>511),
+			array('inscriptions', 'length', 'max'=>5000),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id_inscriptions, inscriptions, Object_Work_Record', 'safe', 'on'=>'search'),
