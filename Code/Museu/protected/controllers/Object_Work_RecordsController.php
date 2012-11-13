@@ -206,7 +206,15 @@ class Object_Work_RecordsController extends Controller
 			->where('latestDate=:date', array(':date'=>$id->latestDate))
 			->queryScalar();
 
-			$ri->recordID = $maxRecordNumber + 1;
+      // o numero de inventario pode ser definido pelo manualmente ou automaticamente
+		  $tmp = new RecordsID;
+      if(isset($_POST['RecordsID'])) {
+        $tmp->attributes=$_POST['RecordsID'];
+			  $ri->recordID = $tmp->recordID;
+      }
+      else
+  			$ri->recordID = $maxRecordNumber + 1;
+
 			$ri->Object_Work_Record = $maxRecordNumber + 1;
 
 			// obtem os dados do form relativos aos Locations Se os dados relativos a LocationName tiverem sido preenchidos
@@ -637,6 +645,7 @@ class Object_Work_RecordsController extends Controller
 				'LabelRelatedWork'=>$lblrw,
 				'LocationsRelatedWork'=>$locrw,
 				'LinkResources'=>$lr,
+				'RecordsID'=>$ri,
 				'ResourceViewDescriptions'=>$rvd
 		));
 	}

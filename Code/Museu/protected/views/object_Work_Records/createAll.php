@@ -34,5 +34,6 @@ $this->menu=array(
 												'LabelRelatedWork'=>$LabelRelatedWork,
 												'LocationsRelatedWork'=>$LocationsRelatedWork,
 												'LinkResources'=>$LinkResources,
+												'RecordsID'=>$RecordsID,
 												'ResourceViewDescriptions'=>$ResourceViewDescriptions)); ?>
 

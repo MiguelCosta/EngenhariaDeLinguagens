@@ -35,6 +35,13 @@ $this->widget('ext.slidetoggle.ESlidetoggle',
 	</div>
 
 
+	<!-- RecordsID  -->
+	<div class="nrow">
+    <?php echo $form->labelEx($RecordsID,'recordID'); ?>
+    <?php echo $form->textField($RecordsID,'recordID',array('size'=>15,'maxlength'=>15)); ?>
+    <?php echo $form->error($RecordsID,'recordID'); ?>
+	</div>
+
 	<!-- Object_Work_Titles -->
 	<div class="nrow">
 		<?php echo $form->labelEx($Object_Work_Titles,'title'); ?>
