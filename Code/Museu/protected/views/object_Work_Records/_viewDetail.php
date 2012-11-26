@@ -32,14 +32,20 @@ $this->widget('ext.ETooltip.ETooltip', array("selector"=>"#yw2 img[title]",
 <?php
 
 //$c = $model->locations;
-//$c = $model->getClassifications_view();
+//$c = $model->getRecords();
 //print $c;
-//CVarDumper::dump($c, 3, true);
+//echo CVarDumper::dump($model->records, 3, true);
+
+//echo CVarDumper::dump($model->getRecords(), 2, true);
 
 $this->widget('zii.widgets.CDetailView', array(
 		'data' => $model,
 		'attributes' => array(
 				'id_object_Work_Records',
+				array(
+						'name'=>'records',
+						'value'=>$model->getRecords(),		
+				),
 				'displayCreator',
 				'displayMeasurements',
 				'displayMaterialsTech',

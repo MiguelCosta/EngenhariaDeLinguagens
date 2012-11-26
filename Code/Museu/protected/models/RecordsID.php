@@ -65,7 +65,7 @@ class RecordsID extends CActiveRecord
 	{
 		return array(
 			'id_recordsID' => 'Id Records',
-			'recordID' => 'Record',
+			'recordID' => 'Número de inventário',
 			'type' => 'Type',
 			'Object_Work_Record' => 'Object Work Record',
 		);

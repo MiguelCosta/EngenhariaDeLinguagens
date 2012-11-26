@@ -74,7 +74,7 @@ class Object_Work_Records extends CActiveRecord
 				'provenances' => array(self::HAS_MANY, 'Provenance', 'Object_Work_Record'),
 				'recordInfos' => array(self::HAS_MANY, 'RecordInfo', 'Object_Work_Record'),
 				'recordSources' => array(self::HAS_MANY, 'RecordSources', 'Object_Work_Record'),
-				'records' => array(self::HAS_MANY, 'RecordsId', 'Object_Work_Record'),
+				'records' => array(self::HAS_MANY, 'RecordsID', 'Object_Work_Record'),
 				'relatedWorks' => array(self::HAS_MANY, 'RelatedWorks', 'Object_Work_Record'),
 				'resources' => array(self::HAS_MANY, 'Resources', 'Object_Work_Record'),
 				'rightsWorks' => array(self::HAS_MANY, 'RightsWork', 'Object_Work_Record'),
@@ -105,6 +105,7 @@ class Object_Work_Records extends CActiveRecord
 				'object_Work_Types' => 'Tipo de Peça',
 				'classifications' => 'Classificações',
 				'indexingSubjects' => 'Tags',
+				'records' => 'N.º Inventário',
 		);
 	}
 
@@ -369,6 +370,14 @@ class Object_Work_Records extends CActiveRecord
 			}
 		}
 		$result .=  implode("<br/>", $result_arr);
+		return $result;
+	}
+	
+	public function getRecords(){
+		$result = array();
+		foreach ($this->records as $records){
+			return $records->recordID;
+		}
 		return $result;
 	}
 
